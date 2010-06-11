@@ -18,7 +18,8 @@ else
 fi
 
 set -e
-
+QUIET=1
+QFLAG=-q
 BASE=`pwd`
 if [ "$APKCERTS" = "" ];
 then
@@ -69,7 +70,7 @@ then
         fi
     else
         APKINFO=`grep "name=\"$NAME\"" $APKCERTS`;
-        echo "APKINFO: $APKINFO";
+        [ $QUIET ] || echo "APKINFO: $APKINFO";
         if [ "$APKINFO" = "" ];
         then
             echo "No apk info for $NAME";
@@ -84,16 +85,17 @@ then
         fi
     fi
 
-    echo "Certificate: $CERT";
+    [ $QUIET ] || echo "Certificate: $CERT";
 
-    rm -rf /tmp/$NAME
+    [ -d /tmp/$NAME ] && rm -rf /tmp/$NAME
     mkdir /tmp/$NAME
+    trap "rm -rf /tmp/$NAME; exit" INT TERM EXIT
     cd /tmp/$NAME
-    unzip $BASE/$1
+    unzip -q $BASE/$1
     for x in `find . -name "*.png" | grep -v "\.9.png$" | tr "\n" " "`
     do
-        echo "Crushing $x"
-        pngcrush $x $x.crushed 1>/dev/null
+        [ $QUIET ] || echo "Crushing $x"
+        pngcrush $QFLAG $x $x.crushed 1>/dev/null
         if [ -e "$x.crushed" ];
         then
             mv $x.crushed $x
@@ -101,17 +103,19 @@ then
     done
     cp $BASE/$1 $BASE/$1.old
 
-    echo "Repacking apk.."
+    [ $QUIET ] || echo "Repacking apk.."
     aapt p -0 res/raw -0 res/raw-en -F $NAME .
     
-        echo "Resigning with cert: `echo $CERT`"
+    [ $QUIET ] || echo "Resigning with cert: `echo $CERT`"
 
-    echo java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
+    [ $QUIET ] || echo java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
     java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
-    echo "Zipalign.."
+    [ $QUIET ] || echo "Zipalign.."
     zipalign -f 4 signed_$NAME $BASE/$1
-    ls -l $BASE/$1.old
-    ls -l $BASE/$1
+    if [ ! $QUIET ]; then
+        ls -l $BASE/$1.old
+        ls -l $BASE/$1
+    fi
     rm $BASE/$1.old
 else
     echo "Usage: $0 [apk file]"
