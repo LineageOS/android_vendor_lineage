@@ -14,3 +14,5 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/CHANGELOG:system/etc/CHANGELOG-CM.txt
 
 PRODUCT_PACKAGE_OVERLAYS := vendor/cyanogen/overlay
+
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
