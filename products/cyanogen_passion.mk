@@ -30,4 +30,9 @@ endif
 # Copy passion specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/cyanogen/prebuilt/passion/media/ui/Dock.ogg:system/media/ui/Dock.ogg \
+    vendor/cyanogen/prebuilt/passion/media/ui/Lock.ogg:system/media/ui/Lock.ogg \
+    vendor/cyanogen/prebuilt/passion/media/ui/LowBattery.ogg:system/media/ui/LowBattery.ogg \
+    vendor/cyanogen/prebuilt/passion/media/ui/Undock.ogg:system/media/ui/Undock.ogg \
+    vendor/cyanogen/prebuilt/passion/media/ui/Unlock.ogg:system/media/ui/Unlock.ogg 
