@@ -8,7 +8,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmod
 
 PRODUCT_PACKAGES += \
-    CMParts
+    CMParts \
+    Superuser
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/CHANGELOG:system/etc/CHANGELOG-CM.txt
