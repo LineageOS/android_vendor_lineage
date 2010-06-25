@@ -12,3 +12,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/CHANGELOG:system/etc/CHANGELOG-CM.txt
+
+PRODUCT_PACKAGE_OVERLAYS := vendor/cyanogen/overlay
