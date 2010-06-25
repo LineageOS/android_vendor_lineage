@@ -1,7 +1,7 @@
 $(call inherit-product, device/htc/inc/inc.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/product/common.mk)
+$(call inherit-product, vendor/cyanogen/products/common.mk)
 
 #
 # Setup device specific product configuration.
