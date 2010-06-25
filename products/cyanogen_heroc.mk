@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/heroc/froyo_heroc.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/product/common.mk)
+$(call inherit-product, vendor/cyanogen/products/common.mk)
 
 #
 # Setup device specific product configuration.
