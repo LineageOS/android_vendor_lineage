@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/CHANGELOG:system/etc/CHANGELOG-CM.txt
+    vendor/cyanogen/CHANGELOG:system/etc/CHANGELOG-CM.txt \
+    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Allow the use of overlays
 PRODUCT_PACKAGE_OVERLAYS := vendor/cyanogen/overlay
