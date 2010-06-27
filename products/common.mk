@@ -4,7 +4,7 @@ PRODUCT_BRAND := cyanogen
 PRODUCT_DEVICE := generic
 
 # Use edify for otapackage
-TARGET_OTA_SCRIPT_MODE = edify
+PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=edify
 
 # Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -24,4 +24,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGE_OVERLAYS := vendor/cyanogen/overlay
 
 # Always run in insecure mode, enables root on user build variants
-ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
