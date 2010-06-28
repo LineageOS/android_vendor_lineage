@@ -23,6 +23,19 @@ PRODUCT_COPY_FILES += \
 # Allow the use of overlays
 PRODUCT_PACKAGE_OVERLAYS := vendor/cyanogen/overlay
 
+PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/common/lib/libncurses.so:system/lib/libncurses.so \
+    vendor/cyanogen/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/cyanogen/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
+    vendor/cyanogen/prebuilt/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown \
+    vendor/cyanogen/prebuilt/common/etc/profile:system/etc/profile \
+    vendor/cyanogen/prebuilt/common/xbin/bash:system/xbin/bash \
+    vendor/cyanogen/prebuilt/common/xbin/htop:system/xbin/htop \
+    vendor/cyanogen/prebuilt/common/xbin/irssi:system/xbin/irssi \
+    vendor/cyanogen/prebuilt/common/xbin/lsof:system/xbin/lsof \
+    vendor/cyanogen/prebuilt/common/xbin/nano:system/xbin/nano \
+    vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop
+
 # Always run in insecure mode, enables root on user build variants
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
