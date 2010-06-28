@@ -31,9 +31,3 @@ endif
 #
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
-
-#
-# Kernel
-#
-TARGET_KERNEL_DIR := kernel-msm
-TARGET_KERNEL_CONFIG := cyanogen_defconfig_mahimahi
