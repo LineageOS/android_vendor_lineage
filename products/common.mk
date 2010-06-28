@@ -39,6 +39,9 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/xbin/nano:system/xbin/nano \
     vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop
 
+PRODUCT_COPY_FILES +=  \
+    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
+
 # Always run in insecure mode, enables root on user build variants
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 

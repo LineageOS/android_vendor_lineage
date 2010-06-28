@@ -27,5 +27,4 @@ endif
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRF57 BUILD_DISPLAY_ID="userdebug 2.2 FRF57 38829 test-keys" PRODUCT_NAME=voles TARGET_DEVICE=sholes BUILD_FINGERPRINT=verizon/voles/sholes/sholes:2.2/FRF57/38829:userdebug/test-keys PRODUCT_BRAND=verizon PRIVATE_BUILD_DESC="voles-userdebug 2.2 FRF57 38829 test-keys" BUILD_NUMBER=38829 BUILD_UTC_DATE=1274994078 TARGET_BUILD_TYPE=userdebug
 
 PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
     vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
