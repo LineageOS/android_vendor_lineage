@@ -1,46 +1,42 @@
-#!/usr/bin/env python
-import sys, random, urllib2, zipfile, StringIO, os
-from optparse import OptionParser
+#!/bin/bash
 
-FILENAME="gapps-passion-FRF83-signed.zip"
-MIRRORS=["http://www.kanged.net/up/files/1/",]
+mkdir -p proprietary
 
-def device():
-    print "usage: extract-google-files -m [method]"
-    print "Note:  Device method is currently not implemented, please use download"
-    sys.exit(1)
+adb pull /system/app/CarHomeGoogle.apk proprietary
+adb pull /system/app/CarHomeLauncher.apk proprietary
+adb pull /system/app/com.amazon.mp3.apk proprietary
+adb pull /system/app/com.google.android.apps.maps-1.apk proprietary
+adb pull /system/app/Facebook.apk proprietary
+adb pull /system/app/GenieWidget.apk proprietary
+adb pull /system/app/Gmail.apk proprietary
+adb pull /system/app/GoogleBackupTransport.apk proprietary
+adb pull /system/app/GoogleCalendarSyncAdapter.apk proprietary
+adb pull /system/app/GoogleContactsSyncAdapter.apk proprietary
+adb pull /system/app/GoogleFeedback.apk proprietary
+adb pull /system/app/GoogleGoggles.apk proprietary
+adb pull /system/app/GooglePartnerSetup.apk proprietary
+adb pull /system/app/GoogleQuickSearchBox.apk proprietary
+adb pull /system/app/GoogleServicesFramework.apk proprietary
+adb pull /system/app/googlevoice.apk proprietary
+adb pull /system/app/kickback.apk proprietary
+adb pull /system/app/LatinImeGoogle.apk proprietary
+adb pull /system/app/LatinImeTutorial.apk proprietary
+adb pull /system/app/MarketUpdater.apk proprietary
+adb pull /system/app/MediaUploader.apk proprietary
+adb pull /system/app/NetworkLocation.apk proprietary
+adb pull /system/app/OneTimeInitializer.apk proprietary
+adb pull /system/app/PassionQuickOffice.apk proprietary
+adb pull /system/app/SetupWizard.apk proprietary
+adb pull /system/app/soundback.apk proprietary
+adb pull /system/app/Street.apk proprietary
+adb pull /system/app/Talk.apk proprietary
+adb pull /system/app/talkback.apk proprietary
+adb pull /system/app/Twitter.apk proprietary
+adb pull /system/app/Vending.apk proprietary
+adb pull /system/app/VoiceSearch.apk proprietary
+adb pull /system/app/YouTube.apk proprietary
+adb pull /system/etc/permissions/com.google.android.maps.xml proprietary
+adb pull /system/framework/com.google.android.maps.jar proprietary
+adb pull /system/lib/libinterstitial.so proprietary
+adb pull /system/lib/libspeech.so proprietary
 
-def download():
-    try:
-        os.makedirs("proprietary")
-    except:
-        pass
-    os.chdir("proprietary")
-    if len(MIRRORS) > 1:
-        i = random.randrange(0, len(MIRRORS)-1)
-    else:
-        i = 0
-    url = MIRRORS[i] + FILENAME
-    print "Fetching from %s" % url
-
-    data = urllib2.urlopen(url).read()
-    zip = zipfile.ZipFile(StringIO.StringIO(data),'r')
-    
-    for filename in zip.namelist():
-        if filename.split("/")[0] == "system":
-            print "Extracting %s" % filename
-            zip.extract(filename)
-
-def main():
-    parser = OptionParser(usage="usage: %prog [options]")
-    parser.add_option("-m", "--method", dest='method', default="device", help="Extraction Method: device, download [default: device]")
-    (options, args) = parser.parse_args()
-
-    if options.method == "device":
-        return device()
-
-    if options.method == "download":
-        return download()
-
-if __name__ == '__main__':
-    main()
