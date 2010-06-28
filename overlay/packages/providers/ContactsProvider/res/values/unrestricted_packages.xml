@@ -25,12 +25,10 @@
         <item>com.android.mms</item>
         <item>com.google.android.gm</item>
         <item>com.android.email</item>
-        <item>com.google.android.email</item>
         <item>com.android.phone</item>
         <item>com.google.android.apps.maps</item>
-        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.android.globalsearch</item>
         <item>com.android.calendar</item>
-        <item>com.google.android.calendar</item>
         <item>com.google.android.talk</item>
         <item>android</item>
 
