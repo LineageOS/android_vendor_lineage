@@ -1,0 +1,105 @@
+#!/bin/sh
+#
+# Squish a CM otapackage for distribution
+# cyanogen
+#
+
+OUT_TARGET_HOST=$(uname -a | grep Darwin)
+if [ -z "$OUT_TARGET_HOST" ]
+then
+   OUT_TARGET_HOST=linux-x86
+   MD5=md5sum
+else
+   OUT_TARGET_HOST=darwin-x86
+   MD5=md5
+fi
+
+OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$LOGNAME.zip
+if [ ! -f "$OTAPACKAGE" ]; then
+   echo "$OTAPACKAGE doesn't exist!";
+   exit 1
+fi
+
+XBIN=$OUT/system/xbin
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/cyanogen/tools/opticharger
+
+DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
+
+WORK=/tmp/repack
+rm -rf $WORK
+mkdir -p $WORK
+
+if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
+then
+   # Create the xbin squashfs
+   cp -a $XBIN $WORK/xbin/
+   cd $WORK/xbin
+   chown -R 1000:1000 *
+   chmod -R 755 *
+   rm su
+   ln -s ../bin/su su
+   mksquashfs . $WORK/xbin.sqf
+fi
+
+# Unpack the otapackage and opticharge all apks
+mkdir $WORK/ota
+cd $WORK/ota
+unzip $OTAPACKAGE
+cd system/framework
+$OPTICHARGER framework-res.apk
+cd ../app
+for i in *.apk; do
+   $OPTICHARGER $i;
+done
+
+cd $WORK/ota/system
+
+if [ "$TARGET_PRODUCT" == "cyanogen_dream_sapphire" ]
+then
+   # Relocate su and put xbin.sqf where it belongs
+   rm -f bin/su
+   mv xbin/su bin/su
+   rm -rf xbin/*
+   mv $WORK/xbin.sqf xbin/
+fi
+
+# Fix build.prop
+grep -v ro.kernel.android.checkjni build.prop | sed -e "s/^ro\.build\.type=eng$/ro\.build\.type=user/g" > build.prop.new
+mv build.prop.new build.prop
+
+# Delete unnecessary binaries
+for i in $DELETE_BINS; do
+   rm -f bin/$i
+done
+
+# Find the CM version
+MODVERSION=`grep ro.modversion build.prop | sed -e "s/^.*CyanogenMod-//g"`
+
+# No need for recovery
+cd $WORK/ota
+rm -rf recovery
+
+# Remove xbin stuff and fix up updater-script
+if [ "$TARGET_PRODUCT" == "cyanogen_dream_sapphire" ]
+then
+   sed -e "s/system\/xbin\/su/system\/bin\/su/g" META-INF/com/google/android/updater-script | grep -v xbin > updater-script.new
+else
+   cp META-INF/com/google/android/updater-script updater-script.new
+fi
+
+echo "ui_print(\"Welcome to CyanogenMod-$MODVERSION!\");" > META-INF/com/google/android/updater-script
+cat updater-script.new >> META-INF/com/google/android/updater-script
+rm updater-script.new
+
+# Pack it up and sign
+zip -r update.zip .
+echo "Signing package.."
+SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
+java -Xmx2048m -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar -w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 update.zip update_signed.zip
+
+mv update_signed.zip $OUT/update-cm-$MODVERSION-signed.zip
+$MD5 $OUT/update-cm-$MODVERSION-signed.zip > $OUT/update-cm-$MODVERSION-signed.zip.md5sum
+
+echo "Package complete: $OUT/update-cm-$MODVERSION-signed.zip";
+cat $OUT/update-cm-$MODVERSION-signed.zip.md5sum
+

@@ -1,0 +1,119 @@
+#!/bin/sh
+#
+# Super-mega opticharger of doom
+# Shrinks apks by running pngcrush on png images
+#
+# Point APKCERTS at the full path to a generated apkcerts.txt file, such as:
+# /home/shade/dev/sources/android-cm-eclair/out/target/product/dream_sapphire/obj/PACKAGING/target_files_intermediates/cyanogen_dream_sapphire-target_files-eng.shade/META/apkcerts.txt
+#
+# cyanogen - shade@chemlab.org
+# ChrisSoyars - me@ctso.me
+
+OUT_TARGET_HOST=$(uname -a | grep Darwin)
+if [ -z "$OUT_TARGET_HOST" ]
+then
+    OUT_TARGET_HOST=linux-x86
+else
+    OUT_TARGET_HOST=darwin-x86
+fi
+
+set -e
+
+BASE=`pwd`
+if [ "$APKCERTS" = "" ];
+then
+    APKCERTS=$OUT/obj/PACKAGING/target_files_intermediates/$TARGET_PRODUCT-target_files-$TARGET_BUILD_VARIANT.$LOGNAME/META/apkcerts.txt
+    if [ ! -f "$APKCERTS" ];
+    then
+        echo "Set APKCERTS to the path to your apkcerts.txt file"
+        exit 1;
+    fi
+fi
+
+if [ ! -f "$APKCERTS" ];
+then
+    echo "Invalid path to apkcerts.txt, set APKCERTS to the correct path."
+fi
+
+if [ "`which pngcrush`" = "" ];
+then
+    echo "Please install pngcrush"
+    exit 1;
+fi
+
+if [ "`which aapt`" = "" ];
+then
+    echo "Please ensure aapt is in your \$PATH"
+    exit 1;
+fi
+
+if [ "`which zipalign`" = "" ];
+then
+    echo "Please ensure zipalign is in your \$PATH"
+    exit 1;
+fi
+
+if [ -e "$1" ];
+then
+    NAME=`basename $1`;
+    echo "Optimizing $NAME...";
+
+    if [ "$2" != "" ];
+    then
+        CERT=build/target/product/security/$2.x509.pem
+        KEY=build/target/product/security/$2.pk8
+        if [ ! -f "$ANDROID_BUILD_TOP/$CERT" ];
+        then
+            echo "$CERT does not exist!";
+            exit 1;
+        fi
+    else
+        APKINFO=`grep "name=\"$NAME\"" $APKCERTS`;
+        echo "APKINFO: $APKINFO";
+        if [ "$APKINFO" = "" ];
+        then
+            echo "No apk info for $NAME";
+            exit 1;
+        fi
+        CERT=`echo $APKINFO | awk {'print $2'} | cut -f 2 -d "=" | tr -d "\""`;
+        KEY=`echo $APKINFO | awk {'print $3'} | cut -f 2 -d "=" | tr -d "\""`;
+        if [ "$CERT" = "" ];
+        then
+            echo "Unable to find certificate for $NAME"
+            exit 1;
+        fi
+    fi
+
+    echo "Certificate: $CERT";
+
+    rm -rf /tmp/$NAME
+    mkdir /tmp/$NAME
+    cd /tmp/$NAME
+    unzip $BASE/$1
+    for x in `find . -name "*.png" | grep -v "\.9.png$" | tr "\n" " "`
+    do
+        echo "Crushing $x"
+        pngcrush $x $x.crushed 1>/dev/null
+        if [ -e "$x.crushed" ];
+        then
+            mv $x.crushed $x
+        fi
+    done
+    cp $BASE/$1 $BASE/$1.old
+
+    echo "Repacking apk.."
+    aapt p -0 res/raw -0 res/raw-en -F $NAME .
+    
+        echo "Resigning with cert: `echo $CERT`"
+
+    echo java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
+    java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
+    echo "Zipalign.."
+    zipalign -f 4 signed_$NAME $BASE/$1
+    ls -l $BASE/$1.old
+    ls -l $BASE/$1
+    rm $BASE/$1.old
+else
+    echo "Usage: $0 [apk file]"
+fi
+
