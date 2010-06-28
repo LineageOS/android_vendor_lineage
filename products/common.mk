@@ -20,8 +20,8 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/CHANGELOG:system/etc/CHANGELOG-CM.txt \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# Allow the use of overlays
-PRODUCT_PACKAGE_OVERLAYS := vendor/cyanogen/overlay
+# Common CM overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
 
 # Bring in some audio files
 include frameworks/base/data/sounds/AudioPackage4.mk
