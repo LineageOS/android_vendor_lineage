@@ -6,9 +6,9 @@ $(call inherit-product, vendor/cyanogen/products/common.mk)
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cyanogen_incredible
-PRODUCT_BRAND := verizon
-PRODUCT_DEVICE := incredible
+PRODUCT_NAME := cyanogen_inc
+PRODUCT_BRAND := htc
+PRODUCT_DEVICE := inc
 PRODUCT_MODEL := Incredible
 PRODUCT_MANUFACTURER := HTC
 

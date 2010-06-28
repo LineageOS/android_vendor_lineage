@@ -1,4 +1,4 @@
 add_lunch_combo cyanogen_passion-eng
-add_lunch_combo cyanogen_incredible-eng
+add_lunch_combo cyanogen_inc-eng
 add_lunch_combo cyanogen_heroc-eng
 add_lunch_combo cyanogen_sholes-eng
