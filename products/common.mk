@@ -23,6 +23,9 @@ PRODUCT_COPY_FILES += \
 # Allow the use of overlays
 PRODUCT_PACKAGE_OVERLAYS := vendor/cyanogen/overlay
 
+# Bring in some audio files
+include frameworks/base/data/sounds/AudioPackage4.mk
+
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/lib/libncurses.so:system/lib/libncurses.so \
     vendor/cyanogen/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
@@ -83,7 +86,7 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/cyanogen/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
         vendor/cyanogen/proprietary/libinterstitial.so:./system/lib/libinterstitial.so \
         vendor/cyanogen/proprietary/libspeech.so:./system/lib/libspeech.so
-else    
+else
     PRODUCT_PACKAGES += \
         Provision \
         GoogleSearch \
