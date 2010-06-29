@@ -52,7 +52,7 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/cyanogen/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
         vendor/cyanogen/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
         vendor/cyanogen/proprietary/com.amazon.mp3.apk:./system/app/com.amazon.mp3.apk \
-        vendor/cyanogen/proprietary/com.google.android.apps.maps-1.apk:./system/app/com.google.android.apps.maps-1.apk \
+        vendor/cyanogen/proprietary/Maps.apk:./system/app/Maps.apk \
         vendor/cyanogen/proprietary/Facebook.apk:./system/app/Facebook.apk \
         vendor/cyanogen/proprietary/GenieWidget.apk:./system/app/GenieWidget.apk \
         vendor/cyanogen/proprietary/Gmail.apk:./system/app/Gmail.apk \

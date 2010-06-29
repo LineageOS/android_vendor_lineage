@@ -5,7 +5,7 @@ mkdir -p proprietary
 adb pull /system/app/CarHomeGoogle.apk proprietary
 adb pull /system/app/CarHomeLauncher.apk proprietary
 adb pull /system/app/com.amazon.mp3.apk proprietary
-adb pull /system/app/com.google.android.apps.maps-1.apk proprietary
+adb pull /system/app/Maps.apk proprietary
 adb pull /system/app/Facebook.apk proprietary
 adb pull /system/app/GenieWidget.apk proprietary
 adb pull /system/app/Gmail.apk proprietary
