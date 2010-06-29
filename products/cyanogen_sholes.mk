@@ -18,10 +18,10 @@ PRODUCT_MANUFACTURER := Motorola
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-N1
+        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Droid
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-N1-test0
+        ro.modversion=CyanogenMod-6.0.0-Droid-alpha0
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRF57 BUILD_DISPLAY_ID="userdebug 2.2 FRF57 38829 test-keys" PRODUCT_NAME=voles TARGET_DEVICE=sholes BUILD_FINGERPRINT=verizon/voles/sholes/sholes:2.2/FRF57/38829:userdebug/test-keys PRODUCT_BRAND=verizon PRIVATE_BUILD_DESC="voles-userdebug 2.2 FRF57 38829 test-keys" BUILD_NUMBER=38829 BUILD_UTC_DATE=1274994078 TARGET_BUILD_TYPE=userdebug
