@@ -6,6 +6,9 @@ PRODUCT_DEVICE := generic
 # Use edify for otapackage
 PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=edify
 
+# Include backuptool
+PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=true
+
 # Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmod
@@ -46,7 +49,7 @@ PRODUCT_COPY_FILES +=  \
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
 ifdef CYANOGEN_WITH_GOOGLE
-    PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=False
+    PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=false
 
     PRODUCT_COPY_FILES += \
         vendor/cyanogen/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
