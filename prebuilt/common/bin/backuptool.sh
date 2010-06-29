@@ -64,6 +64,7 @@ app/Vending.apk
 app/VoiceSearch.apk
 app/YouTube.apk
 etc/permissions/com.google.android.maps.xml
+etc/permissions/features.xml
 framework/com.google.android.maps.jar
 lib/libinterstitial.so
 lib/libspeech.so

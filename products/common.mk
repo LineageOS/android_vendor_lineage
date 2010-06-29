@@ -87,6 +87,7 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/cyanogen/proprietary/YouTube.apk:./system/app/YouTube.apk \
         vendor/cyanogen/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
         vendor/cyanogen/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
+	vendor/cyanogen/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/cyanogen/proprietary/libinterstitial.so:./system/lib/libinterstitial.so \
         vendor/cyanogen/proprietary/libspeech.so:./system/lib/libspeech.so
 else
