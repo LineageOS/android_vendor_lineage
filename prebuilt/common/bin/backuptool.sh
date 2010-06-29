@@ -30,7 +30,6 @@ get_files() {
 app/CarHomeGoogle.apk
 app/CarHomeLauncher.apk
 app/com.amazon.mp3.apk
-app/com.google.android.apps.maps-1.apk
 app/Facebook.apk
 app/GenieWidget.apk
 app/Gmail.apk
@@ -49,6 +48,7 @@ app/HtcSettings.apk
 app/kickback.apk
 app/LatinImeGoogle.apk
 app/LatinImeTutorial.apk
+app/Maps.apk
 app/MarketUpdater.apk
 app/MediaUploader.apk
 app/NetworkLocation.apk
