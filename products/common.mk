@@ -13,6 +13,15 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=true
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmod
 
+# Used by BusyBox
+KERNEL_MODULES_DIR:=/system/lib/modules
+
+# Tiny toolbox
+TINY_TOOLBOX:=true
+
+# Enable Windows Media if supported by the board
+WITH_WINDOWS_MEDIA:=true
+
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
     CMParts \
