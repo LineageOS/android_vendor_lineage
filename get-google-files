@@ -2,8 +2,8 @@
 import sys, random, urllib2, zipfile, StringIO, os
 from optparse import OptionParser
 
-FILENAME="gapps-passion-FRF83-signed.zip"
-MIRRORS=["http://www.kanged.net/up/files/1/",]
+FILENAME="gapps-passion-FRF85B-signed.zip"
+MIRRORS=["http://www.kanged.net/mirror/gapps/",]
 
 def device():
     print "usage: extract-google-files -m [method]"
@@ -29,11 +29,14 @@ def download():
     for filename in zip.namelist():
         if filename.split("/")[0] == "system":
             print "Extracting %s" % filename
-            zip.extract(filename)
+            try:
+                zip.extract(filename)
+            except:
+                pass
 
 def main():
     parser = OptionParser(usage="usage: %prog [options]")
-    parser.add_option("-m", "--method", dest='method', default="device", help="Extraction Method: device, download [default: device]")
+    parser.add_option("-m", "--method", dest='method', default="download", help="Extraction Method: device, download [default: device]")
     (options, args) = parser.parse_args()
 
     if options.method == "device":
