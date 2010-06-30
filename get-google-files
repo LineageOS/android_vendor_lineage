@@ -15,7 +15,6 @@ def download():
         os.makedirs("proprietary")
     except:
         pass
-    os.chdir("proprietary")
     if len(MIRRORS) > 1:
         i = random.randrange(0, len(MIRRORS)-1)
     else:
@@ -27,11 +26,15 @@ def download():
     zip = zipfile.ZipFile(StringIO.StringIO(data),'r')
     
     for filename in zip.namelist():
-        if filename.split("/")[0] == "system":
+        if filename.split("/")[0] == "system" and filename[-1] != "/":
             print "Extracting %s" % filename
             try:
-                zip.extract(filename)
-            except:
+                bytes = zip.read(filename)
+                fd = open("proprietary/"+os.path.basename(filename),"wb")
+                fd.write(bytes)
+                fd.close()
+            except Exception, e:
+                print e
                 pass
 
 def main():
