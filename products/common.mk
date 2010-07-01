@@ -23,6 +23,10 @@ TINY_TOOLBOX:=true
 # Enable Windows Media if supported by the board
 WITH_WINDOWS_MEDIA:=true
 
+ifndef DEFAULT_LAUNCHER
+    PRODUCT_PACKAGES += ADWLauncher
+endif
+
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
     CMParts \

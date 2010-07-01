@@ -3,3 +3,7 @@
 ifdef CYANOGEN_WITH_GOOGLE
     PACKAGES.Email.OVERRIDES := Provision LatinIME QuickSearchBox
 endif
+
+ifndef DEFAULT_LAUNCHER
+    PACKAGES.ADWLauncher.OVERRIDES := Launcher Launcher2
+endif

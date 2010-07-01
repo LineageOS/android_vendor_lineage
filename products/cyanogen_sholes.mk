@@ -1,6 +1,8 @@
 # Inherit AOSP device configuration for passion.
 $(call inherit-product, device/motorola/sholes/sholes.mk)
 
+DEFAULT_LAUNCHER := true
+
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
 
