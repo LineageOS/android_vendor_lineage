@@ -1,3 +1,2 @@
-mkdir -p proprietary
-cd proprietary
-curl -O http://www.droidaftermarket.com/koush/recoveries/RomManager.apk
+mkdir -p `dirname $0`/proprietary
+curl -o `dirname $0`/proprietary/RomManager.apk -O http://www.droidaftermarket.com/koush/recoveries/RomManager.apk
