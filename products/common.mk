@@ -11,6 +11,7 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=true
 
 # Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=DonMessWivIt.ogg \
     ro.rommanager.developerid=cyanogenmod
 
 # Used by BusyBox
