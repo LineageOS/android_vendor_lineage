@@ -30,6 +30,5 @@ endif
 # Copy sapphire specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/prebuilt/dream-sapphire/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/cyanogen/prebuilt/dream-sapphire/media/bootanimation.zip:system/media/bootanimation.zip
 
-USE_CAMERA_STUB := false
