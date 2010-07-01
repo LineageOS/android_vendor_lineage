@@ -5,3 +5,4 @@ add_lunch_combo cyanogen_sholes-eng
 add_lunch_combo cyanogen_dream-eng
 add_lunch_combo cyanogen_sapphire-eng
 add_lunch_combo cyanogen_bravo-eng
+add_lunch_combo cyanogen_espresso-eng
