@@ -18,6 +18,12 @@ PRIVATE_BUILD_DESC="passion-user 2.2 FRF85B 42745 release-keys"
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
 
+# Extra RIL settings
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.enable.managed.roaming=1 \
+    ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995 \
+    ro.ril.emc.mode=2
+
 #
 # Set ro.modversion
 #
@@ -26,7 +32,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-N1
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-N1-alpha1
+        ro.modversion=CyanogenMod-6.0.0-N1-alpha2
 endif
 
 #
