@@ -2,7 +2,7 @@
 import sys, random, urllib2, zipfile, StringIO, os
 from optparse import OptionParser
 
-FILENAME="gapps-passion-FRF85B-signed.zip"
+FILENAME="gapps-passion-FRF91-signed.zip"
 MIRRORS=["http://www.kanged.net/mirror/gapps/",]
 
 def device():
