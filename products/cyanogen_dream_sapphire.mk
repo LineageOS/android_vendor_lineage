@@ -4,6 +4,9 @@ $(call inherit-product, device/htc/dream_sapphire/full_dream_sapphire.mk)
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
 
+# Include GSM-only stuff
+$(call inherit-product, vendor/cyanogen/products/gsm.mk)
+
 #
 # Setup device specific product configuration.
 #

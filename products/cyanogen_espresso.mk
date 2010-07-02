@@ -4,6 +4,9 @@ $(call inherit-product, device/htc/espresso/espresso.mk)
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
 
+# Include GSM stuff
+$(call inherit-product, vendor/cyanogen/products/gsm.mk)
+
 #
 # Setup device specific product configuration.
 #
