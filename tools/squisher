@@ -97,8 +97,13 @@ echo "Signing package.."
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx2048m -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar -w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 update.zip update_signed.zip
 
-mv update_signed.zip $OUT/update-cm-$MODVERSION-signed.zip
-$MD5 $OUT/update-cm-$MODVERSION-signed.zip > $OUT/update-cm-$MODVERSION-signed.zip.md5sum
+if [ "$CYANOGEN_NIGHTLY" != "" ]
+then
+    mv update_signed.zip $OUT/update-squished.zip
+else
+    mv update_signed.zip $OUT/update-cm-$MODVERSION-signed.zip
+    $MD5 $OUT/update-cm-$MODVERSION-signed.zip > $OUT/update-cm-$MODVERSION-signed.zip.md5sum
+fi
 
 echo "Package complete: $OUT/update-cm-$MODVERSION-signed.zip";
 cat $OUT/update-cm-$MODVERSION-signed.zip.md5sum
