@@ -33,12 +33,11 @@ if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
 then
    # Create the xbin squashfs
    cp -a $XBIN $WORK/xbin/
-   cd $WORK/xbin
-   chown -R 1000:1000 *
-   chmod -R 755 *
-   rm su
-   ln -s ../bin/su su
-   mksquashfs . $WORK/xbin.sqf
+   chown -R 1000:1000 $WORK/xbin/*
+   chmod -R 755 $WORK/xbin/*
+   rm $WORK/xbin/su
+   ln -s $WORK/bin/su $WORK/xbin/su
+   mksquashfs $WORK/xbin/* $WORK/xbin.sqf
 fi
 
 # Unpack the otapackage and opticharge all apks
