@@ -99,12 +99,12 @@ java -Xmx2048m -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signa
 
 if [ "$CYANOGEN_NIGHTLY" != "" ]
 then
-    mv update_signed.zip $OUT/update-squished.zip
+    OUTFILE=$OUT/update-squished.zip
 else
-    mv update_signed.zip $OUT/update-cm-$MODVERSION-signed.zip
-    $MD5 $OUT/update-cm-$MODVERSION-signed.zip > $OUT/update-cm-$MODVERSION-signed.zip.md5sum
+    OUTFILE=$OUT/update-cm-$MODVERSION-signed.zip
 fi
-
+mv update_signed.zip $OUTFILE
+$MD5 $OUTFILE > $OUTFILE.md5sum
 echo "Package complete: $OUT/update-cm-$MODVERSION-signed.zip";
-cat $OUT/update-cm-$MODVERSION-signed.zip.md5sum
+cat $OUTFILE.md5sum
 
