@@ -2,3 +2,6 @@
 * Common: Added battery percentage display.
 * Common: Added OpenVPN support.
 * Common: Updated Japanese translations.
+* Common: Added option for 270, 360 rotation.
+* Common: Added option to enable WebView reflow.
+* Common: Added additional settings for Passion RIL to build.
