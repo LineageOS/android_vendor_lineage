@@ -1,2 +1,4 @@
 --- 6.0.0-alpha2
 * Common: Added battery percentage display.
+* Common: Added OpenVPN support.
+* Common: Updated Japanese translations.
