@@ -15,8 +15,8 @@ PRODUCT_BRAND := google
 PRODUCT_DEVICE := passion
 PRODUCT_MODEL := Nexus One
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF85B BUILD_DISPLAY_ID=FRF85B PRODUCT_NAME=passion BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF85B/42745:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
-PRIVATE_BUILD_DESC="passion-user 2.2 FRF85B 42745 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=passion BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
+PRIVATE_BUILD_DESC="passion-user 2.2 FRF91 43546 release-keys"
 
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
