@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for passion.
-$(call inherit-product, device/htc/heroc/froyo_heroc.mk)
+#$(call inherit-product, device/htc/heroc/froyo_heroc.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
