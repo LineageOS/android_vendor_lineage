@@ -44,7 +44,7 @@ PRODUCT_PACKAGES += \
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/CHANGELOG:system/etc/CHANGELOG-CM.txt
+    vendor/cyanogen/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
 # Common CM overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
