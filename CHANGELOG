@@ -5,3 +5,4 @@
 * Common: Added option for 270, 360 rotation.
 * Common: Added option to enable WebView reflow.
 * Common: Added additional settings for Passion RIL to build.
+* N1: Bumped to FRF91.
