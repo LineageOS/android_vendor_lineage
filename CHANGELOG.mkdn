@@ -11,4 +11,5 @@ CHANGELOG
 * Common: Added option for 270, 360 rotation.
 * Common: Added option to enable WebView reflow immediately after pinch to zoom.
 * Common: Added additional settings for Passion RIL to build.
+* Common: Added settings for configruable number of recent applications and custom home key binding.
 * N1: Bumped to FRF91.
