@@ -20,6 +20,11 @@ PRIVATE_BUILD_DESC="dream-user 2.2 FRF83 42295 release-keys"
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-ds.map
 
+# Build kernel
+PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
+PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
+PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_mahimahi_defconfig
+
 #
 # Set ro.modversion
 #
