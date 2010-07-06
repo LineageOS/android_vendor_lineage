@@ -12,4 +12,10 @@ CHANGELOG
 * Common: Added option to enable WebView reflow immediately after pinch to zoom.
 * Common: Added additional settings for Passion RIL to build.
 * Common: Added settings for configruable number of recent applications and custom home key binding.
+* Common: Added incognito browser window from optedoblivion.
+* Common: Upgraded to Superuser 2.2.
+* Common: 'System Updates' setting option hidden.
+* Common: Added invisible lock pattern option.
+* D/S: Opencore build tweaks to prevent the need for a separate D/S branch.
+* Heroes: Added light sensor support.
 * N1: Bumped to FRF91.
