@@ -56,6 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/cyanogen/prebuilt/common/lib/libncurses.so:system/lib/libncurses.so \
     vendor/cyanogen/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/cyanogen/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/cyanogen/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
     vendor/cyanogen/prebuilt/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown \
     vendor/cyanogen/prebuilt/common/etc/profile:system/etc/profile \
