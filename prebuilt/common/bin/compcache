@@ -1,0 +1,32 @@
+#!/system/bin/sh
+#
+# Compcache manager
+# shade@chemlab.org (cyanogen)
+#
+
+DEV=/dev/block/ramzswap0
+MODULE=ramzswap
+MODULES_DIR=/system/modules/lib/modules/`uname -r`
+
+case "$1" in
+   start)
+      echo 3 > /proc/sys/vm/drop_caches
+      modprobe $MODULE
+      rzscontrol $DEV --init
+      swapon $DEV
+   ;;
+
+   stop)
+      swapoff $DEV >/dev/null 2>&1
+      rmmod $MODULE >/dev/null 2>&1
+   ;;
+   stats)
+      rzscontrol $DEV --stats
+   ;;
+   *)
+      echo "Usage: $0 {start|stop|stats}"
+      exit 1
+esac
+
+exit 0
+
