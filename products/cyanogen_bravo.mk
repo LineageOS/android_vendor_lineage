@@ -1,4 +1,4 @@
-# Inherit AOSP device configuration for passion.
+# Inherit AOSP device configuration for bravo.
 $(call inherit-product, device/htc/bravo/full_bravo.mk)
 
 # Inherit some common cyanogenmod stuff.
