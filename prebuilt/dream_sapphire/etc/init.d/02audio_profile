@@ -1,0 +1,13 @@
+#!/system/bin/sh
+
+if [ ! -e /system/etc/AudioPara4.csv ];
+then
+	mount -o remount,rw /system
+	if [ `getprop ro.product.device` = "dream" ];
+	then
+		ln -s /system/etc/AudioPara_dream.csv /system/etc/AudioPara4.csv
+	else
+		ln -s /system/etc/AudioPara_sapphire.csv /system/etc/AudioPara4.csv
+	fi
+	mount -o remount,ro /system
+fi	

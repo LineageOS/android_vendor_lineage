@@ -1,0 +1,54 @@
+#!/system/bin/sh
+#
+# mount ext[234] partition from sd card
+
+BB="logwrapper busybox";
+
+if [ "$SD_EXT_DIRECTORY" = "" ];
+then
+    SD_EXT_DIRECTORY=/sd-ext;
+fi;
+
+# find first linux partition on SD card
+MMC=/dev/block/mmcblk0
+
+# wait for the device to settle
+COUNT=6;
+until [ -b "$MMC" ] || [ $COUNT -lt 1 ];
+do
+    sleep 1;
+    COUNT=$((COUNT-1));
+done;
+
+if [ -b "$MMC" ];
+then
+    FDISK="busybox fdisk"
+    PARTITION=`$FDISK -l $MMC | awk '/^\// && $5 == 83 {print $1;exit;}'`
+
+    if [ -b "$PARTITION" ];
+    then
+        log -p i -t mountsd "Checking filesystems..";
+   
+        # fsck the sdcard filesystem first
+        logwrapper e2fsck -y $PARTITION;
+   
+        # set property with exit code in case an error occurs
+        setprop cm.e2fsck.errors $?;
+        if [ "$?" = 0 ];
+        then
+   
+            # mount and set perms
+            $BB mount -o noatime,nodiratime -t auto $PARTITION $SD_EXT_DIRECTORY;
+            if [ "$?" = 0 ];
+            then
+                $BB chown 1000:1000 $SD_EXT_DIRECTORY;
+                $BB chmod 771 $SD_EXT_DIRECTORY;
+                log -p i -t mountsd "$SD_EXT_DIRECTORY successfully mounted";
+            else
+                log -p e -t mountsd "Unable to mount filesystem for $SD_EXT_DIRECTORY!";
+            fi
+        else
+            log -p e -t mountsd "Unable to repair filesystem, disabling apps2sd";
+        fi
+    fi
+fi

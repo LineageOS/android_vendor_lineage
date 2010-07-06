@@ -1,0 +1,14 @@
+#!/system/bin/sh
+#
+# Load any extra modules
+
+MODULES=""
+
+if [ "`getprop persist.net.ipv6`" = "1" ]; then
+	MODULES="$MODULES ipv6"
+fi
+
+for i in $MODULES;
+do
+    modprobe $i;
+done

@@ -1,0 +1,12 @@
+#!/system/bin/sh
+#
+# Print startup info
+#
+L="log -p i -t cm"
+
+$L "Welcome to Android `getprop ro.build.version.release` / `getprop ro.modversion`";
+$L "                                                _ ";
+$L " __ __ _ ___  _ _  __  ___  __ _ _  _  _  __  __))";
+$L "((_ \\(/'((_( ((\\( ((_)((_( (('((\\( ((\`1( ((_)((_( ";
+$L "     ))                 _))";
+$L " ";

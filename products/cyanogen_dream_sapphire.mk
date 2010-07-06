@@ -25,6 +25,9 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_msm_defconfig
 
+PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/dream_sapphire/etc/init.d/02audio_profile:system/etc/init.d/02audio_profile
+
 #
 # Set ro.modversion
 #
