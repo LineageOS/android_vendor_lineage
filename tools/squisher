@@ -53,7 +53,7 @@ done
 
 cd $WORK/ota/system
 
-if [ "$TARGET_PRODUCT" == "cyanogen_dream_sapphire" ]
+if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
 then
    # Relocate su and put xbin.sqf where it belongs
    rm -f bin/su
@@ -79,7 +79,7 @@ cd $WORK/ota
 rm -rf recovery
 
 # Remove xbin stuff and fix up updater-script
-if [ "$TARGET_PRODUCT" == "cyanogen_dream_sapphire" ]
+if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
 then
    sed -e "s/system\/xbin\/su/system\/bin\/su/g" META-INF/com/google/android/updater-script | grep -v xbin > updater-script.new
 else
