@@ -18,6 +18,9 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF83 BUILD_DISPLAY_ID=FRF83 PRODUCT_NAME=passion BUILD_FINGERPRINT=/passion/passion/mahimahi:2.2/FRF83/42295:user/release-keys
 PRIVATE_BUILD_DESC="hero-user 2.2 FRF83 42295 release-keys"
 
+# Build Kernel
+PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL= device/htc/hero/kernel
+
 #
 # Set ro.modversion
 #
