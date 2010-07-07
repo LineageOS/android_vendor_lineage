@@ -19,7 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF85B BUILD_DISPLAY_ID=FRF85B PRODUCT_
 PRIVATE_BUILD_DESC="espresso-user 2.2  42745 release-keys"
 
 # Build Kernel
-PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL= device/htc/espresso/kernel
+PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/espresso/kernel
 
 #
 # Set ro.modversion
