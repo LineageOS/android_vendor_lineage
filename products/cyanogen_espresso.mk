@@ -34,5 +34,3 @@ endif
 #
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/espresso/media/bootanimation.zip:system/media/bootanimation.zip
-
-TARGET_PREBUILT_KERNEL := device/htc/espresso/kernel
