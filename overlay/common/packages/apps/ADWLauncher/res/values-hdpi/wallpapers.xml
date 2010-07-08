@@ -39,11 +39,29 @@
         <item>wallpaper_nexusrain</item>
         <item>wallpaper_nexuspattern</item>
         <item>wallpaper_nexuswallpaper1</item>
-        <item>wallpaper_brown</item>
         <item>wallpaper_pcut</item>
         <item>wallpaper_bluedotgrid</item>
         <item>wallpaper_hazybluedots</item>
         <item>wallpaper_ropelights</item>
         <item>wallpaper_prash_cm_girls</item>
+        <item>wallpaper_jai_cm3dcubes</item>
+	<item>wallpaper_jai_cmbrickwall</item>
+	<item>wallpaper_jaI_cmcaustic</item>
+	<item>wallpaper_jai_cmceation</item>
+	<item>wallpaper_jai_cmchrome</item>
+	<item>wallpaper_jai_cmcubes</item>
+	<item>wallpaper_jai_cmdiamondplate</item>
+	<item>wallpaper_jai_cmmodern</item>
+	<item>wallpaper_jai_cmmoderntint</item>
+	<item>wallpaper_jai_cmmovieclip</item>
+	<item>wallpaper_jai_cmorb</item>
+	<item>wallpaper_jai_cmradioactive</item>
+	<item>wallpaper_jai_cmride</item>
+	<item>wallpaper_jai_cmskateteam</item>
+	<item>wallpaper_jai_cmtintedcubes</item>
+	<item>wallpaper_jai_cmwoodedbg</item>
+	<item>wallpaper_jai_cmwornmovieclip</item>
+
+        
     </string-array>
 </resources>
