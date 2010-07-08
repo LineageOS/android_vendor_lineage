@@ -1,0 +1,23 @@
+CM-6.0.0 TODO
+--------------------
+
+MUST:
+
+* D/S: Install correct audio profile for device (also MT3G 1.2)
+* D/S: Don't let user select 32m heapsize in CMParts
+* D/S: Gallery3D- fixit or ditchit
+* Common: New version of ROM Manager from Koush
+* Common: Connect "System Updates" in Settings to ROM Manager
+* Common: Contacts app crash when user call button pressed and user has multiple numbers http://pastebin.com/pDzVwGiw
+* Common: Make a CONTRIBUTORS file
+* Common: Make a better CHANGELOG file
+
+SHOULD:
+
+* Common: Adhoc WiFi support (complete code change)
+* Common: Proxy support
+* Common: Add custom ui_print statements in edify generator
+* Common: Updated wallpaper gallery (JaiThemes was working on this)
+* Common: MMS black background
+* Common: Cytown Phone mod
+
