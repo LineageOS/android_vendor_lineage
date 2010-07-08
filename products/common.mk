@@ -57,7 +57,6 @@ include frameworks/base/data/sounds/AudioPackage4.mk
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/cyanogen/prebuilt/common/lib/libncurses.so:system/lib/libncurses.so \
     vendor/cyanogen/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/cyanogen/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/cyanogen/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
@@ -71,11 +70,9 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
     vendor/cyanogen/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/cyanogen/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
-    vendor/cyanogen/prebuilt/common/xbin/bash:system/xbin/bash \
     vendor/cyanogen/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/cyanogen/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/cyanogen/prebuilt/common/xbin/lsof:system/xbin/lsof \
-    vendor/cyanogen/prebuilt/common/xbin/nano:system/xbin/nano \
     vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/cyanogen/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
