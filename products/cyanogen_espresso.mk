@@ -39,3 +39,7 @@ endif
 #
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/espresso/media/bootanimation.zip:system/media/bootanimation.zip
+
+ifndef DEFAULT_LAUNCHER
+    PRODUCT_PACKAGES += ADWLauncher
+endif

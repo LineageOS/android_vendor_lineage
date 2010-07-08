@@ -35,11 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
-# ADWLauncher is the default unless specified elsewhere
-ifndef DEFAULT_LAUNCHER
-    PRODUCT_PACKAGES += ADWLauncher
-endif
-
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
     CMParts \
