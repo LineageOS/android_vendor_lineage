@@ -4,11 +4,12 @@ CM-6.0.0 TODO
 MUST:
 
 * D/S: Install correct audio profile for device (also MT3G 1.2)
-* D/S: Don't let user select 32m heapsize in CMParts
+* D/S: Don't let user select 32m heapsize in CMParts (only for N1-class devices)
 * D/S: Gallery3D- fixit or ditchit
 * Common: New version of ROM Manager from Koush
 * Common: Connect "System Updates" in Settings to ROM Manager
 * Common: Contacts app crash when user call button pressed and user has multiple numbers http://pastebin.com/pDzVwGiw
+* Common: Fix default workspace layout
 * Common: Make a CONTRIBUTORS file
 * Common: Make a better CHANGELOG file
 
