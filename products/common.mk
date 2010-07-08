@@ -87,8 +87,6 @@ ifdef CYANOGEN_WITH_GOOGLE
     PRODUCT_COPY_FILES += \
         vendor/cyanogen/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
         vendor/cyanogen/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
-        vendor/cyanogen/proprietary/com.amazon.mp3.apk:./system/app/com.amazon.mp3.apk \
-        vendor/cyanogen/proprietary/Maps.apk:./system/app/Maps.apk \
         vendor/cyanogen/proprietary/Facebook.apk:./system/app/Facebook.apk \
         vendor/cyanogen/proprietary/GenieWidget.apk:./system/app/GenieWidget.apk \
         vendor/cyanogen/proprietary/Gmail.apk:./system/app/Gmail.apk \
@@ -99,30 +97,32 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/cyanogen/proprietary/GooglePartnerSetup.apk:./system/app/GooglePartnerSetup.apk \
         vendor/cyanogen/proprietary/GoogleQuickSearchBox.apk:./system/app/GoogleQuickSearchBox.apk \
         vendor/cyanogen/proprietary/GoogleServicesFramework.apk:./system/app/GoogleServicesFramework.apk \
-        vendor/cyanogen/proprietary/googlevoice.apk:./system/app/googlevoice.apk \
         vendor/cyanogen/proprietary/HtcCopyright.apk:./system/app/HtcCopyright.apk \
         vendor/cyanogen/proprietary/HtcEmailPolicy.apk:./system/app/HtcEmailPolicy.apk \
         vendor/cyanogen/proprietary/HtcSettings.apk:./system/app/HtcSettings.apk \
-        vendor/cyanogen/proprietary/kickback.apk:./system/app/kickback.apk \
         vendor/cyanogen/proprietary/LatinImeGoogle.apk:./system/app/LatinImeGoogle.apk \
         vendor/cyanogen/proprietary/LatinImeTutorial.apk:./system/app/LatinImeTutorial.apk \
+        vendor/cyanogen/proprietary/Maps.apk:./system/app/Maps.apk \
         vendor/cyanogen/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
         vendor/cyanogen/proprietary/MediaUploader.apk:./system/app/MediaUploader.apk \
         vendor/cyanogen/proprietary/NetworkLocation.apk:./system/app/NetworkLocation.apk \
         vendor/cyanogen/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
         vendor/cyanogen/proprietary/PassionQuickOffice.apk:./system/app/PassionQuickOffice.apk \
         vendor/cyanogen/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
-        vendor/cyanogen/proprietary/soundback.apk:./system/app/soundback.apk \
         vendor/cyanogen/proprietary/Street.apk:./system/app/Street.apk \
         vendor/cyanogen/proprietary/Talk.apk:./system/app/Talk.apk \
-        vendor/cyanogen/proprietary/talkback.apk:./system/app/talkback.apk \
         vendor/cyanogen/proprietary/Twitter.apk:./system/app/Twitter.apk \
         vendor/cyanogen/proprietary/Vending.apk:./system/app/Vending.apk \
         vendor/cyanogen/proprietary/VoiceSearch.apk:./system/app/VoiceSearch.apk \
         vendor/cyanogen/proprietary/YouTube.apk:./system/app/YouTube.apk \
+        vendor/cyanogen/proprietary/com.amazon.mp3.apk:./system/app/com.amazon.mp3.apk \
+        vendor/cyanogen/proprietary/googlevoice.apk:./system/app/googlevoice.apk \
+        vendor/cyanogen/proprietary/kickback.apk:./system/app/kickback.apk \
+        vendor/cyanogen/proprietary/soundback.apk:./system/app/soundback.apk \
+        vendor/cyanogen/proprietary/talkback.apk:./system/app/talkback.apk \
         vendor/cyanogen/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
+        vendor/cyanogen/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/cyanogen/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-	vendor/cyanogen/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/cyanogen/proprietary/libinterstitial.so:./system/lib/libinterstitial.so \
         vendor/cyanogen/proprietary/libspeech.so:./system/lib/libspeech.so
 else
