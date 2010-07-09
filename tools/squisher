@@ -82,12 +82,8 @@ rm -rf recovery
 if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
 then
    sed -e "s/system\/xbin\/su/system\/bin\/su/g" META-INF/com/google/android/updater-script | grep -v xbin > updater-script.new
-else
-   cp META-INF/com/google/android/updater-script updater-script.new
+   mv updater-script.new META-INF/com/google/android/updater-script
 fi
-
-cat updater-script.new >> META-INF/com/google/android/updater-script
-rm updater-script.new
 
 # Pack it up and sign
 zip -r update.zip .
