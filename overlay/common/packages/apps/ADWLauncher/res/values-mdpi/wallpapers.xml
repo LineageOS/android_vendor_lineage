@@ -17,7 +17,7 @@
 
 <resources>
     <string-array name="wallpapers" translatable="false">
-        <item>wallpaper_jai_cmceation</item>
+        <item>wallpaper_jai_cmchrome</item>
         <item>wallpaper_prash_nexus_surf</item>
         <item>wallpaper_prash_arrowd_blue</item>
         <item>wallpaper_prash_arrowd_green</item>
@@ -26,7 +26,7 @@
         <item>wallpaper_jai_cm3dcubes</item>
         <item>wallpaper_jai_cmbrickwall</item>
         <item>wallpaper_jai_cmcaustic</item>
-        <item>wallpaper_jai_cmchrome</item>
+        <item>wallpaper_jai_cmceation</item>
         <item>wallpaper_jai_cmcubes</item>
         <item>wallpaper_jai_cmdiamondplate</item>
         <item>wallpaper_jai_cmmodern</item>
