@@ -86,7 +86,6 @@ else
    cp META-INF/com/google/android/updater-script updater-script.new
 fi
 
-echo "ui_print(\"Welcome to CyanogenMod-$MODVERSION!\");" > META-INF/com/google/android/updater-script
 cat updater-script.new >> META-INF/com/google/android/updater-script
 rm updater-script.new
 
