@@ -1,0 +1,37 @@
+* Common: Deskclock extra settings - cyanogen, mtwebster
+* Common: ADWLauncher 0.9 - Ander Webbs
+* Common: Music app enhancements - Eliot Stocker
+* Common: Phone mod V.30.1 - cytown
+* Common: WyContacts 1.2 - Wysie (port to Froyo by Sileht)
+* Common: Superuser 2.2.2 - Adam Shanks (ChainsDD)
+* Common: MMS enhancements from Ruqqq, Takuo Kitame, Jef Oliver
+* Common: Improved RTL text rendering - David Kohen, Omri Baumer
+* Common: Themable user interface elements - Wysie, bcrook, jeagoss
+* Common: FLAC playback support - Kenny Root, Cyanogen, Glenn Maynard
+* Common: Lockscreen enhancements - Wysie
+* Common: Long-press home options - Wysie, bcrook
+* Common: OpenVPN support - James Bottomley, Takuo Kitame
+* Common: Br0tips - Kmobs
+* Common: Browser incognito mode - Optedoblivion
+* Common: Zipalign on install (if needed) + system dex cache to /cache - Cyanogen/Chris Soyars
+* Common: Customizable Nexus LWP - Chris Soyars/Cyanogen
+* Common: JIT toggle, configurable heapsize, compcache supprt - Cyanogen
+* Common: Adjustable haptic feedback - Michael Webster
+* Common: Custom wallpapers - jairomeo, prash, SatanR1
+* Common: Battery percentage display - canadiancow, jeagoss
+* Common: Trackball wake, trackball unlock, menu unlock - metalhead8816/Kmobs
+* Common: Surfaceflinger night mode and effects - Jeff Sharkey
+* Common: Reflow webviews on pinch option - Jonas Larsson
+* Common: Enhanced accelerometer settings - Jonas Larsson
+* Common: A2DP bugfixes - Glenn Maynard
+* Common: Browser fullscreen mode and other enhancements - Wysie
+* Common: Translations: Takuo Kitame, Matthias Büchner, Eug89
+* Common: Major build system enhancements by Chris Soyars & Koush
+* N1: Maintainer: Cyanogen
+* D/S: Maintainer: Cyanogen
+* Droid: Maintainer: Koush
+* Hero: Lox (CDMA), Darchstar (GSM)
+* Bravo (Desire): Maintainers: behnaam, Kali-
+* Incredible: Maintiner: Koush
+* Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
+
