@@ -1,3 +1,10 @@
+CyanogenMod-6 CHANGELOG and Features..
+
+Visit http://github.com/CyanogenMod for full changelogs and git access.
+
+6.0.0-pre
+---------
+* ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
 * Common: Deskclock extra settings - cyanogen, mtwebster
 * Common: ADWLauncher 0.9 - Ander Webbs
 * Common: Music app enhancements - Eliot Stocker
@@ -19,7 +26,7 @@
 * Common: Adjustable haptic feedback - Michael Webster
 * Common: Custom wallpapers - jairomeo, prash, SatanR1
 * Common: Battery percentage display - canadiancow, jeagoss
-* Common: Trackball wake, trackball unlock, menu unlock - metalhead8816/Kmobs
+* Common: Trackball wake, trackball unlock, menu unlock - Jon Boekenoogen/Kmobs
 * Common: Surfaceflinger night mode and effects - Jeff Sharkey
 * Common: Reflow webviews on pinch option - Jonas Larsson
 * Common: Enhanced accelerometer settings - Jonas Larsson
@@ -27,10 +34,18 @@
 * Common: Browser fullscreen mode and other enhancements - Wysie
 * Common: Translations: Takuo Kitame, Matthias Büchner, Eug89
 * Common: Major build system enhancements by Chris Soyars & Koush
+* Common: Long press volume buttons to skip songs - Jon Boekenoogen
+* Common: Accelerated ARMv7 JPEG decoding - Qualcomm
+* Common: Patch wrangling - Cyanogen, Chris Soyars, Koush
+* Common: Bluetooth HID support - Erin Yueh @ 0xlabs
+* Common: Mouse pointer support - Chih-Wei Huang (android-x86)
 * N1: Maintainer: Cyanogen
 * D/S: Maintainer: Cyanogen
+* D/S: Camera reverse engineering by NCommander & Cyanogen
+* D/S: Kernel patches for stability from Zinx Verituse
+* D/S: MT3G Fender/1.2 support from Zinx Verituse
 * Droid: Maintainer: Koush
-* Hero: Lox (CDMA), Darchstar (GSM)
+* Hero: Lox (GSM), Darchstar (CDMA)
 * Bravo (Desire): Maintainers: behnaam, Kali-
 * Incredible: Maintiner: Koush
 * Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
