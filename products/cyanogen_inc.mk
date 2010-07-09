@@ -12,6 +12,9 @@ PRODUCT_DEVICE := inc
 PRODUCT_MODEL := Incredible
 PRODUCT_MANUFACTURER := HTC
 
+# Build Kernel
+PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/inc/kernel
+
 #
 # Set ro.modversion
 #
