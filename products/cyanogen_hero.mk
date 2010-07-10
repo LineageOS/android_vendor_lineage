@@ -15,8 +15,11 @@ PRODUCT_BRAND := htc
 PRODUCT_DEVICE := hero
 PRODUCT_MODEL := Hero
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF83 BUILD_DISPLAY_ID=FRF83 PRODUCT_NAME=passion BUILD_FINGERPRINT=/passion/passion/mahimahi:2.2/FRF83/42295:user/release-keys
-PRIVATE_BUILD_DESC="hero-user 2.2 FRF83 42295 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=passion BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
+PRIVATE_BUILD_DESC="hero-user 2.2 FRF91 43546 release-keys"
+
+# Enable Windows Media
+WITH_WINDOWS_MEDIA := true
 
 # Build Kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/hero/kernel
@@ -29,7 +32,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-HERO
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-Hero-test0
+        ro.modversion=CyanogenMod-6.0.0-Hero-alpha0
 endif
 
 #
