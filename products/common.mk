@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
     vendor/cyanogen/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/cyanogen/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions \
+    vendor/cyanogen/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/cyanogen/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/cyanogen/prebuilt/common/xbin/irssi:system/xbin/irssi \
     vendor/cyanogen/prebuilt/common/xbin/lsof:system/xbin/lsof \
