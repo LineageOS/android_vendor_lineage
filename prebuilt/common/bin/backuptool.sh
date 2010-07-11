@@ -46,7 +46,6 @@ app/HtcCopyright.apk
 app/HtcEmailPolicy.apk
 app/HtcSettings.apk
 app/kickback.apk
-app/LatinImeGoogle.apk app/LatinIME.apk
 app/LatinImeTutorial.apk
 app/Maps.apk
 app/MarketUpdater.apk
