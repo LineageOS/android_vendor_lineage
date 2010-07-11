@@ -22,8 +22,9 @@ fi
 
 XBIN=$OUT/system/xbin
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/cyanogen/tools/opticharger
-
+QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
+[ -z "$NO_SQUASHFS" -a `which mksquashfs` = "" ] && NO_SQUASHFS=true 
 
 WORK=/tmp/repack
 rm -rf $WORK
@@ -43,7 +44,7 @@ fi
 # Unpack the otapackage and opticharge all apks
 mkdir $WORK/ota
 cd $WORK/ota
-unzip $OTAPACKAGE
+unzip $QUIET $OTAPACKAGE
 cd system/framework
 $OPTICHARGER framework-res.apk
 cd ../app
@@ -63,7 +64,10 @@ then
 fi
 
 # Fix build.prop
-grep -v ro.kernel.android.checkjni build.prop | sed -e "s/^ro\.build\.type=eng$/ro\.build\.type=user/g" > build.prop.new
+sed -n -e '/ro\.kernel\.android\.checkjni/d' \
+    -e '/ro\.build\.type/s/eng/user/' \
+    -e 'p' \
+    build.prop > build.prop.new
 mv build.prop.new build.prop
 
 # Delete unnecessary binaries
@@ -72,7 +76,7 @@ for i in $DELETE_BINS; do
 done
 
 # Find the CM version
-MODVERSION=`grep ro.modversion build.prop | sed -e "s/^.*CyanogenMod-//g"`
+MODVERSION=`sed -ne '/ro\.modversion/s/^.*CyanogenMod-//p' build.prop`
 
 # No need for recovery
 cd $WORK/ota
@@ -86,7 +90,7 @@ then
 fi
 
 # Pack it up and sign
-zip -r update.zip .
+zip $QUIET -r update.zip .
 echo "Signing package.."
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx2048m -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar -w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 update.zip update_signed.zip
