@@ -3,6 +3,8 @@ PRODUCT_NAME := cyanogen
 PRODUCT_BRAND := cyanogen
 PRODUCT_DEVICE := generic
 
+PRODUCT_PACKAGES += ADWLauncher
+
 # Use edify for otapackage
 PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=edify
 

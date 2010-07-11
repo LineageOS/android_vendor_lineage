@@ -25,7 +25,3 @@ else
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=CyanogenMod-6.0.0-N1-test0
 endif
-
-ifndef DEFAULT_LAUNCHER
-    PRODUCT_PACKAGES += ADWLauncher
-endif

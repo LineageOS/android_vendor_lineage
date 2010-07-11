@@ -43,6 +43,7 @@ CHANGELOG
 * Common: Bluetooth HID support - Erin Yueh @ 0xlabs
 * Common: Mouse pointer support - Chih-Wei Huang (android-x86)
 * Common: Configurable install location + allow move any app to external storage - Cyanogen
+* Common: Busybox, nano, and libncurses are now built from source. - cvpcs
 * N1/DS: Kernel 2.6.34 with Pershoot/Kmobs clock settings
 * N1: Maintainer: Cyanogen
 * D/S: Maintainer: Cyanogen
@@ -52,6 +53,6 @@ CHANGELOG
 * Droid: Maintainer: Koush
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Bravo (Desire): Maintainers: behnaam, Kali-
-* Incredible: Maintiner: Koush
+* Incredible: Maintainer: Koush
 * Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
 
