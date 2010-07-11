@@ -68,6 +68,7 @@ framework/com.google.android.maps.jar
 lib/libinterstitial.so
 lib/libspeech.so
 lib/libzxing.so
+etc/hosts
 EOF
 }
 
