@@ -42,6 +42,8 @@ CHANGELOG
 * Common: Patch wrangling - Cyanogen, Chris Soyars, Koush
 * Common: Bluetooth HID support - Erin Yueh @ 0xlabs
 * Common: Mouse pointer support - Chih-Wei Huang (android-x86)
+* Common: Configurable install location + allow move any app to external storage - Cyanogen
+* N1/DS: Kernel 2.6.34 with Pershoot/Kmobs clock settings
 * N1: Maintainer: Cyanogen
 * D/S: Maintainer: Cyanogen
 * D/S: Camera reverse engineering by NCommander & Cyanogen
