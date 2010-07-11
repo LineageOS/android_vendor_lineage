@@ -1,21 +1,55 @@
 CyanogenMod
 ===============
 
+Visit http://github.com/CyanogenMod for full changelogs and git access.
+
 CHANGELOG
 ---------
 
-### 6.0.0-alpha2
-* Common: Added battery percentage display.
-* Common: Added OpenVPN support.
-* Common: Updated Japanese translations.
-* Common: Added option for 270, 360 rotation.
-* Common: Added option to enable WebView reflow immediately after pinch to zoom.
-* Common: Added additional settings for Passion RIL to build.
-* Common: Added settings for configruable number of recent applications and custom home key binding.
-* Common: Added incognito browser window from optedoblivion.
-* Common: Upgraded to Superuser 2.2.
-* Common: 'System Updates' setting option hidden.
-* Common: Added invisible lock pattern option.
-* D/S: Opencore build tweaks to prevent the need for a separate D/S branch.
-* Heroes: Added light sensor support.
-* N1: Bumped to FRF91.
+### 6.0.0-pre
+* ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
+* Common: Deskclock extra settings - cyanogen, mtwebster
+* Common: ADWLauncher 0.9 - Ander Webbs
+* Common: Music app enhancements - Eliot Stocker
+* Common: Phone mod V.30.1 - cytown
+* Common: WyContacts 1.2 - Wysie (port to Froyo by Sileht)
+* Common: Superuser 2.2.2 - Adam Shanks (ChainsDD)
+* Common: MMS enhancements from Ruqqq, Takuo Kitame, Jef Oliver
+* Common: Improved RTL text rendering - David Kohen, Omri Baumer
+* Common: Themable user interface elements - Wysie, bcrook, jeagoss
+* Common: FLAC playback support - Kenny Root, Cyanogen, Glenn Maynard
+* Common: Lockscreen enhancements - Wysie
+* Common: Long-press home options - Wysie, bcrook
+* Common: OpenVPN support - James Bottomley, Takuo Kitame
+* Common: Br0tips - Kmobs
+* Common: Browser incognito mode - Optedoblivion
+* Common: Zipalign on install (if needed) + system dex cache to /cache - Cyanogen/Chris Soyars
+* Common: Customizable Nexus LWP - Chris Soyars/Cyanogen
+* Common: JIT toggle, configurable heapsize, compcache supprt - Cyanogen
+* Common: Adjustable haptic feedback - Michael Webster
+* Common: Custom wallpapers - jairomeo, prash, SatanR1
+* Common: Battery percentage display - canadiancow, jeagoss
+* Common: Trackball wake, trackball unlock, menu unlock - Jon Boekenoogen/Kmobs
+* Common: Surfaceflinger night mode and effects - Jeff Sharkey
+* Common: Reflow webviews on pinch option - Jonas Larsson
+* Common: Enhanced accelerometer settings - Jonas Larsson
+* Common: A2DP bugfixes - Glenn Maynard
+* Common: Browser fullscreen mode and other enhancements - Wysie
+* Common: Translations: Takuo Kitame, Matthias Büchner, Eug89
+* Common: Major build system enhancements by Chris Soyars & Koush
+* Common: Long press volume buttons to skip songs - Jon Boekenoogen
+* Common: Accelerated ARMv7 JPEG decoding - Qualcomm
+* Common: Patch wrangling - Cyanogen, Chris Soyars, Koush
+* Common: Bluetooth HID support - Erin Yueh @ 0xlabs
+* Common: Mouse pointer support - Chih-Wei Huang (android-x86)
+* N1: Maintainer: Cyanogen
+* D/S: Maintainer: Cyanogen
+* D/S: Camera reverse engineering by NCommander & Cyanogen
+* D/S: Kernel patches for stability from Zinx Verituse
+* D/S: MT3G Fender/1.2 support from Zinx Verituse
+* Droid: Maintainer: Koush
+* Hero: Lox (GSM), Darchstar (CDMA)
+* Bravo (Desire): Maintainers: behnaam, Kali-
+* Incredible: Maintiner: Koush
+* Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
+
