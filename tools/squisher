@@ -75,6 +75,12 @@ for i in $DELETE_BINS; do
    rm -f bin/$i
 done
 
+# Delete leftover wireless driver
+rm -rf lib/modules/*/kernel/drivers/net
+
+# Strip modules
+find lib/modules -name "*.ko" -exec arm-eabi-strip --strip-unneeded {} \;
+
 # Find the CM version
 MODVERSION=`sed -ne '/ro\.modversion/s/^.*CyanogenMod-//p' build.prop`
 
