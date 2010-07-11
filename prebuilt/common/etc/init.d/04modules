@@ -2,11 +2,7 @@
 #
 # Load any extra modules
 
-MODULES=""
-
-if [ "`getprop persist.net.ipv6`" = "1" ]; then
-	MODULES="$MODULES ipv6"
-fi
+MODULES="ipv6"
 
 for i in $MODULES;
 do
