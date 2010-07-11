@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for bravo.
-$(call inherit-product, device/htc/bravo/full_bravo.mk)
+$(call inherit-product, device/htc/bravo/bravo.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
@@ -22,12 +22,11 @@ PRIVATE_BUILD_DESC="passion-user 2.2 FRF91 43546 release-keys"
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
 
 # Use a precompiled kernel until the merge with cm-kernel
-TARGET_PREBUILT_KERNEL = device/htc/bravo-common/kernel
+TARGET_PREBUILT_KERNEL = device/htc/bravo/kernel
 
 # Extra RIL settings
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.managed.roaming=1 \
-    ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995 \
     ro.ril.emc.mode=2
 
 # Enable Windows Media
@@ -49,3 +48,7 @@ endif
 #
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
+
+ifndef DEFAULT_LAUNCHER
+    PRODUCT_PACKAGES += ADWLauncher
+endif
