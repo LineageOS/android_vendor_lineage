@@ -23,15 +23,6 @@ PRIVATE_BUILD_DESC="supersonic-user 2.2 FRF91 43546 release-keys"
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
 
-# Extra RIL settings
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.enable.managed.roaming=1 \
-    ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995 \
-    ro.ril.emc.mode=2
-
-# Enable Windows Media
-WITH_WINDOWS_MEDIA := true
-
 #
 # Set ro.modversion
 #
