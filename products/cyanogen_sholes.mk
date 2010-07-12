@@ -31,3 +31,5 @@ PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRF84B BUILD_DISPLAY_ID=FRF84B PRODUCT_
 
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/sholes
