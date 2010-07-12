@@ -14,7 +14,7 @@ CHANGELOG
 * Common: Phone mod V.30.1 - cytown
 * Common: WyContacts 1.2 - Wysie (port to Froyo by Sileht)
 * Common: Superuser 2.2.2 - Adam Shanks (ChainsDD)
-* Common: MMS enhancements from Ruqqq, Takuo Kitame, Jef Oliver
+* Common: MMS enhancements from Ruqqq, Takuo Kitame, jeagoss
 * Common: Improved RTL text rendering - David Kohen, Omri Baumer
 * Common: Themable user interface elements - Wysie, bcrook, jeagoss
 * Common: FLAC playback support - Kenny Root, Cyanogen, Glenn Maynard
