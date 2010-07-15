@@ -24,7 +24,15 @@ XBIN=$OUT/system/xbin
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/cyanogen/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
-[ -z "$NO_SQUASHFS" -a `which mksquashfs` = "" ] && NO_SQUASHFS=true 
+if [ -z "$NO_SQUASHFS" -a `which mksquashfs` = "" ]; then
+	NO_SQUASHFS=true 
+else
+	if mksquashfs -version | grep -q 'version 4'; then :; else
+		echo "mksquashfs must be at least version 4 for this build"
+		exit 1
+	fi
+
+fi
 
 WORK=/tmp/repack
 rm -rf $WORK
@@ -34,11 +42,10 @@ if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
 then
    # Create the xbin squashfs
    cp -a $XBIN $WORK/xbin/
-   chown -R 1000:1000 $WORK/xbin/*
    chmod -R 755 $WORK/xbin/*
-   rm $WORK/xbin/su
+   rm -f $WORK/xbin/su
    ln -s $WORK/bin/su $WORK/xbin/su
-   mksquashfs $WORK/xbin/* $WORK/xbin.sqf
+   mksquashfs $WORK/xbin/* $WORK/xbin.sqf -force-uid 1000 -force-gid 1000
 fi
 
 # Unpack the otapackage and opticharge all apks
