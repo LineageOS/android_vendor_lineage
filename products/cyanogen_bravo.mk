@@ -22,7 +22,7 @@ PRIVATE_BUILD_DESC="passion-user 2.2 FRF91 43546 release-keys"
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
 
 # Use a precompiled kernel until the merge with cm-kernel
-TARGET_PREBUILT_KERNEL = device/htc/bravo-common/kernel
+TARGET_PREBUILT_KERNEL = device/htc/bravo/kernel/kernel
 
 # Extra RIL settings
 PRODUCT_PROPERTY_OVERRIDES += \
