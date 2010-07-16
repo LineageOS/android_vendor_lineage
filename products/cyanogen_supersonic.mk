@@ -8,11 +8,11 @@ $(call inherit-product, vendor/cyanogen/products/common.mk)
 # Setup device specific product configuration.
 #
 PRODUCT_NAME := cyanogen_supersonic
-PRODUCT_BRAND := htc
+PRODUCT_BRAND := sprint
 PRODUCT_DEVICE := supersonic
-PRODUCT_MODEL := HTC Evo
+PRODUCT_MODEL := PC36100
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=passion BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=htc_supersonic BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
 PRIVATE_BUILD_DESC="supersonic-user 2.2 FRF91 43546 release-keys"
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/supersonic/kernel
