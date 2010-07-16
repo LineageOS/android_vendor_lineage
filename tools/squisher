@@ -14,108 +14,145 @@ else
    MD5=md5
 fi
 
-OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$LOGNAME.zip
-if [ ! -f "$OTAPACKAGE" ]; then
-   echo "$OTAPACKAGE doesn't exist!";
-   exit 1
+if [ -z "$OUT" -o ! -d "$OUT" ]; then
+	echo "ERROR: $0 only works with a full build environment. $OUT should exist."
+	exit 1
 fi
 
-XBIN=$OUT/system/xbin
+OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$LOGNAME.zip
+if [ ! -f "$OTAPACKAGE" ]; then
+	echo "$OTAPACKAGE doesn't exist!";
+	exit 1
+fi
+
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/cyanogen/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
-if [ -z "$NO_SQUASHFS" -a `which mksquashfs` = "" ]; then
-	NO_SQUASHFS=true 
-else
-	if mksquashfs -version | grep -q 'version 4'; then :; else
-		echo "mksquashfs must be at least version 4 for this build"
-		exit 1
+
+
+# Some products want a squashfs for xbin for space
+case "$TARGET_PRODUCT" in
+	cyanogen_dream_sapphire) WANT_SQUASHFS=1 ;;
+	*) WANT_SQUASHFS=0 ;;
+esac
+
+if [ "$WANT_SQUASHFS" -eq 1 ]; then
+	fatal=0
+	MKSQUASHFS_VER_REQ=4
+	if type mksquashfs >/dev/null 2>&1; then
+		if mksquashfs -version | grep -q "version $MKSQUASHFS_VER_REQ"; then :; else
+			echo
+			echo "ERROR: mksquashfs must be at least version $MKSQUASHFS_VER_REQ for this build."
+			fatal=1
+		fi
+	else
+		echo
+		echo "ERROR: $TARGET_PRODUCT requires mksquashfs."
+		fatal=1
 	fi
 
+	if [ "$fatal" -ne 0 ]; then
+		echo
+		echo "       Unoptimized package is still available at"
+		echo "         $OTAPACKAGE"
+		exit $fatal
+	fi
 fi
 
-WORK=/tmp/repack
-rm -rf $WORK
-mkdir -p $WORK
+REPACK=$OUT/repack.d
+SYSTEM=$REPACK/ota/system
+printf "Sanitizing environment..."
+rm -rf $REPACK
+mkdir -p $REPACK
+echo
 
-if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
-then
-   # Create the xbin squashfs
-   cp -a $XBIN $WORK/xbin/
-   chmod -R 755 $WORK/xbin/*
-   rm -f $WORK/xbin/su
-   ln -s $WORK/bin/su $WORK/xbin/su
-   mksquashfs $WORK/xbin/* $WORK/xbin.sqf -force-uid 1000 -force-gid 1000
-fi
 
 # Unpack the otapackage and opticharge all apks
-mkdir $WORK/ota
-cd $WORK/ota
+mkdir $REPACK/ota
+(
+cd $REPACK/ota
+printf "Unpacking $OTAPACKAGE..."
 unzip $QUIET $OTAPACKAGE
-cd system/framework
+echo
+cd $REPACK/ota/system/framework
 $OPTICHARGER framework-res.apk
-cd ../app
-for i in *.apk; do
-   $OPTICHARGER $i;
-done
+cd $REPACK/ota/system/app
+for i in *.apk; do $OPTICHARGER $i; done
+)
 
-cd $WORK/ota/system
 
-if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
-then
-   # Relocate su and put xbin.sqf where it belongs
-   rm -f bin/su
-   mv xbin/su bin/su
-   rm -rf xbin/*
-   mv $WORK/xbin.sqf xbin/
+if [ "$WANT_SQUASHFS" -eq 1 ]; then
+	squash_opts="-force-uid 1000 -force-gid 1000 -no-progress -noappend -no-exports -no-recovery"
+
+	# Create the xbin squashfs
+	cp -a $SYSTEM/xbin $REPACK/xbin/
+	rm -f $REPACK/xbin/su
+	chmod -R 555 $REPACK/xbin/*
+	ln -s ../bin/su $REPACK/xbin/su
+
+	# Relocate su and put xbin.sqf where it belongs
+	rm -f $SYSTEM/bin/su
+	mv $SYSTEM/xbin/su $SYSTEM/bin/su
+	rm -rf $SYSTEM/xbin/*
+	mksquashfs $REPACK/xbin/* $SYSTEM/xbin/xbin.sqf $squash_opts
+	chmod 444 $SYSTEM/xbin/xbin.sqf
+
+	# Remove xbin stuff and fix up updater-script
+	sed -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $REPACK/ota/META-INF/com/google/android/updater-script
 fi
 
+
 # Fix build.prop
-sed -n -e '/ro\.kernel\.android\.checkjni/d' \
-    -e '/ro\.build\.type/s/eng/user/' \
-    -e 'p' \
-    build.prop > build.prop.new
-mv build.prop.new build.prop
+sed -i \
+	-e '/ro\.kernel\.android\.checkjni/d' \
+	-e '/ro\.build\.type/s/eng/user/' \
+	$SYSTEM/build.prop
+
 
 # Delete unnecessary binaries
-for i in $DELETE_BINS; do
-   rm -f bin/$i
-done
+( cd $SYSTEM/bin; echo $DELETE_BINS | xargs rm -f; )
 
 # Delete leftover wireless driver
-rm -rf lib/modules/*/kernel/drivers/net
-
-# Strip modules
-find lib/modules -name "*.ko" -exec arm-eabi-strip --strip-unneeded {} \;
-
-# Find the CM version
-MODVERSION=`sed -ne '/ro\.modversion/s/^.*CyanogenMod-//p' build.prop`
+rm -rf $SYSTEM/lib/modules/*/kernel/drivers/net
 
 # No need for recovery
-cd $WORK/ota
-rm -rf recovery
+rm -rf $REPACK/ota/recovery
 
-# Remove xbin stuff and fix up updater-script
-if [ "$TARGET_PRODUCT" = "cyanogen_dream_sapphire" ]
-then
-   sed -e "s/system\/xbin\/su/system\/bin\/su/g" META-INF/com/google/android/updater-script | grep -v xbin > updater-script.new
-   mv updater-script.new META-INF/com/google/android/updater-script
+# Strip modules
+find $SYSTEM/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
+
+# Determine what to name the new signed package
+if [ -z "$CYANOGEN_NIGHTLY" ]; then
+	OUTFILE=$OUT/update-squished.zip
+else
+	MODVERSION=`sed -n -e'/ro\.modversion/s/^.*CyanogenMod-//p' $SYSTEM/build.prop`
+	: ${MODVERSION:=nightly}
+	OUTFILE=$OUT/update-cm-$MODVERSION-signed.zip
 fi
 
 # Pack it up and sign
-zip $QUIET -r update.zip .
-echo "Signing package.."
+printf "Zipping package..."
+( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
+echo
+printf "Signing package..."
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
-java -Xmx2048m -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar -w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 update.zip update_signed.zip
+java -Xmx2048m \
+	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
+	$REPACK/update.zip $OUTFILE
+echo
+printf "Cleaning up..."
+rm -rf $REPACK
+echo
 
-if [ "$CYANOGEN_NIGHTLY" != "" ]
-then
-    OUTFILE=$OUT/update-squished.zip
-else
-    OUTFILE=$OUT/update-cm-$MODVERSION-signed.zip
-fi
-mv update_signed.zip $OUTFILE
-$MD5 $OUTFILE > $OUTFILE.md5sum
-echo "Package complete: $OUT/update-cm-$MODVERSION-signed.zip";
-cat $OUTFILE.md5sum
+(
+img=`basename $OUTFILE`
+cd `dirname $OUTFILE`
+$MD5 $img >$img.md5sum
+echo
+echo "Package complete: $OUTFILE"
+cat $img.md5sum
+echo
+)
 
+exit 0
