@@ -4,7 +4,7 @@
 # cyanogen
 #
 
-OUT_TARGET_HOST=$(uname -a | grep Darwin)
+OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
 then
    OUT_TARGET_HOST=linux-x86
@@ -60,7 +60,6 @@ if [ "$WANT_SQUASHFS" -eq 1 ]; then
 fi
 
 REPACK=$OUT/repack.d
-SYSTEM=$REPACK/ota/system
 printf "Sanitizing environment..."
 rm -rf $REPACK
 mkdir -p $REPACK
@@ -83,22 +82,30 @@ for i in *.apk; do $OPTICHARGER $i; done
 
 if [ "$WANT_SQUASHFS" -eq 1 ]; then
 	squash_opts="-force-uid 1000 -force-gid 1000 -no-progress -noappend -no-exports -no-recovery"
+	updater=$REPACK/ota/META-INF/com/google/android/updater-script
 
-	# Create the xbin squashfs
-	cp -a $SYSTEM/xbin $REPACK/xbin/
-	rm -f $REPACK/xbin/su
-	chmod -R 555 $REPACK/xbin/*
-	ln -s ../bin/su $REPACK/xbin/su
+	# Relocate su
+	cp -a $REPACK/ota/system/xbin $REPACK/_xbin/
+	rm -f $REPACK/_xbin/su $REPACK/ota/system/bin/su
+	mv $REPACK/ota/system/xbin/su $REPACK/ota/system/bin/su
+	chmod -R 555 $REPACK/_xbin/*
 
-	# Relocate su and put xbin.sqf where it belongs
-	rm -f $SYSTEM/bin/su
-	mv $SYSTEM/xbin/su $SYSTEM/bin/su
-	rm -rf $SYSTEM/xbin/*
-	mksquashfs $REPACK/xbin/* $SYSTEM/xbin/xbin.sqf $squash_opts
-	chmod 444 $SYSTEM/xbin/xbin.sqf
+	# Create symlinks for su and busybox (since updater-script can't work on the squashfs filesystem).
+	# Forgive me for the regex hell here. 
+	ln -s ../bin/su $REPACK/_xbin/su
+	for link in `sed -n -e's/,//g' -e'/symlink(.*busybox/,/xbin.*);/p' $updater | tr '"' '\n' | sed -n -e'\,/system/xbin/,s,/system/xbin/,,p'`
+	do
+		ln -s busybox $REPACK/_xbin/$link
+	done
+
+	# Create the squashfs with new and improved symlinkage!
+	mksquashfs $REPACK/_xbin/* $REPACK/_xbin.sqf $squash_opts
+	rm -rf $REPACK/ota/system/xbin/*
+	mv $REPACK/_xbin.sqf $REPACK/ota/system/xbin/xbin.sqf
+	chmod 444 $REPACK/ota/system/xbin/xbin.sqf
 
 	# Remove xbin stuff and fix up updater-script
-	sed -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $REPACK/ota/META-INF/com/google/android/updater-script
+	sed -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $updater
 fi
 
 
@@ -106,26 +113,26 @@ fi
 sed -i \
 	-e '/ro\.kernel\.android\.checkjni/d' \
 	-e '/ro\.build\.type/s/eng/user/' \
-	$SYSTEM/build.prop
+	$REPACK/ota/system/build.prop
 
 
 # Delete unnecessary binaries
-( cd $SYSTEM/bin; echo $DELETE_BINS | xargs rm -f; )
+( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
 
 # Delete leftover wireless driver
-rm -rf $SYSTEM/lib/modules/*/kernel/drivers/net
+rm -rf $REPACK/ota/system/lib/modules/*/kernel/drivers/net
 
 # No need for recovery
 rm -rf $REPACK/ota/recovery
 
 # Strip modules
-find $SYSTEM/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
+find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
 	OUTFILE=$OUT/update-squished.zip
 else
-	MODVERSION=`sed -n -e'/ro\.modversion/s/^.*CyanogenMod-//p' $SYSTEM/build.prop`
+	MODVERSION=`sed -n -e'/ro\.modversion/s/^.*CyanogenMod-//p' $REPACK/ota/system/build.prop`
 	: ${MODVERSION:=nightly}
 	OUTFILE=$OUT/update-cm-$MODVERSION-signed.zip
 fi
@@ -145,6 +152,7 @@ printf "Cleaning up..."
 rm -rf $REPACK
 echo
 
+# Create a md5 checksum image of the repacked package
 (
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
