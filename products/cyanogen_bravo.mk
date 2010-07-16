@@ -19,7 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NA
 PRIVATE_BUILD_DESC="passion-user 2.2 FRF91 43546 release-keys"
 
 # Extra Passion overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/bravo
 
 # Use a precompiled kernel until the merge with cm-kernel
 TARGET_PREBUILT_KERNEL = device/htc/bravo/kernel/kernel
