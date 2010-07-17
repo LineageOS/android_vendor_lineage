@@ -52,7 +52,7 @@ CHANGELOG
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
 * Droid: Maintainer: Koush
 * Hero: Lox (GSM), Darchstar (CDMA)
-* Bravo (Desire): Maintainers: behnaam, Kali-
+* Bravo (Desire): Maintainers: Kali-, Defer, behnaam
 * Incredible: Maintainer: Koush
 * Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
 
