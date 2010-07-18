@@ -56,4 +56,4 @@ CHANGELOG
 * Incredible: Maintainer: Koush
 * Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
 * Galaxy S: Maintainers: Wes Garner
-
+* Evo: Maintainers: Cyanogen
