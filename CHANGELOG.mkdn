@@ -55,4 +55,5 @@ CHANGELOG
 * Bravo (Desire): Maintainers: Kali-, Defer, behnaam
 * Incredible: Maintainer: Koush
 * Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
+* Galaxy S: Maintainers: Wes Garner
 
