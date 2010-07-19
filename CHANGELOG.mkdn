@@ -30,7 +30,7 @@ CHANGELOG
 * Common: Custom wallpapers - jairomeo, prash, SatanR1
 * Common: Battery percentage display - canadiancow, jeagoss
 * Common: Trackball wake, trackball unlock, menu unlock - Jon Boekenoogen/Kmobs
-* Common: Surfaceflinger night mode and effects - Jeff Sharkey
+* Common: Surfaceflinger night mode and effects - Jeff Sharkey, widget from Wysie
 * Common: Reflow webviews on pinch option - Jonas Larsson
 * Common: Enhanced accelerometer settings - Jonas Larsson
 * Common: A2DP bugfixes - Glenn Maynard
@@ -40,19 +40,24 @@ CHANGELOG
 * Common: Long press volume buttons to skip songs - Jon Boekenoogen
 * Common: Accelerated ARMv7 JPEG decoding - Qualcomm
 * Common: Patch wrangling - Cyanogen, Chris Soyars, Koush
-* Common: Bluetooth HID support - Erin Yueh @ 0xlabs
+* Common: Bluetooth HID support - Erin Yueh @ 0xlab
 * Common: Mouse pointer support - Chih-Wei Huang (android-x86)
 * Common: Configurable install location + allow move any app to external storage - Cyanogen
 * Common: Busybox, nano, and libncurses are now built from source. - cvpcs
+* Common: Dual camera support - Cyanogen
+* Common: Support for HTC camera firmware with extra features - Cyanogen, Qualcomm
+* Common: Customizable status bar - Michael Webster 
 * N1/DS: Kernel 2.6.34 with Pershoot/Kmobs clock settings
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
+* EVO: Kernel base from toastcfh, display patches from AssassinsLament and netarchy, backport of various features from Cyanogen
+ 
 
 ### Maintainers:
-* N1: Cyanogen
+* Nexus One: Cyanogen
 * Droid: Koush
-* D/S: Cyanogen
+* Dream/Sapphire: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Bravo (Desire): Kali-, Defer, behnaam
 * Incredible: Koush
