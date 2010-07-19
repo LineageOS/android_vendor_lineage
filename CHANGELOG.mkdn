@@ -45,15 +45,17 @@ CHANGELOG
 * Common: Configurable install location + allow move any app to external storage - Cyanogen
 * Common: Busybox, nano, and libncurses are now built from source. - cvpcs
 * N1/DS: Kernel 2.6.34 with Pershoot/Kmobs clock settings
-* N1: Maintainer: Cyanogen
-* D/S: Maintainer: Cyanogen
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
-* Droid: Maintainer: Koush
+
+### Maintainers:
+* N1: Cyanogen
+* Droid: Koush
+* D/S: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
-* Bravo (Desire): Maintainers: Kali-, Defer, behnaam
-* Incredible: Maintainer: Koush
-* Espresso (Slide): Maintainers: Wes Garner, Chris Soyars
-* Galaxy S: Maintainers: Wes Garner
-* Evo: Maintainers: Cyanogen
+* Bravo (Desire): Kali-, Defer, behnaam
+* Incredible: Koush
+* Espresso (Slide): Wes Garner, Chris Soyars
+* Supersonic (EVO): Cyanogen, toastcfh
+
