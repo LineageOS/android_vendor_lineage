@@ -2,6 +2,7 @@ CyanogenMod
 ===============
 
 Visit http://github.com/CyanogenMod for full changelogs and git access.
+Visit http://bit.ly/cmprogress for the device / release spreadsheet
 
 CHANGELOG
 ---------
