@@ -31,12 +31,8 @@ DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
 
 # Some products want a squashfs for xbin for space
-case "$TARGET_PRODUCT" in
-	cyanogen_dream_sapphire) WANT_SQUASHFS=1 ;;
-	*) WANT_SQUASHFS=0 ;;
-esac
 
-if [ "$WANT_SQUASHFS" -eq 1 ]; then
+if [ -n "$WANT_SQUASHFS"  ]; then
 	fatal=0
 	MKSQUASHFS_VER_REQ=4
 	if type mksquashfs >/dev/null 2>&1; then
@@ -80,7 +76,7 @@ for i in *.apk; do $OPTICHARGER $i; done
 )
 
 
-if [ "$WANT_SQUASHFS" -eq 1 ]; then
+if [ -n "$WANT_SQUASHFS" ]; then
 	squash_opts="-force-uid 1000 -force-gid 1000 -no-progress -noappend -no-exports -no-recovery"
 	updater=$REPACK/ota/META-INF/com/google/android/updater-script
 
