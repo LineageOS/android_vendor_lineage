@@ -65,4 +65,5 @@ CHANGELOG
 * Incredible: Koush
 * Espresso (Slide): Wes Garner, Chris Soyars
 * Supersonic (EVO): Cyanogen, toastcfh
+* Galaxy S (Vibrant): Scepterr, Wes Garner
 
