@@ -49,9 +49,6 @@ WITH_DS_HTCACOUSTIC_HACK := true
 # Use Windows Media
 WITH_WINDOWS_MEDIA := true
 
-# Use SquashFS for xbin
-WANT_SQUASHFS := true
-
 #
 # Copy DS specific prebuilt files
 #
