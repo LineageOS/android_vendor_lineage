@@ -16,8 +16,15 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_MODVER=true
 
 # Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=DonMessWivIt.ogg \
+    ro.config.ringtone=DonMessWivIt.ogg
+
+ifdef CYANOGEN_NIGHTLY
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmod
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.rommanager.developerid=cyanogenmodnightly
+endif
 
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/system/lib/modules
