@@ -20,10 +20,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifdef CYANOGEN_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmod
+    ro.rommanager.developerid=cyanogenmodnightly
 else
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmodnightly
+    ro.rommanager.developerid=cyanogenmod
 endif
 
 # Used by BusyBox
