@@ -11,7 +11,7 @@ CHANGELOG
 ### 6.0.0-pre
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
 * Common: Deskclock extra settings - cyanogen, mtwebster
-* Common: ADWLauncher 0.9 - Ander Webbs
+* Common: ADWLauncher 1.0.1 - Ander Webbs
 * Common: Music app enhancements - Eliot Stocker
 * Common: Phone mod V.30.1 - cytown
 * Common: WyContacts 1.2 - Wysie (port to Froyo by Sileht)
@@ -55,7 +55,12 @@ CHANGELOG
 * Common: Lockscreen music controls - Kmobs
 * Common: "Roam Only" mode - jrgutier
 * Common: Mobile data toggle for power widget - Drakaz
-* N1/DS: Kernel 2.6.34 with Pershoot/Kmobs clock settings
+* Common: Exchange support fixes and volume rocker selection - Michael Webster
+* Common: Lock home app in memory option - Cyanogen
+* Common: Audio DSP support (equalizer, virtual room, compressor effects) - Antti S. Lankila
+* Common: Customizable trackball notifications - Pedlar
+* Common: Fully customizable power widget - piafinho
+* N1/DS: Kernel 2.6.34.2 with Pershoot/Kmobs clock settings
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
@@ -70,7 +75,7 @@ CHANGELOG
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Bravo (Desire): Kali-, Defer, behnaam
 * Incredible: Koush
-* Espresso (Slide): Wes Garner, Chris Soyars
+* Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
 * Supersonic (EVO): Cyanogen, toastcfh
 * Galaxy S (Vibrant): Scepterr, Wes Garner
 
