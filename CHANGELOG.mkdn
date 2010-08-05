@@ -67,6 +67,7 @@ CHANGELOG
 * D/S: Better media profiles - Charan Singh
 * EVO: Kernel base from toastcfh, display patches from AssassinsLament and netarchy, backport of various features from Cyanogen
 * EVO: Sprint MMS fixes - Darchstar, toastcfh
+* N1: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
 
 ### Maintainers:
 * Nexus One: Cyanogen
