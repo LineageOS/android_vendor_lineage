@@ -47,6 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
     CMParts \
+    CMPartsHelper \
     Superuser
 
 # Copy over the changelog to the device
@@ -84,7 +85,7 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
- 
+
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
 
