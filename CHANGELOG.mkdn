@@ -62,6 +62,9 @@ CHANGELOG
 * Common: Audio DSP support (equalizer, virtual room, compressor effects) - Antti S. Lankila
 * Common: Customizable trackball notifications - Pedlar
 * Common: Fully customizable power widget - piafinho
+* Common: Zoom (except in 720p), flash, and other camera parameters can be changed while recording - Cyanogen, Qualcomm
+* Common: New boot animation by 73v1n: http://www.youtube.com/watch?v=LnweaNTtb1k
+* Common: Arabic language support - David Kohen
 * N1/DS: Kernel 2.6.34.2 with Pershoot/Kmobs clock settings
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
