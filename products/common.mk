@@ -48,6 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     CMParts \
     CMPartsHelper \
+    DSPManager \
     Superuser
 
 # Copy over the changelog to the device
