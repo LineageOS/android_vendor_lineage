@@ -47,4 +47,4 @@ endif
 # Copy galaxys specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/prebuilt/galaxys/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
