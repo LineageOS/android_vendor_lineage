@@ -43,14 +43,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-N1
+        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-liberty
 else
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=CyanogenMod-6.0.0-liberty-RC0
 endif
 
 #
-# Copy passion specific prebuilt files
+# Copy liberty specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/espresso/media/bootanimation.zip:system/media/bootanimation.zip
