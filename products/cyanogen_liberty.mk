@@ -53,4 +53,4 @@ endif
 # Copy liberty specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/prebuilt/espresso/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cyanogen/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
