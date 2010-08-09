@@ -19,8 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NA
 PRIVATE_BUILD_DESC="passion-user 2.2 FRF91 43546 release-keys"
 
 # Extra Vibrant overlay
-# No Overlay needed right now
-# PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/vibrant
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/vibrant
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/vibrant/kernel
 
