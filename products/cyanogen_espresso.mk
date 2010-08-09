@@ -23,7 +23,7 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/espresso/kernel
 
 # Include the Torch app
-PRODUCT_PACKAGES += Torch libjni_flash
+PRODUCT_PACKAGES += Torch
 
 #
 # Set ro.modversion
