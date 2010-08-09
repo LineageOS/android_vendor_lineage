@@ -24,6 +24,9 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/supersonic/kernel
 # Extra Supersonic overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/supersonic
 
+# Include the Torch app
+PRODUCT_PACKAGES += Torch
+
 #
 # Set ro.modversion
 #
