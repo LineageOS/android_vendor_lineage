@@ -21,8 +21,8 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/supersonic/kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_mahimahi_defconfig
 
-# Extra Supersonic overlay (nothing currently)
-#PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/supersonic
+# Extra Supersonic overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/supersonic
 
 #
 # Set ro.modversion
