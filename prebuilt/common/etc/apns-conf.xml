@@ -203,6 +203,8 @@
   <apn carrier="Carrefour Mova MMS" mcc="260" mnc="01" apn="mms.mova.pl" mmsc="http://mms.mova.pl:8002/" mmsproxy="212.002.096.016" mmsport="8080" type="mms" />
   <apn carrier="CBW Internet" apn="wap.gocbw.com" proxy="216.68.79.202" port="80" user="cbw" password="" server="" mmsc="" mmsport="" mcc="310" mnc="420" type="default" />
   <apn carrier="CBW MMS" apn="wap.gocbw.com" proxy="" port="" user="" password="" server="" mmsc="http://mms.gocbw.com:8088/mms" mmsproxy="216.68.79.202" mmsport="80" mcc="310" mnc="420" authenticationtype="PAP" type="mms" />
+  <apn carrier="CDMA" mcc="310" mnc="120" apn="0" port="" mmsproxy="" mmsport="" mmsc="" type="*"/>
+  <apn carrier="CDMA" mcc="310" mnc="120" apn="1" port="" mmsproxy="" mmsport="" mmsc="http://mms.sprintpcs.com" />
   <apn carrier="Celcom" mcc="502" mnc="13" apn="celcom3g" user="" server="" password="" mmsc="" type="default"/>
   <apn carrier="Celcom MMS" mcc="502" mnc="13" apn="celcom3g" user="mms" server="" password="mms" mmsc="http://mms.celcom.net.my" mmsproxy="10.128.1.242" mmsport="8080" type="mms"/>
   <apn carrier="CellCOM" mcc="425" mnc="02" apn="internetg" user="" server="" password="" mmsc="" type="default"/>
