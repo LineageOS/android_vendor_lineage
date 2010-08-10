@@ -44,7 +44,7 @@ CHANGELOG
 * Common: Long press volume buttons to skip songs - Jon Boekenoogen
 * Common: Accelerated ARMv7 JPEG decoding - Qualcomm
 * Common: Skia acceleration on ARMv7 - Qualcomm
-* Common: Patch wrangling - Cyanogen, Chris Soyars, Koush
+* Common: Patch wrangling - Cyanogen, Chris Soyars, Koush, Kmobs
 * Common: Bluetooth HID support - Erin Yueh @ 0xlab
 * Common: Mouse pointer support - Chih-Wei Huang (android-x86)
 * Common: Configurable install location + allow move any app to external storage - Cyanogen
