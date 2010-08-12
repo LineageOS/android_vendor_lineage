@@ -25,6 +25,7 @@
     <integer name="config_drawerColumnsPortrait">4</integer>
     <integer name="config_drawerColumnsLandscape">5</integer>
     <integer name="config_zoomSpeed">200</integer>
-
+    <string name="config_swipedown_actions">0</string>
+    <string name="config_swipeup_actions">0</string>
     <string name="config_homeBinding">1</string>
 </resources>
