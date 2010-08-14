@@ -71,7 +71,21 @@ lib/libinterstitial.so
 lib/libspeech.so
 lib/libzxing.so
 etc/hosts
+etc/custom_backup_list.txt
 EOF
+}
+
+get_custom_files() {
+   local L
+   if [ -f "$C/custom_backup_list.txt" ];
+   then
+      [ ! -f $C/fixed_custom_backup_list.txt ] && tr -d '\r' < $C/custom_backup_list.txt \
+            > $C/fixed_custom_backup_list.txt
+      L=`cat $C/fixed_custom_backup_list.txt`
+      cat <<EOF
+$L
+EOF
+   fi
 }
 
 backup_file() {
@@ -126,8 +140,10 @@ case "$1" in
       then
          rm -rf $C
          mkdir -p $C
-         get_files | while read FILE REPLACEMENT; do
-            backup_file $S/$FILE
+         for file_list in get_files get_custom_files; do
+           $file_list | while read FILE REPLACEMENT; do
+              backup_file $S/$FILE
+           done
          done
       fi
       umount $S
@@ -136,10 +152,12 @@ case "$1" in
       check_prereq;
       if [ $PROCEED -ne 0 ];
       then
-         get_files | while read FILE REPLACEMENT; do
-            R=""
-            [ -n "$REPLACEMENT" ] && R="$S/$REPLACEMENT"
-            restore_file $S/$FILE $R
+         for file_list in get_files get_custom_files; do
+           $file_list | while read FILE REPLACEMENT; do
+              R=""
+              [ -n "$REPLACEMENT" ] && R="$S/$REPLACEMENT"
+              restore_file $S/$FILE $R
+           done
          done
          rm -rf $C
       fi
