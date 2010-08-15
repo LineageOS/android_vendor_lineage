@@ -29,6 +29,7 @@ get_files() {
     cat <<EOF
 app/CarHomeGoogle.apk
 app/CarHomeLauncher.apk
+app/ChromeToPhone.apk
 app/com.amazon.mp3.apk
 app/Facebook.apk
 app/GenieWidget.apk
@@ -65,6 +66,7 @@ app/YouTube.apk
 etc/permissions/com.google.android.maps.xml
 etc/permissions/features.xml
 framework/com.google.android.maps.jar
+lib/libimageutils.so
 lib/libinterstitial.so
 lib/libspeech.so
 lib/libzxing.so
