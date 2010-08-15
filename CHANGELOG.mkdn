@@ -65,21 +65,22 @@ CHANGELOG
 * Common: Zoom (except in 720p), flash, and other camera parameters can be changed while recording - Cyanogen, Qualcomm
 * Common: New boot animation by 73v1n: http://www.youtube.com/watch?v=LnweaNTtb1k
 * Common: Arabic language support - David Kohen
-* N1/DS: Kernel 2.6.34.2 with Pershoot/Kmobs clock settings
+* N1/DS/Desire: Kernel 2.6.34.4 with Pershoot/Kmobs clock settings
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
 * D/S: Better media profiles - Charan Singh
 * EVO: Kernel base from toastcfh, display patches from AssassinsLament and netarchy, backport of various features from Cyanogen
 * EVO: Sprint MMS fixes - Darchstar, toastcfh
-* N1: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
+* N1/Desire: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
+* Desire: Kernel base from Kali- & Defer
 
 ### Maintainers:
 * Nexus One: Cyanogen
 * Droid: Koush
 * Dream/Sapphire: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
-* Bravo (Desire): Kali-, Defer, behnaam
+* Desire: Kali-, Defer
 * Incredible: Koush
 * Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
 * Supersonic (EVO): Cyanogen, toastcfh
