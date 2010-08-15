@@ -42,7 +42,7 @@ CHANGELOG
 * Common: Translations: Takuo Kitame, Matthias Büchner, Eug89, comercy
 * Common: Major build system enhancements by Chris Soyars & Koush
 * Common: Long press volume buttons to skip songs - Jon Boekenoogen
-* Common: Accelerated ARMv7 JPEG decoding - Qualcomm
+* Common: Accelerated ARMv7 JPEG and PNG decoding - Qualcomm
 * Common: Skia acceleration on ARMv7 - Qualcomm
 * Common: Patch wrangling - Cyanogen, Chris Soyars, Koush, Kmobs
 * Common: Bluetooth HID support - Erin Yueh @ 0xlab
@@ -64,13 +64,15 @@ CHANGELOG
 * Common: Fully customizable power widget - piafinho
 * Common: Zoom (except in 720p), flash, and other camera parameters can be changed while recording - Cyanogen, Qualcomm
 * Common: New boot animation by 73v1n: http://www.youtube.com/watch?v=LnweaNTtb1k
-* Common: Arabic language support - David Kohen
-* N1/DS/Desire: Kernel 2.6.34.4 with Pershoot/Kmobs clock settings
+* Common: Arabic language support - Aziz Huss, David Kohen
+* Common: Torch app - Ben Buxton, Cyanogen
+* Common: Browser color invert (save battery on AMOLED screens) - Qualcomm
+* N1/DS/Desire: Kernel 2.6.34.2 with Pershoot/Kmobs clock settings
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
 * D/S: Better media profiles - Charan Singh
-* EVO: Kernel base from toastcfh, display patches from AssassinsLament and netarchy, backport of various features from Cyanogen
+* EVO: Kernel base from toastcfh, display patches from AssassinsLament and netarchy, backport of various features from Cyanogen (2.6.32)
 * EVO: Sprint MMS fixes - Darchstar, toastcfh
 * N1/Desire: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
 * Desire: Kernel base from Kali- & Defer
