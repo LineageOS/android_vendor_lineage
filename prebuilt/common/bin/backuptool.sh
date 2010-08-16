@@ -70,6 +70,7 @@ lib/libimageutils.so
 lib/libinterstitial.so
 lib/libspeech.so
 lib/libzxing.so
+lib/libvoicesearch.so
 etc/hosts
 etc/custom_backup_list.txt
 EOF
