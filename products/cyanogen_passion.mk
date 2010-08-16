@@ -45,7 +45,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-N1
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-N1-RC3
+        ro.modversion=CyanogenMod-6.0.0-N1-RC4
 endif
 
 #
