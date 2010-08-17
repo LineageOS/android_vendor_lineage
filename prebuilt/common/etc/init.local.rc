@@ -1,19 +1,5 @@
 # CyanogenMod Extras
 
-# Compcache
-service compcache_on /system/bin/logwrapper /system/bin/sh /system/bin/compcache start
-    disabled
-    oneshot
-
-service compcache_off /system/bin/logwrapper /system/bin/sh /system/bin/compcache stop
-    disabled
-    oneshot
-
-on property:persist.service.compcache=1
-    start compcache_on
-
-on property:persist.service.compcache=0
-    start compcache_off
-
-
-
+on boot
+    # Compcache
+    exec /system/bin/handle_compcache

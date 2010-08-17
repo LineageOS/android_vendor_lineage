@@ -1,0 +1,17 @@
+#!/system/bin/sh
+#
+# Compcache handler
+# Decides whether or not Compcache is enabled
+#
+
+PROP=$(cat /data/property/persist.service.compcache)
+
+if [ $PROP == 1 ]
+then
+  `dirname $0`/compcache start
+else
+  `dirname $0`/compcache stop
+fi
+
+exit 0
+
