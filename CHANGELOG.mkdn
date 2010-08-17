@@ -67,6 +67,8 @@ CHANGELOG
 * Common: Arabic language support - Aziz Huss, David Kohen
 * Common: Torch app - Ben Buxton, Cyanogen
 * Common: Browser color invert (save battery on AMOLED screens) - Qualcomm
+* Common: Configurable brightness sensor - Jonas Larsson
+* Common: Ad-Hoc wifi support - havlenapetr
 * N1/DS/Desire: Kernel 2.6.34.2 with Pershoot/Kmobs clock settings
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
