@@ -3,7 +3,6 @@
 # Gerrit tool for easiness of submitting changes to CM repos
 # Wes Garner
 # Usage: cmgerrit <Gerrit Username> <Repo> <for/changes> <Branch>
-# To use this, it must be in your ~/bin or in your $PATH
 #
 
 git push ssh://$1@review.cyanogenmod.com:29418/CyanogenMod/$2 HEAD:refs/$3/$4
