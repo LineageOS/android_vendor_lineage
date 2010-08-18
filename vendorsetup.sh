@@ -9,3 +9,5 @@ add_lunch_combo cyanogen_espresso-eng
 add_lunch_combo cyanogen_supersonic-eng
 add_lunch_combo cyanogen_liberty-eng
 add_lunch_combo cyanogen_vibrant-eng
+
+PATH=$PATH:$PWD/vendor/cyanogen/tools ; export PATH
