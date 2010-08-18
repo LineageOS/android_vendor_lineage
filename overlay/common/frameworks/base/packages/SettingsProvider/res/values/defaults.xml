@@ -18,4 +18,5 @@
 -->
 <resources>
     <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
+    <string name="default_input_method">com.android.inputmethod.latin/.LatinIME</string>
 </resources>
