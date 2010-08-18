@@ -14,5 +14,5 @@
      limitations under the License.
 -->
 <resources>
-  <bool name="im_is_default">false</bool>
+    <add-resource type="bool" name="im_is_default">false</add-resource>
 </resources>
