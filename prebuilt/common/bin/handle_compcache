@@ -9,6 +9,7 @@ then
   PROP=`getprop persist.service.compcache`
 else
   PROP=`getprop ro.compcache.default`
+  setprop persist.service.compcache $PROP
 fi
 
 if [ $PROP == 1 ]
