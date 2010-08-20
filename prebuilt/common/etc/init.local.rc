@@ -1,5 +1,7 @@
 # CyanogenMod Extras
 
-on boot
-    # Compcache
-    exec /system/bin/handle_compcache
+# Compcache - handle at boot
+service compcache /system/bin/handle_compcache
+    user root
+    group root
+    oneshot
