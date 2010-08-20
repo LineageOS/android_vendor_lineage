@@ -3,6 +3,8 @@ CyanogenMod
 
 Visit http://github.com/CyanogenMod for full changelogs and git access.
 
+Visit http://review.cyanogenmod.com for our Gerrit instance.
+
 Visit http://bit.ly/cmprogress for the device release spreadsheet.
 
 Follow http://twitter.com/cmsrc for commit-by-commit updates.
@@ -12,12 +14,12 @@ CHANGELOG
 
 ### 6.0.0-pre
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
-* Common: Deskclock extra settings - cyanogen, mtwebster
 * Common: ADWLauncher 1.0.1 - Ander Webbs
 * Common: Music app enhancements - Eliot Stocker
 * Common: Phone mod V.30.1 - cytown
 * Common: WyContacts 1.2 - Wysie (port to Froyo by Sileht)
-* Common: Superuser 2.2.2 - Adam Shanks (ChainsDD)
+* Common: Superuser 2.3.3 - Adam Shanks (ChainsDD)
+* Common: Deskclock extra settings - cyanogen, Michael Webster
 * Common: MMS enhancements from Ruqqq, Takuo Kitame, jeagoss, temporalshadows
 * Common: Improved RTL text rendering - David Kohen, Omri Baumer
 * Common: Themable user interface elements - Wysie, bcrook, jeagoss
@@ -68,8 +70,10 @@ CHANGELOG
 * Common: Torch app - Ben Buxton, Cyanogen
 * Common: Browser color invert (save battery on AMOLED screens) - Qualcomm
 * Common: Configurable brightness sensor - Jonas Larsson
-* Common: Ad-Hoc wifi support - havlenapetr
-* N1/DS/Desire: Kernel 2.6.34.2 with Pershoot/Kmobs clock settings
+* Common: Ad-Hoc wifi support - Petr Havlena
+* Common: Audio focus enhancements - Jonas Larsson
+* Common: Mail folder sync settings - Michael Webster
+* N1/DS/Desire: Kernel 2.6.34.4 with Pershoot/Kmobs clock settings
 * D/S: Camera reverse engineering by NCommander & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
