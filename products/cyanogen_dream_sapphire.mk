@@ -31,6 +31,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/dream_sapphire/etc/init.d/02audio_profile:system/etc/init.d/02audio_profile
 
+# Enable Compcache by default on D/S
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.compcache.default=1
+
 #
 # Set ro.modversion
 #
