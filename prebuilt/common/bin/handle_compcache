@@ -4,7 +4,12 @@
 # Decides whether or not Compcache is enabled
 #
 
-PROP=$(cat /data/property/persist.service.compcache)
+if [ -e /data/property/persist.service.compcache ];
+then
+  PROP=`getprop persist.service.compcache`
+else
+  PROP=`getprop ro.compcache.default`
+fi
 
 if [ $PROP == 1 ]
 then
