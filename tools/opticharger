@@ -21,6 +21,8 @@ set -e
 QUIET=1
 QFLAG=-q
 BASE=`pwd`
+TMPDIR=/tmp/opticharge-$$
+
 if [ "$APKCERTS" = "" ];
 then
     APKCERTS=$OUT/obj/PACKAGING/target_files_intermediates/$TARGET_PRODUCT-target_files-$TARGET_BUILD_VARIANT.$LOGNAME/META/apkcerts.txt
@@ -87,10 +89,10 @@ then
 
     [ $QUIET ] || echo "Certificate: $CERT";
 
-    [ -d /tmp/$NAME ] && rm -rf /tmp/$NAME
-    mkdir /tmp/$NAME
-    trap "rm -rf /tmp/$NAME; exit" INT TERM EXIT
-    cd /tmp/$NAME
+    [ -d $TMPDIR/$NAME ] && rm -rf $TMPDIR/$NAME
+    mkdir -p $TMPDIR/$NAME
+    trap "rm -rf $TMPDIR; exit" INT TERM EXIT
+    cd $TMPDIR/$NAME
     unzip -q $BASE/$1
     for x in `find . -name "*.png" | grep -v "\.9.png$" | tr "\n" " "`
     do
