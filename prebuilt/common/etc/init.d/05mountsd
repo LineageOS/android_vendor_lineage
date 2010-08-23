@@ -30,11 +30,16 @@ then
         log -p i -t mountsd "Checking filesystems..";
    
         # fsck the sdcard filesystem first
-        logwrapper e2fsck -y $PARTITION;
-   
+        if [ -x `which e2fsck` ];
+        then
+            e2fsck -y $PARTITION;e2fsk_exitcode=$?
+        else
+            echo "executable e2fsck not found, assuming no filesystem errors"
+            e2fsk_exitcode=0
+        fi
         # set property with exit code in case an error occurs
-        setprop cm.e2fsck.errors $?;
-        if [ "$?" = 0 ];
+        setprop cm.e2fsck.errors $e2fsk_exitcode;
+        if [ "$e2fsk_exitcode" = 0 ];
         then
    
             # mount and set perms
