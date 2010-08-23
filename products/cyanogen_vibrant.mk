@@ -11,10 +11,10 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 # Setup device specific product configuration.
 #
 PRODUCT_NAME := cyanogen_vibrant
-PRODUCT_BRAND := google
-PRODUCT_DEVICE := SGH-T959
-PRODUCT_MODEL := Vibrant
-PRODUCT_MANUFACTURER :=
+PRODUCT_BRAND := Samsung
+PRODUCT_DEVICE := vibrant
+PRODUCT_MODEL := SGH-T959
+PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=passion BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys PRIVATE_BUILD_DESC="passion-user 2.2 FRF91 43546 release-keys"
 
 # Extra Vibrant overlay
