@@ -23,7 +23,7 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/espresso/kernel
 
 # Extra Espresso overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/espresso
 
 
 # Include the Torch app
