@@ -21,7 +21,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NA
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/heroc/kernel
 
 # Extra overlay for Gallery3D orientation hack
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/dream_sapphire
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/heroc
 
 #
 # Set ro.modversion
@@ -31,7 +31,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Heroc
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-Heroc-RC1
+	 ro.modversion=CyanogenMod-6.0.0-Heroc-RC1
 endif
 
 #
