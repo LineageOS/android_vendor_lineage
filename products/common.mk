@@ -8,9 +8,6 @@ PRODUCT_PACKAGES += ADWLauncher
 # Include backuptool
 PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=true
 
-# Display modversion in edify script.
-PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_MODVER=true
-
 # Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=DonMessWivIt.ogg
