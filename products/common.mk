@@ -5,9 +5,6 @@ PRODUCT_DEVICE := generic
 
 PRODUCT_PACKAGES += ADWLauncher
 
-# Include backuptool
-PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=true
-
 # Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=DonMessWivIt.ogg
@@ -90,8 +87,6 @@ PRODUCT_COPY_FILES +=  \
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
 ifdef CYANOGEN_WITH_GOOGLE
-    PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=false
-
     PRODUCT_COPY_FILES += \
         vendor/cyanogen/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
         vendor/cyanogen/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
