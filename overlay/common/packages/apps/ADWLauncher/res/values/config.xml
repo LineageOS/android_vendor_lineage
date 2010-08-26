@@ -17,6 +17,7 @@
 <resources>
     <bool name="config_drawerNew">false</bool>
     <bool name="config_fadeDrawerLabels">true</bool>
+    <bool name="config_nagScreen">false</bool>
 
     <integer name="config_desktopBounce">30</integer>
     <integer name="config_desktopSpeed">600</integer>
