@@ -13,9 +13,6 @@ PRODUCT_DEVICE := sholes
 PRODUCT_MODEL := Droid
 PRODUCT_MANUFACTURER := Motorola
 
-# Build Kernel
-PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/motorola/sholes/kernel
-
 #
 # Set ro.modversion
 #

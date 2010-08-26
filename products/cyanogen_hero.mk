@@ -20,9 +20,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NA
 # Enable Windows Media
 WITH_WINDOWS_MEDIA := true
 
-# Build Kernel
-PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/hero/kernel
-
 #
 # Set ro.modversion
 #

@@ -23,9 +23,6 @@ PRODUCT_PACKAGES += Torch
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/bravo
 
-# Use a precompiled kernel until the merge with cm-kernel
-PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/bravo/kernel/kernel
-
 # Extra RIL settings
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.managed.roaming=1 \

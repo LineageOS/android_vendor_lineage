@@ -19,9 +19,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NA
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-espresso.map
 
-# Build Kernel
-PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/espresso/kernel
-
 # Extra Espresso overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/espresso
 

@@ -47,10 +47,7 @@ else
 endif
 
 # Use the audio profile hack
-WITH_DS_HTCACOUSTIC_HACK := true
-
-# Use Windows Media
-WITH_WINDOWS_MEDIA := true
+PRODUCT_SPECIFIC_DEFINES += WITH_DS_HTCACOUSTIC_HACK := true
 
 #
 # Copy DS specific prebuilt files
