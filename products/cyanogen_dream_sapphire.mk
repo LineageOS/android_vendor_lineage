@@ -47,7 +47,7 @@ else
 endif
 
 # Use the audio profile hack
-PRODUCT_SPECIFIC_DEFINES += WITH_DS_HTCACOUSTIC_HACK := true
+PRODUCT_SPECIFIC_DEFINES += WITH_DS_HTCACOUSTIC_HACK=true
 
 #
 # Copy DS specific prebuilt files
