@@ -43,7 +43,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-DS
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-DS-RC4
+        ro.modversion=CyanogenMod-6.0.0-DS
 endif
 
 # Use the audio profile hack
