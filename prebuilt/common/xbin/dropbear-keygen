@@ -1,0 +1,25 @@
+#!/system/bin/sh
+#
+# Generate keys for the Dropbear SSH server
+# Steve Kondik (cyanogen)
+#
+
+DROPBEAR_HOME=/data/dropbear
+DROPBEARKEY=/system/xbin/dropbearkey
+
+if [ ! -d $DROPBEAR_HOME ] || [ ! -f $DROPBEAR_HOME/dropbear_rsa_host_key ] || [ ! -f $DROPBEAR_HOME/dropbear_dsa_host_key ];
+then
+    if [ ! -d $DROPBEAR_HOME ];
+    then
+        mkdir /data/dropbear;
+        chmod 750 /data/dropbear
+    fi
+    for k in dss rsa;
+    do
+        if [ ! -e $DROPBEAR_HOME/dropbear_${k}_host_key ];
+        then
+            $DROPBEARKEY -t $k -f $DROPBEAR_HOME/dropbear_${k}_host_key;
+            chmod 640 $DROPBEAR_HOME/dropbear_${k}_host_key;
+        fi
+    done
+fi
