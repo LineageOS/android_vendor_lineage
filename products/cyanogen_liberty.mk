@@ -27,10 +27,10 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-
 
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-liberty
+        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Liberty
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-liberty
+        ro.modversion=CyanogenMod-6.0.0-Liberty
 endif
 
 #
