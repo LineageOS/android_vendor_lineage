@@ -20,6 +20,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NA
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-liberty.map
 
 #
+# Move dalvik cache to data partition where there is more room to solve startup problems
+#
+PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.dexopt-data-only=1
+
+#
 # Set ro.modversion
 #
 
