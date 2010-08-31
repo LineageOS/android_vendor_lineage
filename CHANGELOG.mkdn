@@ -62,6 +62,7 @@ CHANGELOG
 * N1/Bravo/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly and HaXzAmaTiC)
 * N1/DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
+* DS: CompCache sizes can be adjusted through CMParts - Wes Garner
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Bravo: Kernel 2.6.35
 * Espresso: Improve backlights - Wes Garner

@@ -12,7 +12,7 @@ case "$1" in
    start)
       echo 3 > /proc/sys/vm/drop_caches
       modprobe $MODULE
-      rzscontrol $DEV --init
+      rzscontrol $DEV --disksize_kb=$2 --init
       swapon $DEV
    ;;
 
@@ -24,7 +24,7 @@ case "$1" in
       rzscontrol $DEV --stats
    ;;
    *)
-      echo "Usage: $0 {start|stop|stats}"
+      echo "Usage: $0 {start <size>|stop|stats}"
       exit 1
 esac
 
