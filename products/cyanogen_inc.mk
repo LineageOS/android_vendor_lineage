@@ -11,12 +11,10 @@ PRODUCT_BRAND := htc
 PRODUCT_DEVICE := inc
 PRODUCT_MODEL := Incredible
 PRODUCT_MANUFACTURER := HTC
-# Use N1's build prop to fool the market...?
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=passion BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys PRIVATE_BUILD_DESC="passion-user 2.2 FRF91 43546 release-keys"
-#PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=ERE27 BUILD_DISPLAY_ID=ERE27 PRODUCT_NAME=inc BUILD_FINGERPRINT=verizon/inc/inc/inc:2.1-update1/ERE27/161494:user/release-keys TARGET_BUILD_TYPE=user BUILD_VERSION_TAGS=release-keys PRIVATE_BUILD_DESC="1.22.605.2 CL161494 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=inc BUILD_FINGERPRINT=verizon_wwe/inc/inc/inc:2.2/FRF91/231334:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys PRIVATE_BUILD_DESC="3.21.605.1 CL231334 release-keys"
 
 # Extra Passion overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/inc
 
 #
 # Set ro.modversion
@@ -26,7 +24,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Inc
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-Inc
+        ro.modversion=CyanogenMod-6.0.1-Inc
 endif
 
 #
