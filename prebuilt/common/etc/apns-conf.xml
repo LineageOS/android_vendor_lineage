@@ -705,6 +705,7 @@
   <apn carrier="Simyo DE" apn="internet.eplus.de" type="" user="simyo" pass="simyo"/>
   <apn carrier="Simyo ES" apn="gprs-service.com" mcc="214" mnc="19" type="default,supl"/>
   <apn carrier="Simyo ES-MMS" apn="gprs-service.com" password="1234" mmsc="http://mms-services.eu" mmsproxy="217.12.32.180" mmsport="8080" mcc="214" mnc="19" type="mms"/>
+  <apn carrier="Simple" mcc="310" mnc="260" apn="simple" proxy="216.155.165.050" port="8080" user="" password="" server="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mmsproxy="216.155.165.050" mmsport="8080" type=""/>
   <apn carrier="SingTel" mcc="525" mnc="01" apn="e-ideas" user="" server="" password="" mmsc="" type="default,supl"/>
   <apn carrier="SingTel MMS" mcc="525" mnc="01" apn="e-ideas" user="65IDEAS" server="" password="IDEAS" mmsc="http://mms.singtel.com:10021/mmsc" mmsproxy="165.21.42.84" mmsport="8080" type="mms"/>
   <apn carrier="SingTel" mcc="525" mnc="02" apn="e-ideas" user="" server="" password="" mmsc="" type="default,supl"/>
