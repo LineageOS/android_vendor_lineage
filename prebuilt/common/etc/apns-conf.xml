@@ -702,10 +702,10 @@
   <apn carrier="Siminn MMS" mcc="274" mnc="01" apn="mms.simi.is" user="" server="" password="" mmsc="http://mms.simi.is/servlets/mms" mmsproxy="213.167.138.200" mmsport="9201" type="mms"/>
   <apn carrier="Si.mobil Internet" mcc="293" mnc="40" apn="internet.simobil.si" user="simobil" server="" password="internet" mmsproxy="" mmsport="" mmsc="" proxy="80.95.224.46" port="9201" type="default,supl" />
   <apn carrier="Si.mobil MMS" mcc="293" mnc="40" apn="mms.simobil.si" user="simobil" server="" password="internet" mmsproxy="80.95.224.46" mmsport="9201" mmsc="mmc" proxy="" port="" type="mms" />
+  <apn carrier="Simple" mcc="310" mnc="260" apn="simple" proxy="216.155.165.050" port="8080" user="" password="" server="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mmsproxy="216.155.165.050" mmsport="8080" type=""/>
   <apn carrier="Simyo DE" apn="internet.eplus.de" type="" user="simyo" pass="simyo"/>
   <apn carrier="Simyo ES" apn="gprs-service.com" mcc="214" mnc="19" type="default,supl"/>
   <apn carrier="Simyo ES-MMS" apn="gprs-service.com" password="1234" mmsc="http://mms-services.eu" mmsproxy="217.12.32.180" mmsport="8080" mcc="214" mnc="19" type="mms"/>
-  <apn carrier="Simple" mcc="310" mnc="260" apn="simple" proxy="216.155.165.050" port="8080" user="" password="" server="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mmsproxy="216.155.165.050" mmsport="8080" type=""/>
   <apn carrier="SingTel" mcc="525" mnc="01" apn="e-ideas" user="" server="" password="" mmsc="" type="default,supl"/>
   <apn carrier="SingTel MMS" mcc="525" mnc="01" apn="e-ideas" user="65IDEAS" server="" password="IDEAS" mmsc="http://mms.singtel.com:10021/mmsc" mmsproxy="165.21.42.84" mmsport="8080" type="mms"/>
   <apn carrier="SingTel" mcc="525" mnc="02" apn="e-ideas" user="" server="" password="" mmsc="" type="default,supl"/>
