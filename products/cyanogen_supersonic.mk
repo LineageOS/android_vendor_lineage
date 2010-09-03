@@ -25,10 +25,10 @@ PRODUCT_PACKAGES += Torch
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-N1
+        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Supersonic
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.0.0-Supersonic
+        ro.modversion=CyanogenMod-6.1.0-RC0-Supersonic
 endif
 
 #
