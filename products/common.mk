@@ -17,6 +17,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmod
 endif
 
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/system/lib/modules
 
