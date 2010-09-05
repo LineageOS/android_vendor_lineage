@@ -11,8 +11,12 @@ Follow http://twitter.com/cmsrc for commit-by-commit updates.
 
 CHANGELOG
 ---------
+### 6.1.0
+* Common: ADWLauncher 1.1.5 - Ander Webbs
+* Common: FIXME
+* N1/DS - Kernel 2.6.35 based on Pershoot's repository
 
-### 6.0.0-pre
+### 6.0.0
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
 * Common: ADWLauncher 1.0.1 - Ander Webbs
 * Common: Music app enhancements - Eliot Stocker
