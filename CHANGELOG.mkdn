@@ -13,8 +13,17 @@ CHANGELOG
 ---------
 ### 6.1.0
 * Common: ADWLauncher 1.1.5 - Ander Webbs
-* Common: FIXME
+* Common: Configurable audio focus for music app - Michael Webster
+* Common: APN cleanup (fixes many issues with GPS and MMS) - Cyanogen
+* Common: Use ARMv6 optimizations for DS/Hero targets - Ninpo
+* Common: AudioDSP updates - Antti S. Lankila
+* Common: Status bar themes - Michael Webster
+* Common: Email app updates - Michael Webster
+* Common: Selected kernel optimizations - Kernelzilla
+* Common: EMMC support - Koush
+* Common: ....
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
+* Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 
 ### 6.0.0
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
