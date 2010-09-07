@@ -13,7 +13,7 @@ CHANGELOG
 ---------
 ### 6.1.0
 * Common: ADWLauncher 1.1.5 - Ander Webbs
-* Common: Configurable audio focus for music app - Michael Webster
+* Common: Configurable audio focus for music app - Jonas Larsson
 * Common: APN cleanup (fixes many issues with GPS and MMS) - Cyanogen
 * Common: Use ARMv6 optimizations for DS/Hero targets - Ninpo
 * Common: AudioDSP updates - Antti S. Lankila
