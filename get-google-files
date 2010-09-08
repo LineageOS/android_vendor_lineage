@@ -2,15 +2,16 @@
 import sys, random, urllib2, zipfile, StringIO, os
 from optparse import OptionParser
 
-FILENAME="gapps-passion-FRF91-signed.zip"
-MIRRORS=["http://www.kanged.net/mirror/gapps/",]
+FILENAME=["gapps-hdpi-20100817-signed.zip","gapps-mdpi-20100816-signed.zip","gapps-mdpi-tiny-20100816-signed.zip"]
+VERSIONS=["hdpi","mdpi","mdpi-tiny"]
+MIRRORS=["http://mirror.kanged.net/gapps/",]
 
 def device():
-    print "usage: extract-google-files -m [method]"
+    print "usage: get-google-files -m [method] -v [version]"
     print "Note:  Device method is currently not implemented, please use download"
     sys.exit(1)
 
-def download():
+def download(version):
     try:
         os.makedirs("proprietary")
     except:
@@ -19,8 +20,16 @@ def download():
         i = random.randrange(0, len(MIRRORS)-1)
     else:
         i = 0
-    url = MIRRORS[i] + FILENAME
-    print "Fetching from %s" % url
+
+    try:
+        j = VERSIONS.index(version.lower())
+    except ValueError:
+	print "GApps version not found, defaulting to HDPI"
+        j = 0
+
+    url = MIRRORS[i] + FILENAME[j]
+
+    print "Fetching %s GApps from %s" % (version.upper(),url)
 
     data = urllib2.urlopen(url).read()
     zip = zipfile.ZipFile(StringIO.StringIO(data),'r')
@@ -39,14 +48,15 @@ def download():
 
 def main():
     parser = OptionParser(usage="usage: %prog [options]")
-    parser.add_option("-m", "--method", dest='method', default="download", help="Extraction Method: device, download [default: device]")
+    parser.add_option("-m", "--method", dest='method', default="download", help="Extraction Method: download")
+    parser.add_option("-v", "--version", dest='version', default="hdpi", help="GApps Version: hdpi, mdpi, mdpi-tiny [default: hdpi]")
     (options, args) = parser.parse_args()
 
     if options.method == "device":
         return device()
 
     if options.method == "download":
-        return download()
+        return download(options.version)
 
 if __name__ == '__main__':
     main()
