@@ -21,7 +21,7 @@ CHANGELOG
 * Common: Email app updates - Michael Webster
 * Common: Selected kernel optimizations - Kernelzilla
 * Common: EMMC support - Koush
-* Common: Long press back button to kill foreground process.
+* Common: Long press back button to kill foreground process - Evan Charlton 
 * Common: ....
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
