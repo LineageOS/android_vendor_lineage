@@ -22,7 +22,8 @@ CHANGELOG
 * Common: Selected kernel optimizations - Kernelzilla
 * Common: EMMC support - Koush
 * Common: Long press back button to kill foreground process - Evan Charlton 
-* Common: ....
+* Common: Camcorder touch-to-focus - Cyanogen
+* Common: Notification "quiet time" - Evan Charlton
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 
