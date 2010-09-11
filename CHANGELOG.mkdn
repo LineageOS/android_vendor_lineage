@@ -24,12 +24,14 @@ CHANGELOG
 * Common: Long press back button to kill foreground process - Evan Charlton 
 * Common: Camcorder touch-to-focus - Cyanogen
 * Common: Notification "quiet time" - Evan Charlton
+* Common; Superuser 2.3.6 - Adam Shanks (ChainsDD)
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
+* Bravo: Kernel 2.6.35
 
 ### 6.0.0
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
-* Common: ADWLauncher 1.0.1 - Ander Webbs
+* Common: ADWLauncher 1.1.4 - Ander Webbs
 * Common: Music app enhancements - Eliot Stocker
 * Common: Phone mod V.30.1 - cytown
 * Common: WyContacts 1.2 - Wysie (port to Froyo by Sileht)
@@ -89,7 +91,7 @@ CHANGELOG
 * Common: Audio focus enhancements - Jonas Larsson
 * Common: Mail folder sync settings - Michael Webster
 * N1/DS/Desire: Kernel 2.6.34.4 with Pershoot/Kmobs clock settings
-* D/S: Camera reverse engineering by NCommander & Cyanogen
+* D/S: Camera reverse engineering by NCommander, Eddie Ringle, & Cyanogen
 * D/S: Kernel patches for stability from Zinx Verituse
 * D/S: MT3G Fender/1.2 support from Zinx Verituse
 * D/S: Better media profiles - Charan Singh
