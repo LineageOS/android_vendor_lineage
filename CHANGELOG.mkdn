@@ -9,6 +9,19 @@ Visit http://bit.ly/cmprogress for the device release spreadsheet.
 
 Follow http://twitter.com/cmsrc for commit-by-commit updates.
 
+Maintainers:
+------------
+* Nexus One: Cyanogen
+* Droid: Koush
+* Dream/Sapphire: Cyanogen
+* Hero: Lox (GSM), Darchstar (CDMA)
+* Desire: Kali-, Defer
+* Incredible: Koush
+* Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
+* Supersonic (EVO): Cyanogen, toastcfh
+* Galaxy S (Vibrant): Scepterr, Wes Garner
+* Legend: Alexander Hofbauer
+
 CHANGELOG
 ---------
 ### 6.1.0
@@ -100,14 +113,4 @@ CHANGELOG
 * N1/Desire: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
 * Desire: Kernel base from Kali- & Defer
 
-### Maintainers:
-* Nexus One: Cyanogen
-* Droid: Koush
-* Dream/Sapphire: Cyanogen
-* Hero: Lox (GSM), Darchstar (CDMA)
-* Desire: Kali-, Defer
-* Incredible: Koush
-* Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
-* Supersonic (EVO): Cyanogen, toastcfh
-* Galaxy S (Vibrant): Scepterr, Wes Garner
 
