@@ -39,7 +39,7 @@ then
         fi
         # set property with exit code in case an error occurs
         setprop cm.e2fsck.errors $e2fsk_exitcode;
-        if [ "$e2fsk_exitcode" = 0 ];
+        if [ "$e2fsk_exitcode" -lt 2 ];
         then
    
             # mount and set perms
