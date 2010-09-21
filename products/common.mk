@@ -105,7 +105,6 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/cyanogen/proprietary/HtcCopyright.apk:./system/app/HtcCopyright.apk \
         vendor/cyanogen/proprietary/HtcEmailPolicy.apk:./system/app/HtcEmailPolicy.apk \
         vendor/cyanogen/proprietary/HtcSettings.apk:./system/app/HtcSettings.apk \
-        vendor/cyanogen/proprietary/LatinImeGoogle.apk:./system/app/LatinImeGoogle.apk \
         vendor/cyanogen/proprietary/LatinImeTutorial.apk:./system/app/LatinImeTutorial.apk \
         vendor/cyanogen/proprietary/Maps.apk:./system/app/Maps.apk \
         vendor/cyanogen/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
