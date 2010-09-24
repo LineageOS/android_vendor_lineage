@@ -36,8 +36,13 @@ CHANGELOG
 * Common: EMMC support - Koush
 * Common: Long press back button to kill foreground process - Evan Charlton 
 * Common: Camcorder touch-to-focus - Cyanogen
-* Common: Notification "quiet time" - Evan Charlton
+* Common: Notification "quiet hours" - Evan Charlton
 * Common; Superuser 2.3.6 - Adam Shanks (ChainsDD)
+* Common: Camera/camcorder continuous autofocus - Cyanogen
+* Common: Camera option sliders - Cyanogen
+* Common: Control locking of MMS app in memory - Julian J. M
+* Common: Kill foreground app by long-pressing back - Evan Charlton
+* Common: New AppWidgetPicker dialog - boombuler@XDA
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Bravo: Kernel 2.6.35
