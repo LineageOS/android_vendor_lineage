@@ -44,6 +44,7 @@ PRODUCT_PACKAGES += \
     CMStats \
     CMWallpapers \
     DSPManager \
+    FileManager \
     Superuser
 
 # Copy over the changelog to the device
