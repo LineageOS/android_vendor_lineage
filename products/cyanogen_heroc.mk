@@ -13,7 +13,7 @@ PRODUCT_BRAND := sprint
 PRODUCT_DEVICE := heroc
 PRODUCT_MODEL := HERO200
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRF91 PRODUCT_NAME=passion BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys PRIVATE_BUILD_DESC="heroc-user 2.2 FRF91 43546 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
 # Extra overlay for Gallery3D orientation hack
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/heroc
