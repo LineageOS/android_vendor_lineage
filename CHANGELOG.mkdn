@@ -25,6 +25,7 @@ Maintainers:
 CHANGELOG
 ---------
 ### 6.1.0
+* Common: Update to Android 2.2.1
 * Common: ADWLauncher 1.1.5 - Ander Webbs
 * Common: Configurable audio focus for music app - Jonas Larsson
 * Common: APN cleanup (fixes many issues with GPS and MMS) - Cyanogen
@@ -43,6 +44,11 @@ CHANGELOG
 * Common: Control locking of MMS app in memory - Julian J. M
 * Common: Kill foreground app by long-pressing back - Evan Charlton
 * Common: New AppWidgetPicker dialog - boombuler@XDA
+* Common: FileManager app - OpenIntents
+* Common: Anonymous install statistics gathering - Chris Soyars
+* Common: Stable shot camera mode - Cyanogen
+* Common: Dual-mode snooze (long press dismiss) - Evan Charlton
+* N1/DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson 
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Bravo: Kernel 2.6.35
