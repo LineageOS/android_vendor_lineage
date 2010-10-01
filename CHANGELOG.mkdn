@@ -35,7 +35,6 @@ CHANGELOG
 * Common: Email app updates - Michael Webster
 * Common: Selected kernel optimizations - Kernelzilla
 * Common: EMMC support - Koush
-* Common: Long press back button to kill foreground process - Evan Charlton 
 * Common: Camcorder touch-to-focus - Cyanogen
 * Common: Notification "quiet hours" - Evan Charlton
 * Common; Superuser 2.3.6 - Adam Shanks (ChainsDD)
@@ -48,7 +47,7 @@ CHANGELOG
 * Common: Anonymous install statistics gathering - Chris Soyars
 * Common: Stable shot camera mode - Cyanogen
 * Common: Dual-mode snooze (long press dismiss) - Evan Charlton
-* N1/DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson 
+* N1/DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Bravo: Kernel 2.6.35
