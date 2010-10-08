@@ -47,6 +47,7 @@ CHANGELOG
 * Common: Anonymous install statistics gathering - Chris Soyars
 * Common: Stable shot camera mode - Cyanogen
 * Common: Dual-mode snooze (long press dismiss) - Evan Charlton
+* Common: Compose SMS/MMS via search button long press - Wes Garner
 * N1/DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
