@@ -33,7 +33,6 @@ adb pull /system/app/Twitter.apk proprietary
 adb pull /system/app/Vending.apk proprietary
 adb pull /system/app/VoiceSearch.apk proprietary
 adb pull /system/app/YouTube.apk proprietary
-adb pull /system/app/com.amazon.mp3.apk proprietary
 adb pull /system/app/googlevoice.apk proprietary
 adb pull /system/app/kickback.apk proprietary
 adb pull /system/app/soundback.apk proprietary
@@ -41,6 +40,5 @@ adb pull /system/app/talkback.apk proprietary
 adb pull /system/etc/permissions/com.google.android.maps.xml proprietary
 adb pull /system/etc/permissions/features.xml proprietary
 adb pull /system/framework/com.google.android.maps.jar proprietary
-adb pull /system/lib/libinterstitial.so proprietary
 adb pull /system/lib/libspeech.so proprietary
 

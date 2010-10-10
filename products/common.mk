@@ -121,7 +121,6 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/cyanogen/proprietary/Vending.apk:./system/app/Vending.apk \
         vendor/cyanogen/proprietary/VoiceSearch.apk:./system/app/VoiceSearch.apk \
         vendor/cyanogen/proprietary/YouTube.apk:./system/app/YouTube.apk \
-        vendor/cyanogen/proprietary/com.amazon.mp3.apk:./system/app/com.amazon.mp3.apk \
         vendor/cyanogen/proprietary/googlevoice.apk:./system/app/googlevoice.apk \
         vendor/cyanogen/proprietary/kickback.apk:./system/app/kickback.apk \
         vendor/cyanogen/proprietary/soundback.apk:./system/app/soundback.apk \
@@ -129,7 +128,6 @@ ifdef CYANOGEN_WITH_GOOGLE
         vendor/cyanogen/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
         vendor/cyanogen/proprietary/features.xml:./system/etc/permissions/features.xml \
         vendor/cyanogen/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-        vendor/cyanogen/proprietary/libinterstitial.so:./system/lib/libinterstitial.so \
         vendor/cyanogen/proprietary/libspeech.so:./system/lib/libspeech.so
 else
     PRODUCT_PACKAGES += \
