@@ -2,7 +2,7 @@
 import sys, random, urllib2, zipfile, StringIO, os
 from optparse import OptionParser
 
-FILENAME=["gapps-hdpi-20100930-signed.zip","gapps-mdpi-20100930-signed.zip","gapps-mdpi-tiny-20100930-signed.zip"]
+FILENAME=["gapps-hdpi-20101008-signed.zip","gapps-mdpi-20101008-signed.zip","gapps-mdpi-tiny-20101008-signed.zip"]
 VERSIONS=["hdpi","mdpi","mdpi-tiny"]
 MIRRORS=["http://mirror.teamdouche.net/get/various/",]
 
