@@ -22,8 +22,10 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_mahimahi_defconfig
 
-# Include the Torch app
-PRODUCT_PACKAGES += Torch
+# Include the Torch and FM apps
+PRODUCT_PACKAGES += \
+    Torch \
+    FM
 
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
