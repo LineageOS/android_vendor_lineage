@@ -17,8 +17,10 @@ PRODUCT_MODEL := HTC Desire
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 PRODUCT_NAME=htc_bravo BUILD_FINGERPRINT=htc_wwe/htc_bravo/bravo/bravo:2.2/FRF91/226611:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys PRIVATE_BUILD_DESC="2.10.405.2 CL226611 release-keys"
 
-# Include the Torch app
-PRODUCT_PACKAGES += Torch
+# Include the Torch and FM apps
+PRODUCT_PACKAGES += \
+    Torch \
+    FM
 
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/bravo
