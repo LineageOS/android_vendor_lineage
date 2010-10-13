@@ -17,8 +17,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 PRODUCT_NA
 # Extra Supersonic overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/supersonic
 
-# Include the Torch app
-PRODUCT_PACKAGES += Torch
+# Include the FM and Torch apps
+PRODUCT_PACKAGES += \
+    Torch \
+    FM
 
 #
 # Set ro.modversion
