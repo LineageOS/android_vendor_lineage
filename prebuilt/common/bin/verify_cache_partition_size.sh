@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sbin/sh
 #
 # Force /system dalvik-cache on /data instead of /cache if is not large enough
 #
@@ -8,3 +8,5 @@ if [ $CACHESIZE -lt 60000 ]
 then
   echo "dalvik.vm.dexopt-data-only=1" >> /system/build.prop
 fi
+
+exit 0
