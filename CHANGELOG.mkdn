@@ -35,7 +35,7 @@ CHANGELOG
 * Common: Use ARMv6 optimizations for DS/Hero targets - Ninpo
 * Common: AudioDSP updates - Antti S. Lankila
 * Common: Status bar themes - Michael Webster
-* Common: Email app updates - Michael Webster
+* Common: Email app updates** - Michael Webster
 * Common: Selected kernel optimizations - Kernelzilla
 * Common: EMMC support - Koush
 * Common: Camcorder touch-to-focus - Cyanogen
@@ -71,6 +71,9 @@ CHANGELOG
 * Bravo: Kernel 2.6.35
 * Espresso: Improve backlights - Wes Garner
 * Legend/Supersonic: Proper notification light support - Alex Hofbauer
+
+** Note on Email update: This requires a one-time wipe of application settings.
+                      Note that this will not affect your accounts themselves.
 
 ### 6.0.0
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
