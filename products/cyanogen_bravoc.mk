@@ -28,10 +28,10 @@ WITH_WINDOWS_MEDIA := true
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-DesireC
+        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-BravoC
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.1.0-RC0-DesireC
+        ro.modversion=CyanogenMod-6.1.0-RC0-BravoC
 endif
 
 #
