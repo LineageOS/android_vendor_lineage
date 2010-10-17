@@ -76,7 +76,7 @@ echo
 cd $REPACK/ota/system/framework
 $OPTICHARGER framework-res.apk
 cd $REPACK/ota/system/app
-for i in *.apk; do $OPTICHARGER $i; done
+find ./ -name \*.apk | xargs  --max-args=1 --max-procs=`grep 'processor' /proc/cpuinfo | wc -l`  $OPTICHARGER
 )
 
 
