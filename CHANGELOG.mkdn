@@ -21,6 +21,7 @@ Maintainers:
 * Supersonic (EVO): Cyanogen, toastcfh
 * Galaxy S (Vibrant): Scepterr, Wes Garner
 * Legend: Alexander Hofbauer
+* Vision: Cyanogen
 
 CHANGELOG
 ---------
@@ -43,16 +44,28 @@ CHANGELOG
 * Common: Control locking of MMS app in memory - Julian J. M
 * Common: Kill foreground app by long-pressing back - Evan Charlton
 * Common: New AppWidgetPicker dialog - boombuler@XDA
-* Common: FileManager app - OpenIntents
+* Common: FileManager app - OpenIntents (graphics update from Fitsnugly)
 * Common: Anonymous install statistics gathering - Chris Soyars
 * Common: Stable shot camera mode - Cyanogen
 * Common: Dual-mode snooze (long press dismiss) - Evan Charlton
 * Common: Compose SMS/MMS via search button long press - Wes Garner
-* N1: FM Radio support - MIUI - http://miui.com
+* Common: Notification category support - Pedlar
+* Common: Galaxy S style power widget in notification bar - Pedlar
+* Common: Autodetect if we should use /cache for system dex files - Kali-
+* Common: Quick PIN unlock - gsarrica
+* Common: Increase performance of Gallery3D caching system - Androbot
+* Common: Skia performance enhancements - CodeAurora
+* Common: APN list update - Paul Weiss
+* Common: Fix AGPS issues on all platforms
+* Common: Ability to customize location to save attachments in MMS - Wes Garner
+* Common: Dismiss notifications by swiping - Evan Charlton
+* N1/Bravo/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly and HaXzAmaTiC)
 * N1/DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Bravo: Kernel 2.6.35
+* Espresso: Improve backlights - Wes Garner
+* Legend/Supersonic: Proper notification light support - Alex Hofbauer
 
 ### 6.0.0
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
