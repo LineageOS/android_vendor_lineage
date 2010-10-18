@@ -16,6 +16,7 @@
 
 <resources>
 
-    <bool name="reload_on_orientation_change">true</bool>
+    <integer name="max_resolution">1024</integer>
+    <integer name="max_resolution_screennail">512</integer>
 
 </resources>

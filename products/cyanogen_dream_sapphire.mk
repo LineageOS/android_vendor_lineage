@@ -17,8 +17,6 @@ PRODUCT_MODEL := Dream/Sapphire
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
-PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-ds.map
-
 # Build kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
@@ -33,7 +31,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable Compcache by default on D/S
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.compcache.default=25
+    ro.compcache.default=15
 
 #
 # Set ro.modversion
