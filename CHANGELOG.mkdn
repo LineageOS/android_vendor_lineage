@@ -16,6 +16,7 @@ Maintainers:
 * Dream/Sapphire: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Desire: Kali-, Defer
+* DesireC: Kali-, Defer
 * Incredible: Koush
 * Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
 * Supersonic (EVO): Cyanogen, toastcfh
@@ -27,7 +28,8 @@ CHANGELOG
 ---------
 ### 6.1.0
 * Common: Update to Android 2.2.1
-* Common: ADWLauncher 1.1.5 - Ander Webbs
+* Common: Various bugfixes from AOSP and CodeAurora
+* Common: ADWLauncher 1.2.0 - Ander Webbs
 * Common: Configurable audio focus for music app - Jonas Larsson
 * Common: APN cleanup (fixes many issues with GPS and MMS) - Cyanogen
 * Common: Use ARMv6 optimizations for DS/Hero targets - Ninpo
@@ -59,8 +61,10 @@ CHANGELOG
 * Common: Fix AGPS issues on all platforms
 * Common: Ability to customize location to save attachments in MMS - Wes Garner
 * Common: Dismiss notifications by swiping - Evan Charlton
+* Common: Enabled Sound Recorder app
+* Common: Bluetooth OBEX performance boost - Sony
 * N1/Bravo/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly and HaXzAmaTiC)
-* N1/DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson
+* DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * DS: CompCache sizes can be adjusted through CMParts - Wes Garner
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
