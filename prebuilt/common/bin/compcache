@@ -11,6 +11,7 @@ MODULES_DIR=/system/modules/lib/modules/`uname -r`
 case "$1" in
    start)
       echo 3 > /proc/sys/vm/drop_caches
+      echo 30 > /proc/sys/vm/swappiness
       modprobe $MODULE
       rzscontrol $DEV --disksize_kb=$2 --init
       swapon $DEV
