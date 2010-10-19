@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable Compcache by default on D/S
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.compcache.default=15
+    ro.compcache.default=18
 
 #
 # Set ro.modversion
