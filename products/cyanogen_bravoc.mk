@@ -17,7 +17,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 PRODUCT_NA
 # Include the Torch app
 PRODUCT_PACKAGES += Torch
 
-# Extra Passion overlay
+# Extra Bravo (CDMA/GSM) overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/bravo
 
 # Enable Windows Media

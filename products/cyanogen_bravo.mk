@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     Torch \
     FM
 
-# Extra Passion overlay
+# Extra Bravo (CDMA/GSM) overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/bravo
 
 # Extra RIL settings
