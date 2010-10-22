@@ -56,7 +56,7 @@ CHANGELOG
 * Common: Autodetect if we should use /cache for system dex files - Kali-
 * Common: Quick PIN unlock - gsarrica
 * Common: Increase performance of Gallery3D caching system - Androbot
-* Common: High-resolution Gallery3D - Petar Šegina
+* Common: Gallery3D bugfixes and improvements - CodeAurora
 * Common: Skia performance enhancements - CodeAurora
 * Common: APN list update - Paul Weiss
 * Common: Fix AGPS issues on all platforms
