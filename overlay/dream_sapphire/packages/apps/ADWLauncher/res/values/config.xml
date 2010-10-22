@@ -16,4 +16,5 @@
 
 <resources>
     <bool name="config_drawerAnimated">false</bool>
+    <bool name="config_desktop_indicator">false</bool>
 </resources>
