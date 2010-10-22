@@ -56,6 +56,7 @@ CHANGELOG
 * Common: Autodetect if we should use /cache for system dex files - Kali-
 * Common: Quick PIN unlock - gsarrica
 * Common: Increase performance of Gallery3D caching system - Androbot
+* Common: High-resolution Gallery3D - Petar Šegina
 * Common: Skia performance enhancements - CodeAurora
 * Common: APN list update - Paul Weiss
 * Common: Fix AGPS issues on all platforms
@@ -63,9 +64,10 @@ CHANGELOG
 * Common: Dismiss notifications by swiping - Evan Charlton
 * Common: Enabled Sound Recorder app
 * Common: Bluetooth OBEX performance boost - Sony
+* Common: Updated Terminal Emulator app - Jack Palevich
 * N1/Bravo/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly and HaXzAmaTiC)
-* DS/Hero - Slightly better Gallery3D orientation fix - Jonas Larsson
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
+* DS: Updated hardware drivers from official release
 * DS: CompCache sizes can be adjusted through CMParts - Wes Garner
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Bravo: Kernel 2.6.35
