@@ -92,6 +92,20 @@
         launcher:x="2"
         launcher:y="3" />
 
+    <favorite
+        launcher:packageName="com.android.deskclock"
+        launcher:className="com.android.deskclock.DeskClock"
+        launcher:screen="2"
+        launcher:x="0"
+        launcher:y="2" />
+
+    <favorite
+        launcher:packageName="com.android.music"
+        launcher:className="com.android.music.MusicBrowserActivity"
+        launcher:screen="2"
+        launcher:x="3"
+        launcher:y="2" />
+
     <!--  Right screen [3] -->
     <favorite
         launcher:packageName="com.google.android.gm"
