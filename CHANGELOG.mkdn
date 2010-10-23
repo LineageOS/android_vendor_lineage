@@ -66,7 +66,8 @@ CHANGELOG
 * Common: Enabled Sound Recorder app
 * Common: Bluetooth OBEX performance boost - Sony
 * Common: Updated Terminal Emulator app - Jack Palevich
-* N1/Bravo/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly and HaXzAmaTiC)
+* Common: Updated headset drawables - blunden
+* N1/Bravo/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden)
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * DS: Updated hardware drivers from official release
 * DS: CompCache sizes can be adjusted through CMParts - Wes Garner
