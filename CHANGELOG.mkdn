@@ -24,6 +24,18 @@ Maintainers:
 * Legend: Alexander Hofbauer
 * Vision: Cyanogen
 
+Translators:
+------------
+* German: Matthias Büchner, Alexander Hofbauer, Sebastian K (DerSeppel)
+* Italian: Eugenio Ziliotto, Giulio Cervera
+* Japanese: Takuo Kitame
+* French: Sébastien Vaucher, David Girault
+* Chinese: comercy
+* Russian: Oleg Krikun
+* Polish: NameLess the Jedi
+* Portuguese: Eduardo Martins
+* Spanish: PeRiJeY
+
 CHANGELOG
 ---------
 ### 6.1.0
@@ -109,7 +121,6 @@ CHANGELOG
 * Common: Enhanced accelerometer settings - Jonas Larsson
 * Common: A2DP bugfixes - Glenn Maynard
 * Common: Browser fullscreen mode and other enhancements - Wysie
-* Common: Translations: Takuo Kitame, Matthias Büchner, Eug89, comercy
 * Common: Major build system enhancements by Chris Soyars & Koush
 * Common: Long press volume buttons to skip songs - Jon Boekenoogen
 * Common: Accelerated ARMv7 JPEG and PNG decoding - Qualcomm
