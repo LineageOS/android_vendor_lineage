@@ -57,6 +57,7 @@ CHANGELOG
 * Common: Quick PIN unlock - gsarrica
 * Common: Increase performance of Gallery3D caching system - Androbot
 * Common: Gallery3D bugfixes and improvements - CodeAurora
+* Common: Gallery3D highres patches - Petar Šegina
 * Common: Skia performance enhancements - CodeAurora
 * Common: APN list update - Paul Weiss
 * Common: Fix AGPS issues on all platforms
@@ -72,6 +73,7 @@ CHANGELOG
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Bravo: Kernel 2.6.35
 * Espresso: Improve backlights - Wes Garner
+* Espresso: Kernel OC patch - dumfuq (no OC by default)
 * Legend/Supersonic: Proper notification light support - Alex Hofbauer
 
 ** Note on Email update: This requires a one-time wipe of application settings.
