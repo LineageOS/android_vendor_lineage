@@ -32,7 +32,6 @@ Translators:
 * French: Sébastien Vaucher, David Girault
 * Chinese: comercy
 * Russian: Oleg Krikun
-* Polish: NameLess the Jedi
 * Portuguese: Eduardo Martins
 * Spanish: PeRiJeY
 
