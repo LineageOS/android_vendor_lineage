@@ -13,7 +13,7 @@ def device():
 
 def download(version):
     try:
-        os.makedirs("proprietary")
+        os.makedirs(os.path.join(os.path.dirname(__file__), "proprietary"))
     except:
         pass
     if len(MIRRORS) > 1:
