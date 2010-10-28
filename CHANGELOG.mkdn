@@ -15,8 +15,7 @@ Maintainers:
 * Droid: Koush
 * Dream/Sapphire: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
-* Desire: Kali-, Defer
-* DesireC: Kali-, Defer
+* Desire (GSM/CDMA): Kali-, Defer
 * Incredible: Koush
 * Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
 * Supersonic (EVO): Cyanogen, toastcfh
