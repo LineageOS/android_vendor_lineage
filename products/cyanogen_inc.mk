@@ -18,6 +18,12 @@ PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.21.605.1
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/inc
 
+# Include the FM Radio
+PRODUCT_PACKAGES += FM
+# Include the Flashlight/Torch
+PRODUCT_PACKAGES += Torch
+
+
 #
 # Set ro.modversion
 #
