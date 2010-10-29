@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# Extract gapps files from downloaded zip file.
+#
+# Just a replacement for get-google-files script.
+#
+
+usage() {
+    cat << EOF
+Usage: $0 <path-to-gapp-zip-file>
+EOF
+}
+
+if [ $# -lt 1 ]; then
+    usage
+    exit 1
+fi
+
+GAPPS="$1"
+
+cd `dirname $0`
+
+mkdir -p proprietary
+mkdir tmp
+
+unzip -q -o -d tmp $GAPPS
+
+find tmp/system -type f -exec mv -v -f {} proprietary/ \;
+
+rm -rf tmp
