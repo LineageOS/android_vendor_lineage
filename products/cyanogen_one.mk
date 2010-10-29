@@ -13,7 +13,6 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 PRODUCT_NAME := cyanogen_one
 PRODUCT_BRAND := geeksphone
 PRODUCT_DEVICE := one
-TARGET_OTA_ASSERT_DEVICE := geeksphone-one
 PRODUCT_MODEL := Geeksphone ONE
 PRODUCT_MANUFACTURER := Geeksphone
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_DEVICE=geeksphone-one PRODUCT_NAME=geeksphone_one BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
