@@ -9,9 +9,13 @@ if [ -z "$OUT_TARGET_HOST" ]
 then
    OUT_TARGET_HOST=linux-x86
    MD5=md5sum
+   XARGS="xargs --max-args=1 --max-procs `grep 'processor' /proc/cpuinfo|wc -l`"
+   SED=sed
 else
    OUT_TARGET_HOST=darwin-x86
    MD5=md5
+   XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
+   SED=gsed
 fi
 
 if [ -z "$OUT" -o ! -d "$OUT" ]; then
@@ -76,7 +80,7 @@ echo
 cd $REPACK/ota/system/framework
 $OPTICHARGER framework-res.apk
 cd $REPACK/ota/system/app
-find ./ -name \*.apk | xargs  --max-args=1 --max-procs=`grep 'processor' /proc/cpuinfo | wc -l`  $OPTICHARGER
+find ./ -name \*.apk | $XARGS $OPTICHARGER
 )
 
 
@@ -105,12 +109,12 @@ if [ "$WANT_SQUASHFS" -eq 1 ]; then
 	chmod 444 $REPACK/ota/system/xbin/xbin.sqf
 
 	# Remove xbin stuff and fix up updater-script
-	sed -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $updater
+	$SED -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $updater
 fi
 
 
 # Fix build.prop
-sed -i \
+$SED -i \
 	-e '/ro\.kernel\.android\.checkjni/d' \
 	-e '/ro\.build\.type/s/eng/user/' \
 	$REPACK/ota/system/build.prop
