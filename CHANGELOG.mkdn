@@ -25,7 +25,7 @@ Maintainers:
 
 Translators:
 ------------
-* German: Matthias Büchner, Alexander Hofbauer, Sebastian K (DerSeppel)
+* German: Matthias Büchner, Alexander Hofbauer, Sebastian K (DerSeppel), Ricco Thiel
 * Italian: Eugenio Ziliotto, Giulio Cervera
 * Japanese: Takuo Kitame
 * French: Sébastien Vaucher, David Girault
