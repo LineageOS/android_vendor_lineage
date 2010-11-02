@@ -2,9 +2,9 @@
 import sys, random, urllib2, zipfile, StringIO, os
 from optparse import OptionParser
 
-FILENAME=["gapps-hdpi-20101008-signed.zip","gapps-mdpi-20101008-signed.zip","gapps-mdpi-tiny-20101008-signed.zip"]
+FILENAME=["gapps-hdpi-20101025-signed.zip","gapps-mdpi-20101020-signed.zip","gapps-mdpi-tiny-20101020-signed.zip"]
 VERSIONS=["hdpi","mdpi","mdpi-tiny"]
-MIRRORS=["http://mirror.teamdouche.net/get/various/",]
+MIRRORS=["http://cyanogenmod-mirror.local.host.name/gapps/","http://www.tap3w0rm.com/hosted/android/gapps/","http://mirror.teamdouche.net/get/various/",]
 
 def device():
     print "usage: get-google-files -m [method] -v [version]"
