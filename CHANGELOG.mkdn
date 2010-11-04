@@ -22,6 +22,8 @@ Maintainers:
 * Galaxy S (Vibrant): Scepterr, Wes Garner
 * Legend: Alexander Hofbauer
 * Vision: Cyanogen
+* Geeksphone ONE: arcee
+* Z71 (Boston, G1305, XT502, A60, Blaze, others): arcee
 
 Translators:
 ------------
