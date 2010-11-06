@@ -24,6 +24,7 @@ Maintainers:
 * Vision: Cyanogen
 * Geeksphone ONE: arcee
 * Z71 (Boston, G1305, XT502, A60, Blaze, others): arcee
+* Wildfire: Jacob Crawley
 
 Translators:
 ------------
@@ -35,6 +36,7 @@ Translators:
 * Russian: Oleg Krikun
 * Portuguese: Eduardo Martins
 * Spanish: PeRiJeY
+
 
 CHANGELOG
 ---------
