@@ -435,7 +435,6 @@
   <apn carrier="Vodafone DE-MMS" mcc="262" mnc="09" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
   <apn carrier="Vodafone DE" mcc="262" mnc="09" apn="web.vodafone.de" type="default,supl" />
   <apn carrier="o2" mcc="262" mnc="11" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Vodafone PT-MMS" mcc="268" mnc="01" apn="mms.vodafone.net" user="vas" password="vas" mmsc="http://mms/servlets/mms" mmsproxy="213.30.27.63" mmsport="8799" type="mms" />
   <apn carrier="Vodafone PT" mcc="268" mnc="01" apn="net2.vodafone.pt" server="*" type="default,supl" />
   <apn carrier="Vodafone PT MMS" mcc="268" mnc="01" apn="vas.vodafone.pt" user="vas" password="vas" server="*" mmsc="http://mms/servlets/mms" mmsproxy="213.30.27.63" mmsport="8799" type="mms" />
   <apn carrier="Optimus MMS" mcc="268" mnc="03" apn="mms" server="*" mmsc="http://mmsc:10021/mmsc" mmsproxy="62.169.66.1" mmsport="8799" type="mms" />
