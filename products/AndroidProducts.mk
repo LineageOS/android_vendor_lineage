@@ -16,5 +16,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_vision.mk \
     $(LOCAL_DIR)/cyanogen_one.mk \
     $(LOCAL_DIR)/cyanogen_z71.mk \
-    $(LOCAL_DIR)/cyanogen_glacier.mk
-
+    $(LOCAL_DIR)/cyanogen_glacier.mk \
+    $(LOCAL_DIR)/cyanogen_harmony.mk
