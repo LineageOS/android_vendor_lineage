@@ -13,7 +13,7 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 PRODUCT_NAME := cyanogen_vision
 PRODUCT_BRAND := tmobile
 PRODUCT_DEVICE := vision
-PRODUCT_MODEL := T-Mobile G2
+PRODUCT_MODEL := HTC Vision
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=tmobile/htc_vision/vision/vision:2.2/FRF91/277427:user/release-keys PRIVATE_BUILD_DESC="1.22.531.8 CL277427 release-keys"
 
