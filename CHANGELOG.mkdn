@@ -81,7 +81,7 @@ CHANGELOG
 * Common: Bluetooth OBEX performance boost - Sony
 * Common: Updated Terminal Emulator app - Jack Palevich
 * Common: Updated headset drawables - blunden
-* N1/Bravo/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden)
+* N1/Bravo/Incredible/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden)
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
 * DS: Updated hardware drivers from official release
 * DS: CompCache sizes can be adjusted through CMParts - Wes Garner
@@ -90,6 +90,7 @@ CHANGELOG
 * Espresso: Improve backlights - Wes Garner
 * Espresso: Kernel OC patch - dumfuq (no OC by default)
 * Legend/Supersonic: Proper notification light support - Alex Hofbauer
+* Incredible: Torch App - Ben Buxton, Cyanogen
 
 ** Note on Email update: This requires a one-time wipe of application settings.
                       Note that this will not affect your accounts themselves.
