@@ -90,9 +90,10 @@ libFLAC.so              0xA9B00000 # [???]
 libaudiopolicy.so       0xA9A00000 # [~1M]
 libaudiopolicygeneric.so 0xA9900000 # [???]
 libsoundpool.so         0xA9800000 # [~1M]
-libgps.so               0xA9700000 # [~1M] (moved for espresso)
+libaudio.so             0xA9700000 # [~1M]
 libspeech.so            0xA9600000 # [~1M]
-liboemcamera.so         0xA9400000 # [~1M] (moved for espresso)
+libsonivox.so           0xA9500000 # [~1M]
+libvorbisidec.so        0xA9400000 # [~1M]
 libmedia_jni.so         0xA9300000 # [~1M]
 libmediaplayerservice.so 0xA9200000 # [~1M]
 libmedia.so             0xA9000000 # [~2M]
@@ -112,13 +113,12 @@ libhardware_legacy.so   0xA7E00000 # [~1M]
 libapp_process.so       0xA7D00000 # [???]
 libsystem_server.so     0xA7C00000 # [~1M]
 libime.so               0xA7B00000 # [???]
-libaudio.so             0xA7A00000 # [~1M] (moved for espresso)
-libcamera.so            0xA7900000 # [~1M]
-libsonivox.so           0xA7800000 # [~1M] (moved for espresso)
-libvorbisidec.so        0xA7700000 # [~1M] (moved for espresso)
-libdiskconfig.so        0xA7600000 # [<64K]
-libemoji.so             0xA7500000 # [<64K]
-libjni_latinime.so      0xA7400000 # [~1M]
+libjni_latinime.so      0xA7A00000 # [~1M]
+libdiskconfig.so        0xA7900000 # [<64K]
+libemoji.so             0xA7800000 # [<64K]
+libgps.so               0xA7700000 # [~1M]
+libcamera.so            0xA7600000 # [~1M]
+liboemcamera.so         0xA7400000 # [~2M]
 libjni_pinyinime.so     0xA7300000 # [~1M]
 libttssynthproxy.so     0xA7200000 # [~1M] for frameworks/base
 libttspico.so           0xA7000000 # [~2M] for external/svox
