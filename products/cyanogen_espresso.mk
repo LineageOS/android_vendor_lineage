@@ -22,7 +22,6 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-
 # Extra Espresso overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/espresso
 
-
 # Include the Torch app
 PRODUCT_PACKAGES += Torch
 
@@ -34,7 +33,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Slide
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.1.0-RC1-Slide
+        ro.modversion=CyanogenMod-6.1.0-RC2-Slide
 endif
 
 #
