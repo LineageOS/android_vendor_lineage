@@ -25,6 +25,7 @@ Maintainers:
 * Geeksphone ONE: arcee
 * Z71 (Boston, G1305, XT502, A60, Blaze, others): arcee
 * Wildfire: Jacob Crawley
+* NVidia Harmony: bekit
 
 Translators:
 ------------
@@ -81,16 +82,24 @@ CHANGELOG
 * Common: Bluetooth OBEX performance boost - Sony
 * Common: Updated Terminal Emulator app - Jack Palevich
 * Common: Updated headset drawables - blunden
+* Common: Optional overscrolling - Google, Arcee, Robert Burns 
+* Common: Messaging/Phone sliders on lockscreen - Rodolfo Hurtado
 * N1/Bravo/Incredible/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden)
 * N1/DS - Kernel 2.6.35 based on Pershoot's repository
+* N1: Increased camera performance - Charan Singh
+* N1: Enhanced battery driver - Roger Podacter
 * DS: Updated hardware drivers from official release
 * DS: CompCache sizes can be adjusted through CMParts - Wes Garner
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
-* Bravo: Kernel 2.6.35
+* Bravo: Kernel merged with cm-kernel - Kali, Defer
 * Espresso: Improve backlights - Wes Garner
 * Espresso: Kernel OC patch - dumfuq (no OC by default)
+* Espresso: Using media libs from 2.2
+* Espresso: Fixed Bluetooth SCO
 * Legend/Supersonic: Proper notification light support - Alex Hofbauer
 * Incredible: Torch App - Ben Buxton, Cyanogen
+* Vision: Kernel 2.6.32.21, many improvements, 1.4GHz capable (coolbho3k), new ganeth driver (zinx)
+* Vision: Quickeys implementation - Optedoblivion
 
 ** Note on Email update: This requires a one-time wipe of application settings.
                       Note that this will not affect your accounts themselves.
