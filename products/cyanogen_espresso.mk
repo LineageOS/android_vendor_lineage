@@ -33,7 +33,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Slide
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.1.0-RC2-Slide
+        ro.modversion=CyanogenMod-6.1.0-RC3-Slide
 endif
 
 #
