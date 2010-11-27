@@ -12,7 +12,7 @@ Follow http://twitter.com/cmsrc for commit-by-commit updates.
 Maintainers:
 ------------
 * Nexus One: Cyanogen
-* Droid: Koush
+* Droid: optedoblivion, mtwebster
 * Dream/Sapphire: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
@@ -104,9 +104,8 @@ CHANGELOG
 * Incredible: Better internal storage support - Josh Stone
 * Vision: Kernel 2.6.32.21, many improvements, 1.4GHz capable (coolbho3k), new ganeth driver (zinx)
 * Vision: Quickeys implementation - Optedoblivion
+* Droid: Kernel 2.6.32.9
 
-** Note on Email update: This requires a one-time wipe of application settings.
-                      Note that this will not affect your accounts themselves.
 
 ### 6.0.0
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
