@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- config_desktopColumns/Rows min value is 3, so it will add 3 to whatever value you set here -->
+    <integer name="config_desktopColumns">5</integer>
+    <integer name="config_desktopRows">4</integer>
+</resources>
