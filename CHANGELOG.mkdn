@@ -35,7 +35,7 @@ Translators:
 * Japanese: Takuo Kitame
 * French: Sébastien Vaucher, David Girault
 * Chinese: comercy
-* Russian: Oleg Krikun
+* Russian: OlegKrikun, Pavel Volkov
 * Portuguese: Eduardo Martins
 * Spanish: PeRiJeY, KalimochoAz
 
