@@ -24,8 +24,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_ID=FRF91 BUILD_DISPLA
 
 # Include the Torch and FM apps
 PRODUCT_PACKAGES += \
-    Torch
-#    FM    
+    Torch \
+    FM    
 
 # Extra Vision overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/ace
