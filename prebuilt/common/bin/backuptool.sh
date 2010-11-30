@@ -46,11 +46,13 @@ app/HtcSettings.apk
 app/kickback.apk
 app/LatinImeTutorial.apk
 app/Maps.apk
+app/MapsSapphire.apk
 app/MarketUpdater.apk
 app/MediaUploader.apk
 app/NetworkLocation.apk
 app/OneTimeInitializer.apk
 app/PassionQuickOffice.apk
+app/Quickoffice.apk
 app/SetupWizard.apk app/Provision.apk
 app/soundback.apk
 app/Street.apk
