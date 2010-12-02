@@ -30,3 +30,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/sholes
+
+# Include the Flashlight/Torch
+PRODUCT_PACKAGES += Torch
