@@ -87,7 +87,8 @@ CHANGELOG
 * Common: Messaging/Phone sliders on lockscreen - Rodolfo Hurtado
 * Common: Lockscreen gestures - Michael Webster
 * Common: Camera bugfixes (mostly for Droid) - Michael Webster
-* N1/Bravo/Incredible/Supersonic: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden - bugfixes and extra features from Cyanogen, mtwebster, and Wysie))
+* Common: Bluetooth FTP server profile - CodeAurora
+* N1/Bravo/Incredible/Supersonic/Vision/Ace: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden - bugfixes and extra features from Cyanogen, Zinx, mtwebster, and Wysie))
 * N1/DS/Bravo(c)/Supersonic - Unified kernel (Cyanogen, toastcfh, Kali-, defer, Zinx, ezterry, Pershoot, and others)
 * N1: Increased camera performance - Charan Singh
 * N1: Enhanced battery driver - Roger Podacter, theloginwithnoname
@@ -102,8 +103,11 @@ CHANGELOG
 * Legend/Supersonic: Proper notification light support - Alex Hofbauer
 * Incredible: Enable torch app
 * Incredible: Better internal storage support - Josh Stone
-* Vision: Kernel 2.6.32.21, many improvements, 1.4GHz capable (coolbho3k), new ganeth driver (zinx)
+* Sholes: Enable Torch app - mtwebster
+* Vision: Kernel 2.6.32.26, many improvements, 1.4GHz capable (coolbho3k), new ganeth driver (zinx)
 * Vision: Quickeys implementation - Optedoblivion
+* Vision: Insane GPS fix - Zinx
+* Vision: LED enhancement - Pershoot
 * Droid: Kernel 2.6.32.9
 
 
