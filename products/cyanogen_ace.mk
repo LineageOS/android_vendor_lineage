@@ -13,7 +13,7 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 PRODUCT_NAME := cyanogen_ace
 PRODUCT_BRAND := htc_wwe
 PRODUCT_DEVICE := ace
-PRODUCT_MODEL := HTC Desire HD
+PRODUCT_MODEL := Desire HD
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=htc_wwe/htc_ace/ace/ace:2.2/FRF91/278359:user/release-keys PRIVATE_BUILD_DESC="1.32.405.6 CL278359 release-keys"
 
@@ -35,10 +35,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/ace
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-DHD
+        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-DesireHD
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.1.0-RC1-DHD
+        ro.modversion=CyanogenMod-6.1.0-RC2-DesireHD
 endif
 
 #
