@@ -38,7 +38,7 @@ Translators:
 * Russian: OlegKrikun, Pavel Volkov
 * Portuguese: Eduardo Martins
 * Spanish: PeRiJeY, KalimochoAz
-
+* Catalan: Oriol Pellicer
 
 CHANGELOG
 ---------
