@@ -1,5 +1,5 @@
 # Inherit device configuration for glacier.
-$(call inherit-product, device/htc/glacier/device_glacier.mk)
+$(call inherit-product, device/htc/glacier/glacier.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common.mk)
@@ -15,7 +15,7 @@ PRODUCT_BRAND := tmobile
 PRODUCT_DEVICE := glacier
 PRODUCT_MODEL := HTC Glacier
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_glacier BUILD_ID=FRF91 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=tmobile/htc_glacier/glacier/glacier:2.2/FRF91/265542:user/release-keys PRIVATE_BUILD_DESC="1.14.531.1 CL265542 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_glacier BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=tmobile/htc_glacier/glacier/glacier:2.2.1/FRG83/277036:user/release-keys PRIVATE_BUILD_DESC="1.17.531.2 CL277036 release-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -23,7 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_glacier BUILD_ID=FRF91 BUILD_DI
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_glacier_defconfig
 
 # Include the Torch app
-PRODUCT_PACKAGES += Torch
+PRODUCT_PACKAGES += Torch FM
 
 # Extra glacier overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/glacier
