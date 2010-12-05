@@ -45,7 +45,7 @@ CHANGELOG
 ### 6.1.0
 * Common: Update to Android 2.2.1
 * Common: Various bugfixes from AOSP and CodeAurora
-* Common: ADWLauncher 1.3.1 - Ander Webbs
+* Common: ADWLauncher 1.3.3 - Ander Webbs
 * Common: Configurable audio focus for music app - Jonas Larsson
 * Common: APN cleanup (fixes many issues with GPS and MMS) - Cyanogen
 * Common: Use ARMv6 optimizations for DS/Hero targets - Ninpo
@@ -90,12 +90,14 @@ CHANGELOG
 * Common: Bluetooth FTP server profile - CodeAurora
 * Common: New wallpapers - Prash
 * Common: Super duper unified flashlights - Michael Webster
+* Common: Launch applications via DeskClock - Evan Charlton
 * N1/Bravo/Incredible/Supersonic/Vision/Ace: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden - bugfixes and extra features from Cyanogen, Zinx, mtwebster, and Wysie))
 * N1/DS/Bravo(c)/Supersonic - Unified kernel (Cyanogen, toastcfh, Kali-, defer, Zinx, ezterry, Pershoot, and others)
 * N1: Increased camera performance - Charan Singh
 * N1: Enhanced battery driver - Roger Podacter, theloginwithnoname
 * DS: Updated hardware drivers from official release
 * DS: CompCache sizes can be adjusted through CMParts - Wes Garner
+* DS: Removed bootloader/radio asserts - GOOD LUCK
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
 * Supersonic - Use WiMAX LED for notifications - Cyanogen
 * Bravo: Kernel merged with cm-kernel - Kali, Defer
