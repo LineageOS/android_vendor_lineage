@@ -88,6 +88,8 @@ CHANGELOG
 * Common: Lockscreen gestures - Michael Webster
 * Common: Camera bugfixes (mostly for Droid) - Michael Webster
 * Common: Bluetooth FTP server profile - CodeAurora
+* Common: New wallpapers - Prash
+* Common: Super duper unified flashlights - Michael Webster
 * N1/Bravo/Incredible/Supersonic/Vision/Ace: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden - bugfixes and extra features from Cyanogen, Zinx, mtwebster, and Wysie))
 * N1/DS/Bravo(c)/Supersonic - Unified kernel (Cyanogen, toastcfh, Kali-, defer, Zinx, ezterry, Pershoot, and others)
 * N1: Increased camera performance - Charan Singh
@@ -95,6 +97,7 @@ CHANGELOG
 * DS: Updated hardware drivers from official release
 * DS: CompCache sizes can be adjusted through CMParts - Wes Garner
 * Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
+* Supersonic - Use WiMAX LED for notifications - Cyanogen
 * Bravo: Kernel merged with cm-kernel - Kali, Defer
 * Espresso: Improve backlights - Wes Garner
 * Espresso/Legend/Liberty: Kernel OC patch - dumfuq (no OC by default)
