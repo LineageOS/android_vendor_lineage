@@ -42,6 +42,10 @@ Translators:
 
 CHANGELOG
 ---------
+### 6.1.1
+* Vision: Fix MMS over WiFi calling - Zinx
+* Vision: Add console=null to kernel command line - Adam Tygart
+
 ### 6.1.0
 * Common: Update to Android 2.2.1
 * Common: Various bugfixes from AOSP and CodeAurora
