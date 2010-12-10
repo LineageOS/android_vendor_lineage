@@ -17,8 +17,9 @@ Maintainers:
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
 * Incredible: Koush
-* Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
 * Supersonic (EVO): Cyanogen, toastcfh
+* Espresso (Slide): Cyanogen, Wes Garner
+* Liberty (Aria): attn1, jznomoney
 * Legend: Alexander Hofbauer
 * Vision (G2/Desire Z): Cyanogen
 * Geeksphone ONE: arcee
