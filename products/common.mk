@@ -39,7 +39,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
-    CMGapps \
     CMParts \
     CMPartsHelper \
     CMStats \
