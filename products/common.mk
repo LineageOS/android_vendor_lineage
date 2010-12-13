@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     CMParts \
     CMPartsHelper \
     CMStats \
+    CMUpdateNotify \
     CMWallpapers \
     DSPManager \
     FileManager \
