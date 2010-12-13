@@ -39,7 +39,7 @@ def download(version):
             print "Extracting %s" % filename
             try:
                 bytes = zip.read(filename)
-                fd = open("proprietary/"+os.path.basename(filename),"wb")
+                fd = open(os.path.join(os.path.dirname(__file__), "proprietary", os.path.basename(filename)),"wb")
                 fd.write(bytes)
                 fd.close()
             except Exception, e:
