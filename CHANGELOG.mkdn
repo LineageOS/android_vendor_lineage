@@ -48,7 +48,7 @@ CHANGELOG
 * Common: Updated translations - (everyone)
 * Common: Push update notificatiosn - Chris Soyars
 * Common: Fix camera sounds - CAF/Cyanogen/mtwebster
-* N1/DS/Supersonic: Kernel performance tweaks and fixes (various)
+* N1/DS/Supersonic/Bravo(c): Kernel performance tweaks and fixes (various)
 * N1: Update build fingerprint
 * Vision: Fix MMS over WiFi calling - Zinx
 * Vision: Add console=null to kernel command line - Adam Tygart
