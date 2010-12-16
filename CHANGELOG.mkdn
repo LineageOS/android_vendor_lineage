@@ -44,8 +44,16 @@ Translators:
 CHANGELOG
 ---------
 ### 6.1.1
+* Common: Add rotary lockscreen - Kmobs/cvpcs
+* Common: Updated translations - (everyone)
+* Common: Push update notificatiosn - Chris Soyars
+* Common: Fix camera sounds - CAF/Cyanogen/mtwebster
+* N1/DS/Supersonic: Kernel performance tweaks and fixes (various)
+* N1: Update build fingerprint
 * Vision: Fix MMS over WiFi calling - Zinx
 * Vision: Add console=null to kernel command line - Adam Tygart
+* Vision: Kernel to 2.6.32.27 and some performance tweaks
+* Droid: FRG83D fingerprint, translations, camera, torch fixes
 
 ### 6.1.0
 * Common: Update to Android 2.2.1
