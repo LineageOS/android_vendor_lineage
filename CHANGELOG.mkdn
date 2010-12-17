@@ -44,7 +44,7 @@ Translators:
 CHANGELOG
 ---------
 ### 6.1.1
-* Common: Add rotary lockscreen - Kmobs/cvpcs
+* Common: Add rotary lockscreen - Kmobs/Robert Burns
 * Common: Updated translations - (everyone)
 * Common: Push update notificatiosn - Chris Soyars
 * Common: Fix camera sounds - CAF/Cyanogen/mtwebster
