@@ -10,7 +10,7 @@ add_lunch_combo cyanogen_glacier-eng
 #add_lunch_combo cyanogen_hero-eng
 #add_lunch_combo cyanogen_heroc-eng
 add_lunch_combo cyanogen_inc-eng
-#add_lunch_combo cyanogen_legend-eng
+add_lunch_combo cyanogen_legend-eng
 add_lunch_combo cyanogen_liberty-eng
 add_lunch_combo cyanogen_one-eng
 add_lunch_combo cyanogen_passion-eng
