@@ -38,15 +38,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # CyanogenMod specific product packages
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
+    FileManager
 #    CMParts \
 #    CMPartsHelper \
 #    CMStats \
 #    CMUpdateNotify \
 #    CMWallpapers \
-#    DSPManager \
-#    FileManager \
-#    Superuser
+#    DSPManager
 
 # Enable FM radio if supported
 #ifeq ($(BOARD_HAVE_FM_RADIO), true)
