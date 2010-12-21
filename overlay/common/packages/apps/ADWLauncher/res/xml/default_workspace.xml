@@ -14,10 +14,10 @@
      limitations under the License.
 -->
 
-<favorites xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher">
+<favorites xmlns:launcher="http://schemas.android.com/apk/res/org.adw.launcher">
 <!--  ALL APPS -->
     <shortcut
-        launcher:uri="#Intent;action=com.android.launcher.action.launcheraction;component=com.android.launcher/.CustomShirtcutActivity;i.DefaultLauncherAction.EXTRA_BINDINGVALUE=4;end"
+        launcher:uri="#Intent;action=org.adw.launcher.action.launcheraction;component=org.adw.launcher/.CustomShirtcutActivity;i.DefaultLauncherAction.EXTRA_BINDINGVALUE=4;end"
         launcher:icon="@drawable/all_apps_button"
         launcher:title="@string/launcher_actions"
         launcher:screen="-1"
