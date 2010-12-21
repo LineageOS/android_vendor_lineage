@@ -25,6 +25,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vision BUILD_ID=FRF91 BUILD_DIS
 # Extra Vision overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/vision
 
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
+
 #
 # Set ro.modversion
 #
