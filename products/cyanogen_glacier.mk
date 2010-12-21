@@ -22,9 +22,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_glacier BUILD_ID=FRG83 BUILD_DI
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_glacier_defconfig
 
-# Include the Torch app
-PRODUCT_PACKAGES += Torch FM
-
 # Extra glacier overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/glacier
 
@@ -33,10 +30,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/glacier
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-glacier
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-glacier
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-glacier
+        ro.modversion=CyanogenMod-7.0.0-RC0-glacier
 endif
 
 #

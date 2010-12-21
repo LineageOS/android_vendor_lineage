@@ -22,18 +22,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_DEVICE=geeksphone-one PRODUCT_NAME=geeks
 #
 PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.dexopt-data-only=1
 
-#
-# Set ro.modversion
-#
-
-
 
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-ONE
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-ONE
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-ONE
+        ro.modversion=CyanogenMod-7.0.0-RC0-ONE
 endif
 
 #

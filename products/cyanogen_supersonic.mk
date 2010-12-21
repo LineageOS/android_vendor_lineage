@@ -22,20 +22,15 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_supersonic_defconfig
 # Extra Supersonic overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/supersonic
 
-# Include the FM and Torch apps
-PRODUCT_PACKAGES += \
-    Torch \
-    FM
-
 #
 # Set ro.modversion
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Supersonic
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Supersonic
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-Supersonic
+        ro.modversion=CyanogenMod-7.0.00-RC0-Supersonic
 endif
 
 #

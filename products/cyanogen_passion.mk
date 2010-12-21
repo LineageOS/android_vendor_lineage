@@ -22,11 +22,6 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_mahimahi_defconfig
 
-# Include the Torch and FM apps
-PRODUCT_PACKAGES += \
-    Torch \
-    FM
-
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/passion
 
@@ -41,10 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-N1
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-N1
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-N1
+        ro.modversion=CyanogenMod-7.0.0-RC0-N1
 endif
 
 #

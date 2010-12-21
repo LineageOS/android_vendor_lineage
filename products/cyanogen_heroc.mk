@@ -23,10 +23,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/heroc
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Heroc
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Heroc
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-	 ro.modversion=CyanogenMod-6.2.0-RC0-Heroc
+	 ro.modversion=CyanogenMod-7.0.0-RC0-Heroc
 endif
 
 #

@@ -22,12 +22,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_ID=FRF91 BUILD_DISPLA
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_ace_defconfig
 
-# Include the Torch and FM apps
-PRODUCT_PACKAGES += \
-    Torch \
-    FM    
-
-# Extra Vision overlay
+# Extra Ace overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/ace
 
 #
@@ -35,10 +30,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/ace
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-DesireHD
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-DesireHD
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-DesireHD
+        ro.modversion=CyanogenMod-7.0.0-RC0-DesireHD
 endif
 
 #

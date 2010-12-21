@@ -19,15 +19,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_liberty BUILD_ID=FRG83 BUILD_DI
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-liberty.map
 
-#PRODUCT_PACKAGES += FM
-
 
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Liberty
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Liberty
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-Liberty
+        ro.modversion=CyanogenMod-7.0.0-RC0-Liberty
 endif
 
 #

@@ -24,10 +24,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=commtiva_z71 BUILD_ID=FRG83 BUILD_D
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Z71
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Z71
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-Z71
+        ro.modversion=CyanogenMod-7.0.0-RC0-Z71
 endif
 
 #

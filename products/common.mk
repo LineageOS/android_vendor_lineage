@@ -38,15 +38,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # CyanogenMod specific product packages
-PRODUCT_PACKAGES += \
-    CMParts \
-    CMPartsHelper \
-    CMStats \
-    CMUpdateNotify \
-    CMWallpapers \
-    DSPManager \
-    FileManager \
-    Superuser
+#PRODUCT_PACKAGES += \
+#    CMParts \
+#    CMPartsHelper \
+#    CMStats \
+#    CMUpdateNotify \
+#    CMWallpapers \
+#    DSPManager \
+#    FileManager \
+#    Superuser
+
+# Enable FM radio if supported
+#ifeq ($(BOARD_HAVE_FM_RADIO), true)
+#    PRODUCT_PACKAGES += FM
+#endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
@@ -57,6 +62,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
 
 # Bring in some audio files
 include frameworks/base/data/sounds/AudioPackage4.mk
+include frameworks/base/data/sounds/AudioPackage5.mk
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
@@ -82,8 +88,8 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/cyanogen/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
-PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd
+#PRODUCT_COPY_FILES += \
+#    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
 PRODUCT_COPY_FILES +=  \

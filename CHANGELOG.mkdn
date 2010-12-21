@@ -27,7 +27,7 @@ Maintainers:
 * Wildfire: Jacob Crawley
 * NVidia Harmony: bekit
 * Ace (Desire HD): Kali-
-* Glacier (MT4G): Kmobs
+* Glacier (MT4G): Zinx, Kmobs
 
 Translators:
 ------------
@@ -43,6 +43,9 @@ Translators:
 
 CHANGELOG
 ---------
+### 7.0.0
+* Common: Android 2.3.1 (Gingerbread)
+
 ### 6.1.1
 * Common: Add rotary lockscreen - Kmobs/Robert Burns
 * Common: Updated translations - (everyone)

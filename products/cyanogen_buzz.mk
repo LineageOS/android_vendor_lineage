@@ -20,9 +20,6 @@ PRODUCT_MODEL := HTC Wildfire
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
-# Include the Torch app
-PRODUCT_PACKAGES += Torch
-
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += device/htc/buzz/overlay
 
@@ -43,8 +40,8 @@ PRODUCT_COPY_FILES +=  \
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-buzz
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-buzz
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-buzz
+        ro.modversion=CyanogenMod-7.0.0-RC0-buzz
 endif

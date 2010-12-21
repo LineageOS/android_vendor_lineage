@@ -18,21 +18,15 @@ PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/inc
 
-# Include the FM Radio
-PRODUCT_PACKAGES += FM
-# Include the Flashlight/Torch
-PRODUCT_PACKAGES += Torch
-
-
 #
 # Set ro.modversion
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Inc
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Inc
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-Inc
+        ro.modversion=CyanogenMod-7.0.0-RC0-Inc
 endif
 
 #

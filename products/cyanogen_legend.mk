@@ -19,18 +19,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_legend BUILD_ID=FRG83 BUILD_DIS
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-legend.map
 
-# Include the Torch app
-PRODUCT_PACKAGES += Torch
-
 #
 # Set ro.modversion
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-Legend
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Legend
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-Legend
+        ro.modversion=CyanogenMod-7.0.0-RC0-Legend
 endif
 
 #

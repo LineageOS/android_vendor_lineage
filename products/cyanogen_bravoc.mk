@@ -19,9 +19,6 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_bravoc_defconfig
 
-# Include the Torch app
-PRODUCT_PACKAGES += Torch
-
 # Extra Bravo (CDMA/GSM) overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/bravo
 
@@ -33,10 +30,10 @@ WITH_WINDOWS_MEDIA := true
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6-$(shell date +%m%d%Y)-NIGHTLY-BravoC
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-BravoC
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-6.2.0-RC0-BravoC
+        ro.modversion=CyanogenMod-7.0.0-RC0-BravoC
 endif
 
 #
