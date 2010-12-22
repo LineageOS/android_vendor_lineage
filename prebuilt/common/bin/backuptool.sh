@@ -5,7 +5,7 @@
 
 C=/tmp/backupdir
 S=/system
-V=CyanogenMod-6
+V=CyanogenMod-7
 
 PROCEED=1;
 
