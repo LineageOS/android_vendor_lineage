@@ -36,3 +36,5 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/sholes
 
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
