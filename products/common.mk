@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/cyanogen/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/cyanogen/prebuilt/common/xbin/irssi:system/xbin/irssi \
-    vendor/cyanogen/prebuilt/common/xbin/lsof:system/xbin/lsof \
     vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/cyanogen/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
