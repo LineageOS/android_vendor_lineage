@@ -22,8 +22,8 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_bravoc_defconfig
 # Extra Bravo (CDMA/GSM) overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/bravo
 
-# Enable Windows Media
-WITH_WINDOWS_MEDIA := true
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
 
 #
 # Set ro.modversion
