@@ -4,6 +4,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_bravoc.mk \
     $(LOCAL_DIR)/cyanogen_inc.mk \
     $(LOCAL_DIR)/cyanogen_glacier.mk \
+    $(LOCAL_DIR)/cyanogen_liberty.mk \
     $(LOCAL_DIR)/cyanogen_one.mk \
     $(LOCAL_DIR)/cyanogen_passion.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
@@ -16,5 +17,4 @@ PRODUCT_MAKEFILES := \
 #    $(LOCAL_DIR)/cyanogen_hero.mk \
 #    $(LOCAL_DIR)/cyanogen_heroc.mk \
 #    $(LOCAL_DIR)/cyanogen_legend.mk \
-#    $(LOCAL_DIR)/cyanogen_liberty.mk \
 #    $(LOCAL_DIR)/cyanogen_supersonic.mk \
