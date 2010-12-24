@@ -2,6 +2,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_ace.mk \
     $(LOCAL_DIR)/cyanogen_bravo.mk \
     $(LOCAL_DIR)/cyanogen_bravoc.mk \
+    $(LOCAL_DIR)/cyanogen_crespo.mk \
     $(LOCAL_DIR)/cyanogen_inc.mk \
     $(LOCAL_DIR)/cyanogen_glacier.mk \
     $(LOCAL_DIR)/cyanogen_liberty.mk \
