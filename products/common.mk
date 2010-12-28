@@ -47,10 +47,9 @@ PRODUCT_PACKAGES += \
 #    CMWallpapers \
 #    DSPManager
 
-# Enable FM radio if supported
-#ifeq ($(BOARD_HAVE_FM_RADIO), true)
-#    PRODUCT_PACKAGES += FM
-#endif
+# Extra tools in CyanogenMod
+PRODUCT_PACKAGES += \
+    openvpn
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
