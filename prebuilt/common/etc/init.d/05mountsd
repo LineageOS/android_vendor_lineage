@@ -1,6 +1,6 @@
 #!/system/bin/sh
 #
-# mount ext[234] partition from sd card
+# mount ext4 partition from sd card
 
 BB="logwrapper busybox";
 
@@ -9,30 +9,39 @@ then
     SD_EXT_DIRECTORY=/sd-ext;
 fi;
 
-# find first linux partition on SD card
-MMC=/dev/block/mmcblk0
-
-# wait for the device to settle
-COUNT=6;
-until [ -b "$MMC" ] || [ $COUNT -lt 1 ];
+# find SD Card
+for MMC_NUM in `seq 0 9`;
 do
-    sleep 1;
-    COUNT=$((COUNT-1));
-done;
+    MMC_TYPE=`cat /sys/block/mmcblk$MMC_NUM/device/type`
+    if [ "$MMC_TYPE" = "SD" ];
+    then
+        SDCARD=/dev/block/mmcblk$MMC_NUM
+        break
+    fi
+done
 
-if [ -b "$MMC" ];
+if [ -b "$SDCARD" ];
 then
-    FDISK="busybox fdisk"
-    PARTITION=`$FDISK -l $MMC | awk '/^\// && $5 == 83 {print $1;exit;}'`
+    # find sd-ext partition by label
+    PARTITIONS=`cat /proc/partitions|grep mmcblk$MMC_NUM|grep -v "mmcblk$MMC_NUM$"|awk '{print $4}'`
+    for PARTITION in $PARTITIONS
+    do
+        LABEL=`e2label /dev/block/$PARTITION`
+        if [ "$LABEL" = "sd-ext" ];
+        then
+            SD_EXT_PART=/dev/block/$PARTITION
+            break
+        fi
+    done
 
-    if [ -b "$PARTITION" ];
+    if [ -b "$SD_EXT_PART" ];
     then
         log -p i -t mountsd "Checking filesystems..";
    
         # fsck the sdcard filesystem first
         if [ -x `which e2fsck` ];
         then
-            e2fsck -y $PARTITION;e2fsk_exitcode=$?
+            e2fsck -y $SD_EXT_PART;e2fsk_exitcode=$?
         else
             echo "executable e2fsck not found, assuming no filesystem errors"
             e2fsk_exitcode=0
@@ -41,9 +50,8 @@ then
         setprop cm.e2fsck.errors $e2fsk_exitcode;
         if [ "$e2fsk_exitcode" -lt 2 ];
         then
-   
             # mount and set perms
-            $BB mount -o noatime,nodiratime -t auto $PARTITION $SD_EXT_DIRECTORY;
+            $BB mount -o noatime,barrier=1,data=ordered,noauto_da_alloc -t ext4 $SD_EXT_PART $SD_EXT_DIRECTORY;
             if [ "$?" = 0 ];
             then
                 $BB chown 1000:1000 $SD_EXT_DIRECTORY;
