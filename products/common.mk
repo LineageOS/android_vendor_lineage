@@ -39,11 +39,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
-    FileManager
-#    CMParts \
-#    CMPartsHelper \
-#    CMStats \
-#    CMUpdateNotify \
+    FileManager \
+    CMParts \
+    CMStats \
+    CMUpdateNotify
 #    CMWallpapers \
 #    DSPManager
 
