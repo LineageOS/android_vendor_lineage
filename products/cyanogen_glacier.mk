@@ -25,6 +25,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_glacier BUILD_ID=FRG83 BUILD_DI
 # Extra glacier overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/glacier
 
+#Include Torch
+PRODUCT_PACKAGES += Torch
 #
 # Set ro.modversion
 #
