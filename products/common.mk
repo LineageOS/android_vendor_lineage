@@ -42,8 +42,8 @@ PRODUCT_PACKAGES += \
     FileManager \
     CMParts \
     CMStats \
-    CMUpdateNotify
-#    CMWallpapers \
+    CMUpdateNotify \
+    CMWallpapers 
 #    DSPManager
 
 # Extra tools in CyanogenMod
