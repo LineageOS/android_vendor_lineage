@@ -2,7 +2,7 @@ add_lunch_combo cyanogen_ace-eng
 add_lunch_combo cyanogen_bravo-eng
 add_lunch_combo cyanogen_bravoc-eng
 add_lunch_combo cyanogen_crespo-eng
-#add_lunch_combo cyanogen_buzz-eng
+add_lunch_combo cyanogen_buzz-eng
 #add_lunch_combo cyanogen_dream_sapphire-eng
 #add_lunch_combo cyanogen_espresso-eng
 add_lunch_combo cyanogen_glacier-eng
