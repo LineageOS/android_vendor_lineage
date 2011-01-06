@@ -18,6 +18,9 @@ PRODUCT_PROPERTY_OVERRIDES += ro.product.version=3.26.605.1
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/inc
 
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
+
 #
 # Set ro.modversion
 #
