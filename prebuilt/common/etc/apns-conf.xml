@@ -1305,4 +1305,7 @@
   <apn carrier="Movistar UY" mcc="748" mnc="07" apn="apnumt.movistar.com.uy" user="movistar" password="movistar" type="default,supl" />
   <apn carrier="Claro UY" mcc="748" mnc="10" apn="gprs.claro.com.uy" user="ctigpr" password="ctigpr999" type="default,supl" />
   <apn carrier="Claro UY MMS" mcc="748" mnc="10" apn="mms.ctimovil.com.uy" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.uy" mmsproxy="170.051.255.240" mmsport="9201" type="mms" />
+  <apn name="Wap OPT KNC" numeric="54601" mcc="546" mnc="01" apn="wap" user="Wap" server="" password="Wap123" proxy="192.168.39.101" port="3130" mmsproxy="" mmsport="" mmsprotocol="null" mmsc="" type="default,supl" />
+  <apn name="Mms OPT KNC" numeric="54601" mcc="546" mnc="01" apn="mms" user="mms" server="" password="mms123" proxy="" port="" mmsproxy="192.168.39.201" mmsport="3130" mmsprotocol="null" mmsc="http://mms.mobitag.nc/mmsc/" type="mms" />
+  <apn name="Internet OPT KNC" numeric="54601" mcc="546" mnc="01" apn="internet" user="internet" server="" password="" proxy="" port="" mmsproxy="" mmsport="" mmsprotocol="null" mmsc="" type="default,supl" />
 </apns>
