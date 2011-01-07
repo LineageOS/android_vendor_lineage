@@ -44,6 +44,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
+    AndroidTerm \
     FileManager \
     CMParts \
     CMStats \
