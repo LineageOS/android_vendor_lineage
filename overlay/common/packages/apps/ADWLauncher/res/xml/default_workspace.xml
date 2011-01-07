@@ -108,8 +108,8 @@
         launcher:y="2" />
 
     <favorite
-        launcher:packageName="com.android.music"
-        launcher:className="com.android.music.MusicBrowserActivity"
+        launcher:packageName="org.abrantix.rockon.rockonnggl.cm"
+        launcher:className="org.abrantix.rockon.rockonnggl.RockOnNextGenGL"
         launcher:screen="2"
         launcher:x="3"
         launcher:y="2" />
