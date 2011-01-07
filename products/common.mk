@@ -64,6 +64,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
 include frameworks/base/data/sounds/AudioPackage4.mk
 include frameworks/base/data/sounds/AudioPackage5.mk
 
+# T-Mobile theme engine
+include vendor/cyanogen/products/themes.mk
+
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/cyanogen/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
