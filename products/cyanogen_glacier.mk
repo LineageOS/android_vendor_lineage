@@ -27,6 +27,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/glacier
 
 #Include Torch
 PRODUCT_PACKAGES += Torch
+
+# Broadcom FM radio
+$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+
 #
 # Set ro.modversion
 #
