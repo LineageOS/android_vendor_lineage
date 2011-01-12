@@ -50,8 +50,9 @@ PRODUCT_PACKAGES += \
     CMStats \
     CMUpdateNotify \
     CMWallpapers \
+    DSPManager \
+    libcyanogen-dsp \
     Pacman
-#    DSPManager
 
 # Extra tools in CyanogenMod
 PRODUCT_PACKAGES += \
