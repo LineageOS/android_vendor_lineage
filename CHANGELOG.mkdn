@@ -12,11 +12,12 @@ Follow http://twitter.com/cmsrc for commit-by-commit updates.
 Maintainers:
 ------------
 * Nexus One: Cyanogen
-* Droid: optedoblivion, mtwebster
+* Nexus S: Koush
+* Droid: mtwebster, Koush
 * Dream/Sapphire: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
-* Incredible: Koush
+* Incredible: jistone, Koush
 * Supersonic (EVO): Cyanogen, toastcfh
 * Espresso (Slide): Cyanogen, Wes Garner
 * Liberty (Aria): attn1, jznomoney
@@ -46,6 +47,7 @@ CHANGELOG
 ### 7.0.0
 * Common: Android 2.3.1 (Gingerbread)
 * Common: New music player, Cubed! - https://github.com/fabrantes/rockonnggl
+* Common: ClockworkMod Recovery 3.0: Koush, Cyanogen, Zinx
 
 ### 6.1.3
 * Ace: Fix issue with some BT Headset
