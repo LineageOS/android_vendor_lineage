@@ -17,7 +17,7 @@ Maintainers:
 * Dream/Sapphire: Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
-* Incredible: jistone, Koush
+* Incredible: jistone, slayher, Koush
 * Supersonic (EVO): Cyanogen, toastcfh
 * Espresso (Slide): Cyanogen, Wes Garner
 * Liberty (Aria): attn1, jznomoney
