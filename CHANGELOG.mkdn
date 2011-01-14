@@ -46,7 +46,6 @@ CHANGELOG
 ---------
 ### 7.0.0
 * Common: Android 2.3.1 (Gingerbread)
-* Common: New music player, Cubed! - https://github.com/fabrantes/rockonnggl
 * Common: ClockworkMod Recovery 3.0: Koush, Cyanogen, Zinx
 
 ### 6.1.3

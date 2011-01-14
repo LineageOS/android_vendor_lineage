@@ -5,11 +5,6 @@ PRODUCT_DEVICE := generic
 
 PRODUCT_PACKAGES += ADWLauncher
 
-# Use Music3 if we have a good GL system
-ifneq ($(BOARD_HAS_LIMITED_EGL),true)
-    PRODUCT_PACKAGES += Music3
-endif
-
 # Add ROMManager build property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=DonMessWivIt.ogg
