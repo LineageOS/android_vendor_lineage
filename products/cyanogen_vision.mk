@@ -28,6 +28,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/vision
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
+# Build GanOptimizer
+PRODUCT_PACKAGES += GanOptimizer
+
 # Broadcom FM radio
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
