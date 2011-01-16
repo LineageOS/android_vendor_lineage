@@ -22,6 +22,9 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-
 # Extra Espresso overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/espresso
 
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
+
 #
 # Set ro.modversion
 #
