@@ -9,5 +9,6 @@ include vendor/cyanogen/products/themes.mk
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=DonMessWivIt.ogg
+    ro.config.ringtone=Playa.ogg \
+    ro.config.notification_sound=regulus.ogg
 
