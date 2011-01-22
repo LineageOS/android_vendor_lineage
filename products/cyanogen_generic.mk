@@ -2,7 +2,7 @@
 $(call inherit-product, build/target/product/full.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 #
 # Setup device specific product configuration.

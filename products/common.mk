@@ -5,10 +5,6 @@ PRODUCT_DEVICE := generic
 
 PRODUCT_PACKAGES += ADWLauncher
 
-# Add ROMManager build property
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=DonMessWivIt.ogg
-
 ifdef CYANOGEN_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmodnightly
@@ -24,9 +20,6 @@ KERNEL_MODULES_DIR:=/system/lib/modules
 
 # Tiny toolbox
 TINY_TOOLBOX:=true
-
-# Enable Windows Media if supported by the board
-WITH_WINDOWS_MEDIA:=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -60,12 +53,8 @@ PRODUCT_COPY_FILES += \
 # Common CM overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/common
 
-# Bring in some audio files
-include frameworks/base/data/sounds/AudioPackage4.mk
-include frameworks/base/data/sounds/AudioPackage5.mk
-
 # T-Mobile theme engine
-include vendor/cyanogen/products/themes.mk
+include vendor/cyanogen/products/themes_common.mk
 
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
