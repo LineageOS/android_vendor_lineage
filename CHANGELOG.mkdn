@@ -45,7 +45,7 @@ Translators:
 CHANGELOG
 ---------
 ### 7.0.0
-* Common: Android 2.3.1 (Gingerbread) - Google
+* Common: Android 2.3.2 (Gingerbread) - Google
 * Common: ClockworkMod Recovery 3.0: Koush, Cyanogen, Zinx
 * Common: Themes engine - T-Mobile
 * Common: Performance enhancements for Qualcomm hardware - Code Aurora

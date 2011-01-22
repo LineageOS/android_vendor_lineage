@@ -11,7 +11,7 @@ PRODUCT_BRAND := nvidia
 PRODUCT_DEVICE := harmony
 PRODUCT_MODEL := GTablet
 PRODUCT_MANUFACTURER := malata
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRH78 PRODUCT_NAME=harmony BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRH78C PRODUCT_NAME=harmony BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
 # Extra overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/harmony
