@@ -15,6 +15,6 @@
 -->
 
 <permissions>
-    <feature name="com.tmobile.themes" />
+    <feature name="com.tmobile.software.themes" />
 </permissions>
 
