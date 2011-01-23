@@ -78,17 +78,21 @@ libexif.so              0xABB00000 # [~1M]
 libcamera_client.so     0xABA80000 # [~1M]
 libui.so                0xAB900000 # [~1M]
 # libsgl is for backward-compatibility with donut
+libgui.so               0xAB880000 # [~1M]
 libsgl.so               0xAB800000 # [???]
 libskia.so              0xAB100000 # [~7M]
 librs_jni.so            0xAB000000 # [~1M]
 libRS.so                0xA9E00000 # [~2M]
+libandroid.so           0xA9D80000 # [<64K]
 libjnigraphics.so       0xA9D00000 # [<64K]
 libskiagl.so            0xA9C00000 # [~1M]
 
 # audio
 libFLAC.so              0xA9B00000 # [???]
 libaudiopolicy.so       0xA9A00000 # [~1M]
-libaudiopolicygeneric.so 0xA9900000 # [???]
+libeffects.so           0xA9980000 # [<64K]
+libaudioeffect_jni.so   0xA9900000 # [<64K]
+libaudiopolicygeneric.so 0xA9880000 # [???]
 libsoundpool.so         0xA9800000 # [~1M]
 libgps.so               0xA9700000 # [~1M] (moved for hero)
 libcamera.so            0xA9680000 # [~1M] (moved for hero)
