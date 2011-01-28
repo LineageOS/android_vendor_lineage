@@ -25,6 +25,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/espresso
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
+# Build GanOptimizer
+PRODUCT_PACKAGES += GanOptimizer
+
 #
 # Set ro.modversion
 #
