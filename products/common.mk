@@ -69,6 +69,8 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/cyanogen/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
     vendor/cyanogen/prebuilt/common/etc/init.d/04modules:system/etc/init.d/04modules \
+    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
+    vendor/cyanogen/prebuilt/common/etc/init.d/06mountdl:system/etc/init.d/06mountdl \
     vendor/cyanogen/prebuilt/common/etc/init.d/20userinit:system/etc/init.d/20userinit \
     vendor/cyanogen/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache \
     vendor/cyanogen/prebuilt/common/bin/compcache:system/bin/compcache \
@@ -80,7 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
 PRODUCT_COPY_FILES +=  \
