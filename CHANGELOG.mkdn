@@ -13,8 +13,8 @@ Maintainers:
 ------------
 * Nexus One: Cyanogen
 * Nexus S: Koush
-* Droid: mtwebster, Koush
-* Dream/Sapphire: Cyanogen
+* Droid: cvpcs, mtwebster, Koush
+* Dream/Sapphire: Sileht, Wes Garner, Cyanogen
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
 * Incredible: jistone, slayher, Koush
@@ -41,14 +41,46 @@ Translators:
 * Portuguese: Eduardo Martins
 * Spanish: PeRiJeY, KalimochoAz
 * Catalan: Oriol Pellicer
+* Finnish: Antti Leukkunen
+* Polish: Maciej Rozbicki
+* Korean: Inseok Lee
 
 CHANGELOG
 ---------
 ### 7.0.0
 * Common: Android 2.3.2 (Gingerbread) - Google
+* Common: Fixes and changes from AOSP master - Various
 * Common: ClockworkMod Recovery 3.0: Koush, Cyanogen, Zinx
 * Common: Themes engine - T-Mobile
 * Common: Performance enhancements for Qualcomm hardware - Code Aurora
+* Common: New boot animation - 73v1n - http://www.youtube.com/watch?v=mYXiKWwp0DQ
+* Common: Fix readahead values for NAND/MMC devices
+* Common: Revamped notification widget - cvpcs
+* Common: Updated various graphics for GB style - bluden
+* Common: DSPManager updated for 2.3 - alankila
+* Common: Restyled music app - Jason Asher
+* Common: Rotary answer in Phone app - James Peterson
+* Common: BT VoiceDialer fixes - Matthew Sparby
+* Common: Calendar enhancements - James Peterson
+* Common: Stagefright fixes for 7x30, 8x50, and 7x27 - Zinx, Arcee, Cyanogen
+* Common: Pacman package manager - Kmobs
+* Common: Workaround for unknown phone number - Jiri Tyr
+* Common: Trackball answer/hangup - Juan Rodriguez
+* Common: CMParts reorganization - Robert Burns
+* Common: Optional screen on/off animations - Diogo Ferreira
+* Common: New browser incognito mode - optedoblivion
+* Common: New trackball/trackpad wake - Zinx, Cyanogen
+* Common: Legacy sensor/GPS support - Arcee
+* Common: Customizable overscroll - Arcee
+* Common: Torch cleanup - defer
+* Common: OpenGL backwards compatibility - Zinx, Cyanogen
+* Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
+* Z71: Enabled native WiFi tethering - arcee
+* Passion: Kernel 2.6.37 - Google, Cyanogen
+* Vision/Glacier/Espresso: WiFi calling compatibility and optimization - Zinx
+* Vision/Glacier/Ace: Unified kernel - HTC, Cyanogen, Zinx, Kali-, defer
+* Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
+* Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alex Hofbauer
 
 ### 6.1.3
 * Ace: Fix issue with some BT Headset
