@@ -74,6 +74,7 @@ CHANGELOG
 * Common: Customizable overscroll - Arcee
 * Common: Torch cleanup - defer
 * Common: OpenGL backwards compatibility - Zinx, Cyanogen
+* Common: SMS templates using gestures - Riccardo Ciovati
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Z71: Enabled native WiFi tethering - arcee
 * Passion: Kernel 2.6.37 - Google, Cyanogen
