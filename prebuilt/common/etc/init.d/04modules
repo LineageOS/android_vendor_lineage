@@ -4,7 +4,15 @@
 
 MODULES="ipv6"
 
-for i in $MODULES;
+KVER=`uname -r`
+if [ ! -d /system/lib/modules/$KVER ]
+then
+    exit 0
+fi
+
+for i in $MODULES
 do
-    modprobe $i;
+    modprobe $i >/dev/null 2>&1
 done
+
+exit 0
