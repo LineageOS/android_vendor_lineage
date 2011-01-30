@@ -1,0 +1,13 @@
+#!/system/bin/sh
+#
+# bind mount /data/local/download to /cache/download if cache
+# partition is too small
+#
+
+CACHESIZE=$(df -k /cache | tail -n1 | tr -s ' ' | cut -d ' ' -f2)
+if [ $CACHESIZE -lt 20000 ]
+then
+  mount -o bind /data/local/download /cache/download
+fi
+
+exit 0
