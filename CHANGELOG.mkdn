@@ -56,7 +56,7 @@ CHANGELOG
 * Common: New boot animation - 73v1n - http://www.youtube.com/watch?v=mYXiKWwp0DQ
 * Common: Fix readahead values for NAND/MMC devices
 * Common: Revamped notification widget - cvpcs
-* Common: Updated various graphics for GB style - bluden
+* Common: Updated various graphics for GB style - blunden
 * Common: DSPManager updated for 2.3 - alankila
 * Common: Restyled music app - Jason Asher
 * Common: Rotary answer in Phone app - James Peterson
@@ -75,6 +75,8 @@ CHANGELOG
 * Common: Torch cleanup - defer
 * Common: OpenGL backwards compatibility - Zinx, Cyanogen
 * Common: SMS templates using gestures - Riccardo Ciovati
+* Common: Phone Goggles - David Bidorff
+* Common: Option to always show battery percentage on lockscreen - Robert Burns
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Z71: Enabled native WiFi tethering - arcee
 * Passion: Kernel 2.6.37 - Google, Cyanogen
