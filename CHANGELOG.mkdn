@@ -78,6 +78,7 @@ CHANGELOG
 * Common: Phone Goggles - David Bidorff
 * Common: Option to always show battery percentage on lockscreen - Robert Burns
 * Common: CPU frequency/scaling control in CMParts - Robert Ramiega
+* Common: Option to pause/play music with camera button - cvpcs
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Z71: Enabled native WiFi tethering - arcee
 * Passion: Kernel 2.6.37 - Google, Cyanogen
