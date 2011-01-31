@@ -3,6 +3,6 @@
     <!-- Whether or not to display the trackball settings -->
     <bool name="has_trackball">true</bool>
     <bool name="has_rgb_notification_led">false</bool>
-
+    <bool name="has_camera_button">true</bool>
     <bool name="has_led_flash">true</bool>
 </resources>
