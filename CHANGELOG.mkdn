@@ -62,7 +62,7 @@ CHANGELOG
 * Common: Rotary answer in Phone app - James Peterson
 * Common: BT VoiceDialer fixes - Matthew Sparby
 * Common: Calendar enhancements - James Peterson
-* Common: Stagefright fixes for 7x30, 8x50, and 7x27 - Zinx, Arcee, Cyanogen
+* Common: Stagefright fixes for 7x30, 8x50, and 7x27 - Zinx, arcee, Cyanogen
 * Common: Pacman package manager - Kmobs
 * Common: Workaround for unknown phone number - Jiri Tyr
 * Common: Trackball answer/hangup - Juan Rodriguez
@@ -70,22 +70,28 @@ CHANGELOG
 * Common: Optional screen on/off animations - Diogo Ferreira
 * Common: New browser incognito mode - optedoblivion
 * Common: New trackball/trackpad wake - Zinx, Cyanogen
-* Common: Legacy sensor/GPS support - Arcee
-* Common: Customizable overscroll - Arcee
+* Common: Legacy sensor/GPS support - arcee
+* Common: Enabled v8 javascript engine on armv6 (msm7227/msm7225) - arcee
+* Common: Customizable overscroll - arcee
 * Common: Torch cleanup - defer
+* Common: 2D compositor backwards compatibility - arcee
 * Common: OpenGL backwards compatibility - Zinx, Cyanogen
 * Common: SMS templates using gestures - Riccardo Ciovati
 * Common: Phone Goggles - David Bidorff
 * Common: Option to always show battery percentage on lockscreen - Robert Burns
 * Common: CPU frequency/scaling control in CMParts - Robert Ramiega
 * Common: Option to pause/play music with camera button - cvpcs
+* Common: Allow SIP User-Agent configuration - arcee
+* Common (non-HTC): Fixed mobile connection suspension - arcee
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
+* Z71: Enabled MPEG4/AAC video recording - arcee
 * Z71: Enabled native WiFi tethering - arcee
 * Passion: Kernel 2.6.37 - Google, Cyanogen
 * Vision/Glacier/Espresso: WiFi calling compatibility and optimization - Zinx
 * Vision/Glacier/Ace: Unified kernel - HTC, Cyanogen, Zinx, Kali-, defer
 * Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
 * Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alex Hofbauer
+* ONE: Enabled native WiFi tethering - arcee
 
 ### 6.1.3
 * Ace: Fix issue with some BT Headset
@@ -146,7 +152,7 @@ CHANGELOG
 * Common: Bluetooth OBEX performance boost - Sony
 * Common: Updated Terminal Emulator app - Jack Palevich
 * Common: Updated headset drawables - blunden
-* Common: Optional overscrolling - Google, Arcee, Robert Burns 
+* Common: Optional overscrolling - Google, arcee, Robert Burns
 * Common: Messaging/Phone sliders on lockscreen - Rodolfo Hurtado
 * Common: Lockscreen gestures - Michael Webster
 * Common: Camera bugfixes (mostly for Droid) - Michael Webster
