@@ -83,13 +83,16 @@ CHANGELOG
 * Common: Option to pause/play music with camera button - cvpcs
 * Common: Allow SIP User-Agent configuration - arcee
 * Common (non-HTC): Fixed mobile connection suspension - arcee
+* Common: New music widgets - Jason Asher
+* Common: Updated FLAC support - cvpcs, Cyanogen, kroot
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Z71: Enabled MPEG4/AAC video recording - arcee
 * Z71: Enabled native WiFi tethering - arcee
-* Passion: Kernel 2.6.37 - Google, Cyanogen
+* Passion/Bravo/BravoC: Kernel 2.6.37 - Google, Cyanogen, defer, Kali-
 * Vision/Glacier/Espresso: WiFi calling compatibility and optimization - Zinx
 * Vision/Glacier/Ace: Unified kernel - HTC, Cyanogen, Zinx, Kali-, defer
 * Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
+* Vision: Only install WiFi calling on TMUS devices - attn1
 * Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alex Hofbauer
 * ONE: Enabled native WiFi tethering - arcee
 
