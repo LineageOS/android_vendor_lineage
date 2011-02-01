@@ -3,6 +3,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_bravo.mk \
     $(LOCAL_DIR)/cyanogen_bravoc.mk \
     $(LOCAL_DIR)/cyanogen_buzz.mk \
+    $(LOCAL_DIR)/cyanogen_click.mk \
     $(LOCAL_DIR)/cyanogen_crespo.mk \
     $(LOCAL_DIR)/cyanogen_espresso.mk \
     $(LOCAL_DIR)/cyanogen_hero.mk \

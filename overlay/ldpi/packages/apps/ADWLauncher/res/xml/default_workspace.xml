@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher">
+<!--  ALL APPS -->
+    <shortcut
+        launcher:uri="#Intent;action=com.android.launcher.action.launcheraction;component=com.android.launcher/.CustomShirtcutActivity;i.DefaultLauncherAction.EXTRA_BINDINGVALUE=4;end"
+        launcher:icon="@drawable/all_apps_button"
+        launcher:title="@string/launcher_actions"
+        launcher:screen="-1"
+        launcher:x="-1"
+        launcher:y="-1"
+        launcher:container="-700" />
+    <!-- LAB -->
+    <favorite
+        launcher:packageName="com.android.contacts"
+        launcher:className="com.android.contacts.DialtactsActivity"
+        launcher:screen="-1"
+        launcher:x="-1"
+        launcher:y="-1"
+        launcher:container="-300" />
+
+    <!-- RAB -->
+    <favorite
+        launcher:packageName="com.android.mms"
+        launcher:className="com.android.mms.ui.ConversationList"
+        launcher:screen="-1"
+        launcher:x="-1"
+        launcher:y="-1"
+        launcher:container="-400" />
+
+    <!--  Middle screen [2] -->
+    <favorite
+        launcher:packageName="com.android.browser"
+        launcher:className="com.android.browser.BrowserActivity"
+        launcher:screen="2"
+        launcher:x="1"
+        launcher:y="3" />
+
+    <favorite
+        launcher:packageName="com.android.music"
+        launcher:className="com.android.music.MusicBrowserActivity"
+        launcher:screen="2"
+        launcher:x="2"
+        launcher:y="3" />
+</favorites>
