@@ -1,2 +1,2 @@
 mkdir -p `dirname $0`/proprietary
-curl -o `dirname $0`/proprietary/RomManager.apk -O http://koush.tandtgaming.com/recoveries/RomManager.apk
+curl -o `dirname $0`/proprietary/RomManager.apk -O http://mirror1.kanged.net/recoveries/RomManager.apk
