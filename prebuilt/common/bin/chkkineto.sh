@@ -17,6 +17,11 @@ if [ "$c" = "GOOGLE" ];
        r=n
 fi
 
+if [ "$c" = "ALL" ];
+    then
+       r=n
+fi
+
 if [ "$r" = "y" ];
     then
        if [ -f $p ];
