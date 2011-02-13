@@ -2,9 +2,9 @@
 import sys, random, urllib2, zipfile, StringIO, os
 from optparse import OptionParser
 
-FILENAME=["gapps-hdpi-20101114-signed.zip","gapps-mdpi-20101020-signed.zip","gapps-mdpi-tiny-20101020-signed.zip"]
-VERSIONS=["hdpi","mdpi","mdpi-tiny"]
-MIRRORS=["http://cyanogenmod-mirror.local.host.name/gapps/","http://goo-inside.me/google-apps/","http://android.d3xt3r01.tk/cyanogen/gapps/"]
+FILENAME=["gapps-gb-20110120-signed.zip","gapps-gb-tegra-20110118-signed.zip","gapps-hdpi-20101114-signed.zip","gapps-mdpi-20101020-signed.zip","gapps-mdpi-tiny-20101020-signed.zip","gapps-mdpi-tegra-20101020-signed.zip","gapps-passion-EPE54B-signed.zip","gapps-ds-ERE36B-signed.zip","DRC83_base_defanged.zip"]
+VERSIONS=["gb","gb-tegra","hdpi","mdpi","mdpi-tiny","tegra","cm5hdpi","cm5mdpi","cm4"]
+MIRRORS=["http://goo-inside.me/gapps/","http://android.d3xt3r01.tk/cyanogen/gapps/","http://android.local.host.name/gapps/"]
 
 def device():
     print "usage: get-google-files -m [method] -v [version]"
@@ -49,7 +49,7 @@ def download(version):
 def main():
     parser = OptionParser(usage="usage: %prog [options]")
     parser.add_option("-m", "--method", dest='method', default="download", help="Extraction Method: download")
-    parser.add_option("-v", "--version", dest='version', default="hdpi", help="GApps Version: hdpi, mdpi, mdpi-tiny [default: hdpi]")
+    parser.add_option("-v", "--version", dest='version', default="gb", help="GApps Version: gb, gb-tegra, hdpi, mdpi, mdpi-tiny, tegra, cm5hdpi, cm5mdpi, cm4 [default: gb]")
     (options, args) = parser.parse_args()
 
     if options.method == "device":
