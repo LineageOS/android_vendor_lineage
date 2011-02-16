@@ -29,6 +29,7 @@ Maintainers:
 * NVidia Harmony: bekit
 * Ace (Desire HD): Kali-
 * Glacier (MT4G): Zinx, Kmobs
+* Click (Tattoo): KalimochoAz
 
 Translators:
 ------------
@@ -36,14 +37,15 @@ Translators:
 * Italian: Eugenio Ziliotto, Giulio Cervera
 * Japanese: Takuo Kitame
 * French: Sébastien Vaucher, David Girault
-* Chinese: comercy
+* Chinese: comercy, Ladios Jonquil, Qian Zheng
 * Russian: OlegKrikun, Pavel Volkov
-* Portuguese: Eduardo Martins
+* Portuguese: Eduardo Martins, Ricardo Pinho
 * Spanish: PeRiJeY, KalimochoAz
 * Catalan: Oriol Pellicer
 * Finnish: Antti Leukkunen
 * Polish: Maciej Rozbicki
 * Korean: Inseok Lee
+* Traditional Chinese: Ladios Jonquil
 
 CHANGELOG
 ---------
@@ -58,7 +60,7 @@ CHANGELOG
 * Common: Revamped notification widget - cvpcs
 * Common: Updated various graphics for GB style - blunden
 * Common: DSPManager updated for 2.3 - alankila
-* Common: Restyled music app - Jason Asher
+* Common: Restyled music app and forward-port of features - Jason Asher
 * Common: Rotary answer in Phone app - James Peterson
 * Common: BT VoiceDialer fixes - Matthew Sparby
 * Common: Calendar enhancements - James Peterson
@@ -85,10 +87,17 @@ CHANGELOG
 * Common (non-HTC): Fixed mobile connection suspension - arcee
 * Common: New music widgets - Jason Asher
 * Common: Updated FLAC support - cvpcs, Cyanogen, kroot
+* Common: Updated wallpapers - Fitsnugly, Prash
+* Common: Customizable search/long-press search - Sven Dawitz
+* Common: New lockscreen styles - Rotary Revamped (default) and Lense - Sven Dawitz
+* Common: Customizable app launcher on rotary lockscreen - Sven Dawitz
+* Common: Now playing and album art on lockscreen - kmobs
+* Common: GPS fixes - CodeAurora
+* Common: Breakfast/Brunch - arcee
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Z71: Enabled MPEG4/AAC video recording - arcee
 * Z71: Enabled native WiFi tethering - arcee
-* Passion/Bravo/BravoC: Kernel 2.6.37 - Google, Cyanogen, defer, Kali-
+* Passion/Bravo/BravoC/Supersonic/Inc: Kernel 2.6.37 - Google, Cyanogen, defer, Kali-, toastcfh, slayher
 * Vision/Glacier/Espresso: WiFi calling compatibility and optimization - Zinx
 * Vision/Glacier/Ace: Unified kernel - HTC, Cyanogen, Zinx, Kali-, defer
 * Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
