@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="42dip"
+        android:layout_marginBottom="40dip"
         />
 
     <!-- (1) incomingCallWidget: the UI displayed while an incoming call is ringing. -->
@@ -46,7 +46,6 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="42dip"
         />
 
     <!--
