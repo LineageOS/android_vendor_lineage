@@ -4,16 +4,17 @@
 # shade@chemlab.org (cyanogen)
 #
 
-DEV=/dev/block/ramzswap0
-MODULE=ramzswap
-MODULES_DIR=/system/modules/lib/modules/`uname -r`
+DEV=/dev/block/zram0
+SYSFS_PATH=/sys/block/zram0
+MODULE=zram
 
 case "$1" in
    start)
       echo 3 > /proc/sys/vm/drop_caches
       echo 30 > /proc/sys/vm/swappiness
       modprobe $MODULE
-      rzscontrol $DEV --disksize_kb=$2 --init
+      echo "$2" > $SYSFS_PATH/disksize
+      mkswap $DEV >/dev/null
       swapon $DEV
    ;;
 
@@ -22,7 +23,10 @@ case "$1" in
       rmmod $MODULE >/dev/null 2>&1
    ;;
    stats)
-      rzscontrol $DEV --stats
+     cd $SYSFS_PATH && for i in * ; do
+         echo -n "$i:" 
+         cat $i
+     done
    ;;
    *)
       echo "Usage: $0 {start <size>|stop|stats}"
