@@ -30,6 +30,7 @@ Maintainers:
 * Ace (Desire HD): Kali-
 * Glacier (MT4G): Zinx, Kmobs
 * Click (Tattoo): KalimochoAz
+* Blade (San Francisco, Sapo A4, others): Tom Giordano and Jacob Crawley
 
 Translators:
 ------------
