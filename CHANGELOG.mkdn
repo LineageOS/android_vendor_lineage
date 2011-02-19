@@ -39,7 +39,7 @@ Translators:
 * Italian: Eugenio Ziliotto, Giulio Cervera
 * Japanese: Takuo Kitame
 * French: Sébastien Vaucher, David Girault
-* Chinese: comercy, Ladios Jonquil, Qian Zheng
+* Simplified Chinese: comercy, Qian Zheng
 * Russian: OlegKrikun, Pavel Volkov
 * Portuguese: Eduardo Martins, Ricardo Pinho
 * Spanish: PeRiJeY, KalimochoAz
