@@ -19,7 +19,7 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRH78C BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83D/75603:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83D 75603 release-keys"
 
 # Extra leo overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/products/overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/leo
 
 # This file is used to install the enable RMNET and corresponding modules which dont get activated by normal module script
 PRODUCT_COPY_FILES += \
@@ -41,10 +41,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC0-LEO
+            ro.modversion=CyanogenMod-7.0.0-RC1-LEO
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC0-LEO-KANG
+            ro.modversion=CyanogenMod-7.0.0-RC1-LEO-KANG
     endif
 endif
 
