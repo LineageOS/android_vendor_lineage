@@ -91,7 +91,7 @@ CHANGELOG
 * Common: Updated FLAC support - cvpcs, Cyanogen, kroot
 * Common: Updated wallpapers - Fitsnugly, Prash
 * Common: Customizable search/long-press search - Sven Dawitz
-* Common: New lockscreen styles - Rotary Revamped (default) and Lense - Sven Dawitz
+* Common: New lockscreen styles - Rotary Revamped (default) and Lense - Sven Dawitz, Stefano Pignataro
 * Common: Customizable app launcher on rotary lockscreen - Sven Dawitz
 * Common: Now playing and album art on lockscreen - kmobs
 * Common: GPS fixes - CodeAurora
