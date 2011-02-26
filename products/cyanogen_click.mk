@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES +=  \
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-$(shell date +%m%d%Y)-NIGHTLY-click
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-click
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
