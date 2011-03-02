@@ -27,6 +27,7 @@ check_installscript() {
 
 get_files() {
     cat <<EOF
+app/BooksPhone.apk
 app/CarHomeGoogle.apk
 app/CarHomeLauncher.apk
 app/Facebook.apk
