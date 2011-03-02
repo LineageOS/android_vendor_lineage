@@ -42,6 +42,7 @@ Translators:
 * Simplified Chinese: comercy, Qian Zheng
 * Russian: OlegKrikun, Pavel Volkov
 * Portuguese: Eduardo Martins, Ricardo Pinho
+* Portuguese-Brazil: Gustavo Rosa
 * Spanish: PeRiJeY, KalimochoAz
 * Catalan: Oriol Pellicer
 * Finnish: Antti Leukkunen
