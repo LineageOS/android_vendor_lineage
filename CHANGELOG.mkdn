@@ -53,7 +53,7 @@ Translators:
 CHANGELOG
 ---------
 ### 7.0.0
-* Common: Android 2.3.2 (Gingerbread) - Google
+* Common: Android 2.3.3 (Gingerbread) - Google
 * Common: Fixes and changes from AOSP master - Various
 * Common: ClockworkMod Recovery 3.0: Koush, Cyanogen, Zinx
 * Common: Themes engine - T-Mobile
@@ -80,7 +80,7 @@ CHANGELOG
 * Common: Customizable overscroll - arcee
 * Common: Torch cleanup - defer
 * Common: 2D compositor backwards compatibility - arcee
-* Common: OpenGL backwards compatibility - Zinx, Cyanogen
+* Common: OpenGL backwards compatibility - Zinx, Cyanogen, Sileht, ezterry
 * Common: SMS templates using gestures - Riccardo Ciovati
 * Common: Phone Goggles - David Bidorff
 * Common: Option to always show battery percentage on lockscreen - Robert Burns
@@ -95,8 +95,11 @@ CHANGELOG
 * Common: New lockscreen styles - Rotary Revamped (default) and Lense - Sven Dawitz, Stefano Pignataro
 * Common: Customizable app launcher on rotary lockscreen - Sven Dawitz
 * Common: Now playing and album art on lockscreen - kmobs
-* Common: GPS fixes - CodeAurora
+* Common: GPS fixes - CodeAurora, arcee
 * Common: Breakfast/Brunch - arcee
+* Common: Statusbar battery percentage with mini icon - Sven Dawitz
+* Common: SMS split for braindead carriers - Mike Wielgosz
+* Common: CMParts cleanup - Sven Dawitz
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Z71: Enabled MPEG4/AAC video recording - arcee
 * Z71: Enabled native WiFi tethering - arcee
@@ -106,6 +109,7 @@ CHANGELOG
 * Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
 * Vision: Only install WiFi calling on TMUS devices - attn1
 * Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alex Hofbauer
+* Supersonic: WiMAX support - HTC, Shinzul, toastcfh, shift, #teamwin, Cyanogen
 * ONE: Enabled native WiFi tethering - arcee
 
 ### 6.1.3
