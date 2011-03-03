@@ -98,7 +98,7 @@ CHANGELOG
 * Common: Now playing and album art on lockscreen - kmobs
 * Common: GPS fixes - CodeAurora, arcee
 * Common: Breakfast/Brunch - arcee
-* Common: Statusbar battery percentage with mini icon - Sven Dawitz
+* Common: Statusbar battery percentage with mini icon - Sven Dawitz, design by Jazz Kalsi
 * Common: SMS split for braindead carriers - Mike Wielgosz
 * Common: CMParts cleanup - Sven Dawitz
 * Common: Notification profiles - Martin Long
