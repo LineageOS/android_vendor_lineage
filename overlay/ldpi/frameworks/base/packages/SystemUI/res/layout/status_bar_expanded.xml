@@ -35,7 +35,7 @@
         >
         <com.android.systemui.statusbar.powerwidget.PowerWidget android:id="@+id/exp_power_stat"
             android:layout_width="match_parent"
-            android:layout_height="42dip"
+            android:layout_height="45dip"
             />
 
         <LinearLayout
