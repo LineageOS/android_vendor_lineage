@@ -13,25 +13,7 @@
 kineto=/system/app/MS-HTCVISION-KNT20-02.apk
 rm_kineto=y
 
-cat /proc/cmdline|grep -q androidboot.mid=PC1010000
-if [ $? = 0 ];
-    then
-       rm_kineto=n
-fi
-
-cat /proc/cmdline|grep -q androidboot.mid=PB9910000
-if [ $? = 0 ];
-    then
-       rm_kineto=n
-fi
-
-cat /proc/cmdline|grep -q androidboot.mid=PD1510000
-if [ $? = 0 ];
-    then
-       rm_kineto=n
-fi
-
-cat /proc/cmdline|grep -q androidboot.mid=PB6510000
+cat /proc/cmdline|egrep -q '(PC1010000)|(PB9910000)|(PD1510000)|(PB6510000)'
 if [ $? = 0 ];
     then
        rm_kineto=n
@@ -55,11 +37,15 @@ fi
 #
 # Check for spade; if NAM model update DSP and GPS config
 #
+# NAM Models:
+# DHD AT&T  MODELID PD9812000
+# DHD TELUS MODELID PD9814000
+#
 
 cat /proc/cmdline | grep -q spade
 if [ $? = 0 ];
    then 
-cat /proc/cmdline | grep -q androidboot.mid=PD9812000
+cat /proc/cmdline | egrep -q '(PD9812000)|(PD9814000)'
       if [ $? = 0 ];
          then
             mv /system/etc/nam/*MCLK.txt /system/etc/soundimage/
