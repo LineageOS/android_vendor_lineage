@@ -21,6 +21,7 @@ add_lunch_combo cyanogen_one-eng
 add_lunch_combo cyanogen_passion-eng
 add_lunch_combo cyanogen_sholes-eng
 add_lunch_combo cyanogen_supersonic-eng
+add_lunch_combo cyanogen_vega-eng
 add_lunch_combo cyanogen_vision-eng
 add_lunch_combo cyanogen_z71-eng
 

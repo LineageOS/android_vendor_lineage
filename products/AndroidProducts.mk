@@ -22,5 +22,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_passion.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
     $(LOCAL_DIR)/cyanogen_supersonic.mk \
+    $(LOCAL_DIR)/cyanogen_vega.mk \
     $(LOCAL_DIR)/cyanogen_vision.mk \
     $(LOCAL_DIR)/cyanogen_z71.mk
