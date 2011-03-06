@@ -19,6 +19,9 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-
 
 PRODUCT_PACKAGES += Torch
 
+# TI FM radio
+$(call inherit-product, vendor/cyanogen/products/ti_fm_radio.mk)
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/legend
 
 ifdef CYANOGEN_NIGHTLY
