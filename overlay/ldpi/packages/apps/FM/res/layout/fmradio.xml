@@ -124,7 +124,7 @@
         android:paddingBottom="23px"
         android:paddingLeft="20px"
         android:paddingRight="20px"
-        android:layout_marginTop="0dip"
+        android:layout_marginTop="4dip"
         android:layout_gravity="center_horizontal"
         />
 
