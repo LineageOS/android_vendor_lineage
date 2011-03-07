@@ -30,6 +30,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
     $(LOCAL_DIR)/cyanogen_speedy.mk \
     $(LOCAL_DIR)/cyanogen_supersonic.mk \
+    $(LOCAL_DIR)/cyanogen_u8220.mk \
     $(LOCAL_DIR)/cyanogen_vega.mk \
     $(LOCAL_DIR)/cyanogen_vibrantmtd.mk \
     $(LOCAL_DIR)/cyanogen_vision.mk \
