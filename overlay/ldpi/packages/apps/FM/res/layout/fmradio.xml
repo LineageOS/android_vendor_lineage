@@ -12,9 +12,9 @@
     <LinearLayout android:id="@+id/presets_layout"
         android:background="@drawable/favorite_bg"
         android:layout_width="match_parent"
-        android:layout_height="48dip"
+        android:layout_height="38dip"
         android:orientation="horizontal"
-        android:layout_marginTop="170dip"
+        android:layout_marginTop="212dip"
         android:layout_marginLeft="14px"
         android:layout_marginRight="13px"
         >
@@ -62,9 +62,9 @@
         android:layout_width="match_parent"
         android:layout_height="48dip"
         android:orientation="horizontal"
-        android:layout_marginTop="5dip"
-        android:paddingLeft="10dip"
-        android:paddingRight="10dip"
+        android:layout_marginTop="4dip"
+        android:paddingLeft="14dip"
+        android:paddingRight="13dip"
         >
         <ImageButton android:id="@+id/btn_speaker"
             android:src="@drawable/button_loudspeaker_off"
@@ -78,7 +78,7 @@
             android:background="@drawable/station_freq_bg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dip"
+            android:layout_marginLeft="28dip"
             >
             <TextView android:id="@+id/prog_frequency_tv"
                 android:layout_width="match_parent"
@@ -94,7 +94,7 @@
         <ImageButton android:id="@+id/btn_onoff"
             android:src="@drawable/button_power_off"
             android:background="@null"
-            android:layout_marginLeft="45dip"
+            android:layout_marginLeft="28dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
@@ -108,22 +108,22 @@
         android:thumb="@drawable/freq_indicator"
         android:thumbOffset="0dip"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54dip"
         android:layout_marginLeft="11dip"
         android:layout_marginRight="6dip"
-        android:layout_marginTop="5dip"
+        android:layout_marginTop="4dip"
         />
 
     <!-- This is horizontal FM tuner -->
     <com.android.fm.radio.TunerView
         android:id="@+id/fm_tuner_view"
         android:src="@drawable/tuner_view_0"
-        android:layout_width="240px"
-        android:layout_height="40px"
-        android:paddingTop="0px"
-        android:paddingBottom="23px"
-        android:paddingLeft="20px"
-        android:paddingRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:paddingTop="4px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:layout_marginTop="4dip"
         android:layout_gravity="center_horizontal"
         />
