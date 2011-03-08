@@ -102,8 +102,9 @@ CHANGELOG
 * Common: SMS split for braindead carriers - Mike Wielgosz
 * Common: CMParts cleanup - Sven Dawitz
 * Common: Notification profiles - Martin Long
+* Common: TI wl12xx FM radio reverse engineering - Michael A. Reid
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
-* Legend/Liberty/Buzz/Click - Enable FM Radio - Alexander Hofbauer (libaudio patch)
+* Legend/Liberty/Buzz/Click: Enabled FM Radio - Alexander Hofbauer (libaudio patch)
 * Z71: Enabled MPEG4/AAC video recording - arcee
 * Z71: Enabled native WiFi tethering - arcee
 * Passion/Bravo/BravoC/Supersonic/Inc: Kernel 2.6.37 - Google, Cyanogen, defer, Kali-, toastcfh, slayher
@@ -111,7 +112,7 @@ CHANGELOG
 * Vision/Glacier/Ace: Unified kernel - HTC, Cyanogen, Zinx, Kali-, defer
 * Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
 * Vision: Only install WiFi calling on TMUS devices - attn1
-* Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alex Hofbauer
+* Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alexander Hofbauer
 * Supersonic: WiMAX support - HTC, Shinzul, toastcfh, shift, #teamwin, Cyanogen
 * ONE: Enabled native WiFi tethering - arcee
 
