@@ -73,6 +73,7 @@ CHANGELOG
 * Common: Workaround for unknown phone number - Jiri Tyr
 * Common: Trackball answer/hangup - Juan Rodriguez
 * Common: CMParts reorganization - Robert Burns
+* Common: View ChangeLog via CMParts (System) - Wes Garner
 * Common: Optional screen on/off animations - Diogo Ferreira
 * Common: New browser incognito mode - optedoblivion
 * Common: New trackball/trackpad wake - Zinx, Cyanogen
@@ -85,6 +86,7 @@ CHANGELOG
 * Common: SMS templates using gestures - Riccardo Ciovati
 * Common: Phone Goggles - David Bidorff
 * Common: Option to always show battery percentage on lockscreen - Robert Burns
+* Common: Option to show music controls with compatible headset connection - Wes Garner
 * Common: CPU frequency/scaling control in CMParts - Robert Ramiega
 * Common: Option to pause/play music with camera button - cvpcs
 * Common: Allow SIP User-Agent configuration - arcee
@@ -100,6 +102,7 @@ CHANGELOG
 * Common: Breakfast/Brunch - arcee
 * Common: Statusbar battery percentage with mini icon - Sven Dawitz, design by Jazz Kalsi
 * Common: SMS split for braindead carriers - Mike Wielgosz
+* Common: MMS user-defined custom vibrate - Wes Garner
 * Common: CMParts cleanup - Sven Dawitz
 * Common: Notification profiles - Martin Long
 * Common: TI wl12xx FM radio reverse engineering - Michael A. Reid
