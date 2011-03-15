@@ -43,7 +43,7 @@ Translators:
 * Russian: OlegKrikun, Pavel Volkov
 * Portuguese: Eduardo Martins, Ricardo Pinho
 * Portuguese-Brazil: Gustavo Rosa
-* Spanish: PeRiJeY, KalimochoAz
+* Spanish: PeRiJeY, KalimochoAz, Chuckycrx
 * Catalan: Oriol Pellicer
 * Finnish: Antti Leukkunen
 * Swedish: Patrik Kullman
