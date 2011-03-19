@@ -24,8 +24,9 @@ Maintainers:
 * Legend: Alexander Hofbauer
 * Vision (G2/Desire Z): Cyanogen
 * Geeksphone ONE: arcee
+* Geeksphone ZERO: arcee
 * Z71 (Boston, G1305, XT502, A60, Blaze, others): arcee
-* Wildfire: Jacob Crawley
+* Wildfire: Jacob Crawley, Arne Coucheron
 * NVidia Harmony: bekit
 * Ace (Desire HD): Kali-
 * Glacier (MT4G): Zinx, Kmobs
