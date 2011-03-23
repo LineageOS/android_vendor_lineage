@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="8dip"
+            android:layout_marginTop="6dip"
             android:layout_marginLeft="8dip"
             >
 
@@ -63,7 +63,7 @@
                 android:gravity="bottom"
                 android:singleLine="true"
                 android:ellipsize="none"
-                android:textSize="56sp"
+                android:textSize="38sp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:shadowColor="#C0000000"
                 android:shadowDx="0"
@@ -78,7 +78,7 @@
                 android:gravity="bottom"
                 android:singleLine="true"
                 android:ellipsize="none"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:layout_marginLeft="4dip"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:shadowColor="#C0000000"
@@ -104,7 +104,7 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dip"
-        android:layout_marginTop="6dip"
+        android:layout_marginTop="4dip"
         android:layout_marginBottom="4dip"
         android:background="@android:drawable/divider_horizontal_dark"
         />
@@ -126,6 +126,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="16sp"
             android:drawablePadding="4dip"
+            android:singleLine="true"
             />
         <TextView
             android:id="@+id/statusSep"
@@ -135,6 +136,7 @@
             android:layout_marginRight="5dip"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="16sp"
+            android:singleLine="true"
             />
         <TextView
             android:id="@+id/status2"
@@ -144,6 +146,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="16sp"
             android:drawablePadding="4dip"
+            android:singleLine="true"
             />
     </LinearLayout>
 
@@ -153,6 +156,8 @@
         android:layout_height="0dip"
         android:layout_weight="1"
         android:layout_marginTop="2dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginLeft="30dip"
         android:aspect="@string/lock_pattern_view_aspect"
          />
 
