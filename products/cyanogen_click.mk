@@ -39,9 +39,9 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC2.2-click
+            ro.modversion=CyanogenMod-7.0.0-RC3-click
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-RC2.2-click-KANG
+            ro.modversion=CyanogenMod-RC3-click-KANG
     endif
 endif
