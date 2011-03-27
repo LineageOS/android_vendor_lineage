@@ -19,8 +19,9 @@ grep -vw boot.img  temp > updater-script
 rm -rf temp
 echo Zipping Package
 cd "$LOC"/temp
-rm -rf boot.img
-cp -a "$LOC"/boot boot
+rm -rf "$LOC"/temp/boot.img
+rm -rf "$LOC"/temp/boot
+cp -a "$LOC"/boot "$LOC"/temp/boot
 rm -rf "$LOC"/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$LOGNAME.zip
 zip -9yr "$LOC"/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$LOGNAME.zip * > /dev/null
 cd "$LOC"
