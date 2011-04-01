@@ -191,13 +191,14 @@
     <!-- Status Bar Styles -->
 
     <style name="TextAppearance.StatusBar">
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
     <style name="TextAppearance.StatusBar.Ticker">
     </style>
     <style name="TextAppearance.StatusBar.Title">
+        <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -205,6 +206,7 @@
         <item name="android:textStyle">bold</item>
     </style>
     <style name="TextAppearance.StatusBar.EventContent">
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">#ff6b6b6b</item>
     </style>
     <style name="TextAppearance.StatusBar.EventContent.Title">
