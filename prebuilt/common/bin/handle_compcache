@@ -21,7 +21,7 @@ fi
 
 if [ $PROP != 0 ]
 then
-  CCSIZE=$(($(($MEMTOTAL * $PROP)) / 100 * 1024))
+  CCSIZE=$(($(($MEMTOTAL * $PROP)) / 100))
   `dirname $0`/compcache start $CCSIZE
 else
   `dirname $0`/compcache stop

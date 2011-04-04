@@ -4,17 +4,28 @@
 # shade@chemlab.org (cyanogen)
 #
 
-DEV=/dev/block/zram0
-SYSFS_PATH=/sys/block/zram0
-MODULE=zram
+isramzswap="$(ls -1 /system/lib/modules/2.6.*/kernel/drivers/staging/ramzswap/ramzswap.ko 2>/dev/null)"
+
+if [ -n "$isramzswap" ] ; then
+    MODULE=ramzswap
+    DEV=/dev/block/ramzswap0
+else
+    DEV=/dev/block/zram0
+    MODULE=zram
+    SYSFS_PATH=/sys/block/zram0
+fi
 
 case "$1" in
    start)
       echo 3 > /proc/sys/vm/drop_caches
       echo 30 > /proc/sys/vm/swappiness
       modprobe $MODULE
-      echo "$2" > $SYSFS_PATH/disksize
-      mkswap $DEV >/dev/null
+      if [ $MODULE = ramzswap ]; then
+          rzscontrol $DEV --disksize_kb=$2 --init
+      else
+          echo "$((2 * 1024))" > $SYSFS_PATH/disksize
+          mkswap $DEV >/dev/null
+      fi
       swapon $DEV
    ;;
 
@@ -23,10 +34,14 @@ case "$1" in
       rmmod $MODULE >/dev/null 2>&1
    ;;
    stats)
-     cd $SYSFS_PATH && for i in * ; do
-         echo -n "$i:" 
-         cat $i
-     done
+     if [ $MODULE = ramzswap ]; then
+         rzscontrol $DEV --stats
+     else
+         cd $SYSFS_PATH && for i in * ; do
+             echo -n "$i:" 
+             cat $i
+         done
+     fi
    ;;
    *)
       echo "Usage: $0 {start <size>|stop|stats}"
