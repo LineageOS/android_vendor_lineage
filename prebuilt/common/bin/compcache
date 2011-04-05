@@ -4,7 +4,7 @@
 # shade@chemlab.org (cyanogen)
 #
 
-isramzswap="$(ls -1 /system/lib/modules/2.6.*/kernel/drivers/staging/ramzswap/ramzswap.ko 2>/dev/null)"
+isramzswap="$(find /system/lib/modules/ -name ramzswap.ko 2>/dev/null)"
 
 if [ -n "$isramzswap" ] ; then
     MODULE=ramzswap
