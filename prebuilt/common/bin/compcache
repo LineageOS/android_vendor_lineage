@@ -5,8 +5,9 @@
 #
 
 isramzswap="$(find /system/lib/modules/ -name ramzswap.ko 2>/dev/null)"
+isramzswapbuiltin="$(ls -l /dev/block/ramzswap0 2>/dev/null)"
 
-if [ -n "$isramzswap" ] ; then
+if [ -n "$isramzswap$isramzswapbuiltin" ] ; then
     MODULE=ramzswap
     DEV=/dev/block/ramzswap0
 else
