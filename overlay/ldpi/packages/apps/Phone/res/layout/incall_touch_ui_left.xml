@@ -160,7 +160,7 @@
                         android:drawableTop="@drawable/ic_in_call_touch_end"
                         android:textColor="@color/incall_endButtonLabel"
                         />
-    
+
                 <!-- The upper-right button in the main cluster is either
                      "Add" or "Merge", depending on the state of the call. -->
                 <FrameLayout

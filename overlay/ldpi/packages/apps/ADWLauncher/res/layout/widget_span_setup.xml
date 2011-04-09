@@ -15,54 +15,54 @@
  * limitations under the License.
  */
  -->
-<LinearLayout 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:id="@+id/layout_root"
-	>
-	<LinearLayout 
-		android:orientation="horizontal"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:padding="5dp"
-		android:layout_weight="1.0"
-		>
-	    <TextView
-	        android:id="@+id/text_columns_span"
-	        android:layout_width="fill_parent"
-	        android:layout_height="fill_parent" 
-	        android:layout_weight="1.0"
-	        android:gravity="center_horizontal"
-	        android:text="@string/widget_columns"/>
-	    <TextView
-	        android:id="@+id/text_rows_span"
-	        android:layout_width="fill_parent"
-	        android:layout_height="fill_parent"
-	        android:layout_weight="1.0"
-	        android:gravity="center_horizontal"
-	        android:text="@string/widget_rows"/>
-	    
-	</LinearLayout>
-	<LinearLayout 
-		android:orientation="horizontal"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:padding="5dp"
-		android:layout_weight="1.0"
-		>
-	    <com.android.launcher.NumberPicker
-	        android:id="@+id/widget_columns_span"
-	        android:layout_width="fill_parent"
-	        android:layout_height="fill_parent" 
-	        android:layout_weight="1.0"/>
-	    <com.android.launcher.NumberPicker
-	        android:id="@+id/widget_rows_span"
-	        android:layout_width="fill_parent"
-	        android:layout_height="fill_parent"
-	        android:layout_weight="1.0" />
-	    
-	</LinearLayout>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layout_root"
+        >
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp"
+                android:layout_weight="1.0"
+                >
+            <TextView
+                android:id="@+id/text_columns_span"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="@string/widget_columns"/>
+            <TextView
+                android:id="@+id/text_rows_span"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="@string/widget_rows"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp"
+                android:layout_weight="1.0"
+                >
+            <com.android.launcher.NumberPicker
+                android:id="@+id/widget_columns_span"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"/>
+            <com.android.launcher.NumberPicker
+                android:id="@+id/widget_rows_span"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+        </LinearLayout>
 </LinearLayout>
 

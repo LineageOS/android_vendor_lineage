@@ -65,7 +65,7 @@
                     android:shadowColor="#C0000000"
                     android:shadowDx="0"
                     android:shadowDy="0"
-                    android:shadowRadius="3.0"                        
+                    android:shadowRadius="3.0"
                     />
 
                 <include layout="@layout/desk_clock_battery"

@@ -126,7 +126,7 @@
     <!-- OTA Call Card styles -->
     <style name="ccOtaButtonBar">
         <!-- TODO: change height to 'wrap_content' when layout bug is fixed -->
-        <item name="android:layout_height">60dip</item> 
+        <item name="android:layout_height">60dip</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@android:drawable/bottom_bar</item>
     </style>
