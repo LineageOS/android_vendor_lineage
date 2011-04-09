@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- If set to true, theme change will not apply ringtone or wallpapers
+         from the theme.  Instead, only the system's visual style will be
+         affected.  -->
+    <bool name="config_change_style_only">true</bool>
+</resources>
