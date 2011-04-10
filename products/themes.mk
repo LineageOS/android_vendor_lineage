@@ -1,6 +1,6 @@
 # Theme packages
 
-ifndef SKIP_THEMES
+ifneq ($(SKIP_THEMES),true)
 PRODUCT_PACKAGES += \
        Androidian \
        Cyanbread

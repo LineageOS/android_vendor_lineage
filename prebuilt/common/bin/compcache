@@ -24,7 +24,7 @@ case "$1" in
       if [ $MODULE = ramzswap ]; then
           rzscontrol $DEV --disksize_kb=$2 --init
       else
-          echo "$((2 * 1024))" > $SYSFS_PATH/disksize
+          echo "$(($2 * 1024))" > $SYSFS_PATH/disksize
           mkswap $DEV >/dev/null
       fi
       swapon $DEV
