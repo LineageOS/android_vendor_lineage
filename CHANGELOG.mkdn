@@ -33,6 +33,7 @@ Maintainers:
 * Click (Tattoo): KalimochoAz
 * Blade (San Francisco, Sapo A5, others): Tom Giordano and Jacob Crawley
 * Encore (Nook Color): dalingrin, cvpcs, nemith, cicada, fattire
+* Speedy: toastcfh
 
 Translators:
 ------------
@@ -107,6 +108,9 @@ CHANGELOG
 * Common: CMParts cleanup - Sven Dawitz
 * Common: Notification profiles - Martin Long
 * Common: TI wl12xx FM radio reverse engineering - Michael A. Reid
+* Common: Tablet tweaks - Sven Dawitz
+* Common: Revamped CMStats - Chris Soyars
+* Common: Improved RTL text support and fonts - Eyad Aboulouz, Eran Mizrahi,  
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Legend/Liberty/Buzz/Click: Enabled FM Radio - Alexander Hofbauer (libaudio patch)
 * Z71: Enabled MPEG4/AAC video recording - arcee
@@ -115,9 +119,11 @@ CHANGELOG
 * Vision/Glacier/Espresso: WiFi calling compatibility and optimization - Zinx
 * Vision/Glacier/Ace: Unified kernel - HTC, Cyanogen, Zinx, Kali-, defer
 * Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
+* Vision/Glacier/Ace: Fixes for video overlay - Zinx, CodeAurora
 * Vision: Only install WiFi calling on TMUS devices - attn1
 * Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alexander Hofbauer
-* Supersonic: WiMAX support - HTC, Shinzul, toastcfh, shift, #teamwin, Cyanogen
+* Supersonic: WiMAX support - HTC, Shinzul, toastcfh, shift, #teamwin, Cyanogen, Joey Conway
+* Supersonic: HDMI mirror support: #teamwin
 * ONE: Enabled native WiFi tethering - arcee
 
 ### 6.1.3
