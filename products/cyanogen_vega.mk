@@ -1,5 +1,8 @@
 $(call inherit-product, device/advent/vega/vega.mk)
 
+# skips themes and keeps the resulting rom tiny so it fits on /system/ with all languages included
+SKIP_THEMES := true
+
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
