@@ -14,7 +14,9 @@ PRODUCT_MODEL := NookColor
 PRODUCT_MANUFACTURER := bn
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=encore BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRI40 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/encore
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/cyanogen/overlay/tablet \
+    vendor/cyanogen/overlay/encore
 
 #
 # Set ro.modversion

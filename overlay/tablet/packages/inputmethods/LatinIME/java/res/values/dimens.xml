@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<resources>
+    <!-- key_height + key_bottom_gap = popup_key_height -->
+    <dimen name="key_height">60dip</dimen>
+    <dimen name="key_bottom_gap">6dip</dimen>
+    <dimen name="popup_key_height">60dip</dimen>
+    <dimen name="keyboard_bottom_padding">10dip</dimen>
+    <!-- If the screen height in landscape is larger than the below value, then the keyboard
+         will not go into extract (fullscreen) mode. -->
+    <dimen name="max_height_for_fullscreen">400dip</dimen>
+    <dimen name="key_text_size">21dip</dimen>
+    <dimen name="key_label_text_size">13dip</dimen>
+    <!-- Amount of allowance for selecting keys in a mini popup keyboard by sliding finger. -->
+    <!-- popup_key_height x 1.7 -->
+    <dimen name="mini_keyboard_slide_allowance">88.5dip</dimen>
+    <!-- popup_key_height x 1.0 -->
+    <dimen name="mini_keyboard_vertical_correction">-52dip</dimen>
+    <dimen name="key_hysteresis_distance">80dip</dimen>
+    <!-- We use "inch", not "dip" because this value tries dealing with physical distance related
+         to user's finger. -->
+    <dimen name="keyboard_vertical_correction">-8dip</dimen>
+    <dimen name="candidate_min_touchable_width">48dip</dimen>
+</resources>
