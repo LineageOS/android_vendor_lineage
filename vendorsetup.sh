@@ -20,6 +20,7 @@ add_lunch_combo cyanogen_leo-eng
 add_lunch_combo cyanogen_liberty-eng
 add_lunch_combo cyanogen_one-eng
 add_lunch_combo cyanogen_passion-eng
+add_lunch_combo cyanogen_p999-eng
 add_lunch_combo cyanogen_sholes-eng
 add_lunch_combo cyanogen_speedy-eng
 add_lunch_combo cyanogen_supersonic-eng
