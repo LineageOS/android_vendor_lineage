@@ -39,6 +39,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=zeppelin TARGET_DEVICE=zeppelin BUI
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
+PRODUCT_COPY_FILES += \
+    device/motorola/zeppelin/sysctl.conf:system/etc/sysctl.conf
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/zeppelin
 
 # Add the FM app
