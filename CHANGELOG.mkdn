@@ -55,6 +55,31 @@ Translators:
 
 CHANGELOG
 ---------
+### 7.0.1
+* Common: Fix fling velocity of status bar and ADW swipe - Sven Dawitz
+* Common: Fixed webview layout bug (issue 3229) - Zinx
+* Common: Fix GVoice-opens-twice bug - Zinx
+* Common: Fix issues on all devices with DNS resolution failure after some time - Zinx, various
+* Common: RTL improvements - Eran Mizrahi, Eyad Aboulouz
+* Common: Fix crashes in Arabic locale - Eyad Aboulouz
+* Common: Add Arabic keylayout - Eyad Aboulouz
+* Common: Improve ADWLauncher scrolling/zoom performance - Pavel Kucera
+* Common: Fix excessive memory use when appending to textviews - Cyanogen
+* Common: New wallpapers from the CM community (CC License, see app for credits)
+* Common: Option to disable vibration while in-call - Evan Charlton
+* Common: Add long press option to status bar widgets for settings - Alex Avance
+* Common: Compact carrier and status bar tweaks - Nihanth Subramanya, rorifree
+* Sholes: Fix connectivity loss bug - cvpcs
+* Speedy: Fix keyboard lights - JD Horelick
+* Glacier: Fix backlights - Zinx
+* Glacier: fix GPS issues - Zinx/QCom
+* msm7x30: Fix bugs during video resume - Zinx
+* qsd8x50: Fix 720p video playback
+* qsd8x50: Unified 2.6.37 kernel - Cyanogen, toastcfh, slayher
+* Espresso, Legend: WiFi fix (HTC)
+* Supersonic: Fix GPS issues (HTC)
+* msm7227: Fix GPS issues - Alex Hofbauer
+
 ### 7.0.0
 * Common: Android 2.3.3 (Gingerbread) - Google
 * Common: Fixes and changes from AOSP master - Various
