@@ -79,6 +79,8 @@ CHANGELOG
 * Espresso, Legend: WiFi fix (HTC)
 * Supersonic: Fix GPS issues (HTC)
 * msm7227: Fix GPS issues - Alex Hofbauer
+* Click: Fix recovery kernel and compilation. Now works well with last codes - KalimochoAz
+* Click: Encreased interned conection speed - Kalimochoaz
 
 ### 7.0.0
 * Common: Android 2.3.3 (Gingerbread) - Google
