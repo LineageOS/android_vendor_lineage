@@ -79,8 +79,10 @@ CHANGELOG
 * Espresso, Legend: WiFi fix (HTC)
 * Supersonic: Fix GPS issues (HTC)
 * msm7227: Fix GPS issues - Alex Hofbauer
-* Click: Fix recovery kernel and compilation. Now works well with last codes - KalimochoAz
-* Click: Speed up internet conection - KalimochoAz
+* Click: Fix recovery kernel and compilation. Now works well with latest code - KalimochoAz
+* Click: Speed up internet connection - KalimochoAz
+* Blade: Update kernel to match Gen2 Radio - kallt_kaffe
+* Blade: Update libaudio to fix SIP audio routing and microphone mute - Tom Giordano
 
 ### 7.0.0
 * Common: Android 2.3.3 (Gingerbread) - Google
