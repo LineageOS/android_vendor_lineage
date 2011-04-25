@@ -55,6 +55,12 @@ Translators:
 
 CHANGELOG
 ---------
+### 7.0.2
+* Common: Fix issue with missing built-in themes
+* Common: Update bundled ROM Manager to latest version
+* Supersonic: Actually fix GPS
+* Supersonic: Fix proximity and light sensor
+
 ### 7.0.1
 * Common: Fix fling velocity of status bar and ADW swipe - Sven Dawitz
 * Common: Fixed webview layout bug (issue 3229) - Zinx
