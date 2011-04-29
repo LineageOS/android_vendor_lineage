@@ -27,6 +27,7 @@ add_lunch_combo cyanogen_p999-eng
 add_lunch_combo cyanogen_passion-eng
 add_lunch_combo cyanogen_sholes-eng
 add_lunch_combo cyanogen_smb_a1002-eng
+add_lunch_combo cyanogen_smb_b9701-eng
 add_lunch_combo cyanogen_speedy-eng
 add_lunch_combo cyanogen_supersonic-eng
 add_lunch_combo cyanogen_u8220-eng
