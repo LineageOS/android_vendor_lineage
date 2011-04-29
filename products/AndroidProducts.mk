@@ -18,7 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_galaxysmtd.mk \
     $(LOCAL_DIR)/cyanogen_generic.mk \
     $(LOCAL_DIR)/cyanogen_glacier.mk \
-    $(LOCAL_DIR)/cyanogen_harmony.mk \
     $(LOCAL_DIR)/cyanogen_legend.mk \
     $(LOCAL_DIR)/cyanogen_leo.mk \
     $(LOCAL_DIR)/cyanogen_liberty.mk \
@@ -28,6 +27,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_p999.mk \
     $(LOCAL_DIR)/cyanogen_passion.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
+    $(LOCAL_DIR)/cyanogen_smb_a1002.mk \
     $(LOCAL_DIR)/cyanogen_speedy.mk \
     $(LOCAL_DIR)/cyanogen_supersonic.mk \
     $(LOCAL_DIR)/cyanogen_u8220.mk \

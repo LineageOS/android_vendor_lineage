@@ -27,7 +27,7 @@ Maintainers:
 * Geeksphone ZERO: arcee
 * Z71 (Boston, G1305, XT502, A60, Blaze, others): arcee
 * Wildfire: Jacob Crawley, Arne Coucheron
-* NVidia Harmony: bekit, pershoot
+* Harmony (Malata smb_a1002): bekit, pershoot
 * Ace (Desire HD): Kali-
 * Glacier (MT4G): Zinx, Kmobs
 * Click (Tattoo): KalimochoAz
