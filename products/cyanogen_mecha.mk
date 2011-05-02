@@ -20,6 +20,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/mecha
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
+# Add AicBootFix
+PRODUCT_PACKAGES += AicBootFix
+
 # Broadcom FM radio
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
