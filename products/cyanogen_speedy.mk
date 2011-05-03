@@ -4,6 +4,9 @@ $(call inherit-product, device/htc/speedy/speedy.mk)
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
+# Inherit WiMAX stuff
+$(call inherit-product, vendor/cyanogen/products/wimax.mk)
+
 #
 # Setup device specific product configuration.
 #

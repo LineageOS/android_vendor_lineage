@@ -4,6 +4,9 @@ $(call inherit-product, device/htc/supersonic/supersonic.mk)
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
+# Inherit WiMAX stuff
+$(call inherit-product, vendor/cyanogen/products/wimax.mk)
+
 #
 # Setup device specific product configuration.
 #
