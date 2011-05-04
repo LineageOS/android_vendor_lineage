@@ -37,10 +37,15 @@ PRODUCT_PACKAGES += \
     CMParts \
     CMStats \
     CMUpdateNotify \
-    CMWallpapers \
     DSPManager \
     libcyanogen-dsp \
     Pacman
+
+# make wallpapers optional for low-storage-devices
+ifneq ($(PRODUCT_SKIP_WALLPAPERS),true)
+PRODUCT_PACKAGES += \
+    CMWallpapers
+endif
 
 # Extra tools in CyanogenMod
 PRODUCT_PACKAGES += \
