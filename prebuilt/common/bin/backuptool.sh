@@ -59,6 +59,7 @@ app/SetupWizard.apk app/Provision.apk
 app/soundback.apk
 app/Street.apk
 app/Talk.apk
+app/Talk2.apk
 app/talkback.apk
 app/Twitter.apk
 app/Vending.apk
@@ -68,6 +69,7 @@ etc/permissions/com.google.android.maps.xml
 etc/permissions/features.xml
 framework/com.google.android.maps.jar
 lib/libspeech.so
+lib/libtalk_jni.so
 lib/libvoicesearch.so
 etc/hosts
 etc/custom_backup_list.txt
