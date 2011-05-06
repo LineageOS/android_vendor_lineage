@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="power_dialog">Confirações do tablet</string>
+    <string name="power_dialog">Configurações do tablet</string>
     <string name="reboot_system">Reiniciar tablet</string>
     <string name="shutdown_confirm">Seu tablet irá desligar.</string>
     <string name="reboot_confirm">Seu tablet irá reiniciar.</string>
