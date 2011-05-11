@@ -15,7 +15,7 @@ Maintainers:
 * Nexus S: Koush
 * Droid: cvpcs, mtwebster, Koush
 * Dream/Sapphire: Sileht, Wes Garner, Cyanogen
-* Hero: Lox (GSM), Darchstar (CDMA)
+* Hero: Esa Laukkanen (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
 * Incredible: jistone, slayher, Koush
 * Supersonic (EVO): Cyanogen, toastcfh
