@@ -11,7 +11,7 @@ PRODUCT_BRAND := advent
 PRODUCT_DEVICE := vega
 PRODUCT_MODEL := Vega
 PRODUCT_MANUFACTURER := Advent
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=Vega BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=Vega BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.4 GRJ22 121341 release-keys" BUILD_NUMBER=121341
 
 # Extra overlay
 PRODUCT_PACKAGE_OVERLAYS += \
@@ -35,7 +35,7 @@ else
 endif
 
 #
-# Copy passion specific prebuilt files
+# Copy Vega specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
