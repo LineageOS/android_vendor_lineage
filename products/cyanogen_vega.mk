@@ -1,7 +1,7 @@
 $(call inherit-product, device/advent/vega/vega.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common_full.mk)
+$(call inherit-product, vendor/cyanogen/products/common.mk)
 
 #
 # Setup device specific product configuration.
