@@ -10,7 +10,7 @@
 # Espresso TMUS MODELID PB6510000
 #
 
-kineto=/system/app/MS-HTCVISION-KNT20-02.apk
+kineto=/system/app/MS-HTCEMR-KNT20-02-A0-GB-02.apk
 rm_kineto=y
 
 cat /proc/cmdline|egrep -q '(PC1010000)|(PB9910000)|(PD1510000)|(PB6510000)'
@@ -23,7 +23,7 @@ if [ "$rm_kineto" = "y" ];
     then
        if [ -f $kineto ];
           then
-             rm -f /system/app/MS-HTCVISION-KNT20-02.apk
+             rm -f /system/app/MS-HTCEMR-KNT20-02-A0-GB-02.apk
              rm -f /system/lib/libkineto.so
              rm -f /system/lib/libganril.so
              rm -f /system/lib/librilswitch.so
