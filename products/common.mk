@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
     CMParts \
     CMStats \
     CMUpdateNotify \
-    CMWallpapers \
     DSPManager \
     libcyanogen-dsp \
     Pacman
