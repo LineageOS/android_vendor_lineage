@@ -2,9 +2,9 @@
 import sys, random, urllib2, zipfile, StringIO, os
 from optparse import OptionParser
 
-FILENAME=["gapps-gb-20110307-signed.zip","gapps-hdpi-20101114-signed.zip","gapps-mdpi-20110301-signed.zip","gapps-mdpi-tiny-20101020-signed.zip","gapps-mdpi-tegra-20101020-signed.zip","gapps-passion-EPE54B-signed.zip","gapps-ds-ERE36B-signed.zip","DRC83_base_defanged.zip"]
+FILENAME=["gapps-gb-20110307-signed.zip","gapps-hdpi-20101114-signed.zip","gapps-mdpi-20110501-signed.zip","gapps-mdpi-tiny-20101020-signed.zip","gapps-mdpi-tegra-20101020-signed.zip","gapps-passion-EPE54B-signed.zip","gapps-ds-ERE36B-signed.zip","DRC83_base_defanged.zip"]
 VERSIONS=["gb","hdpi","mdpi","mdpi-tiny","tegra","cm5hdpi","cm5mdpi","cm4"]
-MIRRORS=["http://goo-inside.me/gapps/","http://android.d3xt3r01.tk/cyanogen/gapps/","http://android.local.host.name/gapps/"]
+MIRRORS=["http://goo-inside.me/gapps/","http://android.d3xt3r01.tk/cyanogen/gapps/"]
 
 def device():
     print "usage: get-google-files -m [method] -v [version]"
