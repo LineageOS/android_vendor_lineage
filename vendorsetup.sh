@@ -6,6 +6,7 @@ add_lunch_combo cyanogen_buzz-eng
 add_lunch_combo cyanogen_click-eng
 add_lunch_combo cyanogen_captivatemtd-eng
 add_lunch_combo cyanogen_crespo-eng
+add_lunch_combo cyanogen_crespo4g-eng
 add_lunch_combo cyanogen_desirec-eng
 add_lunch_combo cyanogen_dream_sapphire-eng
 add_lunch_combo cyanogen_encore-eng
