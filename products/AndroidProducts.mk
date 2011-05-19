@@ -7,6 +7,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_captivatemtd.mk \
     $(LOCAL_DIR)/cyanogen_click.mk \
     $(LOCAL_DIR)/cyanogen_crespo.mk \
+    $(LOCAL_DIR)/cyanogen_crespo4g.mk \
     $(LOCAL_DIR)/cyanogen_desirec.mk \
     $(LOCAL_DIR)/cyanogen_dream_sapphire.mk \
     $(LOCAL_DIR)/cyanogen_encore.mk \
