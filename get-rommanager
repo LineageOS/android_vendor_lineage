@@ -1,2 +1,16 @@
-mkdir -p `dirname $0`/proprietary
-curl -L -o `dirname $0`/proprietary/RomManager.apk -O -L http://mirror.kanged.net/recoveries/RomManager.apk
+url=http://mirrorbrain.cyanogenmod.com/cm/recoveries/RomManager.apk
+apk=RomManager.apk
+dir=`dirname $0`/proprietary
+mkdir -p $dir
+curl -Lo $dir/$apk.new $url || exit $?
+mime=`file -b --mime-type $dir/$apk.new`
+if [ "$mime" = "application/zip" ]
+then
+    mv $dir/$apk.new $dir/$apk
+    file --mime-type $dir/$apk
+else
+    echo -n "$dir/$apk.new: "
+    echo "$mime" | grep text && cat $dir/$apk.new
+    rm $dir/$apk.new
+    exit 1
+fi
