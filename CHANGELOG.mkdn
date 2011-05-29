@@ -35,6 +35,7 @@ Maintainers:
 * Encore (Nook Color): dalingrin, cvpcs, nemith, cicada, fattire
 * Speedy: toastcfh
 * Zeppelin (CLIQ XT/Quench): firesnatch, turl
+* Morrison (CLIQ/DEXT): ngiordano, dwagner, JassyCliq
 
 Translators:
 ------------
