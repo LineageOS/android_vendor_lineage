@@ -29,6 +29,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_passion.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
     $(LOCAL_DIR)/cyanogen_smb_a1002.mk \
+    $(LOCAL_DIR)/cyanogen_smb_a1004.mk \
+    $(LOCAL_DIR)/cyanogen_smb_a1011.mk \
     $(LOCAL_DIR)/cyanogen_smb_b9701.mk \
     $(LOCAL_DIR)/cyanogen_speedy.mk \
     $(LOCAL_DIR)/cyanogen_supersonic.mk \
