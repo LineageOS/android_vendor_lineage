@@ -1,2 +1,2 @@
 mkdir -p `dirname $0`/proprietary
-curl -L -o `dirname $0`/proprietary/RomManager.apk -O -L http://mirror.dal.tdrevolution.net/cm/recoveries/RomManager.apk
+curl -L -o `dirname $0`/proprietary/RomManager.apk -O -L http://download.clockworkmod.com/recoveries/RomManager.apk
