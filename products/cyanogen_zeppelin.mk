@@ -33,8 +33,7 @@ else
     endif
 endif
 
-#PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRJ22 PRODUCT_NAME=zeppelin TARGET_DEVICE=zeppelin BUILD_FINGERPRINT=MOTO/zeppelin_tmo_us/zepp/zepp:2.1-update1/ERD79/2.1.54:user/ota-rel-keys,release-keys PRODUCT_BRAND=tmobile PRIVATE_BUILD_DESC="zeppelin-user 2.1-update1 ERD79 2.1.54 ota-rel-keys,release-keys" BUILD_NUMBER=75603 BUILD_UTC_DATE=1289367602 TARGET_BUILD_TYPE=user BUILD_VERSION_TAGS=release-keys USER=android-build
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=zeppelin TARGET_DEVICE=zeppelin BUILD_ID=GRH78 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/soju/crespo:2.3.1/GRH78/85442:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.1 GRH78 85442 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=zeppelin TARGET_DEVICE=zeppelin BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys" BUILD_NUMBER=121341
 
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
