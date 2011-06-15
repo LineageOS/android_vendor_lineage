@@ -14,7 +14,7 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 PRODUCT_NAME := cyanogen_zeppelin
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := zeppelin
-PRODUCT_MODEL := CLIQ XT
+PRODUCT_MODEL := MB501
 PRODUCT_MANUFACTURER := Motorola
 
 #
