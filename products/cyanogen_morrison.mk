@@ -14,7 +14,7 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 PRODUCT_NAME := cyanogen_morrison
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := morrison
-PRODUCT_MODEL := CLIQ
+PRODUCT_MODEL := MB200
 PRODUCT_MANUFACTURER := Motorola
 
 #
