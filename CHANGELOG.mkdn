@@ -30,13 +30,14 @@ Maintainers:
 * Harmony (Malata smb_a1002/smb_b9701): bekit, pershoot
 * Harmony (Malata smb_a1004/smb_a1011): arcee
 * Ace (Desire HD): Kali-
-* Glacier (MT4G): Zinx, Kmobs
+* Glacier (MT4G): Zinx, Kmobs, cyanogen
 * Click (Tattoo): KalimochoAz
 * Blade (San Francisco, Sapo A5, others): Tom Giordano and Jacob Crawley
 * Encore (Nook Color): dalingrin, cvpcs, nemith, cicada, fattire
 * Speedy: toastcfh
 * Zeppelin (CLIQ XT/Quench): firesnatch, turl
 * Morrison (CLIQ/DEXT): ngiordano, dwagner, JassyCliq
+* Star (LG Optimus 2/G2x): arcee, cyanogen
 
 Translators:
 ------------
@@ -58,6 +59,34 @@ Translators:
 
 CHANGELOG
 ---------
+
+### 7.1.0-pre
+* Common: Android 2.3.4 (Google)
+* Common: Bluetooth mouse support - Scott Brady
+* Common: Improve notification swipe-to-clear - Evan Charlton
+* Common: Improve album-artist support in media scanner - Paul Crovella
+* Common: Profile improvements and bugfixes - Martin Long
+* Common: RTL text improvements - Eyad Aboulouz, Eran Mizrahi
+* Common: Wake on volume key option - Sven Dawitz
+* Common: Support for revoking application permissions - Plamen K. Kosseff 
+* Common: Latest Superuser app - ChainsDD
+* Common: Control brightness by sliding on statusbar - Danesh M
+* Common: Add "copy all" to context menu - Danesh M
+* Common: Lockscreen haptic and statusbar indicators toggle - Danesh M
+* Common: Nicer timepicker/datepicker - Jiri Tyr
+* Common: Configuration 0/90/180/270 rotation - Jonas Larsson, Scott Brady
+* Common: DSP Manager bugfixes and improvements - Antti S Lankila
+* Common: Support for launching apps via gestures in the background - Jiri Tyr
+* Common: Option to hide hold button during call - Roberto Leinardi
+* Common: Allow using wildcards for call blacklisting - Nihanth Subramanya
+* Common: Option to allow in-call lockscreen to match main lockscren - Sven Dawitz
+* Common: ADWLauncher- Transitions, catalog improvements, bugfixes - John Van Etten
+* Common: Optional GMT correction for SMS/MMS timestamps - Terry Hau
+* Vision/Glacier/Ace/Speedy: 2.6.35 kernel and updated userspace
+
+### 7.0.3
+* Common: Don't allow packages with platform keys on user-controlled storage
+
 ### 7.0.2
 * Common: Fix issue with missing built-in themes
 * Common: Update bundled ROM Manager to latest version
