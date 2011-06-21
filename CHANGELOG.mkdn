@@ -38,6 +38,9 @@ Maintainers:
 * Zeppelin (CLIQ XT/Quench): firesnatch, turl
 * Morrison (CLIQ/DEXT): ngiordano, dwagner, JassyCliq
 * Star (LG Optimus 2/G2x): arcee, cyanogen
+* Galaxy S (GT-I9000): coolya, codeworkx, atinm, GuiperPT, Unhelpful
+* Captivate (SGH-I896/SGH-I897): atinm, Unhelpful, coolya, codeworkx
+* Vibrant (SGH-T959): coolya, atinm, codeworkx, Unhelpful
 
 Translators:
 ------------
