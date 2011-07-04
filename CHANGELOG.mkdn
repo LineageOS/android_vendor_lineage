@@ -44,6 +44,7 @@ Maintainers:
 * Vibrant (SGH-T959): coolya, atinm, codeworkx, Unhelpful
 * Incredible S: Kali-, attn1
 * Jordan (Defy): Quarx, Epsylon3, maniac103
+* Droid2 (MotoA955): JBirdVegas, RevNumbers
 
 Translators:
 ------------
