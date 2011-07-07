@@ -492,8 +492,8 @@
   <apn carrier="AVEA MMS" mcc="286" mnc="03" apn="mms" user="mms" password="mms" mmsc="http://mms.avea.com.tr/servlets/mms" mmsproxy="213.161.151.201" mmsport="8080" type="mms" />
   <apn carrier="Tele" mcc="290" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Tele MMS" mcc="290" mnc="01" apn="mms" mmsc="http://mms.tele.gl/mms/wapenc" mmsproxy="10.112.222.37" mmsport="8080" type="mms" />
-  <apn carrier="Si.mobil Internet" mcc="293" mnc="40" apn="internet.simobil.si" user="simobil" password="internet" proxy="80.95.224.46" port="9201" type="default,supl" />
-  <apn carrier="Si.mobil MMS" mcc="293" mnc="40" apn="mms.simobil.si" user="simobil" password="internet" mmsc="mmc" mmsproxy="80.95.224.46" mmsport="9201" type="mms" />
+  <apn carrier="Si.mobil Internet" mcc="293" mnc="40" apn="internet.simobil.si" user="simobil" password="internet" type="default,supl" />
+  <apn carrier="Si.mobil MMS" mcc="293" mnc="40" apn="mms.simobil.si" user="simobil" password="internet" mmsc="http://mmc" mmsproxy="80.95.224.46" mmsport="9201" authenticationtype="PAP" type="mms" />
   <apn carrier="Mobitel Internet" mcc="293" mnc="41" apn="internet" user="mobitel" password="internet" proxy="213.229.249.40" port="8080" type="default,supl,mms" />
   <apn carrier="Mobitel MMS" mcc="293" mnc="41" apn="internet" user="mobitel" password="internet" mmsc="http://mms.mobitel.si/servlets/mms" mmsproxy="213.229.249.40" mmsport="8080" type="mms" />
   <apn carrier="T-2 Internet" mcc="293" mnc="64" apn="internet.t-2.net" type="default,supl" />
