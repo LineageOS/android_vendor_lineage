@@ -93,6 +93,11 @@ CHANGELOG
 * Common: Add FM Seek for TI devices - KalimochoAz
 * Common: Add FM support for SI4708 devices (Blade, V9, Racer) - Stéphane Konstantaropoulos
 * Common: Add FM seek implementation to FM application - Tom Giordano
+* Common: Show current FM status on lockscreen - Tom Giordano
+* Common: Camera touch-to-focus - cyanogen, arcee, m0viefreak, Danny Baumann
+* Common: Screenshot feature via power menu - arcee
+* Common: WEBP backport - Vikas Arora
+* Common: Add CM copyright noticies - arcee
 * Click, Motorola: Speed up photo recording - Emilio López
 * Click, Motorola: Add Geolocation to photo app - KalimochoAz
 * Vision/Glacier/Ace/Speedy/Vivo: 2.6.35 kernel and updated userspace
