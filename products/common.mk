@@ -97,47 +97,33 @@ PRODUCT_COPY_FILES += \
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
 ifdef CYANOGEN_WITH_GOOGLE
-    PRODUCT_COPY_FILES += \
-        vendor/cyanogen/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
-        vendor/cyanogen/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
-        vendor/cyanogen/proprietary/Facebook.apk:./system/app/Facebook.apk \
-        vendor/cyanogen/proprietary/GenieWidget.apk:./system/app/GenieWidget.apk \
-        vendor/cyanogen/proprietary/Gmail.apk:./system/app/Gmail.apk \
-        vendor/cyanogen/proprietary/GoogleBackupTransport.apk:./system/app/GoogleBackupTransport.apk \
-        vendor/cyanogen/proprietary/GoogleCalendarSyncAdapter.apk:./system/app/GoogleCalendarSyncAdapter.apk \
-        vendor/cyanogen/proprietary/GoogleContactsSyncAdapter.apk:./system/app/GoogleContactsSyncAdapter.apk \
-        vendor/cyanogen/proprietary/GoogleFeedback.apk:./system/app/GoogleFeedback.apk \
-        vendor/cyanogen/proprietary/GooglePartnerSetup.apk:./system/app/GooglePartnerSetup.apk \
-        vendor/cyanogen/proprietary/GoogleQuickSearchBox.apk:./system/app/GoogleQuickSearchBox.apk \
-        vendor/cyanogen/proprietary/GoogleServicesFramework.apk:./system/app/GoogleServicesFramework.apk \
-        vendor/cyanogen/proprietary/HtcCopyright.apk:./system/app/HtcCopyright.apk \
-        vendor/cyanogen/proprietary/HtcEmailPolicy.apk:./system/app/HtcEmailPolicy.apk \
-        vendor/cyanogen/proprietary/HtcSettings.apk:./system/app/HtcSettings.apk \
-        vendor/cyanogen/proprietary/LatinImeTutorial.apk:./system/app/LatinImeTutorial.apk \
-        vendor/cyanogen/proprietary/Maps.apk:./system/app/Maps.apk \
-        vendor/cyanogen/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
-        vendor/cyanogen/proprietary/MediaUploader.apk:./system/app/MediaUploader.apk \
-        vendor/cyanogen/proprietary/NetworkLocation.apk:./system/app/NetworkLocation.apk \
-        vendor/cyanogen/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
-        vendor/cyanogen/proprietary/PassionQuickOffice.apk:./system/app/PassionQuickOffice.apk \
-        vendor/cyanogen/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
-        vendor/cyanogen/proprietary/Street.apk:./system/app/Street.apk \
-        vendor/cyanogen/proprietary/Talk.apk:./system/app/Talk.apk \
-        vendor/cyanogen/proprietary/Twitter.apk:./system/app/Twitter.apk \
-        vendor/cyanogen/proprietary/Vending.apk:./system/app/Vending.apk \
-        vendor/cyanogen/proprietary/VoiceSearch.apk:./system/app/VoiceSearch.apk \
-        vendor/cyanogen/proprietary/YouTube.apk:./system/app/YouTube.apk \
-        vendor/cyanogen/proprietary/googlevoice.apk:./system/app/googlevoice.apk \
-        vendor/cyanogen/proprietary/kickback.apk:./system/app/kickback.apk \
-        vendor/cyanogen/proprietary/soundback.apk:./system/app/soundback.apk \
-        vendor/cyanogen/proprietary/talkback.apk:./system/app/talkback.apk \
-        vendor/cyanogen/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
-        vendor/cyanogen/proprietary/features.xml:./system/etc/permissions/features.xml \
-        vendor/cyanogen/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-        vendor/cyanogen/proprietary/libspeech.so:./system/lib/libspeech.so
+
+    # use all present proprietary apk
+    PRODUCT_COPY_FILES += $(shell test -f vendor/cyanogen/proprietary/*.apk && \
+	find vendor/cyanogen/proprietary -name '*.apk' \
+	-printf '%p:system/app/%f ')
+
+    # use all present proprietary lib
+    PRODUCT_COPY_FILES += $(shell test -f vendor/cyanogen/proprietary/*.lib && \
+	find vendor/cyanogen/proprietary -name '*.so' \
+	-printf '%p:system/lib/%f ')
+
+    # use all present proprietary jar
+    PRODUCT_COPY_FILES += $(shell test -f vendor/cyanogen/proprietary/*.jar && \
+	find vendor/cyanogen/proprietary -name '*.jar' \
+	-printf '%p:system/framework/%f ')
+
+    # use all present proprietary xml (permissions)
+    PRODUCT_COPY_FILES += $(shell test -f vendor/cyanogen/proprietary/*.xml && \
+	find vendor/cyanogen/proprietary -name '*.xml' \
+	-printf '%p:system/etc/permissions/%f ')
+
 else
     PRODUCT_PACKAGES += \
         Provision \
-        GoogleSearch \
-        LatinIME
+        GoogleSearch
 endif
+
+# Required, keyboard
+PRODUCT_PACKAGES += LatinIME
+
