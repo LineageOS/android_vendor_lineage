@@ -45,6 +45,7 @@ Maintainers:
 * Incredible S: Kali-, attn1
 * Jordan (Defy): Quarx, Epsylon3, maniac103
 * Droid2 (MotoA955): JBirdVegas, RevNumbers
+* Galaxy S II (GT-I9100): atinm, codeworkx, coolya, GuiperPT, Unhelpful
 
 Translators:
 ------------
