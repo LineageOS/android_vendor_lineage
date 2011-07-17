@@ -104,7 +104,7 @@ ifdef CYANOGEN_WITH_GOOGLE
 	-printf '%p:system/app/%f ')
 
     # use all present proprietary lib
-    PRODUCT_COPY_FILES += $(shell test -f vendor/cyanogen/proprietary/*.lib && \
+    PRODUCT_COPY_FILES += $(shell test -f vendor/cyanogen/proprietary/*.so && \
 	find vendor/cyanogen/proprietary -name '*.so' \
 	-printf '%p:system/lib/%f ')
 
