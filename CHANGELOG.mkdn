@@ -98,6 +98,8 @@ CHANGELOG
 * Common: Screenshot feature via power menu - arcee
 * Common: WEBP backport - Vikas Arora
 * Common: Add CM copyright noticies - arcee
+* Common: Skia/Zlib/libcore ARM optimizations - 0xlab
+* Common: Bluetooth tethering - Stéphane Konstantaropoulos
 * Click, Motorola: Speed up photo recording - Emilio López
 * Click, Motorola: Add Geolocation to photo app - KalimochoAz
 * Vision/Glacier/Ace/Speedy/Vivo: 2.6.35 kernel and updated userspace
