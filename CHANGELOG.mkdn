@@ -30,7 +30,7 @@ Maintainers:
 * Buzz (Wildfire): Jacob Crawley, Arne Coucheron
 * Harmony (Malata smb_a1002/smb_b9701): bekit, pershoot
 * Harmony (Malata smb_a1004/smb_a1011): arcee
-* Ace (Desire HD): Kali-
+* Ace (Desire HD/Inspire 4G): Kali-, jznomoney, attn1
 * Glacier (MT4G): Zinx, Kmobs, cyanogen
 * Click (Tattoo): KalimochoAz
 * Blade (San Francisco, Sapo A5, others): Tom Giordano and Jacob Crawley
@@ -42,7 +42,8 @@ Maintainers:
 * Galaxy S (GT-I9000): coolya, codeworkx, atinm, GuiperPT, Unhelpful
 * Captivate (SGH-I896/SGH-I897): atinm, Unhelpful, coolya, codeworkx
 * Vibrant (SGH-T959): coolya, atinm, codeworkx, Unhelpful
-* Incredible S: Kali-, attn1
+* Vivo (Incredible S): Kali-, attn1
+* Vivow (Incredible 2): Kali-, attn1
 * Jordan (Defy): Quarx, Epsylon3, maniac103
 * Droid2 (MotoA955): JBirdVegas, RevNumbers
 * Galaxy S II (GT-I9100): atinm, codeworkx, coolya, GuiperPT, Unhelpful
@@ -103,8 +104,9 @@ CHANGELOG
 * Common: Bluetooth tethering - Stéphane Konstantaropoulos
 * Click, Motorola: Speed up photo recording - Emilio López
 * Click, Motorola: Add Geolocation to photo app - KalimochoAz
-* Vision/Glacier/Ace/Speedy/Vivo: 2.6.35 kernel and updated userspace
+* Vision/Glacier/Ace/Speedy/Vivo/Vivow: 2.6.35 kernel and updated userspace
 * Buzz: 2.6.35 kernel - Arne Coucheron
+* Bravo(c)/Vivo(w)/Ace/Liberty: On charge notification led - Richard Antony Burton
 
 ### 7.0.3
 * Common: Don't allow packages with platform keys on user-controlled storage
