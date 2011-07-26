@@ -53,7 +53,7 @@ Translators:
 * German: Matthias Büchner, Alexander Hofbauer, Sebastian K (DerSeppel), Ricco Thiel
 * Italian: Eugenio Ziliotto, Giulio Cervera
 * Japanese: Takuo Kitame
-* French: Sébastien Vaucher, David Girault
+* French: Sébastien Vaucher, David Girault, Tanguy Pruvot
 * Simplified Chinese: comercy, Qian Zheng
 * Russian: OlegKrikun, Pavel Volkov, Kir Kolyshkin
 * Portuguese: Eduardo Martins, Ricardo Pinho
