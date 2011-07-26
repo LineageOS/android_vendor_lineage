@@ -16,7 +16,7 @@ Maintainers:
 * Droid: cvpcs, mtwebster, Koush
 * Dream/Sapphire: Sileht, Wes Garner, Cyanogen
 * Eris: Workshed, Conap
-* Hero: Esa Laukkanen (GSM), Darchstar (CDMA)
+* Hero: Esa Laukkanen (GSM), Decad3nce (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
 * Incredible: jistone, slayher, Koush
 * Supersonic (EVO): Cyanogen, toastcfh
