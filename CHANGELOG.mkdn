@@ -70,7 +70,7 @@ CHANGELOG
 ---------
 
 ### 7.1.0-pre
-* Common: Android 2.3.4 (Google)
+* Common: Android 2.3.5 (Google)
 * Common: Bluetooth mouse support - Scott Brady
 * Common: Improve notification swipe-to-clear - Evan Charlton
 * Common: Improve album-artist support in media scanner - Paul Crovella
