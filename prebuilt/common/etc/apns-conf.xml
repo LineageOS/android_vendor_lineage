@@ -350,6 +350,8 @@
   <apn carrier="MMS" mcc="250" mnc="16" apn="mms.ntc" mmsc="http://mmsc.vntc.ru/was" mmsproxy="80.243.64.68" mmsport="8080" type="mms" />
   <apn carrier="Internet" mcc="250" mnc="17" apn="internet.usi.ru" type="default,supl" />
   <apn carrier="MMS" mcc="250" mnc="17" apn="mms.usi.ru" mmsc="http://mms" mmsproxy="192.168.168.192" mmsport="8080" type="mms" />
+  <apn carrier="Tele2 RU" mcc="250" mnc="20" apn="internet.tele2.ru" type="default,supl" />
+  <apn carrier="Tele2 RU MMS" mcc="250" mnc="20" apn="mms.tele2.ru" mmsc="http://mmsc.tele2.ru" mmsproxy="193.12.40.65" mmsport="8080" type="mms" />  
   <apn carrier="МТС-интернет" mcc="250" mnc="39" apn="internet.mts.ru" user="mts" password="mts" type="default,supl" />
   <apn carrier="МТС Центр MMS" mcc="250" mnc="39" apn="mms.mts.ru" user="mts" password="mts" mmsc="http://mmsc" mmsproxy="192.168.192.192" mmsport="8080" type="mms" />
   <apn carrier="Beeline internet" mcc="250" mnc="44" apn="internet.beeline.ru" user="beeline" password="beeline" type="default,supl" />
