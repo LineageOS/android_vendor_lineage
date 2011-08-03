@@ -1,4 +1,5 @@
 add_lunch_combo cyanogen_ace-eng
+add_lunch_combo cyanogen_anzu-eng
 add_lunch_combo cyanogen_blade-eng
 add_lunch_combo cyanogen_bravo-eng
 add_lunch_combo cyanogen_bravoc-eng
