@@ -47,6 +47,9 @@ Maintainers:
 * Jordan (Defy): Quarx, Epsylon3, maniac103
 * Droid2 (MotoA955): JBirdVegas, RevNumbers
 * Galaxy S II (GT-I9100): atinm, codeworkx, coolya, GuiperPT, Unhelpful
+* Xperia Arc (LT15i): Bin4ry,defer,jerpelea (FreeXperia team)
+* Xperia Neo (MT15i): Bin4ry,defer,jerpelea (FreeXperia team)
+* Xperia Play (R800i): Bin4ry,defer,jerpelea (FreeXperia team)
 
 Translators:
 ------------
