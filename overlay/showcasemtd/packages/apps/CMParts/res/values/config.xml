@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Whether or not to display the trackball settings -->
+    <bool name="has_trackball">false</bool>
+    <bool name="has_rgb_notification_led">false</bool>
+    <bool name="has_camera_button">false</bool>
+    <bool name="has_led_flash">true</bool>
+    <bool name="has_search_button">true</bool>
+</resources>
