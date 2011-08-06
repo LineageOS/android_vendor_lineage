@@ -15,6 +15,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_droid2we.mk \
     $(LOCAL_DIR)/cyanogen_encore.mk \
     $(LOCAL_DIR)/cyanogen_espresso.mk \
+    $(LOCAL_DIR)/cyanogen_es209ra.mk \
     $(LOCAL_DIR)/cyanogen_fascinatemtd.mk \
     $(LOCAL_DIR)/cyanogen_hallon.mk \
     $(LOCAL_DIR)/cyanogen_hero.mk \
