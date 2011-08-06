@@ -37,14 +37,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/zeus
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-XperiaPlay
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-XperiaPlay-R800i
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-R800i
+            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaPlay-R800i
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-R800i-KANG
+            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaPlay-R800i-KANG
     endif
 endif
 

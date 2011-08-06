@@ -37,14 +37,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/anzu
 #
 ifdef CYANOGEN_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-XperiaArc
+        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-XperiaArc-LT15i
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-LT15i
+            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaArc-LT15i
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-LT15i-KANG
+            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaArc-LT15i-KANG
     endif
 endif
 
