@@ -536,6 +536,7 @@
   <apn carrier="PLATWEB" mcc="310" mnc="100" apn="plateauweb" type="default,supl" />
   <apn carrier="CDMA" mcc="310" mnc="120" apn="0" type="default,supl" />
   <apn carrier="CDMA" mcc="310" mnc="120" apn="1" mmsc="http://mms.sprintpcs.com" type="default,supl" />
+  <apn carrier="USCC" mcc="310" mnc="120" apn="internet" mmsc="http://mmsc1.uscc.net/mmsc/MMS" authtype="3" port="80" mmsport="80" type="mms" />
   <apn carrier="Virgin Mobile US" mcc="200" mnc="053" apn="0" port="" mmsproxy="205.239.233.136" mmsport="81" mmsc="http://mmsc.vmobl.com:8088/mms?" type="mms" />
   <apn carrier="My Multi Media" mcc="310" mnc="130" apn="mms.c1.ama" user="cell1mms" password="cell1" mmsc="http://mms.iot1.com/amarillo/mms.php" type="mms" />
   <apn carrier="T-Mobile US 160" mcc="310" mnc="160" apn="epc.tmobile.com" user="none" password="none" server="*" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
