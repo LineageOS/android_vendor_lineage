@@ -52,4 +52,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_z71.mk \
     $(LOCAL_DIR)/cyanogen_zeppelin.mk \
     $(LOCAL_DIR)/cyanogen_zero.mk \
-    $(LOCAL_DIR)/cyanogen_zeus.mk
+    $(LOCAL_DIR)/cyanogen_zeus.mk \
+    $(LOCAL_DIR)/cyanogen_zeusc.mk
