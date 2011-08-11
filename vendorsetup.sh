@@ -30,6 +30,7 @@ add_lunch_combo cyanogen_liberty-eng
 add_lunch_combo cyanogen_mango-eng
 add_lunch_combo cyanogen_mecha-eng
 add_lunch_combo cyanogen_mesmerizemtd-eng
+add_lunch_combo cyanogen_mimmi-eng
 add_lunch_combo cyanogen_morrison-eng
 add_lunch_combo cyanogen_motus-eng
 add_lunch_combo cyanogen_one-eng
