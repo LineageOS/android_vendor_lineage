@@ -32,7 +32,7 @@ Maintainers:
 * Harmony (Malata smb_a1004/smb_a1011): arcee
 * Ace (Desire HD/Inspire 4G): Kali-, jznomoney, attn1
 * Glacier (MT4G): Zinx, Kmobs, cyanogen
-* Click (Tattoo): KalimochoAz
+* Click (Tattoo): KalimochoAz, Arne Coucheron
 * Blade (San Francisco, Sapo A5, others): Tom Giordano and Jacob Crawley
 * Encore (Nook Color): dalingrin, cvpcs, nemith, cicada, fattire
 * Speedy: toastcfh
@@ -107,6 +107,7 @@ CHANGELOG
 * Common: Bluetooth tethering - Stéphane Konstantaropoulos
 * Click, Motorola: Speed up photo recording - Emilio López
 * Click, Motorola: Add Geolocation to photo app - KalimochoAz
+* Click: Upgraded kernel from HTC 2.6.29 to 2.6.35
 * Vision/Glacier/Ace/Speedy/Vivo/Vivow: 2.6.35 kernel and updated userspace
 * Buzz: 2.6.35 kernel - Arne Coucheron
 * Bravo(c)/Vivo(w)/Ace/Liberty: On charge notification led - Richard Antony Burton
