@@ -40,6 +40,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_passion.mk \
     $(LOCAL_DIR)/cyanogen_saga.mk \
     $(LOCAL_DIR)/cyanogen_shadow.mk \
+    $(LOCAL_DIR)/cyanogen_shakira.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
     $(LOCAL_DIR)/cyanogen_showcasemtd.mk \
     $(LOCAL_DIR)/cyanogen_smb_a1002.mk \
