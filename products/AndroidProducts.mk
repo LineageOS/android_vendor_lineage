@@ -38,6 +38,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_p990.mk \
     $(LOCAL_DIR)/cyanogen_p999.mk \
     $(LOCAL_DIR)/cyanogen_passion.mk \
+    $(LOCAL_DIR)/cyanogen_robyn.mk \
     $(LOCAL_DIR)/cyanogen_saga.mk \
     $(LOCAL_DIR)/cyanogen_shadow.mk \
     $(LOCAL_DIR)/cyanogen_shakira.mk \
