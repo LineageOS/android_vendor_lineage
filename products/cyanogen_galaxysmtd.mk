@@ -36,7 +36,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Add additional mounts
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.additionalmounts=/mnt/emmc
+    ro.additionalmounts=/mnt/emmc \
+    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 #
 # Set ro.modversion
