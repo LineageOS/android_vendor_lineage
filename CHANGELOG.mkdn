@@ -50,6 +50,7 @@ Maintainers:
 * Xperia Arc (LT15i): Bin4ry,defer,jerpelea (FreeXperia team)
 * Xperia Neo (MT15i): Bin4ry,defer,jerpelea (FreeXperia team)
 * Xperia Play (R800i): Bin4ry,defer,jerpelea (FreeXperia team)
+* Droid2we (Droid2 Global): RevNumbers, x13thangelx
 
 Translators:
 ------------
