@@ -1,6 +1,9 @@
 # Inherit AOSP device configuration.
 $(call inherit-product, device/motorola/jordan/jordan.mk)
 
+# Inherit common GSM stuff
+$(call inherit-product, vendor/cyanogen/products/gsm.mk)
+
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
@@ -56,10 +59,3 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Add the Torch app
 PRODUCT_PACKAGES += \
     Torch
-
-# for custom apns-conf.xml
-$(call inherit-product, vendor/cyanogen/products/gsm.mk)
-
-# TI FM radio
-$(call inherit-product, vendor/cyanogen/products/ti_fm_radio.mk)
-
