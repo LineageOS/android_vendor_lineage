@@ -35,6 +35,7 @@ add_lunch_combo cyanogen_one-eng
 add_lunch_combo cyanogen_p990-eng
 add_lunch_combo cyanogen_p999-eng
 add_lunch_combo cyanogen_passion-eng
+add_lunch_combo cyanogen_saga-eng
 add_lunch_combo cyanogen_shadow-eng
 add_lunch_combo cyanogen_sholes-eng
 add_lunch_combo cyanogen_showcasemtd-eng
