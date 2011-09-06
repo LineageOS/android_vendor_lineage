@@ -43,6 +43,7 @@ add_lunch_combo cyanogen_smb_a1002-eng
 add_lunch_combo cyanogen_smb_a1004-eng
 add_lunch_combo cyanogen_smb_a1011-eng
 add_lunch_combo cyanogen_smb_b9701-eng
+add_lunch_combo cyanogen_smultron-eng
 add_lunch_combo cyanogen_speedy-eng
 add_lunch_combo cyanogen_supersonic-eng
 add_lunch_combo cyanogen_u8220-eng
