@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockscreen_carrier_default"></string>
+    <string name="power_dialog">Tabletoptionen</string>
+    <string name="reboot_system">Neu starten</string>
+    <string name="shutdown_confirm">Tablet wird heruntergefahren.</string>
+    <string name="reboot_confirm">Ihr Tablet wird neu gestartet.</string>
+    <string name="global_actions">Tabletoptionen</string>
+</resources>
