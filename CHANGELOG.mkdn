@@ -73,6 +73,7 @@ Translators:
 * Korean: Inseok Lee
 * Traditional Chinese: Ladios Jonquil
 * Slovak: Juraj Janecek
+* Czech: Ondrej Zima
 
 CHANGELOG
 ---------
