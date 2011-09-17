@@ -72,6 +72,7 @@ Translators:
 * Polish: Maciej Rozbicki
 * Korean: Inseok Lee
 * Traditional Chinese: Ladios Jonquil
+* Slovak: Juraj Janecek
 
 CHANGELOG
 ---------
