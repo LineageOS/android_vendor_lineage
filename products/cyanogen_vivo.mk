@@ -28,9 +28,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/vivo
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
-# Add AicBootFix for vivo battery fix
-PRODUCT_PACKAGES += AicBootFix
-
 # Broadcom FM radio
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
