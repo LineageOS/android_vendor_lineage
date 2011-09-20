@@ -17,6 +17,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_DISPLAY_I
 # Extra fascinatemtd overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/fascinatemtd
 
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
+
 #
 # Set ro.modversion
 #
