@@ -28,6 +28,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_legend.mk \
     $(LOCAL_DIR)/cyanogen_leo.mk \
     $(LOCAL_DIR)/cyanogen_liberty.mk \
+    $(LOCAL_DIR)/cyanogen_mango.mk \
     $(LOCAL_DIR)/cyanogen_mecha.mk \
     $(LOCAL_DIR)/cyanogen_mesmerizemtd.mk \
     $(LOCAL_DIR)/cyanogen_morrison.mk \
