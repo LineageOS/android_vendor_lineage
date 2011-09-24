@@ -25,7 +25,7 @@ TMPDIR=/tmp/opticharge-$$
 
 if [ "$APKCERTS" = "" ];
 then
-    APKCERTS=$OUT/obj/PACKAGING/target_files_intermediates/$TARGET_PRODUCT-target_files-$TARGET_BUILD_VARIANT.$LOGNAME/META/apkcerts.txt
+    APKCERTS=$OUT/obj/PACKAGING/target_files_intermediates/$TARGET_PRODUCT-target_files-$TARGET_BUILD_VARIANT.$USER/META/apkcerts.txt
     if [ ! -f "$APKCERTS" ];
     then
         echo "Set APKCERTS to the path to your apkcerts.txt file"
