@@ -28,9 +28,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/ace
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
-# Add AicBootFix for ace battery fix
-PRODUCT_PACKAGES += AicBootFix
-
 # Broadcom FM radio
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
