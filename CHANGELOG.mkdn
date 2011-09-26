@@ -75,7 +75,7 @@ Translators:
 * Slovak: Juraj Janecek
 * Czech: Ondrej Zima
 
-CHANGELOG
+CHANGELOG (notable new features)
 ---------
 
 ### 7.1.0-pre
@@ -111,10 +111,24 @@ CHANGELOG
 * Common: Add CM copyright noticies - arcee
 * Common: Skia/Zlib/libcore ARM optimizations - 0xlab
 * Common: Bluetooth tethering - Stéphane Konstantaropoulos
+* Common: Lockscreen widget alignment - Danesh Mondegarian
+* Common: Lockscreen calendar - David Morgan
+* Common: AVRCP 1.3 support - Qualcomm (bugfix by Danny Baumann)
+* Common: LED notification overhaul - Danny Baumann
+* Common: System-wide DNS cache - Google, SEMC
+* Common: Headset icon toggle - Cameron Pickett
+* Common: FM seek support - Emilio López, Tom Giordano
+* Common: Editable event fields in Contacts app - Danny Baumann
+* Common: Remove compromised CA from system certs - Guardian Project
+* Common: Mute camera shutter option - Danesh Mondegarian
+* Common: Camera timer - Danesh Mondegarian
+* Common: "Mark all read" option in MMS - Vinod Surendran
+* Common: "eat" pushes fresh brunch/breakfast to device - Ricardo Cerqueira
+* Common: Customizable account color chip in Email - copolii
 * Click, Motorola: Speed up photo recording - Emilio López
 * Click, Motorola: Add Geolocation to photo app - KalimochoAz
 * Click: Upgraded kernel from HTC 2.6.29 to 2.6.35
-* Vision/Glacier/Ace/Speedy/Vivo/Vivow: 2.6.35 kernel and updated userspace
+* HTC msm7x30: 2.6.35 kernel and updated userspace
 * Buzz: 2.6.35 kernel - Arne Coucheron
 * Bravo(c)/Vivo(w)/Ace/Liberty: On charge notification led - Richard Antony Burton
 
