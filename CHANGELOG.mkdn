@@ -78,7 +78,7 @@ Translators:
 CHANGELOG (notable new features)
 ---------
 
-### 7.1.0-pre
+### 7.1.0
 * Common: Android 2.3.5 (Google)
 * Common: Bluetooth mouse support - Scott Brady
 * Common: Improve notification swipe-to-clear - Evan Charlton
