@@ -120,7 +120,7 @@ CHANGELOG (notable new features)
 * Common: FM seek support - Emilio López, Tom Giordano
 * Common: Editable event fields in Contacts app - Danny Baumann
 * Common: Remove compromised CA from system certs - Guardian Project
-* Common: Mute camera shutter option - Danesh Mondegarian
+* Common: Mute camera shutter option - George Maizel
 * Common: Camera timer - Danesh Mondegarian
 * Common: "Mark all read" option in MMS - Vinod Surendran
 * Common: "eat" pushes fresh brunch/breakfast to device - Ricardo Cerqueira
