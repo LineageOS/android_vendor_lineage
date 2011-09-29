@@ -39,10 +39,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaPlay-R800x
+            ro.modversion=CyanogenMod-7.1.0-XperiaPlay-R800x
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaPlay-R800x-KANG
+            ro.modversion=CyanogenMod-7.1.0-XperiaPlay-R800x-KANG
     endif
 endif
 

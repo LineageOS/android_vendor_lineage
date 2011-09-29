@@ -41,10 +41,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaArc-LT15i
+            ro.modversion=CyanogenMod-7.1.0-XperiaArc-LT15i
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-XperiaArc-LT15i-KANG
+            ro.modversion=CyanogenMod-7.1.0-XperiaArc-LT15i-KANG
     endif
 endif
 
