@@ -83,7 +83,7 @@ CHANGELOG (notable new features)
 * Common: Bluetooth mouse support - Scott Brady
 * Common: Improve notification swipe-to-clear - Evan Charlton
 * Common: Improve album-artist support in media scanner - Paul Crovella
-* Common: Profile improvements and bugfixes - Martin Long
+* Common: Profile improvements and bugfixes - Martin Long, Danny Baumann, Robert Burns
 * Common: RTL text improvements - Eyad Aboulouz, Eran Mizrahi
 * Common: Wake on volume key option - Sven Dawitz
 * Common: Support for revoking application permissions - Plamen K. Kosseff
@@ -125,6 +125,8 @@ CHANGELOG (notable new features)
 * Common: "Mark all read" option in MMS - Vinod Surendran
 * Common: "eat" pushes fresh brunch/breakfast to device - Ricardo Cerqueira
 * Common: Customizable account color chip in Email - copolii
+* Common: "Rings" lockscreen - Valera Trubachev
+
 * Click, Motorola: Speed up photo recording - Emilio López
 * Click, Motorola: Add Geolocation to photo app - KalimochoAz
 * Click: Upgraded kernel from HTC 2.6.29 to 2.6.35
