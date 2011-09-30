@@ -34,7 +34,7 @@ Maintainers:
 * Glacier (MT4G): Zinx, Kmobs, cyanogen
 * Click (Tattoo): KalimochoAz, Arne Coucheron
 * Blade (San Francisco, Sapo A5, others): Tom Giordano and Jacob Crawley
-* Encore (Nook Color): dalingrin, cvpcs, nemith, cicada, fattire
+* Encore (Nook Color): dalingrin, nemith, fattire
 * Speedy: toastcfh
 * Zeppelin (CLIQ XT/Quench): firesnatch, turl
 * Morrison (CLIQ/DEXT): ngiordano, dwagner, JassyCliq
@@ -134,6 +134,12 @@ CHANGELOG (notable new features)
 * Buzz: 2.6.35 kernel - Arne Coucheron
 * Bravo(c)/Vivo(w)/Ace/Liberty: On charge notification led - Richard Antony Burton
 * Crespo/Crespo4G: Kernel update 2.6.35.14 and more, voodoo implementation, BLN, BLX...
+* Encore: Update kernel from 2.6.29 to 2.6.32 - Dalingrin,Fattire,Verygreen
+* Encore: New GPU drivers and userspace libs
+* Encore: Adjustable clockspeed and voltage - Dalingrin
+* Encore: Backport 2.6.35 Bluetooth - Fattire
+* Encore: Working mem sleep
+* Encore: USB host support - Verygreen
 
 ### 7.0.3
 * Common: Don't allow packages with platform keys on user-controlled storage
