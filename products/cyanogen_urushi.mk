@@ -15,7 +15,7 @@ PRODUCT_BRAND := SEMC
 PRODUCT_DEVICE := urushi
 PRODUCT_MODEL := ST18i
 PRODUCT_MANUFACTURER := Sony Ericsson
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST18i BUILD_ID=4.0.A.2.368 BUILD_DISPLAY_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/LT15i_1247-1061/LT15i:2.3.3/3.0.1.A.0.145/bn_P:user/release-keys PRIVATE_BUILD_DESC="LT15i-user 2.3.3 3.0.1.A.0.145 bn_P test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST18i BUILD_ID=4.0.A.2.368 BUILD_DISPLAY_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/ST18i_1247-1061/ST18i:2.3.3/3.0.1.A.0.145/bn_P:user/release-keys PRIVATE_BUILD_DESC="ST18i-user 2.3.3 3.0.1.A.0.145 bn_P test-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -41,10 +41,10 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaArc-ST18i
+            ro.modversion=CyanogenMod-7.1.0-XperiaRay-ST18i
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaArc-ST18i-KANG
+            ro.modversion=CyanogenMod-7.1.0-XperiaRay-ST18i-KANG
     endif
 endif
 
