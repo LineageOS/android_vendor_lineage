@@ -12,7 +12,7 @@ Follow http://twitter.com/cmsrc for commit-by-commit updates.
 Maintainers:
 ------------
 * Nexus One: Cyanogen
-* Nexus S: Koush
+* Nexus S: Koush, KalimochoAz
 * Droid: cvpcs, mtwebster, Koush
 * Dream/Sapphire: Sileht, Wes Garner, Cyanogen
 * Eris: Workshed, Conap
@@ -133,6 +133,7 @@ CHANGELOG (notable new features)
 * HTC msm7x30: 2.6.35 kernel and updated userspace
 * Buzz: 2.6.35 kernel - Arne Coucheron
 * Bravo(c)/Vivo(w)/Ace/Liberty: On charge notification led - Richard Antony Burton
+* Crespo/Crespo4G: Kernel update 2.6.35.14 and more, voodoo implementation, BLN, BLX...
 
 ### 7.0.3
 * Common: Don't allow packages with platform keys on user-controlled storage
