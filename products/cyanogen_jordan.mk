@@ -38,13 +38,13 @@ UTC_DATE := $(shell date +%s)
 DATE     := $(shell date +%Y%m%d)
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-BUILD_ID=GRJ90 \
-BUILD_DISPLAY_ID="Gingerbread GRJ90" \
+BUILD_ID=GWK74 \
+BUILD_DISPLAY_ID="Gingerbread GWK74" \
 PRODUCT_NAME=${PRODUCT_MODEL}_${PRODUCT_SFX} \
 TARGET_DEVICE=umts_jordan \
-BUILD_FINGERPRINT=MOTO/${PRODUCT_MODEL}_${PRODUCT_SFX}/umts_jordan/jordan:2.3.5/${PRODUCT_SBF}/${UTC_DATE}:user/release-keys \
+BUILD_FINGERPRINT=MOTO/${PRODUCT_MODEL}_${PRODUCT_SFX}/umts_jordan/jordan:2.3.7/${PRODUCT_SBF}/${UTC_DATE}:user/release-keys \
 PRODUCT_BRAND=MOTO \
-PRIVATE_BUILD_DESC="umts_jordan-user 2.3.5 ${PRODUCT_SFX}_${PRODUCT_SBF} ${UTC_DATE} release-keys" \
+PRIVATE_BUILD_DESC="umts_jordan-user 2.3.7 ${PRODUCT_SFX}_${PRODUCT_SBF} ${UTC_DATE} release-keys" \
 BUILD_NUMBER=${DATE} \
 BUILD_VERSION_TAGS=release-keys \
 TARGET_BUILD_TYPE=user \
@@ -59,3 +59,4 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Add the Torch app
 PRODUCT_PACKAGES += \
     Torch
+
