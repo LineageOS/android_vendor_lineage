@@ -48,6 +48,7 @@ if [ $? = 0 ];
 cat /proc/cmdline | egrep -q '(PD9812000)|(PD9814000)'
       if [ $? = 0 ];
          then
+            mv /system/etc/nam/default* /system/etc/firmware/
             mv /system/etc/nam/CodecDSPID_MCLK.txt /system/etc
             mv /system/etc/nam/*MCLK.txt /system/etc/soundimage/
             mv /system/etc/nam/AdieHWCodec.csv /system/etc
