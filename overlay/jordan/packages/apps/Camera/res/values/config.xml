@@ -16,12 +16,13 @@
 ** limitations under the License.
 */
 -->
-
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
 <resources>
 
-	<!-- Wide media profile available -->
-	<bool name="supportsWideProfile">true</bool>
+    <!-- Wide media profile available -->
+    <bool name="supportsWideProfile">true</bool>
+
+    <!-- Autofocus parameters -->
+    <string name="touchFocusParameter">mot-areas-to-focus</string>
+    <bool name="touchFocusNeedsRect">true</bool>
 
 </resources>
