@@ -12,7 +12,7 @@ PRODUCT_BRAND := google
 PRODUCT_DEVICE := crespo4g
 PRODUCT_MODEL := Nexus S 4G
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=sojus BUILD_ID=GRJ90 BUILD_DISPLAY_ID=GWK74 BUILD_FINGERPRINT=google/sojus/crespo4g:2.3.5/GRJ90/138666:user/release-keys PRIVATE_BUILD_DESC="sojus-user 2.3.5 GRJ90 138666 release-keys" BUILD_NUMBER=138666
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=sojus BUILD_ID=GRJ90 BUILD_FINGERPRINT=google/sojus/crespo4g:2.3.5/GRJ90/138666:user/release-keys PRIVATE_BUILD_DESC="sojus-user 2.3.5 GRJ90 138666 release-keys" BUILD_NUMBER=138666
 
 # Extra Crespo overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/crespo4g
@@ -20,21 +20,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/crespo4g
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-NS4G
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-NS4G
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-NS4G-KANG
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := NS4G
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy crespo specific prebuilt files

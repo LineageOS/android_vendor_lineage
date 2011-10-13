@@ -12,7 +12,7 @@ PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := mesmerizemtd
 PRODUCT_MODEL := SCH-I500
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GWK74 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys"
 
 # Extra mesmerizemtd overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/mesmerizemtd
@@ -20,21 +20,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/mesmerizemtd
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Mesmerize
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Mesmerize
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Mesmerize-KANG-$(shell date +%m%d)
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := Mesmerize
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy galaxys specific prebuilt files

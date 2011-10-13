@@ -15,7 +15,7 @@ PRODUCT_BRAND := SEMC
 PRODUCT_DEVICE := urushi
 PRODUCT_MODEL := ST18i
 PRODUCT_MANUFACTURER := Sony Ericsson
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST18i BUILD_ID=4.0.A.2.368 BUILD_DISPLAY_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/ST18i_1247-1061/ST18i:2.3.3/3.0.1.A.0.145/bn_P:user/release-keys PRIVATE_BUILD_DESC="ST18i-user 2.3.3 3.0.1.A.0.145 bn_P test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST18i BUILD_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/ST18i_1247-1061/ST18i:2.3.3/3.0.1.A.0.145/bn_P:user/release-keys PRIVATE_BUILD_DESC="ST18i-user 2.3.3 3.0.1.A.0.145 bn_P test-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -32,21 +32,10 @@ PRODUCT_PACKAGES += Torch
 # BCM FM radio
 #$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-XperiaRay-ST18i
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaRay-ST18i
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaRay-ST18i-KANG
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := XperiaRay-ST18i
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy passion specific prebuilt files

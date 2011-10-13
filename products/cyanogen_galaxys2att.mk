@@ -15,7 +15,7 @@ PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := galaxys2att
 PRODUCT_MODEL := SGH-I777
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I777 BUILD_ID=GWK74 BUILD_DISPLAY_ID=GWK74 BUILD_FINGERPRINT=samsung/SGH-I777/SGH-I777:2.3.7/GINGERBREAD/UCKH7:user/release-keys PRIVATE_BUILD_DESC="SGH-I777-user 2.3.7 GINGERBREAD UCKH7 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I777 BUILD_ID=GWK74 BUILD_FINGERPRINT=samsung/SGH-I777/SGH-I777:2.3.7/GINGERBREAD/UCKH7:user/release-keys PRIVATE_BUILD_DESC="SGH-I777-user 2.3.7 GINGERBREAD UCKH7 release-keys"
 
 # Extra captivate overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/galaxys2att
@@ -36,21 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.additionalmounts=/mnt/emmc \
     ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Galaxys2ATT
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Galaxys2ATT
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Galaxys2ATT-KANG
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := Galaxys2ATT
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy captivate specific prebuilt files

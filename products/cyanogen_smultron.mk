@@ -15,7 +15,7 @@ PRODUCT_BRAND := SEMC
 PRODUCT_DEVICE := smultron
 PRODUCT_MODEL := ST15i
 PRODUCT_MANUFACTURER := Sony Ericsson
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST15i BUILD_ID=4.0.A.2.368 BUILD_DISPLAY_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/ST15i_1249-6227/ST15i:2.3.3/4.0.A.2.368/j_b_3w:user/release-keys PRIVATE_BUILD_DESC="ST15i-user 2.3.3 4.0.A.2.368 j_b_3w test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST15i BUILD_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/ST15i_1249-6227/ST15i:2.3.3/4.0.A.2.368/j_b_3w:user/release-keys PRIVATE_BUILD_DESC="ST15i-user 2.3.3 4.0.A.2.368 j_b_3w test-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -32,21 +32,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/smultron
 # BCM FM radio
 #$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-XperiaMini-ST15i
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaMini-ST15i
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaMini-ST15i-KANG
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := XperiaMini-ST15i
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy passion specific prebuilt files

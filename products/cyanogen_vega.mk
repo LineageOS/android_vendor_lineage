@@ -11,28 +11,17 @@ PRODUCT_BRAND := advent
 PRODUCT_DEVICE := vega
 PRODUCT_MODEL := Vega
 PRODUCT_MANUFACTURER := Advent
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=Vega BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GWK74 BUILD_FINGERPRINT=google/passion/passion:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.4 GRJ22 121341 release-keys" BUILD_NUMBER=121341
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=Vega BUILD_ID=GRJ22 BUILD_FINGERPRINT=google/passion/passion:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.4 GRJ22 121341 release-keys" BUILD_NUMBER=121341
 
 # Extra overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/cyanogen/overlay/tablet \
     vendor/cyanogen/overlay/vega
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Vega
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Vega
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Vega-KANG
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := Vega
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy Vega specific prebuilt files

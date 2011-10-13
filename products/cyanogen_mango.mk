@@ -15,7 +15,7 @@ PRODUCT_BRAND := SEMC
 PRODUCT_DEVICE := mango
 PRODUCT_MODEL := SK17i
 PRODUCT_MANUFACTURER := Sony Ericsson
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SK17i BUILD_ID=4.0.A.2.368 BUILD_DISPLAY_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/SK17i_1249-8062/SK17i:2.3.3/4.0.A.2.368/j_b_3w:user/release-keys PRIVATE_BUILD_DESC="SK17i-user 2.3.3 4.0.A.2.368 j_b_3w test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SK17i BUILD_ID=4.0.A.2.368 BUILD_FINGERPRINT=SEMC/SK17i_1249-8062/SK17i:2.3.3/4.0.A.2.368/j_b_3w:user/release-keys PRIVATE_BUILD_DESC="SK17i-user 2.3.3 4.0.A.2.368 j_b_3w test-keys"
 
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -32,21 +32,10 @@ PRODUCT_PACKAGES += Torch
 # BCM FM radio
 #$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-XperiaMiniPro-SK17i
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaMiniPro-SK17i
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-XperiaMiniPro-SK17i-KANG
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := XperiaMiniPro-SK17i
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy passion specific prebuilt files

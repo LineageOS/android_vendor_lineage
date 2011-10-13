@@ -18,28 +18,16 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_SBF := 3.4.2-179-4
 PRODUCT_SFX := JOREM_U3
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%y%m%d-%H%M)-NIGHTLY-Jordan
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-jordan
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-jordan
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := Jordan
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 UTC_DATE := $(shell date +%s)
 DATE     := $(shell date +%Y%m%d)
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
 BUILD_ID=GWK74 \
-BUILD_DISPLAY_ID="Gingerbread GWK74" \
 PRODUCT_NAME=${PRODUCT_MODEL}_${PRODUCT_SFX} \
 TARGET_DEVICE=umts_jordan \
 BUILD_FINGERPRINT=MOTO/${PRODUCT_MODEL}_${PRODUCT_SFX}/umts_jordan/jordan:2.3.7/${PRODUCT_SBF}/${UTC_DATE}:user/release-keys \
