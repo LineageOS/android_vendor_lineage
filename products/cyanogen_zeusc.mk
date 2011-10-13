@@ -1,5 +1,5 @@
 # Inherit device configuration for zeus.
-$(call inherit-product, device/semc/zeus/device_zeus.mk)
+$(call inherit-product, device/semc/zeusc/device_zeusc.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
@@ -10,7 +10,7 @@ $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 #
 PRODUCT_NAME := cyanogen_zeusc
 PRODUCT_BRAND := SEMC
-PRODUCT_DEVICE := zeus
+PRODUCT_DEVICE := zeusc
 PRODUCT_MODEL := R800x
 PRODUCT_MANUFACTURER := Sony Ericsson
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=Play BUILD_ID=3.0.1.A.0.145 BUILD_FINGERPRINT=SEMC/R800i_1247-6199/R800i:2.3.3/3.0.1.A.0.145/bn_p:user/release-keys PRIVATE_BUILD_DESC="LT15i-user 2.3.3 3.0.1.A.0.145 bn_P test-keys"
@@ -21,10 +21,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=Play BUILD_ID=3.0.1.A.0.145 BUILD_F
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_zeus_defconfig
 
 # Extra zeus overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/zeus
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/zeusc
 
 # Add the Torch app
-#PRODUCT_PACKAGES += Torch
+PRODUCT_PACKAGES += Torch
 
 
 # BCM FM radio
