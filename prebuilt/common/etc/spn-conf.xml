@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <spnOverrides>
+  <!-- Japan -->
+  <spnOverride numeric="44020" spn="SoftBank"/>
   <!-- Hong Kong -->
+  <spnOverride numeric="45406" spn="SmarTone" />
   <spnOverride numeric="45412" spn="中國移動" />
   <!-- China -->
   <spnOverride numeric="46000" spn="中国移动" />
