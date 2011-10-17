@@ -33,7 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Add additional mounts
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.additionalmounts=/mnt/emmc,/mnt/usbdisk \
+    ro.additionalmounts=/mnt/emmc;/mnt/usbdisk \
     ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Release name and versioning
