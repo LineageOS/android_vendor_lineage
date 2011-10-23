@@ -22,6 +22,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_hero.mk \
     $(LOCAL_DIR)/cyanogen_heroc.mk \
     $(LOCAL_DIR)/cyanogen_inc.mk \
+    $(LOCAL_DIR)/cyanogen_iyokan.mk \
     $(LOCAL_DIR)/cyanogen_jordan.mk \
     $(LOCAL_DIR)/cyanogen_galaxys2.mk \
     $(LOCAL_DIR)/cyanogen_galaxys2att.mk \
