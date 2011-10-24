@@ -22,17 +22,17 @@
          <string name="lockscreen_carrier_default"></string>
 
     <!-- Title for the Phone Options dialog to lock the screen, turn off the phone etc. -->
-    <string name="power_dialog">Параметры планшета</string>
+    <string name="power_dialog">Параметры планшетного ПК</string>
 
     <!-- Button to reboot the phone, within the Phone Options dialog -->
     <string name="reboot_system">Перезагрузить</string>
 
     <!-- Shutdown Confirmation Dialog.  When the user chooses to power off the phone, there will be a confirmation dialog.  This is the message. -->
-    <string name="shutdown_confirm">Планшет будет выключен.</string>
+    <string name="shutdown_confirm">Планшетный ПК будет выключен.</string>
 
     <!-- Reboot Confirmation Dialog.  When the user chooses to reboot the phone, there will be a confirmation dialog.  This is the message. -->
-    <string name="reboot_confirm">Планшет будет перезагружен.</string>
+    <string name="reboot_confirm">Планшетный ПК будет перезагружен.</string>
 
     <!-- Title of the Global Actions Dialog -->
-    <string name="global_actions">Параметры планшета</string>
+    <string name="global_actions">Параметры планшетного ПК</string>
 </resources>
