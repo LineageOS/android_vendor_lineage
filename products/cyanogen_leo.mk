@@ -21,10 +21,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion BUILD_ID=GRI40 BUILD_FINGER
 # Extra leo overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/leo
 
-# This file is used to install the enable RMNET and corresponding modules which dont get activated by normal module script
-PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/leo/etc/init.d/01modules:system/etc/init.d/01modules \
-
 # Extra RIL settings
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.managed.roaming=1 \
