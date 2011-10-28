@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Super-mega opticharger of doom
-# Shrinks apks by running pngcrush on png images
+# Shrinks apks by running pngcrush or optipng or pngout on png images
 #
 # Point APKCERTS at the full path to a generated apkcerts.txt file, such as:
 # /home/shade/dev/sources/android-cm-eclair/out/target/product/dream_sapphire/obj/PACKAGING/target_files_intermediates/cyanogen_dream_sapphire-target_files-eng.shade/META/apkcerts.txt
@@ -19,7 +19,6 @@ fi
 
 set -e
 QUIET=1
-QFLAG=-q
 BASE=`pwd`
 TMPDIR=/tmp/opticharge-$$
 
@@ -38,9 +37,29 @@ then
     echo "Invalid path to apkcerts.txt, set APKCERTS to the correct path."
 fi
 
-if [ "`which pngcrush`" = "" ];
+if [ "$(which pngcrush)" != "" ];
 then
-    echo "Please install pngcrush"
+    optimize_png () {
+        pngcrush -q -brute $1 ${1}.out 1> /dev/null 2> /dev/null
+        mv ${1}.out ${1}
+    }
+elif [ "$(which optipng)" != "" ];
+then
+    optimize_png () {
+        optipng -o7 -quiet $1 1> /dev/null 2> /dev/null
+    }
+elif [ "$(which pngout-static)" != "" ];
+then
+    optimize_png () {
+        pngout-static $1
+    }
+elif [ "$(which pngout)" != "" ];
+then
+    optimize_png () {
+        pngout $1
+    }
+else
+    echo "Please install pngcrush, optipng, or pngout"
     exit 1;
 fi
 
@@ -97,11 +116,7 @@ then
     for x in `find . -name "*.png" | grep -v "\.9.png$" | tr "\n" " "`
     do
         [ $QUIET ] || echo "Crushing $x"
-        pngcrush $QFLAG $x $x.crushed 1>/dev/null
-        if [ -e "$x.crushed" ];
-        then
-            mv $x.crushed $x
-        fi
+        optimize_png $x
     done
     cp $BASE/$1 $BASE/$1.old
 
