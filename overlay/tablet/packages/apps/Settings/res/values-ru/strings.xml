@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
-    <string name="about_settings">О планшете</string>
+    <string name="about_settings">О планшетном ПК</string>
 
 </resources>
 
