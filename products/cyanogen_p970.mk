@@ -29,4 +29,4 @@ PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Add the Torch app
-#PRODUCT_PACKAGES += Torch
+PRODUCT_PACKAGES += Torch
