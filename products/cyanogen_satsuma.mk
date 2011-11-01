@@ -26,7 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST17i BUILD_ID=4.0.2.A.0.42 BUILD_F
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/satsuma
 
 # Add the Torch app
-#PRODUCT_PACKAGES += Torch
+PRODUCT_PACKAGES += Torch
 
 
 # BCM FM radio
