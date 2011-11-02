@@ -5,7 +5,15 @@
 #
 
 CACHESIZE=$(df -k /cache | tail -n1 | tr -s ' ' | cut -d ' ' -f2)
-if [ $CACHESIZE -lt 20000 ]
+DATAONLY=$(getprop dalvik.vm.dexopt-data-only)
+if [ $DATAONLY -eq 1 ]
+then
+  NEEDED=60000
+else
+  NEEDED=105000
+fi
+
+if [ $CACHESIZE -lt $NEEDED ]
 then
   mount -o bind /data/local/download /cache/download
 fi
