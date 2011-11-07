@@ -20,6 +20,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=lge_star BUILD_ID=GRJ22 BUILD_FINGE
 # Extra Star overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/star
 
+# Broadcom FM radio
+$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+
 # Release name and versioning
 PRODUCT_RELEASE_NAME := Optimus2X
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
