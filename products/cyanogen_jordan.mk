@@ -20,8 +20,7 @@ PRODUCT_NAME := cyanogen_jordan
 PRODUCT_BRAND := MOTO
 PRODUCT_DEVICE := jordan
 PRODUCT_MODEL := MB525
-PRODUCT_MANUFACTURER := motorola
-PRODUCT_SBF := 3.4.2-179-4
+PRODUCT_MANUFACTURER := Motorola
 PRODUCT_SFX := JOREM_U3
 
 # Release name and versioning
@@ -36,8 +35,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_ID=GWK74 \
     PRODUCT_NAME=${PRODUCT_MODEL}_${PRODUCT_SFX} \
     TARGET_DEVICE=umts_jordan \
-    BUILD_FINGERPRINT=MOTO/${PRODUCT_MODEL}_${PRODUCT_SFX}/umts_jordan/jordan:2.3.7/${PRODUCT_SBF}/${UTC_DATE}:user/release-keys \
-    PRIVATE_BUILD_DESC="umts_jordan-user 2.3.7 ${PRODUCT_SFX}_${PRODUCT_SBF} ${UTC_DATE} release-keys" \
+    BUILD_FINGERPRINT=MOTO/MB526_RTDACH/umts_jordan:2.3.4/4.5.1-134_DFP-74/1313117579:user/release-keys \
+    PRIVATE_BUILD_DESC="umts_jordan_emara-user 2.3.4 4.5.1-134_DFP-74 1313117579 release-keys" \
     BUILD_NUMBER=${DATE} \
     BUILD_VERSION_TAGS=release-keys \
     TARGET_BUILD_TYPE=user
