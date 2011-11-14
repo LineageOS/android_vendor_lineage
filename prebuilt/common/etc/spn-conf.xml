@@ -1,22 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  <spnOverrides>
+    <spnOverride numeric="MccMnc value" spn="defualt spn" />
+    <spnOverride numeric="MccMnc value" spn="defualt spn, can be omitted">
+      <spn locale="java.util.Locale string">localized spn</spn>
+      <spn locale="java.util.Locale string">localized spn</spn>
+      ...
+    </spnOverride>
+    ...
+  </spnOverrides>
+-->
 <spnOverrides>
   <!-- Japan -->
-  <spnOverride numeric="44020" spn="SoftBank"/>
+  <spnOverride numeric="44020" spn="SoftBank" />
   <!-- Hong Kong -->
   <spnOverride numeric="45406" spn="SmarTone" />
-  <spnOverride numeric="45412" spn="中國移動" />
+  <spnOverride numeric="45412">
+    <spn locale="zh">中國移動香港</spn>
+    <spn locale="zh_CN">中国移动香港</spn>
+  </spnOverride>
   <!-- China -->
-  <spnOverride numeric="46000" spn="中国移动" />
-  <spnOverride numeric="46001" spn="中国联通" />
-  <spnOverride numeric="46002" spn="中国移动" />
-  <spnOverride numeric="46003" spn="中国电信" />
-  <spnOverride numeric="46007" spn="中国移动" />
+  <spnOverride numeric="46000">
+    <spn locale="zh">中国移动</spn>
+  </spnOverride>
+  <spnOverride numeric="46001">
+    <spn locale="zh">中国联通</spn>
+  </spnOverride>
+  <spnOverride numeric="46002">
+    <spn locale="zh">中国移动</spn>
+  </spnOverride>
+  <spnOverride numeric="46003">
+    <spn locale="zh">中国电信</spn>
+  </spnOverride>
+  <spnOverride numeric="46007">
+    <spn locale="zh">中国移动</spn>
+  </spnOverride>
   <!-- Taiwan -->
-  <spnOverride numeric="46601" spn="遠傳電信" />
-  <spnOverride numeric="46688" spn="和信電訊" />
-  <spnOverride numeric="46689" spn="威寶電信" />
-  <spnOverride numeric="46692" spn="中華電信" />
-  <spnOverride numeric="46693" spn="東信電訊" />
-  <spnOverride numeric="46697" spn="台灣大哥大" />
-  <spnOverride numeric="46699" spn="泛亞電信" />
+  <spnOverride numeric="46601">
+    <spn locale="zh">遠傳電信</spn>
+  </spnOverride>
+  <spnOverride numeric="46688">
+    <spn locale="zh">和信電訊</spn>
+  </spnOverride>
+  <spnOverride numeric="46689">
+    <spn locale="zh">威寶電信</spn>
+  </spnOverride>
+  <spnOverride numeric="46692">
+    <spn locale="zh">中華電信</spn>
+  </spnOverride>
+  <spnOverride numeric="46693">
+    <spn locale="zh">東信電訊</spn>
+  </spnOverride>
+  <spnOverride numeric="46697">
+    <spn locale="zh">台灣大哥大</spn>
+  </spnOverride>
+  <spnOverride numeric="46699">
+    <spn locale="zh">泛亞電信</spn>
+  </spnOverride>
 </spnOverrides>
