@@ -78,6 +78,9 @@ Translators:
 CHANGELOG (notable new features)
 ---------
 
+### 9.0.0
+* Common: Android 4.0.1 (Google)
+
 ### 7.1.0
 * Common: Android 2.3.7 (Google)
 * Common: Bluetooth mouse support - Scott Brady
