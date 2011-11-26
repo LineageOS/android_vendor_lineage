@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
 # Required CM packages
 PRODUCT_PACKAGES += \
     LatinIME \
+    Superuser \
     Superuser.apk \
     su
 
