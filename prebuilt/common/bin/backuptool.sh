@@ -5,7 +5,7 @@
 
 C=/tmp/backupdir
 S=/system
-V=CyanogenMod-7
+V=CyanogenMod-9
 
 PROCEED=1;
 
@@ -35,50 +35,64 @@ check_installscript() {
 
 get_files() {
     cat <<EOF
-app/BooksPhone.apk
-app/CarHomeGoogle.apk
-app/CarHomeLauncher.apk
-app/Facebook.apk
-app/FOTAKill.apk
-app/GenieWidget.apk
-app/Gmail.apk
-app/GoogleBackupTransport.apk
-app/GoogleCalendarSyncAdapter.apk
-app/GoogleContactsSyncAdapter.apk
-app/GoogleFeedback.apk
-app/GooglePartnerSetup.apk
-app/GoogleQuickSearchBox.apk app/QuickSearchBox.apk
-app/GoogleServicesFramework.apk
-app/googlevoice.apk
-app/HtcCopyright.apk
-app/HtcEmailPolicy.apk
-app/HtcSettings.apk
-app/kickback.apk
-app/LatinImeTutorial.apk
-app/Maps.apk
-app/MapsSapphire.apk
-app/MarketUpdater.apk
-app/MediaUploader.apk
-app/NetworkLocation.apk
-app/OneTimeInitializer.apk
-app/PassionQuickOffice.apk
-app/Quickoffice.apk
-app/SetupWizard.apk app/Provision.apk
-app/soundback.apk
-app/Street.apk
-app/Talk.apk
-app/Talk2.apk
-app/talkback.apk
-app/Twitter.apk
-app/Vending.apk
-app/VoiceSearch.apk
-app/YouTube.apk
-etc/permissions/com.google.android.maps.xml
-etc/permissions/features.xml
+vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rn30-ri30.5/full_model.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rp30-ri30.5/full_model.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-r0-ri30.4a/full_model.bin
+framework/com.google.widevine.software.drm.jar
 framework/com.google.android.maps.jar
-lib/libspeech.so
-lib/libtalk_jni.so
+framework/com.google.android.media.effects.jar
+lib/libfilterpack_facedetect.so
+lib/libfacelock_jni.so
 lib/libvoicesearch.so
+etc/permissions/com.google.android.nfc_extras.xml
+etc/permissions/com.google.android.media.effects.xml
+etc/permissions/com.google.android.maps.xml
+etc/permissions/com.google.widevine.software.drm.xml
+etc/permissions/features.xml
+app/LatinImeGoogle.apk app/LatinIme.apk
+app/MediaUploader.apk
+app/GoogleFeedback.apk
+app/GoogleTTS.apk
+app/CalendarGoogle.apk app/Calendar.apk
+app/MarketUpdater.apk
+app/BrowserGoogle.apk app/Browser.apk
+app/GoogleServicesFramework.apk
+app/CameraGoogle.apk app/Camera.apk
+app/YouTube.apk
+app/GenieWidget.apk
+app/GooglePackageVerifierUpdater.apk
+app/SetupWizard.apk app/Provision.apk
+app/GoogleEarth.apk
+app/ChromeBookmarksSyncAdapter.apk
+app/ExchangeGoogle.apk app/Exchange.apk
+app/GoogleQuickSearchBox.apk
+app/GoogleLoginService.apk
+app/Talk.apk
+app/DeskClockGoogle.apk app/DeskClock.apk
+app/GooglePackageVerifier.apk
+app/NfcGoogle.apk app/Nfc.apk
+app/GoogleBackupTransport.apk
+app/GalleryGoogle.apk app/Gallery.apk
+app/VideoEditorGoogle.apk app/VideoEditor.apk
+app/FaceLock.apk
+app/Vending.apk
+app/EmailGoogle.apk app/Email.apk
+app/GoogleContactsSyncAdapter.apk
+app/Gmail.apk
+app/OneTimeInitializer.apk
+app/NetworkLocation.apk
+app/TagGoogle.apk
+app/GooglePartnerSetup.apk
 etc/hosts
 etc/custom_backup_list.txt
 etc/force_backuptool
