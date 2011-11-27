@@ -51,3 +51,5 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     MusicVisualization \
     PhaseBeam
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
