@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
     Basic \
-    HoloSpiral \
+    HoloSpiralWallpaper \
     MagicSmoke \
     NoiseField \
     Galaxy4 \
