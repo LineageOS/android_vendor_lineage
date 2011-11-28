@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
     Basic \
-    HoloSpiral \
+    HoloSpiralWallpaper \
     MagicSmoke \
     NoiseField \
     Galaxy4 \
@@ -74,4 +74,3 @@ else
             ro.modversion=CyanogenMod-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(PRODUCT_RELEASE_NAME)-KANG
     endif
 endif
-
