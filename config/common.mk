@@ -1,3 +1,5 @@
+PRODUCT_BRAND ?= cyanogenmod
+
 ifdef CM_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmodnightly
