@@ -57,6 +57,11 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     PhaseBeam
 
+# Custom CM packages
+PRODUCT_PACKAGES += \
+    DSPManager \
+    libcyanogen-dsp
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 
 PRODUCT_VERSION_MAJOR = 9
