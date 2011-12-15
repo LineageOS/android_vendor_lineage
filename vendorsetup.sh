@@ -1,4 +1,5 @@
 add_lunch_combo cm_crespo-userdebug
+add_lunch_combo cm_crespo4g-userdebug
 add_lunch_combo cm_GT_P7510-userdebug
 add_lunch_combo cm_maguro-userdebug
 add_lunch_combo cm_p920-userdebug
