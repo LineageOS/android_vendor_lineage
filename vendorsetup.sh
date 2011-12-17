@@ -8,3 +8,4 @@ add_lunch_combo cm_p990-userdebug
 add_lunch_combo cm_p999-userdebug
 add_lunch_combo cm_pyramid-userdebug
 add_lunch_combo cm_smb_a1011-userdebug
+add_lunch_combo cm_toro-userdebug
