@@ -78,6 +78,7 @@ app/ExchangeGoogle.apk app/Exchange.apk
 app/GoogleQuickSearchBox.apk
 app/GoogleLoginService.apk
 app/Talk.apk
+app/Maps.apk
 app/DeskClockGoogle.apk app/DeskClock.apk
 app/GooglePackageVerifier.apk
 app/NfcGoogle.apk app/Nfc.apk
