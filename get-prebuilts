@@ -5,5 +5,5 @@ curl -L -o `dirname $0`/proprietary/RomManager.apk -O -L http://download.clockwo
 
 # Get Android Terminal Emulator (we use a prebuilt so it can update from the Market)
 curl -L -o `dirname $0`/proprietary/Term.apk -O -L https://github.com/downloads/jackpal/Android-Terminal-Emulator/Term.apk
-unzip -d proprietary proprietary/Term.apk lib/armeabi/libjackpal-androidterm3.so
+unzip -d -o proprietary proprietary/Term.apk lib/armeabi/libjackpal-androidterm3.so
 
