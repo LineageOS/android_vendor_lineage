@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 9
 PRODUCT_VERSION_MINOR = 0
