@@ -59,40 +59,31 @@ etc/permissions/com.google.android.media.effects.xml
 etc/permissions/com.google.android.maps.xml
 etc/permissions/com.google.widevine.software.drm.xml
 etc/permissions/features.xml
-app/LatinImeGoogle.apk app/LatinIme.apk
 app/MediaUploader.apk
 app/GoogleFeedback.apk
 app/GoogleTTS.apk
 app/CalendarGoogle.apk app/Calendar.apk
 app/MarketUpdater.apk
-app/BrowserGoogle.apk app/Browser.apk
 app/GoogleServicesFramework.apk
-app/CameraGoogle.apk app/Camera.apk
 app/YouTube.apk
 app/GenieWidget.apk
 app/GooglePackageVerifierUpdater.apk
 app/SetupWizard.apk app/Provision.apk
 app/GoogleEarth.apk
 app/ChromeBookmarksSyncAdapter.apk
-app/ExchangeGoogle.apk app/Exchange.apk
 app/GoogleQuickSearchBox.apk
 app/GoogleLoginService.apk
 app/Talk.apk
 app/Maps.apk
-app/DeskClockGoogle.apk app/DeskClock.apk
 app/GooglePackageVerifier.apk
-app/NfcGoogle.apk app/Nfc.apk
 app/GoogleBackupTransport.apk
 app/GalleryGoogle.apk app/Gallery.apk
-app/VideoEditorGoogle.apk app/VideoEditor.apk
 app/FaceLock.apk
 app/Vending.apk
-app/EmailGoogle.apk app/Email.apk
 app/GoogleContactsSyncAdapter.apk
 app/Gmail.apk
 app/OneTimeInitializer.apk
 app/NetworkLocation.apk
-app/TagGoogle.apk
 app/GooglePartnerSetup.apk
 etc/hosts
 etc/custom_backup_list.txt
