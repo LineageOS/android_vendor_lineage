@@ -27,6 +27,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
 
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit
+
+# Compcache/Zram support
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
+    vendor/cm/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/RomManager.apk:system/app/RomManager.apk \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
