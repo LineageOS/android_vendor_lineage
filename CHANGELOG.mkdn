@@ -12,7 +12,7 @@ Follow http://twitter.com/cmsrc for commit-by-commit updates.
 Maintainers:
 ------------
 * Nexus One: Cyanogen
-* Nexus S: Koush, KalimochoAz
+* Nexus S: Koush, KalimochoAz, burnsra
 * Droid: cvpcs, mtwebster, Koush
 * Dream/Sapphire: Sileht, Wes Garner, Cyanogen
 * Eris: Workshed, Conap
