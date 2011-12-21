@@ -51,7 +51,10 @@ PRODUCT_COPY_FILES += \
 
 # Required CM packages
 PRODUCT_PACKAGES += \
+    Camera \
+    Development \
     LatinIME \
+    SpareParts \
     Superuser \
     Superuser.apk \
     su
