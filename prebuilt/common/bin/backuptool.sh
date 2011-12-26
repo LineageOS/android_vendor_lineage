@@ -63,6 +63,7 @@ app/MediaUploader.apk
 app/GoogleFeedback.apk
 app/GoogleTTS.apk
 app/CalendarGoogle.apk app/Calendar.apk
+app/CalendarProvider.apk
 app/MarketUpdater.apk
 app/GoogleServicesFramework.apk
 app/YouTube.apk
