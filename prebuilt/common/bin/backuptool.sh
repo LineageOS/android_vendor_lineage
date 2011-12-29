@@ -5,12 +5,12 @@
 
 C=/tmp/backupdir
 S=/system
-V=CyanogenMod-9
+V=9
 
 PROCEED=1;
 
 check_prereq() {
-   if ( ! grep -q "^ro.modversion=.*$V.*" /system/build.prop );
+   if ( ! grep -q "^ro.cm.version=$V.*" /system/build.prop );
    then
       echo "Not backing up files from incompatible version.";
       PROCEED=0;
