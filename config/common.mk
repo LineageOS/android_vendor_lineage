@@ -54,6 +54,10 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Don't export PS1 in /system/etc/mkshrc.
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/mkshrc:system/etc/mkshrc
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Camera \
