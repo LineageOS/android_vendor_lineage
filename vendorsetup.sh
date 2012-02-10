@@ -6,6 +6,8 @@ add_lunch_combo cm_maguro-userdebug
 add_lunch_combo cm_p4tmo-userdebug
 add_lunch_combo cm_p4vzw-userdebug
 add_lunch_combo cm_p4wifi-userdebug
+add_lunch_combo cm_p5-userdebug
+add_lunch_combo cm_p5wifi-userdebug
 add_lunch_combo cm_p920-userdebug
 add_lunch_combo cm_p970-userdebug
 add_lunch_combo cm_p990-userdebug

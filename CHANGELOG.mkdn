@@ -54,7 +54,8 @@ Maintainers:
 * V9 (ZTE Light, Optus MyTab, others): kallt_kaffe and Tom Giordano
 * Motus (Backflip) : j_r0dd, flavio_frow
 * Saga (Desire S): Nexx
-* Galaxy Tab 10.1 : cyanogen, pershoot
+* Galaxy Tab 10.1: cyanogen, pershoot
+* Galaxy Tab 8.9: kallt_kaffe
 
 Translators:
 ------------
