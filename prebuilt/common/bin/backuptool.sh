@@ -128,13 +128,15 @@ backup_file() {
       fi
       
       local F=`basename $1`
+      local D=`dirname $1`
       
       # dont backup any apps that have odex files, they are useless
       if ( echo $F | grep -q "\.apk$" ) && [ -e `echo $1 | sed -e 's/\.apk$/\.odex/'` ];
       then
          echo "Skipping odexed apk $1";
       else
-         cp -p $1 $C/$F
+         mkdir -p $C/bak/$D
+         cp -p $1 $C/bak/$D/$F
       fi
    fi
 }
@@ -142,13 +144,13 @@ backup_file() {
 restore_file() {
    local FILE=`basename $1`
    local DIR=`dirname $1`
-   if [ -e "$C/$FILE" ];
+   if [ -e "$C/bak/$DIR/$FILE" ];
    then
       if [ ! -d "$DIR" ];
       then
          mkdir -p $DIR;
       fi
-      cp -p $C/$FILE $1;
+      cp -p $C/bak/$DIR/$FILE $1;
       if [ -n "$2" ];
       then
          rm $2;
