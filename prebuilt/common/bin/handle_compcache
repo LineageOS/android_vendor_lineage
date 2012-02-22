@@ -5,18 +5,18 @@
 #
 MEMTOTAL=$( awk '{ if ($1 eq "MemTotal:") print $2 ;exit }' </proc/meminfo )
 
-if [ `getprop persist.service.compcache` == 1 ];
+if [ `getprop persist.service.zram` == 1 ];
 then
-  PROP=`getprop ro.compcache.default`
-  setprop persist.service.compcache $PROP
+  PROP=`getprop ro.zram.default`
+  setprop persist.service.zram $PROP
 fi
 
-if [ -e /data/property/persist.service.compcache ];
+if [ -e /data/property/persist.service.zram ];
 then
-  PROP=`getprop persist.service.compcache`
+  PROP=`getprop persist.service.zram`
 else
-  PROP=`getprop ro.compcache.default`
-  setprop persist.service.compcache $PROP
+  PROP=`getprop ro.zram.default`
+  setprop persist.service.zram $PROP
 fi
 
 if [ $PROP != 0 ]
