@@ -144,6 +144,7 @@ if [ -z "$CYANOGEN_NIGHTLY" ]; then
 	MODVERSION=`sed -n -e'/ro\.cm\.version/s/^.*=//p' $REPACK/ota/system/build.prop`
 	: ${MODVERSION:=nightly}
 	OUTFILE=$OUT/update-cm-$MODVERSION-signed.zip
+	echo MODVERSION: $MODVERSION
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
