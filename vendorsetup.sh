@@ -15,5 +15,7 @@ add_lunch_combo cm_shooter-userdebug
 add_lunch_combo cm_shooteru-userdebug
 add_lunch_combo cm_smb_a1011-userdebug
 add_lunch_combo cm_tenderloin-userdebug
+add_lunch_combo cm_tf101-userdebug
+add_lunch_combo cm_tf201-userdebug
 add_lunch_combo cm_toro-userdebug
 add_lunch_combo cm_wingray-userdebug
