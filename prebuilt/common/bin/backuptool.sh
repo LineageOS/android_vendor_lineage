@@ -79,13 +79,13 @@ app/GooglePackageVerifierUpdater.apk
 app/SetupWizard.apk app/Provision.apk
 app/GoogleEarth.apk
 app/ChromeBookmarksSyncAdapter.apk
-app/GoogleQuickSearchBox.apk
+app/GoogleQuickSearchBox.apk app/QuickSearchBox.apk
 app/GoogleLoginService.apk
 app/Talk.apk
 app/Maps.apk
 app/GooglePackageVerifier.apk
 app/GoogleBackupTransport.apk
-app/GalleryGoogle.apk app/Gallery.apk
+app/GalleryGoogle.apk app/Gallery2.apk
 app/FaceLock.apk
 app/Vending.apk
 app/GoogleContactsSyncAdapter.apk
