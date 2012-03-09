@@ -24,8 +24,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
+# Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
+    vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/cm/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
