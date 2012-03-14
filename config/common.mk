@@ -1,5 +1,10 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+ifneq ($(TARGET_BOOTANIMATION_NAME),)
+    PRODUCT_COPY_FILES += \
+        vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+endif
+
 ifdef CM_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmodnightly
@@ -44,8 +49,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/RomManager.apk:system/app/RomManager.apk \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so \
-    vendor/cm/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so
 
 # Bring in camera effects & videos
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
