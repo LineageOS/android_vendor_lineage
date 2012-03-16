@@ -41,7 +41,7 @@ Maintainers:
 * Star (LG Optimus 2/G2x): arcee, cyanogen
 * Galaxy S (GT-I9000): coolya, codeworkx, atinm, GuiperPT, Unhelpful
 * Captivate (SGH-I896/SGH-I897): atinm, Unhelpful, coolya, codeworkx
-* Vibrant (SGH-T959): coolya, atinm, codeworkx, Unhelpful
+* Vibrant (SGH-T959): FaultException
 * Vivo (Incredible S): Kali-, attn1
 * Vivow (Incredible 2): Kali-, attn1
 * Jordan (Defy): Quarx, Epsylon3, maniac103
