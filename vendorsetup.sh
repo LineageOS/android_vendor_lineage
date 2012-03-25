@@ -6,6 +6,7 @@ add_lunch_combo cm_epicmtd-userdebug
 add_lunch_combo cm_galaxys2-userdebug
 add_lunch_combo cm_haida-userdebug
 add_lunch_combo cm_hallon-userdebug
+add_lunch_combo cm_i777-userdebug
 add_lunch_combo cm_iyokan-userdebug
 add_lunch_combo cm_mango-userdebug
 add_lunch_combo cm_maguro-userdebug
