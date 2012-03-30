@@ -1,8 +1,11 @@
 add_lunch_combo cm_anzu-userdebug
+add_lunch_combo cm_captivatemtd-userdebug
 add_lunch_combo cm_coconut-userdebug
 add_lunch_combo cm_crespo-userdebug
 add_lunch_combo cm_crespo4g-userdebug
 add_lunch_combo cm_epicmtd-userdebug
+add_lunch_combo cm_galaxysbmtd-userdebug
+add_lunch_combo cm_galaxysmtd-userdebug
 add_lunch_combo cm_galaxys2-userdebug
 add_lunch_combo cm_haida-userdebug
 add_lunch_combo cm_hallon-userdebug
@@ -30,5 +33,6 @@ add_lunch_combo cm_tf101-userdebug
 add_lunch_combo cm_tf201-userdebug
 add_lunch_combo cm_toro-userdebug
 add_lunch_combo cm_urushi-userdebug
+add_lunch_combo cm_vibrantmtd-userdebug
 add_lunch_combo cm_wingray-userdebug
 add_lunch_combo cm_zeus-userdebug
