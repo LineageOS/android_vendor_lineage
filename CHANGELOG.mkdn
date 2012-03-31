@@ -82,7 +82,7 @@ CHANGELOG (notable new features)
 ---------
 
 ### 9.0.0
-* Common: Android 4.0.3 (Google)
+* Common: Android 4.0.4 (Google)
 
 ### 7.1.0
 * Common: Android 2.3.7 (Google)
