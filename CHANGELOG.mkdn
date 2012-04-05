@@ -57,6 +57,7 @@ Maintainers:
 * Saga (Desire S): Nexx, nk111
 * Galaxy Tab 10.1: cyanogen, pershoot
 * Galaxy Tab 8.9: kallt_kaffe
+* Xoom (wingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
 
 Translators:
 ------------
