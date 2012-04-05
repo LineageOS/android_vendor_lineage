@@ -19,6 +19,7 @@ Maintainers (CyanogenMod 9):
 * Xperia Neo (MT15i): Bin4ry,defer,jerpelea (FreeXperia team)
 * Galaxy Tab 10.1: cyanogen, pershoot
 * Galaxy Tab 8.9: kallt_kaffe
+* Xoom (stingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
 * Xoom (wingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
 * ATT Nitro HD / LG Optimus LTE (p930): arcee
 
