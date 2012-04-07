@@ -22,6 +22,7 @@ Maintainers (CyanogenMod 9):
 * Samsung Galaxy S II AT&T (SGH-I777): atinm, Andrew Dodd, codeworkx, coolya, GuiperPT, Unhelpful
 * Samsung Galaxy Tab 10.1: cyanogen, pershoot
 * Samsung Galaxy Tab 8.9: kallt_kaffe
+* Samsung Galaxy Tab 7: cdesai, humberos, jt1134
 * Samsung Vibrant (SGH-T959): FaultException
 * Sony Xperia Arc (LT15i): Bin4ry,defer,jerpelea (FreeXperia team)
 * Sony Xperia Neo (MT15i): Bin4ry,defer,jerpelea (FreeXperia team)
