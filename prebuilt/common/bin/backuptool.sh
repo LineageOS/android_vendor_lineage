@@ -9,14 +9,14 @@ export V=9
 
 # Mount /system if it is not already mounted
 mount_system() {
-if [ ! -f "$S/build.prop" ]; then
+if ! mount | grep -q " $S " ; then
   mount $S
 fi
 }
 
 # Unmount /system unless it is already unmounted
 umount_system() {
-if [ -f "$S/build.prop" ]; then
+if mount | grep -q " $S " ; then
   umount $S
 fi
 }
