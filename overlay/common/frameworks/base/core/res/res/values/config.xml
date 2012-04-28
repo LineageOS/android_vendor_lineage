@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- default to disabling the menu key. The CM setting to
+         do this is a no-op unless the below item is true -->
+    <bool name="config_disableMenuKeyInLockScreen">true</bool>
+</resources>
+
