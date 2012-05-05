@@ -102,7 +102,8 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     DSPManager \
     libcyanogen-dsp \
-    audio_effects.conf
+    audio_effects.conf \
+    CMWallpapers
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
