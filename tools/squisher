@@ -39,36 +39,6 @@ OPTICHARGER=$ANDROID_BUILD_TOP/vendor/cm/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
-
-# Some products want a squashfs for xbin for space
-case "$TARGET_PRODUCT" in
-	cyanogen_dream_sapphire) WANT_SQUASHFS=1 ;;
-	*) WANT_SQUASHFS=0 ;;
-esac
-
-if [ "$WANT_SQUASHFS" -eq 1 ]; then
-	fatal=0
-	MKSQUASHFS_VER_REQ=4
-	if type mksquashfs >/dev/null 2>&1; then
-		if mksquashfs -version | grep -q "version $MKSQUASHFS_VER_REQ"; then :; else
-			echo
-			echo "ERROR: mksquashfs must be at least version $MKSQUASHFS_VER_REQ for this build."
-			fatal=1
-		fi
-	else
-		echo
-		echo "ERROR: $TARGET_PRODUCT requires mksquashfs."
-		fatal=1
-	fi
-
-	if [ "$fatal" -ne 0 ]; then
-		echo
-		echo "       Unoptimized package is still available at"
-		echo "         $OTAPACKAGE"
-		exit $fatal
-	fi
-fi
-
 REPACK=$OUT/repack.d
 printf "Sanitizing environment..."
 rm -rf $REPACK
@@ -89,36 +59,6 @@ cd $REPACK/ota/system/app
 find ./ -name \*.apk | $XARGS $OPTICHARGER
 )
 
-
-if [ "$WANT_SQUASHFS" -eq 1 ]; then
-	squash_opts="-force-uid 1000 -force-gid 1000 -no-progress -noappend -no-exports -no-recovery"
-	updater=$REPACK/ota/META-INF/com/google/android/updater-script
-
-	# Relocate su
-	cp -a $REPACK/ota/system/xbin $REPACK/_xbin/
-	rm -f $REPACK/_xbin/su $REPACK/ota/system/bin/su
-	mv $REPACK/ota/system/xbin/su $REPACK/ota/system/bin/su
-	chmod -R 555 $REPACK/_xbin/*
-
-	# Create symlinks for su and busybox (since updater-script can't work on the squashfs filesystem).
-	# Forgive me for the regex hell here. 
-	ln -s ../bin/su $REPACK/_xbin/su
-	for link in `sed -n -e's/,//g' -e'/symlink(.*busybox/,/xbin.*);/p' $updater | tr '"' '\n' | sed -n -e'\,/system/xbin/,s,/system/xbin/,,p'`
-	do
-		ln -s busybox $REPACK/_xbin/$link
-	done
-
-	# Create the squashfs with new and improved symlinkage!
-	mksquashfs $REPACK/_xbin/* $REPACK/_xbin.sqf $squash_opts
-	rm -rf $REPACK/ota/system/xbin/*
-	mv $REPACK/_xbin.sqf $REPACK/ota/system/xbin/xbin.sqf
-	chmod 444 $REPACK/ota/system/xbin/xbin.sqf
-
-	# Remove xbin stuff and fix up updater-script
-	$SED -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $updater
-fi
-
-
 # Fix build.prop
 $SED -i \
 	-e '/ro\.kernel\.android\.checkjni/d' \
@@ -128,9 +68,6 @@ $SED -i \
 
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
-
-# Delete leftover wireless driver
-# rm -rf $REPACK/ota/system/lib/modules/*/kernel/drivers/net
 
 # No need for recovery
 rm -rf $REPACK/ota/recovery
