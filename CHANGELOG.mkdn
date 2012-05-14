@@ -17,9 +17,10 @@ Maintainers (CyanogenMod 9):
 * LG Optimus LTE / AT&T Nitro HD: arcee
 * Motorola Xoom (stingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
 * Motorola Xoom (wingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
-* Samsung Galaxy S (GT-I9000): coolya, codeworkx, atinm, GuiperPT, Unhelpful
-* Samsung Galaxy S II (GT-I9100): atinm, codeworkx, coolya, GuiperPT, Unhelpful
-* Samsung Galaxy S II AT&T (SGH-I777): atinm, Andrew Dodd, codeworkx, coolya, GuiperPT, Unhelpful
+* Samsung Galaxy Note (GT-N7000): Entropy512, xplodwild
+* Samsung Galaxy S (GT-I9000): pawitp
+* Samsung Galaxy S II (GT-I9100): codeworkx, Unhelpful, xplodwild
+* Samsung Galaxy S II AT&T (SGH-I777): atinm, Entropy512
 * Samsung Galaxy Tab 10.1: cyanogen, pershoot
 * Samsung Galaxy Tab 8.9: kallt_kaffe
 * Samsung Galaxy Tab 7: cdesai, humberos, jt1134
