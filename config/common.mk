@@ -106,8 +106,7 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
-    Apollo
+    CMWallpapers
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
