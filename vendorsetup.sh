@@ -4,6 +4,8 @@ add_lunch_combo cm_coconut-userdebug
 add_lunch_combo cm_crespo-userdebug
 add_lunch_combo cm_crespo4g-userdebug
 add_lunch_combo cm_epicmtd-userdebug
+add_lunch_combo cm_e730-userdebug
+add_lunch_combo cm_e739-userdebug
 add_lunch_combo cm_galaxysbmtd-userdebug
 add_lunch_combo cm_galaxysmtd-userdebug
 add_lunch_combo cm_galaxys2-userdebug
@@ -24,10 +26,7 @@ add_lunch_combo cm_p4vzw-userdebug
 add_lunch_combo cm_p4wifi-userdebug
 add_lunch_combo cm_p5-userdebug
 add_lunch_combo cm_p5wifi-userdebug
-add_lunch_combo cm_p920-userdebug
-add_lunch_combo cm_p970-userdebug
-add_lunch_combo cm_p990-userdebug
-add_lunch_combo cm_p999-userdebug
+add_lunch_combo cm_p930-userdebug
 add_lunch_combo cm_pyramid-userdebug
 add_lunch_combo cm_quincyatt-userdebug
 add_lunch_combo cm_satsuma-userdebug
