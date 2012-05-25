@@ -11,6 +11,7 @@ Maintainers (CyanogenMod 9):
 ------------
 * Asus EeePad Transformer (tf101): Bumble-Bee, EnJens
 * Asus EeePad Transformer Prime (tf201): Bumble-Bee, EnJens
+* Asus EeePad Transformer Prime (tf300t): xplodwild
 * Google Nexus S: KalimochoAz, burnsra
 * Google Galaxy Nexus: KalimochoAz, bekit, Bumble-Bee
 * HP Touchpad: dalingrin, green--, jcsullins
