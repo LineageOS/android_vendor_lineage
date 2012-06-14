@@ -38,7 +38,7 @@ Maintainers (CyanogenMod 9):
 Translators:
 ------------
 * German: Matthias Büchner, Alexander Hofbauer, Sebastian K (DerSeppel), Ricco Thiel, Andreas Böhm
-* Italian: Eugenio Ziliotto, Giulio Cervera
+* Italian: Francesco Foresta, Moreno Pojer, Eugenio Ziliotto, Giulio Cervera
 * Japanese: Takuo Kitame
 * French: Sébastien Vaucher, David Girault, Tanguy Pruvot
 * Simplified Chinese: comercy, Qian Zheng
