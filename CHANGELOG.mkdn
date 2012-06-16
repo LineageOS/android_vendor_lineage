@@ -28,6 +28,7 @@ Maintainers (CyanogenMod 9):
 * Samsung Galaxy S II AT&T (SGH-I777): atinm, Entropy512
 * Samsung Galaxy S II Skyrocket (SGH-I727): David Ferguson (dferg)
 * Samsung Galaxy S II T-Mobile (SGH-T989): Mike Grissom (mikeyman77)
+* Samsung Galaxy S III (GT-I9300): codeworkx, xplodwild
 * Samsung Galaxy Tab 10.1: cyanogen, pershoot
 * Samsung Galaxy Tab 8.9: kallt_kaffe
 * Samsung Galaxy Tab 7: cdesai, humberos, jt1134
