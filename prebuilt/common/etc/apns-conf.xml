@@ -1319,8 +1319,8 @@
   <apn carrier="Movistar AR MMS" mcc="722" mnc="07" apn="mms.gprs.unifon.com.ar" user="mms" password="mms" mmsc="http://movistar.com.ar" mmsproxy="200.68.32.239" mmsport="8080" authenticationtype="PAP" type="mms" />
   <apn carrier="CTI" mcc="722" mnc="310" apn="internet.ctimovil.com.ar" user="guest" password="guest" type="default,supl" />
   <apn carrier="CTI MMS" mcc="722" mnc="310" apn="mms.ctimovil.com.ar" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.ar" mmsproxy="170.051.255.240" mmsport="9201" type="mms" />
-  <apn carrier="Claro AR" mcc="722" mnc="310" apn="igprs.claro.com.ar" user="ctigprs" password="ctigpr999" type="default,supl" />
-  <apn carrier="Claro AR MMS" mcc="722" mnc="310" apn="mms.ctimovil.com.ar" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.ar" mmsproxy="170.051.255.240" mmsport="8080" type="mms" />
+  <apn carrier="Claro AR" mcc="722" mnc="310" apn="igprs.claro.com.ar" user="ctigprs" password="ctigpr999" authenticationtype="PAP" type="default,supl" />
+  <apn carrier="Claro AR MMS" mcc="722" mnc="310" apn="mms.ctimovil.com.ar" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.ar" mmsproxy="170.051.255.240" mmsport="8080" authenticationtype="PAP" type="mms" />
   <apn carrier="Personal" mcc="722" mnc="34" apn="gprs.personal.com" user="gprs" type="default,supl" />
   <apn carrier="Personal MMS" mcc="722" mnc="34" apn="mms" user="mms" password="mms" mmsc="http://mms.personal.com/" mmsproxy="172.025.007.031" mmsport="9201" type="mms" />
   <apn carrier="TIM BR MMS" mcc="724" mnc="02" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" type="mms" />
