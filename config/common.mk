@@ -111,7 +111,10 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
-    openvpn
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
