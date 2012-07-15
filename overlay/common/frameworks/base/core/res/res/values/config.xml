@@ -3,5 +3,9 @@
     <!-- default to disabling the menu key. The CM setting to
          do this is a no-op unless the below item is true -->
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
+
+    <!-- Location services -->
+    <string name="config_networkLocationProviderPackageName">com.google.android.location</string>
+    <string name="config_geocodeProviderPackageName">com.google.android.location</string>
 </resources>
 
