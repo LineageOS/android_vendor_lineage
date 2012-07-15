@@ -59,6 +59,9 @@ Translators:
 CHANGELOG (notable new features)
 ---------
 
+### 10.0.0
+* Common: Android 4.1.1 (Google)
+
 ### 9.0.0
 * Common: Android 4.0.4 (Google)
 
