@@ -493,12 +493,12 @@
   <apn carrier="VivaCell MMS" mcc="283" mnc="05" apn="mms.vivacell.am" mmsc="http://mms.vivacell.am/mmsc" mmsproxy="83.217.226.72" mmsport="8080" type="mms" />
   <apn carrier="Orange AM" mcc="283" mnc="10" apn="internet" type="default,supl" />
   <apn carrier="Orange AM MMS" mcc="283" mnc="10" apn="mms" mmsc="http://mms/" mmsproxy="192.168.220.251" mmsport="3128" type="mms" />
-  <apn carrier="MobiTel BG" mcc="284" mnc="01" apn="inet-gprs.mtel.bg" type="default,supl" />
-  <apn carrier="Mtel BG" mcc="284" mnc="01" apn="inet-gprs.mtel.bg" mmsc="http://mmsc/" mmsproxy="010.150.000.033" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="MobiTel BG MMS" mcc="284" mnc="01" apn="mms-gprs.mtel.bg" user="Mtel" password="Mtel" mmsc="http://mmsc/" mmsproxy="10.150.0.22" mmsport="9201" type="mms" />
-  <apn carrier="Vivatel" mcc="284" mnc="03" apn="internet.vivatel.bg" user="vivatel" mmsc="http://mmsc.vivatel.bg" mmsproxy="192.168.123.123" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Globul" mcc="284" mnc="05" apn="globul" user="globul" type="default,supl,mms" />
-  <apn carrier="Globul MMS" mcc="284" mnc="05" apn="mms.globul.bg" user="mms" mmsc="http://mmsc1.mms.globul.bg:8002" mmsproxy="192.168.087.011" mmsport="8004" type="mms" />
+  <apn carrier="M-Tel Internet" mcc="284" mnc="01" apn="inet-gprs.mtel.bg" type="default,supl" />
+  <apn carrier="M-Tel MMS" mcc="284" mnc="01" apn="mms-gprs.mtel.bg" user="mtel" password="mtel" mmsc="http://mmsc/" mmsproxy="10.150.0.33" mmsport="8080" type="mms" />
+  <apn carrier="VIVACOM Internet" mcc="284" mnc="03" apn="internet.vivacom.bg" user="VIVACOM" password="VIVACOM" authtype="0" type="default,supl" />
+  <apn carrier="VIVACOM MMS" mcc="284" mnc="03" apn="mms.vivacom.bg" user="mms" password="mms" mmsc="http://mmsc.vivacom.bg" mmsproxy="192.168.123.123" mmsport="8080" authtype="0" type="mms" />
+  <apn carrier="GLOBUL Internet" mcc="284" mnc="05" apn="globul" proxy="192.168.88.11" port="8004" user="globul" type="default,supl" />
+  <apn carrier="GLOBUL MMS" mcc="284" mnc="05" apn="mms.globul.bg" user="mms" mmsc="http://mmsc1.mms.globul.bg:8002" mmsproxy="192.168.87.11" mmsport="8004" type="mms" />
   <apn carrier="Turkcell" mcc="286" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="9201" type="mms" />
   <apn carrier="Vodafone TR" mcc="286" mnc="02" apn="internet" user="vodafone" password="vodafone" type="default,supl" />
