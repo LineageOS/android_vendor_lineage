@@ -705,8 +705,8 @@
   <apn carrier="Aircel MMS" mcc="404" mnc="41" apn="aircelmms" mmsc="http://mmsc/mmrelay.app" mmsproxy="192.168.35.196" mmsport="8081" type="mms" />
   <apn carrier="Aircel" mcc="404" mnc="42" apn="aircelgprs" type="default,supl" />
   <apn carrier="Aircel MMS" mcc="404" mnc="42" apn="aircelmms" mmsc="http://mmsc/mmrelay.app" mmsproxy="192.168.35.196" mmsport="8081" type="mms" />
-  <apn carrier="BPL MMS" mcc="404" mnc="43" apn="mizone" user="MSISDN" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" type="mms" />
-  <apn carrier="BPL" mcc="404" mnc="43" apn="www" user="MSISDN" password="bplmmsc" type="default,supl" />
+  <apn carrier="Vodafone IN MMS" mcc="404" mnc="43" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
+  <apn carrier="Vodafone IN" mcc="404" mnc="43" apn="www" type="default,supl" />
   <apn carrier="IDEA" mcc="404" mnc="44" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="44" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
   <apn carrier="SPICE" mcc="404" mnc="44" apn="spicegprs" type="default,supl" />
