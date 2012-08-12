@@ -32,6 +32,8 @@ if [ "$APKCERTS" = "" ];
 then
     if [ "$TARGET_BUILD_VARIANT" = "userdebug" ]; then
        TARGET_BUILD_VARIANT="eng"
+    elif [ "$TARGET_BUILD_VARIANT" = "user" ]; then
+       TARGET_BUILD_VARIANT="eng"
     fi
 
     APKCERTS=$OUT/obj/PACKAGING/target_files_intermediates/$TARGET_PRODUCT-target_files-$TARGET_BUILD_VARIANT.$USER/META/apkcerts.txt
