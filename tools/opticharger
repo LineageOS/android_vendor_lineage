@@ -135,8 +135,8 @@ then
     
     [ $QUIET ] || echo "Resigning with cert: `echo $CERT`"
 
-    [ $QUIET ] || echo java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
-    java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
+    [ $QUIET ] || echo java -jar $OUT/../../../host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
+    java -jar $OUT/../../../host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
     [ $QUIET ] || echo "Zipalign.."
     zipalign -f 4 signed_$NAME $BASE/$1
     if [ ! $QUIET ]; then
