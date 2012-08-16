@@ -108,6 +108,11 @@ then
             echo "Unable to find certificate for $NAME"
             exit 1;
         fi
+        if [ "$CERT" = "PRESIGNED" ];
+        then
+            echo "$NAME is presigned, skipping"
+            exit 1;
+        fi
     fi
 
     [ $QUIET ] || echo "Certificate: $CERT";
