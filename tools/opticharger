@@ -130,7 +130,7 @@ then
     cp $BASE/$1 $BASE/$1.old
 
     [ $QUIET ] || echo "Repacking apk.."
-    aapt p -0 .dat -0 .dict -F $NAME .
+    aapt p -0 .dat -0 .dict -0 .arsc -F $NAME .
     
     [ $QUIET ] || echo "Resigning with cert: `echo $CERT`"
 
