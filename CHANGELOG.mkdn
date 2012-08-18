@@ -20,6 +20,7 @@ Maintainers (CyanogenMod 9):
 * Motorola Xoom (stingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
 * Motorola Xoom (wingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
 * Samsung Epic 4G (SPH-D700): noobnl, Decad3nce, mkasick, UberPinguin, wtogami, bbelos (Team Epic)
+* Samsung Fascinate (SCH-I500): jt1134, sbrissen
 * Samsung Galaxy Note (GT-N7000): Entropy512, xplodwild
 * Samsung Galaxy Note AT&T (SGH-I717): cyanogen
 * Samsung Galaxy S (GT-I9000): pawitp
