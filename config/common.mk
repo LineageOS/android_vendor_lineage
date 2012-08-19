@@ -129,7 +129,11 @@ PRODUCT_PACKAGES += \
     sshd \
     sshd_config \
     ssh-keygen \
-    start-ssh \
+    start-ssh
+
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
