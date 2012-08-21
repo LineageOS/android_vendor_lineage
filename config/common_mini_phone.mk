@@ -16,7 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
   Mms
 
-ifeq ($(TARGET_BOOTANIMATION_NAME),)
+ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/vertical-320x480.zip:system/media/bootanimation.zip
+        vendor/cm/prebuilt/common/bootanimation/320.zip:system/media/bootanimation.zip
 endif
