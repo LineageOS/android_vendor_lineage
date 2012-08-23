@@ -1,0 +1,51 @@
+CyanogenMod
+===============
+
+Maintainers (CyanogenMod 10):
+------------
+* __Asus EeePad Transformer (TF101):__ Bumble-Bee, EnJens
+* __Asus EeePad Transformer Prime (TF201):__ Bumble-Bee, EnJens
+* __Asus EeePad Transformer Pad TF300T:__ xplodwild
+* __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz
+* __Google Nexus S:__ burnsra, KalimochoAz
+* __Google Nexus 7:__ 
+* __HTC Evo 4G LTE:__ kushdeck, toastcfh
+* __HTC One S:__ intervigil, xkonni
+* __HTC One XL:__ h8rift, intervigil
+* __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
+* __LG Optimus LTE (SK Telecom) (SU640):__ arcee
+* __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
+* __Samsung Epic 4G (SPH-D700):__ bbelos, Decad3nce, mkasick, UberPinguin (Team Epic)
+* __Samsung Fascinate (SCH-I500):__ jt1134, sbrissen
+* __Samsung Galaxy S (GT-I9000):__ pawitp
+* __Samsung Galaxy S (GT-I9000B):__ helvio88
+* __Samsung Galaxy S II (GT-I9100G):__ codeworkx
+* __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen, Unhelpful
+* __Samsung Galaxy S III (Sprint) (SPH-L710):__ mkasick, noobnl (Team Epic)
+* __Samsung Galaxy S III (T-Mobile) (SGH-T999):__ cyanogen
+* __Samsung Galaxy S III (US Cellular) (SCH-R530):__ noobnl
+* __Samsung Galaxy S III (Verizon) (SCH-I535):__ cvcps
+* __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx
+* __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx
+* __Samsung Vibrant (SGH-T959):__ FaultException
+
+Translators:
+------------
+* __Catalan:__ Oriol Pellicer
+* __Czech:__ Ondrej Zima
+* __Dutch:__ Marco Brohet, Kasper Hettinga, Sam Segers, Bart Tiemersma, Eddy Witkamp
+* __Finnish:__ Antti Leukkunen
+* __French:__ Sébastien Vaucher, David Girault, Tanguy Pruvot
+* __German:__ Matthias Büchner, Alexander Hofbauer, Sebastian K., Ricco Thiel, Andreas Böhm, Kim Lê
+* __Italian:__ Francesco Foresta, Moreno Pojer, Eugenio Ziliotto, Giulio Cervera
+* __Japanese:__ Takuo Kitame
+* __Korean:__ Inseok Lee
+* __Polish:__ Maciej Rozbicki
+* __Portuguese-Brazil:__ Gustavo Rosa
+* __Portuguese:__ Eduardo Martins, Ricardo Pinho
+* __Russian:__ OlegKrikun, Pavel Volkov, Kir Kolyshkin
+* __Simplified Chinese:__ comercy, Qian Zheng, Andrew Jiang, John Hsing
+* __Slovak:__ Juraj Janecek
+* __Spanish:__ PeRiJeY, KalimochoAz, Chuckycrx, Jorge Ruesga
+* __Swedish:__ Patrik Kullman
+* __Traditional Chinese:__ Ladios Jonquil

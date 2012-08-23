@@ -7,56 +7,6 @@ Visit http://review.cyanogenmod.com for our Gerrit instance.
 
 Follow http://twitter.com/cmsrc for commit-by-commit updates.
 
-Maintainers (CyanogenMod 9):
-------------
-* Asus EeePad Transformer (tf101): Bumble-Bee, EnJens
-* Asus EeePad Transformer Prime (tf201): Bumble-Bee, EnJens
-* Asus EeePad Transformer Prime (tf300t): xplodwild
-* Google Nexus S: KalimochoAz, burnsra
-* Google Galaxy Nexus: KalimochoAz, bekit, Bumble-Bee
-* HP Touchpad: dalingrin, green--, jcsullins
-* LG Optimus LTE / AT&T Nitro HD: arcee
-* LG Optimus Sol / LG myTouch: Kali-, arcee
-* Motorola Xoom (stingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
-* Motorola Xoom (wingray): TDR, Steady Hawkin, Bazar6 (Team Rogue)
-* Samsung Epic 4G (SPH-D700): noobnl, Decad3nce, mkasick, UberPinguin, wtogami, bbelos (Team Epic)
-* Samsung Fascinate (SCH-I500): jt1134, sbrissen
-* Samsung Galaxy Note (GT-N7000): Entropy512, xplodwild
-* Samsung Galaxy Note AT&T (SGH-I717): cyanogen
-* Samsung Galaxy S (GT-I9000): pawitp
-* Samsung Galaxy S II (GT-I9100): codeworkx, Unhelpful, xplodwild
-* Samsung Galaxy S II (GT-I9100G): codeworkx
-* Samsung Galaxy S II AT&T (SGH-I777): atinm, Entropy512
-* Samsung Galaxy S II Skyrocket (SGH-I727): David Ferguson (dferg)
-* Samsung Galaxy S II T-Mobile (SGH-T989): Mike Grissom (mikeyman77)
-* Samsung Galaxy S III (GT-I9300): codeworkx, xplodwild
-* Samsung Galaxy Tab 10.1: cyanogen, pershoot
-* Samsung Galaxy Tab 8.9: kallt_kaffe
-* Samsung Galaxy Tab 7: cdesai, humberos, jt1134
-* Samsung Vibrant (SGH-T959): FaultException
-* Sony Xperia Arc (LT15i): Bin4ry,defer,jerpelea (FreeXperia team)
-* Sony Xperia Neo (MT15i): Bin4ry,defer,jerpelea (FreeXperia team)
-
-Translators:
-------------
-* German: Matthias Büchner, Alexander Hofbauer, Sebastian K (DerSeppel), Ricco Thiel, Andreas Böhm
-* Italian: Francesco Foresta, Moreno Pojer, Eugenio Ziliotto, Giulio Cervera
-* Japanese: Takuo Kitame
-* French: Sébastien Vaucher, David Girault, Tanguy Pruvot
-* Simplified Chinese: comercy, Qian Zheng
-* Russian: OlegKrikun, Pavel Volkov, Kir Kolyshkin
-* Portuguese: Eduardo Martins, Ricardo Pinho
-* Portuguese-Brazil: Gustavo Rosa
-* Spanish: PeRiJeY, KalimochoAz, Chuckycrx
-* Catalan: Oriol Pellicer
-* Finnish: Antti Leukkunen
-* Swedish: Patrik Kullman
-* Polish: Maciej Rozbicki
-* Korean: Inseok Lee
-* Traditional Chinese: Ladios Jonquil
-* Slovak: Juraj Janecek
-* Czech: Ondrej Zima
-
 CHANGELOG (notable new features)
 ---------
 
@@ -114,7 +64,6 @@ CHANGELOG (notable new features)
 * Common: "eat" pushes fresh brunch/breakfast to device - Ricardo Cerqueira
 * Common: Customizable account color chip in Email - copolii
 * Common: "Rings" lockscreen - Valera Trubachev
-
 * Click, Motorola: Speed up photo recording - Emilio López
 * Click, Motorola: Add Geolocation to photo app - KalimochoAz
 * Click: Upgraded kernel from HTC 2.6.29 to 2.6.35
@@ -329,7 +278,6 @@ CHANGELOG (notable new features)
 * Vision: LED enhancement - Pershoot
 * Droid: Kernel 2.6.32.9
 
-
 ### 6.0.0
 * ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
 * Common: ADWLauncher 1.1.4 - Ander Webbs
@@ -399,5 +347,3 @@ CHANGELOG (notable new features)
 * EVO: Sprint MMS fixes - Darchstar, toastcfh
 * N1/Desire: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
 * Desire: Kernel base from Kali- & Defer
-
-
