@@ -45,7 +45,7 @@ if [ "$(which pngcrush)" != "" ];
 then
     optimize_png () {
         pngcrush -q ${BRUTECRUSH} $1 ${1}.out 1> /dev/null 2> /dev/null
-        mv ${1}.out ${1}
+        mv ${1}.out ${1} 2> /dev/null
     }
 elif [ "$(which optipng)" != "" ];
 then
