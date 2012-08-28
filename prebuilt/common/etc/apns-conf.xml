@@ -333,7 +333,7 @@
   <apn carrier="Bite LV Internet" mcc="247" mnc="05" apn="internet" type="default,supl" />
   <apn carrier="Bite MMS" mcc="247" mnc="05" apn="mms" mmsc="http://mmsc" mmsproxy="192.168.150.2" mmsport="8080" type="mms" />
   <apn carrier="EMT" mcc="248" mnc="01" apn="internet.emt.ee" type="default,supl" />
-  <apn carrier="EMT MMS" mcc="248" mnc="01" apn="mms.emt.ee" mmsc="http://mms.emt.ee/servlets/mms" type="mms" />
+  <apn carrier="EMT MMS" mcc="248" mnc="01" apn="mms.emt.ee" mmsc="http://mms.emt.ee/servlets/mms" mmsproxy="217.71.32.82" mmsport="8080" type="mms" />
   <apn carrier="Elisa EE" mcc="248" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="Elisa EE MMS" mcc="248" mnc="02" apn="mms" mmsc="http://194.204.2.10" mmsproxy="194.204.2.6" mmsport="8080" type="mms" />
   <apn carrier="Tele2 EE" mcc="248" mnc="03" apn="internet.tele2.ee" user="wap" password="wap" type="default,supl" />
