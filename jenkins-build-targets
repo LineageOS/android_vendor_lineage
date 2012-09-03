@@ -26,6 +26,7 @@ cm_p5100-userdebug
 cm_p5110-userdebug
 cm_p5113-userdebug
 cm_p930-userdebug
+cm_stingray-userdebug
 cm_su640-userdebug
 cm_tf101-userdebug
 cm_tf201-userdebug
@@ -34,3 +35,4 @@ cm_toro-userdebug
 cm_toroplus-userdebug
 cm_vibrantmtd-userdebug
 cm_ville-userdebug
+cm_wingray-userdebug
