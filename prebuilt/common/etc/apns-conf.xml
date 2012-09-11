@@ -1390,4 +1390,5 @@
   <apn carrier="MD MOLDCELL" mcc="259" mnc="02" apn="mms" mmsproxy="010.000.010.010" mmsport="9401" mmsc="http://mms.moldcell.md/cmmsc/post" type="mms" />
   <apn carrier="ORANGE INTERNET" mcc="259" mnc="01" apn="wap.orange.md" type="default,supl" />
   <apn carrier="ORANGE MMS" mcc="259" mnc="01" apn="mms.orange.md" mmsproxy="192.168.127.125" mmsport="3128" mmsc="http://mms/mmsc" type="mms" />
+  <apn carrier="Virgin Mobile CL" mcc="730" mnc="07" apn="imovil.virginmobile.cl" type="default" />
 </apns>
