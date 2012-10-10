@@ -42,7 +42,7 @@ Translators:
 * __Finnish:__ Antti Leukkunen
 * __French:__ Sébastien Vaucher, David Girault, Tanguy Pruvot
 * __German:__ Matthias Büchner, Alexander Hofbauer, Sebastian K., Ricco Thiel, Andreas Böhm, Kim Lê
-* __Italian:__ Francesco Foresta, Moreno Pojer, Eugenio Ziliotto, Giulio Cervera
+* __Italian:__ Francesco Foresta, Moreno Pojer, Eugenio Ziliotto, Giulio Cervera, Mauro Bazzano
 * __Japanese:__ Takuo Kitame
 * __Korean:__ Inseok Lee
 * __Polish:__ Maciej Rozbicki
