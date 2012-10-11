@@ -17,6 +17,7 @@ Maintainers (CyanogenMod 10):
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos, Decad3nce, mkasick, UberPinguin (Team Epic)
 * __Samsung Fascinate / Mesmerize (SCH-I500):__ jt1134, sbrissen
+* __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
 * __Samsung Galaxy S (GT-I9000):__ pawitp
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
 * __Samsung Galaxy S II (GT-I9100G):__ codeworkx
