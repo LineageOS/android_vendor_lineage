@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Squish a CM otapackage for distribution
 # cyanogen
 #
+
+. $ANDROID_BUILD_TOP/vendor/cm/tools/functions
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
@@ -19,12 +21,12 @@ else
 fi
 
 if [ -z "$OUT" -o ! -d "$OUT" ]; then
-	echo "ERROR: $0 only works with a full build environment. $OUT should exist."
+	echo -e $CL_RED"ERROR: $0 only works with a full build environment. $OUT should exist."$CL_RST
 	exit 1
 fi
 
 if [ ! -f "$OTAPACKAGE" ]; then
-	echo "$OTAPACKAGE doesn't exist!";
+	echo -e $CL_RED"$OTAPACKAGE doesn't exist!"$CL_RST;
 	exit 1
 fi
 
@@ -87,7 +89,7 @@ rm -rf $REPACK/ota/recovery
 # Determine what to name the new signed package
 MODVERSION=`sed -n -e'/ro\.cm\.version/s/^.*=//p' $REPACK/ota/system/build.prop`
 OUTFILE=$OUT/cm-$MODVERSION.zip
-echo MODVERSION: $MODVERSION
+echo -e $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
 
 # Pack it up and sign
 printf "Zipping package..."
@@ -110,7 +112,7 @@ img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
 echo
-echo "Package complete: $OUTFILE"
+echo -e $CL_GRN"Package complete: $OUTFILE"$CL_RST
 cat $img.md5sum
 echo
 )
