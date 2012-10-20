@@ -30,8 +30,8 @@
 
 
 <!-- Sprint -->
-  <!-- Modify Apn database for Sprint CDMA MMS support -->
-  <apn carrier="Sprint" mcc="310" mnc="120" apn="Sprint" user="Sprint" server="*" password="*" mmsc="http://mms.sprintpcs.com" authtype="3"/>
+  <!-- Sprint CDMA MMS: Use LTE/eHRPD mms apns to avoid LTE/eHRPD service conflicts. -->
+  <!--<apn carrier="Sprint" mcc="310" mnc="120" apn="Sprint" user="Sprint" server="*" password="*" mmsc="http://mms.sprintpcs.com" authtype="3"/>-->
 
   <!-- Modify Apn database for Sprint LTE support -->
   <apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
@@ -40,7 +40,7 @@
   <apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="010" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
   <apn carrier="LTE - SPRINT test OTA" mcc="001" mnc="010" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
   <apn carrier="LTE - SPRINT test PAM" mcc="001" mnc="010" apn="pamsn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-<!-- END modify Apn database for Sprint LTE support -->
+  <!-- END modify Apn database for Sprint LTE support -->
 
   <!-- Modify Apn database for Sprint EHRPD support -->
   <apn carrier="EHRPD - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
