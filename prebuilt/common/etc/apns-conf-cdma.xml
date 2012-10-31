@@ -28,6 +28,10 @@
   <apn carrier="Boost MMS" mcc="505" mnc="02" apn="mms" user="" password="" server="" proxy="61.88.190.10" port="8070" mmsc="http://mmsc.optus.com.au:8002/" mmsproxy="61.88.190.10" mmsport="8070" type="mms" authtype="3"/>
   <apn carrier="Boost Mobile" mcc="505" mnc="02" apn="yesinternet" user="" password="" server="" proxy="" port="" mmsc="" mmsproxy="" mmsport="" type="default,supl" authtype="3"/>
 
+<!-- MetroPCS: LTE Apn  -->
+  <apn carrier="MetroPCS DEFAULT" mcc="311" mnc="660" apn="internet.metropcs" user="" password="" type="default,hipri,admin,mms" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
+  <apn carrier="MetroPCS IMS"  mcc="311" mnc="660" apn="ims.metropcs" user="" password="" type="ims" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
+<!--  end MetroPCS: LTE Apn  -->
 
 <!-- Sprint -->
   <!-- Sprint CDMA MMS: Use LTE/eHRPD mms apns to avoid LTE/eHRPD service conflicts. -->
