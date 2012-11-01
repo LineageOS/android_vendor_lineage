@@ -146,7 +146,8 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     CMWallpapers \
     Apollo \
-    CMUpdater
+    CMUpdater \
+    CMFileManager
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
