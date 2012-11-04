@@ -35,6 +35,7 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx
 * __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx
 * __Samsung Vibrant (SGH-T959):__ FaultException
+* __Sony Xperia T (mint):__ jerpelea, Kali- (FreeXperia team), codeworkx, Lalit Maganti
 
 Translators:
 ------------
