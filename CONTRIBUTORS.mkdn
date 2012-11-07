@@ -21,11 +21,16 @@ Maintainers (CyanogenMod 10):
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos, Decad3nce, mkasick, UberPinguin (Team Epic)
 * __Samsung Fascinate / Mesmerize (SCH-I500):__ jt1134, sbrissen
+* __Samsung Galaxy Note (GT-N7000):__ Entropy512, Espenfjo
+* __Samsung Galaxy Note 10.1 (GT-N80XX):__ Entropy512, Espenfjo
 * __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
 * __Samsung Galaxy S (GT-I9000):__ pawitp
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
-* __Samsung Galaxy S II (GT-I9100G):__ codeworkx
+* __Samsung Galaxy S II (AT&T) (SGH-I777):__ Entropy512
+* __Samsung Galaxy S II (intl) (GT-I9100):__ codeworkx, Espenfjo
+* __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen, Unhelpful
+* __Samsung Galaxy S III (intl) (GT-I9300):__ xplodwild, codeworkx
 * __Samsung Galaxy S III (Sprint) (SPH-L710):__ mkasick, noobnl (Team Epic)
 * __Samsung Galaxy S III (T-Mobile) (SGH-T999):__ cyanogen
 * __Samsung Galaxy S III (US Cellular) (SCH-R530):__ noobnl
