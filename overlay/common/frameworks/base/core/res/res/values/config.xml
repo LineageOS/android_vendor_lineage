@@ -4,8 +4,11 @@
          do this is a no-op unless the below item is true -->
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
-    <!-- Location services -->
-    <string name="config_networkLocationProviderPackageName">com.google.android.location</string>
-    <string name="config_geocodeProviderPackageName">com.google.android.location</string>
+    <string-array name="config_locationProviderPackageNames" translatable="false">
+        <!-- The standard AOSP fused location provider -->
+        <item>com.android.location.fused</item>
+        <!-- The Google provider -->
+        <item>com.google.android.location</item>
+    </string-array>
 </resources>
 
