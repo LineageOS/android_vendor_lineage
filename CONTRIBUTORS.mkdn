@@ -10,7 +10,7 @@ Maintainers (CyanogenMod 10):
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz
 * __Google Nexus S:__ burnsra, KalimochoAz
-* __Google Nexus 7:__ 
+* __Google Nexus 7:__ fattire, nemith (GSM)
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One S:__ intervigil, xkonni
 * __HTC One XL:__ h8rift, intervigil
