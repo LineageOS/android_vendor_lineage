@@ -44,7 +44,7 @@ cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
 echo
 echo -e $CL_GRN"Package complete: $OUTFILE"$CL_RST
-cat $img.md5sum
+echo -e $CL_GRN"md5: $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
 echo
 )
 
