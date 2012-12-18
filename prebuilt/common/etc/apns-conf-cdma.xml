@@ -28,6 +28,12 @@
   <apn carrier="Boost MMS" mcc="505" mnc="02" apn="mms" user="" password="" server="" proxy="61.88.190.10" port="8070" mmsc="http://mmsc.optus.com.au:8002/" mmsproxy="61.88.190.10" mmsport="8070" type="mms" authtype="3"/>
   <apn carrier="Boost Mobile" mcc="505" mnc="02" apn="yesinternet" user="" password="" server="" proxy="" port="" mmsc="" mmsproxy="" mmsport="" type="default,supl" authtype="3"/>
 
+<!-- Cricket: LTE Apn -->
+  <apn carrier="LTE INTERNET" mcc="310" mnc="090" apn="4g.mycricket.com" user="" password="" type="default,dun,mms" authtype="0" mmsc="http://mms.mycricket.com/servlets/mms" protocol="IP" roaming_protocol="IP" bearer="14"/>
+  <apn carrier="LTE ADMIN" mcc="310" mnc="090" apn="Apnota.4g.mycricket.com" user="" password="" type="fota" authtype="0" mmsc="http://mms.mycricket.com/servlets/mms" protocol="IP" roaming_protocol="IP" bearer="14"/>
+  <apn carrier="LTE DNSADMIN" mcc="310" mnc="090" apn="apndnsota.4g.mycricket.com" user="" password="" type="fota" authtype="0" mmsc="http://mms.mycricket.com/servlets/mms" protocol="IP" roaming_protocol="IP" bearer="14"/>
+<!-- end Cricket: LTE Apn -->
+
 <!-- MetroPCS: LTE Apn  -->
   <apn carrier="MetroPCS DEFAULT" mcc="311" mnc="660" apn="internet.metropcs" user="" password="" type="default,hipri,admin,mms" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
   <apn carrier="MetroPCS IMS"  mcc="311" mnc="660" apn="ims.metropcs" user="" password="" type="ims" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
