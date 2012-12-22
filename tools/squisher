@@ -35,8 +35,7 @@ MODVERSION=`sed -n -e'/ro\.cm\.version/s/^.*=//p' $OUT/system/build.prop`
 echo -e $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
 OUTFILE=$OUT/cm-$MODVERSION.zip
 
-cp $OTAPACKAGE $OUTFILE.tmp
-mv $OUTFILE.tmp $OUTFILE
+ln $OTAPACKAGE $OUTFILE
 
 # Create a md5 checksum image of the repacked package
 (
