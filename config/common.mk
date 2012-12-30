@@ -163,7 +163,8 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     Apollo \
     CMUpdater \
-    CMFileManager
+    CMFileManager \
+    LockClock
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
