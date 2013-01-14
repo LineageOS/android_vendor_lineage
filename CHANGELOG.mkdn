@@ -5,13 +5,34 @@ Visit http://github.com/CyanogenMod for full changelogs and git access.
 
 Visit http://review.cyanogenmod.org for our Gerrit instance.
 
-Follow http://twitter.com/cmsrc for commit-by-commit updates.
-
 CHANGELOG (notable new features)
 ---------
 
 ### 10.1.0
 * Common: Android 4.2.1 (Google)
+* Common: Chronus Lockscreen and Homescreen Widget
+* Common: Theme Engine Support
+* Common: Customize Navigation Bar (on devices without hardware keys)
+* Common: Customize Notification Light
+* Common: Display Battery Light
+* Common: Profiles with NFC support
+* Common: Customize Screen Rotation
+* Common: Notification Power Widgets
+* Common: DSP Manager
+* Common: Volume Rocker Wake
+* Common: Performance Settings (I/O Scheduler, CPU Governor, etc)
+* Quick Settings: Panel Customization
+* Quick Settings: Toggle QS panel with horizontal swipe
+* Quick Settings: Split QS actionable area
+* Quick Settings: Added QS Tiles
+* Status Bar: Hide or Show Clock
+* Status Bar: Battery Percentage and Circle Battery
+* Status Bar: Show Notification Counts
+* Status Bar: Signal Status Customization
+* Status Bar: Set Date and Time as buttons (with longpress actions)
+* Trebuchet: Launcher Updates
+* Lockscreen: Slider Shortcuts
+* Lockscreen: Maximize Widgets on Wake
 
 ### 10.0.0
 * Common: Android 4.1.2 (Google)
