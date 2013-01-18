@@ -3,12 +3,15 @@ CyanogenMod
 
 Visit http://github.com/CyanogenMod for full changelogs and git access.
 
-Visit http://review.cyanogenmod.com for our Gerrit instance.
+Visit http://review.cyanogenmod.org for our Gerrit instance.
 
 Follow http://twitter.com/cmsrc for commit-by-commit updates.
 
 CHANGELOG (notable new features)
 ---------
+
+### 10.1.0
+* Common: Android 4.2.1 (Google)
 
 ### 10.0.0
 * Common: Android 4.1.2 (Google)
