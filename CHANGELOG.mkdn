@@ -9,7 +9,7 @@ CHANGELOG (notable new features)
 ---------
 
 ### 10.1.0
-* Common: Android 4.2.1 (Google)
+* Common: Android 4.2.2 (Google)
 * Common: cLock Lockscreen and Homescreen Widget
 * Common: Theme Engine Support
 * Common: Customize Navigation Bar (on devices without hardware keys)
