@@ -51,12 +51,12 @@ Maintainers (CyanogenMod 10):
 General developers:
 -------------------
 * __UI Team:__ blunden, prash
-* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, mad-murdock, maniac103
+* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, mad-murdock, maniac103, Kaik541
 * __Other:__ jruesga
 
 Translators:
 ------------
-* __Afrikaans:__ Corrie Meyer
+* __Afrikaans:__ Corrie Meyer, David van Tonder
 * __Catalan:__ Oriol Pellicer
 * __Croatian:__ Antonio Marin
 * __Czech:__ Ondrej Zima, Radovan Kepak, Pavel Kucera, Jozka Jozin, Jiri Silvarich, Vaclav Moucha
