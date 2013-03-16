@@ -29,6 +29,7 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy Note II LTE (GT-N7105 / SGH-I317 / SGH-T889):__ codeworkx, madmack
 * __Samsung Galaxy Note II LTE (SCH-I605 / SPH-L900):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Entropy512, Espenfjo
+* __Samsung Galaxy R (GT-I9103):__ Adam77Root, Epsylon3
 * __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
 * __Samsung Galaxy S (GT-I9000):__ pawitp
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
