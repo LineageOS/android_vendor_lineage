@@ -37,6 +37,7 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen, Unhelpful
 * __Samsung Galaxy S III (intl) (GT-I9300):__ xplodwild, codeworkx
+* __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith, codeworkx
 * __Samsung Galaxy S III (Sprint) (SPH-L710):__ mkasick, noobnl (Team Epic)
 * __Samsung Galaxy S III (T-Mobile) (SGH-T999):__ cyanogen
 * __Samsung Galaxy S III (US Cellular) (SCH-R530):__ noobnl
