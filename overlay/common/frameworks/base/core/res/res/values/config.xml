@@ -17,5 +17,7 @@
     <!-- Class name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_class_name">com.cyanogenmod.lockclock.ClockWidgetProvider</string>
 
+    <bool name="config_cellBroadcastAppLinks">true</bool>
+
 </resources>
 
