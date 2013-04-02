@@ -18,4 +18,14 @@
 -->
 <resources>
     <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
+
+    <!-- Circle -->
+    <integer name="def_battery_style">2</integer>
+    <!-- Enable notification counters in statusbar -->
+    <integer name="def_notif_count">1</integer>
+    <!-- Right QS pulldown -->
+    <integer name="def_qs_quick_pulldown">1</integer>
+    <!-- Default lockscreen targets -->
+    <string name="def_lockscreen_targets">#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.android.mms/.ui.ConversationList;S.icon_resource=ic_lockscreen_sms_normal;end|#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.andrew.apollo/.ui.activities.HomeActivity;S.icon_resource=ic_lockscreen_music_normal;end|#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.android.contacts/.activities.DialtactsActivity;S.icon_resource=ic_lockscreen_phone_normal;end|#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.android.browser/.BrowserActivity;S.icon_resource=ic_lockscreen_browser_normal;end</string>
+
 </resources>
