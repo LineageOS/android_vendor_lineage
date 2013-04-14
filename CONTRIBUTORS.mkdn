@@ -27,7 +27,9 @@ Maintainers (CyanogenMod 10):
 * __Samsung Fascinate / Mesmerize (SCH-I500):__ jt1134, sbrissen
 * __Samsung Galaxy Note (GT-N7000):__ Entropy512, Espenfjo
 * __Samsung Galaxy Note II (GT-N7100):__ nebkat
-* __Samsung Galaxy Note II LTE (GT-N7105 / SGH-I317 / SGH-T889):__ codeworkx, madmack
+* __Samsung Galaxy Note II LTE (GT-N7105):__ codeworkx
+* __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ codeworkx, cyanogen, madmack
+* __Samsung Galaxy Note II LTE (T-Mobile) (SGH-T889):__ codeworkx, madmack
 * __Samsung Galaxy Note II LTE (SCH-I605 / SPH-L900):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Entropy512, Espenfjo
 * __Samsung Galaxy R (GT-I9103):__ Adam77Root, Epsylon3
@@ -50,6 +52,9 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx
 * __Samsung Vibrant (SGH-T959):__ FaultException
 * __Sony Xperia T (mint):__ jerpelea, Kali- (FreeXperia team), codeworkx, tilal6991
+* __Sony Xperia V (tsubasa):__ jerpelea, Kali- (FreeXperia team), codeworkx, tilal6991
+* __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, codeworkx, Entropy512
+* __Sony Xperia ZL (odin):__ jerpelea, Kali- (FreeXperia team)
 
 General developers:
 -------------------
