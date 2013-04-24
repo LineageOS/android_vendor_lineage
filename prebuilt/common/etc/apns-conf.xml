@@ -538,7 +538,7 @@
   <apn carrier="Rogers" mcc="302" mnc="720" apn="rogers-core-appl1.apn" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" type="default,supl,mms" />
   <apn carrier="Rogers Tethering" mcc="302" mnc="720" apn="isp.apn" type="default,supl" />
   <apn carrier="Rogers WAP" mcc="302" mnc="720" apn="internet.com" password="wap" type="default,supl,mms" />
-  <apn carrier="Rogers LTE" mcc="302" mnc="720" apn="ltemobile.apn" port="80" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" type="default,supl,mms"/>
+  <apn carrier="Rogers LTE" mcc="302" mnc="720" apn="ltemobile.apn" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" type="default,supl,mms"/>
   <apn carrier="Sasktel 3G" mcc="302" mnc="780" apn="inet.stm.sk.ca" type="default,supl" />
   <apn carrier="Sasktel MMS" mcc="302" mnc="780" apn="proxy.stm.sk.ca" port="80" mmsc="http://mms.sasktel.com" mmsproxy="mig.sasktel.com" mmsport="80" type="mms" />
   <apn carrier="Verizon" mcc="310" mnc="004" apn="internet" user="*" password="*" server="*" mmsc="http://mms.vtext.com/servlets/mms" type="default,supl,mms" />
