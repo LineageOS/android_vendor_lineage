@@ -46,7 +46,7 @@ _find_repo() {
 
     while [ "${dir}" != / ]
     do
-        if [ -f "${dir}/.repo/repo/main.py" ]
+        if [ -e "${dir}/.repo/repo/main.py" ]
         then
             found=0
             break
