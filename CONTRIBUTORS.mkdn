@@ -51,6 +51,8 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy S III (T-Mobile) (SGH-T999):__ cyanogen
 * __Samsung Galaxy S III (US Cellular) (SCH-R530):__ noobnl
 * __Samsung Galaxy S III (Verizon) (SCH-I535):__ cvcps
+* __Samsung Galaxy S IV (Canada) (SGH-I337M):__ DvTonder
+* __Samsung Galaxy S IV (T-Mobile) (SGH-M919):__ cyanogen
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx
