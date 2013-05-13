@@ -14,6 +14,7 @@ Maintainers (CyanogenMod 10):
 * __Google Nexus 4:__ rmcc
 * __Google Nexus 7:__ burnsra, fattire, nemith (GSM)
 * __Google Nexus 10:__ atinm, dalingrin, kornyone
+* __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One (GSM):__ codeworkx, h8rift
 * __HTC One (Sprint):__ kushdeck, toastcfh
