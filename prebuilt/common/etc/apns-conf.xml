@@ -90,7 +90,7 @@
   <apn carrier="Vodafone ES MMS" mcc="214" mnc="01" apn="mms.vodafone.net" user="wap@wap" password="wap125" mmsc="http://mmsc.vodafone.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" type="mms" />
   <apn carrier="Orange Internet ES" mcc="214" mnc="03" apn="internet" user="orange" password="orange" type="default,supl" />
   <apn carrier="Orange ES MMS" mcc="214" mnc="03" apn="orangemms" user="orange" password="orange" mmsc="http://mms.orange.es" mmsproxy="172.22.188.25" mmsport="8080" type="mms" />
-  <apn carrier="Orange World ES" mcc="214" mnc="03" apn="orangeworld" user="orange" password="orange" proxy="10.32.61.10" port="8080" type="default,supl" />
+  <apn carrier="Orange World ES" mcc="214" mnc="03" apn="orangeworld" user="orange" password="orange" proxy="10.132.61.10" port="8080" type="default,supl" />
   <apn carrier="Yoigo" mcc="214" mnc="04" apn="internet" proxy="010.008.000.036" port="8080" type="default,supl" />
   <apn carrier="Yoigo MMS" mcc="214" mnc="04" apn="mms" mmsc="http://mms" mmsproxy="193.209.134.141" mmsport="80" type="mms" />
   <apn carrier="Tuenti Internet" mcc="214" mnc="05" apn="tuenti.com" user="tuenti" password="tuenti" type="default,supl" />
