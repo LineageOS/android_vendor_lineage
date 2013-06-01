@@ -36,8 +36,8 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy Note (GT-N7000):__ Entropy512, Espenfjo
 * __Samsung Galaxy Note II (GT-N7100):__ nebkat
 * __Samsung Galaxy Note II LTE (GT-N7105):__ codeworkx
-* __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ codeworkx, cyanogen, madmack
-* __Samsung Galaxy Note II LTE (T-Mobile) (SGH-T889):__ codeworkx, madmack
+* __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ codeworkx, cyanogen
+* __Samsung Galaxy Note II LTE (T-Mobile) (SGH-T889):__ codeworkx
 * __Samsung Galaxy Note II LTE (SCH-I605 / SPH-L900):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Entropy512, Espenfjo
 * __Samsung Galaxy R (GT-I9103):__ Adam77Root, Epsylon3
