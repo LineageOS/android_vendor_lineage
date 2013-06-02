@@ -1,7 +1,7 @@
 CyanogenMod
 ===========
 
-Maintainers (CyanogenMod 10):
+Maintainers (CyanogenMod 10.1):
 -----------------------------
 * __Acer A700:__ pawitp
 * __Asus EeePad Transformer (TF101):__ Bumble-Bee, EnJens
@@ -31,7 +31,7 @@ Maintainers (CyanogenMod 10):
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
-* __Samsung Epic 4G (SPH-D700):__ bbelos, Decad3nce, mkasick, UberPinguin (Team Epic)
+* __Samsung Epic 4G (SPH-D700):__ bbelos
 * __Samsung Fascinate / Mesmerize (SCH-I500):__ jt1134, sbrissen
 * __Samsung Galaxy Note (GT-N7000):__ Entropy512, Espenfjo
 * __Samsung Galaxy Note II (GT-N7100):__ nebkat
@@ -47,15 +47,21 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy S II (AT&T) (SGH-I777):__ Entropy512
 * __Samsung Galaxy S II (intl) (GT-I9100):__ codeworkx, Espenfjo
 * __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx
-* __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen, Unhelpful
+* __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen
+* __Samsung Galaxy S III (Cricket) (SCH-R530):__ noobnl
 * __Samsung Galaxy S III (intl) (GT-I9300):__ xplodwild, codeworkx
 * __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith, codeworkx
-* __Samsung Galaxy S III (Sprint) (SPH-L710):__ mkasick, noobnl (Team Epic)
+* __Samsung Galaxy S III (MetroPCS) (SCH-R530):__ noobnl
+* __Samsung Galaxy S III (Sprint) (SPH-L710):__ mkasick, noobnl
 * __Samsung Galaxy S III (T-Mobile) (SGH-T999):__ cyanogen
 * __Samsung Galaxy S III (US Cellular) (SCH-R530):__ noobnl
-* __Samsung Galaxy S III (Verizon) (SCH-I535):__ cvcps
+* __Samsung Galaxy S III (Verizon) (SCH-I535):__ invisiblek
+* __Samsung Galaxy S IV (AT&T) (SGH-I337):__ attn1
 * __Samsung Galaxy S IV (Canada) (SGH-I337M):__ DvTonder
+* __Samsung Galaxy S IV (Sprint) (SPH-L720):__ mkasick, noobnl
 * __Samsung Galaxy S IV (T-Mobile) (SGH-M919):__ cyanogen
+* __Samsung Galaxy S IV (US Cellular) (SCH-R540):__ noobnl
+* __Samsung Galaxy S IV (Verizon) (SCH-I545):__ invisiblek
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx
