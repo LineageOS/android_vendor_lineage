@@ -1245,9 +1245,7 @@
   <apn carrier="Telecom NZ MMS" mcc="530" mnc="03" apn="wap.telecom.co.nz" mmsc="http://lsmmsc.xtra.co.nz" mmsproxy="210.55.11.73" mmsport="80" type="mms" />
   <apn carrier="XT Mobile" mcc="530" mnc="05" apn="internet.telecom.co.nz" type="default,supl" />
   <apn carrier="XT Mobile MMS" mcc="530" mnc="05" apn="wap.telecom.co.nz" mmsc="http://lsmmsc.xtra.co.nz" mmsproxy="210.55.11.73" mmsport="8080" type="mms" />
-  <apn carrier="2 degrees mobile" mcc="530" mnc="24" apn="2degrees" proxy="118.148.1.118" port="8080" type="default,supl,mms" />
   <apn carrier="2degrees Internet" mcc="530" mnc="24" apn="internet" type="default,supl" />
-  <apn carrier="2 degrees mobile (open)" mcc="530" mnc="24" apn="internet" type="default,supl,mms" />
   <apn carrier="2degrees MMS" mcc="530" mnc="24" apn="mms" mmsc="http://mms.2degreesmobile.net.nz:48090" mmsproxy="118.148.1.118" mmsport="8080" type="mms" />
   <apn carrier="Vodafone FJ MMS" mcc="542" mnc="01" apn="live.vodafone.com.fj" mmsc="http://pxt.vodafone.net.fj/pxtsend" mmsproxy="010.202.002.040" mmsport="9201" type="mms" />
   <apn carrier="Vodafone FJ" mcc="542" mnc="01" apn="vfinternet.fj" type="default,supl" />
