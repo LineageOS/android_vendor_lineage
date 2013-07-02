@@ -1,5 +1,6 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+-include vendor/cm-priv/keys.mk
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
