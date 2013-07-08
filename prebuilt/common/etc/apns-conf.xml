@@ -184,10 +184,10 @@
   <apn carrier="Orange SK" mcc="231" mnc="01" apn="internet" type="default" />
   <apn carrier="Orange SK MMS" mcc="231" mnc="01" apn="mms" user="wap" password="wap" mmsc="http://imms.orange.sk" mmsproxy="213.151.208.145" mmsport="8799" type="mms" />
   <apn carrier="Orange World" mcc="231" mnc="01" apn="orangewap" user="wap" password="wap" proxy="213.151.208.156" port="8799" type="default,supl" />
-  <apn carrier="T-Mobile SK" mcc="231" mnc="02" apn="internet" type="default,supl" />
-  <apn carrier="T-Mobile SK MMS" mcc="231" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
-  <apn carrier="T-Mobile SK" mcc="231" mnc="04" apn="internet" type="default,supl" />
-  <apn carrier="T-Mobile SK MMS" mcc="231" mnc="04" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
+  <apn carrier="Telekom SK" mcc="231" mnc="02" apn="internet" type="default,supl" />
+  <apn carrier="Telekom SK MMS" mcc="231" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
+  <apn carrier="Telekom SK" mcc="231" mnc="04" apn="internet" type="default,supl" />
+  <apn carrier="Telekom SK MMS" mcc="231" mnc="04" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="231" mnc="05" apn="internet" type="default,supl" />
   <apn carrier="Orange MMS" mcc="231" mnc="05" apn="mms" user="wap" password="wap" mmsc="http://imms.orange.sk" mmsproxy="213.151.208.145" mmsport="8799" type="mms" />
   <apn carrier="O2 SK" mcc="231" mnc="06" apn="o2internet" type="default,supl" />
