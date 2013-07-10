@@ -147,4 +147,15 @@
   <!-- END modify Apn database for USCC LTE support -->
 <!-- END US Cellular -->
 
+<!-- Start of Apn database for C Spire LTE/eHRPD support -->
+  <apn carrier="LTE INTERNET" mcc="311" mnc="230" apn="Internet.cs4glte.com" user="" password="" type="default,dun,mms" authtype="0" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP" roaming_protocol="IP" bearer="14" />
+  <apn carrier="LTE IMS" mcc="311" mnc="230" apn="ims.cs4glte.com" type="ims" user="" password="" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP" roaming_protocol="IP" bearer="14" />
+  <apn carrier="LTE ADMIN" mcc="311" mnc="230" apn="admin.cs4glte.com" type="fota" user="" password="" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP" roaming_protocol="IP" bearer="14" />
+  <apn carrier="LTE Tethering" mcc="311" mnc="230" apn="tethering.cs4glte.com" type="tethering" user="" password="" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP" roaming_protocol="IP" bearer="14" />
+  <apn carrier="EHRPD INTERNET" mcc="311" mnc="230" apn="Internet.cs4glte.com" user="" password="" type="default,dun,mms" authtype="0" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP" roaming_protocol="IP" bearer="13" />
+  <apn carrier="EHRPD IMS" mcc="311" mnc="230" apn="ims.cs4glte.com" type="ims" user="" password="" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP"  roaming_protocol="IP" bearer="13" />
+  <apn carrier="EHRPD ADMIN" mcc="311" mnc="230" apn="admin.cs4glte.com" type="fota" user="" password="" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP" roaming_protocol="IP" bearer="13" />
+  <apn carrier="EHRPD Tethering" mcc="311" mnc="230" apn="tethering.cs4glte.com" type="tethering" user="" password="" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy = "66.175.144.91" mmsport = "80" protocol="IP" roaming_protocol="IP" bearer="13" />
+<!-- END C Spire -->
+
 </apns>
