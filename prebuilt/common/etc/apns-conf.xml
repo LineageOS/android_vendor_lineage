@@ -1407,7 +1407,7 @@
   <apn carrier="OLA" mcc="732" mnc="111" apn="internet" user="internet" password="internet" type="default,supl" />
   <apn carrier="OLA MMS" mcc="732" mnc="111" apn="mms.comcel.com.co" mmsc="http://mms.ola.com.co" mmsproxy="200.058.228.081" mmsport="9201" type="mms" />
   <apn carrier="Movistar CO" mcc="732" mnc="123" apn="internet.movistar.com.co" user="movistar" password="movistar" type="default,supl" />
-  <apn carrier="Digitel" mcc="734" mnc="02" apn="gprsweb.digitel.ve" proxy="213.026.205.001" type="default,supl" />
+  <apn carrier="Digitel" mcc="734" mnc="02" apn="gprsweb.digitel.ve" type="default,supl" />
   <apn carrier="Digitel MMS" mcc="734" mnc="02" apn="expresate.digitel.ve" mmsc="http://expresate.digitel.ve" mmsproxy="213.026.205.001" mmsport="8080" type="mms" />
   <apn carrier="Movistar VE" mcc="734" mnc="04" apn="internet.movistar.ve" mmsc="http://mms.movistar.ve" mmsproxy="200.35.64.73" mmsport="9001" type="default,supl,mms" />
   <apn carrier="Movilnet" mcc="734" mnc="06" apn="int.movilnet.com.ve" type="default,supl" />
