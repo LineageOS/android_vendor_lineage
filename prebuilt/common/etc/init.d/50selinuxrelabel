@@ -1,0 +1,46 @@
+#!/system/bin/sh
+
+L="log -p i -t SELinuxLabel"
+
+# Bail out early if not on a SELinux build
+getprop ro.build.selinux | grep -q 1 || exit
+if [ ! -f /file_contexts ]; then
+  exit
+fi
+
+LABELDATA=0
+LABELSYS=0
+
+# Test /data
+ls -Zd /data/anr | grep -q unlabeled
+if [ $? -eq 0 ]; then
+  $L "userdata is unlabeled, fixing..."
+  LABELDATA=1
+fi
+
+ls -Z /system/bin/surfaceflinger | grep -q unlabeled
+if [ $? -eq 0 ]; then
+  $L "system is unlabeled, fixing... (You really should update your recovery)"
+  LABELSYS=1
+fi
+
+ls -Z /system/app/GoogleServicesFramework.apk | grep -q unlabeled
+if [ $LABELSYS = "0" -a $? -eq 0 ]; then
+  $L "Found unlabeled Google framework, fixing..."
+  LABELSYS=1
+fi
+
+
+if [ $LABELSYS = "1" ]; then
+  busybox mount -o remount,rw /system
+  $L "/system relabel starting..."
+  restorecon -R /system
+  $L "/system relabel complete"
+  busybox mount -o remount,ro /system
+fi
+
+if [ $LABELDATA = "1" ]; then
+  $L "/data relabel starting..."
+  restorecon -R /data
+  $L "/data relabel complete"
+fi
