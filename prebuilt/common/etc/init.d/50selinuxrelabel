@@ -12,7 +12,7 @@ LABELDATA=0
 LABELSYS=0
 
 # Test /data
-ls -Zd /data/anr | grep -q unlabeled
+ls -Zd /data/system | grep -q unlabeled
 if [ $? -eq 0 ]; then
   $L "userdata is unlabeled, fixing..."
   LABELDATA=1
