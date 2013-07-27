@@ -19,7 +19,7 @@
 
 <!-- use empty string to specify no proxy or port -->
 <!-- This version must agree with that in apps/common/res/apns.xml -->
-<apns version="7">
+<apns version="8">
   <apn carrier="MobiPCS" mcc="310" mnc="00" apn="MobiPCS" user="@mobipcs.com" password="mobipcs" mmsc="http://mms.mobipcs.com" authtype="3" type="*" />
   <apn carrier="Cricket" mcc="310" mnc="16" apn="wap.mycricket.com" user="@mycricket.com" password="cricket" mmsc="http://mms.mycricket.com/servlets/mms" mmsproxy="" mmsport="" proxy="wap.mycricket.com" port="8080" authtype="2" type="*" />
   <apn carrier="Cellular South" mcc="310" mnc="023" apn="internet" mmsc="http://pix.cellularsouth.com/servlets/mms" authtype="3" port="" mmsport="" type="mms" />
