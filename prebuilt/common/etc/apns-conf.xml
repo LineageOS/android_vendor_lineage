@@ -1043,6 +1043,7 @@
   <apn carrier="Jawwal WAP" mcc="425" mnc="05" apn="wap" proxy="213.244.118.129" port="8080" type="default,supl" />
   <apn carrier="Jawwal MMS" mcc="425" mnc="05" apn="mms" mmsc="http://mms.jawwal.ps/servlets/mms" mmsproxy="213.244.118.129" mmsport="8080" type="mms" />
   <apn carrier="Pelephone Internet Static" mcc="425" mnc="03" apn="org.pelephone.net.il" user="pcl@rsingle" password="pcl" type="default,supl" />
+  <apn carrier="YouPhone 3G" mcc="425" mnc="14" apn="data.youphone.co.il" mmsc="http://192.168.220.15/servlets/mms" mmsport="80" type="default,supl,mms" />
   <apn carrier="BATELCO BH" mcc="426" mnc="01" apn="internet.batelco.com" user="internet" password="internet" type="default,supl" />
   <apn carrier="BATELCO BH MMS" mcc="426" mnc="01" apn="mms.batelco.com" user="wap" password="wap" mmsc="http://192.168.36.10/servlets/mms" mmsproxy="192.168.1.2" mmsport="80" type="mms" />
   <apn carrier="MTC Vodafone BH" mcc="426" mnc="02" apn="internet" user="internet" password="internet" type="default,supl" />
