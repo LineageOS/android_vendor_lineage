@@ -1214,6 +1214,8 @@
   <apn carrier="TrueMove-H MMS" mcc="520" mnc="00" apn="hmms" user="true" password="true" mmsc="http://mms.trueh.com:8002" mmsproxy="10.4.7.39" mmsport="8080" type="mms" />
   <apn carrier="AIS GPRS Internet" mcc="520" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="AIS MMS" mcc="520" mnc="01" apn="multimedia" mmsc="http://mms.mobilelife.co.th" mmsproxy="203.170.229.34" mmsport="8080" type="mms" />
+  <apn carrier="DTAC MMS" mcc="520" mnc="05" apn="mms" mmsc="http://mms2.dtac.co.th:8002" mmsproxy="10.10.10.10" mmsport="8080" type="mms" />
+  <apn carrier="DTAC GPRS WEB" mcc="520" mnc="05" apn="www.dtac.co.th" type="default,supl" />
   <apn carrier="TOT 3G" mcc="520" mnc="15" apn="internet" type="default,supl" />
   <apn carrier="TOT 3G MMS" mcc="520" mnc="15" apn="mms" mmsc="http://mms.tot3g.net:8002" mmsproxy="10.218.24.83" mmsport="8080" type="mms" />
   <apn carrier="DTAC MMS" mcc="520" mnc="18" apn="mms" mmsc="http://mms.dtac.co.th:8002" mmsproxy="203.155.200.133" mmsport="8080" type="mms" />
