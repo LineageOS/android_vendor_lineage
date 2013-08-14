@@ -1420,6 +1420,8 @@
   <apn carrier="Viva MMS" mcc="736" mnc="01" apn="mms.nuevatel.com" server="mmsgw.nuevatel.com:1981" mmsc="http://mmsgw.nuevatel.com:1981" mmsproxy="192.168.101.4" mmsport="3128" type="mms" />
   <apn carrier="Movistar EC" mcc="740" mnc="00" apn="internet.movistar.com.ec" type="default,supl" />
   <apn carrier="Porta EC" mcc="740" mnc="010" apn="internet.porta.com.ec" type="default,supl" />
+  <apn carrier="Internet Personal" mcc="744" mnc="05" apn="internet" type="default,supl" />
+  <apn carrier="MMS Personal" mcc="744" mnc="05" apn="mms" mmsc="http://mms.personal.com.py" mmsproxy="172.16.192.7" mmsport="8080" type="mms" />
   <apn carrier="Ancel" mcc="748" mnc="01" apn="ancel" type="default,supl" />
   <apn carrier="Ancel MMS" mcc="748" mnc="01" apn="mms" mmsc="http://mmsc.mms.ancelutil.com.uy" mmsproxy="200.40.246.2" mmsport="3128" type="mms" />
   <apn carrier="Antel" mcc="748" mnc="01" apn="wap" proxy="200.40.246.2" port="3128" server="www.dale.com.uy" mmsc="http://mmsc.mms.ancelutil.com.uy" mmsproxy="200.40.246.2" mmspor="3128" type="default,supl,mms" />
