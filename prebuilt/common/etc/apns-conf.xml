@@ -49,6 +49,8 @@
   <apn carrier="rabo.plus" mcc="204" mnc="20" apn="rabo.plus" type="default,supl" />
   <apn carrier="Proximus MMS" mcc="206" mnc="01" apn="event.proximus.be" user="mms" password="mms" mmsc="http://mmsc.proximus.be/mms" mmsproxy="10.55.14.75" mmsport="8080" type="mms" />
   <apn carrier="Proximus Internet" mcc="206" mnc="01" apn="internet.proximus.be" type="default,supl" />
+  <apn carrier="Eastlink Internet" mcc="206" mnc="01" apn="wisp.mobi.eastlink.ca" type="default,supl" />
+  <apn carrier="Eastlink MMS" mcc="206" mnc="01" apn="mms.mobi.eastlink.ca" mmsc="http://mmss.mobi.eastlink.ca" mmsproxy="10.232.12.49" mmsport="8080" type="mms" />
   <apn carrier="Mobistar MMS" mcc="206" mnc="10" apn="mms.be" user="mobistar" password="mobistar" mmsc="http://mmsc.mobistar.be" mmsproxy="212.65.63.143" mmsport="8080" type="mms" />
   <apn carrier="Mobistar" mcc="206" mnc="10" apn="mworld.be" user="mobistar" password="mobistar" proxy="212.65.63.143" port="8080" type="default,supl" />
   <apn carrier="Telenet" mcc="206" mnc="05" apn="telenetwap.be" type="default,supl" />
@@ -528,6 +530,8 @@
   <apn carrier="Telus SP" mcc="302" mnc="220" apn="sp.telus.com" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
   <apn carrier="Telus SP Tether" mcc="302" mnc="220" apn="isp.telus.com" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
   <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" proxy="74.49.0.18" port="80" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
+  <apn carrier="Eastlink Internet" mcc="302" mnc="270" apn="wisp.mobi.eastlink.ca" type="default,supl" />
+  <apn carrier="Eastlink MMS" mcc="302" mnc="270" apn="mms.mobi.eastlink.ca" mmsc="http://mmss.mobi.eastlink.ca" mmsproxy="10.232.12.49" mmsport="8080" type="mms" />
   <apn carrier="Mobilicity MMS" mcc="302" mnc="320" apn="mms.davewireless.com" mmsc="http://mms.mobilicity.net" mmsproxy="10.100.3.4" mmsport="8080" type="mms" />
   <apn carrier="Mobilicity" mcc="302" mnc="320" apn="wap.davewireless.com" user="dave" password="password" type="default,supl" />
   <apn carrier="Fido LTE" mcc="302" mnc="370" apn="ltemobile.apn" mmsc="http://mms.fido.ca" mmsproxy="205.151.11.13" mmsport="80" type="default,supl,mms" />
