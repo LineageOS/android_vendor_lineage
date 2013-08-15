@@ -259,5 +259,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION)
 
-
+-include vendor/cm/sepolicy/sepolicy.mk
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
