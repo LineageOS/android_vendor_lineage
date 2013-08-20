@@ -22,4 +22,5 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     VisualizationWallpapers \
-    PhaseBeam
+    PhaseBeam \
+    VideoEditor
