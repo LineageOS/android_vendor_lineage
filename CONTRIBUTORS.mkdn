@@ -44,6 +44,8 @@ Maintainers (CyanogenMod 10.1):
 * __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
 * __Samsung Galaxy S (GT-I9000):__ pawitp
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
+* __Samsung Galaxy S II (T-Mobile) (SGH-T989):__ mikeyman77
+* __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
 * __Samsung Galaxy S II (AT&T) (SGH-I777):__ Entropy512
 * __Samsung Galaxy S II (intl) (GT-I9100):__ codeworkx, Espenfjo
 * __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx
