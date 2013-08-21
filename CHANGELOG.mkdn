@@ -8,6 +8,15 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 CHANGELOG (notable new features)
 ---------
 
+### 10.2.0
+* Common: Android 4.3 (Google)
+
+### 10.1.2
+* Master Key #2 fix
+
+### 10.1.1
+* Master Key #1 fix
+
 ### 10.1.0
 * Common: Android 4.2.2 (Google)
 * Common: cLock Lockscreen and Homescreen Widget
