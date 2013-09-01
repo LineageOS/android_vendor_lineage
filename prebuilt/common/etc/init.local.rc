@@ -49,12 +49,3 @@ service sysinit /system/bin/sysinit
     user root
     oneshot
     disabled
-
-# Block stock OTA activities
-service otablock /system/bin/otablock
-    user root
-    oneshot
-    disabled
-
-on property:dev.bootcomplete=1
-    start otablock
