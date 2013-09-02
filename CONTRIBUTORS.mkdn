@@ -87,25 +87,23 @@ General developers:
 Translators:
 ------------
 * __Afrikaans:__ Corrie Meyer, David van Tonder
-* __Catalan:__ Oriol Pellicer
-* __Croatian:__ Antonio Marin
+* __Catalan:__ Arnau Llovet Vidal
+* __Chinese (Simplified):__ Andrew Jiang, John Hsing, Engle Mars
+* __Chinese (Traditional):__ Li Chi Tung, Fu-Chun Hsu
 * __Czech:__ Ondrej Zima, Radovan Kepak, Pavel Kucera, Jozka Jozin, Jiri Silvarich, Vaclav Moucha
-* __Dutch:__ Marco Brohet, Kasper Hettinga, Sam Segers, Bart Tiemersma, Eddy Witkamp
-* __Finnish:__ Antti Leukkunen, Niko Koivu
-* __French:__ Sébastien Vaucher, David Girault, Tanguy Pruvot
-* __German:__ Kim Lê, Jacob Müller, Patrick Schaaf, Christoph Quiter, Markus Hoeber, Matthias Büchner, Danny Baumann
-* __Greek:__ Michael Bestas
+* __Danish:__ Jacob Overgaard Madsen, Morten Jørgensen, Henning Nielsen Lund, Mikael Jepsen
+* __Dutch:__ Marco Brohet, Kasper Hettinga, Eddy Witkamp
+* __Finnish:__ Niko Koivu
+* __French:__ Delphin PETER, Eric Mourougandy, Léo Colombaro, Florent Imfloflo, Tanguy Pruvot, Matthias Bosc
+* __German:__ Kim Lê, Jacob Müller, Christoph Quiter, Markus Hoeber, Danny Baumann
+* __Greek:__ Michael Bestas, Vasilis Akritas
 * __Hungarian:__ Tamás Tóth, Dávid László, Dániel Buga
-* __Italian:__ Francesco Foresta, Moreno Pojer, Eugenio Ziliotto, Giulio Cervera, Mauro Bazzano
-* __Japanese:__ Takuo Kitame
-* __Korean:__ Inseok Lee
-* __Polish:__ Maciej Rozbicki
-* __Portuguese-Brazil:__ Gustavo Rosa
-* __Portuguese:__ Eduardo Martins, Ricardo Pinho
-* __Russian:__ OlegKrikun, Pavel Volkov, Kir Kolyshkin
-* __Simplified Chinese:__ comercy, Qian Zheng, Andrew Jiang, John Hsing
-* __Slovak:__ Juraj Janecek
-* __Spanish:__ PeRiJeY, KalimochoAz, Chuckycrx, Jorge Ruesga, djMesias
-* __Swedish:__ Patrik Kullman
-* __Traditional Chinese:__ Ladios Jonquil
-* __Turkish:__ Ethem Evlice (androidmeda)
+* __Italian:__ Francesco Foresta, Mauro Bazzano
+* __Japanese:__ Takuo Kitame, Taichi Nishimura
+* __Norwegian:__ Odin Ugedal, Arne Coucheron
+* __Polish:__ Tomasz Popielarczyk c.s.
+* __Portuguese (Brazilian):__ Gustavo Rosa, Pedro Carneiro, Emerson Pinter
+* __Russian:__ Pavel Volkov, Vladislav Koldobskiy, Vladimir Belkov
+* __Slovak:__ Dusan Kazik
+* __Spanish:__ Jorge Ruesga, Lorenzo M. Castaño
+* __Swedish:__ Simon Bäck, Ted Lundwall, Esa Laukkanen, Björn Lundén
