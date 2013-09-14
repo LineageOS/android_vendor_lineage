@@ -15,12 +15,20 @@ include vendor/cm/config/cm_audio.mk
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    HoloSpiralWallpaper \
-    MagicSmokeWallpapers \
-    NoiseField \
     Galaxy4 \
+    HoloSpiralWallpaper \
     LiveWallpapers \
     LiveWallpapersPicker \
-    VisualizationWallpapers \
+    MagicSmokeWallpapers \
+    NoiseField \
     PhaseBeam \
-    VideoEditor
+    VisualizationWallpapers \
+    PhotoTable
+
+PRODUCT_PACKAGES += \
+    VideoEditor \
+    libvideoeditor_jni \
+    libvideoeditor_core \
+    libvideoeditor_osal \
+    libvideoeditor_videofilters \
+    libvideoeditorplayer
