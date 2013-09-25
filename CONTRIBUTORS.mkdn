@@ -11,7 +11,7 @@ Maintainers (CyanogenMod 10.2):
 * __Asus EeePad Transformer Pad TF300T:__ xplodwild
 * __Asus EeePad Transformer Pad Infinity TF700T:__ dasunsrule32
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
-* __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz
+* __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
 * __Google Nexus S:__ burnsra, KalimochoAz
 * __Google Nexus 4:__ rmcc
 * __Google Nexus 7:__ burnsra, fattire, nemith (GSM)
@@ -20,6 +20,7 @@ Maintainers (CyanogenMod 10.2):
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One (GSM):__ codeworkx, h8rift
 * __HTC One (Sprint):__ kushdeck, toastcfh
+* __HTC One (Verizon):__ flyhalf205
 * __HTC One S:__ intervigil, xkonni
 * __HTC One X+:__ Lloir, tombriden
 * __HTC One XL:__ h8rift, intervigil
