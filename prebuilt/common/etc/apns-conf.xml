@@ -132,7 +132,7 @@
   <apn carrier="T-Mobile HR" mcc="219" mnc="01" apn="web.htgprs" type="default,supl" />
   <apn carrier="Tele2 HR" mcc="219" mnc="02" apn="wap.tele2.hr" mmsc="http://mmsc.tele2.hr" mmsproxy="193.12.40.66" mmsport="8080" type="default,supl,mms" />
   <apn carrier="VIPnet" mcc="219" mnc="10" apn="gprs0.vipnet.hr" type="default,supl" />
-  <apn carrier="VIPnet" mcc="219" mnc="10" apn="data.cip.hr" user="38591" password="38591" server="219.91.99.91" type="default,supl" />
+  <apn carrier="VIPnet" mcc="219" mnc="10" apn="data.vip.hr" user="38591" password="38591" server="219.91.99.91" type="default,supl" />
   <apn carrier="VIPnet MMS" mcc="219" mnc="10" apn="mms.vipnet.hr" mmsc="http://mms.vipnet.hr/servlets/mms" mmsproxy="212.91.99.91" mmsport="8080" type="mms" />
   <apn carrier="Telenor RS" mcc="220" mnc="01" apn="internet" user="telenor" password="gprs" proxy="217.65.192.33" port="8080" type="default,supl,mms" />
   <apn carrier="Telenor RS MMS" mcc="220" mnc="01" apn="mms" mmsc="http://mms.telenor.rs/servlets/mms" mmsproxy="217.65.192.33" mmsport="8080" type="default,supl,mms" />
