@@ -1076,6 +1076,7 @@
   <apn carrier="SK Telecom (Roaming)" mcc="450" mnc="05" apn="roaming.sktelecom.com" server="*" mmsc="vmms.nate.com" mmsport="8082" type="default,supl,mms" />
   <apn carrier="SKT LTE" mcc="450" mnc="05" apn="lte.sktelecom.com" mmsc="http//omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" type="defaul,supl,mms" />
   <apn carrier="KT-HSDPA" mcc="450" mnc="08" apn="alwayson-r6.ktfwing.com" mmsc="http://mmsc.ktfwing.com:9082" type="default,supl,mms" />
+  <apn carrier="KT-LTE" mcc="450" mnc="08" apn="lte.ktfwing.com" mmsc="http://mmsc.ktfwing.com:9082" type="default,supl,mms"/>
   <apn carrier="Mobifone MMS" mcc="452" mnc="01" apn="m-i090" user="wap" password="wap" mmsc="http://203.162.21.114/mmsc" mmsproxy="203.162.21.114" mmsport="8000" type="mms" />
   <apn carrier="Mobifone" mcc="452" mnc="01" apn="m-wap" user="mms" password="mms" type="default,supl" />
   <apn carrier="Vinaphone MMS" mcc="452" mnc="02" apn="m3-mms" user="mms" password="mms" mmsc="http://mms.vinaphone.vnn.vn:8002" mmsproxy="10.1.10.46" mmsport="9201" type="mms" />
