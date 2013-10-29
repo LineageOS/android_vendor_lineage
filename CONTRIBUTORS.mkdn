@@ -21,7 +21,7 @@ Maintainers (CyanogenMod 10.2):
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One (GSM):__ codeworkx, h8rift
 * __HTC One (Sprint):__ kushdeck, toastcfh
-* __HTC One (Verizon):__ flyhalf205
+* __HTC One (Verizon):__ flyhalf205, mdmower
 * __HTC One S:__ intervigil, xkonni
 * __HTC One X+:__ Lloir, tombriden
 * __HTC One XL:__ h8rift, intervigil
