@@ -187,8 +187,6 @@ PRODUCT_PACKAGES += \
     gdbserver \
     micro_bench \
     oprofiled \
-    procmem \
-    procrank \
     sqlite3 \
     strace
 
@@ -210,6 +208,8 @@ PRODUCT_PACKAGES += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
 PRODUCT_PACKAGES += \
+    procmem \
+    procrank \
     CMUpdater \
     Superuser \
     su
