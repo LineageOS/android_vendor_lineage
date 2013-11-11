@@ -1,0 +1,1 @@
+genfscon fuseblk / u:object_r:sdcard_external:s0

@@ -10,5 +10,6 @@ BOARD_SEPOLICY_UNION += \
     file.te \
     file_contexts \
     fs_use \
+    genfs_contexts \
     seapp_contexts \
     mac_permissions.xml
