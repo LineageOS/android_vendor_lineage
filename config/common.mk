@@ -142,7 +142,8 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     VoiceDialer \
     SoundRecorder \
-    Basic
+    Basic \
+    libemoji
 
 # Custom CM packages
     #Trebuchet \
