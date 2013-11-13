@@ -164,6 +164,8 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMFileManager \
     LockClock \
+    CMUpdater \
+    CMFota \
     CMAccount
 
 # CM Hardware Abstraction Framework
@@ -217,7 +219,6 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
-    CMUpdater \
     Superuser \
     su
 
@@ -229,9 +230,6 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 else
-
-PRODUCT_PACKAGES += \
-    CMFota
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0
