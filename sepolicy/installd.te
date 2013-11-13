@@ -1,0 +1,3 @@
+# Allow querying of asec size on SD card
+allow installd sdcard_external:dir { search };
+allow installd sdcard_external:file { getattr };
