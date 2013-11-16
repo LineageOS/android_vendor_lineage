@@ -24,7 +24,7 @@ if [ $? -eq 0 ]; then
   LABELSYS=1
 fi
 
-ls -Z /system/app/GoogleServicesFramework.apk | grep -q unlabeled
+ls -Z /system/priv-app/GoogleServicesFramework.apk | grep -q unlabeled
 if [ $LABELSYS = "0" -a $? -eq 0 ]; then
   $L "Found unlabeled Google framework, fixing..."
   LABELSYS=1
