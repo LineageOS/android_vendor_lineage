@@ -12,7 +12,7 @@ Maintainers (CyanogenMod 10.2):
 * __Asus EeePad Transformer Pad Infinity TF700T:__ dasunsrule32
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
-* __Google Nexus S:__ burnsra, KalimochoAz
+* __Google Nexus S:__ burnsra, KalimochoAz, klusark
 * __Google Nexus 4:__ rmcc
 * __Google Nexus 7:__ burnsra, fattire, nemith (GSM)
 * __Google Nexus 10:__ atinm, dalingrin, kornyone, gweedo767
