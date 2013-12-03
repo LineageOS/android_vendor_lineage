@@ -19,4 +19,14 @@
 <resources>
     <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
 
+    <!-- Circle -->
+    <integer name="def_battery_style">2</integer>
+    <!-- Enable notification counters in statusbar -->
+    <integer name="def_notif_count">1</integer>
+    <!-- Right QS pulldown -->
+    <integer name="def_qs_quick_pulldown">1</integer>
+    <!-- Default lockscreen targets -->
+    <string name="def_lockscreen_targets">#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.
+
+
 </resources>
