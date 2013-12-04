@@ -1,14 +1,14 @@
 CyanogenMod
 ===========
 
-Maintainers (CyanogenMod 10.2):
+Maintainers (CyanogenMod 11.0):
 -----------------------------
 * __Acer A700:__ pawitp
 * __Amazon Kindle Fire 1st Edition:__ Hashcode
 * __Amazon Kindle Fire 2nd Edition:__ Hashcode
 * __Asus EeePad Transformer (TF101):__ Bumble-Bee, EnJens
 * __Asus EeePad Transformer Prime (TF201):__ Bumble-Bee, EnJens
-* __Asus EeePad Transformer Pad TF300T:__ xplodwild
+* __Asus EeePad Transformer Pad TF300T:__
 * __Asus EeePad Transformer Pad Infinity TF700T:__ dasunsrule32
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
@@ -42,11 +42,12 @@ Maintainers (CyanogenMod 10.2):
 * __Motorola Xoom (WiFi):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
+* __Oppo Find 5__: nebkat
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos
 * __Samsung Exhilarate (SGH-I577):__ mikeyman77, carvsdriver
 * __Samsung Fascinate / Mesmerize (SCH-I500):__ jt1134, sbrissen
-* __Samsung Galaxy Note (GT-N7000):__ Entropy512, Espenfjo
+* __Samsung Galaxy Note (GT-N7000):__ Espenfjo
 * __Samsung Galaxy Note II (GT-N7100):__ nebkat
 * __Samsung Galaxy Note II LTE (GT-N7105):__ codeworkx
 * __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ codeworkx, cyanogen
@@ -54,7 +55,7 @@ Maintainers (CyanogenMod 10.2):
 * __Samsung Galaxy Note II LTE (Verizon) (SCH-I605):__ sbrissen
 * __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen
 * __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
-* __Samsung Galaxy Note 10.1 (GT-N80XX):__ Entropy512, Espenfjo
+* __Samsung Galaxy Note 10.1 (GT-N80XX):__ Espenfjo
 * __Samsung Galaxy Note 10.1 LTE (Verizon) (SCH-I925):__ sbrissen
 * __Samsung Galaxy R (GT-I9103):__ Adam77Root, Epsylon3
 * __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
@@ -62,12 +63,12 @@ Maintainers (CyanogenMod 10.2):
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
 * __Samsung Galaxy S II (T-Mobile) (SGH-T989):__ mikeyman77
 * __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
-* __Samsung Galaxy S II (AT&T) (SGH-I777):__ Entropy512
+* __Samsung Galaxy S II (AT&T) (SGH-I777):__
 * __Samsung Galaxy S II (intl) (GT-I9100):__ codeworkx, Espenfjo
 * __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen
 * __Samsung Galaxy S III (Cricket) (SCH-R530):__ noobnl
-* __Samsung Galaxy S III (intl) (GT-I9300):__ xplodwild, codeworkx
+* __Samsung Galaxy S III (intl) (GT-I9300):__ codeworkx
 * __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith, codeworkx
 * __Samsung Galaxy S III (MetroPCS) (SCH-R530):__ noobnl
 * __Samsung Galaxy S III (Sprint) (SPH-L710):__ mkasick, noobnl
@@ -90,11 +91,11 @@ Maintainers (CyanogenMod 10.2):
 * __Sony Xperia SP (huashan):__ jerpelea, Kali- (FreeXperia team), adfad666, uberlaggydarwin
 * __Sony Xperia T (mint):__ jerpelea, Kali- (FreeXperia team), codeworkx, cdesai, tilal6991
 * __Sony Xperia V (tsubasa):__ jerpelea, Kali- (FreeXperia team), codeworkx, tilal6991, championswimmer
-* __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, codeworkx, Entropy512, championswimmer
+* __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, codeworkx, championswimmer
 * __Sony Xperia ZL (odin):__ jerpelea, Kali- (FreeXperia team), championswimmer
 * __Sony Xperia ZR (dogo):__ jerpelea, Kali- (FreeXperia team)
 * __Sony Xperia Tablet Z LTE (pollux):__ jerpelea, Kali- (FreeXperia team), codeworkx
-* __Sony Xperia Tablet Z Wifi (pollux_windy):__ jerpelea, Kali- (FreeXperia team), Bumble-Bee, Entropy512
+* __Sony Xperia Tablet Z Wifi (pollux_windy):__ jerpelea, Kali- (FreeXperia team), Bumble-Bee
 * __Sony Xperia Z Ultra (togari):__ jerpelea, Kali- (FreeXperia team)
 * __Sony Xperia Z1 (honami):__ jerpelea, Kali- (FreeXperia team)
 
@@ -102,7 +103,7 @@ Maintainers (CyanogenMod 10.2):
 General developers:
 -------------------
 * __UI Team:__ blunden, prash
-* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, mad-murdock, maniac103, Kaik541
+* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, maniac103, Kaik541
 * __Other:__ jruesga
 
 Translators:
@@ -128,3 +129,14 @@ Translators:
 * __Slovak:__ Dusan Kazik
 * __Spanish:__ Jorge Ruesga, Lorenzo M. Castaño
 * __Swedish:__ Simon Bäck, Ted Lundwall, Esa Laukkanen, Björn Lundén
+
+Graphics and Assets:
+--------------------
+* __Wallpapers:__ Matthew Hanley, Henry Mason
+* __Icons:__ Bjorn Lunden, Henry Mason
+* __Bootanimation:__ Dima Skvarskyi
+
+Former Contributors:
+--------------------
+* __Devices:__ Entropy512, xplodwild
+* __Features:__ mad-murdock, wysie, Ander Webbs, ChainsDD, xplodwild

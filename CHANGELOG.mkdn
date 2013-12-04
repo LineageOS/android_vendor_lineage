@@ -1,15 +1,27 @@
 CyanogenMod
 ===============
 
-Visit http://github.com/CyanogenMod for full changelogs and git access.
+Visit http://github.com/CyanogenMod for full source and git access.
 
 Visit http://review.cyanogenmod.org for our Gerrit instance.
 
 CHANGELOG (notable new features)
 ---------
 
+### 11.0.0
+* Common: Android 4.4 (Google)
+
 ### 10.2.0
 * Common: Android 4.3 (Google)
+* Common: Privacy Guard 2.0 with AppOps
+* Common: Quick Settings Ribbon (replaces Notification Power Widgets)
+* Common: Hardware Tunables HAL
+* Common: Settings restructure
+* SMS: Voice+ (Google Voice integration)
+* SMS: Middleware layer
+* APN: World Phone Support (unified APN list)
+* Trebuchet: Universal Icon Pack support
+* Various small bugfixes, global and device-specific
 
 ### 10.1.3
 * Common: CyanogenMod Account
@@ -228,164 +240,3 @@ CHANGELOG (notable new features)
 * Supersonic: WiMAX support - HTC, Shinzul, toastcfh, shift, #teamwin, Cyanogen, Joey Conway
 * Supersonic: HDMI mirror support: #teamwin
 * ONE: Enabled native WiFi tethering - arcee
-
-### 6.1.3
-* Ace: Fix issue with some BT Headset
-
-### 6.1.2
-* Ace: Kernel to 2.6.32.27 and some performance tweaks
-
-### 6.1.1
-* Common: Add rotary lockscreen - Kmobs/Robert Burns
-* Common: Updated translations - (everyone)
-* Common: Push update notificatiosn - Chris Soyars
-* Common: Fix camera sounds - CAF/Cyanogen/mtwebster
-* N1/DS/Supersonic/Bravo(c): Kernel performance tweaks and fixes (various)
-* N1: Update build fingerprint
-* Vision: Fix MMS over WiFi calling - Zinx
-* Vision: Add console=null to kernel command line - Adam Tygart
-* Vision: Kernel to 2.6.32.27 and some performance tweaks
-* Droid: FRG83D fingerprint, translations, camera, torch fixes
-
-### 6.1.0
-* Common: Update to Android 2.2.1
-* Common: Various bugfixes from AOSP and CodeAurora
-* Common: ADWLauncher 1.3.3 - Ander Webbs
-* Common: Configurable audio focus for music app - Jonas Larsson
-* Common: APN cleanup (fixes many issues with GPS and MMS) - Cyanogen
-* Common: Use ARMv6 optimizations for DS/Hero targets - Ninpo
-* Common: AudioDSP updates - Antti S. Lankila
-* Common: Status bar themes - Michael Webster
-* Common: Email app updates** - Michael Webster
-* Common: Selected kernel optimizations - Kernelzilla
-* Common: EMMC support - Koush
-* Common: Camcorder touch-to-focus - Cyanogen
-* Common: Notification "quiet hours" - Evan Charlton
-* Common; Superuser 2.3.6 - Adam Shanks (ChainsDD)
-* Common: Camera/camcorder continuous autofocus - Cyanogen
-* Common: Camera option sliders - Cyanogen
-* Common: Control locking of MMS app in memory - Julian J. M
-* Common: Kill foreground app by long-pressing back - Evan Charlton
-* Common: New AppWidgetPicker dialog - boombuler@XDA
-* Common: FileManager app - OpenIntents (graphics update from Fitsnugly)
-* Common: Anonymous install statistics gathering - Chris Soyars
-* Common: Stable shot camera mode - Cyanogen
-* Common: Dual-mode snooze (long press dismiss) - Evan Charlton
-* Common: Compose SMS/MMS via search button long press - Wes Garner
-* Common: Notification category support - Pedlar
-* Common: Galaxy S style power widget in notification bar - Pedlar
-* Common: Autodetect if we should use /cache for system dex files - Kali-
-* Common: Quick PIN unlock - gsarrica
-* Common: Increase performance of Gallery3D caching system - Androbot
-* Common: Gallery3D bugfixes and improvements - CodeAurora
-* Common: Gallery3D highres patches - Petar Šegina
-* Common: Skia performance enhancements - CodeAurora
-* Common: APN list update - Paul Weiss
-* Common: Fix AGPS issues on all platforms
-* Common: Ability to customize location to save attachments in MMS - Wes Garner
-* Common: Dismiss notifications by swiping - Evan Charlton
-* Common: Enabled Sound Recorder app
-* Common: Bluetooth OBEX performance boost - Sony
-* Common: Updated Terminal Emulator app - Jack Palevich
-* Common: Updated headset drawables - blunden
-* Common: Optional overscrolling - Google, arcee, Robert Burns
-* Common: Messaging/Phone sliders on lockscreen - Rodolfo Hurtado
-* Common: Lockscreen gestures - Michael Webster
-* Common: Camera bugfixes (mostly for Droid) - Michael Webster
-* Common: Bluetooth FTP server profile - CodeAurora
-* Common: New wallpapers - Prash
-* Common: Super duper unified flashlights - Michael Webster
-* Common: Launch applications via DeskClock - Evan Charlton
-* N1/Bravo/Incredible/Supersonic/Vision/Ace: FM Radio support - MIUI - http://miui.com (graphics from Fitsnugly, HaXzAmaTiC, and blunden - bugfixes and extra features from Cyanogen, Zinx, mtwebster, and Wysie))
-* N1/DS/Bravo(c)/Supersonic - Unified kernel (Cyanogen, toastcfh, Kali-, defer, Zinx, ezterry, Pershoot, and others)
-* N1: Increased camera performance - Charan Singh
-* N1: Enhanced battery driver - Roger Podacter, theloginwithnoname
-* DS: Updated hardware drivers from official release
-* DS: CompCache sizes can be adjusted through CMParts - Wes Garner
-* DS: Removed bootloader/radio asserts - GOOD LUCK
-* Supersonic - Kernel 2.6.34 courtesy of Toast and Madcoder
-* Supersonic - Use WiMAX LED for notifications - Cyanogen
-* Bravo: Kernel merged with cm-kernel - Kali, Defer
-* Espresso: Improve backlights - Wes Garner
-* Espresso/Legend/Liberty: Kernel OC patch - dumfuq (no OC by default)
-* Espresso/Legend/Liberty: Using media libs from 2.2
-* Espresso: Fixed Bluetooth SCO
-* Legend/Supersonic: Proper notification light support - Alex Hofbauer
-* Incredible: Enable torch app
-* Incredible: Better internal storage support - Josh Stone
-* Sholes: Enable Torch app - mtwebster
-* Vision: Kernel 2.6.32.26, many improvements, 1.4GHz capable (coolbho3k), new ganeth driver (zinx)
-* Vision: Quickeys implementation - Optedoblivion
-* Vision: Insane GPS fix - Zinx
-* Vision: LED enhancement - Pershoot
-* Droid: Kernel 2.6.32.9
-
-### 6.0.0
-* ANDROID: Google, HTC, Qualcomm, and everybody else.  We <3 U
-* Common: ADWLauncher 1.1.4 - Ander Webbs
-* Common: Music app enhancements - Eliot Stocker
-* Common: Phone mod V.30.1 - cytown
-* Common: WyContacts 1.2 - Wysie (port to Froyo by Sileht)
-* Common: Superuser 2.3.3 - Adam Shanks (ChainsDD)
-* Common: Deskclock extra settings - cyanogen, Michael Webster
-* Common: MMS enhancements from Ruqqq, Takuo Kitame, jeagoss, temporalshadows
-* Common: Improved RTL text rendering - David Kohen, Omri Baumer
-* Common: Themable user interface elements - Wysie, bcrook, jeagoss
-* Common: FLAC playback support - Kenny Root, Cyanogen, Glenn Maynard
-* Common: Lockscreen enhancements - Wysie
-* Common: Long-press home options - Wysie, bcrook
-* Common: OpenVPN support - James Bottomley, Takuo Kitame
-* Common: Br0tips - Kmobs
-* Common: Browser incognito mode - Optedoblivion
-* Common: Zipalign on install (if needed) + system dex cache to /cache - Cyanogen/Chris Soyars
-* Common: Customizable Nexus LWP - Chris Soyars/Cyanogen
-* Common: JIT toggle, configurable heapsize, compcache supprt - Cyanogen
-* Common: Adjustable haptic feedback - Michael Webster
-* Common: Custom wallpapers - jairomeo, prash, SatanR1
-* Common: Battery percentage display - canadiancow, jeagoss
-* Common: Trackball wake, trackball unlock, menu unlock - Jon Boekenoogen/Kmobs
-* Common: Surfaceflinger night mode and effects - Jeff Sharkey, widget from Wysie
-* Common: Reflow webviews on pinch option - Jonas Larsson
-* Common: Enhanced accelerometer settings - Jonas Larsson
-* Common: A2DP bugfixes - Glenn Maynard
-* Common: Browser fullscreen mode and other enhancements - Wysie
-* Common: Major build system enhancements by Chris Soyars & Koush
-* Common: Long press volume buttons to skip songs - Jon Boekenoogen
-* Common: Accelerated ARMv7 JPEG and PNG decoding - Qualcomm
-* Common: Skia acceleration on ARMv7 - Qualcomm
-* Common: Patch wrangling - Cyanogen, Chris Soyars, Koush, Kmobs
-* Common: Bluetooth HID support - Erin Yueh @ 0xlab
-* Common: Mouse pointer support - Chih-Wei Huang (android-x86)
-* Common: Configurable install location + allow move any app to external storage - Cyanogen
-* Common: Busybox and rsync Android ports from Dylex
-* Common: nano, and libncurses are now built from source. - cvpcs
-* Common: Dual camera support - Cyanogen
-* Common: Support for HTC camera firmware with extra features - Cyanogen, Qualcomm
-* Common: Other camera enhancements - Cyanogen
-* Common: Customizable status bar - Michael Webster
-* Common: Lockscreen music controls - Kmobs
-* Common: "Roam Only" mode - jrgutier
-* Common: Mobile data toggle for power widget - Drakaz
-* Common: Exchange support fixes and volume rocker selection - Michael Webster
-* Common: Lock home app in memory option - Cyanogen
-* Common: Audio DSP support (equalizer, virtual room, compressor effects) - Antti S. Lankila
-* Common: Customizable trackball notifications - Pedlar
-* Common: Fully customizable power widget - piafinho
-* Common: Zoom (except in 720p), flash, and other camera parameters can be changed while recording - Cyanogen, Qualcomm
-* Common: New boot animation by 73v1n: http://www.youtube.com/watch?v=LnweaNTtb1k
-* Common: Arabic language support - Aziz Huss, David Kohen
-* Common: Torch app - Ben Buxton, Cyanogen
-* Common: Browser color invert (save battery on AMOLED screens) - Qualcomm
-* Common: Configurable brightness sensor - Jonas Larsson
-* Common: Ad-Hoc wifi support - Petr Havlena
-* Common: Audio focus enhancements - Jonas Larsson
-* Common: Mail folder sync settings - Michael Webster
-* N1/DS/Desire: Kernel 2.6.34.4 with Pershoot/Kmobs clock settings
-* D/S: Camera reverse engineering by NCommander, Eddie Ringle, & Cyanogen
-* D/S: Kernel patches for stability from Zinx Verituse
-* D/S: MT3G Fender/1.2 support from Zinx Verituse
-* D/S: Better media profiles - Charan Singh
-* EVO: Kernel base from toastcfh, display patches from AssassinsLament and netarchy, backport of various features from Cyanogen (2.6.32)
-* EVO: Sprint MMS fixes - Darchstar, toastcfh
-* N1/Desire: True 720P encoding support - HTC, Cyanogen, Charan Singh, Enomther
-* Desire: Kernel base from Kali- & Defer
