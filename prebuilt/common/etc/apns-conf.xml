@@ -1353,7 +1353,7 @@
   <apn carrier="Internet OPT KNC" mcc="546" mnc="01" apn="internet" user="internet" type="default,supl" />
   <apn carrier="3g OPT KNC" mcc="546" mnc="01" apn="3g" user="3g" type="default,supl" />
   <apn carrier="Mms OPT KNC" mcc="546" mnc="01" apn="mms" user="mms" password="mms123" mmsproxy="192.168.39.201" mmsport="3130" mmsc="http://mms.mobitag.nc/mmsc/" type="mms" />
-  <apn carrier="Mobinil MMS" mcc="602" mnc="01" apn="mobinilmms" mmsc="http://10.7.13.24:8002" mmsproxy="62.241.155.54" mmsport="8080" type="mms" />
+  <apn carrier="Mobinil MMS" mcc="602" mnc="01" apn="mobinilmms" mmsc="http://10.7.13.24:8002" mmsproxy="62.241.155.45" mmsport="8080" type="mms" />
   <apn carrier="Mobinil" mcc="602" mnc="01" apn="mobinilweb" type="default,supl" />
   <apn carrier="Vodafone EG" mcc="602" mnc="02" apn="internet.vodafone.net" user="internet" password="internet" type="default,supl" />
   <apn carrier="Vodafone EG MMS" mcc="602" mnc="02" apn="mms.vodafone.com.eg" user="mms" password="mms" mmsc="http://mms.vodafone.com.eg/servlets/mms" mmsproxy="163.121.178.002" mmsport="8080" type="mms" />
