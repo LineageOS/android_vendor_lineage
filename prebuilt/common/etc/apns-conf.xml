@@ -1357,6 +1357,7 @@
   <apn carrier="Mobinil" mcc="602" mnc="01" apn="mobinilweb" type="default,supl" />
   <apn carrier="Vodafone EG" mcc="602" mnc="02" apn="internet.vodafone.net" user="internet" password="internet" type="default,supl" />
   <apn carrier="Vodafone EG MMS" mcc="602" mnc="02" apn="mms.vodafone.com.eg" user="mms" password="mms" mmsc="http://mms.vodafone.com.eg/servlets/mms" mmsproxy="163.121.178.002" mmsport="8080" type="mms" />
+  <apn carrier="Etisalat internet" mcc="602" mnc="03" apn="Etisalat" mmsc="http://10.71.131.7:38090" mmsproxy="10.71.130.29" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Mobilis" mcc="603" mnc="01" apn="internet" user="internet" password="internet" type="default,supl" />
   <apn carrier="Mobilis MMS" mcc="603" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://172.025.049.009/servlets/mms" mmsproxy="172.25.49.2" mmsport="8080" type="mms" />
   <apn carrier="Djezzy" mcc="603" mnc="02" apn="djezzy.internet" type="default,supl,mms" />
