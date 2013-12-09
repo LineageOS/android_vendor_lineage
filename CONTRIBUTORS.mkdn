@@ -55,6 +55,8 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy Note II LTE (Verizon) (SCH-I605):__ sbrissen
 * __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen
 * __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
+* __Samsung Galaxy Note 8.0 3G (GT-N5100):__ sbrissen
+* __Samsung Galaxy Note 8.0 Wifi (GT-N5110):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Espenfjo
 * __Samsung Galaxy Note 10.1 LTE (Verizon) (SCH-I925):__ sbrissen
 * __Samsung Galaxy R (GT-I9103):__ Adam77Root, Epsylon3
