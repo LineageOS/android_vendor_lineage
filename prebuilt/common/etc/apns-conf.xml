@@ -439,7 +439,7 @@
   <apn carrier="Velcom BY // Web 250" mcc="257" mnc="01" apn="web3.velcom.by" user="web3" password="web3" type="default,supl" />
   <apn carrier="MTS BY" mcc="257" mnc="02" apn="mts" user="mts" password="mts" type="default,supl" />
   <apn carrier="MTS BY MMS" mcc="257" mnc="02" apn="mts" user="mts" password="mts" mmsc="http://mmsc" mmsproxy="192.168.192.168" mmsport="8080" type="mms" />
-  <apn carrier="Life:) // Internet" mcc="257" mnc="04" apn="mms.life.com.by" type="default,supl" />
+  <apn carrier="Life:) // Internet" mcc="257" mnc="04" apn="internet.life.com.by" type="default,supl" />
   <apn carrier="Life:) // MMS" mcc="257" mnc="04" apn="mms.life.com.by" mmsc="http://mms.life.com.by/mmsc/" mmsproxy="10.10.10.20" mmsport="8080" type="mms" />
   <apn carrier="Orange MMS" mcc="259" mnc="01" apn="mms.orange.md" mmsc="http://mms/mms" mmsproxy="192.168.127.125" mmsport="3128" type="mms" />
   <apn carrier="Orange IMO" mcc="259" mnc="01" apn="wap.orange.md" proxy="192.168.127.124" mmsport="3128" type="default,supl" />
