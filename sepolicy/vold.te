@@ -5,3 +5,9 @@ allow vold sdcard_external:file create_file_perms;
 relabelto_domain(vold)
 allow vold labeledfs:filesystem { relabelfrom };
 allow vold sdcard_external:filesystem { relabelfrom relabelto };
+
+# Allow vold to access fuse for fuse-based fs
+allow vold fuse_device:chr_file rw_file_perms;
+
+# NTFS-3g wants to drop permission
+allow vold self:capability { setgid setuid };
