@@ -10,6 +10,7 @@ fi
 
 LABELDATA=0
 LABELSYS=0
+LABELDALVIKCACHE=0
 
 # Test /data
 ls -Zd /data/system | grep -q unlabeled
@@ -30,6 +31,18 @@ if [ $LABELSYS = "0" -a $? -eq 0 ]; then
   LABELSYS=1
 fi
 
+ls -Zd /data/dalvik-cache | grep -q unlabeled
+if [ $? -eq 0 ]; then
+  $L "dalvik-cache is unlabeled, fixing..."
+  LABELDALVIKCACHE=1
+fi
+
+ls -Zd /cache/dalvik-cache | grep -q unlabeled
+if [ $? -eq 0 ]; then
+  $L "dalvik-cache is unlabeled, fixing..."
+  LABELDALVIKCACHE=1
+fi
+
 
 if [ $LABELSYS = "1" ]; then
   busybox mount -o remount,rw /system
@@ -46,4 +59,11 @@ if [ $LABELDATA = "1" ]; then
   $L "/cache relabel starting..."
   restorecon -R /cache
   $L "/cache relabel complete"
+fi
+
+if [ $LABELDALVIKCACHE = "1" ]; then
+  $L "dalvik-cache relabel starting..."
+  restorecon -R /data/dalvik-cache
+  restorecon -R /cache/dalvik-cache
+  $L "dalvik-cache relabel complete"
 fi
