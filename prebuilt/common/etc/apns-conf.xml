@@ -516,6 +516,8 @@
   <apn carrier="Eircom/Meteor MMS" mcc="272" mnc="03" apn="wap.mymeteor.ie" user="my" password="meteor" server="http://wap.mymeteor.ie" proxy="10.85.85.85" port="8799" mmsc="http://mms.mymeteor.ie" mmsproxy="10.85.85.85" mmsport="8799" type="mms" />
   <apn carrier="3 IE MMS" mcc="272" mnc="05" apn="3ireland.ie" server="3ireland.ie" mmsc="http://mms.um.3ireland.ie:10021/mmsc" mmsproxy="mms.3ireland.ie" mmsport="8799" type="default,supl,mms" />
   <apn carrier="3 Ireland" mcc="272" mnc="05" apn="3ireland.ie" mmsc="http://mms.um.3ireland.ie:10021/mmsc" mmsproxy="mms.3ireland.ie" mmsport="8799" type="default,supl,mms" />
+  <apn carrier="TMI Internet APN" mcc="272" mnc="11" apn="tescomobile.liffeytelecom.com" type="default,supl" />
+  <apn carrier="TMI MMS APN" mcc="272" mnc="11" apn="tescomobile.liffeytelecom.com" mmsc="http://mmc1/servlets/mms" mmsproxy="10.1.11.19" mmsport="8080" type="mms" />
   <apn carrier="Siminn" mcc="274" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Siminn MMS" mcc="274" mnc="01" apn="mms.simi.is" mmsc="http://mms.simi.is/servlets/mms" mmsproxy="213.167.138.200" mmsport="9201" type="mms" />
   <apn carrier="Vodafone Internet" mcc="274" mnc="02" apn="gprs.is" type="default,supl" />
