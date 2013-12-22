@@ -59,6 +59,7 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy Note 8.0 Wifi (GT-N5110):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Espenfjo
 * __Samsung Galaxy Note 10.1 LTE (Verizon) (SCH-I925):__ sbrissen
+* __Samsung Galaxy Premier (GT-I9260):__ ljzyal
 * __Samsung Galaxy R (GT-I9103):__ Adam77Root, Epsylon3
 * __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
 * __Samsung Galaxy S (GT-I9000):__ pawitp
