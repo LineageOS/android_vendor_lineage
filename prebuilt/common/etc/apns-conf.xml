@@ -1069,7 +1069,7 @@
   <apn carrier="Telenor PK MMS" mcc="410" mnc="06" apn="mms" user="Telenor" password="Telenor" mmsc="http://mmstelenor" mmsproxy="172.18.19.11" mmsport="8080" type="mms" />
   <apn carrier="Warid PK MMS" mcc="410" mnc="07" apn="mms.warid" mmsc="http://10.4.0.132/servlets/MMS" mmsproxy="010.004.002.001" mmsport="8080" type="mms" />
   <apn carrier="Warid PK" mcc="410" mnc="07" apn="warid" type="default,supl" />
-  <apn carrier="Dialog Mobile Broadband" mcc="413" mnc="02" apn="dialogbb" server="dialog" type="default,supl,mms" />
+  <apn carrier="Dialog Mobile Broadband" mcc="413" mnc="02" apn="dialogbb" server="dialog" mmsc="http://mms.dialog.lk:3130/mmsc" mmsproxy="192.168.122.002" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Alfa" mcc="415" mnc="01" apn="internet.mic1.com.lb" user="mic1" password="mic1" type="default,supl" />
   <apn carrier="Alfa MMS" mcc="415" mnc="01" apn="mms.mic1.com.lb" user="mic1" password="mic1" mmsc="http://mms.mic1.com.lb" mmsproxy="192.168.23.51" mmsport="9201" type="mms" />
   <apn carrier="Alfa WAP" mcc="415" mnc="01" apn="wap.mic1.com.lb" user="mic1" password="mic1" proxy="192.168.023.050" port="80" type="default,supl" />
