@@ -9,7 +9,6 @@ if [ ! -f /file_contexts ]; then
 fi
 
 LABELDATA=0
-LABELSYS=0
 LABELDALVIKCACHE=0
 
 # Test /data
@@ -19,23 +18,11 @@ if [ $? -eq 0 ]; then
   LABELDATA=1
 fi
 
-# Recheck other files under /data
+# Double-check other files under /data
 ls -Z /data/misc/wifi/wpa_supplicant.conf | grep -q "wifi_"
 if [ $? -eq 1 ]; then
-  $L "data is unlabeled, fixing..."
+  $L "data is mis-labeled, fixing..."
   LABELDATA=1
-fi
-
-ls -Z /system/bin/surfaceflinger | grep -q unlabeled
-if [ $? -eq 0 ]; then
-  $L "system is unlabeled, fixing... (You really should update your recovery)"
-  LABELSYS=1
-fi
-
-ls -Z /system/priv-app/GoogleServicesFramework.apk | grep -q unlabeled
-if [ $LABELSYS = "0" -a $? -eq 0 ]; then
-  $L "Found unlabeled Google framework, fixing..."
-  LABELSYS=1
 fi
 
 ls -Zd /data/dalvik-cache | grep -q unlabeled
@@ -50,14 +37,6 @@ if [ $? -eq 0 ]; then
   LABELDALVIKCACHE=1
 fi
 
-
-if [ $LABELSYS = "1" ]; then
-  busybox mount -o remount,rw /system
-  $L "/system relabel starting..."
-  restorecon -R /system
-  $L "/system relabel complete"
-  busybox mount -o remount,ro /system
-fi
 
 if [ $LABELDATA = "1" ]; then
   $L "/data relabel starting..."
