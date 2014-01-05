@@ -17,3 +17,7 @@ PRODUCT_PACKAGES += \
     Stk \
     CellBroadcastReceiver \
     WhisperPush
+
+# Mms depends on SoundRecorder for recorded audio messages
+PRODUCT_PACKAGES += \
+    SoundRecorder
