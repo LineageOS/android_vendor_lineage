@@ -220,7 +220,7 @@
   <apn carrier="O2 MOBILE WEB" mcc="234" mnc="02" apn="mobile.o2.co.uk" user="O2web" password="O2web" type="default,supl" />
   <apn carrier="O2 MMS Prepay" mcc="234" mnc="02" apn="payandgo.o2.co.uk" user="payandgo" password="password" mmsc="http://mmsc.mms.o2.co.uk:8002" mmsproxy="193.113.200.195" mmsport="8080" type="mms" />
   <apn carrier="O2 MMS Postpay" mcc="234" mnc="02" apn="wap.o2.co.uk" user="o2wap" password="password" mmsc="http://mmsc.mms.o2.co.uk:8002" mmsproxy="193.113.200.195" mmsport="8080" type="mms" />
-  <apn carrier="Giffgaff" mcc="234" mnc="10" apn="giffgaff.com" user="giffgaff" server="http://mmsc.mediamessaging.co.uk:8002" password="password" mmsproxy="193.113.200.195" mmsport="8080" mmsc="http://mmsc.mediamessaging.co.uk:8002" type="default,supl,mms" />
+  <apn carrier="Giffgaff" mcc="234" mnc="10" apn="giffgaff.com" user="giffgaff" password="password" mmsc="http://mmsc.mediamessaging.co.uk:8002" mmsproxy="82.132.254.1" mmsport="8080" type="default,supl,mms" />
   <apn carrier="O2 UK MMS" mcc="234" mnc="10" apn="idata.o2.co.uk" user="vertigo" password="password" mmsc="http://mmsc.mms.o2.co.uk:8002" mmsproxy="193.113.200.195" mmsport="8080" type="mms" />
   <apn carrier="O2 UK" mcc="234" mnc="10" apn="mobile.o2.co.uk" user="O2web" password="O2web" type="default,supl" />
   <apn carrier="O2 UK" mcc="234" mnc="10" apn="mobile.o2.co.uk" user="vertigo" type="default,supl,mms" />
