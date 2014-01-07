@@ -68,7 +68,7 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
 * __Samsung Galaxy S II (AT&T) (SGH-I777):__
 * __Samsung Galaxy S II (intl) (GT-I9100):__ codeworkx, Espenfjo
-* __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx
+* __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx, Jiangyi, Ryuinferno
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen
 * __Samsung Galaxy S III (Cricket) (SCH-R530):__ noobnl
 * __Samsung Galaxy S III (intl) (GT-I9300):__ codeworkx
@@ -88,8 +88,8 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy S Relay 4G (SGH-T699):__ infernix, lbcoder, nardholio, noptys, teferi (TeamApexQ)
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
-* __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx
-* __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx
+* __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
+* __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx, codyf86
 * __Samsung Vibrant (SGH-T959):__ FaultException
 * __Sony Xperia SP (huashan):__ jerpelea, Kali- (FreeXperia team), adfad666, uberlaggydarwin
 * __Sony Xperia T (mint):__ jerpelea, Kali- (FreeXperia team), codeworkx, cdesai, tilal6991
