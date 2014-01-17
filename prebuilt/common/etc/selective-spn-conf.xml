@@ -1406,7 +1406,6 @@
   <spnOverride numeric="24003"  spn="Nordisk Mobiltelefon" />
   <spnOverride numeric="24010"  spn="SpringMobil" />
   <spnOverride numeric="24024"  spn="Sweden 2G" />
-  <spnOverride numeric="24024"  spn="Sweden 2G" />
   <spnOverride numeric="24005"  spn="Sweden 3G" />
   <spnOverride numeric="24014"  spn="TDC Mobil" />
   <spnOverride numeric="24007"  spn="Tele2Comviq" />
