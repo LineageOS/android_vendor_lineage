@@ -4,7 +4,7 @@ CyanogenMod
 Maintainers (CyanogenMod 11.0):
 -----------------------------
 * __Acer A700:__ pawitp
-* __Amazon Kindle Fire 1st Edition:__ Hashcode
+* __Amazon Kindle Fire 1st Edition:__ Hashcode, FuZZ__
 * __Amazon Kindle Fire 2nd Edition:__ Hashcode
 * __Asus EeePad Transformer (TF101):__ Bumble-Bee, EnJens
 * __Asus EeePad Transformer Prime (TF201):__ Bumble-Bee, EnJens
