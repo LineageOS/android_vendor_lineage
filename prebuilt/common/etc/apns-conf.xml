@@ -267,21 +267,19 @@
   <apn carrier="Manx Telecom Contract WEB" mcc="234" mnc="58" apn="web.manxpronto.net" user="gprs" password="gprs" type="default,supl" />
   <apn carrier="EE Internet" mcc="234" mnc="86" apn="everywhere" user="eesecure" password="secure" authtype="1" type="default,supl,dun" />
   <apn carrier="EE MMS" mcc="234" mnc="86" apn="eezone" user="eesecure" password="secure" mmsc="http://mms/" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="TDC Internet" mcc="238" mnc="01" apn="internet" type="default,supl" />
-  <apn carrier="TDC MMS" mcc="238" mnc="01" apn="mms" mmsc="http://mmsc.tdc.dk:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
-  <apn carrier="TDC WAP" mcc="238" mnc="01" apn="wap" proxy="194.182.251.15" port="8080" type="default,supl" />
+  <apn carrier="TDC Internet" mcc="238" mnc="01" apn="internet" proxy="62.135.173.214" authtype="1" type="default,supl" />
+  <apn carrier="TDC MMS" mcc="238" mnc="01" apn="mms" mmsc="http://mmsc.tdc.dk:8002" mmsproxy="194.182.251.15" mmsport="8080" authtype="1" type="mms" />
+  <apn carrier="coop mobil MMS" mcc="238" mnc="01" apn="mms" mmsc="http://192.168.241.114:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
   <apn carrier="Telenor Internet" mcc="238" mnc="02" apn="Internet" type="default,supl" />
   <apn carrier="Bibob internet DK" mcc="238" mnc="02" apn="internet.bibob.dk" port="8080" type="default,supl,mms" />
-  <apn carrier="Telenor DK" mcc="238" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="Bibob MMS DK" mcc="238" mnc="02" apn="mms.bibob.dk" proxy="212.88.64.8" port="8080" mmsc="http://mms.telenor.dk" mmsport="8080" type="mms" />
-  <apn carrier="Telenor DK MMS" mcc="238" mnc="02" apn="telenor" mmsc="http://mms.telenor.dk" mmsproxy="212.88.64.8" mmsport="8080" authenticationtype="PAP" type="mms" />
-  <apn carrier="Onfone" mcc="238" mnc="02" apn="internet.sp.dk" proxy="212.088.064.008" mmsc="http://mms.telenor.dk" mmsproxy="212.088.064.008" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Telenor DK MMS" mcc="238" mnc="02" apn="telenor" mmsc="http://mms.telenor.dk" mmsproxy="212.88.64.8" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="3 DK" mcc="238" mnc="06" apn="data.tre.dk" mmsc="http://mms.3.dk" mmsproxy="mmsproxy.3.dk" mmsport="8799" type="default,supl,mms" />
   <apn carrier="3 Danmark" mcc="238" mnc="06" apn="data.tre.dk" mmsc="http://mms.3.dk/" mmsproxy="172.16.1.25" mmsport="8799" type="default,supl,mms" />
   <apn carrier="Telia DK" mcc="238" mnc="20" apn="www.internet.mtelia.dk" type="default,supl" />
   <apn carrier="Telia DK MMS" mcc="238" mnc="20" apn="www.mms.mtelia.dk" mmsc="http://mms.telia.dk" mmsproxy="193.209.134.131" mmsport="8080" type="mms" />
-  <apn carrier="Call me Internet" mcc="238" mnc="20" apn="websp" type="default,supl" />
-  <apn carrier="Call me MMS" mcc="238" mnc="20" apn="mmssp" mmsc="http://mms.telia.dk" mmsproxy="193.209.134.131" mmsport="8080" type="mms" />
+  <apn carrier="Call me Internet" mcc="238" mnc="20" apn="websp" authtype="2" type="default,supl" />
+  <apn carrier="Call me MMS" mcc="238" mnc="20" apn="mmssp" mmsc="http://mms.telia.dk" mmsproxy="193.209.134.131" mmsport="8080" authtype="2" type="mms" />
   <apn carrier="Telenor Internet" mcc="238" mnc="77" apn="Internet" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="238" mnc="77" apn="telenor" mmsc="http://mms.telenor.dk" mmsproxy="212.88.64.8" mmsport="8080" type="mms" />
   <apn carrier="Halebop Internet" mcc="240" mnc="01" apn="halebop.telia.se" type="default,supl" />
