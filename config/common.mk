@@ -294,8 +294,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
-ifneq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),)
-ifneq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),build/target/product/security/testkey)
+ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
+ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
   ifneq ($(CM_BUILDTYPE), UNOFFICIAL)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
       ifneq ($(CM_EXTRAVERSION),)
