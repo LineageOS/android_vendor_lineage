@@ -85,6 +85,8 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy S IV (T-Mobile) (SGH-M919):__ cyanogen
 * __Samsung Galaxy S IV (US Cellular) (SCH-R540):__ noobnl
 * __Samsung Galaxy S IV (Verizon) (SCH-I545):__ invisiblek
+* __Samsung Galaxy S IV Mini 3G (GT-I9190):__ arco
+* __Samsung Galaxy S IV Mini LTE (GT-I9195):__ arco
 * __Samsung Galaxy S Relay 4G (SGH-T699):__ infernix, lbcoder, nardholio, noptys, teferi (TeamApexQ)
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
