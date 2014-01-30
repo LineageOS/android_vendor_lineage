@@ -292,6 +292,7 @@
   <apn carrier="Spring MMS" mcc="240" mnc="10" apn="mms.springmobil.se" mmsc="http://mms.springmobil.se" mmsproxy="213.88.184.37" mmsport="8080" type="mms" />
   <apn carrier="Ludo Internet" mcc="242" mnc="01" apn="internet.ventelo.no" type="default,supl" />
   <apn carrier="Ludo MMS" mcc="242" mnc="01" apn="mms.ventelo.no" user="ventelo" password="1111" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
+  <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" proxy="10.10.10.10" port="8080" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" authenticationtype="PAP" type="default,supl,mms" />
   <apn carrier="Telenor MMS" mcc="242" mnc="01" apn="mms" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
   <apn carrier="Mobitalk Internet" mcc="242" mnc="01" apn="telenor" user="dj" password="dj" proxy="10.10.10.10" port="8080" type="default,supl" />
   <apn carrier="Talkmore" mcc="242" mnc="01" apn="telenor" port="default,supl" type="default,supl,mms" />
