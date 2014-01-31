@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2013, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+
+    <!-- XXXXX NOTE THE FOLLOWING RESOURCES USE THE WRONG NAMING CONVENTION.
+         Please don't copy them, copy anything else. -->
+
+    <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
+    <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
+         [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH or
+         [1,4,7,9] for TYPE_WIFI, TYPE_MOBILE_DUN, TYPE_BLUETOOTH and TYPE_ETHERNET-->
+    <integer-array translatable="false" name="config_tether_upstream_types">
+        <item>1</item>
+        <item>4</item>
+        <item>7</item>
+        <item>9</item>
+    </integer-array>
+
+    <!-- The VoiceMail default value is displayed to my own number if it is true -->
+    <bool name="config_telephony_use_own_number_for_voicemail">true</bool>
+
+    <!-- sms encoded as octet is decoded by utf8 decoder. if it is true -->
+    <bool name="config_sms_utf8_support">true</bool>
+
+    <!-- The mms content disposition field is supported correctly. if it is true
+         If false, some fields of content disposition do not follow wap-230-wsp-20010705-a.rdf -->
+    <bool name="config_mms_content_disposition_support">false</bool>
+
+    <!-- If this value is true, duplicate Source/Destination port fields
+         in WDP header of some carriers OMADM wap push are supported.
+         ex: MSGTYPE-TotalSegments-CurrentSegment
+             -SourcePortDestPort-SourcePortDestPort-OMADM PDU
+         If false, not supported. -->
+    <bool name="config_duplicate_port_omadm_wappush">true</bool>
+
+    <!-- If Voice Radio Technology is RIL_RADIO_TECHNOLOGY_LTE:14 this is the value
+         that should be used instead. A value of RIL_RADIO_TECHNOLOGY_UNKNOWN:0 means
+         there is no replacement value and VoLTE is assumed to be supported
+
+         For sprint we will use RIL_RADIO_TECHNOLOGY_1xRTT:6 -->
+    <integer name="config_volte_replacement_rat">6</integer>
+
+    <!-- Sometimes, PDU has garbages. So, need to use valid index -->
+    <integer name="config_valid_wappush_index">4</integer>
+
+    <!-- Default network policy warning threshold, in megabytes. -->
+    <integer name="config_networkPolicyDefaultWarning">51200</integer>
+</resources>
