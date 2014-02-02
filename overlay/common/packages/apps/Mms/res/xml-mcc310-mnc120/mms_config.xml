@@ -44,5 +44,8 @@
 
     <bool name="enableMMSDeliveryReports">false</bool>
 
+    <!-- UAProf URL -->
+    <string name="uaProfUrl">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
+
 </mms_config>
 
