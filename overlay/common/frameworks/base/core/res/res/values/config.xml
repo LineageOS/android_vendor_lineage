@@ -30,4 +30,6 @@
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService</item>
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver</item>
     </string-array>
+
+    <string name="config_mms_user_agent">CyanogenMod</string>
 </resources>
