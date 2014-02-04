@@ -32,4 +32,5 @@
     </string-array>
 
     <string name="config_mms_user_agent">CyanogenMod</string>
+    <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 </resources>
