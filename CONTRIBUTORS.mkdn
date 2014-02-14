@@ -28,16 +28,19 @@ Maintainers (CyanogenMod 11.0):
 * __HTC One XL:__ h8rift, intervigil
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
+* __Moto G (xt1031,xt1032,xt1033,xt1034/falcon):__ dhacker29
+* __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ dhacker29, Hashcode, Skrilax_CZ
 * __Motorola Atrix HD (MB886/qinara):__ epinter, dhacker29, Hashcode, Skrilax_CZ, nadlabak
-* __Motorola Droid 3 (solana):__ Hashcode, dhacker29
-* __Motorola Droid 4 (maserati):__ Hashcode, dhacker29
-* __Motorola Droid Bionic (targa):__ dhacker29, Hashcode
-* __Motorola Droid RAZR/RAZR Maxx (spyder) (CDMA):__ dhacker29, Hashcode
+* __Motorola Droid 3 (solana):__ Hashcode, dhacker29, stargo
+* __Motorola Droid 4 (maserati):__ Hashcode, dhacker29, stargo
+* __Motorola Droid Bionic (targa):__ dhacker29, Hashcode, stargo
+* __Motorola Droid Maxx (obake-maxx):__ Skrilax_CZ, dhacker29
+* __Motorola Droid RAZR/RAZR Maxx (spyder) (CDMA):__ dhacker29, Hashcode, stargo
 * __Motorola Droid RAZR HD/HD Maxx (xt926/vanquish) (CDMA):__ Hashcode,  dhacker29, epinter, Skrilax_CZ, nadlabak
 * __Motorola Droid RAZR M (xt907/scorpion_mini):__ dhacker29, Hashcode, epinter, Skrilax_CZ, nadlabak
 * __Motorola Photon Q (xt897/asanti) (GSM):__ Skrilax_CZ, nadlabak, epinter, dhacker29, Hashcode
 * __Motorola Photon Q (xt897c/asanti_c) (CDMA):__ nadlabak, Skrilax_CZ, epinter, dhacker29, Hashcode
-* __Motorola RAZR/RAZR Maxx (umts_spyder) (GSM):__ dhacker29, Hashcode
+* __Motorola RAZR/RAZR Maxx (umts_spyder) (GSM):__ dhacker29, Hashcode, stargo
 * __Motorola RAZR HD(xt925/vanquish) (GSM):__ epinter, dhacker29, Hashcode, Skrilax_CZ, nadlabak
 * __Motorola Xoom (WiFi):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
