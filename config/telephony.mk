@@ -6,7 +6,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
-# Selective SPN list for operator number who has the problem. 
+# Selective SPN list for operator number who has the problem.
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
 
@@ -21,3 +21,7 @@ PRODUCT_PACKAGES += \
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
     SoundRecorder
+
+# Default ringtone
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Orion.ogg
