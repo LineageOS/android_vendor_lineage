@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EriFile VersionNumber="6" NumberOfEriEntries="19" EriFileType="2">
+    <CallPromptId Id="0" CallPromptText="CallPromptId0" />
+    <CallPromptId Id="1" CallPromptText="CallPromptId1" />
+    <CallPromptId Id="2" CallPromptText="CallPromptId2" />
+    <EriInfo RoamingIndicator="0" IconIndex="0" IconMode="0" EriText="Domestic Roaming" CallPromptId="0" AlertId="0" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="1" IconIndex="1" IconMode="0" EriText="Virgin Mobile" CallPromptId="0" AlertId="0" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="2" IconIndex="2" IconMode="1" EriText="International Roaming" CallPromptId="0" AlertId="0" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="64" IconIndex="1" IconMode="0" EriText="Virgin Mobile" CallPromptId="0" AlertId="0" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="65" IconIndex="3" IconMode="0" EriText="Network Extender" CallPromptId="0" AlertId="0" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="66" IconIndex="1" IconMode="0" EriText="Extended Network" CallPromptId="0" AlertId="4" DataServiceSupport="0" />
+    <EriInfo RoamingIndicator="67" IconIndex="0" IconMode="0" EriText="Extended Network" CallPromptId="0" AlertId="4" DataServiceSupport="0" />
+    <EriInfo RoamingIndicator="68" IconIndex="0" IconMode="0" EriText="Roaming" CallPromptId="0" AlertId="5" DataServiceSupport="0" />
+    <EriInfo RoamingIndicator="69" IconIndex="2" IconMode="0" EriText="Extended Network" CallPromptId="0" AlertId="4" DataServiceSupport="0" />
+    <EriInfo RoamingIndicator="70" IconIndex="2" IconMode="0" EriText="Roaming" CallPromptId="0" AlertId="5" DataServiceSupport="0" />
+    <EriInfo RoamingIndicator="71" IconIndex="1" IconMode="0" EriText="Extended Network" CallPromptId="0" AlertId="4" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="72" IconIndex="0" IconMode="0" EriText="Extended Network" CallPromptId="0" AlertId="4" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="73" IconIndex="0" IconMode="0" EriText="Roaming" CallPromptId="0" AlertId="5" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="74" IconIndex="2" IconMode="0" EriText="Extended Network" CallPromptId="0" AlertId="4" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="75" IconIndex="2" IconMode="0" EriText="Roaming" CallPromptId="0" AlertId="5" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="76" IconIndex="0" IconMode="0" EriText="Virgin Mobile" CallPromptId="0" AlertId="0" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="77" IconIndex="2" IconMode="0" EriText="Virgin Mobile" CallPromptId="0" AlertId="0" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="78" IconIndex="1" IconMode="0" EriText="Network Extender" CallPromptId="0" AlertId="1" DataServiceSupport="1" />
+    <EriInfo RoamingIndicator="79" IconIndex="3" IconMode="1" EriText="Network Extender" CallPromptId="0" AlertId="1" DataServiceSupport="1" />
+</EriFile>
