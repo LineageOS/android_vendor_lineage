@@ -1126,18 +1126,18 @@
   <apn carrier="Vodafone QA" mcc="427" mnc="02" apn="web.vodafone.com.qa" type="default,supl" />
   <apn carrier="Beeline UZ" mcc="434" mnc="04" apn="internet.beeline.uz" user="beeline" password="beeline" type="default,supl" />
   <apn carrier="Beeline UZ MMS" mcc="434" mnc="04" apn="mms.beeline.uz" user="beeline" password="beeline" mmsc="http://mms" mmsproxy="172.30.30.166" mmsport="8080" type="mms" />
-  <apn carrier="NTT Docomo(bizho)" mcc="440" mnc="10" apn="mpr2.bizho.net" type="default,supl,mms" />
-  <apn carrier="NTT Docomo(mopera)" mcc="440" mnc="10" apn="mopera.net" type="default,supl,mms" />
-  <apn carrier="NTT Docomo(flat)" mcc="440" mnc="10" apn="mopera.flat.foma.ne.jp" type="default,supl,mms" />
-  <apn carrier="NTT Docomo(128k)" mcc="440" mnc="10" apn="mpr.ex-pkt.net" type="default,supl,mms" />
-  <apn carrier="NTT Docomo(mopera ff)" mcc="440" mnc="10" apn="open.mopera.net" type="default,supl,mms" />
-  <apn carrier="NTT Docomo(spmode)" mcc="440" mnc="10" apn="spmode.ne.jp" type="default,supl" />
-  <apn carrier="b-mobile(sumaho)" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@spd" password="bmobile" type="default,supl,mms" />
-  <apn carrier="Softbank(open)" mcc="440" mnc="20" apn="open.softbank.ne.jp" user="opensoftbank" password="ebMNuX1FIHg9d3DA" mmsc="http://mms/" mmsproxy="mmsopen.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Softbank(smile.world)" mcc="440" mnc="20" apn="smile.world" user="dna1trop" password="so2t3k3m2a" mmsc="http://mms/" mmsproxy="smilemms.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Softbank(desire)" mcc="440" mnc="20" apn="open.softbank.ne.jp" user="softbankX06HT" password="KfNSDrQQs2AtFQ9M" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Softbank(datasim)" mcc="440" mnc="20" apn="softbank" user="ai@softbank" password="softbank" type="default,supl" />
-  <apn carrier="Softbank(internet)" mcc="420" mnc="20" apn="andglobal.softbank.ne.jp" user="andg001softbank" password="pumbbghkpgyysxa" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" type="default,mms" />
+  <apn carrier="spモード" mcc="440" mnc="10" apn="spmode.ne.jp" type="default,supl" />
+  <apn carrier="mopera U" mcc="440" mnc="10" apn="mopera.net" type="default,supl,mms" />
+  <apn carrier="mopera U FF" mcc="440" mnc="10" apn="open.mopera.net" type="default,supl,mms" />
+  <apn carrier="mopera U Bizho" mcc="440" mnc="10" apn="mpr2.bizho.net" type="default,supl,mms" />
+  <apn carrier="mopera U Flat" mcc="440" mnc="10" apn="mopera.flat.foma.ne.jp" type="default,supl,mms" />
+  <apn carrier="mopera U 128K" mcc="440" mnc="10" apn="mpr.ex-pkt.net" type="default,supl,mms" />
+  <apn carrier="b-mobile スマホ電話" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@spd" password="bmobile" type="default,supl,mms" />
+  <apn carrier="SoftBank 3G Open" mcc="440" mnc="20" apn="open.softbank.ne.jp" user="opensoftbank" password="ebMNuX1FIHg9d3DA" mmsc="http://mms/" mmsproxy="mmsopen.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="SoftBank 3G Desire" mcc="440" mnc="20" apn="open.softbank.ne.jp" user="softbankX06HT" password="KfNSDrQQs2AtFQ9M" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="SoftBank 3G Smile World" mcc="440" mnc="20" apn="smile.world" user="dna1trop" password="so2t3k3m2a" mmsc="http://mms/" mmsproxy="smilemms.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="SoftBank 3G Andglobal" mcc="440" mnc="20" apn="andglobal.softbank.ne.jp" user="andg001softbank" password="pumbbghkpgyysxa" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" type="default,mms" />
+  <apn carrier="SoftBank 3G Pay for Use" mcc="440" mnc="20" apn="softbank" user="ai@softbank" password="softbank" type="default,supl" />
   <apn carrier="SKT3G" mcc="450" mnc="05" apn="web.sktelecom.com" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" type="default,supl,mms" />
   <apn carrier="SK Telecom (Roaming)" mcc="450" mnc="05" apn="roaming.sktelecom.com" server="*" mmsc="vmms.nate.com" mmsport="8082" type="default,supl,mms" />
   <apn carrier="SKT LTE" mcc="450" mnc="05" apn="lte.sktelecom.com" mmsc="http//omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" type="defaul,supl,mms" />
