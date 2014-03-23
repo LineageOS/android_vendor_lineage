@@ -295,7 +295,8 @@
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" proxy="10.10.10.10" port="8080" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" authenticationtype="PAP" type="default,supl,mms" />
   <apn carrier="Mobitalk" mcc="242" mnc="01" apn="telenor" user="dj" password="dj" proxy="10.10.10.10" port="8080" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Talkmore" mcc="242" mnc="01" apn="telenor" type="default,supl,mms" />
-  <apn carrier="Netcom Internet" mcc="242" mnc="02" apn="internet.netcom.no" type="default,supl" />
+  <apn carrier="NetCom MMS" mcc="242" mnc="02" apn="mms.netcom.no" mmsc="http://mm/" mmsproxy="212.169.66.4" mmsport="8080" type="mms" />
+  <apn carrier="NetCom Internett" mcc="242" mnc="02" apn="wap" type="default,supl" />
   <apn carrier="Chess MMS" mcc="242" mnc="02" apn="mms.netcom.no" user="chess" password="chess" mmsc="http://mms/" mmsproxy="193.209.134.133" mmsport="8080" type="mms" />
   <apn carrier="Chess Internet" mcc="242" mnc="02" apn="netcom" user="chess" password="chess" proxy="10.254.254.10" port="8080" type="default,supl" />
   <apn carrier="Tele2 NO Internet" mcc="242" mnc="03" apn="internet.tele2.no" type="default,supl" />
