@@ -1461,7 +1461,7 @@
   <apn carrier="Cable and Wireless Panama MMS" mcc="714" mnc="01" apn="apn02.cwpanama.com.pa" mmsc="http://mms.zonamovil.com.pa:80/i.bin" mmsproxy="172.25.3.5" mmsport="8080" type="mms" />
   <apn carrier="Movistar AG" mcc="722" mnc="007" apn="internet.unifon" user="wap" password="password" type="default,supl" />
   <apn carrier="Movistar AG MMS" mcc="722" mnc="007" apn="mms.gprs.unifon.com.ar" user="mms" password="mms" mmsc="http://mms.tmovil.cl/" mmsproxy="200.068.032.239" mmsport="9201" type="mms" />
-  <apn carrier="Movistar AR" mcc="722" mnc="07" apn="wap.gprs.unifon.com.ar" proxy="200.5.86.10" port="80" user="wap" password="wap" authenticationtype="PAP" type="defaul,supl" />
+  <apn carrier="Movistar AR" mcc="722" mnc="07" apn="wap.gprs.unifon.com.ar" proxy="200.5.68.10" port="8080" user="wap" password="wap" authenticationtype="PAP" type="default,supl,dun" />
   <apn carrier="Movistar AR MMS" mcc="722" mnc="07" apn="mms.gprs.unifon.com.ar" user="mms" password="mms" mmsc="http://movistar.com.ar" mmsproxy="200.68.32.239" mmsport="8080" authenticationtype="PAP" type="mms" />
   <apn carrier="Personal" mcc="722" mnc="34" apn="datos.personal.com" user="datos" password="datos" type="default,supl" />
   <apn carrier="Personal MMS" mcc="722" mnc="34" apn="mms" user="mms" password="mms" mmsc="http://mms.personal.com/" mmsproxy="172.025.007.031" mmsport="9201" type="mms" />
