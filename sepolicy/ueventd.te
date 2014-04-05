@@ -1,0 +1,5 @@
+# ueventd needs to relabel files that pop in and out of sysfs
+allow ueventd sysfs:file relabelfrom;
+
+# ueventd will set permissions on cpufreq nodes
+allow ueventd sysfs_devices_system_cpu:file setattr;
