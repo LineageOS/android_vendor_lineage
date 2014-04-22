@@ -1524,6 +1524,8 @@
   <apn carrier="Movistar SV MMS" mcc="706" mnc="04" apn="mms.movistar.sv" user="movistarsv" password="movistarsv" mmsc="http://mms.movistar.sv" mmsproxy="10.12.20.1" mmsport="80" type="mms" />
   <apn carrier="Cable and Wireless Panama" mcc="714" mnc="01" apn="apn01.cwpanama.com.pa" type="default,supl" />
   <apn carrier="Cable and Wireless Panama MMS" mcc="714" mnc="01" apn="apn02.cwpanama.com.pa" mmsc="http://mms.zonamovil.com.pa:80/i.bin" mmsproxy="172.25.3.5" mmsport="8080" type="mms" />
+  <apn carrier="QUAM" mcc="722" mnc="01" apn="internet.movil" user="internet" password="internet" authenticationtype="PAP" type="default,supl,dun" />
+  <apn carrier="QUAM MMS" mcc="722" mnc="01" apn="mms.movil" user="mms" password="mms" mmsc="http://mms.quam.com.ar" mmsproxy="200.68.32.239" mmsport="9090" type="mms" />
   <apn carrier="Movistar AG" mcc="722" mnc="007" apn="internet.unifon" user="wap" password="password" type="default,supl" />
   <apn carrier="Movistar AG MMS" mcc="722" mnc="007" apn="mms.gprs.unifon.com.ar" user="mms" password="mms" mmsc="http://mms.tmovil.cl/" mmsproxy="200.068.032.239" mmsport="9201" type="mms" />
   <apn carrier="Movistar AR" mcc="722" mnc="07" apn="wap.gprs.unifon.com.ar" proxy="200.5.68.10" port="8080" user="wap" password="wap" authenticationtype="PAP" type="default,supl,dun" />
