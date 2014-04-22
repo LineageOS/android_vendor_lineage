@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     VisualizationWallpapers \
     PhotoTable \
-    VoiceDialer \
     SoundRecorder
 
 PRODUCT_PACKAGES += \
