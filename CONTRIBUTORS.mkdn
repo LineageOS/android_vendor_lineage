@@ -95,11 +95,13 @@ Maintainers (CyanogenMod 11.0):
 * __Sony Xperia V (tsubasa):__ jerpelea, Kali- (FreeXperia team), codeworkx, tilal6991, championswimmer
 * __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, codeworkx, championswimmer
 * __Sony Xperia ZL (odin):__ jerpelea, Kali- (FreeXperia team), championswimmer
-* __Sony Xperia ZR (dogo):__ jerpelea, Kali- (FreeXperia team)
+* __Sony Xperia ZR (dogo):__ jerpelea, Kali- (FreeXperia team), championswimmer
 * __Sony Xperia Tablet Z LTE (pollux):__ jerpelea, Kali- (FreeXperia team), codeworkx
 * __Sony Xperia Tablet Z Wifi (pollux_windy):__ jerpelea, Kali- (FreeXperia team), Bumble-Bee
 * __Sony Xperia Z Ultra (togari):__ jerpelea, Kali- (FreeXperia team)
-* __Sony Xperia Z1 (honami):__ jerpelea, Kali- (FreeXperia team)
+* __Sony Xperia Z1 (honami):__ jerpelea, Kali- (FreeXperia team), cdesai
+* __Sony Xperia Z1 compact (amami):__ jerpelea, Kali- (FreeXperia team), intervigil, championswimmer, Bumble-Bee
+* __Sony Z Ultra GPE (togari_gpe):__ jerpelea, Kali- (FreeXperia team), cdesai
 
 
 General developers:
