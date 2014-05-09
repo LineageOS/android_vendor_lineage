@@ -90,7 +90,7 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
 * __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx, codyf86
 * __Samsung Vibrant (SGH-T959):__ FaultException
-* __Sony Xperia SP (huashan):__ jerpelea, Kali- (FreeXperia team), adfad666, uberlaggydarwin
+* __Sony Xperia SP (huashan):__ jerpelea, Kali- (FreeXperia team), adfad666
 * __Sony Xperia T (mint):__ jerpelea, Kali- (FreeXperia team), codeworkx, cdesai, tilal6991
 * __Sony Xperia V (tsubasa):__ jerpelea, Kali- (FreeXperia team), codeworkx, tilal6991, championswimmer
 * __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, codeworkx, championswimmer
@@ -142,5 +142,5 @@ Graphics and Assets:
 
 Former Contributors:
 --------------------
-* __Devices:__ Entropy512, xplodwild
+* __Devices:__ Entropy512, xplodwild, uberlaggydarwin
 * __Features:__ mad-murdock, wysie, Ander Webbs, ChainsDD, xplodwild
