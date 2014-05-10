@@ -1374,7 +1374,7 @@
   <apn carrier="SMART MMS" mcc="515" mnc="03" apn="mms" mmsc="http://10.102.61.238:8002" mmsproxy="10.102.61.46" mmsport="8080" type="mms" />
   <apn carrier="SUN" mcc="515" mnc="05" apn="minternet" type="default,supl" />
   <apn carrier="SUN MMS" mcc="515" mnc="05" apn="mms" mmsc="http://mmscenter.suncellular.com.ph" mmsproxy="202.138.159.78" mmsport="8080" type="mms" />
-  <apn carrier="TrueMove-H" mcc="520" mnc="00" apn="internet" user="ture" password="ture" type="default,supl" />
+  <apn carrier="TrueMove-H" mcc="520" mnc="00" apn="internet" user="true" password="true" type="default,supl" />
   <apn carrier="TrueMove-H MMS" mcc="520" mnc="00" apn="hmms" user="true" password="true" mmsc="http://mms.trueh.com:8002" mmsproxy="10.4.7.39" mmsport="8080" type="mms" />
   <apn carrier="AIS GPRS Internet" mcc="520" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="AIS MMS" mcc="520" mnc="01" apn="multimedia" mmsc="http://mms.mobilelife.co.th" mmsproxy="203.170.229.34" mmsport="8080" type="mms" />
