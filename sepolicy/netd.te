@@ -1,0 +1,4 @@
+allow netd self:capability { setuid sys_module setgid };
+allow netd self:packet_socket create_socket_perms;
+allow netd radio_data_file:dir rw_dir_perms;
+allow netd radio_data_file:file create_file_perms;
