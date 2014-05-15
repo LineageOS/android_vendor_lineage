@@ -156,6 +156,8 @@
   <apn carrier="Vodafone IT MMS" mcc="222" mnc="10" apn="mms.vodafone.it" mmsc="http://mms.vodafone.it/servlets/mms" mmsproxy="10.128.224.10" mmsport="80" type="mms" />
   <apn carrier="Vodafone IT" mcc="222" mnc="10" apn="mobile.vodafone.it" type="default,supl" />
   <apn carrier="Vodafone WEB" mcc="222" mnc="10" apn="web.omnitel.it" type="default,supl" />
+  <apn carrier="Poste Mobile" mcc="222" mnc="10" apn="wap.postemobile.it" type="default,supl" />
+  <apn carrier="Poste Mobile MMS" mcc="222" mnc="10" apn="mms.postemobile.it" mmsc="http://mms.postemobile.it/servlets/mms" mmsproxy="10.128.224.10" mmsport="80" authtype="0" type="mms" />
   <apn carrier="Wind IT WEB" mcc="222" mnc="88" apn="internet.wind" type="default,supl" />
   <apn carrier="Wind IT MMS" mcc="222" mnc="88" apn="mms.wind" mmsc="http://mms.wind.it" mmsproxy="212.245.244.011" mmsport="8080" type="mms" />
   <apn carrier="Fastweb" mcc="222" mnc="99" apn="apn.fastweb.it" mmsc="http://mms.fastweb.it/mms/wapenc" mmsproxy="10.0.65.9" mmsport="8080" type="default,supl,mms" />
@@ -472,6 +474,7 @@
   <apn carrier="blau DE MMS" mcc="262" mnc="03" apn="mms.eplus.de" user="mms" password="eplus" mmsc="http://mms/eplus" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
   <apn carrier="E-Plus Web GPRS" mcc="262" mnc="03" apn="internet.eplus.de" user="eplus" password="internet" type="default,supl" />
   <apn carrier="E-Plus MMS" mcc="262" mnc="03" apn="mms.eplus.de" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
+  <apn carrier="Sipgate" mcc="262" mnc="03" apn="sipgate" user="sipgate" password="sipgate" type="default,supl,mms" authtype="2" />
   <apn carrier="Vodafone DE-MMS" mcc="262" mnc="04" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
   <apn carrier="Vodafone DE" mcc="262" mnc="04" apn="web.vodafone.de" type="default,supl" />
   <apn carrier="T-Mobile Internet" mcc="262" mnc="06" apn="internet.t-mobile" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="default,supl,mms" />
@@ -785,6 +788,7 @@
   <apn carrier="Orange MMS" mcc="370" mnc="01" apn="orangeworld" user="orange" password="orange" mmsproxy="172.16.126.70" mmsport="8080" mmsc="http://mms.orange.com.do/servlets/mms" authtype="1" type="mms" />
   <apn carrier="Orange DO MMS" mcc="370" mnc="01" apn="orangeworld" mmsc="http://mmr.orangewi.com/servlets/mms" mmsproxy="172.16.126.70" mmsport="8080" type="mms" />
   <apn carrier="Orange DO" mcc="370" mnc="01" apn="orangenet.com.do" type="default" />
+  <apn carrier="Trilogy Dominicana" mcc="370" mnc="04" apn="edge.viva.net.do" mmsproxy="192.168.16.10" mmsport="9401" user="viva" password="viva" type="default,supl,mms" />
   <apn carrier="Azercell" mcc="400" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Azercell MMS" mcc="400" mnc="01" apn="mms" mmsc="http://mms.azercell.com/cMMSC/post" mmsproxy="10.0.154.101" mmsport="8080" type="mms" />
   <apn carrier="Bakcell" mcc="400" mnc="02" apn="mms" mmsc="http://mms.bakcell.com/mms/wapenc" mmsproxy="213.172.091.046" mmsport="8080" type="default,supl,mms" />
@@ -1163,8 +1167,8 @@
   <apn carrier="Oman Mobile" mcc="422" mnc="02" apn="wap" user="wap" password="wap" type="default,supl" />
   <apn carrier="Nawras" mcc="422" mnc="03" apn="isp.nawras.com.om" user="test" password="test" type="default,supl" />
   <apn carrier="Nawras MMS" mcc="422" mnc="03" apn="mms.nawras.com.om" user="test" password="test" proxy="10.128.240.19" port="8080" mmsc="http://10.128.240.16/servlets/mms" mmsproxy="10.128.240.19" mmsport="8080" type="mms" />
-  <apn carrier="Etisalat UAE" mcc="424" mnc="02" apn="etisalat.ae" type="default,supl" />
-  <apn carrier="Etisalat UAE MMS" mcc="424" mnc="02" apn="etisalat" mmsc="http://mms/servlets/mms" mmsproxy="10.12.0.32" mmsport="8080" type="mms" />
+  <apn carrier="Etisalat UAE" mcc="424" mnc="02" apn="etisalat.ae" type="default,supl" authtype="1" />
+  <apn carrier="Etisalat UAE MMS" mcc="424" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://mms/servlets/mms" mmsproxy="10.12.0.32" mmsport="8080" type="mms" authtype="1" />
   <apn carrier="du" mcc="424" mnc="03" apn="du" mmsc="http://mms.du.ae" mmsproxy="10.19.18.4" mmsport="9201" type="default,supl,mms" />
   <apn carrier="3G Portal" mcc="425" mnc="01" apn="uwap.orange.co.il" port="8080" type="default,supl" />
   <apn carrier="MMS 3G" mcc="425" mnc="01" apn="uwap.orange.co.il" mmsc="http://192.168.220.15/servlets/mms" mmsport="8080" type="mms" />
@@ -1478,6 +1482,7 @@
   <apn carrier="Movicel Angola" mcc="631" mnc="04" apn="internet.movicel.co.ao" type="default,supl" />
   <apn carrier="Movicel Angola MMS" mcc="631" mnc="04" apn="mms.movicel.co.ao" mmsc="http://10.33.14.180:8080" mmsproxy="10.33.15.133" mmsport="8080" type="mms" />
   <apn carrier="Zain SD" mcc="634" mnc="01" apn="internet" type="default,supl" />
+  <apn carrier="Safaricom" mcc="639" mnc="02" apn="wap.safaricom.com" user="saf" password="data" mmsc="http://mms.gprs.safaricom.com" type="default,supl,mms" />
   <apn carrier="yu" mcc="639" mnc="05" apn="internet" proxy="10.4.16.6" port="8080" type="default,supl" />
   <apn carrier="yu MMS" mcc="639" mnc="05" apn="iternet" mmsc="http://10.4.16.22/servlets/mms" mmsproxy="10.4.16.6" type="mms" />
   <apn carrier="Orange KE" mcc="639" mnc="07" apn="bew.orange.co.ke" user="orange" password="orange" type="default,supl" />
@@ -1523,6 +1528,16 @@
   <apn carrier="Tigo SV MMS" mcc="706" mnc="03" apn="mms.tigo.sv" mmsc="http://mms" mmsproxy="10.16.27.12" mmsport="8888" type="mms" />
   <apn carrier="Movistar SV" mcc="706" mnc="04" apn="internet.movistar.sv" user="movistarsv" password="movistarsv" type="default,supl" />
   <apn carrier="Movistar SV MMS" mcc="706" mnc="04" apn="mms.movistar.sv" user="movistarsv" password="movistarsv" mmsc="http://mms.movistar.sv" mmsproxy="10.12.20.1" mmsport="80" type="mms" />
+  <apn carrier="Enitel" mcc="710" mnc="21" apn="internet.ideasalo.ni" type="default,supl,dun" user="internet" password="internet" authtype="1" />
+  <apn carrier="Enitel MMS" mcc="710" mnc="21" apn="mms.indeasalo.ni" user="mms" password="mms" mmsproxy="10.6.32.2" mmsport="8080" mmsc="http://10.6.32.27/servlets/mms" authtype="1" type="mms" />
+  <apn carrier="Movistar" mcc="710" mnc="30" apn="internet.movistar.ni" user="movistarni" password="movistarni" authtype="1" type="default,supl,dun" />
+  <apn carrier="Movistar MMS" mcc="710" mnc="30" apn="mms.movistar.ni" user="movistarni" password="movistarni" mmsproxy="10.12.23.1" mmsport="80" mmsc="http://mms.movistar.ni" authtype="1" type="mms" />
+  <apn carrier="Enitel" mcc="710" mnc="73" apn="internet.ideasalo.ni" user="internet" password="internet" authtype="1" type="default,supl,dun" />
+  <apn carrier="Enitel MMS" mcc="710" mnc="73" apn="mms.indeasalo.ni" user="mms" password="mms" mmsproxy="10.6.32.2" mmsport="8080" mmsc="http://10.6.32.27/servlets/mms" authtype="1" type="mms" />
+  <apn carrier="Movistar" mcc="710" mnc="300" apn="internet.movistar.ni" user="movistarni" password="movistarni" authtype="1" type="default,supl,dun" />
+  <apn carrier="Movistar MMS" mcc="710" mnc="300" apn="mms.movistar.ni" user="movistarni" password="movistarni" mmsproxy="10.12.23.1" mmsport="80" mmsc="http://mms.movistar.ni" authtype="1" type="mms" />
+  <apn carrier="Enitel" mcc="710" mnc="730" apn="internet.ideasalo.ni" user="internet" password="internet" authtype="1" type="default,supl,dun" />
+  <apn carrier="Enitel MMS" mcc="710" mnc="730" apn="mms.indeasalo.ni" user="mms" password="mms" mmsproxy="10.6.32.2" mmsport="8080" mmsc="http://10.6.32.27/servlets/mms" authtype="1" type="mms" />
   <apn carrier="Cable and Wireless Panama" mcc="714" mnc="01" apn="apn01.cwpanama.com.pa" type="default,supl" />
   <apn carrier="Cable and Wireless Panama MMS" mcc="714" mnc="01" apn="apn02.cwpanama.com.pa" mmsc="http://mms.zonamovil.com.pa:80/i.bin" mmsproxy="172.25.3.5" mmsport="8080" type="mms" />
   <apn carrier="QUAM" mcc="722" mnc="01" apn="internet.movil" user="internet" password="internet" authenticationtype="PAP" type="default,supl,dun" />
