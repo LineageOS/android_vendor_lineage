@@ -23,7 +23,7 @@ Maintainers (CyanogenMod 11.0):
 * __HTC One (Sprint):__ kushdeck, toastcfh
 * __HTC One (Verizon):__ flyhalf205, mdmower
 * __HTC One S:__ intervigil, xkonni
-* __HTC One X:__ gorbi16, mdeejay, tbalden, Th�my
+* __HTC One X:__ gorbi16, mdeejay, tbalden, Thömy
 * __HTC One X+:__ Lloir, tombriden
 * __HTC One XL:__ h8rift, intervigil
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
@@ -112,27 +112,54 @@ General developers:
 
 Translators:
 ------------
-* __Afrikaans:__ Corrie Meyer, David van Tonder
-* __Catalan:__ Arnau Llovet Vidal
-* __Chinese (Simplified):__ Andrew Jiang, John Hsing, Engle Mars
-* __Chinese (Traditional):__ Li Chi Tung, Fu-Chun Hsu
-* __Czech:__ Ondrej Zima, Radovan Kepak, Pavel Kucera, Jozka Jozin, Jiri Silvarich, Vaclav Moucha
-* __Danish:__ Jacob Overgaard Madsen, Morten J�rgensen, Henning Nielsen Lund, Mikael Jepsen
-* __Dutch:__ Marco Brohet, Kasper Hettinga, Eddy Witkamp
-* __Finnish:__ Niko Koivu
-* __French:__ Delphin PETER, Eric Mourougandy, L�o Colombaro, Florent Imfloflo, Tanguy Pruvot, Matthias Bosc
-* __German:__ Kim L�, Jacob M�ller, Christoph Quiter, Markus Hoeber, Danny Baumann
-* __Greek:__ Michael Bestas, Vasilis Akritas
-* __Hungarian:__ Tam�s T�th, D�vid L�szl�, D�niel Buga
-* __Italian:__ Francesco Foresta, Mauro Bazzano
-* __Japanese:__ Takuo Kitame, Taichi Nishimura
-* __Norwegian:__ Odin Ugedal, Arne Coucheron
-* __Polish:__ Tomasz Popielarczyk c.s.
-* __Portuguese (Brazilian):__ Gustavo Rosa, Pedro Carneiro, Emerson Pinter
-* __Russian:__ Pavel Volkov, Vladislav Koldobskiy, Vladimir Belkov
-* __Slovak:__ Dusan Kazik
-* __Spanish:__ Jorge Ruesga, Lorenzo M. Casta�o
-* __Swedish:__ Simon B�ck, Ted Lundwall, Esa Laukkanen, Bj�rn Lund�n
+* __Afrikaans:__ David van Tonder (DvTonder), Corrie Meyer (isimobile)
+* __Arabic:__ Umar Omar (uomar8)
+* __Asturian:__ esbardu (esbardu), ivarela (malditoastur), Xandru Martino Ruz (Xandru), Xuacu Saturio (Xuacu)
+* __Catalan:__ Arnau (Arnau), Pau Galindo (Pau_Galindo)
+* __Chinese Simplified:__ Matthew Humphrey (775405984), Contactfront (Contactfront), Easeman Wang (easeman9), jiveking (jiveking), Yun Liu (liuyun97), Hexchain Tong (richard0053), Ryan Chan (smartryan), Thomas Wang (ts0516)
+* __Chinese Traditional:__ Hsiang Jung, CHENG (HJCHENG), Kelvin Cheong (kelvincheong), Bing-Hua Wang (louiswpf), npes87184 (npes87184), Ryan Chan (smartryan)
+* __Chinese Traditional, Hong Kong:__ Kelvin Cheong (kelvincheong), Ryan Chan (smartryan), Li Chi Tung (tonyli1357)
+* __Croatian:__ David Boca (davidboca), markan (markan), Rox (Rox), Josip Volf (Wuk)
+* __Czech:__ Radovan Kepák (bckp), Štěpán Dalecký (daleckystepan), engy (engy), Keltek (Keltek), ScArSVK (ScArSVK), Snoop05 (Snoop05)
+* __Danish:__ Morten Jørgensen (Fidoble), Jacob_DK (Jacob_DK), Ole Ingeman Christensen (OIChristensen)
+* __Dutch:__ Eddy Witkamp (eddywitkamp), Frank Baeten (frankbaeten), Tom Heisterkamp (HappyFlow), Martin Coulon (martinusbe), Timo Viveen (Nadermane), ray1618 (ray1618), Marco Brohet (therbom)
+* __Estonian:__ Rudolf Tammekivi (rtammekivi)
+* __Finnish:__ Eero Hyrsky (EnergySnail), Jani Kinnunen (jkinnunen), Niko Koivu (niko0o), Sasu Lehtonen (zazza)
+* __French:__ DelPETER (DelPETER), humpf (humpf), Julien Stephan (julienstephan29), laddass (laddass), .... (lemachinbidule), math Matmutant (matmutant), Micks29 (Micks29), opengillou (opengillou), Alexandre Bertrand (trandbert)
+* __Galician:__ Daniel (canu7), Isaac Álvarez Veiga (Erithrym)
+* __Georgian:__ Alexander (alexander_9)
+* __German:__ Sascha Schroeder (c1ph4), Kim Le (elektroschmock78), jackmu95 (jackmu95), Kilian von Pflugk (kilianvonpflugk), Kilowatt.W (kilowatt), Benjamin Huschle (kolsms), Danny Baumann (maniac103), Mardon (markusmenzel), maxee (maxee), michelsberg (michelsberg), Roman Ettlinger (romanett98), Stefan O. (stefanao), Thomas Reinhardt (tarreas), unpublished (unpublished), Yannik (yanniks)
+* __Greek:__ Vasilis Akritas (billak75), Michael Bestas (mikeioannina)
+* __Hebrew:__ Arthur Zamarin (arthurzam), evyatark2 (evyatark2), Mr_Guy (Mr_Guy), Oren Cohen (orenc17), sagi232123 (sagi232123)
+* __Hindi:__ c0d3ripp3r (c0d3ripp3r), Solomon Sunder (solomonsunder)
+* __Hungarian:__ Bálint Czobor (balint), Buga Dániel (BugaDániel), fischerandris (fischerandris), lazajnd (lazajnd), Tamás Tóth (tothtamassyman)
+* __Indonesian:__ Vicky Sofyan (Arch9), famihyypia (famihyypia), Ilham Ibrahim (iiibrahim89), Ruswan Efendi (RuswanWu7), tohenk (tohenk)
+* __Italian:__ Alessandro Preti (alessandropreti), Francesco Foresta (francescoforesta), Lorenzo Faccini (lo97), rheeze (rheeze), Valdevies (Valdevies)
+* __Japanese:__ Black Zigong (blackzigong), jiveking (jiveking), おたっく (otack), stmay30 (stmay30)
+* __Korean:__ 이승렬 (toy0605)
+* __Kurdish:__ falah (Dylan2785)
+* __Latvian:__ Māris Rēdmanis (maaris)
+* __Lithuanian:__ Liudas Ališauskas (liudas.alisauskas), Edmundas Plentauskas (plentauskas1992), HardLight (polizplz), Saulius Vyšniauskas (SauliusVy)
+* __Luxembourgish:__ Michel Weimerskirch (michel_weimerskirch), soued031 (soued031)
+* __Malay:__ tanakwagu (tanakwagu)
+* __Norwegian Bokmal:__ Vegard Fladby (Allram), Sten Eikrem (Storesteinen)
+* __Persian:__ Ali Niki (alinik), Mehdi HosseinZade (Arshen) (Arshen-2014), Yaser Rajabi (yrajabi)
+* __Polish:__ Dawid (dawidohs), Kamil Jarosław (devloz1996), Michał Gątkowski (IreuN), Andrzej Ressel (jereksel), Michał Kamień (kamykowsky), lozohcum M (lozohcum), Tomasz Popielarczyk (popielarczyktomasz), Michał Jakubowski (revanmj)
+* __Portuguese:__ João Pedro Luís (joaopluis), Sergio Borges (sergioborges99), André Pinela (sheffzor), Tercio Carvalho (tercioc)
+* __Portuguese, Brazilian:__ Carlos Henrique Brendler Cabral (carloshbcabral), Gafanhotz (Gafanhotz), Gustavo Rosa (gustavogyn), Tercio Carvalho (tercioc)
+* __Romanian:__ apolodor (apolodor), azzureux (azzureux), Marian-Mina Mihai (bboylalu), mihaitaus (mihaitaus)
+* __Russian:__ Дима Антипов (bonny1995), Alexey Kuznetsov (eeepc1016p), MrYadro (MrYadro), Vladislav Koldobskiy (NeverGone), Snoop05 (Snoop05)
+* __Serbian (Cyrillic):__ Dragan Milenkovic (gagy187), Sava Mikalački (mikalackis), Драган (WD40)
+* __Sinhala:__ Rananga Suraweera (rananga)
+* __Slovak:__ Martin (mato), Bohuslav Oršula (orsulab), Peter Malík (PeterM), pyler (pyler), Snoop05 (Snoop05)
+* __Spanish:__ Isaac Álvarez Veiga (Erithrym), Jorge Ruesga (jruesga), Lorenzo M (Lorenzo_M), luchomacedo92 (LuchoMacedo), Pau Galindo (Pau_Galindo)
+* __Swedish:__ Simon Bäck (backsimon), elelinux (elelinux), Simon Danielsson (sad_88), Ted Lundwall (TedLundwall)
+* __Tamil:__ Kishore Sheik Ahamed (kishoreinme), Solomon Sunder (solomonsunder), Stars Soft (starssoft), அருண் குமார் - Arun Kumar (thangamani-arun)
+* __Thai:__ pureexe (pureexe)
+* __Turkish:__ Arif GÜLER (ArF), Mesut Öztürk (doktormesut), Murat KOŞAK (muratkosak), okirat (okirat), Şenol (senoleker)
+* __Ukrainian:__ Andriy Poznakhovskyy (Andrulko), Nazar Sokolovsky (nazar_sokolovsky), Maks (probil), xalich (xalich)
+* __Uyghur:__ jiveking (jiveking)
+* __Vietnamese:__ Bảo Quân (quan221295), Triet Bui Minh (x3cafe)
 
 Graphics and Assets:
 --------------------
