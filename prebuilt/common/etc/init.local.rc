@@ -101,6 +101,16 @@ on boot
     chown system system /dev/cpuctl/apps/cpu.notify_on_migrate
     chmod 0644 /dev/cpuctl/apps/cpu.notify_on_migrate
 
+    # Define TCP delayed ack settings for WiFi & LTE
+    chown system system /sys/kernel/ipv4/tcp_delack_seg
+    chown system system /sys/kernel/ipv4/tcp_use_userconfig
+    setprop net.tcp.delack.default     1
+    setprop net.tcp.delack.wifi        20
+    setprop net.tcp.delack.lte         8
+    setprop net.tcp.usercfg.default    0
+    setprop net.tcp.usercfg.wifi       1
+    setprop net.tcp.usercfg.lte        1
+
 # adb over network
 on property:service.adb.tcp.port=5555
     stop adbd
