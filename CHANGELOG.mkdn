@@ -8,8 +8,56 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 CHANGELOG (notable new features)
 ---------
 
-### 11.0.0
+### 11.0.0 M7
+* Common: Android 4.4.2 (Google)
+* New Devices: HTC One (m8); Samsung Galaxy Tab Pro 8.4 (mondrianwifi); Galaxy Note 8.0 LTE (nv5120); LG GT Docomo (l01f)
+* Common: Theme Chooser UI Overhaul
+* Common: Calculator app redesign (courtesy Xlythe)
+* Common: Performance Profiles
+* Common: Improved theming performance on low memory devices (~512MB RAM or less)
+* Trebuchet: Move settings to new slide-out panel
+* Trebuchet: Consolidate settings for home and drawer options
+* Media: Add FFMPEG support (expanded media format support)
+* Bluetooth: Improved support for new car audio systems and docks
+* Various small bugfixes, global and device-specific
+
+### 11.0.0 M6
 * Common: Android 4.4 (Google)
+* Common: Move Voice+ settings from app drawer to Settings (under Wireless and Networks > ‘More’)
+* Common: Consolidate screen-off animation options (remove checkbox)
+* Common: New CM Theme Engine
+* Common: Add provider permissions for Blacklist
+* Common: Fix lockscreen custom wallpaper crashes and album art issues
+* Common: Disable elements when in custom lockscreen
+* Common: Address security vulnerability for icons
+* Common: Resolve memory leaks in Frameworks
+* Common: Settings – Show ‘eject card’ action for USB storage
+* Common: Add quick settings options to show smaller tiles; add BT device name to tile; fix tiles layout in landscape mode
+* Common: Fix longpress quiet hours QS tile option
+* Common: Parallel Shutdown – Decrease shutdown time
+* Common: Downloads – Add pause/resume support
+* Bluetooth: Upstream updates and fix issues with audio routing to select car makes/models and disconnect issues
+* MultiSim: Additional support patches (15+) and UI/UX modifications
+* Trebuchet: Hidden apps and labels support
+* Various small bugfixes, global and device-specific
+
+### 11.0.0 M5
+* Common: Android 4.4 (Google)
+* Common: Relocate WhisperPush to Privacy menu
+* Common: Fix WhisperPush NPE on viewing identity if unregistered
+* Common: Additional Prviacy Guard AppOps permissions
+* Common: Additional right-to-left (RTL) layout mirroring support
+* Common: Add 'screen color' support to Settings
+* Common: Fix stylus eraser being disabled by palm rejection
+* Common: Allow NavBar toggling in runtime (requires kernel support)
+* Quick Boot: Enable for supported devices
+* Devices: Unified builds: d2lte, jflte
+* Trebuchet: Fix last icon from hotseat disappearing
+* Trebuchet: Fix custom home transition effect
+* Translations: Initial imports from CrowdIn
+* MultiSim: Additional support patches (25+)
+* Dialer: Add Open Source forward/backward/incoming look-up
+
 
 ### 10.2.0
 * Common: Android 4.3 (Google)
