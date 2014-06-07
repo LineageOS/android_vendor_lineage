@@ -10,7 +10,7 @@ CHANGELOG (notable new features)
 
 ### 11.0.0 M7
 * Common: Android 4.4.2 (Google)
-* New Devices: HTC One (m8); Samsung Galaxy Tab Pro 8.4 (mondrianwifi); Galaxy Note 8.0 LTE (nv5120); LG GT Docomo (l01f)
+* New Devices: HTC One (m8); Samsung Galaxy Tab Pro 8.4 (mondrianwifi); Galaxy Note 8.0 LTE (n5120); LG G2 Docomo (l01f)
 * Common: Theme Chooser UI Overhaul
 * Common: Calculator app redesign (courtesy Xlythe)
 * Common: Performance Profiles
