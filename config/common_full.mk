@@ -21,7 +21,8 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     VisualizationWallpapers \
     PhotoTable \
-    SoundRecorder
+    SoundRecorder \
+	CMHome
 
 PRODUCT_PACKAGES += \
     VideoEditor \
