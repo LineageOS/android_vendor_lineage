@@ -32,6 +32,7 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
     </string-array>
 
     <string name="config_mms_user_agent">CyanogenMod</string>
