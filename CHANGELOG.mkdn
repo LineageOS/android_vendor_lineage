@@ -8,6 +8,22 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 CHANGELOG (notable new features)
 ---------
 
+### 11.0.0 M8
+* Common: Android 4.4.4 (Google)
+* New Devices: Sony Xperia Z2 (sirius); Xiaomi Mi2 (aries); Oppo Find 7a/s (find7); OnePlus One (bacon)
+* Common: Fix VPN issues related to 4.4.3 merge
+* Common: Enable 'Heads Up' notification mode (Settings > Notifications)
+* Settings: 'Interface' replaced by 'Status Bar', 'Notification Drawer', and 'Gestures'
+* Settings: Moved 'Expanded Desktop' to 'Display'
+* Settings: Moved all lock screen related items to 'Lock Screen' and removed duplicates from 'Security'
+* Settings: Moved 'Navigation Bar' layout control to 'Buttons'
+* Trebuchet: Custom Homescreen grid size
+* Trebuchet: Add Protected Apps feature
+* Trebuchet: Add Search Panel (Google Now) option
+* WhisperPush: No longer ignores 'Blacklist'
+* Futex: Protect against Towelroot
+* Various small bugfixes, global and device-specific
+
 ### 11.0.0 M7
 * Common: Android 4.4.2 (Google)
 * New Devices: HTC One (m8); Samsung Galaxy Tab Pro 8.4 (mondrianwifi); Galaxy Note 8.0 LTE (n5120); LG G2 Docomo (l01f)
