@@ -4,7 +4,7 @@
 # system
 
 if [ -f /data/system/packages.xml -a -f /tmp/releasekey ]; then
-  relCert=$(grep -A3 'package name="com.android.htmlviewer"' /data/system/packages.xml  | grep "cert index" | head -n 1 | sed -e 's|.*"\([[:digit:]]\+\)".*|\1|g')
+  relCert=$(grep -A3 'package name="com.android.htmlviewer"' /data/system/packages.xml  | grep "cert index" | head -n 1 | sed -e 's|.*"\([[:digit:]][[:digit:]]*\)".*|\1|g')
 
   grep "cert index=\"$relCert\"" /data/system/packages.xml | grep -q `cat /tmp/releasekey`
   if [ $? -ne 0 ]; then
