@@ -143,8 +143,8 @@
   <apn carrier="VIPnet" mcc="219" mnc="10" apn="gprs0.vipnet.hr" type="default,supl" />
   <apn carrier="VIPnet" mcc="219" mnc="10" apn="data.vip.hr" user="38591" password="38591" server="219.91.99.91" type="default,supl" />
   <apn carrier="VIPnet MMS" mcc="219" mnc="10" apn="mms.vipnet.hr" mmsc="http://mms.vipnet.hr/servlets/mms" mmsproxy="212.91.99.91" mmsport="8080" type="mms" />
-  <apn carrier="Telenor RS" mcc="220" mnc="01" apn="internet" user="telenor" password="gprs" proxy="217.65.192.33" port="8080" type="default,supl,mms" />
-  <apn carrier="Telenor RS MMS" mcc="220" mnc="01" apn="mms" mmsc="http://mms.telenor.rs/servlets/mms" mmsproxy="217.65.192.33" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Telenor RS" mcc="220" mnc="01" apn="internet" user="telenor" password="gprs" proxy="217.65.192.33" port="8080" type="default,supl" />
+  <apn carrier="Telenor RS MMS" mcc="220" mnc="01" apn="mms" mmsc="http://mms.telenor.rs/servlets/mms" mmsproxy="217.65.192.33" mmsport="8080" type="mms" />
   <apn carrier="MTS RS" mcc="220" mnc="03" apn="gprswap" user="mts" password="064" proxy="172.017.088.198" port="8080" type="default,supl" />
   <apn carrier="MTS RS MMS" mcc="220" mnc="03" apn="mms" user="mts" password="064" mmsc="http://mms.mts064.telekom.rs/mms/wapenc" mmsproxy="172.017.085.131" mmsport="8080" type="mms" />
   <apn carrier="VIP MMS" mcc="220" mnc="05" apn="vipmobile.mms" user="vipmobile" password="vipmobile" mmsc="http://mmsc.vipmobile.rs/" mmsproxy="212.15.182.82" mmsport="8080" type="mms" />
