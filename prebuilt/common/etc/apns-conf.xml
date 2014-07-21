@@ -1253,6 +1253,7 @@
   <apn carrier="one2free tethering" mcc="454" mnc="00" apn="lte.internet" type="dun" />
   <apn carrier="CSL" mcc="454" mnc="02" apn="hkcsl" proxy="192.168.59.51" port="8080" mmsc="http://192.168.58.171:8002/" mmsproxy="192.168.59.51" mmsport="8080" type="default,supl,mms" />
   <apn carrier="CSL GPRS" mcc="454" mnc="02" apn="hkcsl" proxy="192.168.59.51" port="8080" mmsc="http://192.168.58.171:8002" mmsproxy="192.168.59.51" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="3 HK LTE" mcc="454" mnc="03" apn="mobile.lte.three.com.hk" user="*" password="*" server="*" mmsc="http://mms.um.three.com.hk:10021/mmsc" mmsproxy="172.20.97.116" mmsport="8799" type="default,supl,mms" />
   <apn carrier="3 HK" mcc="454" mnc="03" apn="mobile.three.com.hk" user="*" password="*" server="*" mmsc="http://mms.um.three.com.hk:10021/mmsc" mmsproxy="172.20.97.116" mmsport="8799" type="default,supl,mms" />
   <apn carrier="3 (2G) MMS" mcc="454" mnc="04" apn="mms-g.three.com.hk" mmsc="http://10.30.15.51:10021/mmsc" mmsproxy="10.30.15.53" mmsport="9201" type="mms" />
   <apn carrier="3 (2G)" mcc="454" mnc="04" apn="web-g.three.com.hk" type="default,supl" />
@@ -1260,8 +1261,10 @@
   <apn carrier="SMC-Voda Internet" mcc="454" mnc="06" apn="SmarTone-Vodafone" mmsc="http://mms.smartone-vodafone.com/server" mmsproxy="10.9.9.9" mmsport="8080" type="default,supl,mms" />
   <apn carrier="CSL Data" mcc="454" mnc="10" apn="hkcsl" proxy="192.168.59.51" port="8080" mmsc="http://192.168.58.171:8002/" mmsproxy="192.168.59.51" mmsport="8080" type="default,supl,mms" />
   <apn carrier="one2free 2G" mcc="454" mnc="10" apn="hkcsl" mmsc="http://192.168.58.171:8002" mmsproxy="192.168.59.51" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="CMHK Data" mcc="454" mnc="12" apn="CMHK" type="default,supl" />
+  <apn carrier="CMHK MMS" mcc="454" mnc="12" apn="CMHK" mmsc="http://mms.hk.chinamobile.com/mms" mmsproxy="172.31.31.36" mmsport="8080" type="mms" />
+  <apn carrier="CMHK Peoples MMS" mcc="454" mnc="12" apn="peoples.mms" mmsc="http://mms.peoples.com.hk/mms" mmsproxy="172.31.31.36" mmsport="8080" type="mms" />
   <apn carrier="PEOPLES MMS" mcc="454" mnc="12" apn="170170" mmsc="http://mms.peoples.com.hk/mms" mmsproxy="172.31.31.36" mmsport="8080" type="mms" />
-  <apn carrier="China Mobile HK MMS" mcc="454" mnc="12" apn="peoples.mms" mmsc="http://mms.peoples.com.hk/mms" mmsproxy="172.31.31.36" mmsport="8080" type="mms" />
   <apn carrier="PEOPLES" mcc="454" mnc="12" apn="peoples.net" type="default,supl" />
   <apn carrier="SMC-Voda" mcc="454" mnc="15" apn="SmarTone-Vodafone" mmsc="http://mms.smartone-vodafone.com/server" mmsproxy="10.9.9.9" mmsport="8080" type="default,supl,mms" />
   <apn carrier="PCCW 2G" mcc="454" mnc="16" apn="pccwdata" type="default,supl" />
