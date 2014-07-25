@@ -14,12 +14,15 @@ Maintainers (CyanogenMod 11.0):
 * __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
 * __Google Nexus S:__ burnsra, KalimochoAz, klusark
 * __Google Nexus 4:__ rmcc
+* __Google Nexus 5:__ fluxi
 * __Google Nexus 7:__ burnsra, fattire, nemith (GSM)
 * __Google Nexus 10:__ atinm, dalingrin, kornyone, gweedo767
 * __HTC Droid DNA:__ crpalmer, invisiblek
 * __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One (GSM):__ codeworkx, h8rift
+* __HTC One (M8):__ deck, h8rift, invisblek, toastcfh
+* __HTC One Max (T6):__ flyhalf205, sbrissen
 * __HTC One (Sprint):__ kushdeck, toastcfh
 * __HTC One (Verizon):__ flyhalf205, mdmower
 * __HTC One S:__ intervigil, xkonni
@@ -45,7 +48,9 @@ Maintainers (CyanogenMod 11.0):
 * __Motorola Xoom (WiFi):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
-* __Oppo Find 5__: nebkat
+* __OnePlus One:__ cyanogen, intervigil, inwotep, arcee
+* __Oppo Find 5:__ intervigil, nebkat
+* __Oppo Find 7:__ intervigil, tdm, inwotep
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos
 * __Samsung Exhilarate (SGH-I577):__ mikeyman77, carvsdriver
@@ -58,6 +63,7 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy Note II LTE (Verizon) (SCH-I605):__ sbrissen
 * __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen
 * __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
+* __Samsung Galaxy Note III (hlte):__ cyanogen, noobnl, slayher
 * __Samsung Galaxy Note 8.0 3G (GT-N5100):__ sbrissen
 * __Samsung Galaxy Note 8.0 Wifi (GT-N5110):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Espenfjo
@@ -89,9 +95,10 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
 * __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx, codyf86
+* __Samsung Galaxy Tab Pro 8.4" (SM-T320):__ crpalmer
 * __Samsung Vibrant (SGH-T959):__ FaultException
 * __Sony Xperia L (taoshan):__ varunchitre15, jerpelea (FreeXperia team), Kali- (FreeXperia team)
-* __Sony Xperia SP (huashan):__ jerpelea, Kali- (FreeXperia team), adfad666
+* __Sony Xperia SP (huashan):__ jerpelea, Kali- (FreeXperia team), adfad666, uberlaggydarwin
 * __Sony Xperia T (mint):__ jerpelea, Kali- (FreeXperia team), codeworkx, cdesai, tilal6991
 * __Sony Xperia V (tsubasa):__ jerpelea, Kali- (FreeXperia team), codeworkx, tilal6991, championswimmer
 * __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, codeworkx, championswimmer
@@ -108,7 +115,7 @@ Maintainers (CyanogenMod 11.0):
 General developers:
 -------------------
 * __UI Team:__ blunden, prash
-* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, maniac103, Kaik541
+* __UX Team:__ blunden, ciwrl, daneshm, DvTonder, jackmu95, maniac103, Kaik541
 * __Other:__ jruesga
 
 Translators:
@@ -170,5 +177,5 @@ Graphics and Assets:
 
 Former Contributors:
 --------------------
-* __Devices:__ Entropy512, xplodwild, uberlaggydarwin
+* __Devices:__ Entropy512, xplodwild
 * __Features:__ mad-murdock, wysie, Ander Webbs, ChainsDD, xplodwild
