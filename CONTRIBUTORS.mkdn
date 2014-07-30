@@ -77,7 +77,7 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy S II (AT&T) (SGH-I777):__
 * __Samsung Galaxy S II (intl) (GT-I9100):__ codeworkx, Espenfjo
 * __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx, Jiangyi, Ryuinferno
-* __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen, invisiblek, mkasick, nardholio, noobnl
+* __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen, invisiblek, mkasick, noobnl
 * __Samsung Galaxy S III (intl) (GT-I9300):__ codeworkx
 * __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith, codeworkx
 * __Samsung Galaxy S IV (AT&T) (SGH-I337):__ attn1
@@ -89,7 +89,7 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy S IV (Verizon) (SCH-I545):__ invisiblek
 * __Samsung Galaxy S IV Mini 3G (GT-I9190):__ arco
 * __Samsung Galaxy S IV Mini LTE (GT-I9195):__ arco
-* __Samsung Galaxy S Relay 4G (SGH-T699):__ infernix, lbcoder, nardholio, noptys, teferi (TeamApexQ)
+* __Samsung Galaxy S Relay 4G (SGH-T699):__
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
@@ -179,5 +179,5 @@ Graphics and Assets:
 
 Former Contributors:
 --------------------
-* __Devices:__ Entropy512, xplodwild
+* __Devices:__ Entropy512, xplodwild, dhacker29, nardholio
 * __Features:__ mad-murdock, wysie, Ander Webbs, ChainsDD, xplodwild
