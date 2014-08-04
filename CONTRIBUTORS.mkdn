@@ -158,7 +158,7 @@ Translators:
 * __Portuguese:__ João Pedro Luís (joaopluis), Sergio Borges (sergioborges99), André Pinela (sheffzor), Tercio Carvalho (tercioc)
 * __Portuguese, Brazilian:__ Carlos Henrique Brendler Cabral (carloshbcabral), Gafanhotz (Gafanhotz), Gustavo Rosa (gustavogyn), Tercio Carvalho (tercioc)
 * __Romanian:__ apolodor (apolodor), azzureux (azzureux), Marian-Mina Mihai (bboylalu), mihaitaus (mihaitaus)
-* __Russian:__ Дима Антипов (bonny1995), Alexey Kuznetsov (eeepc1016p), MrYadro (MrYadro), Vladislav Koldobskiy (NeverGone), Snoop05 (Snoop05)
+* __Russian:__ Vladislav Koldobskiy (NeverGone), Alexey Kuznetsov (eeepc1016p), Artem Leshchev (matshch), Maxim Perepelitsa (N0xFF), Yaroslav Yadrishnikov (MrYadro)
 * __Serbian (Cyrillic):__ Dragan Milenkovic (gagy187), Sava Mikalački (mikalackis), Драган (WD40)
 * __Sinhala:__ Rananga Suraweera (rananga)
 * __Slovak:__ Martin (mato), Bohuslav Oršula (orsulab), Peter Malík (PeterM), pyler (pyler), Snoop05 (Snoop05)
