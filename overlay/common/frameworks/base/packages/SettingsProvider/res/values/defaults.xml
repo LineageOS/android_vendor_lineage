@@ -27,4 +27,7 @@
 
     <!-- Default for Settings.Secure.STATS_COLLECTION. -->
     <bool name="def_cm_stats_collection">true</bool>
+
+    <!-- Default for Settings.Global.SEND_ACTION_APP_ERROR -->
+    <integer name="def_send_action_app_error">1</integer>
 </resources>
