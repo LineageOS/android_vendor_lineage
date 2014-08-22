@@ -66,6 +66,8 @@
   <apn carrier="Proximus Internet" mcc="206" mnc="01" apn="internet.proximus.be" type="default,supl" />
   <apn carrier="Eastlink Internet" mcc="206" mnc="01" apn="wisp.mobi.eastlink.ca" type="default,supl" />
   <apn carrier="Eastlink MMS" mcc="206" mnc="01" apn="mms.mobi.eastlink.ca" mmsc="http://mmss.mobi.eastlink.ca" mmsproxy="10.232.12.49" mmsport="8080" type="mms" />
+  <apn carrier="Telenet Intl Roam" mcc="206" mnc="01" apn="telenetwap.be" type="default,supl" />
+  <apn carrier="Telenet MMS Intl Roam" mcc="206" mnc="01" apn="mms.be" mmsc="http://mmsc.telenet.be" mmsproxy="195.130.149.100" mmsport="80" type="mms" />
   <apn carrier="Telenet" mcc="206" mnc="05" apn="telenetwap.be" type="default,supl" />
   <apn carrier="Telenet MMS" mcc="206" mnc="05" apn="mms.be" mmsc="http://mmsc.telenet.be" mmsproxy="195.130.149.100" mmsport="80" type="mms" />
   <apn carrier="Mobistar" mcc="206" mnc="10" apn="mworld.be" port="8080" authenticationtype="PAP" type="default,supl" />
