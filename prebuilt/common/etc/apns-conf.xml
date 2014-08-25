@@ -94,8 +94,8 @@
   <apn carrier="ACCESS DATA" mcc="208" mnc="11" apn="websfr" type="default,supl" />
   <apn carrier="MMS" mcc="208" mnc="13" apn="mmssfr" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
   <apn carrier="ACCESS DATA" mcc="208" mnc="13" apn="websfr" type="default,supl" />
-  <apn carrier="Free Mobile" mcc="208" mnc="15" apn="free" mmsc="http://mms.free.fr" type="default,supl,mms" />
-  <apn carrier="Free Mobile MMS" mcc="208" mnc="15" apn="mmsfree" mmsc="http://212.27.40.225" type="mms" />
+  <apn carrier="Free Mobile" mcc="208" mnc="15" apn="free" type="default,supl" />
+  <apn carrier="Free Mobile MMS" mcc="208" mnc="15" apn="mmsfree" mmsc="http://mms.free.fr" type="mms" />
   <apn carrier="Bouygues Pro" mcc="208" mnc="20" apn="a2bouygtel.com" type="default,supl,mms" />
   <apn carrier="Bouygues WEB" mcc="208" mnc="20" apn="mmsbouygtel.com" server="*" type="default,supl" />
   <apn carrier="Bouygues Telecom" mcc="208" mnc="20" apn="mmsbouygtel.com" type="default,supl" />
