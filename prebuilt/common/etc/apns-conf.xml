@@ -159,6 +159,8 @@
   <apn carrier="TIM IT WAP" mcc="222" mnc="01" apn="wap.tim.it" proxy="213.26.205.1" port="80" user="WAPTIM" password="WAPTIM" server="http://wap.i.tim.it" type="default,supl" />
   <apn carrier="NOVERCA MMS" mcc="222" mnc="01" apn="mms.noverca.it" mmsc="http://mms.noverca.it/" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
   <apn carrier="TIM MMS" mcc="222" mnc="01" apn="mms.tim.it" mmsc="http://mms.tim.it/servlets/mms" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
+  <apn carrier="Tiscali INTERNET" mcc="222" mnc="01" apn="tiscalimobileinternet" type="default,supl" />
+  <apn carrier="Tiscali MMS" mcc="222" mnc="01" apn="tiscalimobilemms" mmsc="http://mms.tiscali.mobi/servlets/mms" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
   <apn carrier="iTIM" mcc="222" mnc="01" apn="unico.tim.it" proxy="213.230.130.89" port="80" mmsc="http://mms.tim.it/servlets/mms" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
   <apn carrier="NOVERCA WEB" mcc="222" mnc="01" apn="web.noverca.it" type="default,supl" />
   <apn carrier="Vodafone IT MMS" mcc="222" mnc="10" apn="mms.vodafone.it" mmsc="http://mms.vodafone.it/servlets/mms" mmsproxy="10.128.224.10" mmsport="80" type="mms" />
