@@ -293,8 +293,10 @@
   <apn carrier="Telenor MMS" mcc="240" mnc="04" apn="services.telenor.se" mmsc="http://mms" mmsproxy="172.30.253.241" mmsport="8799" type="mms" />
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="06" apn="services.telenor.se" proxy="173.30.253.241" port="8799" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="240" mnc="06" apn="services.telenor.se" mmsc="http://mms" mmsproxy="173.30.253.241" mmsport="8799" type="mms" />
+  <apn carrier="Tele2 4G" mcc="240" mnc="07" apn="4g.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" authenticationtype="CHAP" type="default,mms" />
+  <apn carrier="Tele2" mcc="240" mnc="07" apn="mobileinternet.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" authenticationtype="CHAP" type="default,supl,mms" />
   <apn carrier="Tele2 SE" mcc="240" mnc="07" apn="internet.tele2.se" user="wap" password="wap" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.030" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Tele2" mcc="240" mnc="07" apn="internet.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Tele2 3G" mcc="240" mnc="07" apn="internet.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Telenor SE" mcc="240" mnc="08" apn="internet.telenor.se" type="default,supl" />
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="08" apn="services.telenor.se" proxy="172.30.253.241" port="8799" type="default,supl" />
   <apn carrier="Telenor SE MMS" mcc="240" mnc="08" apn="services.telenor.se" mmsc="http://mms" mmsproxy="172.30.253.241" mmsport="8799" type="mms" />
