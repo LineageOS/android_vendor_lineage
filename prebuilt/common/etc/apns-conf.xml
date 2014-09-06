@@ -55,6 +55,7 @@
   <apn carrier="KPN" mcc="204" mnc="08" apn="internet" user="kpn" password="gprs" type="default,supl" />
   <apn carrier="KPN" mcc="204" mnc="08" apn="portalmmm.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="KPN MMS" mcc="204" mnc="08" apn="portalmmm.nl" proxy="10.10.100.20" port="5080" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="mms" />
+  <apn carrier="KPN 4G LTE" mcc="204" mnc="08" apn="KPN4G.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="Telfort" mcc="204" mnc="12" apn="internet" proxy="193.113.200.195" port="8080" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" />
   <apn carrier="T-Mobile NL" mcc="204" mnc="16" apn="internet" type="default,supl" />
   <apn carrier="T-Mobile NL-MMS" mcc="204" mnc="16" apn="mms" user="tmobilemms" password="tmobilemms" server="*" mmsc="http://t-mobilemms" mmsproxy="010.010.010.011" mmsport="8080" type="mms" />
