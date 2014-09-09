@@ -145,7 +145,7 @@ Translators:
 * __Hungarian:__ Bálint Czobor (balint), Buga Dániel (BugaDániel), fischerandris (fischerandris), lazajnd (lazajnd), Tamás Tóth (tothtamassyman)
 * __Indonesian:__ Vicky Sofyan (Arch9), famihyypia (famihyypia), Ilham Ibrahim (iiibrahim89), Ruswan Efendi (RuswanWu7), tohenk (tohenk)
 * __Italian:__ Alessandro Preti (alessandropreti), Francesco Foresta (francescoforesta), Lorenzo Faccini (lo97), rheeze (rheeze), Valdevies (Valdevies)
-* __Japanese:__ Black Zigong (blackzigong), jiveking (jiveking), おたっく (otack), stmay30 (stmay30)
+* __Japanese:__ Black Zigong (blackzigong), jiveking (jiveking), おたっく (otack), Sena Endo (senaforandroid), stmay30 (stmay30)
 * __Korean:__ 이승렬 (toy0605)
 * __Kurdish:__ falah (Dylan2785)
 * __Latvian:__ Māris Rēdmanis (maaris)
