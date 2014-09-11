@@ -28,6 +28,9 @@
   <apn carrier="VZW Test FOTA" mcc="001" mnc="010" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Test IMS" mcc="001" mnc="010" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Test CBS" mcc="001" mnc="010" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="SPRINT test OTA" mcc="001" mnc="01" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="SPRINT test PAM" mcc="001" mnc="01" apn="pamsn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Virgin Mobile US" mcc="200" mnc="053" apn="0" port="" mmsproxy="205.239.233.136" mmsport="81" mmsc="http://mmsc.vmobl.com:8088/mms?" type="mms" />
   <apn carrier="Cosmote GR" mcc="202" mnc="01" apn="Internet" type="default,supl" />
   <apn carrier="Cosmote GR MMS" mcc="202" mnc="01" apn="Mms" mmsc="195.167.65.220:8002" mmsproxy="10.10.10.20" mmsport="8080" type="mms" />
