@@ -1353,7 +1353,7 @@
   <apn carrier="Maxis 3G MMS" mcc="502" mnc="12" apn="unet" user="maxis" password="wap" server="202.75.133.49" mmsc="http://172.16.74.100:10021/mmsc" mmsproxy="202.75.133.49" mmsport="80" type="mms" />
   <apn carrier="Xpax" mcc="502" mnc="13" apn="celcom" type="default,supl" />
   <apn carrier="Xpax MMS" mcc="502" mnc="13" apn="celcom3g" user="mms" password="mms" mmsc="http://mms.celcom.net.my" mmsproxy="10.128.1.242" mmsport="8080" type="mms" />
-  <apn carrier="Digi MMS" mcc="502" mnc="16" apn="digimms" user="mms" password="mms" mmsc="http://mms.digi.com.my/servlets/mms" mmsproxy="203.92.128.160" mmsport="9201" type="mms" />
+  <apn carrier="Digi MMS" mcc="502" mnc="16" apn="digimms" user="mms" password="mms" mmsc="http://mms.digi.com.my/servlets/mms" mmsproxy="203.92.128.160" mmsport="80" type="mms" />
   <apn carrier="Digi" mcc="502" mnc="16" apn="diginet" user="digi" password="digi" type="default,supl" />
   <apn carrier="U Mobile Internet" mcc="502" mnc="18" apn="my3g" type="default,supl" />
   <apn carrier="U Mobile MMS" mcc="502" mnc="18" apn="my3g" mmsc="http://10.30.3.11/servlets/mms" mmsproxy="10.30.5.11" mmsport="8080" type="mms" />
