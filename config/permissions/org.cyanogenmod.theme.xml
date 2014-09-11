@@ -15,5 +15,14 @@
 -->
 
 <permissions>
+    <!-- The features listed here should coincide with the various iterations of
+         the CyanogenMod theme engine.  New org.cyanogenmod.theme.vX features
+         should only be added when the structure of the theme apk format is changed
+     -->
+
+    <!-- This is an alias for org.cyanogenmod.theme.v1 -->
     <feature name="org.cyanogenmod.theme" />
+
+    <!-- Supports themes using v1 of the theme engine -->
+    <feature name="org.cyanogenmod.theme.v1" />
 </permissions>
