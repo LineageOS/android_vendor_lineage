@@ -55,6 +55,7 @@
   <apn carrier="Vodafone MMS Business" mcc="204" mnc="04" apn="office.vodafone.nl" user="vodafone" password="vodafone" mmsc="http://mmsc.mms.vodafone.nl" mmsproxy="192.168.251.150" mmsport="8799" type="mms" />
   <apn carrier="中国电信NET设置" mcc="204" mnc="04" apn="ctnet" user="ctnet@mycdma.cn" password="vnet.mobi" authtype="3" type="default,supl,dun" />
   <apn carrier="中国电信WAP设置" mcc="204" mnc="04" apn="ctwap" user="ctwap@mycdma.cn" password="vnet.mobi" proxy="10.0.0.200" port="80" mmsproxy="10.0.0.200" mmsport="80" mmsc="http://mmsc.vnet.mobi" authtype="3" type="default,supl,dun,mms" />
+  <apn carrier="Ziggo Mobiel" mcc="204" mnc="04" apn="ziggo.dataxs.mobi" authtype="1" type="default" />
   <apn carrier="KPN" mcc="204" mnc="08" apn="internet" user="kpn" password="gprs" type="default,supl" />
   <apn carrier="KPN" mcc="204" mnc="08" apn="portalmmm.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="KPN MMS" mcc="204" mnc="08" apn="portalmmm.nl" proxy="10.10.100.20" port="5080" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="mms" />
@@ -579,7 +580,7 @@
   <apn carrier="Fido Tethering" mcc="302" mnc="370" apn="isp.fido.apn" type="default,supl" />
   <apn carrier="Wind CA" mcc="302" mnc="490" apn="internet.windmobile.ca" type="default,supl" />
   <apn carrier="Wind CA MMS" mcc="302" mnc="490" apn="mms.windmobile.ca" mmsc="http://mms.windmobile.ca" mmsproxy="74.115.197.70" mmsport="8080" type="mms" />
-  <apn carrier="Videotron" mcc="302" mnc="500" apn="media.videotron" mmsc="http://media.videotron.com/" mmsproxy="10.208.89.17" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Videotron" mcc="302" mnc="500" apn="media.ng" mmsc="http://media.videotron.com/" type="default,supl,mms" />
   <apn carrier="Bell" mcc="302" mnc="610" apn="pda.bell.ca" proxy="web.wireless.bell.ca" port="80" mmsc="http://mms.bell.ca/mms/wapenc" mmsproxy="web.wireless.bell.ca" mmsport="80" type="" />
   <apn carrier="Bell Flex" mcc="302" mnc="610" apn="inet.bell.ca" mmsc="http://mms.bell.ca/mms/wapenc" type="default,supl,mms" />
   <apn carrier="Rogers" mcc="302" mnc="720" apn="rogers-core-appl1.apn" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" type="default,supl,mms" />
