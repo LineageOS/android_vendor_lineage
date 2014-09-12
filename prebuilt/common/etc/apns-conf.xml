@@ -177,7 +177,6 @@
   <apn carrier="Wind IT MMS" mcc="222" mnc="88" apn="mms.wind" mmsc="http://mms.wind.it" mmsproxy="212.245.244.011" mmsport="8080" type="mms" />
   <apn carrier="Fastweb" mcc="222" mnc="99" apn="apn.fastweb.it" mmsc="http://mms.fastweb.it/mms/wapenc" mmsproxy="10.0.65.9" mmsport="8080" type="default,supl,mms" />
   <apn carrier="3" mcc="222" mnc="99" apn="tre.it" mmsc="http://10.216.59.240:10021/mmsc" mmsproxy="62.13.171.3" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="Vodafone Internet" mcc="226" mnc="01" apn="internet.vodafone.ro " user="internet.vodafone.ro " password="vodafone" type="default,supl" />
   <apn carrier="Vodafone RO" mcc="226" mnc="01" apn="internet.vodafone.ro" user="internet.vodafone.ro" password="vodafone" type="default,supl" />
   <apn carrier="Vodafone RO live! PRE" mcc="226" mnc="01" apn="live.pre.vodafone.com" user="live" password="vodafone" proxy="193.230.161.231" port="8080" type="default,supl" />
   <apn carrier="Vodafone RO live!" mcc="226" mnc="01" apn="live.vodafone.com" user="live" password="vodafone" proxy="193.230.161.231" port="8080" type="default,supl" />
@@ -321,7 +320,7 @@
   <apn carrier="Chess Internet" mcc="242" mnc="02" apn="netcom" user="chess" password="chess" proxy="10.254.254.10" port="8080" type="default,supl" />
   <apn carrier="Tele2 NO Internet" mcc="242" mnc="03" apn="internet.tele2.no" type="default,supl" />
   <apn carrier="Tele2 NO MMS" mcc="242" mnc="03" apn="mms.tele2.no" user="wap" password="wap" mmsc="mmsc.tele2.no" mmsproxy="192.12.40.14:8080" type="mms" />
-  <apn carrier="Tele2 MMS" mcc="242" mnc="04" apn="internet.tele2.no " mmsc="http://mmsc.tele2.no" mmsproxy="193.012.040.014" mmsport="8080" type="mms" />
+  <apn carrier="Tele2 MMS" mcc="242" mnc="04" apn="internet.tele2.no" mmsc="http://mmsc.tele2.no" mmsproxy="193.012.040.014" mmsport="8080" type="mms" />
   <apn carrier="Tele2 Internett" mcc="242" mnc="04" apn="internet.tele2.no" type="default,supl" />
   <apn carrier="NwN" mcc="242" mnc="05" apn="internet" type="default,supl" />
   <apn carrier="NwN MMS" mcc="242" mnc="05" apn="mms" mmsc="http://mms.nwn.no" mmsproxy="188.149.250.10" mmsport="80" type="mms" />
