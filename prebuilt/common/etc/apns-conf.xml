@@ -472,6 +472,8 @@
   <apn carrier="Play MMS" mcc="260" mnc="06" apn="mms" mmsc="http://10.10.28.164/mms/wapenc" mmsproxy="10.10.25.5" mmsport="8080" type="mms" />
   <apn carrier="Cyfrowy Polsat" mcc="260" mnc="12" apn="internet.cyfrowypolsat.pl" type="default,supl" />
   <apn carrier="Cyfrowy Polsat MMS" mcc="260" mnc="12" apn="mms.cyfrowypolsat.pl" mmsc="http://mms.cyfrowypolsat.pl:8002/" mmsproxy="79.171.2.33" mmsport="8080" type="mms" />
+  <apn carrier="Carrefour Belgium" mcc="260" mnc="20" apn="carrefourdata.be" user="carrefour" password="carrefour" mmsc="http://mmsc.base.be/" mmsproxy="217.72.235.1" mmsport="8080" type="default" />
+  <apn carrier="Carrefour Belgium MMS" mcc="260" mnc="20" apn="carrefourmms.be" user="carrefour" password="carrefour" mmsc="http://mmsc.base.be/" mmsproxy="217.72.235.1" mmsport="8080" type="mms" />
   <apn carrier="Telekom DE-MMS" mcc="262" mnc="01" apn="internet.t-mobile" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.028.023.131" mmsport="8008" type="mms" />
   <apn carrier="Telekom DE" mcc="262" mnc="01" apn="internet.telekom" user="tm" password="tm" server="*" type="default,supl" />
   <apn carrier="Vodafone DE-MMS" mcc="262" mnc="02" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
