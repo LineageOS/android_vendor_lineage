@@ -106,6 +106,7 @@
   <apn carrier="Bouygues MMS" mcc="208" mnc="20" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" authtype="0" type="mms" />
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="21" apn="ebouygtel.com" type="default,supl" />
   <apn carrier="MMS Bouygues" mcc="208" mnc="21" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
+  <apn carrier="Virgin FR" mcc="208" mnc="23" apn="virgin-mobile.fr" mmsc="http://virginmms.fr" mmsproxy="10.6.10.1" mmsport="8080" type="default,mms" />
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="88" apn="ebouygtel.com" type="default,supl" />
   <apn carrier="MMS Bouygues" mcc="208" mnc="88" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
   <apn carrier="Vodafone ES-Internet" mcc="214" mnc="01" apn="ac.vodafone.es" user="vodafone" password="vodafone" type="default,supl" />
