@@ -7,6 +7,42 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 
 CHANGELOG (notable new features)
 ---------
+### 11.0.0 M10
+* Common: Android 4.4.4 (Google)
+* New Devices: Galaxy S5 Sprint (kltespr)
+* Split out Note 3 into GSM (hlte), Sprint (hltespr) and Verizon (hltevzw)
+* Refactor moto_msm8960dt as 'ghost' for Moto X 2013
+* Drop support for obake, toro, toroplus
+* Theme Engine: Themes support for additional UI elements
+* Frameworks & Core Apps: CAF and other upstream updates
+* Settings: Add scramble pin feature
+* Frameworks: Long press recent apps to switch to last used app
+* Settings: Add soft reboot option
+* Add smart cover support
+* Add glove mode support
+* Add bug reporter and crash log uploader
+* Multisim updates
+* General bug fixes
+* ANT+ Support for various hardware
+* Privacy Guard: Control NFC permissions
+
+### 11.0.0 M9
+* Common: Android 4.4.4 (Google)
+* New Devices: Sony Xperia Z2 Tablets (castor); HTC One (m8)
+* Theme Engine: Themes support for additional UI elements
+* Lockscreen: Allow doubletap to sleep when using secure keyguard
+* Settings: Safe Headset Volume – prompt when interfering with 3rd party device (Jawbone, Square, etc)
+* Settings: Center clock support
+* Settings: Proximity Wake-Up support
+* Settings: Spam notification filtering
+* Settings Search: Additional improvements and highlighting
+* Data Usage Info: Add support for CDMA devices without sim cards
+* Bluetooth: Add additional A2DP profiles
+* Bluetooth: Disable AVRCP 1.5 by default (fixes various car unit compatibility)
+* Email: Fix saving attachments to storage for POP3 accounts
+* Account for Play Services induced wake-locks
+* Fix encryption on some LG Devices
+* Dialer: add support for Korean and Chinese to smart-dialer
 
 ### 11.0.0 M8
 * Common: Android 4.4.4 (Google)
@@ -56,23 +92,6 @@ CHANGELOG (notable new features)
 * MultiSim: Additional support patches (15+) and UI/UX modifications
 * Trebuchet: Hidden apps and labels support
 * Various small bugfixes, global and device-specific
-
-### 11.0.0 M5
-* Common: Android 4.4 (Google)
-* Common: Relocate WhisperPush to Privacy menu
-* Common: Fix WhisperPush NPE on viewing identity if unregistered
-* Common: Additional Prviacy Guard AppOps permissions
-* Common: Additional right-to-left (RTL) layout mirroring support
-* Common: Add 'screen color' support to Settings
-* Common: Fix stylus eraser being disabled by palm rejection
-* Common: Allow NavBar toggling in runtime (requires kernel support)
-* Quick Boot: Enable for supported devices
-* Devices: Unified builds: d2lte, jflte
-* Trebuchet: Fix last icon from hotseat disappearing
-* Trebuchet: Fix custom home transition effect
-* Translations: Initial imports from CrowdIn
-* MultiSim: Additional support patches (25+)
-* Dialer: Add Open Source forward/backward/incoming look-up
 
 
 ### 10.2.0
