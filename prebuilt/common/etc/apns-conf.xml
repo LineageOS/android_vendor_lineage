@@ -466,6 +466,7 @@
   <apn carrier="Mobilking" mcc="260" mnc="02" apn="wapMOBILKING" user="mobilking" password="mobilking" type="default,supl" />
   <apn carrier="tuBiedronka" mcc="260" mnc="02" apn="internet" user="internet" password="internet" type="default,supl" />
   <apn carrier="tuBiedronka MMS" mcc="260" mnc="02" apn="tubiedronkamms" user="tubiedronka" password="tubiedronka" mmsc="http://mms.tubiedronka.pl/servlets.mmsl" mmsproxy="213.158.194.226" mmsport="8080" type="mms" />
+  <apn carrier="T-Mobile PL MMS" mcc="260" mnc="02" apn="mms" mmsc="http://mms/servlets/mms" mmsproxy="213.158.194.226" mmsport="8080" type="mms" />
   <apn carrier="ASTER" mcc="260" mnc="03" apn="aster.internet" user="internet" password="internet" type="default,supl" />
   <apn carrier="ASTER MMS" mcc="260" mnc="03" apn="aster.mms" user="mms" password="mms" mmsc="http://mms.aster.pl" mmsproxy="192.168.006.138" mmsport="8080" type="mms" />
   <apn carrier="Orange PL" mcc="260" mnc="03" apn="internet" user="internet" password="internet" type="default,supl" />
@@ -474,8 +475,10 @@
   <apn carrier="MNI MMS" mcc="260" mnc="03" apn="mni.mms" user="mni.mms" password="mni.mms" mmsc="http://mms.mni.pl/" mmsproxy="192.168.006.135" mmsport="8080" type="mms" />
   <apn carrier="Play" mcc="260" mnc="06" apn="internet" type="default,supl" />
   <apn carrier="Play MMS" mcc="260" mnc="06" apn="mms" mmsc="http://10.10.28.164/mms/wapenc" mmsproxy="10.10.25.5" mmsport="8080" type="mms" />
+  <apn carrier="Lycamobile" mcc="260" mnc="09" apn="data.lycamobile.pl" user="lmpl" password="plus" type="default,supl" />
   <apn carrier="Cyfrowy Polsat" mcc="260" mnc="12" apn="internet.cyfrowypolsat.pl" type="default,supl" />
   <apn carrier="Cyfrowy Polsat MMS" mcc="260" mnc="12" apn="mms.cyfrowypolsat.pl" mmsc="http://mms.cyfrowypolsat.pl:8002/" mmsproxy="79.171.2.33" mmsport="8080" type="mms" />
+  <apn carrier="Aero2" mcc="260" mnc="17" apn="darmowy" type="default,supl" />
   <apn carrier="Carrefour Belgium" mcc="260" mnc="20" apn="carrefourdata.be" user="carrefour" password="carrefour" mmsc="http://mmsc.base.be/" mmsproxy="217.72.235.1" mmsport="8080" type="default" />
   <apn carrier="Carrefour Belgium MMS" mcc="260" mnc="20" apn="carrefourmms.be" user="carrefour" password="carrefour" mmsc="http://mmsc.base.be/" mmsproxy="217.72.235.1" mmsport="8080" type="mms" />
   <apn carrier="Telekom DE-MMS" mcc="262" mnc="01" apn="internet.t-mobile" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.028.023.131" mmsport="8008" type="mms" />
