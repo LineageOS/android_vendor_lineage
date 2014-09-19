@@ -1674,6 +1674,8 @@
   <apn carrier="Porta EC" mcc="740" mnc="010" apn="internet.porta.com.ec" type="default,supl" />
   <apn carrier="VOX Internet" mcc="744" mnc="01" apn="vox.internet" type="default,supl" />
   <apn carrier="VOX MMS" mcc="744" mnc="01" apn="vox.mms" type="mms" user="vox" password="vox" mmsc="http://mms.vox.com.py/mmsc" mmsproxy="172.24.97.29" mmsport="8080" />
+  <apn carrier="Claro PY" mcc="744" mnc="02" apn="igprs.claro.com.py" user="ctigprs" password="ctigprs999" authtype="1" type="default,supl" />
+  <apn carrier="MMS GPRS PY" mcc="744" mnc="02" apn="mms.ctimovil.com.py" user="ctimms" password="ctimms999" mmsproxy="170.51.255.240" mmsport="8080" mmsc="http://mms.ctimovil.com.py" authtype="1" type="mms" />
   <apn carrier="Tigo Internet" mcc="744" mnc="04" apn="internet.tigo.py" type="default,supl" />
   <apn carrier="Tigo MMS" mcc="744" mnc="04" apn="mms.tigo.py" user="tigo" password="tigo" mmsproxy="10.16.17.12" mmsport="8888" mmsc="http://mms" type="mms" />
   <apn carrier="Internet Personal" mcc="744" mnc="05" apn="internet" type="default,supl" />
