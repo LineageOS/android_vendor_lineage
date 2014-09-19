@@ -389,8 +389,8 @@
   <apn carrier="ETK" mcc="250" mnc="05" apn="internet.etk.ru" type="default,supl,mms" />
   <apn carrier="МТС-интернет" mcc="250" mnc="05" apn="internet.mts.ru" user="mts" password="mts" type="default,supl" />
   <apn carrier="МТС Центр MMS" mcc="250" mnc="05" apn="mms.mts.ru" user="mts" password="mts" mmsc="http://mmsc" mmsproxy="192.168.192.192" mmsport="8080" type="mms" />
-  <apn carrier="internet" mcc="250" mnc="07" apn="internet.smarts.ru" user="any" password="any" type="default,supl" />
-  <apn carrier="mms" mcc="250" mnc="07" apn="mms.smarts.ru" user="wap" password="wap" mmsc="http://172.24.120.135/mms/wapenc" mmsproxy="172.24.128.5" mmsport="8080" type="mms" />
+  <apn carrier="Smarts RU internet" mcc="250" mnc="07" apn="internet.smarts.ru" type="default,supl" />
+  <apn carrier="Smarts RU mms" mcc="250" mnc="07" apn="mms.smarts.ru" user="n@k" password="nok" mmsc="http://mmsc:8002" mmsproxy="172.24.121.5" mmsport="8080" type="mms" />
   <apn carrier="МТС-интернет" mcc="250" mnc="10" apn="internet.mts.ru" user="mts" password="mts" type="default,supl" />
   <apn carrier="МТС Центр MMS" mcc="250" mnc="10" apn="mms.mts.ru" user="mts" password="mts" mmsc="http://mmsc" mmsproxy="192.168.192.192" mmsport="8080" type="mms" />
   <apn carrier="Yota" mcc="250" mnc="11" apn="yota.ru" type="default,supl" />
