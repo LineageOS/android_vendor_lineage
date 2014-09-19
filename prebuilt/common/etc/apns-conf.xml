@@ -127,6 +127,10 @@
   <apn carrier="MMS Vodafone" mcc="214" mnc="06" apn="mms.vodafone.net" user="wap@wap" password="wap125" mmsc="http://mmsc.vodafone.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" type="mms" />
   <apn carrier="Movistar ES" mcc="214" mnc="07" apn="movistar.es" user="MOVISTAR" password="MOVISTAR" type="default,supl" />
   <apn carrier="Movistar ES-MMS" mcc="214" mnc="07" apn="telefonica.es" user="telefonica" password="telefonica" mmsc="http://mms.movistar.com" mmsproxy="10.138.255.5" mmsport="8080" type="mms" />
+  <apn carrier="Euskaltel" mcc="214" mnc="08" apn="internet.euskaltel.mobi" user="CLIENTE" password="EUSKALTEL" type="default,supl" />
+  <apn carrier="Euskaltel MMS" mcc="214" mnc="08" apn="euskaltelmms.euskaltel.mobi" user="MMS" password="EUSKALTEL" mmsc="http://mms.euskaltel.mobi" mmsproxy="172.16.18.74" mmsport="8080" type="mms" />
+  <apn carrier="ONO Internet" mcc="214" mnc="18" apn="internet.ono.com" type="default,supl"/>
+  <apn carrier="ONO MMS" mcc="214" mnc="18" apn="mms.ono.com" mmsc="http://mms.ono.com" mmsproxy="10.126.0.50" mmsport="8080" type="mms"/>
   <apn carrier="Simyo ES" mcc="214" mnc="19" apn="gprs-service.com" type="default,supl" />
   <apn carrier="Simyo ES-MMS" mcc="214" mnc="19" apn="gprs-service.com" mmsc="http://217.18.32.180:8080" mmsproxy="217.18.32.181" mmsport="8080" type="mms" />
   <apn carrier="Jazztel" mcc="214" mnc="21" apn="jazzinternet" type="default,supl" />
