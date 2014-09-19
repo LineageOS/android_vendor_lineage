@@ -1339,7 +1339,7 @@
   <apn carrier="Mobitel KH" mcc="456" mnc="01" apn="postpaid" user="mobitel" password="mobitel" type="default,supl" />
   <apn carrier="Mobitel Cellcard" mcc="456" mnc="01" apn="cellcard" user="mobitel" password="mobitel" type="default,supl" />
   <apn carrier="Mobitel MMS" mcc="456" mnc="01" apn="mms" user="mobitel" password="mobitel" mmsc="http://mms.mobitel.com.kh/mmsc" mmsproxy="203.144.95.98" mmsport="3130" type="mms" />
-  <apn carrier="Smart" mcc="456" mnc="02" apn="smart"type="default,supl" />
+  <apn carrier="Smart" mcc="456" mnc="02" apn="smart" type="default,supl" />
   <apn carrier="Smart MMS" mcc="456" mnc="02" apn="mms" mmsc="http://mmsc" mmsproxy="10.12.1.142" mmsport="8080" type="mms" />
   <apn carrier="qbmore" mcc="456" mnc="04" apn="WAP" type="default,supl" />
   <apn carrier="qbmore MMS" mcc="456" mnc="04" apn="mms" mmsc="http://mms.qbmore.mobi" mmsproxy="172.16.96.66" mmsport="8080" type="mms" />
