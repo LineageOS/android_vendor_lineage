@@ -1324,6 +1324,17 @@
   <apn carrier="CTM" mcc="455" mnc="04" apn="ctm-mobile" proxy="192.168.99.2" port="8080" type="default,supl" />
   <apn carrier="CTM MMS" mcc="455" mnc="04" apn="ctmmms" mmsc="http://mms.wap.ctm.net:8002" mmsproxy="192.168.99.3" mmsport="8080" type="mms" />
   <apn carrier="Mobitel KH" mcc="456" mnc="01" apn="postpaid" user="mobitel" password="mobitel" type="default,supl" />
+  <apn carrier="Mobitel Cellcard" mcc="456" mnc="01" apn="cellcard" user="mobitel" password="mobitel" type="default,supl" />
+  <apn carrier="Mobitel MMS" mcc="456" mnc="01" apn="mms" user="mobitel" password="mobitel" mmsc="http://mms.mobitel.com.kh/mmsc" mmsproxy="203.144.95.98" mmsport="3130" type="mms" />
+  <apn carrier="Smart" mcc="456" mnc="02" apn="smart"type="default,supl" />
+  <apn carrier="Smart MMS" mcc="456" mnc="02" apn="mms" mmsc="http://mmsc" mmsproxy="10.12.1.142" mmsport="8080" type="mms" />
+  <apn carrier="qbmore" mcc="456" mnc="04" apn="WAP" type="default,supl" />
+  <apn carrier="qbmore MMS" mcc="456" mnc="04" apn="mms" mmsc="http://mms.qbmore.mobi" mmsproxy="172.16.96.66" mmsport="8080" type="mms" />
+  <apn carrier="Star-Cell" mcc="456" mnc="05" apn="internet" type="default,supl" />
+  <apn carrier="Metfone" mcc="456" mnc="08" apn="Metfone" type="default,supl" />
+  <apn carrier="Beeline Internet" mcc="456" mnc="09" apn="gprs.beeline.com.kh" type="default,supl" />
+  <apn carrier="Beeline MMS" mcc="456" mnc="09" apn="mms.beeline.com.kh" mmsc="http://mms.qbmore.mobi" mmsproxy="10.18.34.135" mmsport="8080" type="mms" />
+  <apn carrier="Camshin" mcc="456" mnc="18" apn="Camshin" mmsc="http://172.16.205.10:38090" mmsproxy="172.16.203.85" mmsport="8080" type="default,mms" />
   <apn carrier="China Mobile" mcc="460" mnc="00" apn="cmnet" type="default,supl" />
   <apn carrier="China Mobile MMS" mcc="460" mnc="00" apn="cmwap" proxy="10.0.0.172" port="80" mmsc="http://mmsc.monternet.com" mmsproxy="10.0.0.172" mmsport="80" type="mms" />
   <apn carrier="China Unicom 3G" mcc="460" mnc="01" apn="3gnet" port="80" type="default,supl" />
