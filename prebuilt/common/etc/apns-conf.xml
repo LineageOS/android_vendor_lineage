@@ -486,8 +486,8 @@
   <apn carrier="Aero2" mcc="260" mnc="17" apn="darmowy" type="default,supl" />
   <apn carrier="Carrefour Belgium" mcc="260" mnc="20" apn="carrefourdata.be" user="carrefour" password="carrefour" mmsc="http://mmsc.base.be/" mmsproxy="217.72.235.1" mmsport="8080" type="default" />
   <apn carrier="Carrefour Belgium MMS" mcc="260" mnc="20" apn="carrefourmms.be" user="carrefour" password="carrefour" mmsc="http://mmsc.base.be/" mmsproxy="217.72.235.1" mmsport="8080" type="mms" />
-  <apn carrier="Telekom DE-MMS" mcc="262" mnc="01" apn="internet.t-mobile" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.028.023.131" mmsport="8008" type="mms" />
-  <apn carrier="Telekom DE" mcc="262" mnc="01" apn="internet.telekom" user="tm" password="tm" server="*" type="default,supl" />
+  <apn carrier="Telekom DE-MMS" mcc="262" mnc="01" apn="internet.t-mobile" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="mms" />
+  <apn carrier="Telekom DE" mcc="262" mnc="01" apn="internet.telekom" user="t-mobile" password="tm" type="default,supl" />
   <apn carrier="Vodafone DE-MMS" mcc="262" mnc="02" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
   <apn carrier="Vodafone DE" mcc="262" mnc="02" apn="web.vodafone.de" user="none" password="none" type="default,supl" />
   <apn carrier="1und1" mcc="262" mnc="02" apn="web.vodafone.de" user="" password="" type="default,supl" />
