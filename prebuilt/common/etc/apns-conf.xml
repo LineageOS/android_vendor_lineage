@@ -60,6 +60,7 @@
   <apn carrier="KPN" mcc="204" mnc="08" apn="portalmmm.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="KPN MMS" mcc="204" mnc="08" apn="portalmmm.nl" proxy="10.10.100.20" port="5080" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="mms" />
   <apn carrier="KPN 4G LTE" mcc="204" mnc="08" apn="KPN4G.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
+  <apn carrier="Lycamobile NL" mcc="204" mnc="09" apn="data.lycamobile.nl" user="lmnl" password="plus" type="default,supl" />
   <apn carrier="Telfort" mcc="204" mnc="12" apn="internet" proxy="193.113.200.195" port="8080" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" />
   <apn carrier="T-Mobile NL" mcc="204" mnc="16" apn="internet" type="default,supl" />
   <apn carrier="T-Mobile NL-MMS" mcc="204" mnc="16" apn="mms" user="tmobilemms" password="tmobilemms" server="*" mmsc="http://t-mobilemms" mmsproxy="010.010.010.011" mmsport="8080" type="mms" />
@@ -75,6 +76,7 @@
   <apn carrier="Telenet MMS Intl Roam" mcc="206" mnc="01" apn="mms.be" mmsc="http://mmsc.telenet.be" mmsproxy="195.130.149.100" mmsport="80" type="mms" />
   <apn carrier="Telenet" mcc="206" mnc="05" apn="telenetwap.be" type="default,supl" />
   <apn carrier="Telenet MMS" mcc="206" mnc="05" apn="mms.be" mmsc="http://mmsc.telenet.be" mmsproxy="195.130.149.100" mmsport="80" type="mms" />
+  <apn carrier="Lycamobile BE" mcc="206" mnc="06" apn="data.lycamobile.be" username="lmbe" password="plus" type="default,supl" />
   <apn carrier="Mobistar" mcc="206" mnc="10" apn="mworld.be" port="8080" authtype="1" type="default,supl" />
   <apn carrier="Mobistar MMS" mcc="206" mnc="10" apn="mms.be" mmsc="http://mmsc.mobistar.be" mmsproxy="212.65.63.143" authtype="1" mmsport="8080" type="mms" />
   <apn carrier="BASE Belgium" mcc="206" mnc="20" apn="gprs.base.be" user="base" password="base" type="default,supl" />
@@ -107,6 +109,7 @@
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="21" apn="ebouygtel.com" type="default,supl" />
   <apn carrier="MMS Bouygues" mcc="208" mnc="21" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
   <apn carrier="Virgin FR" mcc="208" mnc="23" apn="virgin-mobile.fr" mmsc="http://virginmms.fr" mmsproxy="10.6.10.1" mmsport="8080" type="default,mms" />
+  <apn carrier="Lycamobile FR" mcc="208" mnc="25" apn="data.lycamobile.fr" username="lmfr" password="plus" type="default,supl" />
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="88" apn="ebouygtel.com" type="default,supl" />
   <apn carrier="MMS Bouygues" mcc="208" mnc="88" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
   <apn carrier="Vodafone ES-Internet" mcc="214" mnc="01" apn="ac.vodafone.es" user="vodafone" password="vodafone" type="default,supl" />
@@ -135,6 +138,7 @@
   <apn carrier="Simyo ES-MMS" mcc="214" mnc="19" apn="gprs-service.com" mmsc="http://217.18.32.180:8080" mmsproxy="217.18.32.181" mmsport="8080" type="mms" />
   <apn carrier="Jazztel" mcc="214" mnc="21" apn="jazzinternet" type="default,supl" />
   <apn carrier="Jazztel MMS" mcc="214" mnc="21" apn="jazzmms" mmsc="http://jazztelmms.com:8081" mmsproxy="217.18.32.183" mmsport="8081" type="mms" />
+  <apn carrier="Lycamobile ES" mcc="214" mnc="25" apn="data.lycamobile.es" username="lmes" password="plus" type="default,supl" />
   <apn carrier="Pannon MMS" mcc="216" mnc="01" apn="mms" mmsc="http://mmsc.pgsm.hu/" mmsproxy="193.225.154.22" mmsport="8080" type="mms" />
   <apn carrier="Pannon" mcc="216" mnc="01" apn="net" type="default,supl" />
   <apn carrier="Telenor Net" mcc="216" mnc="01" apn="net" type="default,supl" />
@@ -202,6 +206,7 @@
   <apn carrier="Sunrise MMS" mcc="228" mnc="02" apn="mms.sunrise.ch" user="mms" password="mms" mmsc=" http://mmsc.sunrise.ch" mmsproxy="212.35.34.75" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="228" mnc="03" apn="internet" type="default,supl" />
   <apn carrier="Orange MMS" mcc="228" mnc="03" apn="mms" mmsc="http://192.168.151.3:8002" mmsproxy="192.168.151.2" mmsport="8080" type="mms" />
+  <apn carrier="Lycamobile CH" mcc="208" mnc="54" apn="data.lycamobile.ch" username="lmch" password="plus" type="default,supl" />
   <apn carrier="Orange Prepaid CH" mcc="238" mnc="03" apn="click" type="default,supl" />
   <apn carrier="T-Mobile CZ" mcc="230" mnc="01" apn="internet.t-mobile.cz" user="wap" password="wap" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="default,supl" />
   <apn carrier="T-Mobile CZ MMS" mcc="230" mnc="01" apn="mms.t-mobile.cz" user="mms" password="mms" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="mms" />
@@ -251,6 +256,7 @@
   <apn carrier="OVIVO MMS" mcc="234" mnc="15" apn="gprsconnect.com" mmsc="http://mms.gprsconnect.com/servlets/mms" mmsproxy="212.183.137.12" mmsport="8799" type="mms" />
   <apn carrier="TalkTalk" mcc="234" mnc="15" apn="mobile.talktalk.co.uk" mmsc="http://mms.talktalk.co.uk/servlets/mms" port="8799" mmsproxy="212.183.137.12" mmsport="8799" type="default,supl,mms" />
   <apn carrier="3 UK" mcc="234" mnc="20" apn="three.co.uk" mmsc="http://mms.um.three.co.uk:10021/mmsc" mmsproxy="mms.three.co.uk" mmsport="8799" type="default,supl,mms" />
+  <apn carrier="Lycamobile UK" mcc="234" mnc="26" apn="data.lycamobile.co.uk" username="lmuk" password="plus" type="default,supl" />
   <apn carrier="EE Internet" mcc="234" mnc="30" apn="everywhere" user="eesecure" password="secure" authtype="1" type="default,supl,dun" />
   <apn carrier="EE MMS" mcc="234" mnc="30" apn="eezone" user="eesecure" password="secure" mmsc="http://mms/" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Virgin UK" mcc="234" mnc="31" apn="goto.virginmobile.uk" user="user" type="default,supl" />
@@ -286,6 +292,7 @@
   <apn carrier="Telenor DK MMS" mcc="238" mnc="02" apn="telenor" mmsc="http://mms.telenor.dk" mmsproxy="212.88.64.8" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="3 DK" mcc="238" mnc="06" apn="data.tre.dk" mmsc="http://mms.3.dk" mmsproxy="mmsproxy.3.dk" mmsport="8799" type="default,supl,mms" />
   <apn carrier="3 Danmark" mcc="238" mnc="06" apn="data.tre.dk" mmsc="http://mms.3.dk/" mmsproxy="172.16.1.25" mmsport="8799" type="default,supl,mms" />
+  <apn carrier="Lycamobile DK" mcc="238" mnc="12" apn="data.lycamobile.dk" username="lmdk" password="plus" type="default,supl" />
   <apn carrier="Telia DK" mcc="238" mnc="20" apn="www.internet.mtelia.dk" type="default,supl" />
   <apn carrier="Telia DK MMS" mcc="238" mnc="20" apn="www.mms.mtelia.dk" mmsc="http://mms.telia.dk" mmsproxy="193.209.134.131" mmsport="8080" type="mms" />
   <apn carrier="Call me Internet" mcc="238" mnc="20" apn="websp" authtype="2" type="default,supl" />
@@ -314,6 +321,7 @@
   <apn carrier="Telenor MMS" mcc="240" mnc="09" apn="services.telenor.se" mmsc="http://mms" mmsproxy="173.30.253.241" mmsport="8799" type="mms" />
   <apn carrier="Spring data" mcc="240" mnc="10" apn="data.springmobil.se" type="default,supl" />
   <apn carrier="Spring MMS" mcc="240" mnc="10" apn="mms.springmobil.se" mmsc="http://mms.springmobil.se" mmsproxy="213.88.184.37" mmsport="8080" type="mms" />
+  <apn carrier="Lycamobile SE" mcc="240" mnc="12" apn="data.lycamobile.se" username="lmse" password="plus" type="default,supl" />
   <apn carrier="Ventelo Internet" mcc="242" mnc="01" apn="internet.ventelo.no" type="default,supl" />
   <apn carrier="Ventelo MMS" mcc="242" mnc="01" apn="mms.ventelo.no" user="ventelo" password="1111" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" proxy="10.10.10.10" port="8080" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" authtype="1" type="default,supl,mms" />
@@ -480,7 +488,7 @@
   <apn carrier="MNI MMS" mcc="260" mnc="03" apn="mni.mms" user="mni.mms" password="mni.mms" mmsc="http://mms.mni.pl/" mmsproxy="192.168.006.135" mmsport="8080" type="mms" />
   <apn carrier="Play" mcc="260" mnc="06" apn="internet" type="default,supl" />
   <apn carrier="Play MMS" mcc="260" mnc="06" apn="mms" mmsc="http://10.10.28.164/mms/wapenc" mmsproxy="10.10.25.5" mmsport="8080" type="mms" />
-  <apn carrier="Lycamobile" mcc="260" mnc="09" apn="data.lycamobile.pl" user="lmpl" password="plus" type="default,supl" />
+  <apn carrier="Lycamobile PL" mcc="260" mnc="09" apn="data.lycamobile.pl" user="lmpl" password="plus" type="default,supl" />
   <apn carrier="Cyfrowy Polsat" mcc="260" mnc="12" apn="internet.cyfrowypolsat.pl" type="default,supl" />
   <apn carrier="Cyfrowy Polsat MMS" mcc="260" mnc="12" apn="mms.cyfrowypolsat.pl" mmsc="http://mms.cyfrowypolsat.pl:8002/" mmsproxy="79.171.2.33" mmsport="8080" type="mms" />
   <apn carrier="Aero2" mcc="260" mnc="17" apn="darmowy" type="default,supl" />
@@ -506,10 +514,12 @@
   <apn carrier="Vodafone DE-MMS" mcc="262" mnc="09" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
   <apn carrier="Vodafone DE" mcc="262" mnc="09" apn="web.vodafone.de" type="default,supl" />
   <apn carrier="o2" mcc="262" mnc="11" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Vodafone PT" mcc="268" mnc="01" apn="net2.vodafone.pt" proxy="iproxy.vodafone.pt" port="80" mmsc="http://mms.vodafone.pt/servlets/mms" mmsproxy="iproxy.vodafone.pt" mmsport="80" type="default,supl,mms" />
+  <apn carrier="Lycamobile DE" mcc="262" mnc="43" apn="data.lycamobile.de" username="lmde" password="plus" type="default,supl" />
+  <apn carrier="Vodafone PT Internet" mcc="268" mnc="01" apn="net2.vodafone.pt" user="vodafone" password="vodafone" server="*" type="default,supl" />
+  <apn carrier="Vodafone PT MMS" mcc="268" mnc="01" apn="vas.vodafone.pt" user="vas" password="vas" server="*" mmsc="http://mms/servlets/mms" mmsproxy="213.30.27.63" mmsport="8799" type="mms" />
   <apn carrier="Optimus Internet" mcc="268" mnc="03" apn="umts" server="*" type="default,supl" />
   <apn carrier="Optimus MMS" mcc="268" mnc="03" apn="mms" server="*" mmsc="http://mmsc:10021/mmsc" mmsproxy="62.169.66.5" mmsport="8799" type="mms" />
-  <apn carrier="Lycamobile PT" mcc="268" mnc="04" apn="data.lycamobile.pt" type="default,supl"/>
+  <apn carrier="Lycamobile PT" mcc="268" mnc="04" apn="data.lycamobile.pt" username="lmpt" password="plus" type="default,supl"/>
   <apn carrier="TMN Internet" mcc="268" mnc="06" apn="internet" server="*" type="default,supl" />
   <apn carrier="TMN MMS" mcc="268" mnc="06" apn="mmsc.tmn.pt" user="tmn" password="tmnnet" server="*" mmsc="http://mmsc" mmsproxy="10.111.2.16" mmsport="8080" type="mms" />
   <apn carrier="Luxgsm Internet" mcc="270" mnc="01" apn="web.pt.lu" type="default,supl,mms" />
@@ -527,8 +537,9 @@
   <apn carrier="Eircom/Meteor MMS" mcc="272" mnc="03" apn="wap.mymeteor.ie" user="my" password="meteor" server="http://wap.mymeteor.ie" proxy="10.85.85.85" port="8799" mmsc="http://mms.mymeteor.ie" mmsproxy="10.85.85.85" mmsport="8799" type="mms" />
   <apn carrier="3 IE MMS" mcc="272" mnc="05" apn="3ireland.ie" server="3ireland.ie" mmsc="http://mms.um.3ireland.ie:10021/mmsc" mmsproxy="mms.3ireland.ie" mmsport="8799" type="default,supl,mms" />
   <apn carrier="3 Ireland" mcc="272" mnc="05" apn="3ireland.ie" mmsc="http://mms.um.3ireland.ie:10021/mmsc" mmsproxy="mms.3ireland.ie" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="TMI Internet APN" mcc="272" mnc="11" apn="tescomobile.liffeytelecom.com" type="default,supl" />
-  <apn carrier="TMI MMS APN" mcc="272" mnc="11" apn="tescomobile.liffeytelecom.com" mmsc="http://mmc1/servlets/mms" mmsproxy="10.1.11.19" mmsport="8080" type="mms" />
+  <apn carrier="TMI APN" mcc="272" mnc="11" apn="tescomobile.liffeytelecom.com" mmsc="http://mmc1/servlets/mms" mmsproxy="10.1.11.19" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="48months" mcc="272" mnc="11" apn="48months.liffeytelecom.com" mmsc="http://mmc1/servlets/mms" mmsproxy="10.1.11.19" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Lycamobile IE" mcc="272" mnc="13" apn="data.lycamobile.ie" user="lmie" password="plus" type="default,supl" />
   <apn carrier="Siminn" mcc="274" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Siminn MMS" mcc="274" mnc="01" apn="mms.simi.is" mmsc="http://mms.simi.is/servlets/mms" mmsproxy="213.167.138.200" mmsport="9201" type="mms" />
   <apn carrier="Vodafone Internet" mcc="274" mnc="02" apn="gprs.is" type="default,supl" />
@@ -750,6 +761,7 @@
   <apn carrier="Edge MMS Prepay" mcc="310" mnc="840" apn="ppmms" mmsc="http://mms.edgemobile.net/mmsc" mmsproxy="12.108.12.13" mmsport="3128" type="mms" />
   <apn carrier="DTC MMS" mcc="310" mnc="880" apn="mms.adv.com" mmsc="http://mms.iot1.com/advantage/mms.php" type="mms" />
   <apn carrier="WOW_WAP" mcc="310" mnc="910" apn="wap.firstcellular.com" mmsc="mms.firstcellular.net/mmsc" mmsproxy="10.101.1.5" mmsport="3128" type="default,supl,mms" />
+  <apn carrier="Lycamobile US" mcc="311" mnc="96" apn="data.lycamobile.us" username="lmus" password="plus" type="default,supl" />
   <apn carrier="MMS" mcc="311" mnc="190" apn="wap.cellular1.net" mmsc="http://mms.cellular1.net/ecit/mms.php" type="mms" />
   <apn carrier="Farmers" mcc="311" mnc="210" apn="internet.farmerswireless.com" type="default,supl" />
   <apn carrier="Farmers MMS" mcc="311" mnc="210" apn="mms.farmers.com" mmsc="172.16.0.37:8514" type="mms" />
@@ -1429,6 +1441,7 @@
   <apn carrier="Telstra Internet" mcc="505" mnc="11" apn="Telstra.wap" type="default,supl" />
   <apn carrier="3Internet" mcc="505" mnc="12" apn="3netaccess" type="default,supl" />
   <apn carrier="3" mcc="505" mnc="12" apn="3services" mmsc="http://mmsc.three.net.au:10021/mmsc" mmsproxy="10.176.57.25" mmsport="8799" type="default,supl,mms" />
+  <apn carrier="Lycamobile AU" mcc="505" mnc="19" apn="data.lycamobile.com.au" username="lmau" password="plus" type="default,supl" />
   <apn carrier="Telstra MMS" mcc="505" mnc="71" apn="Telstra.mms" mmsc="http://mmsc.telstra.com:8002" mmsproxy="10.1.1.180" mmsport="80" type="mms" />
   <apn carrier="Telstra Internet" mcc="505" mnc="71" apn="Telstra.wap" type="default,supl" />
   <apn carrier="Telstra MMS" mcc="505" mnc="72" apn="Telstra.mms" mmsc="http://mmsc.telstra.com:8002" mmsproxy="10.1.1.180" mmsport="80" type="mms" />
