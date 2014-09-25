@@ -219,7 +219,7 @@ PRODUCT_PACKAGES += \
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-chameleonterm4.so:system/lib/libjackpal-chameleonterm4.so
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
