@@ -89,7 +89,6 @@
   <spnOverride numeric="40001"  spn="Azercell" />
   <spnOverride numeric="40002"  spn="Bakcell" />
   <spnOverride numeric="40003"  spn="FONEX" />
-  <!-- Azerbaijan -->
   <spnOverride numeric="40004"  spn="Nar Mobile" />
   <!-- Bahamas -->
   <spnOverride numeric="364390" spn="BaTelCo" />
