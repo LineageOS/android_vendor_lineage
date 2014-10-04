@@ -1185,23 +1185,28 @@
   <apn carrier="Axis" mcc="410" mnc="08" apn="axis" user="axis" password="123456" type="default,supl" />
   <apn carrier="AWCC" mcc="412" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="AWCC MMS" mcc="412" mnc="01" apn="mms1" mmsc="http://172.17.81.2:8002" mmsproxy="172.17.81.2" mmsport="8002" type="mms" />
+  <apn carrier="Roshan" mcc="412" mnc="20" apn="internet" user="gprs" password="roshan" type="default,supl" />
+  <apn carrier="Roshan MMS" mcc="412" mnc="20" apn="mms" mmsc="http://mms.roshan.af" mmsproxy="172.31.37.16" mmsport="8080" type="mms" />
   <apn carrier="MTN Internet" mcc="412" mnc="40" apn="internet.mtn.com.af" type="default,supl" />
   <apn carrier="MTN MMS" mcc="412" mnc="40" apn="mms.mtn.com.af" mmsc="http://192.168.4.136/servlets/mms" mmsproxy="192.168.4.136" mmsport="8080" type="mms" />
-  <apn carrier="Etisalat" mcc="412" mnc="50" apn="etisalat.af.wap" type="default,supl" />
+  <apn carrier="Etisalat" mcc="412" mnc="50" apn="etisalat.af.web" type="default,supl" />
+  <apn carrier="Etisalat WAP" mcc="412" mnc="50" apn="etisalat.af.wap" proxy="10.0.0.172" port="80" type="default,supl" />
+  <apn carrier="Etisalat MMS" mcc="412" mnc="50" apn="etisalat.af.mms" proxy="10.0.0.172" port="80" type="mms" />
   <apn carrier="Mobitel" mcc="413" mnc="01" apn="mobitel3g" type="default,supl" />
   <apn carrier="Mobitel MMS" mcc="413" mnc="01" apn="wapmms" mmsc="http://192.168.50.165" mmsproxy="192.168.50.163" mmsport="8080" type="mms" />
   <apn carrier="Dialog Mobile Broadband" mcc="413" mnc="02" apn="dialogbb" server="dialog" mmsc="http://mms.dialog.lk:3130/mmsc" mmsproxy="192.168.122.2" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Etisalat" mcc="413" mnc="03" apn="ebb" type="default,supl" />
   <apn carrier="Etisalat MMS" mcc="413" mnc="03" apn="mms" mmsc="http://mms.etisalt.lk:8085" mmsproxy="192.168.104.4" mmsport="9401" type="mms" />
+  <apn carrier="Airtel" mcc="413" mnc="05" apn="default" type="default,supl" />
   <apn carrier="Hutch3G" mcc="413" mnc="08" apn="hutch3g" type="default,supl" />
   <apn carrier="MPT" mcc="414" mnc="01" apn="mptnet" user="mptnet" password="mptnet" type="default,supl" />
   <apn carrier="Alfa" mcc="415" mnc="01" apn="internet.mic1.com.lb" user="mic1" password="mic1" type="default,supl" />
   <apn carrier="Alfa MMS" mcc="415" mnc="01" apn="mms.mic1.com.lb" user="mic1" password="mic1" mmsc="http://mms.mic1.com.lb" mmsproxy="192.168.23.51" mmsport="9201" type="mms" />
   <apn carrier="Alfa WAP" mcc="415" mnc="01" apn="wap.mic1.com.lb" user="mic1" password="mic1" proxy="192.168.23.50" port="80" type="default,supl" />
   <apn carrier="mtc touch" mcc="415" mnc="03" apn="gprs.mtctouch.com.lb" type="default,supl" />
-  <apn carrier="Alfa MMS" mcc="415" mnc="03" apn="mms.mic1.com.lb" user="mic1" password="mic1" mmsc="http://mms.mic1.com.lb" mmsproxy="192.168.23.51" mmsport="9201" type="mms" />
   <apn carrier="mtc touch MMS" mcc="415" mnc="03" apn="mms.mtctouch.com.lb" user="mtctouch" mmsc="http://mms:8080/mms/" mmsproxy="192.168.4.103" mmsport="9201" type="mms" />
   <apn carrier="Alfa WAP" mcc="415" mnc="03" apn="wap.mic1.com.lb" user="mic1" password="mic1" proxy="192.168.023.050" port="80" type="default,supl" />
+  <apn carrier="Alfa MMS" mcc="415" mnc="03" apn="mms.mic1.com.lb" user="mic1" password="mic1" mmsc="http://mms.mic1.com.lb" mmsproxy="192.168.23.51" mmsport="9201" type="mms" />
   <apn carrier="Zain JO Postpaid" mcc="416" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Zain JO Prepaid" mcc="416" mnc="01" apn="internetpre" user="zain" password="zain" type="default,supl" />
   <apn carrier="Zain JO WAP" mcc="416" mnc="01" apn="zain" user="zain" password="zain" proxy="192.168.55.10" port="80" type="default,supl" />
@@ -1215,14 +1220,28 @@
   <apn carrier="Syriatel" mcc="417" mnc="01" apn="net.syriatel.com" type="default,supl" />
   <apn carrier="MTN SY" mcc="417" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="MTN SY MMS" mcc="417" mnc="02" apn="mms" mmsc="http://10.11.161.138/:10021/mmsc" mmsproxy="10.11.161.131" mmsport="8080" type="mms" />
+  <apn carrier="Asiacell" mcc="418" mnc="05" apn="net.asiacell.com" type="default,supl" />
+  <apn carrier="Asiacell MMS" mcc="418" mnc="05" apn="wap.asiacell.com" mmsc="http://192.168.107.10:19090/was" mmsproxy="192.168.107.50" mmsport="8080" type="mms" />
+  <apn carrier="SanaTel" mcc="418" mnc="08" apn="default" type="default,supl" />
+  <apn carrier="Zain-GPRS" mcc="418" mnc="20" apn="internet" user="atheer" password="atheer" type="default,supl" />
+  <apn carrier="Zain-MMS" mcc="418" mnc="20" apn="MMS" user="atheer" password="atheer" mmsc="http://mms:8002/" mmsproxy="172.29.11.12" mmsport="8080" type="mms" />
+  <apn carrier="Zain-GPRS" mcc="418" mnc="30" apn="internet" user="atheer" password="atheer" type="default,supl" />
+  <apn carrier="Zain-MMS" mcc="418" mnc="30" apn="MMS" user="atheer" password="atheer" mmsc="http://mms:8002/" mmsproxy="172.29.11.12" mmsport="8080" type="mms" />
+  <apn carrier="Korek" mcc="418" mnc="40" apn="internet.korek.com" type="default,supl" />
+  <apn carrier="Korek GPRS" mcc="418" mnc="40" apn="net.korek.com" user="korek" password="korek" type="default,supl" />
+  <apn carrier="Korek MMS" mcc="418" mnc="40" apn="mms.korek.com" user="korek" password="korek" mmsc="http://mms.korektel.com/mms/wapenc" mmsproxy="192.168.18.187" mmsport="8080" type="mms" />
+  <apn carrier="Mobitel IQ" mcc="418"  mnc="45" apn="default" type="default,supl" />
+  <apn carrier="Itisaluna" mcc="418" mnc="62" apn="default" type="default,supl" />
+  <apn carrier="Omnnea" mcc="418" mnc="92" apn="default" type="default,supl" />
+  <apn carrier="MI" mcc="419" mnc="02" apn="pps" user="pps" password="pps" type="default,supl" />
+  <apn carrier="MTC Vodafone KW" mcc="419" mnc="02" apn="apn01" type="default,supl" />
+  <apn carrier="MTC Vodafone KW MMS" mcc="419" mnc="02" apn="mms" user="annyway" password="online" mmsc="http://176.000.000.021" mmsproxy="176.0.0.65" mmsport="8080" type="mms" />
   <apn carrier="Zain KW" mcc="419" mnc="02" apn="pps" user="pps" password="pps" type="default,supl" />
   <apn carrier="Zain KW MMS" mcc="419" mnc="02" apn="pps" user="mms" password="mms" mmsc="http://mms.zain" mmsproxy="176.0.0.65" mmsport="8080" type="mms" />
+  <apn carrier="wataniya" mcc="419" mnc="03" apn="action.wataniya.com" type="default,supl" />
+  <apn carrier="wataniya MMS" mcc="419" mnc="03" apn="mms.wataniya.com" mmsc="http://action.wataniya.com" mmsproxy="194.126.053.064" mmsport="8080" type="mms" />
   <apn carrier="Viva KW" mcc="419" mnc="04" apn="viva" type="default,supl" />
   <apn carrier="Viva KW MMS" mcc="419" mnc="04" apn="viva" mmsc="http://172.16.128.80:38090/was" mmsproxy="172.16.128.228" mmsport="8080" type="mms" />
-  <apn carrier="MTC Vodafone KW" mcc="419" mnc="2" apn="apn01" type="default,supl" />
-  <apn carrier="MTC Vodafone KW MMS" mcc="419" mnc="2" apn="mms" user="annyway" password="online" mmsc="http://176.000.000.021" mmsproxy="176.0.0.65" mmsport="8080" type="mms" />
-  <apn carrier="wataniya" mcc="419" mnc="3" apn="action.wataniya.com" type="default,supl" />
-  <apn carrier="wataniya MMS" mcc="419" mnc="3" apn="mms.wataniya.com" mmsc="http://action.wataniya.com" mmsproxy="194.126.053.064" mmsport="8080" type="mms" />
   <apn carrier="AL JA WAL" mcc="420" mnc="01" apn="jawalnet.com.sa" type="default,supl" />
   <apn carrier="AL JA WAL MMS" mcc="420" mnc="01" apn="mms.net.sa" mmsc="http://mms.net.sa:8002" mmsproxy="10.1.1.1" mmsport="9201" type="mms" />
   <apn carrier="Mobily MMS" mcc="420" mnc="03" apn="mms1" mmsc="http://10.3.3.133:9090/was" mmsproxy="10.3.2.133" mmsport="9201" type="mms" />
