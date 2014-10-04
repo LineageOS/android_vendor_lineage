@@ -134,6 +134,8 @@
   <apn carrier="Movistar ES-MMS" mcc="214" mnc="07" apn="telefonica.es" user="telefonica" password="telefonica" mmsc="http://mms.movistar.com" mmsproxy="10.138.255.5" mmsport="8080" type="mms" />
   <apn carrier="Euskaltel" mcc="214" mnc="08" apn="internet.euskaltel.mobi" user="CLIENTE" password="EUSKALTEL" type="default,supl" />
   <apn carrier="Euskaltel MMS" mcc="214" mnc="08" apn="euskaltelmms.euskaltel.mobi" user="MMS" password="EUSKALTEL" mmsc="http://mms.euskaltel.mobi" mmsproxy="172.16.18.74" mmsport="8080" type="mms" />
+  <apn carrier="TeleCable Internet" mcc="214" mnc="16" apn="internet.telecable.es" user="telecable" password="telecable" type="default,supl" />
+  <apn carrier="TeleCable MMS" mcc="214" mnc="16" apn="mms.telecable.es" user="telecable" password="telecable" mmsc="http://mms.telecable.es/mms/" mmsproxy="212.89.0.84" mmsport="8080" type="mms" />
   <apn carrier="ONO Internet" mcc="214" mnc="18" apn="internet.ono.com" type="default,supl"/>
   <apn carrier="ONO MMS" mcc="214" mnc="18" apn="mms.ono.com" mmsc="http://mms.ono.com" mmsproxy="10.126.0.50" mmsport="8080" type="mms"/>
   <apn carrier="Simyo ES" mcc="214" mnc="19" apn="gprs-service.com" type="default,supl" />
@@ -141,6 +143,7 @@
   <apn carrier="Jazztel" mcc="214" mnc="21" apn="jazzinternet" type="default,supl" />
   <apn carrier="Jazztel MMS" mcc="214" mnc="21" apn="jazzmms" mmsc="http://jazztelmms.com:8081" mmsproxy="217.18.32.183" mmsport="8081" type="mms" />
   <apn carrier="Lycamobile ES" mcc="214" mnc="25" apn="data.lycamobile.es" username="lmes" password="plus" type="default,supl" />
+  <apn carrier="Truphone ES" mcc="214" mnc="27" apn="truphone.com" type="default,supl" />
   <apn carrier="Pannon MMS" mcc="216" mnc="01" apn="mms" mmsc="http://mmsc.pgsm.hu/" mmsproxy="193.225.154.22" mmsport="8080" type="mms" />
   <apn carrier="Pannon" mcc="216" mnc="01" apn="net" type="default,supl" />
   <apn carrier="Telenor Net" mcc="216" mnc="01" apn="net" type="default,supl" />
@@ -157,6 +160,8 @@
   <apn carrier="ERONET 4GB" mcc="218" mnc="03" apn="data2.eronet.ba" user="" server="" password="" proxy="" port="" mmsc="" type="supl"/>
   <apn carrier="ERONET FLAT" mcc="218" mnc="03" apn="data3.eronet.ba" user="" server="" password="" proxy="" port="" mmsc="" type="supl"/>
   <apn carrier="ERONET MMS" mcc="218" mnc="03" apn="mms.eronet.ba" user="" server="" password="" mmsc="http://mms.gprs.eronet.ba/mms/wapenc" mmsproxy="010.012.003.011" mmsport="8080" type="mms"/>
+  <apn carrier="M-tel" mcc="218" mnc="05" apn="3g1" proxy="192.168.61.10" port="80" type="default,supl" />
+  <apn carrier="M-tel mms" mcc="218" mnc="05" apn="mtelmms" mmsc="http://mmsc.mtel.ba/mms/wapenc" mmsproxy="192.168.61.11" mmsport="8080" type="mms" />
   <apn carrier="BH Mobile" mcc="218" mnc="90" apn="active.bhmobile.ba" type="default,supl" />
   <apn carrier="BH Mobile MMS" mcc="218" mnc="90" apn="mms.bhmobile.ba" mmsc="http://mms.bhmobile.ba/cmmsc/post" mmsproxy="195.222.056.041" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile HR MMS" mcc="219" mnc="01" apn="mms.htgprs" mmsc="http://mms.t-mobile.hr/servlets/mms" mmsproxy="10.12.0.4" mmsport="8080" type="mms" />
@@ -207,9 +212,9 @@
   <apn carrier="Sunrise Internet" mcc="228" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="Sunrise MMS" mcc="228" mnc="02" apn="mms.sunrise.ch" user="mms" password="mms" mmsc=" http://mmsc.sunrise.ch" mmsproxy="212.35.34.75" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="228" mnc="03" apn="internet" type="default,supl" />
+  <apn carrier="Orange Prepaid CH" mcc="228" mnc="03" apn="click" type="default,supl" />
   <apn carrier="Orange MMS" mcc="228" mnc="03" apn="mms" mmsc="http://192.168.151.3:8002" mmsproxy="192.168.151.2" mmsport="8080" type="mms" />
-  <apn carrier="Lycamobile CH" mcc="208" mnc="54" apn="data.lycamobile.ch" username="lmch" password="plus" type="default,supl" />
-  <apn carrier="Orange Prepaid CH" mcc="238" mnc="03" apn="click" type="default,supl" />
+  <apn carrier="Lycamobile CH" mcc="228" mnc="54" apn="data.lycamobile.ch" username="lmch" password="plus" type="default,supl" />
   <apn carrier="T-Mobile CZ" mcc="230" mnc="01" apn="internet.t-mobile.cz" user="wap" password="wap" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="default,supl" />
   <apn carrier="T-Mobile CZ MMS" mcc="230" mnc="01" apn="mms.t-mobile.cz" user="mms" password="mms" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="mms" />
   <apn carrier="O2 CZ-Internet" mcc="230" mnc="02" apn="internet" type="default,supl" />
