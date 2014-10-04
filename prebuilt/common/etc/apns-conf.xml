@@ -438,9 +438,8 @@
   <apn carrier="MTS-MMS" mcc="255" mnc="01" apn="mms" mmsc="http://mmsc:8002" mmsproxy="192.168.010.010" mmsport="8080" type="mms" />
   <apn carrier="JEANS" mcc="255" mnc="01" apn="www.jeans.ua" type="default,supl" />
   <apn carrier="MTS UA" mcc="255" mnc="01" apn="www.umc.ua" type="default,supl" />
-  <apn carrier="Beeline UA" mcc="255" mnc="02" apn="internet.beeeline.ua" type="default,supl" />
-  <apn carrier="Beeline-internet" mcc="255" mnc="02" apn="internet.beeline.ua" type="default,supl" />
-  <apn carrier="Beeline UA MMS" mcc="255" mnc="02" apn="mms.beeline.ua" mmsc="http://mms/" mmsproxy="10.11.8.18" mmsport="8080" type="mms" />
+  <apn carrier="Beeline UA" mcc="255" mnc="02" apn="internet.beeline.ua" type="default,supl" />
+  <apn carrier="Beeline UA MMS" mcc="255" mnc="02" apn="mms.beeline.ua" mmsc="http://mms/" mmsproxy="172.29.18.192" mmsport="8080" type="mms" />
   <apn carrier="Ace_Base MMS" mcc="255" mnc="03" apn="mms.kyivstar.net" user="mms" password="mms" mmsc="http://mms.kyivstar.net" mmsproxy="10.10.10.10" mmsport="8080" type="mms" />
   <apn carrier="Ace_Base" mcc="255" mnc="03" apn="www.ab.kyivstar.net" type="default,supl" />
   <apn carrier="Djuice EDGE" mcc="255" mnc="03" apn="www.djuice.com.ua" type="default,supl" />
