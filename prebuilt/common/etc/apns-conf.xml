@@ -1556,6 +1556,7 @@
   <apn carrier="Libyana" mcc="606" mnc="00" apn="wap" proxy="192.168.8.148" port="8000" type="default,supl" />
   <apn carrier="Al-Madar MMS" mcc="606" mnc="01" apn="almadar.mms" mmsc="http://almadar.mms/servlets/mms" mmsproxy="41.208.82.50" mmsport="8080" type="mms" />
   <apn carrier="Al-Madar" mcc="606" mnc="01" apn="almadar.net" type="default,supl" />
+  <apn carrier="Africell Gambia" mcc="607" mnc="02" apn="africellnet" type="default,supl" />
   <apn carrier="Orange MMS SN" mcc="608" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://mmsalize/servlets/mms" mmsproxy="172.16.30.9" mmsport="8080" type="mms" />
   <apn carrier="Orange Wap SN" mcc="608" mnc="01" apn="wap" user="wap" password="wap" proxy="172.16.30.9" port="8080" type="default" />
   <apn carrier="Orange Web SN" mcc="608" mnc="01" apn="internet" user="internet" password="internet" type="default" />
@@ -1570,6 +1571,7 @@
   <apn carrier="Orange Internet" mcc="614" mnc="04" apn="orange.ne" type="default" />
   <apn carrier="Orange MMS" mcc="617" mnc="01" apn="orangemms" user="mmsc" password="mmsc" mmsc="http://10.2.1.20:8514" mmsproxy="10.2.1.20" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="617" mnc="01" apn="orange" type="default" />
+  <apn carrier="Africell Sierra Leone" mcc="619" mnc="03" apn="africellnet" type="default,supl" />
   <apn carrier="Zain NG" mcc="621" mnc="20" apn="internet.ng.zain.com" type="default,supl" />
   <apn carrier="MTN NG" mcc="621" mnc="30" apn="web.gprs.mtnnigeria.net" user="web" password="web" proxy="10.199.212.2" type="default,supl" />
   <apn carrier="MTN NG MMS" mcc="621" mnc="30" apn="web.gprs.mtnnigeria.net" user="web" password="web" mmsc="http://10.199.212.8/servlets/mms" mmsproxy="10.199.212.2" mmsport="8080" type="mms" />
@@ -1599,6 +1601,7 @@
   <apn carrier="Orange Internet UG" mcc="641" mnc="14" apn="orange.ug" type="default" />
   <apn carrier="Orange MMS" mcc="641" mnc="14" apn="orangemms" mmsc="http://mms/" type="mms" />
   <apn carrier="Waridtel UG" mcc="641" mnc="22" apn="web.waridtel.co.ug" type="default,supl" />
+  <apn carrier="Africell Burundi" mcc="642" mnc="02" apn="africellnet" type="default,supl" />
   <apn carrier="Orange MG MMS" mcc="646" mnc="02" apn="orangemms" user="mms" password="orange" mmsc="http://10.152.10.70.38090" mmsproxy="10.150.0.115" mmsport="8080" type="mms" />
   <apn carrier="Orange World MG" mcc="646" mnc="02" apn="orangeworld" user="world" password="orange" proxy="10.150.0.115" port="8080" type="default" />
   <apn carrier="Orange MG" mcc="646" mnc="02" apn="orangenet" type="default,supl" />
@@ -1644,10 +1647,10 @@
   <apn carrier="Enitel MMS" mcc="710" mnc="730" apn="mms.indeasalo.ni" user="mms" password="mms" mmsproxy="10.6.32.2" mmsport="8080" mmsc="http://10.6.32.27/servlets/mms" authtype="1" type="mms" />
   <apn carrier="Cable and Wireless Panama" mcc="714" mnc="01" apn="apn01.cwpanama.com.pa" type="default,supl" />
   <apn carrier="Cable and Wireless Panama MMS" mcc="714" mnc="01" apn="apn02.cwpanama.com.pa" mmsc="http://mms.zonamovil.com.pa:80/i.bin" mmsproxy="172.25.3.5" mmsport="8080" type="mms" />
+  <apn carrier="Movistar PA" mcc="714" mnc="02" apn="internet.movistar.pa" user="movistarpa" password="movistarpa" type="default,supl"/>
   <apn carrier="Claro Web" mcc="714" mnc="03" apn="web.claro.com.pa" user="CLAROWEB" password="CLAROWEB" authtype="1" type="default,supl" />
   <apn carrier="Claro MMS" mcc="714" mnc="03" apn="mms.claro.com.pa" user="CLAROMMS" password="CLAROMMS" mmsc="http://www.claro.com.pa/mms" authtype="1" type="mms" />
   <apn carrier="Digicel PA" mcc="714" mnc="04" apn="web.digicelpanama.com" type="default,supl"/>
-  <apn carrier="Movistar PA" mcc="714" mnc="020" apn="internet.movistar.pa" user="movistarpa" password="movistarpa" type="default,supl"/>
   <apn carrier="QUAM" mcc="722" mnc="01" apn="internet.movil" user="internet" password="internet" authtype="1" type="default,supl,dun" />
   <apn carrier="QUAM MMS" mcc="722" mnc="01" apn="mms.movil" user="mms" password="mms" mmsc="http://mms.quam.com.ar" mmsproxy="200.68.32.239" mmsport="9090" type="mms" />
   <apn carrier="Movistar AG" mcc="722" mnc="007" apn="internet.unifon" user="wap" password="password" type="default,supl" />
