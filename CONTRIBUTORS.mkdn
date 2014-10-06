@@ -112,6 +112,8 @@ Maintainers (CyanogenMod 11.0):
 * __Sony Xperia Z1 compact (amami):__ jerpelea, Kali- (FreeXperia team), intervigil, championswimmer, Bumble-Bee
 * __Sony Xperia Z2 (sirius):__ Kali-, jerpelea (FreeXperia team), Bumble-Bee
 * __Sony Z Ultra GPE (togari_gpe):__ jerpelea, Kali- (FreeXperia team), cdesai
+* __Xiaomi Mi2(s) (aries):__ Michael Zimmermann
+
 
 
 General developers:
@@ -144,7 +146,7 @@ Translators:
 * __Hindi:__ c0d3ripp3r (c0d3ripp3r), Solomon Sunder (solomonsunder)
 * __Hungarian:__ Bálint Czobor (balint), Buga Dániel (BugaDániel), fischerandris (fischerandris), lazajnd (lazajnd), Tamás Tóth (tothtamassyman)
 * __Indonesian:__ Vicky Sofyan (Arch9), famihyypia (famihyypia), Ilham Ibrahim (iiibrahim89), Ruswan Efendi (RuswanWu7), tohenk (tohenk)
-* __Italian:__ Alessandro Preti (alessandropreti), Francesco Foresta (francescoforesta), Lorenzo Faccini (lo97), rheeze (rheeze), Valdevies (Valdevies)
+* __Italian:__ Alessandro Preti (alessandropreti), Francesco Foresta (francescoforesta), Joey Rizzoli (linuxx), Lorenzo Faccini (lo97), rheeze (rheeze), Valdevies (Valdevies)
 * __Japanese:__ Black Zigong (blackzigong), jiveking (jiveking), おたっく (otack), Sena Endo (senaforandroid), stmay30 (stmay30)
 * __Korean:__ 이승렬 (toy0605)
 * __Kurdish:__ falah (Dylan2785)
