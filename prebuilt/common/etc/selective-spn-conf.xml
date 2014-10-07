@@ -1194,8 +1194,8 @@
   <spnOverride numeric="26010"  spn="Telefony Opalenickie" />
   <spnOverride numeric="26009"  spn="Telekomunikacja Kolejowa" />
   <!-- Portugal -->
-  <spnOverride numeric="26803"  spn="Optimus" />
-  <spnOverride numeric="26806"  spn="TMN" />
+  <spnOverride numeric="26806"  spn="MEO" />
+  <spnOverride numeric="26803"  spn="NOS" />
   <spnOverride numeric="26801"  spn="Vodafone" />
   <spnOverride numeric="26821"  spn="Zapp" />
   <!-- Puerto Rico -->
