@@ -7,6 +7,29 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 
 CHANGELOG (notable new features)
 ---------
+### 11.0.0 M11
+* Common: Android 4.4.4 (Google)
+* New Devices: Galaxy S4 Active (jactivelte), Galaxy S4 SK I-9506 (ks01lte), Galaxy S5 GSM (klte), Galaxy Tab 10.1 (picassowifi), Galaxy Player 4.0 (ypg1)
+* Re-introduce Samsung Galaxy Relay 4G (apexqtmo) support
+* Fix signal strength showing ’2147483647′ on certain devices
+* Frameworks & Core Apps: CAF and other upstream updates
+* Lockscreen: Do not play sounds while a phone call is active & MSIM updates
+* Frameworks: Add base & MSIM APIs for SEEK (Secure Element Evaluation Kit) support
+* Frameworks: Fix volume button changing two ‘steps’ per click
+* Frameworks: Add ‘Screen Off’ action for double-tap/long-press configuration options
+* Show devices connected to your WiFi (tethering) Hotspot
+* Fix bug related to ‘switch to last app’ action while in Recents view
+* Fix Navigation Bar arrow keys in RTL locales
+* Translations updates from CyanogenMod CrowdIn team
+* Adjustments to ‘Glove Mode’ (High Touch Sensitivity)
+* APN Updates for various regions
+* Camera: Add support for all available Slow Shutter speeds (hardware dependent); Improve shutter button
+* Dialer/InCallUI: Fix smartcover always showing answer fragment
+* LG G2: Address GPS and NFC issues
+* Base support for HTC Desire 816 & HTC One Mini 2 (pending nightlies)
+* Various security updates
+* General bug fixes
+
 ### 11.0.0 M10
 * Common: Android 4.4.4 (Google)
 * New Devices: Galaxy S5 Sprint (kltespr)
@@ -72,27 +95,6 @@ CHANGELOG (notable new features)
 * Media: Add FFMPEG support (expanded media format support)
 * Bluetooth: Improved support for new car audio systems and docks
 * Various small bugfixes, global and device-specific
-
-### 11.0.0 M6
-* Common: Android 4.4 (Google)
-* Common: Move Voice+ settings from app drawer to Settings (under Wireless and Networks > ‘More’)
-* Common: Consolidate screen-off animation options (remove checkbox)
-* Common: New CM Theme Engine
-* Common: Add provider permissions for Blacklist
-* Common: Fix lockscreen custom wallpaper crashes and album art issues
-* Common: Disable elements when in custom lockscreen
-* Common: Address security vulnerability for icons
-* Common: Resolve memory leaks in Frameworks
-* Common: Settings – Show ‘eject card’ action for USB storage
-* Common: Add quick settings options to show smaller tiles; add BT device name to tile; fix tiles layout in landscape mode
-* Common: Fix longpress quiet hours QS tile option
-* Common: Parallel Shutdown – Decrease shutdown time
-* Common: Downloads – Add pause/resume support
-* Bluetooth: Upstream updates and fix issues with audio routing to select car makes/models and disconnect issues
-* MultiSim: Additional support patches (15+) and UI/UX modifications
-* Trebuchet: Hidden apps and labels support
-* Various small bugfixes, global and device-specific
-
 
 ### 10.2.0
 * Common: Android 4.3 (Google)
@@ -308,7 +310,7 @@ CHANGELOG (notable new features)
 * Common: TI wl12xx FM radio reverse engineering - Michael A. Reid
 * Common: Tablet tweaks - Sven Dawitz
 * Common: Revamped CMStats - Chris Soyars
-* Common: Improved RTL text support and fonts - Eyad Aboulouz, Eran Mizrahi,  
+* Common: Improved RTL text support and fonts - Eyad Aboulouz, Eran Mizrahi,
 * Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
 * Legend/Liberty/Buzz/Click: Enabled FM Radio - Alexander Hofbauer (libaudio patch)
 * Z71: Enabled MPEG4/AAC video recording - arcee
