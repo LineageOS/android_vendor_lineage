@@ -10,6 +10,7 @@ Maintainers (CyanogenMod 11.0):
 * __Asus EeePad Transformer Prime (TF201):__ Bumble-Bee, EnJens
 * __Asus EeePad Transformer Pad TF300T:__
 * __Asus EeePad Transformer Pad Infinity TF700T:__ dasunsrule32
+* __Asus EeePad Transformer Pad TF701T:__ pershoot
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
 * __Google Nexus S:__ burnsra, KalimochoAz, klusark
