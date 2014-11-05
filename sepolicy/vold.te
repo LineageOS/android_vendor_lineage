@@ -2,9 +2,8 @@
 allow vold sdcard_external:file create_file_perms;
 
 # Allow vold to change context for mounted ext4 sdcard
-relabelto_domain(vold)
 allow vold labeledfs:filesystem { relabelfrom };
-allow vold sdcard_external:filesystem { relabelfrom relabelto };
+allow vold sdcard_external:filesystem { relabelfrom };
 
 # Allow vold to access fuse for fuse-based fs
 allow vold fuse_device:chr_file rw_file_perms;
