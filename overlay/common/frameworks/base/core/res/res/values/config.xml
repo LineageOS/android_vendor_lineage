@@ -24,7 +24,7 @@
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Disable stock OTA components if installed -->
+    <!-- Disable stock OTA components if installed
     <string-array name="config_disabledComponents" translatable="false">
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity</item>
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService</item>
@@ -34,17 +34,18 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
     </string-array>
+    -->
 
     <string name="config_mms_user_agent">CyanogenMod</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!-- Automatic power profile management per app.
          Each item should list the fully-qualified activity
-         name and the power profile id, separated by a comma. -->
+         name and the power profile id, separated by a comma.
     <string-array name="config_auto_perf_activities" translatable="false">
         <item>com.aurorasoftworks.quadrant.*BenchmarkExecutionActivity,2</item>
         <item>com.antutu.ABenchMark.*,2</item>
         <item>.*com.antutu.benchmark.*,2</item>
     </string-array>
-
+  -->
 </resources>

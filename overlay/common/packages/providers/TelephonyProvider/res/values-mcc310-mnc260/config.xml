@@ -17,7 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- The preferred APN to use, in the format name,mcc,mnc
-         Leave empty to choose automatically. -->
+         Leave empty to choose automatically.
     <string name="config_preferred_apn">fast.t-mobile.com,310,260</string>
+    -->
 </resources>
 

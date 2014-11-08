@@ -19,10 +19,13 @@
 <resources>
     <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
 
-    <!-- Circle -->
+    <!-- Circle
     <integer name="def_battery_style">2</integer>
-    <!-- Enable notification counters in statusbar -->
+    -->
+    <!-- Enable notification counters in statusbar
     <integer name="def_notif_count">1</integer>
-    <!-- Right QS pulldown -->
+    -->
+    <!-- Right QS pulldown
     <integer name="def_qs_quick_pulldown">1</integer>
+    -->
 </resources>
