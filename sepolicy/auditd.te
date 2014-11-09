@@ -1,0 +1,3 @@
+allow logd auditd_log:dir rw_dir_perms;
+allow logd auditd_log:file create_file_perms;
+
