@@ -1193,11 +1193,24 @@
   <apn carrier="Etisalat MMS" mcc="412" mnc="50" apn="etisalat.af.mms" proxy="10.0.0.172" port="80" type="mms" />
   <apn carrier="Mobitel" mcc="413" mnc="01" apn="mobitel3g" type="default,supl" />
   <apn carrier="Mobitel MMS" mcc="413" mnc="01" apn="wapmms" mmsc="http://192.168.50.165" mmsproxy="192.168.50.163" mmsport="8080" type="mms" />
+  <apn carrier="Mobitel WAP" mcc="413" mnc="01" apn="mobitel3g" proxy="192.168.050.163" port="8080" type="default,supl" />
   <apn carrier="Dialog Mobile Broadband" mcc="413" mnc="02" apn="dialogbb" server="dialog" mmsc="http://mms.dialog.lk:3130/mmsc" mmsproxy="192.168.122.2" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Dialog WAP Prepaid" mcc="413" mnc="02" apn="ppwap" proxy="192.168.122.2" mmsport="8080" type="default,supl" />
+  <apn carrier="Dialog Internet Prepaid" mcc="413" mnc="02" apn="www.dialogsl.com" proxy="192.168.122.2" port="8080" type="default,supl" />
+  <apn carrier="Dialog Internet Postpaid" mcc="413" mnc="02" apn="dialogbb" type="default,supl" />
+  <apn carrier="Dialog MMS Prepaid" mcc="413" mnc="02" apn="ppwap" mmsc="http://mms.dialog.lk:3130/mmsc" mmsproxy="192.168.122.2" type="mms" />
+  <apn carrier="Dialog MMS Postpaid" mcc="413" mnc="02" apn="www.dialogsl.com" mmsc="http://mms.dialog.lk:3130/mmsc" mmsproxy="192.168.122.2" type="mms" />
   <apn carrier="Etisalat" mcc="413" mnc="03" apn="ebb" type="default,supl" />
   <apn carrier="Etisalat MMS" mcc="413" mnc="03" apn="mms" mmsc="http://mms.etisalt.lk:8085" mmsproxy="192.168.104.4" mmsport="9401" type="mms" />
+  <apn carrier="Etisalat Internet Prepaid" mcc="413" mnc="03" apn="web" type="default,supl" />
+  <apn carrier="Etisalat Internet Postpaid" mcc="413" mnc="03" apn="internet" type="default,supl" />
+  <apn carrier="Etisalat WAP" mcc="413" mnc="03" apn="wap" proxy="192.168.104.4" port="9401" type="default,supl" />
+  <apn carrier="Airtel Postpaid" mcc="413" mnc="05" apn="airteldata" type="default,supl" />
+  <apn carrier="Airtel MMS" mcc="413" mnc="05" apn="airtellive" mmsc="http://mms.airtel.lk" mmsproxy="10.200.184.86" mmsport="8080" type="mms" />
+  <apn carrier="Airtel Prepaid" mcc="413" mnc="05" apn="airtellive" type="default,supl" />
   <apn carrier="Airtel" mcc="413" mnc="05" apn="default" type="default,supl" />
   <apn carrier="Hutch3G" mcc="413" mnc="08" apn="hutch3g" type="default,supl" />
+  <apn carrier="Hutch WAP" mcc="413" mnc="08" apn="hutch3g" proxy="10.220.135.249" port="8080" type="default,supl" />
   <apn carrier="MPT" mcc="414" mnc="01" apn="mptnet" user="mptnet" password="mptnet" type="default,supl" />
   <apn carrier="Alfa" mcc="415" mnc="01" apn="internet.mic1.com.lb" user="mic1" password="mic1" type="default,supl" />
   <apn carrier="Alfa MMS" mcc="415" mnc="01" apn="mms.mic1.com.lb" user="mic1" password="mic1" mmsc="http://mms.mic1.com.lb" mmsproxy="192.168.23.51" mmsport="9201" type="mms" />
@@ -1281,6 +1294,12 @@
   <apn carrier="Q-tel" mcc="427" mnc="01" apn="web.qtel" user="gprs" password="gprs" type="default,supl" />
   <apn carrier="Vodafone QA MMS" mcc="427" mnc="02" apn="vodafone.com.qa" mmsc="http://mms.vodafone.com.qa/mmsc" mmsproxy="10.101.97.102" mmsport="80" type="mms" />
   <apn carrier="Vodafone QA" mcc="427" mnc="02" apn="web.vodafone.com.qa" type="default,supl" />
+  <apn carrier="Nepal Telecom Internet" mcc="429" mnc="01" apn="ntnet" type="default,supl" />
+  <apn carrier="Nepal Telecom MMS" mcc="429" mnc="01" apn="ntmms" mmsc="http://192.80.11.180" mmsproxy="192.80.7.133" mmsport="8000" type="mms" />
+  <apn carrier="Nepal Telecom WAP" mcc="429" mnc="02" apn="ntwap" proxy="192.80.7.133" port="8000" type="default,supl" />
+  <apn carrier="Ncell Internet" mcc="429" mnc="02" apn="web" type="default,supl" />
+  <apn carrier="Ncell MMS" mcc="429" mnc="02" apn="mms" mmsc="http://192.168.19.15" mmsproxy="192.168.19.15" mmsport="8080" type="mms" />
+  <apn carrier="Ncell WAP" mcc="429" mnc="02" apn="web" proxy="192.168.19.15" port="8080" type="default,supl" />
   <apn carrier="Beeline UZ" mcc="434" mnc="04" apn="internet.beeline.uz" user="beeline" password="beeline" type="default,supl" />
   <apn carrier="Beeline UZ MMS" mcc="434" mnc="04" apn="mms.beeline.uz" user="beeline" password="beeline" mmsc="http://mms" mmsproxy="172.30.30.166" mmsport="8080" type="mms" />
   <apn carrier="em.std" mcc="440" mnc="00" apn="em.std" user="em" password="em" type="default,supl" bearer="14"/>
@@ -1430,11 +1449,20 @@
   <apn carrier="TransAsia" mcc="466" mnc="99" apn="internet" type="default,supl" />
   <apn carrier="TransAsia MMS" mcc="466" mnc="99" apn="mms" mmsc="http://mms" mmsproxy="10.1.1.2" mmsport="80" type="mms" />
   <apn carrier="台灣大哥大(TW Mobile) (twm)" mcc="466" mnc="99" apn="twm" type="default,supl" />
-  <apn carrier="Grameenphone" mcc="470" mnc="01" apn="gpinterneth" type="default,supl" />
-  <apn carrier="Robi MMS" mcc="470" mnc="02" apn="WAP" mmsc="http://192.168.23.4/was" mmsproxy="192.168.023.007" mmsport="9028" type="mms" />
-  <apn carrier="Robi" mcc="470" mnc="02" apn="internet" port="9201" type="default,supl" />
+  <apn carrier="Grameenphone" mcc="470" mnc="01" apn="gpinternet" type="default,supl" />
+  <apn carrier="Grameenphone MMS" mcc="470" mnc="01" apn="gpmms" mmsc="http://mms.gpsurf.net/servlets/mms" mmsproxy="10.128.1.2" mmsport="8080" type="mms" />
+  <apn carrier="Grameenphone WAP" mcc="470" mnc="01" apn="gpinternet" proxy="10.128.1.2" port="8080" type="default,supl" />
+  <apn carrier="Robi MMS" mcc="470" mnc="02" apn="wap" mmsc="http://192.168.23.4/was" mmsproxy="192.168.023.007" mmsport="9028" type="mms" />
+  <apn carrier="Robi" mcc="470" mnc="02" apn="internet" type="default,supl" />
+  <apn carrier="Robi WAP" mcc="470" mnc="02" apn="wap" proxy="10.128.1.2" port="9208" type="default,supl" />
   <apn carrier="Banglalink MMS" mcc="470" mnc="03" apn="blmms" mmsc="http://" mmsproxy="10.10.55.34" mmsport="8799" type="mms" />
   <apn carrier="Banglalink" mcc="470" mnc="03" apn="blweb" type="default,supl" />
+  <apn carrier="Banglalink WAP" mcc="470" mnc="03" apn="blwap" proxy="10.10.55.34" port="8799" type="default,supl" />
+  <apn carrier="Tele Talk" mcc="470" mnc="04" apn="wap" type="default,supl" />
+  <apn carrier="Tele Talk WAP" mcc="470" mnc="04" apn="wap" proxy="192.168.145.101" port="9201" type="default,supl" />
+  <apn carrier="Airtel BD" mcc="470" mnc="07" apn="internet" type="default,supl" />
+  <apn carrier="Airtel BD MMS" mcc="470" mnc="07" apn="mms" mmsc="http://10.6.0.21/servlets/mms" mmsproxy="10.6.0.2" mmsport="8080" type="mms" />
+  <apn carrier="Airtel BD WAP" mcc="470" mnc="07" apn="wap" proxy="10.6.0.2" port="8080" type="default,supl" />
   <apn carrier="Warid BD" mcc="470" mnc="07" apn="internet" type="default,supl" />
   <apn carrier="Warid BD MMS" mcc="470" mnc="07" apn="mms" mmsc="http://mms.waridtel.com.bd/index.jsp" mmsproxy="10.128.5.6" mmsport="8080" type="mms" />
   <apn carrier="Maxis 2G Internet" mcc="502" mnc="12" apn="net" user="maxis" password="wap" type="default,supl" />
