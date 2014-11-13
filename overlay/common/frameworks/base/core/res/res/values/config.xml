@@ -48,4 +48,15 @@
         <item>.*com.antutu.benchmark.*,2</item>
     </string-array>
   -->
+
+    <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
+         on the current state of the device. -->
+    <string-array translatable="false" name="config_globalActionsList">
+        <item>power</item>
+        <item>reboot</item>
+        <item>airplane</item>
+        <item>bugreport</item>
+        <item>users</item>
+    </string-array>
+
 </resources>
