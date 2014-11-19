@@ -18,10 +18,14 @@ on boot
     # interactive governor
     chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_slack
+    chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/timer_slack
     chown system system /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
     chown system system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/target_loads
+    chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/target_loads
     chown system system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
     chown system system /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
@@ -38,11 +42,12 @@ on boot
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
     chown system system /sys/devices/system/cpu/cpufreq/interactive/sync_freq
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/sync_freq
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/up_threshold_any_cpu_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/up_threshold_any_cpu_freq
     chown system system /sys/devices/system/cpu/cpufreq/interactive/up_threshold_any_cpu_load
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/up_threshold_any_cpu_load
     chown system system /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
-
 
     # ondemand governor
     chown system system /sys/devices/system/cpu/cpufreq/ondemand/boostfreq
@@ -99,7 +104,7 @@ on boot
     write /sys/kernel/mm/ksm/deferred_timer 1
 
     chown system system /dev/cpuctl/apps/cpu.notify_on_migrate
-    chmod 0644 /dev/cpuctl/apps/cpu.notify_on_migrate
+    chmod 0664 /dev/cpuctl/apps/cpu.notify_on_migrate
 
     # Define TCP delayed ack settings for WiFi & LTE
     chown system system /sys/kernel/ipv4/tcp_delack_seg
