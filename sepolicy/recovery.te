@@ -1,0 +1,8 @@
+# Secure adb (setup_adbd)
+allow adbd adb_keys_file:dir search;
+allow recovery adb_keys_file:file r_file_perms;
+allow recovery shell_prop:property_service set;
+
+# Recovery dialogs
+unix_socket_connect(recovery, vold, vold)
+allow recovery tmpfs:sock_file create_file_perms;

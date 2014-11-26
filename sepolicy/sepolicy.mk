@@ -16,6 +16,7 @@ BOARD_SEPOLICY_UNION += \
     healthd.te \
     installd.te \
     netd.te \
+    recovery.te \
     su.te \
     sysinit.te \
     system.te \

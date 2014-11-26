@@ -1,3 +1,5 @@
+domain_trans(init, rootfs, vold)
+
 # Allow vold to manage ASEC
 allow vold sdcard_external:file create_file_perms;
 
