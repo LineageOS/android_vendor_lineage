@@ -1,1 +1,2 @@
 allow system_server wallpaper_file:file relabelto;
+allow system_server dalvikcache_data_file:file write;
