@@ -54,7 +54,7 @@ userdebug_or_eng(`
   allow suclient superuser_device:dir { create rw_dir_perms setattr unlink };
   allow suclient superuser_device:sock_file { create setattr unlink write };
   allow suclient untrusted_app_devpts:chr_file { read write ioctl };
-  # For Settings' control of access
+  # For Settings control of access
   allow system_app superuser_device:sock_file { read write create setattr unlink getattr };
   allow system_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
   allow system_app superuser_device:dir { create rw_dir_perms setattr unlink };
