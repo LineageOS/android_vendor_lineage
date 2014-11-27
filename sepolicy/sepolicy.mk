@@ -15,6 +15,7 @@ BOARD_SEPOLICY_UNION += \
     service_contexts \
     auditd.te \
     healthd.te \
+    hostapd.te \
     installd.te \
     netd.te \
     property.te \

@@ -1,0 +1,1 @@
+allow hostapd netd:unix_dgram_socket sendto;
