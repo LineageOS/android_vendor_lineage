@@ -9,6 +9,12 @@ if [ $? -eq 0 ]; then
   exit 0
 fi
 
+grep -q "Command:.*\"--headless\"" /tmp/recovery.log
+if [ $? -eq 0 ]; then
+  echo "Headless mode install; skipping signature check..."
+  exit 0
+fi
+
 if [ -f /data/system/packages.xml -a -f /tmp/releasekey ]; then
   relCert=$(grep -A3 'package name="com.android.htmlviewer"' /data/system/packages.xml  | grep "cert index" | head -n 1 | sed -e 's|.*"\([[:digit:]][[:digit:]]*\)".*|\1|g')
 
