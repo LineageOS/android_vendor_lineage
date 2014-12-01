@@ -1,1 +1,1 @@
-service.adb.tcp.              u:object_r:adbtcp_prop:s0
+service.adb.tcp.port          u:object_r:adbtcp_prop:s0
