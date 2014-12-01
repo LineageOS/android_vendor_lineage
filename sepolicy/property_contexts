@@ -1,1 +1,3 @@
 service.adb.tcp.port          u:object_r:adbtcp_prop:s0
+recovery.perf.mode            u:object_r:recovery_prop:s0
+adb.secure                    u:object_r:recovery_prop:s0
