@@ -574,8 +574,8 @@
   <apn carrier="M-Tel MMS" mcc="284" mnc="01" apn="mms-gprs.mtel.bg" user="mtel" password="mtel" mmsc="http://mmsc/" mmsproxy="10.150.0.33" mmsport="8080" type="mms" />
   <apn carrier="VIVACOM Internet" mcc="284" mnc="03" apn="internet.vivacom.bg" user="VIVACOM" password="VIVACOM" authtype="0" type="default,supl" />
   <apn carrier="VIVACOM MMS" mcc="284" mnc="03" apn="mms.vivacom.bg" user="mms" password="mms" mmsc="http://mmsc.vivacom.bg" mmsproxy="192.168.123.123" mmsport="8080" authtype="0" type="mms" />
-  <apn carrier="GLOBUL Internet" mcc="284" mnc="05" apn="globul" user="globul" type="default,supl" />
-  <apn carrier="GLOBUL MMS" mcc="284" mnc="05" apn="mms.globul.bg" user="mms" mmsc="http://mmsc1.mms.globul.bg:8002" mmsproxy="192.168.87.11" mmsport="8004" type="mms" />
+  <apn carrier="Telenor Internet" mcc="284" mnc="05" apn="telenor" user="telenor" type="default,supl" />
+  <apn carrier="Telenor MMS" mcc="284" mnc="05" apn="mms.telenor.bg" user="mms" mmsc="http://mmsc1.mms.telenor.bg:8002" mmsproxy="192.168.87.11" mmsport="8004" type="mms" />
   <apn carrier="Turkcell" mcc="286" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="8080" type="mms" />
   <apn carrier="Vodafone TR" mcc="286" mnc="02" apn="internet" user="vodafone" password="vodafone" type="default,supl" />
@@ -1705,7 +1705,8 @@
   <apn carrier="Zain NG" mcc="621" mnc="20" apn="internet.ng.zain.com" type="default,supl" />
   <apn carrier="MTN NG" mcc="621" mnc="30" apn="web.gprs.mtnnigeria.net" user="web" password="web" proxy="10.199.212.2" type="default,supl" />
   <apn carrier="MTN NG MMS" mcc="621" mnc="30" apn="web.gprs.mtnnigeria.net" user="web" password="web" mmsc="http://10.199.212.8/servlets/mms" mmsproxy="10.199.212.2" mmsport="8080" type="mms" />
-  <apn carrier="Glo" mcc="621" mnc="50" apn="glo3gvideo" proxy="10.100.98.22" type="default,supl" />
+  <apn carrier="Glo Mobile Internet" mcc="621" mnc="50" apn="gloflat" user="flat" password="flat" proxy="10.100.98.22" type="default,supl" />
+  <apn cariier="Glo PAYU" mcc="621" mnc="50" apn="glosecure" type="default,supl" />
   <apn carrier="Glo MMS" mcc="621" mnc="50" apn="glomms" user="mms" password="mms" mmsc="http://mms.gloworld.com/mmsc" mmsproxy="010.100.082.004" mmsport="3130" type="mms" />
   <apn carrier="Etisalat NG" mcc="621" mnc="60" apn="etisalat" type="default,supl" />
   <apn carrier="Etisalat NG MMS" mcc="621" mnc="60" apn="etisalat" mmsc="http://10.71.170.30:38090/was" mmsproxy="10.71.170.5" mmsport="8080" type="mms" />
