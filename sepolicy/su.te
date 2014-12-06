@@ -46,8 +46,9 @@ userdebug_or_eng(`
 userdebug_or_eng(`
   typealias shell alias suclient;
 
-  # Translate user apps to the shell domain when using su
+  # Translate user and platform apps to the shell domain when using su
   domain_auto_trans(untrusted_app, su_exec, suclient)
+  domain_auto_trans(platform_app, su_exec, suclient)
 
   allow suclient sudaemon:unix_stream_socket { connectto read write setopt ioctl };
 
@@ -58,4 +59,16 @@ userdebug_or_eng(`
   allow system_app superuser_device:sock_file { read write create setattr unlink getattr };
   allow system_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
   allow system_app superuser_device:dir { create rw_dir_perms setattr unlink };
+
+  ## From external/sepolicy/domain.te adjusted from sudaemon
+  # Same as adbd rules above, except allow su to do the same thing
+  allow domain sudaemon:unix_stream_socket connectto;
+  allow domain sudaemon:fd use;
+  allow domain sudaemon:unix_stream_socket { getattr getopt read write shutdown };
+  binder_call(domain, sudaemon)
+  # Running something like "pm dump com.android.bluetooth" requires
+  # fifo writes
+  allow domain sudaemon:fifo_file { write getattr };
+  # allow "gdbserver --attach" to work for su.
+  allow domain sudaemon:process sigchld;
 ')
