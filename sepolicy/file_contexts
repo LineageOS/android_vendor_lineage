@@ -25,3 +25,6 @@
 
 # Expansion of these hooks is a bit unconventional
 /cache/com.cyanogenmod.keyhandler.dex   u:object_r:dalvikcache_data_file:s0
+
+# Lockscreen wallpaper
+/data/system/users/[0-9]+/keyguard_wallpaper   u:object_r:wallpaper_file:s0
