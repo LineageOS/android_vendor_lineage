@@ -576,6 +576,7 @@
   <apn carrier="VIVACOM MMS" mcc="284" mnc="03" apn="mms.vivacom.bg" user="mms" password="mms" mmsc="http://mmsc.vivacom.bg" mmsproxy="192.168.123.123" mmsport="8080" authtype="0" type="mms" />
   <apn carrier="Telenor Internet" mcc="284" mnc="05" apn="telenor" user="telenor" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="284" mnc="05" apn="mms.telenor.bg" user="mms" mmsc="http://mmsc1.mms.telenor.bg:8002" mmsproxy="192.168.87.11" mmsport="8004" type="mms" />
+  <apn carrier="Bulsatcom" mcc="284" mnc="11" apn="bulsat.com" type="default,supl" />
   <apn carrier="Turkcell" mcc="286" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="8080" type="mms" />
   <apn carrier="Vodafone TR" mcc="286" mnc="02" apn="internet" user="vodafone" password="vodafone" type="default,supl" />
