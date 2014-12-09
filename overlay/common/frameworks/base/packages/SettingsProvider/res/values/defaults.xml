@@ -28,4 +28,7 @@
     <!-- Right QS pulldown
     <integer name="def_qs_quick_pulldown">1</integer>
     -->
+
+    <!-- Default for Settings.Secure.STATS_COLLECTION. -->
+    <bool name="def_cm_stats_collection">true</bool>
 </resources>
