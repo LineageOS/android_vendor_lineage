@@ -44,16 +44,19 @@ userdebug_or_eng(`
 ## Perms for the app
 
 userdebug_or_eng(`
-  typealias shell alias suclient;
-
   # Translate user apps to the shell domain when using su
-  domain_auto_trans(untrusted_app, su_exec, suclient)
+  #
+  # PR_SET_NO_NEW_PRIVS blocks this :(
+  # we need to find a way to narrow this down to the actual exec.
+  # typealias shell alias suclient;
+  # domain_auto_trans(untrusted_app, su_exec, suclient)
 
-  allow suclient sudaemon:unix_stream_socket { connectto read write setopt ioctl };
+  allow untrusted_app su_exec:file { execute_no_trans getattr open read execute };
+  allow untrusted_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
+  allow untrusted_app superuser_device:dir { r_dir_perms };
+  allow untrusted_app superuser_device:sock_file { write };
 
-  allow suclient superuser_device:dir { create rw_dir_perms setattr unlink };
-  allow suclient superuser_device:sock_file { create setattr unlink write };
-  allow suclient untrusted_app_devpts:chr_file { read write ioctl };
+
   # For Settings control of access
   allow system_app superuser_device:sock_file { read write create setattr unlink getattr };
   allow system_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
