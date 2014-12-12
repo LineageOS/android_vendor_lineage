@@ -1,9 +1,0 @@
-
-BASEDIR=`dirname $0`
-
-mkdir -p $BASEDIR/proprietary
-
-# Get Terminal Emulator for Android (we use a prebuilt so it can update from Play Store)
-curl -L -o $BASEDIR/proprietary/Term.apk -O -L https://jackpal.github.com/Android-Terminal-Emulator/downloads/Term.apk
-unzip -o -d $BASEDIR/proprietary $BASEDIR/proprietary/Term.apk lib/*
-
