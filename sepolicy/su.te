@@ -6,6 +6,8 @@ type sudaemon, domain;
 
 userdebug_or_eng(`
   domain_trans(init, su_exec, sudaemon)
+
+  type_transition sudaemon socket_device:sock_file superuser_device;
   # The userspace app uses /dev sockets to control per-app access
   allow sudaemon superuser_device:dir { create rw_dir_perms setattr unlink };
   allow sudaemon superuser_device:sock_file { create setattr unlink write };
