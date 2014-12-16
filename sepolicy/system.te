@@ -6,3 +6,9 @@ allow system_server adbtcp_prop:property_service set;
 
 allow system_server dhcp_data_file:dir r_dir_perms;
 allow system_server dhcp_data_file:file r_file_perms;
+
+# Themes
+allow system_server theme_data_file:dir create_dir_perms;
+allow system_server theme_data_file:file create_file_perms;
+allow system_server resourcecache_data_file:dir create_dir_perms;
+allow system_server resourcecache_data_file:file create_file_perms;

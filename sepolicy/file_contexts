@@ -4,6 +4,9 @@
 /system/bin/auditd        u:object_r:logd_exec:s0
 /data/misc/audit(/.*)?    u:object_r:auditd_log:s0
 
+# Themes
+/data/system/theme(/.*)?  u:object_r:theme_data_file:s0
+
 /system/bin/sysinit       u:object_r:sysinit_exec:s0
 
 # For minivold in recovery
