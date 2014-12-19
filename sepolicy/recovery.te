@@ -15,11 +15,15 @@ allow recovery system_data_file:file r_file_perms;
 
 # Manage fstab and /adb_keys
 allow recovery rootfs:file create_file_perms;
-allow recovery rootfs:dir { write add_name };
+allow recovery rootfs:dir { write create rmdir add_name remove_name };
 
-# Read /data/media files and directories
+# Read storage files and directories
 allow recovery media_rw_data_file:dir r_dir_perms;
 allow recovery media_rw_data_file:file r_file_perms;
+allow recovery vfat:dir r_dir_perms;
+allow recovery vfat:file r_file_perms;
+allow recovery sdcard_posix:dir r_dir_perms;
+allow recovery sdcard_posix:file r_file_perms;
 
 # Control properties
 allow recovery recovery_prop:property_service set;

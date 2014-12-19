@@ -8,3 +8,8 @@ allow vold fuse_device:chr_file rw_file_perms;
 
 # NTFS-3g wants to drop permission
 allow vold self:capability { setgid setuid };
+
+# Vold can also run as minivold in the rootfs
+recovery_only(`
+  allow vold rootfs:dir { add_name write };
+')
