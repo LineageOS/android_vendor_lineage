@@ -141,6 +141,7 @@
   <apn carrier="Jazztel MMS" mcc="214" mnc="21" apn="jazzmms" mmsc="http://jazztelmms.com:8081" mmsproxy="217.18.32.183" mmsport="8081" type="mms" />
   <apn carrier="Lycamobile ES" mcc="214" mnc="25" apn="data.lycamobile.es" user="lmes" password="plus" type="default,supl" />
   <apn carrier="Truphone ES" mcc="214" mnc="27" apn="truphone.com" type="default,supl" />
+  <apn carrier="Tuenti" mcc="214" mnc="32" apn="tuenti.com" user="tuenti" password="tuenti" type="default,supl" />
   <apn carrier="Pannon MMS" mcc="216" mnc="01" apn="mms" mmsc="http://mmsc.pgsm.hu/" mmsproxy="193.225.154.22" mmsport="8080" type="mms" />
   <apn carrier="Pannon" mcc="216" mnc="01" apn="net" type="default,supl" />
   <apn carrier="Telenor Net" mcc="216" mnc="01" apn="net" type="default,supl" />
