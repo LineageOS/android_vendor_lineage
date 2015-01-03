@@ -91,6 +91,7 @@ on boot
 
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
+    restorecon /sys/block/mmcblk0/queue/scheduler
 
     chown system system /dev/cpuctl/apps/cpu.notify_on_migrate
     chmod 0664 /dev/cpuctl/apps/cpu.notify_on_migrate
