@@ -24,4 +24,11 @@ allow recovery media_rw_data_file:file r_file_perms;
 # Control properties
 allow recovery recovery_prop:property_service set;
 
+# recursive rm for wipes... :(
+allow recovery file_type:dir { rw_dir_perms rmdir };
+allow recovery file_type:notdevfile_class_set { unlink getattr };
+# wipe saves and restores the layout version
+allow recovery install_data_file:file create_file_perms;
+allow recovery system_data_file:file create;
+
 ')
