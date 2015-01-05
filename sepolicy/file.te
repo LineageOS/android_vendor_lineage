@@ -5,3 +5,6 @@ type auditd_log, file_type, data_file_type;
 
 # Themes
 type theme_data_file, file_type, data_file_type;
+
+# Performance settings
+type sysfs_devices_system_iosched, file_type, sysfs_type;
