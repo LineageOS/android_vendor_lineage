@@ -59,9 +59,7 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Fascinate / Mesmerize (SCH-I500):__ jt1134, sbrissen
 * __Samsung Galaxy Note (GT-N7000):__ Espenfjo
 * __Samsung Galaxy Note II (GT-N7100):__ nebkat
-* __Samsung Galaxy Note II LTE (GT-N7105):__ codeworkx
-* __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ codeworkx, cyanogen
-* __Samsung Galaxy Note II LTE (T-Mobile) (SGH-T889):__ codeworkx
+* __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ cyanogen
 * __Samsung Galaxy Note II LTE (Verizon) (SCH-I605):__ sbrissen
 * __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen
 * __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
@@ -78,11 +76,9 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy S II (T-Mobile) (SGH-T989):__ mikeyman77
 * __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
 * __Samsung Galaxy S II (AT&T) (SGH-I777):__
-* __Samsung Galaxy S II (intl) (GT-I9100):__ codeworkx, Espenfjo
 * __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx, Jiangyi, Ryuinferno
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ cyanogen, invisiblek, mkasick, noobnl
-* __Samsung Galaxy S III (intl) (GT-I9300):__ codeworkx
-* __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith, codeworkx
+* __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith
 * __Samsung Galaxy S IV (AT&T) (SGH-I337):__ attn1
 * __Samsung Galaxy S IV (Canada) (SGH-I337M):__ DvTonder
 * __Samsung Galaxy S IV LTE (GT-I9505):__ invisiblek, noobnl
@@ -96,14 +92,14 @@ Maintainers (CyanogenMod 11.0):
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
-* __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codeworkx, codyf86
+* __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codyf86
 * __Samsung Galaxy Tab Pro 8.4" (SM-T320):__ crpalmer
 * __Samsung Vibrant (SGH-T959):__ FaultException
 * __Sony Xperia L (taoshan):__ varunchitre15, jerpelea (FreeXperia team), Kali- (FreeXperia team)
 * __Sony Xperia SP (huashan):__ jerpelea, Kali- (FreeXperia team), adfad666, uberlaggydarwin
 * __Sony Xperia T (mint):__ jerpelea, Kali- (FreeXperia team), codeworkx, cdesai, tilal6991
-* __Sony Xperia V (tsubasa):__ jerpelea, Kali- (FreeXperia team), codeworkx, tilal6991, championswimmer
-* __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, codeworkx, championswimmer
+* __Sony Xperia V (tsubasa):__ jerpelea, Kali- (FreeXperia team), tilal6991, championswimmer
+* __Sony Xperia Z (yuga):__ jerpelea, Kali- (FreeXperia team), cdesai, championswimmer
 * __Sony Xperia ZL (odin):__ jerpelea, Kali- (FreeXperia team), championswimmer
 * __Sony Xperia ZR (dogo):__ jerpelea, Kali- (FreeXperia team), championswimmer
 * __Sony Xperia Tablet Z LTE (pollux):__ jerpelea, Kali- (FreeXperia team), codeworkx
