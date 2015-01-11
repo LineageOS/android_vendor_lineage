@@ -840,6 +840,7 @@
   <apn carrier="BMobile Prepaid" mcc="374" mnc="12" apn="bconnected" type="default" port="8080" />
   <apn carrier="BMobile MMS" mcc="374" mnc="12" apn="mms" type="mms" mmsc="http://192.168.210.104/mmrelay.app" mmsproxy="192.168.210.104" mmsport="8080"/>
   <apn carrier="BMobile Buzz" mcc="374" mnc="12" apn="buzz" type="default,mms" proxy="192.168.210.104" port="8080" mmsc="http://192.168.210.103/operator/wap"  />
+  <apn carrier="Digicel TT" mcc="374" mnc="13" apn="web.digiceltt.com" type="default,supl" />
   <apn carrier="Azercell" mcc="400" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Azercell MMS" mcc="400" mnc="01" apn="mms" mmsc="http://mms.azercell.com/cMMSC/post" mmsproxy="10.0.154.101" mmsport="8080" type="mms" />
   <apn carrier="Bakcell" mcc="400" mnc="02" apn="mms" mmsc="http://mms.bakcell.com/mms/wapenc" mmsproxy="213.172.091.046" mmsport="8080" type="default,supl,mms" />
