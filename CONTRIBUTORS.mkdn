@@ -63,7 +63,7 @@ Maintainers (CyanogenMod 12.0):
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __OnePlus One:__ cyanogen, intervigil, inwotep, arcee
 * __Oppo Find 5:__ intervigil, nebkat
-* __Oppo Find 7:__ intervigil, tdm, inwotep
+* __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos
 * __Samsung Exhilarate (SGH-I577):__ mikeyman77, carvsdriver
@@ -91,11 +91,13 @@ Maintainers (CyanogenMod 12.0):
 * __Samsung Galaxy S III (Sprint) (SPH-L710):__ noobnl
 * __Samsung Galaxy S III (Verizon) (SCH-I535):__ invisiblek
 * __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith
+* __Samsung Galaxy S IV 3G (GT-I9500):__ intervigil, Alberto96
 * __Samsung Galaxy S IV (AT&T) (SGH-I337):__ FarmGeek4Life
 * __Samsung Galaxy S IV (Sprint) (SPH-L720):__ noobnl
 * __Samsung Galaxy S IV (T-Mobile) (SGH-M919):__ dcd
 * __Samsung Galaxy S IV (Verizon) (SCH-I545):__ invisiblek
 * __Samsung Galaxy S IV LTE (GT-I9505):__ AntaresOne
+* __Samsung Galaxy S IV LTE-A (GT-I9506):__ solk2
 * __Samsung Galaxy S IV Mini 3G (GT-I9190):__ arco
 * __Samsung Galaxy S IV Mini LTE (GT-I9195):__ arco
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
