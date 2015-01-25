@@ -14,4 +14,4 @@ allow system_server resourcecache_data_file:dir create_dir_perms;
 allow system_server resourcecache_data_file:file create_file_perms;
 
 # System server dynamically loads some dexfiles
-allow system_server dex2oat_exec:file execute;
+allow system_server dex2oat_exec:file rx_file_perms;
