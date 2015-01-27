@@ -366,10 +366,8 @@
   <apn carrier="Bite LT Internet" mcc="246" mnc="02" apn="banga" type="default,supl" />
   <apn carrier="Bite MMS" mcc="246" mnc="02" apn="mms" user="mms@mms" password="mms" mmsc="http://mmsc" mmsproxy="192.168.150.2" mmsport="8080" type="mms" />
   <apn carrier="Bite" mcc="246" mnc="02" apn="wap" server="213.226.131.133" type="default,supl" />
-  <apn carrier="Tele2 Internet LT" mcc="246" mnc="03" apn="internet.tele2.lt" proxy="130.244.196.090" port="8080" type="default,supl" />
-  <apn carrier="Tele2 LT" mcc="246" mnc="03" apn="internet.vodafone.net" type="default,supl" />
-  <apn carrier="Tele2 MMS LT" mcc="246" mnc="03" apn="mms.tele2.lt" mmsc="http://mmsc.tele2.lt/" mmsproxy="193.012.040.029" mmsport="8080" type="mms" />
-  <apn carrier="Tele2 LT MMS" mcc="246" mnc="03" apn="wap.tele2.lt" mmsc="http://mmsc.tele2.lt" mmsproxy="193.12.40.29" mmsport="8080" type="mms" />
+  <apn carrier="Tele2 Internetas" mcc="246" mnc="03" apn="internet.tele2.lt" proxy="" port="" type="default,supl" />
+  <apn carrier="Tele2 LT MMS" mcc="246" mnc="03" apn="mms.tele2.lt" user="wap" password="wap" mmsc="http://mmsc.tele2.lt" mmsproxy="193.12.40.29" mmsport="8080" type="mms" />
   <apn carrier="VZW Test Internet" mcc="246" mnc="81" apn="VZWINTERNET" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Test FOTA" mcc="246" mnc="81" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Test IMS" mcc="246" mnc="81" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
