@@ -9,6 +9,8 @@
 
 /system/bin/sysinit       u:object_r:sysinit_exec:s0
 
+/system/etc/init.d/90userinit           u:object_r:userinit_exec:s0
+
 # For minivold in recovery
 /sbin/minivold            u:object_r:vold_exec:s0
 
