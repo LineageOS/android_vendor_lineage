@@ -9,3 +9,13 @@ allow sysinit shell_exec:file { rx_file_perms };
 allow sysinit system_file:file { rx_file_perms };
 allow sysinit self:process setcurrent;
 
+userdebug_or_eng(`
+    allow sysinit userinit_data_exec:file { r_file_perms relabelto };
+    allow sysinit property_socket:sock_file write;
+    allow sysinit init:unix_stream_socket connectto;
+    allow sysinit userinit_prop:property_service set;
+    allow sysinit sysfs:file rw_file_perms;
+    allow sysinit sysfs_devices_system_cpu:file write;
+    allow sysinit self:capability dac_override;
+    allow sysinit userinit_exec:file { rx_file_perms };
+')
