@@ -75,7 +75,7 @@ Maintainers (CyanogenMod 12.0):
 * __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
 * __Samsung Galaxy Note III (hlte):__ cyanogen, noobnl, slayher
 * __Samsung Galaxy Note 8.0 3G (GT-N5100):__ sbrissen
-* __Samsung Galaxy Note 8.0 Wifi (GT-N5110):__ sbrissen
+* __Samsung Galaxy Note 8.0 WiFi (GT-N5110):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Espenfjo
 * __Samsung Galaxy Note 10.1 LTE (Verizon) (SCH-I925):__ sbrissen
 * __Samsung Galaxy Premier (GT-I9260):__ ljzyal
@@ -85,7 +85,6 @@ Maintainers (CyanogenMod 12.0):
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
 * __Samsung Galaxy S II (T-Mobile) (SGH-T989):__ mikeyman77
 * __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
-* __Samsung Galaxy S II (AT&T) (SGH-I777):__
 * __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx, Jiangyi, Ryuinferno
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ nardholio
 * __Samsung Galaxy S III (Sprint) (SPH-L710):__ noobnl
@@ -98,7 +97,6 @@ Maintainers (CyanogenMod 12.0):
 * __Samsung Galaxy S IV LTE (GT-I9505):__ AntaresOne
 * __Samsung Galaxy S IV Mini 3G (GT-I9190):__ arco
 * __Samsung Galaxy S IV Mini LTE (GT-I9195):__ arco
-* __Samsung Galaxy S Relay 4G (SGH-T699):__
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
@@ -113,9 +111,9 @@ Maintainers (CyanogenMod 12.0):
 * __Sony Xperia ZL (odin):__ jerpelea, Kali- (FreeXperia team), championswimmer
 * __Sony Xperia ZR (dogo):__ jerpelea, Kali- (FreeXperia team), championswimmer
 * __Sony Xperia Tablet Z LTE (pollux):__ jerpelea, Kali- (FreeXperia team), codeworkx
-* __Sony Xperia Tablet Z Wifi (pollux_windy):__ jerpelea, Kali- (FreeXperia team), Bumble-Bee
+* __Sony Xperia Tablet Z WiFi (pollux_windy):__ jerpelea, Kali- (FreeXperia team), Bumble-Bee
 * __Sony Xperia Tablet Z2 LTE (castor):__ Kali-, jerpelea, Binary (FreeXperia team)
-* __Sony Xperia Tablet Z2 Wifi (castor_windy):__ Kali-, jerpelea, Binary (FreeXperia team)
+* __Sony Xperia Tablet Z2 WiFi (castor_windy):__ Kali-, jerpelea, Binary (FreeXperia team)
 * __Sony Xperia Z Ultra (togari):__ jerpelea, Kali- (FreeXperia team)
 * __Sony Xperia Z1 (honami):__ jerpelea, Kali- (FreeXperia team), cdesai
 * __Sony Xperia Z1 compact (amami):__ jerpelea, Kali- (FreeXperia team), intervigil, championswimmer, Bumble-Bee
