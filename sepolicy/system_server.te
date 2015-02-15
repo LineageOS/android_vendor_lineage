@@ -1,0 +1,2 @@
+allow system_server recovery_cache_file:dir rw_dir_perms;
+allow system_server recovery_cache_file:file create_file_perms;
