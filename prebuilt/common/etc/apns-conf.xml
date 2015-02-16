@@ -829,7 +829,7 @@
   <apn carrier="LIME" mcc="344" mnc="920" apn="internet" type="default,supl" />
   <apn carrier="Digicel VC" mcc="360" mnc="070" apn="wap.digiceloecs.com" user="wapoecs" password="wap03oecs" type="default,supl" />
   <apn carrier="Setar MMS" mcc="363" mnc="01" apn="mms.setar.aw" mmsc="http://mms.setar.aw" mmsproxy="209.88.130.210" mmsport="8081" type="mms" />
-  <apn carrier="Setar" mcc="363" mnc="01" apn="wap.setar.aw" type="default,supl" />
+  <apn carrier="Setar" mcc="363" mnc="01" apn="internet.setar.aw" type="default,supl" />
   <apn carrier="BATELCO BS" mcc="364" mnc="390" apn="internet.btcbahamas.com" type="default,supl" />
   <apn carrier="Orange net" mcc="370" mnc="01" apn="orangenet.com.do" user="" password="" authtype="1" type="default,supl,dun" />
   <apn carrier="Orange MMS" mcc="370" mnc="01" apn="orangeworld" user="orange" password="orange" mmsproxy="172.16.126.70" mmsport="8080" mmsc="http://mms.orange.com.do/servlets/mms" authtype="1" type="mms" />
