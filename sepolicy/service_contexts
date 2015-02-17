@@ -1,3 +1,4 @@
+cmhw                                      u:object_r:system_server_service:s0
 edgegestureservice                        u:object_r:system_server_service:s0
 themes                                    u:object_r:system_server_service:s0
 torch                                     u:object_r:system_server_service:s0
