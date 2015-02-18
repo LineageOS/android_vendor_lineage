@@ -1,1 +1,3 @@
 r_dir_file(uncrypt, media_rw_data_file)
+allow uncrypt recovery_cache_file:dir create_dir_perms;
+allow uncrypt recovery_cache_file:file create_file_perms;
