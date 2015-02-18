@@ -3,5 +3,7 @@ allow system_app sysfs_devices_system_cpu:file rw_file_perms;
 allow system_app sysfs_devices_system_iosched:file rw_file_perms;
 
 # For the updaters
-allow system_app recovery_cache_file:dir {add_name rw_file_perms};
-allow system_app recovery_cache_file:file {create rw_file_perms};
+allow system_app recovery_cache_file:dir create_dir_perms;
+allow system_app recovery_cache_file:file create_file_perms;
+allow system_app media_rw_data_file:dir create_dir_perms;
+allow system_app media_rw_data_file:file create_file_perms;
