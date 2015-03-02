@@ -183,6 +183,7 @@
   <apn carrier="Tiscali MMS" mcc="222" mnc="01" apn="tiscalimobilemms" mmsc="http://mms.tiscali.mobi/servlets/mms" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
   <apn carrier="iTIM" mcc="222" mnc="01" apn="unico.tim.it" proxy="213.230.130.89" port="80" mmsc="http://mms.tim.it/servlets/mms" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
   <apn carrier="NOVERCA WEB" mcc="222" mnc="01" apn="web.noverca.it" type="default,supl" />
+  <apn carrier="COOPVOCE" mcc="222" mnc="01" apn="web.coopvoce.it" type="default,supl" />
   <apn carrier="Vodafone IT MMS" mcc="222" mnc="10" apn="mms.vodafone.it" mmsc="http://mms.vodafone.it/servlets/mms" mmsproxy="10.128.224.10" mmsport="80" type="mms" />
   <apn carrier="Vodafone IT" mcc="222" mnc="10" apn="mobile.vodafone.it" type="default,supl" />
   <apn carrier="Vodafone WEB" mcc="222" mnc="10" apn="web.omnitel.it" type="default,supl" />
