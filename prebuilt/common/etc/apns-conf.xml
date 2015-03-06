@@ -122,10 +122,13 @@
   <apn carrier="Orange MMS" mcc="214" mnc="03" apn="orangemms" proxy="172.22.188.25" port="8080" user="orange" password="orange" mmsc="http://mms.orange.es" mmsproxy="172.22.188.25" mmsport="8080" authtype="2" type="mms" />
   <apn carrier="Yoigo" mcc="214" mnc="04" apn="internet" proxy="010.008.000.036" port="8080" type="default,supl" />
   <apn carrier="Yoigo MMS" mcc="214" mnc="04" apn="mms" mmsc="http://mms" mmsproxy="193.209.134.141" mmsport="80" type="mms" />
+  <apn carrier="Pepephone 4G Internet" mcc="214" mnc="05" apn="gprsmov.pepephone.com" type="default,supl" />
+  <apn carrier="Pepephone 4G MMS" mcc="214" mnc="05" apn="gprs.pepephone.com" mmsc="http://www.pepephone.com" mmsproxy="10.138.255.43" mmsport="8080" authtype="1" type="mms" />
+  <apn carrier="Pepephone 4G (Public)" mcc="214" mnc="05" apn="gprs.pepephone.com" type="default,supl" />
   <apn carrier="Tuenti" mcc="214" mnc="05" apn="tuenti.com" user="tuenti" password="tuenti" mmsc="http://tuenti.com" mmsproxy="10.138.255.43" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Pepephone Internet" mcc="214" mnc="06" apn="gprsmov.pepephone.com" type="default,supl" />
-  <apn carrier="Pepephone MMS" mcc="214" mnc="06" apn="mms.pepephone.com" user="wap@wap" password="wap125" mmsproxy="212.073.032.010" mmsport="80" type="mms" />
-  <apn carrier="Pepephone (Public)" mcc="214" mnc="06" apn="gprs.pepephone.com" type="default,supl" />
+  <apn carrier="Pepephone 3G Internet" mcc="214" mnc="06" apn="gprsmov.pepephone.com" type="default,supl" />
+  <apn carrier="Pepephone 3G MMS" mcc="214" mnc="06" apn="mms.pepephone.com" user="wap@wap" password="wap125" mmsproxy="212.073.032.010" mmsport="80" type="mms" />
+  <apn carrier="Pepephone 3G (Public)" mcc="214" mnc="06" apn="gprs.pepephone.com" type="default,supl" />
   <apn carrier="Vodafone GPRS" mcc="214" mnc="06" apn="airtelnet.es" user="vodafone" password="vodafone" type="default,supl" />
   <apn carrier="Vodafone MMS" mcc="214" mnc="06" apn="mms.vodafone.net" user="wap@wap" password="wap125" mmsc="http://mmsc.vodafone.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" type="mms" />
   <apn carrier="Movistar ES" mcc="214" mnc="07" apn="movistar.es" user="MOVISTAR" password="MOVISTAR" type="default,supl" />
