@@ -124,7 +124,7 @@ Maintainers (CyanogenMod 12.0):
 * __Sony Xperia Tablet Z2 WiFi (castor_windy):__ FreeXperia Team
 * __Sony Xperia  Z3 Tablet Compact LTE (scorpion):__ FreeXperia Team
 * __Sony Xperia Z Ultra (togari):__ FreeXperia Team
-* __Sony Xperia Z1 (honami):__FreeXperia Team
+* __Sony Xperia Z1 (honami):__ FreeXperia Team
 * __Sony Xperia Z1 compact (amami):__ FreeXperia Team, intervigil, championswimmer
 * __Sony Xperia Z2 (sirius):__  FreeXperia Team
 * __Sony Xperia Z3 (z3):__  FreeXperia Team
