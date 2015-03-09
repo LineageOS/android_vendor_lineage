@@ -33,7 +33,7 @@ allow recovery file_type:dir { rw_dir_perms rmdir };
 allow recovery file_type:notdevfile_class_set { unlink getattr };
 # wipe saves and restores the layout version
 allow recovery install_data_file:file create_file_perms;
-allow recovery system_data_file:file create;
+allow recovery system_data_file:file create_file_perms;
 
 # /cache/recovery things: command and logs
 allow recovery recovery_cache_file:dir create_dir_perms;
