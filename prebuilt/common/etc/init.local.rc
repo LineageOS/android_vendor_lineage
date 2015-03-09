@@ -1,5 +1,6 @@
 # CyanogenMod Extras
 import /init.superuser.rc
+import /init.prebundle.rc
 
 on init
     export ANDROID_CACHE /cache
