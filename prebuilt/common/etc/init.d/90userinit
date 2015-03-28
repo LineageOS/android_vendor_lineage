@@ -7,9 +7,3 @@ then
    /system/bin/sh /data/local/userinit.sh;
    setprop cm.userinit.active 1;
 fi;
-
-if [ -d /data/local/userinit.d ];
-then
-   busybox run-parts /data/local/userinit.d;
-   setprop cm.userinit.active 1;
-fi;
