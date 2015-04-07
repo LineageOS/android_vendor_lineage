@@ -14,9 +14,9 @@ for i in $HALF_RES_RESOLUTIONS; do
 		unzip ../../$i.zip desc.txt
 	else
 		unzip ../../$i.zip
-		for j in */*.jpg; do
-			convert $j -resize 50% tmp.jpg
-			mv tmp.jpg $j
+		for j in */*.[pP][nN][gG]; do
+			convert $j -resize 50% tmp.png
+			mv tmp.png $j
 		done
 	fi
 	zip -r0 ../$i.zip .
