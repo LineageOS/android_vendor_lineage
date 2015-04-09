@@ -753,11 +753,11 @@
   <spnOverride numeric="51008"  spn="AXIS" />
   <spnOverride numeric="51027"  spn="Ceria" />
   <spnOverride numeric="51099"  spn="Esia" />
-  <spnOverride numeric="51028"  spn="Fren/Hepi" />
+  <spnOverride numeric="51028"  spn="Smartfren" />
   <spnOverride numeric="51021"  spn="IM3" />
   <spnOverride numeric="51001"  spn="INDOSAT" />
   <spnOverride numeric="51000"  spn="PSN" />
-  <spnOverride numeric="51009"  spn="SMART" />
+  <spnOverride numeric="51009"  spn="Smartfren" />
   <spnOverride numeric="51003"  spn="StarOne" />
   <spnOverride numeric="51007"  spn="TelkomFlexi" />
   <spnOverride numeric="51020"  spn="TELKOMMobile" />
