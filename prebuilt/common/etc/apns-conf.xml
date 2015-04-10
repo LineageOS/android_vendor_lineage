@@ -213,7 +213,7 @@
   <apn carrier="Swisscom MMS" mcc="228" mnc="01" apn="event.swisscom.ch" mmsc="http://mms.natel.ch:8079" mmsproxy="192.168.210.2" mmsport="8080" type="mms" />
   <apn carrier="Swisscom" mcc="228" mnc="01" apn="gprs.swisscom.ch" type="default,supl" />
   <apn carrier="Sunrise Internet" mcc="228" mnc="02" apn="internet" type="default,supl" />
-  <apn carrier="Sunrise MMS" mcc="228" mnc="02" apn="mms.sunrise.ch" user="mms" password="mms" mmsc=" http://mmsc.sunrise.ch" mmsproxy="212.35.34.75" mmsport="8080" type="mms" />
+  <apn carrier="Sunrise MMS" mcc="228" mnc="02" apn="mms.sunrise.ch" user="mms" password="mms" mmsc="http://mmsc.sunrise.ch" mmsproxy="212.35.34.75" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="228" mnc="03" apn="internet" type="default,supl" />
   <apn carrier="Orange Prepaid CH" mcc="228" mnc="03" apn="click" type="default,supl" />
   <apn carrier="Orange MMS" mcc="228" mnc="03" apn="mms" mmsc="http://192.168.151.3:8002" mmsproxy="192.168.151.2" mmsport="8080" type="mms" />
@@ -600,7 +600,7 @@
   <apn carrier="T-Mobile MK" mcc="294" mnc="01" apn="internet" user="internet" password="t-mobile" type="default,supl" />
   <apn carrier="T-Mobile MK MMS" mcc="294" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://mms.t-mobile.com.mk" mmsproxy="62.162.155.227" mmsport="8080" type="mms" />
   <apn carrier="ProMonte" mcc="297" mnc="01" apn="gprs.promonte.com" user="gprs" password="gprs" type="default,supl" />
-  <apn carrier="ProMonte MMS" mcc="297" mnc="01" apn="mms.promonte.com" user="mms" password="mms" mmsc=" http://mm.vor.promonte.com" mmsproxy="192.168.246.005" mmsport="8080" type="mms" />
+  <apn carrier="ProMonte MMS" mcc="297" mnc="01" apn="mms.promonte.com" user="mms" password="mms" mmsc="http://mm.vor.promonte.com" mmsproxy="192.168.246.005" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile CG MMS" mcc="297" mnc="02" apn="mms" user="38267" password="38267" mmsc="http://192.168.180.100/servlets/mms" mmsproxy="10.0.5.19" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile CG" mcc="297" mnc="02" apn="tmcg-wnw" user="38267" password="38267" type="default,supl" />
   <apn carrier="Telus SP" mcc="302" mnc="220" apn="sp.telus.com" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="54" mvno_type="gid" type="default,supl,mms" />
