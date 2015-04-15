@@ -3,9 +3,6 @@
 <spnOverrides>
   <!-- Korea -->
   <spnOverride numeric="45005" spn_display_rule="SPN_RULE_SHOW_PLMN" />
-  <!-- Japan -->
-  <spnOverride numeric="44010" spn_display_rule="SPN_RULE_SHOW_PLMN" />
-  <spnOverride numeric="44020" spn="SoftBank" />
   <!-- Hong Kong -->
   <spnOverride numeric="45406" spn="SmarTone" />
   <spnOverride numeric="45412" spn="中國移動香港" />
