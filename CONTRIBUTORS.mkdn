@@ -18,10 +18,12 @@ Maintainers (CyanogenMod 12.0):
 * __Google Nexus S:__ burnsra, KalimochoAz, klusark
 * __Google Nexus 4:__ rmcc
 * __Google Nexus 5:__ fluxi
+* __Google Nexus 6:__ dhacker29
 * __Google Nexus 7:__ burnsra, fattire, Thömy, nemith, JoeyRizzoli (GSM)
 * __Google Nexus 10:__ atinm, dalingrin, kornyone, gweedo767
-* __HTC Desire 601:__ uberlaggydarwin
+* __HTC Desire 601(zara/zaracl):__ uberlaggydarwin, PatrikKT
 * __HTC Desire 816:__ Grarak, v_superuser
+* __HTC Desire Eye:__ uberlaggydarwin
 * __HTC Droid DNA:__ crpalmer, invisiblek
 * __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
@@ -44,9 +46,11 @@ Maintainers (CyanogenMod 12.0):
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
 * __Moto E 2014 (xt1021,xt1022,xt1023/condor):__ percy_g2, scritch007
+* __Moto G 2014 : LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
 * __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ Hashcode, Skrilax_CZ
 * __Moto X 2014 (victara):__ crpalmer
+* __Motorola Moto MAXX(quark) :__ Skrilax_CZ
 * __Motorola Atrix HD (MB886/qinara):__ epinter, Hashcode, Skrilax_CZ, nadlabak
 * __Motorola Droid 3 (solana):__ Hashcode, stargo
 * __Motorola Droid 4 (maserati):__ Hashcode, stargo
@@ -65,6 +69,7 @@ Maintainers (CyanogenMod 12.0):
 * __OnePlus One:__ cyanogen, intervigil, inwotep, arcee
 * __Oppo Find 5:__ intervigil, nebkat
 * __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
+* __Oppo N3:__ invisiblek, maniac103
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos
 * __Samsung Exhilarate (SGH-I577):__ mikeyman77, carvsdriver
@@ -123,7 +128,7 @@ Maintainers (CyanogenMod 12.0):
 * __Sony Xperia Tablet Z WiFi (pollux_windy):__ FreeXperia Team, snc
 * __Sony Xperia Tablet Z2 LTE (castor):__ FreeXperia Team
 * __Sony Xperia Tablet Z2 WiFi (castor_windy):__ FreeXperia Team
-* __Sony Xperia  Z3 Tablet Compact LTE (scorpion):__ FreeXperia Team
+* __Sony Xperia Z3 Tablet Compact LTE (scorpion):__ FreeXperia Team
 * __Sony Xperia Z Ultra (togari):__ FreeXperia Team
 * __Sony Xperia Z1 (honami):__ FreeXperia Team
 * __Sony Xperia Z1 compact (amami):__ FreeXperia Team, intervigil, championswimmer
@@ -202,5 +207,5 @@ Graphics and Assets:
 
 Former Contributors:
 --------------------
-* __Devices:__ Entropy512, xplodwild, dhacker29, nardholio
+* __Devices:__ Entropy512, xplodwild, nardholio
 * __Features:__ mad-murdock, wysie, Ander Webbs, ChainsDD, xplodwild
