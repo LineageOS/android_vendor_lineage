@@ -64,4 +64,9 @@
         <item>users</item>
     </string-array>
 
+    <!-- Defines external services to be started by the SystemServer at boot. The service itself
+         should publish as a binder services in its onStart -->
+    <string-array name="config_externalCMServices">
+        <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
+    </string-array>
 </resources>
