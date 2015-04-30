@@ -116,6 +116,12 @@ on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
 
+# Disable ril services if noril prop is set
+on property:ro.radio.noril=1
+    stop ril-daemon
+    stop qmuxd
+    stop netmgrd
+
 on property:persist.radio.noril=1
     setprop ro.radio.noril 1
 
