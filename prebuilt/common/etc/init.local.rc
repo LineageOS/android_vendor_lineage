@@ -115,6 +115,9 @@ on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
 
+on property:persist.radio.noril=1
+    setprop ro.radio.noril 1
+
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
