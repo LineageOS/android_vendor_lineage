@@ -13,8 +13,8 @@ Maintainers (CyanogenMod 12.1):
 * __Asus EeePad Transformer Pad TF701T:__ pershoot
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __B&N Nook Tablet (acclaim):__  chrmhoffmann
-* __Google Android One:__ , varunchitre15
-* __Google Galaxy Nexus:__ , bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
+* __Google Android One:__ varunchitre15
+* __Google Galaxy Nexus:__ bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
 * __Google Nexus S:__ burnsra, KalimochoAz, klusark
 * __Google Nexus 4:__ rmcc
 * __Google Nexus 5:__ fluxi
@@ -27,10 +27,8 @@ Maintainers (CyanogenMod 12.1):
 * __HTC Droid DNA:__ crpalmer, invisiblek
 * __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
-* __HTC One Mini:__ u-ra
-* __HTC One Mini 2:__ u-ra
 * __HTC One (GSM):__ codeworkx, h8rift
-* __HTC One (M8):__ deck, h8rift, invisblek, toastcfh
+* __HTC One (M8):__ deck, h8rift, invisblek, toastcfh, u-ra
 * __HTC One Max (T6):__ flyhalf205, sbrissen
 * __HTC One (Sprint):__ kushdeck, toastcfh
 * __HTC One (Verizon):__ flyhalf205, mdmower
@@ -207,5 +205,5 @@ Graphics and Assets:
 
 Former Contributors:
 --------------------
-* __Devices:__ Entropy512, xplodwild, nardholio
+* __Devices:__ Entropy512, xplodwild
 * __Features:__ mad-murdock, wysie, Ander Webbs, ChainsDD, xplodwild
