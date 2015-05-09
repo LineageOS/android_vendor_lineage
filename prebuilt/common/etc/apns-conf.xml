@@ -1660,7 +1660,6 @@
   <apn carrier="VF Internet" mcc="505" mnc="88" apn="vfinternet.au" type="default,supl" />
   <apn carrier="Optus Internet" mcc="505" mnc="90" apn="internet" type="default,supl" />
   <apn carrier="Optus MMS" mcc="505" mnc="90" apn="mms" mmsc="http://mmsc.optus.com.au:8002/" mmsproxy="61.88.190.10" mmsport="8070" type="mms" />
-  <apn carrier="Indosat" mcc="510" mnc="01" apn="indosat3g" user="indosat" password="indosat" type="default,supl" />
   <apn carrier="Indosat GPRS" mcc="510" mnc="01" apn="indosatgprs" user="indosat" password="indosat" type="default,supl" />
   <apn carrier="Indosat MMS" mcc="510" mnc="01" apn="indosatmms" user="indosat" password="indosat" mmsc="http://mmsc.indosat.com" mmsproxy="10.19.19.19" mmsport="8080" type="mms" />
   <apn carrier="AXIS" mcc="510" mnc="8" apn="AXIS" user="axis" password="123456" type="default,supl" />
