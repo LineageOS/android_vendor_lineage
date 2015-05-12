@@ -46,7 +46,7 @@
   <apn carrier="WIND GR MMS" mcc="202" mnc="10" apn="mnet.b-online.gr" user="mms" password="mms" mmsc="http://192.168.200.95/servlets/mms" mmsproxy="192.168.200.11" mmsport="9401" type="mms" />
   <apn carrier="Tele2 NL" mcc="204" mnc="02" apn="internet.tele2.nl" type="default,supl" />
   <apn carrier="Tele2 MMS NL" mcc="204" mnc="02" apn="internet.tele2.nl" mmsc="http://mmsc.tele2.nl" mmsproxy="193.12.40.64" mmsport="8080" type="mms" />
-  <apn carrier="MVNO NL" mcc="204" mnc="03" apn="internet.mvno.mobi" type="default,supl" mvno_match_data="20403" mvno_type="imsi" />
+  <apn carrier="MVNO NL" mcc="204" mnc="03" apn="internet.mvno.mobi" user="mvno" password="mvno" authtype="1" type="default,supl" mvno_match_data="20403" mvno_type="imsi" />
   <apn carrier="VZW Roaming Internet" mcc="204" mnc="04" apn="VZWINTERNET" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Roaming FOTA" mcc="204" mnc="04" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Roaming IMS" mcc="204" mnc="04" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
@@ -61,7 +61,7 @@
   <apn carrier="KPN" mcc="204" mnc="08" apn="portalmmm.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="KPN MMS" mcc="204" mnc="08" apn="portalmmm.nl" proxy="10.10.100.20" port="5080" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="mms" />
   <apn carrier="KPN 4G LTE" mcc="204" mnc="08" apn="KPN4G.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
-  <apn carrier="MVNO NL" mcc="204" mnc="08" apn="internet.mvno.mobi" type="default,supl" mvno_match_data="204080950" mvno_type="imsi" />
+  <apn carrier="MVNO NL" mcc="204" mnc="08" apn="internet.mvno.mobi" user="mvno" password="mvno" authtype="1" type="default,supl" mvno_match_data="204080950" mvno_type="imsi" />
   <apn carrier="Lycamobile NL" mcc="204" mnc="09" apn="data.lycamobile.nl" user="lmnl" password="plus" type="default,supl" />
   <apn carrier="Telfort" mcc="204" mnc="12" apn="internet" proxy="193.113.200.195" port="8080" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" />
   <apn carrier="T-Mobile NL" mcc="204" mnc="16" apn="internet" type="default,supl" />
