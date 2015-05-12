@@ -151,13 +151,6 @@ PRODUCT_PACKAGES += \
     CMHome \
     CyanogenSetupWizard
 
-# CM Bug Reporting
-PRODUCT_PACKAGES += \
-    CMBugReport
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.error.receiver.system.apps=org.cyanogenmod.bugreport
-
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
