@@ -1,0 +1,14 @@
+#masthead-title {
+    color: #373332;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#headerLeft a {
+    text-decoration: none;
+}
+
+#header {
+    border-bottom: 4px solid rgb(1, 125, 187);
+}
