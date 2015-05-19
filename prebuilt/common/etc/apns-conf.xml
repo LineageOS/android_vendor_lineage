@@ -76,6 +76,9 @@
   <apn carrier="Eastlink MMS" mcc="206" mnc="01" apn="mms.mobi.eastlink.ca" mmsc="http://mmss.mobi.eastlink.ca" mmsproxy="10.232.12.49" mmsport="8080" type="mms" />
   <apn carrier="Telenet Intl Roam" mcc="206" mnc="01" apn="telenetwap.be" type="default,supl" />
   <apn carrier="Telenet MMS Intl Roam" mcc="206" mnc="01" apn="mms.be" mmsc="http://mmsc.telenet.be" mmsproxy="195.130.149.100" mmsport="80" type="mms" />
+  <apn carrier="Iusacell MMS" mcc="206" mnc="01" apn="mms.iusacellgsm.mx" authtype="0" mmsc="http://mms.iusacell3g.com/" user="mmsiusacellgsm" password="mmsiusacellgsm" type="mms" />
+  <apn carrier="Iusacell Modem" mcc="206" mnc="01" apn="modem.iusacellgsm.mx" authtype="0" user="iusacellgsm" password="iusacellgsm" type="dun" />
+  <apn carrier="Iusacell Internet" mcc="206" mnc="01" apn="web.iusacellgsm.mx" authtype="0" user="iusacellgsm" password="iusacellgsm" type="default" />
   <apn carrier="Telenet" mcc="206" mnc="05" apn="telenetwap.be" type="default,supl" />
   <apn carrier="Telenet MMS" mcc="206" mnc="05" apn="mms.be" mmsc="http://mmsc.telenet.be" mmsproxy="195.130.149.100" mmsport="80" type="mms" />
   <apn carrier="Lycamobile BE" mcc="206" mnc="06" apn="data.lycamobile.be" user="lmbe" password="plus" type="default,supl" />
@@ -93,13 +96,25 @@
   <apn carrier="Orange MMS" mcc="208" mnc="01" apn="orange.acte" user="orange" password="orange" mmsc="http://mms.orange.fr/" mmsproxy="192.168.10.200" mmsport="8080" authtype="2" type="mms" />
   <apn carrier="Orange Entreprise" mcc="208" mnc="01" apn="orange-mib" proxy="172.16.2.8" port="8000" user="orange" password="orange" authtype="2" type="default" />
   <apn carrier="Orange GPRS ISP" mcc="208" mnc="02" apn="orange.fr" type="default,supl" />
+  <apn carrier="SFR MMS" mcc="208" mnc="09" apn="mmssfr" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
+  <apn carrier="SFR" mcc="208" mnc="09" apn="sl2sfr" server="*" type="default,supl" />
+  <apn carrier="SFR WAP" mcc="208" mnc="09" apn="wapsfr" user="none" password="none" server="*" proxy="195.115.25.129" port="8080" type="default,supl" />
+  <apn carrier="SFR ACCESS DATA" mcc="208" mnc="09" apn="websfr" type="default,supl" />
   <apn carrier="SFR MMS" mcc="208" mnc="10" apn="mmssfr" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
   <apn carrier="SFR" mcc="208" mnc="10" apn="sl2sfr" server="*" type="default,supl" />
   <apn carrier="SFR WAP" mcc="208" mnc="10" apn="wapsfr" user="none" password="none" server="*" proxy="195.115.25.129" port="8080" type="default,supl" />
-  <apn carrier="ACCESS DATA" mcc="208" mnc="10" apn="websfr" type="default,supl" />
+  <apn carrier="SFR ACCESS DATA" mcc="208" mnc="10" apn="websfr" type="default,supl" />
+  <apn carrier="Internet Joe" mcc="208" mnc="10" apn="sl2sfr" authtype="0" type="default,supl,fota" />
   <apn carrier="Web La Poste" mcc="208" mnc="10" apn="wapdebitel" proxy="192.168.21.3" port="8080" type="default,supl" />
   <apn carrier="NRJ Mobile FR" mcc="208" mnc="10" apn="fnetnrj" type="default,supl" />
+  <apn carrier="NRJ Mobile FR Internet" mcc="208" mnc="10" apn="internetnrj" authtype="0" type="dun" />
   <apn carrier="NRJ Mobile FR MMS" mcc="208" mnc="10" apn="mmsnrj" mmsproxy="010.143.156.005" mmsport="8080" mmsc="http://mmsnrj" type="mms" />
+  <apn carrier="Coriolis WEB" mcc="208" mnc="10" apn="internetcoriolis" authtype="0" type="default,supl,fota,dun" />
+  <apn carrier="RegloMobile WAP" mcc="208" mnc="10" apn="wap66" proxy="192.168.21.9" port="8080" authtype="0" type="default,supl,fota,dun" />
+  <apn carrier="RegloMobile MMS" mcc="208" mnc="10" apn="mms66" authtype="0" mmsc="http://mms66" mmsproxy="10.143.156.9" mmsport="8080" type="mms" />
+  <apn carrier="Keyyo Mobile Internet" mcc="208" mnc="10" apn="internet68" authtype="0" type="default,supl,fota,dun" />
+  <apn carrier="Keyyo Mobile MMS" mcc="208" mnc="10" apn="mms68" authtype="0" mmsc="http://mms68" mmsproxy="10.143.156.11" mmsport="8080" type="mms" />
+  <apn carrier="Keyyo Mobile Wap" mcc="208" mnc="10" apn="wap68" proxy="192.168.21.11" port="8080" authtype="0" type="default,supl,fota" />
   <apn carrier="MMS" mcc="208" mnc="11" apn="mmssfr" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
   <apn carrier="ACCESS DATA" mcc="208" mnc="11" apn="websfr" type="default,supl" />
   <apn carrier="MMS" mcc="208" mnc="13" apn="mmssfr" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
