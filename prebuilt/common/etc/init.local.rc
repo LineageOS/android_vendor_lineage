@@ -11,6 +11,7 @@ on post-fs-data
     chown system system /cache/dalvik-cache
     chmod 0771 /cache/dalvik-cache
     mkdir /data/.ssh 0750 root shell
+    mkdir /cache/recovery 0770 system cache
 
     # Run sysinit
     start sysinit
