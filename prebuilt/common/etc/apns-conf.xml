@@ -123,10 +123,8 @@
   <apn carrier="Free Mobile MMS" mcc="208" mnc="15" apn="mmsfree" mmsc="http://mms.free.fr" type="mms" />
   <apn carrier="Legos" mcc="208" mnc="17" apn="bornsip" type="default,supl" />
   <apn carrier="Legos MMS" mcc="208" mnc="17" apn="bornsipmms" mmsc="http://mms.bornsip.fr:8191" type="mms" />
-  <apn carrier="Bouygues Pro" mcc="208" mnc="20" apn="a2bouygtel.com" user="a2b" password="acces" type="default,supl" />
   <apn carrier="Bouygues" mcc="208" mnc="20" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="21" apn="ebouygtel.com" type="default,supl" />
-  <apn carrier="MMS Bouygues" mcc="208" mnc="21" apn="mmsbouygtel.com" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
+  <apn carrier="Bouygues Pro" mcc="208" mnc="20" apn="a2bouygtel.com" user="a2b" password="acces" type="default,supl" />
   <apn carrier="Virgin FR" mcc="208" mnc="23" apn="virgin-mobile.fr" mmsc="http://virginmms.fr" mmsproxy="10.6.10.1" mmsport="8080" type="default,mms" />
   <apn carrier="Lycamobile FR" mcc="208" mnc="25" apn="data.lycamobile.fr" user="lmfr" password="plus" type="default,supl" />
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="88" apn="ebouygtel.com" type="default,supl" />
