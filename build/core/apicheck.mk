@@ -83,11 +83,11 @@ checkapi-cm : check-cm-system-api
 
 # Check that the Cyanogen System API we're building hasn't broken the last-released
 # SDK version.
-$(eval $(call check-api-cm, \
+$(eval $(call check-api, \
     checksystemapi-cm-last, \
     $(CM_SRC_SYSTEM_API_DIR)/$(cm_last_released_sdk_version).txt, \
     $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE), \
-    vendor/cmsdk/api/cm_system-removed.txt, \
+    vendor/cmsdk/system-api/cm_system-removed.txt, \
     $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
     cat $(BUILD_SYSTEM)/apicheck_msg_last.txt, \
     check-cm-system-api, \
@@ -96,11 +96,11 @@ $(eval $(call check-api-cm, \
 
 # Check that the System API we're building hasn't changed from the not-yet-released
 # SDK version.
-$(eval $(call check-api-cm, \
+$(eval $(call check-api, \
     checksystemapi-cm-current, \
-    vendor/cmsdk/api/cm_system-current.txt, \
+    vendor/cmsdk/system-api/cm_system-current.txt, \
     $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE), \
-    vendor/cmsdk/api/cm_system-removed.txt, \
+    vendor/cmsdk/system-api/cm_system-removed.txt, \
     $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
     cat $(BUILD_SYSTEM)/apicheck_msg_current.txt, \
     check-cm-system-api, \
