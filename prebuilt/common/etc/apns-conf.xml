@@ -415,9 +415,8 @@
   <apn carrier="DNA MMS" mcc="244" mnc="13" apn="mms" user="dna" password="mms" mmsc="http://mmsc.dnafinland.fi/" mmsproxy="10.1.1.2" mmsport="8080" type="mms" />
   <apn carrier="Saunalahti" mcc="244" mnc="21" apn="internet.saunalahti" type="default,supl" />
   <apn carrier="Saunalahti MMS" mcc="244" mnc="21" apn="mms.saunalahti.fi" mmsc="http://mms.saunalahti.fi:8002" mmsproxy="62.142.4.197" mmsport="8080" type="mms" />
-  <apn carrier="Sonera" mcc="244" mnc="91" apn="Internet" type="default,supl" />
-  <apn carrier="TeliaSonera Internet" mcc="244" mnc="91" apn="internet" type="default,supl" />
-  <apn carrier="Sonera MMS" mcc="244" mnc="91" apn="wap.sonera.net" mmsc="http://mms.sonera.fi:8002" mmsproxy="195.156.25.33" mmsport="8080" type="mms" />
+  <apn carrier="Sonera Internet" mcc="244" mnc="91" apn="internet" type="default,supl" />
+  <apn carrier="Sonera MMS" mcc="244" mnc="91" apn="mms" mmsc="http://mms.sonera.fi:8002" mmsproxy="195.156.25.33" mmsport="8080" type="mms" />
   <apn carrier="Omnitel MMS" mcc="246" mnc="01" apn="gprs.mms.lt" user="mms" password="mms" mmsc="http://mms.omnitel.net:8002/" mmsproxy="194.176.32.149" mmsport="8080" type="mms" />
   <apn carrier="Omnitel" mcc="246" mnc="01" apn="gprs.startas.lt" user="omni" password="omni" type="default,supl" />
   <apn carrier="Omnitel Internet" mcc="246" mnc="01" apn="omnitel" user="omni" password="omni" type="default,supl" />
