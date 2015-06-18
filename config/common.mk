@@ -205,7 +205,7 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegadec \
     libstagefright_soft_ffmpegvdec \
     libFFmpegExtractor \
-    libnamparser
+    media_codecs_ffmpeg.xml
 
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
