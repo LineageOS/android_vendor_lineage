@@ -338,7 +338,7 @@ def:default_left_nav() ?>
             </select>
           </div>
         </div><!-- end toggle -->
-        <div id="api-nav-title">Android APIs</div>
+        <div id="api-nav-title">CyanogenMod APIs</div>
         </div><!-- end nav header -->
       <script>
         var SINCE_DATA = [ <?cs 
