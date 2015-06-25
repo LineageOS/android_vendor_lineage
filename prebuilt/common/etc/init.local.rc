@@ -6,9 +6,6 @@ on init
     export TERMINFO /system/etc/terminfo
 
 on post-fs-data
-    mkdir /cache/dalvik-cache 0771 system system
-    chown system system /cache/dalvik-cache
-    chmod 0771 /cache/dalvik-cache
     mkdir /data/.ssh 0750 root shell
     mkdir /cache/recovery 0770 system cache
 
