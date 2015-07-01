@@ -249,8 +249,8 @@
   <apn carrier="Telenor RS MMS" mcc="220" mnc="01" apn="mms" mmsc="http://mms.telenor.rs/servlets/mms" mmsproxy="217.65.192.33" mmsport="8080" type="mms" />
   <apn carrier="Telenor MNE internet" mcc="220" mnc="02" apn="internet" proxy="192.168.246.005" port="8080" mmsproxy="" mmsport="" mmsc="" server="" user="gprs" password="gprs" type="default,supl" />
   <apn carrier="Telenor MNE mms" mcc="220" mnc="02" apn="mms" proxy="" port="" mmsproxy="192.168.246.005" mmsport="8080" mmsc="http://mm.vor.telenor.me" server="" user="mms" password="mms" type="mms" />
-  <apn carrier="mts" mcc="220" mnc="03" apn="gprswap" proxy="172.017.088.198" port="8080" mmsproxy="" mmsport="" mmsc="" server="" user="mts" password="64" type="default,supl" />
-  <apn carrier="mts mms" mcc="220" mnc="03" apn="mms" proxy="" port="" mmsproxy="172.017.085.131" mmsport="8080" mmsc="http://mms.mts064.telekom.rs/mms/wapenc" server="" user="mts" password="64" type="mms" />
+  <apn carrier="mts" mcc="220" mnc="03" apn="gprswap" proxy="172.017.088.198" port="8080" mmsproxy="" mmsport="" mmsc="" server="" user="mts" password="064" type="default,supl" />
+  <apn carrier="mts mms" mcc="220" mnc="03" apn="mms" proxy="" port="" mmsproxy="172.017.085.131" mmsport="8080" mmsc="http://mms.mts064.telekom.rs/mms/wapenc" server="" user="mts" password="064" type="mms" />
   <apn carrier="MTS RS INTERNET" mcc="220" mnc="03" apn="gprsinternet" user="mts" password="064" proxy="" port="" type="default,supl" />
   <apn carrier="MTS RS WAP" mcc="220" mnc="03" apn="gprswap" user="mts" password="064" server="http://m.mondo.rs" proxy="172.017.088.198" port="8080" type="default,supl" />
   <apn carrier="MTS RS MMS" mcc="220" mnc="03" apn="mms" user="mts" password="064" mmsc="http://mms.mts064.telekom.rs/mms/wapenc" mmsproxy="172.017.085.131" mmsport="8080" type="mms" />
