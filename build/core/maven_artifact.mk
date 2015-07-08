@@ -41,7 +41,8 @@ $(LOCAL_PREBUILT_MODULE_FILE):
 		-DoutputDirectory=$(dir $@) \
 		-Dmdep.prependGroupId=true \
 		-Dmdep.overWriteSnapshots=true \
-		-Dmdep.overWriteReleases=true
+		-Dmdep.overWriteReleases=true \
+		-Dtransitive=false
 	@echo -e ${CL_GRN}"Download:"${CL_RST}" $@"
 
 include $(BUILD_PREBUILT)
