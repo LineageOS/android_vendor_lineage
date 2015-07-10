@@ -438,7 +438,7 @@
   <apn carrier="Orange Web" mcc="232" mnc="12" apn="orange.web" proxy="" port="" mmsproxy="" mmsport="" mmsc="" server="" user="web" password="web" authtype="3" type="default,supl" />
   <apn carrier="Orange MMS" mcc="232" mnc="12" apn="orange.mms" proxy="" port="" mmsproxy="194.24.128.118" mmsport="8080" mmsc="http://mmsc.orange.at/mms/wapenc" server="" user="mms" password="mms" authtype="3" type="mms" />
   <apn carrier="Orange Video" mcc="232" mnc="12" apn="orange.video" proxy="" port="" mmsproxy="" mmsport="" mmsc="" server="" user="video" password="" authtype="3" type="default,supl" />
-  <apn carrier="Yesss" mcc="232" mnc="12" apn="web.yesss.at" type="default,supl" />
+  <apn carrier="Yesss" mcc="232" mnc="12" apn="webapn.at" type="default,supl" />
   <apn carrier="UBIQUISYS" mcc="234" mnc="01" apn="internet" type="default,supl,mms" />
   <apn carrier="Tesco" mcc="272" mnc="01" apn="tescomobile.liffeytelecom.com" mmsc="http://mmc1/servlets/mms" mmsproxy="10.1.11.19" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tesco Prepay" mcc="234" mnc="01" apn="prepay.tesco-mobile.com" user="tescowap" password="password" server="http://wap.tesco-mobile.com/" proxy="193.113.200.195" port="9201" type="default,supl,mms" />
