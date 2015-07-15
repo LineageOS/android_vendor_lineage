@@ -69,5 +69,6 @@
     <string-array name="config_externalCMServices">
         <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
         <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
+        <item>org.cyanogenmod.platform.internal.SettingsManagerService</item>
     </string-array>
 </resources>
