@@ -94,9 +94,10 @@ Maintainers (CyanogenMod 12.1):
 * __Samsung Galaxy S Blaze 4G (SGH-T769):__ UberPinguin
 * __Samsung Galaxy S (GT-I9000):__ pawitp
 * __Samsung Galaxy S (GT-I9000B):__ helvio88
+* __Samsung Galaxy S II (GT-I9100):__ Caio Schnepper
+* __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx, Jiangyi, Ryuinferno
 * __Samsung Galaxy S II (T-Mobile) (SGH-T989):__ mikeyman77
 * __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
-* __Samsung Galaxy S II (intl) (GT-I9100G):__ codeworkx, Jiangyi, Ryuinferno
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ nardholio
 * __Samsung Galaxy S III (Sprint) (SPH-L710):__ noobnl
 * __Samsung Galaxy S III (Verizon) (SCH-I535):__ invisiblek
@@ -120,7 +121,7 @@ Maintainers (CyanogenMod 12.1):
 * __Sony Xperia L (taoshan):__ varunchitre15, FreeXperia Team
 * __Sony Xperia M (nicki):__ RonG, FreeXperia Team
 * __Sony Xperia M2 (eagle):__ FreeXperia Team
-* __Sony Xperia SP (huashan):__ FreeXperia Team, uberlaggydarwin
+* __Sony Xperia SP (huashan):__ FreeXperia Team, uberlaggydarwin, Mrcl1450
 * __Sony Xperia T (mint):__ FreeXperia Team, tilal6991, uberlaggydarwin
 * __Sony Xperia T2 Ultra  (tianchi):__ FreeXperia Team
 * __Sony Xperia T3  (seagull):__ FreeXperia Team
