@@ -3366,21 +3366,15 @@
   <apn carrier="VF Internet" mcc="505" mnc="88" apn="vfinternet.au" type="default,supl" />
   <apn carrier="Optus Internet" mcc="505" mnc="90" apn="internet" type="default,supl" />
   <apn carrier="Optus MMS" mcc="505" mnc="90" apn="mms" mmsc="http://mmsc.optus.com.au:8002/" mmsproxy="61.88.190.10" mmsport="8070" type="mms" />
-  <apn carrier="SmartFren" mcc="510" mnc="009" apn="SmartFren" proxy="10.17.27.250" port="8080" mmsproxy="" mmsport="" mmsc="" server="" user="smart" password="smart" authtype="1" type="default,supl" />
-  <apn carrier="SMART" mcc="510" mnc="009" apn="SmartFren" proxy="" port="" mmsproxy="10.17.27.250" mmsport="8080" mmsc="http://10.17.93.103:8080" server="" user="smart" password="smart" authtype="1" type="mms" />
   <apn carrier="Indosat 3G" mcc="510" mnc="01" apn="indosatgprs" proxy="" port="" user="indosat" password="indosat" authtype="1" type="default,supl" />
   <apn carrier="Indosat 3.5G" mcc="510" mnc="01" apn="indosat3g" proxy="" port="" user="indosat" password="indosat" authtype="1" type="default,supl" />
   <apn carrier="Indosat MMS" mcc="510" mnc="01" apn="indosatmms" mmsproxy="10.19.19.19" mmsport="8080" mmsc="http://mmsc.indosat.com" user="indosat" password="indosat" authtype="1" type="mms" />
   <apn carrier="Indosat GPRS" mcc="510" mnc="01" apn="indosatgprs" user="indosat" password="indosat" type="default,supl" />
   <apn carrier="Indosat MMS" mcc="510" mnc="01" apn="indosatmms" user="indosat" password="indosat" mmsc="http://mmsc.indosat.com" mmsproxy="10.19.19.19" mmsport="8080" type="mms" />
-  <apn carrier="SmartFren" mcc="510" mnc="028" apn="SmartFren" proxy="10.17.27.250" port="8080" mmsproxy="" mmsport="" mmsc="" server="" user="smart" password="smart" authtype="1" type="default,supl" />
-  <apn carrier="SMART" mcc="510" mnc="028" apn="SmartFren" proxy="" port="" mmsproxy="10.17.27.250" mmsport="8080" mmsc="http://10.17.93.103:8080" server="" user="smart" password="smart" authtype="1" type="mms" />
   <apn carrier="AXIS internet" mcc="510" mnc="08" apn="axis" proxy="" port="" user="axis" password="123456" authtype="1" type="default,supl" />
   <apn carrier="AXIS MMS" mcc="510" mnc="08" apn="axismms" mmsproxy="10.8.3.8" mmsport="8080" mmsc="http://mmsc.axis" user="axis" password="123456" authtype="1" type="mms" />
   <apn carrier="AXIS" mcc="510" mnc="08" apn="AXIS" user="axis" password="123456" type="default,supl" />
   <apn carrier="AXIS MMS" mcc="510" mnc="08" apn="AXISmms" user="axis" password="123456" mmsc="http://mmsc.AXIS" mmsproxy="10.8.3.8" mmsport="8080" type="mms" />
-  <apn carrier="SmartFren" mcc="510" mnc="09" apn="SmartFren" proxy="10.17.27.250" port="8080" mmsproxy="" mmsport="" mmsc="" server="" user="smart" password="smart" authtype="1" type="default,supl" />
-  <apn carrier="SMART" mcc="510" mnc="09" apn="SmartFren" proxy="" port="" mmsproxy="10.17.27.250" mmsport="8080" mmsc="http://10.17.93.103:8080" server="" user="smart" password="smart" authtype="1" type="mms" />
   <apn carrier="Smartfren4G" mcc="510" mnc="09" apn="Smartfren4G" user="smartfren" password="smartfren" authtype="3" type="default,supl" protocol="IPV4V6" />
   <apn carrier="Smartfren MMS" mcc="510" mnc="09" apn="smartfren" user="smartfren" password="smartfren" mmsc="http://10.17.93.103:8080" mmsproxy="10.17.27.250" mmsport="8080" authtype="3" type="mms" protocol="IPV4V6" />
   <apn carrier="AXIS" mcc="510" mnc="8" apn="AXIS" proxy="" port="" user="axis" password="123456" server="" mmsc="" mmsproxy="" mmsport="" mvno_type="" mvno_match_data="" spn="" type="default,supl" />
@@ -3397,8 +3391,6 @@
   <apn carrier="XL-MMS" mcc="510" mnc="11" apn="www.xlmms.net" user="xlgprs" password="proxl" mmsc="http://mmc.xl.net.id/servlets/mms" mmsproxy="202.152.240.50" mmsport="8080" type="mms" />
   <apn carrier="IM3 MMS" mcc="510" mnc="21" apn="indosatmms" user="indosat" password="indosat" mmsc="http://mmsc.indosat.com" mmsproxy="10.19.19.19" mmsport="8080" type="mms" />
   <apn carrier="IM3 Internet" mcc="510" mnc="21" apn="www.indosat-m3.net" user="gprs" password="im3" type="default,supl" />
-  <apn carrier="SmartFren" mcc="510" mnc="28" apn="SmartFren" proxy="10.17.27.250" port="8080" mmsproxy="" mmsport="" mmsc="" server="" user="smart" password="smart" authtype="1" type="default,supl" />
-  <apn carrier="SMART" mcc="510" mnc="28" apn="SmartFren" proxy="" port="" mmsproxy="10.17.27.250" mmsport="8080" mmsc="http://10.17.93.103:8080" server="" user="smart" password="smart" authtype="1" type="mms" />
   <apn carrier="Smartfren4G" mcc="510" mnc="28" apn="Smartfren4G" user="smartfren" password="smartfren" authtype="3" type="default,supl" protocol="IPV4V6" />
   <apn carrier="Smartfren MMS" mcc="510" mnc="28" apn="smartfren" user="smartfren" password="smartfren" mmsc="http://10.17.93.103:8080" mmsproxy="10.17.27.250" mmsport="8080" authtype="3" type="mms" protocol="IPV4V6" />
   <apn carrier="3 GPRS" mcc="510" mnc="89" apn="3gprs" user="3gprs" password="3gprs" authtype="1" type="default,supl" />
