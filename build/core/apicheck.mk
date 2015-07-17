@@ -47,7 +47,7 @@ $(eval $(call check-api, \
     checkpublicapi-cm-last, \
     $(CM_SRC_API_DIR)/$(cm_last_released_sdk_version).txt, \
     $(INTERNAL_CM_PLATFORM_API_FILE), \
-    vendor/cmsdk/api/cm_removed.txt, \
+    $(FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE), \
     $(INTERNAL_CM_PLATFORM_REMOVED_API_FILE), \
     cat $(BUILD_SYSTEM)/apicheck_msg_last.txt, \
     check-cm-public-api, \
@@ -59,9 +59,9 @@ $(eval $(call check-api, \
 # SDK version.
 $(eval $(call check-api, \
     checkpublicapi-cm-current, \
-    vendor/cmsdk/api/cm_current.txt, \
+    $(FRAMEWORK_CM_PLATFORM_API_FILE), \
     $(INTERNAL_CM_PLATFORM_API_FILE), \
-    vendor/cmsdk/api/cm_removed.txt, \
+    $(FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE), \
     $(INTERNAL_CM_PLATFORM_REMOVED_API_FILE), \
     cat $(BUILD_SYSTEM)/apicheck_msg_current.txt, \
     check-cm-public-api, \
@@ -71,9 +71,9 @@ $(eval $(call check-api, \
 .PHONY: update-cm-public-api
 update-cm-public-api: $(INTERNAL_CM_PLATFORM_API_FILE) | $(ACP)
 	@echo -e ${CL_GRN}"Copying cm_current.txt"${CL_RST}
-	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_API_FILE) $(TOPDIR)vendor/cmsdk/api/cm_current.txt
+	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_API_FILE) $(FRAMEWORK_CM_PLATFORM_API_FILE)
 	@echo -e ${CL_GRN}"Copying cm_removed.txt"${CL_RST}
-	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_REMOVED_API_FILE) $(TOPDIR)vendor/cmsdk/api/cm_removed.txt
+	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_REMOVED_API_FILE) $(FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE)
 
 update-cm-api : update-cm-public-api
 
@@ -87,7 +87,7 @@ $(eval $(call check-api, \
     checksystemapi-cm-last, \
     $(CM_SRC_SYSTEM_API_DIR)/$(cm_last_released_sdk_version).txt, \
     $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE), \
-    vendor/cmsdk/system-api/cm_system-removed.txt, \
+    $(FRAMEWORK_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
     $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
     cat $(BUILD_SYSTEM)/apicheck_msg_last.txt, \
     check-cm-system-api, \
@@ -98,9 +98,9 @@ $(eval $(call check-api, \
 # SDK version.
 $(eval $(call check-api, \
     checksystemapi-cm-current, \
-    vendor/cmsdk/system-api/cm_system-current.txt, \
+    $(FRAMEWORK_CM_PLATFORM_SYSTEM_API_FILE), \
     $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE), \
-    vendor/cmsdk/system-api/cm_system-removed.txt, \
+    $(FRAMEWORK_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
     $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
     cat $(BUILD_SYSTEM)/apicheck_msg_current.txt, \
     check-cm-system-api, \
@@ -112,8 +112,8 @@ update-cm-api : update-cm-system-api
 
 update-cm-system-api: $(INTERNAL_PLATFORM_CM_SYSTEM_API_FILE) | $(ACP)
 	@echo Copying cm_system-current.txt
-	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE) vendor/cmsdk/system-api/cm_system-current.txt
+	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE) $(FRAMEWORK_CM_PLATFORM_SYSTEM_API_FILE)
 	@echo Copying cm_system-removed.txt
-	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE) vendor/cmsdk/system-api/cm_system-removed.txt
+	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE) $(FRAMEWORK_CM_PLATFORM_SYSTEM_REMOVED_API_FILE)
 
 endif
