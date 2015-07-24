@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# call userinit.sh and/or userinit.d/* scripts if present in /data/local
+# call userinit.sh if present in /data/local
 
 if [ -e /data/local/userinit.sh ];
 then
