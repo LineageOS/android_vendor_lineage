@@ -1243,12 +1243,8 @@
   <apn carrier="PT - Optimus MMS" mcc="268" mnc="03" apn="umts" proxy="" port="" user="" password="" server="" mmsc="http://mmsc:10021/mmsc" mmsproxy="62.169.66.5" mmsport="8799" mvno_type="" mvno_match_data="" spn="" authtype="1" type="mms" />
   <apn carrier="Lycamobile PT" mcc="268" mnc="04" apn="data.lycamobile.pt" user="lmpt" password="plus" type="default,supl"/>
   <apn carrier="Lycamobile" mcc="268" mnc="04" apn="data.lycamobile.pt" proxy="" port="" user="lmpt" password="plus" server="" mmsc="" mmsproxy="" mmsport="" mvno_type="spn" mvno_match_data="Lycamobile" spn="" type="default,supl" />
-  <apn carrier="tmn internet" mcc="268" mnc="06" apn="internet" proxy="" port="" mmsproxy="" mmsport="" mmsc="" server="" user="" password="" authtype="3" type="default,supl" />
-  <apn carrier="mms tmn" mcc="268" mnc="06" apn="mmsc.tmn.pt" proxy="" port="" mmsproxy="10.111.002.016" mmsport="8080" mmsc="http://mmsc/" server="" user="tmn" password="tmnnet" authtype="3" type="mms" />
   <apn carrier="MEO Internet" mcc="268" mnc="06" apn="internet" type="default,supl" />
   <apn carrier="MEO MMS" mcc="268" mnc="06" apn="mmsc.tmn.pt" user="tmn" password="tmnnet" mmsc="http://mmsc" mmsproxy="10.111.2.16" mmsport="8080" type="mms" />
-  <apn carrier="PT - TMN Web" mcc="268" mnc="06" apn="internet" proxy="" port="" user="tmn" password="tmnnet" server="" mmsc="" mmsproxy="" mmsport="" mvno_type="" mvno_match_data="" spn="" authtype="1" type="default,supl" />
-  <apn carrier="PT - TMN MMS" mcc="268" mnc="06" apn="mmsc.tmn.pt" proxy="" port="" user="tmn" password="tmnnet" server="" mmsc="http://mmsc" mmsproxy="10.111.2.16" mmsport="8080" mvno_type="" mvno_match_data="" spn="" authtype="1" type="mms" />
   <apn carrier="Vectone Mobile" mcc="268" mnc="07" apn="webpt.mundio.com" proxy="" port="" user="" password="" server="" mmsc="" mmsproxy="" mmsport="" mvno_type="spn" mvno_match_data="Vectone Mobile" spn="" type="default,supl" />
   <apn carrier="Luxgsm Internet" mcc="270" mnc="01" apn="web.pt.lu" type="default,supl,mms" />
   <apn carrier="Post Internet" mcc="270" mnc="01" apn="web.pt.lu" proxy="194.154.192.88" port="8080" user="" password="" server="" mmsc="" mmsproxy="" mmsport="" mvno_type="" mvno_match_data="" spn="" authtype="1" type="default,supl" />
