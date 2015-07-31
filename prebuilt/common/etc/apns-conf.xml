@@ -3397,25 +3397,19 @@
   <apn carrier="3 ID" mcc="510" mnc="89" apn="3gprs" user="3gprs" password="3gprs" type="default,supl" />
   <apn carrier="3 ID INTERNET" mcc="510" mnc="89" apn="3data" user="3data" password="3data" type="default,supl" />
   <apn carrier="3 ID MMS" mcc="510" mnc="89" apn="3mms" user="3mms" password="3mms" mmsc="http://mmsthree.co.id" mmsproxy="10.4.0.10" mmsport="3128" type="mms" />
-  <apn carrier="myGlobe Internet" mcc="515" mnc="02" apn="internet.globe.com.ph" user="" password="" type="default,supl" />
-  <apn carrier="myGlobe Inet" mcc="515" mnc="02" apn="http.globe.com.ph" user="" password="" type="default,supl" />
-  <apn carrier="myGlobe MMS" mcc="515" mnc="02" apn="mms.globe.com.ph" proxy="" port="" mmsproxy="203.177.42.214" mmsport="8080" mmsc="http://192.40.100.22:10021/mmsc" user="" password="" type="mms" />
-  <apn carrier="GLOBE" mcc="515" mnc="02" apn="internet.globe.com.ph" type="default,supl" />
-  <apn carrier="GLOBE MMS" mcc="515" mnc="02" apn="real.globe.com.ph" user="globe" password="globe" mmsc="http://192.40.100.22:10021/mmsc" mmsproxy="192.40.100.20" mmsport="8080" type="mms" />
-  <apn carrier="SMART Internet" mcc="515" mnc="03" apn="internet" user="" password="" type="default,supl" />
-  <apn carrier="SMART" mcc="515" mnc="03" apn="smart1" proxy="10.102.61.46" port="8080" mmsc="" user="" password="" type="default,supl" />
-  <apn carrier="SMART MMS" mcc="515" mnc="03" apn="mms" proxy="" port="" mmsproxy="10.102.61.46" mmsport="8080" mmsc="http://10.102.61.238:8002" user="" password="" type="mms" />
-  <apn carrier="SMART" mcc="515" mnc="03" apn="internet" type="default,supl" />
-  <apn carrier="SMART MMS" mcc="515" mnc="03" apn="mms" mmsc="http://10.102.61.238:8002" mmsproxy="10.102.61.46" mmsport="8080" type="mms" />
-  <apn carrier="SUN Internet" mcc="515" mnc="05" apn="minternet" user="" password="" authtype="1" type="default,supl" />
-  <apn carrier="SBW CALL and SURF" mcc="515" mnc="05" apn="fbband" user="" password="" type="default,supl" />
-  <apn carrier="SUN WAP GPRS" mcc="515" mnc="05" apn="wap" proxy="202.138.159.78" port="8080" mmsc="" user="" password="" type="default,supl" />
-  <apn carrier="SUN MMS" mcc="515" mnc="05" apn="mms" proxy="" port="" mmsproxy="202.138.159.78" mmsport="8080" mmsc="http://mmscenter.suncellular.com.ph" user="" password="" type="mms" />
-  <apn carrier="SUN" mcc="515" mnc="05" apn="minternet" type="default,supl" />
+  <apn carrier="myGlobe Prepaid" mcc="515" mnc="02" apn="http.globe.com.ph" type="default,supl" />
+  <apn carrier="myGlobe Postpaid" mcc="515" mnc="02" apn="internet.globe.com.ph" type="default,supl" />
+  <apn carrier="myGlobe Connect" mcc="515" mnc="02" apn="www.globe.com.ph" proxy="203.177.042.214" port="8080" type="default,supl" />
+  <apn carrier="MyGlobe Stream" mcc="515" mnc="02" apn="real.globe.com.ph" type="default,supl" />
+  <apn carrier="myGlobe MMS" mcc="515" mnc="02" apn="mms.globe.com.ph" mmsc="http://192.40.100.22:10021/mmsc" mmsproxy="203.177.42.214" mmsport="8080" type="mms" />
+  <apn carrier="Smart GPRS" mcc="515" mnc="03" apn="Smart1" proxy="10.102.61.46" port="8080" type="default,supl" />
+  <apn carrier="Smart Internet" mcc="515" mnc="03" apn="internet" proxy="10.102.61.46" port="8080" type="default,supl" />
+  <apn carrier="Smart MMS" mcc="515" mnc="03" apn="mms" mmsc="http://10.102.61.238:8002" mmsproxy="10.102.61.46" mmsport="8080" type="mms" />
+  <apn carrier="Sun Internet" mcc="515" mnc="05" apn="minternet" type="default,supl" />
+  <apn carrier="Sun Streaming" mcc="515" mnc="05" apn="minternet" type="default,supl" />
+  <apn carrier="SUN WAP GPRS" mcc="515" mnc="05" apn="wap" proxy="202.138.159.078" port="8080" type="default,supl" />
+  <apn carrier="SUN SBW" mcc="515" mnc="05" apn="fbband" type="default,supl" />
   <apn carrier="SUN MMS" mcc="515" mnc="05" apn="mms" mmsc="http://mmscenter.suncellular.com.ph" mmsproxy="202.138.159.78" mmsport="8080" type="mms" />
-  <apn carrier="redinternet" mcc="515" mnc="18" apn="redinternet" user="" password="" type="default,supl" />
-  <apn carrier="SMART" mcc="515" mnc="18" apn="smart1" proxy="10.102.61.46" port="8080" mmsc="" user="" password="" type="default,supl" />
-  <apn carrier="SMART MMS" mcc="515" mnc="18" apn="mms" proxy="" port="" mmsproxy="10.102.61.46" mmsport="8080" mmsc="http://10.102.61.238:8002" user="" password="" type="mms" />
   <apn carrier="TrueMove-H" mcc="520" mnc="00" apn="internet" user="true" password="true" type="default,supl" />
   <apn carrier="TrueMove-H MMS" mcc="520" mnc="00" apn="hmms" user="true" password="true" mmsc="http://mms.trueh.com:8002" mmsproxy="10.4.7.39" mmsport="8080" type="mms" />
   <apn carrier="AIS GPRS Internet" mcc="520" mnc="01" apn="internet" type="default,supl" />
