@@ -1370,6 +1370,7 @@
   <spnOverride numeric="21419"  spn="Simyo" />
   <spnOverride numeric="21416"  spn="TeleCable" />
   <spnOverride numeric="21405"  spn="TME" />
+  <spnOverride numeric="21432"  spn="Tuenti" />
   <spnOverride numeric="21401"  spn="Vodafone" />
   <spnOverride numeric="21406"  spn="Vodafone" />
   <spnOverride numeric="21404"  spn="Yoigo" />
