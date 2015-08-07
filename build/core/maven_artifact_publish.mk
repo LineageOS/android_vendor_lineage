@@ -27,22 +27,32 @@ ifeq ($(strip $(LOCAL_MAVEN_REPO_ID)),)
   $(error LOCAL_MAVEN_REPO_ID not defined.)
 endif
 ifeq ($(strip $(LOCAL_MAVEN_CLASSIFIER)),)
-  $(info classifier not set)
+  $(info LOCAL_MAVEN_CLASSIFIER not set)
 endif
+ifeq ($(strip $(LOCAL_MAVEN_SOURCES)),)
+  $(info LOCAL_MAVEN_SOURCES not set)
+endif
+ifeq ($(strip $(LOCAL_MAVEN_JAVADOC)),)
+  $(info LOCAL_MAVEN_JAVADOC not set)
+endif
+
 
 $(full_target): pomfile := $(LOCAL_MAVEN_POM)
 $(full_target): repo := $(LOCAL_MAVEN_REPO)
 $(full_target): path_to_file := $(LOCAL_MAVEN_FILE_PATH)
 $(full_target): repoId := $(LOCAL_MAVEN_REPO_ID)
 $(full_target): classifier := $(LOCAL_MAVEN_CLASSIFIER)
+$(full_target): sources := $(LOCAL_MAVEN_SOURCES)
+$(full_target): javadoc := $(LOCAL_MAVEN_JAVADOC)
 
 $(full_target):
-	$(hide) mvn -e -X deploy:deploy-file \
-			-DpomFile=$(pomfile) \
+	$(hide) mvn -e -X gpg:sign-and-deploy-file \
+		    -DpomFile=$(pomfile) \
 			-Durl=$(repo) \
 			-Dfile=$(path_to_file) \
 			-DrepositoryId=$(repoId) \
-			-Dclassifier=$(classifier)
+			-Dclassifier=$(classifier) \
+			-Dsources=$(sources) \
+			-Djavadoc=$(javadoc)
 	@echo -e ${CL_GRN}"Publishing:"${CL_RST}" $@"
-
 $(LOCAL_MODULE) : $(full_target)
