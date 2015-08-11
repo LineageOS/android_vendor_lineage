@@ -36,9 +36,15 @@ Maintainers (CyanogenMod 12.1):
 * __HTC One X:__ gorbi16, mdeejay, tbalden, Thömy
 * __HTC One X+:__ Lloir, tombriden
 * __HTC One XL:__ h8rift, intervigil
+* __LG G2 (AT&T) (D800):__ arcee, Rashed97, Shelnutt2
+* __LG G2 (T-Mobile) (D801):__ arcee, Rashed97, Shelnutt2
+* __LG G2 (International) (D802):__ arcee, Rashed97, Shelnutt2
+* __LG G2 (Canada) (D803):__ arcee, Rashed97, Shelnutt2
+* __LG G2 (Sprint) (LS980):__ arcee, Rashed97, Shelnutt2
+* __LG G2 (Verizon) (VS980):__ arcee, Rashed97, Shelnutt2
 * __LG G3 (AT&T) (D850):__ AndroidUser00110001
 * __LG G3 (T-Mobile) (D851):__ savoca
-* __LG G3 (AT&T) (D852):__ AndroidUser00110001
+* __LG G3 (Canada) (D852):__ AndroidUser00110001
 * __LG G3 (International) (D855):__ AngelBob
 * __LG G3 (Verizon) (VS985):__ invisiblek
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
