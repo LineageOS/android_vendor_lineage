@@ -26,15 +26,6 @@ endif
 ifeq ($(strip $(LOCAL_MAVEN_REPO_ID)),)
   $(error LOCAL_MAVEN_REPO_ID not defined.)
 endif
-ifeq ($(strip $(LOCAL_MAVEN_CLASSIFIER)),)
-  $(info LOCAL_MAVEN_CLASSIFIER not set)
-endif
-ifeq ($(strip $(LOCAL_MAVEN_SOURCES)),)
-  $(info LOCAL_MAVEN_SOURCES not set)
-endif
-ifeq ($(strip $(LOCAL_MAVEN_JAVADOC)),)
-  $(info LOCAL_MAVEN_JAVADOC not set)
-endif
 
 
 $(full_target): pomfile := $(LOCAL_MAVEN_POM)
