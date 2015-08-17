@@ -71,5 +71,6 @@
         <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
         <item>org.cyanogenmod.platform.internal.SettingsManagerService</item>
         <item>org.cyanogenmod.platform.internal.CMTelephonyManagerService</item>
+        <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
     </string-array>
 </resources>
