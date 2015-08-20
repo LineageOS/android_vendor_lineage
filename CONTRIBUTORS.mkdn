@@ -30,6 +30,7 @@ Maintainers (CyanogenMod 12.1):
 * __HTC One (GSM):__ codeworkx, h8rift
 * __HTC One (M8):__ deck, h8rift, invisblek, toastcfh, u-ra
 * __HTC One Dual SIM (M8dug):__ deck, h8rift, invisblek, toastcfh, u-ra, bgcngm
+* __HTC One M9 (hima):__ cyanogen, Rashed97, varunchitre15
 * __HTC One Max (T6):__ flyhalf205, sbrissen
 * __HTC One (Sprint):__ kushdeck, toastcfh
 * __HTC One (Verizon):__ flyhalf205, mdmower
@@ -54,7 +55,7 @@ Maintainers (CyanogenMod 12.1):
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
 * __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ Hashcode, Skrilax_CZ
-* __Moto X 2014 (victara):__ crpalmer
+* __Moto X 2014 (victara):__ crpalmer, invisiblek
 * __Motorola Moto MAXX(quark) :__ Skrilax_CZ
 * __Motorola Atrix HD (MB886/qinara):__ epinter, Hashcode, Skrilax_CZ, nadlabak
 * __Motorola Droid 3 (solana):__ Hashcode, stargo
