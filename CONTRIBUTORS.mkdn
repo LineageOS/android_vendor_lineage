@@ -28,8 +28,8 @@ Maintainers (CyanogenMod 12.1):
 * __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One (GSM):__ codeworkx, h8rift
-* __HTC One (M8):__ deck, h8rift, invisblek, toastcfh, u-ra
-* __HTC One Dual SIM (M8dug):__ deck, h8rift, invisblek, toastcfh, u-ra, bgcngm
+* __HTC One M8:__ deck, h8rift, invisblek, toastcfh, u-ra
+* __HTC One M8 Dual SIM (m8dug):__ bgcngm
 * __HTC One M9 (hima):__ cyanogen, Rashed97, varunchitre15
 * __HTC One Max (T6):__ flyhalf205, sbrissen
 * __HTC One (Sprint):__ kushdeck, toastcfh
