@@ -28,7 +28,7 @@ Maintainers (CyanogenMod 12.1):
 * __HTC Droid Incredible 4G LTE:__ intervigil, mdmower
 * __HTC Evo 4G LTE:__ kushdeck, toastcfh
 * __HTC One (GSM):__ codeworkx, h8rift
-* __HTC One M8:__ deck, h8rift, invisblek, toastcfh, u-ra
+* __HTC One M8:__ deck, h8rift, invisblek, toastcfh, u-ra, uberlaggydarwin
 * __HTC One M8 Dual SIM (m8dug):__ bgcngm
 * __HTC One M9 (hima):__ cyanogen, Rashed97, varunchitre15
 * __HTC One Max (T6):__ flyhalf205, sbrissen
@@ -51,7 +51,7 @@ Maintainers (CyanogenMod 12.1):
 * __LG G3 (Verizon) (VS985):__ invisiblek
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
-* __Moto E 2014 (xt1021,xt1022,xt1023/condor):__ percy_g2, scritch007
+* __Moto E 2014 (xt1021,xt1022,xt1023/condor):__ percy_g2, scritch007, ashwin007
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
 * __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ Hashcode, Skrilax_CZ
@@ -113,6 +113,8 @@ Maintainers (CyanogenMod 12.1):
 * __Samsung Galaxy S IV LTE-A (GT-I9506):__ solk2
 * __Samsung Galaxy S IV Mini 3G (GT-I9190):__ arco
 * __Samsung Galaxy S IV Mini LTE (GT-I9195):__ arco
+* __Samsung Galaxy S V (AU) (SCL23):__ scoty755
+* __Samsung Galaxy S V (Vodafone) (SM-G900I):__ Regi24
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx, codyf86
@@ -144,6 +146,7 @@ Maintainers (CyanogenMod 12.1):
 * __Sony Xperia Z3 Compact (z3c):__ FreeXperia Team
 * __Sony Z Ultra GPE (togari_gpe):__ FreeXperia Team
 * __Xiaomi Mi2(s) (aries):__ Michael Zimmermann
+* __Xiaomi Mi3/4 (cancro):__ JoeyRizzoli
 
 FreeXperia Team:
 -------------------
