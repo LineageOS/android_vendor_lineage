@@ -986,12 +986,11 @@
   <apn carrier="VZW Test IMS" mcc="246" mnc="81" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Test CBS" mcc="246" mnc="81" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="LMT" mcc="247" mnc="01" apn="internet.lmt.lv" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="LMT MMS" mcc="247" mnc="01" apn="mms.lmt.lv" proxy="" port="" user="" password="" mmsc="" mmsproxy="212.93.97.201" mmsport="" type="mms" />
-  <apn carrier="Tele2 Internet LV" mcc="247" mnc="02" apn="internet.tele2.lv" user="wap" password="wap" proxy="" port="8080" type="default,supl" />
-  <apn carrier="Tele2 Internet LV" mcc="247" mnc="02" apn="internet.tele2.lv" proxy="130.244.196.90" port="8080" user="wap" password="wap" mmsc="" type="default,supl" />
+  <apn carrier="LMT MMS" mcc="247" mnc="01" apn="internet.lmt.lv" proxy="" port="" user="" password="" mmsc="http://mmsc.lmt.lv/mmsc" mmsproxy="212.93.97.201" mmsport="8080" type="mms" />
+  <apn carrier="Tele2 Internet LV" mcc="247" mnc="02" apn="internet.tele2.lv" user="wap" password="wap" proxy="" port="" type="default,supl" />
   <apn carrier="Tele2 MMS LV" mcc="247" mnc="02" apn="mms.tele2.lv" proxy="" port="" user="wap" password="wap" mmsc="http://mmsc.tele2.lv/" mmsproxy="193.12.40.38" mmsport="8080" type="mms" />
   <apn carrier="Bite LV Internet" mcc="247" mnc="05" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Bite MMS" mcc="247" mnc="05" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmsc" mmsproxy="192.168.150.2" mmsport="8080" type="mms" />
+  <apn carrier="Bite MMS" mcc="247" mnc="05" apn="mms" proxy="" port="" user="mms@mms" password="" mmsc="http://mmsc/servlets/mms" mmsproxy="192.168.150.2" mmsport="8080" type="mms" />
   <apn carrier="EMT" mcc="248" mnc="01" apn="internet.emt.ee" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="EMT MMS" mcc="248" mnc="01" apn="mms.emt.ee" proxy="" port="" user="" password="" mmsc="http://mms.emt.ee/servlets/mms" type="mms" />
   <apn carrier="Elisa EE" mcc="248" mnc="02" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
