@@ -239,21 +239,14 @@
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="88" apn="ebouygtel.com" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="MMS Bouygues" mcc="208" mnc="88" apn="mmsbouygtel.com" proxy="" port="" user="" password="" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
   <apn carrier="NRJ WEB" mcc="209" mnc="01" apn="ofnew.fr" user="orange" password="orange" spn="NRJ (ORANGE)" type="default,supl" />
-  <apn carrier="Vodafone ES" mcc="214" mnc="01" apn="airtelwap.es" proxy="212.73.32.10" port="80" mmsc="" user="wap@wap" password="wap125" authtype="1" type="default,supl" />
-  <apn carrier="INTERNET" mcc="214" mnc="01" apn="airtelnet.es" proxy="212.73.32.10" port="80" mmsc="" user="vodafone" password="vodafone" authtype="1" type="default,supl" />
-  <apn carrier="Vodafone ES-MMS" mcc="214" mnc="01" apn="mms.vodafone.net" proxy="" port="" mmsproxy="212.73.32.10" mmsport="80" mmsc="http://mmsc.vodafone.es/servlets/mms" user="wap@wap" password="wap125" type="mms" />
-  <apn carrier="Vodafone ES Internet" mcc="214" mnc="01" apn="ac.vodafone.es" proxy="" port="" user="vodafone" password="vodafone" mmsc="" authtype="1" type="default,supl" />
-  <apn carrier="Vodafone" mcc="214" mnc="01" apn="airtelwap.es" proxy="" port="" user="wap@wap" password="wap125" mmsc="" type="default,supl" />
-  <apn carrier="Vodafone ES-MMS" mcc="214" mnc="01" apn="mms.vodafone.net" proxy="" port="" user="wap@wap" password="wap125" mmsc="http://mmsc.vodafone.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" authtype="1" type="mms" />
+  <apn carrier="Vodafone ES" mcc="214" mnc="01" apn="airtelwap.es" proxy="" port="" mmsc="" user="wap@wap" password="wap125" authtype="0" type="default,supl" />
+  <apn carrier="Vodafone ES MMS" mcc="214" mnc="01" apn="mms.vodafone.net" proxy="" port="" mmsproxy="212.73.32.10" mmsport="80" mmsc="http://mmsc.vodafone.es/servlets/mms" user="wap@wap" password="wap125" authtype="0" type="mms" />
   <apn carrier="Movistar" mcc="214" mnc="02" apn="telefonica.es" proxy="10.138.255.133" port="8080" mmsc="" user="telefonica" password="telefonica" type="default,supl" />
   <apn carrier="Movistar MMS" mcc="214" mnc="02" apn="telefonica.es" proxy="" port="" mmsproxy="10.138.255.5" mmsport="8080" mmsc="http://mms.movistar.com" user="telefonica" password="telefonica" type="mms" />
   <apn carrier="Movistar" mcc="214" mnc="02" apn="movistar.es" user="MOVISTAR" password="MOVISTAR" type="dun,default" />
-  <apn carrier="Orange Internet Móvil" mcc="214" mnc="03" apn="orangeworld" proxy="10.132.61.10" port="8080" mmsc="" user="orange" password="orange" authtype="1" type="default,supl" />
-  <apn carrier="Orange World 3G" mcc="214" mnc="03" apn="orangeworld" proxy="10.132.61.10" port="8080" user="orange" password="orange" mmsc="" authtype="1" type="internet" />
-  <apn carrier="Orange Internet" mcc="214" mnc="03" apn="internet" proxy="" port="" user="orange" password="orange" mmsc="" type="default,supl" />
+  <apn carrier="Orange Internet Móvil" mcc="214" mnc="03" apn="orangeworld" mmsc="" user="orange" password="orange" authtype="1" type="default,supl" />
   <apn carrier="Orange Internet PC" mcc="214" mnc="03" apn="internet" user="orange" password="orange" authtype="1" type="dun" />
   <apn carrier="Orange MMS" mcc="214" mnc="03" apn="orangemms" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.es" mmsproxy="172.22.188.25" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Orange World" mcc="214" mnc="03" apn="orangeworld" proxy="10.132.61.10" port="8080" user="orange" password="orange" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Suop" mcc="214" mnc="03" apn="inet.es" type="default,supl" />
   <apn carrier="Carrefour Internet" mcc="214" mnc="03" apn="CARREFOURINTERNET" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Carrefour" type="default,supl" />
   <apn carrier="Carrefour MMS" mcc="214" mnc="03" apn="carrefourmms" proxy="" port="" user="carrefour" password="carrefour" mmsc="http://mms.orange.es" mmsproxy="172.22.188.25" mmsport="8080" mvno_type="spn" mvno_match_data="Carrefour" type="mms" />
@@ -264,9 +257,8 @@
   <apn carrier="MasMovil MMS" mcc="214" mnc="03" apn="masvidamms" proxy="" port="" user="masvidamms" password="MMSmasvida" mmsc="http://mms.orange.es" mmsproxy="172.22.188.25" mmsport="8080" mvno_type="spn" mvno_match_data="Mas Movil" type="mms" />
   <apn carrier="Jazztel MMS" mcc="214" mnc="03" apn="jazzmms" proxy="" port="" user="" password="" mmsc="http://jazztelmms.com/servlets/mms" mmsproxy="37.132.0.10" mmsport="8080" mvno_type="spn" mvno_match_data="JAZZTEL" type="mms" />
   <apn carrier="Jazztel" mcc="214" mnc="03" apn="jazzinternet" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="JAZZTEL" type="default,supl" />
-  <apn carrier="Yoigo Navegador" mcc="214" mnc="04" apn="internet" proxy="10.08.00.36" port="8080" mmsc="" user="" password="" type="default,supl" />
+  <apn carrier="Yoigo Internet" mcc="214" mnc="04" apn="internet" mmsc="" user="" password="" type="default,supl" />
   <apn carrier="Yoigo MMS" mcc="214" mnc="04" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmss/" mmsproxy="193.209.134.141" mmsport="80" type="mms" />
-  <apn carrier="GPRS Connection" mcc="214" mnc="04" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Tuenti" mcc="214" mnc="05" apn="tuenti.com" user="tuenti" password="tuenti" mmsc="http://tuenti.com" mmsproxy="10.138.255.43" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tuenti Internet" mcc="214" mnc="05" apn="tuenti.com" proxy="" port="" user="tuenti" password="tuenti" mmsc="" mvno_type="spn" mvno_match_data="Tuenti" type="default,supl" />
   <apn carrier="Tuenti MMS" mcc="214" mnc="05" apn="tuenti.com" proxy="" port="" user="tuenti" password="tuenti" mmsc="http://tuenti.com" mmsproxy="10.138.255.43" mmsport="8080" mvno_type="spn" mvno_match_data="Tuenti" authtype="1" type="mms" />
@@ -274,7 +266,8 @@
   <apn carrier="Pepephone 4G MMS" mcc="214" mnc="05" apn="gprs.pepephone.com" mmsc="http://www.pepephone.com" mmsproxy="10.138.255.43" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Pepephone Internet" mcc="214" mnc="06" apn="gprsmov.pepephone.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Pepephone" type="default,supl" />
   <apn carrier="Pepephone MMS" mcc="214" mnc="06" apn="mms.pepephone.com" proxy="" port="" user="wap@wap" password="wap125" mmsc="http://mms.pepephone.com/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" mvno_type="spn" mvno_match_data="Pepephone" type="mms" />
-  <apn carrier="Lowi" mcc="214" mnc="06" apn="lowi.private.omv.es" mmsproxy="mms.lowi.omv.es" type="default,supl,mms" />
+  <apn carrier="Lowi" mcc="214" mnc="06" apn="lowi.private.omv.es" type="default,supl" />
+  <apn carrier="Lowi MMS" mcc="214" mnc="06" apn="mms.lowi.omv.es" proxy="" port="" user="wap@wap" password="wap125" mmsc="http://mms.lowi.omv.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" type="mms" />
   <apn carrier="Vodafone GPRS" mcc="214" mnc="06" apn="airtelnet.es" user="vodafone" password="vodafone" type="default,supl" />
   <apn carrier="Vodafone MMS" mcc="214" mnc="06" apn="mms.vodafone.net" proxy="" port="" user="wap@wap" password="wap125" mmsc="http://mmsc.vodafone.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" type="mms" />
   <apn carrier="Lebara Internet" mcc="214" mnc="06" apn="gprsmov.lebaramobile.es" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Lebara" type="default,supl" />
