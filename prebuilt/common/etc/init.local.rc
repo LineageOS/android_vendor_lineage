@@ -104,6 +104,9 @@ on boot
     setprop net.tcp.usercfg.wifi       1
     setprop net.tcp.usercfg.lte        1
 
+    # Persistent properties (only created if persist exists)
+    mkdir /persist/properties 0770 system system
+
 # adb over network
 on property:service.adb.tcp.port=5555
     stop adbd

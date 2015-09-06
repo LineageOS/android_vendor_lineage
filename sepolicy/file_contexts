@@ -34,3 +34,6 @@
 
 # Lockscreen wallpaper
 /data/system/users/[0-9]+/keyguard_wallpaper   u:object_r:wallpaper_file:s0
+
+# Persistent properties
+/persist/properties         u:object_r:persist_property_file:s0
