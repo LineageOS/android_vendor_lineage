@@ -121,6 +121,13 @@ on property:ro.radio.noril=1
 on property:persist.radio.noril=1
     setprop ro.radio.noril 1
 
+# Configure IO scheduler
+on property:sys.io.scheduler=*
+    write /sys/block/mmcblk0/queue/scheduler ${sys.io.scheduler}
+
+on property:persist.sys.io.scheduler=*
+    setprop sys.io.scheduler ${persist.sys.io.scheduler}
+
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
