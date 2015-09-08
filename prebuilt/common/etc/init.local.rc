@@ -5,6 +5,64 @@ on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
 
+    # Set up the BFQIO hierarchy
+    chmod 0755 /sys/fs/cgroup
+    mkdir /sys/fs/cgroup/bfqio 0755 root system
+    mount cgroup none /sys/fs/cgroup/bfqio bfqio,xattr
+    write /sys/fs/cgroup/bfqio/bfqio.ioprio_class 2
+    write /sys/fs/cgroup/bfqio/bfqio.ioprio 4
+    write /sys/fs/cgroup/bfqio/bfqio.weight 1000
+    chown root system /sys/fs/cgroup/bfqio/tasks
+    chmod 0666 /sys/fs/cgroup/bfqio/tasks
+
+    # Realtime audio class
+    mkdir /sys/fs/cgroup/bfqio/rt-audio 0755 root system
+    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.ioprio_class 1
+    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.ioprio 4
+    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.weight 1000
+    chown media system /sys/fs/cgroup/bfqio/rt-audio/tasks
+    chmod 0664 /sys/fs/cgroup/bfqio/rt-audio/tasks
+
+    # Realtime display class
+    mkdir /sys/fs/cgroup/bfqio/rt-display 0755 root system
+    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio_class 1 
+    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio 7
+    write /sys/fs/cgroup/bfqio/rt-display/bfqio.weight 1000
+    chown system graphics /sys/fs/cgroup/bfqio/rt-display/tasks
+    chmod 0664 /sys/fs/cgroup/bfqio/rt-display/tasks
+
+    # Display class
+    mkdir /sys/fs/cgroup/bfqio/display 0755 root system
+    write /sys/fs/cgroup/bfqio/display/bfqio.ioprio_class 2
+    write /sys/fs/cgroup/bfqio/display/bfqio.ioprio 0
+    write /sys/fs/cgroup/bfqio/display/bfqio.weight 1000
+    chown root system /sys/fs/cgroup/bfqio/display/tasks
+    chmod 0666 /sys/fs/cgroup/bfqio/display/tasks
+
+    # Hipri class
+    mkdir /sys/fs/cgroup/bfqio/hipri 0755 root system
+    write /sys/fs/cgroup/bfqio/hipri/bfqio.ioprio_class 2
+    write /sys/fs/cgroup/bfqio/hipri/bfqio.ioprio 2 
+    write /sys/fs/cgroup/bfqio/hipri/bfqio.weight 1000
+    chown root system /sys/fs/cgroup/bfqio/hipri/tasks
+    chmod 0666 /sys/fs/cgroup/bfqio/hipri/tasks
+
+    # Background class
+    mkdir /sys/fs/cgroup/bfqio/bg 0755 root system
+    write /sys/fs/cgroup/bfqio/bg/bfqio.ioprio_class 2
+    write /sys/fs/cgroup/bfqio/bg/bfqio.ioprio 7
+    write /sys/fs/cgroup/bfqio/bg/bfqio.weight 1000
+    chown root system /sys/fs/cgroup/bfqio/bg/tasks
+    chmod 0666 /sys/fs/cgroup/bfqio/bg/tasks
+
+    # Idle
+    mkdir /sys/fs/cgroup/bfqio/idle 0755 root system
+    write /sys/fs/cgroup/bfqio/idle/bfqio.ioprio_class 3
+    write /sys/fs/cgroup/bfqio/idle/bfqio.ioprio 0
+    write /sys/fs/cgroup/bfqio/idle/bfqio.weight 1000
+    chown root system /sys/fs/cgroup/bfqio/idle/tasks
+    chmod 0666 /sys/fs/cgroup/bfqio/idle/tasks
+
 on post-fs-data
     mkdir /data/.ssh 0750 root shell
     mkdir /cache/recovery 0770 system cache
