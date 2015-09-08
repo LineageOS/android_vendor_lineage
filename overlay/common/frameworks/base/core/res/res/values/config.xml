@@ -72,5 +72,9 @@
         <item>org.cyanogenmod.platform.internal.PartnerInterfaceService</item>
         <item>org.cyanogenmod.platform.internal.CMTelephonyManagerService</item>
         <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
+        <item>org.cyanogenmod.platform.internal.AppSuggestManagerService</item>
     </string-array>
+
+    <!-- Enable custom resolver, so we can supply suggestions if nothing can handle the intent -->
+    <string name="config_customResolverActivity">org.cyanogenmod.resolver/org.cyanogenmod.resolver.ResolverActivity</string>
 </resources>
