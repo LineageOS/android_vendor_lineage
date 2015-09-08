@@ -69,7 +69,7 @@
     <string-array name="config_externalCMServices">
         <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
         <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
-        <item>org.cyanogenmod.platform.internal.SettingsManagerService</item>
+        <item>org.cyanogenmod.platform.internal.PartnerInterfaceService</item>
         <item>org.cyanogenmod.platform.internal.CMTelephonyManagerService</item>
         <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
     </string-array>
