@@ -5,6 +5,6 @@ torch                                     u:object_r:system_server_service:s0
 killswitch                                u:object_r:system_server_service:s0
 cmstatusbar                               u:object_r:system_server_service:s0
 profile                                   u:object_r:system_server_service:s0
-cmsettings                                u:object_r:system_server_service:s0
+cmpartnerinterface                        u:object_r:system_server_service:s0
 cmtelephonymanager                        u:object_r:system_server_service:s0
 cmhardware                                u:object_r:system_server_service:s0
