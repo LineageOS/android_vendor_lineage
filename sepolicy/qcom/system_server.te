@@ -1,0 +1,6 @@
+# LiveDisplay access to color calibration
+allow system_server pps_socket:sock_file rw_file_perms;
+allow system_server mm-pp-daemon:unix_stream_socket connectto;
+
+# Time services
+allow system_server time_daemon:unix_stream_socket connectto;
