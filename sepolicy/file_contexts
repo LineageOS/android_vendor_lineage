@@ -37,3 +37,9 @@
 
 # Persistent properties
 /persist/properties         u:object_r:persist_property_file:s0
+
+# LiveDisplay
+/sys/devices/virtual/graphics/fb0/aco           u:object_r:livedisplay_sysfs:s0
+/sys/devices/virtual/graphics/fb0/cabc          u:object_r:livedisplay_sysfs:s0
+/sys/devices/virtual/graphics/fb0/rgb           u:object_r:livedisplay_sysfs:s0
+/sys/devices/virtual/graphics/fb0/sre           u:object_r:livedisplay_sysfs:s0

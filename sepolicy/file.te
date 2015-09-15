@@ -14,3 +14,6 @@ type recovery_cache_file, file_type, mlstrustedobject;
 
 # Persistent property storage
 type persist_property_file, file_type;
+
+# Knobs for LiveDisplay
+type livedisplay_sysfs, sysfs_type, file_type;
