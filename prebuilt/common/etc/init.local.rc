@@ -25,7 +25,7 @@ on init
 
     # Realtime display class
     mkdir /sys/fs/cgroup/bfqio/rt-display 0755 root system
-    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio_class 1 
+    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio_class 1
     write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio 7
     write /sys/fs/cgroup/bfqio/rt-display/bfqio.weight 1000
     chown system graphics /sys/fs/cgroup/bfqio/rt-display/tasks
@@ -42,7 +42,7 @@ on init
     # Hipri class
     mkdir /sys/fs/cgroup/bfqio/hipri 0755 root system
     write /sys/fs/cgroup/bfqio/hipri/bfqio.ioprio_class 2
-    write /sys/fs/cgroup/bfqio/hipri/bfqio.ioprio 2 
+    write /sys/fs/cgroup/bfqio/hipri/bfqio.ioprio 2
     write /sys/fs/cgroup/bfqio/hipri/bfqio.weight 1000
     chown root system /sys/fs/cgroup/bfqio/hipri/tasks
     chmod 0666 /sys/fs/cgroup/bfqio/hipri/tasks
@@ -165,10 +165,24 @@ on boot
     # Persistent properties (only created if persist exists)
     mkdir /persist/properties 0770 system system
 
+# sysinit (/system/etc/init.d)
+service sysinit /system/bin/sysinit
+    user root
+    oneshot
+    disabled
+
+# bugreport is triggered by holding down volume down, volume up and power
+service bugreport /system/bin/dumpstate -d -p -B \
+        -o /data/data/com.android.shell/files/bugreports/bugreport
+    oneshot
+    disabled
+    keycodes 114 115 116
+
 # adb over network
 on property:service.adb.tcp.port=5555
     stop adbd
     start adbd
+
 on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
@@ -189,15 +203,10 @@ on property:sys.io.scheduler=*
 on property:persist.sys.io.scheduler=*
     setprop sys.io.scheduler ${persist.sys.io.scheduler}
 
-# sysinit (/system/etc/init.d)
-service sysinit /system/bin/sysinit
-    user root
-    oneshot
-    disabled
+# Set slice_idle to 0 for CFQ
+on property:sys.io.scheduler=cfq
+    write /sys/block/mmcblk0/queue/iosched/slice_idle 0
 
-# bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -B \
-        -o /data/data/com.android.shell/files/bugreports/bugreport
-    oneshot
-    disabled
-    keycodes 114 115 116
+# Set slice_idle to 0 for BFQ
+on property:sys.io.scheduler=bfq
+    write /sys/block/mmcblk0/queue/iosched/slice_idle 0
