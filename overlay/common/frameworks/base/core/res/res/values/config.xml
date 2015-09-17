@@ -76,5 +76,5 @@
     </string-array>
 
     <!-- Enable custom resolver, so we can supply suggestions if nothing can handle the intent -->
-    <string name="config_customResolverActivity">org.cyanogenmod.resolver/org.cyanogenmod.resolver.ResolverActivity</string>
+    <string name="config_customResolverActivity"></string>
 </resources>

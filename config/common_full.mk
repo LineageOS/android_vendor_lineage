@@ -17,8 +17,7 @@ PRODUCT_PACKAGES += \
     PhotoTable \
     SoundRecorder \
     PhotoPhase \
-    CMSettingsProvider \
-    CMResolver
+    CMSettingsProvider
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
