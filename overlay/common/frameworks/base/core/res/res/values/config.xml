@@ -74,7 +74,4 @@
         <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
         <item>org.cyanogenmod.platform.internal.AppSuggestManagerService</item>
     </string-array>
-
-    <!-- Enable custom resolver, so we can supply suggestions if nothing can handle the intent -->
-    <string name="config_customResolverActivity"></string>
 </resources>
