@@ -8,7 +8,7 @@ on init
     # Set up the BFQIO hierarchy
     chmod 0755 /sys/fs/cgroup
     mkdir /sys/fs/cgroup/bfqio 0755 root system
-    mount cgroup none /sys/fs/cgroup/bfqio bfqio,xattr
+    mount cgroup none /sys/fs/cgroup/bfqio bfqio
     write /sys/fs/cgroup/bfqio/bfqio.ioprio_class 2
     write /sys/fs/cgroup/bfqio/bfqio.ioprio 4
     write /sys/fs/cgroup/bfqio/bfqio.weight 1000
