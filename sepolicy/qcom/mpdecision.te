@@ -1,0 +1,5 @@
+allow mpdecision sysfs_devices_system_iosched:file rw_file_perms;
+unix_socket_connect(mpdecision, thermal, thermal-engine)
+
+# read /proc/pid files
+r_dir_file(mpdecision, domain)
