@@ -9,38 +9,15 @@ on init
     chmod 0755 /sys/fs/cgroup
     mkdir /sys/fs/cgroup/bfqio 0755 root system
     mount cgroup none /sys/fs/cgroup/bfqio bfqio
-    write /sys/fs/cgroup/bfqio/bfqio.ioprio_class 2
-    write /sys/fs/cgroup/bfqio/bfqio.ioprio 4
     chown root system /sys/fs/cgroup/bfqio/tasks
     chmod 0666 /sys/fs/cgroup/bfqio/tasks
 
-    # Realtime audio class
-    mkdir /sys/fs/cgroup/bfqio/rt-audio 0755 root system
-    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.ioprio_class 1
-    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.ioprio 4
-    chown media system /sys/fs/cgroup/bfqio/rt-audio/tasks
-    chmod 0664 /sys/fs/cgroup/bfqio/rt-audio/tasks
-
-    # Realtime display class
+    # Soft realtime class for display service
     mkdir /sys/fs/cgroup/bfqio/rt-display 0755 root system
     write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio_class 1
     write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio 7
     chown system system /sys/fs/cgroup/bfqio/rt-display/tasks
     chmod 0664 /sys/fs/cgroup/bfqio/rt-display/tasks
-
-    # Background class
-    mkdir /sys/fs/cgroup/bfqio/bg 0755 root system
-    write /sys/fs/cgroup/bfqio/bg/bfqio.ioprio_class 2
-    write /sys/fs/cgroup/bfqio/bg/bfqio.ioprio 7
-    chown root system /sys/fs/cgroup/bfqio/bg/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/bg/tasks
-
-    # Idle
-    mkdir /sys/fs/cgroup/bfqio/idle 0755 root system
-    write /sys/fs/cgroup/bfqio/idle/bfqio.ioprio_class 3
-    write /sys/fs/cgroup/bfqio/idle/bfqio.ioprio 0
-    chown root system /sys/fs/cgroup/bfqio/idle/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/idle/tasks
 
 on post-fs-data
     mkdir /data/.ssh 0750 root shell
