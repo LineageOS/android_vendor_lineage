@@ -54,6 +54,7 @@ Maintainers (CyanogenMod 12.1):
 * __Moto E 2014 (xt1021,xt1022,xt1023/condor):__ percy_g2, scritch007, ashwin007
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
+* __Moto G 4G 2014 (xt1072,xt1077,xt1078,xt1079/thea):__ LuK1337, luca020400
 * __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ Hashcode, Skrilax_CZ
 * __Moto X 2014 (victara):__ crpalmer, invisiblek
 * __Motorola Moto MAXX(quark) :__ Skrilax_CZ
