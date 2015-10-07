@@ -78,6 +78,8 @@ Maintainers (CyanogenMod 13.0):
 * __Oppo Find 5:__ intervigil, nebkat
 * __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
 * __Oppo N3:__ invisiblek, maniac103
+* __Oppo R7:__ maniac103, mikeioannina, Rashed97
+* __Oppo R7 Plus:__ maniac103, mikeioannina, Rashed97
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
 * __Samsung Epic 4G (SPH-D700):__ bbelos
 * __Samsung Exhilarate (SGH-I577):__ mikeyman77, carvsdriver
