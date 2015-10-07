@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=12.1
+export V=13.0
 
 backup_file() {
   if [ -e "$1" ]; then
