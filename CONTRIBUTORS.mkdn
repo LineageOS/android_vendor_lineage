@@ -21,6 +21,7 @@ Maintainers (CyanogenMod 13.0):
 * __Google Nexus 6:__ dhacker29
 * __Google Nexus 7:__ burnsra, fattire, Thömy, nemith, JoeyRizzoli (GSM)
 * __Google Nexus 10:__ atinm, dalingrin, kornyone, gweedo767
+* __Google Nexus Player:__ dhacker29, bmc08gt
 * __HTC Desire 601(zara/zaracl):__ uberlaggydarwin, PatrikKT
 * __HTC Desire 816:__ Grarak, v_superuser
 * __HTC Desire Eye:__ uberlaggydarwin
