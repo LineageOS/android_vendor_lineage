@@ -1,0 +1,10 @@
+type edge_gesture_service, system_api_service, system_server_service, service_manager_type;
+type themes_service, system_api_service, system_server_service, service_manager_type;
+type torch_service, system_api_service, system_server_service, service_manager_type;
+type kill_switch_service, system_api_service, system_server_service, service_manager_type;
+type cm_status_bar_service, system_api_service, system_server_service, service_manager_type;
+type cm_profile_service, system_api_service, system_server_service, service_manager_type;
+type cm_partner_interface, system_api_service, system_server_service, service_manager_type;
+type cm_telephony_service, system_api_service, system_server_service, service_manager_type;
+type cm_hardware_service, system_api_service, system_server_service, service_manager_type;
+type cm_app_suggest_service, system_api_service, system_server_service, service_manager_type;
