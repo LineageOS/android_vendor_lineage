@@ -2,8 +2,6 @@ type superuser_device, file_type;
 
 ## Perms for the daemon
 
-type sudaemon, domain;
-
 userdebug_or_eng(`
   domain_trans(init, su_exec, sudaemon)
 
