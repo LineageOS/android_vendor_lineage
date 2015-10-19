@@ -7,6 +7,26 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 
 CHANGELOG (notable new features)
 ---------
+
+### 12.1 YOG4PAO3
+* Common: Android 5.1.1 (Google)
+* Android Security Bulletin – October 5th update
+
+### 12.1 YOG4PAO2
+* Common: Android 5.1.1 (Google)
+* New Devices: Andromax Q (rendang), Galaxy S5 China (kltechn), Galaxy S5 Duos (klteduos), Galaxy S5 Duos China (kltechnduo)
+* IMAP idle support
+* SDK v1 release
+* Stagefright security fixes
+
+### 12.0
+* Common: Android 5.0 (Google)
+
+### 11.0.0 M12
+* Common: Android 4.4.4 (Google)
+* patches against POODLE vulnerability in SSLv3
+* Multi-sim improvements throughout the OS experience
+
 ### 11.0.0 M11
 * Common: Android 4.4.4 (Google)
 * New Devices: Galaxy S4 Active (jactivelte), Galaxy S4 SK I-9506 (ks01lte), Galaxy S5 GSM (klte), Galaxy Tab 10.1 (picassowifi), Galaxy Player 4.0 (ypg1)
