@@ -3122,7 +3122,7 @@
   <apn carrier="3-DB-GPRS" mcc="454" mnc="14" apn="web-g.three.com.hk" proxy="10.30.15.53" port="8080" type="default,supl" />
   <apn carrier="SmarTone HK" mcc="454" mnc="15" apn="SmarTone" mmsc="http://mms.smartone.com/server" mmsproxy="10.9.9.9" mmsport="8080" type="default,supl,mms" />
   <apn carrier="PCCW-HKT" mcc="454" mnc="16" apn="pccw" mmsc="http://3gmms.pccwmobile.com:8080/was" mmsproxy="10.140.14.10" mmsport="8080" authtype="1" type="default,supl,mms" />
-  <apn carrier="PCCW GPRS" mcc="454" mnc="16" apn="pccwdata" proxy="10.131.2.8" port="8080" user="" password="" server="" mmsc="" type="default" />
+  <apn carrier="PCCW GPRS" mcc="454" mnc="16" apn="pccwdata" proxy="10.131.2.8" port="8080" user="" password="" mmsc="" type="default" />
   <apn carrier="csl" mcc="454" mnc="16" apn="pccw" mmsc="http://mms.hkcsl.com:8080" mmsproxy="10.140.14.10" mmsport="8080" authtype="3" type="default,mms,hipri" />
   <apn carrier="SmarTone HK" mcc="454" mnc="17" apn="SmarTone" mmsc="http://mms.smartone.com/server" mmsproxy="10.9.9.9" mmsport="8080" type="default,supl,mms" />
   <apn carrier="csl" mcc="454" mnc="18" apn="mobile" mmsc="http://192.168.58.171:8002" mmsproxy="192.168.59.51" mmsport="8080" authtype="3" type="default,mms,hipri" />
