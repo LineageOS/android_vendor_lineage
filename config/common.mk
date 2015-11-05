@@ -147,7 +147,8 @@ PRODUCT_PACKAGES += \
     CMUpdater \
     CMAccount \
     CyanogenSetupWizard \
-    CMSettingsProvider
+    CMSettingsProvider \
+    ExactCalculator
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
