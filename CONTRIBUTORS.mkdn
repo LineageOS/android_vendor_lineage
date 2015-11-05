@@ -48,7 +48,7 @@ Maintainers (CyanogenMod 13.0):
 * __LG G3 (AT&T) (D850):__ AndroidUser00110001
 * __LG G3 (T-Mobile) (D851):__ savoca
 * __LG G3 (Canada) (D852):__ AndroidUser00110001
-* __LG G3 (International) (D855):__ AngelBob
+* __LG G3 (International) (D855):__ finnq
 * __LG G3 (Verizon) (VS985):__ invisiblek
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
