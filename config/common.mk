@@ -175,9 +175,9 @@ PRODUCT_PACKAGES += \
     mkfs.f2fs \
     fsck.f2fs \
     fibmap.f2fs \
-    mkntfs \
-    ntfsfix \
-    ntfs-3g \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs \
     gdbserver \
     micro_bench \
     oprofiled \
