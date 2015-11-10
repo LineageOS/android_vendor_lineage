@@ -30,7 +30,7 @@ ifdef WITH_ADB_INSECURE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 else
 # Enable ADB authentication
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 endif
 
 # Disable extra StrictMode features on all non-engineering builds
