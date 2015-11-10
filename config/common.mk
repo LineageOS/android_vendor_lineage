@@ -31,7 +31,11 @@ endif
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
+<<<<<<< HEAD   (b49c26 LatinIME: Add Polish dictionary)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
+=======
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.adb.secure=0
+>>>>>>> CHANGE (7a91ae adb insecure by default)
 endif
 
 ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
