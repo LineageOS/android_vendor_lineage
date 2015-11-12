@@ -153,7 +153,7 @@ service sysinit /system/bin/sysinit
     disabled
 
 # bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -B \
+service bugreport /system/bin/dumpstate -d -p -B -z \
         -o /data/data/com.android.shell/files/bugreports/bugreport
     oneshot
     disabled
