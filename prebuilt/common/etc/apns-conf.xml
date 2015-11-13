@@ -1482,7 +1482,6 @@
   <apn carrier="WCW-MMS only" mcc="310" mnc="180" apn="mms.wcc.net" proxy="209.55.70.244" port="80" mmsc="http://mms.wcc.net" mmsproxy="209.55.70.246" mmsport="80" user="3257630000" password="mmsc" type="default,mms" authtype="3" />
   <apn carrier="T-Mobile US LTE" mcc="310" mnc="260" apn="fast.t-mobile.com" user="none" password="none" server="*" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
   <apn carrier="T-Mobile US LTE IPv6" mcc="310" mnc="260" apn="fast.t-mobile.com" user="none" password="none" server="*" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" protocol="IPV6" />
-  <apn carrier="T-Mobile GPRS" mcc="310" mnc="260" apn="fast.t-mobile.com" proxy="" port="" user="" password="" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" authtype="0" type="default,supl,mms" />
   <apn carrier="MetroPCS LTE" mcc="310" mnc="260" apn="fast.metropcs.com" user="" password="" authtype="0" proxy="" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="MetroPCS LTE IPv6" mcc="310" mnc="260" apn="fast.metropcs.com" user="" password="" authtype="0" proxy="" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" type="default,mms,supl" protocol="IPV6" />
   <apn carrier="MetroPCS" mcc="310" mnc="260" apn="fast.t-mobile.com" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="6d38" type="default,mms,supl" />
@@ -1496,7 +1495,6 @@
   <apn carrier="PTel" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="Ready SIM" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="Red Pocket" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" mmsproxy="216.155.165.50" mmsport="8080" type="default,mms,supl" />
-  <apn carrier="Harbor Mobile"  mcc="310" mnc="260" apn="fast.t-mobile.com" proxy="" port="" user="" password="" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
   <apn carrier="Univision Mobile" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://uvm.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="554d" type="default,mms,supl" />
   <apn carrier="Brightspot" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://brtspt.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="GoSmart" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://gsmt.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
@@ -1504,7 +1502,6 @@
   <apn carrier="Telcel America" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" mmsproxy="216.155.165.40" mmsport="8080" type="default,mms,supl" />
   <apn carrier="Tracfone" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" type="default,mms,supl" />
   <apn carrier="Solavei" mcc="310" mnc="260" apn="solavei" port="" mmsc="http://solavei.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
-  <apn carrier="FMP Communications" mcc="310" mnc="260" apn="fast.t-mobile.com" proxy="" port="" user="" password="" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
   <apn carrier="CellOne WAP" mcc="310" mnc="260" apn="wap.cellular1.net" proxy="10.10.0.97" port="9201" mmsc="http://mms.cellular1.net/ecit/mms.php" mmsproxy="10.10.0.97" mmsport="9201" type="default,supl,mms" authtype="0" />
   <apn carrier="Simple" mcc="310" mnc="260" apn="simple" port="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mvno_type="gid" mvno_match_data="534d" type="default,mms,supl" />
   <apn carrier="Simple" mcc="310" mnc="260" apn="simple" proxy="216.155.165.50" port="8080" user="" password="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mmsproxy="216.155.165.50" mmsport="8080" type="default,supl,mms" />
