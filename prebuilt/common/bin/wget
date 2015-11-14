@@ -1,0 +1,184 @@
+#!/system/bin/sh
+# wget-curl, a curl wrapper acting as a wget drop-in replacement - version git-HEAD
+# Usage: wget [wget args] [i need to fill this in later] <url(s)>
+# Download all URLs given using curl, but using wget's options.
+#
+#
+# End of help.
+# Copyright (c) 2015 Kylie McClain <somasis@exherbo.org>
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+#
+# End of copyright.
+#
+
+set -o pipefail
+shopt -u shift_verbose >/dev/null 2>&1
+
+help() {
+    sed -n '/^#/!d;s/^# //;s/^#//;3,${p;}' "$0" | \
+        while IFS= read help_line;do
+            if [[ "$help_line" == "End of help." ]];then
+                exit 0
+            else
+                printf "%s\n" "$help_line"
+            fi
+        done
+    exit 0
+}
+
+version() {
+    sed 's/^# //;s/, .* - version / /;2q;$!d' "$0"
+    copyright
+    exit 0
+}
+
+copyright() {
+    sed -n '/^#/!d;s/^# //;s/^#//;/End of help./,${p;}' "$0" | \
+        while IFS= read copyright_line;do
+            if [[ "$copyright_line" == "End of help." ]];then
+                true
+            elif [[ "$copyright_line" == "End of copyright." ]];then
+                break
+            else
+                printf '%s\n' "$copyright_line"
+            fi
+        done
+}
+
+stderr() {
+    printf "$@" >&2
+}
+
+error() {
+    stderr "$0: $1\n"
+    exit "$2"
+}
+
+invalid_arg() {
+    error "invalid option -- '$1'" 2
+}
+
+append_opt() {
+    for opt in $@;do
+        CURL_OPTS="${CURL_OPTS} ${opt}"
+    done
+}
+
+curl() {
+    eval "command curl $@ ${CURL_RAW}"
+}
+
+append_raw_arg() {
+    CURL_RAW="$CURL_RAW $@"
+}
+
+has_opt() { # exit 0 if CURL_OPTS has arg, non-zero if doesn't
+    if [[ "$CURL_OPTS" == *" $1"* ]];then
+        return 0
+    else
+        return 1
+    fi
+}
+
+reexec_without() { # download afterwards without $1 in OPTS
+    reexec_args_without="$reexec_args_without $@"
+    reexec=1
+}
+
+reexec_only() {
+    for arg in $@;do
+        CURL_OPTS_REEXEC_ONLY="${CURL_OPTS_REEXEC_ONLY} $arg"
+    done
+}
+
+print_url() {
+    has_opt -s || printf "%s\n" "$1"
+}
+
+# 46ABDFHIKLNOPQRSTUVXabcdhiklm nH nc nd np nv opqrtvwx
+while getopts ':46ABDFHIKLNO:PQRST:U:VXa:bcdhiklmopqrtvwx' argument "$@";do
+    case "$argument" in
+        # a lot of these are noop right now because they are wget mirror args
+        # which curl doesn't really do, and i am not sure if i should implement them
+        4)  append_opt -4       ;;
+        6)  append_opt -6       ;;
+        A)  true                ;; # probably can't implement this easily...
+        B)  true                ;;
+        D)  true                ;;
+        E)  true                ;;
+        F)  true                ;; # curl doesn't care what the input is
+        H)  true                ;;
+        I)  true                ;;
+        K)  true                ;;
+        L)  true                ;;
+        N)  true                ;;
+        O)  append_opt "-o $OPTARG"                 ;;
+        P)  true                ;;
+        Q)  true                ;;
+        R)  true                ;;
+        S)  append_opt -I;reexec_without -I -s  ;;
+        T)  append_opt "-m $OPTARG"                 ;;
+        U)  append_opt "--user-agent \"$OPTARG\""   ;;
+        V)  version; curl --version; exit 0         ;;
+        X)  true                                    ;;
+        a)  append_raw_arg "2>&1 | tee -a $OPTARG"  ;;
+        b)
+            wget_log="wget-log"
+            i=1
+            while [[ -f "${wget_log}" ]];do
+                # if that exists, increment until we find something that doesn't
+                i=$(($i+1))
+                wget_log="wget-log.${i}"
+            done
+            append_raw_arg ">\"$wget_log\" 2>&1 &"
+            printf "Continuing in background, pid %s.\nOutput will be written to '$wget_log'.\n" "$$"
+        ;;
+        c)  append_opt "-C -"                       ;;
+        d)  append_opt "-v"                         ;;
+        e)  true                                    ;;
+        h)  help                                    ;;
+        i)
+            [[ ! -f "$OPTARG" ]] && error "$OPTARG does not exist" 3
+            for url in $(<"$OPTARG");do
+                URLS=( ${URLS[@]} "$url" )
+            done
+        ;;
+        q)  append_opt "-s"                         ;;
+    esac
+    shift $(($OPTIND-1))
+done
+
+# set wget default equivilants
+append_opt -L # follow redirects
+append_opt -# # progress bar
+
+if [[ -z "${URLS[@]}" ]];then
+    URLS=( ${@} )
+fi
+
+for url in ${URLS[@]};do
+    url_file=${url##*/}
+    if [[ "$url" == "$url_file" ]];then
+        # has no remote file name and -o is not in CURL_OPTS... assume index.html
+        has_opt -o || append_opt "-o index.html"
+    fi
+
+    eval "print_url '$url';curl ${CURL_OPTS} -- $url"
+    if [[ "$reexec" ]];then
+        for reexec_arg in ${reexec_args_without};do
+            CURL_OPTS_REEXEC=$(echo "${CURL_OPTS_REEXEC:-$CURL_OPTS}" | sed "s# $reexec_arg##")
+        done
+        eval "print_url '$url';curl ${CURL_OPTS_REEXEC} ${CURL_OPTS_REEXEC_ONLY} -- $url"
+    fi
+done
