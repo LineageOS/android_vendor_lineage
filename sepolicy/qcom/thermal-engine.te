@@ -1,0 +1,4 @@
+allow thermal-engine self:netlink_kobject_uevent_socket create_socket_perms;
+r_dir_file(thermal-engine, sysfs_rqstats);
+
+allow thermal-engine self:capability { net_admin } ;
