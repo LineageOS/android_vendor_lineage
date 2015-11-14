@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
-    vim \
-    zip \
+    bzip2 \
+    curl \
     unrar \
-    curl
+    vim \
+    zip
