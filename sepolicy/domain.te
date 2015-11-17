@@ -1,0 +1,5 @@
+allow domain block_device:dir { search getattr }; 
+allow domain block_device:blk_file getattr;
+allow domain cache_block_device:blk_file getattr;
+allow domain userdata_block_device:blk_file getattr;
+allow domain fuse_device:chr_file getattr;
