@@ -45,10 +45,12 @@ Maintainers (CyanogenMod 13.0):
 * __LG G2 (Canada) (D803):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (Sprint) (LS980):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (Verizon) (VS980):__ arcee, Rashed97, Shelnutt2
-* __LG G3 (AT&T) (D850):__ AndroidUser00110001
-* __LG G3 (T-Mobile) (D851):__ savoca
-* __LG G3 (Canada) (D852):__ AndroidUser00110001
+* __LG G3 (AT&T) (D850):__
+* __LG G3 (T-Mobile) (D851):__ bryan2894
+* __LG G3 (Canada) (D852):__ cuzz1369
 * __LG G3 (International) (D855):__ finnq
+* __LG G3 (Korea) (F400):__ TheNoFace
+* __LG G3 (Sprint) (LS990):__
 * __LG G3 (Verizon) (VS985):__ invisiblek
 * __LG G4 (T-Mobile) (H811):__ codeworkx, genesixxbf3
 * __LG G4 (International) (H815):__ codeworkx, genesixxbf3
