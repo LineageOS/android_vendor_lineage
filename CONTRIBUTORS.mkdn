@@ -133,7 +133,7 @@ Maintainers (CyanogenMod 13.0):
 * __Sony Xperia L (taoshan):__ varunchitre15, FreeXperia Team
 * __Sony Xperia M (nicki):__ RonG, FreeXperia Team
 * __Sony Xperia M2 (eagle):__ FreeXperia Team
-* __Sony Xperia SP (huashan):__ FreeXperia Team, uberlaggydarwin, Mrcl1450
+* __Sony Xperia SP (huashan):__ Mrcl1450
 * __Sony Xperia T (mint):__ FreeXperia Team, tilal6991, uberlaggydarwin
 * __Sony Xperia T2 Ultra  (tianchi):__ FreeXperia Team
 * __Sony Xperia T3  (seagull):__ FreeXperia Team
