@@ -41,6 +41,7 @@ userdebug_or_eng(`
   dontaudit sudaemon domain:peer *;
   dontaudit sudaemon domain:binder *;
   dontaudit sudaemon property_type:property_service *;
+  dontaudit sudaemon appops_service:service_manager *;
 ')
 
 ## Perms for the app
