@@ -4,3 +4,7 @@ allow system_server mm-pp-daemon:unix_stream_socket connectto;
 
 # Time services
 allow system_server time_daemon:unix_stream_socket connectto;
+
+#allow reading of usb sysfs to query hvdcp state
+allow system_server sysfs_usb_supply:dir { search };
+allow system_server sysfs_usb_supply:file r_file_perms;
