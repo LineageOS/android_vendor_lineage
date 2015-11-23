@@ -10,7 +10,8 @@ on init
     mkdir /sys/fs/cgroup/bfqio 0755 root system
     mount cgroup none /sys/fs/cgroup/bfqio bfqio
     chown root system /sys/fs/cgroup/bfqio/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/tasks
+    chmod 0664 /sys/fs/cgroup/bfqio/tasks
+    chmod 0220 /sys/fs/cgroup/bfqio/cgroup.event_control
 
     # Soft realtime class for display service
     mkdir /sys/fs/cgroup/bfqio/rt-display 0755 root system
@@ -18,6 +19,7 @@ on init
     write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio 7
     chown system system /sys/fs/cgroup/bfqio/rt-display/tasks
     chmod 0664 /sys/fs/cgroup/bfqio/rt-display/tasks
+    chmod 0220 /sys/fs/cgroup/bfqio/rt-display/cgroup.event_control
 
 on post-fs-data
     mkdir /data/.ssh 0750 root shell
