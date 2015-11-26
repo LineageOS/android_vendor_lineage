@@ -15,6 +15,7 @@ allow recovery system_data_file:file r_file_perms;
 
 # Manage fstab and /adb_keys
 allow recovery rootfs:file create_file_perms;
+allow recovery rootfs:file link;
 allow recovery rootfs:dir { write create rmdir add_name remove_name };
 
 # Read storage files and directories
