@@ -79,8 +79,9 @@ Maintainers (CyanogenMod 13.0):
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __OnePlus One:__ cyanogen, intervigil, inwotep, arcee
-* __Oppo Find 5:__ intervigil, nebkat
+* __Oppo Find 5:__ intervigil, nebkat, raymanfx
 * __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
+* __Oppo N1:__ raymanfx
 * __Oppo N3:__ invisiblek, maniac103
 * __Oppo R7:__ maniac103, mikeioannina, Rashed97
 * __Oppo R7 Plus:__ maniac103, mikeioannina, Rashed97
@@ -95,6 +96,8 @@ Maintainers (CyanogenMod 13.0):
 * __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen
 * __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
 * __Samsung Galaxy Note III (hlte):__ cyanogen, noobnl, slayher
+* __Samsung Galaxy Note IV Exynos (trelte):__ raymanfx
+* __Samsung Galaxy Note IV Exynos (trhplte):__ raymanfx
 * __Samsung Galaxy Note 8.0 3G (GT-N5100):__ sbrissen
 * __Samsung Galaxy Note 8.0 WiFi (GT-N5110):__ sbrissen
 * __Samsung Galaxy Note 10.1 (GT-N80XX):__ Espenfjo
@@ -130,7 +133,7 @@ Maintainers (CyanogenMod 13.0):
 * __Samsung Galaxy Tab Pro 8.4" (SM-T320):__ crpalmer
 * __Samsung Vibrant (SGH-T959):__ FaultException
 * __Sony Xperia E3  (flamingo):__ FreeXperia Team
-* __Sony Xperia L (taoshan):__ varunchitre15, FreeXperia Team
+* __Sony Xperia L (taoshan):__ olivieer, FreeXperia Team
 * __Sony Xperia M (nicki):__ RonG, FreeXperia Team
 * __Sony Xperia M2 (eagle):__ FreeXperia Team
 * __Sony Xperia SP (huashan):__ Mrcl1450
@@ -138,9 +141,9 @@ Maintainers (CyanogenMod 13.0):
 * __Sony Xperia T2 Ultra  (tianchi):__ FreeXperia Team
 * __Sony Xperia T3  (seagull):__ FreeXperia Team
 * __Sony Xperia V (tsubasa):__ FreeXperia Team, tilal6991, championswimmer, uberlaggydarwin
-* __Sony Xperia Z (yuga):__ FreeXperia Team, championswimmer, Turl
-* __Sony Xperia ZL (odin):__  FreeXperia Team, championswimmer
-* __Sony Xperia ZR (dogo):__  FreeXperia Team, championswimmer
+* __Sony Xperia Z (yuga):__ FreeXperia Team, Turl, olivieer
+* __Sony Xperia ZL (odin):__  FreeXperia Team
+* __Sony Xperia ZR (dogo):__  FreeXperia Team
 * __Sony Xperia Tablet Z LTE (pollux):__ FreeXperia Team, snc
 * __Sony Xperia Tablet Z WiFi (pollux_windy):__ FreeXperia Team, snc
 * __Sony Xperia Tablet Z2 LTE (castor):__ FreeXperia Team
