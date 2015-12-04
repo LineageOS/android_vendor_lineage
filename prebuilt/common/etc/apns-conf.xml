@@ -56,10 +56,14 @@
   <apn carrier="Sphone Pelephone" mcc="204" mnc="04" apn="sphone.pelephone.net.il" user="pcl@3g" password="pcl" type="default,supl" />
   <apn carrier="Multimedia Pelephone" mcc="204" mnc="04" apn="mms.pelephone.net.il" user="pcl@3g" password="pcl" mmsproxy="10.170.252.104" mmsport="9093" mmsc="http://mmsu.pelephone.net.il/" type="mms" />
   <apn carrier="Vodafone NL" mcc="204" mnc="04" apn="live.vodafone.com" proxy="192.168.251.150" port="8799" user="vodafone" password="vodafone" mmsc="http://mmsc.mms.vodafone.nl" mmsproxy="192.168.251.150" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="VZW Roaming Internet" mcc="204" mnc="04" apn="VZWINTERNET" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="VZW Roaming FOTA" mcc="204" mnc="04" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="VZW Roaming IMS" mcc="204" mnc="04" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="VZW Roaming CBS" mcc="204" mnc="04" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="EHRPD - VZW Roaming Internet" mcc="204" mnc="04" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="13" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="0" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="LTE - VZW Roaming Internet" mcc="204" mnc="04" apn="VZWINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="0" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="EHRPD - VZW Roaming FOTA" mcc="204" mnc="04" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="13" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="3" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="LTE - VZW Roaming FOTA" mcc="204" mnc="04" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="3" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="LTE - VZW Roaming IMS" mcc="204" mnc="04" apn="VZWIMS" type="ims,ia" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="2" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="EHRPD - VZW Roaming IMS" mcc="204" mnc="04" apn="VZWIMS" type="ims,ia" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="13" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="2" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="LTE - VZW Roaming CBS" mcc="204" mnc="04" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="4" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="EHRPD - VZW Roaming CBS" mcc="204" mnc="04" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="13" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="4" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
   <apn carrier="hollandsnieuwe int." mcc="204" mnc="04" apn="data.dataxs.mobi" type="default,supl" />
   <apn carrier="Vodafone MMS Business" mcc="204" mnc="04" apn="office.vodafone.nl" user="vodafone" password="vodafone" mmsc="http://mmsc.mms.vodafone.nl" mmsproxy="192.168.251.150" mmsport="8799" type="mms" />
   <apn carrier="中国电信NET设置" mcc="204" mnc="04" apn="ctnet" user="ctnet@mycdma.cn" password="vnet.mobi" authtype="3" type="default,supl,dun" />
@@ -241,6 +245,7 @@
   <apn carrier="NRJ WEB" mcc="209" mnc="01" apn="ofnew.fr" user="orange" password="orange" spn="NRJ (ORANGE)" type="default,supl" />
   <apn carrier="Vodafone ES" mcc="214" mnc="01" apn="airtelwap.es" proxy="" port="" mmsc="" user="wap@wap" password="wap125" authtype="0" type="default,supl" />
   <apn carrier="Vodafone ES MMS" mcc="214" mnc="01" apn="mms.vodafone.net" proxy="" port="" mmsproxy="212.73.32.10" mmsport="80" mmsc="http://mmsc.vodafone.es/servlets/mms" user="wap@wap" password="wap125" authtype="0" type="mms" />
+  <apn carrier="Vodafone ES IMS" mcc="214" mnc="01" apn="ims" type="ims" protocol="IPV4V6" />
   <apn carrier="Movistar" mcc="214" mnc="02" apn="telefonica.es" proxy="10.138.255.133" port="8080" mmsc="" user="telefonica" password="telefonica" type="default,supl" />
   <apn carrier="Movistar MMS" mcc="214" mnc="02" apn="telefonica.es" proxy="" port="" mmsproxy="10.138.255.5" mmsport="8080" mmsc="http://mms.movistar.com" user="telefonica" password="telefonica" type="mms" />
   <apn carrier="Movistar" mcc="214" mnc="02" apn="movistar.es" user="MOVISTAR" password="MOVISTAR" type="dun,default" />
@@ -397,6 +402,7 @@
   <apn carrier="Vodafone WEB" mcc="222" mnc="10" apn="web.omnitel.it" user="" password="" authtype="3" type="default,supl" />
   <apn carrier="Vodafone IT" mcc="222" mnc="10" apn="mobile.vodafone.it" type="default,supl" />
   <apn carrier="Vodafone IT MMS" mcc="222" mnc="10" apn="mms.vodafone.it" proxy="" port="" mmsproxy="10.128.224.10" mmsport="80" mmsc="http://mms.vodafone.it/servlets/mms" user="" password="" authtype="3" type="mms" />
+  <apn carrier="Vodafone IT IMS" mcc="222" mnc="10" apn="ims" type="ims" protocol="IPV4V6" />
   <apn carrier="Internet da cellulare" mcc="222" mnc="10" apn="wap.omnitel.it" proxy="10.128.201.76" port="80" type="default,supl" />
   <apn carrier="PosteMobile" mcc="222" mnc="10" apn="internet.postemobile.it" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="PosteMobile" type="default,supl" />
   <apn carrier="PosteMobile WAP" mcc="222" mnc="10" apn="wap.postemobile.it" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="PosteMobile" spn="Post mobile" type="default,supl" />
@@ -473,11 +479,13 @@
   <apn carrier="Orange Prepaid CH" mcc="228" mnc="03" apn="click" type="default,supl" />
   <apn carrier="Orange MMS" mcc="228" mnc="03" apn="mms" mmsc="http://192.168.151.3:8002" mmsproxy="192.168.151.2" mmsport="8080" type="mms" />
   <apn carrier="Lycamobile CH" mcc="228" mnc="54" apn="data.lycamobile.ch" user="lmch" password="plus" type="default,supl" />
+  <apn carrier="T-Mobile IMS" mcc="230" mnc="01" apn="IMS" type="ims" protocol="IPV4V6" />
   <apn carrier="T-Mobile Internet" mcc="230" mnc="01" apn="internet.t-mobile.cz" proxy="010.000.000.010" port="80" mmsc="http://mms" user="wap" password="wap" authtype="1" type="default,supl" />
   <apn carrier="TMCZ GPRS Wap" mcc="230" mnc="01" apn="wap.t-mobile.cz" proxy="010.000.000.010" port="80" mmsc="" user="wap" password="wap" type="default,supl" />
   <apn carrier="T-Mobile MMS" mcc="230" mnc="01" apn="mms.t-mobile.cz" proxy="" port="" mmsproxy="010.000.000.010" mmsport="80" mmsc="http://mms" user="mms" password="mms" authtype="1" type="mms" />
   <apn carrier="T-Mobile CZ" mcc="230" mnc="01" apn="internet.t-mobile.cz" user="wap" password="wap" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="default,supl" />
   <apn carrier="T-Mobile CZ MMS" mcc="230" mnc="01" apn="mms.t-mobile.cz" user="mms" password="mms" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="mms" />
+  <apn carrier="T-Mobile CZ IMS" mcc="230" mnc="01" apn="IMS" type="ims" protocol="IPV4V6" />
   <apn carrier="O2 CZ" mcc="230" mnc="02" apn="internet" user="" password="" authtype="3" type="default,supl" />
   <apn carrier="O2 CZ" mcc="230" mnc="02" apn="wap" proxy="160.218.160.218" port="9201" mmsc="" user="O2" password="wap" type="default,supl" />
   <apn carrier="O2 CZ MMS" mcc="230" mnc="02" apn="mms" proxy="" port="" mmsproxy="160.218.160.218" mmsport="8080" mmsc="http://mms.o2active.cz:8002" user="" password="" authtype="3" type="mms" />
@@ -1133,6 +1141,7 @@
   <apn carrier="VF DE MMS" mcc="262" mnc="02" apn="event.vodafone.de" proxy="" port="" mmsproxy="139.007.029.017" mmsport="80" mmsc="http://139.7.24.1/servlets/mms" user="" password="" type="mms" />
   <apn carrier="Vodafone DE-MMS" mcc="262" mnc="02" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
   <apn carrier="Vodafone DE" mcc="262" mnc="02" apn="web.vodafone.de" type="default,supl" />
+  <apn carrier="Vodafone DE-IMS" mcc="262" mnc="02" apn="ims" type="ims" protocol="IPV4V6" />
   <apn carrier="otelo web" mcc="262" mnc="02" apn="data.otelo.de" user="" password="" type="default,supl" />
   <apn carrier="klarmobil MMS" mcc="262" mnc="02" apn="event.vodafone.de" proxy="" port="" user="" password="" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" mvno_type="spn" mvno_match_data="klarmobil" type="mms" />
   <apn carrier="klarmobil" mcc="262" mnc="02" apn="web.vodafone.de" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="klarmobil" type="default,supl" />
@@ -1401,7 +1410,7 @@
   <apn carrier="Verizon CBS" mcc="310" mnc="003" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Verizon Internet" mcc="310" mnc="004" apn="VZWINTERNET" type="default,dun,supl,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Verizon FOTA" mcc="310" mnc="004" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="310" mnc="004" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Verizon IMS" mcc="310" mnc="004" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="13|14" profile_id="2" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
   <apn carrier="Verizon CBS" mcc="310" mnc="004" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Verizon" mcc="310" mnc="004" apn="internet" proxy="" port="" user="*" password="*" server="*" mmsc="http://mms.vtext.com/servlets/mms" type="default,supl,mms" />
   <apn carrier="Verizon Internet" mcc="310" mnc="005" apn="VZWINTERNET" type="default,dun,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
@@ -1472,8 +1481,12 @@
   <apn carrier="WCW Internet" mcc="310" mnc="180" apn="internet.wcc.net" user="3257630000" password="mmsc" type="default,supl" authtype="0" />
   <apn carrier="WCW-MMS" mcc="310" mnc="180" apn="mms.wcc.net" proxy="209.55.70.246" port="80" mmsc="http://mms.wcc.net" mmsproxy="209.55.70.246" mmsport="80" user="13257630000" password="mmsc" type="mms" authtype="3" />
   <apn carrier="WCW-MMS only" mcc="310" mnc="180" apn="mms.wcc.net" proxy="209.55.70.244" port="80" mmsc="http://mms.wcc.net" mmsproxy="209.55.70.246" mmsport="80" user="3257630000" password="mmsc" type="default,mms" authtype="3" />
-  <apn carrier="T-Mobile US LTE" mcc="310" mnc="260" apn="fast.t-mobile.com" user="none" password="none" server="*" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
-  <apn carrier="T-Mobile US LTE IPv6" mcc="310" mnc="260" apn="fast.t-mobile.com" user="none" password="none" server="*" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" protocol="IPV6" />
+  <apn carrier="T-Mobile US LTE" mcc="310" mnc="260" apn="" type="ia" protocol="IPV4V6" mtu="1440" />
+  <apn carrier="T-Mobile US LTE" mcc="310" mnc="260" apn="fast.t-mobile.com" type="default,supl" protocol="IPV6" roaming_protocol="IP" mtu="1440" />
+  <apn carrier="T-Mobile MMS" mcc="310" mnc="260" apn="TMUS" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="mms" protocol="IPV6" roaming_protocol="IP" />
+  <apn carrier="Project Fi - T" mcc="310" mnc="260" apn="h2g2" type="ia" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="31026097" mvno_type="IMSI" />
+  <apn carrier="Project Fi - T" mcc="310" mnc="260" apn="h2g2" user="none" server="*" password="none" mmsc="http://mmsc1.g-mms.com/mms/wapenc" protocol="IPV6" roaming_protocol="IP" mvno_match_data="31026097" mvno_type="IMSI" />
+  <apn carrier="T-Mobile IMS" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" />
   <apn carrier="MetroPCS LTE" mcc="310" mnc="260" apn="fast.metropcs.com" user="" password="" authtype="0" proxy="" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="MetroPCS LTE IPv6" mcc="310" mnc="260" apn="fast.metropcs.com" user="" password="" authtype="0" proxy="" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" type="default,mms,supl" protocol="IPV6" />
   <apn carrier="MetroPCS" mcc="310" mnc="260" apn="fast.t-mobile.com" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="6d38" type="default,mms,supl" />
@@ -1498,6 +1511,7 @@
   <apn carrier="Simple" mcc="310" mnc="260" apn="simple" port="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mvno_type="gid" mvno_match_data="534d" type="default,mms,supl" />
   <apn carrier="Simple" mcc="310" mnc="260" apn="simple" proxy="216.155.165.50" port="8080" user="" password="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mmsproxy="216.155.165.50" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Walmart Family Mobile" mcc="310" mnc="260" apn="web.omwtoday.com" mmsproxy="216.155.165.50" mmsport="8080" mmsc="http://wirelessfour.mmsmvno.com/mms/wapenc" type="default,supl,mms" />
+  <apn carrier="Ting Data" mcc="310" mnc="260" apn="wholesale" type="default,admin,fota,mms,supl,hipri,internet,dun" protocol="IPV6" roaming_protocol="IPV6" />
   <apn carrier="Ting Data" mcc="310" mnc="260" apn="wholesale" type="default,admin,fota,mms,supl,hipri,internet,dun" protocol="IPV6" roaming_protocol="IPV6" />
   <apn carrier="Ting MMS" mcc="310" mnc="260" apn="wholesale" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="mms" protocol="IP" roaming_protocol="IP" />
   <apn carrier="US Mobile" mcc="310" mnc="260" apn="pwg" mmsc="http://pwg.mmsmvno.com/mms/wapenc" type="default,supl,mms" />
@@ -1673,11 +1687,18 @@
   <apn carrier="GCI MMS" mcc="311" mnc="370" apn="mms.gci" proxy="" port="" user="" password="" mmsc="http://mmsc.gci.csky.us:6672" mmsproxy="209.4.229.92" mmsport="9201" type="mms" />
   <apn carrier="ATT WAP" mcc="311" mnc="380" apn="wap.cingular" proxy="wireless.cingular.com" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="wireless.cingular.com" mmsport="80" type="default,mms" />
   <apn carrier="ATT Broadband" mcc="311" mnc="380" apn="Broadband" type="default,supl" />
-  <apn carrier="Verizon Internet" mcc="311" mnc="480" apn="VZWINTERNET" type="default,dun,supl,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon FOTA" mcc="311" mnc="480" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon IMS" mcc="311" mnc="480" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon CBS" mcc="311" mnc="480" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Verizon 800" mcc="311" mnc="480" apn="VZW800" type="cas" protocol="IPV4V6" />
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="internet" authtype="3" type="default,mms,supl,fota,ims,cbs" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" bearer_bitmask="4|5|6|7|8|12" />
+  <!-- bearer 4, 5, 6, 7, 8, 12 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="internet" authtype="3" type="default,mms,supl,fota,ims,cbs,dun" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" bearer_bitmask="4|5|6|7|8|12" profile_id="1" />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWINTERNET" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="0" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="3" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWIMS" type="ims,ia" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="2" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="4" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
   <apn carrier="Verizon Internet" mcc="311" mnc="482" apn="VZWINTERNET" type="default,dun,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Verizon FOTA" mcc="311" mnc="482" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Verizon IMS" mcc="311" mnc="482" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
@@ -3033,6 +3054,7 @@
   <apn carrier="楽天ブロードバンドデータSIM　エントリー2!" mcc="440" mnc="10" apn="mmtmobile.jp" user="mobile@rakutenbb.jp" password="rakutenbb" authtype="3" type="default,supl" />
   <apn carrier="楽天モバイル" mcc="440" mnc="10" apn="rmobile.jp" user="rm" password="0000" authtype="3" type="default,supl" />
   <apn carrier="楽天モバイル" mcc="440" mnc="10" apn="vdm.jp" user="rakuten@vdm" password="vrkt" authtype="3" type="default,supl" />
+  <apn carrier="IMS" mcc="440" mnc="10" apn="ims" type="ims" protocol="IPV6" />
   <apn carrier="Y!mobile" mcc="440" mnc="20" apn="plus.acs.jp" user="ym" password="ym" mmsc="http://mms-s" mmsproxy="andmms.plusacs.ne.jp" mmsport="8080" authtype="2" type="default,supl,mms" />
   <apn carrier="andoworld" mcc="440" mnc="20" apn="andoworld.softbank.ne.jp" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" authtype="2" type="default,supl,mms" />
   <apn carrier="fourgsmartphone" mcc="440" mnc="20" apn="fourgsmartphone" user="" password="" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" authtype="2" type="default,supl,mms" />
@@ -3043,16 +3065,28 @@
   <apn carrier="sbm" mcc="440" mnc="20" apn="sbm" user="data" password="softbank" type="default,supl" />
   <apn carrier="sbm4glte" mcc="440" mnc="20" apn="sbm4glte" user="data" password="softbank" type="default,supl" />
   <apn carrier="smile.world" mcc="440" mnc="20" apn="smile.world" user="dna1trop" password="so2t3k3m2a" mmsc="http://mms/" mmsproxy="smilemms.softbank.ne.jp" mmsport="8080" authtype="1" type="default,supl,mms" />
+  <apn carrier="IMS" mcc="440" mnc="20" apn="IMS" type="ims" protocol="IPV6" />
   <apn carrier="LTE NET" mcc="440" mnc="50" apn="uno.au-net.ne.jp" user="685840734641020@uno.au-net.ne.jp" password="KpyrR6BP" authtype="2" type="default,mms,supl,hipri" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="LTE NET for DATA" mcc="440" mnc="50" apn="au.au-net.ne.jp" user="user@au.au-net.ne.jp" password="au" authtype="2" type="default,mms,supl,hipri" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="UQ mobile" mcc="440" mnc="50" apn="uqmobile.jp" user="uq@uqmobile.jp" password="uq" mmsc="http://mms.ezweb.ne.jp/MMS" mmsport="80" authtype="2" type="default,supl,hipri,dun" />
   <apn carrier="mineo A" mcc="440" mnc="50" apn="mineo.jp" user="mineo@k-opti.com" password="mineo" authtype="2" type="default,supl,hipri" />
-  <apn carrier="SKT3G" mcc="450" mnc="05" apn="web.sktelecom.com" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" type="default,supl,mms" />
-  <apn carrier="SK Telecom (Roaming)" mcc="450" mnc="05" apn="roaming.sktelecom.com" server="*" mmsc="vmms.nate.com" mmsport="8082" type="default,supl,mms" />
-  <apn carrier="SKT LTE" mcc="450" mnc="05" apn="lte.sktelecom.com" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" type="default,supl,mms" />
-  <apn carrier="LG U+ LTE" mcc="450" mnc="06" apn="internet.lguplus.co.kr" mmsc="http://omammsc.uplus.co.kr:9084" type="default,supl,mms" />
-  <apn carrier="KT-HSDPA" mcc="450" mnc="08" apn="alwayson-r6.ktfwing.com" mmsc="http://mmsc.ktfwing.com:9082" type="default,supl,mms" />
-  <apn carrier="KT-LTE" mcc="450" mnc="08" apn="lte.ktfwing.com" mmsc="http://mmsc.ktfwing.com:9082" type="default,supl,mms"/>
+  <apn carrier="SKT IA" mcc="450" mnc="05" apn="" type="ia" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="SKT IMS" mcc="450" mnc="05" apn="IMS" type="ims" protocol="IPV4V6" />
+  <apn carrier="SKT LTE INTERNET" mcc="450" mnc="05" apn="lte.sktelecom.com" type="default,mms,supl,fota,cbs" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" protocol="IPV4V6" />
+  <apn carrier="SKT 3G INTERNET" mcc="450" mnc="05" apn="web.sktelecom.com" type="default,mms,supl,fota,cbs" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" />
+  <apn carrier="SKT LTE Roaming" mcc="450" mnc="05" apn="lte-roaming.sktelecom.com" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" />
+  <apn carrier="SKT 3G Roaming" mcc="450" mnc="05" apn="roaming.sktelecom.com" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" />
+  <apn carrier="LG U+ IA" mcc="450" mnc="06" apn="" type="ia" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="LG U+ IMS" mcc="450" mnc="06" apn="IMS" type="ims" mmsc="http://omammsc.uplus.co.kr:9084" protocol="IPV4V6" />
+  <apn carrier="LG U+" mcc="450" mnc="06" apn="internet.lguplus.co.kr" type="default,mms,supl,fota,cbs" mmsc="http://omammsc.uplus.co.kr:9084" protocol="IPV4V6" />
+  <apn carrier="LG U+ LTE Roaming" mcc="450" mnc="06" apn="lte-roaming.lguplus.co.kr" mmsc="http://omammsc.uplus.co.kr:9084" authtype="0" />
+  <apn carrier="LG U+ Roaming" mcc="450" mnc="06" apn="wroaming.lguplus.co.kr" mmsc="http://omammsc.uplus.co.kr:9084" authtype="0" />
+  <apn carrier="KT IA" mcc="450" mnc="08" apn="" type="ia" protocol="IPV4V6" />
+  <apn carrier="KT IMS" mcc="450" mnc="08" apn="IMS" type="ims" protocol="IP" />
+  <apn carrier="KT" mcc="450" mnc="08" apn="lte.ktfwing.com" type="default,mms,supl,fota,cbs" mmsc="http://mmsc.ktfwing.com:9082" port="80" server="*" />
+  <apn carrier="SKT 3G INTERNET" mcc="450" mnc="11" apn="web.sktelecom.com" type="default,mms,supl,fota,cbs" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" />
+  <apn carrier="SKT LTE Roaming" mcc="450" mnc="11" apn="lte-roaming.sktelecom.com" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" />
+  <apn carrier="SKT 3G Roaming" mcc="450" mnc="11" apn="roaming.sktelecom.com" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" />
   <apn carrier="Mobifone GPRS" mcc="452" mnc="01" apn="m-wap" user="mms" password="mms" authtype="1" type="default,supl" />
   <apn carrier="Mobifone MMS" mcc="452" mnc="01" apn="m-i090" proxy="" port="" mmsproxy="203.162.21.114" mmsport="8080" mmsc="http://203.162.21.114/mmsc" user="mms" password="mms" authtype="1" type="mms" />
   <apn carrier="Vinaphone GPRS" mcc="452" mnc="02" apn="v-internet" type="default,supl" />
