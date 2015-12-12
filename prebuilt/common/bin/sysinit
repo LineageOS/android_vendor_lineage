@@ -1,4 +1,9 @@
 #!/system/bin/sh
 
 export PATH=/sbin:/system/sbin:/system/bin:/system/xbin
-/system/xbin/run-parts /system/etc/init.d
+for i in /system/etc/init.d/*; do
+    if [ -x $i ]; then
+        /system/bin/log -t sysinit Running $i
+        $i
+    fi
+done
