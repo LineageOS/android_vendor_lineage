@@ -14,6 +14,9 @@
 /system/etc/init.d/90userinit           u:object_r:userinit_exec:s0
 /data/local/userinit.sh                 u:object_r:userinit_data_exec:s0
 
+# For F2FS partitions marked "formattable"
+/system/bin/mkfs\.f2fs    u:object_r:mkfs_exec:s0
+
 # For minivold in recovery
 /sbin/minivold            u:object_r:vold_exec:s0
 
