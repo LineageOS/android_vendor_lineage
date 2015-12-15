@@ -1,0 +1,4 @@
+# Allow formatting userdata or cache partitions
+allow init block_device:dir search;
+allow init userdata_block_device:blk_file rw_file_perms;
+allow init cache_block_device:blk_file rw_file_perms;
