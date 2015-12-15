@@ -1,1 +1,0 @@
-allow adbd adbtcp_prop:property_service set;
