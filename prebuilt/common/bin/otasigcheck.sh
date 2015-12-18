@@ -20,6 +20,9 @@ if [ -f "/data/system/packages.xml" -a -f "/tmp/releasekey" ]; then
   OLDIFS="$IFS"
   IFS=""
   while read line; do
+    if [ "${#line}" -gt 4094 ]; then
+      continue
+    fi
     params=${line# *<package *}
     if [ "$line" != "$params" ]; then
       kvp=${params%% *}
