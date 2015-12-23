@@ -118,9 +118,12 @@ update-cm-system-api: $(INTERNAL_PLATFORM_CM_SYSTEM_API_FILE) | $(ACP)
 
 .PHONY: update-cm-prebuilts-latest-public-api
 current_sdk_release_text_file := $(CM_SRC_API_DIR)/$(cm_last_released_sdk_version).txt
+current_system_api_release_text_file := $(CM_SRC_SYSTEM_API_DIR)/$(cm_last_released_sdk_version).txt
 
 update-cm-prebuilts-latest-public-api: $(FRAMEWORK_CM_PLATFORM_API_FILE) | $(ACP)
 	@echo -e ${CL_GRN}"Publishing cm_current.txt as latest API release"${CL_RST}
 	$(hide) $(ACP) $(FRAMEWORK_CM_PLATFORM_API_FILE) $(current_sdk_release_text_file)
+	@echo -e ${CL_GRN}"Publishing cm_current.txt as latest system API release"${CL_RST}
+	$(hide) $(ACP) $(FRAMEWORK_CM_PLATFORM_SYSTEM_API_FILE) $(current_system_api_release_text_file)
 
 endif
