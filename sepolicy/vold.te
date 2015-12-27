@@ -13,6 +13,7 @@ allow vold self:capability { setgid setuid };
 # Vold can also run as minivold in the rootfs
 recovery_only(`
   allow vold rootfs:dir { add_name write };
+  allow vold rootfs:file execute_no_trans;
 ')
 
 # External storage
