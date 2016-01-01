@@ -1,1 +1,3 @@
 genfscon fuseblk / u:object_r:sdcard_external:s0
+genfscon exfat / u:object_r:sdcard_external:s0
+genfscon ntfs / u:object_r:sdcard_external:s0

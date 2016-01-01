@@ -1,0 +1,2 @@
+# External storage
+allow fsck_untrusted self:capability sys_admin;

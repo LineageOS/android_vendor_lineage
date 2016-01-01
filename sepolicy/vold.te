@@ -14,3 +14,8 @@ allow vold self:capability { setgid setuid };
 recovery_only(`
   allow vold rootfs:dir { add_name write };
 ')
+
+# External storage
+allow vold storage_stub_file:dir { rw_file_perms search add_name };
+allow vold mnt_media_rw_stub_file:dir r_dir_perms;
+allow vold mkfs_exec:file { execute read open execute_no_trans };
