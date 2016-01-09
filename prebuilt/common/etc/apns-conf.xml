@@ -3398,7 +3398,7 @@
   <apn carrier="AXIS MMS" mcc="510" mnc="08" apn="AXISmms" user="axis" password="123456" mmsc="http://mmsc.AXIS" mmsproxy="10.8.3.8" mmsport="8080" type="mms" />
   <apn carrier="Smartfren4G" mcc="510" mnc="09" apn="Smartfren4G" user="smartfren" password="smartfren" authtype="3" type="default,supl" protocol="IPV4V6" />
   <apn carrier="Smartfren MMS" mcc="510" mnc="09" apn="smartfren" user="smartfren" password="smartfren" mmsc="http://10.17.93.103:8080" mmsproxy="10.17.27.250" mmsport="8080" authtype="3" type="mms" protocol="IPV4V6" />
-  <apn carrier="Smartfren IMS" mcc="510" mnc="09" apn="smartfrenIMS" type="ims" />
+  <apn carrier="Smartfren IMS" mcc="510" mnc="09" apn="IMS" type="ims" />
   <apn carrier="AXIS" mcc="510" mnc="8" apn="AXIS" proxy="" port="" user="axis" password="123456" mmsc="" type="default,supl" />
   <apn carrier="AXIS MMS" mcc="510" mnc="8" apn="AXISmms" proxy="" port="" user="axis" password="123456" mmsc="http://mmsc.AXIS" mmsproxy="10.8.3.8" mmsport="8080" type="mms" />
   <apn carrier="TSEL BROADBAND" mcc="510" mnc="10" apn="internet" proxy="" port="" user="wap" password="wap123" authtype="1" type="default,supl" />
@@ -3415,7 +3415,7 @@
   <apn carrier="IM3 Internet" mcc="510" mnc="21" apn="www.indosat-m3.net" user="gprs" password="im3" type="default,supl" />
   <apn carrier="Smartfren4G" mcc="510" mnc="28" apn="Smartfren4G" user="smartfren" password="smartfren" authtype="3" type="default,supl" protocol="IPV4V6" />
   <apn carrier="Smartfren MMS" mcc="510" mnc="28" apn="smartfren" user="smartfren" password="smartfren" mmsc="http://10.17.93.103:8080" mmsproxy="10.17.27.250" mmsport="8080" authtype="3" type="mms" protocol="IPV4V6" />
-  <apn carrier="Smartfren IMS" mcc="510" mnc="28" apn="smartfrenIMS" type="ims" />
+  <apn carrier="Smartfren IMS" mcc="510" mnc="28" apn="IMS" type="ims" />
   <apn carrier="3 GPRS" mcc="510" mnc="89" apn="3gprs" user="3gprs" password="3gprs" authtype="1" type="default,supl" />
   <apn carrier="3 Unlimited" mcc="510" mnc="89" apn="3data" user="3data" password="3data" authtype="1" type="default,supl" />
   <apn carrier="3mms" mcc="510" mnc="89" apn="3mms" mmsproxy="10.4.0.10" mmsport="3128" mmsc="http://mms.three.co.id" user="3mms" password="3mms" authtype="2" type="mms" />
