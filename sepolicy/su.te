@@ -64,4 +64,6 @@ userdebug_or_eng(`
   allow system_app superuser_device:sock_file { read write create setattr unlink getattr };
   allow system_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
   allow system_app superuser_device:dir { create rw_dir_perms setattr unlink };
+
+  allow kernel sudaemon:fd { use };
 ')
