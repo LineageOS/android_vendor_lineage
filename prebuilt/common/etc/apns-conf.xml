@@ -476,21 +476,14 @@
   <apn carrier="Orange Prepaid CH" mcc="228" mnc="03" apn="click" type="default,supl" />
   <apn carrier="Orange MMS" mcc="228" mnc="03" apn="mms" mmsc="http://192.168.151.3:8002" mmsproxy="192.168.151.2" mmsport="8080" type="mms" />
   <apn carrier="Lycamobile CH" mcc="228" mnc="54" apn="data.lycamobile.ch" user="lmch" password="plus" type="default,supl" />
-  <apn carrier="T-Mobile IMS" mcc="230" mnc="01" apn="IMS" type="ims" protocol="IPV4V6" />
-  <apn carrier="T-Mobile Internet" mcc="230" mnc="01" apn="internet.t-mobile.cz" proxy="010.000.000.010" port="80" mmsc="http://mms" user="wap" password="wap" authtype="1" type="default,supl" />
-  <apn carrier="TMCZ GPRS Wap" mcc="230" mnc="01" apn="wap.t-mobile.cz" proxy="010.000.000.010" port="80" mmsc="" user="wap" password="wap" type="default,supl" />
-  <apn carrier="T-Mobile MMS" mcc="230" mnc="01" apn="mms.t-mobile.cz" proxy="" port="" mmsproxy="010.000.000.010" mmsport="80" mmsc="http://mms" user="mms" password="mms" authtype="1" type="mms" />
-  <apn carrier="T-Mobile CZ" mcc="230" mnc="01" apn="internet.t-mobile.cz" user="wap" password="wap" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="default,supl" />
-  <apn carrier="T-Mobile CZ MMS" mcc="230" mnc="01" apn="mms.t-mobile.cz" user="mms" password="mms" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="mms" />
   <apn carrier="T-Mobile CZ IMS" mcc="230" mnc="01" apn="IMS" type="ims" protocol="IPV4V6" />
+  <apn carrier="T-Mobile CZ" mcc="230" mnc="01" apn="internet.t-mobile.cz" user="wap" password="wap" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="default,supl" />
+  <apn carrier="T-Mobile MMS" mcc="230" mnc="01" apn="mms.t-mobile.cz" proxy="" port="" mmsproxy="010.000.000.010" mmsport="80" mmsc="http://mms" user="mms" password="mms" authtype="1" type="mms" />
   <apn carrier="O2 CZ" mcc="230" mnc="02" apn="internet" user="" password="" authtype="3" type="default,supl" />
   <apn carrier="O2 CZ" mcc="230" mnc="02" apn="wap" proxy="160.218.160.218" port="9201" mmsc="" user="O2" password="wap" type="default,supl" />
   <apn carrier="O2 CZ MMS" mcc="230" mnc="02" apn="mms" proxy="" port="" mmsproxy="160.218.160.218" mmsport="8080" mmsc="http://mms.o2active.cz:8002" user="" password="" authtype="3" type="mms" />
-  <apn carrier="GPRS Web" mcc="230" mnc="03" apn="Internet" proxy="10.011.010.011" port="80" mmsc="" user="" password="" authtype="3" type="default,supl" />
-  <apn carrier="MMS" mcc="230" mnc="03" apn="MMS" proxy="" port="" mmsproxy="10.011.010.111" mmsport="80" mmsc="http://mms" user="mms" password="mms" type="mms" />
   <apn carrier="Vodafone CZ" mcc="230" mnc="03" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Vodafone CZ MMS" mcc="230" mnc="03" apn="mms" proxy="" port="" user="mms" password="mms" server="mms" mmsc="http://mms" mmsproxy="10.11.10.111" mmsport="80" type="mms" />
-  <apn carrier="Vodafone CZ Prepaid" mcc="230" mnc="03" apn="ointernet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="GPRS Web" mcc="230" mnc="99" apn="Internet" user="" password="" authtype="3" type="default,supl" />
   <apn carrier="MMS" mcc="230" mnc="99" apn="MMS" proxy="" port="" mmsproxy="10.011.010.111" mmsport="80" mmsc="http://mms" user="mms" password="mms" authtype="1" type="mms" />
   <apn carrier="Orange Internet" mcc="231" mnc="01" apn="internet" user="" password="" authtype="3" type="default,supl" />
