@@ -63,6 +63,8 @@ on boot
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/up_threshold_any_cpu_load
     chown system system /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
     chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis
+    chmod 0664 /sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis
 
     # ondemand governor
     chown system system /sys/devices/system/cpu/cpufreq/ondemand/boostfreq
