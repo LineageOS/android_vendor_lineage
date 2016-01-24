@@ -11,6 +11,8 @@ Maintainers (CyanogenMod 13.0):
 * __Asus EeePad Transformer Pad TF300T:__  chrmhoffmann
 * __Asus EeePad Transformer Pad Infinity TF700T:__ dasunsrule32
 * __Asus EeePad Transformer Pad TF701T:__ pershoot
+* __Asus Zenfone 2 ZE550ML (Z008):__ crpalmer, jrior001
+* __Asus Zenfone 2 ZE551ML (Z00A):__ crpalmer, jrior001
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __B&N Nook Tablet (acclaim):__  chrmhoffmann
 * __Google Android One:__ varunchitre15
@@ -41,7 +43,7 @@ Maintainers (CyanogenMod 13.0):
 * __HTC One S:__ intervigil, xkonni
 * __HTC One X:__ gorbi16, mdeejay, tbalden, Thömy
 * __HTC One X+:__ Lloir, tombriden
-* __HTC One XL:__ h8rift, intervigil
+* __HTC One XL:__ h8rift, intervigil, jrior001
 * __LG G2 (AT&T) (D800):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (T-Mobile) (D801):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (International) (D802):__ arcee, Rashed97, Shelnutt2
@@ -85,7 +87,7 @@ Maintainers (CyanogenMod 13.0):
 * __Oppo Find 5:__ intervigil, nebkat, raymanfx
 * __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
 * __Oppo N1:__ raymanfx
-* __Oppo N3:__ invisiblek, maniac103
+* __Oppo N3:__ jrior001
 * __Oppo R7:__ maniac103, mikeioannina, Rashed97
 * __Oppo R7 Plus:__ maniac103, mikeioannina, Rashed97
 * __Samsung Captivate (SGH-I896 / SGH-I897):__ pawitp
@@ -129,6 +131,7 @@ Maintainers (CyanogenMod 13.0):
 * __Samsung Galaxy S IV Mini LTE (GT-I9195):__ arco
 * __Samsung Galaxy S V (AU) (SCL23):__ scoty755
 * __Samsung Galaxy S V (Vodafone) (SM-G900I):__ Regi24
+* __Samsung Galaxy S V LTE (SM-G900F):__ Albinoman887
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codyf86
