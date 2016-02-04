@@ -49,7 +49,6 @@
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
         <item>reboot</item>
-        <item>profile</item>
         <item>airplane</item>
         <item>bugreport</item>
         <item>users</item>
