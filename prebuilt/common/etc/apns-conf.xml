@@ -1473,7 +1473,7 @@
   <apn carrier="COET Web" name="COET Web" apn="web.celloneet.com" user="user1@web.celloneet.com" password="celloneet" server="http://192.168.100.14" mmsc="http://192.168.100.14" mmsproxy="209.4.229.81" mmsport="9201" mcc="310" mnc="390" type="default,supl,mms" authtype="1" />
   <apn carrier="Celloneet MMS" mcc="310" mnc="390" apn="mms.celloneet.com" proxy="" port="" user="user1@mms.celloneet.com" password="celloneet" mmsc="http://mms.celloneet.com/servlets/mms" mmsproxy="63.99.231.135" mmsport="8080" type="mms" />
   <apn carrier="ATT" mcc="310" mnc="410" apn="phone" mmsc="http://mmsc.mobile.att.net/" mmsproxy="proxy.mobile.att.net" mmsport="80" type="default,mms,supl" />
-  <apn carrier="Net10" mcc="310" mnc="410" apn="tfdata" port="8080" mmsc="http://mms-tf.net" mmsproxy="mms3.tracfone.com" mmsport="80" type="default,mms,supl" />
+  <apn carrier="Net10" mcc="310" mnc="410" apn="tfdata" mmsc="http://mms-tf.net" mmsproxy="mms3.tracfone.com" mmsport="80" type="default,mms,supl" />
   <apn carrier="Straight Talk" mcc="310" mnc="410" apn="tfdata" port="80" mmsc="http://mms-tf.net" mmsproxy="mms3.tracfone.com" mmsport="80" mvno_type="gid" mvno_match_data="deff" type="default,mms,supl" />
   <apn carrier="Red Pocket" mcc="310" mnc="410" apn="PRODATA" port="" mmsc="http://mmsc.mobile.att.net" mmsproxy="proxy.mobile.att.net" mmsport="80" mvno_type="gid" mvno_match_data="4201" type="default,mms,supl" />
   <apn carrier="Black Wireless" mcc="310" mnc="410" apn="att.mvno" proxy="66.209.11.33" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="66.209.11.33" mmsport="80" type="default,mms,supl,agps,fota" authtype="1" />
