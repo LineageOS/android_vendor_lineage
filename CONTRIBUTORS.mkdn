@@ -44,6 +44,7 @@ Maintainers (CyanogenMod 13.0):
 * __HTC One X:__ gorbi16, mdeejay, tbalden, Thömy
 * __HTC One X+:__ Lloir, tombriden
 * __HTC One XL:__ h8rift, intervigil, jrior001
+* __Huawei Honor 4/4X (cherry):__ dianlujitao, surdupetru, desalesouche
 * __LG G2 (AT&T) (D800):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (T-Mobile) (D801):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (International) (D802):__ arcee, Rashed97, Shelnutt2
@@ -164,6 +165,7 @@ Maintainers (CyanogenMod 13.0):
 * __Sony Z Ultra GPE (togari_gpe):__ FreeXperia Team
 * __Xiaomi Mi2(s) (aries):__ Michael Zimmermann
 * __Xiaomi Mi3/4 (cancro):__ JoeyRizzoli
+* __ZTE Nubia Z9 Max (nx510j):__ dianlujitao
 
 FreeXperia Team:
 -------------------
