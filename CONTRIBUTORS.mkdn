@@ -118,6 +118,7 @@ Maintainers (CyanogenMod 13.0):
 * __Samsung Galaxy S II (T-Mobile) (SGH-T989):__ mikeyman77
 * __Samsung Galaxy S II (AT&T) (SGH-I727):__ topprospect
 * __Samsung Galaxy S III (AT&T) (SGH-I747):__ nardholio
+* __Samsung Galaxy S III (intl) (GT-I9300):__ forkbomb
 * __Samsung Galaxy S III (Sprint) (SPH-L710):__ noobnl
 * __Samsung Galaxy S III (Verizon) (SCH-I535):__ invisiblek
 * __Samsung Galaxy S III LTE (GT-I9305):__ mcampbellsmith
