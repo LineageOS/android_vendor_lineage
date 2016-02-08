@@ -29,6 +29,9 @@ allow recovery sdcard_posix:file r_file_perms;
 # Control properties
 allow recovery recovery_prop:property_service set;
 
+# Set property sys.usb.ffs.ready
+allow recovery ffs_prop:property_service set;
+
 # recursive rm for wipes... :(
 allow app_data_file self:filesystem associate;
 allow recovery app_data_file:file { read open create write };
