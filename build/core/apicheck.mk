@@ -106,7 +106,7 @@ $(eval $(call check-api, \
 # Check that the System API we're building hasn't changed from the not-yet-released
 # SDK version.
 $(eval $(call check-api, \
-    checkpublicapi-cm-current, \
+    checksystemapi-cm-current, \
     $(FRAMEWORK_CM_PLATFORM_SYSTEM_API_FILE), \
     $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE), \
     $(FRAMEWORK_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
