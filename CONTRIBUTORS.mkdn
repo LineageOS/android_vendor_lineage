@@ -44,6 +44,7 @@ Maintainers (CyanogenMod 13.0):
 * __HTC One X:__ gorbi16, mdeejay, tbalden, Thömy
 * __HTC One X+:__ Lloir, tombriden
 * __HTC One XL:__ h8rift, intervigil, jrior001
+* __Huawei Ascend Mate 2:__ mdmower, u-ra
 * __Huawei Honor 4/4X (cherry):__ dianlujitao, surdupetru, desalesouche
 * __LG G2 (AT&T) (D800):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (T-Mobile) (D801):__ arcee, Rashed97, Shelnutt2
