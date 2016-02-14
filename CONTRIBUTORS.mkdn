@@ -99,10 +99,10 @@ Maintainers (CyanogenMod 13.0):
 * __Samsung Fascinate / Mesmerize (SCH-I500):__ jt1134, sbrissen
 * __Samsung Galaxy Note (GT-N7000):__ Espenfjo
 * __Samsung Galaxy Note II (GT-N7100):__ nebkat
-* __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ cyanogen
-* __Samsung Galaxy Note II LTE (Verizon) (SCH-I605):__ sbrissen
-* __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen
-* __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen
+* __Samsung Galaxy Note II LTE (AT&T) (SGH-I317):__ cyanogen, rogersb11
+* __Samsung Galaxy Note II LTE (Verizon) (SCH-I605):__ sbrissen, rogersb11
+* __Samsung Galaxy Note II LTE (Sprint) (SPH-L900):__ sbrissen, rogersb11
+* __Samsung Galaxy Note II LTE (USCC) (SCH-R950):__ sbrissen, rogersb11
 * __Samsung Galaxy Note III (hlte):__ cyanogen, noobnl, slayher
 * __Samsung Galaxy Note IV Exynos (trelte):__ raymanfx
 * __Samsung Galaxy Note IV Exynos (trhplte):__ raymanfx
