@@ -828,62 +828,17 @@
   <apn carrier="Lycamobile SE" mcc="240" mnc="12" apn="data.lycamobile.se" user="lmse" password="plus" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="240" mnc="24" apn="services.telenor.se" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="173.30.253.241" mmsport="8799" type="mms" />
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="24" apn="services.telenor.se" proxy="173.30.253.241" port="8799" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" user="" password="" type="default,supl" spn="TELENOR" />
-  <apn carrier="Telenor MMS" mcc="242" mnc="01" apn="mms" proxy="" port="" mmsproxy="10.10.10.11" mmsport="8080" mmsc="http://mmsc/" user="" password="" type="mms" spn="TELENOR" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor.smart" mmsc="http://mmsc/" mmsproxy="mms-proxy.telenor.no" mmsport="8080" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IP" />
-  <apn carrier="Telenor MMS" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
-  <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Mobitalk" mcc="242" mnc="01" apn="telenor" user="dj" password="dj" proxy="10.10.10.10" port="8080" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Talkmore" mcc="242" mnc="01" apn="telenor" type="default,supl,mms" />
-  <apn carrier="Phonero Internett" mcc="242" mnc="01" apn="internet.phonero.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Phonero Internet" mcc="242" mnc="01" apn="internet.phonero.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Phonero MMS" mcc="242" mnc="01" apn="mms.phonero.no" proxy="" port="" user="phonero" password="1111" mmsc="http://mmsc" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
-  <apn carrier="TDC MMS" mcc="242" mnc="01" apn="mms.no" proxy="" port="" user="" password="" mmsc="http://mms.tdcmobil.no:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
-  <apn carrier="TDC Internet" mcc="242" mnc="01" apn="internet.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="TDC WAP" mcc="242" mnc="01" apn="internet.no" proxy="194.182.251.15" port="8080" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Tele2 Internet" mcc="242" mnc="01" apn="internet.tele2.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Tele2 MMS" mcc="242" mnc="01" apn="internet.tele2.no" proxy="" port="" user="" password="" mmsc="http://mmsc.tele2.no" mmsproxy="193.12.40.14" mmsport="8080" type="mms" />
-  <apn carrier="djuice MMS" mcc="242" mnc="01" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
-  <apn carrier="djuice WAP" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
-  <apn carrier="TalkMore MMS" mcc="242" mnc="01" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
-  <apn carrier="TalkMore WAP" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
-  <apn carrier="NetCom Internet" mcc="242" mnc="02" apn="netcom" user="" password="" type="default,supl" spn="NetCom" />
-  <apn carrier="NetCom MMS" mcc="242" mnc="02" apn="netcom" proxy="" port="" mmsproxy="212.169.66.4" mmsport="8080" mmsc="http://mm/" user="mms" password="netcom" type="mms" spn="NetCom" />
-  <apn carrier="NetCom Internett" mcc="242" mnc="02" apn="wap" type="default,supl" />
-  <apn carrier="NetCom MMS" mcc="242" mnc="02" apn="mms.netcom.no" proxy="" port="" user="mms" password="netcom" mmsc="http://mm/" mmsproxy="212.169.66.4" mmsport="8080" type="mms" />
-  <apn carrier="Chess Mobil" mcc="242" mnc="02" apn="netcom" user="" password="" type="default,supl" spn="Chess" />
-  <apn carrier="Chess MMS" mcc="242" mnc="02" apn="mms.netcom.no" proxy="" port="" mmsproxy="212.169.66.4" mmsport="8080" mmsc="http://mm/" user="chess" password="chess" type="mms" spn="Chess" />
-  <apn carrier="Chess MMS" mcc="242" mnc="02" apn="mms.netcom.no" user="chess" password="chess" mmsc="http://mms/" mmsproxy="193.209.134.133" mmsport="8080" type="mms" />
-  <apn carrier="Chess Internet" mcc="242" mnc="02" apn="netcom" user="chess" password="chess" proxy="10.254.254.10" port="8080" type="default,supl" />
-  <apn carrier="Chess Internet" mcc="242" mnc="02" apn="internet.netcom.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Tele2 NO Internet" mcc="242" mnc="03" apn="internet.tele2.no" type="default,supl" />
-  <apn carrier="Tele2 NO MMS" mcc="242" mnc="03" apn="mms.tele2.no" user="wap" password="wap" mmsc="mmsc.tele2.no" mmsproxy="192.12.40.14:8080" type="mms" />
-  <apn carrier="T3 ISP GPRS" mcc="242" mnc="03" apn="www.teletopia.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="T3 WAP" mcc="242" mnc="03" apn="www.teletopia.no" proxy="172.16.172.16" port="9201" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="T3 MMS" mcc="242" mnc="03" apn="www.teletopia.no" proxy="" port="" user="" password="" mmsc="http://mmsc/" mmsproxy="172.16.172.16" mmsport="9201" type="mms" />
+  <apn carrier="NetCom" mcc="242" mnc="02" apn="netcom" proxy="10.254.254.10" port="8080" mmsc="http://mm/" mmsproxy="212.169.66.4" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tele2 Internet" mcc="242" mnc="04" apn="internet.tele2.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Tele2 MMS" mcc="242" mnc="04" apn="internet.tele2.no" proxy="" port="" user="" password="" mmsc="http://mmsc.tele2.no" mmsproxy="193.12.40.14" mmsport="8080" type="mms" />
-  <apn carrier="Internet" mcc="242" mnc="05" apn="internet" user="" password="" type="default,supl" spn="Onecall" />
-  <apn carrier="MMS" mcc="242" mnc="05" apn="mms" proxy="" port="" mmsproxy="188.149.250.10" mmsport="80" mmsc="http://mms.nwn.no" user="" password="" type="mms" spn="Onecall" />
-  <apn carrier="NwN" mcc="242" mnc="05" apn="internet" type="default,supl" />
+  <apn carrier="NwN Internet" mcc="242" mnc="05" apn="internet" type="default,supl" />
   <apn carrier="NwN MMS" mcc="242" mnc="05" apn="mms" mmsc="http://mms.nwn.no" mmsproxy="188.149.250.10" mmsport="80" type="mms" />
-  <apn carrier="MyCall Internet" mcc="242" mnc="05" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="MyCall MMS" mcc="242" mnc="05" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.nwn.no" mmsproxy="89.254.65.20" mmsport="80" type="mms" />
-  <apn carrier="OneCall Internet" mcc="242" mnc="05" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="OneCall WAP" mcc="242" mnc="05" apn="wap" proxy="89.254.65.20" port="80" user="nwn" password="nwn" mmsc="" type="default,supl" />
-  <apn carrier="OneCall MMS" mcc="242" mnc="05" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.nwn.no" mmsproxy="89.254.65.20" mmsport="80" type="mms" />
-  <apn carrier="Lebara Internet" mcc="242" mnc="05" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Lebara WAP" mcc="242" mnc="05" apn="wap" proxy="89.254.65.20" port="80" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Lebara MMS" mcc="242" mnc="05" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.nwn.no" mmsproxy="89.254.65.20" mmsport="80" type="mms" />
-  <apn carrier="NwN Internet" mcc="242" mnc="05" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="NwN MMS" mcc="242" mnc="05" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.nwn.no" mmsproxy="89.254.65.20" mmsport="80" type="mms" />
-  <apn carrier="TDC" mcc="242" mnc="08" apn="internet" user="" password="" authtype="3" type="default,supl" />
-  <apn carrier="TDC mms" mcc="242" mnc="08" apn="MMS" proxy="" port="" mmsproxy="inetproxy.tdc.dk" mmsport="8080" mmsc="http://mmsc.tdc.dk:8002" user="" password="" authtype="3" type="mms" />
-  <apn carrier="Chess Internet" mcc="242" mnc="45" apn="internet.netcom.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Chess MMS" mcc="242" mnc="45" apn="mms.netcom.no" proxy="" port="" user="chess" password="chess" mmsc="http://mm/" mmsproxy="212.169.66.4" mmsport="8080" type="mms" />
-  <apn carrier="Chess Internet" mcc="242" mnc="56" apn="internet.netcom.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Chess MMS" mcc="242" mnc="56" apn="mms.netcom.no" proxy="" port="" user="chess" password="chess" mmsc="http://mm/" mmsproxy="212.169.66.4" mmsport="8080" type="mms" />
-  <apn carrier="Chess Internet" mcc="242" mnc="79" apn="internet.netcom.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Chess MMS" mcc="242" mnc="79" apn="mms.netcom.no" proxy="" port="" user="chess" password="chess" mmsc="http://mm/" mmsproxy="212.169.66.4" mmsport="8080" type="mms" />
+  <apn carrier="TDC Internet" mcc="242" mnc="08" apn="internet" user="" password="" authtype="3" type="default,supl" />
+  <apn carrier="TDC MMS" mcc="242" mnc="08" apn="mms" proxy="" port="" mmsproxy="inetproxy.tdc.dk" mmsport="8080" mmsc="http://mmsc.tdc.dk:8002" user="" password="" authtype="3" type="mms" />
   <apn carrier="DNA Internet" mcc="244" mnc="03" apn="internet" type="default,supl" />
   <apn carrier="DNA WAP" mcc="244" mnc="03" apn="wap" proxy="10.1.1.1" port="80" mmsc="" user="" password="" type="default,supl" />
   <apn carrier="DNA MMS" mcc="244" mnc="03" apn="mms" user="dna" password="mms" mmsc="http://mmsc.dnafinland.fi/" mmsproxy="10.1.1.2" mmsport="8080" type="mms" />
