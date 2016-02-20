@@ -64,7 +64,7 @@ Maintainers (CyanogenMod 13.0):
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
 * __LG V10 (T-Mobile) (H901):__ genesixxbf3
-* __Moto E 2014 (xt1021,xt1022,xt1023/condor):__ percy_g2, scritch007, ashwin007
+* __Moto E 2014 (xt1021,xt1022,xt1023/condor):__
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
 * __Moto G 4G 2014 (xt1072,xt1077,xt1078,xt1079/thea):__ LuK1337, luca020400
@@ -87,6 +87,7 @@ Maintainers (CyanogenMod 13.0):
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __OnePlus One:__ cyanogen, intervigil, inwotep, arcee
+* __OnePlus X:__ ashwin007, MasterAwesome
 * __Oppo Find 5:__ intervigil, nebkat, raymanfx
 * __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
 * __Oppo N1:__ raymanfx
