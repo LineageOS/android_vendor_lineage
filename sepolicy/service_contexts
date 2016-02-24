@@ -9,3 +9,5 @@ cmtelephonymanager                        u:object_r:cm_telephony_service:s0
 cmhardware                                u:object_r:cm_hardware_service:s0
 cmappsuggest                              u:object_r:cm_app_suggest_service:s0
 cmperformance                             u:object_r:cm_performance_service:s0
+cmthemes                                  u:object_r:cm_themes_service:s0
+cmiconcache                               u:object_r:cm_iconcache_service:s0

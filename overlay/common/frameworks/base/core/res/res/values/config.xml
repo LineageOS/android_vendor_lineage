@@ -64,5 +64,7 @@
         <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
         <item>org.cyanogenmod.platform.internal.AppSuggestManagerService</item>
         <item>org.cyanogenmod.platform.internal.PerformanceManagerService</item>
+        <item>org.cyanogenmod.platform.internal.ThemeManagerService</item>
+        <item>org.cyanogenmod.platform.internal.IconCacheManagerService</item>
     </string-array>
 </resources>
