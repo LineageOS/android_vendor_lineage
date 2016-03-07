@@ -13,6 +13,7 @@ Maintainers (CyanogenMod 13.0):
 * __Asus EeePad Transformer Pad TF701T:__ pershoot
 * __Asus Zenfone 2 ZE550ML (Z008):__ crpalmer, jrior001
 * __Asus Zenfone 2 ZE551ML (Z00A):__ crpalmer, jrior001
+* __Asus Zenfone 2 ZE551KL/ZD551KL (Z00T):__ LuK1337, luca020400
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __B&N Nook Tablet (acclaim):__  chrmhoffmann
 * __Google Android One:__ varunchitre15
