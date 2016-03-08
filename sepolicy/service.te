@@ -11,3 +11,4 @@ type cm_app_suggest_service, system_api_service, system_server_service, service_
 type cm_performance_service, system_api_service, system_server_service, service_manager_type;
 type cm_themes_service, system_api_service, system_server_service, service_manager_type;
 type cm_iconcache_service, system_api_service, system_server_service, service_manager_type;
+type cm_livelockscreen_service, system_api_service, system_server_service, service_manager_type;
