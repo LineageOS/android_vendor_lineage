@@ -53,18 +53,4 @@
         <item>bugreport</item>
         <item>users</item>
     </string-array>
-
-    <!-- Defines external services to be started by the SystemServer at boot. The service itself
-         should publish as a binder services in its onStart -->
-    <string-array name="config_externalCMServices">
-        <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
-        <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
-        <item>org.cyanogenmod.platform.internal.PartnerInterfaceService</item>
-        <item>org.cyanogenmod.platform.internal.CMTelephonyManagerService</item>
-        <item>org.cyanogenmod.platform.internal.CMHardwareService</item>
-        <item>org.cyanogenmod.platform.internal.AppSuggestManagerService</item>
-        <item>org.cyanogenmod.platform.internal.PerformanceManagerService</item>
-        <item>org.cyanogenmod.platform.internal.ThemeManagerService</item>
-        <item>org.cyanogenmod.platform.internal.IconCacheManagerService</item>
-    </string-array>
 </resources>
