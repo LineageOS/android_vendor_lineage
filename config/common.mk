@@ -121,12 +121,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
-# Live lockscreen
-PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/org.cyanogenmod.livelockscreen.xml:system/etc/permissions/org.cyanogenmod.livelockscreen.xml
-
 # Theme engine
 include vendor/cm/config/themes_common.mk
+
+# CMSDK
+include vendor/cm/config/cmsdk_common.mk
 
 # Required CM packages
 PRODUCT_PACKAGES += \
@@ -160,17 +159,6 @@ PRODUCT_PACKAGES += \
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
-
-# CM Platform Library
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.platform-res \
-    org.cyanogenmod.platform \
-    org.cyanogenmod.platform.xml
-
-# CM Hardware Abstraction Framework
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.hardware \
-    org.cyanogenmod.hardware.xml
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
@@ -330,33 +318,8 @@ ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
 endif
 endif
 
-ifndef CM_PLATFORM_SDK_VERSION
-  # This is the canonical definition of the SDK version, which defines
-  # the set of APIs and functionality available in the platform.  It
-  # is a single integer that increases monotonically as updates to
-  # the SDK are released.  It should only be incremented when the APIs for
-  # the new release are frozen (so that developers don't write apps against
-  # intermediate builds).
-  CM_PLATFORM_SDK_VERSION := 5
-endif
-
-ifndef CM_PLATFORM_REV
-  # For internal SDK revisions that are hotfixed/patched
-  # Reset after each CM_PLATFORM_SDK_VERSION release
-  # If you are doing a release and this is NOT 0, you are almost certainly doing it wrong
-  CM_PLATFORM_REV := 0
-endif
-
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.display.version=$(CM_DISPLAY_VERSION)
-
-# CyanogenMod Platform SDK Version
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.build.version.plat.sdk=$(CM_PLATFORM_SDK_VERSION)
-
-# CyanogenMod Platform Internal
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.build.version.plat.rev=$(CM_PLATFORM_REV)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
