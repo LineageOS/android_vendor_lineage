@@ -28,7 +28,7 @@ ifndef CM_PLATFORM_SDK_VERSION
   # the SDK are released.  It should only be incremented when the APIs for
   # the new release are frozen (so that developers don't write apps against
   # intermediate builds).
-  CM_PLATFORM_SDK_VERSION := 5
+  CM_PLATFORM_SDK_VERSION := 6
 endif
 
 ifndef CM_PLATFORM_REV
