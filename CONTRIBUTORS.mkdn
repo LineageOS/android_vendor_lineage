@@ -77,7 +77,6 @@ Maintainers (LineageOS 14.1):
 * __LG Optimus L90:__ Quarx2k, vm03, NikitaProAndroid
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
-* __LG V10 (T-Mobile) (H901):__ genesixxbf3
 * __Moto E 2014 (xt1021,xt1022,xt1023/condor):__
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
