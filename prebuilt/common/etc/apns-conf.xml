@@ -3374,9 +3374,15 @@
   <apn carrier="myGlobe Connect" mcc="515" mnc="02" apn="www.globe.com.ph" proxy="203.177.042.214" port="8080" type="default,supl" />
   <apn carrier="MyGlobe Stream" mcc="515" mnc="02" apn="real.globe.com.ph" type="default,supl" />
   <apn carrier="myGlobe MMS" mcc="515" mnc="02" apn="mms.globe.com.ph" mmsc="http://192.40.100.22:10021/mmsc" mmsproxy="203.177.42.214" mmsport="8080" type="mms" />
-  <apn carrier="Smart GPRS" mcc="515" mnc="03" apn="Smart1" proxy="10.102.61.46" port="8080" type="default,supl" />
-  <apn carrier="Smart Internet" mcc="515" mnc="03" apn="internet" proxy="10.102.61.46" port="8080" type="default,supl" />
-  <apn carrier="Smart MMS" mcc="515" mnc="03" apn="mms" mmsc="http://10.102.61.238:8002" mmsproxy="10.102.61.46" mmsport="8080" type="mms" />
+  <apn carrier="SMART Internet postpaid" mcc="515" mnc="03" apn="internet" authtype="1" type="default" />
+  <apn carrier="SMART HTTP postpaid" mcc="515" mnc="03" apn="smart1" proxy="10.102.61.46" port="9201" user="smartwap" password="smartwap" authtype="1" type="default" />
+  <apn carrier="SMART(3G) Internet postpaid" mcc="515" mnc="03" apn="internet" type="default,supl"/>
+  <apn carrier="SMART(3G) MMS postpaid" mcc="515" mnc="03" apn="mms" mmsc="http://10.102.61.238:8002" mmsproxy="10.102.61.46" mmsport="8080" type="mms" />
+  <apn carrier="SMART(3G) Internet prepaid" mcc="515" mnc="03" apn="internet" type="default,supl" />
+  <apn carrier="SMART(3G) HTTP prepaid" mcc="515" mnc="03" apn="smart1" proxy="10.102.61.46" port="80" user="smartwap" password="smartwap" authtype="1" type="default" />
+  <apn carrier="SMART(3G) MMS prepaid" mcc="515" mnc="03" apn="mms" user="smartwap" password="smartwap" mmsc="http://10.102.61.238:8002" mmsproxy="10.102.61.46" mmsport="8080" authtype="1" type="mms" />
+  <apn carrier="SMART MMS postpaid" mcc="515" mnc="03" apn="mms" user="smartwap" password="smartwap" mmsc="http://10.102.61.238:8002" mmsproxy="10.102.61.46" mmsport="9201" authtype="1" type="mms" />
+  <apn carrier="SMART(3G) HTTP postpaid" mcc="515" mnc="03" apn="smart1" proxy="10.102.61.46" port="9201" authtype="1" type="default" />
   <apn carrier="Sun Internet" mcc="515" mnc="05" apn="minternet" type="default,supl" />
   <apn carrier="Sun Streaming" mcc="515" mnc="05" apn="minternet" type="default,supl" />
   <apn carrier="SUN WAP GPRS" mcc="515" mnc="05" apn="wap" proxy="202.138.159.078" port="8080" type="default,supl" />
