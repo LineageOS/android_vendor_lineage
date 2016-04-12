@@ -27,7 +27,7 @@ endif
 $(full_target): pomfile := $(LOCAL_MAVEN_POM)
 $(full_target): repo := $(LOCAL_MAVEN_REPO)
 ifdef LOCAL_MAVEN_TARGET_MODULE
-$(full_target): path_to_file := $(call intermediates-dir-for,JAVA_LIBRARIES,$(LOCAL_MAVEN_TARGET_MODULE),,COMMON)/javalib.jar
+$(full_target): path_to_file := $(call intermediates-dir-for,JAVA_LIBRARIES,$(LOCAL_MAVEN_TARGET_MODULE),,COMMON)/javalib.aar
 endif
 $(full_target): repoId := $(LOCAL_MAVEN_REPO_ID)
 $(full_target): classifier := $(LOCAL_MAVEN_CLASSIFIER)
@@ -38,7 +38,7 @@ $(full_target): artifact_path ?= $(basename $(path_to_file))
 
 ifdef LOCAL_MAVEN_TARGET_MODULE
 $(full_target): $(LOCAL_MAVEN_TARGET_MODULE) $(path_to_file) $(artifact_path) $(ACP)
-	@echo -e ${CL_GRN}"Renaming generated sdk javalib jar"${CL_RST}
+	@echo -e ${CL_GRN}"Renaming generated sdk javalib aar"${CL_RST}
 	$(hide) $(ACP) $(path_to_file) $(artifact_path)
 	@echo -e ${CL_GRN}"Publishing to Maven"${CL_RST}
 	$(hide) mvn -e -X gpg:sign-and-deploy-file \
