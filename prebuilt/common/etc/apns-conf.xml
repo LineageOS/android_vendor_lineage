@@ -3832,7 +3832,7 @@
   <apn carrier="Internet Movil" mcc="730" mnc="01" apn="imovil.entelpcs.cl" user="entelpcs" password="entelpcs" type="default,supl" />
   <apn carrier="Entel PCS" mcc="730" mnc="01" apn="bam.entelpcs.cl" user="entelpcs" password="entelpcs" proxy="10.99.0.10" port="8080" type="default,supl" />
   <apn carrier="Entel MMS" mcc="730" mnc="01" apn="mms.entelpcs.cl" proxy="" port="" mmsproxy="10.99.0.10" mmsport="8080" mmsc="http://mmsc.entelpcs.cl" user="entelpcs" password="entelmms" type="mms" />
-  <apn carrier="APLICACIONES" mcc="730" mnc="02" apn="wap.tmovil.cl" user="wap" password="wap" type="default,supl" />
+  <apn carrier="Movistar INTERNET" mcc="730" mnc="02" apn="wap.tmovil.cl" user="wap" password="wap" type="default,supl" />
   <apn carrier="Movistar MMS" mcc="730" mnc="02" apn="mms.tmovil.cl" proxy="" port="" mmsproxy="172.17.8.10" mmsport="8080" mmsc="http://mms.movistar.cl" user="mms" password="mms" type="mms" />
   <apn carrier="Movistar CL" mcc="730" mnc="02" apn="web.tmovil.cl" user="web" password="web" type="default,supl" />
   <apn carrier="Movistar CL MMS" mcc="730" mnc="02" apn="mms.tmovil.cl" user="mms" password="mms" mmsc="http://mms.tmovil.cl" mmsproxy="172.017.008.011" mmsport="9201" type="mms" />
