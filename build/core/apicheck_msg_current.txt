@@ -12,7 +12,6 @@ To make these errors go away, you have two choices:
 
    2) You can update current.txt (locally) by executing the following command:
          make update-cm-api
-         make update-cm-prebuilts-latest-public-api
 
       ^^^^^^^^^^^^^^^^^^
       CONGRATS YOU EARNED A STINKEYE FROM CID!
