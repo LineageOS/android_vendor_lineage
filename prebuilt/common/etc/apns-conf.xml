@@ -1887,9 +1887,9 @@
   <apn carrier="Kcell" mcc="401" mnc="02" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Kcell MMS" mcc="401" mnc="02" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.kcell.kz/post" mmsproxy="195.47.255.7" mmsport="8080" type="mms" />
   <apn carrier="Kcell WAP" mcc="401" mnc="02" apn="wap" proxy="195.47.255.7" port="8080" mmsc="" user="" password="" type="default,supl" />
-  <apn carrier="MTS WAP" mcc="404" mnc="0" apn="WAP" user="wap@wap.mtsindia.in" password="MTS" authtype="3" type="default,supl" />
-  <apn carrier="MTS MMS" mcc="404" mnc="0" apn="MMS" user="mms@mms.mtsindia.in" password="MTS" authtype="3" type="mms" />
-  <apn carrier="MTS MODEM" mcc="404" mnc="0" apn="Modem" user="internet@internet.mtsindia.in" password="MTS" authtype="3" type="default,supl" />
+  <apn carrier="MTS WAP" mcc="404" mnc="00" apn="WAP" user="wap@wap.mtsindia.in" password="MTS" authtype="3" type="default,supl" />
+  <apn carrier="MTS MMS" mcc="404" mnc="00" apn="MMS" user="mms@mms.mtsindia.in" password="MTS" authtype="3" type="mms" />
+  <apn carrier="MTS MODEM" mcc="404" mnc="00" apn="Modem" user="internet@internet.mtsindia.in" password="MTS" authtype="3" type="default,supl" />
   <apn carrier="Vodafone" mcc="404" mnc="01" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="01" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="01" apn="www" type="default,supl" />
@@ -2947,7 +2947,7 @@
   <apn carrier="Ncell WAP" mcc="429" mnc="02" apn="web" proxy="192.168.19.15" port="8080" type="default,supl" />
   <apn carrier="MCI-GPRS" mcc="432" mnc="11" apn="mcinet" proxy="192.168.194.73" port="8080" type="default,supl" />
   <apn carrier="MCI-MMS" mcc="432" mnc="11" apn="mcinet" mmsproxy="192.168.193.134" mmsport="38090" mmsc="http://mci.ir" type="mms" />
-  <apn carrier="Irancell-GPRS" mcc="432" mnc="35" apn="mtnirancell" proxy="10.131.26.138" port="8080" type="default,supl" />
+  <apn carrier="Irancell-Internet" mcc="432" mnc="35" apn="mtnirancell" type="default,supl" />
   <apn carrier="Irancell-MMS" mcc="432" mnc="35" apn="mtnirancell" mmsproxy="10.131.26.138" mmsport="8080" mmsc="http://mms:8002" type="mms" />
   <apn carrier="Beeline UZ" mcc="434" mnc="04" apn="internet.beeline.uz" user="beeline" password="beeline" type="default,supl" />
   <apn carrier="Beeline UZ MMS" mcc="434" mnc="04" apn="mms.beeline.uz" user="beeline" password="beeline" mmsc="http://mms" mmsproxy="172.30.30.166" mmsport="8080" type="mms" />
