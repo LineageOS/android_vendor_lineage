@@ -18,12 +18,10 @@
     <!-- Class name for the default in-call UI Service [DO NOT TRANSLATE] -->
     <string-array name="incall_default_classes" translatable="false">
         <item>com.android.dialer/com.android.incallui.InCallServiceImpl</item>
-        <item>com.cyngn.dialer/com.android.incallui.InCallServiceImpl</item>
     </string-array>
 
     <!-- Class name for the default main dialer activity [DO NOT TRANSLATE] -->
     <string-array name="dialer_default_classes" translatable="false">
         <item>com.android.dialer/com.android.dialer.DialtactsActivity</item>
-        <item>com.cyngn.dialer/com.android.dialer.DialtactsActivity</item>
     </string-array>
 </resources>
