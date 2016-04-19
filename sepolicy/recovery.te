@@ -19,6 +19,7 @@ allow recovery rootfs:file link;
 allow recovery rootfs:dir { write create rmdir add_name remove_name };
 
 # Read storage files and directories
+allow recovery tmpfs:dir mounton;
 allow recovery media_rw_data_file:dir r_dir_perms;
 allow recovery media_rw_data_file:file r_file_perms;
 allow recovery vfat:dir r_dir_perms;
