@@ -2909,14 +2909,12 @@
   <apn carrier="Golan Telecom" mcc="425" mnc="08" apn="internet.golantelecom.net.il" authtype="0" type="default,supl" />
   <apn carrier="Golan Telecom MMS" mcc="425" mnc="08" apn="mms.golantelecom.net.il" mmsc="http://mmsc.golantelecom.co.il" mmsproxy="10.224.228.81" mmsport="80" authtype="0" type="mms" />
   <apn carrier="YouPhone 3G" mcc="425" mnc="14" apn="data.youphone.co.il" mmsc="http://192.168.220.15/servlets/mms" mmsport="80" type="default,supl,mms" />
-  <apn carrier="Internet" mcc="426" mnc="01" apn="internet.batelco.com" type="default,supl" />
-  <apn carrier="batelco WAP" mcc="426" mnc="01" apn="wap.batelco.com" proxy="192.168.1.2" port="80" user="wap" password="wap" type="default,supl" />
-  <apn carrier="batelco MMS" mcc="426" mnc="01" apn="mms.batelco.com" proxy="" port="" mmsproxy="192.168.1.2" mmsport="80" mmsc="http://192.168.36.10/servlets/mms" type="mms" />
-  <apn carrier="BATELCO BH" mcc="426" mnc="01" apn="internet.batelco.com" user="internet" password="internet" type="default,supl" />
-  <apn carrier="BATELCO BH MMS" mcc="426" mnc="01" apn="mms.batelco.com" user="wap" password="wap" mmsc="http://192.168.36.10/servlets/mms" mmsproxy="192.168.1.2" mmsport="80" type="mms" />
-  <apn carrier="Zain Wap" mcc="426" mnc="02" apn="wap" proxy="172.18.85.34" port="8080" mmsc="" user="wap" password="wap" type="default,supl" />
-  <apn carrier="Zain Internet" mcc="426" mnc="02" apn="internet" user="internet" password="internet" type="default,supl" />
-  <apn carrier="Zain MMS" mcc="426" mnc="02" apn="mms" proxy="" port="" mmsproxy="172.18.85.34" mmsport="8080" mmsc="http:// 172.18.83.129" user="mms" password="mms" type="mms" />
+  <apn carrier="Batelco Internet" mcc="426" mnc="01" apn="internet.batelco.com" type="default,supl" />
+  <apn carrier="Batelco WAP" mcc="426" mnc="01" apn="wap.batelco.com" user="wap" password="wap" authtype="0" proxy="192.168.1.2" port="80" type="default,supl" />
+  <apn carrier="Batelco MMS" mcc="426" mnc="01" apn="mms.batelco.com" user="mms" password="mms" authtype="0" mmsc="http://192.168.36.10/servlets/mms" mmsproxy="192.168.1.2" mmsport="80" type="mms" />
+  <apn carrier="Zain BH WAP" mcc="426" mnc="02" apn="wap" user="wap" password="wap" authtype="0" proxy="172.18.85.33" port="80" type="default,supl" />
+  <apn carrier="Zain BH Internet" mcc="426" mnc="02" apn="internet" user="internet" password="internet" authtype="0" type="default,supl" />
+  <apn carrier="Zain BH MMS" mcc="426" mnc="02" apn="mms" user="mms" password="mms" authtype="0" mmsc="http://172.18.83.129:80/" mmsproxy="172.18.85.34" mmsport="80" type="mms" />
   <apn carrier="MTC Vodafone BH" mcc="426" mnc="02" apn="internet" user="internet" password="internet" type="default,supl" />
   <apn carrier="MTC Vodafone BH MMS" mcc="426" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://172.18.83.129" mmsproxy="172.18.85.34" mmsport="9201" type="mms" />
   <apn carrier="VIVA GPRS" mcc="426" mnc="04" apn="viva.bh" type="default,supl" />
