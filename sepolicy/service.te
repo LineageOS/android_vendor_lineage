@@ -14,3 +14,4 @@ type cm_iconcache_service, system_api_service, system_server_service, service_ma
 type cm_livelockscreen_service, system_api_service, system_server_service, service_manager_type;
 type cm_weather_service, system_api_service, system_server_service, service_manager_type;
 type cm_livedisplay_service, system_api_service, system_server_service, service_manager_type;
+type cm_audio_service, system_api_service, system_server_service, service_manager_type;
