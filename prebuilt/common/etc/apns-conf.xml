@@ -896,7 +896,7 @@
   <apn carrier="GSMAland wap" mcc="244" mnc="14" apn="internet" proxy="194.110.177.70" port="8080" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="GSMAland mms" mcc="244" mnc="14" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.amt.aland.fi" mmsproxy="194.110.177.70" mmsport="8080" type="mms" />
   <apn carrier="Saunalahti Wap" mcc="244" mnc="21" apn="wap.saunalahti.fi" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Saunalahti Internet" mcc="244" mnc="21" apn="internet.saunalahti.fi" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="Saunalahti Internet" mcc="244" mnc="21" apn="internet.saunalahti" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Saunalahti MMS" mcc="244" mnc="21" apn="mms.saunalahti.fi" proxy="" port="" user="" password="" mmsc="http://mms.saunalahti.fi:8002/" mmsproxy="62.142.4.197" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Sonera Internet" mcc="244" mnc="91" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Sonera MMS" mcc="244" mnc="91" apn="wap.sonera.net" proxy="" port="" user="" password="" mmsc="http://mms.sonera.fi:8002" mmsproxy="195.156.25.33" mmsport="80" type="mms" />
