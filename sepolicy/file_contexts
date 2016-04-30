@@ -47,6 +47,7 @@
 /sys/devices/virtual/graphics/fb0/cabc          u:object_r:livedisplay_sysfs:s0
 /sys/devices/virtual/graphics/fb0/rgb           u:object_r:livedisplay_sysfs:s0
 /sys/devices/virtual/graphics/fb0/sre           u:object_r:livedisplay_sysfs:s0
+/sys/devices/virtual/graphics/fb0/color_enhance u:object_r:livedisplay_sysfs:s0
 
 # fsck
 /system/bin/fsck\.ntfs                          u:object_r:fsck_exec:s0
