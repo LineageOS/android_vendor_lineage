@@ -1,0 +1,6 @@
+# For prefetcher to read themes
+allow dumpstate dalvikcache_data_file:dir r_dir_perms;
+allow dumpstate dalvikcache_data_file:file r_file_perms;
+allow dumpstate resourcecache_data_file:dir r_dir_perms;
+allow dumpstate resourcecache_data_file:file r_file_perms;
+
