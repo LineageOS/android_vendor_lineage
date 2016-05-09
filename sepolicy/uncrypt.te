@@ -2,3 +2,8 @@ r_dir_file(uncrypt, media_rw_data_file)
 allow uncrypt recovery_cache_file:dir create_dir_perms;
 allow uncrypt recovery_cache_file:file create_file_perms;
 allow uncrypt recovery_cache_file:fifo_file rw_file_perms;
+
+allow uncrypt storage_file:dir r_dir_perms;
+allow uncrypt storage_stub_file:dir r_dir_perms;
+allow uncrypt fuse:dir r_dir_perms;
+allow uncrypt fuse:file r_file_perms;
