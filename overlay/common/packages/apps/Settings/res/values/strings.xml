@@ -16,5 +16,8 @@
 <resources>
     <!-- Help URL, Tap & pay [DO NOT TRANSLATE] -->
     <string name="help_url_nfc_payment" translatable="false">https://support.google.com/wallet/answer/1347934</string>
+
+    <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
+    <string name="help_url_fingerprint" translatable="false">https://support.google.com</string>
 </resources>
 
