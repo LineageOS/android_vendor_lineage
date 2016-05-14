@@ -3,4 +3,8 @@ allow dumpstate dalvikcache_data_file:dir r_dir_perms;
 allow dumpstate dalvikcache_data_file:file r_file_perms;
 allow dumpstate resourcecache_data_file:dir r_dir_perms;
 allow dumpstate resourcecache_data_file:file r_file_perms;
+allow dumpstate fuse:dir r_dir_perms;
+allow dumpstate fuse:file r_file_perms;
+allow dumpstate theme_data_file:dir r_dir_perms;
+allow dumpstate theme_data_file:file r_file_perms;
 
