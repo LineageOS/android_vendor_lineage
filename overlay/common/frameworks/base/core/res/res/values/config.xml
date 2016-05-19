@@ -53,4 +53,7 @@
         <item>bugreport</item>
         <item>users</item>
     </string-array>
+
+    <!-- Enable lockscreen rotation by default -->
+    <bool name="config_enableLockScreenRotation">true</bool>
 </resources>
