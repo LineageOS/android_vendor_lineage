@@ -35,6 +35,12 @@ endif
 LOCAL_SRC_FILES := ../../../external/gello-build/Gello.apk
 include $(BUILD_PREBUILT)
 else
+
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+
 LOCAL_MAVEN_REPO := https://maven.cyanogenmod.org/artifactory/gello_prebuilds
 LOCAL_MAVEN_GROUP := org.cyanogenmod
 LOCAL_MAVEN_VERSION := 17
