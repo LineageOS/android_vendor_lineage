@@ -29,6 +29,10 @@ on post-fs-data
     # Run sysinit
     start sysinit
 
+    # Change permissions on fsck log so it can be added to the dropbox
+    chown root log /dev/fscklogs/log
+    chmod 0640 /dev/fscklogs/log
+
 on boot
     # interactive governor
     chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
