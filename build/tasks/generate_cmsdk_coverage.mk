@@ -33,13 +33,14 @@ $(api_xml_description) : $(api_text_description) $(APICHECK)
 cmsdk-test-coverage-report := $(coverage_out)/cmsdk-test-coverage.html
 
 cmsdk_tests_apk := $(call intermediates-dir-for,APPS,CMPlatformTests)/package.apk
+cmsettingsprovider_tests_apk := $(call intermediates-dir-for,APPS,CMSettingsProviderTests)/package.apk
 cmsdk_api_coverage_dependencies := $(cts_api_coverage_exe) $(dexdeps_exe) $(api_xml_description)
 
-$(cmsdk-test-coverage-report): PRIVATE_TEST_CASES := $(cmsdk_tests_apk)
+$(cmsdk-test-coverage-report): PRIVATE_TEST_CASES := $(cmsdk_tests_apk) $(cmsettingsprovider_tests_apk)
 $(cmsdk-test-coverage-report): PRIVATE_CTS_API_COVERAGE_EXE := $(cts_api_coverage_exe)
 $(cmsdk-test-coverage-report): PRIVATE_DEXDEPS_EXE := $(dexdeps_exe)
 $(cmsdk-test-coverage-report): PRIVATE_API_XML_DESC := $(api_xml_description)
-$(cmsdk-test-coverage-report): $(cmsdk_tests_apk) $(cmsdk_api_coverage_dependencies) | $(ACP)
+$(cmsdk-test-coverage-report): $(cmsdk_tests_apk) $(cmsettingsprovider_tests_apk) $(cmsdk_api_coverage_dependencies) | $(ACP)
 	$(call generate-cm-coverage-report,"CMSDK API Coverage Report",\
 			$(PRIVATE_TEST_CASES),html)
 
