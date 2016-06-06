@@ -30,7 +30,7 @@ $(api_xml_description) : $(api_text_description) $(APICHECK)
 	$(hide) mkdir -p $(dir $@)
 	$(hide) $(APICHECK_COMMAND) -convert2xml $< $@
 
-cmsdk-test-coverage-report := $(coverage_out)/test-coverage.html
+cmsdk-test-coverage-report := $(coverage_out)/cmsdk-test-coverage.html
 
 cmsdk_tests_apk := $(call intermediates-dir-for,APPS,CMPlatformTests)/package.apk
 cmsdk_api_coverage_dependencies := $(cts_api_coverage_exe) $(dexdeps_exe) $(api_xml_description)
