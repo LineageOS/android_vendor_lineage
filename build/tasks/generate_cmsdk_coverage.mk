@@ -18,7 +18,7 @@
 # Makefile for producing cmsdk coverage reports.
 # Run "make cmsdk-test-coverage" in the $ANDROID_BUILD_TOP directory.
 
-cts_api_coverage_exe := $(HOST_OUT_EXECUTABLES)/cts-api-coverage
+cmsdk_api_coverage_exe := $(HOST_OUT_EXECUTABLES)/cmsdk-api-coverage
 dexdeps_exe := $(HOST_OUT_EXECUTABLES)/dexdeps
 
 coverage_out := $(HOST_OUT)/cmsdk-api-coverage
@@ -34,10 +34,10 @@ cmsdk-test-coverage-report := $(coverage_out)/cmsdk-test-coverage.html
 
 cmsdk_tests_apk := $(call intermediates-dir-for,APPS,CMPlatformTests)/package.apk
 cmsettingsprovider_tests_apk := $(call intermediates-dir-for,APPS,CMSettingsProviderTests)/package.apk
-cmsdk_api_coverage_dependencies := $(cts_api_coverage_exe) $(dexdeps_exe) $(api_xml_description)
+cmsdk_api_coverage_dependencies := $(cmsdk_api_coverage_exe) $(dexdeps_exe) $(api_xml_description)
 
 $(cmsdk-test-coverage-report): PRIVATE_TEST_CASES := $(cmsdk_tests_apk) $(cmsettingsprovider_tests_apk)
-$(cmsdk-test-coverage-report): PRIVATE_CTS_API_COVERAGE_EXE := $(cts_api_coverage_exe)
+$(cmsdk-test-coverage-report): PRIVATE_CMSDK_API_COVERAGE_EXE := $(cmsdk_api_coverage_exe)
 $(cmsdk-test-coverage-report): PRIVATE_DEXDEPS_EXE := $(dexdeps_exe)
 $(cmsdk-test-coverage-report): PRIVATE_API_XML_DESC := $(api_xml_description)
 $(cmsdk-test-coverage-report): $(cmsdk_tests_apk) $(cmsettingsprovider_tests_apk) $(cmsdk_api_coverage_dependencies) | $(ACP)
@@ -58,7 +58,7 @@ endif
 #  3 - Format of the report
 define generate-cm-coverage-report
 	$(hide) mkdir -p $(dir $@)
-	$(hide) $(PRIVATE_CTS_API_COVERAGE_EXE) -d $(PRIVATE_DEXDEPS_EXE) -a $(PRIVATE_API_XML_DESC) -f $(3) -o $@ $(2) -cm
+	$(hide) $(PRIVATE_CMSDK_API_COVERAGE_EXE) -d $(PRIVATE_DEXDEPS_EXE) -a $(PRIVATE_API_XML_DESC) -f $(3) -o $@ $(2) -cm
 	@ echo $(1): file://$(ANDROID_BUILD_TOP)/$@
 endef
 
