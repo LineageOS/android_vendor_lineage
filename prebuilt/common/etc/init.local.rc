@@ -133,6 +133,10 @@ on boot
     chown system system /sys/devices/virtual/graphics/fb0/color_enhance
     chmod 0660 /sys/devices/virtual/graphics/fb0/color_enhance
 
+    # Vibrator intensity control
+    chown system system /sys/class/timed_output/vibrator/vtg_level
+    chmod 0644 /sys/class/timed_output/vibrator/vtg_level
+
     # Define TCP delayed ack settings for WiFi & LTE
     chown system system /sys/kernel/ipv4/tcp_delack_seg
     chown system system /sys/kernel/ipv4/tcp_use_userconfig
