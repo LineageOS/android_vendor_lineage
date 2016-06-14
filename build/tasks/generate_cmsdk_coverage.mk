@@ -59,7 +59,7 @@ endif
 define generate-cm-coverage-report
 	$(hide) mkdir -p $(dir $@)
 	$(hide) $(PRIVATE_CMSDK_API_COVERAGE_EXE) -d $(PRIVATE_DEXDEPS_EXE) -a $(PRIVATE_API_XML_DESC) -f $(3) -o $@ $(2) -cm
-	@ echo $(1): file://$(ANDROID_BUILD_TOP)/$@
+	@ echo $(1): file://$@
 endef
 
 # Reset temp vars
