@@ -144,6 +144,8 @@ Maintainers (CyanogenMod 13.0):
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codyf86
 * __Samsung Galaxy Tab 2 10.1" (GT-P51xx):__ codyf86
 * __Samsung Galaxy Tab Pro 8.4" (SM-T320):__ crpalmer
+* __Samsung Galaxy Tab S2 9.7" (SM-T810):__ raymanfx
+* __Samsung Galaxy Tab S2 9.7 (LTE)" (SM-T815):__ raymanfx
 * __Samsung Vibrant (SGH-T959):__ FaultException
 * __Sony Xperia E3  (flamingo):__ FreeXperia Team
 * __Sony Xperia L (taoshan):__ olivieer, FreeXperia Team
