@@ -106,6 +106,18 @@ on boot
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
     restorecon /sys/block/mmcblk0/queue/scheduler
 
+    chown system system /sys/block/sda/queue/scheduler
+    chmod 0664 /sys/block/sda/queue/scheduler
+    restorecon /sys/block/sda/queue/scheduler
+
+    chown system system /sys/block/sde/queue/scheduler
+    chmod 0664 /sys/block/sde/queue/scheduler
+    restorecon /sys/block/sde/queue/scheduler
+
+    chown system system /sys/block/dm-0/queue/scheduler
+    chmod 0664 /sys/block/dm-0/queue/scheduler
+    restorecon /sys/block/dm-0/queue/scheduler
+
     chown system system /dev/cpuctl/cpu.notify_on_migrate
     chmod 0664 /dev/cpuctl/cpu.notify_on_migrate
 
@@ -171,6 +183,9 @@ on property:persist.radio.noril=1
 # Configure IO scheduler
 on property:sys.io.scheduler=*
     write /sys/block/mmcblk0/queue/scheduler ${sys.io.scheduler}
+    write /sys/block/sda/queue/scheduler ${sys.io.scheduler}
+    write /sys/block/sde/queue/scheduler ${sys.io.scheduler}
+    write /sys/block/dm-0/queue/scheduler ${sys.io.scheduler}
 
 on property:persist.sys.io.scheduler=*
     setprop sys.io.scheduler ${persist.sys.io.scheduler}
@@ -178,8 +193,14 @@ on property:persist.sys.io.scheduler=*
 # Set slice_idle to 0 for CFQ
 on property:sys.io.scheduler=cfq
     write /sys/block/mmcblk0/queue/iosched/slice_idle 0
+    write /sys/block/sda/queue/iosched/slice_idle 0
+    write /sys/block/sde/queue/iosched/slice_idle 0
+    write /sys/block/dm-0/queue/iosched/slice_idle 0
 
 # Set slice_idle to 0 for BFQ
 on property:sys.io.scheduler=bfq
     write /sys/block/mmcblk0/queue/iosched/slice_idle 0
+    write /sys/block/sda/queue/iosched/slice_idle 0
+    write /sys/block/sde/queue/iosched/slice_idle 0
+    write /sys/block/dm-0/queue/iosched/slice_idle 0
 
