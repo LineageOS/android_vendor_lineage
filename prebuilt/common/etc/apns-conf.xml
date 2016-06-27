@@ -1089,7 +1089,6 @@
   <apn carrier="otelo web" mcc="262" mnc="02" apn="data.otelo.de" user="" password="" type="default,supl" />
   <apn carrier="klarmobil MMS" mcc="262" mnc="02" apn="event.vodafone.de" proxy="" port="" user="" password="" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" mvno_type="spn" mvno_match_data="klarmobil" type="mms" />
   <apn carrier="klarmobil" mcc="262" mnc="02" apn="web.vodafone.de" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="klarmobil" type="default,supl" />
-  <apn carrier="Fonic" mcc="262" mnc="02" apn="pinternet.interkom.de" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Otelo MMS" mcc="262" mnc="02" apn="event.otelo.de" proxy="" port="" user="" password="" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" mvno_type="spn" mvno_match_data="O.tel.o" type="mms" />
   <apn carrier="Otelo Internet" mcc="262" mnc="02" apn="data.otelo.de" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="O.tel.o" type="default,supl" />
   <apn carrier="Open Market: E-Plus Web" mcc="262" mnc="03" apn="internet.eplus.de" user="eplus" password="internet" authtype="3" type="default,supl" />
