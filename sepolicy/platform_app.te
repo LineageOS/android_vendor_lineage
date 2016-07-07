@@ -8,3 +8,7 @@ allow platform_app system_app_data_file:file rw_file_perms;
 
 # Allow Gallery3D to execute render scripts
 allow platform_app app_data_file:file execute;
+
+# Allow batterymanager and batteryproperties services to be found
+allow platform_app battery_service:service_manager find;
+allow platform_app healthd_service:service_manager find;
