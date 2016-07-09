@@ -1078,14 +1078,6 @@
   <apn carrier="Lebara Internet" mcc="262" mnc="01" apn="internet.t-d1.de" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Callmobile Internet" mcc="262" mnc="01" apn="internet.t-d1.de" proxy="193.254.160.002" port="9201" user="T-Mobile" password="wap" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="callmobile.de" mcc="262" mnc="01" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" mvno_type="spn" mvno_match_data="callmobile.de" type="default,supl,mms" />
-  <apn carrier="VF DE live!" mcc="262" mnc="02" apn="wap.vodafone.de" proxy="139.007.029.001" port="80" type="default,supl" />
-  <apn carrier="VF DE live! Secure" mcc="262" mnc="02" apn="wap.vodafone.de" proxy="139.007.029.001" port="9203" type="default,supl" />
-  <apn carrier="VF DE Event" mcc="262" mnc="02" apn="event.vodafone.de" type="default,supl" />
-  <apn carrier="VF DE Web" mcc="262" mnc="02" apn="web.vodafone.de" proxy="" port="" type="default,supl" />
-  <apn carrier="VF DE MMS" mcc="262" mnc="02" apn="event.vodafone.de" proxy="" port="" mmsproxy="139.007.029.017" mmsport="80" mmsc="http://139.7.24.1/servlets/mms" user="" password="" type="mms" />
-  <apn carrier="Vodafone DE-MMS" mcc="262" mnc="02" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
-  <apn carrier="Vodafone DE" mcc="262" mnc="02" apn="web.vodafone.de" type="default,supl" />
-  <apn carrier="Vodafone DE-IMS" mcc="262" mnc="02" apn="ims" type="ims" protocol="IPV4V6" />
   <apn carrier="otelo web" mcc="262" mnc="02" apn="data.otelo.de" user="" password="" type="default,supl" />
   <apn carrier="klarmobil MMS" mcc="262" mnc="02" apn="event.vodafone.de" proxy="" port="" user="" password="" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" mvno_type="spn" mvno_match_data="klarmobil" type="mms" />
   <apn carrier="klarmobil" mcc="262" mnc="02" apn="web.vodafone.de" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="klarmobil" type="default,supl" />
@@ -1104,13 +1096,6 @@
   <apn carrier="Aldi Talk Internet" mcc="262" mnc="03" apn="internet.eplus.de" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Aldi Talk" type="default,supl" />
   <apn carrier="Simyo MMS" mcc="262" mnc="03" apn="mms.eplus.de" proxy="" port="" user="simyo" password="simyo" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" mvno_type="spn" mvno_match_data="Simyo" type="mms" />
   <apn carrier="Simyo Internet" mcc="262" mnc="03" apn="internet.eplus.de" proxy="" port="" user="simyo" password="simyo" mmsc="" mvno_type="spn" mvno_match_data="Simyo" type="default,supl" />
-  <apn carrier="VF DE live!" mcc="262" mnc="04" apn="wap.vodafone.de" proxy="139.007.029.001" port="80" type="default,supl" />
-  <apn carrier="VF DE live! Secure" mcc="262" mnc="04" apn="wap.vodafone.de" proxy="139.007.029.001" port="9203" type="default,supl" />
-  <apn carrier="VF DE Event" mcc="262" mnc="04" apn="event.vodafone.de" type="default,supl" />
-  <apn carrier="VF DE Web" mcc="262" mnc="04" apn="web.vodafone.de" proxy="" port="" type="default,supl" />
-  <apn carrier="VF DE MMS" mcc="262" mnc="04" apn="event.vodafone.de" proxy="" port="" mmsproxy="139.007.029.017" mmsport="80" mmsc="http://139.7.24.1/servlets/mms" user="" password="" type="mms" />
-  <apn carrier="Vodafone DE-MMS" mcc="262" mnc="04" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
-  <apn carrier="Vodafone DE" mcc="262" mnc="04" apn="web.vodafone.de" type="default,supl" />
   <apn carrier="E-Plus Web GPRS" mcc="262" mnc="05" apn="internet.eplus.de" proxy="" port="" user="eplus" password="internet" mmsc="" type="default,supl" />
   <apn carrier="E-Plus MMS" mcc="262" mnc="05" apn="mms.eplus.de" proxy="" port="" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
   <apn carrier="T-Mobile Internet" mcc="262" mnc="06" apn="internet.t-mobile" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="default,supl,mms" />
@@ -1144,16 +1129,10 @@
   <apn carrier="Alice MMS" mcc="262" mnc="08" apn="internet.partner1" proxy="" port="" mmsproxy="82.113.100.41" mmsport="8080" mmsc="http://10.81.0.7:8002" user="" password="" type="mms" spn="Alice Mobile" />
   <apn carrier="o2" mcc="262" mnc="08" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
   <apn carrier="O2" mcc="262" mnc="08" apn="internet" proxy="" port="" user="" password="" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="VF DE live!" mcc="262" mnc="09" apn="wap.vodafone.de" proxy="139.007.029.001" port="80" type="default,supl" />
-  <apn carrier="VF DE live! Secure" mcc="262" mnc="09" apn="wap.vodafone.de" proxy="139.007.029.001" port="9203" type="default,supl" />
-  <apn carrier="VF DE Event" mcc="262" mnc="09" apn="event.vodafone.de" type="default,supl" />
-  <apn carrier="VF DE Web" mcc="262" mnc="09" apn="web.vodafone.de" proxy="" port="" type="default,supl" />
-  <apn carrier="VF DE MMS" mcc="262" mnc="09" apn="event.vodafone.de" proxy="" port="" mmsproxy="139.007.029.017" mmsport="80" mmsc="http://139.7.24.1/servlets/mms" user="" password="" type="mms" />
-  <apn carrier="Vodafone DE-MMS" mcc="262" mnc="09" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
-  <apn carrier="Vodafone DE" mcc="262" mnc="09" apn="web.vodafone.de" type="default,supl" />
+  <apn carrier="Vodafone DE Web" mcc="262" mnc="02" apn="web.vodafone.de" proxy="" port="" type="default,supl" />
+  <apn carrier="Vodafone DE MMS" mcc="262" mnc="02" apn="event.vodafone.de" proxy="" port="" mmsproxy="139.007.029.017" mmsport="80" mmsc="http://139.7.24.1/servlets/mms" user="" password="" type="mms" />
+  <apn carrier="Vodafone DE-IMS" mcc="262" mnc="02" apn="ims" type="ims" protocol="IPV4V6" />
   <apn carrier="T-Mobile DE" mcc="262" mnc="09" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="default,supl,mms" />
-  <apn carrier="Vodafone DE-MMS" mcc="262" mnc="09" apn="event.vodafone.de" proxy="" port="" user="" password="" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
-  <apn carrier="Vodafone DE" mcc="262" mnc="09" apn="web.vodafone.de" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="o2 Internet" mcc="262" mnc="11" apn="internet" user="" password="" type="default,supl" />
   <apn carrier="o2 Internet prepaid" mcc="262" mnc="11" apn="pinternet.interkom.de" user="" password="" type="default,supl" />
   <apn carrier="o2 MMS" mcc="262" mnc="11" apn="internet" proxy="" port="" mmsproxy="82.113.100.5" mmsport="8080" mmsc="http://10.81.0.7:8002" user="" password="" type="mms" />
