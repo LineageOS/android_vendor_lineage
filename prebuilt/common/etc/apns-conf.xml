@@ -1511,6 +1511,10 @@
   <apn carrier="Cellular One Smartphone" mcc="310" mnc="570" apn="internet" type="default,supl" authtype="0" />
   <apn carrier="Cellular One MMS" mcc="310" mnc="570" apn="clearsky" mmsc="http://mmsc.mtpcs.csky.us:6672/" mmsproxy="209.4.229.229" mmsport="9201" type="mms" authtype="0" />
   <apn carrier="ChinookMMS" mcc="310" mnc="570" apn="wapgw.chinookwireless.net" proxy="" port="" user="" password="" mmsc="http://mms.cellonenation.net/mms/" mmsproxy="204.181.155.195" mmsport="8080" type="mms" />
+  <apn carrier="Inland Cellular" mcc="310" mnc="580" apn="internet.inland.com" type="default,mms" authtype="3" mmsc="http://mms.inland3g.com/inland/mms.php" />
+  <apn carrier="Inland Cellular FOTA" mcc="310" mnc="580" apn="ota.inland.com" type="fota" bearer="14" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Inland Cellular LTE" mcc="310" mnc="580" apn="internet.inland.com" type="default,mms,supl" bearer="14" protocol="IPV4V6" roaming_protocol="IPV4V6" mmsc="http://mms.inland3g.com/inland/mms.php" />
+  <apn carrier="Inland Cellular Tether" mcc="310" mnc="580" apn="modem.inland.com" type="dun" bearer="14" protocol="IPV4V6" roaming_protocol="IPV4V6" mmsc="http://mms.inland3g.com/inland/mms.php" />
   <apn carrier="CellularOne MMS" mcc="310" mnc="590" apn="cellular1wap" proxy="" port="" user="" password="" mmsc="http://mmsc" mmsproxy="172.23.1.252" mmsport="8799" type="mms" />
   <apn carrier="EpicINT" mcc="310" mnc="610" apn="internet.epictouch" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="EpicMMS" mcc="310" mnc="610" apn="mms.epictouch" proxy="" port="" user="" password="" mmsc="http://mmsc.westlinkcom.com/servlets/mms" mmsproxy="63.99.231.135" mmsport="8080" type="mms" />
