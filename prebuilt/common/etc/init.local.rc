@@ -187,6 +187,7 @@ on property:persist.radio.noril=1
 # Configure IO scheduler
 on property:sys.io.scheduler=*
     write /sys/block/mmcblk0/queue/scheduler ${sys.io.scheduler}
+    write /sys/block/mmcblk1/queue/scheduler ${sys.io.scheduler}
     write /sys/block/sda/queue/scheduler ${sys.io.scheduler}
     write /sys/block/sde/queue/scheduler ${sys.io.scheduler}
     write /sys/block/dm-0/queue/scheduler ${sys.io.scheduler}
@@ -197,6 +198,7 @@ on property:persist.sys.io.scheduler=*
 # Set slice_idle to 0 for CFQ
 on property:sys.io.scheduler=cfq
     write /sys/block/mmcblk0/queue/iosched/slice_idle 0
+    write /sys/block/mmcblk1/queue/iosched/slice_idle 0
     write /sys/block/sda/queue/iosched/slice_idle 0
     write /sys/block/sde/queue/iosched/slice_idle 0
     write /sys/block/dm-0/queue/iosched/slice_idle 0
@@ -204,6 +206,7 @@ on property:sys.io.scheduler=cfq
 # Set slice_idle to 0 for BFQ
 on property:sys.io.scheduler=bfq
     write /sys/block/mmcblk0/queue/iosched/slice_idle 0
+    write /sys/block/mmcblk1/queue/iosched/slice_idle 0
     write /sys/block/sda/queue/iosched/slice_idle 0
     write /sys/block/sde/queue/iosched/slice_idle 0
     write /sys/block/dm-0/queue/iosched/slice_idle 0
