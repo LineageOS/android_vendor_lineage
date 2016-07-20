@@ -1,1 +1,1 @@
-allow drmserver theme_data_file:file r_file_perms;
+allow drmserver themeservice_app_data_file:file r_file_perms;
