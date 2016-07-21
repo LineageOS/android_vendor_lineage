@@ -290,7 +290,6 @@ function write_product_packages() {
     local LIB32=( $(comm -23 <(printf '%s\n'  "${T_LIB32[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
     local LIB64=( $(comm -23 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
 
-    echo "lib64: ${LIB64[@]}"
     if [ "${#MULTILIBS[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "false" "false" "both" "MULTILIBS" >> "$ANDROIDMK"
     fi
