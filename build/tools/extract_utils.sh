@@ -288,15 +288,16 @@ function write_product_packages() {
     local T_LIB64=( $(prefix_match "lib64/") )
     local MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_LIB32[@]}") <(printf '%s\n' "${T_LIB64[@]}")) )
     local LIB32=( $(comm -23 <(printf '%s\n'  "${T_LIB32[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
-    local LIB64=( $(comm -13 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
+    local LIB64=( $(comm -23 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
 
+    echo "lib64: ${LIB64[@]}"
     if [ "${#MULTILIBS[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "false" "false" "both" "MULTILIBS" >> "$ANDROIDMK"
     fi
     if [ "${#LIB32[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "false" "false" "32" "LIB32" >> "$ANDROIDMK"
     fi
-    if [ ! "${#LIB64[@]}" -gt "0" ]; then
+    if [ "${#LIB64[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "false" "false" "64" "LIB64" >> "$ANDROIDMK"
     fi
 
@@ -304,7 +305,7 @@ function write_product_packages() {
     local T_V_LIB64=( $(prefix_match "vendor/lib64/") )
     local V_MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${T_V_LIB64[@]}")) )
     local V_LIB32=( $(comm -23 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
-    local V_LIB64=( $(comm -13 <(printf '%s\n' "${T_V_LIB64[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
+    local V_LIB64=( $(comm -23 <(printf '%s\n' "${T_V_LIB64[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
 
     if [ "${#V_MULTILIBS[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "true" "false" "both" "V_MULTILIBS" >> "$ANDROIDMK"
