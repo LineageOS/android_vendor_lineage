@@ -43,7 +43,7 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 
 LOCAL_MAVEN_REPO := https://maven.cyanogenmod.org/artifactory/gello_prebuilds
 LOCAL_MAVEN_GROUP := org.cyanogenmod
-LOCAL_MAVEN_VERSION := 20
+LOCAL_MAVEN_VERSION := 26
 LOCAL_MAVEN_ARTIFACT := gello
 LOCAL_MAVEN_PACKAGING := apk
 
