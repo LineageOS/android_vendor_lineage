@@ -1,0 +1,2 @@
+# used by sdcardfs to read package list
+allow kernel system_data_file:file open;
