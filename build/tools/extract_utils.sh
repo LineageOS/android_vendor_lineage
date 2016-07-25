@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES_LIST=()
 PRODUCT_PACKAGES_LIST=()
 PACKAGE_LIST=()
 VENDOR_STATE=-1
+VENDOR_RADIO_STATE=-1
 COMMON=-1
 ARCHES=
 FULLY_DEODEXED=-1
@@ -74,8 +75,10 @@ function setup_vendor() {
 
     if [ "$5" == "true" ] || [ "$5" == "1" ]; then
         VENDOR_STATE=1
+        VENDOR_RADIO_STATE=1
     else
         VENDOR_STATE=0
+        VENDOR_RADIO_STATE=0
     fi
 }
 
@@ -538,6 +541,26 @@ function write_makefiles() {
 }
 
 #
+# append_firmware_calls_to_makefiles:
+#
+# Appends to Android.mk the calls to all images present in radio folder
+# (filesmap file used by releasetools to map firmware images should be kept in the device tree)
+#
+function append_firmware_calls_to_makefiles() {
+    cat << EOF >> "$ANDROIDMK"
+ifeq (\$(LOCAL_PATH)/radio, \$(wildcard \$(LOCAL_PATH)/radio))
+
+RADIO_FILES := \$(wildcard \$(LOCAL_PATH)/radio/*)
+\$(foreach f, \$(notdir \$(RADIO_FILES)), \\
+    \$(call add-radio-file,radio/\$(f)))
+\$(call add-radio-file,../../../device/$VENDOR/$DEVICE/radio/filesmap)
+
+endif
+
+EOF
+}
+
+#
 # get_file:
 #
 # $1: input file
@@ -769,4 +792,46 @@ function extract() {
 
     # Don't allow failing
     set -e
+}
+
+#
+# extract_firmware:
+#
+# $1: file containing the list of items to extract
+# $2: path to extracted radio folder
+#
+function extract_firmware() {
+    if [ -z "$OUTDIR" ]; then
+        echo "Output dir not set!"
+        exit 1
+    fi
+
+    parse_file_list "$1"
+
+    # Don't allow failing
+    set -e
+
+    local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} )
+    local COUNT=${#FILELIST[@]}
+    local SRC="$2"
+    local OUTPUT_DIR="$CM_ROOT"/"$OUTDIR"/radio
+
+    if [ "$VENDOR_RADIO_STATE" -eq "0" ]; then
+        echo "Cleaning firmware output directory ($OUTPUT_DIR).."
+        rm -rf "${OUTPUT_DIR:?}/"*
+        VENDOR_RADIO_STATE=1
+    fi
+
+    echo "Extracting $COUNT files in $1 from $SRC:"
+
+    for (( i=1; i<COUNT+1; i++ )); do
+        local FILE="${FILELIST[$i-1]}"
+        printf '  - %s \n' "/radio/$FILE"
+
+        if [ ! -d "$OUTPUT_DIR" ]; then
+            mkdir -p "$OUTPUT_DIR"
+        fi
+        cp "$SRC/$FILE" "$OUTPUT_DIR/$FILE"
+        chmod 644 "$OUTPUT_DIR/$FILE"
+    done
 }
