@@ -7,3 +7,5 @@ allow system_server persist_property_file:dir rw_dir_perms;
 allow system_server persist_property_file:file { create_file_perms unlink };
 
 allow system_server storage_stub_file:dir { getattr };
+
+allow system_server media_rw_data_file:dir r_dir_perms;
