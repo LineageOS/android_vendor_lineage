@@ -55,10 +55,3 @@
 
 # bash
 /system/xbin/bash                               u:object_r:shell_exec:s0
-
-# emulated storage via sdcardfs
-/mnt/runtime/(default|read|write)/emulated/[0-9](/.*)?  u:object_r:media_rw_data_file:s0
-/storage/emulated/[0-9](/.*)?                           u:object_r:media_rw_data_file:s0
-/mnt/shell/emulated/([1-9])?[0-9](/.*)?                 u:object_r:media_rw_data_file:s0
-/data/media\.tmp(/.*)?                                  u:object_r:media_rw_data_file:s0
-
