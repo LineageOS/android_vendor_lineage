@@ -500,11 +500,18 @@ function _adb_connected {
 };
 
 #
-# parse_file_list
+# parse_file_list:
+#
+# $1: input file
+#
+# Sets PRODUCT_PACKAGES and PRODUCT_COPY_FILES while parsing the input file
 #
 function parse_file_list() {
-    if [ ! -e "$1" ]; then
-        echo "$1 does not exist!"
+    if [ -z "$1" ]; then
+        echo "An input file is expected!"
+        exit 1
+    elif [ ! -f "$1" ]; then
+        echo "Input file "$1" does not exist!"
         exit 1
     fi
 
@@ -534,10 +541,6 @@ function parse_file_list() {
 # the product makefile.
 #
 function write_makefiles() {
-    if [ ! -e "$1" ]; then
-        echo "$1 does not exist!"
-        exit 1
-    fi
     parse_file_list "$1"
     write_product_copy_files
     write_product_packages
@@ -580,11 +583,6 @@ function init_adb_connection() {
 # $2: path to extracted system folder, or "adb" to extract from device
 #
 function extract() {
-    if [ ! -e "$1" ]; then
-        echo "$1 does not exist!"
-        exit 1
-    fi
-
     if [ -z "$OUTDIR" ]; then
         echo "Output dir not set!"
         exit 1
