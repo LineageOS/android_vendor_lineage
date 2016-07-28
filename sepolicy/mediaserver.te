@@ -1,3 +1,6 @@
 # Themed resources (i.e. composed icons)
 allow mediaserver theme_data_file:dir r_dir_perms;
 allow mediaserver theme_data_file:file r_file_perms;
+
+# For camera
+allow mediaserver media_rw_data_file:file write;
