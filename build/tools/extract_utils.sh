@@ -224,7 +224,7 @@ function write_packages() {
             else
                 printf 'LOCAL_SRC_FILES := %s/lib/%s\n' "$SRC" "$FILE"
             fi
-            if [ ! -z "$EXTRA" ]; then
+            if [ "$EXTRA" != "none" ]; then
                 printf 'LOCAL_MULTILIB := %s\n' "$EXTRA"
             fi
         elif [ "$CLASS" = "APPS" ]; then
@@ -299,41 +299,27 @@ function write_product_packages() {
     local LIB32=( $(comm -23 <(printf '%s\n'  "${T_LIB32[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
     local LIB64=( $(comm -23 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
 
+    if [ "${#MULTILIBS[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "false" "both" "MULTILIBS" >> "$ANDROIDMK"
+    fi
+    if [ "${#LIB32[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "false" "32" "LIB32" >> "$ANDROIDMK"
+    fi
+    if [ "${#LIB64[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "false" "64" "LIB64" >> "$ANDROIDMK"
+    fi
+
     local T_V_LIB32=( $(prefix_match "vendor/lib/") )
     local T_V_LIB64=( $(prefix_match "vendor/lib64/") )
     local V_MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${T_V_LIB64[@]}")) )
     local V_LIB32=( $(comm -23 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
     local V_LIB64=( $(comm -23 <(printf '%s\n' "${T_V_LIB64[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
 
-    local USE_MULTILIB=0
-    if [ "${#MULTILIBS[@]}" -gt "0" -o "${#LIB64[@]}" -gt "0" \
-            -o "${#V_MULTILIBS[@]}" -gt "0" -o "${#V_LIB64[@]}" -gt "0" ] ; then
-        USE_MULTILIB=1
-    fi
-
-    if [ "${#MULTILIBS[@]}" -gt "0" ]; then
-        write_packages "SHARED_LIBRARIES" "false" "both" "MULTILIBS" >> "$ANDROIDMK"
-    fi
-    if [ "${#LIB32[@]}" -gt "0" ]; then
-        local EXTRA=
-        if [ "$USE_MULTILIB" -eq "1" ]; then
-            EXTRA="32"
-        fi
-        write_packages "SHARED_LIBRARIES" "false" "$EXTRA" "LIB32" >> "$ANDROIDMK"
-    fi
-    if [ "${#LIB64[@]}" -gt "0" ]; then
-        write_packages "SHARED_LIBRARIES" "false" "64" "LIB64" >> "$ANDROIDMK"
-    fi
-
     if [ "${#V_MULTILIBS[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "true" "both" "V_MULTILIBS" >> "$ANDROIDMK"
     fi
     if [ "${#V_LIB32[@]}" -gt "0" ]; then
-        local EXTRA=
-        if [ "$USE_MULTILIB" -eq "1" ]; then
-            EXTRA="32"
-        fi
-        write_packages "SHARED_LIBRARIES" "true" "$EXTRA" "V_LIB32" >> "$ANDROIDMK"
+        write_packages "SHARED_LIBRARIES" "true" "32" "V_LIB32" >> "$ANDROIDMK"
     fi
     if [ "${#V_LIB64[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "true" "64" "V_LIB64" >> "$ANDROIDMK"
