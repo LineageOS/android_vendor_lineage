@@ -89,6 +89,7 @@ Maintainers (CyanogenMod 13.0):
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __OnePlus One:__ cyanogen, intervigil, inwotep, arcee
+* __OnePlus Two:__ ciwrl, grarak, raymanfx
 * __OnePlus X:__ ashwin007, MasterAwesome
 * __Oppo Find 5:__ intervigil, nebkat, raymanfx
 * __Oppo Find 7:__ intervigil, tdm, inwotep, mikeioannina
