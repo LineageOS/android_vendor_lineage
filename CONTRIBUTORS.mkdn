@@ -26,6 +26,7 @@ Maintainers (CyanogenMod 13.0):
 * __Google Nexus 6:__ dhacker29
 * __Google Nexus 6P:__ ciwrl, dhacker29, Sam Mortimer
 * __Google Nexus 7:__ burnsra, fattire, Thömy, nemith, JoeyRizzoli (GSM)
+* __Google Nexus 7 (2013):__ ciwrl, nardholio, zwliew
 * __Google Nexus 9:__ simonsickle, ciwrl
 * __Google Nexus 10:__ Tortel, ciwrl
 * __Google Nexus Player:__ dhacker29, bmc08gt
@@ -133,13 +134,13 @@ Maintainers (CyanogenMod 13.0):
 * __Samsung Galaxy S IV (Sprint) (SPH-L720):__ noobnl
 * __Samsung Galaxy S IV (T-Mobile) (SGH-M919):__ dcd
 * __Samsung Galaxy S IV (Verizon) (SCH-I545):__ invisiblek
-* __Samsung Galaxy S IV LTE (GT-I9505):__ AntaresOne
+* __Samsung Galaxy S IV LTE (GT-I9505):__ AntaresOne, invisiblek, dcd, zwliew
 * __Samsung Galaxy S IV LTE-A (GT-I9506):__ solk2
 * __Samsung Galaxy S IV Mini 3G (GT-I9190):__ arco
 * __Samsung Galaxy S IV Mini LTE (GT-I9195):__ arco
 * __Samsung Galaxy S V (AU) (SCL23):__ scoty755
 * __Samsung Galaxy S V (Vodafone) (SM-G900I):__ Regi24
-* __Samsung Galaxy S V LTE (SM-G900F):__ Albinoman887
+* __Samsung Galaxy S V LTE (SM-G900F):__ haggertk, OzzysCmAcc
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codyf86
@@ -174,6 +175,7 @@ Maintainers (CyanogenMod 13.0):
 * __Sony Z Ultra GPE (togari_gpe):__ FreeXperia Team
 * __Xiaomi Mi2(s) (aries):__ Michael Zimmermann
 * __Xiaomi Mi3/4 (cancro):__ JoeyRizzoli
+* __Xiaomi Redmi Note 3 (kenzo):__ TheStrix
 * __ZTE Nubia Z9 Max (nx510j):__ dianlujitao
 
 FreeXperia Team:
