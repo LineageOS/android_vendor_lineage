@@ -160,10 +160,11 @@ Maintainers (CyanogenMod 13.0):
 * __Sony Xperia M (nicki):__ RonG, FreeXperia Team
 * __Sony Xperia M2 (eagle):__ FreeXperia Team
 * __Sony Xperia SP (huashan):__ AdrianDC
-* __Sony Xperia T (mint):__ FreeXperia Team, tilal6991, uberlaggydarwin
+* __Sony Xperia T (mint):__ AdrianDC, FreeXperia Team
 * __Sony Xperia T2 Ultra  (tianchi):__ FreeXperia Team
 * __Sony Xperia T3  (seagull):__ FreeXperia Team
-* __Sony Xperia V (tsubasa):__ FreeXperia Team, tilal6991, championswimmer, uberlaggydarwin
+* __Sony Xperia TX (hayabusa):__ AdrianDC, FreeXperia Team
+* __Sony Xperia V (tsubasa):__ AdrianDC, FreeXperia Team
 * __Sony Xperia Z (yuga):__ FreeXperia Team, Turl, olivieer
 * __Sony Xperia ZL (odin):__  FreeXperia Team
 * __Sony Xperia ZR (dogo):__  FreeXperia Team
