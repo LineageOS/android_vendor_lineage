@@ -56,6 +56,7 @@ Maintainers (CyanogenMod 13.0):
 * __LG G2 (Canada) (D803):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (Sprint) (LS980):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (Verizon) (VS980):__ arcee, Rashed97, Shelnutt2
+* __LG G2 Mini:__ Quarx2k, vm03, NikitaProAndroid
 * __LG G3 (AT&T) (D850):__
 * __LG G3 (T-Mobile) (D851):__ bryan2894
 * __LG G3 (Canada) (D852):__ cuzz1369
@@ -63,8 +64,12 @@ Maintainers (CyanogenMod 13.0):
 * __LG G3 (Korea) (F400):__ TheNoFace
 * __LG G3 (Sprint) (LS990):__ Kasual
 * __LG G3 (Verizon) (VS985):__ invisiblek
+* __LG G3 Beat (D722):__ Quarx2k, vm03, NikitaProAndroid
+* __LG G3 s (D724):__ Quarx2k, vm03, NikitaProAndroid
 * __LG G4 (T-Mobile) (H811):__ codeworkx, genesixxbf3
 * __LG G4 (International) (H815):__ codeworkx, genesixxbf3
+* __LG Optimus L70:__ Quarx2k, vm03, NikitaProAndroid
+* __LG Optimus L90:__ Quarx2k, vm03, NikitaProAndroid
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
 * __LG V10 (T-Mobile) (H901):__ genesixxbf3
