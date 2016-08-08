@@ -19,7 +19,7 @@ Maintainers (CyanogenMod 13.0):
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __B&N Nook Tablet (acclaim):__  chrmhoffmann
 * __Google Android One:__ varunchitre15
-* __Google Galaxy Nexus:__ bekit, Bumble-Bee, burnsra, KalimochoAz, something15525
+* __Google Galaxy Nexus:__ Ziyan, musical_chairs
 * __Google Nexus S:__ burnsra, KalimochoAz, klusark
 * __Google Nexus 4:__ ciwrl
 * __Google Nexus 5:__ ciwrl
