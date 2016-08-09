@@ -1,6 +1,2 @@
 # Various knobs used by LiveDisplay
 allow system_server livedisplay_sysfs:file rw_file_perms;
-
-# Storage of default mode
-allow system_server display_misc_file:dir r_dir_perms;
-allow system_server display_misc_file:file create_file_perms;
