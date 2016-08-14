@@ -258,10 +258,12 @@ static void *alarm_thread(void *)
      * set by user
      */
     rc = alarm_get_time(ALARM_TIME, &alm_secs);
+    LOGI("RTC Alarm %ld\n", alm_secs);
     if (rc < 0 || !alm_secs)
         goto err;
 
     rc = alarm_get_time(RTC_TIME, &rtc_secs);
+    LOGI("RTC Clock %ld\n", rtc_secs);
     if (rc < 0)
         goto err;
 
