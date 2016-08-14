@@ -365,9 +365,49 @@ void healthd_board_mode_charger_battery_update(
 {
 }
 
+#ifdef HEALTHD_BACKLIGHT_PATH
+#ifndef HEALTHD_BACKLIGHT_LEVEL
+#define HEALTHD_BACKLIGHT_LEVEL 100
+#endif
+
+void healthd_board_mode_charger_set_backlight(bool on)
+{
+    int fd;
+    char buffer[10];
+
+    memset(buffer, '\0', sizeof(buffer));
+    fd = open(HEALTHD_BACKLIGHT_PATH, O_RDWR);
+    if (fd < 0) {
+        LOGE("Could not open backlight node : %s\n", strerror(errno));
+        return;
+    }
+    LOGV("Enabling backlight\n");
+    snprintf(buffer, sizeof(buffer), "%d\n", on ? HEALTHD_BACKLIGHT_LEVEL : 0);
+    if (write(fd, buffer, strlen(buffer)) < 0) {
+        LOGE("Could not write to backlight : %s\n", strerror(errno));
+    }
+    close(fd);
+
+#ifdef HEALTHD_SECONDARY_BACKLIGHT_PATH
+    fd = open(HEALTHD_SECONDARY_BACKLIGHT_PATH, O_RDWR);
+    if (fd < 0) {
+        LOGE("Could not open second backlight node : %s\n", strerror(errno));
+        return;
+    }
+    LOGV("Enabling secondary backlight\n");
+    if (write(fd, buffer, strlen(buffer)) < 0) {
+        LOGE("Could not write to second backlight : %s\n", strerror(errno));
+        return;
+    }
+    close(fd);
+#endif
+}
+
+#else
 void healthd_board_mode_charger_set_backlight(bool)
 {
 }
+#endif
 
 void healthd_board_mode_charger_init(void)
 {
