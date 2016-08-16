@@ -79,16 +79,19 @@ static int draw_surface_centered(GRSurface* surface)
 #define STR_LEN 64
 static void draw_capacity(int capacity)
 {
-    struct frame *f = &anim.frames[0];
-    int w = gr_get_width(f->surface);
-    int h = gr_get_height(f->surface);
-    int x = (gr_fb_width() - w) / 2 ;
-    int y = (gr_fb_height() + h) / 2;
-
     char cap_str[STR_LEN];
     snprintf(cap_str, (STR_LEN - 1), "%d%%", capacity);
+
+    struct frame *f = &anim.frames[0];
+    int font_x, font_y;
+    gr_font_size(&font_x, &font_y);
+    int w = gr_measure(cap_str);
+    int h = gr_get_height(f->surface);
+    int x = (gr_fb_width() - w) / 2;
+    int y = (gr_fb_height() + h) / 2;
+
     gr_color(255, 255, 255, 255);
-    gr_text(x, y * 1.05, cap_str, 0);
+    gr_text(x, y + font_y / 2, cap_str, 0);
 }
 
 #ifdef QCOM_HARDWARE
