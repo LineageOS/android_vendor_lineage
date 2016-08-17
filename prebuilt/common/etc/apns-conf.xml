@@ -64,12 +64,12 @@
   <apn carrier="EHRPD - VZW Roaming IMS" mcc="204" mnc="04" apn="VZWIMS" type="ims,ia" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="13" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="2" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
   <apn carrier="LTE - VZW Roaming CBS" mcc="204" mnc="04" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="4" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
   <apn carrier="EHRPD - VZW Roaming CBS" mcc="204" mnc="04" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="13" mvno_type="gid" mvno_match_data="BAE0000000000000" profile_id="4" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
-  <apn carrier="hollandsnieuwe int." mcc="204" mnc="04" apn="data.dataxs.mobi" type="default,supl" />
   <apn carrier="Vodafone MMS Business" mcc="204" mnc="04" apn="office.vodafone.nl" user="vodafone" password="vodafone" mmsc="http://mmsc.mms.vodafone.nl" mmsproxy="192.168.251.150" mmsport="8799" type="mms" />
   <apn carrier="中国电信NET设置" mcc="204" mnc="04" apn="ctnet" user="ctnet@mycdma.cn" password="vnet.mobi" authtype="3" type="default,supl,dun" />
   <apn carrier="中国电信WAP设置" mcc="204" mnc="04" apn="ctwap" user="ctwap@mycdma.cn" password="vnet.mobi" proxy="10.0.0.200" port="80" mmsproxy="10.0.0.200" mmsport="80" mmsc="http://mmsc.vnet.mobi" authtype="3" type="default,supl,dun,mms" />
   <apn carrier="Ziggo Mobiel" mcc="204" mnc="04" apn="ziggo.dataxs.mobi" authtype="1" type="default,supl" />
-  <apn carrier="Hollandsnieuwe" mcc="204" mnc="04" apn="data.dataxs.mobi" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="hollandsnieuwe (type 1)" mcc="204" mnc="04" apn="data.dataxs.mobi" proxy="" port="" user="hollandsnieuwe" password="hollandsnieuwe" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="hollandsnieuwe (type 2)" mcc="204" mnc="04" apn="live.vodafone.com" user="vodafone" password="vodafone" authtype="1" type="default,supl" />
   <apn carrier="Truphone" mcc="204" mnc="04" apn="truphone.com" type="default,dun" mvno_match_data="204043914" mvno_type="imsi" />
   <apn carrier="Truphone" mcc="204" mnc="04" apn="truphone.com" type="default,dun" mvno_match_data="20404794" mvno_type="imsi" />
   <apn carrier="KPN 4G LTE" mcc="204" mnc="08" apn="KPN4G.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
