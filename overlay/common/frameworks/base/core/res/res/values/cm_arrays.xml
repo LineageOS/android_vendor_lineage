@@ -19,5 +19,6 @@
         <item>com.cyanogen.ambient.core</item>
         <item>com.cyanogen.ambient.updater</item>
         <item>com.cyngn.devicemanager</item>
+        <item>com.cyngn.discovery</item>
     </string-array>
 </resources>
