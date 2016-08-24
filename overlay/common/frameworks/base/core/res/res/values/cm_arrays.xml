@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!--
     <string-array name="config_enabledPreinstalledCarrierApps" translatable="false">
         <item>com.cyanogen.ambient.core</item>
         <item>com.cyanogen.ambient.updater</item>
         <item>com.cyngn.devicemanager</item>
         <item>com.cyngn.discovery</item>
     </string-array>
+-->
 </resources>
