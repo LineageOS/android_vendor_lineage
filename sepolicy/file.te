@@ -1,8 +1,6 @@
 # Support asec containers getting mounted
 allow file_type rootfs:filesystem associate;
 
-type auditd_log, file_type, data_file_type;
-
 # Themes
 type themeservice_app_data_file, file_type, data_file_type;
 
