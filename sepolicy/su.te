@@ -66,4 +66,7 @@ userdebug_or_eng(`
   allow system_app superuser_device:dir { create rw_dir_perms setattr unlink };
 
   allow kernel sudaemon:fd { use };
+
 ')
+
+neverallow { domain userdebug_or_eng(`-dumpstate -shell -su -untrusted_app -init -sudaemon') } su_exec:file no_x_file_perms;

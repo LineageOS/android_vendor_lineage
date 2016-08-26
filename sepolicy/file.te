@@ -17,3 +17,8 @@ type persist_property_file, file_type;
 
 # Knobs for LiveDisplay
 type livedisplay_sysfs, sysfs_type, file_type;
+
+# Filesystems
+type exfat, sdcard_type, fs_type, mlstrustedobject;
+type fuseblk, sdcard_type, fs_type, mlstrustedobject;
+type ntfs, sdcard_type, fs_type, mlstrustedobject;

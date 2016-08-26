@@ -1,8 +1,3 @@
-# Access OBBs (sdcard_posix) mounted by vold
-# File write access allowed for FDs returned through Storage Access Framework
-allow appdomain sdcard_posix:dir r_dir_perms;
-allow appdomain sdcard_posix:file rw_file_perms;
-
 # Themed resources (i.e. composed icons)
 allow appdomain themeservice_app_data_file:dir r_dir_perms;
 allow appdomain themeservice_app_data_file:file r_file_perms;

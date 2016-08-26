@@ -1,11 +1,11 @@
 domain_trans(init, rootfs, vold)
 
 # Allow vold to manage ASEC
-allow vold sdcard_external:file create_file_perms;
+allow vold sdcard_type:file create_file_perms;
 allow vold vold_tmpfs:file create_file_perms;
 
 # Allow vold to access fuse for fuse-based fs
-allow vold fuse_device:chr_file rw_file_perms;
+allow vold fuseblk:chr_file rw_file_perms;
 
 # NTFS-3g wants to drop permission
 allow vold self:capability { setgid setuid };

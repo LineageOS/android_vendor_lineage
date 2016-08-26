@@ -24,8 +24,8 @@ allow recovery media_rw_data_file:dir r_dir_perms;
 allow recovery media_rw_data_file:file r_file_perms;
 allow recovery vfat:dir r_dir_perms;
 allow recovery vfat:file r_file_perms;
-allow recovery sdcard_posix:dir r_dir_perms;
-allow recovery sdcard_posix:file r_file_perms;
+allow recovery sdcard_type:dir r_dir_perms;
+allow recovery sdcard_type:file r_file_perms;
 
 # Control properties
 allow recovery recovery_prop:property_service set;

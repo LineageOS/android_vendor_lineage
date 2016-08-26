@@ -8,6 +8,3 @@ allow dumpstate fuse:file r_file_perms;
 allow dumpstate themeservice_app_data_file:dir r_dir_perms;
 allow dumpstate themeservice_app_data_file:file r_file_perms;
 allow dumpstate media_rw_data_file:dir search;
-allow dumpstate sdcardfs:file getattr;
-allow dumpstate sdcardfs:dir search;
-
