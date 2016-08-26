@@ -1,6 +1,6 @@
 # For the updaters
-allow system_app recovery_cache_file:dir create_dir_perms;
-allow system_app recovery_cache_file:file create_file_perms;
+allow system_app cache_recovery_file:dir create_dir_perms;
+allow system_app cache_recovery_file:file create_file_perms;
 allow system_app media_rw_data_file:dir create_dir_perms;
 allow system_app media_rw_data_file:file create_file_perms;
 

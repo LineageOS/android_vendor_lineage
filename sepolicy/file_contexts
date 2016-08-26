@@ -1,7 +1,5 @@
 /cache/dalvik-cache(/.*)? u:object_r:dalvikcache_data_file:s0
 
-/cache/recovery(/.*)?     u:object_r:recovery_cache_file:s0
-
 # Themes
 /data/system/theme(/.*)?  u:object_r:themeservice_app_data_file:s0
 
