@@ -18,7 +18,7 @@
 #
 
 # skip api check for PDK buid
-ifeq (,$(filter true, $(WITHOUT_CHECK_API) $(TARGET_BUILD_PDK)))
+ifeq (,$(filter true, $(WITHOUT_CHECK_API) $(TARGET_BUILD_PDK) $(TARGET_DISABLE_CMSDK)))
 
 .PHONY: checkapi-cm
 
@@ -75,9 +75,9 @@ $(eval $(call check-api, \
 
 .PHONY: update-cm-public-api
 update-cm-public-api: $(INTERNAL_CM_PLATFORM_API_FILE) | $(ACP)
-	@echo -e ${CL_GRN}"Copying cm_current.txt"${CL_RST}
+	@echo "Copying cm_current.txt"
 	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_API_FILE) $(FRAMEWORK_CM_PLATFORM_API_FILE)
-	@echo -e ${CL_GRN}"Copying cm_removed.txt"${CL_RST}
+	@echo "Copying cm_removed.txt"
 	$(hide) $(ACP) $(INTERNAL_CM_PLATFORM_REMOVED_API_FILE) $(FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE)
 
 update-cm-api : update-cm-public-api
@@ -135,9 +135,9 @@ current_sdk_release_text_file := $(CM_SRC_API_DIR)/$(cm_last_released_sdk_versio
 current_system_api_release_text_file := $(CM_SRC_SYSTEM_API_DIR)/$(cm_last_released_sdk_version).txt
 
 update-cm-prebuilts-latest-public-api: $(FRAMEWORK_CM_PLATFORM_API_FILE) | $(ACP)
-	@echo -e ${CL_GRN}"Publishing cm_current.txt as latest API release"${CL_RST}
+	@echo "Publishing cm_current.txt as latest API release"
 	$(hide) $(ACP) $(FRAMEWORK_CM_PLATFORM_API_FILE) $(current_sdk_release_text_file)
-	@echo -e ${CL_GRN}"Publishing cm_current.txt as latest system API release"${CL_RST}
+	@echo "Publishing cm_current.txt as latest system API release"
 	$(hide) $(ACP) $(FRAMEWORK_CM_PLATFORM_SYSTEM_API_FILE) $(current_system_api_release_text_file)
 
 endif

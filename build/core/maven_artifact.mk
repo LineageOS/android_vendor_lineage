@@ -48,7 +48,7 @@ $(LOCAL_PREBUILT_MODULE_FILE):
 		-Dmdep.overWriteReleases=true \
 		-Dtransitive=false \
 		-DoutputDirectory=$(dir $@)
-	@echo -e ${CL_GRN}"Download:"${CL_RST}" $@"
+	@echo "Download: $@"
 
 ifneq ($(filter-out disabled, $(LOCAL_JACK_ENABLED)),)
 ifneq ($(LOCAL_MAVEN_PACKAGING),apk)
