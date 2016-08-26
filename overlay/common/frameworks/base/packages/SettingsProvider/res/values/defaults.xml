@@ -19,6 +19,6 @@
 <resources>
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
 
-    <!-- Enable notification counters in statusbar -->
-    <integer name="def_notif_count">1</integer>
+    <!-- Enable notification counters in statusbar
+    <integer name="def_notif_count">1</integer> -->
 </resources>
