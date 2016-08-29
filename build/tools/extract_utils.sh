@@ -282,6 +282,9 @@ function write_packages() {
         fi
         printf 'LOCAL_MODULE_TAGS := optional\n'
         printf 'LOCAL_MODULE_CLASS := %s\n' "$CLASS"
+        if [ "$CLASS" = "APPS" ]; then
+            printf 'LOCAL_DEX_PREOPT := false\n'
+        fi
         if [ ! -z "$EXTENSION" ]; then
             printf 'LOCAL_MODULE_SUFFIX := .%s\n' "$EXTENSION"
         fi
