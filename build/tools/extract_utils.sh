@@ -499,8 +499,7 @@ EOF
 # Return success if adb is up and not in recovery
 function _adb_connected {
     {
-        if [[ "$(adb get-state)" == device &&
-              "$(adb shell test -e /sbin/recovery; echo $?)" == 0 ]]
+        if [[ "$(adb get-state)" == device ]]
         then
             return 0
         fi
