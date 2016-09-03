@@ -134,6 +134,7 @@ endif
 # Required CM packages
 PRODUCT_PACKAGES += \
     CMAudioService \
+    CMParts \
     Development \
     BluetoothExt \
     Profiles \
