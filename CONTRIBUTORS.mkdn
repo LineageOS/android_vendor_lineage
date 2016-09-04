@@ -19,6 +19,7 @@ Maintainers (CyanogenMod 14.1):
 * __Asus ZenPad 8.0 Z380KL:__ vm03
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __B&N Nook Tablet (acclaim):__  chrmhoffmann
+* __BQ Aquaris M5 (piccolo):__  cmorlok, eloimuns, Kra1o5, stucki (bq-dev)
 * __Google Android One:__ varunchitre15
 * __Google Galaxy Nexus:__ Ziyan, musical_chairs
 * __Google Nexus S:__ burnsra, KalimochoAz, klusark
