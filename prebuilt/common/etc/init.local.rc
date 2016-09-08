@@ -3,24 +3,19 @@ on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
 
-    # Create cgroup mount point for BFQ
-    mount tmpfs none /sys/fs/cgroup mode=0750,uid=0,gid=1000
-
     # Set up the BFQIO hierarchy
-    chmod 0755 /sys/fs/cgroup
-    mkdir /sys/fs/cgroup/bfqio 0755 root system
-    mount cgroup none /sys/fs/cgroup/bfqio bfqio
-    chown root system /sys/fs/cgroup/bfqio/tasks
-    chmod 0664 /sys/fs/cgroup/bfqio/tasks
-    chmod 0220 /sys/fs/cgroup/bfqio/cgroup.event_control
+    mkdir /dev/bfqio 0755 root system
+    mount cgroup none /dev/bfqio bfqio
+    chown root system /dev/bfqio/tasks
+    chmod 0664 /dev/bfqio/tasks
+    chmod 0220 /dev/bfqio/cgroup.event_control
 
     # Soft realtime class for display service
-    mkdir /sys/fs/cgroup/bfqio/rt-display 0755 root system
-    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio_class 1
-    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio 7
-    chown system system /sys/fs/cgroup/bfqio/rt-display/tasks
-    chmod 0664 /sys/fs/cgroup/bfqio/rt-display/tasks
-    chmod 0220 /sys/fs/cgroup/bfqio/rt-display/cgroup.event_control
+    mkdir /dev/bfqio/rt-display 0755 root system
+    write /dev/bfqio/rt-display/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-display/tasks
+    chmod 0664 /dev/bfqio/rt-display/tasks
+    chmod 0220 /dev/bfqio/rt-display/cgroup.event_control
 
 on post-fs-data
     mkdir /data/ssh 0750 root shell
