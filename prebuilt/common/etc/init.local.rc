@@ -3,6 +3,9 @@ on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
 
+    # Create cgroup mount point for BFQ
+    mount tmpfs none /sys/fs/cgroup mode=0750,uid=0,gid=1000
+
     # Set up the BFQIO hierarchy
     chmod 0755 /sys/fs/cgroup
     mkdir /sys/fs/cgroup/bfqio 0755 root system
