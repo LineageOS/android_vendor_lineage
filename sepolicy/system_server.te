@@ -11,3 +11,7 @@ allow system_server storage_stub_file:dir { getattr };
 allow system_server media_rw_data_file:dir r_dir_perms;
 
 get_prop(system_server, adbsecure_prop)
+
+# Allow system_server to relabel newly created theme directory for
+# use by the proxied theme service
+allow system_server themeservice_app_data_file:dir relabelto;
