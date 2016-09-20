@@ -1,3 +1,4 @@
 type adbtcp_prop, property_type;
 type recovery_prop, property_type;
 type userinit_prop, property_type;
+type adbsecure_prop, property_type;
