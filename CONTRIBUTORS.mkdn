@@ -4,6 +4,7 @@ CyanogenMod
 Maintainers (CyanogenMod 14.1):
 -----------------------------
 * __Acer A700:__ pawitp
+* __Alcatel Idol 3:__ c457
 * __Amazon Kindle Fire 1st Edition:__ Hashcode, FuZZ__
 * __Amazon Kindle Fire 2nd Edition:__ Hashcode, FuZZ__
 * __Asus EeePad Transformer (TF101):__ Bumble-Bee, EnJens
