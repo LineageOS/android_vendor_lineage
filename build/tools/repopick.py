@@ -224,7 +224,7 @@ if __name__ == '__main__':
                 if remote.get('name') == project.get('remote'):
                     revision = remote.get('revision')
             if revision is None:
-            revision = default_revision
+                revision = default_revision
 
         if not name in project_name_to_data:
             project_name_to_data[name] = {}
