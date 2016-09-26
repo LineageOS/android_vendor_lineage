@@ -6,3 +6,6 @@ allow system_app media_rw_data_file:file create_file_perms;
 
 # Boot animation
 allow system_app ctl_bootanim_prop:property_service set;
+
+# Settings app wants to read ro.adb.secure
+get_prop(system_app, adbsecure_prop)
