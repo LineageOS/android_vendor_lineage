@@ -459,6 +459,7 @@ EOF
 # write_headers:
 #
 # $1: devices falling under common to be added to guard - optional
+# $2: custom guard - optional
 #
 # Calls write_header for each of the makefiles and creates
 # the initial path declaration and device guard for the
@@ -466,13 +467,19 @@ EOF
 #
 function write_headers() {
     write_header "$ANDROIDMK"
+
+    GUARD="$2"
+    if [ -z "$GUARD" ]; then
+        GUARD="TARGET_DEVICE"
+    fi
+
     cat << EOF >> "$ANDROIDMK"
 LOCAL_PATH := \$(call my-dir)
 
 EOF
     if [ "$COMMON" -ne 1 ]; then
         cat << EOF >> "$ANDROIDMK"
-ifeq (\$(TARGET_DEVICE),$DEVICE)
+ifeq (\$($GUARD),$DEVICE)
 
 EOF
     else
@@ -481,7 +488,7 @@ EOF
             exit 1
         fi
         cat << EOF >> "$ANDROIDMK"
-ifneq (\$(filter $1,\$(TARGET_DEVICE)),)
+ifneq (\$(filter $1,\$($GUARD)),)
 
 EOF
     fi
