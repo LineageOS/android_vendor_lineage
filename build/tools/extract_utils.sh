@@ -270,6 +270,11 @@ function write_packages() {
             printf 'LOCAL_CERTIFICATE := %s\n' "$CERT"
         elif [ "$CLASS" = "JAVA_LIBRARIES" ]; then
             printf 'LOCAL_SRC_FILES := %s/framework/%s\n' "$SRC" "$FILE"
+            local CERT=platform
+            if [ ! -z "$ARGS" ]; then
+                CERT="$ARGS"
+            fi
+            printf 'LOCAL_CERTIFICATE := %s\n' "$CERT"
         elif [ "$CLASS" = "ETC" ]; then
             printf 'LOCAL_SRC_FILES := %s/etc/%s\n' "$SRC" "$FILE"
         elif [ "$CLASS" = "EXECUTABLES" ]; then
