@@ -625,7 +625,7 @@ function get_file() {
         return 1
     else
         # try to copy
-        cp "$SRC/$1" "$2" 2>/dev/null && return 0
+        cp -r "$SRC/$1" "$2" 2>/dev/null && return 0
 
         return 1
     fi
@@ -654,10 +654,13 @@ function oat2dex() {
 
     # Extract existing boot.oats to the temp folder
     if [ -z "$ARCHES" ]; then
-        echo "Checking if system is odexed and extracting boot.oats, if applicable. This may take a while..."
+        echo "Checking if system is odexed and locating boot.oats..."
         for ARCH in "arm64" "arm" "x86_64" "x86"; do
-            if get_file "system/framework/$ARCH/boot.oat" "$TMPDIR/boot_$ARCH.oat" "$SRC"; then
+            mkdir -p "$TMPDIR/system/framework/$ARCH"
+            if get_file "system/framework/$ARCH/" "$TMPDIR/system/framework/" "$SRC"; then
                 ARCHES+="$ARCH "
+            else
+                rmdir "$TMPDIR/system/framework/$ARCH"
             fi
         done
     fi
@@ -675,20 +678,20 @@ function oat2dex() {
     fi
 
     for ARCH in $ARCHES; do
-        BOOTOAT="$TMPDIR/boot_$ARCH.oat"
+        BOOTOAT="$TMPDIR/system/framework/$ARCH/boot.oat"
 
         local OAT="$(dirname "$OEM_TARGET")/oat/$ARCH/$(basename "$OEM_TARGET" ."${OEM_TARGET##*.}").odex"
 
         if get_file "$OAT" "$TMPDIR" "$SRC"; then
-            java -jar "$BAKSMALIJAR" -x -o "$TMPDIR/dexout" -c "$BOOTOAT" -d "$TMPDIR" "$TMPDIR/$(basename "$OAT")"
+            java -jar "$BAKSMALIJAR" deodex -o "$TMPDIR/dexout" -b "$BOOTOAT" -d "$TMPDIR" "$TMPDIR/$(basename "$OAT")"
         elif [[ "$CM_TARGET" =~ .jar$ ]]; then
             # try to extract classes.dex from boot.oat for framework jars
-            java -jar "$BAKSMALIJAR" -x -o "$TMPDIR/dexout" -c "$BOOTOAT" -d "$TMPDIR" -e "/$OEM_TARGET" "$BOOTOAT"
+            java -jar "$BAKSMALIJAR" deodex -o "$TMPDIR/dexout" -b "$BOOTOAT" -d "$TMPDIR" -e "/$OEM_TARGET" "$BOOTOAT"
         else
             continue
         fi
 
-        java -jar "$SMALIJAR" "$TMPDIR/dexout" -o "$TMPDIR/classes.dex" && break
+        java -jar "$SMALIJAR" assemble "$TMPDIR/dexout" -o "$TMPDIR/classes.dex" && break
     done
 
     rm -rf "$TMPDIR/dexout"
