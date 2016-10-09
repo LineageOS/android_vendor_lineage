@@ -1,0 +1,1 @@
+allow untrusted_app cm_weather_service:service_manager find;
