@@ -6,11 +6,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     messaging \
     Stk \
-    CellBroadcastReceiver \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    CellBroadcastReceiver
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
