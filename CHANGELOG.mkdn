@@ -8,6 +8,34 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 CHANGELOG (notable new features)
 ---------
 
+### 13.0 ZNH5Y
+* Common: Android 6.0.1 (Google)
+* Android Security Bulletin - August 1st update
+* Wi-Fi Tethering – automatically turn off hotspot after X minutes of inactivity
+* Profiles – add notification light controls
+* Do Not Disturb/Priority Mode – add notification light controls
+* Privacy Guard/App data usage – Restrict apps to Wi-Fi or Cellular data only or block all internet access, per app
+* Bluetooth Devices battery support
+* Lockscreen Wallpaper picker makes its return
+* Lockscreen Weather and new Weather plug in support
+* Lockscreen Blur support (on a per device basis) and the ability to disable the effect
+* Live Lockscreen support
+* New LiveDisplay hardware enhancements and API
+* Snap Camera (per device basis)
+* Gello Browser (per device basis)
+* Lots of translations
+* Cyanogen Apps support (x86 not supported yet)
+* Additional CM SDK APIs
+* Security fixes galore
+
+### 13.0 ZNH0E
+* Common: Android 6.0.1 (Google)
+* Android Security Bulletin - March 7th update
+* Settings > Build date - Triple tap to access demo mode
+* Settings > Memory - New screen to show memory usage over a selected period of time
+* Protected Apps - New folder UX, fingerprint support, enhanced ability to restrict access
+* New SMS/MMS application
+
 ### 12.1 YOG4PAO3
 * Common: Android 5.1.1 (Google)
 * Android Security Bulletin – October 5th update
