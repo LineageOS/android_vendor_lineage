@@ -761,7 +761,7 @@ function repodiff() {
 function _adb_connected {
     {
         if [[ "$(adb get-state)" == device &&
-              "$(adb shell test -e /sbin/recovery; echo $?)" == 0 ]]
+              "$(adb shell test -e /sbin/recovery; echo $?)" != 0 ]]
         then
             return 0
         fi
