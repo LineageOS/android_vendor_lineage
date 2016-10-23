@@ -22,6 +22,7 @@ preserve_addon_d() {
 # Restore /system/addon.d from /tmp/addon.d
 restore_addon_d() {
   if [ -d /tmp/addon.d/ ]; then
+    mkdir -p /system/addon.d/
     cp -a /tmp/addon.d/* /system/addon.d/
     rm -rf /tmp/addon.d/
   fi
