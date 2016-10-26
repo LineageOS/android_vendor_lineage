@@ -1237,7 +1237,7 @@
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" proxy="" port="" mmsproxy="212.252.169.217" mmsport="8080" mmsc="http://mms.turkcell.com.tr/servlets/mms" user="mms" password="mms" type="mms" />
   <apn carrier="Turkcell" mcc="286" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" proxy="" port="" user="mms" password="mms" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="9201" type="mms" />
-  <apn carrier="Vodafone TR" mcc="286" mnc="02" apn="internet" proxy="" port="" user="vodafone" password="vodafone" mmsc="" type="default,supl" />
+  <apn carrier="Vodafone TR" mcc="286" mnc="02" apn="internet" proxy="" port="" user="vodafone" password="vodafone" mmsc="" type="default,supl" protocol="IPV4V6" />
   <apn carrier="Vodafone Live" mcc="286" mnc="02" apn="vflive" proxy="212.65.136.226" port="9401" mmsc="" user="vodafone" password="vodafone" authtype="3" type="default,supl" />
   <apn carrier="Vodafone TR MMS" mcc="286" mnc="02" apn="mms" proxy="" port="" user="vodafone" password="vodafone" mmsc="http://217.31.233.18:6001/MM1Servlet" mmsproxy="217.31.233.18" mmsport="9401" type="mms" />
   <apn carrier="MMS GPRS" mcc="286" mnc="02" apn="mms" proxy="" port="" mmsc="http://217.31.233.18:6001/MM1Servlet" user="vodafone" password="vodafone" authtype="3" type="mms" />
@@ -3584,7 +3584,6 @@
   <apn carrier="Vodacom ZA" mcc="655" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Vodacom ZA MMS" mcc="655" mnc="01" apn="mms.vodacom.net" mmsc="http://mmsc.vodacom4me.co.za/" mmsproxy="196.6.128.13" mmsport="8080" type="mms" />
   <apn carrier="LTE.Vodacom" mcc="655" mnc="01" apn="lte.vodacom.za" type="default,supl" />
-  <apn carrier="Vlive!" mcc="655" mnc="01" apn="vlive" proxy="196.6.128.12" port="8080" type="default,supl" />
   <apn carrier="8ta internet" mcc="655" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="8ta mms" mcc="655" mnc="02" apn="mms" mmsc="http://mms.8ta.com:38090/was" mmsproxy="41.151.254.162" mmsport="8080" type="mms" />
   <apn carrier="CELL C INTERNET" mcc="655" mnc="07" apn="internet" proxy="" port="8080" mmsproxy="196.31.116.250" mmsport="8080" mmsc="http://mms.cmobile.co.za" type="*" />
