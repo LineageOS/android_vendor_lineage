@@ -1,7 +1,7 @@
 CyanogenMod
 ===========
 
-Maintainers (CyanogenMod 14.0):
+Maintainers (CyanogenMod 14.1):
 -----------------------------
 * __Acer A700:__ pawitp
 * __Amazon Kindle Fire 1st Edition:__ Hashcode, FuZZ__

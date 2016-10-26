@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=14.0
+export V=14.1
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
