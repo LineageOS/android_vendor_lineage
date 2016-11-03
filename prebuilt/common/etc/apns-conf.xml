@@ -1237,10 +1237,10 @@
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" proxy="" port="" mmsproxy="212.252.169.217" mmsport="8080" mmsc="http://mms.turkcell.com.tr/servlets/mms" user="mms" password="mms" type="mms" />
   <apn carrier="Turkcell" mcc="286" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" proxy="" port="" user="mms" password="mms" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="9201" type="mms" />
-  <apn carrier="Vodafone Live" mcc="286" mnc="02" apn="vflive" proxy="212.65.136.226" port="9401" mmsc="" user="vodafone" password="vodafone" authtype="3" type="default,supl" />
-  <apn carrier="MMS GPRS" mcc="286" mnc="02" apn="mms" proxy="" port="" mmsc="http://217.31.233.18:6001/MM1Servlet" user="vodafone" password="vodafone" authtype="3" type="mms" />
   <apn carrier="Vodafone TR" mcc="286" mnc="02" apn="internet" proxy="" port="" user="vodafone" password="vodafone" mmsc="" type="default,supl" />
+  <apn carrier="Vodafone Live" mcc="286" mnc="02" apn="vflive" proxy="212.65.136.226" port="9401" mmsc="" user="vodafone" password="vodafone" authtype="3" type="default,supl" />
   <apn carrier="Vodafone TR MMS" mcc="286" mnc="02" apn="mms" proxy="" port="" user="vodafone" password="vodafone" mmsc="http://217.31.233.18:6001/MM1Servlet" mmsproxy="217.31.233.18" mmsport="9401" type="mms" />
+  <apn carrier="MMS GPRS" mcc="286" mnc="02" apn="mms" proxy="" port="" mmsc="http://217.31.233.18:6001/MM1Servlet" user="vodafone" password="vodafone" authtype="3" type="mms" />
   <apn carrier="AVEA" mcc="286" mnc="03" apn="internet" proxy="" port="" user="wap" password="wap" mmsc="" type="default,supl" />
   <apn carrier="AVEA MMS" mcc="286" mnc="03" apn="mms" proxy="" port="" user="mms" password="mms" mmsc="http://mms.avea.com.tr/servlets/mms" mmsproxy="213.161.151.201" mmsport="8080" type="mms" />
   <apn carrier="Tele MMS" mcc="290" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="http://mms.tele.gl/mms/wapenc" mmsproxy="10.112.222.37" mmsport="8080" type="mms" />
