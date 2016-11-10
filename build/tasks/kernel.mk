@@ -214,11 +214,11 @@ endif
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(strip $(TARGET_KERNEL_CROSS_COMPILE_PREFIX))
 ifneq ($(TARGET_KERNEL_CROSS_COMPILE_PREFIX),)
 KERNEL_TOOLCHAIN_PREFIX ?= $(TARGET_KERNEL_CROSS_COMPILE_PREFIX)
-else ifeq ($(TARGET_ARCH),arm64)
+else ifeq ($(KERNEL_ARCH),arm64)
 KERNEL_TOOLCHAIN_PREFIX ?= aarch64-linux-androidkernel-
-else ifeq ($(TARGET_ARCH),arm)
+else ifeq ($(KERNEL_ARCH),arm)
 KERNEL_TOOLCHAIN_PREFIX ?= arm-linux-androidkernel-
-else ifeq ($(TARGET_ARCH),x86)
+else ifeq ($(KERNEL_ARCH),x86)
 KERNEL_TOOLCHAIN_PREFIX ?= x86_64-linux-androidkernel-
 endif
 
