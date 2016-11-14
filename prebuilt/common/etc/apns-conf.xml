@@ -2677,68 +2677,6 @@
   <apn carrier="IDEA Mobile" mcc="405" mnc="853" apn="mobile" type="default,supl" />
   <apn carrier="IDEA" mcc="405" mnc="853" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="853" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="854" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="854" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="854" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="855" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="855" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="855" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="856" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="856" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="856" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="857" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="857" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="857" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="858" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="858" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="858" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="859" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="859" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="859" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="860" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="860" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="860" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="861" apn="www" type="default,supl" />
-  <apn carrier="Loop Internet" mcc="405" mnc="862" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="862" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="862" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="863" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="863" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="863" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="864" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="864" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="864" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="865" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="865" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="865" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="866" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="866" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="866" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="867" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="867" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="867" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="868" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="868" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="868" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="869" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="869" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="869" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="870" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="870" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="870" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="LOOP GPRS" mcc="405" mnc="871" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="871" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="871" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="871" apn="www" type="default,supl" />
-  <apn carrier="Loop Internet" mcc="405" mnc="872" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="872" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="872" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="873" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="873" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="873" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Loop Internet" mcc="405" mnc="874" apn="www" type="default,supl" />
-  <apn carrier="LOOP WAP" mcc="405" mnc="874" apn="mizone" proxy="10.0.0.10" port="9401" user="Mobile phone number" password="bplmmsc" authtype="1" type="default,supl" />
-  <apn carrier="BPL MMS" mcc="405" mnc="874" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Uninor" mcc="405" mnc="875" apn="Uninor" proxy="10.58.10.58" port="8080" type="default,supl" />
   <apn carrier="Uninor Internet" mcc="405" mnc="875" apn="Uninor" type="default,supl" />
   <apn carrier="Uninor" mcc="405" mnc="876" apn="Uninor" proxy="10.58.10.58" port="8080" type="default,supl" />
