@@ -858,13 +858,21 @@ function extract() {
                 if [ ! -f "$DEST" ]; then
                     KEEP="1"
                 else
-                    local DEST_HASH=$(sha1sum "$DEST" | awk '{print $1}' )
+                    if [ "$(uname)" == "Darwin" ]; then
+                        local DEST_HASH=$(shasum "$DEST" | awk '{print $1}' )
+                    else
+                        local DEST_HASH=$(sha1sum "$DEST" | awk '{print $1}' )
+                    fi
                     if [ "$DEST_HASH" != "$HASH" ]; then
                         KEEP="1"
                     fi
                 fi
                 if [ "$KEEP" = "1" ]; then
-                    local TMP_HASH=$(sha1sum "$TMP" | awk '{print $1}' )
+                    if [ "$(uname)" == "Darwin" ]; then
+                        local TMP_HASH=$(shasum "$TMP" | awk '{print $1}' )
+                    else
+                        local TMP_HASH=$(sha1sum "$TMP" | awk '{print $1}' )
+                    fi
                     if [ "$TMP_HASH" = "$HASH" ]; then
                         printf '    + (keeping pinned file with hash %s)\n' "$HASH"
                         cp -p "$TMP" "$DEST"
