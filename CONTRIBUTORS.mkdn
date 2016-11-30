@@ -53,6 +53,7 @@ Maintainers (CyanogenMod 14.1):
 * __HTC One XL:__ h8rift, intervigil, jrior001
 * __Huawei Ascend Mate 2:__ mdmower, u-ra
 * __Huawei Honor 4/4X (cherry):__ dianlujitao, surdupetru, desalesouche
+* __LG G Pad 8.3 (v500):__ fefifofum
 * __LG G2 (AT&T) (D800):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (T-Mobile) (D801):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (International) (D802):__ arcee, Rashed97, Shelnutt2
@@ -186,6 +187,7 @@ Maintainers (CyanogenMod 14.1):
 * __Xiaomi Mi2(s) (aries):__ Michael Zimmermann
 * __Xiaomi Mi3/4 (cancro):__ JoeyRizzoli
 * __Xiaomi Mi5 (gemini):__ bgcngm, defer, h2o64
+* __Xiaomi Redmi 1S (armani):__ fefifofum
 * __Xiaomi Redmi Note 3 (kenzo):__ TheStrix
 * __ZTE Nubia Z9 Max (nx510j):__ dianlujitao
 
