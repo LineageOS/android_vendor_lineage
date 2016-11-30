@@ -185,6 +185,7 @@ Maintainers (CyanogenMod 14.1):
 * __Sony Z Ultra GPE (togari_gpe):__ FreeXperia Team
 * __Xiaomi Mi2(s) (aries):__ Michael Zimmermann
 * __Xiaomi Mi3/4 (cancro):__ JoeyRizzoli
+* __Xiaomi Mi5 (gemini):__ bgcngm
 * __Xiaomi Redmi Note 3 (kenzo):__ TheStrix
 * __ZTE Nubia Z9 Max (nx510j):__ dianlujitao
 
