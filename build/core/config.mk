@@ -1,4 +1,5 @@
 # Copyright (C) 2015 The CyanogenMod Project
+#           (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,3 +22,5 @@ FRAMEWORK_CM_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/cm/build/core/apicheck_msg
 
 BUILD_MAVEN_PREBUILT := $(TOP)/vendor/cm/build/core/maven_artifact.mk
 PUBLISH_MAVEN_PREBUILT := $(TOP)/vendor/cm/build/core/maven_artifact_publish.mk
+
+BUILD_HTTP_PREBUILT := $(TOP)/vendor/cm/build/core/http_prebuilt.mk
