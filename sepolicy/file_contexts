@@ -39,6 +39,7 @@
 # LiveDisplay
 /sys/devices/virtual/graphics/fb0/aco           u:object_r:livedisplay_sysfs:s0
 /sys/devices/virtual/graphics/fb0/cabc          u:object_r:livedisplay_sysfs:s0
+/sys/devices/virtual/graphics/fb0/hbm           u:object_r:livedisplay_sysfs:s0
 /sys/devices/virtual/graphics/fb0/rgb           u:object_r:livedisplay_sysfs:s0
 /sys/devices/virtual/graphics/fb0/sre           u:object_r:livedisplay_sysfs:s0
 /sys/devices/virtual/graphics/fb0/color_enhance u:object_r:livedisplay_sysfs:s0
