@@ -7,6 +7,7 @@ Maintainers (CyanogenMod 14.1):
 * __Alcatel Idol 3:__ c457
 * __Amazon Kindle Fire 1st Edition:__ Hashcode, FuZZ__
 * __Amazon Kindle Fire 2nd Edition:__ Hashcode, FuZZ__
+* __ARK Benefit A3 (peach):__ lolmaxlik
 * __Asus EeePad Transformer (TF101):__ Bumble-Bee, EnJens
 * __Asus EeePad Transformer Prime (TF201):__ Bumble-Bee, EnJens
 * __Asus EeePad Transformer Pad TF300T:__  chrmhoffmann
