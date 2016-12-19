@@ -4,7 +4,10 @@
 #
 L="log -p i -t cm"
 
-$L "____ _   _ ____ _  _ ____ ____ ____ _  _ _  _ ____ ___";
-$L "|     \\_/  |__| |\\ | |  | | __ |___ |\\ | |\\/| |  | |  \\";
-$L "|___   |   |  | | \\| |__| |__] |___ | \\| |  | |__| |__/";
-$L "Welcome to Android `getprop ro.build.version.release` / CyanogenMod-`getprop ro.cm.version`";
+$L "_ _                                       "
+$L "| (_)_ __   ___  __ _  __ _  ___  ___  ___ "
+$L "| | | '_ \\ / _ \\/ _\` |/ _\` |/ _ \\/ _ \\/ __|"
+$L "| | | | | |  __/ (_| | (_| |  __/ (_) \\__ \\"
+$L "|_|_|_| |_|\\___|\\__,_|\\__, |\\___|\\___/|___/"
+$L "                      |___/"
+$L "Welcome to Android `getprop ro.build.version.release` / LineageOS-`getprop ro.cm.version`";

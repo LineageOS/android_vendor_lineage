@@ -4,7 +4,7 @@ You have tried to change the API from what has been previously approved.
 
 STOP.
   Read this:
-  https://github.com/CyanogenMod/cm_platform_sdk/wiki/Creating-an-API-for-the-SDK#updating--verifying-the-api
+  https://github.com/LineageOS/cm_platform_sdk/wiki/Creating-an-API-for-the-SDK#updating--verifying-the-api
 
 To make these errors go away, you have two choices:
    1) You can add "@hide" javadoc comments to the methods, etc. listed in the
@@ -142,6 +142,6 @@ To make these errors go away, you have two choices:
                                       ,;+++++++++++++++++++++++++++++++++++++++++++++++++++++++:.
                                                 ..,;;+++++++++++++++++++++++++++++;:,.
 
-      To submit the revised current.txt to the main CyanogenMod repository,
+      To submit the revised current.txt to the main LineageOS repository,
       you will need approval.
 ******************************

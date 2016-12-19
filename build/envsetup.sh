@@ -1,15 +1,15 @@
 function __print_cm_functions_help() {
 cat <<EOF
-Additional CyanogenMod functions:
+Additional LineageOS functions:
 - cout:            Changes directory to out.
 - mmp:             Builds all of the modules in the current directory and pushes them to the device.
 - mmap:            Builds all of the modules in the current directory and its dependencies, then pushes the package to the device.
 - mmmp:            Builds all of the modules in the supplied directories and pushes them to the device.
 - mms:             Short circuit builder. Quickly re-build the kernel, rootfs, boot and system images
                    without deep dependencies. Requires the full build to have run before.
-- cmgerrit:        A Git wrapper that fetches/pushes patch from/to CM Gerrit Review.
+- cmgerrit:        A Git wrapper that fetches/pushes patch from/to LineageOS Gerrit Review.
 - cmrebase:        Rebase a Gerrit change and push it again.
-- cmremote:        Add git remote for CM Gerrit Review.
+- cmremote:        Add git remote for LineageOS Gerrit Review.
 - aospremote:      Add git remote for matching AOSP repository.
 - cafremote:       Add git remote for matching CodeAurora repository.
 - mka:             Builds using SCHED_BATCH on all processors.
@@ -75,7 +75,7 @@ function eat()
 {
     if [ "$OUT" ] ; then
         MODVERSION=$(get_build_var CM_VERSION)
-        ZIPFILE=cm-$MODVERSION.zip
+        ZIPFILE=lineage-$MODVERSION.zip
         ZIPPATH=$OUT/$ZIPFILE
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
@@ -240,12 +240,12 @@ function cmremote()
     fi
     git remote rm cmremote 2> /dev/null
     GERRIT_REMOTE=$(git config --get remote.github.projectname)
-    CMUSER=$(git config --get review.review.cyanogenmod.org.username)
+    CMUSER=$(git config --get review.review.lineageos.org.username)
     if [ -z "$CMUSER" ]
     then
-        git remote add cmremote ssh://review.cyanogenmod.org:29418/$GERRIT_REMOTE
+        git remote add cmremote ssh://review.lineageos.org:29418/$GERRIT_REMOTE
     else
-        git remote add cmremote ssh://$CMUSER@review.cyanogenmod.org:29418/$GERRIT_REMOTE
+        git remote add cmremote ssh://$CMUSER@review.lineageos.org:29418/$GERRIT_REMOTE
     fi
     echo "Remote 'cmremote' created"
 }
@@ -401,7 +401,7 @@ function cmgerrit() {
         $FUNCNAME help
         return 1
     fi
-    local user=`git config --get review.review.cyanogenmod.org.username`
+    local user=`git config --get review.review.lineageos.org.username`
     local review=`git config --get remote.github.review`
     local project=`git config --get remote.github.projectname`
     local command=$1
@@ -636,7 +636,7 @@ function cmrebase() {
     local dir="$(gettop)/$repo"
 
     if [ -z $repo ] || [ -z $refs ]; then
-        echo "CyanogenMod Gerrit Rebase Usage: "
+        echo "LineageOS Gerrit Rebase Usage: "
         echo "      cmrebase <path to project> <patch IDs on Gerrit>"
         echo "      The patch IDs appear on the Gerrit commands that are offered."
         echo "      They consist on a series of numbers and slashes, after the text"
@@ -658,7 +658,7 @@ function cmrebase() {
     echo "Bringing it up to date..."
     repo sync .
     echo "Fetching change..."
-    git fetch "http://review.cyanogenmod.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
+    git fetch "http://review.lineageos.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
     if [ "$?" != "0" ]; then
         echo "Error cherry-picking. Not uploading!"
         return

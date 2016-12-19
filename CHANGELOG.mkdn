@@ -1,9 +1,9 @@
-CyanogenMod
+LineageOS
 ===============
 
-Visit http://github.com/CyanogenMod for full source and git access.
+Visit http://github.com/LineageOS for full source and git access.
 
-Visit http://review.cyanogenmod.org for our Gerrit instance.
+Visit http://review.lineageos.org for our Gerrit instance.
 
 CHANGELOG (notable new features)
 ---------

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
+               (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -43,7 +44,7 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
     </string-array>
 
-    <string name="config_mms_user_agent">CyanogenMod</string>
+    <string name="config_mms_user_agent">LineageOS</string>
     <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
