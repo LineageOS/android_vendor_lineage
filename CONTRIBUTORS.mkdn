@@ -81,6 +81,8 @@ Maintainers (LineageOS 14.1):
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
 * __Moto G 4G 2014 (xt1072,xt1077,xt1078,xt1079/thea):__ LuK1337, luca020400
+* __Moto G4 (xt1621,xt1622,xt1625,xt1626/athene):__ Vachounet, Shr3ps, sileshn, ashwin007, rahulsnair
+* __Moto G4 Plus (xt1640,xt1641,xt1642,xt1643,xt1644/athene_f):__ Vachounet, Shr3ps, sileshn, ashwin007, rahulsnair
 * __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ Hashcode, Skrilax_CZ
 * __Moto X 2014 (victara):__ crpalmer, invisiblek
 * __Motorola Moto MAXX(quark) :__ Skrilax_CZ
