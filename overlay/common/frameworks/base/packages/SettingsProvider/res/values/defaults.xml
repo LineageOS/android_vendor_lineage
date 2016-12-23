@@ -20,4 +20,7 @@
     <bool name="def_wifi_on">true</bool>
 
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
+
+    <!-- Disable bluetooth by default -->
+    <bool name="def_bluetooth_on">false</bool>
 </resources>
