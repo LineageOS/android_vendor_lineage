@@ -6,3 +6,7 @@ PRODUCT_SIZE := full
 # Themes
 PRODUCT_PACKAGES += \
     HexoLibre
+
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
