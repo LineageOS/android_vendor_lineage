@@ -42,9 +42,10 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 
-LOCAL_GELLO_VERSION := 40
-LOCAL_HTTP_PATH := https://github.com/LineageOS/android_packages_apps_Gello/releases/download/$(LOCAL_GELLO_VERSION)/gello.apk
+LOCAL_HTTP_FILE_VERSION := 40
+LOCAL_HTTP_PATH := https://github.com/LineageOS/android_packages_apps_Gello/releases/download/$(LOCAL_HTTP_FILE_VERSION)
 LOCAL_HTTP_FILENAME := gello.apk
+LOCAL_HTTP_MD5SUM := $(LOCAL_HTTP_FILENAME).md5sum
 
 include $(BUILD_HTTP_PREBUILT)
 endif
