@@ -65,17 +65,22 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     2ND_CLANG_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
 
     ifeq ($(call is-board-platform-in-list, $(B_FAMILY)),true)
+        MSM_VIDC_TARGET_LIST := $(B_FAMILY)
         QCOM_HARDWARE_VARIANT := msm8974
     else
     ifeq ($(call is-board-platform-in-list, $(B64_FAMILY)),true)
+        MSM_VIDC_TARGET_LIST := $(B64_FAMILY)
         QCOM_HARDWARE_VARIANT := msm8994
     else
     ifeq ($(call is-board-platform-in-list, $(BR_FAMILY)),true)
+        MSM_VIDC_TARGET_LIST := $(BR_FAMILY)
         QCOM_HARDWARE_VARIANT := msm8916
     else
     ifeq ($(call is-board-platform-in-list, $(UM_FAMILY)),true)
+        MSM_VIDC_TARGET_LIST := $(UM_FAMILY)
         QCOM_HARDWARE_VARIANT := msm8937
     else
+        MSM_VIDC_TARGET_LIST := $(TARGET_BOARD_PLATFORM)
         QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
     endif
     endif
