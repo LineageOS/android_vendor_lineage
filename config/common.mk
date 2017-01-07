@@ -322,12 +322,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(LINEAGE_VERSION) \
   ro.cmlegal.url=https://lineageos.org/legal
 
-ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
-    PRODUCT_EXTRA_RECOVERY_KEYS += \
-        vendor/cm/build/target/product/security/cm \
-        vendor/cm/build/target/product/security/cm-devkey
-endif
-
 -include vendor/cm-priv/keys/keys.mk
 
 CM_DISPLAY_VERSION := $(LINEAGE_VERSION)
