@@ -1,5 +1,8 @@
 # Target-specific configuration
 
+# Bring in Qualcomm helper macros
+include vendor/cm/build/core/qcom_utils.mk
+
 # Populate the qcom hardware variants in the project pathmap.
 define ril-set-path-variant
 $(call project-set-path-variant,ril,TARGET_RIL_VARIANT,hardware/$(1))
