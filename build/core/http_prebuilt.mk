@@ -47,11 +47,13 @@ define curl-checksum
 endef
 
 define audit-checksum
-  @echo "Downloading: $(filename) (version $(version))" -> $(filepath);
   $(hide) if [ ! -f $(filepath) ]; then \
+            echo "Downloading: $(filename) (version $(version)) -> $(filepath)"; \
             $(call download-prebuilt-module, $(HTTP_FILE_URL),$(filepath)) \
           else \
-            if [ "$(shell echo $(md5sum $(filepath)))" != "$(shell cat $(checksum) | cut -d ' ' -f1)" ]; then \
+            temp_checksum=$(shell md5sum $(filepath) | cut -d ' ' -f1); \
+            if [ "$$temp_checksum" != "$(shell cat $(checksum) | cut -d ' ' -f1)" ]; then \
+              echo "Downloading: $(filename) (version $(version)) -> $(filepath)"; \
               rm -rf $(filepath); \
               $(call download-prebuilt-module, $(HTTP_FILE_URL),$(filepath)) \
             fi; \
