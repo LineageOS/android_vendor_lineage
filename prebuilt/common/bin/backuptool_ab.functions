@@ -1,0 +1,51 @@
+#!/system/bin/sh
+#
+# Functions for backuptool_ab.sh
+#
+
+export S=/system
+export C=/postinstall/tmp/backupdir
+export V=15.1
+export backuptool_ab=true
+
+copy_file() {
+  # toybox's cp doesn't do directories correctly for whatever reason
+  mkdir -p `dirname $2`
+
+  cp -dp "$1" "$2"
+  # symlinks don't have a context
+  if [ ! -L "$1" ]; then
+    # it is assumed that every label starts with 'u:object_r' and has no white-spaces
+    local context=`ls -Z "$1" | grep -o 'u:object_r:[^ ]*' | head -1`
+    chcon "$context" "$2"
+  fi
+}
+
+backup_file() {
+  if [ -e "$1" -o -L "$1" ]; then
+    local FILE=`basename "$1"`
+    local DIR=`dirname "$1"`
+    # dont backup any apps that have odex files, they are useless
+    if ( echo "$FILE" | grep -q "\.apk$" ) && [ -e `echo "$1" | sed -e 's/\.apk$/\.odex/'` ]; then
+      echo "Skipping odexed apk $1";
+    else
+      mkdir -p "$C/$DIR"
+      copy_file "$1" "$C/$DIR/$FILE"
+    fi
+  fi
+}
+
+restore_file() {
+  local FILE=`basename "$1"`
+  local DIR=`dirname "$1"`
+  if [ -e "$C/$DIR/$FILE" -o -L "$C/$DIR/$FILE" ]; then
+    if [ ! -d "/postinstall/$DIR" ]; then
+      mkdir -p "/postinstall/$DIR";
+    fi
+    copy_file "$C/$DIR/$FILE" "/postinstall/$1";
+    if [ -n "$2" ]; then
+      echo "Deleting obsolete file $2"
+      rm "$2";
+    fi
+  fi
+}
