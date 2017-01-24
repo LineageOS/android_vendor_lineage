@@ -30,17 +30,19 @@
 #   TARGET_KERNEL_ARCH                 = Kernel Arch
 #   TARGET_KERNEL_HEADER_ARCH          = Optional Arch for kernel headers if
 #                                          different from TARGET_KERNEL_ARCH
-#   TARGET_USES_UNCOMPRESSED_KERNEL    = 'true' if Kernel is uncompressed,
-#                                          optional, defaults to false
 #   TARGET_KERNEL_CROSS_COMPILE_PREFIX = Compiler prefix (e.g. arm-eabi-)
 #                                          defaults to arm-linux-androidkernel- for arm
 #                                                      aarch64-linux-androidkernel- for arm64
 #                                                      x86_64-linux-androidkernel- for x86
 #
-#   BOARD_KERNEL_IMAGE_NAME            = Built image name, optional,
-#                                          defaults to Image.gz on arm64
-#                                          defaults to Image if TARGET_USES_UNCOMPRESSED_KERNEL
-#                                          defaults to zImage otherwise
+#   BOARD_KERNEL_IMAGE_NAME            = Built image name
+#                                          for ARM use: zImage
+#                                          for ARM64 use: Image.gz
+#                                          for uncompressed use: Image
+#                                          If using an appended DT, append '-dtb'
+#                                          to the end of the image name.
+#                                          For example, for ARM devices,
+#                                          use zImage-dtb instead of zImage.
 #
 #   KERNEL_TOOLCHAIN_PREFIX            = Overrides TARGET_KERNEL_CROSS_COMPILE_PREFIX,
 #                                          Set this var in shell to override
@@ -96,25 +98,16 @@ ifeq ($(KERNEL_HEADER_DEFCONFIG),)
 KERNEL_HEADER_DEFCONFIG := $(KERNEL_DEFCONFIG)
 endif
 
-
-ifneq ($(BOARD_KERNEL_IMAGE_NAME),)
-  TARGET_PREBUILT_INT_KERNEL_TYPE := $(BOARD_KERNEL_IMAGE_NAME)
-else
-  ifeq ($(TARGET_USES_UNCOMPRESSED_KERNEL),true)
-    TARGET_PREBUILT_INT_KERNEL_TYPE := Image
-  else
-    ifeq ($(KERNEL_ARCH),arm64)
-      TARGET_PREBUILT_INT_KERNEL_TYPE := Image.gz
-    else
-      TARGET_PREBUILT_INT_KERNEL_TYPE := zImage
-    endif
-  endif
-  ifeq ($(TARGET_KERNEL_APPEND_DTB),true)
-    TARGET_PREBUILT_INT_KERNEL_TYPE := $(TARGET_PREBUILT_INT_KERNEL_TYPE)-dtb
-  endif
+ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
+$(error BOARD_KERNEL_IMAGE_NAME not defined.)
 endif
-
-TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(TARGET_PREBUILT_INT_KERNEL_TYPE)
+ifneq ($(TARGET_USES_UNCOMPRESSED_KERNEL),)
+$(error TARGET_USES_UNCOMPRESSED_KERNEL is deprecated.)
+endif
+ifneq ($(TARGET_KERNEL_APPEND_DTB),)
+$(error TARGET_KERNEL_APPEND_DTB is deprecated.)
+endif
+TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
 
 # Clear this first to prevent accidental poisoning from env
 MAKE_FLAGS :=
@@ -296,7 +289,7 @@ $(KERNEL_CONFIG): $(KERNEL_OUT_STAMP) $(KERNEL_DEFCONFIG_SRC) $(KERNEL_ADDITIONA
 
 TARGET_KERNEL_BINARIES: $(KERNEL_OUT_STAMP) $(KERNEL_CONFIG) $(KERNEL_HEADERS_INSTALL_STAMP)
 	@echo "Building Kernel"
-	$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(TARGET_PREBUILT_INT_KERNEL_TYPE)
+	$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(BOARD_KERNEL_IMAGE_NAME)
 	$(hide) if grep -q 'CONFIG_OF=y' $(KERNEL_CONFIG) ; \
 			then \
 				echo "Building DTBs" ; \
