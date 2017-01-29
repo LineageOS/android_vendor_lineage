@@ -54,6 +54,7 @@ Maintainers (LineageOS 14.1):
 * __HTC One XL:__ h8rift, intervigil, jrior001
 * __Huawei Ascend Mate 2:__ mdmower, u-ra
 * __Huawei Honor 4/4X (cherry):__ dianlujitao, surdupetru, desalesouche
+* __LeEco Le 2 (s2):__ codeworkx
 * __LG G Pad 8.3 (v500):__ fefifofum
 * __LG G2 (AT&T) (D800):__ arcee, Rashed97, Shelnutt2
 * __LG G2 (T-Mobile) (D801):__ arcee, Rashed97, Shelnutt2
