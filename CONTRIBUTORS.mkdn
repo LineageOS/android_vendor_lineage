@@ -194,6 +194,7 @@ Maintainers (LineageOS 14.1):
 * __Xiaomi Redmi 1S (armani):__ fefifofum
 * __Xiaomi Redmi 3/Prime (ido):__ Anik1199
 * __Xiaomi Redmi Note 3 (kenzo):__ TheStrix
+* __ZTE Axon 7 (axon7):__ bmc08gt, c457, tdm
 * __ZTE Nubia Z9 Max (nx510j):__ dianlujitao
 
 FreeXperia Team:
