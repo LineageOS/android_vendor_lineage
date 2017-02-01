@@ -3365,6 +3365,7 @@
   <apn carrier="True" mcc="520" mnc="99" apn="internet" user="true" password="true" type="default,supl" />
   <apn carrier="True MMS" mcc="520" mnc="99" apn="mms" user="true" password="true" mmsc="http://mms.trueworld.net:8002" mmsproxy="10.4.7.39" mmsport="8080" type="mms" />
   <apn carrier="SingTel" mcc="525" mnc="01" apn="e-ideas" type="default,supl" />
+  <apn carrier="SingTel hi!card" mcc="525" mnc="01" apn="hicard" mmsc="http://mms.singtel.com:10021/mmsc" mmsproxy="165.21.42.84" mmsport="8080" authtype="1" type="default,supl,mms" />
   <apn carrier="IDEAS" mcc="525" mnc="01" apn="e-ideas" type="default,supl,mms" />
   <apn carrier="IDEAS MMS" mcc="525" mnc="01" apn="e-ideas" user="65IDEAS" password="65ideas" mmsc="http://mms.singtel.com:10021/mmsc" mmsproxy="165.21.42.84" mmsport="8080" type="mms" />
   <apn carrier="SingTel" mcc="525" mnc="02" apn="e-ideas" type="default,supl" />
