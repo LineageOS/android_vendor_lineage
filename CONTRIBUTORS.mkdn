@@ -20,9 +20,10 @@ Maintainers (LineageOS 14.1):
 * __Asus ZenPad 8.0 Z380KL:__ vm03
 * __B&N NookColor (encore):__ eyeballer, fattire, keyodi, krylon360, sluo (NookieDevs)
 * __B&N Nook Tablet (acclaim):__  chrmhoffmann
-* __BQ Aquaris E5 4G/E5 S (vegetalte):__  cmorlok, eloimuns, Kra1o5, stucki, brinlyau (bq-dev)
-* __BQ Aquaris M5 (piccolo):__  cmorlok, eloimuns, Kra1o5, stucki, brinlyau (bq-dev)
-* __BQ Aquaris X5 Plus (gohan):__  cmorlok, eloimuns, Kra1o5, stucki, brinlyau (bq-dev)
+* __BQ Aquaris E5 4G/E5 S (vegetalte):__  cmorlok, eloimuns, Kra1o5, stucki, brinlyau (aquaris-dev)
+* __BQ Aquaris M5 (piccolo):__  cmorlok, eloimuns, Kra1o5, stucki, brinlyau (aquaris-dev)
+* __BQ Aquaris X5 (paella):__  cmorlok, eloimuns, Kra1o5, stucki, brinlyau (aquaris-dev), marado
+* __BQ Aquaris X5 Plus (gohan):__  cmorlok, eloimuns, Kra1o5, stucki, brinlyau (aquaris-dev)
 * __Google Android One:__ varunchitre15
 * __Google Galaxy Nexus:__ Ziyan, musical_chairs
 * __Google Nexus S:__ burnsra, KalimochoAz, klusark
