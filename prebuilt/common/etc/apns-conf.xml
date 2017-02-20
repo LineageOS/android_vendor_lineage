@@ -465,16 +465,11 @@
   <apn carrier="Orange Internet" mcc="226" mnc="10" apn="net" user="" password="" type="default,supl" />
   <apn carrier="Swisscom" mcc="228" mnc="01" apn="gprs.swisscom.ch" user="" password="" authtype="3" type="default,supl" />
   <apn carrier="Swisscom-MMS" mcc="228" mnc="01" apn="event.swisscom.ch" proxy="" port="" mmsproxy="192.168.210.2" mmsport="8080" mmsc="http://mms.natel.ch:8079" user="" password="" authtype="3" type="mms" />
-  <apn carrier="RBM Internet" mcc="228" mnc="02" apn="internet" user="" password="" type="default,supl" />
-  <apn carrier="A1 MMS" mcc="228" mnc="02" apn="mms.sunrise.ch" proxy="" port="" mmsproxy="212.35.34.75" mmsport="8080" mmsc="http://mmsc.sunrise.ch" user="" password="" type="mms" />
   <apn carrier="Sunrise Internet" mcc="228" mnc="02" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Sunrise MMS" mcc="228" mnc="02" apn="mms.sunrise.ch" proxy="" port="" user="mms" password="mms" mmsc="http://mmsc.sunrise.ch" mmsproxy="212.35.34.75" mmsport="8080" type="mms" />
-  <apn carrier="Orange Internet" mcc="228" mnc="03" apn="internet" user="" password="" authtype="3" type="default,supl" />
-  <apn carrier="Orange MMS" mcc="228" mnc="03" apn="mms" proxy="" port="" mmsproxy="192.168.151.2" mmsport="8080" mmsc="http://192.168.151.3:8002" user="" password="" authtype="3" type="mms" />
-  <apn carrier="Orange prepay" mcc="228" mnc="03" apn="click" proxy="192.168.10.2" port="8080" mmsc="" user="" password="" authtype="3" type="default,supl" />
-  <apn carrier="Orange Internet" mcc="228" mnc="03" apn="internet" type="default,supl" />
-  <apn carrier="Orange Prepaid CH" mcc="228" mnc="03" apn="click" type="default,supl" />
-  <apn carrier="Orange MMS" mcc="228" mnc="03" apn="mms" mmsc="http://192.168.151.3:8002" mmsproxy="192.168.151.2" mmsport="8080" type="mms" />
+  <apn carrier="Sunrise MMS" mcc="228" mnc="02" apn="mms.sunrise.ch" proxy="" port="" user="" password="" mmsc="http://mmsc.sunrise.ch" mmsproxy="212.35.34.75" mmsport="8080" type="mms" />
+  <apn carrier="Salt Internet" mcc="228" mnc="03" apn="internet" type="default,supl" />
+  <apn carrier="Salt MMS" mcc="228" mnc="03" apn="mms" mmsc="http://192.168.151.3:8002" mmsproxy="192.168.151.2" mmsport="8080" type="mms" />
+  <apn carrier="Salt Prepay" mcc="228" mnc="03" apn="click" type="default,supl" />
   <apn carrier="Lycamobile CH" mcc="228" mnc="54" apn="data.lycamobile.ch" user="lmch" password="plus" type="default,supl" />
   <apn carrier="T-Mobile CZ IMS" mcc="230" mnc="01" apn="IMS" type="ims" protocol="IPV4V6" />
   <apn carrier="T-Mobile CZ" mcc="230" mnc="01" apn="internet.t-mobile.cz" user="wap" password="wap" server="*" mmsc="http://mms" mmsproxy="010.000.000.010" mmsport="80" type="default,supl" />
