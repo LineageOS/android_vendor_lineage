@@ -16,7 +16,7 @@ backup_file() {
       echo "Skipping odexed apk $1";
     else
       mkdir -p "$C/$D"
-      cp -p $1 "$C/$D/$F"
+      cp -dp $1 "$C/$D/$F"
     fi
   fi
 }
@@ -28,7 +28,7 @@ restore_file() {
     if [ ! -d "$DIR" ]; then
       mkdir -p "$DIR";
     fi
-    cp -p "$C/$DIR/$FILE" "$1";
+    cp -dp "$C/$DIR/$FILE" "$1";
     if [ -n "$2" ]; then
       echo "Deleting obsolete file $2"
       rm "$2";
