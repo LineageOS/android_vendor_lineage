@@ -15,14 +15,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Defaults for System -->
-
-    <!-- Default for CMSettings.System.QS_QUICK_PULLDOWN
-         0. Off
-         1. Right
-         2. Left -->
-    <integer name="def_qs_quick_pulldown">1</integer>
-
     <!-- Defaults for Secure -->
 
     <!-- Default for CMSettings.Secure.STATS_COLLECTION -->
