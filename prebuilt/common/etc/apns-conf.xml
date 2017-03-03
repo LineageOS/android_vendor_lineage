@@ -2923,6 +2923,7 @@
   <apn carrier="Beeline UZ MMS" mcc="434" mnc="04" apn="mms.beeline.uz" user="beeline" password="beeline" mmsc="http://mms" mmsproxy="172.30.30.166" mmsport="8080" type="mms" />
   <apn carrier="Ucell Internet" mcc="434" mnc="05" apn="internet" proxy="10.64.164.10" port="8080" mmsc="" user="" password="" type="default,supl" />
   <apn carrier="Ucell MMS" mcc="434" mnc="05" apn="mms" proxy="" port="" mmsproxy="10.64.164.10" mmsport="8080" mmsc="http://mmsc:8002/" user="" password="" type="mms" />
+  <apn carrier="Perfectum" mcc="434" mnc="06" apn="default" user="perfectum@perfectum.com" password="a" type="default,supl" />
   <apn carrier="MTS Internet" mcc="434" mnc="07" apn="net.mts.uz" user="mts" password="mts" authtype="1" type="default,supl" />
   <apn carrier="MTS MMS" mcc="434" mnc="07" apn="mms.mts.uz" proxy="" port="" mmsproxy="10.10.0.10" mmsport="8080" mmsc="http://mmsc/was" user="mts" password="mts" authtype="1" type="mms" />
   <apn carrier="em.std" mcc="440" mnc="00" apn="em.std" user="em" password="em" type="default,supl" bearer="14"/>
