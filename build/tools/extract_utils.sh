@@ -778,7 +778,7 @@ function fix_xml() {
 # extract:
 #
 # $1: file containing the list of items to extract
-# $2: path to extracted system folder, or "adb" to extract from device
+# $2: path to extracted system folder, an ota zip file, or "adb" to extract from device
 #
 function extract() {
     if [ -z "$OUTDIR" ]; then
@@ -800,6 +800,41 @@ function extract() {
 
     if [ "$SRC" = "adb" ]; then
         init_adb_connection
+    fi
+
+    if [ -f "$SRC" ] && [ "${SRC##*.}" == "zip" ]; then
+        DUMPDIR="$CM_ROOT"/system_dump
+
+        # Check if we're working with the same zip that was passed last time.
+        # If so, let's just use what's already extracted.
+        MD5=`md5sum "$SRC"| awk '{print $1}'`
+        OLDMD5=`cat "$DUMPDIR"/zipmd5.txt`
+
+        if [ "$MD5" != "$OLDMD5" ]; then
+            rm -rf "$DUMPDIR"
+            mkdir "$DUMPDIR"
+            unzip "$SRC" -d "$DUMPDIR"
+            echo "$MD5" > "$DUMPDIR"/zipmd5.txt
+
+            # Stop if an A/B OTA zip is detected. We cannot extract these.
+            if [ -a "$DUMPDIR"/payload.bin ]; then
+                echo "A/B style OTA zip detected. This is not supported at this time. Stopping..."
+                exit 1
+            # If OTA is block based, extract it.
+            elif [ -a "$DUMPDIR"/system.new.dat ]; then
+                echo "Converting system.new.dat to system.img"
+                python "$CM_ROOT"/vendor/cm/build/tools/sdat2img.py "$DUMPDIR"/system.transfer.list "$DUMPDIR"/system.new.dat "$DUMPDIR"/system.img 2>&1
+                rm -rf "$DUMPDIR"/system.new.dat "$DUMPDIR"/system
+                mkdir "$DUMPDIR"/system "$DUMPDIR"/tmp
+                echo "Requesting sudo access to mount the system.img"
+                sudo mount -o loop "$DUMPDIR"/system.img "$DUMPDIR"/tmp
+                cp -r "$DUMPDIR"/tmp/* "$DUMPDIR"/system/
+                sudo umount "$DUMPDIR"/tmp
+                rm -rf "$DUMPDIR"/tmp "$DUMPDIR"/system.img
+            fi
+        fi
+
+        SRC="$DUMPDIR"
     fi
 
     if [ "$VENDOR_STATE" -eq "0" ]; then
