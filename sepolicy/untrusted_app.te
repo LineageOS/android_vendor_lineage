@@ -1,2 +1,3 @@
 allow untrusted_app cm_weather_service:service_manager find;
 allow untrusted_app cm_status_bar_service:service_manager find;
+allow untrusted_app cm_profile_service:service_manager find;
