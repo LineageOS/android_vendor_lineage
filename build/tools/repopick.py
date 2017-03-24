@@ -268,7 +268,10 @@ if __name__ == '__main__':
             continue
 
         change = int(change)
-        patchset = int(patchset)
+
+        if patchset is not None:
+            patchset = int(patchset)
+
         review = next((x for x in reviews if x['number'] == change), None)
         if review is None:
             print('Change %d not found, skipping' % change)
