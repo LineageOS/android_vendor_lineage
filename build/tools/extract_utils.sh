@@ -873,6 +873,8 @@ function extract() {
             TARGET="$FROM"
             OUTPUT_DIR="$OUTPUT_DIR/rootfs"
             TMP_DIR="$TMP_DIR/rootfs"
+        elif [ -f "$SRC/$FILE" ] && [ "$SRC" != "adb" ]; then
+            TARGET="$FROM"
         else
             TARGET="system/$FROM"
             FILE="system/$FILE"
