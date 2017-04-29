@@ -1184,6 +1184,7 @@
   <apn carrier="TMI APN" mcc="272" mnc="11" apn="tescomobile.liffeytelecom.com" mmsc="http://mmc1/servlets/mms" mmsproxy="10.1.11.19" mmsport="8080" type="default,supl,mms" />
   <apn carrier="48months" mcc="272" mnc="11" apn="48months.liffeytelecom.com" mmsc="http://mmc1/servlets/mms" mmsproxy="10.1.11.19" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Lycamobile IE" mcc="272" mnc="13" apn="data.lycamobile.ie" user="lmie" password="plus" type="default,supl" />
+  <apn carrier="Virgin Media Ireland" mcc="272" mnc="15" apn="internet" proxy="" port="" user="" password="" mmsc="" mmsproxy="" mmsport="" type="default,supl,mms" />
   <apn carrier="Siminn Internet" mcc="274" mnc="01" apn="internet" proxy="213.167.138.200" port="8080" mmsc="" user="" password="" authtype="3" type="default,supl" />
   <apn carrier="Siminn MMS" mcc="274" mnc="01" apn="mms.simi.is" proxy="" port="" mmsproxy="213.167.138.200" mmsport="8080" mmsc="http://mms.simi.is/servlets/mms" user="" password="" authtype="3" type="mms" />
   <apn carrier="Siminn Internet" mcc="274" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
