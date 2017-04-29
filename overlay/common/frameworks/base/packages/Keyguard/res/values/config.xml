@@ -15,17 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Package name for default keyguard appwidget [DO NOT TRANSLATE] -->
-    <string name="widget_default_package_name">com.cyanogenmod.lockclock</string>
-
-    <!-- Class name for default keyguard appwidget [DO NOT TRANSLATE] -->
-    <string name="widget_default_class_name">com.cyanogenmod.lockclock.ClockWidgetProvider</string>
-
     <!-- default to disabling the menu key. The CM setting to
          do this is a no-op unless the below item is true -->
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
     <!-- config for showing AM/PM on lock screen in 12hour format -->
     <bool name="config_showAmpm">false</bool>
-
 </resources>
