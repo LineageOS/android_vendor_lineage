@@ -2,6 +2,11 @@ ifeq ($(LOCAL_MODULE_CLASS), STATIC_LIBRARIES)
 # For STATIC_LIBRARIES we need to use SD LLVM's archiver and archiver flags.
 
 AR := $(SDCLANG_PATH)/llvm-ar
+
+ifeq ($(LOCAL_SDCLANG_2),true)
+AR := $(SDCLANG_PATH_2)/llvm-ar
+endif
+
 ARFLAGS := crsD
 
 # For 32 bit
