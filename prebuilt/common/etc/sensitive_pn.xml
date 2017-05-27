@@ -54,4 +54,9 @@
     <sensitivePN network="530">
         <item>0800733843</item>
     </sensitivePN>
+    <!--Brazil-->
+    <sensitivePN network="724">
+        <item>100</item>
+        <item>180</item>
+    </sensitivePN>
 </sensitivePNS>
