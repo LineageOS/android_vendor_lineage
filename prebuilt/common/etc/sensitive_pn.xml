@@ -46,6 +46,10 @@
     <sensitivePN network="268">
         <item>800202148</item>
     </sensitivePN>
+    <!--USA-->
+    <sensitivePN network="310">
+        <item>18007997233</item>
+    </sensitivePN>
     <!--Australia-->
     <sensitivePN network="505">
         <item>1800737732</item>
