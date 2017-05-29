@@ -46,6 +46,10 @@
     <sensitivePN network="232">
         <item>0800222555</item>
     </sensitivePN>
+    <!--Australia-->
+    <sensitivePN network="505">
+        <item>1800737732</item>
+    </sensitivePN>
     <!--New Zealand-->
     <sensitivePN network="530">
         <item>0800733843</item>
