@@ -50,6 +50,10 @@
     <sensitivePN network="310">
         <item>18007997233</item>
     </sensitivePN>
+    <!--Bangladesh-->
+    <sensitivePN network="470">
+        <item>10921</item>
+    </sensitivePN>
     <!--Australia-->
     <sensitivePN network="505">
         <item>1800737732</item>
