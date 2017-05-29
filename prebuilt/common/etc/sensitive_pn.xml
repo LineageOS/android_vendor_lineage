@@ -46,6 +46,13 @@
     <sensitivePN network="268">
         <item>800202148</item>
     </sensitivePN>
+    <!--Turkey-->
+    <sensitivePN network="286">
+        <item>05494412144</item>
+        <item>144</item>
+        <item>05493810183</item>
+        <item>183</item>
+    </sensitivePN>
     <!--USA-->
     <sensitivePN network="310">
         <item>18007997233</item>
