@@ -18,9 +18,21 @@
  */
 -->
 <sensitivePNS>
+    <!--France-->
+    <sensitivePN network="208">
+        <item>3919</item>
+    </sensitivePN>
     <!--Spain-->
     <sensitivePN network="214">
         <item>016</item>
+    </sensitivePN>
+    <!--Italy-->
+    <sensitivePN network="222">
+        <item>1522</item>
+    </sensitivePN>
+    <!--Austria-->
+    <sensitivePN network="232">
+        <item>0800222555</item>
     </sensitivePN>
     <!--GB-->
     <sensitivePN network="234">
@@ -33,18 +45,6 @@
     <!--Portugal-->
     <sensitivePN network="268">
         <item>800202148</item>
-    </sensitivePN>
-    <!--France-->
-    <sensitivePN network="208">
-        <item>3919</item>
-    </sensitivePN>
-    <!--Italy-->
-    <sensitivePN network="222">
-        <item>1522</item>
-    </sensitivePN>
-    <!--Austria-->
-    <sensitivePN network="232">
-        <item>0800222555</item>
     </sensitivePN>
     <!--Australia-->
     <sensitivePN network="505">
