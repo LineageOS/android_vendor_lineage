@@ -57,6 +57,9 @@
     <!--Germany-->
     <sensitivePN network="262">
         <item>08000116016</item>
+        <item>08001110111</item>
+        <item>08001110222</item>
+        <item>116123</item>
     </sensitivePN>
     <!--Portugal-->
     <sensitivePN network="268">
