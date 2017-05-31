@@ -78,6 +78,12 @@
         <item>18006564673</item>
         <item>18007997233</item>
     </sensitivePN>
+    <!--India-->
+    <sensitivePN network="404">
+        <item>1090</item>
+        <item>1091</item>
+        <item>1098</item>
+    </sensitivePN>
     <!--Bangladesh-->
     <sensitivePN network="470">
         <item>10921</item>
