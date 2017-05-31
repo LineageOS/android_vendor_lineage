@@ -46,6 +46,14 @@
     <sensitivePN network="234">
         <item>08082000247</item>
     </sensitivePN>
+    <!--Norway-->
+    <sensitivePN network="242">
+        <item>22424202</item>
+        <item>22444050</item>
+        <item>23227930</item>
+        <item>80057000</item>
+        <item>81003940</item>
+    </sensitivePN>
     <!--Germany-->
     <sensitivePN network="262">
         <item>08000116016</item>
