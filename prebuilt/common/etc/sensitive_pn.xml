@@ -84,6 +84,64 @@
         <item>05493810183</item>
         <item>183</item>
     </sensitivePN>
+    <!--Canada-->
+    <sensitivePN network="302">
+        <item>18668630511</item>
+        <item>18668637868</item>
+        <item>18555544325</item>
+        <item>6137226914</item>
+        <item>18669960991</item>
+        <item>18773362433</item>
+        <item>18668607082</item>
+        <item>6046871867</item>
+        <item>18556871868</item>
+        <item>6048723311</item>
+        <item>18666613311</item>
+        <item>18668720113</item>
+        <item>6048750885</item>
+        <item>18005630808</item>
+        <item>6045831295</item>
+        <item>6042556344</item>
+        <item>18773927583</item>
+        <item>6049873374</item>
+        <item>6044371940</item>
+        <item>18664371940</item>
+        <item>6044283359</item>
+        <item>18553061443</item>
+        <item>17806322233</item>
+        <item>17806327070</item>
+        <item>7803101818</item>
+        <item>7804790058</item>
+        <item>6455195</item>
+        <item>18002633045</item>
+        <item>7806721035</item>
+        <item>18776721010</item>
+        <item>4032347233</item>
+        <item>18666067233</item>
+        <item>7805232929</item>
+        <item>7805234357</item>
+        <item>18665232929</item>
+        <item>3064254090</item>
+        <item>3066936511</item>
+        <item>3067641011</item>
+        <item>18887833111</item>
+        <item>3067570127</item>
+        <item>3065255333</item>
+        <item>18779770007</item>
+        <item>2047868686</item>
+        <item>18883223019</item>
+        <item>18006610844</item>
+        <item>8679793333</item>
+        <item>18002653333</item>
+        <item>5148739010</item>
+        <item>18003639010</item>
+        <item>7099446900</item>
+        <item>18883320000</item>
+        <item>18775211188</item>
+        <item>18554432660</item>
+        <item>8676685733</item>
+        <item>8676337720</item>
+    </sensitivePN>
     <!--USA-->
     <sensitivePN network="310">
         <item>18004224453</item>
