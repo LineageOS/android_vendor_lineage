@@ -18,6 +18,19 @@
  */
 -->
 <sensitivePNS>
+    <!--Greece-->
+    <sensitivePN network="202">
+        <item>197</item>
+        <item>1018</item>
+        <item>1056</item>
+        <item>1065</item>
+        <item>1107</item>
+        <item>1109</item>
+        <item>15900</item>
+        <item>111525</item>
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
     <!--Netherlands-->
     <sensitivePN network="204">
         <item>08002000</item>
