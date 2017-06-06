@@ -20,7 +20,11 @@
 <sensitivePNS>
     <!--Netherlands-->
     <sensitivePN network="204">
+        <item>08002000</item>
+        <item>08000432</item>
+        <item>09000101</item>
         <item>0882342450</item>
+        <item>09009999001</item>
     </sensitivePN>
     <!--France-->
     <sensitivePN network="208">
