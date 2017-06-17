@@ -127,17 +127,6 @@ def get_from_manifest(devicename):
         if re.search("android_device_.*_%s$" % device, localpath.get("name")):
             return localpath.get("path")
 
-    # Devices originally from AOSP are in the main manifest...
-    try:
-        mm = ElementTree.parse(".repo/manifest.xml")
-        mm = mm.getroot()
-    except:
-        mm = ElementTree.Element("manifest")
-
-    for localpath in mm.findall("project"):
-        if re.search("android_device_.*_%s$" % device, localpath.get("name")):
-            return localpath.get("path")
-
     return None
 
 def is_in_manifest(projectpath):
