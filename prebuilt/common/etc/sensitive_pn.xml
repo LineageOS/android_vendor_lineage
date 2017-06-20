@@ -56,6 +56,8 @@
     </sensitivePN>
     <!--GB-->
     <sensitivePN network="234">
+        <item>116123</item>
+        <item>08001111</item>
         <item>08082000247</item>
     </sensitivePN>
     <!--Norway-->
