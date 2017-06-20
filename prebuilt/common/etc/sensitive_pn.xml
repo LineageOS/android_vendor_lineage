@@ -76,6 +76,7 @@
     <!--Portugal-->
     <sensitivePN network="268">
         <item>800202148</item>
+        <item>116006</item>
     </sensitivePN>
     <!--Turkey-->
     <sensitivePN network="286">
