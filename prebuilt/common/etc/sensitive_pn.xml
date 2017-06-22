@@ -185,7 +185,7 @@
         <item>8676337720</item>
     </sensitivePN>
     <!--USA-->
-    <sensitivePN network="310">
+    <sensitivePN network="310,311,312,313,316">
         <item>18004224453</item>
         <item>18006564673</item>
         <item>18007997233</item>
