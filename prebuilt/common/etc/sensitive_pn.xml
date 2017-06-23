@@ -38,6 +38,8 @@
         <item>09000101</item>
         <item>0882342450</item>
         <item>09009999001</item>
+        <item>116006</item>
+        <item>116123</item>
     </sensitivePN>
     <!--France-->
     <sensitivePN network="208,340,647">
@@ -47,6 +49,17 @@
     <!--Spain-->
     <sensitivePN network="214">
         <item>016</item>
+        <item>116111</item>
+    </sensitivePN>
+    <!--Hungary-->
+    <sensitivePN network="216">
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
+    <!--Croatia-->
+    <sensitivePN network="219">
+        <item>116006</item>
+        <item>116111</item>
     </sensitivePN>
     <!--Serbia-->
     <sensitivePN network="220">
@@ -63,10 +76,14 @@
     <!--Romania-->
     <sensitivePN network="226">
         <item>0213114636</item>
+        <item>116111</item>
+    </sensitivePN>
+    <!--Slovakia-->
+    <sensitivePN network="231">
+        <item>116111</item>
     </sensitivePN>
     <!--Czech Republic-->
     <sensitivePN network="230">
-        <item>116111</item>
         <item>222514040</item>
         <item>222580697</item>
         <item>224214214</item>
@@ -81,16 +98,33 @@
         <item>777783146</item>
         <item>777800983</item>
         <item>800200007</item>
+        <item>116006</item>
+        <item>116111</item>
+        <item>116123</item>
     </sensitivePN>
     <!--Austria-->
     <sensitivePN network="232">
         <item>0800222555</item>
+        <item>116006</item>
+        <item>116123</item>
     </sensitivePN>
     <!--GB-->
     <sensitivePN network="234,235">
         <item>116123</item>
         <item>08001111</item>
         <item>08082000247</item>
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
+    <!--Denmark-->
+    <sensitivePN network="238">
+        <item>116006</item>
+        <item>116111</item>
+    </sensitivePN>
+    <!--Sweden-->
+    <sensitivePN network="240">
+        <item>116111</item>
+        <item>116123</item>
     </sensitivePN>
     <!--Norway-->
     <sensitivePN network="242">
@@ -100,6 +134,23 @@
         <item>80057000</item>
         <item>81003940</item>
     </sensitivePN>
+    <!--Finland-->
+    <sensitivePN network="244">
+        <item>116111</item>
+    </sensitivePN>
+    <!--Lithuania-->
+    <sensitivePN network="246">
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
+    <!--Latvia-->
+    <sensitivePN network="247">
+        <item>116111</item>
+    </sensitivePN>
+    <!--Estonia-->
+    <sensitivePN network="248">
+        <item>116111</item>
+    </sensitivePN>
     <!--Ukraine-->
     <sensitivePN network="255">
         <item>0800500335</item>
@@ -107,17 +158,48 @@
         <item>0800500225</item>
         <item>772</item>
     </sensitivePN>
+    <!--Poland-->
+    <sensitivePN network="260">
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
     <!--Germany-->
     <sensitivePN network="262">
         <item>08000116016</item>
         <item>08001110111</item>
         <item>08001110222</item>
+        <item>116006</item>
+        <item>116111</item>
         <item>116123</item>
     </sensitivePN>
     <!--Portugal-->
     <sensitivePN network="268">
         <item>800202148</item>
+        <item>116111</item>
+    </sensitivePN>
+    <!--Luxembourg-->
+    <sensitivePN network="270">
+        <item>116111</item>
+    </sensitivePN>
+    <!--Ireland-->
+    <sensitivePN network="272">
         <item>116006</item>
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
+    <!--Malta-->
+    <sensitivePN network="278">
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
+    <!--Cyprus-->
+    <sensitivePN network="280">
+        <item>116111</item>
+        <item>116123</item>
+    </sensitivePN>
+    <!--Bulgaria-->
+    <sensitivePN network="284">
+        <item>116111</item>
     </sensitivePN>
     <!--Turkey-->
     <sensitivePN network="286">
@@ -125,6 +207,11 @@
         <item>144</item>
         <item>05493810183</item>
         <item>183</item>
+    </sensitivePN>
+    <!--Slovenia-->
+    <sensitivePN network="293">
+        <item>116111</item>
+        <item>116123</item>
     </sensitivePN>
     <!--Canada-->
     <sensitivePN network="302">
