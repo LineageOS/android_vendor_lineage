@@ -190,6 +190,13 @@
         <item>1203</item>
         <item>1204</item>
     </sensitivePN>
+    <!--Taiwan-->
+    <sensitivePN network="466">
+        <item>113</item>
+        <item>1955</item>
+        <item>886253883095</item>
+        <item>88635557953</item>
+    </sensitivePN>
     <!--Bangladesh-->
     <sensitivePN network="470">
         <item>10921</item>
