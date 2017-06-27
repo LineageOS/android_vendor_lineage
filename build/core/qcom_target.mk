@@ -61,6 +61,9 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         TARGET_USES_COLOR_METADATA := true
     endif
 
+    # List of targets that use master side content protection
+    MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998
+
     TARGET_GLOBAL_CFLAGS += $(qcom_flags)
     TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
     CLANG_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
