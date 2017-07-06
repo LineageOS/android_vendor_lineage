@@ -2,7 +2,7 @@
 #
 # Print startup info
 #
-L="log -p i -t cm"
+L="log -p i -t lineage"
 
 $L "_ _                                       "
 $L "| (_)_ __   ___  __ _  __ _  ___  ___  ___ "
@@ -10,4 +10,4 @@ $L "| | | '_ \\ / _ \\/ _\` |/ _\` |/ _ \\/ _ \\/ __|"
 $L "| | | | | |  __/ (_| | (_| |  __/ (_) \\__ \\"
 $L "|_|_|_| |_|\\___|\\__,_|\\__, |\\___|\\___/|___/"
 $L "                      |___/"
-$L "Welcome to Android `getprop ro.build.version.release` / LineageOS-`getprop ro.cm.version`";
+$L "Welcome to Android `getprop ro.build.version.release` / LineageOS-`getprop ro.lineage.version`";
