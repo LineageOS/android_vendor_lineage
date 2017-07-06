@@ -4,4 +4,4 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/cm/sepolicy
+    vendor/lineage/sepolicy

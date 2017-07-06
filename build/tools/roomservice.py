@@ -153,7 +153,7 @@ def is_in_manifest(projectpath):
 
     # ... and don't forget the lineage snippet
     try:
-        lm = ElementTree.parse(".repo/manifests/snippets/cm.xml")
+        lm = ElementTree.parse(".repo/manifests/snippets/lineage.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")
@@ -203,7 +203,7 @@ def add_to_manifest(repositories, fallback_branch = None):
 
 def fetch_dependencies(repo_path, fallback_branch = None):
     print('Looking for dependencies in %s' % repo_path)
-    dependencies_paths = [repo_path + '/lineage.dependencies', repo_path + '/cm.dependencies']
+    dependencies_paths = [repo_path + '/lineage.dependencies']
     found_dependencies = False
     syncable_repos = []
     verify_repos = []
