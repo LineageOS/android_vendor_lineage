@@ -298,7 +298,7 @@ if __name__ == '__main__':
     for item in mergables:
         args.quiet or print('Applying change number {0}...'.format(item['id']))
         # Check if change is open and exit if it's not, unless -f is specified
-        if (item['status'] != 'OPEN' and item['status'] != 'NEW') and not args.query:
+        if (item['status'] != 'OPEN' and item['status'] != 'NEW' and item['status'] != 'DRAFT') and not args.query:
             if args.force:
                 print('!! Force-picking a closed change !!\n')
             else:
