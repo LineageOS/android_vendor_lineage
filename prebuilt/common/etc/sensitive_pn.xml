@@ -40,7 +40,7 @@
         <item>09009999001</item>
     </sensitivePN>
     <!--France-->
-    <sensitivePN network="208">
+    <sensitivePN network="208,340,647">
         <item>119</item>
         <item>3919</item>
     </sensitivePN>
