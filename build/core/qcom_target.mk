@@ -51,6 +51,9 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         endif
     endif
 
+    # Allow building audio encoders
+    TARGET_USES_QCOM_MM_AUDIO := true
+
     # Enable extra offloading for post-805 targets
     ifneq ($(filter msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
         qcom_flags += -DHAS_EXTRA_FLAC_METADATA
