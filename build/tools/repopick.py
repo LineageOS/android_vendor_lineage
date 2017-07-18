@@ -143,6 +143,7 @@ if __name__ == '__main__':
     parser.add_argument('change_number', nargs='*', help='change number to cherry pick.  Use {change number}/{patchset number} to get a specific revision.')
     parser.add_argument('-i', '--ignore-missing', action='store_true', help='do not error out if a patch applies to a missing directory')
     parser.add_argument('-s', '--start-branch', nargs=1, help='start the specified branch before cherry picking')
+    parser.add_argument('-r', '--reset', action='store_true', help='reset to initial state (abort cherry-pick) if there is a conflict')
     parser.add_argument('-a', '--abandon-first', action='store_true', help='before cherry picking, abandon the branch specified in --start-branch')
     parser.add_argument('-b', '--auto-branch', action='store_true', help='shortcut to "--start-branch auto --abandon-first --ignore-missing"')
     parser.add_argument('-q', '--quiet', action='store_true', help='print as little as possible')
@@ -408,7 +409,12 @@ if __name__ == '__main__':
                 cmd_out = None
             result = subprocess.call(cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out)
             if result != 0:
-                print('ERROR: git command failed')
+                if args.reset:
+                    print('ERROR: git command failed, aborting cherry-pick')
+                    cmd = ['git cherry-pick --abort']
+                    subprocess.call(cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out)
+                else:
+                    print('ERROR: git command failed')
                 sys.exit(result)
         if not args.quiet:
             print('')
