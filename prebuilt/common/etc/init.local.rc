@@ -22,6 +22,10 @@ on post-fs-data
     mkdir /data/ssh/empty 0600 root shell
     mkdir /cache/recovery 0770 system cache
 
+    # Create an additional OTA package directory that unlike /data/ota_package
+    # will not be touched by GmsCore.
+    mkdir /data/lineageos_updates 0770 system cache
+
     # Run sysinit
     start sysinit
 
