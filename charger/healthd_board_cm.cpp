@@ -45,6 +45,8 @@
 #define LOGI(x...) do { KLOG_INFO("charger", x); } while (0)
 #define LOGV(x...) do { KLOG_DEBUG("charger", x); } while (0)
 
+static const GRFont* gr_font = NULL;
+
 struct frame {
     int min_capacity;
     GRSurface *surface;
@@ -61,6 +63,11 @@ static struct animation anim = {
     .cur_frame = 0,
     .num_frames = 0,
 };
+
+static const GRFont* get_font()
+{
+    return gr_font;
+}
 
 static int draw_surface_centered(GRSurface* surface)
 {
@@ -83,14 +90,14 @@ static void draw_capacity(int capacity)
 
     struct frame *f = &anim.frames[0];
     int font_x, font_y;
-    gr_font_size(gr_sys_font(), &font_x, &font_y);
-    int w = gr_measure(gr_sys_font(), cap_str);
+    gr_font_size(get_font(), &font_x, &font_y);
+    int w = gr_measure(get_font(), cap_str);
     int h = gr_get_height(f->surface);
     int x = (gr_fb_width() - w) / 2;
     int y = (gr_fb_height() + h) / 2;
 
     gr_color(255, 255, 255, 255);
-    gr_text(gr_sys_font(), x, y + font_y / 2, cap_str, 0);
+    gr_text(get_font(), x, y + font_y / 2, cap_str, 0);
 }
 
 #ifdef QCOM_HARDWARE
@@ -412,4 +419,13 @@ void healthd_board_mode_charger_set_backlight(bool)
 
 void healthd_board_mode_charger_init(void)
 {
+    GRFont* tmp_font;
+    int res = gr_init_font("font_log", &tmp_font);
+    if (res == 0) {
+        gr_font = tmp_font;
+    } else {
+        LOGW("Couldn't open font, falling back to default!\n");
+        gr_font = gr_sys_font();
+    }
+
 }
