@@ -30,6 +30,9 @@ endif
 ifneq ($(HEALTHD_BACKLIGHT_LEVEL),)
     LOCAL_CFLAGS += -DHEALTHD_BACKLIGHT_LEVEL=$(HEALTHD_BACKLIGHT_LEVEL)
 endif
+LOCAL_STATIC_LIBRARIES := \
+    libbase \
+    libminui
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
