@@ -3800,6 +3800,8 @@
   <apn carrier="APLICACIONES" mcc="730" mnc="07" apn="wap.tmovil.cl" user="wap" password="wap" type="default,supl" />
   <apn carrier="Movistar MMS" mcc="730" mnc="07" apn="mms.tmovil.cl" proxy="" port="" mmsproxy="172.17.8.10" mmsport="8080" mmsc="http://mms.movistar.cl" user="mms" password="mms" type="mms" />
   <apn carrier="Virgin Mobile CL" mcc="730" mnc="07" apn="imovil.virginmobile.cl" type="default,supl" />
+  <apn carrier="Internet WOM" mmc="730" mnc="09" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="MMS WOM" mmc="730" mnc="09" apn="mms" proxy="" port="" user="" password="" mmsc="http://3gmms.nextelmovil.cl" mmsproxy="129.192.129.104" mmsport="8080" type="mms" />
   <apn carrier="Internet Movil" mcc="730" mnc="10" apn="imovil.entelpcs.cl" user="entelpcs" password="entelpcs" type="default,supl" />
   <apn carrier="MMS Entel PCS" mcc="730" mnc="10" apn="mms.entelpcs.cl" proxy="" port="" mmsproxy="10.99.0.10" mmsport="8080" mmsc="http://mmsc.entelpcs.cl" user="entelpcs" password="entelmms" type="mms" />
   <apn carrier="Internet Movil" mcc="730" mnc="10" apn="bam.entelpcs.cl" user="entelpcs" password="entelpcs" proxy="10.99.0.10" port="8080" type="default,supl" />
