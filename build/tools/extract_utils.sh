@@ -796,7 +796,11 @@ function extract() {
         exit 1
     fi
 
-    parse_file_list "$1" "$3"
+    if [ -z "$3" ]; then
+        parse_file_list "$1"
+    else
+        parse_file_list "$1" "$3"
+    fi
 
     # Allow failing, so we can try $DEST and/or $FILE
     set +e
