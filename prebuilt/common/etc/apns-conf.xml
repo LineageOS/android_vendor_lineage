@@ -3760,6 +3760,7 @@
   <apn carrier="Oi MMS" mcc="724" mnc="16" apn="mmsgprs.oi.com.br" proxy="" port="" mmsproxy="192.168.10.50" mmsport="3128" mmsc="http://200.222.42.204:8002/" user="oimms" password="oioioi" authtype="1" type="mms" />
   <apn carrier="BrT Internet" mcc="724" mnc="16" apn="brt.br" user="brt" password="brt" mmsc="null" type="default,supl" />
   <apn carrier="BrT MMS" mcc="724" mnc="16" apn="mms.brt.br" user="brt" password="brt" mmsc="http://mms.brasiltelecom.com.br/" mmsproxy="200.96.8.29" mmsport="8080" type="mms" />
+  <apn carrier="Correios Celular" mcc="724" mnc="17" apn="internet.br" type="default,supl" />
   <apn carrier="Telemig GPRS" mcc="724" mnc="19" apn="gprs.telemigcelular.com.br" user="celular" password="celular" mmsc="null" type="default,supl" />
   <apn carrier="Telemig MMS" mcc="724" mnc="19" apn="mmsgprs.telemigcelular.com.br" user="celular" password="celular" mmsc="http://mms.telemigcelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
   <apn carrier="Vivo Internet" mcc="724" mnc="23" apn="zap.vivo.com.br" mmsc="http://www.google.com.br" user="vivo" password="vivo" authtype="1" type="default,supl" />
