@@ -31,6 +31,14 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
+  ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.device.cache_dir=/data/cache
+else
+  ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.device.cache_dir=/cache
+endif
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
