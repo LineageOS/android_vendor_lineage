@@ -31,15 +31,11 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Copy over the changelog to the device
-PRODUCT_COPY_FILES += \
-    vendor/lineage/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/lineage/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/lineage/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
+    vendor/lineage/prebuilt/common/bin/50-lineage.sh:system/addon.d/50-lineage.sh \
     vendor/lineage/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Backup Services whitelist
@@ -61,9 +57,9 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
-# CM-specific init file
+# Lineage-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/lineage/prebuilt/common/etc/init.local.rc:root/init.cm.rc
+    vendor/lineage/prebuilt/common/etc/init.local.rc:root/init.lineage.rc
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
@@ -77,12 +73,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is CM!
+# This is Lineage!
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
-# Include CM audio files
-include vendor/lineage/config/cm_audio.mk
+# Include Lineage audio files
+include vendor/lineage/config/lineage_audio.mk
 
 # Theme engine
 include vendor/lineage/config/themes_common.mk
@@ -101,7 +97,7 @@ endif
 PRODUCT_PACKAGES += \
     bootanimation.zip
 
-# Required CM packages
+# Required Lineage packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CMAudioService \
@@ -110,7 +106,7 @@ PRODUCT_PACKAGES += \
     Profiles \
     WeatherManagerService
 
-# Optional CM packages
+# Optional packages
 PRODUCT_PACKAGES += \
     libemoji \
     LiveWallpapersPicker \
@@ -122,7 +118,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# Custom CM packages
+# Custom Lineage packages
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
@@ -141,7 +137,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Exchange2
 
-# Extra tools in CM
+# Extra tools in Lineage
 PRODUCT_PACKAGES += \
     7z \
     bash \
@@ -169,12 +165,12 @@ PRODUCT_PACKAGES += \
     zip
 
 # Custom off-mode charger
-ifneq ($(WITH_CM_CHARGER),false)
+ifneq ($(WITH_LINEAGE_CHARGER),false)
 PRODUCT_PACKAGES += \
     charger_res_images \
-    cm_charger_res_images \
+    lineage_charger_res_images \
     font_log.png \
-    libhealthd.cm
+    libhealthd.lineage
 endif
 
 # ExFAT support
@@ -237,124 +233,124 @@ endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
-PRODUCT_VERSION_MAJOR = 14
-PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_MAJOR = 15
+PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE := 0
 
 ifeq ($(TARGET_VENDOR_SHOW_MAINTENANCE_VERSION),true)
-    CM_VERSION_MAINTENANCE := $(PRODUCT_VERSION_MAINTENANCE)
+    LINEAGE_VERSION_MAINTENANCE := $(PRODUCT_VERSION_MAINTENANCE)
 else
-    CM_VERSION_MAINTENANCE := 0
+    LINEAGE_VERSION_MAINTENANCE := 0
 endif
 
-# Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
+# Set LINEAGE_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
-ifndef CM_BUILDTYPE
+ifndef LINEAGE_BUILDTYPE
     ifdef RELEASE_TYPE
-        # Starting with "CM_" is optional
-        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^CM_||g')
-        CM_BUILDTYPE := $(RELEASE_TYPE)
+        # Starting with "LINEAGE_" is optional
+        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^LINEAGE_||g')
+        LINEAGE_BUILDTYPE := $(RELEASE_TYPE)
     endif
 endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
-    CM_BUILDTYPE :=
+ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
+    LINEAGE_BUILDTYPE :=
 endif
 
-ifdef CM_BUILDTYPE
-    ifneq ($(CM_BUILDTYPE), SNAPSHOT)
-        ifdef CM_EXTRAVERSION
+ifdef LINEAGE_BUILDTYPE
+    ifneq ($(LINEAGE_BUILDTYPE), SNAPSHOT)
+        ifdef LINEAGE_EXTRAVERSION
             # Force build type to EXPERIMENTAL
-            CM_BUILDTYPE := EXPERIMENTAL
-            # Remove leading dash from CM_EXTRAVERSION
-            CM_EXTRAVERSION := $(shell echo $(CM_EXTRAVERSION) | sed 's/-//')
-            # Add leading dash to CM_EXTRAVERSION
-            CM_EXTRAVERSION := -$(CM_EXTRAVERSION)
+            LINEAGE_BUILDTYPE := EXPERIMENTAL
+            # Remove leading dash from LINEAGE_EXTRAVERSION
+            LINEAGE_EXTRAVERSION := $(shell echo $(LINEAGE_EXTRAVERSION) | sed 's/-//')
+            # Add leading dash to LINEAGE_EXTRAVERSION
+            LINEAGE_EXTRAVERSION := -$(LINEAGE_EXTRAVERSION)
         endif
     else
-        ifndef CM_EXTRAVERSION
+        ifndef LINEAGE_EXTRAVERSION
             # Force build type to EXPERIMENTAL, SNAPSHOT mandates a tag
-            CM_BUILDTYPE := EXPERIMENTAL
+            LINEAGE_BUILDTYPE := EXPERIMENTAL
         else
-            # Remove leading dash from CM_EXTRAVERSION
-            CM_EXTRAVERSION := $(shell echo $(CM_EXTRAVERSION) | sed 's/-//')
-            # Add leading dash to CM_EXTRAVERSION
-            CM_EXTRAVERSION := -$(CM_EXTRAVERSION)
+            # Remove leading dash from LINEAGE_EXTRAVERSION
+            LINEAGE_EXTRAVERSION := $(shell echo $(LINEAGE_EXTRAVERSION) | sed 's/-//')
+            # Add leading dash to LINEAGE_EXTRAVERSION
+            LINEAGE_EXTRAVERSION := -$(LINEAGE_EXTRAVERSION)
         endif
     endif
 else
-    # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
-    CM_EXTRAVERSION :=
+    # If LINEAGE_BUILDTYPE is not defined, set to UNOFFICIAL
+    LINEAGE_BUILDTYPE := UNOFFICIAL
+    LINEAGE_EXTRAVERSION :=
 endif
 
-ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
+ifeq ($(LINEAGE_BUILDTYPE), UNOFFICIAL)
     ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
-        CM_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
+        LINEAGE_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
     endif
 endif
 
-ifeq ($(CM_BUILDTYPE), RELEASE)
+ifeq ($(LINEAGE_BUILDTYPE), RELEASE)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
-        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
+        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(LINEAGE_BUILD)
     else
         ifeq ($(TARGET_BUILD_VARIANT),user)
-            ifeq ($(CM_VERSION_MAINTENANCE),0)
-                LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(CM_BUILD)
+            ifeq ($(LINEAGE_VERSION_MAINTENANCE),0)
+                LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(LINEAGE_BUILD)
             else
-                LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(CM_BUILD)
+                LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(LINEAGE_VERSION_MAINTENANCE)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(LINEAGE_BUILD)
             endif
         else
-            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
+            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(LINEAGE_BUILD)
         endif
     endif
 else
-    ifeq ($(CM_VERSION_MAINTENANCE),0)
-        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
+    ifeq ($(LINEAGE_VERSION_MAINTENANCE),0)
+        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(LINEAGE_BUILDTYPE)$(LINEAGE_EXTRAVERSION)-$(LINEAGE_BUILD)
     else
-        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
+        LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(LINEAGE_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-$(LINEAGE_BUILDTYPE)$(LINEAGE_EXTRAVERSION)-$(LINEAGE_BUILD)
     endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cm.version=$(LINEAGE_VERSION) \
-    ro.cm.releasetype=$(CM_BUILDTYPE) \
+    ro.lineage.version=$(LINEAGE_VERSION) \
+    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
     ro.modversion=$(LINEAGE_VERSION) \
-    ro.cmlegal.url=https://lineageos.org/legal
+    ro.lineagelegal.url=https://lineageos.org/legal
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
--include vendor/cm-priv/keys/keys.mk
+-include vendor/lineage-priv/keys/keys.mk
 
-CM_DISPLAY_VERSION := $(LINEAGE_VERSION)
+LINEAGE_DISPLAY_VERSION := $(LINEAGE_VERSION)
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
-    ifneq ($(CM_BUILDTYPE), UNOFFICIAL)
+    ifneq ($(LINEAGE_BUILDTYPE), UNOFFICIAL)
         ifndef TARGET_VENDOR_RELEASE_BUILD_ID
-            ifneq ($(CM_EXTRAVERSION),)
-                # Remove leading dash from CM_EXTRAVERSION
-                CM_EXTRAVERSION := $(shell echo $(CM_EXTRAVERSION) | sed 's/-//')
-                TARGET_VENDOR_RELEASE_BUILD_ID := $(CM_EXTRAVERSION)
+            ifneq ($(LINEAGE_EXTRAVERSION),)
+                # Remove leading dash from LINEAGE_EXTRAVERSION
+                LINEAGE_EXTRAVERSION := $(shell echo $(LINEAGE_EXTRAVERSION) | sed 's/-//')
+                TARGET_VENDOR_RELEASE_BUILD_ID := $(LINEAGE_EXTRAVERSION)
             else
                 TARGET_VENDOR_RELEASE_BUILD_ID := $(shell date -u +%Y%m%d)
             endif
         else
             TARGET_VENDOR_RELEASE_BUILD_ID := $(TARGET_VENDOR_RELEASE_BUILD_ID)
         endif
-        ifeq ($(CM_VERSION_MAINTENANCE),0)
-            CM_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(CM_BUILD)
+        ifeq ($(LINEAGE_VERSION_MAINTENANCE),0)
+            LINEAGE_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(LINEAGE_BUILD)
         else
-            CM_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(CM_BUILD)
+            LINEAGE_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(LINEAGE_VERSION_MAINTENANCE)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(LINEAGE_BUILD)
         endif
     endif
 endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cm.display.version=$(CM_DISPLAY_VERSION)
+    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
