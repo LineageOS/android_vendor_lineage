@@ -1,9 +1,9 @@
-# Inherit common CM stuff
+# Inherit full common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full.mk)
 
-# Required CM packages
+# Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
-# Include CM LatinIME dictionaries
+# Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
