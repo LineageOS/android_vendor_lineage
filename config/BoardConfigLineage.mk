@@ -1,6 +1,6 @@
 # Charger
 ifneq ($(WITH_LINEAGE_CHARGER),false)
-    BOARD_HAL_STATIC_LIBRARIES := libhealthd.cm
+    BOARD_HAL_STATIC_LIBRARIES := libhealthd.lineage
 endif
 
 ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
