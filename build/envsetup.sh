@@ -703,14 +703,7 @@ function lineagerebase() {
 }
 
 function mka() {
-    case `uname -s` in
-        Darwin)
-            m -j "$@"
-            ;;
-        *)
-            mk_timer schedtool -B -n 10 -e ionice -n 7 m -j "$@"
-            ;;
-    esac
+    m -j "$@"
 }
 
 function cmka() {
@@ -741,16 +734,7 @@ function mms() {
         return 1
     fi
 
-    case `uname -s` in
-        Darwin)
-            ONE_SHOT_MAKEFILE="__none__" \
-                m -j "$@"
-            ;;
-        *)
-            ONE_SHOT_MAKEFILE="__none__" \
-                mk_timer schedtool -B -n 1 -e ionice -n 1 m -j "$@"
-            ;;
-    esac
+    ONE_SHOT_MAKEFILE="__none__" m -j "$@"
 }
 
 function repolastsync() {
@@ -761,14 +745,7 @@ function repolastsync() {
 }
 
 function reposync() {
-    case `uname -s` in
-        Darwin)
-            repo sync -j 4 "$@"
-            ;;
-        *)
-            schedtool -B -n 1 -e ionice -n 1 `which repo` sync -j 4 "$@"
-            ;;
-    esac
+    repo sync -j 4 "$@"
 }
 
 function repodiff() {
