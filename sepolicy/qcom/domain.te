@@ -1,2 +1,0 @@
-allow domain persist_file:dir getattr;
-allow domain persist_block_device:blk_file getattr;

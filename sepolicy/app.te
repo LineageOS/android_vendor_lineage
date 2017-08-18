@@ -1,3 +1,0 @@
-# Themed resources (i.e. composed icons)
-allow appdomain themeservice_app_data_file:dir r_dir_perms;
-allow appdomain themeservice_app_data_file:file r_file_perms;
