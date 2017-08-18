@@ -1,5 +1,0 @@
-allow zygote themeservice_app_data_file:file r_file_perms;
-allow zygote themeservice_app_data_file:dir r_dir_perms;
-
-# ps command may do this
-allow untrusted_app zygote:process getsched;

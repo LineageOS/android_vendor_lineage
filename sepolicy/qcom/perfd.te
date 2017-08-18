@@ -1,7 +1,0 @@
-allow perfd sysfs_devices_system_iosched:file rw_file_perms;
-
-# read mediaserver status
-allow perfd mediaserver:file { read open };
-
-#cm extra opts
-unix_socket_connect(perfd, thermal, thermal-engine)
