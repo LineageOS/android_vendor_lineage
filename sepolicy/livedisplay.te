@@ -1,2 +1,0 @@
-# Various knobs used by LiveDisplay
-allow system_server livedisplay_sysfs:file rw_file_perms;

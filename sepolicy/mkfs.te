@@ -1,9 +1,0 @@
-type mkfs, domain;
-type mkfs_exec, exec_type, file_type;
-
-init_daemon_domain(mkfs)
-
-# Allow formatting userdata or cache partitions
-allow mkfs block_device:dir search;
-allow mkfs userdata_block_device:blk_file rw_file_perms;
-allow mkfs cache_block_device:blk_file rw_file_perms;
