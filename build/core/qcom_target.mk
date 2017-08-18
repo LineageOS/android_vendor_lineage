@@ -30,10 +30,6 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     BR_FAMILY := msm8909 msm8916
     UM_FAMILY := msm8937 msm8953
 
-    qcom_flags := -DQCOM_HARDWARE
-    qcom_flags += -DQCOM_BSP
-    qcom_flags += -DQTI_BSP
-
     BOARD_USES_ADRENO := true
 
     TARGET_USES_QCOM_BSP := true
@@ -42,22 +38,14 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     TARGET_COMPILE_WITH_MSM_KERNEL := true
 
     ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),)
-        # Enable legacy graphics functions
-        qcom_flags += -DQCOM_BSP_LEGACY
         # Enable legacy audio functions
         ifeq ($(BOARD_USES_LEGACY_ALSA_AUDIO),true)
             USE_CUSTOM_AUDIO_POLICY := 1
-            qcom_flags += -DLEGACY_ALSA_AUDIO
         endif
     endif
 
     # Allow building audio encoders
     TARGET_USES_QCOM_MM_AUDIO := true
-
-    # Enable extra offloading for post-805 targets
-    ifneq ($(filter msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
-        qcom_flags += -DHAS_EXTRA_FLAC_METADATA
-    endif
 
     # Enable color metadata for modern UM targets
     ifneq ($(filter msm8996 msm8998 sdm660,$(TARGET_BOARD_PLATFORM)),)
@@ -66,17 +54,6 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 
     # List of targets that use master side content protection
     MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660
-
-    TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
-    CLANG_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    CLANG_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
-
-    # Multiarch needs these too..
-    2ND_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    2ND_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
-    2ND_CLANG_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    2ND_CLANG_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
 
     ifeq ($(call is-board-platform-in-list, $(B_FAMILY)),true)
         MSM_VIDC_TARGET_LIST := $(B_FAMILY)
