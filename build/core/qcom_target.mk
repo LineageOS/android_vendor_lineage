@@ -67,16 +67,16 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     # List of targets that use master side content protection
     MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660
 
-    TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
-    CLANG_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    CLANG_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
+    # TARGET_GLOBAL_CFLAGS += $(qcom_flags)
+    # TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
+    # CLANG_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
+    # CLANG_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
 
     # Multiarch needs these too..
-    2ND_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    2ND_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
-    2ND_CLANG_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
-    2ND_CLANG_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
+    # 2ND_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
+    # 2ND_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
+    # 2ND_CLANG_TARGET_GLOBAL_CFLAGS += $(qcom_flags)
+    # 2ND_CLANG_TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
 
     ifeq ($(call is-board-platform-in-list, $(B_FAMILY)),true)
         MSM_VIDC_TARGET_LIST := $(B_FAMILY)
