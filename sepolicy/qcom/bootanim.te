@@ -1,8 +1,0 @@
-allow bootanim mpctl_socket:dir search;
-unix_socket_connect(bootanim, mpctl, perfd)
-unix_socket_send(bootanim, mpctl, perfd)
-
-allow bootanim mpdecision:dir search;
-allow bootanim mpdecision:file r_file_perms;
-unix_socket_connect(bootanim, mpctl, mpdecision)
-unix_socket_send(bootanim, mpctl, mpdecision)
