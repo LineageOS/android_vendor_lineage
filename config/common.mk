@@ -88,9 +88,6 @@ PRODUCT_COPY_FILES += \
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
-# Theme engine
-include vendor/lineage/config/themes_common.mk
-
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
 include vendor/lineage/config/cmsdk_common.mk
