@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e71f0a85_adf2f690",
+        "filename": "vendorsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-08-22T13:26:43Z",
+      "side": 1,
+      "message": "lineage-15.0 ?",
+      "range": {
+        "startLine": 1,
+        "startChar": 130,
+        "endLine": 1,
+        "endChar": 137
+      },
+      "revId": "5cceca6163254f5b6d17784efea3a7baa3da24be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
