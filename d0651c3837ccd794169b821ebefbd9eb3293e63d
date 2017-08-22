@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "50514162_c69d244e",
+        "filename": "build/tasks/otapackage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-08-22T21:46:10Z",
+      "side": 1,
+      "message": ".PHONY: bacon",
+      "revId": "d0651c3837ccd794169b821ebefbd9eb3293e63d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "503d6c57_90808ce1",
+        "filename": "build/tasks/otapackage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-08-22T21:46:10Z",
+      "side": 1,
+      "message": "remove",
+      "revId": "d0651c3837ccd794169b821ebefbd9eb3293e63d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "781fd846_a6083111",
+        "filename": "build/tasks/otapackage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-08-22T21:46:10Z",
+      "side": 1,
+      "message": "bacon: $(INTERNAL_OTA_PACKAGE_TARGET)",
+      "revId": "d0651c3837ccd794169b821ebefbd9eb3293e63d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
