@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "33560f69_daa269bb",
+        "filename": "config/common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5503
+      },
+      "writtenOn": "2017-08-23T16:44:56Z",
+      "side": 0,
+      "message": "ro.adb.secure is already in build/make/core/main.mk (and has been in build/core/main.mk since at least N).  It\u0027s conditioned on user build but that can be modified to user/userdebug by simply removing the surrounding ifeq/endif.\n\nI don\u0027t know which patch brought in lines 29-31 in the previous version of this file, but they can be deleted as well.",
+      "revId": "0cee800d2a50269566aba08f789317dca4d0c3fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
