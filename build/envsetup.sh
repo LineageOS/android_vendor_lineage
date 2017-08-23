@@ -267,12 +267,17 @@ function lineageremote()
     fi
     git remote rm lineage 2> /dev/null
     GERRIT_REMOTE=$(git config --get remote.github.projectname)
+    if [ -z "$GERRIT_REMOTE" ]
+    then
+        GERRIT_REMOTE=$(git config --get remote.aosp.projectname | sed s#platform/#android/#g | sed s#/#_#g)
+        PFX="LineageOS/"
+    fi
     LINEAGE_USER=$(git config --get review.review.lineageos.org.username)
     if [ -z "$LINEAGE_USER" ]
     then
-        git remote add lineage ssh://review.lineageos.org:29418/$GERRIT_REMOTE
+        git remote add lineage ssh://review.lineageos.org:29418/$PFX$GERRIT_REMOTE
     else
-        git remote add lineage ssh://$LINEAGE_USER@review.lineageos.org:29418/$GERRIT_REMOTE
+        git remote add lineage ssh://$LINEAGE_USER@review.lineageos.org:29418/$PFX$GERRIT_REMOTE
     fi
     echo "Remote 'lineage' created"
 }
