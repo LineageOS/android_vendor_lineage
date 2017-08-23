@@ -16,6 +16,24 @@
       "revId": "0cee800d2a50269566aba08f789317dca4d0c3fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d38201c7_175bd030",
+        "filename": "config/common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-08-23T17:02:19Z",
+      "side": 0,
+      "message": "I like that better than keeping this around in our vendor. Does anyone know which takes precedence? (rhetorical)\n\nWe don\u0027t want to remove the ifeq/endif though in build/make/core/main.mk, just if it for both user and userdebug since eng shouldn\u0027t be secure\u003d1",
+      "parentUuid": "33560f69_daa269bb",
+      "revId": "0cee800d2a50269566aba08f789317dca4d0c3fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
