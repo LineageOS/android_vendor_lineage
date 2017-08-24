@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "431b127a_2e8da270",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 721,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-08-24T01:16:03Z",
+      "side": 1,
+      "message": "This is what I initially did but I decided to rewrite a little to make it \"better\" ;-)",
+      "revId": "5c741b29039258488ced79f3061346708d79f56a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
