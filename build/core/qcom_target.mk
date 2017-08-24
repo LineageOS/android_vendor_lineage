@@ -112,8 +112,8 @@ $(call set-device-specific-path,LOC_API,loc-api,vendor/qcom/opensource/location)
 $(call set-device-specific-path,DATASERVICES,dataservices,vendor/qcom/opensource/dataservices)
 
 $(call ril-set-path-variant,ril)
-$(call wlan-set-path-variant,wlan-caf)
-$(call bt-vendor-set-path-variant,bt-caf)
+$(call wlan-set-path-variant,wlan)
+$(call bt-vendor-set-path-variant,bt)
 
 else
 
