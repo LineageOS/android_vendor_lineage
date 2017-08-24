@@ -682,7 +682,9 @@ function oat2dex() {
     local OEM_TARGET="$2"
     local SRC="$3"
     local TARGET=
-    local OAT=
+    local DEXBASE=
+    local ODEX=
+    local VDEX=
 
     if [ -z "$BAKSMALIJAR" ] || [ -z "$SMALIJAR" ]; then
         export BAKSMALIJAR="$CM_ROOT"/vendor/cm/build/tools/smali/baksmali.jar
@@ -717,10 +719,14 @@ function oat2dex() {
     for ARCH in $ARCHES; do
         BOOTOAT="$TMPDIR/system/framework/$ARCH/boot.oat"
 
-        local OAT="$(dirname "$OEM_TARGET")/oat/$ARCH/$(basename "$OEM_TARGET" ."${OEM_TARGET##*.}").odex"
+        local DEXBASE="$(dirname "$OEM_TARGET")/oat/$ARCH/$(basename "$OEM_TARGET" ."${OEM_TARGET##*.}")"
+        local ODEX="${DEXBASE}.odex"
+        local VDEX="${DEXBASE}.vdex"
 
-        if get_file "$OAT" "$TMPDIR" "$SRC"; then
-            java -jar "$BAKSMALIJAR" deodex -o "$TMPDIR/dexout" -b "$BOOTOAT" -d "$TMPDIR" "$TMPDIR/$(basename "$OAT")"
+        if get_file "$ODEX" "$TMPDIR" "$SRC"; then
+            # If there was an odex, also look for a vdex.
+            get_file "$VDEX" "$TMPDIR" "$SRC"
+            java -jar "$BAKSMALIJAR" deodex -o "$TMPDIR/dexout" -b "$BOOTOAT" -d "$TMPDIR" "$TMPDIR/$(basename "$ODEX")"
         elif [[ "$CM_TARGET" =~ .jar$ ]]; then
             # try to extract classes.dex from boot.oats for framework jars
             JAROAT="$TMPDIR/system/framework/$ARCH/boot-$(basename ${OEM_TARGET%.*}).oat"
