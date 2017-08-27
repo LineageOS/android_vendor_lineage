@@ -157,6 +157,23 @@ function prefix_match() {
 }
 
 #
+# prefix_match_pattern:
+#
+# $1: the prefix pattern to match on
+#
+# Internal function which loops thru the packages list and returns a new
+# list containing the matched files with the prefix stripped away.
+#
+function prefix_match_pattern() {
+    local PREFIX="$1"
+    for FILE in "${PRODUCT_PACKAGES_LIST[@]}"; do
+        if [[ "$FILE" == "$PREFIX" ]]; then
+            printf '%s\n' "${FILE#$PREFIX}"
+        fi
+    done
+}
+
+#
 # write_product_copy_files:
 #
 # Creates the PRODUCT_COPY_FILES section in the product makefile for all
@@ -208,6 +225,9 @@ function write_packages() {
     # Yes, this is a horrible hack - we create a new array using indirection
     local ARR_NAME="$4[@]"
     local FILELIST=("${!ARR_NAME}")
+
+    # God I hate shell...
+    local RELETIVE_PATH="$5"
 
     local FILE=
     local ARGS=
@@ -307,6 +327,9 @@ function write_packages() {
         if [ "$VENDOR_PKG" = "true" ]; then
             printf 'LOCAL_PROPRIETARY_MODULE := true\n'
         fi
+        if [ ! -z "$RELETIVE_PATH" ]; then
+            printf 'LOCAL_MODULE_RELATIVE_PATH := .%s\n' "$RELETIVE_PATH"
+        fi
         printf 'include $(BUILD_PREBUILT)\n\n'
     done
 }
@@ -330,8 +353,8 @@ function write_product_packages() {
 
     # Figure out what's 32-bit, what's 64-bit, and what's multilib
     # I really should not be doing this in bash due to shitty array passing :(
-    local T_LIB32=( $(prefix_match "lib/") )
-    local T_LIB64=( $(prefix_match "lib64/") )
+    local T_LIB32=( $(prefix_match_pattern "lib/*[[.period.]]so") )
+    local T_LIB64=( $(prefix_match_pattern "lib64/*[[.period.]]so") )
     local MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_LIB32[@]}") <(printf '%s\n' "${T_LIB64[@]}")) )
     local LIB32=( $(comm -23 <(printf '%s\n'  "${T_LIB32[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
     local LIB64=( $(comm -23 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
@@ -346,8 +369,24 @@ function write_product_packages() {
         write_packages "SHARED_LIBRARIES" "false" "64" "LIB64" >> "$ANDROIDMK"
     fi
 
-    local T_V_LIB32=( $(prefix_match "vendor/lib/") )
-    local T_V_LIB64=( $(prefix_match "vendor/lib64/") )
+    local T_LIB32=( $(prefix_match_pattern "lib/hw/*[[.period.]]so") )
+    local T_LIB64=( $(prefix_match_pattern "lib64/hw/*[[.period.]]so") )
+    local MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_LIB32[@]}") <(printf '%s\n' "${T_LIB64[@]}")) )
+    local LIB32=( $(comm -23 <(printf '%s\n'  "${T_LIB32[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
+    local LIB64=( $(comm -23 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
+
+    if [ "${#MULTILIBS[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "false" "both" "MULTILIBS" "hw" >> "$ANDROIDMK"
+    fi
+    if [ "${#LIB32[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "false" "32" "LIB32" "hw" >> "$ANDROIDMK"
+    fi
+    if [ "${#LIB64[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "false" "64" "LIB64" "hw" >> "$ANDROIDMK"
+    fi
+
+    local T_V_LIB32=( $(prefix_match_pattern "vendor/lib/*[[.period.]]so") )
+    local T_V_LIB64=( $(prefix_match_pattern "vendor/lib64/*[[.period.]]so") )
     local V_MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${T_V_LIB64[@]}")) )
     local V_LIB32=( $(comm -23 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
     local V_LIB64=( $(comm -23 <(printf '%s\n' "${T_V_LIB64[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
@@ -360,6 +399,22 @@ function write_product_packages() {
     fi
     if [ "${#V_LIB64[@]}" -gt "0" ]; then
         write_packages "SHARED_LIBRARIES" "true" "64" "V_LIB64" >> "$ANDROIDMK"
+    fi
+
+    local T_V_LIB32=( $(prefix_match_pattern "vendor/lib/hw/*[[.period.]]so") )
+    local T_V_LIB64=( $(prefix_match_pattern "vendor/lib64/hw/*[[.period.]]so") )
+    local V_MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${T_V_LIB64[@]}")) )
+    local V_LIB32=( $(comm -23 <(printf '%s\n' "${T_V_LIB32[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
+    local V_LIB64=( $(comm -23 <(printf '%s\n' "${T_V_LIB64[@]}") <(printf '%s\n' "${V_MULTILIBS[@]}")) )
+
+    if [ "${#V_MULTILIBS[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "true" "both" "V_MULTILIBS" "hw" >> "$ANDROIDMK"
+    fi
+    if [ "${#V_LIB32[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "true" "32" "V_LIB32" "hw" >> "$ANDROIDMK"
+    fi
+    if [ "${#V_LIB64[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "true" "64" "V_LIB64" "hw" >> "$ANDROIDMK"
     fi
 
     # Apps
