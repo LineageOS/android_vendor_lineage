@@ -1,4 +1,4 @@
-# CyanogenMod Extras
+# LineageOS extras
 on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
