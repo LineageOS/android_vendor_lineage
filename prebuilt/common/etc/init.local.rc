@@ -1,4 +1,4 @@
-# CyanogenMod Extras
+# LineageOS Extras
 on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
@@ -148,7 +148,7 @@ on boot
     # Persistent properties (only created if persist exists)
     mkdir /persist/properties 0770 system system
 
-# sysinit (/system/etc/init.d)
+# Sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
     oneshot
