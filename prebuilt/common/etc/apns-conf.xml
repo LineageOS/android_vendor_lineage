@@ -973,34 +973,16 @@
   <apn carrier="BeeLine RU" mcc="250" mnc="99" apn="internet.beeline.ru" proxy="" port="" user="beeline" password="beeline" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="BeeLine RU MMS" mcc="250" mnc="99" apn="mms.beeline.ru" proxy="" port="" user="beeline" password="beeline" mmsc="http://mms/" mmsproxy="192.168.94.23" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Beeline Home" mcc="250" mnc="99" apn="home.beeline.ru" user="beeline" password="beeline" authtype="1" type="default,supl" />
-  <apn carrier="MTS UA" mcc="255" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="MTS UA" mcc="255" mnc="01" apn="www.mts.com.ua" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="MTS UA" mcc="255" mnc="01" apn="active" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="MTS UA" mcc="255" mnc="01" apn="hyper.net" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="JEANS MMS" mcc="255" mnc="01" apn="mms.jeans.ua" proxy="" port="" user="" password="" mmsc="http://mmsc:8002" mmsproxy="192.168.10.10" mmsport="8080" type="mms" />
-  <apn carrier="MTS UA" mcc="255" mnc="01" apn="mms.umc.ua" proxy="" port="" user="" password="" mmsc="http://mmsc:8002/" mmsproxy="192.168.10.10" mmsport="8080" type="mms" />
-  <apn carrier="MTS-MMS" mcc="255" mnc="01" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmsc:8002" mmsproxy="192.168.10.10" mmsport="8080" type="mms" />
-  <apn carrier="JEANS" mcc="255" mnc="01" apn="www.jeans.ua" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="MTS UA" mcc="255" mnc="01" apn="www.umc.ua" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Mobile GPRS Internet" mcc="255" mnc="01" apn="internet" user="" password="" type="default,supl" />
-  <apn carrier="WAP GPRS" mcc="255" mnc="01" apn="wap" proxy="192.168.10.10" port="8080" mmsc="" user="" password="" type="default,supl" />
-  <apn carrier="Opera Mini" mcc="255" mnc="01" apn="opera" user="" password="" type="default,supl" />
-  <apn carrier="MMS GPRS" mcc="255" mnc="01" apn="mms" proxy="" port="" mmsproxy="192.168.10.10" mmsport="8080" mmsc="http://mms/" user="" password="" type="mms" />
-  <apn carrier="Beeline UA" mcc="255" mnc="02" apn="internet.beeeline.ua" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Beeline-internet" mcc="255" mnc="02" apn="internet.beeline.ua" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Beeline UA MMS" mcc="255" mnc="02" apn="mms.beeline.ua" proxy="" port="" user="" password="" mmsc="http://mms/" mmsproxy="10.11.8.18" mmsport="8080" type="mms" />
-  <apn carrier="Kyivstar EDGE" mcc="255" mnc="03" apn="www.kyivstar.net" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="KYIVSTAR Prepaid" mcc="255" mnc="03" apn="www.ab.kyivstar.net" type="default,supl" />
-  <apn carrier="Internet XL" mcc="255" mnc="03" apn="xl.kyivstar.net" type="default,supl" />
-  <apn carrier="Internet 3G" mcc="255" mnc="03" apn="3g.kyivstar.net" type="default,supl" />
-  <apn carrier="KYIVSTAR MMS" mcc="255" mnc="03" apn="mms.kyivstar.net" mmsproxy="10.10.10.10" mmsport="8080" mmsc="http://mms.kyivstar.net" type="mms" />
-  <apn carrier="Ace_Base MMS" mcc="255" mnc="03" apn="mms.kyivstar.net" proxy="" port="" user="mms" password="mms" mmsc="http://mms.kyivstar.net" mmsproxy="10.10.10.10" mmsport="8080" type="mms" />
-  <apn carrier="Ace_Base" mcc="255" mnc="03" apn="www.ab.kyivstar.net" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Djuice EDGE" mcc="255" mnc="03" apn="www.djuice.com.ua" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="DJUICE MMS" mcc="255" mnc="03" apn="mms.djuice.com.ua" user="djuice" password="mms" mmsc="http://mms.kyivstar.net" mmsproxy="10.10.10.10" mmsport="8080" type="mms" />
-  <apn carrier="life" mcc="255" mnc="06" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="life MMS" mcc="255" mnc="06" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.life.com.ua/cmms/post" mmsproxy="212.58.162.230" mmsport="8080" type="mms" />
-  <apn carrier="Utel" mcc="255" mnc="07" apn="3g.utel.ua" proxy="" port="" user="" password="" mmsc="http://10.212.1.4/mms/wapenc" mmsproxy="10.212.3.148" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Vodafone UA" mcc="255" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Vodafone UA MMS" mcc="255" mnc="01" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="192.168.10.10" mmsport="8080" type="mms" />
+  <apn carrier="Beeline UA" mcc="255" mnc="02" apn="www.ab.kyivstar.net" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Beeline UA MMS" mcc="255" mnc="02" apn="mms.kyivstar.net" proxy="" port="" user="" password="" mmsc="http://mms.kyivstar.net/" mmsproxy="10.10.10.10" mmsport="8080" type="mms" />
+  <apn carrier="Kyivstar" mcc="255" mnc="03" apn="www.kyivstar.net" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Kyivstar Prepaid" mcc="255" mnc="03" apn="www.ab.kyivstar.net" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Kyivstar MMS" mcc="255" mnc="03" apn="mms.kyivstar.net" proxy="" port="" user="" password="" mmsc="http://mms.kyivstar.net" mmsproxy="10.10.10.10" mmsport="8080" type="mms" />
+  <apn carrier="lifecell" mcc="255" mnc="06" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="lifecell MMS" mcc="255" mnc="06" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.life" mmsproxy="10.10.10.10" mmsport="8080" type="mms" />
+  <apn carrier="TriMob" mcc="255" mnc="07" apn="3g.utel.ua" proxy="" port="" user="" password="" mmsc="http://10.212.1.4/mms/wapenc" mmsproxy="10.212.3.148" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Velcom MMS" mcc="257" mnc="01" apn="mms.velcom.by" proxy="" port="" user="mms" password="mms" server="mms.velcom.by" mmsc="http://mms.velcom.by/servlets/mms" mmsproxy="10.200.15.15" mmsport="8080" type="mms" />
   <apn carrier="Velcom BY // Web Plus" mcc="257" mnc="01" apn="plus.velcom.by" proxy="" port="" user="plus" password="plus" mmsc="" type="default,supl" />
   <apn carrier="Velcom BY // Web 500" mcc="257" mnc="01" apn="vmi.velcom.by" proxy="" port="" user="vmi" password="vmi" mmsc="" type="default,supl" />
