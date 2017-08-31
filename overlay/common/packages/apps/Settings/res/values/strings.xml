@@ -19,5 +19,14 @@
 
     <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
     <string name="help_url_fingerprint" translatable="false">https://support.google.com</string>
+
+    <!-- LineageOS Updater package name -->
+    <string name="additional_system_update" translatable="false">org.lineageos.updater</string>
+
+    <!-- LineageOS Updater package name -->
+    <string name="additional_system_update_menu" translatable="false">org.lineageos.updater.UpdatesActivity</string>
+
+    <!-- LineageOS Updater package name -->
+    <string name="additional_system_update_menu_title" translatable="false">Some stuff</string>
 </resources>
 
