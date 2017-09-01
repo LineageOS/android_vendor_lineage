@@ -22,15 +22,23 @@ LOCAL_C_INCLUDES := \
     system/core/healthd/include \
     system/core/base/include \
     bootable/recovery/minui/include
+
 ifneq ($(BACKLIGHT_PATH),)
     LOCAL_CFLAGS += -DHEALTHD_BACKLIGHT_PATH=\"$(BACKLIGHT_PATH)\"
 endif
+
 ifneq ($(SECONDARY_BACKLIGHT_PATH),)
     LOCAL_CFLAGS += -DHEALTHD_SECONDARY_BACKLIGHT_PATH=\"$(SECONDARY_BACKLIGHT_PATH)\"
 endif
+
 ifneq ($(HEALTHD_BACKLIGHT_LEVEL),)
     LOCAL_CFLAGS += -DHEALTHD_BACKLIGHT_LEVEL=$(HEALTHD_BACKLIGHT_LEVEL)
 endif
+
+ifeq ($(TARGET_USES_LEGACY_ANDROID_ALARM_DRIVER), true)
+    LOCAL_CFLAGS += -DLEGACY_ANDROID_ALARM
+endif
+
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)

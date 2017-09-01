@@ -33,7 +33,9 @@
 #include <cutils/properties.h>
 
 #include <pthread.h>
+#ifdef LEGACY_ANDROID_ALARM
 #include <linux/android_alarm.h>
+#endif
 #include <sys/timerfd.h>
 #include <linux/rtc.h>
 
@@ -101,6 +103,7 @@ static void draw_capacity(int capacity)
 }
 
 #ifdef QCOM_HARDWARE
+#ifdef LEGACY_ANDROID_ALARM
 enum alarm_time_type {
     ALARM_TIME,
     RTC_TIME,
@@ -295,7 +298,8 @@ err:
     LOGE("Exit from alarm thread\n");
     return NULL;
 }
-#endif
+#endif // LEGACY_ANDROID_ALARM
+#endif // QCOM_HARDWARE
 
 void healthd_board_init(struct healthd_config*)
 {
@@ -321,12 +325,14 @@ void healthd_board_init(struct healthd_config*)
     }
 
 #ifdef QCOM_HARDWARE
+#ifdef LEGACY_ANDROID_ALARM
     property_get("ro.bootmode", value, "");
     if (!strcmp("charger", value)) {
         rc = pthread_create(&tid, NULL, alarm_thread, NULL);
         if (rc < 0)
             LOGE("Create alarm thread failed\n");
     }
+#endif
 #endif
 }
 
