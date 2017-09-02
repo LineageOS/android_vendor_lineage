@@ -27,6 +27,9 @@ type Product_variables struct {
 		Cppflags []string
 		Srcs []string
 	}
+	Pre_ion_x86 struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -39,4 +42,5 @@ type ProductVariables struct {
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
 	Mtk_hardware  *bool `json:",omitempty"`
+	Pre_ion_x86  *bool `json:",omitempty"`
 }
