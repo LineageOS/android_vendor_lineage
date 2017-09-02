@@ -15,6 +15,10 @@ type Product_variables struct {
 	Mtk_hardware struct {
 		Cflags []string
 	}
+        
+        Device_recovery_modules struct {
+                Cflags []string
+        }
 }
 
 type ProductVariables struct {
@@ -22,4 +26,5 @@ type ProductVariables struct {
 	Uses_media_extensions   *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Mtk_hardware            *bool `json:",omitempty"`
+	Device_recovery_modules *bool `json:",omitempty"`
 }
