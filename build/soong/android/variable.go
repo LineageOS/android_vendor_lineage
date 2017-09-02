@@ -19,6 +19,10 @@ type Product_variables struct {
         Device_recovery_modules struct {
                 Cflags []string
         }
+
+        Pre_ion_x86 struct {
+                Cflags []string
+        }
 }
 
 type ProductVariables struct {
@@ -27,4 +31,5 @@ type ProductVariables struct {
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Mtk_hardware            *bool `json:",omitempty"`
 	Device_recovery_modules *bool `json:",omitempty"`
+	Pre_ion_x86             *bool `json:",omitempty"`
 }
