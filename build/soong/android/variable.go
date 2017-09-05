@@ -8,6 +8,10 @@ type Product_variables struct {
 		Cflags []string
 	}
 
+	Uses_non_trello_camera struct {
+		Cflags []string
+	}
+
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
@@ -16,5 +20,6 @@ type Product_variables struct {
 type ProductVariables struct {
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Uses_media_extensions   *bool `json:",omitempty"`
+	Uses_non_trello_camera  *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 }
