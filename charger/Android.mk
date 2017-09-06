@@ -19,8 +19,13 @@ LOCAL_SRC_FILES := healthd_board_lineage.cpp
 LOCAL_MODULE := libhealthd.lineage
 LOCAL_CFLAGS := -Werror
 LOCAL_C_INCLUDES := \
+    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
     system/core/healthd/include \
     bootable/recovery
+
+LOCAL_ADDITIONAL_DEPENDENCIES := \
+    $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+
 ifneq ($(BACKLIGHT_PATH),)
     LOCAL_CFLAGS += -DHEALTHD_BACKLIGHT_PATH=\"$(BACKLIGHT_PATH)\"
 endif
