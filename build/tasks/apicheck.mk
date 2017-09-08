@@ -35,7 +35,7 @@ checkapi-cm : check-cm-public-api
 
 # INTERNAL_CM_PLATFORM_API_FILE is the one build by droiddoc.
 # Note that since INTERNAL_CM_PLATFORM_API_FILE  is the byproduct of api-stubs module,
-# (See vendor/cmsdk/Android.mk)
+# (See vendor/lineagesdk/Android.mk)
 # we need to add api-stubs as additional dependency of the api check.
 
 $(INTERNAL_CM_PLATFORM_API_FILE): cm-api-stubs-docs

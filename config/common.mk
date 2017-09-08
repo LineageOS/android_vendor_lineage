@@ -89,8 +89,8 @@ PRODUCT_COPY_FILES += \
 include vendor/lineage/config/lineage_audio.mk
 
 ifneq ($(TARGET_DISABLE_CMSDK), true)
-# CMSDK
-include vendor/lineage/config/cmsdk_common.mk
+# LineageSDK
+include vendor/lineage/config/lineagesdk_common.mk
 endif
 
 # TWRP
