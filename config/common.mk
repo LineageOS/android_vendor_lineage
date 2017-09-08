@@ -88,9 +88,9 @@ PRODUCT_COPY_FILES += \
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
-ifneq ($(TARGET_DISABLE_CMSDK), true)
-# CMSDK
-include vendor/lineage/config/cmsdk_common.mk
+ifneq ($(TARGET_DISABLE_LINEAGESDK), true)
+# LineageSDK
+include vendor/lineage/config/lineagesdk_common.mk
 endif
 
 # TWRP
@@ -126,7 +126,7 @@ PRODUCT_PACKAGES += \
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMSettingsProvider \
+    LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
     ExactCalculator \
