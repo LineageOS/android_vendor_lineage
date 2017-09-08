@@ -23,7 +23,7 @@ dexdeps_exe := $(HOST_OUT_EXECUTABLES)/dexdeps
 
 coverage_out := $(HOST_OUT)/cmsdk-api-coverage
 
-api_text_description := vendor/cmsdk/api/cm_current.txt
+api_text_description := vendor/lineagesdk/api/cm_current.txt
 api_xml_description := $(coverage_out)/api.xml
 $(api_xml_description) : $(api_text_description) $(APICHECK)
 	$(hide) echo "Converting API file to XML: $@"

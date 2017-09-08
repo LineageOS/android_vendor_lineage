@@ -16,8 +16,8 @@
 CM_SRC_API_DIR := $(TOPDIR)prebuilts/cmsdk/api
 INTERNAL_CM_PLATFORM_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/cm_public_api.txt
 INTERNAL_CM_PLATFORM_REMOVED_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/cm_removed.txt
-FRAMEWORK_CM_PLATFORM_API_FILE := $(TOPDIR)vendor/cmsdk/api/cm_current.txt
-FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE := $(TOPDIR)vendor/cmsdk/api/cm_removed.txt
+FRAMEWORK_CM_PLATFORM_API_FILE := $(TOPDIR)vendor/lineagesdk/api/cm_current.txt
+FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE := $(TOPDIR)vendor/lineagesdk/api/cm_removed.txt
 FRAMEWORK_CM_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/lineage/build/core/apicheck_msg_current.txt
 
 BUILD_MAVEN_PREBUILT := $(TOP)/vendor/lineage/build/core/maven_artifact.mk
