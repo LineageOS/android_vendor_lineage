@@ -81,4 +81,10 @@
             1 - Go to home
     -->
     <integer name="config_backPanicBehavior">1</integer>
+
+    <!-- Controls the WiFi wakeup feature.
+          0 = Not available.
+          1 = Available.
+    -->
+    <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
 </resources>
