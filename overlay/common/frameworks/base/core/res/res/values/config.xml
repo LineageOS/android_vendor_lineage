@@ -85,4 +85,10 @@
    <!-- Set icon mask to circle -->
    <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
 
+    <!-- Controls the WiFi wakeup feature.
+          0 = Not available.
+          1 = Available.
+    -->
+    <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
+
 </resources>
