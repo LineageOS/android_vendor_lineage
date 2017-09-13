@@ -1,7 +1,23 @@
 bootstrap_go_package {
-    name: "soong-lineage",
+    name: "soong-lineage-android",
     pkgPath: "lineage/soong/android",
     srcs: [
         "android/variable.go",
+    ],
+}
+
+bootstrap_go_package {
+    name: "soong-lineage-cc",
+    pkgPath: "lineage/soong/cc",
+    srcs: [
+        "cc/compiler.go",
+    ],
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-cc-config",
+        "soong-genrule",
     ],
 }
