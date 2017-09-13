@@ -3,5 +3,6 @@ bootstrap_go_package {
     pkgPath: "lineage/soong/android",
     srcs: [
         "android/variable.go",
+        "cc/compiler.go"
     ],
 }
