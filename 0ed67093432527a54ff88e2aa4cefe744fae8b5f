@@ -22,6 +22,30 @@
       "revId": "0ed67093432527a54ff88e2aa4cefe744fae8b5f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b9166640_765e09fd",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2017-09-14T22:47:48Z",
+      "side": 1,
+      "message": "Really? Thats retarded...",
+      "parentUuid": "5ba93fe7_b0ebecc8",
+      "range": {
+        "startLine": 14,
+        "startChar": 97,
+        "endLine": 14,
+        "endChar": 98
+      },
+      "revId": "0ed67093432527a54ff88e2aa4cefe744fae8b5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
