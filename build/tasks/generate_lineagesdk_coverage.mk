@@ -23,7 +23,7 @@ dexdeps_exe := $(HOST_OUT_EXECUTABLES)/dexdeps
 
 coverage_out := $(HOST_OUT)/lineagesdk-api-coverage
 
-api_text_description := vendor/lineagesdk/api/lineage_current.txt
+api_text_description := lineage-sdk/api/lineage_current.txt
 api_xml_description := $(coverage_out)/api.xml
 $(api_xml_description) : $(api_text_description) $(APICHECK)
 	$(hide) echo "Converting API file to XML: $@"

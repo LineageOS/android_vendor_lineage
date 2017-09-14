@@ -35,7 +35,7 @@ checkapi-cm : check-lineage-public-api
 
 # INTERNAL_LINEAGE_PLATFORM_API_FILE is the one build by droiddoc.
 # Note that since INTERNAL_LINEAGE_PLATFORM_API_FILE  is the byproduct of api-stubs module,
-# (See vendor/lineagesdk/Android.mk)
+# (See lineage-sdk/Android.mk)
 # we need to add api-stubs as additional dependency of the api check.
 
 $(INTERNAL_LINEAGE_PLATFORM_API_FILE): cm-api-stubs-docs
