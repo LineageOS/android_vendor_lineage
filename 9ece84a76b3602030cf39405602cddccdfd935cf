@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cc4824a3_e2b0cba6",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 11604
+      },
+      "writtenOn": "2017-09-15T00:31:27Z",
+      "side": 1,
+      "message": "relative",
+      "range": {
+        "startLine": 230,
+        "startChar": 10,
+        "endLine": 230,
+        "endChar": 23
+      },
+      "revId": "9ece84a76b3602030cf39405602cddccdfd935cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
