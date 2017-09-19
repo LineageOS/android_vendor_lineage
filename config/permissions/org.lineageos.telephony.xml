@@ -15,9 +15,9 @@
 -->
 
 <permissions>
-    <!-- The feature listed here coincides with the CMTelephonyManagerService declared as
-         part of the external cm service init in SystemServer. If this xml isn't present
+    <!-- The feature listed here coincides with the LineageTelephonyManagerService declared as
+         part of the external lineage service init in SystemServer. If this xml isn't present
          on the device, the service will not be published as a binder service!
      -->
-    <feature name="org.cyanogenmod.telephony" />
+    <feature name="org.lineageos.telephony" />
 </permissions>
