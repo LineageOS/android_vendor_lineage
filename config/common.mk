@@ -83,14 +83,14 @@ PRODUCT_COPY_FILES += \
 
 # This is Lineage!
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
+    vendor/lineage/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml
 
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
-ifneq ($(TARGET_DISABLE_CMSDK), true)
-# CMSDK
-include vendor/lineage/config/cmsdk_common.mk
+ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
+# Lineage SDK
+include vendor/lineage/config/lineage_sdk_common.mk
 endif
 
 # TWRP
@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CMAudioService \
-    CMParts \
+    LineageParts \
     Development \
     Profiles \
     WeatherManagerService
@@ -126,7 +126,7 @@ PRODUCT_PACKAGES += \
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMSettingsProvider \
+    LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
     ExactCalculator \

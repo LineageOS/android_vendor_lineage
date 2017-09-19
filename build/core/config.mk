@@ -13,12 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-CM_SRC_API_DIR := $(TOPDIR)prebuilts/cmsdk/api
-INTERNAL_CM_PLATFORM_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/cm_public_api.txt
-INTERNAL_CM_PLATFORM_REMOVED_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/cm_removed.txt
-FRAMEWORK_CM_PLATFORM_API_FILE := $(TOPDIR)vendor/cmsdk/api/cm_current.txt
-FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE := $(TOPDIR)vendor/cmsdk/api/cm_removed.txt
-FRAMEWORK_CM_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/lineage/build/core/apicheck_msg_current.txt
+LINEAGE_SRC_API_DIR := $(TOPDIR)prebuilts/lineage-sdk/api
+INTERNAL_LINEAGE_PLATFORM_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/lineage_public_api.txt
+INTERNAL_LINEAGE_PLATFORM_REMOVED_API_FILE := $(TARGET_OUT_COMMON_INTERMEDIATES)/PACKAGING/lineage_removed.txt
+FRAMEWORK_LINEAGE_PLATFORM_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_current.txt
+FRAMEWORK_LINEAGE_PLATFORM_REMOVED_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_removed.txt
+FRAMEWORK_LINEAGE_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/lineage/build/core/apicheck_msg_current.txt
 
 BUILD_MAVEN_PREBUILT := $(TOP)/vendor/lineage/build/core/maven_artifact.mk
 PUBLISH_MAVEN_PREBUILT := $(TOP)/vendor/lineage/build/core/maven_artifact_publish.mk

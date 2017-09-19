@@ -15,5 +15,5 @@
 -->
 
 <permissions>
-    <feature name="org.cyanogenmod.weather" />
+    <feature name="org.lineageos.weather" />
 </permissions>
