@@ -17,6 +17,6 @@
 <resources>
     <!-- Defaults for Secure -->
 
-    <!-- Default for CMSettings.Secure.STATS_COLLECTION -->
+    <!-- Default for LineageSettings.Secure.STATS_COLLECTION -->
     <bool name="def_stats_collection">true</bool>
 </resources>
