@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e295430_6f7eaa47",
+        "filename": "interfaces/biometrics/fingerprint/BiometricsFingerprint.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2017-09-21T12:28:30Z",
+      "side": 1,
+      "message": "I think this should just be notify(msg) - no need to call into the HAL.\nYou could also copy what it\u0027s doing (see line 364) and call the onEnumerate callback yourself.",
+      "parentUuid": "",
+      "revId": "f8da8500a3cffac4a64f128a03f1c3482fce5130",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
