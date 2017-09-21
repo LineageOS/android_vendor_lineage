@@ -1,0 +1,3 @@
+on post-fs-data
+    mkdir /data/ssh 0750 root shell
+    mkdir /data/ssh/empty 0600 root shell
