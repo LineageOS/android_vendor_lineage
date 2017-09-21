@@ -306,6 +306,11 @@ function write_packages() {
                 printf 'LOCAL_MODULE_RELATIVE_PATH := %s\n' "$DIRNAME"
             fi
         fi
+        if [ "$CLASS" = "EXECUTABLES" ]; then
+            if [ $(prefix_match "etc/init/") ] || [ $(prefix_match "vendor/etc/init") ]; then
+                printf 'LOCAL_INIT_RC := ../etc/init/%s\n' "$FILE"
+            fi
+        fi
         if [ "$EXTRA" = "priv-app" ]; then
             printf 'LOCAL_PRIVILEGED_MODULE := true\n'
         fi
