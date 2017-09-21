@@ -1,0 +1,31 @@
+# LineageOS core functionality
+on init
+    export ANDROID_CACHE /cache
+    export TERMINFO /system/etc/terminfo
+
+on post-fs-data
+    mkdir /cache/recovery 0770 system cache
+
+    # Run sysinit
+    start sysinit
+
+    # Change permissions on fsck log so it can be added to the dropbox
+    chown root log /dev/fscklogs/log
+    chmod 0640 /dev/fscklogs/log
+
+on boot
+    # Persistent properties (only created if persist exists)
+    mkdir /persist/properties 0770 system system
+
+# sysinit (/system/etc/init.d)
+service sysinit /system/bin/sysinit
+    user root
+    oneshot
+    disabled
+
+# bugreport is triggered by holding down volume down, volume up and power
+service bugreport /system/bin/dumpstate -d -p -B -z \
+        -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
+    oneshot
+    disabled
+    keycodes 114 115 116
