@@ -192,6 +192,25 @@ function truncate_file() {
 }
 
 #
+# find_file
+#
+# $1: the prefix to generate the list from
+# $2: the file to find in a list
+#
+# Internal function which loops through all filenames with the given
+# prefix attempting to find a filename with the given name
+#
+function find_file() {
+    local PREFIX="$1"
+    local FILE="$2"
+    local LIST=( $(prefix_match $PREFIX) )
+    for item in "${$LIST[@]}"; do
+        [[ $FILE == "$item" ]] && return 0 || return 1
+    done
+}
+
+
+#
 # write_product_copy_files:
 #
 # $1: make treble compatible makefile - optional, default to false
@@ -354,6 +373,14 @@ function write_packages() {
         if [ "$CLASS" = "SHARED_LIBRARIES" ] || [ "$CLASS" = "EXECUTABLES" ]; then
             if [ "$DIRNAME" != "." ]; then
                 printf 'LOCAL_MODULE_RELATIVE_PATH := %s\n' "$DIRNAME"
+            fi
+        fi
+        if [ "$CLASS" = "EXECUTABLES" ]; then
+            if [ $(find_file "etc/init/" $FILE) ]; then
+                printf 'LOCAL_INIT_RC := proprietary/etc/init/%s.rc\n' "$FILE"
+            fi
+            if [ $(find_file "vendor/etc/init" $FILE) ]; then
+                printf 'LOCAL_INIT_RC := proprietary/vendor/etc/init/%s.rc\n' "$FILE"
             fi
         fi
         if [ "$EXTRA" = "priv-app" ]; then
