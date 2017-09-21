@@ -1,0 +1,4 @@
+on post-fs-data
+    # Create an additional OTA package directory that unlike /data/ota_package
+    # will not be touched by GmsCore.
+    mkdir /data/lineageos_updates 0770 system cache
