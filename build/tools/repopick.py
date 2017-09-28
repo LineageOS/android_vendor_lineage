@@ -260,10 +260,10 @@ if __name__ == '__main__':
     change_numbers = []
     if args.topic:
         reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
-        change_numbers = sorted([str(r['number']) for r in reviews])
+        change_numbers = sorted([str(r['number']) for r in reviews], key=int)
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
-        change_numbers = sorted([str(r['number']) for r in reviews])
+        change_numbers = sorted([str(r['number']) for r in reviews], key=int)
     if args.change_number:
         for c in args.change_number:
             if '-' in c:
