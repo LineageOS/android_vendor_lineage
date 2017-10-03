@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "797d7569_b43529a8",
+        "filename": "prebuilt/common/etc/init.local.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-10-03T07:24:27Z",
+      "side": 1,
+      "message": "Why? This is not related.",
+      "range": {
+        "startLine": 151,
+        "startChar": 2,
+        "endLine": 151,
+        "endChar": 9
+      },
+      "revId": "a51b787396f45001a504d59f47cc073983f461f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
