@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dafd08f6_0eded155",
+        "filename": "prebuilt/common/etc/init/lineage-vibrator.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-10-06T19:03:31Z",
+      "side": 1,
+      "message": "We should probably move the vibrator stuff into the lineage interface:\nhttps://review.lineageos.org/#/c/191742/9/vibrator/1.0-lineage/android.hardware.vibrator%25401.0-service.lineage.rc\n\n(and add vtg_min/max)\n\nAnd similiar for any other lineage interfaces that have rc content currently in this gerrit.",
+      "revId": "49b04209c0e50a84b72de61081e790780adc652e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
