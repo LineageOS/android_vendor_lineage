@@ -452,7 +452,7 @@ function write_product_packages() {
     fi
     local V_ETC=( $(prefix_match "vendor/etc/") )
     if [ "${#V_ETC[@]}" -gt "0" ]; then
-        write_packages "ETC" "false" "" "V_ETC" >> "$ANDROIDMK"
+        write_packages "ETC" "true" "" "V_ETC" >> "$ANDROIDMK"
     fi
 
     # Executables
