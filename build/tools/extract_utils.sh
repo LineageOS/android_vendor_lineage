@@ -966,7 +966,33 @@ function extract() {
         fi
         local DEST="$OUTPUT_DIR/$FROM"
 
-        if [ "$SRC" = "adb" ]; then
+        # Check pinned files
+        local HASH="${HASHLIST[$i-1]}"
+        local KEEP=""
+        if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
+            if [ -f "$DEST" ]; then
+                local PINNED="$DEST"
+            else
+                local PINNED="$TMP_DIR/$FROM"
+            fi
+            if [ -f "$PINNED" ]; then
+                if [ "$(uname)" == "Darwin" ]; then
+                    local TMP_HASH=$(shasum "$PINNED" | awk '{print $1}' )
+                else
+                    local TMP_HASH=$(sha1sum "$PINNED" | awk '{print $1}' )
+                fi
+                if [ "$TMP_HASH" = "$HASH" ]; then
+                    KEEP="1"
+                    if [ ! -f "$DEST" ]; then
+                        cp -p "$PINNED" "$DEST"
+                    fi
+                fi
+            fi
+        fi
+
+        if [ "$KEEP" = "1" ]; then
+            printf '    + (keeping pinned file with hash %s)\n' "$HASH"
+        elif [ "$SRC" = "adb" ]; then
             # Try Lineage target first
             adb pull "/$TARGET" "$DEST"
             # if file does not exist try OEM target
@@ -996,38 +1022,6 @@ function extract() {
                 fi
             elif [[ "$DEST" =~ .xml$ ]]; then
                 fix_xml "$DEST"
-            fi
-        fi
-
-        # Check pinned files
-        local HASH="${HASHLIST[$i-1]}"
-        if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
-            local KEEP=""
-            local TMP="$TMP_DIR/$FROM"
-            if [ -f "$TMP" ]; then
-                if [ ! -f "$DEST" ]; then
-                    KEEP="1"
-                else
-                    if [ "$(uname)" == "Darwin" ]; then
-                        local DEST_HASH=$(shasum "$DEST" | awk '{print $1}' )
-                    else
-                        local DEST_HASH=$(sha1sum "$DEST" | awk '{print $1}' )
-                    fi
-                    if [ "$DEST_HASH" != "$HASH" ]; then
-                        KEEP="1"
-                    fi
-                fi
-                if [ "$KEEP" = "1" ]; then
-                    if [ "$(uname)" == "Darwin" ]; then
-                        local TMP_HASH=$(shasum "$TMP" | awk '{print $1}' )
-                    else
-                        local TMP_HASH=$(sha1sum "$TMP" | awk '{print $1}' )
-                    fi
-                    if [ "$TMP_HASH" = "$HASH" ]; then
-                        printf '    + (keeping pinned file with hash %s)\n' "$HASH"
-                        cp -p "$TMP" "$DEST"
-                    fi
-                fi
             fi
         fi
 
