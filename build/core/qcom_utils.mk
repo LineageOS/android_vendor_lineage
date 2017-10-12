@@ -118,11 +118,13 @@ endef
 # The following utilities are meant for board platform specific
 # featurisation
 
+ifndef get-vendor-board-platforms
 # $(call get-vendor-board-platforms,v)
 # returns list of board platforms for vendor v
 define get-vendor-board-platforms
 $(if $(call match-word,$(BOARD_USES_$(1)_HARDWARE),true),$($(1)_BOARD_PLATFORMS))
 endef
+endif # get-vendor-board-platforms
 
 # $(call is-board-platform,bp)
 # returns true or empty
