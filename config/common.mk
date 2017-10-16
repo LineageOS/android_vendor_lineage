@@ -102,6 +102,10 @@ endif
 PRODUCT_PACKAGES += \
     bootanimation.zip
 
+# Lineage-specififc broadcast actions whitelisting config
+PRODUCT_PACKAGES += \
+    lineage-sysconfig.xml
+
 # Required Lineage packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
