@@ -1,0 +1,2 @@
+on init
+    setprop pm.boot.disable_package_cache true
