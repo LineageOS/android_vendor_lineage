@@ -1,0 +1,2 @@
+on post-fs-data
+    setprop pm.boot.disable_package_cache true
