@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "e0407c17_2d035b16",
+        "filename": "build/tasks/generate_lineage_sdk_coverage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-10-17T16:56:28Z",
+      "side": 1,
+      "message": "FWIW - it\u0027s already named this way in lineage-sdk",
+      "revId": "cd545e09fbe23fbc4f6045056632cf95bc865965",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8b2c6026_db483504",
         "filename": "build/tools/droiddoc/templates-lineage-sdk/components/masthead.cs",
         "patchSetId": 1
