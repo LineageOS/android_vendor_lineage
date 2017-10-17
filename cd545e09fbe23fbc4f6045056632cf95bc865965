@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b2c6026_db483504",
+        "filename": "build/tools/droiddoc/templates-lineage-sdk/components/masthead.cs",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2017-10-17T16:56:19Z",
+      "side": 1,
+      "message": "Wouldn\u0027t call it a complete rebrand with this logo still there :)",
+      "range": {
+        "startLine": 5,
+        "startChar": 44,
+        "endLine": 5,
+        "endChar": 68
+      },
+      "revId": "cd545e09fbe23fbc4f6045056632cf95bc865965",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
