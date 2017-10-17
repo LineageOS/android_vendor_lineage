@@ -32,7 +32,7 @@ $(api_xml_description) : $(api_text_description) $(APICHECK)
 
 lineage-sdk-test-coverage-report := $(coverage_out)/lineage-sdk-test-coverage.html
 
-lineage_sdk_tests_apk := $(call intermediates-dir-for,APPS,CMPlatformTests)/package.apk
+lineage_sdk_tests_apk := $(call intermediates-dir-for,APPS,LineagePlatformTests)/package.apk
 lineagesettingsprovider_tests_apk := $(call intermediates-dir-for,APPS,LineageSettingsProviderTests)/package.apk
 lineage_sdk_api_coverage_dependencies := $(lineage_sdk_api_coverage_exe) $(dexdeps_exe) $(api_xml_description)
 

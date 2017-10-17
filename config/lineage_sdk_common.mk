@@ -8,13 +8,13 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.telephony.xml:system/etc/permissions/org.lineageos.telephony.xml \
     vendor/lineage/config/permissions/org.lineageos.weather.xml:system/etc/permissions/org.lineageos.weather.xml
 
-# CM Platform Library
+# Lineage Platform Library
 PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
     org.lineageos.platform \
     org.lineageos.platform.xml
 
-# CM Hardware Abstraction Framework
+# Lineage Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.lineageos.hardware \
     org.lineageos.hardware.xml
@@ -40,11 +40,11 @@ ifndef LINEAGE_PLATFORM_REV
   LINEAGE_PLATFORM_REV := 0
 endif
 
-# CyanogenMod Platform SDK Version
+# LineageOS Platform SDK Version
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
 
-# CyanogenMod Platform Internal
+# LineageOS Platform Internal
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
 
