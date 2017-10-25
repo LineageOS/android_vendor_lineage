@@ -291,6 +291,11 @@ function aospremote()
     fi
     git remote rm aosp 2> /dev/null
     local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+    # Google moved the repo location in Oreo
+    if [ $PROJECT = "build/make" ]
+    then
+        PROJECT="build"
+    fi
     if (echo $PROJECT | grep -qv "^device")
     then
         local PFX="platform/"
@@ -308,6 +313,11 @@ function cafremote()
     fi
     git remote rm caf 2> /dev/null
     local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+     # Google moved the repo location in Oreo
+    if [ $PROJECT = "build/make" ]
+    then
+        PROJECT="build"
+    fi
     if (echo $PROJECT | grep -qv "^device")
     then
         local PFX="platform/"
