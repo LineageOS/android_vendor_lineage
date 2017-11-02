@@ -102,9 +102,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        MODVERSION=$(get_build_var LINEAGE_VERSION)
-        ZIPFILE=lineage-$MODVERSION.zip
-        ZIPPATH=$OUT/$ZIPFILE
+        ZIPPATH=`ls -tr "$OUT"/lineage-*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
