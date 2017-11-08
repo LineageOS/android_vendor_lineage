@@ -41,6 +41,23 @@
         <item>116006</item>
         <item>116123</item>
     </sensitivePN>
+    <!--Belgium-->
+    <sensitivePN network="206">
+        <item>102</item>
+        <item>106</item>
+        <item>111</item>
+        <item>116</item>
+        <item>1712</item>
+        <item>1813</item>
+        <item>116000</item>
+        <item>08000432</item>
+        <item>032185056</item>
+        <item>032391415</item>
+        <item>078150300</item>
+        <item>078151020</item>
+        <item>080097079</item>
+        <item>080099533</item>
+    </sensitivePN>
     <!--France-->
     <sensitivePN network="208,340,647">
         <item>119</item>
@@ -80,6 +97,11 @@
     </sensitivePN>
     <!--Slovakia-->
     <sensitivePN network="231">
+        <item>116111</item>
+    </sensitivePN>
+    <!--Switzerland-->
+    <sensitivePN network="228">
+        <item>116000</item>
         <item>116111</item>
     </sensitivePN>
     <!--Czech Republic-->
