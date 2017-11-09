@@ -167,7 +167,6 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
-    7z \
     awk \
     bash \
     bzip2 \
@@ -175,7 +174,6 @@ PRODUCT_PACKAGES += \
     fsck.ntfs \
     gdbserver \
     htop \
-    lib7z \
     libsepol \
     micro_bench \
     mke2fs \
@@ -187,11 +185,8 @@ PRODUCT_PACKAGES += \
     sqlite3 \
     strace \
     tune2fs \
-    unrar \
-    unzip \
     vim \
-    wget \
-    zip
+    wget
 
 # Charger
 PRODUCT_PACKAGES += \
