@@ -19,6 +19,7 @@ Additional LineageOS functions:
 - repopick:        Utility to fetch changes from Gerrit.
 - installboot:     Installs a boot.img to the connected device.
 - installrecovery: Installs a recovery.img to the connected device.
+- kconfig:         Interactively configures kernel.
 EOF
 }
 
@@ -940,6 +941,57 @@ function fixup_common_out_dir() {
         [ -L ${common_out_dir} ] && rm ${common_out_dir}
         mkdir -p ${common_out_dir}
     fi
+}
+
+function kconfig() {
+    local cfgmethod="menuconfig"
+    if [ "$1" = "-x" ]; then
+        cfgmethod="xconfig"
+        shift
+    fi
+    local ksrc kout karch ktc kxcc kcfgpath kcfg
+    ksrc=$(get_build_var TARGET_KERNEL_SOURCE)
+    if [ -z "$ksrc" ]; then
+        echo "No kernel source." 1>&2
+        return 1
+    fi
+    kout="$OUT/obj/KERNEL_OBJ"
+    karch=$(get_build_var TARGET_KERNEL_ARCH)
+    if [ -z "$karch" ]; then
+        karch=$(get_build_var TARGET_ARCH)
+        if [ -z "$kach" ]; then
+            echo "Cannot determine kernel arch." 1>&2
+            return 1
+        fi
+    fi
+    ktc=$(get_build_var KERNEL_TOOLCHAIN)
+    if [ -n "$ktc" ]; then
+        ktc="${ktc%/}/"
+    fi
+    kxcc=$(get_build_var TARGET_KERNEL_CROSS_COMPILE_PREFIX)
+    if [ -n "$kxcc" ]; then
+        kxcc="${ktc}$kxcc"
+    else
+        case "$kach" in
+        arm64) kxcc="${ktc}aarch64-linux-androidkernel-" ;;
+        x86)   kxcc="${ktc}x86_64-linux-androidkernel-" ;;
+        *)     kxcc="${ktc}${karch}-linux-androidkernel-" ;;
+        esac
+    fi
+    case "$karch" in
+    x86_64) kcfgpath="$ksrc/arch/x86/configs" ;;
+    *)      kcfgpath="$ksrc/arch/$karch/configs" ;;
+    esac
+    kcfg=$(get_build_var TARGET_KERNEL_CONFIG)
+    if [ -z "$kcfg" ]; then
+        echo "No kernel config." 1>&2
+        return 1
+    fi
+
+    make -C "$ksrc" O="$kout" ARCH="$karch" CROSS_COMPILE="$kxcc" "$kcfg" && \
+    make -C "$ksrc" O="$kout" ARCH="$karch" CROSS_COMPILE="$kxcc" "$cfgmethod" && \
+    make -C "$ksrc" O="$kout" ARCH="$karch" CROSS_COMPILE="$kxcc" "savedefconfig" && \
+    cp "$kout/defconfig" "$kcfgpath/$kcfg"
 }
 
 # Enable SD-LLVM if available
