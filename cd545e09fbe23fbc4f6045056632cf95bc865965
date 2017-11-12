@@ -39,6 +39,30 @@
       "revId": "cd545e09fbe23fbc4f6045056632cf95bc865965",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0e661128_c6d12f33",
+        "filename": "build/tools/droiddoc/templates-lineage-sdk/components/masthead.cs",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-11-12T06:42:37Z",
+      "side": 1,
+      "message": "Fixed by changing the commit message wording :-)",
+      "parentUuid": "8b2c6026_db483504",
+      "range": {
+        "startLine": 5,
+        "startChar": 44,
+        "endLine": 5,
+        "endChar": 68
+      },
+      "revId": "cd545e09fbe23fbc4f6045056632cf95bc865965",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
