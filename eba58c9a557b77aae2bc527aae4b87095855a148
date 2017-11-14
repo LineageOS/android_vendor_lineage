@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "96830ada_6d946845",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 5008
+      },
+      "writtenOn": "2017-11-14T03:45:54Z",
+      "side": 1,
+      "message": "Tabs are actually quite important in makefiles.",
+      "range": {
+        "startLine": 384,
+        "startChar": 0,
+        "endLine": 384,
+        "endChar": 7
+      },
+      "revId": "eba58c9a557b77aae2bc527aae4b87095855a148",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "697b7f29_80d84ad1",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 5008
+      },
+      "writtenOn": "2017-11-14T03:45:54Z",
+      "side": 1,
+      "message": "Again, tabs",
+      "range": {
+        "startLine": 385,
+        "startChar": 0,
+        "endLine": 385,
+        "endChar": 7
+      },
+      "revId": "eba58c9a557b77aae2bc527aae4b87095855a148",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
