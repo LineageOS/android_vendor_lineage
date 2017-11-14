@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "e6375ea8_01a8ca70",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 8328
+      },
+      "writtenOn": "2017-11-14T07:33:53Z",
+      "side": 1,
+      "message": "arm64 still :)",
+      "range": {
+        "startLine": 63,
+        "startChar": 78,
+        "endLine": 63,
+        "endChar": 83
+      },
+      "revId": "eba58c9a557b77aae2bc527aae4b87095855a148",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "96830ada_6d946845",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 7
