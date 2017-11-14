@@ -15,6 +15,15 @@
 # limitations under the License.
 #
 
+ifeq ($(TARGET_SCREEN_WIDTH),)
+    $(warning TARGET_SCREEN_WIDTH is not set, using default value: 1080)
+    TARGET_SCREEN_WIDTH := 1080
+endif
+ifeq ($(TARGET_SCREEN_HEIGHT),)
+    $(warning TARGET_SCREEN_HEIGHT is not set, using default value: 1920)
+    TARGET_SCREEN_HEIGHT := 1920
+endif
+
 define build-bootanimation
     sh vendor/lineage/bootanimation/generate-bootanimation.sh \
     $(TARGET_SCREEN_WIDTH) \

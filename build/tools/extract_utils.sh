@@ -358,7 +358,7 @@ function write_packages() {
             printf 'LOCAL_PRIVILEGED_MODULE := true\n'
         fi
         if [ "$VENDOR_PKG" = "true" ]; then
-            printf 'LOCAL_PROPRIETARY_MODULE := true\n'
+            printf 'LOCAL_VENDOR_MODULE := true\n'
         fi
         printf 'include $(BUILD_PREBUILT)\n\n'
     done
@@ -439,7 +439,7 @@ function write_product_packages() {
         write_packages "JAVA_LIBRARIES" "false" "" "FRAMEWORK" >> "$ANDROIDMK"
     fi
     local V_FRAMEWORK=( $(prefix_match "vendor/framework/") )
-    if [ "${#FRAMEWORK[@]}" -gt "0" ]; then
+    if [ "${#V_FRAMEWORK[@]}" -gt "0" ]; then
         write_packages "JAVA_LIBRARIES" "true" "" "V_FRAMEWORK" >> "$ANDROIDMK"
     fi
 

@@ -28,7 +28,7 @@ ifndef LINEAGE_PLATFORM_SDK_VERSION
   # the SDK are released.  It should only be incremented when the APIs for
   # the new release are frozen (so that developers don't write apps against
   # intermediate builds).
-  LINEAGE_PLATFORM_SDK_VERSION := 7
+  LINEAGE_PLATFORM_SDK_VERSION := 8
 endif
 
 ifndef LINEAGE_PLATFORM_REV
@@ -39,10 +39,10 @@ ifndef LINEAGE_PLATFORM_REV
 endif
 
 # LineageOS Platform SDK Version
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
 
 # LineageOS Platform Internal
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
 

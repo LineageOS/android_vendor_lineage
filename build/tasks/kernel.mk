@@ -121,9 +121,6 @@ endif
 ifeq ($(KERNEL_ARCH),arm64)
   # Avoid "unsupported RELA relocation: 311" errors (R_AARCH64_ADR_GOT_PAGE)
   MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
-  ifeq ($(TARGET_ARCH),arm)
-    KERNEL_CONFIG_OVERRIDE := CONFIG_ANDROID_BINDER_IPC_32BIT=y
-  endif
 endif
 
 ifneq ($(TARGET_KERNEL_ADDITIONAL_CONFIG),)
@@ -257,7 +254,9 @@ endif
 
 ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     KERNEL_CROSS_COMPILE := CROSS_COMPILE="$(KERNEL_TOOLCHAIN_PATH)"
-    KERNEL_CC ?= CC="$(ccache) $(TARGET_KERNEL_CLANG_PATH)/clang"
+    ifeq ($(KERNEL_CC),)
+        KERNEL_CC := CC="$(ccache) $(TARGET_KERNEL_CLANG_PATH)/clang"
+    endif
 else
     KERNEL_CROSS_COMPILE := CROSS_COMPILE="$(ccache) $(KERNEL_TOOLCHAIN_PATH)"
 endif
