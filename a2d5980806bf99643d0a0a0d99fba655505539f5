@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "02109121_bf5c4890",
+        "filename": "config/permissions/privapp-permissions-lineage.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-11-15T10:23:25Z",
+      "side": 1,
+      "message": "One thing I am missing here. Aren\u0027t these set in the app manifest? https://github.com/LineageOS/android_packages_apps_Recorder/blob/lineage-15.0/app/src/main/AndroidManifest.xml#L20-L21",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 68
+      },
+      "revId": "a2d5980806bf99643d0a0a0d99fba655505539f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
