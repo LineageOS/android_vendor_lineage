@@ -22,6 +22,30 @@
       "revId": "68fcaba9179a6858e874ab91dac6b30097d91a22",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bbe84d38_09e8d184",
+        "filename": "config/lineage_sdk_common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2017-11-15T08:19:29Z",
+      "side": 1,
+      "message": "Since it seems to be implied that you ought to have a small number of privapp-permissions-*.xml files and therefore likely don\u0027t want to split by app or sdk/non-sdk, maybe we just move to config/common.mk ?",
+      "parentUuid": "a89d4e42_e7f52edb",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 124
+      },
+      "revId": "68fcaba9179a6858e874ab91dac6b30097d91a22",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
