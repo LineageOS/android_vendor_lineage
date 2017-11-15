@@ -8,6 +8,9 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.telephony.xml:system/etc/permissions/org.lineageos.telephony.xml \
     vendor/lineage/config/permissions/org.lineageos.weather.xml:system/etc/permissions/org.lineageos.weather.xml
 
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml
+
 # Lineage Platform Library
 PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
