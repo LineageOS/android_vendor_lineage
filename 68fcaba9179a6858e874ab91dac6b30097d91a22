@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a89d4e42_e7f52edb",
+        "filename": "config/lineage_sdk_common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2017-11-15T07:43:33Z",
+      "side": 1,
+      "message": "Actually, this probably shouldn\u0027t be here, but I thought this was for SDK things at first.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 124
+      },
+      "revId": "68fcaba9179a6858e874ab91dac6b30097d91a22",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
