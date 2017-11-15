@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f947ae51_569aeecb",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 275,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-11-15T23:14:04Z",
+      "side": 1,
+      "message": "This was the only merge conflict due to https://github.com/LineageOS/android_vendor_lineage/commit/edc1cebc2f7baedf6479874db2848b45e22f4205",
+      "range": {
+        "startLine": 275,
+        "startChar": 102,
+        "endLine": 275,
+        "endChar": 125
+      },
+      "revId": "f15c371403fb010de5111b5c2fc5731193e796dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
