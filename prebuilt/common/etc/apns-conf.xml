@@ -525,6 +525,7 @@
   <apn carrier="Orange MMS" mcc="232" mnc="12" apn="orange.mms" proxy="" port="" mmsproxy="194.24.128.118" mmsport="8080" mmsc="http://mmsc.orange.at/mms/wapenc" user="mms" password="mms" authtype="3" type="mms" />
   <apn carrier="Orange Video" mcc="232" mnc="12" apn="orange.video" user="video" password="" authtype="3" type="default,supl" />
   <apn carrier="Yesss" mcc="232" mnc="12" apn="webapn.at" type="default,supl" />
+  <apn carrier="spusu" mcc="232" mnc="17" apn="mass.at" type="default,supl" />
   <apn carrier="UBIQUISYS" mcc="234" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Vectone Mobile" type="default,supl,mms" />
   <apn carrier="Tesco Prepay" mcc="234" mnc="01" apn="prepay.tesco-mobile.com" user="tescowap" password="password" server="http://wap.tesco-mobile.com/" proxy="193.113.200.195" port="9201" type="default,supl,mms" />
   <apn carrier="Vectone Mobile" mcc="234" mnc="01" apn="webuk.mundio.com" type="default,supl" />
