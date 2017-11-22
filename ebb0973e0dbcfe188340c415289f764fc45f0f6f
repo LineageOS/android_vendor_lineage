@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "731233df_526a7f99",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-11-22T13:57:34Z",
+      "side": 1,
+      "message": "Why msm8996? looks like the rest of these \"families\" use the highest SoC nomenclature.\n\nRegardless, those are just as confusing in my opinion. How is it obvious, other than reading through a bunch of makefiles or having a very good idea about the different SoCs and how they relate to eachother, that your 8226 would use an 8974 hal repo?",
+      "range": {
+        "startLine": 75,
+        "startChar": 33,
+        "endLine": 75,
+        "endChar": 40
+      },
+      "revId": "ebb0973e0dbcfe188340c415289f764fc45f0f6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
