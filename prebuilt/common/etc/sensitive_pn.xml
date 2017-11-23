@@ -199,6 +199,9 @@
     </sensitivePN>
     <!--Bulgaria-->
     <sensitivePN network="284">
+        <item>029817686</item>
+        <item>080018676</item>
+        <item>080020100</item>
         <item>116111</item>
     </sensitivePN>
     <!--Turkey-->
