@@ -277,6 +277,11 @@ TARGET_KERNEL_BINARIES: $(KERNEL_OUT_STAMP) $(KERNEL_CONFIG) $(KERNEL_HEADERS_IN
 			echo "Building DTBs"; \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) dtbs; \
 		fi
+	$(hide) if [ ! -z "$(TARGET_NEEDS_DTBOIMAGE)" ]; then \
+			echo -e ${CL_GRN}"Building DTB overlays"${CL_RST} ; \
+			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) dtbo.img; \
+			cp $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dtbo.img $(PRODUCT_OUT); \
+		fi
 	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG); then \
 			echo "Building Kernel Modules"; \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) modules; \
