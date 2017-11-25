@@ -396,6 +396,17 @@ alldefconfig: $(KERNEL_OUT_STAMP)
 
 endif # FULL_KERNEL_BUILD
 
+TARGET_PREBUILT_DTBO = $(PRODUCT_OUT)/dtbo/arch/$(KERNEL_ARCH)/boot/dtbo.img
+$(TARGET_PREBUILT_DTBO): $(AVBTOOL)
+	echo -e ${CL_GRN}"Building DTBO.img"${CL_RST}
+	$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(PRODUCT_OUT)/dtbo ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(KERNEL_DEFCONFIG)
+	$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(PRODUCT_OUT)/dtbo ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) dtbo.img
+	$(AVBTOOL) add_hash_footer \
+		--image $@ \
+		--partition_size $(BOARD_DTBOIMG_PARTITION_SIZE) \
+		--partition_name dtbo $(INTERNAL_AVB_DTBO_SIGNING_ARGS) \
+		$(BOARD_AVB_DTBO_ADD_HASH_FOOTER_ARGS)
+
 ## Install it
 
 ifeq ($(NEEDS_KERNEL_COPY),true)
@@ -407,7 +418,19 @@ $(file) : $(KERNEL_BIN) | $(ACP)
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 endif
 
+ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
+file := $(INSTALLED_DTBOIMAGE_TARGET)
+ALL_PREBUILT += $(file)
+$(file) : $(TARGET_PREBUILT_DTBO) | $(ACP)
+	$(transform-prebuilt-to-target)
+
+ALL_PREBUILT += $(INSTALLED_DTBOIMAGE_TARGET)
+endif
+
 .PHONY: kernel
 kernel: $(INSTALLED_KERNEL_TARGET)
+
+.PHONY: dtbo
+dtbo: $(INSTALLED_DTBOIMAGE_TARGET)
 
 endif # TARGET_NO_KERNEL
