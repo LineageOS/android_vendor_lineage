@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e8aa7b84_e4484794",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2017-11-25T21:56:01Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be part of the install rules below?",
+      "range": {
+        "startLine": 283,
+        "startChar": 3,
+        "endLine": 283,
+        "endChar": 71
+      },
+      "revId": "e0272acfdd705d6a616e110efec109b8a4602c7c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
