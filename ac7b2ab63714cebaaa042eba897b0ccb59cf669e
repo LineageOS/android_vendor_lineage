@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c3f68664_aa0de450",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 9783
+      },
+      "writtenOn": "2017-11-25T12:32:27Z",
+      "side": 1,
+      "message": "the find path should be absolute ( $(ANDROID_BUILD_TOP) )",
+      "revId": "ac7b2ab63714cebaaa042eba897b0ccb59cf669e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
