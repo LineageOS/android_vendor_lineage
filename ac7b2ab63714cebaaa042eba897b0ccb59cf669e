@@ -16,6 +16,24 @@
       "revId": "ac7b2ab63714cebaaa042eba897b0ccb59cf669e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f4e6fd19_aaf66ba7",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 5503
+      },
+      "writtenOn": "2017-11-27T13:53:33Z",
+      "side": 1,
+      "message": "Why should the find path be absolute?  The Android build system generally prefers paths relative to $TOP.",
+      "parentUuid": "c3f68664_aa0de450",
+      "revId": "ac7b2ab63714cebaaa042eba897b0ccb59cf669e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
