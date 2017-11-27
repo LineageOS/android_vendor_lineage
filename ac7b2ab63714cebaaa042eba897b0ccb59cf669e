@@ -34,6 +34,24 @@
       "revId": "ac7b2ab63714cebaaa042eba897b0ccb59cf669e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5d570ef6_08f5fb9a",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 18454
+      },
+      "writtenOn": "2017-11-27T13:57:57Z",
+      "side": 1,
+      "message": "In this case, it doesn\u0027t. It fails to find any clang prebuild and ends up trying to execute prebuilts/clang/host/linux-x86//clang. With $(ANDROID_BUILD_TOP), it works fine.",
+      "parentUuid": "f4e6fd19_aaf66ba7",
+      "revId": "ac7b2ab63714cebaaa042eba897b0ccb59cf669e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
