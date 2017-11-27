@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c10d252_a25d2c93",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 16
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 9783
+      },
+      "writtenOn": "2017-11-27T20:14:47Z",
+      "side": 1,
+      "message": "this shouldn\u0027t be a new line (and never was in my diff) What did you do Joe?!",
+      "revId": "e2ed3084878924ef409061e1e4cf73e1d68f0144",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
