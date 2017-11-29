@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11ae92a0_d67a6eb1",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 18
+      },
+      "lineNbr": 402,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2017-11-29T19:11:04Z",
+      "side": 1,
+      "message": "Fix this",
+      "revId": "ed9a011f787c337fc2a0a3af9c629658843a6a59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
