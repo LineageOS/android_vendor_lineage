@@ -1,7 +1,7 @@
 #!/sbin/sh
 #
 # /system/addon.d/50-lineage.sh
-# During a LineageOS 15.0 upgrade, this script backs up /system/etc/hosts,
+# During a LineageOS 15.1 upgrade, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
 #
 
