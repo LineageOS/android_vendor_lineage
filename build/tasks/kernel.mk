@@ -55,6 +55,7 @@
 #   NEED_KERNEL_MODULE_ROOT            = Optional, if true, install kernel
 #                                          modules in root instead of system
 
+ifneq ($(TARGET_NO_KERNEL),true)
 
 TARGET_AUTO_KDIR := $(shell echo $(TARGET_DEVICE_DIR) | sed -e 's/^device/kernel/g')
 
@@ -361,3 +362,5 @@ endif
 
 .PHONY: kernel
 kernel: $(INSTALLED_KERNEL_TARGET)
+
+endif # TARGET_NO_KERNEL
