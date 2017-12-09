@@ -17,6 +17,27 @@
  * limitations under the License.
  */
 -->
+
+<!-- A few notes about maintaining this file:
+
+     The sorting in the file is as follows:
+      - The MCC codes in the network field are sorted in ascending order, if the
+        country has multiple MCC codes, or has territories with different MCC codes
+      - The sensitivePN entries are sorted in ascending order by the first MCC code
+      - The phone numbers in a sensitivePN entry are grouped in increasing lengths,
+        and within the various lengths they are sorted in ascending order
+
+     When adding a new country, please keep the following in mind:
+      - Whether the country has multiple MCC codes
+      - Whether the country has any territories with different MCC codes
+      - What the most recognizable name for the country is, to leave as a comment
+
+     When adding a new phone number, please keep the following in mind:
+      - Whether there are multiple forms of the phone number (long and short)
+      - Whether the number is valid for any territories of the country
+
+     Thank you for your contributions! -->
+
 <sensitivePNS>
     <!--Greece-->
     <sensitivePN network="202">
@@ -33,13 +54,13 @@
     </sensitivePN>
     <!--Netherlands-->
     <sensitivePN network="204">
-        <item>08002000</item>
+        <item>116006</item>
+        <item>116123</item>
         <item>08000432</item>
+        <item>08002000</item>
         <item>09000101</item>
         <item>0882342450</item>
         <item>09009999001</item>
-        <item>116006</item>
-        <item>116123</item>
     </sensitivePN>
     <!--Belgium-->
     <sensitivePN network="206">
@@ -92,12 +113,8 @@
     </sensitivePN>
     <!--Romania-->
     <sensitivePN network="226">
+        <item>116111</item>
         <item>0213114636</item>
-        <item>116111</item>
-    </sensitivePN>
-    <!--Slovakia-->
-    <sensitivePN network="231">
-        <item>116111</item>
     </sensitivePN>
     <!--Switzerland-->
     <sensitivePN network="228">
@@ -106,6 +123,9 @@
     </sensitivePN>
     <!--Czech Republic-->
     <sensitivePN network="230">
+        <item>116006</item>
+        <item>116111</item>
+        <item>116123</item>
         <item>222514040</item>
         <item>222580697</item>
         <item>224214214</item>
@@ -120,23 +140,23 @@
         <item>777783146</item>
         <item>777800983</item>
         <item>800200007</item>
-        <item>116006</item>
+    </sensitivePN>
+    <!--Slovakia-->
+    <sensitivePN network="231">
         <item>116111</item>
-        <item>116123</item>
     </sensitivePN>
     <!--Austria-->
     <sensitivePN network="232">
-        <item>0800222555</item>
         <item>116006</item>
         <item>116123</item>
+        <item>0800222555</item>
     </sensitivePN>
     <!--GB-->
     <sensitivePN network="234,235">
+        <item>116111</item>
         <item>116123</item>
         <item>08001111</item>
         <item>08082000247</item>
-        <item>116111</item>
-        <item>116123</item>
     </sensitivePN>
     <!--Denmark-->
     <sensitivePN network="238">
@@ -175,10 +195,10 @@
     </sensitivePN>
     <!--Ukraine-->
     <sensitivePN network="255">
-        <item>0800500335</item>
         <item>386</item>
-        <item>0800500225</item>
         <item>772</item>
+        <item>0800500225</item>
+        <item>0800500335</item>
     </sensitivePN>
     <!--Poland-->
     <sensitivePN network="260">
@@ -187,17 +207,17 @@
     </sensitivePN>
     <!--Germany-->
     <sensitivePN network="262">
-        <item>08000116016</item>
-        <item>08001110111</item>
-        <item>08001110222</item>
         <item>116006</item>
         <item>116111</item>
         <item>116123</item>
+        <item>08000116016</item>
+        <item>08001110111</item>
+        <item>08001110222</item>
     </sensitivePN>
     <!--Portugal-->
     <sensitivePN network="268">
-        <item>800202148</item>
         <item>116111</item>
+        <item>800202148</item>
     </sensitivePN>
     <!--Luxembourg-->
     <sensitivePN network="270">
@@ -221,17 +241,17 @@
     </sensitivePN>
     <!--Bulgaria-->
     <sensitivePN network="284">
+        <item>116111</item>
         <item>029817686</item>
         <item>080018676</item>
         <item>080020100</item>
-        <item>116111</item>
     </sensitivePN>
     <!--Turkey-->
     <sensitivePN network="286">
-        <item>05494412144</item>
         <item>144</item>
-        <item>05493810183</item>
         <item>183</item>
+        <item>05493810183</item>
+        <item>05494412144</item>
     </sensitivePN>
     <!--Slovenia-->
     <sensitivePN network="293">
@@ -240,61 +260,61 @@
     </sensitivePN>
     <!--Canada-->
     <sensitivePN network="302">
-        <item>18668630511</item>
-        <item>18668637868</item>
-        <item>18555544325</item>
-        <item>6137226914</item>
-        <item>18669960991</item>
-        <item>18773362433</item>
-        <item>18668607082</item>
-        <item>6046871867</item>
-        <item>18556871868</item>
-        <item>6048723311</item>
-        <item>18666613311</item>
-        <item>18668720113</item>
-        <item>6048750885</item>
-        <item>18005630808</item>
-        <item>6045831295</item>
+        <item>6455195</item>
+        <item>2047868686</item>
+        <item>3064254090</item>
+        <item>3065255333</item>
+        <item>3066936511</item>
+        <item>3067570127</item>
+        <item>3067641011</item>
+        <item>4032347233</item>
+        <item>5148739010</item>
         <item>6042556344</item>
-        <item>18773927583</item>
-        <item>6049873374</item>
-        <item>6044371940</item>
-        <item>18664371940</item>
         <item>6044283359</item>
-        <item>18553061443</item>
-        <item>17806322233</item>
-        <item>17806327070</item>
+        <item>6044371940</item>
+        <item>6045831295</item>
+        <item>6046871867</item>
+        <item>6048723311</item>
+        <item>6048750885</item>
+        <item>6049873374</item>
+        <item>6137226914</item>
+        <item>7099446900</item>
         <item>7803101818</item>
         <item>7804790058</item>
-        <item>6455195</item>
-        <item>18002633045</item>
-        <item>7806721035</item>
-        <item>18776721010</item>
-        <item>4032347233</item>
-        <item>18666067233</item>
         <item>7805232929</item>
         <item>7805234357</item>
-        <item>18665232929</item>
-        <item>3064254090</item>
-        <item>3066936511</item>
-        <item>3067641011</item>
-        <item>18887833111</item>
-        <item>3067570127</item>
-        <item>3065255333</item>
-        <item>18779770007</item>
-        <item>2047868686</item>
-        <item>18883223019</item>
-        <item>18006610844</item>
-        <item>8679793333</item>
-        <item>18002653333</item>
-        <item>5148739010</item>
-        <item>18003639010</item>
-        <item>7099446900</item>
-        <item>18883320000</item>
-        <item>18775211188</item>
-        <item>18554432660</item>
-        <item>8676685733</item>
+        <item>7806721035</item>
         <item>8676337720</item>
+        <item>8676685733</item>
+        <item>8679793333</item>
+        <item>17806322233</item>
+        <item>17806327070</item>
+        <item>18002633045</item>
+        <item>18002653333</item>
+        <item>18003639010</item>
+        <item>18005630808</item>
+        <item>18006610844</item>
+        <item>18553061443</item>
+        <item>18554432660</item>
+        <item>18555544325</item>
+        <item>18556871868</item>
+        <item>18664371940</item>
+        <item>18665232929</item>
+        <item>18666067233</item>
+        <item>18666613311</item>
+        <item>18668607082</item>
+        <item>18668630511</item>
+        <item>18668637868</item>
+        <item>18668720113</item>
+        <item>18669960991</item>
+        <item>18773362433</item>
+        <item>18773927583</item>
+        <item>18775211188</item>
+        <item>18776721010</item>
+        <item>18779770007</item>
+        <item>18883223019</item>
+        <item>18883320000</item>
+        <item>18887833111</item>
     </sensitivePN>
     <!--USA-->
     <sensitivePN network="310,311,312,313,316">
@@ -323,8 +343,8 @@
     <sensitivePN network="466">
         <item>113</item>
         <item>1955</item>
-        <item>886253883095</item>
         <item>88635557953</item>
+        <item>886253883095</item>
     </sensitivePN>
     <!--Bangladesh-->
     <sensitivePN network="470">
