@@ -16,6 +16,24 @@
       "revId": "f28d87671b0e0325868edbc4459e8b1aebd39641",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b13eb983_140ebd4d",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2017-12-11T23:53:33Z",
+      "side": 1,
+      "message": "It\u0027s not supposed to be. It just ends up doing nothing since we already have the display frameworks header added and we never merged the tertiary display commits needed by the other platforms.",
+      "parentUuid": "ad476034_f80eb078",
+      "revId": "f28d87671b0e0325868edbc4459e8b1aebd39641",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
