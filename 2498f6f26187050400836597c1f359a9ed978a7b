@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "09185624_485d1e3e",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-12-11T20:04:46Z",
+      "side": 1,
+      "message": "Where is ma 8909",
+      "range": {
+        "startLine": 31,
+        "startChar": 4,
+        "endLine": 31,
+        "endChar": 18
+      },
+      "revId": "2498f6f26187050400836597c1f359a9ed978a7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
