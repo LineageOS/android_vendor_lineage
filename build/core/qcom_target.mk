@@ -31,6 +31,12 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     UM_3_18_FAMILY := msm8937 msm8953 msm8996
     UM_4_4_FAMILY := msm8998 sdm660
 
+    ifeq ($(TARGET_USES_UM_PLATFORM),true)
+        UM_3_18_FAMILY += $(BR_FAMILY)
+        # Empty the BR_FAMILY variable so the platform doesn't match it
+        BR_FAMILY :=
+    endif
+
     BOARD_USES_ADRENO := true
 
     # UM platforms no longer need this set on O+
