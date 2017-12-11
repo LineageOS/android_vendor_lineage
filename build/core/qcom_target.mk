@@ -28,11 +28,15 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     B_FAMILY := msm8226 msm8610 msm8974
     B64_FAMILY := msm8992 msm8994
     BR_FAMILY := msm8909 msm8916
-    UM_FAMILY := msm8937 msm8953 msm8996
+    UM_3_18_FAMILY := msm8937 msm8953 msm8996
+    UM_4_4_FAMILY := msm8998 sdm660
 
     BOARD_USES_ADRENO := true
 
-    TARGET_USES_QCOM_BSP := true
+    # UM platforms no longer need this set on O+
+    ifneq ($(call is-board-platform-in-list, $(UM_3_18_FAMILY) $(UM_4_4_FAMILY)),true)
+        TARGET_USES_QCOM_BSP := true
+    endif
 
     # Tell HALs that we're compiling an AOSP build with an in-line kernel
     TARGET_COMPILE_WITH_MSM_KERNEL := true
@@ -67,12 +71,17 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         MSM_VIDC_TARGET_LIST := $(BR_FAMILY)
         QCOM_HARDWARE_VARIANT := msm8916
     else
-    ifeq ($(call is-board-platform-in-list, $(UM_FAMILY)),true)
-        MSM_VIDC_TARGET_LIST := $(UM_FAMILY)
+    ifeq ($(call is-board-platform-in-list, $(UM_3_18_FAMILY)),true)
+        MSM_VIDC_TARGET_LIST := $(UM_3_18_FAMILY)
         QCOM_HARDWARE_VARIANT := msm8996
+    else
+    ifeq ($(call is-board-platform-in-list, $(UM_4_4_FAMILY)),true)
+        MSM_VIDC_TARGET_LIST := $(UM_4_4_FAMILY)
+        QCOM_HARDWARE_VARIANT := msm8998
     else
         MSM_VIDC_TARGET_LIST := $(TARGET_BOARD_PLATFORM)
         QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
+    endif
     endif
     endif
     endif
