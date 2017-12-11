@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ad476034_f80eb078",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2017-12-11T23:08:24Z",
+      "side": 1,
+      "message": "if this is a no-op maybe we should leave it for now so this is more readable?",
+      "revId": "f28d87671b0e0325868edbc4459e8b1aebd39641",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
