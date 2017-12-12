@@ -22,6 +22,10 @@ LOCAL_C_INCLUDES := \
     system/core/healthd/include \
     system/core/base/include \
     bootable/recovery/minui/include
+
+LOCAL_SHARED_LIBRARIES := libbase libpng
+LOCAL_WHOLE_STATIC_LIBRARIES := libminui
+
 ifneq ($(BACKLIGHT_PATH),)
     LOCAL_CFLAGS += -DHEALTHD_BACKLIGHT_PATH=\"$(BACKLIGHT_PATH)\"
 endif
