@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a6602a9b_ab48c1c8",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 352,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2017-12-14T18:23:40Z",
+      "side": 1,
+      "message": "AHHHHH",
+      "range": {
+        "startLine": 352,
+        "startChar": 24,
+        "endLine": 352,
+        "endChar": 25
+      },
+      "revId": "8d6a3d4e06492aeae4d7b60ff9e4c538843a0a2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
