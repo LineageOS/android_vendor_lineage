@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "891eda0f_b85322b9",
+        "filename": "build/tasks/build_manifest.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2017-12-14T20:33:18Z",
+      "side": 1,
+      "message": "Should this go in /vendor/etc/, since repo manifest includes device and kernel repos, so will be different per device?",
+      "revId": "9e4649e9f15930e5fdbd57a6ca715e57d9329d0c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
