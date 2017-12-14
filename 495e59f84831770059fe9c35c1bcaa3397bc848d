@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c556a223_8871a1fa",
+        "filename": "build/tasks/build_manifest.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-12-14T20:18:42Z",
+      "side": 1,
+      "message": "Make this:\nrepo manifest -o - -r | grep -v $(PRIVATE) \u003e $(BUILD_MANIFEST)\n\ngrep could be -Ev or whatever else as required.",
+      "revId": "495e59f84831770059fe9c35c1bcaa3397bc848d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
