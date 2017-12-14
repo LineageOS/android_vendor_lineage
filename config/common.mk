@@ -142,6 +142,10 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     WeatherProvider
 
+# Build Manifest
+PRODUCT_PACKAGES += \
+    build-manifest
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
