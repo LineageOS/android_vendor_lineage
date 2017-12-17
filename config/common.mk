@@ -204,6 +204,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# Settings theme
+PRODUCT_PACKAGES += \
+    SettingsDarkTheme
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
