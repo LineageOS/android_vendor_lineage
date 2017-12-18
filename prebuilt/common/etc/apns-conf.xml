@@ -1059,6 +1059,9 @@
   <apn carrier="MMS" mcc="260" mnc="06" apn="mms" proxy="" port="" mmsproxy="10.10.25.5" mmsport="8080" mmsc="http://10.10.28.164/mms/wapenc" user="" password="" authtype="3" type="mms" />
   <apn carrier="Play INTERNET" mcc="260" mnc="06" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Play MMS" mcc="260" mnc="06" apn="mms" proxy="" port="" user="" password="" mmsc="http://10.10.28.164/mms/wapenc" mmsproxy="10.10.25.5" mmsport="8080" type="mms" />
+  <apn carrier="PL VirginMobile Internet" mcc="260" mnc="06" apn="virgin-internet" proxy="" port="" user="" password="" mmsc="" authtype="3" type="default,supl" />
+  <apn carrier="PL VirginMobile MMS" mcc="260" mnc="06" apn="virgin-mms" proxy="" port="" user="" password="" mmsc="http://mms.virginpol.jsc" mmsproxy="wap.virginpol.jsc" mmsport="8080" authtype="3" type="mms" />
+  <apn carrier="PL VirginMobile MMS" mcc="260" mnc="06" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmsc.net.pl/mms/wapenc" mmsproxy="10.10.25.5" mmsport="8080" authtype="3" type="mms" />
   <apn carrier="Lycamobile PL" mcc="260" mnc="09" apn="data.lycamobile.pl" user="lmpl" password="plus" type="default,supl" />
   <apn carrier="Cyfrowy Polsat INTERNET" mcc="260" mnc="12" apn="internet.cp" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Cyfrowy Polsat MMS" mcc="260" mnc="12" apn="mms.cyfrowypolsat.pl" proxy="" port="" user="" password="" mmsc="http://mms.cyfrowypolsat.pl:8002" mmsproxy="79.171.2.33" mmsport="8080" type="mms" />
