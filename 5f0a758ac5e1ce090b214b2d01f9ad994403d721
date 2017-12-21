@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4738d5b6_703aba5a",
+        "filename": "libbfqio/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-12-21T08:17:46Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "5f0a758ac5e1ce090b214b2d01f9ad994403d721",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
