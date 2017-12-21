@@ -656,6 +656,7 @@ function parse_file_list() {
 
         # if line starts with a dash, it needs to be packaged
         if [[ "$SPEC" =~ ^- ]]; then
+            SPEC=$(echo "${SPEC}" | sed 's/[^"]*://')
             PRODUCT_PACKAGES_LIST+=("${SPEC#-}")
             PRODUCT_PACKAGES_HASHES+=("$HASH")
         else
