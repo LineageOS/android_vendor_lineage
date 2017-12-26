@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a44fd041_5ebbd3ff",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 16739
+      },
+      "writtenOn": "2017-12-26T19:28:13Z",
+      "side": 1,
+      "message": "this breaks kernel build, should not be on new line",
+      "range": {
+        "startLine": 300,
+        "startChar": 0,
+        "endLine": 300,
+        "endChar": 58
+      },
+      "revId": "cc9b205016ac8d118d2533d34c00ed86b2c8b1b7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
