@@ -42,6 +42,7 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     TARGET_COMPILE_WITH_MSM_KERNEL := true
 
     ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),)
+        TARGET_USES_QCOM_BSP_LEGACY := true
         # Enable legacy audio functions
         ifeq ($(BOARD_USES_LEGACY_ALSA_AUDIO),true)
             USE_CUSTOM_AUDIO_POLICY := 1
