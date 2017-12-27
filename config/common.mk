@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
 # Required Lineage packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    CMAudioService \
+    LineageAudioService \
     LineageParts \
     Development \
     Profiles \
