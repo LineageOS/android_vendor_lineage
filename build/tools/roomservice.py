@@ -217,7 +217,7 @@ def fetch_dependencies(repo_path, fallback_branch = None):
                 fetch_list.append(dependency)
                 syncable_repos.append(dependency['target_path'])
                 verify_repos.append(dependency['target_path'])
-            elif re.search("android_device_.*_.*$", dependency['repository']):
+            else:
                 verify_repos.append(dependency['target_path'])
 
         dependencies_file.close()
