@@ -219,7 +219,7 @@
   <apn carrier="Free Mobile MMS" mcc="208" mnc="15" apn="mmsfree" proxy="" port="" user="" password="" mmsc="http://mms.free.fr" type="mms" />
   <apn carrier="Legos" mcc="208" mnc="17" apn="bornsip" type="default,supl" />
   <apn carrier="Legos MMS" mcc="208" mnc="17" apn="bornsipmms" mmsc="http://mms.bornsip.fr:8191" type="mms" />
-  <apn carrier="Bouygues Telecom" mcc="208" mnc="20" apn="mmsbouygtel.com" proxy="" port="" user="" password="" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" mvno_type="spn" mvno_match_data="Bouygues Telecom" type="default,supl,hipri,dun" />
+  <apn carrier="Bouygues Telecom" mcc="208" mnc="20" apn="mmsbouygtel.com" proxy="" port="" user="" password="" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" mvno_type="spn" mvno_match_data="Bouygues Telecom" type="default,supl,mms" />
   <apn carrier="Bouygues Pro" mcc="208" mnc="20" apn="a2bouygtel.com" user="a2b" password="acces" type="default,supl" />
   <apn carrier="Bouygues WAP" mcc="208" mnc="20" apn="mmsbouygtel.com" type="default,supl" />
   <apn carrier="Bouygues MMS" mcc="208" mnc="20" apn="mmsbouygtel.com" proxy="" port="" user="" password="" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" mvno_type="spn" mvno_match_data="Bouygues Telecom" type="default,supl,mms" />
