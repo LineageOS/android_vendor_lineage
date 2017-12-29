@@ -173,6 +173,17 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# Theme Accents
+PRODUCT_PACKAGES += \
+    DarkBlueAccentOverlay \
+    DarkGreenAccentOverlay \
+    LavenderAccentOverlay \
+    LightGreenAccentOverlay \
+    MaroonAccentOverlay \
+    OrangeAccentOverlay \
+    PurpleAccentOverlay \
+    RedAccentOverlay
+
 # Custom off-mode charger
 ifneq ($(WITH_LINEAGE_CHARGER),false)
 PRODUCT_PACKAGES += \
