@@ -15,6 +15,35 @@
 -->
 
 <permissions>
+    <privapp-permissions package="com.android.dialer">
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.apps.tag">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.gallery3d">
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.cyanogenmod.eleven">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="org.cyanogenmod.snap">
+        <permission name="android.permission.PREVENT_POWER_KEY"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="org.lineageos.audiofx">
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    </privapp-permissions>
 
     <privapp-permissions package="org.lineageos.lineageparts">
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
@@ -25,6 +54,10 @@
 
     <privapp-permissions package="org.lineageos.lineagesettings">
         <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="org.lineageos.trebuchet">
+        <permission name="android.permission.BIND_APPWIDGET"/>
     </privapp-permissions>
 
     <privapp-permissions package="org.lineageos.recorder">
