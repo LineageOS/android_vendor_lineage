@@ -15,6 +15,13 @@
 -->
 
 <permissions>
+    <privapp-permissions package="com.android.dialer">
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.cyanogenmod.eleven">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
 
     <privapp-permissions package="org.lineageos.lineageparts">
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
@@ -25,6 +32,10 @@
 
     <privapp-permissions package="org.lineageos.lineagesettings">
         <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="org.lineageos.trebuchet">
+        <permission name="android.permission.BIND_APPWIDGET"/>
     </privapp-permissions>
 
     <privapp-permissions package="org.lineageos.recorder">
