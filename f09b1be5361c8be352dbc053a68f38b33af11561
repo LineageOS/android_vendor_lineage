@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "703b55cd_019b4999",
+        "filename": "config/permissions/privapp-permissions-lineage.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2018-01-03T05:29:53Z",
+      "side": 1,
+      "message": "This looks suspicious",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 66
+      },
+      "revId": "f09b1be5361c8be352dbc053a68f38b33af11561",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
