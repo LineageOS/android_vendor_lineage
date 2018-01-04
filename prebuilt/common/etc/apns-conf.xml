@@ -149,7 +149,7 @@
   <apn carrier="mms68" mcc="208" mnc="01" apn="mms68" proxy="" port="" user="" password="" mmsc="http://mms68/" mmsproxy="10.143.156.11" mmsport="8080" type="mms" />
   <apn carrier="Breizh Mobile" mcc="208" mnc="01" apn="orange" proxy="192.168.10.100" port="8080" user="orange" password="orange" mmsc="" mvno_type="spn" mvno_match_data="Breizh Mobile" type="default,supl" />
   <apn carrier="C MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.fr" mmsproxy="192.168.10.200" mmsport="8080" type="mms" />
-  <apn carrier="Syma" mcc="208" mnc="01" apn="symacom.fr" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Syma" type="default,supl" />
+  <apn carrier="Syma" mcc="208" mnc="01" apn="symamobile.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Syma" type="default,supl" />
   <apn carrier="Lebara internet" mcc="208" mnc="01" apn="fr.lebara.mobi" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="NRJ WEB" mcc="208" mnc="01" apn="ofnew.fr" proxy="" port="" user="orange" password="orange" mmsc="" mvno_type="spn" mvno_match_data="NRJ Mobile" authtype="1" type="default,supl" />
   <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.fr/" mmsproxy="192.168.10.200" mmsport="8080" mvno_type="spn" mvno_match_data="NRJ Mobile" spn="NRJ Mobile" authtype="1" type="mms" />
