@@ -20,4 +20,7 @@
     <bool name="def_wifi_on">true</bool>
 
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
+
+    <!-- Default state of tap to wake -->
+    <bool name="def_double_tap_to_wake">false</bool>
 </resources>
