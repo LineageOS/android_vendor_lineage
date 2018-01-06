@@ -172,7 +172,7 @@ PRODUCT_PACKAGES += \
     zip
 
 # Custom off-mode charger
-ifneq ($(WITH_LINEAGE_CHARGER),false)
+ifeq ($(WITH_LINEAGE_CHARGER),true)
 PRODUCT_PACKAGES += \
     charger_res_images \
     lineage_charger_res_images \
