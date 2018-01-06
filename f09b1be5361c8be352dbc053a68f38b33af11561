@@ -22,6 +22,30 @@
       "revId": "f09b1be5361c8be352dbc053a68f38b33af11561",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "26dd7fcd_808ff80c",
+        "filename": "config/permissions/privapp-permissions-lineage.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2018-01-06T04:32:41Z",
+      "side": 1,
+      "message": "Appears to be legit. The gallery app supports streaming and it has a setting that allows you to set a preferred apn when you\u0027re streaming.",
+      "parentUuid": "703b55cd_019b4999",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 66
+      },
+      "revId": "f09b1be5361c8be352dbc053a68f38b33af11561",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
