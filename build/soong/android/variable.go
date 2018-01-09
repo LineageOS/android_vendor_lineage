@@ -3,6 +3,9 @@ type Product_variables struct {
 	Needs_text_relocations struct {
 		Cppflags []string
 	}
+	No_sensors_permission_check struct {
+		Cppflags []string
+	}
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
@@ -15,5 +18,6 @@ type ProductVariables struct {
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
+	No_sensors_permission_check  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 }
