@@ -12,5 +12,6 @@ lineage_soong:
 	echo '    "Uses_nvidia_enhancements": $(if $(filter TRUE,$(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)),true,false),'; \
 	echo '    "Uses_qcom_bsp_legacy": $(if $(filter true,$(TARGET_USES_QCOM_BSP_LEGACY)),true,false),'; \
 	echo '    "Uses_qti_camera_device": $(if $(filter true,$(TARGET_USES_QTI_CAMERA_DEVICE)),true,false)'; \
+	echo '    "No_sensors_permission_check": $(if $(filter true,$(TARGET_NO_SENSOR_PERMISSION_CHECK)),true,false),'; \
 	echo '},'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
