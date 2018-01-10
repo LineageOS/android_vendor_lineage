@@ -261,6 +261,9 @@ if __name__ == '__main__':
     if args.topic:
         reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
         change_numbers = sorted([str(r['number']) for r in reviews], key=int)
+        if not change_numbers:
+            print('Topic %s not found, skipping' % args.topic)
+            sys.exit(0)
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
         change_numbers = sorted([str(r['number']) for r in reviews], key=int)
