@@ -5,3 +5,19 @@ bootstrap_go_package {
         "android/variable.go",
     ],
 }
+
+bootstrap_go_package {
+    name: "soong-lineage-kernelheaders",
+    pkgPath: "lineage/soong/kernelheaders",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-shared",
+    ],
+    srcs: [
+        "kernelheaders/kernelheaders.go",
+    ],
+    pluginFor: ["soong_build"],
+}

@@ -1,0 +1,5 @@
+cc_library_headers {
+    name: "inline_kernel_headers",
+    generated_headers: ["inline_kernel_headers-gen"],
+    export_generated_headers: ["inline_kernel_headers-gen"],
+}
