@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4d817008_7d111a20",
+        "filename": "kernel/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-01-15T01:00:03Z",
+      "side": 1,
+      "message": "The correct declaration of the inline_kernel_headers-gen rule would look something like:\n\ngenkernelheaders {\n  name: \"inline_kernel_headers-gen\",\n  out: [\n    \"kernel header file.h\",\n    ...\n  ],\n}",
+      "revId": "22673a6cb20a46b09161e8e8a6840eebbea2dc5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "44a6ba58_d8f3b9ce",
+        "filename": "kernel/create_header_stamp.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-01-15T01:00:03Z",
+      "side": 1,
+      "message": "This script should unnecessary if the blueprint rule can express the dependency between kernel source -\u003e header generation rule, since that is what it is meant for doing.\n\nThis script also misses the important part where it\u0027s sourcing itself.",
+      "revId": "22673a6cb20a46b09161e8e8a6840eebbea2dc5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
