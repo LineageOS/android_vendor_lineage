@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b9305ae7_e7583ec9",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-01-16T14:16:32Z",
+      "side": 1,
+      "message": "This can probably stay out of the ifdef, it\u0027s the package name for AOSP charger res. Or we can move it to devices, but pretty much every device would need it.",
+      "range": {
+        "startLine": 177,
+        "startChar": 0,
+        "endLine": 177,
+        "endChar": 24
+      },
+      "revId": "7c16bacb6db31416a3446d2ce14a59051fc62ca0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
