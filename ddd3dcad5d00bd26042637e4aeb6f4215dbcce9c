@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3d8b5ee7_0fe36d8e",
+        "filename": "config/BoardConfigLineage.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-01-17T02:47:42Z",
+      "side": 1,
+      "message": "It looks like for devices which need to opt-out, the would need to set this explicitly to \"false\"",
+      "range": {
+        "startLine": 9,
+        "startChar": 12,
+        "endLine": 9,
+        "endChar": 26
+      },
+      "revId": "ddd3dcad5d00bd26042637e4aeb6f4215dbcce9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
