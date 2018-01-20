@@ -218,6 +218,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
 
+# Berry styles
+PRODUCT_PACKAGES += \
+    LineageDarkTheme \
+    LineageBlackAccent \
+    LineageBlueAccent \
+    LineageBrownAccent \
+    LineageGreenAccent \
+    LineageOrangeAccent \
+    LineagePinkAccent \
+    LineagePurpleAccent \
+    LineageRedAccent \
+    LineageYellowAccent
+
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
