@@ -70,6 +70,9 @@
 
 ifneq ($(TARGET_NO_KERNEL),true)
 
+BIONIC_HEADERS_CLEAN_TOOL := bionic/libc/kernel/tools/clean_header.py
+BIONIC_HEADERS_DIR := bionic/libc/kernel/uapi
+
 TARGET_AUTO_KDIR := $(shell echo $(TARGET_DEVICE_DIR) | sed -e 's/^device/kernel/g')
 
 ## Externally influenced variables
@@ -351,6 +354,21 @@ $(KERNEL_HEADERS_INSTALL_DEPS):
 	$(hide) mkdir -p $(KERNEL_OUT)
 	$(hide) rm -f $@
 	$(hide) $(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) headers_install
+	$(hide) ( for subdir in asm-generic drm linux misc mtd rdma scsi sound video xen; do \
+			hdrs="$$(find $(BIONIC_HEADERS_DIR)/$$subdir -type f -name '*.h')"; \
+			for hdr in $$hdrs; do \
+				rm -f $$(find $(KERNEL_HEADERS_INSTALL_DIR)/include/$$subdir -type f -name $$(basename $$hdr)); \
+			done \
+		done \
+		)
+	$(hide) ( asm_hdrs="$$(find $(BIONIC_HEADERS_DIR)/asm-$(KERNEL_ARCH)/asm -type f -name '*.h')"; \
+		for hdr in $$asm_hdrs; do \
+			rm -f $$(find $(KERNEL_HEADERS_INSTALL_DIR)/include/asm -type f -name $$(basename $$hdr)); \
+		done \
+		)
+	$(hide) ( header_files="$$(find $(KERNEL_HEADERS_INSTALL_DIR)/include -type f -size +1 -name '*.h')"; \
+		python $(BIONIC_HEADERS_CLEAN_TOOL) -u $$header_files \
+		)
 	$(hide) echo "$@: \\" > $@
 	$(hide) ( cd $(KERNEL_SRC); \
 		if grep -q '^version_h' 'Makefile'; then \
