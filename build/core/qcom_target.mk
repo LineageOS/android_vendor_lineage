@@ -57,6 +57,12 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         TARGET_USES_COLOR_METADATA := true
     endif
 
+    # Text classifier
+    TEXTCLASSIFIER_SUPPORTED_TARGETS := msm8996 msm8998 sdm660
+    ifeq ($(call is-board-platform-in-list, $(TEXTCLASSIFIER_SUPPORTED_TARGETS)), true)
+        PRODUCT_PACKAGES += textclassifier.smartselection.bundle1
+    endif
+
     # List of targets that use master side content protection
     MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660
 
