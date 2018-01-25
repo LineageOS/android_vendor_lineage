@@ -306,16 +306,25 @@ TARGET_KERNEL_BINARIES: $(KERNEL_CONFIG)
 	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG); then \
 			echo "Building Kernel Modules"; \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) modules; \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				$(hide) rm -rf $(KERNEL_OUT)/extras/$(kmod); \
+				mkdir -p $(KERNEL_OUT)/extras/$(kmod); \
+				touch $(KERNEL_OUT)/extras/$(kmod)/Makefile; \
+				$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) M=$(KERNEL_OUT)/extras/$(kmod) src=$(ANDROID_BUILD_TOP)/$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules; \
+			) \
 		fi
 
 .PHONY: INSTALLED_KERNEL_MODULES
 INSTALLED_KERNEL_MODULES: depmod-host
 	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) INSTALL_MOD_PATH=../../$(KERNEL_MODULES_INSTALL) M=$(KERNEL_OUT)/extras/$(kmod) src=$(ANDROID_BUILD_TOP)/$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules_install; \
+			) \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) INSTALL_MOD_PATH=../../$(KERNEL_MODULES_INSTALL) modules_install && \
 			mofile=$$(find $(KERNEL_MODULES_OUT) -type f -name modules.order) && \
 			mpath=$$(dirname $$mofile) && \
-			for f in $$(find $$mpath/kernel -type f -name '*.ko'); do \
+			for f in $$(find $$mpath/kernel $$mpath/extra -type f -name '*.ko'); do \
 				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
 				mv $$f $(KERNEL_MODULES_OUT); \
 			done && \
