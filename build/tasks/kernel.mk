@@ -161,6 +161,8 @@ KERNEL_MODULE_MOUNTPOINT := vendor
 endif
 MODULES_INTERMEDIATES := $(call intermediates-dir-for,PACKAGING,kernel_modules)
 
+KERNEL_MODULES_EXTRA_OUT := $($(TARGET_2ND_ARCH_VAR_PREFIX)TARGET_OUT_SHARED_LIBRARIES)/modules
+
 ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
         # Find the clang-* directory containing the specified version
@@ -240,18 +242,32 @@ TARGET_KERNEL_BINARIES: $(KERNEL_CONFIG)
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Building Kernel Modules"; \
 			$(call make-kernel-target,modules); \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				$(hide) rm -rf $(KERNEL_OUT)/extras/$(kmod); \
+				mkdir -p $(KERNEL_OUT)/extras/$(kmod); \
+				touch $(KERNEL_OUT)/extras/$(kmod)/Makefile; \
+				$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) M=$(KERNEL_OUT)/extras/$(kmod) src=$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules; \
+			) \
 		fi
 
 .PHONY: INSTALLED_KERNEL_MODULES
 INSTALLED_KERNEL_MODULES: depmod-host
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) INSTALL_MOD_PATH=../../$(KERNEL_MODULES_INSTALL) M=$(KERNEL_OUT)/extras/$(kmod) src=$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules_install; \
+			) \
 			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) modules_install); \
 			kernel_release=$$(cat $(KERNEL_RELEASE)) \
 			modules=$$(find $(MODULES_INTERMEDIATES)/lib/modules/$$kernel_release -type f -name '*.ko'); \
 			for f in $$modules; do \
 				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
 			done; \
+			mkdir -p $(KERNEL_MODULES_EXTRA_OUT); \
+			for f in $$(find $$mpath/extra -type f -name '*.ko'); do \
+				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
+				mv $$f $(KERNEL_MODULES_EXTRA_OUT); \
+			done && \
 			($(call build-image-kernel-modules,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR))); \
 		fi
 
