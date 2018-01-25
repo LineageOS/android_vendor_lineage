@@ -240,12 +240,21 @@ TARGET_KERNEL_BINARIES: $(KERNEL_CONFIG)
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Building Kernel Modules"; \
 			$(call make-kernel-target,modules); \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				rm -rf $(KERNEL_OUT)/extras/$(kmod); \
+				mkdir -p $(KERNEL_OUT)/extras/$(kmod); \
+				touch $(KERNEL_OUT)/extras/$(kmod)/Makefile; \
+				$(call make-kernel-target,M=$(KERNEL_OUT)/extras/$(kmod) src=$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules); \
+			) \
 		fi
 
 .PHONY: INSTALLED_KERNEL_MODULES
 INSTALLED_KERNEL_MODULES: depmod-host
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) M=$(KERNEL_OUT)/extras/$(kmod) src=$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules_install); \
+			) \
 			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) modules_install); \
 			kernel_release=$$(cat $(KERNEL_RELEASE)) \
 			modules=$$(find $(MODULES_INTERMEDIATES)/lib/modules/$$kernel_release -type f -name '*.ko'); \
