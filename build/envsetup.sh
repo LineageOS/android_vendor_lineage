@@ -267,6 +267,10 @@ function lineageremote()
     local GERRIT_REMOTE=$(git config --get remote.github.projectname)
     if [ -z "$GERRIT_REMOTE" ]
     then
+        local GERRIT_REMOTE=$(git config --get remote.private.projectname)
+    fi
+    if [ -z "GERRIT_REMOTE" ]
+    then
         local GERRIT_REMOTE=$(git config --get remote.aosp.projectname | sed s#platform/#android/#g | sed s#/#_#g)
         local PFX="LineageOS/"
     fi
