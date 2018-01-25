@@ -203,6 +203,7 @@ KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR)/lib/modules
 KERNEL_DEPMOD_STAGING_DIR := $(call intermediates-dir-for,PACKAGING,depmod_vendor)
 KERNEL_MODULE_MOUNTPOINT := vendor
 endif
+KERNEL_MODULES_EXTRA_OUT := $($(TARGET_2ND_ARCH_VAR_PREFIX)TARGET_OUT_SHARED_LIBRARIES)/modules
 
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(strip $(TARGET_KERNEL_CROSS_COMPILE_PREFIX))
 ifneq ($(TARGET_KERNEL_CROSS_COMPILE_PREFIX),)
@@ -306,18 +307,32 @@ TARGET_KERNEL_BINARIES: $(KERNEL_CONFIG)
 	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG); then \
 			echo "Building Kernel Modules"; \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) modules; \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				$(hide) rm -rf $(KERNEL_OUT)/extras/$(kmod); \
+				mkdir -p $(KERNEL_OUT)/extras/$(kmod); \
+				touch $(KERNEL_OUT)/extras/$(kmod)/Makefile; \
+				$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) M=$(KERNEL_OUT)/extras/$(kmod) src=$(ANDROID_BUILD_TOP)/$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules; \
+			) \
 		fi
 
 .PHONY: INSTALLED_KERNEL_MODULES
 INSTALLED_KERNEL_MODULES: depmod-host
 	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
+			$(foreach kmod,$(TARGET_EXTRA_KERNEL_MODULES),\
+				$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) INSTALL_MOD_PATH=../../$(KERNEL_MODULES_INSTALL) M=$(KERNEL_OUT)/extras/$(kmod) src=$(ANDROID_BUILD_TOP)/$(EXTRA_KERNEL_MODULE_PATH_$(kmod)) modules_install; \
+			) \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) INSTALL_MOD_PATH=../../$(KERNEL_MODULES_INSTALL) modules_install && \
 			mofile=$$(find $(KERNEL_MODULES_OUT) -type f -name modules.order) && \
 			mpath=$$(dirname $$mofile) && \
 			for f in $$(find $$mpath/kernel -type f -name '*.ko'); do \
 				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
 				mv $$f $(KERNEL_MODULES_OUT); \
+			done && \
+			mkdir -p $(KERNEL_MODULES_EXTRA_OUT); \
+			for f in $$(find $$mpath/extra -type f -name '*.ko'); do \
+				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
+				mv $$f $(KERNEL_MODULES_EXTRA_OUT); \
 			done && \
 			rm -rf $$mpath && \
 			mkdir -p $(KERNEL_DEPMOD_STAGING_DIR)/lib/modules/0.0/$(KERNEL_MODULE_MOUNTPOINT)/lib/modules && \
