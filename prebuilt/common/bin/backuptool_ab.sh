@@ -7,6 +7,8 @@ export S=/system
 export C=/postinstall/tmp/backupdir
 export V=15.1
 
+export ADDOND_VERSION=2
+
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 mkdir -p /postinstall/tmp/
 cp -f /postinstall/system/bin/backuptool_ab.functions /postinstall/tmp/backuptool.functions
@@ -16,6 +18,18 @@ preserve_addon_d() {
   if [ -d /system/addon.d/ ]; then
     mkdir -p /postinstall/tmp/addon.d/
     cp -a /system/addon.d/* /postinstall/tmp/addon.d/
+
+    # Discard any scripts that aren't at least our version level
+    for f in /postinstall/tmp/addon.d/*sh; do
+      SCRIPT_VERSION=$(grep "^# ADDOND_VERSION=" $f | cut -d= -f2)
+      if [ -z "$SCRIPT_VERSION" ]; then
+        SCRIPT_VERSION=1
+      fi
+      if [ $SCRIPT_VERSION -lt $ADDOND_VERSION ]; then
+        rm $f
+      fi
+    done
+
     chmod 755 /postinstall/tmp/addon.d/*.sh
   fi
 }
