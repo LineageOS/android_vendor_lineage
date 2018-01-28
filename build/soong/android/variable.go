@@ -9,6 +9,10 @@ type Product_variables struct {
 	Uses_qcom_bsp_legacy struct {
 		Cppflags []string
 	}
+	Mtk_hardware struct {
+		Cflags []string
+		Srcs []string
+	}
 }
 
 type ProductVariables struct {
@@ -16,4 +20,5 @@ type ProductVariables struct {
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
+	Mtk_hardware  *bool `json:",omitempty"`
 }
