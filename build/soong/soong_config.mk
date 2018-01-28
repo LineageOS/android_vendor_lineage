@@ -9,5 +9,6 @@ lineage_soong:
 	echo '    "Target_shim_libs": "$(subst $(space),:,$(TARGET_LD_SHIM_LIBS))",'; \
 	echo '    "Uses_generic_camera_parameter_library": $(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),false,true),'; \
 	echo '    "Uses_qcom_bsp_legacy": $(if $(filter true,$(TARGET_USES_QCOM_BSP_LEGACY)),true,false)'; \
+	echo '    "Uses_qcom_hardware": $(if $(filter true,$(BOARD_USES_QCOM_HARDWARE)),true,false),'; \
 	echo '},'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
