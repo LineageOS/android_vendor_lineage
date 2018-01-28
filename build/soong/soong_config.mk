@@ -8,6 +8,5 @@ lineage_soong:
 	echo '    "Specific_camera_parameter_library": "$(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)",'; \
 	echo '    "Needs_text_relocations": $(if $(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)),true,false),'; \
 	echo '    "Uses_qcom_bsp_legacy": $(if $(filter true,$(TARGET_USES_QCOM_BSP_LEGACY)),true,false)'; \
-        echo '    "Mtk_hardware": $(if $(filter true,$(BOARD_HAS_MTK_HARDWARE)),true,false),'; \
 	echo '},'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
