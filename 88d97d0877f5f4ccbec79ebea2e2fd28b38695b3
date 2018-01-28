@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "37a4f435_f1f9640d",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 17401
+      },
+      "writtenOn": "2018-01-28T18:51:01Z",
+      "side": 1,
+      "message": "you forgot to define \u0027Uses_qcom_hardware\u0027 here",
+      "revId": "88d97d0877f5f4ccbec79ebea2e2fd28b38695b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
