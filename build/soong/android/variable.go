@@ -6,6 +6,12 @@ type Product_variables struct {
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
+	Uses_qcom_hardware struct {
+		Cflags []string
+		Cppflags []string
+		Src []string
+		Shared_libs []string
+	}
 	Uses_qcom_bsp_legacy struct {
 		Cppflags []string
 	}
