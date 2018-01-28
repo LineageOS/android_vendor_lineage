@@ -14,6 +14,9 @@ type Product_variables struct {
 		Cppflags []string
 		Srcs []string
 	}
+	Forced_shim_libs struct {
+		Cppflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -22,4 +25,5 @@ type ProductVariables struct {
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Mtk_hardware  *bool `json:",omitempty"`
+	Forced_shim_libs  *string `json:",omitempty"`
 }
