@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c6cfdd47_2f0af681",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2018-01-30T19:26:59Z",
+      "side": 1,
+      "message": "Current logic in the shell script skips the file copy and still writes the makefile if it cannot find a source file anywhere. We can, and probably should, do the same here to build an intentionally broken vendor repo. Right now the script will just give up here.",
+      "range": {
+        "startLine": 245,
+        "startChar": 0,
+        "endLine": 249,
+        "endChar": 72
+      },
+      "revId": "52543e165892676a70ecc0ba500e670f29776604",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
