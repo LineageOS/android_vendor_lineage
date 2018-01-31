@@ -1368,6 +1368,7 @@
   <apn carrier="CDMA" mcc="310" mnc="120" apn="0" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="CDMA" mcc="310" mnc="120" apn="1" proxy="" port="" user="" password="" mmsc="http://mms.sprintpcs.com" type="default,supl" />
   <apn carrier="USCC" mcc="310" mnc="120" apn="internet" proxy="" port="80" user="" password="" mmsc="http://mmsc1.uscc.net/mmsc/MMS" mmsproxy="" mmsport="80" authtype="3" type="mms" />
+  <apn carrier="SPCS Global" mcc="310" mnc="120" apn="cinet.spcs" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,supl,mms,dun" bearer_bitmask="1|2|3|9|10|11|15|16" />
   <apn carrier="My Multi Media" mcc="310" mnc="130" apn="mms.c1.ama" proxy="" port="" user="cell1mms" password="cell1" mmsc="http://mms.iot1.com/amarillo/mms.php" type="mms" />
   <apn carrier="Cricket" mcc="310" mnc="16" apn="wap.mycricket.com" user="@mycricket.com" password="cricket" mmsc="http://mms.mycricket.com/servlets/mms" proxy="wap.mycricket.com" port="8080" authtype="2" type="*" />
   <apn carrier="Cricket AIO" mcc="310" mnc="150" apn="ndo" mmsc="http://mmsc.aiowireless.net" mmsproxy="proxy.aiowireless.net" mmsport="80" type="default,mms,fota,hipri,supl" />
