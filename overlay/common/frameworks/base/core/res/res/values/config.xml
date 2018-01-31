@@ -17,6 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="config_locationProviderPackageNames" translatable="false">
+        <!-- The UnifiedNlp provider by MicroG -->
+        <item>org.microg.nlp</item>
         <!-- The Google provider -->
         <item>com.google.android.gms</item>
         <!-- The standard AOSP fused location provider -->
