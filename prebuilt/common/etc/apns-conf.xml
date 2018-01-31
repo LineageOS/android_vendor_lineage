@@ -1593,17 +1593,15 @@
   <apn carrier="ATT WAP" mcc="311" mnc="380" apn="wap.cingular" proxy="wireless.cingular.com" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="wireless.cingular.com" mmsport="80" type="default,mms" />
   <apn carrier="ATT Broadband" mcc="311" mnc="380" apn="Broadband" type="default,supl" />
   <!-- bearer 4, 5, 6, 7, 8, 12 -->
-  <apn carrier="Verizon" mcc="311" mnc="480" apn="internet" authtype="3" type="default,mms,supl,fota,ims,cbs" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" bearer_bitmask="4|5|6|7|8|12" />
-  <!-- bearer 4, 5, 6, 7, 8, 12 -->
-  <apn carrier="Verizon" mcc="311" mnc="480" apn="internet" authtype="3" type="default,mms,supl,fota,ims,cbs,dun" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" bearer_bitmask="4|5|6|7|8|12" profile_id="1" />
-  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
-  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWINTERNET" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="0" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
-  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
-  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="3" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
-  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
-  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWIMS" type="ims,ia" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="2" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
-  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
-  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vzwreseller.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer_bitmask="1|2|3|9|10|11|13|14|15" profile_id="4" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="internet" authtype="3" type="default,mms,supl,fota,cbs,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" bearer_bitmask="4|5|6|7|8|12" user_visible="false" />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15, 18 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWINTERNET" type="default,dun,supl" authtype="0" protocol="IPV4V6" roaming_protocol="IP" bearer_bitmask="1|2|3|9|10|11|13|14|15|18" profile_id="0" modem_cognitive="true" max_conns="20" max_conns_time="300" />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15, 18 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWADMIN" type="fota" authtype="0" protocol="IPV4V6" roaming_protocol="IP" bearer_bitmask="1|2|3|9|10|11|13|14|15|18" profile_id="3" modem_cognitive="true" max_conns="20" max_conns_time="300" user_visible="false"  />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15, 18 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="IMS" type="ims,ia" authtype="0" protocol="IPV4V6" roaming_protocol="IPV6" bearer_bitmask="1|2|3|9|10|11|13|14|15|18" profile_id="2" modem_cognitive="true" max_conns="20" max_conns_time="300" user_visible="false" />
+  <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15, 18 -->
+  <apn carrier="Verizon" mcc="311" mnc="480" apn="VZWAPP" type="cbs,mms" authtype="0" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IP" bearer_bitmask="1|2|3|9|10|11|13|14|15|18" profile_id="4" modem_cognitive="true" max_conns="20" max_conns_time="300" user_visible="false" />
   <apn carrier="StraightTalk Verizon" mcc="311" mnc="480" apn="TRACFONE.VZWENTP" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Verizon Internet" mcc="311" mnc="482" apn="VZWINTERNET" type="default,dun,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Verizon FOTA" mcc="311" mnc="482" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
