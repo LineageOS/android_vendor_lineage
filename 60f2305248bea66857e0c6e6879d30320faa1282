@@ -22,6 +22,30 @@
       "revId": "60f2305248bea66857e0c6e6879d30320faa1282",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2fbcc13c_dbcf9685",
+        "filename": "overlay/common/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-02-03T20:41:49Z",
+      "side": 1,
+      "message": "ugh",
+      "parentUuid": "3aab7f23_2b248f2a",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 5
+      },
+      "revId": "60f2305248bea66857e0c6e6879d30320faa1282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
