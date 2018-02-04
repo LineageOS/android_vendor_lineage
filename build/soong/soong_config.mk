@@ -8,6 +8,7 @@ lineage_soong:
 	echo '    "Specific_camera_parameter_library": "$(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)",'; \
 	echo '    "Needs_text_relocations": $(if $(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)),true,false),'; \
 	echo '    "Uses_qcom_bsp_legacy": $(if $(filter true,$(TARGET_USES_QCOM_BSP_LEGACY)),true,false),'; \
-	echo '    "Disable_vsnprintf_fortify": $(if $(filter true,$(BOARD_DISABLE_VSNPRINTF_FORTIFY)),true,false)'; \
+	echo '    "Disable_vsnprintf_fortify": $(if $(filter true,$(BOARD_DISABLE_VSNPRINTF_FORTIFY)),true,false),'; \
+	echo '    "Zygote_whitelist_path_extra": "$(ZYGOTE_WHITELIST_PATH_EXTRA)"'; \
 	echo '},'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
