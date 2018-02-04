@@ -12,6 +12,9 @@ type Product_variables struct {
 	Disable_vsnprintf_fortify struct {
 		Cflags []string
 	}
+	Zygote_whitelist_path_extra struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -20,4 +23,5 @@ type ProductVariables struct {
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Disable_vsnprintf_fortify  *bool `json:",omitempty"`
+	Zygote_whitelist_path_extra  *string `json:",omitempty"`
 }
