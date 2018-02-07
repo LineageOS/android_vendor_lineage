@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
-               (C) 2017 The LineageOS Project
+               (C) 2017-2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -80,5 +80,8 @@
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
+
+    <!-- Remote server that can provide NTP responses. -->
+    <string name="config_ntpServer" translatable="false">2.android.pool.ntp.org</string>
 
 </resources>
