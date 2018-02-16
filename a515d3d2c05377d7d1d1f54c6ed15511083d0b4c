@@ -22,6 +22,30 @@
       "revId": "a515d3d2c05377d7d1d1f54c6ed15511083d0b4c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "220fc190_d80fb3a0",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-02-16T16:57:07Z",
+      "side": 1,
+      "message": "I can move this up under Needs_text_relocations, but it\u0027s not at all consistent anywhere else.",
+      "parentUuid": "cdd0d109_a920aa5f",
+      "range": {
+        "startLine": 12,
+        "startChar": 1,
+        "endLine": 12,
+        "endChar": 2
+      },
+      "revId": "a515d3d2c05377d7d1d1f54c6ed15511083d0b4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
