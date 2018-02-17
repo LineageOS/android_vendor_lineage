@@ -242,9 +242,18 @@
     <!--Bulgaria-->
     <sensitivePN network="284">
         <item>116111</item>
+	<item>029635357</item>
         <item>029817686</item>
+	<item>038624685</item>
+	<item>052609677</item>
+	<item>052613830</item>
         <item>080018676</item>
         <item>080020100</item>
+	<item>35929817686</item>
+	<item>35929819300</item>
+	<item>35929835205</item>
+	<item>35952609677</item>
+	<item>35952613830</item>
     </sensitivePN>
     <!--Turkey-->
     <sensitivePN network="286">
