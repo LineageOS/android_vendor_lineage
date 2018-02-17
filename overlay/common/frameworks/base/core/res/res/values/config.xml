@@ -36,6 +36,7 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver</item>
+        <item>com.google.android.setupwizard/com.google.android.setupwizard.time.DateTimeCheck</item>
     </string-array>
 
     <!-- Force enabling of some services that could have been previously disabled -->
