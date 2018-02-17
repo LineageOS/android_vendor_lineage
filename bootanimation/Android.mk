@@ -41,6 +41,15 @@ ifeq ($(TARGET_BOOTANIMATION),)
     endif
 endif
 
+ifeq ($(TARGET_SCREEN_WIDTH),)
+    $(info TARGET_SCREEN_WIDTH must be set)
+    $(error stop)
+endif
+ifeq ($(TARGET_SCREEN_HEIGHT),)
+    $(info TARGET_SCREEN_HEIGHT must be set)
+    $(error stop)
+endif
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := bootanimation.zip
 LOCAL_MODULE_CLASS := ETC
