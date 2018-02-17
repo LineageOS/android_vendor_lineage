@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "45532f80_7b8a2a30",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-02-17T15:52:35Z",
+      "side": 1,
+      "message": "change this to error and remove below line?",
+      "range": {
+        "startLine": 45,
+        "startChar": 6,
+        "endLine": 45,
+        "endChar": 10
+      },
+      "revId": "b1d423bdd4170823efbb2b336fc7d54377b1827a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
