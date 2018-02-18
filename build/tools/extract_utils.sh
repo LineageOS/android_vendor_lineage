@@ -358,7 +358,7 @@ function write_packages() {
             printf 'LOCAL_PRIVILEGED_MODULE := true\n'
         fi
         if [ "$VENDOR_PKG" = "true" ]; then
-            printf 'LOCAL_PROPRIETARY_MODULE := true\n'
+            printf 'LOCAL_VENDOR_MODULE := true\n'
         fi
         printf 'include $(BUILD_PREBUILT)\n\n'
     done
