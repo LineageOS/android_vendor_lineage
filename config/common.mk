@@ -197,11 +197,8 @@ PRODUCT_PACKAGES += \
 endif
 
 # ExFAT support
-WITH_EXFAT ?= true
-ifeq ($(WITH_EXFAT),true)
-TARGET_USES_EXFAT := true
+ifneq ($(TARGET_EXFAT_DRIVER),)
 PRODUCT_PACKAGES += \
-    mount.exfat \
     fsck.exfat \
     mkfs.exfat
 endif
