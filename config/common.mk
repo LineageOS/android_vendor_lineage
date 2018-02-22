@@ -196,15 +196,10 @@ PRODUCT_PACKAGES += \
     libhealthd.lineage
 endif
 
-# ExFAT support
-WITH_EXFAT ?= true
-ifeq ($(WITH_EXFAT),true)
-TARGET_USES_EXFAT := true
+# exFAT tools
 PRODUCT_PACKAGES += \
-    mount.exfat \
     fsck.exfat \
     mkfs.exfat
-endif
 
 # Openssh
 PRODUCT_PACKAGES += \
