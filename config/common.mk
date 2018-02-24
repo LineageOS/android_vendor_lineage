@@ -178,7 +178,6 @@ PRODUCT_PACKAGES += \
     sqlite3 \
     strace \
     tune2fs \
-    unrar \
     unzip \
     vim \
     wget \
