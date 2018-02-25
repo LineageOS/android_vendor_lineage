@@ -1,0 +1,28 @@
+// Copyright 2018 The LineageOS Project
+
+cc_library {
+    name: "libveritytool",
+    srcs: ["verity_tool.cpp"],
+    local_include_dirs: ["include"],
+    export_include_dirs: ["include"],
+    cflags: ["-Werror"],
+    shared_libs: [
+        "libbase",
+        "libcrypto",
+        "libcrypto_utils",
+        "libfec",
+    ],
+    static_libs: [
+        "libfs_mgr",
+    ],
+    whole_static_libs: [
+        "libavb_user",
+    ],
+}
+
+cc_binary {
+    name: "veritytool",
+    srcs: ["main.cpp"],
+    shared_libs: ["libveritytool"],
+    cflags: ["-Werror"],
+}
