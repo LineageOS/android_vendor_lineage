@@ -42,10 +42,12 @@ ifeq ($(TARGET_BOOTANIMATION),)
 endif
 
 ifeq ($(TARGET_SCREEN_WIDTH),)
-    $(error TARGET_SCREEN_WIDTH must be set)
+    $(warning TARGET_SCREEN_WIDTH is not set, using default value: 1080)
+    TARGET_SCREEN_WIDTH := 1080
 endif
 ifeq ($(TARGET_SCREEN_HEIGHT),)
-    $(error TARGET_SCREEN_HEIGHT must be set)
+    $(warning TARGET_SCREEN_HEIGHT is not set, using default value: 1920)
+    TARGET_SCREEN_HEIGHT := 1920
 endif
 
 include $(CLEAR_VARS)
