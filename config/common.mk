@@ -185,8 +185,10 @@ PRODUCT_PACKAGES += \
     zip
 
 # Charger
+ifneq ($(WITH_CHARGER),false)
 PRODUCT_PACKAGES += \
     charger_res_images
+endif
 
 # Custom off-mode charger
 ifeq ($(WITH_LINEAGE_CHARGER),true)
