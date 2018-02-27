@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "123cba78_55ac4ec0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2018-02-27T10:43:58Z",
+      "side": 1,
+      "message": "Add a new line between title and description\nBreak at 80 chars per line",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 124
+      },
+      "revId": "58edc4fc1a302bb6a4f5c9be16d2b37435fd8760",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
