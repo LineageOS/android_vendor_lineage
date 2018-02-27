@@ -439,7 +439,7 @@ function write_product_packages() {
         write_packages "JAVA_LIBRARIES" "false" "" "FRAMEWORK" >> "$ANDROIDMK"
     fi
     local V_FRAMEWORK=( $(prefix_match "vendor/framework/") )
-    if [ "${#FRAMEWORK[@]}" -gt "0" ]; then
+    if [ "${#V_FRAMEWORK[@]}" -gt "0" ]; then
         write_packages "JAVA_LIBRARIES" "true" "" "V_FRAMEWORK" >> "$ANDROIDMK"
     fi
 
