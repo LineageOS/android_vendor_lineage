@@ -39,10 +39,10 @@ ifndef LINEAGE_PLATFORM_REV
 endif
 
 # LineageOS Platform SDK Version
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
 
 # LineageOS Platform Internal
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
 
