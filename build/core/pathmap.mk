@@ -1,14 +1,3 @@
-#
-# Returns the path to the requested module's include directory,
-# relative to the root of the source tree.  Does not handle external
-# modules.
-#
-# $(1): a list of modules (or other named entities) to find the includes for
-#
-define include-path-for
-$(foreach n,$(1),$(patsubst $(n):%,%,$(filter $(n):%,$(pathmap_INCL))))
-endef
-
 # Enter project path into pathmap
 #
 # $(1): name
