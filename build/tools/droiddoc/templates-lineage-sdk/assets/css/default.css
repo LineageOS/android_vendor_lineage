@@ -4,13 +4,13 @@
 /* common mixins */
 /* page layout + top-level styles */
 ::selection {
-  background-color: #0099cc;
+  background-color: #167c80;
   color: #fff; }
 ::-webkit-selection {
-  background-color: #0099cc;
+  background-color: #167c80;
   color: #fff; }
 ::-moz-selection {
-  background-color: #0099cc;
+  background-color: #167c80;
   color: #fff; }
 
 html, body {
@@ -112,11 +112,11 @@ body {
 
 a:hover,
 acronym:hover {
-  color: #7aa1b0 !important; }
+  color: #0C4446 !important; }
 
 a:focus,
 a:active {
-  color: #33b5e5 !important; }
+  color: #167c80 !important; }
 
 a.external-link {
   background:url('../images/styles/open_new_page.png') no-repeat 100% 50%;
@@ -146,8 +146,8 @@ acronym,
 
 acronym:hover,
 .tooltip-link:hover {
-  color: #7aa1b0;
-  border-bottom-color: #7aa1b0; }
+  color: #0C4446;
+  border-bottom-color: #0C4446; }
 
 img.with-shadow,
 video.with-shadow {
@@ -677,36 +677,36 @@ ul#title-tabs li a:active {
 /* content body */
 @-webkit-keyframes glowheader {
   from {
-    background-color: #33b5e5;
+    background-color: #167c80;
     color: #000;
     border-bottom-color: #000; }
 
   to {
     background-color: transparent;
-    color: #33b5e5;
-    border-bottom-color: #33b5e5; } }
+    color: #167c80;
+    border-bottom-color: #167c80; } }
 
 @-moz-keyframes glowheader {
   from {
-    background-color: #33b5e5;
+    background-color: #167c80;
     color: #000;
     border-bottom-color: #000; }
 
   to {
     background-color: transparent;
-    color: #33b5e5;
-    border-bottom-color: #33b5e5; } }
+    color: #167c80;
+    border-bottom-color: #167c80; } }
 
 @keyframes glowheader {
   from {
-    background-color: #33b5e5;
+    background-color: #167c80;
     color: #000;
     border-bottom-color: #000; }
 
   to {
     background-color: transparent;
-    color: #33b5e5;
-    border-bottom-color: #33b5e5; } }
+    color: #167c80;
+    border-bottom-color: #167c80; } }
 
 h1:target,
 h2:target,
@@ -765,7 +765,7 @@ h3:target {
     left: -20px;
     float: left;
     width: 17px;
-    color: #33b5e5;
+    color: #167c80;
     font-weight: 500; }
 .design .with-callouts ul>li {
   list-style-position: outside; }
@@ -1019,14 +1019,14 @@ scroll top left;
   display: block;
   margin-bottom: 5px;
   text-decoration: none;
-  background-color: #33b5e5;
+  background-color: #167c80;
   color: #fff !important;
   font-weight: 500;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
   padding: 6px 12px;
   border-radius: 2px; }
   .download-button:hover, .download-button:focus {
-    background-color: #0099cc;
+    background-color: #167c80;
     color: #fff !important; }
   .download-button:active {
     background-color: #006699; }
@@ -1250,11 +1250,11 @@ legend {
     display: none;
 }
 a:link, a:visited, .link-color {
-  color: #258aaf;
+  color: #167c80;
   text-decoration: none;
 }
 a:focus, a:hover, a:active {
-  color: #33B5E5;
+  color: #167c80;
   text-decoration: none;
 }
 a.white {
@@ -1576,7 +1576,7 @@ Header, Login, Nav-X, Search
     color: #9933CC;
 }
 .design a.selected {
-    color: #33b5e5;
+    color: #167c80;
 }
 .develop a.selected {
     color: #F80;
@@ -1648,7 +1648,7 @@ Header, Login, Nav-X, Search
   background-color: transparent
 }
 .search:hover .bottom, .search:hover .left, .search:hover .right {
-  background-color: #33b5e5;
+  background-color: #167c80;
 }
 .search:hover .icon {
   background-position: -8px 0
@@ -1695,7 +1695,7 @@ Header, Login, Nav-X, Search
   margin: 0;
 }
 .search-dropdown li a:hover h6, .search-dropdown li a:hover .desc {
-  color: #33b5e5
+  color: #167c80
 }
 /* --------------------------------------------------------------------------
 Buttons
@@ -1716,7 +1716,7 @@ Buttons
     background-image: -ms-linear-gradient(top, #2faddb, #09c);
     background-image: -o-linear-gradient(top, #2faddb, #09c);
     background-image: linear-gradient(top, #2faddb, #09c);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2faddb', EndColorStr='#0099cc',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2faddb', EndColorStr='#167c80',GradientType=0);
     border: 1px solid #3990ab;
     color: #fff;
 }
@@ -1773,7 +1773,7 @@ a.button.big.subtitle {
     background-image: linear-gradient(top, #f9f9f9, #ececec);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9',
 EndColorStr='#ececec');
-    color: #33B5E5 !important;
+    color: #167c80 !important;
 }
 .button-secondary:active, a.button-secondary:active {
    border-color: #dadada;
@@ -1853,7 +1853,7 @@ endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
     background-image: linear-gradient(top, #f9f9f9, #ececec);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9',
 EndColorStr='#ececec');
-    color: #33B5E5;
+    color: #167c80;
 }
 
 .training-nav-top a.button-secondary:hover,
@@ -2122,7 +2122,7 @@ ul ul {
     height: 150px;
 }
 .article form input[type='text']:focus, .article form textarea:focus {
-    border-color: #33B5E5;
+    border-color: #167c80;
     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
     -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
@@ -2249,13 +2249,11 @@ Three-Pane
   overflow:visible;
 }
 #packages-nav {
-        height:270px;
+  height:270px;
   max-height: inherit;
-  overflow: hidden;
   position: relative;
 }
 #classes-nav {
-  overflow: hidden;
   position: relative;
 }
 #packages-nav ul, #classes-nav ul {
@@ -2291,7 +2289,7 @@ a:visited,
 a:visited,
 #nav-tree li div.selected {
     font-weight: 500;
-    color: #0099cc;
+    color: #167c80;
     background-color:#fff; }
   #packages-nav li.selected ul li a,
   #classes-nav li.selected ul li a {
@@ -2299,7 +2297,7 @@ a:visited,
     color: #555555; }
 #nav-tree li div.selected a {
     font-weight: 500;
-    color: #0099cc;
+    color: #167c80;
 }
 #nav-swap {
   height:30px;
@@ -2433,7 +2431,7 @@ a:visited,
   color: #222;
 }
 #api-info-block a:hover, #api-info-block a:focus {
-  color: #33B5E5;
+  color: #167c80;
 }
 #api-nav-header {
   height:19px; /* plus 16px padding = 35; same as #nav li */
@@ -2453,6 +2451,7 @@ a:visited,
 #api-level-toggle {
   float:right;
   padding:0 5px;
+  
 }
 
 #api-level-toggle label {
@@ -2906,7 +2905,7 @@ p.warning, div.warning {
 }
 
 div.note.design {
-  border-left: 4px solid #33B5E5;
+  border-left: 4px solid #167c80;
 }
 
 div.note.develop {
@@ -2932,7 +2931,7 @@ body.about blockquote {
   font-size:20px;
   font-style:italic;
   line-height:24px;
-  color:#33B5E5;
+  color:#167c80;
   margin:0 0 20px 30px;
 }
 
@@ -3248,7 +3247,7 @@ a.slideshow-prev, a.slideshow-prev:visited {
 }
 .slideshow-nav a:hover, .slideshow-nav a:focus {
 
-  background: #33B5E5
+  background: #167c80
 }
 
 .slideshow-nav a:active {
@@ -3260,7 +3259,7 @@ a.slideshow-prev, a.slideshow-prev:visited {
   box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, .05);
 }
 .slideshow-nav a.active, .slideshow-nav a.active:active, .slideshow-nav a.active:visited {
-  background: #33B5E5
+  background: #167c80
 }
 /* --------------------------------------------------------------------------
 Tabs
@@ -3305,11 +3304,11 @@ ul.tabs li a, ul.tabs li a:active, ul.tabs li a:visited {
 EndColorStr='#fafafa');
 }
 ul.tabs li a:hover {
-  color: #33B5E5;
+  color: #167c80;
 }
 ul.tabs li a.selected {
   height: 37px;
-  color: #33B5E5;
+  color: #167c80;
   background-color: #f7f7f7;
   background-image: none;
   border-color: #ddd;
@@ -3385,10 +3384,10 @@ Feature Boxes
 }
 .feature-box:hover .box-border .top, .feature-box:hover .box-border .bottom, .feature-box:hover
 .left, .feature-box:hover .right {
-  background-color: #33B5E5;
+  background-color: #167c80;
 }
 .feature-box:hover h4, .feature-box:hover a {
-  color: #33B5E5;
+  color: #167c80;
 }
 /* --------------------------------------------------------------------------
 Page-Specific Styles
@@ -3755,7 +3754,7 @@ table.jd-tagtable th {
 }
 .suggest-card.design {
   z-index:996;
-  border-top: solid 4px #33b5e5;
+  border-top: solid 4px #167c80;
   float:right;
 }
 .suggest-card.distribute {
@@ -3970,7 +3969,7 @@ td.gsc-search-button {
 
 #searchResults h2#searchTitle em {
   font-style:normal;
-  color:#33B5E5;
+  color:#167c80;
 }
 
 #searchResults .gsc-table-result {
@@ -4029,7 +4028,7 @@ td.gsc-search-button {
   background-image: linear-gradient(top, #F9F9F9, #ECECEC);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9',
 EndColorStr='#ececec');
-  color: #33B5E5;
+  color: #167c80;
 }
 
 #searchResults .gsc-tabHeader.gsc-tabhActive,
@@ -4169,7 +4168,7 @@ EndColorStr='#ececec');
   z-index: 50;
 }
 #sticky-header.design {
-  border-bottom: 1px solid #33b5e5;
+  border-bottom: 1px solid #167c80;
 }
 #sticky-header.develop {
   border-bottom: 1px solid #F80;
@@ -4253,7 +4252,7 @@ body.reference a[name] {
 }
 
 .design #header .wrap {
-  border-color: #33b5e5;
+  border-color: #167c80;
 }
 
 .develop #header .wrap {
@@ -4375,7 +4374,7 @@ body.reference a[name] {
 }
 
 #quicknav ul li.design {
-  border-top:1px solid #33b5e5;
+  border-top:1px solid #167c80;
 }
 
 #quicknav ul li.develop {
@@ -4511,11 +4510,11 @@ body.reference a[name] {
 }
 
 .search:hover form input {
-  border-bottom:1px solid #33B5E5;
+  border-bottom:1px solid #167c80;
 }
 
 .search:hover .bottom, .search:hover .left, .search:hover .right {
-  background-color: #33b5e5;
+  background-color: #167c80;
 }
 
 .search:hover #search-btn {
@@ -4692,10 +4691,10 @@ body.reference a[name] {
   background-color:#999;
 }
 .slideshow-container .pagination ul li.active {
-  background-color:#33b5e5;
+  background-color:#167c80;
 }
 .slideshow-container .pagination ul li.active:hover {
-  background-color:#33b5e5;
+  background-color:#167c80;
 }
 .slideshow-container ul li {
   display:inline;
@@ -5110,11 +5109,11 @@ a.download-sdk {
 
 .landing-docs a:hover,
 .landing-docs a:hover * {
-  color:#7AA1B0 !important
+  color:#0C4446 !important
 }
 
 .landing-docs .normal-links a {
-  color:#258aaf !important;
+  color:#167c80 !important;
 }
 
 .plusone {
@@ -7136,7 +7135,7 @@ Styles for d.a.c/index:
   height: 4px;
   width: 100px;
   bottom: 0;
-  background: #33b5e5;
+  background: #167c80;
 }
 
 .tab-carousel .tab-carousel-content {

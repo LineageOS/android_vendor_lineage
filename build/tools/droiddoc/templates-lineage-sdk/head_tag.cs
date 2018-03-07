@@ -23,7 +23,7 @@
   if:page.metaDescription ?>
 <meta name="Description" content="<?cs var:page.metaDescription ?>"><?cs
   /if ?>
-<link rel="shortcut icon" type="image/x-icon" href="<?cs var:toroot ?>favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="<?cs var:toroot ?>assets/favicon.ico" />
 <title><?cs
   if:page.title ?><?cs
     var:page.title ?> | <?cs
@@ -62,7 +62,6 @@ else
   var metaTags = [<?cs var:meta.tags ?>];
   var devsite = <?cs if:devsite ?>true<?cs else ?>false<?cs /if ?>;
 </script>
-<script src="<?cs var:toroot ?>assets/js/docs.js?v=3" type="text/javascript"></script>
 
 <?cs if:helpoutsWidget ?>
 <script type="text/javascript" src="https://helpouts.google.com/ps/res/embed.js" defer async
@@ -83,4 +82,6 @@ else
   ga('universal.send', 'pageview'); // Send page view for new tracker.
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="<?cs var:toroot ?>assets/docs.js?v=3" type="text/javascript"></script>
 </head>
