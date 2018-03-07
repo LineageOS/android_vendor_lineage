@@ -4,13 +4,13 @@
 /* common mixins */
 /* page layout + top-level styles */
 ::selection {
-  background-color: #0099cc;
+  background-color: #167c80;
   color: #fff; }
 ::-webkit-selection {
-  background-color: #0099cc;
+  background-color: #167c80;
   color: #fff; }
 ::-moz-selection {
-  background-color: #0099cc;
+  background-color: #167c80;
   color: #fff; }
 
 html, body {
@@ -112,7 +112,7 @@ body {
 
 a:hover,
 acronym:hover {
-  color: #7aa1b0 !important; }
+  color: #0C4446 !important; }
 
 a:focus,
 a:active {
@@ -146,8 +146,8 @@ acronym,
 
 acronym:hover,
 .tooltip-link:hover {
-  color: #7aa1b0;
-  border-bottom-color: #7aa1b0; }
+  color: #0C4446;
+  border-bottom-color: #0C4446; }
 
 img.with-shadow,
 video.with-shadow {
@@ -1026,7 +1026,7 @@ scroll top left;
   padding: 6px 12px;
   border-radius: 2px; }
   .download-button:hover, .download-button:focus {
-    background-color: #0099cc;
+    background-color: #167c80;
     color: #fff !important; }
   .download-button:active {
     background-color: #006699; }
@@ -1250,7 +1250,7 @@ legend {
     display: none;
 }
 a:link, a:visited, .link-color {
-  color: #258aaf;
+  color: #167c80;
   text-decoration: none;
 }
 a:focus, a:hover, a:active {
@@ -1716,7 +1716,7 @@ Buttons
     background-image: -ms-linear-gradient(top, #2faddb, #09c);
     background-image: -o-linear-gradient(top, #2faddb, #09c);
     background-image: linear-gradient(top, #2faddb, #09c);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2faddb', EndColorStr='#0099cc',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2faddb', EndColorStr='#167c80',GradientType=0);
     border: 1px solid #3990ab;
     color: #fff;
 }
@@ -2249,13 +2249,11 @@ Three-Pane
   overflow:visible;
 }
 #packages-nav {
-        height:270px;
+  height:270px;
   max-height: inherit;
-  overflow: hidden;
   position: relative;
 }
 #classes-nav {
-  overflow: hidden;
   position: relative;
 }
 #packages-nav ul, #classes-nav ul {
@@ -2291,7 +2289,7 @@ a:visited,
 a:visited,
 #nav-tree li div.selected {
     font-weight: 500;
-    color: #0099cc;
+    color: #167c80;
     background-color:#fff; }
   #packages-nav li.selected ul li a,
   #classes-nav li.selected ul li a {
@@ -2299,7 +2297,7 @@ a:visited,
     color: #555555; }
 #nav-tree li div.selected a {
     font-weight: 500;
-    color: #0099cc;
+    color: #167c80;
 }
 #nav-swap {
   height:30px;
@@ -2453,6 +2451,7 @@ a:visited,
 #api-level-toggle {
   float:right;
   padding:0 5px;
+  
 }
 
 #api-level-toggle label {
@@ -5110,11 +5109,11 @@ a.download-sdk {
 
 .landing-docs a:hover,
 .landing-docs a:hover * {
-  color:#7AA1B0 !important
+  color:#0C4446 !important
 }
 
 .landing-docs .normal-links a {
-  color:#258aaf !important;
+  color:#167c80 !important;
 }
 
 .plusone {
