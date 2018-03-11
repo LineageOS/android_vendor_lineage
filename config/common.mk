@@ -41,8 +41,8 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/lineage/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/lineage/prebuilt/common/bin/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool.sh \
+    vendor/lineage/prebuilt/common/bin/backuptool.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool.functions \
     vendor/lineage/prebuilt/common/bin/50-lineage.sh:system/addon.d/50-lineage.sh \
     vendor/lineage/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 

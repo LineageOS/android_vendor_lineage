@@ -5,10 +5,11 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=15.1
+export V=$2
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
-cp -f /tmp/install/bin/backuptool.functions /tmp
+echo "$V" >/tmp/backuptool.version
+cp -f /system/bin/backuptool.functions /tmp
 
 # Preserve /system/addon.d in /tmp/addon.d
 preserve_addon_d() {
