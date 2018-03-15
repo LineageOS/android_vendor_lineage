@@ -821,7 +821,10 @@ function oat2dex() {
         if get_file "$OAT" "$TMPDIR" "$SRC"; then
             if get_file "$VDEX" "$TMPDIR" "$SRC"; then
                 "$VDEXEXTRACTOR" -o "$TMPDIR/" -i "$TMPDIR/$(basename "$VDEX")" > /dev/null
-                mv "$TMPDIR/$(basename "${OEM_TARGET%.*}").apk_classes.dex" "$TMPDIR/classes.dex"
+                DEX_FILES=$(find "$TMPDIR" -type f -name "$(basename "${OEM_TARGET%.*}").apk_classes*")
+                for DEX_FILE in $DEX_FILES; do
+                    mv $DEX_FILE "$TMPDIR"/$(echo $DEX_FILE | sed 's/.*_//')
+                done
             else
                 java -jar "$BAKSMALIJAR" deodex -o "$TMPDIR/dexout" -b "$BOOTOAT" -d "$TMPDIR" "$TMPDIR/$(basename "$OAT")"
                 java -jar "$SMALIJAR" assemble "$TMPDIR/dexout" -o "$TMPDIR/classes.dex"
@@ -837,7 +840,10 @@ function oat2dex() {
             # fallback to boot.oat if vdex is not available
             if [ -f "$JARVDEX" ]; then
                 "$VDEXEXTRACTOR" -o "$TMPDIR/" -i "$JARVDEX" > /dev/null
-                mv "$TMPDIR/boot-$(basename "${OEM_TARGET%.*}").apk_classes.dex" "$TMPDIR/classes.dex"
+                DEX_FILES=$(find "$TMPDIR" -type f -name "boot-$(basename "${OEM_TARGET%.*}").apk_classes*")
+                for DEX_FILE in $DEX_FILES; do
+                    mv $DEX_FILE "$TMPDIR"/$(echo $DEX_FILE | sed 's/.*_//')
+                done
             else
                 java -jar "$BAKSMALIJAR" deodex -o "$TMPDIR/dexout" -b "$BOOTOAT" -d "$TMPDIR" "$JAROAT/$OEM_TARGET"
                 java -jar "$SMALIJAR" assemble "$TMPDIR/dexout" -o "$TMPDIR/classes.dex"
@@ -1057,8 +1063,8 @@ function extract() {
             if [[ "$FULLY_DEODEXED" -ne "1" && "${VENDOR_REPO_FILE}" =~ .(apk|jar)$ ]]; then
                 oat2dex "${VENDOR_REPO_FILE}" "${SRC_FILE}" "$SRC"
                 if [ -f "$TMPDIR/classes.dex" ]; then
-                    zip -gjq "${VENDOR_REPO_FILE}" "$TMPDIR/classes.dex"
-                    rm "$TMPDIR/classes.dex"
+                    zip -gjq "${VENDOR_REPO_FILE}" "$TMPDIR/classes*"
+                    rm "$TMPDIR/classes*"
                     printf '    (updated %s from odex files)\n' "${SRC_FILE}"
                 fi
             elif [[ "${VENDOR_REPO_FILE}" =~ .xml$ ]]; then
