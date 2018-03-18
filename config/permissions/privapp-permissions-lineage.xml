@@ -20,6 +20,7 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.dialer">
+        <permission name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
         <permission name="android.permission.STATUS_BAR"/>
     </privapp-permissions>
 
