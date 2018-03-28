@@ -857,9 +857,9 @@ EOF
 
     stop_n_start=false
     for FILE in $(echo $LOC | tr " " "\n"); do
-        # Make sure file is in $OUT/system or $OUT/data
+        # Make sure file is in $OUT/system, $OUT/data or $OUT/vendor
         case $FILE in
-            $OUT/system/*|$OUT/data/*)
+            $OUT/system/*|$OUT/data/*|$OUT/vendor/*)
                 # Get target file name (i.e. /system/bin/adb)
                 TARGET=$(echo $FILE | sed "s#$OUT##")
             ;;
