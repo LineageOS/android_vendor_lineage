@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ee0502d1_4c4fb56e",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 18566
+      },
+      "writtenOn": "2018-03-29T22:17:52Z",
+      "side": 1,
+      "message": "This should be sorted",
+      "revId": "db5f3d407bf9f062db388e7228e3e3c42abada1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
