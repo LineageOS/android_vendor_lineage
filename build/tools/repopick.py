@@ -306,7 +306,7 @@ if __name__ == '__main__':
 
         change = int(change)
 
-        if patchset is not None:
+        if patchset:
             patchset = int(patchset)
 
         review = next((x for x in reviews if x['number'] == change), None)
