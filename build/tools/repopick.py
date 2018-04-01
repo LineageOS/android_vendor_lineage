@@ -321,14 +321,17 @@ if __name__ == '__main__':
             'change_id': review['change_id'],
             'change_number': review['number'],
             'status': review['status'],
-            'fetch': None
+            'fetch': None,
+            'patchset': review['revisions'][review['current_revision']]['_number'],
         })
+
         mergables[-1]['fetch'] = review['revisions'][review['current_revision']]['fetch']
         mergables[-1]['id'] = change
         if patchset:
             try:
                 mergables[-1]['fetch'] = [review['revisions'][x]['fetch'] for x in review['revisions'] if review['revisions'][x]['_number'] == patchset][0]
                 mergables[-1]['id'] = '{0}/{1}'.format(change, patchset)
+                mergables[-1]['patchset'] = patchset
             except (IndexError, ValueError):
                 args.quiet or print('ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.'.format(change, patchset))
 
@@ -390,7 +393,7 @@ if __name__ == '__main__':
         if not args.quiet:
             print('--> Subject:       "{0}"'.format(item['subject'].encode('utf-8')))
             print('--> Project path:  {0}'.format(project_path))
-            print('--> Change number: {0} (Patch Set {0})'.format(item['id']))
+            print('--> Change number: {0} (Patch Set {1})'.format(item['id'], item['patchset']))
 
         if 'anonymous http' in item['fetch']:
             method = 'anonymous http'
