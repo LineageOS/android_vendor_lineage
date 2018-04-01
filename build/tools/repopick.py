@@ -279,8 +279,12 @@ if __name__ == '__main__':
         reviews = fetch_query(args.gerrit, args.query)
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
     if args.change_number:
+        change_url_re = re.compile('https?://.+?/([0-9]+(?:/[0-9]+)?)/?')
         for c in args.change_number:
-            if '-' in c:
+            change_number = change_url_re.findall(c)
+            if change_number:
+                change_numbers.extend(change_number)
+            elif '-' in c:
                 templist = c.split('-')
                 for i in range(int(templist[0]), int(templist[1]) + 1):
                     change_numbers.append(str(i))
