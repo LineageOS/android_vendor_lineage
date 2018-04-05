@@ -3,7 +3,9 @@
 #----------------------------------------------------------------------
 ifeq ($(strip $(BOARD_CUSTOM_BOOTIMG_MK)),)
 ifeq ($(strip $(BOARD_KERNEL_SEPARATED_DT)),true)
-ifneq ($(strip $(BOARD_KERNEL_PREBUILT_DT)),true)
+INSTALLED_DTIMAGE_TARGET := $(PRODUCT_OUT)/dt.img
+
+ifeq ($(strip $(BOARD_KERNEL_PREBUILT_DT)),)
 
 ifeq ($(strip $(TARGET_CUSTOM_DTBTOOL)),)
 DTBTOOL_NAME := dtbToolLineage
@@ -12,8 +14,6 @@ DTBTOOL_NAME := $(TARGET_CUSTOM_DTBTOOL)
 endif
 
 DTBTOOL := $(HOST_OUT_EXECUTABLES)/$(DTBTOOL_NAME)$(HOST_EXECUTABLE_SUFFIX)
-
-INSTALLED_DTIMAGE_TARGET := $(PRODUCT_OUT)/dt.img
 
 ifeq ($(strip $(TARGET_CUSTOM_DTBTOOL)),)
 # dtbToolLineage will search subdirectories
@@ -47,12 +47,19 @@ ifeq ($(strip $(BOARD_KERNEL_LZ4C_DT)),true)
 endif
 	@echo "Made DT image: $@"
 
+else
+
+$(INSTALLED_DTIMAGE_TARGET) : $(BOARD_KERNEL_PREBUILT_DT) | $(ACP)
+	$(transform-prebuilt-to-target)
+
+endif # BOARD_KERNEL_PREBUILT_DT
+
 ALL_DEFAULT_INSTALLED_MODULES += $(INSTALLED_DTIMAGE_TARGET)
 ALL_MODULES.$(LOCAL_MODULE).INSTALLED += $(INSTALLED_DTIMAGE_TARGET)
 
 .PHONY: dtimage
 dtimage: $(INSTALLED_DTIMAGE_TARGET)
 
-endif
+
 endif
 endif
