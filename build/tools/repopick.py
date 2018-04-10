@@ -78,19 +78,25 @@ def fetch_query_via_ssh(remote_url, query):
         try:
             data = json.loads(line)
             # make our data look like the http rest api data
+            current_revision = data['currentPatchSet']['revision']
+            parents = [{ 'commit': parent }
+                       for patchset in data['patchSets']
+                       for parent in patchset['parents']
+                       if patchset['revision'] == current_revision]
             review = {
                 'branch': data['branch'],
                 'change_id': data['id'],
-                'current_revision': data['currentPatchSet']['revision'],
+                'current_revision': current_revision,
                 'number': int(data['number']),
                 'revisions': {patch_set['revision']: {
-                    'number': int(patch_set['number']),
+                    '_number': int(patch_set['number']),
                     'fetch': {
                         'ssh': {
                             'ref': patch_set['ref'],
                             'url': 'ssh://{0}:{1}/{2}'.format(userhost, port, data['project'])
                         }
-                    }
+                    },
+                    'commit': { 'parents': parents },
                 } for patch_set in data['patchSets']},
                 'subject': data['subject'],
                 'project': data['project'],
