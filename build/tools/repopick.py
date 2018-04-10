@@ -84,13 +84,19 @@ def fetch_query_via_ssh(remote_url, query):
                 'current_revision': data['currentPatchSet']['revision'],
                 'number': int(data['number']),
                 'revisions': {patch_set['revision']: {
-                    'number': int(patch_set['number']),
+                    '_number': int(patch_set['number']),
                     'fetch': {
                         'ssh': {
                             'ref': patch_set['ref'],
                             'url': 'ssh://{0}:{1}/{2}'.format(userhost, port, data['project'])
                         }
-                    }
+                    },
+                    'commit': {
+                        'parents': [{ 'commit': parent }
+                                    for ps in data['patchSets']
+                                    for parent in patch_set['parents']
+                                    if ps['revision'] == patch_set['revision']]
+                    },
                 } for patch_set in data['patchSets']},
                 'subject': data['subject'],
                 'project': data['project'],
