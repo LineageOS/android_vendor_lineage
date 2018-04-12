@@ -15,6 +15,9 @@
 $(call inherit-product, build/target/product/aosp_x86.mk)
 $(call inherit-product, vendor/lineage/config/common.mk)
 
+# Allow building otatools
+TARGET_FORCE_OTA_PACKAGE := true
+
 TARGET_USES_64_BIT_BINDER := true
 
 PRODUCT_NAME := lineage_x86
