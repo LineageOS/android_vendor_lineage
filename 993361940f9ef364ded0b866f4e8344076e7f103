@@ -22,6 +22,30 @@
       "revId": "993361940f9ef364ded0b866f4e8344076e7f103",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3da3627e_e596fa74",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 15086
+      },
+      "writtenOn": "2018-04-13T03:39:49Z",
+      "side": 1,
+      "message": "Yes: https://github.com/LineageOS/android_build/blob/lineage-15.1/core/clang/versions.mk",
+      "parentUuid": "484ec48d_af7859a8",
+      "range": {
+        "startLine": 232,
+        "startChar": 34,
+        "endLine": 232,
+        "endChar": 56
+      },
+      "revId": "993361940f9ef364ded0b866f4e8344076e7f103",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
