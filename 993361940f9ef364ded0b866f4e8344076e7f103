@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "484ec48d_af7859a8",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-04-13T03:37:41Z",
+      "side": 1,
+      "message": "Is this otherwise set to the default one?",
+      "range": {
+        "startLine": 232,
+        "startChar": 34,
+        "endLine": 232,
+        "endChar": 56
+      },
+      "revId": "993361940f9ef364ded0b866f4e8344076e7f103",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
