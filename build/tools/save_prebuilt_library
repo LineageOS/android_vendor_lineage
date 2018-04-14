@@ -1,0 +1,123 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+import prebuilt_utils
+
+# Save previously built object information in cache.
+#
+# Usage:
+#   save_prebuilt <intermediates_dir> <cache_dir> <module_relative_name> <source_list ...>
+#
+# Note we assume (and require) the following:
+#
+# (1) There is only one module per cache directory and build directory.
+#
+# (2) The build process drop GCC style style dependency files into the
+# intermediates directory with pathnames being the source pathnames with
+# extension ".d".  For example:
+#
+#   src/foo.c -> src/foo.d
+
+cache_product_out_dir = sys.argv[1]
+product_out_dir = sys.argv[2]
+cache_dir = sys.argv[3]
+intermediates_dir = sys.argv[4]
+module_path = sys.argv[5]
+module_name = sys.argv[6]
+sources = sys.argv[7:]
+
+intermediates_module_pathname = "%s/%s" % (intermediates_dir, module_name)
+intermediates_export_pathname = "%s/export_includes" % (intermediates_dir)
+
+cache_module_pathname = "%s/%s" % (cache_dir, module_name)
+cache_export_pathname = "%s/export_includes" % (cache_dir)
+
+prebuilt_utils.mkpath(cache_dir)
+
+prebuilt_utils.logmsg("Saving %s\n" % (module_name))
+prebuilt_utils.logmsg("  cache_product_out_dir=%s\n" % (cache_product_out_dir))
+prebuilt_utils.logmsg("  product_out_dir=%s\n" % (product_out_dir))
+prebuilt_utils.logmsg("  intermediates_dir=%s\n" % (intermediates_dir))
+prebuilt_utils.logmsg("  cache_dir=%s\n" % (cache_dir))
+prebuilt_utils.logmsg("  module_name=%s\n" % (module_name))
+prebuilt_utils.logmsg("  sources=%s\n" % (" ".join(sources)))
+
+def munge_source_pathname(pathname):
+    if pathname.endswith('.arm'):
+        pathname = pathname[:-4]
+
+    return pathname
+
+def munge_dependency_pathname(pathname):
+    pathname = pathname.replace('..', 'dotdot')
+
+    real_pathname = os.path.realpath(pathname)
+    if not real_pathname.startswith(product_out_dir):
+        return pathname
+
+    relative_pathname = ral_pathname[len(product_out_dir)+1:]
+    if relative_pathname.startswith('gen/') and relative_pathname.endswith('.pb.h'):
+        # proto header.  Transform pathname to original proto source.
+        #   gen/*_LIBRARIES/lib*_intermediates/proto/(.*).pb.h -> $1.proto
+        path_elem = relative_pathname.split('/')
+        path_elem[-1] = path_elem[-1].replace('.pb.h', '.proto')
+        source_pathname = '/'.join(path_elem[4:])
+        return source_pathname
+
+    # XXX: handle kernel header files (?)
+    # kinc_prefix = 'obj/KERNEL_OBJ/usr/include/'
+    # if relative_pathname.startswith(kinc_prefix):
+
+    return pathname
+
+dependencies = dict()
+
+# Add the sources
+for srcfile in sources:
+    srcpath = munge_source_pathname("%s/%s" % (module_path, srcfile))
+    hash = prebuilt_utils.hash_file(srcpath)
+    dependencies[srcpath] = hash
+
+# Add the source dependencies
+for srcfile in sources:
+    if srcfile.endswith(('.rs', '.fs', '.proto', '.aidl', '.vts', '.y', '.yy', '.l', '.ll')):
+        continue
+    depfile = "%s/%s.d" % (intermediates_dir, os.path.splitext(srcfile)[0])
+    try:
+        lines = prebuilt_utils.read_dotd_file(depfile)
+        if len(lines) > 1:
+            raise RuntimeError("Unexpected content")
+        tokens = lines[0].split()
+        if tokens[0].endswith(':'):
+            deps = tokens[1:]
+        else:
+            if not tokens[1] == ':':
+                raise RuntimeError("Unexpected format")
+            deps = tokens[2:]
+
+        for dep in deps:
+            dep = munge_dependency_pathname(dep)
+            if not dep in dependencies:
+                hash = prebuilt_utils.hash_file(dep)
+                dependencies[dep] = hash
+
+    except Exception as e:
+        prebuilt_utils.logmsg("save_prebuilt: Failed to parse %s: %s\n" % (depfile, e))
+
+dirs = prebuilt_utils.read_includes_file(intermediates_export_pathname)
+for dir in dirs:
+    prebuilt_utils.logmsg("  processing export includes: %s\n" % (dir))
+    if not dir.startswith(product_out_dir):
+        prebuilt_utils.logmsg("    outside product_out\n")
+        continue
+    src = dir
+    dst = "%s/%s" % (cache_product_out_dir, src[len(product_out_dir)+1:])
+    prebuilt_utils.logmsg("    inside product_out: src=%s dst=%s\n" % (src, dst))
+    prebuilt_utils.lcopytree(src, dst, '*.h')
+
+prebuilt_utils.file_write_list("%s/sources" % (cache_dir), sources)
+prebuilt_utils.file_write_dict("%s/dependencies" % (cache_dir), dependencies)
+prebuilt_utils.lcopyfile(intermediates_module_pathname, cache_module_pathname)
+prebuilt_utils.lcopyfile(intermediates_export_pathname, cache_export_pathname)

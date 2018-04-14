@@ -1,0 +1,42 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+import prebuilt_utils
+
+# Save previously built kernel binaries information in cache.
+#
+# Usage:
+#   save_prebuilt_kernel_binaries <cache_dir> <object_dir> <source_dir> \
+#                                 <kernel_img> <module_dir>
+
+cache_dir = sys.argv[1]
+object_dir = sys.argv[2]
+source_dir = sys.argv[3]
+kernel_img = sys.argv[4]
+module_dir = sys.argv[5]
+
+cache_kernel_img = "%s/%s" % (cache_dir, os.path.basename(kernel_img))
+cache_module_dir = "%s/modules" % (cache_dir)
+
+prebuilt_utils.mkpath(cache_dir)
+
+sources = dict()
+
+for path, dirs, files in os.walk(source_dir):
+    for f in files:
+        src = "%s/%s" % (path, f)
+        # XXX: symlink target may not exist
+        #if os.path.islink(src)
+        #    continue
+        hash = prebuilt_utils.hash_file(src)
+        sources[src] = hash
+    try:
+        dirs.remove('.git')
+    except ValueError:
+        pass
+
+prebuilt_utils.file_write_dict("%s/sources" % (cache_dir), sources)
+prebuilt_utils.lcopyfile(kernel_img, cache_kernel_img)
+prebuilt_utils.lcopytree(module_dir, cache_module_dir, '*.ko')

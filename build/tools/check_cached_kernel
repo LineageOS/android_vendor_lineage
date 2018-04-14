@@ -1,0 +1,49 @@
+#!/usr/bin/python
+
+import os
+import sys
+import hashlib
+
+import prebuilt_utils
+
+# Check whether previously built kernel is up to date.
+#
+# Usage:
+#   check_cached_kernel <cache_dir> <source_dir>
+
+cache_dir = sys.argv[1]
+source_dir = sys.argv[2]
+
+cache_sources = dict()
+try:
+    cache_sources = prebuilt_utils.file_read_dict("%s/sources" % (cache_dir))
+except Exception as e:
+    prebuilt_utils.logmsg("failed to read info\n")
+    sys.exit(0)
+
+sources = dict()
+
+for path, dirs, files in os.walk(source_dir):
+    for f in files:
+        src = "%s/%s" % (path, f)
+        # XXX: symlink target may not exist
+        #if os.path.islink(src)
+        #    continue
+        hash = prebuilt_utils.hash_file(src)
+        sources[src] = hash
+    try:
+        dirs.remove('.git')
+    except ValueError:
+        pass
+
+if sources != cache_sources:
+    prebuilt_utils.logmsg("sources changed\n")
+    for k in sources:
+        v1 = cache_sources[k]
+        v2 = sources[k]
+        if v1 != v2:
+            prebuilt_utils.logmsg("  %s: %s -> %s\n" % (k, v1, v2))
+    sys.exit(0)
+
+prebuilt_utils.logmsg("success\n")
+print "true"

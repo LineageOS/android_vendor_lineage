@@ -1,0 +1,21 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+import prebuilt_utils
+
+# Save previously built kernel headers in cache.
+#
+# Usage:
+#   save_prebuilt_kernel_headers <cache_dir> <object_dir>
+
+cache_dir = sys.argv[1]
+object_dir = sys.argv[2]
+
+cache_include_dir = "%s/usr/include" % (cache_dir)
+object_include_dir = "%s/usr/include" % (object_dir)
+
+prebuilt_utils.mkpath(cache_dir)
+
+prebuilt_utils.lcopytree(object_include_dir, cache_include_dir, '*.h')

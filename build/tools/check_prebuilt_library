@@ -1,0 +1,101 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+import prebuilt_utils
+
+# Check whether a previously built object is up to date.
+#
+# Usage:
+#   check_prebuilt_library <cache_dir> <module_relative_pathname> <source_list ...>
+#
+# After building, the following information is recorded into the cache
+# directory:
+#  - source list
+#  - dependency list
+#  - hash of dependency files
+#  - library file
+#  - export headers
+#
+#  - [XXX: future]
+#    - Compiler (name, path, modtime, size...)
+#    - Various flags and options that influence compilation
+#    - Linker (name, path, modtime, size...)
+#    - Various flags and options that influence linkage
+#  - library file
+
+product_out_dir = sys.argv[1]
+product_cache_dir = sys.argv[2]
+kernel_source_dir = sys.argv[3]
+kernel_arch = sys.argv[4]
+cache_dir = sys.argv[5]
+module_name = sys.argv[6]
+sources = sys.argv[7:]
+dependencies = dict()
+cache_pathname = "%s/%s" % (cache_dir, module_name)
+
+cache_sources = []
+cache_dependencies = dict()
+try:
+    cache_sources = prebuilt_utils.file_read_list("%s/sources" % (cache_dir))
+    cache_dependencies = prebuilt_utils.file_read_dict("%s/dependencies" % (cache_dir))
+
+except Exception as e:
+    prebuilt_utils.logmsg("%s: failed to read info\n" % (module_name))
+    sys.exit(0)
+
+if sources != cache_sources:
+    prebuilt_utils.logmsg("%s: sources changed\n" % (module_name))
+    sys.exit(0)
+
+kinc_prefix = 'obj/KERNEL_OBJ/usr/include/'
+
+# Check dependencies
+for dep in cache_dependencies:
+    real_dep = dep
+    if not os.path.exists(dep):
+        real_dep = os.path.realpath(dep)
+        if not real_dep.startswith(product_out_dir):
+            prebuilt_utils.logmsg("%s: missing dependency outside PRODUCT_OUT: %s\n" % (module_name, dep))
+            sys.exit(0)
+        relative_dep = real_dep[len(product_out_dir)+1:]
+        # Relative dependencies:
+        #   proto : gen/...
+        #   kernel: obj/KERNEL_OBJ/...
+        # gen/STATIC_LIBRARIES/libsimpleperf_intermediates/proto/system/extras/simpleperf/report_sample.pb.h
+        # obj/KERNEL_OBJ/usr/include/linux/types.h
+        if relative_dep.startswith(kinc_prefix):
+            # UAPI path translations:
+            #  - obj/KERNEL_OBJ/usr/include/asm -> $KDIR/arch/$KARCH/include/uapi/asm
+            #  - obj/KERNEL_OBJ/usr/include/* -> $KDIR/include/uapi/*
+            kinc_asm_prefix = '%sasm/' % (kinc_prefix)
+            if relative_dep.startswith(kinc_asm_prefix):
+                kernel_dep = "%s/arch/%s/include/uapi/asm/%s" % (kernel_source_dir, kernel_arch, relative_dep[len(kinc_asm_prefix):])
+            else:
+                kernel_dep = "%s/include/uapi/%s" % (kernel_source_dir, relative_dep[len(kinc_prefix):])
+            if not os.path.exists(kernel_dep):
+                prebuilt_utils.logmsg("%s: missing dependency from kernel: relative_dep=%s kernel_dep=%s dep=%s\n" % (module_name, relative_dep, kernel_dep, dep))
+                sys.exit(0)
+            real_dep = kernel_dep
+        else:
+            prebuilt_utils.logmsg("%s: missing dependency unhandled path: relative_dep=%s dep=%s\n" % (module_name, relative_dep, dep))
+            sys.exit(0)
+    try:
+        hash = prebuilt_utils.hash_file(real_dep)
+        dependencies[dep] = hash
+    except IOError as e:
+        prebuilt_utils.logmsg("%s: missing dependency exception: relative_dep=%s real_dep=%s dep=%s e=%s\n" % (module_name, relative_dep, real_dep, dep, e))
+        sys.exit(0)
+
+if dependencies != cache_dependencies:
+    prebuilt_utils.logmsg("%s: dependencies changed\n" % (module_name))
+    for k in dependencies:
+        v1 = cache_dependencies[k]
+        v2 = dependencies[k]
+        if v1 != v2:
+            prebuilt_utils.logmsg("  %s: %s -> %s\n" % (k, v1, v2))
+    sys.exit(0)
+
+prebuilt_utils.logmsg("%s: success\n" % (module_name))
+print cache_pathname

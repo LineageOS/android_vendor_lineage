@@ -1,0 +1,23 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+import prebuilt_utils
+
+# Load previously built kernel binaries information from cache.
+#
+# Usage:
+#   load_prebuilt_kernel_binaries <cache_dir> <object_dir> \
+#                                 <kernel_img> <module_dir>
+
+cache_dir = sys.argv[1]
+object_dir = sys.argv[2]
+kernel_img = sys.argv[3]
+module_dir = sys.argv[4]
+
+cache_kernel_img = "%s/%s" % (cache_dir, os.path.basename(kernel_img))
+cache_module_dir = "%s/modules" % (cache_dir)
+
+prebuilt_utils.lcopyfile(cache_kernel_img, kernel_img)
+prebuilt_utils.lcopytree(cache_module_dir, module_dir)
