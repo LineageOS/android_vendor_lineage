@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb3ac356_14a99be8",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2018-04-18T14:51:48Z",
+      "side": 0,
+      "message": "?",
+      "revId": "ca40331215148f8eabaa24afc28da225eb44c055",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
