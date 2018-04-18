@@ -45,6 +45,9 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         endif
     endif
 
+    # Enable media extensions
+    TARGET_USES_MEDIA_EXTENSIONS := true
+
     # Allow building audio encoders
     TARGET_USES_QCOM_MM_AUDIO := true
 
