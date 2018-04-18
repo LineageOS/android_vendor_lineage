@@ -45,9 +45,11 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         endif
     endif
 
+    # Camera
+    TARGET_USES_MEDIA_EXTENSIONS := true
+
     # Allow building audio encoders
     TARGET_USES_QCOM_MM_AUDIO := true
-
     # Enable color metadata for modern UM targets
     ifneq ($(filter msm8996 msm8998 sdm660,$(TARGET_BOARD_PLATFORM)),)
         TARGET_USES_COLOR_METADATA := true
