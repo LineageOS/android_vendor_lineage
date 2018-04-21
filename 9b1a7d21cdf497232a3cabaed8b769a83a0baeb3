@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "751c8b7a_f78e62b2",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-04-21T17:40:56Z",
+      "side": 1,
+      "message": "n comes before q",
+      "range": {
+        "startLine": 13,
+        "startChar": 12,
+        "endLine": 13,
+        "endChar": 36
+      },
+      "revId": "9b1a7d21cdf497232a3cabaed8b769a83a0baeb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
