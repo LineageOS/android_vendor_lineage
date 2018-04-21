@@ -203,6 +203,13 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay-V1.0-java
+
+PRODUCT_BOOT_JARS += \
+    vendor.lineage.livedisplay-V1.0-java
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
