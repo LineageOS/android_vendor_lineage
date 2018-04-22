@@ -149,7 +149,11 @@ function target_args() {
 function prefix_match() {
     local PREFIX="$1"
     for LINE in "${PRODUCT_PACKAGES_LIST[@]}"; do
-        local FILE=$(target_file "$LINE")
+        if ! [[ "$LINE" =~ "rootfs" ]]; then
+            local FILE=$(target_file "$LINE")
+        else
+            local FILE="$LINE"
+        fi
         if [[ "$FILE" =~ ^"$PREFIX" ]]; then
             printf '%s\n' "${FILE#$PREFIX}"
         fi
