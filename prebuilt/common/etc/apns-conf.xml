@@ -1242,13 +1242,13 @@
   <apn carrier="Telus SP" mcc="302" mnc="220" apn="sp.telus.com" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="54" mvno_type="gid" type="default,supl,mms" />
   <apn carrier="TELUS ISP" mcc="302" mnc="220" apn="isp.telus.com" type="dun" mvno_type="gid" mvno_match_data="54" />
   <apn carrier="Telus SP Tether" mcc="302" mnc="220" apn="isp.telus.com" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
-  <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" proxy="74.49.0.18" port="80" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="4B" mvno_type="gid" type="default,supl,mms,dun" />
+  <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" proxy="" port="" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="4B" mvno_type="gid" type="default,supl,mms,dun" />
   <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" />
   <apn carrier="Tethered Mobile Internet" mcc="302" mnc="220" apn="isp.mb.com" type="dun" mvno_type="gid" mvno_match_data="50" />
   <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,agps,supl,fota,hipri" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_type="gid" mvno_match_data="4D4F" />
   <apn carrier="Tethered Mobile Internet" mcc="302" mnc="220" apn="isp.mb.com" type="dun" mvno_type="gid" mvno_match_data="4D4F" />
   <apn carrier="Public Mobile" mcc="302" mnc="220" apn="sp.mb.com" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" type="default,supl,mms" />
-  <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" proxy="74.49.0.18" port="80" user="" password="" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
+  <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" proxy="" port="" user="" password="" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
   <apn carrier="TELUS" mcc="302" mnc="221" apn="sp.telus.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="54" mvno_type="gid" />
   <apn carrier="Koodo" mcc="302" mnc="221" apn="sp.koodo.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="4B" mvno_type="gid" />
   <apn carrier="PC mobile" mcc="302" mnc="221" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" />
