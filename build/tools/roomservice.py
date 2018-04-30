@@ -39,6 +39,39 @@ except ImportError:
 
 from xml.etree import ElementTree
 
+#
+# The purpose of this script is to import repositories (in addition to the ones
+# already specified in .repo/default.xml and .repo/manifests/snippets/lineage.xml),
+# in order to satisfy the needs of a build for the lunch combo given as argument ($1).
+#
+# There are 2 scenarios, differentiated by the value of the depsonly parameter ($2).
+# The build/envsetup.sh will try to find a lineage.mk file, placed in a ${product} folder,
+# anywhere in the device/ subfolders.
+#
+# (a) If it finds such a ${product}/lineage.mk file ("depsonly" is supplied as true):
+#       - The device repository is already there. Just its dependencies need to be downloaded.
+#         The "depsonly" parameter is supplied as "true".
+#       - To the end of fetching repositories, it will collect them from the dependencies files
+#         (lineage.dependencies and cm.dependencies) of the projects in roomservice.xml.
+#         It will recursively search for more dependencies in the repositories it finds, and
+#         populates roomservice.xml with all new findings.
+#       - After this process is over, all new projects in roomservice.xml are force-synced.
+#
+# (b) If no such ${product}/lineage.mk file is to be found ("depsonly" is not supplied):
+#       - The device repository is not there. The roomservice script has the additional task of
+#         finding it. Therefore, the "if not depsonly" conditions present in the code below
+#         should be taken as synonymous with "if device makefile isn't there".
+#       - An attempt is made to use the Github Search API for repositories that have ${device} in
+#         their name, for the LineageOS user.
+#       - Of all repositories that are found via Github Search API, the first one taken to be
+#         the true device repository is the first one that will match the (simplified)
+#         regular expression "android_device_*_${device}".
+#       - After the above step is over, case (b) de-generates into case (a) - depsonly, as the
+#         device repository was found.
+#
+# In summary, case (a) can be considered a sub-case of (b).
+#
+
 product = sys.argv[1]
 
 if len(sys.argv) > 2:
@@ -201,6 +234,26 @@ def add_to_manifest(repositories, fallback_branch = None):
     f.write(raw_xml)
     f.close()
 
+# Function takes repo_path as input argument and searches for the
+# dependencies files inside (lineage.dependencies and cm.dependencies - legacy).
+# It then constructs a collection of:
+#   (1) syncable_repos:
+#       these are present in lineage.dependencies but not in the set of 3 repo manifests
+#       (default.xml, cm.xml, roomservice.xml).
+#   (2) fetch_list:
+#       same definition as above.
+#   Difference between (1) and (2) is:
+# First all items in fetch_list will be added to roomservice.xml, as soon as they are found in lineage.dependencies.
+# Then, after the process of populating roomservice.xml is finished, syncable_repos will contain the set of all new repos
+# from fetch_list. "repo sync --force-sync" will be performed on syncable_repos.
+#
+#   (3) verify_repos:
+#       These are repos found in lineage.dependencies, that either weren't present in the 3 repo manifests,
+#       or were present but are of the form "android_device_*_*".
+#       At the end, the fetch_dependencies function is called recursively for all verify_repos.
+#
+# The other (minor) input argument is just passed to the add_to_manifest function.
+#
 def fetch_dependencies(repo_path, fallback_branch = None):
     print('Looking for dependencies in %s' % repo_path)
     dependencies_path = repo_path + '/lineage.dependencies'
@@ -239,22 +292,42 @@ def has_branch(branches, revision):
     return revision in [branch['name'] for branch in branches]
 
 if depsonly:
+    # depsonly was set if the lineage.mk file was found. Therefore, the
+    # device repository definitely exists, it's just a matter of finding it.
+    #
+    # Search local_manifests.xml for all projects that contain "android_device_"
+    # and end in "_${device}". Function returns first such occurrence.
     repo_path = get_from_manifest(device)
     if repo_path:
         fetch_dependencies(repo_path)
     else:
+        # This error typically means that although we know the device repo
+        # should have been there (because depsonly == true), we weren't able
+        # to find it (because the search in local_manifests.xml was too
+        # restrictive). Or perhaps depsonly was triggered by a false positive
+        # in build/envsetup.sh. Should definitely not end up here.
         print("Trying dependencies-only mode on a non-existing device tree?")
 
     sys.exit()
 
 else:
+    # Not depsonly => device repository isn't here => we need to find it.
+    # At this point, the "repositories" array has already been populated with the Github search.
+    #
+    # What we're trying to do is find the device repository, so the code paths
+    # (depsonly and not depsonly) can converge back, by calling fetch_dependencies.
     for repository in repositories:
         repo_name = repository['name']
         if re.match(r"^android_device_[^_]*_" + device + "$", repo_name):
+            # We have a winner. Found on Github via searching by ${device} only!!
             print("Found repository: %s" % repository['name'])
-            
+
+            # We don't know what manufacturer we're looking at (the script was only given ${device}).
+            # Assume that the manufacturer is what's left after stripping away
+            # "android_device_" and "_${device}".
             manufacturer = repo_name.replace("android_device_", "").replace("_" + device, "")
-            
+
+            # This is the default_revision of our repo manifest, not of the Github remote repository.
             default_revision = get_default_revision()
             print("Default revision: %s" % default_revision)
             print("Checking branch info")
@@ -267,10 +340,13 @@ else:
                 githubreq = urllib.request.Request(repository['tags_url'].replace('{/tag}', ''))
                 add_auth(githubreq)
                 result.extend (json.loads(urllib.request.urlopen(githubreq).read().decode()))
-            
+
+            # The script was also not told where to put the device repository that it was
+            # supposed to find in non-depsonly mode.
+            # Just assume its place is in device/${manufacturer}/${device}.
             repo_path = "device/%s/%s" % (manufacturer, device)
             adding = {'repository':repo_name,'target_path':repo_path}
-            
+
             fallback_branch = None
             if not has_branch(result, default_revision):
                 if os.getenv('ROOMSERVICE_BRANCHES'):
