@@ -16,6 +16,7 @@
 
 from __future__ import print_function
 
+import subprocess
 import base64
 import json
 import netrc
@@ -130,19 +131,6 @@ def get_default_revision():
     d = m.findall('default')[0]
     r = d.get('revision')
     return r.replace('refs/heads/', '').replace('refs/tags/', '')
-
-def get_from_manifest(devicename):
-    try:
-        lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
-        lm = lm.getroot()
-    except:
-        lm = ElementTree.Element("manifest")
-
-    for localpath in lm.findall("project"):
-        if re.search("android_device_.*_%s$" % device, localpath.get("name")):
-            return localpath.get("path")
-
-    return None
 
 def is_in_manifest(projectpath):
     try:
@@ -277,19 +265,28 @@ if depsonly:
     # depsonly was set if the lineage.mk file was found. Therefore, the
     # device repository definitely exists, it's just a matter of finding it.
     #
-    # Search local_manifests.xml for all projects that contain "android_device_"
-    # and end in "_${device}". Function returns first such occurrence.
-    repo_path = get_from_manifest(device)
-    if repo_path:
-        fetch_dependencies(repo_path)
-    else:
-        # This error typically means that although we know the device repo
-        # should have been there (because depsonly == true), we weren't able
-        # to find it (because the search in local_manifests.xml was too
-        # restrictive). Or perhaps depsonly was triggered by a false positive
-        # in build/envsetup.sh. Should definitely not end up here.
-        print("Trying dependencies-only mode on a non-existing device tree?")
+    # Use the same logic as build/core/product_config.mk who originally found
+    # the device repo. It cannot provide different results when ran twice.
+    makefile_paths = ["*/{}/lineage.mk".format(device), "*/{}/cm.mk".format(device)]
+    found_makefile = False
 
+    for makefile_path in makefile_paths:
+        try:
+            repo_path = subprocess.check_output(["cd $(dirname $(find $ANDROID_BUILD_TOP/device " +
+                                                 "-path " + makefile_path + ")) && " +
+                                                 "git rev-parse --show-toplevel"],
+                                                 env=os.environ, shell=True).replace('\n', '')
+            if repo_path is not None:
+                found_makefile = True
+                break
+        except CalledProcessError as ex:
+            print(ex)
+
+    if found_makefile is False:
+        print("Trying dependencies-only mode on a non-existing device tree?")
+        sys.exit(1)
+
+    fetch_dependencies(repo_path)
     sys.exit(0)
 
 else:
