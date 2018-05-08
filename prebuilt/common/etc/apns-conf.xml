@@ -1065,8 +1065,8 @@
   <apn carrier="Open Market: E-Plus Web" mcc="262" mnc="03" apn="internet.eplus.de" user="eplus" password="internet" authtype="3" type="default,supl" />
   <apn carrier="Open Market: E-Plus WAP" mcc="262" mnc="03" apn="wap.eplus.de" proxy="212.23.97.9" port="8080" mmsc="" user="eplus" password="wap" authtype="3" type="default,supl" />
   <apn carrier="Open Market: E-Plus MMS" mcc="262" mnc="03" apn="mms.eplus.de" proxy="" port="" mmsproxy="212.23.97.153" mmsport="5080" mmsc="http://mms/eplus/" user="mms" password="eplus" authtype="3" type="mms" />
-  <apn carrier="blau DE" mcc="262" mnc="03" apn="internet.eplus.de" user="blau" password="blau" type="default,supl" />
-  <apn carrier="blau DE MMS" mcc="262" mnc="03" apn="mms.eplus.de" user="mms" password="eplus" mmsc="http://mms/eplus" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
+  <apn carrier="blau DE" mcc="262" mnc="03" apn="internet.eplus.de" user="eplus" password="internet" type="default,supl" mvno_type="spn" mvno_match_data="blau DE" />
+  <apn carrier="blau DE MMS" mcc="262" mnc="03" apn="mms.eplus.de" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" type="mms" mvno_type="spn" mvno_match_data="blau DE" />
   <apn carrier="E-Plus Internet" mcc="262" mnc="03" apn="internet.eplus.de" user="eplus" password="internet" type="default,supl" />
   <apn carrier="E-Plus MMS" mcc="262" mnc="03" apn="mms.eplus.de" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
   <apn carrier="Sipgate" mcc="262" mnc="03" apn="sipgate" user="sipgate" password="sipgate" type="default,supl,mms" authtype="2" />
@@ -1075,8 +1075,8 @@
   <apn carrier="Aldi Talk Internet" mcc="262" mnc="03" apn="internet.eplus.de" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Aldi Talk" type="default,supl" />
   <apn carrier="Simyo MMS" mcc="262" mnc="03" apn="mms.eplus.de" proxy="" port="" user="simyo" password="simyo" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" mvno_type="spn" mvno_match_data="Simyo" type="mms" />
   <apn carrier="Simyo Internet" mcc="262" mnc="03" apn="internet.eplus.de" proxy="" port="" user="simyo" password="simyo" mmsc="" mvno_type="spn" mvno_match_data="Simyo" type="default,supl" />
-  <apn carrier="E-Plus Web GPRS" mcc="262" mnc="05" apn="internet.eplus.de" proxy="" port="" user="eplus" password="internet" mmsc="" type="default,supl" />
-  <apn carrier="E-Plus MMS" mcc="262" mnc="05" apn="mms.eplus.de" proxy="" port="" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
+  <apn carrier="E-Plus Web GPRS" mcc="262" mnc="03" apn="internet.eplus.de" proxy="" port="" user="eplus" password="internet" mmsc="" type="default,supl" />
+  <apn carrier="E-Plus MMS" mcc="262" mnc="03" apn="mms.eplus.de" proxy="" port="" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
   <apn carrier="T-Mobile Internet" mcc="262" mnc="06" apn="internet.t-mobile" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="default,supl,mms" />
   <apn carrier="T-Mobile Internet" mcc="262" mnc="06" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="default,supl,mms" />
   <apn carrier="o2 Internet" mcc="262" mnc="07" apn="internet" user="" password="" type="default,supl" />
