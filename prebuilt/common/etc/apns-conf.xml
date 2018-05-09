@@ -1189,63 +1189,61 @@
   <apn carrier="ProMonte MMS" mcc="297" mnc="01" apn="mms.promonte.com" proxy="" port="" user="mms" password="mms" mmsc="http://mm.vor.promonte.com" mmsproxy="192.168.246.5" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile CG MMS" mcc="297" mnc="02" apn="mms" proxy="" port="" user="38267" password="38267" mmsc="http://192.168.180.100/servlets/mms" mmsproxy="10.0.5.19" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile CG" mcc="297" mnc="02" apn="tmcg-wnw" proxy="" port="" user="38267" password="38267" mmsc="" type="default,supl" />
-  <apn carrier="Telus SP" mcc="302" mnc="220" apn="sp.telus.com" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="54" mvno_type="gid" type="default,supl,mms" />
-  <apn carrier="TELUS ISP" mcc="302" mnc="220" apn="isp.telus.com" type="dun" mvno_type="gid" mvno_match_data="54" />
-  <apn carrier="Telus SP Tether" mcc="302" mnc="220" apn="isp.telus.com" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
-  <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" proxy="" port="" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="4B" mvno_type="gid" type="default,supl,mms,dun" />
-  <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" />
+  <apn carrier="TELUS SP" mcc="302" mnc="220" apn="sp.telus.com" type="default,mms,supl,hipri,ia" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" protocol="IPV6" roaming_protocol="IP" mvno_match_data="5455" mvno_type="gid" />
+  <apn carrier="TELUS ISP" mcc="302" mnc="220" apn="isp.telus.com" server="*" type="dun" protocol="IP" mvno_match_data="5455" mvno_type="gid" />
+  <apn carrier="TELUS IMS" mcc="302" mnc="220" apn="ims" type="ims" protocol="IPV6" mvno_match_data="5455" mvno_type="gid" user_visible="false" />
+  <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" type="*" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" protocol="IP" roaming_protocol="IP" mvno_match_data="4B4F" mvno_type="gid" />
+  <apn carrier="Koodo IMS" mcc="302" mnc="220" apn="ims" type="ims" protocol="IPV6" mvno_match_data="4B4F" mvno_type="gid" />
+  <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="5043" mvno_type="gid" />
   <apn carrier="Tethered Mobile Internet" mcc="302" mnc="220" apn="isp.mb.com" type="dun" mvno_type="gid" mvno_match_data="50" />
   <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,agps,supl,fota,hipri" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_type="gid" mvno_match_data="4D4F" />
   <apn carrier="Tethered Mobile Internet" mcc="302" mnc="220" apn="isp.mb.com" type="dun" mvno_type="gid" mvno_match_data="4D4F" />
   <apn carrier="Public Mobile" mcc="302" mnc="220" apn="sp.mb.com" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" type="default,supl,mms" />
-  <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" proxy="" port="" user="" password="" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" type="default,supl,mms" />
-  <apn carrier="TELUS" mcc="302" mnc="221" apn="sp.telus.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="54" mvno_type="gid" />
-  <apn carrier="Koodo" mcc="302" mnc="221" apn="sp.koodo.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="4B" mvno_type="gid" />
-  <apn carrier="PC mobile" mcc="302" mnc="221" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" />
-  <apn carrier="MMS" mcc="302" mnc="270" apn="mms.mobi.eastlink.ca" mmsc="http://mmss.mobi.eastlink.ca" mmsproxy="10.232.12.49" mmsport="8080" type="mms" />
-  <apn carrier="Internet" mcc="302" mnc="270" apn="wisp.mobi.eastlink.ca" type="default,supl" />
-  <apn carrier="Eastlink Internet" mcc="302" mnc="270" apn="wisp.mobi.eastlink.ca" type="default,supl" />
+  <apn carrier="TELUS SP" mcc="302" mnc="221" apn="sp.telus.com" type="default,mms,supl,hipri,ia" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" protocol="IPV6" roaming_protocol="IP" mvno_match_data="5455" mvno_type="gid" />
+  <apn carrier="TELUS ISP" mcc="302" mnc="221" apn="isp.telus.com" server="*" type="dun" protocol="IP" mvno_match_data="5455" mvno_type="gid" />
+  <apn carrier="TELUS IMS" mcc="302" mnc="221" apn="ims" type="ims" protocol="IPV6" mvno_match_data="5455" mvno_type="gid" user_visible="false" />
+  <apn carrier="Koodo SP" mcc="302" mnc="221" apn="sp.koodo.com" type="*" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" protocol="IP" roaming_protocol="IP" mvno_match_data="4B4F" mvno_type="gid" />
+  <apn carrier="Koodo IMS" mcc="302" mnc="221" apn="ims" type="ims" protocol="IPV6" mvno_match_data="4B4F" mvno_type="gid" />
+  <apn carrier="PC mobile" mcc="302" mnc="221" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="5043" mvno_type="gid" />
   <apn carrier="Eastlink MMS" mcc="302" mnc="270" apn="mms.mobi.eastlink.ca" mmsc="http://mmss.mobi.eastlink.ca" mmsproxy="10.232.12.49" mmsport="8080" type="mms" />
+  <apn carrier="Eastlink Internet" mcc="302" mnc="270" apn="wisp.mobi.eastlink.ca" type="default,supl,dun,hipri" />
   <apn carrier="MOWAP" mcc="302" mnc="320" apn="wap.davewireless.com" proxy="10.100.3.4" port="8080" type="default,supl" />
   <apn carrier="MOMMS" mcc="302" mnc="320" apn="mms.davewireless.com" mmsc="http://mms.mobilicity.net" mmsproxy="10.100.3.4" mmsport="8080" type="mms" />
-  <apn carrier="Mobilicity MMS" mcc="302" mnc="320" apn="mms.davewireless.com" proxy="" port="" user="" password="" mmsc="http://mms.mobilicity.net" mmsproxy="10.100.3.4" mmsport="8080" type="mms" />
-  <apn carrier="Mobilicity" mcc="302" mnc="320" apn="wap.davewireless.com" proxy="" port="" user="dave" password="password" mmsc="" type="default,supl" />
-  <apn carrier="Fido Tethering" mcc="302" mnc="370" apn="ltedata.apn" type="dun" mvno_match_data="DD" mvno_type="gid" protocol="IPV4V6" roaming_protocol="IP" />
-  <apn carrier="Fido Internet" mcc="302" mnc="370" apn="ltemobile.apn" type="default,mms,agps,supl,fota,hipri" mmsproxy="mmsproxy.fido.ca" mmsc="http://mms.fido.ca" mmsport="80" mvno_match_data="DD" mvno_type="gid" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="Fido Internet" mcc="302" mnc="370" apn="ltemobile.apn" type="default,mms,agps,supl,fota,hipri,ia" mmsproxy="mmsproxy.fido.ca" mmsc="http://mms.fido.ca" mmsport="80" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17" mvno_match_data="DD" mvno_type="gid" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="Fido Netsvcs" mcc="302" mnc="370" apn="netsvcs" type="mms" mmsproxy="mmsproxy.fido.ca" mmsc="http://mms.fido.ca" mmsport="80" bearer_bitmask="18" mvno_match_data="DD" mvno_type="gid" protocol="IPV4V6" roaming_protocol="IP" user_visible="false" />
+  <apn carrier="Fido IMS" mcc="302" mnc="370" apn="ims" type="ims" mvno_match_data="DD" mvno_type="gid" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Fido Tethering" mcc="302" mnc="370" apn="ltedata.apn" type="dun" mvno_match_data="DD" mvno_type="gid" protocol="IPV4V6" />
   <apn carrier="MTS" mcc="302" mnc="370" apn="sp.mts" type="default,mms,supl" mmsc="http://mmsc2.mts.net/" mmsproxy="wapgw1.mts.net" mmsport="9201" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2C" mvno_type="gid" />
   <apn carrier="MTS Tethering S" mcc="302" mnc="370" apn="internet.mts" type="dun" protocol="IPV4V6" roaming_protocol="IP" mvno_type="gid" mvno_match_data="2C" />
-  <apn carrier="Fido LTE" mcc="302" mnc="370" apn="ltemobile.apn" mmsc="http://mms.fido.ca" mmsproxy="205.151.11.13" mmsport="80" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IP" />
-  <apn carrier="Fido Default" mcc="302" mnc="370" apn="fido-core-appl1.apn" proxy="" port="" user="" password="" mmsc="http://mms.fido.ca" mmsproxy="205.151.11.13" mmsport="80" type="default,supl,mms" />
-  <apn carrier="Fido Internet" mcc="302" mnc="370" apn="internet.fido.ca" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Fido Tethering" mcc="302" mnc="370" apn="isp.fido.apn" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Internet" mcc="302" mnc="490" apn="internet.windmobile.ca" user="" password="" type="default,supl" />
-  <apn carrier="MMS" mcc="302" mnc="490" apn="mms.windmobile.ca" proxy="" port="" mmsproxy="74.115.197.70" mmsport="8080" mmsc="http://mms.windmobile.ca" user="" password="" type="mms" />
-  <apn carrier="Wind CA" mcc="302" mnc="490" apn="internet.windmobile.ca" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Wind CA MMS" mcc="302" mnc="490" apn="mms.windmobile.ca" proxy="" port="" user="" password="" mmsc="http://mms.windmobile.ca" mmsproxy="74.115.197.70" mmsport="8080" type="mms" />
-  <apn carrier="Videotron" mcc="302" mnc="500" apn="media.videotron" proxy="" port="" user="" password="" mmsc="http://media.videotron.com/" mmsproxy="10.208.89.17" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Media" mcc="302" mnc="500" apn="media.ng" mmsc="http://media.videotron.com" type="default,supl,mms" />
-  <apn carrier="Media" mcc="302" mnc="510" apn="media.ng" mmsc="http://media.videotron.com" type="default,supl,mms" />
-  <apn carrier="Media" mcc="302" mnc="520" apn="media.ng" mmsc="http://media.videotron.com" type="default,supl,mms" />
-  <apn carrier="Virgin Mobile" mcc="302" mnc="610" apn="pda.stm.sk.ca" proxy="web.wireless.bell.ca" port="80" type="default,mms,supl" mmsc="http://mms.bell.ca/mms/wapenc" mmsproxy="web.wireless.bell.ca" mmsport="80" />
-  <apn carrier="Bell" mcc="302" mnc="610" apn="pda.bell.ca" proxy="web.wireless.bell.ca" port="80" user="" password="" mmsc="http://mms.bell.ca/mms/wapenc" mmsproxy="web.wireless.bell.ca" mmsport="80" type="" />
-  <apn carrier="Bell Flex" mcc="302" mnc="610" apn="inet.bell.ca" proxy="" port="" user="" password="" mmsc="http://mms.bell.ca/mms/wapenc" type="default,supl,mms" />
-  <apn carrier="MTS" mcc="302" mnc="660" apn="sp.mts" type="default,mms,supl" mmsc="http://mmsc2.mts.net/" mmsproxy="wapgw1.mts.net" mmsport="9201" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2C" mvno_type="gid" />
+  <apn carrier="Freedom Mobile Internet" mcc="302" mnc="490" apn="internet.freedommobile.ca" type="default,dun,supl" protocol="IPV4V6" user_editable="false" />
+  <apn carrier="Freedom Mobile MMS" mcc="302" mnc="490" apn="mms.freedommobile.ca" mmsc="http://mms.windmobile.ca" mmsproxy="74.115.197.70" mmsport="8080" type="mms" user_editable="false" />
+  <apn carrier="Freedom Mobile VoLTE" mcc="302" mnc="490" apn="volte.mobilefrdm.ca" type="ims" protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Freedom Mobile E911" mcc="302" mnc="490" apn="e911.mobilefrdm.ca" type="emergency" protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Videotron Mobile" mcc="302" mnc="500" apn="media.ng" mmsc="http://media.videotron.com" mmsproxy="10.208.89.17" mmsport="8080" type="default,supl,mms" user_editable="false" />
+  <apn carrier="Videotron Mobile LTE IMS" mcc="302" mnc="500" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" user_visible="false" />
+  <apn carrier="Videotron Mobile Emergency" mcc="302" mnc="500" apn="sos" type="emergency" protocol="IPV6" roaming_protocol="IPV6" user_visible="false" />
+  <apn carrier="Videotron Mobile" mcc="302" mnc="510" apn="media.ng" mmsc="http://media.videotron.com" mmsproxy="10.208.89.17" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Videotron Mobile" mcc="302" mnc="520" apn="media.ng" mmsc="http://media.videotron.com" mmsproxy="10.208.89.17" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Bell Mobility" mcc="302" mnc="610" apn="pda.bell.ca" type="default,mms,supl,dun,hipri,ia" mmsc="http://mms.bell.ca/mms/wapenc" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="Bell Mobility IMS" mcc="302" mnc="610" apn="ims" type="ims" protocol="IPV4V6" />
+  <apn carrier="Virgin Mobile" mcc="302" mnc="610" apn="pda.bell.ca" type="default,mms,supl" mmsc="http://mms.bell.ca/mms/wapenc" authtype="2" mvno_type="gid" mvno_match_data="62" />
+  <apn carrier="Virgin Mobile IMS" mcc="302" mnc="610" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" authtype="2" mvno_type="gid" mvno_match_data="62" />
+  <apn carrier="Bell Mobility Test IMS" mcc="302" mnc="630" apn="ims" type="ims" protocol="IPV4V6" />
+  <apn carrier="Bell Mobility Test IMS" mcc="302" mnc="640" apn="ims" type="ims" protocol="IPV4V6" />
+  <apn carrier="MTS" mcc="302" mnc="660" apn="sp.mts" type="default,mms,supl" mmsc="http://mmsc2.mts.net/" mmsproxy="wapgw1.mts.net" mmsport="9401" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="MTS Tethering" mcc="302" mnc="660" apn="internet.mts" type="dun" protocol="IPV4V6" roaming_protocol="IP" mvno_type="gid" mvno_match_data="2C" />
-  <apn carrier="Rogers LTE" mcc="302" mnc="720" apn="ltemobile.apn" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" mvno_type="spn" mvno_match_data="ROGERS" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Rogers Tethering" mcc="302" mnc="720" apn="ltedata.apn" type="dun" mvno_match_data="ROGERS" mvno_type="spn" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Rogers" mcc="302" mnc="720" apn="rogers-core-appl1.apn" proxy="" port="" user="" password="" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" type="default,supl,mms" />
-  <apn carrier="Rogers Tethering" mcc="302" mnc="720" apn="isp.apn" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Rogers WAP" mcc="302" mnc="720" apn="internet.com" proxy="" port="" user="" password="wap" mmsc="" type="default,supl,mms" />
   <apn carrier="chatr" mcc="302" mnc="720" apn="chatrweb.apn" type="default,mms,supl" mmsc="http://mms.chatrwireless.com" mmsproxy="205.151.11.11" mmsport="80" proxy="205.151.11.11" port="80" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="302720x94" mvno_type="imsi" />
   <apn carrier="Chatr Tethering" mcc="302" mnc="720" apn="chatrisp.apn" type="dun" mvno_type="imsi" mvno_match_data="302720x94" protocol="IPV4V6" roaming_protocol="IP" />
-  <apn carrier="Tbaytel Tethering" mcc="302" mnc="720" apn="ltedata.apn" type="dun" protocol="IPV4V6" roaming_protocol="IP" mvno_type="gid" mvno_match_data="BA" />
-  <apn carrier="Tbaytel Internet" mcc="302" mnc="720" apn="ltemobile.apn" type="default,mms,agps,supl,fota,hipri" protocol="IPV4V6" roaming_protocol="IP" mmsc="http://mms.gprs.rogers.com" mmsproxy="mmsproxy.rogers.com" mmsport="80" mvno_type="gid" mvno_match_data="BA" />
-  <apn carrier="Cityfone Tethering" mcc="302" mnc="720" apn="ltedata.apn" type="dun" protocol="IPV4V6" roaming_protocol="IP" mvno_type="spn" mvno_match_data="CITYFONE" />
-  <apn carrier="Cityfone Internet" mcc="302" mnc="720" apn="ltemobile.apn" type="default,mms,agps,supl,fota,hipri" protocol="IPV4V6" roaming_protocol="IP" mmsc="http://mms.gprs.rogers.com" mmsproxy="mmsproxy.rogers.com" mmsport="80" mvno_type="spn" mvno_match_data="CITYFONE" />
+  <apn carrier="Tbaytel Internet" mnc="720" mcc="302" apn="ltemobile.apn" type="default,mms,agps,supl,fota,hipri" protocol="IPV4V6" roaming_protocol="IP" mmsc="http://mms.gprs.rogers.com" mmsproxy="mmsproxy.rogers.com" mmsport="80" mvno_type="gid" mvno_match_data="BA" />
+  <apn carrier="Tbaytel Tethering" mnc="720" mcc="302" apn="ltedata.apn" type="dun" protocol="IPV4V6" roaming_protocol="IP" mvno_type="gid" mvno_match_data="BA" />
+  <apn carrier="Cityfone Internet" mnc="720" mcc="302" apn="ltemobile.apn" type="default,mms,agps,supl,fota,hipri" protocol="IPV4V6" roaming_protocol="IP" mmsc="http://mms.gprs.rogers.com" mmsproxy="mmsproxy.rogers.com" mmsport="80" mvno_type="spn" mvno_match_data="CITYFONE" />
+  <apn carrier="Cityfone Tethering" mnc="720" mcc="302" apn="ltedata.apn" type="dun" protocol="IPV4V6" roaming_protocol="IP" mvno_type="spn" mvno_match_data="CITYFONE" />
   <apn carrier="Petro-Canada Mobility" mcc="302" mnc="720" apn="rogers-core-appl1.apn" type="default,mms,supl" mmsproxy="mmsproxy.rogers.com" mmsc="http://mms.gprs.rogers.com" mmsport="80" protocol="IPV4V6" />
-  <apn carrier="SaskTel" mcc="302" mnc="780" apn="pda.stm.sk.ca" type="default,mms,supl" mmsc="http://mms.sasktel.com/" mmsproxy="mig.sasktel.com" mmsport="80" />
-  <apn carrier="Sasktel 3G" mcc="302" mnc="780" apn="inet.stm.sk.ca" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Sasktel MMS" mcc="302" mnc="780" apn="proxy.stm.sk.ca" proxy="" port="80" user="" password="" mmsc="http://mms.sasktel.com" mmsproxy="mig.sasktel.com" mmsport="80" type="mms" />
+  <apn carrier="Rogers IMS" mcc="302" mnc="720" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Rogers Internet" mcc="302" mnc="720" apn="ltemobile.apn" type="default,mms,supl,hipri,ia" mmsproxy="mmsproxy.rogers.com" mmsc="http://mms.gprs.rogers.com" mmsport="80" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Rogers Netsvcs" mcc="302" mnc="720" apn="netsvcs" type="mms" mmsproxy="mmsproxy.rogers.com" mmsc="http://mms.gprs.rogers.com" mmsport="80" bearer_bitmask="18" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Rogers Tethering" mcc="302" mnc="720" apn="ltedata.apn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="SaskTel" mcc="302" mnc="780" apn="pda.stm.sk.ca" type="default,mms,supl" mmsc="http://mms.sasktel.com/" mmsproxy="mig.sasktel.com" mmsport="80" protocol="IP" roaming_protocol="IP" />
   <apn carrier="Verizon Internet" mcc="310" mnc="00" apn="VZWINTERNET" type="default,dun,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
   <apn carrier="Verizon FOTA" mcc="310" mnc="00" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
   <apn carrier="Verizon IMS" mcc="310" mnc="00" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
