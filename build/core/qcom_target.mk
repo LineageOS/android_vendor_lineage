@@ -51,8 +51,8 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     # Allow building audio encoders
     TARGET_USES_QCOM_MM_AUDIO := true
 
-    # Enable color metadata for modern UM targets
-    ifneq ($(filter msm8996 msm8998 sdm660,$(TARGET_BOARD_PLATFORM)),)
+    # Enable color metadata for UM platforms
+    ifeq ($(call is-board-platform-in-list, $(UM_3_18_FAMILY) $(UM_4_4_FAMILY)),true)
         TARGET_USES_COLOR_METADATA := true
     endif
 
@@ -97,6 +97,8 @@ $(call set-device-specific-path,SENSORS,sensors,hardware/qcom/sensors)
 $(call set-device-specific-path,LOC_API,loc-api,vendor/qcom/opensource/location)
 $(call set-device-specific-path,DATASERVICES,dataservices,vendor/qcom/opensource/dataservices)
 $(call set-device-specific-path,POWER,power,hardware/qcom/power)
+$(call set-device-specific-path,THERMAL,thermal,hardware/qcom/thermal)
+$(call set-device-specific-path,VR,vr,hardware/qcom/vr)
 
 $(call wlan-set-path-variant,wlan-caf)
 $(call bt-vendor-set-path-variant,bt-caf)
