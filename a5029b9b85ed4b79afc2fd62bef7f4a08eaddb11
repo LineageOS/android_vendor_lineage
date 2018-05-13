@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "13a2e209_2edd7425",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 1063,
+      "author": {
+        "id": 7148
+      },
+      "writtenOn": "2018-05-13T17:52:20Z",
+      "side": 1,
+      "message": "O2",
+      "range": {
+        "startLine": 1063,
+        "startChar": 16,
+        "endLine": 1063,
+        "endChar": 18
+      },
+      "revId": "a5029b9b85ed4b79afc2fd62bef7f4a08eaddb11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
