@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b2afd4ab_765b863b",
+        "filename": "build/core/config.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-05-20T22:25:02Z",
+      "side": 1,
+      "message": "Probably got missed, but these $(TOP)/ are empty (verified with an $(error ...), as it\u0027s Maven, http and RRO, maybe it went unnoticed.",
+      "revId": "1d3e6f961d24f5a835fefa020ff0477f4c136bb1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0f35cbfa_4841cf3c",
+        "filename": "build/core/config.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-05-20T22:25:02Z",
+      "side": 1,
+      "message": "$(TOP)/ is empty here and breaks the build.\n\n$(TOPDIR) is what we use and resolves the breakage.",
+      "revId": "1d3e6f961d24f5a835fefa020ff0477f4c136bb1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b5195bac_41d591c1",
+        "filename": "build/core/main.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-05-20T22:25:02Z",
+      "side": 1,
+      "message": "Same.",
+      "revId": "1d3e6f961d24f5a835fefa020ff0477f4c136bb1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
