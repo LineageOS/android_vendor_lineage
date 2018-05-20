@@ -26,3 +26,9 @@ PUBLISH_MAVEN_PREBUILT := $(TOP)/vendor/lineage/build/core/maven_artifact_publis
 BUILD_HTTP_PREBUILT := $(TOP)/vendor/lineage/build/core/http_prebuilt.mk
 
 BUILD_RRO_SYSTEM_PACKAGE := $(TOP)/vendor/lineage/build/core/system_rro.mk
+
+# Rules for QCOM targets
+include $(TOP)/vendor/lineage/build/core/qcom_target.mk
+
+# Rules for MTK targets
+include $(TOP)/vendor/lineage/build/core/mtk_target.mk
