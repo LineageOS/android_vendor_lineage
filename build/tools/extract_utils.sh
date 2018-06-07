@@ -101,6 +101,31 @@ function setup_vendor() {
 }
 
 #
+# src_file:
+#
+# $1: colon delimited list
+#
+# Returns source filename without args
+#
+function src_file() {
+    local LINE="$1"
+    local SPLIT=(${LINE//:/ })
+    local ARGS=$(target_args ${LINE})
+    if [ "${#SPLIT[@]}" -gt "1" ]; then
+        # The ${LINE} spec actually has a src:dst format
+        if [[ "${SPLIT[0]}" =~ .*/.* ]]; then
+            _src="${SPLIT[0]}"
+        fi
+    fi
+    # The ${LINE} spec doesn't have a : delimiter
+    if [ -z "${_src+x}" ]; then
+        _src="${SPLIT[0]}"
+    fi
+    # Remove target_args suffix, if present
+    echo "${_src%;${ARGS}}"
+}
+
+#
 # target_file:
 #
 # $1: colon delimited list
@@ -110,14 +135,20 @@ function setup_vendor() {
 function target_file() {
     local LINE="$1"
     local SPLIT=(${LINE//:/ })
-    local COUNT=${#SPLIT[@]}
-    if [ "$COUNT" -gt "1" ]; then
+    local ARGS=$(target_args ${LINE})
+    if [ "${#SPLIT[@]}" -gt "1" ]; then
+        # The ${LINE} spec actually has a src:dst format
         if [[ "${SPLIT[1]}" =~ .*/.* ]]; then
-            printf '%s\n' "${SPLIT[1]}"
-            return 0
+            # Strip target_args from SPLIT[1] using basename command
+            _dst="${SPLIT[1]}"
         fi
     fi
-    printf '%s\n' "${SPLIT[0]}"
+    # The ${LINE} spec doesn't have a : delimiter
+    if [ -z "${_dst+x}" ]; then
+        _dst="${SPLIT[0]}"
+    fi
+    # Remove target_args suffix, if present
+    echo "${_dst%;${ARGS}}"
 }
 
 #
@@ -219,7 +250,7 @@ function write_product_copy_files() {
             LINEEND=""
         fi
 
-        TARGET=$(echo $(target_file "$FILE") | sed 's/\;.*//')
+        TARGET=$(target_file "$FILE")
         if [ "$TREBLE_COMPAT" == "true" ] || [ "$TREBLE_COMPAT" == "1" ]; then
             if prefix_match_file "vendor/" $TARGET ; then
                 local OUTTARGET=$(truncate_file $TARGET)
@@ -267,7 +298,7 @@ function write_packages() {
     local SRC=
 
     for P in "${FILELIST[@]}"; do
-        FILE=$(echo $(target_file "$P") | sed 's/\;.*//')
+        FILE=$(target_file "$P")
         ARGS=$(target_args "$P")
 
         BASENAME=$(basename "$FILE")
@@ -867,6 +898,22 @@ function fix_xml() {
     mv "$TEMP_XML" "$XML"
 }
 
+function retrieve() {
+    local _dst="$1"
+    local _src="$2"
+    local _medium="$3"
+
+    case ${_medium} in
+    adb)
+        adb pull "${_src}" "${_dst}"
+        ;;
+    *)
+        # ${_medium} is path to a disk image
+        cp -f "${_medium}${_src}" "${_dst}" 2>/dev/null
+        ;;
+    esac
+}
+
 #
 # extract:
 #
@@ -885,9 +932,6 @@ function extract() {
     else
         parse_file_list "$1" "$3"
     fi
-
-    # Allow failing, so we can try $DEST and/or $FILE
-    set +e
 
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} ${PRODUCT_PACKAGES_LIST[@]} )
     local HASHLIST=( ${PRODUCT_COPY_FILES_HASHES[@]} ${PRODUCT_PACKAGES_HASHES[@]} )
@@ -949,43 +993,47 @@ function extract() {
 
     for (( i=1; i<COUNT+1; i++ )); do
 
-        local FROM=$(echo $(target_file "${FILELIST[$i-1]}") | sed 's/\;.*//')
-        local ARGS=$(target_args "${FILELIST[$i-1]}")
-        local SPLIT=(${FILELIST[$i-1]//:/ })
-        local FILE=$(echo "${SPLIT[0]#-}" | sed 's/\;.*//')
-        local OUTPUT_DIR="$OUTPUT_ROOT"
-        local TMP_DIR="$OUTPUT_TMP"
-        local TARGET=
+        local _spec_src_file=$(src_file "${FILELIST[$i-1]}")
+        local _spec_dst_file=$(target_file "${FILELIST[$i-1]}")
+        local _spec_args=$(target_args "${FILELIST[$i-1]}")
+        local _output_dir=
+        local _dst_file=
+        local _src_file=
+        local _tmp_dir=
 
-        if [ "$ARGS" = "rootfs" ]; then
-            TARGET="$FROM"
-            OUTPUT_DIR="$OUTPUT_DIR/rootfs"
-            TMP_DIR="$TMP_DIR/rootfs"
-        else
-            TARGET="system/$FROM"
-            FILE="system/$FILE"
-        fi
+        case ${_spec_args} in
+        rootfs)
+            _output_dir="${OUTPUT_ROOT}/rootfs"
+            _tmp_dir="${OUTPUT_TMP}/rootfs"
+            _src_file="/${_spec_src_file}"
+            _dst_file="/${_spec_dst_file}"
+            ;;
+        *)
+            _output_dir="${OUTPUT_ROOT}"
+            _tmp_dir="${OUTPUT_TMP}"
+            _src_file="/system/${_spec_src_file}"
+            _dst_file="/system/${_spec_dst_file}"
+            ;;
+        esac
 
         if [ "$SRC" = "adb" ]; then
-            printf '  - %s .. ' "/$TARGET"
+            printf '  - %s .. ' "${_dst_file}"
         else
-            printf '  - %s \n' "/$TARGET"
+            printf '  - %s \n' "${_dst_file}"
         fi
 
-        local DIR=$(dirname "$FROM")
-        if [ ! -d "$OUTPUT_DIR/$DIR" ]; then
-            mkdir -p "$OUTPUT_DIR/$DIR"
-        fi
-        local DEST="$OUTPUT_DIR/$FROM"
+        # Strip the file path in the vendor repo of "system", if present
+        local _vendor_repo_file="${_output_dir}${_dst_file#/system}"
+        mkdir -p $(dirname "${_vendor_repo_file}")
 
         # Check pinned files
         local HASH="${HASHLIST[$i-1]}"
         local KEEP=""
         if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
-            if [ -f "$DEST" ]; then
-                local PINNED="$DEST"
+            if [ -f "${_vendor_repo_file}" ]; then
+                local PINNED="${_vendor_repo_file}"
             else
-                local PINNED="$TMP_DIR/$FROM"
+                local PINNED="${_tmp_dir}${_dst_file#/system}"
             fi
             if [ -f "$PINNED" ]; then
                 if [ "$(uname)" == "Darwin" ]; then
@@ -995,8 +1043,8 @@ function extract() {
                 fi
                 if [ "$TMP_HASH" = "$HASH" ]; then
                     KEEP="1"
-                    if [ ! -f "$DEST" ]; then
-                        cp -p "$PINNED" "$DEST"
+                    if [ ! -f "${_vendor_repo_file}" ]; then
+                        cp -p "$PINNED" "${_vendor_repo_file}"
                     fi
                 fi
             fi
@@ -1004,52 +1052,53 @@ function extract() {
 
         if [ "$KEEP" = "1" ]; then
             printf '    + (keeping pinned file with hash %s)\n' "$HASH"
-        elif [ "$SRC" = "adb" ]; then
-            # Try Lineage target first
-            adb pull "/$TARGET" "$DEST"
-            # if file does not exist try OEM target
-            if [ "$?" != "0" ]; then
-                adb pull "/$FILE" "$DEST"
-            fi
         else
-            # Try Lineage target first
-            if [ -f "$SRC/$TARGET" ]; then
-                cp "$SRC/$TARGET" "$DEST"
-            # if file does not exist try OEM target
-            elif [ -f "$SRC/$FILE" ]; then
-                cp "$SRC/$FILE" "$DEST"
-            else
+            found=false
+            # Try Lineage target first.
+            # Also try to search for files stripped of
+            # the "/system" prefix, if we're actually extracting
+            # from a system image.
+            for candidate in "${_dst_file}" "${_dst_file#/system}" "${_src_file}" "${_src_file#/system}"; do
+                retrieve ${_vendor_repo_file} ${candidate} ${SRC} && {
+                    found=true
+                    break
+                }
+            done
+            case ${found} in
+            false)
                 printf '    !! file not found in source\n'
-            fi
+                ;;
+            esac
         fi
 
         if [ "$?" == "0" ]; then
             # Deodex apk|jar if that's the case
-            if [[ "$FULLY_DEODEXED" -ne "1" && "$DEST" =~ .(apk|jar)$ ]]; then
-                oat2dex "$DEST" "$FILE" "$SRC"
+            if [[ "$FULLY_DEODEXED" -ne "1" && "${_vendor_repo_file}" =~ .(apk|jar)$ ]]; then
+                oat2dex "${_vendor_repo_file}" "${_src_file}" "$SRC"
                 if [ -f "$TMPDIR/classes.dex" ]; then
-                    zip -gjq "$DEST" "$TMPDIR/classes.dex"
+                    zip -gjq "${_vendor_repo_file}" "$TMPDIR/classes.dex"
                     rm "$TMPDIR/classes.dex"
-                    printf '    (updated %s from odex files)\n' "/$FILE"
+                    echo "    (updated ${_src_file} from odex files)"
                 fi
-            elif [[ "$DEST" =~ .xml$ ]]; then
-                fix_xml "$DEST"
+            elif [[ "${_vendor_repo_file}" =~ .xml$ ]]; then
+                fix_xml "${_vendor_repo_file}"
             fi
         fi
 
-        if [ -f "$DEST" ]; then
-            local TYPE="${DIR##*/}"
-            if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
-                chmod 755 "$DEST"
-            else
-                chmod 644 "$DEST"
-            fi
+        if [ -f "${_vendor_repo_file}" ]; then
+            local _dir=$(dirname "${_vendor_repo_file}")
+            local _type="${_dir##*/}"
+            case ${_type} in
+            bin | sbin)
+                chmod 755 "${_vendor_repo_file}"
+                ;;
+            *)
+                chmod 644 "${_vendor_repo_file}"
+                ;;
+            esac
         fi
 
     done
-
-    # Don't allow failing
-    set -e
 }
 
 #
