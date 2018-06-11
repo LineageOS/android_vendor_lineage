@@ -361,4 +361,8 @@ endif
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
 
+ifneq ($(TARGET_NO_KERNEL),true)
+    TARGET_EXTRA_KERNEL_MODULES := wireguard
+endif
+
 $(call prepend-product-if-exists, vendor/extra/product.mk)
