@@ -1,0 +1,4 @@
+# wireguard kmod
+on early-init
+    exec u:r:modprobe:s0 -- /vendor/bin/modprobe -a -d \
+        /vendor/lib/modules wireguard
