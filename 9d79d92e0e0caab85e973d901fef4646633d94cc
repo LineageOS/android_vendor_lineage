@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5eb92e40_3dcb7d24",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1369,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2018-06-14T02:55:15Z",
+      "side": 1,
+      "message": "You can remove these so that this apn matches aosp.",
+      "range": {
+        "startLine": 1369,
+        "startChar": 57,
+        "endLine": 1369,
+        "endChar": 93
+      },
+      "revId": "9d79d92e0e0caab85e973d901fef4646633d94cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "929c6ff3_b51d8ad9",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1370,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2018-06-14T02:55:15Z",
+      "side": 1,
+      "message": "Same here.",
+      "range": {
+        "startLine": 1370,
+        "startChar": 57,
+        "endLine": 1370,
+        "endChar": 93
+      },
+      "revId": "9d79d92e0e0caab85e973d901fef4646633d94cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
