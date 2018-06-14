@@ -6,11 +6,49 @@ import argparse
 import os
 import sys
 
+try:
+    import brotli
+    BROTLI_AVAILABLE = True
+except ImportError:
+    BROTLI_AVAILABLE = False
 
-def extract(transfer_list_path, source_path, output_path):
+
+class SourceFile(object):
+    def __init__(self, file_path, use_brotli):
+        self.src = open(file_path, 'rb')
+        self.use_brotli = use_brotli
+        if self.use_brotli:
+            self.decompressed = ''
+            self.decompressor = brotli.Decompressor()
+
+    def _read_brotli(self, size):
+        while len(self.decompressed) < size:
+            compressed_data = self.src.read(size)
+            self.decompressed += self.decompressor.decompress(compressed_data)
+        to_return = self.decompressed[:size]
+        self.decompressed = self.decompressed[size:]
+        return to_return
+
+    def read(self, size):
+        if self.use_brotli:
+            return self._read_brotli(size)
+        else:
+            return self.src.read(size)
+
+    def close(self):
+        self.src.close()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        self.close()
+
+
+def extract(transfer_list_path, source_path, use_brotli, output_path):
     block_size = 0x1000
     with open(transfer_list_path, 'r') as transfer_list, \
-            open(source_path, 'rb') as src, \
+            SourceFile(source_path, use_brotli) as src, \
             open(output_path, 'wb') as dst:
         version = int(transfer_list.readline())
         total_blocks = int(transfer_list.readline())
@@ -66,10 +104,17 @@ if __name__ == "__main__":
     parser.add_argument("-f", "--force", action="store_true",
                         help="Overwrite output file")
 
+    if BROTLI_AVAILABLE:
+        parser.add_argument("-b", "--brotli", action="store_true",
+                            help="The source file is brotli compressed")
+    else:
+        parser.epilog = "Install brotlipy to support brotli compressed files."
+
     args = parser.parse_args()
 
     if os.path.exists(args.output) and not args.force:
         print("Specify a different path or use --force", file=sys.stderr)
         exit(1)
 
-    extract(args.transfer_list, args.source, args.output)
+    use_brotli = BROTLI_AVAILABLE and args.brotli
+    extract(args.transfer_list, args.source, use_brotli, args.output)
