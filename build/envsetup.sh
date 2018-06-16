@@ -871,12 +871,12 @@ EOF
     fi
 
     stop_n_start=false
-    for FILE in $(echo $LOC | tr " " "\n"); do
+    for TARGET in $(echo $LOC | tr " " "\n" | sed "s#.*$OUT##" | sort | uniq); do
         # Make sure file is in $OUT/system or $OUT/data
-        case $FILE in
-            $OUT/system/*|$OUT/data/*)
-                # Get target file name (i.e. /system/bin/adb)
-                TARGET=$(echo $FILE | sed "s#$OUT##")
+        case $TARGET in
+            /system/*|/data/*)
+                # Get out file from target (i.e. /system/bin/adb)
+                FILE=$OUT$TARGET
             ;;
             *) continue ;;
         esac
