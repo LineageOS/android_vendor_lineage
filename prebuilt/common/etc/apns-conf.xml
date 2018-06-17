@@ -401,6 +401,7 @@
   <apn carrier="Iusacell Internet" mcc="222" mnc="019" apn="web.iusacellgsm.mx" user="iusacellgsm" password="iusacellgsm" authtype="0" type="default,supl" />
   <apn carrier="Internet Modem" mcc="222" mnc="019" apn="modem.iusacellgsm.mx" user="iusacellgsm" password="iusacellgsm" type="dun" />
   <apn carrier="Iusacell MMS" mcc="222" mnc="019" apn="mms.iusacellgsm.mx" mmsc="http://mms.iusacell3g.com/" user="mmsiusacellgsm" password="mmsiusacellgsm" type="mms" />
+  <apn carrier="Iliad" apn="iliad" mcc="222" mnc="50" mmsc="http://mms.iliad.it" mvno_type="gid" mvno_match_data="F003" type="default,mms" />
   <apn carrier="Vodafone Tethering" mcc="222" mnc="10" apn="web.omnitel.it" type="dun" />
   <apn carrier="Vodafone IT" mcc="222" mnc="10" apn="mobile.vodafone.it" type="default,supl" />
   <apn carrier="Vodafone IT MMS" mcc="222" mnc="10" apn="mms.vodafone.it" mmsproxy="10.128.224.10" mmsport="80" mmsc="http://mms.vodafone.it/servlets/mms" type="mms" />
