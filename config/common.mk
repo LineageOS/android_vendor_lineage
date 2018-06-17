@@ -144,6 +144,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Exchange2
 
+# UiBench
+PRODUCT_PACKAGES += \
+    UiBench
+
 # Berry styles
 PRODUCT_PACKAGES += \
     LineageDarkTheme \
