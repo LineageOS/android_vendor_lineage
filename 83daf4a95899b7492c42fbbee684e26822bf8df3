@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "b45d167d_f9c88271",
+        "filename": "config/common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2018-06-20T00:10:25Z",
+      "side": 1,
+      "message": "This needs to be guarded with `ifneq ($(TARGET_NO_KERNEL),true)` since it won\u0027t build otherwise",
+      "range": {
+        "startLine": 364,
+        "startChar": 0,
+        "endLine": 364,
+        "endChar": 40
+      },
+      "revId": "83daf4a95899b7492c42fbbee684e26822bf8df3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "398356d0_8f7ca666",
         "filename": "prebuilt/common/etc/init/lineage-wireguard.rc",
         "patchSetId": 4
