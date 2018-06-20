@@ -22,6 +22,30 @@
       "revId": "c907f4b0a65168ef47af152b4e72a608cd7f7719",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "555f3f38_b1c94264",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 335,
+      "author": {
+        "id": 7509
+      },
+      "writtenOn": "2018-06-20T03:25:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "27d0b312_556ef50d",
+      "range": {
+        "startLine": 335,
+        "startChar": 4,
+        "endLine": 335,
+        "endChar": 6
+      },
+      "revId": "c907f4b0a65168ef47af152b4e72a608cd7f7719",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
