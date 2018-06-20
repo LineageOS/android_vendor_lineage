@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2a86249f_18788868",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 7509
+      },
+      "writtenOn": "2018-06-20T03:13:56Z",
+      "side": 1,
+      "message": "Should be:\n\nKERNEL_MODULES_EXTRA_OUT :\u003d $($(TARGET_2ND_ARCH_VAR_PREFIX)TARGET_OUT_SHARED_LIBRARIES)/modules",
+      "range": {
+        "startLine": 206,
+        "startChar": 28,
+        "endLine": 206,
+        "endChar": 48
+      },
+      "revId": "a31b3136620c4868b6026c5acfef642baab76234",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b339b8e_71865b4e",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 7509
+      },
+      "writtenOn": "2018-06-20T03:13:56Z",
+      "side": 1,
+      "message": "Change \u0027mv\u0027 to \u0027cp -a\u0027, so that the target isn\u0027t rebuilt. And then run strip on the target, not the source. (Reverse the order of the lines.",
+      "range": {
+        "startLine": 330,
+        "startChar": 4,
+        "endLine": 330,
+        "endChar": 6
+      },
+      "revId": "a31b3136620c4868b6026c5acfef642baab76234",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e96946ed_b26dba82",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 7509
+      },
+      "writtenOn": "2018-06-20T03:13:56Z",
+      "side": 1,
+      "message": "Add `mkdir -p $(KERNEL_MODULES_EXTRA_OUT); \\` here.",
+      "revId": "a31b3136620c4868b6026c5acfef642baab76234",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "849e777e_46833bb5",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 334,
+      "author": {
+        "id": 7509
+      },
+      "writtenOn": "2018-06-20T03:13:56Z",
+      "side": 1,
+      "message": "Change \u0027mv\u0027 to \u0027cp -a\u0027, so that the target isn\u0027t rebuilt. And then run strip on the target, not the source. (Reverse the order of the lines.",
+      "range": {
+        "startLine": 334,
+        "startChar": 4,
+        "endLine": 334,
+        "endChar": 6
+      },
+      "revId": "a31b3136620c4868b6026c5acfef642baab76234",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
