@@ -22,6 +22,30 @@
       "revId": "3e964fbce5fd3239c7c3044ab3c5dfe5b51f3383",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "74c2e7b8_304445a3",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 8
+      },
+      "lineNbr": 1064,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-06-21T13:13:48Z",
+      "side": 1,
+      "message": "Also looks like my comment from PS7 is still valid",
+      "parentUuid": "b9d762c3_0eac4608",
+      "range": {
+        "startLine": 1063,
+        "startChar": 0,
+        "endLine": 1064,
+        "endChar": 18
+      },
+      "revId": "3e964fbce5fd3239c7c3044ab3c5dfe5b51f3383",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
