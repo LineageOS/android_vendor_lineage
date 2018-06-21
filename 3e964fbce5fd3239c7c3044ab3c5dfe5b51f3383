@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "fc520c83_a6ebc8ed",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-06-21T13:24:40Z",
+      "side": 1,
+      "message": "Maybe if you split this into two separate changes, it would be easier to understand what really fixed \"spec destination not being searched\". Not even to mention that it was easier to review.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 64
+      },
+      "revId": "3e964fbce5fd3239c7c3044ab3c5dfe5b51f3383",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b9d762c3_0eac4608",
         "filename": "build/tools/extract_utils.sh",
         "patchSetId": 8
