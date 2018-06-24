@@ -1008,14 +1008,14 @@ function extract() {
         if [ ! -d "$OUTPUT_DIR/$DIR" ]; then
             mkdir -p "$OUTPUT_DIR/$DIR"
         fi
-        local DEST="$OUTPUT_DIR/${SPEC_DST_FILE}"
+        local VENDOR_REPO_FILE="$OUTPUT_DIR/${SPEC_DST_FILE}"
 
         # Check pinned files
         local HASH="${HASHLIST[$i-1]}"
         local KEEP=""
         if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
-            if [ -f "$DEST" ]; then
-                local PINNED="$DEST"
+            if [ -f "${VENDOR_REPO_FILE}" ]; then
+                local PINNED="${VENDOR_REPO_FILE}"
             else
                 local PINNED="$TMP_DIR/${SPEC_DST_FILE}"
             fi
@@ -1027,8 +1027,8 @@ function extract() {
                 fi
                 if [ "$TMP_HASH" = "$HASH" ]; then
                     KEEP="1"
-                    if [ ! -f "$DEST" ]; then
-                        cp -p "$PINNED" "$DEST"
+                    if [ ! -f "${VENDOR_REPO_FILE}" ]; then
+                        cp -p "$PINNED" "${VENDOR_REPO_FILE}"
                     fi
                 fi
             fi
@@ -1038,18 +1038,18 @@ function extract() {
             printf '    + (keeping pinned file with hash %s)\n' "$HASH"
         elif [ "$SRC" = "adb" ]; then
             # Try Lineage target first
-            adb pull "/$TARGET" "$DEST"
+            adb pull "/$TARGET" "${VENDOR_REPO_FILE}"
             # if file does not exist try OEM target
             if [ "$?" != "0" ]; then
-                adb pull "/${SPEC_SRC_FILE}" "$DEST"
+                adb pull "/${SPEC_SRC_FILE}" "${VENDOR_REPO_FILE}"
             fi
         else
             # Try Lineage target first
             if [ -f "$SRC/$TARGET" ]; then
-                cp "$SRC/$TARGET" "$DEST"
+                cp "$SRC/$TARGET" "${VENDOR_REPO_FILE}"
             # if file does not exist try OEM target
             elif [ -f "$SRC/${SPEC_SRC_FILE}" ]; then
-                cp "$SRC/${SPEC_SRC_FILE}" "$DEST"
+                cp "$SRC/${SPEC_SRC_FILE}" "${VENDOR_REPO_FILE}"
             else
                 printf '    !! file not found in source\n'
             fi
@@ -1057,24 +1057,24 @@ function extract() {
 
         if [ "$?" == "0" ]; then
             # Deodex apk|jar if that's the case
-            if [[ "$FULLY_DEODEXED" -ne "1" && "$DEST" =~ .(apk|jar)$ ]]; then
-                oat2dex "$DEST" "${SPEC_SRC_FILE}" "$SRC"
+            if [[ "$FULLY_DEODEXED" -ne "1" && "${VENDOR_REPO_FILE}" =~ .(apk|jar)$ ]]; then
+                oat2dex "${VENDOR_REPO_FILE}" "${SPEC_SRC_FILE}" "$SRC"
                 if [ -f "$TMPDIR/classes.dex" ]; then
-                    zip -gjq "$DEST" "$TMPDIR/classes.dex"
+                    zip -gjq "${VENDOR_REPO_FILE}" "$TMPDIR/classes.dex"
                     rm "$TMPDIR/classes.dex"
                     printf '    (updated %s from odex files)\n' "/${SPEC_SRC_FILE}"
                 fi
-            elif [[ "$DEST" =~ .xml$ ]]; then
-                fix_xml "$DEST"
+            elif [[ "${VENDOR_REPO_FILE}" =~ .xml$ ]]; then
+                fix_xml "${VENDOR_REPO_FILE}"
             fi
         fi
 
-        if [ -f "$DEST" ]; then
+        if [ -f "${VENDOR_REPO_FILE}" ]; then
             local TYPE="${DIR##*/}"
             if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
-                chmod 755 "$DEST"
+                chmod 755 "${VENDOR_REPO_FILE}"
             else
-                chmod 644 "$DEST"
+                chmod 644 "${VENDOR_REPO_FILE}"
             fi
         fi
 
