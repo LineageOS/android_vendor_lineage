@@ -983,13 +983,13 @@ function extract() {
     for (( i=1; i<COUNT+1; i++ )); do
 
         local SPEC_DST_FILE=$(target_file "${FILELIST[$i-1]}")
-        local ARGS=$(target_args "${FILELIST[$i-1]}")
+        local SPEC_ARGS=$(target_args "${FILELIST[$i-1]}")
         local SPEC_SRC_FILE=$(src_file "${FILELIST[$i-1]}")
         local OUTPUT_DIR="$OUTPUT_ROOT"
         local TMP_DIR="$OUTPUT_TMP"
         local TARGET=
 
-        if [ "$ARGS" = "rootfs" ]; then
+        if [ "${SPEC_ARGS}" = "rootfs" ]; then
             TARGET="${SPEC_DST_FILE}"
             OUTPUT_DIR="$OUTPUT_DIR/rootfs"
             TMP_DIR="$TMP_DIR/rootfs"
