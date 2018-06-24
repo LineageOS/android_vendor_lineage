@@ -985,30 +985,32 @@ function extract() {
         local SPEC_SRC_FILE=$(src_file "${FILELIST[$i-1]}")
         local SPEC_DST_FILE=$(target_file "${FILELIST[$i-1]}")
         local SPEC_ARGS=$(target_args "${FILELIST[$i-1]}")
-        local OUTPUT_DIR="$OUTPUT_ROOT"
-        local TMP_DIR="$OUTPUT_TMP"
-        local TARGET=
+        local OUTPUT_DIR=
+        local TMP_DIR=
+        local SRC_FILE=
+        local DST_FILE=
 
         if [ "${SPEC_ARGS}" = "rootfs" ]; then
-            TARGET="${SPEC_DST_FILE}"
-            OUTPUT_DIR="$OUTPUT_DIR/rootfs"
-            TMP_DIR="$TMP_DIR/rootfs"
+            OUTPUT_DIR="${OUTPUT_ROOT}/rootfs"
+            TMP_DIR="${OUTPUT_TMP}/rootfs"
+            SRC_FILE="/${SPEC_SRC_FILE}"
+            DST_FILE="/${SPEC_DST_FILE}"
         else
-            TARGET="system/${SPEC_DST_FILE}"
-            SPEC_SRC_FILE="system/${SPEC_SRC_FILE}"
+            OUTPUT_DIR="${OUTPUT_ROOT}"
+            TMP_DIR="${OUTPUT_TMP}"
+            SRC_FILE="/system/${SPEC_SRC_FILE}"
+            DST_FILE="/system/${SPEC_DST_FILE}"
         fi
 
         if [ "$SRC" = "adb" ]; then
-            printf '  - %s .. ' "/$TARGET"
+            printf '  - %s .. ' "${DST_FILE}"
         else
-            printf '  - %s \n' "/$TARGET"
+            printf '  - %s \n' "${DST_FILE}"
         fi
 
-        local DIR=$(dirname "${SPEC_DST_FILE}")
-        if [ ! -d "$OUTPUT_DIR/$DIR" ]; then
-            mkdir -p "$OUTPUT_DIR/$DIR"
-        fi
-        local VENDOR_REPO_FILE="$OUTPUT_DIR/${SPEC_DST_FILE}"
+        # Strip the file path in the vendor repo of "system", if present
+        local VENDOR_REPO_FILE="$OUTPUT_DIR/${DST_FILE#/system}"
+        mkdir -p $(dirname "${VENDOR_REPO_FILE}")
 
         # Check pinned files
         local HASH="${HASHLIST[$i-1]}"
@@ -1017,7 +1019,7 @@ function extract() {
             if [ -f "${VENDOR_REPO_FILE}" ]; then
                 local PINNED="${VENDOR_REPO_FILE}"
             else
-                local PINNED="$TMP_DIR/${SPEC_DST_FILE}"
+                local PINNED="${TMP_DIR}${DST_FILE#/system}"
             fi
             if [ -f "$PINNED" ]; then
                 if [ "$(uname)" == "Darwin" ]; then
@@ -1036,21 +1038,20 @@ function extract() {
 
         if [ "$KEEP" = "1" ]; then
             printf '    + (keeping pinned file with hash %s)\n' "$HASH"
-        elif [ "$SRC" = "adb" ]; then
-            # Try Lineage target first
-            adb pull "/$TARGET" "${VENDOR_REPO_FILE}"
-            # if file does not exist try OEM target
-            if [ "$?" != "0" ]; then
-                adb pull "/${SPEC_SRC_FILE}" "${VENDOR_REPO_FILE}"
-            fi
         else
-            # Try Lineage target first
-            if [ -f "$SRC/$TARGET" ]; then
-                cp "$SRC/$TARGET" "${VENDOR_REPO_FILE}"
-            # if file does not exist try OEM target
-            elif [ -f "$SRC/${SPEC_SRC_FILE}" ]; then
-                cp "$SRC/${SPEC_SRC_FILE}" "${VENDOR_REPO_FILE}"
-            else
+            FOUND=false
+            # Try Lineage target first.
+            # Also try to search for files stripped of
+            # the "/system" prefix, if we're actually extracting
+            # from a system image.
+            for CANDIDATE in "${DST_FILE}" "${DST_FILE#/system}" "${SRC_FILE}" "${SRC_FILE#/system}"; do
+                get_file ${CANDIDATE} ${VENDOR_REPO_FILE} ${SRC} && {
+                    FOUND=true
+                    break
+                }
+            done
+
+            if [ "${FOUND}" = false ]; then
                 printf '    !! file not found in source\n'
             fi
         fi
@@ -1070,6 +1071,7 @@ function extract() {
         fi
 
         if [ -f "${VENDOR_REPO_FILE}" ]; then
+            local DIR=$(dirname "${VENDOR_REPO_FILE}")
             local TYPE="${DIR##*/}"
             if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
                 chmod 755 "${VENDOR_REPO_FILE}"
