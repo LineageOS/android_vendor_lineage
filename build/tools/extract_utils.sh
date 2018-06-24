@@ -754,7 +754,8 @@ function get_file() {
         return 1
     else
         # try to copy
-        cp -r "$SRC/$1" "$2" 2>/dev/null && return 0
+        cp -r "$SRC/$1"           "$2" 2>/dev/null && return 0
+        cp -r "$SRC/${1#/system}" "$2" 2>/dev/null && return 0
 
         return 1
     fi
@@ -791,12 +792,7 @@ function oat2dex() {
         echo "Checking if system is odexed and locating boot.oats..."
         for ARCH in "arm64" "arm" "x86_64" "x86"; do
             mkdir -p "$TMPDIR/system/framework/$ARCH"
-            if [ -d "$SRC/framework" ] && [ "$SRC" != "adb" ]; then
-                ARCHDIR="framework/$ARCH/"
-            else
-                ARCHDIR="system/framework/$ARCH/"
-            fi
-            if get_file "$ARCHDIR" "$TMPDIR/system/framework/" "$SRC"; then
+            if get_file "/system/framework/$ARCH" "$TMPDIR/system/framework/" "$SRC"; then
                 ARCHES+="$ARCH "
             else
                 rmdir "$TMPDIR/system/framework/$ARCH"
@@ -1044,7 +1040,7 @@ function extract() {
             # Also try to search for files stripped of
             # the "/system" prefix, if we're actually extracting
             # from a system image.
-            for CANDIDATE in "${DST_FILE}" "${DST_FILE#/system}" "${SRC_FILE}" "${SRC_FILE#/system}"; do
+            for CANDIDATE in "${DST_FILE}" "${SRC_FILE}"; do
                 get_file ${CANDIDATE} ${VENDOR_REPO_FILE} ${SRC} && {
                     FOUND=true
                     break
@@ -1059,11 +1055,11 @@ function extract() {
         if [ "$?" == "0" ]; then
             # Deodex apk|jar if that's the case
             if [[ "$FULLY_DEODEXED" -ne "1" && "${VENDOR_REPO_FILE}" =~ .(apk|jar)$ ]]; then
-                oat2dex "${VENDOR_REPO_FILE}" "${SPEC_SRC_FILE}" "$SRC"
+                oat2dex "${VENDOR_REPO_FILE}" "${SRC_FILE}" "$SRC"
                 if [ -f "$TMPDIR/classes.dex" ]; then
                     zip -gjq "${VENDOR_REPO_FILE}" "$TMPDIR/classes.dex"
                     rm "$TMPDIR/classes.dex"
-                    printf '    (updated %s from odex files)\n' "/${SPEC_SRC_FILE}"
+                    printf '    (updated %s from odex files)\n' "${SRC_FILE}"
                 fi
             elif [[ "${VENDOR_REPO_FILE}" =~ .xml$ ]]; then
                 fix_xml "${VENDOR_REPO_FILE}"
