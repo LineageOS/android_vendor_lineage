@@ -100,6 +100,27 @@ function setup_vendor() {
     fi
 }
 
+# Helper functions for parsing a spec.
+# notes: an optional "|SHA1" that may appear in the format is stripped
+#        early from the spec in the parse_file_list function, and
+#        should not be present inside the input parameter passed
+#        to these functions.
+
+#
+# input: spec in the form of "src[:dst][;args]"
+# output: "src"
+#
+function src_file() {
+    local SPEC="$1"
+    local SPLIT=(${SPEC//:/ })
+    local ARGS="$(target_args ${SPEC})"
+    # Regardless of there being a ":" delimiter or not in the spec,
+    # the source file is always either the first, or the only entry.
+    local SRC="${SPLIT[0]}"
+    # Remove target_args suffix, if present
+    echo "${SRC%;${ARGS}}"
+}
+
 #
 # input: spec in the form of "src[:dst][;args]"
 # output: "dst" if present, "src" otherwise.
@@ -963,8 +984,7 @@ function extract() {
 
         local FROM=$(target_file "${FILELIST[$i-1]}")
         local ARGS=$(target_args "${FILELIST[$i-1]}")
-        local SPLIT=(${FILELIST[$i-1]//:/ })
-        local FILE=$(echo "${SPLIT[0]#-}" | sed 's/\;.*//')
+        local FILE=$(src_file "${FILELIST[$i-1]}")
         local OUTPUT_DIR="$OUTPUT_ROOT"
         local TMP_DIR="$OUTPUT_TMP"
         local TARGET=
