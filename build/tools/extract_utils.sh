@@ -982,9 +982,9 @@ function extract() {
 
     for (( i=1; i<COUNT+1; i++ )); do
 
+        local SPEC_SRC_FILE=$(src_file "${FILELIST[$i-1]}")
         local SPEC_DST_FILE=$(target_file "${FILELIST[$i-1]}")
         local ARGS=$(target_args "${FILELIST[$i-1]}")
-        local FILE=$(src_file "${FILELIST[$i-1]}")
         local OUTPUT_DIR="$OUTPUT_ROOT"
         local TMP_DIR="$OUTPUT_TMP"
         local TARGET=
@@ -995,7 +995,7 @@ function extract() {
             TMP_DIR="$TMP_DIR/rootfs"
         else
             TARGET="system/${SPEC_DST_FILE}"
-            FILE="system/$FILE"
+            SPEC_SRC_FILE="system/${SPEC_SRC_FILE}"
         fi
 
         if [ "$SRC" = "adb" ]; then
@@ -1041,15 +1041,15 @@ function extract() {
             adb pull "/$TARGET" "$DEST"
             # if file does not exist try OEM target
             if [ "$?" != "0" ]; then
-                adb pull "/$FILE" "$DEST"
+                adb pull "/${SPEC_SRC_FILE}" "$DEST"
             fi
         else
             # Try Lineage target first
             if [ -f "$SRC/$TARGET" ]; then
                 cp "$SRC/$TARGET" "$DEST"
             # if file does not exist try OEM target
-            elif [ -f "$SRC/$FILE" ]; then
-                cp "$SRC/$FILE" "$DEST"
+            elif [ -f "$SRC/${SPEC_SRC_FILE}" ]; then
+                cp "$SRC/${SPEC_SRC_FILE}" "$DEST"
             else
                 printf '    !! file not found in source\n'
             fi
@@ -1058,11 +1058,11 @@ function extract() {
         if [ "$?" == "0" ]; then
             # Deodex apk|jar if that's the case
             if [[ "$FULLY_DEODEXED" -ne "1" && "$DEST" =~ .(apk|jar)$ ]]; then
-                oat2dex "$DEST" "$FILE" "$SRC"
+                oat2dex "$DEST" "${SPEC_SRC_FILE}" "$SRC"
                 if [ -f "$TMPDIR/classes.dex" ]; then
                     zip -gjq "$DEST" "$TMPDIR/classes.dex"
                     rm "$TMPDIR/classes.dex"
-                    printf '    (updated %s from odex files)\n' "/$FILE"
+                    printf '    (updated %s from odex files)\n' "/${SPEC_SRC_FILE}"
                 fi
             elif [[ "$DEST" =~ .xml$ ]]; then
                 fix_xml "$DEST"
