@@ -101,41 +101,47 @@ function setup_vendor() {
 }
 
 #
-# target_file:
-#
-# $1: colon delimited list
-#
-# Returns destination filename without args
+# input: spec in the form of "src[:dst][;args]"
+# output: "dst" if present, "src" otherwise.
 #
 function target_file() {
-    local LINE="$1"
-    local SPLIT=(${LINE//:/ })
-    local COUNT=${#SPLIT[@]}
-    if [ "$COUNT" -gt "1" ]; then
-        if [[ "${SPLIT[1]}" =~ .*/.* ]]; then
-            printf '%s\n' "${SPLIT[1]}"
-            return 0
-        fi
-    fi
-    printf '%s\n' "${SPLIT[0]}"
+    local SPEC="$1"
+    local SPLIT=(${SPEC//:/ })
+    local ARGS="$(target_args ${SPEC})"
+    local DST=
+    case ${#SPLIT[@]} in
+    1)
+        # The spec doesn't have a : delimiter
+        DST="${SPLIT[0]}"
+        ;;
+    *)
+        # The spec actually has a src:dst format
+        DST="${SPLIT[1]}"
+        ;;
+    esac
+    # Remove target_args suffix, if present
+    echo "${DST%;${ARGS}}"
 }
 
 #
-# target_args:
-#
-# $1: semicolon delimited list
-#
-# Returns optional arguments (last value) for given target
+# input: spec in the form of "src[:dst][;args]"
+# output: "args" if present, "" otherwise.
 #
 function target_args() {
-    local LINE="$1"
-    local SPLIT=(${LINE//;/ })
-    local COUNT=${#SPLIT[@]}
-    if [ "$COUNT" -gt "1" ]; then
-        if [[ ! "${SPLIT[$COUNT-1]}" =~ .*/.* ]]; then
-            printf '%s\n' "${SPLIT[$COUNT-1]}"
-        fi
-    fi
+    local SPEC="$1"
+    local SPLIT=(${SPEC//;/ })
+    local ARGS=
+    case ${#SPLIT[@]} in
+    1)
+        # No ";" delimiter in the spec.
+        ;;
+    *)
+        # The "args" are whatever comes after the ";" character.
+        # Basically the spec stripped of whatever is to the left of ";".
+        ARGS="${SPEC#${SPLIT[0]};}"
+        ;;
+    esac
+    echo "${ARGS}"
 }
 
 #
@@ -219,7 +225,7 @@ function write_product_copy_files() {
             LINEEND=""
         fi
 
-        TARGET=$(echo $(target_file "$FILE") | sed 's/\;.*//')
+        TARGET=$(target_file "$FILE")
         if [ "$TREBLE_COMPAT" == "true" ] || [ "$TREBLE_COMPAT" == "1" ]; then
             if prefix_match_file "vendor/" $TARGET ; then
                 local OUTTARGET=$(truncate_file $TARGET)
@@ -267,7 +273,7 @@ function write_packages() {
     local SRC=
 
     for P in "${FILELIST[@]}"; do
-        FILE=$(echo $(target_file "$P") | sed 's/\;.*//')
+        FILE=$(target_file "$P")
         ARGS=$(target_args "$P")
 
         BASENAME=$(basename "$FILE")
@@ -949,7 +955,7 @@ function extract() {
 
     for (( i=1; i<COUNT+1; i++ )); do
 
-        local FROM=$(echo $(target_file "${FILELIST[$i-1]}") | sed 's/\;.*//')
+        local FROM=$(target_file "${FILELIST[$i-1]}")
         local ARGS=$(target_args "${FILELIST[$i-1]}")
         local SPLIT=(${FILELIST[$i-1]//:/ })
         local FILE=$(echo "${SPLIT[0]#-}" | sed 's/\;.*//')
