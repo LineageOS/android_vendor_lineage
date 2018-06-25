@@ -156,7 +156,16 @@
         <item>116111</item>
         <item>116123</item>
         <item>08001111</item>
+        <item>0800555111</item>
+        <item>0800789321</item>
+        <item>01708765200</item>
+        <item>02070080151</item>
+        <item>02070081500</item>
+        <item>02380338080</item>
+        <item>03003300630</item>
         <item>08082000247</item>
+        <item>08088005000</item>
+        <item>08088029999</item>
     </sensitivePN>
     <!--Denmark-->
     <sensitivePN network="238">
