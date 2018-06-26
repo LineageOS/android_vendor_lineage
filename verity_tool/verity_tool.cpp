@@ -108,6 +108,69 @@ static std::string get_ab_suffix() {
     return ab_suffix;
 }
 
+verity_state_t get_verity_state() {
+    verity_state_t rc = VERITY_STATE_NO_DEVICE;
+    std::string ab_suffix = get_ab_suffix();
+
+    // Figure out if we're using VB1.0 or VB2.0 (aka AVB) - by
+    // contract, androidboot.vbmeta.digest is set by the bootloader
+    // when using AVB).
+    bool using_avb = !android::base::GetProperty("ro.boot.vbmeta.digest", "").empty();
+
+    if (using_avb) {
+        // Yep, the system is using AVB.
+        AvbOps* ops = avb_ops_user_new();
+        if (ops == nullptr) {
+            LOG(ERROR) << "Error getting AVB ops";
+            avb_ops_user_free(ops);
+            return VERITY_STATE_UNKNOWN;
+        }
+        bool verity_enabled;
+        if (!avb_user_verity_get(ops, ab_suffix.c_str(), &verity_enabled)) {
+            LOG(ERROR) << "Error getting verity state";
+            avb_ops_user_free(ops);
+            return VERITY_STATE_UNKNOWN;
+        }
+        rc = verity_enabled ? VERITY_STATE_ENABLED : VERITY_STATE_DISABLED;
+        avb_ops_user_free(ops);
+    } else {
+        // Not using AVB - assume VB1.0.
+
+        // read all fstab entries at once from all sources
+        struct fstab* fstab = fs_mgr_read_fstab_default();
+        if (!fstab) {
+            LOG(ERROR) << "Failed to read fstab";
+            fs_mgr_free_fstab(fstab);
+            return VERITY_STATE_UNKNOWN;
+        }
+
+        // Loop through entries looking for ones that vold manages.
+        for (int i = 0; i < fstab->num_entries; i++) {
+            if (fs_mgr_is_verified(&fstab->recs[i])) {
+                std::string block_device = fstab->recs[i].blk_device;
+                fec::io fh(block_device, O_RDONLY);
+                if (!fh) {
+                    PLOG(ERROR) << "Could not open block device " << block_device;
+                    rc = VERITY_STATE_UNKNOWN;
+                    break;
+                }
+
+                fec_verity_metadata metadata;
+                if (!fh.get_verity_metadata(metadata)) {
+                    LOG(ERROR) << "Couldn't find verity metadata!";
+                    rc = VERITY_STATE_UNKNOWN;
+                    break;
+                }
+
+                rc = metadata.disabled ? VERITY_STATE_DISABLED : VERITY_STATE_ENABLED;
+            }
+        }
+        fs_mgr_free_fstab(fstab);
+    }
+
+    return rc;
+}
+
 /* Use AVB to turn verity on/off */
 static bool set_avb_verity_enabled_state(AvbOps* ops, bool enable_verity) {
     std::string ab_suffix = get_ab_suffix();
