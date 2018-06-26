@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df43de89_9395a246",
+        "filename": "verity_tool/verity_tool.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 5503
+      },
+      "writtenOn": "2018-06-26T20:40:30Z",
+      "side": 1,
+      "message": "This seems odd, why make a device r/w when you aren\u0027t writing anything.  Is it required by fec::io or something?",
+      "revId": "f71fbebba39ee9b045f1644f4ac6aada287dc1cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
