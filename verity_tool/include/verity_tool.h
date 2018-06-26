@@ -18,6 +18,14 @@
 
 #include <string>
 
+typedef enum {
+    VERITY_STATE_UNKNOWN,
+    VERITY_STATE_NO_DEVICE,
+    VERITY_STATE_DISABLED,
+    VERITY_STATE_ENABLED,
+    VERITY_STATE_MAX = VERITY_STATE_ENABLED
+} verity_state_t;
+
 /*
  * Return codes:
  *
@@ -26,6 +34,13 @@
  */
 bool set_block_device_verity_enabled(const std::string& block_device,
                                      bool enable);
+
+/*
+ * Return codes:
+ *
+ *    verity state (unknown, disabled, enabled)
+ */
+verity_state_t get_verity_state();
 
 /*
  * Return codes:
