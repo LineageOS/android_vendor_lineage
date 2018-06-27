@@ -303,14 +303,14 @@ TARGET_KERNEL_BINARIES: $(KERNEL_CONFIG)
 			echo "Building DTBs"; \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) dtbs; \
 		fi
-	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG); then \
+	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG) && grep -q '=m$$' $(KERNEL_CONFIG); then \
 			echo "Building Kernel Modules"; \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) modules; \
 		fi
 
 .PHONY: INSTALLED_KERNEL_MODULES
 INSTALLED_KERNEL_MODULES: depmod-host
-	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG); then \
+	$(hide) if grep -q '^CONFIG_MODULES=y' $(KERNEL_CONFIG) && grep -q '=m$$' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
 			$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) INSTALL_MOD_PATH=../../$(KERNEL_MODULES_INSTALL) modules_install && \
 			mofile=$$(find $(KERNEL_MODULES_OUT) -type f -name modules.order) && \
