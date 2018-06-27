@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2017 The LineageOS Project
+// Copyright (C) 2017-2018 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ cc_library_headers {
 cc_defaults {
     name: "libbfqio_defaults",
     srcs: [
-        "bfqio.c",
+        "bfqio.cpp",
     ],
 
     shared_libs: [
