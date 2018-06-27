@@ -16,6 +16,24 @@
       "revId": "451a32e427155e8c5ce3fe6a0b760e2eeb6fd96e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "04b5022b_07c6429c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-06-27T16:49:10Z",
+      "side": 1,
+      "message": "It got lost in my keyboard",
+      "parentUuid": "4fa3ade6_f47c3324",
+      "revId": "451a32e427155e8c5ce3fe6a0b760e2eeb6fd96e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
