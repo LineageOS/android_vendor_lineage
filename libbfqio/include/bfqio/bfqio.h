@@ -16,12 +16,4 @@
 
 #pragma once
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 int android_set_rt_ioprio(int pid, int rt);
-
-#ifdef __cplusplus
-}
-#endif
