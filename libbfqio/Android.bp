@@ -23,7 +23,7 @@ cc_library_headers {
 cc_defaults {
     name: "libbfqio_defaults",
     srcs: [
-        "bfqio.c",
+        "bfqio.cpp",
     ],
 
     shared_libs: [
