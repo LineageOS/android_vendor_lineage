@@ -1096,3 +1096,16 @@ function extract_firmware() {
         chmod 644 "$OUTPUT_DIR/$FILE"
     done
 }
+
+#
+# patch_blob:
+#
+# $1: arguments to pass to patchelf binary
+# $2: relative blob path (ex. vendor/lib/hw/camera.msm8996.so)
+#
+function patch_blob() {
+    if [ -z "$PATCHELF" ]; then
+        export PATCHELF="$LINEAGE_ROOT"/vendor/lineage/build/tools/"$(uname)"/patchelf
+    fi
+    $PATCHELF "$1" "$LINEAGE_ROOT"/"$OUTDIR"/proprietary/"$2"
+}
