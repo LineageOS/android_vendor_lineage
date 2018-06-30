@@ -111,8 +111,8 @@ include vendor/lineage/config/twrp.mk
 endif
 
 # Bootanimation
-PRODUCT_PACKAGES += \
-    bootanimation.zip
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Required Lineage packages
 PRODUCT_PACKAGES += \
