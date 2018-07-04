@@ -7,7 +7,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
 else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
+    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE) \
+    ro.com.google.clientidbase.ms=$(PRODUCT_GMS_CLIENTID_BASE) \
+    ro.com.google.clientidbase.yt=$(PRODUCT_GMS_CLIENTID_BASE) \
+    ro.com.google.clientidbase.am=$(PRODUCT_GMS_CLIENTID_BASE) \
+    ro.com.google.clientidbase.gmm=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
