@@ -154,6 +154,9 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
         $(warning * source repository to $(KERNEL_SRC))
         $(warning * for more information                                        *)
         $(warning ***************************************************************)
+        ifeq ($(LINEAGE_BUILDTYPE), NIGHTLY)
+            $(error "PREBUILT KERNELS NOT ALLOWED FOR NIGHTLY BUILDS")
+        endif
         FULL_KERNEL_BUILD := false
         KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
     else
