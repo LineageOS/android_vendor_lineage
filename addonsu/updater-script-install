@@ -6,11 +6,19 @@ set_metadata("/tmp/mount-system.sh", "uid", 0, "gid", 0, "mode", 0755);
 set_metadata("/tmp/unmount-system.sh", "uid", 0, "gid", 0, "mode", 0755);
 run_program("/tmp/mount-system.sh") == 0 || abort("Could not mount /system");
 
-package_extract_dir("system", "/system");
-set_metadata("/system/addon.d/51-addonsu.sh", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
-set_metadata("/system/etc/init/superuser.rc", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
-set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "selabel", "u:object_r:su_exec:s0");
-symlink("/system/xbin/su", "/system/bin/su");
+if getprop("ro.build.system_root_image") != "true" then
+  package_extract_dir("system", "/system");
+  set_metadata("/system/addon.d/51-addonsu.sh", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
+  set_metadata("/system/etc/init/superuser.rc", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
+  set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "selabel", "u:object_r:su_exec:s0");
+  symlink("/system/xbin/su", "/system/bin/su");
+else
+  package_extract_dir("system", "/system/system");
+  set_metadata("/system/system/addon.d/51-addonsu.sh", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
+  set_metadata("/system/system/etc/init/superuser.rc", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
+  set_metadata("/system/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "selabel", "u:object_r:su_exec:s0");
+  symlink("/system/xbin/su", "/system/system/bin/su");
+endif;
 
 run_program("/tmp/unmount-system.sh") == 0 || ui_print("Could not unmount /system");
 ui_print("Done");
