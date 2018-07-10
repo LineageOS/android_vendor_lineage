@@ -66,7 +66,9 @@
 #   USE_CCACHE                         = Enable ccache (global Android flag)
 #
 #   NEED_KERNEL_MODULE_ROOT            = Optional, if true, install kernel
-#                                          modules in root instead of system
+#                                          modules in root instead of vendor
+#   NEED_KERNEL_MODULE_SYSTEM          = Optional, if true, install kernel
+#                                          modules in system instead of vendor
 
 ifneq ($(TARGET_NO_KERNEL),true)
 
@@ -197,6 +199,11 @@ KERNEL_MODULES_INSTALL := root
 KERNEL_MODULES_OUT := $(TARGET_ROOT_OUT)/lib/modules
 KERNEL_DEPMOD_STAGING_DIR := $(call intermediates-dir-for,PACKAGING,depmod_recovery)
 KERNEL_MODULE_MOUNTPOINT :=
+else ifeq ($(NEED_KERNEL_MODULE_SYSTEM),true)
+KERNEL_MODULES_INSTALL := $(TARGET_COPY_OUT_SYSTEM)
+KERNEL_MODULES_OUT := $(TARGET_OUT)/lib/modules
+KERNEL_DEPMOD_STAGING_DIR := $(call intermediates-dir-for,PACKAGING,depmod_system)
+KERNEL_MODULE_MOUNTPOINT := system
 else
 KERNEL_MODULES_INSTALL := $(TARGET_COPY_OUT_VENDOR)
 KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR)/lib/modules
