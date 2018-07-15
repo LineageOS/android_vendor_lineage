@@ -930,18 +930,12 @@ function extract() {
     fi
 
     if [ -f "$SRC" ] && [ "${SRC##*.}" == "zip" ]; then
+        # We might call extract() multiple times (e.g., commonized trees).
+        # If $DUMPDIR exists, then we already extracted the image.
         DUMPDIR="$TMPDIR"/system_dump
-
-        # Check if we're working with the same zip that was passed last time.
-        # If so, let's just use what's already extracted.
-        MD5=`md5sum "$SRC"| awk '{print $1}'`
-        OLDMD5=`cat "$DUMPDIR"/zipmd5.txt`
-
-        if [ "$MD5" != "$OLDMD5" ]; then
-            rm -rf "$DUMPDIR"
+        if [ ! -d "$DUMPDIR" ]; then
             mkdir "$DUMPDIR"
             unzip "$SRC" -d "$DUMPDIR"
-            echo "$MD5" > "$DUMPDIR"/zipmd5.txt
 
             # Stop if an A/B OTA zip is detected. We cannot extract these.
             if [ -a "$DUMPDIR"/payload.bin ]; then
