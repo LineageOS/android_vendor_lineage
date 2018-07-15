@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f286ae81_90ed39d3",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1364,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2018-07-15T17:01:54Z",
+      "side": 1,
+      "message": "trailing space",
+      "range": {
+        "startLine": 1364,
+        "startChar": 203,
+        "endLine": 1364,
+        "endChar": 204
+      },
+      "revId": "a6f0bd3c97a197fd9d6d8d54eb20bdc46e3e47f3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "95f5c862_f1e32c0c",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1364,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2018-07-15T17:01:54Z",
+      "side": 1,
+      "message": "assuming this is intentional?",
+      "range": {
+        "startLine": 1364,
+        "startChar": 31,
+        "endLine": 1364,
+        "endChar": 32
+      },
+      "revId": "a6f0bd3c97a197fd9d6d8d54eb20bdc46e3e47f3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
