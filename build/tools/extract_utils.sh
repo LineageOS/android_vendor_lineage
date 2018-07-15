@@ -942,15 +942,25 @@ function extract() {
                 echo "A/B style OTA zip detected. This is not supported at this time. Stopping..."
                 exit 1
             # If OTA is block based, extract it.
-            elif [ -a "$DUMPDIR"/system.new.dat ]; then
-                echo "Converting system.new.dat to system.img"
-                python "$LINEAGE_ROOT"/vendor/lineage/build/tools/sdat2img.py "$DUMPDIR"/system.transfer.list "$DUMPDIR"/system.new.dat "$DUMPDIR"/system.img 2>&1
-                rm -rf "$DUMPDIR"/system.new.dat "$DUMPDIR"/system
-                mkdir "$DUMPDIR"/system "$DUMPDIR"/tmp
-                echo "Requesting sudo access to mount the system.img"
-                sudo mount -o loop "$DUMPDIR"/system.img "$DUMPDIR"/tmp
-                cp -r "$DUMPDIR"/tmp/* "$DUMPDIR"/system/
-                sudo umount "$DUMPDIR"/tmp
+            elif [ -a "$DUMPDIR"/system.new.dat -o -a "$DUMPDIR"/system.new.dat.br ]; then
+                if [ -a "$DUMPDIR"/system.new.dat ]; then
+                    local img_name=system.new.dat
+                else
+                    local img_name=system.new.dat.br
+                    local brotli_arg="-b"
+                fi
+                echo "Converting $img_name to system.img"
+                python "$LINEAGE_ROOT"/vendor/lineage/build/tools/sdat2img.py $brotli_arg "$DUMPDIR"/system.transfer.list "$DUMPDIR"/$img_name "$DUMPDIR"/system.img
+                if [ $? -ne 0 ]; then
+                    echo "Could not convert $img_name"
+                    exit 1
+                fi
+                mkdir -p "$DUMPDIR"/tmp "$DUMPDIR"/system
+                echo "Requesting sudo access to mount the system.img and copy its content"
+                sudo sh -c "mount -o loop,ro '$DUMPDIR'/system.img "$DUMPDIR"/tmp
+                            cp -r '$DUMPDIR'/tmp/* '$DUMPDIR'/system/
+                            chown -R $USER '$DUMPDIR'/system/
+                            umount '$DUMPDIR'/tmp"
                 rm -rf "$DUMPDIR"/tmp "$DUMPDIR"/system.img
             fi
         fi
