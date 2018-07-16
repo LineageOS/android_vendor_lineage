@@ -15,6 +15,7 @@
 # limitations under the License.
 #
 
+PREBUILT_STATIC_JARS_LIST=()
 PRODUCT_COPY_FILES_LIST=()
 PRODUCT_COPY_FILES_HASHES=()
 PRODUCT_PACKAGES_LIST=()
@@ -353,7 +354,7 @@ function write_packages() {
         elif [ "$CLASS" = "JAVA_LIBRARIES" ]; then
             printf 'LOCAL_SRC_FILES := %s/framework/%s\n' "$SRC" "$FILE"
             local CERT=platform
-            if [ ! -z "$ARGS" ]; then
+            if [ ! -z "$ARGS" ] && [ "ARGS" != "static" ]; then
                 CERT="$ARGS"
             fi
             printf 'LOCAL_CERTIFICATE := %s\n' "$CERT"
@@ -520,6 +521,35 @@ function write_product_packages() {
 }
 
 #
+# write_static_jars:
+#
+# This function will create BUILD_MULTI_PREBUILT entries in the
+# Android.mk for all jars with the static argument
+#
+function write_static_jars() {
+    local STATIC_JAR_COUNT=${#PREBUILT_STATIC_JARS_LIST[@]}
+
+    if [ "$STATIC_JAR_COUNT" -eq "0" ]; then
+        return 0
+    fi
+
+    printf '%s\n' "include \$(CLEAR_VARS)" >> "$ANDROIDMK"
+    printf '\n%s\n' "LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += \\" >> "$ANDROIDMK"
+    for (( i=1; i<STATIC_JAR_COUNT+1; i++ )); do
+        local LINEEND=" \\"
+        if [ "$i" -eq "$STATIC_JAR_COUNT" ]; then
+            LINEEND=""
+        fi
+        local SPEC_DST_FILE=$(target_file "${PREBUILT_STATIC_JARS_LIST[$i-1]}")
+        local BASENAME=$(basename $SPEC_DST_FILE)
+        local JARNAME=${BASENAME%\.*}
+        local LINE="${JARNAME}-static:proprietary/${SPEC_DST_FILE}"
+        printf '    %s%s\n' "$LINE" "$LINEEND" >> "$ANDROIDMK"
+    done
+    printf '\n%s\n\n' "include \$(BUILD_MULTI_PREBUILT)" >> "$ANDROIDMK"
+}
+
+#
 # write_header:
 #
 # $1: file which will be written to
@@ -666,7 +696,7 @@ function parse_file_list() {
         LIST=$1
     fi
 
-
+    PREBUILT_STATIC_JARS_LIST=()
     PRODUCT_PACKAGES_LIST=()
     PRODUCT_PACKAGES_HASHES=()
     PRODUCT_COPY_FILES_LIST=()
@@ -695,6 +725,10 @@ function parse_file_list() {
             PRODUCT_COPY_FILES_HASHES+=("$HASH")
         fi
 
+        if [[ "$SPEC" =~ ".jar;static" ]]; then
+            PREBUILT_STATIC_JARS_LIST+=("${SPEC#-}")
+        fi
+
     done < <(egrep -v '(^#|^[[:space:]]*$)' "$LIST" | LC_ALL=C sort | uniq)
 }
 
@@ -712,6 +746,7 @@ function write_makefiles() {
     parse_file_list "$1"
     write_product_copy_files "$2"
     write_product_packages
+    write_static_jars
 }
 
 #
