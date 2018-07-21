@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The LineageOS Project
+<!-- Copyright (C) 2017-2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -26,6 +26,7 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.dialer">
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.STATUS_BAR"/>
     </privapp-permissions>
 
