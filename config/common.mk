@@ -70,6 +70,11 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/lineage/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# sysctl.conf support
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/init.d/33sysctl-conf:system/etc/init.d/33sysctl-conf \
+    vendor/lineage/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
+
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
