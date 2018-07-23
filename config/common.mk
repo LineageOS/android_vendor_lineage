@@ -75,12 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init.d/33sysctl-conf:system/etc/init.d/33sysctl-conf \
     vendor/lineage/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
-ifneq ($(TARGET_BUILD_VARIANT),user)
-# userinit support
-PRODUCT_COPY_FILES += \
-    vendor/lineage/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
-endif
-
 # Copy all Lineage-specific init rc files
 $(foreach f,$(wildcard vendor/lineage/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
