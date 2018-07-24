@@ -17,7 +17,7 @@
  */
 -->
 <resources>
-    <bool name="def_wifi_on">true</bool>
+    <bool name="def_wifi_on">false</bool>
 
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
 </resources>

@@ -18,5 +18,5 @@
     <!-- Defaults for Secure -->
 
     <!-- Default for LineageSettings.Secure.STATS_COLLECTION -->
-    <bool name="def_stats_collection">true</bool>
+    <bool name="def_stats_collection">false</bool>
 </resources>
