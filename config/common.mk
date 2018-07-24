@@ -116,7 +116,6 @@ PRODUCT_PACKAGES += \
 
 # Required Lineage packages
 PRODUCT_PACKAGES += \
-    BluetoothExt \
     LineageParts \
     Development \
     Profiles
