@@ -1052,10 +1052,10 @@
   <apn carrier="Cyfrowy Polsat MMS" mcc="260" mnc="12" apn="mms.cyfrowypolsat.pl" proxy="" port="" user="" password="" mmsc="http://mms.cyfrowypolsat.pl:8002" mmsproxy="79.171.2.33" mmsport="8080" type="mms" />
   <apn carrier="Aero2" mcc="260" mnc="17" apn="darmowy" type="default,supl" />
   <apn carrier="Truphone PL" mcc="260" mnc="33" apn="truphone.com" type="default,supl" />
-  <apn carrier="T-Mobile Internet" mcc="262" mnc="01" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="T-Mobile Internet" mcc="262" mnc="01" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="" authtype="1" type="default,supl" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="T-Mobile MMS" mcc="262" mnc="01" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.028.023.131" mmsport="8008" authtype="1" type="mms" />
   <apn carrier="Telekom DE-MMS" mcc="262" mnc="01" apn="internet.t-mobile" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="mms" />
-  <apn carrier="Telekom DE" mcc="262" mnc="01" apn="internet.telekom" user="t-mobile" password="tm" type="default,supl" />
+  <apn carrier="Telekom DE" mcc="262" mnc="01" apn="internet.telekom" user="t-mobile" password="tm" type="default,supl" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="Lebara" mcc="262" mnc="01" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" mvno_type="spn" mvno_match_data="Lebara" type="default,supl,mms" />
   <apn carrier="Lebara Internet" mcc="262" mnc="01" apn="internet.t-d1.de" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Callmobile Internet" mcc="262" mnc="01" apn="internet.t-d1.de" proxy="193.254.160.002" port="9201" user="T-Mobile" password="wap" mmsc="" authtype="1" type="default,supl" />
