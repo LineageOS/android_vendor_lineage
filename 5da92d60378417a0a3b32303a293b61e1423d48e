@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "06b83422_ac14a0cc",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-25T09:25:10Z",
+      "side": 1,
+      "message": "Based on: https://android.googlesource.com/platform/build/+/master/target/product/base_system.mk#284",
+      "range": {
+        "startLine": 10,
+        "startChar": 3,
+        "endLine": 11,
+        "endChar": 48
+      },
+      "revId": "5da92d60378417a0a3b32303a293b61e1423d48e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
