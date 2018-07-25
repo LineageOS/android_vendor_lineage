@@ -171,20 +171,15 @@ PRODUCT_PACKAGES += \
     bash \
     bzip2 \
     curl \
-    fsck.ntfs \
     gdbserver \
     htop \
     libsepol \
     micro_bench \
-    mke2fs \
-    mkfs.ntfs \
-    mount.ntfs \
     oprofiled \
     pigz \
     powertop \
     sqlite3 \
     strace \
-    tune2fs \
     vim \
     wget
 
@@ -200,10 +195,14 @@ PRODUCT_PACKAGES += \
     libhealthd.lineage
 endif
 
-# exFAT tools
+# Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
-    mkfs.exfat
+    fsck.ntfs \
+    mke2fs \
+    mkfs.exfat \
+    mkfs.ntfs \
+    mount.ntfs
 
 # Openssh
 PRODUCT_PACKAGES += \
