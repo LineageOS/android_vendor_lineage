@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b15d368c_ec9be991",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-07-26T02:52:11Z",
+      "side": 1,
+      "message": "No PRODUCT_PACKAGES_DEBUG here?",
+      "range": {
+        "startLine": 239,
+        "startChar": 0,
+        "endLine": 239,
+        "endChar": 16
+      },
+      "revId": "33b05a607b8dbca8ca06d8fece006781aba1400f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
