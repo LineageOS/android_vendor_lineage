@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a9b8815_42fc493a",
+        "filename": "config/common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-31T23:14:35Z",
+      "side": 1,
+      "message": "A bit awkward to include su here.",
+      "range": {
+        "startLine": 238,
+        "startChar": 0,
+        "endLine": 238,
+        "endChar": 22
+      },
+      "revId": "27b06ff67c12e0a59abdcdf2897cc305241473af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
