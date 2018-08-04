@@ -18,6 +18,7 @@
 
     <!-- Broadcast actions that are currently exempted from O+ background
          delivery restrictions. -->
+    <allow-implicit-broadcast action="android.intent.action.CAMERA_BUTTON" />
     <allow-implicit-broadcast action="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
     <allow-implicit-broadcast action="lineageos.intent.action.LID_STATE_CHANGED" />
 
