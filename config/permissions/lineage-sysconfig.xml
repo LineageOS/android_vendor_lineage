@@ -20,5 +20,6 @@
          delivery restrictions. -->
     <allow-implicit-broadcast action="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
     <allow-implicit-broadcast action="lineageos.intent.action.LID_STATE_CHANGED" />
+    <allow-implicit-broadcast action="android.intent.action.CAMERA_BUTTON" />
 
 </config>
