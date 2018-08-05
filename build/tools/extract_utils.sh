@@ -948,16 +948,38 @@ function extract() {
                 echo "A/B style OTA zip detected. This is not supported at this time. Stopping..."
                 exit 1
             # If OTA is block based, extract it.
-            elif [ -a "$DUMPDIR"/system.new.dat ]; then
-                echo "Converting system.new.dat to system.img"
-                python "$LINEAGE_ROOT"/vendor/lineage/build/tools/sdat2img.py "$DUMPDIR"/system.transfer.list "$DUMPDIR"/system.new.dat "$DUMPDIR"/system.img 2>&1
-                rm -rf "$DUMPDIR"/system.new.dat "$DUMPDIR"/system
-                mkdir "$DUMPDIR"/system "$DUMPDIR"/tmp
-                echo "Requesting sudo access to mount the system.img"
-                sudo mount -o loop "$DUMPDIR"/system.img "$DUMPDIR"/tmp
-                cp -r "$DUMPDIR"/tmp/* "$DUMPDIR"/system/
-                sudo umount "$DUMPDIR"/tmp
-                rm -rf "$DUMPDIR"/tmp "$DUMPDIR"/system.img
+            else
+                if [ -a "$DUMPDIR"/system.new.dat.br ]; then
+                    echo "Converting system.new.dat.br to system.new.dat"
+                    bro --decompress --input "$DUMPDIR"/system.new.dat.br --output "$DUMPDIR"/system.new.dat
+                fi
+
+                if [ -a "$DUMPDIR"/system.new.dat ]; then
+                    echo "Converting system.new.dat to system.img"
+                    python "$LINEAGE_ROOT"/vendor/lineage/build/tools/sdat2img.py "$DUMPDIR"/system.transfer.list "$DUMPDIR"/system.new.dat "$DUMPDIR"/system.img 2>&1
+                    rm -rf "$DUMPDIR"/system.new.dat "$DUMPDIR"/system
+                    mkdir "$DUMPDIR"/system "$DUMPDIR"/tmp
+                    echo "Requesting sudo access to mount the system.img"
+                    sudo mount -o loop "$DUMPDIR"/system.img "$DUMPDIR"/tmp
+                    cp -r "$DUMPDIR"/tmp/* "$DUMPDIR"/system/
+                    sudo umount "$DUMPDIR"/tmp
+                    rm -rf "$DUMPDIR"/tmp "$DUMPDIR"/system.img
+               fi
+
+               if [ -a "$DUMPDIR"/vendor.new.dat.br ]; then
+                    echo "Converting vendor.new.dat.br to vendor.new.dat"
+                    bro --decompress --input "$DUMPDIR"/vendor.new.dat.br --output "$DUMPDIR"/vendor.new.dat
+
+                    echo "Converting vendor.new.dat to vendor.img"
+                    python "$LINEAGE_ROOT"/vendor/lineage/build/tools/sdat2img.py "$DUMPDIR"/vendor.transfer.list "$DUMPDIR"/vendor.new.dat "$DUMPDIR"/vendor.img 2>&1
+                    rm -r "$DUMPDIR"/vendor.new.dat "$DUMPDIR"/system/vendor
+                    mkdir -p "$DUMPDIR"/system/vendor "$DUMPDIR"/tmp
+                    echo "Requesting sudo access to mount the vendor.img"
+                    sudo mount -o loop "$DUMPDIR"/vendor.img "$DUMPDIR"/tmp
+                    cp -r "$DUMPDIR"/tmp/* "$DUMPDIR"/system/vendor/
+                    sudo umount "$DUMPDIR"/tmp
+                    rm -r "$DUMPDIR"/tmp "$DUMPDIR"/vendor.img
+                fi
             fi
         fi
 
