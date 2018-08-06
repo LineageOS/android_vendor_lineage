@@ -987,8 +987,14 @@ function extract() {
         local DST_FILE=
 
         if [ "${SPEC_ARGS}" = "rootfs" ]; then
-            OUTPUT_DIR="${OUTPUT_ROOT}/rootfs"
-            TMP_DIR="${OUTPUT_TMP}/rootfs"
+            # Do not create rootfs dir if destination specified
+            if [[ "${FILELIST[$i-1]}" =~ ":" ]]; then
+                OUTPUT_DIR="${OUTPUT_ROOT}"
+                TMP_DIR="${OUTPUT_TMP}"
+            else
+                OUTPUT_DIR="${OUTPUT_ROOT}/rootfs"
+                TMP_DIR="${OUTPUT_TMP}/rootfs"
+            fi
             SRC_FILE="/${SPEC_SRC_FILE}"
             DST_FILE="/${SPEC_DST_FILE}"
         else
