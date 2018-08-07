@@ -16,10 +16,12 @@
 
 #define LOG_TAG "bfqio"
 
+#include <errno.h>
 #include <fcntl.h>
 #include <cutils/iosched_policy.h>
 #include <log/log.h>
 #include <pthread.h>
+#include <string.h>
 #include <sys/stat.h>
 #include <unistd.h>
 
