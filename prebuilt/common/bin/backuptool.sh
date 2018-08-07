@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=15.1
+export V=16.0
 
 export ADDOND_VERSION=1
 
