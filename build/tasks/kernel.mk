@@ -269,6 +269,12 @@ ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
 else
     KERNEL_CROSS_COMPILE := CROSS_COMPILE="$(ccache) $(KERNEL_TOOLCHAIN_PATH)"
 endif
+
+# IDK why new kernels want this...
+ifeq ($(KERNEL_ARCH),arm64)
+   KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(ccache) $(BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-"
+endif
+
 ccache =
 
 ifeq ($(HOST_OS),darwin)
