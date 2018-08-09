@@ -7,3 +7,6 @@ endif
 ifeq ($(TARGET_HW_DISK_ENCRYPTION),true)
     TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
 endif
+
+# soong
+include vendor/lineage/build/soong/soong_config.mk
