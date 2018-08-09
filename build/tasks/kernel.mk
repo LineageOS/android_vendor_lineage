@@ -76,7 +76,10 @@ TARGET_AUTO_KDIR := $(shell echo $(TARGET_DEVICE_DIR) | sed -e 's/^device/kernel
 
 ## Externally influenced variables
 # kernel location - optional, defaults to kernel/<vendor>/<device>
+TARGET_KERNEL_SOURCE ?=
+ifneq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_KERNEL_SOURCE ?= $(TARGET_AUTO_KDIR)
+endif
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
 # kernel configuration - mandatory
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
