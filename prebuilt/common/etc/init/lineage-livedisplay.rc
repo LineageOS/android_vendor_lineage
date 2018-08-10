@@ -12,3 +12,5 @@ on boot
     chmod 0660 /sys/devices/virtual/graphics/fb0/sre
     chown system system /sys/devices/virtual/graphics/fb0/color_enhance
     chmod 0660 /sys/devices/virtual/graphics/fb0/color_enhance
+    chown system system /sys/devices/virtual/graphics/fb0/reading_mode
+    chmod 0660 /sys/devices/virtual/graphics/fb0/reading_mode
