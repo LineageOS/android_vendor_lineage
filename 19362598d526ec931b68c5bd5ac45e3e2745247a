@@ -22,6 +22,24 @@
       "revId": "19362598d526ec931b68c5bd5ac45e3e2745247a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "deca29dd_41dd8938",
+        "filename": "config/common.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-08-10T16:59:19Z",
+      "side": 1,
+      "message": "that\u0027s probably fine, even though su wouldn\u0027t work on user builds anyway",
+      "parentUuid": "30ec6488_10b4c991",
+      "revId": "19362598d526ec931b68c5bd5ac45e3e2745247a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
