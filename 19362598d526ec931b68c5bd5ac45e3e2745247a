@@ -40,6 +40,24 @@
       "revId": "19362598d526ec931b68c5bd5ac45e3e2745247a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "797a74ac_25bfbc20",
+        "filename": "config/common.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-10T23:35:04Z",
+      "side": 1,
+      "message": "I guess we can leave this then.",
+      "parentUuid": "deca29dd_41dd8938",
+      "revId": "19362598d526ec931b68c5bd5ac45e3e2745247a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
