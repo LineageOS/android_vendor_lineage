@@ -4,6 +4,7 @@ lineage_soong:
 	$(hide) (\
 	echo '{'; \
 	echo '"Lineage": {'; \
+	echo '    "Hal1_needs_dyn_native_handle": $(if $(filter true,$(TARGET_HAL1_NEEDS_DYN_NATIVE_HANDLE)),true,false),'; \
 	echo '    "Has_legacy_camera_hal1": $(if $(filter true,$(TARGET_HAS_LEGACY_CAMERA_HAL1)),true,false),'; \
 	echo '    "Needs_text_relocations": $(if $(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)),true,false),'; \
 	echo '    "Specific_camera_parameter_library": "$(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)",'; \
