@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2014 The CyanogenMod Project
+     Copyright (C) 2017-2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -26,6 +27,8 @@
     <bool name="config_show4GForLTE">false</bool>
 
     <bool name="quick_settings_show_full_alarm">true</bool>
+
+    <dimen name="rounded_corner_content_padding">8dp</dimen>
 
     <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
          does not work well, particularly with noisy touchscreens. Note that disabling it may
