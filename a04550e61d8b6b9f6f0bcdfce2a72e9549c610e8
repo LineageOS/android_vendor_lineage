@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "856b41cc_c003c31c",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-08-13T15:24:25Z",
+      "side": 1,
+      "message": "What about bt-caf ?",
+      "revId": "a04550e61d8b6b9f6f0bcdfce2a72e9549c610e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
