@@ -6,12 +6,127 @@ on init
     chmod 0664 /dev/bfqio/tasks
     chmod 0220 /dev/bfqio/cgroup.event_control
 
-    # Soft realtime class for display service
-    mkdir /dev/bfqio/rt-display 0755 root system
-    write /dev/bfqio/rt-display/bfqio.ioprio_class 1
-    chown system system /dev/bfqio/rt-display/tasks
-    chmod 0664 /dev/bfqio/rt-display/tasks
-    chmod 0220 /dev/bfqio/rt-display/cgroup.event_control
+    # Setup RT class cgroups
+    mkdir /dev/bfqio/rt-0 0755 root system
+    write /dev/bfqio/rt-0/bfqio.ioprio 0
+    write /dev/bfqio/rt-0/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-0/tasks
+    chmod 0664 /dev/bfqio/rt-0/tasks
+    chmod 0220 /dev/bfqio/rt-0/cgroup.event_control
+
+    mkdir /dev/bfqio/rt-1 0755 root system
+    write /dev/bfqio/rt-1/bfqio.ioprio 1
+    write /dev/bfqio/rt-1/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-1/tasks
+    chmod 0664 /dev/bfqio/rt-1/tasks
+    chmod 0220 /dev/bfqio/rt-1/cgroup.event_control
+
+    mkdir /dev/bfqio/rt-2 0755 root system
+    write /dev/bfqio/rt-2/bfqio.ioprio 2
+    write /dev/bfqio/rt-2/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-2/tasks
+    chmod 0664 /dev/bfqio/rt-2/tasks
+    chmod 0220 /dev/bfqio/rt-2/cgroup.event_control
+
+    mkdir /dev/bfqio/rt-3 0755 root system
+    write /dev/bfqio/rt-3/bfqio.ioprio 3
+    write /dev/bfqio/rt-3/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-3/tasks
+    chmod 0664 /dev/bfqio/rt-3/tasks
+    chmod 0220 /dev/bfqio/rt-3/cgroup.event_control
+
+    mkdir /dev/bfqio/rt-4 0755 root system
+    write /dev/bfqio/rt-4/bfqio.ioprio 4
+    write /dev/bfqio/rt-4/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-4/tasks
+    chmod 0664 /dev/bfqio/rt-4/tasks
+    chmod 0220 /dev/bfqio/rt-4/cgroup.event_control
+
+    mkdir /dev/bfqio/rt-5 0755 root system
+    write /dev/bfqio/rt-5/bfqio.ioprio 5
+    write /dev/bfqio/rt-5/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-5/tasks
+    chmod 0664 /dev/bfqio/rt-5/tasks
+    chmod 0220 /dev/bfqio/rt-5/cgroup.event_control
+
+    mkdir /dev/bfqio/rt-6 0755 root system
+    write /dev/bfqio/rt-6/bfqio.ioprio 6
+    write /dev/bfqio/rt-6/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-6/tasks
+    chmod 0664 /dev/bfqio/rt-6/tasks
+    chmod 0220 /dev/bfqio/rt-6/cgroup.event_control
+
+    mkdir /dev/bfqio/rt-7 0755 root system
+    write /dev/bfqio/rt-7/bfqio.ioprio 7
+    write /dev/bfqio/rt-7/bfqio.ioprio_class 1
+    chown system system /dev/bfqio/rt-7/tasks
+    chmod 0664 /dev/bfqio/rt-7/tasks
+    chmod 0220 /dev/bfqio/rt-7/cgroup.event_control
+
+    # Setup BE class cgroups
+    mkdir /dev/bfqio/be-0 0755 root system
+    write /dev/bfqio/be-0/bfqio.ioprio 0
+    write /dev/bfqio/be-0/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-0/tasks
+    chmod 0664 /dev/bfqio/be-0/tasks
+    chmod 0220 /dev/bfqio/be-0/cgroup.event_control
+
+    mkdir /dev/bfqio/be-1 0755 root system
+    write /dev/bfqio/be-1/bfqio.ioprio 1
+    write /dev/bfqio/be-1/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-1/tasks
+    chmod 0664 /dev/bfqio/be-1/tasks
+    chmod 0220 /dev/bfqio/be-1/cgroup.event_control
+
+    mkdir /dev/bfqio/be-2 0755 root system
+    write /dev/bfqio/be-2/bfqio.ioprio 2
+    write /dev/bfqio/be-2/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-2/tasks
+    chmod 0664 /dev/bfqio/be-2/tasks
+    chmod 0220 /dev/bfqio/be-2/cgroup.event_control
+
+    mkdir /dev/bfqio/be-3 0755 root system
+    write /dev/bfqio/be-3/bfqio.ioprio 3
+    write /dev/bfqio/be-3/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-3/tasks
+    chmod 0664 /dev/bfqio/be-3/tasks
+    chmod 0220 /dev/bfqio/be-3/cgroup.event_control
+
+    mkdir /dev/bfqio/be-4 0755 root system
+    write /dev/bfqio/be-4/bfqio.ioprio 4
+    write /dev/bfqio/be-4/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-4/tasks
+    chmod 0664 /dev/bfqio/be-4/tasks
+    chmod 0220 /dev/bfqio/be-4/cgroup.event_control
+
+    mkdir /dev/bfqio/be-5 0755 root system
+    write /dev/bfqio/be-5/bfqio.ioprio 5
+    write /dev/bfqio/be-5/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-5/tasks
+    chmod 0664 /dev/bfqio/be-5/tasks
+    chmod 0220 /dev/bfqio/be-5/cgroup.event_control
+
+    mkdir /dev/bfqio/be-6 0755 root system
+    write /dev/bfqio/be-6/bfqio.ioprio 6
+    write /dev/bfqio/be-6/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-6/tasks
+    chmod 0664 /dev/bfqio/be-6/tasks
+    chmod 0220 /dev/bfqio/be-6/cgroup.event_control
+
+    mkdir /dev/bfqio/be-7 0755 root system
+    write /dev/bfqio/be-7/bfqio.ioprio 7
+    write /dev/bfqio/be-7/bfqio.ioprio_class 2
+    chown system system /dev/bfqio/be-7/tasks
+    chmod 0664 /dev/bfqio/be-7/tasks
+    chmod 0220 /dev/bfqio/be-7/cgroup.event_control
+
+    # Setup IDLE class cgroup
+    mkdir /dev/bfqio/idle 0755 root system
+    write /dev/bfqio/idle/bfqio.ioprio 7
+    write /dev/bfqio/idle/bfqio.ioprio_class 3
+    chown system system /dev/bfqio/idle/tasks
+    chmod 0664 /dev/bfqio/idle/tasks
+    chmod 0220 /dev/bfqio/idle/cgroup.event_control
 
 on boot
     chown system system /sys/block/mmcblk0/queue/scheduler
