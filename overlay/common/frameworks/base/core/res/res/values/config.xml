@@ -91,4 +91,9 @@
     -->
     <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
 
+    <!-- Whether action menu items should be displayed in ALLCAPS or not.
+         Defaults to true. If this is not appropriate for specific locales
+         it should be disabled in that locale's resources. -->
+    <bool name="config_buttonTextAllCaps">false</bool>
+
 </resources>
