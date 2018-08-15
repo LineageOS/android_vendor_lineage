@@ -53,3 +53,8 @@ cc_library {
     vendor: true,
     defaults: ["libbfqio_defaults"],
 }
+
+cc_library_static {
+    name: "libbfqio_static",
+    defaults: ["libbfqio_defaults"],
+}
