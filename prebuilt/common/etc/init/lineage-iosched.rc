@@ -2,6 +2,7 @@ on init
     # Set up the BFQIO hierarchy
     mkdir /dev/bfqio 0755 root system
     mount cgroup none /dev/bfqio bfqio
+    write /dev/bfqio/bfqio.ioprio 4
     chown root system /dev/bfqio/tasks
     chmod 0664 /dev/bfqio/tasks
     chmod 0220 /dev/bfqio/cgroup.event_control
