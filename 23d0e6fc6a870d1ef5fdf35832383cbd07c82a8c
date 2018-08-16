@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e7cf8c2b_5e789b9b",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 11604
+      },
+      "writtenOn": "2018-08-16T10:39:34Z",
+      "side": 1,
+      "message": "this was not a typo:\n\nadd_json bool is defined like this:\nadd_json_bool \u003d $(call add_json_val,$(1),$(if $(strip $(2)),true,false))\n\nafaict that means that it will only ever produce \"false\" if $(2) is empty?",
+      "range": {
+        "startLine": 8,
+        "startChar": 110,
+        "endLine": 8,
+        "endChar": 115
+      },
+      "revId": "23d0e6fc6a870d1ef5fdf35832383cbd07c82a8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d20fa1d_54150f40",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11604
+      },
+      "writtenOn": "2018-08-16T10:39:34Z",
+      "side": 1,
+      "message": "given that TRUE was originally used here, it might be worth at least keeping it in the filter",
+      "range": {
+        "startLine": 9,
+        "startChar": 70,
+        "endLine": 9,
+        "endChar": 74
+      },
+      "revId": "23d0e6fc6a870d1ef5fdf35832383cbd07c82a8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
