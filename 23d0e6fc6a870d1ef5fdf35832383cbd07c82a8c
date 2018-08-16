@@ -68,6 +68,30 @@
       "revId": "23d0e6fc6a870d1ef5fdf35832383cbd07c82a8c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a95dc3e_56405d42",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-16T10:50:48Z",
+      "side": 1,
+      "message": "#JustNvidiaThings",
+      "parentUuid": "7d20fa1d_54150f40",
+      "range": {
+        "startLine": 9,
+        "startChar": 70,
+        "endLine": 9,
+        "endChar": 74
+      },
+      "revId": "23d0e6fc6a870d1ef5fdf35832383cbd07c82a8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
