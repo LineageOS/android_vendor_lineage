@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "4d569954_02f98e8e",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-16T10:40:33Z",
+      "side": 1,
+      "message": "Typo was here.",
+      "range": {
+        "startLine": 5,
+        "startChar": 77,
+        "endLine": 5,
+        "endChar": 115
+      },
+      "revId": "23d0e6fc6a870d1ef5fdf35832383cbd07c82a8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e7cf8c2b_5e789b9b",
         "filename": "build/soong/soong_config.mk",
         "patchSetId": 7
