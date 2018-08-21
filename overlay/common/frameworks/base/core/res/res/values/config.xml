@@ -91,4 +91,6 @@
     -->
     <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
 
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
 </resources>
