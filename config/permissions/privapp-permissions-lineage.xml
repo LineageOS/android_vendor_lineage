@@ -55,6 +55,12 @@
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
+    <privapp-permissions package="org.lineageos.flipflap">
+        <permission name="android.permission.ACCESS_NOTIFICATIONS"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="org.lineageos.lineageparts">
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.READ_SEARCH_INDEXABLES"/>
