@@ -115,6 +115,8 @@ $(call set-device-specific-path,VR,vr,hardware/qcom/vr)
 $(call wlan-set-path-variant,wlan-caf)
 $(call bt-vendor-set-path-variant,bt-caf)
 
+PRODUCT_SOONG_NAMESPACES += $(call project-path-for,qcom-display)
+
 else
 
 $(call project-set-path,qcom-audio,hardware/qcom/audio/default)
