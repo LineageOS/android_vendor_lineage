@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "310a4b58_87b4c8b5",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-25T22:55:36Z",
+      "side": 1,
+      "message": "I\u0027d remove all the extra spacing to avoid having to change the whole list every time we add something new.",
+      "range": {
+        "startLine": 4,
+        "startChar": 45,
+        "endLine": 4,
+        "endChar": 65
+      },
+      "revId": "aeaaa8201a0fa724c9fd9d3343289b20e119acce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
