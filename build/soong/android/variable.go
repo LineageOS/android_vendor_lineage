@@ -1,5 +1,11 @@
 package android
 type Product_variables struct {
+	Additional_gralloc_10_usage_bits struct {
+		Cppflags []string
+	}
+	Has_additional_gralloc_10_usage_bits struct {
+		Cppflags []string
+	}
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
@@ -28,6 +34,8 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
+	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
+	Has_additional_gralloc_10_usage_bits  *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
