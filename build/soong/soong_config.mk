@@ -1,6 +1,9 @@
 _contents := $(_contents)    "Lineage":{$(newline)
 
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+
 # See build/core/soong_config.mk for the add_json_* functions you can use here.
+$(call add_json_str,  Additional_gralloc_10_usage_bits, $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS))
 $(call add_json_bool, Has_legacy_camera_hal1,                     $(filter true,$(TARGET_HAS_LEGACY_CAMERA_HAL1)))
 $(call add_json_bool, Needs_legacy_camera_hal1_dyn_native_handle, $(filter true,$(TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE)))
 $(call add_json_bool, Needs_text_relocations,                     $(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)))
