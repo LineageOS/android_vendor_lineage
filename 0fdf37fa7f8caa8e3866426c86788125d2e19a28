@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "56f24e08_8d25612a",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-08-26T12:10:03Z",
+      "side": 1,
+      "message": "Not aligned based on review comment on 225550. Will hold as-is for final determination there.",
+      "range": {
+        "startLine": 6,
+        "startChar": 55,
+        "endLine": 6,
+        "endChar": 56
+      },
+      "revId": "0fdf37fa7f8caa8e3866426c86788125d2e19a28",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
