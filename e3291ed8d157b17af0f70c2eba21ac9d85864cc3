@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6bf25dc1_467d8880",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-08-26T02:40:59Z",
+      "side": 1,
+      "message": "I\u0027m not terribly thrilled with this construct, but without creating two different variables, I don\u0027t see a clean way to make the fw/n change -- as a string, additional_gralloc_10_usage_bits will always hold a value, even an empty value, which makes an ifdef hard.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 5
+      },
+      "revId": "e3291ed8d157b17af0f70c2eba21ac9d85864cc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
