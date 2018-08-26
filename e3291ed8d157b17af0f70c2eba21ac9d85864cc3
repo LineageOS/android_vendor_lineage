@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "a55a976a_fbde56db",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2018-08-26T11:07:24Z",
+      "side": 1,
+      "message": "TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?\u003d 0 would do and avoid the if/else logic.",
+      "revId": "e3291ed8d157b17af0f70c2eba21ac9d85864cc3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6bf25dc1_467d8880",
         "filename": "build/soong/soong_config.mk",
         "patchSetId": 1
