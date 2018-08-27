@@ -42,7 +42,7 @@ from xml.etree import ElementTree
 
 #
 # The purpose of this script is to import repositories (in addition to the ones
-# already specified in .repo/default.xml and .repo/manifests/snippets/cm.xml),
+# already specified in .repo/default.xml and .repo/manifests/snippets/lineage.xml),
 # in order to satisfy the needs of a build for the lunch combo given as argument ($1).
 #
 # There are 2 scenarios, differentiated by the value of the depsonly parameter ($2).
@@ -53,7 +53,7 @@ from xml.etree import ElementTree
 #       - The device repository is already there. Just its dependencies need to be downloaded.
 #         The "depsonly" parameter is supplied as "true".
 #       - To the end of fetching repositories, it will collect them from the dependencies files
-#         (lineage.dependencies and cm.dependencies) of the projects in roomservice.xml.
+#         (lineage.dependencies) of the projects in roomservice.xml.
 #         It will recursively search for more dependencies in the repositories it finds, and
 #         populates roomservice.xml with all new findings.
 #       - After this process is over, all new projects in roomservice.xml are force-synced.
@@ -205,11 +205,11 @@ def add_to_manifest(repositories, fallback_branch = None):
     f.close()
 
 # Function takes repo_path as input argument and searches for the
-# dependencies files inside (lineage.dependencies and cm.dependencies - legacy).
+# dependencies files inside (lineage.dependencies).
 # It then constructs a collection of:
 #   (1) syncable_repos:
 #       these are present in lineage.dependencies but not in the set of 3 repo manifests
-#       (default.xml, cm.xml, roomservice.xml).
+#       (default.xml, lineage.xml, roomservice.xml).
 #   (2) fetch_list:
 #       same definition as above.
 #   Difference between (1) and (2) is:
@@ -267,20 +267,18 @@ if depsonly:
     #
     # Use the same logic as build/core/product_config.mk who originally found
     # the device repo. It cannot provide different results when ran twice.
-    makefile_paths = ["*/{}/lineage.mk".format(device), "*/{}/cm.mk".format(device)]
+    makefile_path = "*/{}/lineage.mk".format(device)
     found_makefile = False
 
-    for makefile_path in makefile_paths:
-        try:
-            repo_path = subprocess.check_output(["cd $(dirname $(find $ANDROID_BUILD_TOP/device " +
-                                                 "-path " + makefile_path + ")) && " +
-                                                 "git rev-parse --show-toplevel"],
-                                                 env=os.environ, shell=True).replace('\n', '')
-            if repo_path is not None:
-                found_makefile = True
-                break
-        except CalledProcessError as ex:
-            print(ex)
+    try:
+        repo_path = subprocess.check_output(["cd $(dirname $(find $ANDROID_BUILD_TOP/device " +
+                                             "-path " + makefile_path + ")) && " +
+                                             "git rev-parse --show-toplevel"],
+                                             env=os.environ, shell=True).replace('\n', '')
+        if repo_path is not None:
+            found_makefile = True
+    except CalledProcessError as ex:
+        print(ex)
 
     if found_makefile is False:
         print("Trying dependencies-only mode on a non-existing device tree?")
