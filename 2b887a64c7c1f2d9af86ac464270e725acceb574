@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e908e161_1a52ba4a",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-27T08:35:49Z",
+      "side": 1,
+      "message": "Should be removed, since it was moved as well.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 47
+      },
+      "revId": "2b887a64c7c1f2d9af86ac464270e725acceb574",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ec4a7e86_ffc07395",
+        "filename": "config/BoardConfigLineage.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-27T08:35:49Z",
+      "side": 1,
+      "message": "We should move this too to be consistent with having all QC related stuff in the new BoardConfig mk.",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 5
+      },
+      "revId": "2b887a64c7c1f2d9af86ac464270e725acceb574",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
