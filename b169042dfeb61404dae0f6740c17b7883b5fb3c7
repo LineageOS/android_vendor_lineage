@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "156e7eed_bfdb58e5",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-08-27T14:18:48Z",
+      "side": 1,
+      "message": "why 2 entries?",
+      "revId": "b169042dfeb61404dae0f6740c17b7883b5fb3c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d5266557_dc52caae",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-08-27T14:18:48Z",
+      "side": 1,
+      "message": ".",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 117
+      },
+      "revId": "b169042dfeb61404dae0f6740c17b7883b5fb3c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
