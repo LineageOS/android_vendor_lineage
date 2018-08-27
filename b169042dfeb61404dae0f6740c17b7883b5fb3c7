@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "726996c7_5bfaaf7e",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-27T14:22:58Z",
+      "side": 1,
+      "message": "Because that\u0027s how Rashed implemented it back in 15.x: https://review.lineageos.org/#/q/topic:r23-cameraparams",
+      "parentUuid": "156e7eed_bfdb58e5",
+      "revId": "b169042dfeb61404dae0f6740c17b7883b5fb3c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d5266557_dc52caae",
         "filename": "build/soong/soong_config.mk",
         "patchSetId": 1
