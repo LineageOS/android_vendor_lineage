@@ -22,6 +22,30 @@
       "revId": "be1e91321ad36e933670771b4ecbe61012f27a5f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bff3ce64_24b800c2",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-28T15:13:16Z",
+      "side": 1,
+      "message": "Better remove it in a separate change then.",
+      "parentUuid": "0ef7d496_682b8ee2",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 85,
+        "endChar": 5
+      },
+      "revId": "be1e91321ad36e933670771b4ecbe61012f27a5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
