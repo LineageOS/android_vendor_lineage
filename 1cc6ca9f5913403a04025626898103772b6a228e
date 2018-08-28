@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "79657215_543982ff",
+        "filename": "config/BoardConfigLineage.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-08-28T06:57:28Z",
+      "side": 1,
+      "message": "Given this is a file in the same vendor/lineage repo, it\u0027s probably safe to assume it\u0027ll always be there, so no need for the leading \u0027-\u0027",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 1
+      },
+      "revId": "1cc6ca9f5913403a04025626898103772b6a228e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
