@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c44eec75_32e75331",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-08-29T15:48:04Z",
+      "side": 1,
+      "message": "This will always create a \"Target_process_sdk_version_override\" variable, even if the target doesn\u0027t set TARGET_PROCESS_SDK_VERSION_OVERRIDE, meaning your bionic ifdef block will always be compiled-in.\n\nThis is a good candidate for the below:\nhttps://review.lineageos.org/#/c/LineageOS/android_vendor_lineage/+/226155/",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 97
+      },
+      "revId": "eb6fa07e64ed2c9a7c88965e68f4b3a377a7f034",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
