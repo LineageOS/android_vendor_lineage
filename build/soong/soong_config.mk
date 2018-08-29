@@ -1,6 +1,7 @@
 _contents := $(_contents)    "Lineage":{$(newline)
 
 # See build/core/soong_config.mk for the add_json_* functions you can use here.
+$(call add_json_bool, Has_hwc_huawei, $(filter true,$(TARGET_HAS_HWC_HUAWEI)))
 $(call add_json_bool, Has_legacy_camera_hal1, $(filter true,$(TARGET_HAS_LEGACY_CAMERA_HAL1)))
 $(call add_json_bool, Needs_text_relocations, $(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)))
 $(call add_json_str, Specific_camera_parameter_library, $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY))
