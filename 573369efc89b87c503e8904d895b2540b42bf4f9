@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d88f1ebc_91943b9b",
+        "filename": "build/tools/roomservice.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 18924
+      },
+      "writtenOn": "2018-08-29T14:04:08Z",
+      "side": 1,
+      "message": "Remove the \"break\" here.",
+      "revId": "573369efc89b87c503e8904d895b2540b42bf4f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
