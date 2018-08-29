@@ -1,3 +1,5 @@
+add_json_str_omitempty = $(if $(strip $(2)),$(call add_json_str, $(1), $(2)))
+
 _contents := $(_contents)    "Lineage":{$(newline)
 
 # See build/core/soong_config.mk for the add_json_* functions you can use here.
