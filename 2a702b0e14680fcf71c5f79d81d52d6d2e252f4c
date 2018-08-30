@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e4d72d8f_81b07990",
+        "filename": "config/permissions/lineage-hiddenapi-package-whitelist.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-30T13:52:03Z",
+      "side": 1,
+      "message": "Are we there yet?",
+      "range": {
+        "startLine": 3,
+        "startChar": 18,
+        "endLine": 3,
+        "endChar": 22
+      },
+      "revId": "2a702b0e14680fcf71c5f79d81d52d6d2e252f4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
