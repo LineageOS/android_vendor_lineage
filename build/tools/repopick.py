@@ -455,12 +455,19 @@ if __name__ == '__main__':
                 cmd_out = None
             result = subprocess.call(cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out)
             if result != 0:
-                if args.reset:
+                cmd = ['git diff-index --quiet HEAD --']
+                result = subprocess.call(cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out)
+                if result == 0:
+                    print('WARNING: git command resulted with an empty commit, aborting cherry-pick')
+                    cmd = ['git cherry-pick --abort']
+                    subprocess.call(cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out)
+                elif args.reset:
                     print('ERROR: git command failed, aborting cherry-pick')
                     cmd = ['git cherry-pick --abort']
                     subprocess.call(cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out)
+                    sys.exit(result)
                 else:
                     print('ERROR: git command failed')
-                sys.exit(result)
+                    sys.exit(result)
         if not args.quiet:
             print('')
