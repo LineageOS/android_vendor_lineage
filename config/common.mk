@@ -93,6 +93,10 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
     vendor/lineage/config/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml
 
+# Hidden API whitelist
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/lineage-hiddenapi-package-whitelist.xml:system/etc/permissions/lineage-hiddenapi-package-whitelist.xml
+
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
