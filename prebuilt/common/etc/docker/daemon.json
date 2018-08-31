@@ -1,0 +1,12 @@
+{
+    "data-root": "/data/docker/lib",
+    "exec-root": "/data/docker/run",
+    "pidfile": "/data/docker/run/docker.pid",
+    "hosts": [
+        "unix:///data/docker/run/docker.sock"
+    ],
+    "storage-driver": "overlay",
+    "storage-opts": [
+        "overlay.override_kernel_check=true"
+    ]
+}

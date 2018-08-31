@@ -237,6 +237,23 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+ifeq ($(WITH_DOCKER),true)
+PRODUCT_PACKAGES += \
+    docker-containerd \
+    docker-containerd-ctr \
+    docker-containerd-shim \
+    docker-runc \
+    docker-init \
+    dockerd \
+    docker \
+    libltdl \
+
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/bin/docker-checkconfig:system/bin/docker-checkconfig \
+    vendor/lineage/prebuilt/common/etc/docker/daemon.json:system/etc/docker/daemon.json \
+
+endif
+
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
 PRODUCT_VERSION_MAJOR = 15

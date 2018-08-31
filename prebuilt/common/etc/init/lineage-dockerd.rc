@@ -1,0 +1,16 @@
+service dockerd /system/bin/dockerd --config-file /data/docker/etc/daemon.json
+    user root
+    oneshot
+    disabled
+# Access with docker --host unix:///data/docker/docker.sock images
+
+on post-fs-data
+    mkdir /data/etc 0700 root root
+    mkdir /data/docker 0700 root root
+    mkdir /data/docker/lib 0700 root root
+    mkdir /data/docker/run 0700 root root
+    mkdir /dev/devices 0700 root root
+    mount cgroup none /dev/devices devices
+
+on boot
+    start dockerd

@@ -2,6 +2,7 @@
 on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
+    export DOCKER_HOST "unix:///data/docker/run/docker.sock"
 
 on post-fs-data
     mkdir /cache/recovery 0770 system cache
