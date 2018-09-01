@@ -19,8 +19,7 @@ if [ "$system_as_root" == "true" ]; then
   else
     block=/dev/block/bootdevice/by-name/system
   fi
-  mkdir -p /system_root
-  if mount -o rw $block /system_root && mount /system_root/system /system; then
+  if mount -o rw $block /system_root && mount /system_root /system; then
     exit 0
   fi
 fi
