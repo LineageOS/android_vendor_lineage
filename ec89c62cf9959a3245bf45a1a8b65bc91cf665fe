@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1b47af8c_011945e8",
+        "filename": "build/tools/roomservice.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 18924
+      },
+      "writtenOn": "2018-09-02T01:27:58Z",
+      "side": 1,
+      "message": "Need to modify URL here to test with Hudson fork.",
+      "revId": "ec89c62cf9959a3245bf45a1a8b65bc91cf665fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
