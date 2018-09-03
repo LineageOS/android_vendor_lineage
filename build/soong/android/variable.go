@@ -37,6 +37,7 @@ type ProductVariables struct {
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Target_destroyed_mutex_usage_whitelist  *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
+	TargetSpecificHeadersIncludeDir  *string `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
