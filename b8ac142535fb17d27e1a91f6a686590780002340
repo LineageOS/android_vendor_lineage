@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "34e8352b_58699104",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 10
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-09-05T13:54:37Z",
+      "side": 1,
+      "message": "This will be pending a removal as a follow-up change.",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 85,
+        "endChar": 5
+      },
+      "revId": "b8ac142535fb17d27e1a91f6a686590780002340",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
