@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef30357e_1ce4db20",
+        "filename": "config/data_only.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-09-06T16:45:27Z",
+      "side": 1,
+      "message": "Gotta have our packagess",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "dcabbcd4b375b255e4cd40175064d18fde4fc829",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
