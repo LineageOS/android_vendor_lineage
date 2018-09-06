@@ -1,0 +1,3 @@
+  <apn carrier="Sprint LTE internet" mcc="310" mnc="120" apn="x.ispsn" type="default,mms,supl,hipri,dun" mmsc="http://mms.sprintpcs.com" mmsproxy="oap7.sprintpcs.com" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
+  <apn carrier="Sprint EHRPD internet" mcc="310" mnc="120" apn="x.ispsn" type="default,mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="oap7.sprintpcs.com" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
+  <apn carrier="Sprint internet" mcc="310" mnc="120" apn="x.ispsn" type="mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="oap7.sprintpcs.com" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" /> 
