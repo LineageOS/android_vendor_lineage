@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2a0452f8_ae77d27b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-09-07T07:24:34Z",
+      "side": 1,
+      "message": "Yeah, I know, nitpick, but still ;-) : wpa_supplicant statically links this, it doesn\u0027t dlopen it.",
+      "revId": "837c86a093906edb6c288513f2c0436c4deeef17",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
