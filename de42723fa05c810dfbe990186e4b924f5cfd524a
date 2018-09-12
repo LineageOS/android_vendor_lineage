@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "06a676c6_ba16bf60",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-09-12T18:43:47Z",
+      "side": 1,
+      "message": "\"APNs\"?",
+      "range": {
+        "startLine": 13,
+        "startChar": 18,
+        "endLine": 13,
+        "endChar": 23
+      },
+      "revId": "de42723fa05c810dfbe990186e4b924f5cfd524a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "adf74f7c_d9c0d664",
+        "filename": "tools/custom_apns.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-09-12T18:43:47Z",
+      "side": 1,
+      "message": "WS",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 4
+      },
+      "revId": "de42723fa05c810dfbe990186e4b924f5cfd524a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
