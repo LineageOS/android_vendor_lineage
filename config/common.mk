@@ -232,6 +232,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
+# Disable RescueParty
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.disable_rescue=true
+
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     micro_bench \
