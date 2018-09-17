@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe66c87e_19f812ad",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-09-17T13:58:08Z",
+      "side": 1,
+      "message": "This is more like:\n\nDevice_must_wait_for_qsee",
+      "range": {
+        "startLine": 10,
+        "startChar": 22,
+        "endLine": 10,
+        "endChar": 50
+      },
+      "revId": "548d1c2806b2d8eb7acb28382feca8e7a2b0eeac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
