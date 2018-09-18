@@ -6,3 +6,19 @@ bootstrap_go_package {
         "android/variable.go",
     ],
 }
+
+bootstrap_go_package {
+    name: "soong-lineage-generator",
+    pkgPath: "lineage/soong/generator",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-shared",
+    ],
+    srcs: [
+        "generator/generator.go",
+    ],
+    pluginFor: ["soong_build"],
+}
