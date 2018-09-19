@@ -59,6 +59,8 @@ type generatorProperties struct {
 	//  $(location): the path to the first entry in tools or tool_files
 	//  $(location <label>): the path to the tool or tool_file with name <label>
 	//  $(genDir): the sandbox directory for this tool; contains $(out)
+	//  $(kernelSrc): the location of the device's kernel tree
+	//  $(kernelConfig): the device's kernel defconfig
 	//  $$: a literal $
 	//
 	Cmd *string
@@ -119,6 +121,8 @@ func (g *Module) DepsMutator(ctx android.BottomUpMutatorContext) {
 }
 
 func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
+	kernelVars := ctx.Config().VendorConfig("generatedKernelPlugin")
+
 	if len(g.properties.Export_include_dirs) > 0 {
 		for _, dir := range g.properties.Export_include_dirs {
 			g.exportedIncludeDirs = append(g.exportedIncludeDirs,
@@ -218,6 +222,10 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 			}
 		case "genDir":
 			return "__SBOX_OUT_DIR__", nil
+		case "kernelSrc":
+			return kernelVars.String("path"), nil
+		case "kernelConfig":
+			return kernelVars.String("config"), nil
 		default:
 			if strings.HasPrefix(name, "location ") {
 				label := strings.TrimSpace(strings.TrimPrefix(name, "location "))
