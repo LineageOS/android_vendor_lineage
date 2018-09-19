@@ -23,3 +23,23 @@ bootstrap_go_package {
     ],
     pluginFor: ["soong_build"],
 }
+
+lineage_generator {
+    name: "generated_kernel_includes",
+
+    // The header's make command
+    cmd: "make -j8  CFLAGS_MODULE=\"-fno-pic\" -C $(kernelSrc) O=$(genDir) ARCH=arm64 headers_install",
+
+    // Directories that can be imported by a cc_* module generated_headers key
+    export_include_dirs: ["usr/include"],
+
+    // Sources for dependency tracking
+    //dep_files: [ "Makefile", "include/**/*", "arch/arm*/include/**/*"],
+}
+
+cc_library_headers {
+    name: "generated_kernel_headers",
+    generated_headers: ["generated_kernel_includes"],
+    export_generated_headers: ["generated_kernel_includes"],
+    vendor_available: true,
+}
