@@ -204,7 +204,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	// Calling ExpandSources automatically adds dependencies to ctx.
 	_ = ctx.ExpandSources(g.properties.Dep_files, nil)
 
-	cmd := String(g.properties.Cmd)
+	cmd := lineageExpandVariables(ctx, String(g.properties.Cmd))
 
 	rawCommand, err := android.Expand(cmd, func(name string) (string, error) {
 		switch name {
