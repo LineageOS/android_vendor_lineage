@@ -213,10 +213,13 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	depRoot := String(g.properties.Dep_root)
 	if depRoot == "" {
 		depRoot = ctx.ModuleDir()
+	} else {
+		depRoot = lineageExpandVariables(ctx, depRoot)
 	}
 
 	// Glob dep_files property
 	for _, dep_file := range g.properties.Dep_files {
+		dep_file = lineageExpandVariables(ctx, dep_file)
 		globPath := filepath.Join(depRoot, dep_file)
 		paths, err := ctx.GlobWithDeps(globPath, nil)
 		if err != nil {
@@ -228,7 +231,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		}
 	}
 
-	cmd := String(g.properties.Cmd)
+	cmd := lineageExpandVariables(ctx, String(g.properties.Cmd))
 
 	rawCommand, err := android.Expand(cmd, func(name string) (string, error) {
 		switch name {
