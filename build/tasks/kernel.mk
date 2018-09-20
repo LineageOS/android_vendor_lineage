@@ -72,11 +72,7 @@
 
 ifneq ($(TARGET_NO_KERNEL),true)
 
-TARGET_AUTO_KDIR := $(shell echo $(TARGET_DEVICE_DIR) | sed -e 's/^device/kernel/g')
-
 ## Externally influenced variables
-# kernel location - optional, defaults to kernel/<vendor>/<device>
-TARGET_KERNEL_SOURCE ?= $(TARGET_AUTO_KDIR)
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
 # kernel configuration - mandatory
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
@@ -87,12 +83,7 @@ SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
 
-TARGET_KERNEL_ARCH := $(strip $(TARGET_KERNEL_ARCH))
-ifeq ($(TARGET_KERNEL_ARCH),)
-KERNEL_ARCH := $(TARGET_ARCH)
-else
 KERNEL_ARCH := $(TARGET_KERNEL_ARCH)
-endif
 
 ifeq ($(KERNEL_ARCH),x86_64)
 KERNEL_DEFCONFIG_ARCH := x86
