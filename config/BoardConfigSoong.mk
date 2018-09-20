@@ -1,8 +1,8 @@
 # Add variables that we wish to make available to soong here.
 EXPORT_TO_SOONG := \
-        TARGET_KERNEL_SOURCE \
-        TARGET_KERNEL_CONFIG
-
+    TARGET_KERNEL_ARCH \
+    TARGET_KERNEL_CONFIG \
+    TARGET_KERNEL_SOURCE
 
 # Setup SOONG_CONFIG_* vars to export the vars listed above.
 # Documentation here:
