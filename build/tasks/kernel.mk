@@ -151,9 +151,6 @@ endif
 
 ifeq ($(FULL_KERNEL_BUILD),true)
 
-KERNEL_HEADERS_INSTALL_DIR := $(KERNEL_OUT)/usr
-KERNEL_HEADERS_INSTALL_DEPS := $(KERNEL_OUT)/.headers_install_deps
-
 ifeq ($(NEED_KERNEL_MODULE_ROOT),true)
 KERNEL_MODULES_INSTALL := root
 KERNEL_MODULES_OUT := $(TARGET_ROOT_OUT)/lib/modules
@@ -254,53 +251,6 @@ INSTALLED_KERNEL_MODULES: depmod-host
 $(TARGET_KERNEL_MODULES): TARGET_KERNEL_BINARIES
 
 $(TARGET_PREBUILT_INT_KERNEL): $(TARGET_KERNEL_MODULES)
-
-# Install kernel (uapi) headers.
-#
-# The dependency file serves two purposes:
-#  - It is a stamp indicating when the headers were last installed.
-#  - It contains a rule to regenerate itself when any kernel header
-#    files change.  This rule is identical to the rule emitted by
-#    GCC using the M/MM flags.
-#
-# Note that the location of installed kernel headers changed when the
-# kernel uapi system was introduced in 3.7.  Unfortunately, it is not
-# sufficient to test whether the uapi directories exist because some
-# kernels backport patches that contain uapi headers.  So we look for
-# the string "version_h" in the kernel makefile which was introduced
-# as a part of the uapi system (commit d183e6f570f3).
--include $(KERNEL_HEADERS_INSTALL_DEPS)
-$(KERNEL_HEADERS_INSTALL_DEPS):
-	@echo "Building Kernel Headers"
-	$(hide) mkdir -p $(KERNEL_OUT)
-	$(hide) rm -f $@
-	$(hide) $(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) headers_install
-	$(hide) echo "$@: \\" > $@
-	$(hide) ( cd $(KERNEL_SRC); \
-		if grep -q '^version_h' 'Makefile'; then \
-			depdirs="arch/$(KERNEL_ARCH)/include/uapi include/uapi"; \
-		else \
-			depdirs="arch/$(KERNEL_ARCH)/include/asm include"; \
-		fi; \
-		deps="Makefile $$(find $$depdirs -type f -name '*.h')"; \
-		for f in $$deps; do \
-			echo "  $(KERNEL_SRC)/$$f \\" >> $@; \
-		done ; \
-		echo "" >> $@ ; \
-		for f in $$deps; do \
-			echo "$(KERNEL_SRC)/$$f:" >> $@; \
-			echo "" >> $@; \
-		done \
-		)
-
-.PHONY: INSTALLED_KERNEL_HEADERS
-INSTALLED_KERNEL_HEADERS: $(KERNEL_HEADERS_INSTALL_DEPS)
-
-# Dependencies on $(KERNEL_OUT)/usr are deprecated
-$(KERNEL_HEADERS_INSTALL_DIR): $(KERNEL_HEADERS_INSTALL_DEPS)
-	@echo "Depending on $(KERNEL_HEADERS_INSTALL_DIR) is deprecated." 1>&2
-	@echo "Use INSTALLED_KERNEL_HEADERS instead." 1>&2
-	@exit 1
 
 .PHONY: kerneltags
 kerneltags: $(KERNEL_CONFIG)
