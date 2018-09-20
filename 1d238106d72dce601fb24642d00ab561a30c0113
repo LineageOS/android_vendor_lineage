@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fba37e14_5f1a42fe",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2018-09-20T17:58:31Z",
+      "side": 1,
+      "message": "We should probably fold all this into BoardConfigLineage.mk now.\n\nOr keep just EXPORT_TO_SOONG here and move the rest into our build/soong/soong_config.mk.  That\u0027s probably nicer, actually.",
+      "revId": "1d238106d72dce601fb24642d00ab561a30c0113",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
