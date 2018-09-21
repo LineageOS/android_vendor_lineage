@@ -1,3 +1,6 @@
+# Allow vendor/extra to override any property by setting it first
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 PRODUCT_BRAND ?= LineageOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -367,5 +370,3 @@ endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
-
-$(call inherit-product-if-exists, vendor/extra/product.mk)
