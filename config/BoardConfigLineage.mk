@@ -10,3 +10,5 @@ include vendor/lineage/config/BoardConfigQcom.mk
 endif
 
 include vendor/lineage/config/BoardConfigSoong.mk
+
+PRODUCT_SOONG_NAMESPACES += $(PATHMAP_SOONG_NAMESPACES)
