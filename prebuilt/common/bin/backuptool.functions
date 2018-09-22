@@ -4,7 +4,13 @@
 #
 
 export C=/tmp/backupdir
-export S=/system
+# Set system location using the build.prop which is present in system root.
+if [ -r /system/build.prop ]; then
+    export S=/system
+elif [ -r /system_image/system/build.prop ]; then
+    export S=/system_image/system
+    export backuptool_systemasroot=true
+fi
 export V=16.0
 
 copy_file() {
