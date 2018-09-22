@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6a83087a_8a1d0efd",
+        "filename": "build/soong/Android.bp",
+        "patchSetId": 12
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-09-22T03:50:44Z",
+      "side": 1,
+      "message": "can we use nproc instead of hardcoding -j4?",
+      "revId": "147ac90ae6993183bb39f0bd8df52434ae486c9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
