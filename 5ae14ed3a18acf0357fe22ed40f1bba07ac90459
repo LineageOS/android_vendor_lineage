@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "74c93035_e7625d5c",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 830,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-09-23T11:21:52Z",
+      "side": 1,
+      "message": "Send output to /dev/null?\n\nWe need to hide:\n\nOpened \u0027/tmp/tmp.ghpNUtujEa/QtiTelephonyServicelibrary_classes.cdex\u0027, DEX version \u0027001\u0027\ncompact_dex_converter I 09-23 12:19:45  9532  9532 compact_dex_converter_main.cc:175] StandardDex file successfully extracted to /tmp/tmp.ghpNUtujEa/QtiTelephonyServicelibrary_classes.cdex.new",
+      "range": {
+        "startLine": 830,
+        "startChar": 20,
+        "endLine": 830,
+        "endChar": 90
+      },
+      "revId": "5ae14ed3a18acf0357fe22ed40f1bba07ac90459",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
