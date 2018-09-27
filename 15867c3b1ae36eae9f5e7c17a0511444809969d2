@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6f38d0bc_9287c154",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1137,
+      "author": {
+        "id": 12847
+      },
+      "writtenOn": "2018-09-27T09:23:46Z",
+      "side": 1,
+      "message": "It has the authtype set. But perhaps it should be called \"NOS WTF Internet\" instead of \"NOS Web\"?\nBTW: renaming carriers, generating sub carriers and selling bands should be internationally prohibited!",
+      "parentUuid": "7f3d97ba_1ace2c30",
+      "range": {
+        "startLine": 1137,
+        "startChar": 2,
+        "endLine": 1137,
+        "endChar": 139
+      },
+      "revId": "15867c3b1ae36eae9f5e7c17a0511444809969d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "301ab566_4ff8f052",
         "filename": "prebuilt/common/etc/apns-conf.xml",
         "patchSetId": 2
@@ -60,6 +84,30 @@
       "side": 1,
       "message": "Yes, I know what WTF is. It\u0027s a brand itself, created by NOS.",
       "parentUuid": "301ab566_4ff8f052",
+      "range": {
+        "startLine": 1138,
+        "startChar": 20,
+        "endLine": 1138,
+        "endChar": 23
+      },
+      "revId": "15867c3b1ae36eae9f5e7c17a0511444809969d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9d979507_08641efc",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1138,
+      "author": {
+        "id": 12847
+      },
+      "writtenOn": "2018-09-27T09:23:46Z",
+      "side": 1,
+      "message": "Just wanted to avoid misunderstandings, because WTF is also an acronym for something completely different...",
+      "parentUuid": "0f7003e9_c878c38d",
       "range": {
         "startLine": 1138,
         "startChar": 20,
