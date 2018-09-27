@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "301ab566_4ff8f052",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1138,
+      "author": {
+        "id": 12847
+      },
+      "writtenOn": "2018-09-27T08:52:42Z",
+      "side": 1,
+      "message": "WTF is the NOS\u0027 subcarrier tfea@xda is using. It\u0027s also what\u0027s the sim card is reporting to the os.",
+      "range": {
+        "startLine": 1138,
+        "startChar": 20,
+        "endLine": 1138,
+        "endChar": 23
+      },
+      "revId": "15867c3b1ae36eae9f5e7c17a0511444809969d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
