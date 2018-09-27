@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11d73733_0557988d",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1135,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-09-27T15:46:33Z",
+      "side": 1,
+      "message": "mms or umts?",
+      "range": {
+        "startLine": 1135,
+        "startChar": 49,
+        "endLine": 1135,
+        "endChar": 53
+      },
+      "revId": "3e743b580468e50e892815d207cf4f2ec33bcc8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
