@@ -291,8 +291,12 @@ if __name__ == '__main__':
         else:
             return cmp(review_a['number'], review_b['number'])
 
+    if not args.force:
+        query="status:open+topic:{}"
+    else:
+        query="topic:{}"
     if args.topic:
-        reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
+        reviews = fetch_query(args.gerrit, query.format(args.topic))
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
