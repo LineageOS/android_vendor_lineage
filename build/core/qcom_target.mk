@@ -26,7 +26,7 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     BR_FAMILY := msm8909 msm8916
     UM_3_18_FAMILY := msm8937 msm8953 msm8996
     UM_4_4_FAMILY := msm8998 sdm660
-    UM_4_9_FAMILY := sdm845
+    UM_4_9_FAMILY := sdm710 sdm845
     UM_PLATFORMS := $(UM_3_18_FAMILY) $(UM_4_4_FAMILY) $(UM_4_9_FAMILY)
 
     BOARD_USES_ADRENO := true
@@ -64,7 +64,7 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     endif
 
     # List of targets that use master side content protection
-    MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660 sdm845
+    MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660 sdm710 sdm845
 
     ifeq ($(call is-board-platform-in-list, $(B_FAMILY)),true)
         MSM_VIDC_TARGET_LIST := $(B_FAMILY)
@@ -88,7 +88,7 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     else
     ifeq ($(call is-board-platform-in-list, $(UM_4_9_FAMILY)),true)
         MSM_VIDC_TARGET_LIST := $(UM_4_9_FAMILY)
-        QCOM_HARDWARE_VARIANT := sdm845
+        QCOM_HARDWARE_VARIANT := sdm710 sdm845
     else
         MSM_VIDC_TARGET_LIST := $(TARGET_BOARD_PLATFORM)
         QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
