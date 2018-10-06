@@ -22,6 +22,29 @@
       "revId": "aa9822ae3386a52ccebcf0ac10b245bedd6ed1f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f21adbb7_821c4da9",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1400,
+      "author": {
+        "id": 20376
+      },
+      "writtenOn": "2018-10-06T01:45:29Z",
+      "side": 1,
+      "message": "It should also be upper case \"Wholesale\". https://www.ultramobile.com/data-settings/",
+      "range": {
+        "startLine": 1400,
+        "startChar": 48,
+        "endLine": 1400,
+        "endChar": 49
+      },
+      "revId": "aa9822ae3386a52ccebcf0ac10b245bedd6ed1f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
