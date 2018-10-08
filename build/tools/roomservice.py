@@ -40,16 +40,39 @@ except ImportError:
 
 from xml.etree import ElementTree
 
+# Utility function for finding the .repo top directory,
+# borrowed from the Google repo tool itself
+def _FindRepo():
+  """Look for a repo installation, starting at the current directory.
+  """
+  curdir = os.getcwd()
+  repo = None
+
+  olddir = None
+  while curdir != '/' \
+          and curdir != olddir \
+          and not repo:
+    repo = os.path.join(curdir, '.repo', 'repo/main.py')  # main script
+    if not os.path.isfile(repo):
+      repo = None
+      olddir = curdir
+      curdir = os.path.dirname(curdir)
+  return curdir
+
+android_build_top = _FindRepo()
+product_mk_finder = os.path.join(android_build_top, "vendor", "lineage", "build", "tools", "product_mk_finder.mk")
+os.environ["ANDROID_BUILD_TOP"] = android_build_top # For the product_mk_finder
+
 #
 # The purpose of this script is to import repositories (in addition to the ones
 # already specified in .repo/default.xml and .repo/manifests/snippets/lineage.xml),
 # in order to satisfy the needs of a build for the lunch combo given as argument ($1).
 #
-# There are 2 scenarios, differentiated by the value of the depsonly parameter ($2).
-# The build/envsetup.sh will try to find a lineage.mk file, placed in a ${product} folder,
-# anywhere in the device/ subfolders.
+# There are 2 scenarios, differentiated by the value of the depsonly parameter
+# ($2). The build/envsetup.sh will try to find a AndroidProducts.mk file,
+# placed in a ${product} folder, anywhere in the device/ subfolders.
 #
-# (a) If it finds such a ${product}/lineage.mk file ("depsonly" is supplied as true):
+# (a) If it finds such a ${product}/AndroidProducts.mk file ("depsonly" is supplied as true):
 #       - The device repository is already there. Just its dependencies need to be downloaded.
 #         The "depsonly" parameter is supplied as "true".
 #       - To the end of fetching repositories, it will collect them from the dependencies files
@@ -58,7 +81,7 @@ from xml.etree import ElementTree
 #         populates roomservice.xml with all new findings.
 #       - After this process is over, all new projects in roomservice.xml are force-synced.
 #
-# (b) If no such ${product}/lineage.mk file is to be found ("depsonly" is not supplied):
+# (b) If no such ${product}/AndroidProducts.mk file is to be found ("depsonly" is not supplied):
 #       - The device repository is not there. The roomservice script has the additional task of
 #         finding it. Therefore, the "if not depsonly" conditions present in the code below
 #         should be taken as synonymous with "if device makefile isn't there".
@@ -262,22 +285,22 @@ def has_branch(branches, revision):
     return revision in [branch['name'] for branch in branches]
 
 if depsonly:
-    # depsonly was set if the lineage.mk file was found. Therefore, the
+    # depsonly was set if the AndroidProducts.mk file was found. Therefore, the
     # device repository definitely exists, it's just a matter of finding it.
     #
     # Use the same logic as build/core/product_config.mk who originally found
     # the device repo. It cannot provide different results when ran twice.
-    makefile_path = "*/{}/lineage.mk".format(device)
     found_makefile = False
 
     try:
-        repo_path = subprocess.check_output(["cd $(dirname $(find $ANDROID_BUILD_TOP/device " +
-                                             "-path " + makefile_path + ")) && " +
-                                             "git rev-parse --show-toplevel"],
+        makefile_path = subprocess.check_output(["make -f " + product_mk_finder + " lineage_{}".format(device)],
+                                                env=os.environ, shell=True).replace('\n', '')
+        repo_path = subprocess.check_output(["git -C " + os.path.dirname(makefile_path) +
+                                             " rev-parse --show-toplevel"],
                                              env=os.environ, shell=True).replace('\n', '')
         if repo_path is not None:
             found_makefile = True
-    except CalledProcessError as ex:
+    except subprocess.CalledProcessError as ex:
         print(ex)
 
     if found_makefile is False:
