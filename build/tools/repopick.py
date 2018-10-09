@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2013-15 The CyanogenMod Project
-#           (C) 2017    The LineageOS Project
+# Copyright (C) 2013-2015 The CyanogenMod Project
+#           (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -177,6 +177,7 @@ if __name__ == '__main__':
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', help='use the specified path for the change')
     parser.add_argument('-t', '--topic', help='pick all commits from a specified topic')
+    parser.add_argument('-H', '--hashtag', help='pick all commits from a specified hastag')
     parser.add_argument('-Q', '--query', help='pick all commits using the specified query')
     parser.add_argument('-g', '--gerrit', default=default_gerrit, help='Gerrit Instance to use. Form proto://[user@]host[:port]')
     parser.add_argument('-e', '--exclude', nargs=1, help='exclude a list of commit numbers separated by a ,')
@@ -192,8 +193,8 @@ if __name__ == '__main__':
     if args.quiet and args.verbose:
         parser.error('--quiet and --verbose cannot be specified together')
 
-    if (1 << bool(args.change_number) << bool(args.topic) << bool(args.query)) != 2:
-        parser.error('One (and only one) of change_number, topic, and query are allowed')
+    if (1 << bool(args.change_number) << bool(args.topic) << bool(args.hashtag) << bool(args.query)) != 2:
+        parser.error('One (and only one) of change_number, topic, hashtag, and query are allowed')
 
     # Change current directory to the top of the tree
     if 'ANDROID_BUILD_TOP' in os.environ:
@@ -277,6 +278,9 @@ if __name__ == '__main__':
 
     if args.topic:
         reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
+        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
+    if args.hashtag:
+        reviews = fetch_query(args.gerrit, 'hashtag:{0}'.format(args.hashtag))
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
