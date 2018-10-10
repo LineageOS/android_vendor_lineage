@@ -25,9 +25,10 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     B64_FAMILY := msm8992 msm8994
     BR_FAMILY := msm8909 msm8916
     UM_3_18_FAMILY := msm8937 msm8953 msm8996
+    UM_8909_FAMILY : msm8909um
     UM_4_4_FAMILY := msm8998 sdm660
     UM_4_9_FAMILY := sdm845
-    UM_PLATFORMS := $(UM_3_18_FAMILY) $(UM_4_4_FAMILY) $(UM_4_9_FAMILY)
+    UM_PLATFORMS := $(UM_3_18_FAMILY) $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_8909_FAMILY)
 
     BOARD_USES_ADRENO := true
 
@@ -81,6 +82,10 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     ifeq ($(call is-board-platform-in-list, $(UM_3_18_FAMILY)),true)
         MSM_VIDC_TARGET_LIST := $(UM_3_18_FAMILY)
         QCOM_HARDWARE_VARIANT := msm8996
+    else
+    ifeq ($(call is-board-platform-in-list, $(UM_3_18_W_FAMILY)),true)
+        MSM_VIDC_TARGET_LIST := $(UM_3_18_W_FAMILY)
+        QCOM_HARDWARE_VARIANT := msm8909um
     else
     ifeq ($(call is-board-platform-in-list, $(UM_4_4_FAMILY)),true)
         MSM_VIDC_TARGET_LIST := $(UM_4_4_FAMILY)
