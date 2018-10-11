@@ -1,5 +1,8 @@
 package android
 type Product_variables struct {
+	Bootloader_message_offset struct {
+		Cflags []string
+	}
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
@@ -28,6 +31,7 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
+	Bootloader_message_offset *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
