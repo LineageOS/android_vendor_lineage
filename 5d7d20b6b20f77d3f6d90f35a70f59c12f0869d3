@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f27d5b74_2c8a1f1b",
+        "filename": "build/tools/roomservice.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 18678
+      },
+      "writtenOn": "2018-10-12T08:11:50Z",
+      "side": 1,
+      "message": "suggest add \"*/{}/AndroidProducts.mk\".format(device) for android 9.",
+      "revId": "5d7d20b6b20f77d3f6d90f35a70f59c12f0869d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
