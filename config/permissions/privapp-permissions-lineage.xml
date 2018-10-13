@@ -35,6 +35,7 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.gallery3d">
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
