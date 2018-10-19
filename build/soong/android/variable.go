@@ -6,6 +6,9 @@ type Product_variables struct {
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
+	Hwc2_no_skipvalidate struct {
+		Cppflags []string
+	}
 	Target_process_sdk_version_override struct {
 		Cppflags []string
 	}
@@ -30,6 +33,7 @@ type Product_variables struct {
 type ProductVariables struct {
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
+	Hwc2_no_skipvalidate  *bool `json:",omitempty"`
 	Java_Source_Overlays *string `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Target_process_sdk_version_override *string `json:",omitempty"`
