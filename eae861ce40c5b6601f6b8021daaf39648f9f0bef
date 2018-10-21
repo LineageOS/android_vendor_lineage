@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c438b937_6596f978",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-10-21T17:26:44Z",
+      "side": 1,
+      "message": "what? it should only list sdm845",
+      "revId": "eae861ce40c5b6601f6b8021daaf39648f9f0bef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
