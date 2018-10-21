@@ -1814,20 +1814,18 @@
   <apn carrier="Airtel GPRS" mcc="404" mnc="03" apn="airtelgprs.com" type="default,supl" />
   <apn carrier="Airtel Live" mcc="404" mnc="03" apn="airtelfun.com" proxy="100.1.200.99" port="8080" type="default,supl" />
   <apn carrier="Airtel MMS" mcc="404" mnc="03" apn="airtelmms.com" mmsc="http://100.1.201.171:10021/mmsc" mmsproxy="100.1.201.172" mmsport="8799" authtype="1" type="mms" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="04" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="04" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="04" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="04" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="04" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="04" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Vodafone" mcc="404" mnc="05" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="05" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="05" apn="www" type="default,supl" />
   <apn carrier="Airtel GPRS" mcc="404" mnc="06" apn="airtelgprs.com" type="default,supl" />
   <apn carrier="Airtel Live" mcc="404" mnc="06" apn="airtelfun.com" proxy="100.1.200.99" port="8080" type="default,supl" />
   <apn carrier="Airtel MMS" mcc="404" mnc="06" apn="airtelmms.com" mmsc="http://100.1.201.171:10021/mmsc" mmsproxy="100.1.201.172" mmsport="8799" type="mms" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="07" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="07" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="07" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="07" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="07" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="07" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="NetConnect" mcc="404" mnc="09" apn="rcomnet" type="default,supl" />
   <apn carrier="Reliance GPRS" mcc="404" mnc="09" apn="rcomwap" proxy="10.239.221.5" port="8080" type="default,supl" />
   <apn carrier="Jio 4G" apn="jionet" type="default,supl" roaming_protocol="IPV4V6" />
@@ -1885,16 +1883,15 @@
   <apn carrier="Vodafone" mcc="404" mnc="11" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="11" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="11" apn="www" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="12" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="12" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="12" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="12" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="12" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="12" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Vodafone" mcc="404" mnc="13" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="13" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="13" apn="www" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="14" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="14" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="14" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="14" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
+  <apn carrier="ims" mcc="404" mnc="14" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="SPICE" mcc="404" mnc="14" apn="spicegprs" type="default,supl" />
   <apn carrier="SPICE MMS" mcc="404" mnc="14" apn="spicemms" user="User Mobile number" password="spice" mmsc="http://10.200.200.3:8514" mmsproxy="10.200.200.3" mmsport="8080" type="mms" />
   <apn carrier="Vodafone" mcc="404" mnc="15" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
@@ -1911,10 +1908,9 @@
   <apn carrier="Reliance GPRS" mcc="404" mnc="18" apn="rcomwap" proxy="10.239.221.5" port="8080" type="default,supl" />
   <apn carrier="Smart MMS" mcc="404" mnc="18" apn="rcommms" proxy="10.239.221.5" port="8080" mmsc="http://10.239.221.47/mms/" mmsproxy="10.239.221.5" mmsport="8080" type="mms" />
   <apn carrier="Reliance MMS" mcc="404" mnc="18" apn="rcommms" proxy="10.239.221.5" port="8080" mmsc="http://mms.rcom.co.in/mms" mmsproxy="10.239.221.5" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="19" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="19" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="19" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="19" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="19" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="19" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Vodafone" mcc="404" mnc="20" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="20" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="20" apn="www" type="default,supl" />
@@ -1923,14 +1919,12 @@
   <apn carrier="BPL MMS" mcc="404" mnc="21" apn="mizone" user="Mobile phone number" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="BPL MMS" mcc="404" mnc="21" apn="mizone" user="MSISDN" password="bplmmsc" mmsc="http://mms.bplmobile.com:8080" mmsproxy="10.0.0.10" mmsport="8080" type="mms" />
   <apn carrier="BPL" mcc="404" mnc="21" apn="www" user="MSISDN" password="bplmmsc" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="22" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="22" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="22" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="22" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="22" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="24" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="24" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="22" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="24" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="24" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="24" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="24" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Aircel Online" mcc="404" mnc="25" apn="aircelgprs" type="default,supl" />
   <apn carrier="Aircel GPRS" mcc="404" mnc="25" apn="aircelwap" proxy="172.17.83.69" port="8080" type="default,supl" />
   <apn carrier="Aircel MMS" mcc="404" mnc="25" apn="aircelmms" mmsc="http://172.17.83.67/servlets/mms/" mmsproxy="172.17.83.69" mmsport="8080" type="mms" />
@@ -1991,8 +1985,7 @@
   <apn carrier="Vodafone" mcc="404" mnc="43" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="43" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="43" apn="www" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="44" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="44" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="44" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="44" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
   <apn carrier="SPICE" mcc="404" mnc="44" apn="spicegprs" type="default,supl" />
   <apn carrier="SPICE MMS" mcc="404" mnc="44" apn="spicemms" user="User Mobile number" password="spice" mmsc="http://10.200.200.3:8514" mmsproxy="10.200.200.3" mmsport="8080" type="mms" />
@@ -2033,10 +2026,9 @@
   <apn carrier="BSNL-mms" mcc="404" mnc="55" apn="bsnlmms" proxy="10.210.10.11" port="8080" mmsc="http://bsnlmmsc.in:8514" mmsproxy="10.210.10.11" mmsport="8080" type="mms" />
   <apn carrier="BSNL" mcc="404" mnc="55" apn="bsnlnet" user="MSISDN" password="MSISDN" type="default,supl" />
   <apn carrier="BSNL MMS" mcc="404" mnc="55" apn="mmssouth.cellone.in" user="MSISDN" password="mmsc" mmsc="http://10.7.236.11:8514" mmsproxy="10.7.236.11" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="56" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="56" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="56" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="56" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="56" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="56" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="BSNL NET" mcc="404" mnc="57" apn="bsnlnet" type="default,supl" />
   <apn carrier="BSNL WAP" mcc="404" mnc="57" apn="WAPSOUTH.CELLONE.IN" proxy="10.31.54.2" port="9401" user="PPP" password="PPP123" type="default,supl" />
   <apn carrier="BSNL-mms" mcc="404" mnc="57" apn="bsnlmms" proxy="10.210.10.11" port="8080" mmsc="http://bsnlmmsc.in:8514" mmsproxy="10.210.10.11" mmsport="8080" type="mms" />
@@ -2128,10 +2120,7 @@
   <apn carrier="BSNL-mms" mcc="404" mnc="77" apn="bsnlmms" proxy="10.210.10.11" port="8080" mmsc="http://bsnlmmsc.in:8514" mmsproxy="10.210.10.11" mmsport="8080" type="mms" />
   <apn carrier="BSNL" mcc="404" mnc="77" apn="bsnlnet" user="MSISDN" password="MSISDN" type="default,supl" />
   <apn carrier="BSNL MMS" mcc="404" mnc="77" apn="mmssouth.cellone.in" user="MSISDN" password="mmsc" mmsc="http://10.7.236.11:8514" mmsproxy="10.7.236.11" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="78" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="78" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="404" mnc="78" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="78" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="78" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="BSNL NET" mcc="404" mnc="79" apn="bsnlnet" type="default,supl" />
   <apn carrier="BSNL WAP" mcc="404" mnc="79" apn="WAPSOUTH.CELLONE.IN" proxy="10.31.54.2" port="9401" user="PPP" password="PPP123" type="default,supl" />
   <apn carrier="BSNL-mms" mcc="404" mnc="79" apn="bsnlmms" proxy="10.210.10.11" port="8080" mmsc="http://bsnlmmsc.in:8514" mmsproxy="10.210.10.11" mmsport="8080" type="mms" />
@@ -2145,10 +2134,9 @@
   <apn carrier="BSNL-mms" mcc="404" mnc="81" apn="bsnlmms" proxy="10.210.10.11" port="8080" mmsc="http://bsnlmmsc.in:8514" mmsproxy="10.210.10.11" mmsport="8080" type="mms" />
   <apn carrier="BSNL" mcc="404" mnc="81" apn="bsnlnet" user="MSISDN" password="MSISDN" type="default,supl" />
   <apn carrier="BSNL MMS" mcc="404" mnc="81" apn="mmssouth.cellone.in" user="MSISDN" password="mmsc" mmsc="http://10.7.236.11:8514" mmsproxy="10.7.236.11" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="82" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="82" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="82" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="82" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="82" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="82" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="NetConnect" mcc="404" mnc="83" apn="rcomnet" type="default,supl" />
   <apn carrier="Reliance GPRS" mcc="404" mnc="83" apn="rcomwap" proxy="10.239.221.5" port="8080" type="default,supl" />
   <apn carrier="Smart MMS" mcc="404" mnc="83" apn="rcommms" proxy="10.239.221.5" port="8080" mmsc="http://10.239.221.47/mms/" mmsproxy="10.239.221.5" mmsport="8080" type="mms" />
@@ -2163,17 +2151,15 @@
   <apn carrier="Vodafone" mcc="404" mnc="86" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="86" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="86" apn="www" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="87" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="87" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="87" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="87" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="87" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="87" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Vodafone" mcc="404" mnc="88" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="88" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="88" apn="www" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="404" mnc="89" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="404" mnc="89" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="404" mnc="89" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="404" mnc="89" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="404" mnc="89" apn="mobile" type="default,supl" />
+  <apn carrier="ims" mcc="404" mnc="89" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Airtel GPRS" mcc="404" mnc="90" apn="airtelgprs.com" type="default,supl" />
   <apn carrier="Airtel Live" mcc="404" mnc="90" apn="airtelfun.com" proxy="100.1.200.99" port="8080" type="default,supl" />
   <apn carrier="Airtel MMS" mcc="404" mnc="90" apn="airtelmms.com" mmsc="http://100.1.201.171:10021/mmsc" mmsproxy="100.1.201.172" mmsport="8799" type="mms" />
@@ -2455,12 +2441,9 @@
   <apn carrier="Vodafone" mcc="405" mnc="67" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="405" mnc="67" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="405" mnc="67" apn="www" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="70" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="70" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="70" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="70" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="70" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="70" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="70" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
+  <apn carrier="ims" mcc="405" mnc="70" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Vodafone" mcc="405" mnc="750" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="405" mnc="750" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="405" mnc="750" apn="www" type="default,supl" />
@@ -2481,12 +2464,11 @@
   <apn carrier="Vodafone" mcc="405" mnc="756" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="405" mnc="756" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="405" mnc="756" apn="www" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="799" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="799" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="799" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="799" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="799" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="799" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="799" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
+  <apn carrier="ims" mcc="405" mnc="799" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="84" apn="internet" type="default,supl" />
+  <apn carrier="IDEA MMS" mcc="405" mnc="84" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
   <apn carrier="Aircel Online" mcc="405" mnc="800" apn="aircelgprs" type="default,supl" />
   <apn carrier="Aircel GPRS" mcc="405" mnc="800" apn="aircelwap" proxy="172.17.83.69" port="8080" type="default,supl" />
   <apn carrier="Aircel MMS" mcc="405" mnc="800" apn="aircelmms" mmsc="http://172.17.83.67/servlets/mms/" mmsproxy="172.17.83.69" mmsport="8080" type="mms" />
@@ -2572,60 +2554,33 @@
   <apn carrier="Uninor Internet" mcc="405" mnc="822" apn="Uninor" type="default,supl" />
   <apn carrier="Uninor" mcc="405" mnc="844" apn="Uninor" proxy="10.58.10.58" port="8080" type="default,supl" />
   <apn carrier="Uninor Internet" mcc="405" mnc="844" apn="Uninor" type="default,supl" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="845" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="845" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="845" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="845" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="845" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="845" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="845" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="846" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="846" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="845" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="846" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="846" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="846" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="846" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="846" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="847" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="847" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="846" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="847" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="847" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="847" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="847" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="847" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="848" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="848" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="847" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="848" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="848" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="848" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="848" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="848" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="849" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="849" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="848" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="849" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="849" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="849" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="849" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="849" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="850" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="850" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="849" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="850" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="850" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="850" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="850" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="850" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="851" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="851" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="850" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="851" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="851" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="851" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="851" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="851" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="852" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="852" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="851" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="852" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="852" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="852" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="852" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="852" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Internet" mcc="405" mnc="853" apn="internet" type="default,supl" />
-  <apn carrier="IDEA Wap" mcc="405" mnc="853" apn="imis" proxy="10.4.42.15" port="8080" type="default,supl" />
+  <apn carrier="ims" mcc="405" mnc="852" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="853" apn="internet" type="default,supl" />
   <apn carrier="IDEA MMS" mcc="405" mnc="853" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
-  <apn carrier="IDEA Mobile" mcc="405" mnc="853" apn="mobile" type="default,supl" />
-  <apn carrier="IDEA" mcc="405" mnc="853" apn="internet" type="default,supl" />
-  <apn carrier="IDEA MMS" mcc="405" mnc="853" apn="mmsc" mmsc="http://10.4.42.21:8002/" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
+  <apn carrier="ims" mcc="405" mnc="853" apn="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" type="ims" />
   <apn carrier="Uninor" mcc="405" mnc="875" apn="Uninor" proxy="10.58.10.58" port="8080" type="default,supl" />
   <apn carrier="Uninor Internet" mcc="405" mnc="875" apn="Uninor" type="default,supl" />
   <apn carrier="Uninor" mcc="405" mnc="876" apn="Uninor" proxy="10.58.10.58" port="8080" type="default,supl" />
@@ -2638,12 +2593,20 @@
   <apn carrier="Uninor Internet" mcc="405" mnc="879" apn="Uninor" type="default,supl" />
   <apn carrier="Uninor" mcc="405" mnc="880" apn="Uninor" proxy="10.58.10.58" port="8080" type="default,supl" />
   <apn carrier="Uninor Internet" mcc="405" mnc="880" apn="Uninor" type="default,supl" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="908" apn="internet" type="default,supl" />
+  <apn carrier="IDEA MMS" mcc="405" mnc="908" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
   <apn carrier="SPICE" mcc="405" mnc="908" apn="spicegprs" type="default,supl" />
   <apn carrier="SPICE MMS" mcc="405" mnc="908" apn="spicemms" user="User Mobile number" password="spice" mmsc="http://10.200.200.3:8514" mmsproxy="10.200.200.3" mmsport="8080" type="mms" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="909" apn="internet" type="default,supl" />
+  <apn carrier="IDEA MMS" mcc="405" mnc="909" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
   <apn carrier="SPICE" mcc="405" mnc="909" apn="spicegprs" type="default,supl" />
   <apn carrier="SPICE MMS" mcc="405" mnc="909" apn="spicemms" user="User Mobile number" password="spice" mmsc="http://10.200.200.3:8514" mmsproxy="10.200.200.3" mmsport="8080" type="mms" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="910" apn="internet" type="default,supl" />
+  <apn carrier="IDEA MMS" mcc="405" mnc="910" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
   <apn carrier="SPICE" mcc="405" mnc="910" apn="spicegprs" type="default,supl" />
   <apn carrier="SPICE MMS" mcc="405" mnc="910" apn="spicemms" user="User Mobile number" password="spice" mmsc="http://10.200.200.3:8514" mmsproxy="10.200.200.3" mmsport="8080" type="mms" />
+  <apn carrier="IDEA gprs" mcc="405" mnc="911" apn="internet" type="default,supl" />
+  <apn carrier="IDEA MMS" mcc="405" mnc="911" apn="mmsc" mmsc="http://10.4.42.21:8002" mmsproxy="10.4.42.15" mmsport="8080" type="mms" />
   <apn carrier="SPICE" mcc="405" mnc="911" apn="spicegprs" type="default,supl" />
   <apn carrier="SPICE MMS" mcc="405" mnc="911" apn="spicemms" user="User Mobile number" password="spice" mmsc="http://10.200.200.3:8514" mmsproxy="10.200.200.3" mmsport="8080" type="mms" />
   <apn carrier="Uninor" mcc="405" mnc="925" apn="Uninor" proxy="10.58.10.58" port="8080" type="default,supl" />
