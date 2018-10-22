@@ -356,10 +356,10 @@ if __name__ == '__main__':
         #   - check that the project path exists
         project_path = None
 
-        if item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
-            project_path = project_name_to_data[item['project']][item['branch']]
-        elif args.path:
+        if args.path:
             project_path = args.path
+        elif item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
+            project_path = project_name_to_data[item['project']][item['branch']]
         elif args.ignore_missing:
             print('WARNING: Skipping {0} since there is no project directory for: {1}\n'.format(item['id'], item['project']))
             continue
