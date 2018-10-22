@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aa8ab5b6_ae32982f",
+        "filename": "tools/custom_apns.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2018-10-22T07:05:24Z",
+      "side": 1,
+      "message": "it this needed?",
+      "range": {
+        "startLine": 38,
+        "startChar": 4,
+        "endLine": 38,
+        "endChar": 13
+      },
+      "revId": "438735bcb189caac85dcd7e58bb901a59fa4012d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
