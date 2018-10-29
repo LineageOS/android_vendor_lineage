@@ -24,20 +24,23 @@ static void print_usage() {
     printf("veritytool - toggle block device verification\n"
            "    --help        show this help\n"
            "    --enable      enable dm-verity\n"
-           "    --disable     disable dm-verity\n");
+           "    --disable     disable dm-verity\n"
+           "    --show        show current dm-verity state\n");
 }
 
 int main(int argc, char** argv) {
     int c, rc;
     int enable = 0;
+    int show = 0;
     bool flag_set = false;
     struct option long_opts[] = {
         {"disable", no_argument, &enable, 0},
         {"enable", no_argument, &enable, 1},
+        {"show", no_argument, &show, 1},
         {NULL, 0, NULL, 0},
     };
 
-    while ((c = getopt_long(argc, argv, "de", long_opts, NULL)) != -1) {
+    while ((c = getopt_long(argc, argv, "des", long_opts, NULL)) != -1) {
         switch (c) {
             case 0:
                 flag_set = true;
@@ -51,6 +54,26 @@ int main(int argc, char** argv) {
     if (!flag_set) {
         print_usage();
         exit(0);
+    }
+
+    if (show) {
+        printf("dm-verity state: ");
+        switch (get_verity_state()) {
+            case VERITY_STATE_NO_DEVICE:
+                printf("NO DEVICE");
+                break;
+            case VERITY_STATE_DISABLED:
+                printf("DISABLED");
+                break;
+            case VERITY_STATE_ENABLED:
+                printf("ENABLED");
+                break;
+            default:
+                printf("UNKNOWN");
+                break;
+        }
+        printf("\n");
+        return 0;
     }
 
     if (!set_verity_enabled(enable)) {

@@ -2,7 +2,7 @@
 <!--
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,6 +55,7 @@
     <!--Netherlands-->
     <sensitivePN network="204">
         <item>116006</item>
+        <item>116111</item>
         <item>116123</item>
         <item>08000432</item>
         <item>08002000</item>
@@ -94,6 +95,10 @@
         <item>116111</item>
         <item>116123</item>
     </sensitivePN>
+    <!--Bosnia and Herzegovina-->
+    <sensitivePN network="218">
+        <item>080050305</item>
+    </sensitivePN>
     <!--Croatia-->
     <sensitivePN network="219">
         <item>116006</item>
@@ -101,15 +106,21 @@
     </sensitivePN>
     <!--Serbia-->
     <sensitivePN network="220">
+        <item>116111</item>
         <item>2645328</item>
         <item>3192782</item>
         <item>3626006</item>
         <item>0800100600</item>
         <item>0800123456</item>
     </sensitivePN>
+    <!--Kosovo-->
+    <sensitivePN network="221">
+        <item>080011112</item>
+    </sensitivePN>
     <!--Italy-->
     <sensitivePN network="222">
         <item>1522</item>
+        <item>19696</item>
     </sensitivePN>
     <!--Romania-->
     <sensitivePN network="226">
@@ -118,6 +129,7 @@
     </sensitivePN>
     <!--Switzerland-->
     <sensitivePN network="228">
+        <item>147</item>
         <item>116000</item>
         <item>116111</item>
     </sensitivePN>
@@ -147,6 +159,7 @@
     </sensitivePN>
     <!--Austria-->
     <sensitivePN network="232">
+        <item>147</item>
         <item>116006</item>
         <item>116123</item>
         <item>0800222555</item>
@@ -170,6 +183,7 @@
     </sensitivePN>
     <!--Norway-->
     <sensitivePN network="242">
+        <item>116111</item>
         <item>22424202</item>
         <item>22444050</item>
         <item>23227930</item>
@@ -193,12 +207,26 @@
     <sensitivePN network="248">
         <item>116111</item>
     </sensitivePN>
+    <!--Russia-->
+    <sensitivePN network="250">
+        <item>88002000122</item>
+        <item>88002500015</item>
+    </sensitivePN>
     <!--Ukraine-->
     <sensitivePN network="255">
         <item>386</item>
         <item>772</item>
+        <item>116111</item>
         <item>0800500225</item>
         <item>0800500335</item>
+    </sensitivePN>
+    <!--Belarus-->
+    <sensitivePN network="257">
+        <item>88011001611</item>
+    </sensitivePN>
+    <!--Moldova-->
+    <sensitivePN network="255,259">
+        <item>116111</item>
     </sensitivePN>
     <!--Poland-->
     <sensitivePN network="260">
@@ -229,8 +257,13 @@
         <item>116111</item>
         <item>116123</item>
     </sensitivePN>
+    <!--Iceland-->
+    <sensitivePN network="274">
+        <item>1717</item>
+    </sensitivePN>
     <!--Malta-->
     <sensitivePN network="278">
+        <item>179</item>
         <item>116111</item>
         <item>116123</item>
     </sensitivePN>
@@ -239,12 +272,225 @@
         <item>116111</item>
         <item>116123</item>
     </sensitivePN>
+    <!--Georgia-->
+    <sensitivePN network="282">
+      <item>116111</item>
+    </sensitivePN>
+    <!--Armenia-->
+    <sensitivePN network="283">
+        <item>240160</item>
+    </sensitivePN>
     <!--Bulgaria-->
     <sensitivePN network="284">
         <item>116111</item>
+        <item>028130250</item>
+        <item>028223510</item>
+        <item>029204238</item>
+        <item>029339010</item>
+        <item>029339011</item>
+        <item>029360011</item>
+        <item>029360535</item>
+        <item>029361026</item>
+        <item>029569529</item>
+        <item>029635357</item>
         <item>029817686</item>
+        <item>029835205</item>
+        <item>029835305</item>
+        <item>029835405</item>
+        <item>030181771</item>
+        <item>030412049</item>
+        <item>030454240</item>
+        <item>030712038</item>
+        <item>030728824</item>
+        <item>031182290</item>
+        <item>031348618</item>
+        <item>031452059</item>
+        <item>031822316</item>
+        <item>032207253</item>
+        <item>032260708</item>
+        <item>032512989</item>
+        <item>032622322</item>
+        <item>032658150</item>
+        <item>032660530</item>
+        <item>032814072</item>
+        <item>032943444</item>
+        <item>033127352</item>
+        <item>033555771</item>
+        <item>033762547</item>
+        <item>034447530</item>
+        <item>035172233</item>
+        <item>035762023</item>
+        <item>035950344</item>
+        <item>036328858</item>
+        <item>036417274</item>
+        <item>036417275</item>
+        <item>036514145</item>
+        <item>037049991</item>
+        <item>037391076</item>
+        <item>038620392</item>
+        <item>038624685</item>
+        <item>038662138</item>
+        <item>039126095</item>
+        <item>041695554</item>
+        <item>042641111</item>
+        <item>042660328</item>
+        <item>043162866</item>
+        <item>044667257</item>
+        <item>046622056</item>
+        <item>047616468</item>
+        <item>051843021</item>
+        <item>052609677</item>
+        <item>052613830</item>
+        <item>052820693</item>
+        <item>052919779</item>
+        <item>053432050</item>
+        <item>053725343</item>
+        <item>054833124</item>
+        <item>054850777</item>
+        <item>054869958</item>
+        <item>055022125</item>
+        <item>055513072</item>
+        <item>055513074</item>
+        <item>055922113</item>
+        <item>056530405</item>
+        <item>056815618</item>
+        <item>056825205</item>
+        <item>056825601</item>
+        <item>058601088</item>
+        <item>058605472</item>
+        <item>059632435</item>
+        <item>060161142</item>
+        <item>060161144</item>
+        <item>060161146</item>
+        <item>060161148</item>
+        <item>060161632</item>
+        <item>060162889</item>
+        <item>060167025</item>
+        <item>061052712</item>
+        <item>061132620</item>
+        <item>061416934</item>
+        <item>061613713</item>
+        <item>061822181</item>
+        <item>061922187</item>
+        <item>062602604</item>
+        <item>063140086</item>
+        <item>064824156</item>
+        <item>064846713</item>
+        <item>065093117</item>
+        <item>065522034</item>
+        <item>066805419</item>
+        <item>066805770</item>
+        <item>066809818</item>
+        <item>067052014</item>
+        <item>067532790</item>
+        <item>067675574</item>
+        <item>068602928</item>
+        <item>070019559</item>
+        <item>070150441</item>
+        <item>071722085</item>
+        <item>072093336</item>
+        <item>072166663</item>
+        <item>072695038</item>
+        <item>074422316</item>
+        <item>075161157</item>
+        <item>076601010</item>
+        <item>076603360</item>
+        <item>076695005</item>
+        <item>077313010</item>
+        <item>077787488</item>
+        <item>078529171</item>
+        <item>078939608</item>
+        <item>080011977</item>
+        <item>080018017</item>
         <item>080018676</item>
         <item>080020100</item>
+        <item>081222033</item>
+        <item>082813380</item>
+        <item>082826770</item>
+        <item>084660283</item>
+        <item>084772560</item>
+        <item>084872020</item>
+        <item>086732268</item>
+        <item>086820487</item>
+        <item>086821495</item>
+        <item>091232064</item>
+        <item>092620063</item>
+        <item>092620484</item>
+        <item>094600606</item>
+        <item>095380116</item>
+        <item>096300134</item>
+        <item>096300491</item>
+        <item>096303270</item>
+        <item>097380953</item>
+        <item>0876244006</item>
+        <item>0876400660</item>
+        <item>0876552572</item>
+        <item>0877330225</item>
+        <item>0877622665</item>
+        <item>0877655353</item>
+        <item>0877966850</item>
+        <item>0878121910</item>
+        <item>0878238102</item>
+        <item>0878324320</item>
+        <item>0878394250</item>
+        <item>0878567620</item>
+        <item>0878567659</item>
+        <item>0878628756</item>
+        <item>0879260101</item>
+        <item>0879387620</item>
+        <item>0879453503</item>
+        <item>0879530460</item>
+        <item>0879532892</item>
+        <item>0879535905</item>
+        <item>0879606855</item>
+        <item>0879612223</item>
+        <item>0879816911</item>
+        <item>0879819195</item>
+        <item>0879993859</item>
+        <item>0882071603</item>
+        <item>0882165368</item>
+        <item>0882290920</item>
+        <item>0882290980</item>
+        <item>0882330008</item>
+        <item>0882384587</item>
+        <item>0882420038</item>
+        <item>0883256622</item>
+        <item>0884029213</item>
+        <item>0884199173</item>
+        <item>0884301016</item>
+        <item>0884843400</item>
+        <item>0884877595</item>
+        <item>0884940688</item>
+        <item>0884959367</item>
+        <item>0884977296</item>
+        <item>0885546493</item>
+        <item>0885584855</item>
+        <item>0886203742</item>
+        <item>0886207985</item>
+        <item>0886785906</item>
+        <item>0887302241</item>
+        <item>0887900324</item>
+        <item>0888111703</item>
+        <item>0888628146</item>
+        <item>0888818510</item>
+        <item>0888885909</item>
+        <item>0889040412</item>
+        <item>0889111848</item>
+        <item>0889393132</item>
+        <item>0889667600</item>
+        <item>0889799855</item>
+        <item>0893328940</item>
+        <item>0893455930</item>
+        <item>0893474238</item>
+        <item>0894412380</item>
+        <item>0894420941</item>
+        <item>0894438106</item>
+        <item>0895514923</item>
+        <item>0895140600</item>
+        <item>0896662766</item>
+        <item>0897013236</item>
+        <item>0898575963</item>
+        <item>0899846850</item>
     </sensitivePN>
     <!--Turkey-->
     <sensitivePN network="286">
@@ -252,11 +498,23 @@
         <item>183</item>
         <item>05493810183</item>
         <item>05494412144</item>
+        <item>08504550070</item>
     </sensitivePN>
     <!--Slovenia-->
     <sensitivePN network="293">
         <item>116111</item>
         <item>116123</item>
+    </sensitivePN>
+    <!--Macedonia-->
+    <sensitivePN network="294">
+        <item>192</item>
+        <item>193</item>
+        <item>194</item>
+        <item>080012222</item>
+    </sensitivePN>
+    <!--Montenegro-->
+    <sensitivePN network="297">
+        <item>080081550</item>
     </sensitivePN>
     <!--Canada-->
     <sensitivePN network="302">
@@ -398,6 +656,25 @@
         <item>18662231111</item>
         <item>18663852699</item>
         <item>18666894357</item>
+    </sensitivePN>
+    <!--Antigua and Barbuda-->
+    <sensitivePN network="344">
+        <item>8004357</item>
+    </sensitivePN>
+    <!--Former Dutch Antilles-->
+    <sensitivePN network="362">
+        <item>4614444</item>
+    </sensitivePN>
+    <!--Aruba-->
+    <sensitivePN network="363">
+        <item>131</item>
+    </sensitivePN>
+    <!--Azerbaijan-->
+    <sensitivePN network="400">
+        <item>0124802280</item>
+        <item>0506802280</item>
+        <item>0518801180</item>
+        <item>0884802280</item>
     </sensitivePN>
     <!--India-->
     <sensitivePN network="404,405">
