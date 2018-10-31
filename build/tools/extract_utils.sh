@@ -845,7 +845,7 @@ function oat2dex() {
             # try to extract classes.dex from boot.vdex for frameworks jars
             # fallback to boot.oat if vdex is not available
             if get_file "$JARVDEX" "$TMPDIR" "$SRC"; then
-                "$VDEXEXTRACTOR" -o "$TMPDIR/" -i "$TMPDIR/$(basename "$JARVDEX")"
+                "$VDEXEXTRACTOR" -o "$TMPDIR/" -i "$TMPDIR/$(basename "$JARVDEX")" > /dev/null
                 # Check if we have to deal with CompactDex
                 if [ -f "$TMPDIR/$(basename "${JARVDEX%.*}")_classes.cdex" ]; then
                     "$CDEXCONVERTER" "$TMPDIR/$(basename "${JARVDEX%.*}")_classes.cdex" &> /dev/null
