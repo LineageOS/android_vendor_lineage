@@ -35,7 +35,7 @@ lineage_generator {
 
     // Sources for dependency tracking
     dep_root: "$(TARGET_KERNEL_SOURCE)",
-    dep_files: [ "Makefile", "include/**/*", "arch/$(KERNEL_ARCH)/include/**/*"],
+    dep_files: [ "Makefile", "include/**/*", "arch/$(KERNEL_ARCH)/include/**/*", "techpack/audio/include/**/*"],
 }
 
 cc_library_headers {
