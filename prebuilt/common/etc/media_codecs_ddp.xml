@@ -23,13 +23,13 @@
             <Limit name="sample-rate" ranges="32000,44100,48000" />
             <Limit name="bitrate" range="32000-640000" />
         </MediaCodec>
-        <!-- The following decoders are unsupported in Lineage -->
-        <!--MediaCodec name="OMX.dolby.eac3.decoder" type="audio/eac3">
+        <MediaCodec name="OMX.dolby.eac3.decoder" type="audio/eac3">
             <Limit name="channel-count" max="8" />
             <Limit name="sample-rate" ranges="32000,44100,48000" />
             <Limit name="bitrate" range="32000-6144000" />
         </MediaCodec>
-        <MediaCodec name="OMX.dolby.eac3_joc.decoder" type="audio/eac3-joc">
+        <!-- The following decoder is unsupported in Lineage -->
+        <!--MediaCodec name="OMX.dolby.eac3_joc.decoder" type="audio/eac3-joc">
             <Limit name="channel-count" max="8" />
             <Limit name="sample-rate" ranges="48000" />
             <Limit name="bitrate" range="32000-6144000" />
