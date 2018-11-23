@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1c9fad4a_cb84793a",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-11-23T20:35:56Z",
+      "side": 1,
+      "message": "Add definition there?",
+      "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47df0f4c_958d6290",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-11-23T20:35:56Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 121,
+        "startChar": 0,
+        "endLine": 125,
+        "endChar": 0
+      },
+      "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "acaa118d_6b28e27d",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-11-23T20:35:56Z",
+      "side": 1,
+      "message": "ifeq ($(BOARD_AVB_ENABLE), true)\n\t$(AVBTOOL) add_hash_footer \\\n\t\t--image $@ \\\n\t\t--partition_size $(BOARD_DTBOIMG_PARTITION_SIZE) \\\n\t\t--partition_name $(TARGET_DTBO_IMAGE_NAME) $(INTERNAL_AVB_DTBO_SIGNING_ARGS) \\\n\t\t$(BOARD_AVB_DTBO_ADD_HASH_FOOTER_ARGS)\nendif",
+      "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
