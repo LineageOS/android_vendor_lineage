@@ -114,6 +114,14 @@ ifneq ($(TARGET_KERNEL_APPEND_DTB),)
 $(error TARGET_KERNEL_APPEND_DTB is deprecated.)
 endif
 TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
+TARGET_DTBO_IMAGE_NAME ?= dtbo
+TARGET_DTBO_IMAGE_TARGET ?= dtbo.img
+TARGET_DTBO_IMAGE_PATH ?= dtbo/arch/$(KERNEL_ARCH)/boot/$(TARGET_DTBO_IMAGE_NAME).img
+
+dtbo_avbtool_signing_enabled :=
+ifeq ($(BOARD_AVB_ENABLE), true)
+  dtbo_avbtool_signing_enabled := true
+endif
 
 # Clear this first to prevent accidental poisoning from env
 MAKE_FLAGS :=
@@ -419,16 +427,18 @@ alldefconfig:
 
 endif # FULL_KERNEL_BUILD
 
-TARGET_PREBUILT_DTBO = $(PRODUCT_OUT)/dtbo/arch/$(KERNEL_ARCH)/boot/dtbo.img
+TARGET_PREBUILT_DTBO = $(PRODUCT_OUT)/$(TARGET_DTBO_IMAGE_PATH)
 $(TARGET_PREBUILT_DTBO): $(AVBTOOL)
-	echo -e ${CL_GRN}"Building DTBO.img"${CL_RST}
+	echo -e ${CL_GRN}"Building $(TARGET_DTBO_IMAGE_NAME).img"${CL_RST}
 	$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(PRODUCT_OUT)/dtbo ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(KERNEL_DEFCONFIG)
-	$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(PRODUCT_OUT)/dtbo ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) dtbo.img
+	$(MAKE) $(MAKE_FLAGS) -C $(KERNEL_SRC) O=$(PRODUCT_OUT)/dtbo ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(TARGET_DTBO_IMAGE_TARGET)
+ifdef dtbo_avbtool_signing_enabled
 	$(AVBTOOL) add_hash_footer \
 		--image $@ \
 		--partition_size $(BOARD_DTBOIMG_PARTITION_SIZE) \
-		--partition_name dtbo $(INTERNAL_AVB_DTBO_SIGNING_ARGS) \
+		--partition_name $(TARGET_DTBO_IMAGE_NAME) $(INTERNAL_AVB_DTBO_SIGNING_ARGS) \
 		$(BOARD_AVB_DTBO_ADD_HASH_FOOTER_ARGS)
+endif
 
 ## Install it
 
