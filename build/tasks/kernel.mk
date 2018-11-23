@@ -53,6 +53,14 @@
 #                                          modules in root instead of vendor
 #   NEED_KERNEL_MODULE_SYSTEM          = Optional, if true, install kernel
 #                                          modules in system instead of vendor
+#
+#   TARGET_DTBO_IMAGE_NAME             = Device Tree Binary Overlay (DTBO) image name
+#                                          Should be 'dtbo' for most devices
+#                                          Some MediaTek devices use 'odmdtbo'
+#   TARGET_DTBO_IMAGE_TARGET           = Similar to TARGET_DTBO_IMAGE_NAME, but the full file name
+#                                          Should be 'dtbo.img' for most devices
+#                                          Some MediaTek devices use 'odmdtboimage'
+#   TARGET_DTBO_IMAGE_PATH             = Path to generated DTBO image in inline kernel build tree
 
 ifneq ($(TARGET_NO_KERNEL),true)
 
@@ -78,6 +86,9 @@ ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
 $(error BOARD_KERNEL_IMAGE_NAME not defined.)
 endif
 TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
+TARGET_DTBO_IMAGE_NAME ?= dtbo
+TARGET_DTBO_IMAGE_TARGET ?= dtbo.img
+TARGET_DTBO_IMAGE_PATH ?= dtbo/arch/$(KERNEL_ARCH)/boot/$(TARGET_DTBO_IMAGE_NAME).img
 
 ifneq ($(TARGET_KERNEL_ADDITIONAL_CONFIG),)
 KERNEL_ADDITIONAL_CONFIG := $(TARGET_KERNEL_ADDITIONAL_CONFIG)
@@ -277,11 +288,11 @@ alldefconfig:
 		 $(call make-kernel-target,alldefconfig)
 
 ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
-BOARD_PREBUILT_DTBOIMAGE = $(PRODUCT_OUT)/dtbo/arch/$(KERNEL_ARCH)/boot/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE = $(PRODUCT_OUT)/$(TARGET_DTBO_IMAGE_PATH)
 $(BOARD_PREBUILT_DTBOIMAGE):
-	echo -e ${CL_GRN}"Building DTBO.img"${CL_RST}
+	echo -e ${CL_GRN}"Building $(TARGET_DTBO_IMAGE_NAME).img"${CL_RST}
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
-	$(call make-dtbo-target,dtbo.img)
+	$(call make-dtbo-target,$(TARGET_DTBO_IMAGE_NAME))
 endif # TARGET_NEEDS_DTBOIMAGE
 
 endif # FULL_KERNEL_BUILD
