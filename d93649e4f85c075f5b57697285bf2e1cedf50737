@@ -116,6 +116,24 @@
       "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9d963d98_02f33fa7",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-11-24T11:42:57Z",
+      "side": 1,
+      "message": "Uh right, they do\nifeq ($(BOARD_AVB_ENABLE),true)\n$(INSTALLED_DTBOIMAGE_TARGET): $(BOARD_PREBUILT_DTBOIMAGE) $(AVBTOOL) $(BOARD_AVB_DTBO_KEY_PATH)\n\tcp $(BOARD_PREBUILT_DTBOIMAGE) $@\n\t$(AVBTOOL) add_hash_footer \\\n\t\t--image $@ \\\n\t\t--partition_size $(BOARD_DTBOIMG_PARTITION_SIZE) \\\n\t\t--partition_name dtbo $(INTERNAL_AVB_DTBO_SIGNING_ARGS) \\\n\t\t$(BOARD_AVB_DTBO_ADD_HASH_FOOTER_ARGS)\nelse\n$(INSTALLED_DTBOIMAGE_TARGET): $(BOARD_PREBUILT_DTBOIMAGE)\n\tcp $(BOARD_PREBUILT_DTBOIMAGE) $@\nendif",
+      "parentUuid": "1ab2f278_a71374dc",
+      "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
