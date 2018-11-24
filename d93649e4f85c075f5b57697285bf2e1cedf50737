@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "2ce1ff20_9c39a47f",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-11-24T11:20:13Z",
+      "side": 1,
+      "message": "Other vars such as TARGET_NEEDS_DTBOIMAGE also lack explanation here FYI.\nBut yes, some explaining should be done as part of this change.",
+      "parentUuid": "1c9fad4a_cb84793a",
+      "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "47df0f4c_958d6290",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 1
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "9b947a94_1dc5bac3",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-11-24T11:20:13Z",
+      "side": 1,
+      "message": "no",
+      "parentUuid": "47df0f4c_958d6290",
+      "range": {
+        "startLine": 121,
+        "startChar": 0,
+        "endLine": 125,
+        "endChar": 0
+      },
+      "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "acaa118d_6b28e27d",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 1
@@ -53,6 +95,24 @@
       "writtenOn": "2018-11-23T20:35:56Z",
       "side": 1,
       "message": "ifeq ($(BOARD_AVB_ENABLE), true)\n\t$(AVBTOOL) add_hash_footer \\\n\t\t--image $@ \\\n\t\t--partition_size $(BOARD_DTBOIMG_PARTITION_SIZE) \\\n\t\t--partition_name $(TARGET_DTBO_IMAGE_NAME) $(INTERNAL_AVB_DTBO_SIGNING_ARGS) \\\n\t\t$(BOARD_AVB_DTBO_ADD_HASH_FOOTER_ARGS)\nendif",
+      "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1ab2f278_a71374dc",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-11-24T11:20:13Z",
+      "side": 1,
+      "message": "It doesn\u0027t work that way afaik.\nGoogle also does what I did (see e.g. https://github.com/LineageOS/android_build/blob/lineage-16.0/core/Makefile#L180).",
+      "parentUuid": "acaa118d_6b28e27d",
       "revId": "d93649e4f85c075f5b57697285bf2e1cedf50737",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
