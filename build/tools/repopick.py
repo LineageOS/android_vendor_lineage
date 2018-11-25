@@ -48,6 +48,12 @@ except ImportError:
         urllib.request = urllib2
 
 
+# cmp() is not available in Python 3, define it manually
+# See https://docs.python.org/3.0/whatsnew/3.0.html#ordering-comparisons
+def cmp(a, b):
+    return (a > b) - (a < b)
+
+
 # Verifies whether pathA is a subdirectory (or the same) as pathB
 def is_subdir(a, b):
     a = os.path.realpath(a) + '/'
