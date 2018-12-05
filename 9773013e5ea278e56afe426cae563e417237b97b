@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ca6655bc_c73ed638",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-12-05T19:53:08Z",
+      "side": 1,
+      "message": "this check fails ;-;",
+      "revId": "9773013e5ea278e56afe426cae563e417237b97b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
