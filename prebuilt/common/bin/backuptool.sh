@@ -4,7 +4,7 @@
 #
 
 export C=/tmp/backupdir
-export S=/system
+export S=$2
 export V=16.0
 
 export ADDOND_VERSION=1
@@ -14,9 +14,9 @@ cp -f /tmp/install/bin/backuptool.functions /tmp
 
 # Preserve /system/addon.d in /tmp/addon.d
 preserve_addon_d() {
-  if [ -d /system/addon.d/ ]; then
+  if [ -d $S/addon.d/ ]; then
     mkdir -p /tmp/addon.d/
-    cp -a /system/addon.d/* /tmp/addon.d/
+    cp -a $S/addon.d/* /tmp/addon.d/
 
     # Discard any scripts that aren't at least our version level
     for f in /postinstall/tmp/addon.d/*sh; do
@@ -36,8 +36,8 @@ preserve_addon_d() {
 # Restore /system/addon.d from /tmp/addon.d
 restore_addon_d() {
   if [ -d /tmp/addon.d/ ]; then
-    mkdir -p /system/addon.d/
-    cp -a /tmp/addon.d/* /system/addon.d/
+    mkdir -p $S/addon.d/
+    cp -a /tmp/addon.d/* $S/addon.d/
     rm -rf /tmp/addon.d/
   fi
 }
@@ -45,10 +45,10 @@ restore_addon_d() {
 # Proceed only if /system is the expected major and minor version
 check_prereq() {
 # If there is no build.prop file the partition is probably empty.
-if [ ! -r /system/build.prop ]; then
+if [ ! -r $S/build.prop ]; then
     return 0
 fi
-if ! grep -q "^ro.lineage.version=$V.*" /system/build.prop; then
+if ! grep -q "^ro.lineage.version=$V.*" $S/build.prop; then
   echo "Not backing up files from incompatible version: $V"
   return 0
 fi
@@ -56,25 +56,25 @@ return 1
 }
 
 check_blacklist() {
-  if [ -f /system/addon.d/blacklist -a -d /$1/addon.d/ ]; then
+  if [ -f $S/addon.d/blacklist -a -d /$1/addon.d/ ]; then
       ## Discard any known bad backup scripts
       cd /$1/addon.d/
       for f in *sh; do
           [ -f $f ] || continue
           s=$(md5sum $f | cut -c-32)
-          grep -q $s /system/addon.d/blacklist && rm -f $f
+          grep -q $s $S/addon.d/blacklist && rm -f $f
       done
   fi
 }
 
 check_whitelist() {
   found=0
-  if [ -f /system/addon.d/whitelist ];then
+  if [ -f $S/addon.d/whitelist ];then
       ## forcefully keep any version-independent stuff
       cd /$1/addon.d/
       for f in *sh; do
           s=$(md5sum $f | cut -c-32)
-          grep -q $s /system/addon.d/whitelist
+          grep -q $s $S/addon.d/whitelist
           if [ $? -eq 0 ]; then
               found=1
           else
