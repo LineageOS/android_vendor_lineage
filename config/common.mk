@@ -47,10 +47,18 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/lineage/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/lineage/prebuilt/common/bin/50-lineage.sh:system/addon.d/50-lineage.sh \
     vendor/lineage/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+
+ifeq ($(BOARD_BUILD_SYSTEM_ROOT_IMAGE),true)
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/bin/backuptool_sar.sh:install/bin/backuptool.sh \
+    vendor/lineage/prebuilt/common/bin/backuptool_sar.functions:install/bin/backuptool.functions
+else
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/lineage/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+endif
 
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
