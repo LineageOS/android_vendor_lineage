@@ -16,7 +16,6 @@ include vendor/lineage/build/target/product/lineage_generic_tv_target.mk
 
 $(call inherit-product, device/google/atv/products/sdk_atv_armv7.mk)
 
-TARGET_USES_64_BIT_BINDER := true
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Enable mainline checking
