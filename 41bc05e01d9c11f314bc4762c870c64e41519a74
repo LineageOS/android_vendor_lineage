@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da840ec3_4792c6b0",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-16T14:39:41Z",
+      "side": 1,
+      "message": "\"Should_skip_waiting_for_qsee\"",
+      "range": {
+        "startLine": 9,
+        "startChar": 1,
+        "endLine": 9,
+        "endChar": 29
+      },
+      "revId": "41bc05e01d9c11f314bc4762c870c64e41519a74",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
