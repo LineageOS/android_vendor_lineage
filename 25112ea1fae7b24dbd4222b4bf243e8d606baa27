@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3614bd54_f91ff278",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-16T14:36:40Z",
+      "side": 1,
+      "message": "Why not just \"Supports_hw_fde\"?",
+      "range": {
+        "startLine": 6,
+        "startChar": 1,
+        "endLine": 6,
+        "endChar": 21
+      },
+      "revId": "25112ea1fae7b24dbd4222b4bf243e8d606baa27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5cd0cdac_e1870247",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-16T14:36:40Z",
+      "side": 1,
+      "message": "\"Supports_hw_fde_perf\"?",
+      "range": {
+        "startLine": 11,
+        "startChar": 1,
+        "endLine": 11,
+        "endChar": 26
+      },
+      "revId": "25112ea1fae7b24dbd4222b4bf243e8d606baa27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
