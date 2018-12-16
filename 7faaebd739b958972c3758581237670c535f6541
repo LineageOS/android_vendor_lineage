@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e4d92b98_80c2f93f",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-16T14:37:40Z",
+      "side": 1,
+      "message": "\"Has_legacy_hw_fde\"",
+      "range": {
+        "startLine": 6,
+        "startChar": 1,
+        "endLine": 6,
+        "endChar": 20
+      },
+      "revId": "7faaebd739b958972c3758581237670c535f6541",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
