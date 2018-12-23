@@ -1013,11 +1013,7 @@ function extract() {
             DST_FILE="/system/${SPEC_DST_FILE}"
         fi
 
-        if [ "$SRC" = "adb" ]; then
-            printf '  - %s .. \n' "${DST_FILE}"
-        else
-            printf '  - %s \n' "${DST_FILE}"
-        fi
+        printf '  - %s \n' "${DST_FILE#/system/}"
 
         # Strip the file path in the vendor repo of "system", if present
         local VENDOR_REPO_FILE="$OUTPUT_DIR/${DST_FILE#/system}"
