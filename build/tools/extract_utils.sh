@@ -17,8 +17,10 @@
 
 PRODUCT_COPY_FILES_LIST=()
 PRODUCT_COPY_FILES_HASHES=()
+PRODUCT_COPY_FILES_FIXUP_HASHES=()
 PRODUCT_PACKAGES_LIST=()
 PRODUCT_PACKAGES_HASHES=()
+PRODUCT_PACKAGES_FIXUP_HASHES=()
 PACKAGE_LIST=()
 VENDOR_STATE=-1
 VENDOR_RADIO_STATE=-1
@@ -659,7 +661,8 @@ function parse_file_list() {
         exit 1
     fi
 
-    if [ $# -eq 2 ]; then
+    if [ -n "$2" ]; then
+        echo "Using section \"$2\""
         LIST=$TMPDIR/files.txt
         cat $1 | sed -n '/# '"$2"'/I,/^\s*$/p' > $LIST
     else
@@ -669,8 +672,10 @@ function parse_file_list() {
 
     PRODUCT_PACKAGES_LIST=()
     PRODUCT_PACKAGES_HASHES=()
+    PRODUCT_PACKAGES_FIXUP_HASHES=()
     PRODUCT_COPY_FILES_LIST=()
     PRODUCT_COPY_FILES_HASHES=()
+    PRODUCT_COPY_FILES_FIXUP_HASHES=()
 
     while read -r line; do
         if [ -z "$line" ]; then continue; fi
@@ -682,17 +687,23 @@ function parse_file_list() {
         local COUNT=${#SPLIT[@]}
         local SPEC=${SPLIT[0]}
         local HASH="x"
+        local FIXUP_HASH="x"
         if [ "$COUNT" -gt "1" ]; then
             HASH=${SPLIT[1]}
+        fi
+        if [ "$COUNT" -gt "2" ]; then
+            FIXUP_HASH=${SPLIT[2]}
         fi
 
         # if line starts with a dash, it needs to be packaged
         if [[ "$SPEC" =~ ^- ]]; then
             PRODUCT_PACKAGES_LIST+=("${SPEC#-}")
             PRODUCT_PACKAGES_HASHES+=("$HASH")
+            PRODUCT_PACKAGES_FIXUP_HASHES+=("$FIXUP_HASH")
         else
             PRODUCT_COPY_FILES_LIST+=("$SPEC")
             PRODUCT_COPY_FILES_HASHES+=("$HASH")
+            PRODUCT_COPY_FILES_FIXUP_HASHES+=("$FIXUP_HASH")
         fi
 
     done < <(egrep -v '(^#|^[[:space:]]*$)' "$LIST" | LC_ALL=C sort | uniq)
@@ -911,32 +922,73 @@ function fix_xml() {
     mv "$TEMP_XML" "$XML"
 }
 
+function get_hash() {
+    local FILE="$1"
+
+    if [ "$(uname)" == "Darwin" ]; then
+        shasum "${FILE}" | awk '{print $1}'
+    else
+        sha1sum "${FILE}" | awk '{print $1}'
+    fi
+}
+
 #
 # extract:
 #
-# $1: file containing the list of items to extract
+# Positional parameters:
+# $1: file containing the list of items to extract (aka proprietary-files.txt)
 # $2: path to extracted system folder, an ota zip file, or "adb" to extract from device
-# $3: section in list file to extract - optional
+# $3: section in list file to extract - optional. Setting section via $3 is deprecated.
+#
+# Non-positional parameters (coming after $2):
+# --section: preferred way of selecting the portion to parse and extract from
+#            proprietary-files.txt
+# --fixup-dir: path to a directory containing fixup scripts to be run after a
+#              particular blob is extracted.
 #
 function extract() {
+    # Consume positional parameters
+    local PROPRIETARY_FILES_TXT="$1"; shift
+    local SRC="$1"; shift
+    local SECTION=""
+    local FIXUP_DIR=""
+
+    # Consume optional, non-positional parameters
+    while [ $# -gt 0 ]; do
+        case "$1" in
+        -s|--section)
+            SECTION="$2"; shift
+            ;;
+        -f|--fixup-dir)
+            FIXUP_DIR="$2"; shift
+            ;;
+        *)
+            # Backwards-compatibility with the old behavior, where $3, if
+            # present, denoted an optional positional ${SECTION} argument.
+            # Users of ${SECTION} are encouraged to migrate from setting it as
+            # positional $3, to non-positional --section ${SECTION}, the
+            # reason being that it doesn't scale to have more than 1 optional
+            # positional argument.
+            SECTION="$1"
+            ;;
+        esac
+        shift
+    done
+
     if [ -z "$OUTDIR" ]; then
         echo "Output dir not set!"
         exit 1
     fi
 
-    if [ -z "$3" ]; then
-        parse_file_list "$1"
-    else
-        parse_file_list "$1" "$3"
-    fi
+    parse_file_list "${PROPRIETARY_FILES_TXT}" "${SECTION}"
 
     # Allow failing, so we can try $DEST and/or $FILE
     set +e
 
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} ${PRODUCT_PACKAGES_LIST[@]} )
     local HASHLIST=( ${PRODUCT_COPY_FILES_HASHES[@]} ${PRODUCT_PACKAGES_HASHES[@]} )
+    local FIXUP_HASHLIST=( ${PRODUCT_COPY_FILES_FIXUP_HASHES[@]} ${PRODUCT_PACKAGES_FIXUP_HASHES[@]} )
     local COUNT=${#FILELIST[@]}
-    local SRC="$2"
     local OUTPUT_ROOT="$LINEAGE_ROOT"/"$OUTDIR"/proprietary
     local OUTPUT_TMP="$TMPDIR"/"$OUTDIR"/proprietary
 
@@ -989,7 +1041,7 @@ function extract() {
         VENDOR_STATE=1
     fi
 
-    echo "Extracting $COUNT files in $1 from $SRC:"
+    echo "Extracting ${COUNT} files in ${PROPRIETARY_FILES_TXT} from ${SRC}:"
 
     for (( i=1; i<COUNT+1; i++ )); do
 
@@ -1021,20 +1073,17 @@ function extract() {
 
         # Check pinned files
         local HASH="${HASHLIST[$i-1]}"
+        local FIXUP_HASH="${FIXUP_HASHLIST[$i-1]}"
         local KEEP=""
-        if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
+        if [ "$DISABLE_PINNING" != "1" ] && [ "$HASH" != "x" ]; then
             if [ -f "${VENDOR_REPO_FILE}" ]; then
                 local PINNED="${VENDOR_REPO_FILE}"
             else
                 local PINNED="${TMP_DIR}${DST_FILE#/system}"
             fi
             if [ -f "$PINNED" ]; then
-                if [ "$(uname)" == "Darwin" ]; then
-                    local TMP_HASH=$(shasum "$PINNED" | awk '{print $1}' )
-                else
-                    local TMP_HASH=$(sha1sum "$PINNED" | awk '{print $1}' )
-                fi
-                if [ "$TMP_HASH" = "$HASH" ]; then
+                local TMP_HASH=$(get_hash "${PINNED}")
+                if [ "${TMP_HASH}" = "${HASH}" ] || [ "${TMP_HASH}" = "${FIXUP_HASH}" ]; then
                     KEEP="1"
                     if [ ! -f "${VENDOR_REPO_FILE}" ]; then
                         cp -p "$PINNED" "${VENDOR_REPO_FILE}"
@@ -1060,6 +1109,26 @@ function extract() {
 
             if [ "${FOUND}" = false ]; then
                 printf '    !! file not found in source\n'
+            fi
+        fi
+
+        # If a fixup script for this blob exists, check its fixup hash
+        # and execute the fixup script if needed
+        local FIXUP_SCRIPT="${FIXUP_DIR}/${DST_FILE#/system}.sh"
+        if [ -f "${FIXUP_SCRIPT}" ]; then
+            # Sanity-check the hash and fixup hash for this blob
+            if [ "${FIXUP_HASH}" = "x" ] && [ "${HASH}" != "x" ]; then
+                printf "WARNING: There is a fixup script for %s but it is still pinned.\n" ${DST_FILE#/system/}
+                printf "This is usually a mistake and you may want to either remove the hash, or add an extra one instead.\n"
+            fi
+            # Don't execute the fixup script if the blob already
+            # matches the fixup SHA
+            if [ $(get_hash "${VENDOR_REPO_FILE}") = "${FIXUP_HASH}" ]; then
+                printf "    + (Skipping fixup script for %s...)\n" ${DST_FILE#/system/}
+            else
+                printf "    + (Fixing up %s (current hash %s)... " ${DST_FILE#/system/} $(get_hash ${VENDOR_REPO_FILE})
+                "${FIXUP_SCRIPT}" "${VENDOR_REPO_FILE}"
+                printf "Fixed-up file has hash %s)\n" $(get_hash ${VENDOR_REPO_FILE})
             fi
         fi
 
