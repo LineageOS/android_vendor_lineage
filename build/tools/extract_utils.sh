@@ -930,8 +930,6 @@ function extract() {
         parse_file_list "$1" "$3"
     fi
 
-    # Allow failing, so we can try $DEST and/or $FILE
-    set +e
 
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} ${PRODUCT_PACKAGES_LIST[@]} )
     local HASHLIST=( ${PRODUCT_COPY_FILES_HASHES[@]} ${PRODUCT_PACKAGES_HASHES[@]} )
@@ -1093,9 +1091,6 @@ function extract() {
         fi
 
     done
-
-    # Don't allow failing
-    set -e
 }
 
 #
