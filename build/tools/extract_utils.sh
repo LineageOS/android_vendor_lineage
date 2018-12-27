@@ -932,6 +932,41 @@ function get_hash() {
     fi
 }
 
+function print_spec() {
+        local SPEC_PRODUCT_PACKAGE="$1"
+        local SPEC_SRC_FILE="$2"
+        local SPEC_DST_FILE="$3"
+        local SPEC_ARGS="$4"
+        local SPEC_HASH="$5"
+        local SPEC_FIXUP_HASH="$6"
+
+        local PRODUCT_PACKAGE=""
+        if [ ${SPEC_PRODUCT_PACKAGE} = true ]; then
+            PRODUCT_PACKAGE="-"
+        fi
+        local SRC=""
+        if [ ! -z "${SPEC_SRC_FILE}" ] && [ "${SPEC_SRC_FILE}" != "${SPEC_DST_FILE}" ]; then
+            SRC="${SPEC_SRC_FILE}:"
+        fi
+        local DST=""
+        if [ ! -z "${SPEC_DST_FILE}" ]; then
+            DST="${SPEC_DST_FILE}"
+        fi
+        local ARGS=""
+        if [ ! -z "${SPEC_ARGS}" ]; then
+            ARGS=";${SPEC_ARGS}"
+        fi
+        local HASH=""
+        if [ ! -z "${SPEC_HASH}" ] && [ "${SPEC_HASH}" != "x" ]; then
+            HASH="|${SPEC_HASH}"
+        fi
+        local FIXUP_HASH=""
+        if [ ! -z "${SPEC_FIXUP_HASH}" ] && [ "${SPEC_FIXUP_HASH}" != "x" ]; then
+            FIXUP_HASH="|${SPEC_FIXUP_HASH}"
+        fi
+        printf '%s%s%s%s%s%s\n' "${PRODUCT_PACKAGE}" "${SRC}" "${DST}" "${ARGS}" "${HASH}" "${FIXUP_HASH}"
+}
+
 #
 # extract:
 #
@@ -945,6 +980,9 @@ function get_hash() {
 #            proprietary-files.txt
 # --fixup-dir: path to a directory containing fixup scripts to be run after a
 #              particular blob is extracted.
+# --kang: if present, this option will activate the printing of hashes for the
+#         extracted blobs. Useful with --section for subsequent pinning of
+#         blobs taken from other origins.
 #
 function extract() {
     # Consume positional parameters
@@ -952,6 +990,7 @@ function extract() {
     local SRC="$1"; shift
     local SECTION=""
     local FIXUP_DIR=""
+    local KANG=false
 
     # Consume optional, non-positional parameters
     while [ $# -gt 0 ]; do
@@ -961,6 +1000,10 @@ function extract() {
             ;;
         -f|--fixup-dir)
             FIXUP_DIR="$2"; shift
+            ;;
+        -k|--kang)
+            KANG=true
+            DISABLE_PINNING=1
             ;;
         *)
             # Backwards-compatibility with the old behavior, where $3, if
@@ -988,6 +1031,7 @@ function extract() {
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} ${PRODUCT_PACKAGES_LIST[@]} )
     local HASHLIST=( ${PRODUCT_COPY_FILES_HASHES[@]} ${PRODUCT_PACKAGES_HASHES[@]} )
     local FIXUP_HASHLIST=( ${PRODUCT_COPY_FILES_FIXUP_HASHES[@]} ${PRODUCT_PACKAGES_FIXUP_HASHES[@]} )
+    local PRODUCT_COPY_FILES_COUNT=${#PRODUCT_COPY_FILES_LIST[@]}
     local COUNT=${#FILELIST[@]}
     local OUTPUT_ROOT="$LINEAGE_ROOT"/"$OUTDIR"/proprietary
     local OUTPUT_TMP="$TMPDIR"/"$OUTDIR"/proprietary
@@ -1052,6 +1096,13 @@ function extract() {
         local TMP_DIR=
         local SRC_FILE=
         local DST_FILE=
+        local IS_PRODUCT_PACKAGE=false
+
+        # Note: this relies on the fact that the ${FILELIST[@]} array
+        # contains first ${PRODUCT_COPY_FILES_LIST[@]}, then ${PRODUCT_PACKAGES_LIST[@]}.
+        if [ "${i}" -gt "${PRODUCT_COPY_FILES_COUNT}" ]; then
+            IS_PRODUCT_PACKAGE=true
+        fi
 
         if [ "${SPEC_ARGS}" = "rootfs" ]; then
             OUTPUT_DIR="${OUTPUT_ROOT}/rootfs"
@@ -1064,8 +1115,6 @@ function extract() {
             SRC_FILE="/system/${SPEC_SRC_FILE}"
             DST_FILE="/system/${SPEC_DST_FILE}"
         fi
-
-        printf '  - %s \n' "${DST_FILE#/system/}"
 
         # Strip the file path in the vendor repo of "system", if present
         local VENDOR_REPO_FILE="$OUTPUT_DIR/${DST_FILE#/system}"
@@ -1126,10 +1175,24 @@ function extract() {
             if [ $(get_hash "${VENDOR_REPO_FILE}") = "${FIXUP_HASH}" ]; then
                 printf "    + (Skipping fixup script for %s...)\n" ${DST_FILE#/system/}
             else
-                printf "    + (Fixing up %s (current hash %s)... " ${DST_FILE#/system/} $(get_hash ${VENDOR_REPO_FILE})
+                HASH=$(get_hash ${VENDOR_REPO_FILE})
+                printf "    + (Fixing up %s...)\n" ${DST_FILE#/system/}
                 "${FIXUP_SCRIPT}" "${VENDOR_REPO_FILE}"
-                printf "Fixed-up file has hash %s)\n" $(get_hash ${VENDOR_REPO_FILE})
+                FIXUP_HASH=$(get_hash ${VENDOR_REPO_FILE})
             fi
+        fi
+
+        if [ "${KANG}" = true ]; then
+            # If kang mode is set, then HASH and FIXUP_HASH are ignored, as
+            # pinning is disabled. But if a fixup script is present,
+            # HASH and FIXUP_HASH will be set to the blob hash, pre- and post-
+            # operation of the fixup script. If there was no fixup script,
+            # we need to at least set HASH now (so we can print the hash to the
+            # user - the whole point of kang mode).
+            [ "${FIXUP_HASH}" = "x" ] && HASH=$(get_hash ${VENDOR_REPO_FILE})
+            print_spec "${IS_PRODUCT_PACKAGE}" "${SPEC_SRC_FILE}" "${SPEC_DST_FILE}" "${SPEC_ARGS}" "${HASH}" "${FIXUP_HASH}"
+        else
+            printf '  - %s \n' "${DST_FILE#/system/}"
         fi
 
         if [ "$?" == "0" ]; then
