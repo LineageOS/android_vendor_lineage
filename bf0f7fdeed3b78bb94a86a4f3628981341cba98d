@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0a157b44_2170285b",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-28T23:45:47Z",
+      "side": 1,
+      "message": "It would be either this or:\n\n\n\u003e ifeq ($(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS),)\n\u003e     TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS :\u003d (1 \u003c\u003c 21)\n\u003e else\n\u003e     TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS +\u003d | (1 \u003c\u003c 21)\n\u003e endif\n\n\nThat\u0027s to account for all devices out there that don\u0027t set any additional valid bits in their device trees. Otherwise, soong variable would be set to:\n\n\u003e \"Additional_gralloc_10_usage_bits\": \"| (1 \u003c\u003c 21)\"\n\n\nand compilation would break:\n\n\n\u003e frameworks/native/libs/ui/Gralloc2.cpp:50:53: error: expected expression\n\u003e         uint64_t addnl_bits \u003d static_cast\u003cuint64_t\u003e(ADDNL_GRALLOC_10_USAGE_BITS);\n\u003e                                                     ^\n\u003e \u003ccommand line\u003e:10:37: note: expanded from here\n\u003e #define ADDNL_GRALLOC_10_USAGE_BITS | (1 \u003c\u003c 21)",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 54
+      },
+      "revId": "bf0f7fdeed3b78bb94a86a4f3628981341cba98d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
