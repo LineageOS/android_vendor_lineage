@@ -756,6 +756,7 @@ function get_file() {
         # try to copy
         cp -r "$SRC/$1"           "$2" 2>/dev/null && return 0
         cp -r "$SRC/${1#/system}" "$2" 2>/dev/null && return 0
+        cp -r "$SRC/system/$1"    "$2" 2>/dev/null && return 0
 
         return 1
     fi
