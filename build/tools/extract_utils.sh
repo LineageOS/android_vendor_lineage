@@ -962,10 +962,21 @@ function print_spec() {
         HASH="|${SPEC_HASH}"
     fi
     local FIXUP_HASH=""
-    if [ ! -z "${SPEC_FIXUP_HASH}" ] && [ "${SPEC_FIXUP_HASH}" != "x" ]; then
+    if [ ! -z "${SPEC_FIXUP_HASH}" ] && [ "${SPEC_FIXUP_HASH}" != "x" ] && [ "${SPEC_FIXUP_HASH}" != "${SPEC_HASH}" ]; then
         FIXUP_HASH="|${SPEC_FIXUP_HASH}"
     fi
     printf '%s%s%s%s%s%s\n' "${PRODUCT_PACKAGE}" "${SRC}" "${DST}" "${ARGS}" "${HASH}" "${FIXUP_HASH}"
+}
+
+# To be overridden by device-level extract-files.sh
+# Parameters:
+#   $1: spec name of a blob. Can be used for filtering.
+#       If the spec is "src:dest", then $1 is "dest".
+#       If the spec is "src", then $1 is "src".
+#   $2: path to blob file. Can be used for fixups.
+#
+function blob_fixup() {
+    :
 }
 
 #
@@ -990,7 +1001,6 @@ function extract() {
     local PROPRIETARY_FILES_TXT="$1"; shift
     local SRC="$1"; shift
     local SECTION=""
-    local FIXUP_DIR=""
     local KANG=false
 
     # Consume optional, non-positional parameters
@@ -998,9 +1008,6 @@ function extract() {
         case "$1" in
         -s|--section)
             SECTION="$2"; shift
-            ;;
-        -f|--fixup-dir)
-            FIXUP_DIR="$2"; shift
             ;;
         -k|--kang)
             KANG=true
@@ -1168,35 +1175,18 @@ function extract() {
             fi
         fi
 
-        # If a fixup script for this blob exists, check its fixup hash
-        # and execute the fixup script if needed
-        local FIXUP_SCRIPT="${FIXUP_DIR}/${DST_FILE#/system}.sh"
-        if [ -f "${FIXUP_SCRIPT}" ]; then
-            # Sanity-check the hash and fixup hash for this blob
-            if [ "${FIXUP_HASH}" = "x" ] && [ "${HASH}" != "x" ]; then
-                printf "WARNING: There is a fixup script for %s but it is still pinned.\n" ${BLOB_DISPLAY_NAME}
-                printf "This is usually a mistake and you may want to either remove the hash, or add an extra one instead.\n"
-            fi
-            # Don't execute the fixup script if the blob already
-            # matches the fixup SHA
-            if [ $(get_hash "${VENDOR_REPO_FILE}") = "${FIXUP_HASH}" ]; then
-                printf "    + (Skipping fixup script for %s...)\n" "${BLOB_DISPLAY_NAME}"
-            else
-                HASH=$(get_hash ${VENDOR_REPO_FILE})
-                printf "    + (Fixing up %s...)\n" "${BLOB_DISPLAY_NAME}"
-                "${FIXUP_SCRIPT}" "${VENDOR_REPO_FILE}"
-                FIXUP_HASH=$(get_hash ${VENDOR_REPO_FILE})
-            fi
-        fi
+        local PRE_FIXUP_HASH=$(get_hash ${VENDOR_REPO_FILE})
+        blob_fixup "${BLOB_DISPLAY_NAME}" "${VENDOR_REPO_FILE}"
+        local POST_FIXUP_HASH=$(get_hash ${VENDOR_REPO_FILE})
 
-        # If kang mode is set, then HASH and FIXUP_HASH from the spec are
-        # ignored (as pinning is disabled). But if fixup is required for this
-        # blob, we set HASH and FIXUP_HASH to its hash, pre- and post-
-        # operation of the fixup script. If there was no fixup script, we need
-        # to at least set HASH now (so we can print the hash to the user - the
-        # whole point of kang mode).
-        if [ "${KANG}" = true ] && [ "${FIXUP_HASH}" = "x" ]; then
-            HASH=$(get_hash ${VENDOR_REPO_FILE})
+        # Check whether the blob_fixup function actually did anything.
+        if [ "${PRE_FIXUP_HASH}" != "${POST_FIXUP_HASH}" ]; then
+            printf "    + Fixed up %s\n" "${BLOB_DISPLAY_NAME}"
+            # Now sanity-check the spec for this blob.
+            if [ "${FIXUP_HASH}" = "x" ] && [ "${HASH}" != "x" ]; then
+                printf "WARNING: The %s file was fixed up, but it is pinned.\n" ${BLOB_DISPLAY_NAME}
+                printf "This is a mistake and you want to either remove the hash completely, or add an extra one.\n"
+            fi
         fi
 
         # Deodex apk|jar if that's the case
@@ -1222,7 +1212,7 @@ function extract() {
         fi
 
         if [ "${KANG}" =  true ]; then
-            print_spec "${IS_PRODUCT_PACKAGE}" "${SPEC_SRC_FILE}" "${SPEC_DST_FILE}" "${SPEC_ARGS}" "${HASH}" "${FIXUP_HASH}"
+            print_spec "${IS_PRODUCT_PACKAGE}" "${SPEC_SRC_FILE}" "${SPEC_DST_FILE}" "${SPEC_ARGS}" "${PRE_FIXUP_HASH}" "${POST_FIXUP_HASH}"
         fi
 
     done
