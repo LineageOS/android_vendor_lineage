@@ -913,6 +913,36 @@ function fix_xml() {
     mv "$TEMP_XML" "$XML"
 }
 
+function print_spec() {
+    local SPEC_PRODUCT_PACKAGE="$1"
+    local SPEC_SRC_FILE="$2"
+    local SPEC_DST_FILE="$3"
+    local SPEC_ARGS="$4"
+    local SPEC_HASH="$5"
+
+    local PRODUCT_PACKAGE=""
+    if [ ${SPEC_PRODUCT_PACKAGE} = true ]; then
+        PRODUCT_PACKAGE="-"
+    fi
+    local SRC=""
+    if [ ! -z "${SPEC_SRC_FILE}" ] && [ "${SPEC_SRC_FILE}" != "${SPEC_DST_FILE}" ]; then
+        SRC="${SPEC_SRC_FILE}:"
+    fi
+    local DST=""
+    if [ ! -z "${SPEC_DST_FILE}" ]; then
+        DST="${SPEC_DST_FILE}"
+    fi
+    local ARGS=""
+    if [ ! -z "${SPEC_ARGS}" ]; then
+        ARGS=";${SPEC_ARGS}"
+    fi
+    local HASH=""
+    if [ ! -z "${SPEC_HASH}" ] && [ "${SPEC_HASH}" != "x" ]; then
+        HASH="|${SPEC_HASH}"
+    fi
+    printf '%s%s%s%s%s\n' "${PRODUCT_PACKAGE}" "${SRC}" "${DST}" "${ARGS}" "${HASH}"
+}
+
 #
 # extract:
 #
@@ -924,18 +954,26 @@ function fix_xml() {
 # Non-positional parameters (coming after $2):
 # --section: preferred way of selecting the portion to parse and extract from
 #            proprietary-files.txt
+# --kang: if present, this option will activate the printing of hashes for the
+#         extracted blobs. Useful with --section for subsequent pinning of
+#         blobs taken from other origins.
 #
 function extract() {
     # Consume positional parameters
     local PROPRIETARY_FILES_TXT="$1"; shift
     local SRC="$1"; shift
     local SECTION=""
+    local KANG=false
 
     # Consume optional, non-positional parameters
     while [ "$#" -gt 0 ]; do
         case "$1" in
         -s|--section)
             SECTION="$2"; shift
+            ;;
+        -k|--kang)
+            KANG=true
+            DISABLE_PINNING=1
             ;;
         *)
             # Backwards-compatibility with the old behavior, where $3, if
@@ -962,6 +1000,7 @@ function extract() {
 
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} ${PRODUCT_PACKAGES_LIST[@]} )
     local HASHLIST=( ${PRODUCT_COPY_FILES_HASHES[@]} ${PRODUCT_PACKAGES_HASHES[@]} )
+    local PRODUCT_COPY_FILES_COUNT=${#PRODUCT_COPY_FILES_LIST[@]}
     local COUNT=${#FILELIST[@]}
     local OUTPUT_ROOT="$LINEAGE_ROOT"/"$OUTDIR"/proprietary
     local OUTPUT_TMP="$TMPDIR"/"$OUTDIR"/proprietary
@@ -1026,6 +1065,13 @@ function extract() {
         local TMP_DIR=
         local SRC_FILE=
         local DST_FILE=
+        local IS_PRODUCT_PACKAGE=false
+
+        # Note: this relies on the fact that the ${FILELIST[@]} array
+        # contains first ${PRODUCT_COPY_FILES_LIST[@]}, then ${PRODUCT_PACKAGES_LIST[@]}.
+        if [ "${i}" -gt "${PRODUCT_COPY_FILES_COUNT}" ]; then
+            IS_PRODUCT_PACKAGE=true
+        fi
 
         if [ "${SPEC_ARGS}" = "rootfs" ]; then
             OUTPUT_DIR="${OUTPUT_ROOT}/rootfs"
@@ -1068,8 +1114,12 @@ function extract() {
             fi
         fi
 
+        if [ "${KANG}" = false ]; then
+            printf '  - %s\n' "${BLOB_DISPLAY_NAME}"
+        fi
+
         if [ "$KEEP" = "1" ]; then
-            printf '    + (keeping pinned file with hash %s)\n' "$HASH"
+            printf '    + keeping pinned file with hash %s\n' "${HASH}"
         else
             FOUND=false
             # Try Lineage target first.
@@ -1111,6 +1161,10 @@ function extract() {
             else
                 chmod 644 "${VENDOR_REPO_FILE}"
             fi
+        fi
+
+        if [ "${KANG}" =  true ]; then
+            print_spec "${IS_PRODUCT_PACKAGE}" "${SPEC_SRC_FILE}" "${SPEC_DST_FILE}" "${SPEC_ARGS}" "${HASH}"
         fi
 
     done
