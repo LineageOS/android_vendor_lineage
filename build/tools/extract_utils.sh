@@ -1024,7 +1024,7 @@ function extract() {
         mkdir -p $(dirname "${VENDOR_REPO_FILE}")
 
         # Check pinned files
-        local HASH="${HASHLIST[$i-1]}"
+        local HASH="$(echo ${HASHLIST[$i-1]} | awk '{ print tolower($0); }')"
         local KEEP=""
         if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
             if [ -f "${VENDOR_REPO_FILE}" ]; then
