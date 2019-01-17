@@ -41,9 +41,9 @@ while [ "$1" != "" ]; do
     case "$1" in
         -n | --no-cleanup )     CLEAN_VENDOR=false
                                 ;;
-        -s | --section )        shift
-                                SECTION="$1"
+        -s | --section )        SECTION="$2"
                                 CLEAN_VENDOR=false
+                                shift
                                 ;;
         * )                     SRC="$1"
                                 ;;
@@ -58,6 +58,6 @@ fi
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${SECTION}"
+extract "${MY_DIR}/proprietary-files.txt" "${SRC}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
