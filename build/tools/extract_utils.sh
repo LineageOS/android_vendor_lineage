@@ -659,7 +659,8 @@ function parse_file_list() {
         exit 1
     fi
 
-    if [ $# -eq 2 ]; then
+    if [ -n "$2" ]; then
+        echo "Using section \"$2\""
         LIST=$TMPDIR/files.txt
         cat $1 | sed -n '/# '"$2"'/I,/^\s*$/p' > $LIST
     else
@@ -915,21 +916,46 @@ function fix_xml() {
 #
 # extract:
 #
-# $1: file containing the list of items to extract
+# Positional parameters:
+# $1: file containing the list of items to extract (aka proprietary-files.txt)
 # $2: path to extracted system folder, an ota zip file, or "adb" to extract from device
-# $3: section in list file to extract - optional
+# $3: section in list file to extract - optional. Setting section via $3 is deprecated.
+#
+# Non-positional parameters (coming after $2):
+# --section: preferred way of selecting the portion to parse and extract from
+#            proprietary-files.txt
 #
 function extract() {
+    # Consume positional parameters
+    local PROPRIETARY_FILES_TXT="$1"; shift
+    local SRC="$1"; shift
+    local SECTION=""
+
+    # Consume optional, non-positional parameters
+    while [ "$#" -gt 0 ]; do
+        case "$1" in
+        -s|--section)
+            SECTION="$2"; shift
+            ;;
+        *)
+            # Backwards-compatibility with the old behavior, where $3, if
+            # present, denoted an optional positional ${SECTION} argument.
+            # Users of ${SECTION} are encouraged to migrate from setting it as
+            # positional $3, to non-positional --section ${SECTION}, the
+            # reason being that it doesn't scale to have more than 1 optional
+            # positional argument.
+            SECTION="$1"
+            ;;
+        esac
+        shift
+    done
+
     if [ -z "$OUTDIR" ]; then
         echo "Output dir not set!"
         exit 1
     fi
 
-    if [ -z "$3" ]; then
-        parse_file_list "$1"
-    else
-        parse_file_list "$1" "$3"
-    fi
+    parse_file_list "${PROPRIETARY_FILES_TXT}" "${SECTION}"
 
     # Allow failing, so we can try $DEST and/or $FILE
     set +e
@@ -937,7 +963,6 @@ function extract() {
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} ${PRODUCT_PACKAGES_LIST[@]} )
     local HASHLIST=( ${PRODUCT_COPY_FILES_HASHES[@]} ${PRODUCT_PACKAGES_HASHES[@]} )
     local COUNT=${#FILELIST[@]}
-    local SRC="$2"
     local OUTPUT_ROOT="$LINEAGE_ROOT"/"$OUTDIR"/proprietary
     local OUTPUT_TMP="$TMPDIR"/"$OUTDIR"/proprietary
 
@@ -990,7 +1015,7 @@ function extract() {
         VENDOR_STATE=1
     fi
 
-    echo "Extracting $COUNT files in $1 from $SRC:"
+    echo "Extracting ${COUNT} files in ${PROPRIETARY_FILES_TXT} from ${SRC}:"
 
     for (( i=1; i<COUNT+1; i++ )); do
 
@@ -1014,10 +1039,9 @@ function extract() {
             DST_FILE="/system/${SPEC_DST_FILE}"
         fi
 
-        printf '  - %s \n' "${DST_FILE#/system/}"
-
         # Strip the file path in the vendor repo of "system", if present
         local VENDOR_REPO_FILE="$OUTPUT_DIR/${DST_FILE#/system}"
+        local BLOB_DISPLAY_NAME="${DST_FILE#/system/}"
         mkdir -p $(dirname "${VENDOR_REPO_FILE}")
 
         # Check pinned files
@@ -1060,7 +1084,7 @@ function extract() {
             done
 
             if [ "${FOUND}" = false ]; then
-                printf '    !! file not found in source\n'
+                printf '    !! %s: file not found in source\n' "${BLOB_DISPLAY_NAME}"
                 continue
             fi
         fi
