@@ -662,7 +662,11 @@ function parse_file_list() {
     if [ -n "$2" ]; then
         echo "Using section \"$2\""
         LIST=$TMPDIR/files.txt
-        cat $1 | sed -n '/# '"$2"'/I,/^\s*$/p' > $LIST
+        # Match all lines starting with first line found to start* with '#'
+        # comment and contain** $2, and ending with first line to be empty*.
+        # *whitespaces (tabs, spaces) at the beginning of lines are discarded
+        # **the $2 match is case-insensitive
+        cat $1 | sed -n '/^[[:space:]]*#.*'"$2"'/I,/^[[:space:]]*$/ p' > $LIST
     else
         LIST=$1
     fi
