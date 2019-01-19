@@ -37,11 +37,14 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 SECTION=
+GRAPH=
 KANG=
 
 while [ "$1" != "" ]; do
     case "$1" in
         -n | --no-cleanup )     CLEAN_VENDOR=false
+                                ;;
+        -g | --graph)           GRAPH="--graph"
                                 ;;
         -k | --kang)            KANG="--kang"
                                 ;;
@@ -62,6 +65,6 @@ fi
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
+extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${GRAPH} ${KANG} --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
