@@ -968,6 +968,43 @@ function print_spec() {
     printf '%s%s%s%s%s%s\n' "${PRODUCT_PACKAGE}" "${SRC}" "${DST}" "${ARGS}" "${HASH}" "${FIXUP_HASH}"
 }
 
+function is_elf() {
+    local OUT=$(file "$1" | grep -E '(executable|shared object)' | awk -F: '/ELF/ { print $1; }')
+    if [ "${OUT:-x}" = "$1" ]; then
+        return 0
+    fi
+    return 1
+}
+
+# Input:
+#  $1: full path to blob
+#  $2: path to temporary directory where the graph should be constructed.
+#      The file in $1 is represented by a top-level folder in $2, and its
+#      dependencies as symbolic links to other top-level folders. Therefore,
+#      the "real" graph is only a filesystem with 2 levels, but by following
+#      the symlinks with "tree" we can actually see the levels underneath too.
+function populate_dependency_graph() {
+    local FILE="$1"
+    local DEPDIR="$2"
+    local DEPS=( )
+
+    if is_elf "${FILE}"; then
+        # Attempt to parse ELF dependencies
+        for DEP in $(ndk-depends "${FILE}" 2>&1 | grep -vE '(WARNING|libm\.so|liblog\.so|libdl\.so|libc\.so|libc\+\+\.so|libutils\.so|libcutils\.so)'); do
+            if [ "$(basename ${DEP})" = "$(basename ${FILE})" ]; then
+                continue
+            fi
+            DEPS+=("${DEP}")
+        done
+        # TODO: libs that are dlopened will be missing from ${DEPS}
+    fi
+
+    mkdir -p "${DEPDIR}/$(basename ${FILE})"
+    for DEP in "${DEPS[@]}"; do
+        ln -sf "${DEPDIR}/${DEP}" "${DEPDIR}/$(basename ${FILE})/${DEP}"
+    done
+}
+
 # To be overridden by device-level extract-files.sh
 # Parameters:
 #   $1: spec name of a blob. Can be used for filtering.
@@ -1000,6 +1037,8 @@ function extract() {
     local SRC="$1"; shift
     local SECTION=""
     local KANG=false
+    local BUILD_DEPENDENCY_GRAPH=false
+    local DEPDIR=
 
     # Consume optional, non-positional parameters
     while [ "$#" -gt 0 ]; do
@@ -1010,6 +1049,10 @@ function extract() {
         -k|--kang)
             KANG=true
             DISABLE_PINNING=1
+            ;;
+        -g|--graph)
+            BUILD_DEPENDENCY_GRAPH=true
+            DEPDIR="${TMPDIR}/deps"
             ;;
         *)
             # Backwards-compatibility with the old behavior, where $3, if
@@ -1173,6 +1216,10 @@ function extract() {
             fi
         fi
 
+        if [ "${BUILD_DEPENDENCY_GRAPH}" = true ]; then
+            populate_dependency_graph "${VENDOR_REPO_FILE}" "${DEPDIR}"
+        fi
+
         # Blob fixup pipeline has 2 parts: one that is fixed and
         # one that is user-configurable
         local PRE_FIXUP_HASH=$(get_hash ${VENDOR_REPO_FILE})
@@ -1218,6 +1265,11 @@ function extract() {
         fi
 
     done
+
+    if [ "${BUILD_DEPENDENCY_GRAPH}" = true ]; then
+        echo "Dependency graph:"
+        tree -C -l "${DEPDIR}" | sed -e 's|'"${DEPDIR}"'||g' -e 's|-> .*$||g'
+    fi
 
     # Don't allow failing
     set -e
