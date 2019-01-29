@@ -30,6 +30,11 @@
         <permission name="android.permission.STATUS_BAR"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.launcher3">
+        <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+
     <privapp-permissions package="android.ext.services">
         <permission name="android.permission.PROVIDE_RESOLVER_RANKER_SERVICE"/>
     </privapp-permissions>
