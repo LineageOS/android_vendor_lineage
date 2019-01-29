@@ -87,8 +87,14 @@ os.environ["ANDROID_BUILD_TOP"] = android_build_top # For the product_mk_finder
 #         should be taken as synonymous with "if device makefile isn't there".
 #       - The device's repo_path and repo_name are looked up on github.com/LineageOS/Hudson,
 #         in the roomservice-initial-lunch-repo.json file.
-#       - After the above step is over, case (b) de-generates into case (a) - depsonly, as the
-#         device repository was found.
+#       - If the direct lookup in the JSON from GitHub fails, roomservice tries to guess
+#         where to download from. An attempt is made to use the Search API for repositories
+#         that have ${device} in their name, for the LineageOS user.
+#         Of all repositories that are found via Github Search API, the first one taken to be
+#         the true device repository is the first one that will match the (simplified)
+#         pattern "android_device_*_${device}".
+#       - After the above step is over and the device repository is somehow found and
+#         downloaded, case (b) de-generates into case (a) - depsonly.
 #
 # In summary, case (a) can be considered a sub-case of (b).
 #
@@ -284,6 +290,73 @@ def fetch_dependencies(repo_path, fallback_branch = None):
 def has_branch(branches, revision):
     return revision in [branch['name'] for branch in branches]
 
+def hudson_lookup(device):
+    githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/hudson/master/roomservice-initial-lunch-repo.json")
+    add_auth(githubreq)
+
+    try:
+        result = urllib.request.urlopen(githubreq)
+        body = result.read().decode("utf-8")
+        json_data = json.loads(body)
+    except urllib.error.URLError as ex:
+        print("Failed to search GitHub")
+        print(ex)
+        return None, None
+    except ValueError as ex:
+        print("Failed to parse returned data from GitHub")
+        print(ex)
+        return None, None
+
+    try:
+        repo_name = json_data[device]["repository"]
+        repo_path = json_data[device]["target_path"]
+        return repo_name, repo_path
+    except KeyError as ex:
+        print("Failed to find info about device %s in github.com/LineageOS/hudson!" % device)
+        return None, None
+    except ValueError as ex:
+        print("Failed to parse repository and target_path data for device %s!" % device)
+        print(ex)
+        return None, None
+
+def guesswork(device):
+    repositories = []
+
+    # Populate the "repositories" array with the Github search.
+    githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=%s+user:LineageOS+in:name+fork:true" % device)
+    add_auth(githubreq)
+    try:
+        result = json.loads(urllib.request.urlopen(githubreq).read().decode())
+    except urllib.error.URLError:
+        print("Failed to search GitHub")
+        sys.exit()
+    except ValueError:
+        print("Failed to parse return data from GitHub")
+        sys.exit()
+    for res in result.get('items', []):
+        repositories.append(res)
+
+    # Search the array for the best match
+    for repository in repositories:
+        repo_name = repository['name']
+        if re.match(r"^android_device_[^_]*_" + device + "$", repo_name):
+            # We have a winner. Found on Github via searching by ${device} only!!
+            print("Found repository: %s" % repository['name'])
+
+            # We don't know what manufacturer we're looking at (the script was only given ${device}).
+            # Assume that the manufacturer is what's left after stripping away
+            # "android_device_" and "_${device}".
+            manufacturer = repo_name.replace("android_device_", "").replace("_" + device, "")
+
+            # The script was also not told where to put the device repository that it was
+            # supposed to find in non-depsonly mode.
+            # Just assume its place is in device/${manufacturer}/${device}.
+            repo_path = "device/%s/%s" % (manufacturer, device)
+
+            return repo_name, repo_path
+
+    return None, None
+
 if depsonly:
     # depsonly was set if the AndroidProducts.mk file was found. Therefore, the
     # device repository definitely exists, it's just a matter of finding it.
@@ -312,37 +385,21 @@ if depsonly:
 
 else:
     # Not depsonly => device repository isn't here => we need to find it.
-    # At this point, the "repositories" array has already been populated with the Github search.
     #
     # What we're trying to do is find the damn device repository, so the code paths
     # (depsonly and not depsonly) can converge back, by calling fetch_dependencies.
-    githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/hudson/master/roomservice-initial-lunch-repo.json")
-    add_auth(githubreq)
-    try:
-        result = urllib.request.urlopen(githubreq)
-        body = result.read().decode("utf-8")
-        json_data = json.loads(body)
-    except urllib.error.URLError as ex:
-        print("Failed to search GitHub")
-        print(ex)
-        sys.exit(1)
-    except ValueError as ex:
-        print("Failed to parse returned data from GitHub")
-        print(ex)
+    repo_name, repo_path = hudson_lookup(device)
+    if repo_name is None:
+        print("[1;31;49mPointers for device %s are not in "
+              "https://github.com/LineageOS/hudson/blob/master/roomservice-initial-lunch-repo.json, "
+              "trying to guess where to download from...[0;49;49m" % device)
+        repo_name, repo_path = guesswork(device)
+    if repo_name is None:
         sys.exit(1)
 
-    try:
-        repo_name = json_data[device]["repository"]
-        repo_path = json_data[device]["target_path"]
-    except KeyError as ex:
-        print("Failed to find info about device %s in github.com/LineageOS/hudson!" % device)
-        sys.exit(1)
-    except ValueError as ex:
-        print("Failed to parse repository and target_path data for device %s!" % device)
-        print(ex)
-        sys.exit(1)
     # repo_name and repo_path now contain the device's
-    # repository and target_path as specified by Hudson
+    # repository and target_path as specified either by Hudson
+    # or by intuition + luck (aka guesswork)
 
     print("Found repository: %s" % repo_name)
 
