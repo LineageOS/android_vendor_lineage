@@ -103,10 +103,6 @@
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
-    <privapp-permissions package="org.lineageos.trebuchet">
-        <permission name="android.permission.BIND_APPWIDGET"/>
-    </privapp-permissions>
-
     <privapp-permissions package="org.lineageos.updater">
         <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
         <permission name="android.permission.REBOOT"/>
