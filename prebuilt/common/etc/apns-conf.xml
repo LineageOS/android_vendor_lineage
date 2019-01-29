@@ -716,11 +716,9 @@
   <apn carrier="BiBoB WAP" mcc="238" mnc="02" apn="internet.bibob.dk" proxy="212.88.64.8" port="8080" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Lebara Internet" mcc="238" mnc="02" apn="internet.lebara.dk" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Lebara MMS" mcc="238" mnc="02" apn="mms.lebara.dk" proxy="" port="" user="" password="" mmsc="http://mms.sonofon.dk" mmsproxy="212.88.64.8" mmsport="8080" type="mms" />
-  <apn carrier="3" mcc="238" mnc="06" apn="data.tre.dk" user="" password="" authtype="3" type="default,supl" />
-  <apn carrier="3MMS" mcc="238" mnc="06" apn="data.tre.dk" proxy="" port="" mmsproxy="172.016.001.025" mmsport="8799" mmsc="http://mms" user="" password="" authtype="3" type="mms" />
-  <apn carrier="3 DK" mcc="238" mnc="06" apn="data.tre.dk" mmsc="http://mms.3.dk" mmsproxy="mmsproxy.3.dk" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="Oister" mcc="238" mnc="06" apn="data.dk" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Oister MMS" mcc="238" mnc="06" apn="data.dk" proxy="" port="" user="" password="" mmsc="http://mms.oister.dk" mmsproxy="mmsproxy.oister.dk" mmsport="8799" type="mms" />
+  <apn carrier="3" mcc="238" mnc="06" apn="data.tre.dk" mmsc="http://mms.3.dk/" mmsproxy="mmsproxy.3.dk" mmsport="8799" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="IMS" mcc="238" mnc="06" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="H3G DK MMS" mcc="238" mnc="06" apn="services" mmsc="http://mms.3.dk/" mmsproxy="mmsproxy.3.dk" mmsport="8799" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Telmore WAP" mcc="238" mnc="10" apn="wap" proxy="194.182.251.15" port="8080" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Telmore MMS" mcc="238" mnc="10" apn="mms" proxy="" port="" user="" password="" mmsc="http://192.168.241.114:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
   <apn carrier="M1 Internet GPRS" mcc="238" mnc="10" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
