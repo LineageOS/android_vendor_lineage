@@ -146,21 +146,19 @@ endif
 ifeq ($(FULL_KERNEL_BUILD),true)
 
 ifeq ($(NEED_KERNEL_MODULE_ROOT),true)
-KERNEL_MODULES_INSTALL := root
-KERNEL_MODULES_OUT := $(TARGET_ROOT_OUT)/lib/modules
+KERNEL_MODULES_OUT := $(TARGET_ROOT_OUT)
 KERNEL_DEPMOD_STAGING_DIR := $(call intermediates-dir-for,PACKAGING,depmod_recovery)
 KERNEL_MODULE_MOUNTPOINT :=
 else ifeq ($(NEED_KERNEL_MODULE_SYSTEM),true)
-KERNEL_MODULES_INSTALL := $(TARGET_COPY_OUT_SYSTEM)
-KERNEL_MODULES_OUT := $(TARGET_OUT)/lib/modules
+KERNEL_MODULES_OUT := $(TARGET_OUT)
 KERNEL_DEPMOD_STAGING_DIR := $(call intermediates-dir-for,PACKAGING,depmod_system)
 KERNEL_MODULE_MOUNTPOINT := system
 else
-KERNEL_MODULES_INSTALL := $(TARGET_COPY_OUT_VENDOR)
-KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR)/lib/modules
+KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR)
 KERNEL_DEPMOD_STAGING_DIR := $(call intermediates-dir-for,PACKAGING,depmod_vendor)
 KERNEL_MODULE_MOUNTPOINT := vendor
 endif
+MODULES_INTERMEDIATES := $(call intermediates-dir-for,PACKAGING,kernel_modules)
 
 ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
@@ -245,23 +243,14 @@ TARGET_KERNEL_BINARIES: $(KERNEL_CONFIG)
 
 .PHONY: INSTALLED_KERNEL_MODULES
 INSTALLED_KERNEL_MODULES: depmod-host
-	$(hide) rm -rf $(KERNEL_MODULES_OUT)
-	$(hide) mkdir -p $(KERNEL_MODULES_OUT)
-	$(hide) rm -rf $(KERNEL_DEPMOD_STAGING_DIR)
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
-			$(call make-kernel-target,INSTALL_MOD_PATH=../../$(KERNEL_MODULES_INSTALL) modules_install) && \
-			mofile=$$(find $(KERNEL_MODULES_OUT) -type f -name modules.order) && \
-			mpath=$$(dirname $$mofile) && \
-			for f in $$(find $$mpath/kernel -type f -name '*.ko'); do \
+			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) modules_install); \
+			modules=$$(find $(MODULES_INTERMEDIATES) -type f -name '*.ko'); \
+			for f in $$modules; do \
 				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
-				mv $$f $(KERNEL_MODULES_OUT); \
-			done && \
-			rm -rf $$mpath && \
-			mkdir -p $(KERNEL_DEPMOD_STAGING_DIR)/lib/modules/0.0/$(KERNEL_MODULE_MOUNTPOINT)/lib/modules && \
-			find $(KERNEL_MODULES_OUT) -name *.ko -exec cp {} $(KERNEL_DEPMOD_STAGING_DIR)/lib/modules/0.0/$(KERNEL_MODULE_MOUNTPOINT)/lib/modules \; && \
-			$(DEPMOD) -b $(KERNEL_DEPMOD_STAGING_DIR) 0.0 && \
-			sed -e 's/\(.*modules.*\):/\/\1:/g' -e 's/ \([^ ]*modules[^ ]*\)/ \/\1/g' $(KERNEL_DEPMOD_STAGING_DIR)/lib/modules/0.0/modules.dep > $(KERNEL_MODULES_OUT)/modules.dep; \
+			done; \
+			($(call build-image-kernel-modules,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT),$(KERNEL_DEPMOD_STAGING_DIR))); \
 		fi
 
 $(TARGET_KERNEL_MODULES): TARGET_KERNEL_BINARIES
