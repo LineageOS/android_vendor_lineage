@@ -142,6 +142,36 @@ EOF
     fi
 }
 
+function bolt()
+{
+    if [ "$OUT" ] ; then
+        ZIPPATH=`ls -tr "$OUT"/lineage-*.zip | tail -1`
+        if [ ! -f $ZIPPATH ] ; then
+            echo "Nothing to bolt"
+            return 1
+        fi
+        adb start-server # Prevent unexpected starting server message from adb get-state in the next line
+        if [ $(adb get-state) != device -a $(adb shell 'test -e /sbin/recovery 2> /dev/null; echo $?') != 0 ] ; then
+            echo "No device is online. Waiting for one..."
+            echo "Please connect USB and/or enable USB debugging"
+            until [ $(adb get-state) = device -o $(adb shell 'test -e /sbin/recovery 2> /dev/null; echo $?') = 0 ];do
+                sleep 1
+            done
+            echo "Device Found.."
+        fi
+        if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD"); then
+            adb wait-for-sideload
+            adb sideload $ZIPPATH
+        else
+            echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+        fi
+        return $?
+    else
+        echo "Nothing to bolt"
+        return 1
+    fi
+}
+
 function omnom()
 {
     brunch $*
