@@ -22,6 +22,40 @@
       "revId": "ed6fb21cae4953b169872fde1c6f5de067b7ab5f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1cb484e3_df27aab4",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 290,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-10T09:29:52Z",
+      "side": 1,
+      "message": "and this should be moved below dtbo I think",
+      "revId": "ed6fb21cae4953b169872fde1c6f5de067b7ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4c63b0a_13ae51c7",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 295,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-10T09:29:52Z",
+      "side": 1,
+      "message": "we should instead add kernel config dependency and remove the explicit call to make defconfig",
+      "revId": "ed6fb21cae4953b169872fde1c6f5de067b7ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
