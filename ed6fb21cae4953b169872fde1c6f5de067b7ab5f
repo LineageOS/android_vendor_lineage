@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bece42bc_cdefd6eb",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-10T08:55:25Z",
+      "side": 1,
+      "message": "Typo",
+      "range": {
+        "startLine": 219,
+        "startChar": 66,
+        "endLine": 219,
+        "endChar": 104
+      },
+      "revId": "ed6fb21cae4953b169872fde1c6f5de067b7ab5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
