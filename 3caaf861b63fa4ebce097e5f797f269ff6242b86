@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "041c59ed_b7c87c62",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-10T20:59:54Z",
+      "side": 1,
+      "message": "Do we need all these phony targets?",
+      "revId": "3caaf861b63fa4ebce097e5f797f269ff6242b86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83d7e213_7ce9f543",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-10T20:59:54Z",
+      "side": 1,
+      "message": "s/depmod-host/$(DEPMOD)/\nSo that it\u0027ll add proper build dependency",
+      "revId": "3caaf861b63fa4ebce097e5f797f269ff6242b86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59e3d903_e73cd1ff",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-10T20:59:54Z",
+      "side": 1,
+      "message": "is this needed?",
+      "revId": "3caaf861b63fa4ebce097e5f797f269ff6242b86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
