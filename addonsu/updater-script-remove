@@ -12,10 +12,10 @@ if getprop("ro.build.system_root_image") != "true" then
   delete("/system/etc/init/superuser.rc");
   delete("/system/xbin/su");
 else
-  delete("/system/system/addon.d/51-addonsu.sh");
-  delete("/system/system/bin/su");
-  delete("/system/system/etc/init/superuser.rc");
-  delete("/system/system/xbin/su");
+  delete("/system_root/system/addon.d/51-addonsu.sh");
+  delete("/system_root/system/bin/su");
+  delete("/system_root/system/etc/init/superuser.rc");
+  delete("/system_root/system/xbin/su");
 endif;
 
 run_program("/tmp/unmount-system.sh") == 0 || ui_print("Could not unmount /system");
