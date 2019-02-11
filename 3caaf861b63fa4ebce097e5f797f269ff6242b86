@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "663e919f_7210e4c5",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2019-02-11T00:35:18Z",
+      "side": 1,
+      "message": "My guess is no, and that they are legacy cruft. Changes to the phony targets ought to go in a different patch.",
+      "parentUuid": "041c59ed_b7c87c62",
+      "revId": "3caaf861b63fa4ebce097e5f797f269ff6242b86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "83d7e213_7ce9f543",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "8eb52f21_653906ac",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2019-02-11T00:35:18Z",
+      "side": 1,
+      "message": "You can\u0027t use $(DEPMOD), it\u0027s not properly defined in this file. Making such a change is beyond the scope of this patch though.",
+      "parentUuid": "83d7e213_7ce9f543",
+      "revId": "3caaf861b63fa4ebce097e5f797f269ff6242b86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "59e3d903_e73cd1ff",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 2
@@ -47,6 +83,24 @@
       "writtenOn": "2019-02-10T20:59:54Z",
       "side": 1,
       "message": "is this needed?",
+      "revId": "3caaf861b63fa4ebce097e5f797f269ff6242b86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc05f3a3_4690e4de",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2019-02-11T00:35:18Z",
+      "side": 1,
+      "message": "I\u0027m honestly not sure why this was here to begin with. Any changes for that ought to go in a separate patch though.",
+      "parentUuid": "59e3d903_e73cd1ff",
       "revId": "3caaf861b63fa4ebce097e5f797f269ff6242b86",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
