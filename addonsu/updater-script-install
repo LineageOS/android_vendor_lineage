@@ -13,11 +13,11 @@ if getprop("ro.build.system_root_image") != "true" then
   set_metadata("/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "selabel", "u:object_r:su_exec:s0");
   symlink("/system/xbin/su", "/system/bin/su");
 else
-  package_extract_dir("system", "/system/system");
-  set_metadata("/system/system/addon.d/51-addonsu.sh", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
-  set_metadata("/system/system/etc/init/superuser.rc", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
-  set_metadata("/system/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "selabel", "u:object_r:su_exec:s0");
-  symlink("/system/xbin/su", "/system/system/bin/su");
+  package_extract_dir("system", "/system_root/system");
+  set_metadata("/system_root/system/addon.d/51-addonsu.sh", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
+  set_metadata("/system_root/system/etc/init/superuser.rc", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
+  set_metadata("/system_root/system/xbin/su", "uid", 0, "gid", 2000, "mode", 0755, "selabel", "u:object_r:su_exec:s0");
+  symlink("/system/xbin/su", "/system_root/system/bin/su");
 endif;
 
 run_program("/tmp/unmount-system.sh") == 0 || ui_print("Could not unmount /system");
