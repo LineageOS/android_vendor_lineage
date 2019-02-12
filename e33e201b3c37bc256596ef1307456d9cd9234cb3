@@ -22,6 +22,30 @@
       "revId": "e33e201b3c37bc256596ef1307456d9cd9234cb3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a2f35431_801b5145",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2019-02-12T11:21:57Z",
+      "side": 1,
+      "message": "I say we Rick Ashley it...\n\nNever gonna neverallow you!\nNever gonna build complete!\nlibsepol.report_failure!\n\n(pls sir no ban from gerrit)",
+      "parentUuid": "cedc87b2_45e0220d",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 23
+      },
+      "revId": "e33e201b3c37bc256596ef1307456d9cd9234cb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
