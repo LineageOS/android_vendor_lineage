@@ -15,7 +15,17 @@ endif
 endif
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := font_log.png
+LOCAL_MODULE := lineage_charger_anim
+LOCAL_MODULE_STEM := animation.txt
+LOCAL_SRC_FILES := anim/$(healthd_density)/animation.txt
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)/res/values/charger
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := lineage_charger_font
+LOCAL_MODULE_STEM := font_log.png
 LOCAL_SRC_FILES := fonts/$(healthd_density)/font_log.png
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
