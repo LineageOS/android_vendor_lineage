@@ -198,8 +198,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(WITH_LINEAGE_CHARGER),true)
 PRODUCT_PACKAGES += \
     lineage_charger_res_images \
-    font_log.png \
-    libhealthd.lineage
+    font_log.png
 endif
 
 # Filesystems tools
