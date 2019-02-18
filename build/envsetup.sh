@@ -613,7 +613,7 @@ EOF
             esac
             shift
             git push $@ ssh://$user@$review:29418/$project \
-                $local_branch:refs/for/$remote_branch || return 1
+                $local_branch\:refs/for/$remote_branch || return 1
             ;;
         changes|for)
             if [ "$FUNCNAME" = "lineagegerrit" ]; then
