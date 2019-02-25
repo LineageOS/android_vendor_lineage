@@ -192,8 +192,9 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # Custom off-mode charger
-ifeq ($(WITH_LINEAGE_CHARGER),true)
+ifneq ($(WITH_LINEAGE_CHARGER),false)
 PRODUCT_PACKAGES += \
+    lineage_charger_animation \
     lineage_charger_res_images \
     font_log.png
 endif
