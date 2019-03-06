@@ -271,6 +271,7 @@
   <apn carrier="Tuenti MMS" mcc="214" mnc="05" apn="tuenti.com" proxy="" port="" user="tuenti" password="tuenti" mmsc="http://tuenti.com" mmsproxy="10.138.255.43" mmsport="8080" mvno_type="spn" mvno_match_data="Tuenti" authtype="1" type="mms" />
   <apn carrier="Pepephone 4G Internet" mcc="214" mnc="05" apn="gprs.pepephone.com" type="default,supl" />
   <apn carrier="Pepephone 4G MMS" mcc="214" mnc="05" apn="gprs.pepephone.com" mmsc="http://www.pepephone.com" mmsproxy="10.138.255.43" mmsport="8080" authtype="1" type="mms" />
+  <apn carrier="INET Roaming" mcc="214" mnc="05" apn="inet.es" user="" password="" port="" proxy="" type="default,supl,foat,hipri" roaming_protocol="IPV4V6" mvno_type="imsi" mvno_match_data="214050104xxxxxx" />
   <apn carrier="Pepephone Internet" mcc="214" mnc="06" apn="gprsmov.pepephone.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Pepephone" type="default,supl" />
   <apn carrier="Pepephone MMS" mcc="214" mnc="06" apn="mms.pepephone.com" proxy="" port="" user="wap@wap" password="wap125" mmsc="http://mms.pepephone.com/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" mvno_type="spn" mvno_match_data="Pepephone" type="mms" />
   <apn carrier="Lowi" mcc="214" mnc="06" apn="lowi.private.omv.es" type="default,supl" />
@@ -309,6 +310,7 @@
   <apn carrier="Truphone" mcc="214" mnc="27" apn="truphone.com" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Tuenti" mcc="214" mnc="32" apn="tuenti.com" proxy="" port="" user="tuenti" password="tuenti" mmsc="" mvno_type="spn" mvno_match_data="Tuenti" type="default,supl,mms" />
   <apn carrier="Masmovil" mcc="214" mnc="32" apn="internetmas" type="default,supl" />
+  <apn carrier="INET Internet" mcc="214" mnc="34" apn="inet.es" user="" password="" port="" proxy="" type="default,supl,foat,hipri" protocol="IPV4V6" />
   <apn carrier="Telenor Net" mcc="216" mnc="01" apn="net" type="default,supl" />
   <apn carrier="Telenor online" mcc="216" mnc="01" apn="online" user="" password="" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="216" mnc="01" apn="mms" proxy="" port="" mmsproxy="84.225.255.1" mmsport="8080" mmsc="http://mmsc.telenor.hu/" user="" password="" type="mms" />
