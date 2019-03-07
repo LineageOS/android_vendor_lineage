@@ -2903,6 +2903,7 @@
   <apn carrier="Perfectum" mcc="434" mnc="06" apn="default" user="perfectum@perfectum.com" password="a" type="default,supl" />
   <apn carrier="MTS Internet" mcc="434" mnc="07" apn="net.mts.uz" user="mts" password="mts" authtype="1" type="default,supl" />
   <apn carrier="MTS MMS" mcc="434" mnc="07" apn="mms.mts.uz" proxy="" port="" mmsproxy="10.10.0.10" mmsport="8080" mmsc="http://mmsc/was" user="mts" password="mts" authtype="1" type="mms" />
+  <apn carrier="UzMobile Internet" mcc="434" mnc="08" apn="internet.uzmobile.uz" user="" password="" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6"/>
   <apn carrier="em.std" mcc="440" mnc="00" apn="em.std" user="em" password="em" type="default,supl" bearer="14"/>
   <apn carrier="@nifty do LTE" mcc="440" mnc="10" apn="lte.fenics.jp" user="nifty@lte.nifty.com" password="nifty" authtype="3" type="default,supl" />
   <apn carrier="AsahiNet 3G" mcc="440" mnc="10" apn="3g.mobac.net" user="d@w3.asahinet.jp" password="0000" authtype="3" type="default,supl" />
