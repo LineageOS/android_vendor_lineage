@@ -35,6 +35,9 @@ type Product_variables struct {
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
+	Uses_metadata_as_fde_key struct {
+		Cflags []string
+	}
 	Uses_nvidia_enhancements struct {
 		Cppflags []string
 	}
