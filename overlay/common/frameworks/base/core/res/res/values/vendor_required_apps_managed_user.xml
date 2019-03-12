@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2017 The Android Open Source Project
+ *               2019 The LineageOS Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- A list of apps to be retained on the managed user by a particular vendor.
+            Takes precedence over the disallowed apps lists. -->
+    <string-array translatable="false" name="vendor_required_apps_managed_user">
+        <item>com.android.vending</item> <!--­ Google Play -->
+        <item>com.google.android.gms</item> <!--­ Required by Play -->
+        <item>com.google.android.contacts</item> <!--­ Google Contacts­ -->
+        <item>com.android.contacts</item> <!-- AOSP Contacts -->
+        <item>com.google.android.googlequicksearchbox</item> <!--­ Google Launcher -->
+        <item>com.google.android.launcher</item> <!--­ Google Launcher -->
+        <item>com.android.launcher3</item> <!-- AOSP Launcher -->
+        <item>com.google.android.dialer</item> <!--­ Google dialer to enable making phone calls -->
+        <item>com.android.dialer</item> <!-- AOSP dialer -->
+        <item>com.google.android.apps.messaging</item> <!-- Google messaging to enable text messaging -->
+        <item>com.android.messaging</item> <!-- AOSP messaging -->
+    </string-array>
+</resources>
