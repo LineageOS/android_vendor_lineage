@@ -185,7 +185,6 @@
   <apn carrier="SFR MMS" mcc="208" mnc="10" apn="sl2sfr" proxy="" port="" user="" password="" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
   <apn carrier="ACCESS DATA" mcc="208" mnc="10" apn="websfr" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="ACCESS DATA" type="supl" />
   <apn carrier="Internet Joe" mcc="208" mnc="10" apn="sl2sfr" authtype="0" type="default,supl,fota" />
-  <apn carrier="Web La Poste" mcc="208" mnc="10" apn="wapdebitel" proxy="192.168.21.3" port="8080" type="default,supl" />
   <apn carrier="Coriolis WEB" mcc="208" mnc="10" apn="internetcoriolis" authtype="0" type="default,supl,fota,dun" />
   <apn carrier="RegloMobile WAP" mcc="208" mnc="10" apn="wap66" proxy="192.168.21.9" port="8080" authtype="0" type="default,supl,fota,dun" />
   <apn carrier="RegloMobile MMS" mcc="208" mnc="10" apn="mms66" authtype="0" mmsc="http://mms66" mmsproxy="10.143.156.9" mmsport="8080" type="mms" />
@@ -204,11 +203,12 @@
   <apn carrier="ACCESS DATA" mcc="208" mnc="10" apn="websfr" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="WEB La Poste Mobile" mcc="208" mnc="10" apn="wapdebitel" proxy="192.168.21.3" port="8080" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="La Poste Mobile" type="default,supl" />
   <apn carrier="MMS La Poste Mobile" mcc="208" mnc="10" apn="mmsdebitel" proxy="" port="" user="" password="" mmsc="http://mmsdebitel" mmsproxy="10.143.156.3" mmsport="8080" mvno_type="spn" mvno_match_data="La Poste Mobile" type="mms" />
+  <apn carrier="4G La Poste Mobile" mcc="208" mnc="10" apn="" type="ia" mvno_match_data="4C" mvno_type="gid" />
+  <apn carrier="4G La Poste Mobile" mcc="208" mnc="10" apn="sl2sfr" mmsc="http://mmsdebitel" mmsproxy="10.143.156.3" mmsport="8080" type="default,mms,supl" mvno_type="gid" mvno_match_data="4C" />
   <apn carrier="WEB Leclerc Mobile" mcc="208" mnc="10" apn="wap66" proxy="192.168.21.9" port="8080" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="E.Leclerc Mobile" type="default,supl" />
   <apn carrier="MMS Leclerc Mobile" mcc="208" mnc="10" apn="mms66" proxy="" port="" user="" password="" mmsc="http://mms66" mmsproxy="10.143.156.9" mmsport="8080" mvno_type="spn" mvno_match_data="E.Leclerc Mobile" type="mms" />
   <apn carrier="WAP Mobisud" mcc="208" mnc="10" apn="wap62" proxy="192.168.21.7" port="8080" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Mobisud" type="default,supl" />
   <apn carrier="MMS Mobisud" mcc="208" mnc="10" apn="mms62" proxy="10.143.156.7" port="8080" user="" password="" mmsc="http://mms62" mvno_type="spn" mvno_match_data="Mobisud" type="mms" />
-  <apn carrier="Web La Poste" mcc="208" mnc="10" apn="wapdebitel" proxy="192.168.21.3" port="8080" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Coriolis Web" mcc="208" mnc="10" apn="fnetcoriolis" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="CORIOLIS" type="default,supl" />
   <apn carrier="Coriolis MMS" mcc="208" mnc="10" apn="mmscoriolis" proxy="" port="" user="" password="" mmsc="http://mmscoriolis" mmsproxy="10.143.156.6" mmsport="8080" mvno_type="spn" mvno_match_data="CORIOLIS" type="mms" />
   <apn carrier="MMS" mcc="208" mnc="11" apn="mmssfr" proxy="" port="" user="" password="" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
