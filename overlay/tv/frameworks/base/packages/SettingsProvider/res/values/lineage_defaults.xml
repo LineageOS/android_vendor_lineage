@@ -17,5 +17,4 @@
  */
 -->
 <resources>
-    <string name="def_tv_user_setup_complete" translatable="false">false</string>
 </resources>
