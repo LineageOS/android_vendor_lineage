@@ -1855,6 +1855,7 @@
   <apn carrier="Kcell" mcc="401" mnc="02" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Kcell MMS" mcc="401" mnc="02" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.kcell.kz/post" mmsproxy="195.47.255.7" mmsport="8080" type="mms" />
   <apn carrier="Kcell WAP" mcc="401" mnc="02" apn="wap" proxy="195.47.255.7" port="8080" mmsc="" user="" password="" type="default,supl" />
+  <apn carrier="Altel 4G Internet" mcc="401" mnc="77" apn="internet.altel.kz" type="default"/>
   <apn carrier="MTS WAP" mcc="404" mnc="00" apn="WAP" user="wap@wap.mtsindia.in" password="MTS" authtype="3" type="default,supl" />
   <apn carrier="MTS MMS" mcc="404" mnc="00" apn="MMS" user="mms@mms.mtsindia.in" password="MTS" authtype="3" type="mms" />
   <apn carrier="MTS MODEM" mcc="404" mnc="00" apn="Modem" user="internet@internet.mtsindia.in" password="MTS" authtype="3" type="default,supl" />
