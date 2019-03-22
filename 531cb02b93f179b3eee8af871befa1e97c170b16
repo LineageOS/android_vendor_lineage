@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cf90f9d8_7d82917f",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-03-22T09:45:16Z",
+      "side": 1,
+      "message": "here?",
+      "revId": "531cb02b93f179b3eee8af871befa1e97c170b16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
