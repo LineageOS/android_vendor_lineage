@@ -29,10 +29,12 @@
 #
 #   TARGET_KERNEL_CLANG_COMPILE        = Compile kernel with clang, defaults to false
 #
+#   TARGET_KERNEL_TOOLCHAIN_ROOT       = Path to the kernel toolchain
 #   KERNEL_TOOLCHAIN_PREFIX            = Overrides TARGET_KERNEL_CROSS_COMPILE_PREFIX,
 #                                          Set this var in shell to override
 #                                          toolchain specified in BoardConfig.mk
-#   KERNEL_TOOLCHAIN                   = Path to toolchain, if unset, assumes
+#   KERNEL_TOOLCHAIN                   = Overrides TARGET_KERNEL_TOOLCHAIN_ROOT,
+#                                          Path to toolchain, if unset, assumes
 #                                          TARGET_KERNEL_CROSS_COMPILE_PREFIX
 #                                          is in PATH
 #   USE_CCACHE                         = Enable ccache (global Android flag)
@@ -67,6 +69,10 @@ else ifeq ($(KERNEL_ARCH),x86)
 KERNEL_TOOLCHAIN_PREFIX ?= x86_64-linux-androidkernel-
 endif
 
+TARGET_KERNEL_TOOLCHAIN_ROOT := $(strip $(TARGET_KERNEL_TOOLCHAIN_ROOT))
+ifneq ($(TARGET_KERNEL_TOOLCHAIN_ROOT),)
+KERNEL_TOOLCHAIN := $(TARGET_KERNEL_TOOLCHAIN_ROOT)
+endif
 ifeq ($(KERNEL_TOOLCHAIN),)
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN_PREFIX)
 else ifneq ($(KERNEL_TOOLCHAIN_PREFIX),)
