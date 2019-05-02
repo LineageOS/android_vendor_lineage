@@ -250,7 +250,7 @@ INSTALLED_KERNEL_MODULES: depmod-host
 			for f in $$modules; do \
 				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
 			done; \
-			($(call build-image-kernel-modules,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT),$(KERNEL_DEPMOD_STAGING_DIR))); \
+			($(call build-image-kernel-modules,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR))); \
 		fi
 
 $(TARGET_KERNEL_MODULES): TARGET_KERNEL_BINARIES
