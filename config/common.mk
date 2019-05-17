@@ -367,5 +367,8 @@ ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
 endif
 endif
 
+# Set qcom global variables
+$(call inherit-product, vendor/lineage/config/qcom.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
