@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "4075fbfd_9bfc6106",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-05-19T07:05:47Z",
+      "side": 1,
+      "message": "Uh yeah, probably",
+      "parentUuid": "83ee0179_79d08423",
+      "range": {
+        "startLine": 44,
+        "startChar": 4,
+        "endLine": 44,
+        "endChar": 30
+      },
+      "revId": "f3dbb4e17724c366e3072b234193c51525e6a999",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4d2919f7_7969135e",
         "filename": "config/BoardConfigQcom.mk",
         "patchSetId": 2
