@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f103cb23_45f4d14e",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-05-22T07:59:51Z",
+      "side": 1,
+      "message": "This hardcoded \"dtbo\" path will break it.",
+      "range": {
+        "startLine": 218,
+        "startChar": 35,
+        "endLine": 218,
+        "endChar": 54
+      },
+      "revId": "28f9fb41df1156b57284c6f13f69847a1901d0aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
