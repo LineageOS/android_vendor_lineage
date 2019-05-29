@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "486bbd4d_c6b93643",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2019-05-29T22:10:35Z",
+      "side": 1,
+      "message": "Don\u0027t you only need to define this in one location?",
+      "range": {
+        "startLine": 280,
+        "startChar": 0,
+        "endLine": 280,
+        "endChar": 24
+      },
+      "revId": "9ac688d64e9ea32d3fc13ecdedd2a0db4e5698d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
