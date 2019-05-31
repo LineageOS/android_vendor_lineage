@@ -22,6 +22,30 @@
       "revId": "9ac688d64e9ea32d3fc13ecdedd2a0db4e5698d7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "427503b3_464b8b21",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-05-31T19:18:55Z",
+      "side": 1,
+      "message": "Yes, and no. Different methods of building the dtboimage result in it being in different places. I can redo where/how they\u0027re built in a separate patch, just didn\u0027t want to cram too much into this one.",
+      "parentUuid": "486bbd4d_c6b93643",
+      "range": {
+        "startLine": 280,
+        "startChar": 0,
+        "endLine": 280,
+        "endChar": 24
+      },
+      "revId": "9ac688d64e9ea32d3fc13ecdedd2a0db4e5698d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
