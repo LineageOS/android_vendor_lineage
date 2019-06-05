@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "02d0478b_4007be84",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 3334,
+      "author": {
+        "id": 23006
+      },
+      "writtenOn": "2019-06-05T18:28:26Z",
+      "side": 1,
+      "message": "Please change this line to \n\n\n\u003capn carrier\u003d\"SMARTLTE\"\n      carrier_id \u003d \"1654\"\n      mcc\u003d\"515\"\n      mnc\u003d\"03\"\n      apn\u003d\"smartlte\"\n      type\u003d\"default,supl\"\n  /\u003e\n  \u003capn carrier\u003d\"SMART INTERNET\"\n      carrier_id \u003d \"1654\"\n      mcc\u003d\"515\"\n      mnc\u003d\"03\"\n      apn\u003d\"internet\"\n      type\u003d\"default,supl\"\n  /\u003e\n  \u003capn carrier\u003d\"Smart GPRS\"\n      carrier_id \u003d \"1654\"\n      mcc\u003d\"515\"\n      mnc\u003d\"03\"\n      apn\u003d\"Smart1\"\n      proxy\u003d\"10.102.61.46\"\n      port\u003d\"8080\"\n      type\u003d\"default,supl\"\n  /\u003e\n  \u003capn carrier\u003d\"Smart MMS\"\n      carrier_id \u003d \"1654\"\n      mcc\u003d\"515\"\n      mnc\u003d\"03\"\n      apn\u003d\"mms\"\n      mmsc\u003d\"http://10.102.61.238:8002\"\n      mmsproxy\u003d\"10.102.61.46\"\n      mmsport\u003d\"8080\"\n      type\u003d\"mms\"\n  /\u003e\n\n\n\nsource: https://android.googlesource.com/device/sample/+/master/etc/apns-full-conf.xml#28686 - 28722",
+      "range": {
+        "startLine": 3326,
+        "startChar": 2,
+        "endLine": 3334,
+        "endChar": 136
+      },
+      "revId": "10ca86d1ff403e0c3cbd0792579eaa7e581f82bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
