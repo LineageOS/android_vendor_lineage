@@ -46,6 +46,30 @@
       "revId": "9ac688d64e9ea32d3fc13ecdedd2a0db4e5698d7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20e81bbc_0738939d",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2019-06-06T05:19:01Z",
+      "side": 1,
+      "message": "How come the same thing is defined in BoardConfigKernel.mk, I guess is my question.",
+      "parentUuid": "427503b3_464b8b21",
+      "range": {
+        "startLine": 280,
+        "startChar": 0,
+        "endLine": 280,
+        "endChar": 24
+      },
+      "revId": "9ac688d64e9ea32d3fc13ecdedd2a0db4e5698d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
