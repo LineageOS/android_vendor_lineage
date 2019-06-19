@@ -15,6 +15,10 @@
 -->
 
 <permissions>
+    <privapp-permissions package="android.ext.services">
+        <permission name="android.permission.PROVIDE_RESOLVER_RANKER_SERVICE"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.apps.tag">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
@@ -30,8 +34,10 @@
         <permission name="android.permission.STATUS_BAR"/>
     </privapp-permissions>
 
-    <privapp-permissions package="android.ext.services">
-        <permission name="android.permission.PROVIDE_RESOLVER_RANKER_SERVICE"/>
+    <privapp-permissions package="com.android.fmradio">
+        <permission name="android.permission.ACCESS_FM_RADIO"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.gallery3d">
