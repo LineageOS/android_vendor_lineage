@@ -1,6 +1,3 @@
-# Bring in Qualcomm helper macros
-include vendor/lineage/build/core/qcom_utils.mk
-
 B_FAMILY := msm8226 msm8610 msm8974
 B64_FAMILY := msm8992 msm8994
 BR_FAMILY := msm8909 msm8916
@@ -12,7 +9,7 @@ UM_PLATFORMS := $(UM_3_18_FAMILY) $(UM_4_4_FAMILY) $(UM_4_9_FAMILY)
 BOARD_USES_ADRENO := true
 
 # UM platforms no longer need this set on O+
-ifneq ($(call is-board-platform-in-list, $(UM_PLATFORMS)),true)
+ifneq ($(filter $(B_FAMILY) $(B64_FAMILY) $(BR_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     TARGET_USES_QCOM_BSP := true
 endif
 
@@ -34,7 +31,7 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
 # Enable color metadata for every UM platform
-ifeq ($(call is-board-platform-in-list, $(UM_PLATFORMS)),true)
+ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
     TARGET_USES_COLOR_METADATA := true
 endif
 
@@ -55,22 +52,22 @@ endif
 # List of targets that use master side content protection
 MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660 sdm845
 
-ifeq ($(call is-board-platform-in-list, $(B_FAMILY)),true)
+ifneq ($(filter $(B_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(B_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8974
-else ifeq ($(call is-board-platform-in-list, $(B64_FAMILY)),true)
+else ifneq ($(filter $(B64_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(B64_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8994
-else ifeq ($(call is-board-platform-in-list, $(BR_FAMILY)),true)
+else ifneq ($(filter $(BR_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(BR_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8916
-else ifeq ($(call is-board-platform-in-list, $(UM_3_18_FAMILY)),true)
+else ifneq ($(filter $(UM_3_18_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_3_18_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8996
-else ifeq ($(call is-board-platform-in-list, $(UM_4_4_FAMILY)),true)
+else ifneq ($(filter $(UM_4_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_4_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8998
-else ifeq ($(call is-board-platform-in-list, $(UM_4_9_FAMILY)),true)
+else ifneq ($(filter $(UM_4_9_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(UM_4_9_FAMILY)
     QCOM_HARDWARE_VARIANT := sdm845
 else
