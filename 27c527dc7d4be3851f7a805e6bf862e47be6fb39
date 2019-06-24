@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "207d5456_2a36329f",
+        "filename": "addonsu/mount-system.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-06-24T15:53:50Z",
+      "side": 1,
+      "message": "BTW I didn\u0027t do the same here cause mount should be able to read /system fs from recovery.fstab ^.^",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 50
+      },
+      "revId": "27c527dc7d4be3851f7a805e6bf862e47be6fb39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
