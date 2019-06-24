@@ -14,7 +14,9 @@ if [ "$system_as_root" == "true" ]; then
     block=/dev/block/bootdevice/by-name/system
   fi
   mkdir -p /system_root
-  if mount -o rw $block /system_root; then
+  if mount -o rw $block /system_root ||
+     mount -o rw $block /system_root -t ext4 ||
+     mount -o rw $block /system_root -t f2fs; then
     exit 0
   fi
 else
