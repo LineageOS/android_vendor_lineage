@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "309ec4f7_cd8a6684",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2019-06-26T00:38:21Z",
+      "side": 1,
+      "message": "Perhaps ?\u003d to allow override if someone really wants to ?\n\nAlso, if the size check is false, don\u0027t we skip the $(call ...) blocks below altogether?  I think the endif needs moving up here.",
+      "revId": "51f87bd18dbab76f28dc077dc1eaab6df3ffb5b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
