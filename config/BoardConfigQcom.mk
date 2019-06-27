@@ -1,3 +1,5 @@
+include vendor/lineage/build/core/vendor/qcom_boards.mk
+
 B_FAMILY := msm8226 msm8610 msm8974
 B64_FAMILY := msm8992 msm8994
 BR_FAMILY := msm8909 msm8916
