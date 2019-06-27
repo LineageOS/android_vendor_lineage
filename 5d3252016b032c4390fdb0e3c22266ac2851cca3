@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c874ddfe_e5b6d526",
+        "filename": "build/core/vendor/qcom_boards.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-06-27T18:53:23Z",
+      "side": 1,
+      "message": "Can you provide some examples?",
+      "range": {
+        "startLine": 4,
+        "startChar": 46,
+        "endLine": 4,
+        "endChar": 56
+      },
+      "revId": "5d3252016b032c4390fdb0e3c22266ac2851cca3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
