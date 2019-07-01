@@ -25,7 +25,8 @@ ifeq ($(TARGET_SCREEN_HEIGHT),)
 endif
 
 define build-bootanimation
-    sh vendor/lineage/bootanimation/generate-bootanimation.sh \
+    $(shell) vendor/lineage/bootanimation/generate-bootanimation.sh \
+    $(PRODUCT_OUT) \
     $(TARGET_SCREEN_WIDTH) \
     $(TARGET_SCREEN_HEIGHT) \
     $(TARGET_BOOTANIMATION_HALF_RES)
