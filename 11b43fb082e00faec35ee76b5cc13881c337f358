@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d3e13aa7_3730f1c4",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-07-07T11:50:16Z",
+      "side": 1,
+      "message": "unrelated, might be worth moving towards $(shell)",
+      "revId": "11b43fb082e00faec35ee76b5cc13881c337f358",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
