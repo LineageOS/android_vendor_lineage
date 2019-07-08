@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "24a9fb07_75f00d51",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 824,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2019-07-08T01:24:58Z",
+      "side": 1,
+      "message": "star need to be after quote like: ...apk_classes\"*",
+      "revId": "2dfc26ed61fa19032c2c4c61d463f72b653cc1eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bc5df140_a0c31b6a",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 843,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2019-07-08T01:24:58Z",
+      "side": 1,
+      "message": "here too",
+      "revId": "2dfc26ed61fa19032c2c4c61d463f72b653cc1eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d69c6d9_1a7b9f5d",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 1066,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2019-07-08T01:24:58Z",
+      "side": 1,
+      "message": "here",
+      "revId": "2dfc26ed61fa19032c2c4c61d463f72b653cc1eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43d8aab2_4fbebdbc",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 1067,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2019-07-08T01:24:58Z",
+      "side": 1,
+      "message": "here",
+      "revId": "2dfc26ed61fa19032c2c4c61d463f72b653cc1eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
