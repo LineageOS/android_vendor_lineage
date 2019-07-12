@@ -66,6 +66,7 @@ SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
 ## Internal variables
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
+KERNEL_RELEASE := $(KERNEL_OUT)/include/config/kernel.release
 
 ifeq ($(KERNEL_ARCH),x86_64)
 KERNEL_DEFCONFIG_ARCH := x86
@@ -246,7 +247,8 @@ INSTALLED_KERNEL_MODULES: depmod-host
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
 			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) modules_install); \
-			modules=$$(find $(MODULES_INTERMEDIATES) -type f -name '*.ko'); \
+			kernel_release=$$(cat $(KERNEL_RELEASE)) \
+			modules=$$(find $(MODULES_INTERMEDIATES)/lib/modules/$$kernel_release -type f -name '*.ko'); \
 			for f in $$modules; do \
 				$(KERNEL_TOOLCHAIN_PATH)strip --strip-unneeded $$f; \
 			done; \
