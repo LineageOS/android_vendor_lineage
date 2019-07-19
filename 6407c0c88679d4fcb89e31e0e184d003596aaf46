@@ -16,6 +16,24 @@
       "revId": "6407c0c88679d4fcb89e31e0e184d003596aaf46",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "975d0171_6e9ca16a",
+        "filename": "build/core/vendor/qcom_boards.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-07-19T19:07:35Z",
+      "side": 1,
+      "message": "nice catch",
+      "parentUuid": "52cdf236_691d4d7a",
+      "revId": "6407c0c88679d4fcb89e31e0e184d003596aaf46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
