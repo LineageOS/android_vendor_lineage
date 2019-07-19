@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2337f64f_b28efd91",
+        "filename": "build/core/vendor/qcom_boards.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-07-19T18:41:24Z",
+      "side": 1,
+      "message": "MSMNILE :\u003d msmnile #SM8150\n\nSo that the next usage of sm8150 makes sense",
+      "revId": "5122f95859be117f4e51afe8e4beba33de614356",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ce7050d8_1fb0d334",
+        "filename": "build/core/vendor/qcom_boards.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-07-19T18:41:24Z",
+      "side": 1,
+      "message": "probably wrong",
+      "range": {
+        "startLine": 45,
+        "startChar": 32,
+        "endLine": 45,
+        "endChar": 38
+      },
+      "revId": "5122f95859be117f4e51afe8e4beba33de614356",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "87ad442c_3b1224f8",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-07-19T18:41:24Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "5122f95859be117f4e51afe8e4beba33de614356",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
