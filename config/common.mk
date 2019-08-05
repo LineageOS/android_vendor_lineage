@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Jelly \
     LockClock \
+    OpenWeatherProvider \
     TrebuchetQuickStep \
     Updater \
     WeatherProvider
