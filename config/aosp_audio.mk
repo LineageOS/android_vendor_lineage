@@ -197,3 +197,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ringtones/ogg/Zeta.ogg:system/media/audio/ringtones/Zeta.ogg \
     $(LOCAL_PATH)/ringtones/Testudo.ogg:system/media/audio/ringtones/Testudo.ogg \
     $(LOCAL_PATH)/ringtones/Vespa.ogg:system/media/audio/ringtones/Vespa.ogg
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/effects/ogg/ChargingStarted.ogg:system/media/audio/notifications/ChargingStarted.ogg \
+    $(LOCAL_PATH)/effects/material/ogg/WirelessChargingStarted.ogg:system/media/audio/notifications/WirelessChargingStarted.ogg
