@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/notifications/Aldebaran.ogg:system/media/audio/notifications/Aldebaran.ogg \
     $(LOCAL_PATH)/notifications/Altair.ogg:system/media/audio/notifications/Altair.ogg \
     $(LOCAL_PATH)/notifications/Antares.ogg:system/media/audio/notifications/Antares.ogg \
-    $(LOCAL_PATH)/notifications/arcturus.ogg:system/media/audio/notifications/arcturus.ogg \
     $(LOCAL_PATH)/notifications/Beat_Box_Android.ogg:system/media/audio/notifications/Beat_Box_Android.ogg \
     $(LOCAL_PATH)/notifications/Betelgeuse.ogg:system/media/audio/notifications/Betelgeuse.ogg \
     $(LOCAL_PATH)/notifications/Canopus.ogg:system/media/audio/notifications/Canopus.ogg \
@@ -100,8 +99,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/notifications/sirius.ogg:system/media/audio/notifications/sirius.ogg \
     $(LOCAL_PATH)/notifications/Sirrah.ogg:system/media/audio/notifications/Sirrah.ogg \
     $(LOCAL_PATH)/notifications/TaDa.ogg:system/media/audio/notifications/TaDa.ogg \
-    $(LOCAL_PATH)/notifications/tweeters.ogg:system/media/audio/notifications/tweeters.ogg \
-    $(LOCAL_PATH)/notifications/vega.ogg:system/media/audio/notifications/vega.ogg
+    $(LOCAL_PATH)/notifications/tweeters.ogg:system/media/audio/notifications/tweeters.ogg
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/Ring_Classic_02.ogg:system/media/audio/ringtones/Ring_Classic_02.ogg \
