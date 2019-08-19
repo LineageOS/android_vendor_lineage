@@ -11,6 +11,11 @@ export backuptool_ab=true
 copy_file() {
   # toybox's cp doesn't do directories correctly for whatever reason
   mkdir -p `dirname $2`
+  octal=`stat -c "%a" $(dirname $1)`
+  chmod "$octal" `dirname $2`
+  user=`stat -c "%U" $(dirname $1)`
+  group=`stat -c "%G" $(dirname $1)`
+  chown "$user":"$group" `dirname $2`
 
   cp -dp "$1" "$2"
   # symlinks don't have a context
