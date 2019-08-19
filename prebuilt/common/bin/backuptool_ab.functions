@@ -9,16 +9,7 @@ export V=16.0
 export backuptool_ab=true
 
 copy_file() {
-  # toybox's cp doesn't do directories correctly for whatever reason
-  mkdir -p `dirname $2`
-
-  cp -dp "$1" "$2"
-  # symlinks don't have a context
-  if [ ! -L "$1" ]; then
-    # it is assumed that every label starts with 'u:object_r' and has no white-spaces
-    local context=`ls -Z "$1" | grep -o 'u:object_r:[^ ]*' | head -1`
-    chcon "$context" "$2"
-  fi
+  cp -dp --preserve=a "$1" "$2"
 }
 
 backup_file() {
