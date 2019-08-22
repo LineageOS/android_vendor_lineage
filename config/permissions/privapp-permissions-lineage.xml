@@ -58,6 +58,13 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="org.lineageos.health">
+        <permission name="lineageos.permission.MANAGE_HEALTH_STORE"/>
+        <permission name="lineageos.permission.READ_HEALTH_STORE"/>
+        <permission name="lineageos.permission.WRITE_HEALTH_STORE"/>
+        <permission name="android.permission.FOREGROUND_SERVICE" />
+    </privapp-permissions>
+
     <privapp-permissions package="org.lineageos.lineageparts">
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>

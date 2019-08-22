@@ -13,6 +13,10 @@ on post-fs-data
     chown root log /dev/fscklogs/log
     chmod 0640 /dev/fscklogs/log
 
+    # Lineage Health data dir
+    mkdir /data/system_ce/0/health 0700 system system
+    restorecon_recursive /data/system_ce/0/health
+
 on boot
     # Persistent properties (only created if persist exists)
     mkdir /persist/properties 0770 system system

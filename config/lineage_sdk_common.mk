@@ -1,6 +1,7 @@
 # Permissions for lineage sdk services
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.audio.xml:system/etc/permissions/org.lineageos.audio.xml \
+    vendor/lineage/config/permissions/org.lineageos.health.xml:system/etc/permissions/org.lineageos.health.xml \
     vendor/lineage/config/permissions/org.lineageos.livedisplay.xml:system/etc/permissions/org.lineageos.livedisplay.xml \
     vendor/lineage/config/permissions/org.lineageos.performance.xml:system/etc/permissions/org.lineageos.performance.xml \
     vendor/lineage/config/permissions/org.lineageos.profiles.xml:system/etc/permissions/org.lineageos.profiles.xml \
@@ -31,7 +32,7 @@ ifndef LINEAGE_PLATFORM_SDK_VERSION
   # the SDK are released.  It should only be incremented when the APIs for
   # the new release are frozen (so that developers don't write apps against
   # intermediate builds).
-  LINEAGE_PLATFORM_SDK_VERSION := 9
+  LINEAGE_PLATFORM_SDK_VERSION := 10
 endif
 
 ifndef LINEAGE_PLATFORM_REV
