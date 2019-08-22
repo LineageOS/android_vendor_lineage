@@ -2,6 +2,7 @@
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.audio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.audio.xml \
     vendor/lineage/config/permissions/org.lineageos.hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.hardware.xml \
+    vendor/lineage/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.health.xml \
     vendor/lineage/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.livedisplay.xml \
     vendor/lineage/config/permissions/org.lineageos.performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.performance.xml \
     vendor/lineage/config/permissions/org.lineageos.profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.profiles.xml \
@@ -27,7 +28,7 @@ ifndef LINEAGE_PLATFORM_SDK_VERSION
   # the SDK are released.  It should only be incremented when the APIs for
   # the new release are frozen (so that developers don't write apps against
   # intermediate builds).
-  LINEAGE_PLATFORM_SDK_VERSION := 9
+  LINEAGE_PLATFORM_SDK_VERSION := 10
 endif
 
 ifndef LINEAGE_PLATFORM_REV
