@@ -143,7 +143,6 @@ PRODUCT_PACKAGES += \
 
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     LineageSettingsProvider \
     LineageSetupWizard \
@@ -154,6 +153,12 @@ PRODUCT_PACKAGES += \
     TrebuchetQuickStep \
     Updater \
     WeatherProvider
+
+# AudioFX
+ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
+PRODUCT_PACKAGES += \
+    AudioFX
+endif
 
 # Exchange support
 PRODUCT_PACKAGES += \
