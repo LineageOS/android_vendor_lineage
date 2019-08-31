@@ -1,3 +1,6 @@
+# Disable AudioFX
+TARGET_EXCLUDE_AUDIOFX := true
+
 # Inherit full common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full.mk)
 
