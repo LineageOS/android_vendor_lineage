@@ -13,10 +13,8 @@
 # limitations under the License.
 
 $(call inherit-product, build/target/product/aosp_arm.mk)
-$(call inherit-product, vendor/lineage/config/common.mk)
 
-# Allow building otatools
-TARGET_FORCE_OTA_PACKAGE := true
+include vendor/lineage/build/target/product/lineage.mk
 
 TARGET_USES_64_BIT_BINDER := true
 
