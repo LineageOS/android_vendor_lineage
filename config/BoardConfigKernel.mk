@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -99,7 +99,7 @@ endif
 KERNEL_MAKE_FLAGS :=
 
 # Add back threads, ninja cuts this to $(nproc)/2
-KERNEL_MAKE_FLAGS += -j$$(nproc)
+KERNEL_MAKE_FLAGS += -j$(shell nproc)
 
 ifeq ($(KERNEL_ARCH),arm)
   # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
