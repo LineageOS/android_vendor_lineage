@@ -52,20 +52,28 @@ else
 KERNEL_ARCH := $(TARGET_KERNEL_ARCH)
 endif
 
+GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86
+# arm64 toolchain
+KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-linux-android-
+# arm toolchain
+KERNEL_TOOLCHAIN_arm := $(GCC_PREBUILTS)/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-androidkernel-
+# x86 toolchain
+KERNEL_TOOLCHAIN_x86 := $(GCC_PREBUILTS)/x86/x86_64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX_x86 := x86_64-linux-android-
+
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(strip $(TARGET_KERNEL_CROSS_COMPILE_PREFIX))
 ifneq ($(TARGET_KERNEL_CROSS_COMPILE_PREFIX),)
 KERNEL_TOOLCHAIN_PREFIX ?= $(TARGET_KERNEL_CROSS_COMPILE_PREFIX)
-else ifeq ($(KERNEL_ARCH),arm64)
-KERNEL_TOOLCHAIN_PREFIX ?= aarch64-linux-android-
-else ifeq ($(KERNEL_ARCH),arm)
-KERNEL_TOOLCHAIN_PREFIX ?= arm-linux-androidkernel-
-else ifeq ($(KERNEL_ARCH),x86)
-KERNEL_TOOLCHAIN_PREFIX ?= x86_64-linux-android-
+else
+KERNEL_TOOLCHAIN ?= $(KERNEL_TOOLCHAIN_$(KERNEL_ARCH))
+KERNEL_TOOLCHAIN_PREFIX ?= $(KERNEL_TOOLCHAIN_PREFIX_$(KERNEL_ARCH))
 endif
 
 ifeq ($(KERNEL_TOOLCHAIN),)
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN_PREFIX)
-else ifneq ($(KERNEL_TOOLCHAIN_PREFIX),)
+else
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN)/$(KERNEL_TOOLCHAIN_PREFIX)
 endif
 
@@ -84,7 +92,7 @@ endif
 
 # Needed for CONFIG_COMPAT_VDSO, safe to set for all arm64 builds
 ifeq ($(KERNEL_ARCH),arm64)
-   KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="arm-linux-androideabi-"
+   KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
 endif
 
 # Clear this first to prevent accidental poisoning from env
@@ -133,11 +141,10 @@ endif
 KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_OS)-x86/bin/make
 
 # Set the full path to the gcc command
-GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/host
 ifeq ($(HOST_OS),darwin)
-KERNEL_HOST_TOOLCHAIN_ROOT := $(GCC_PREBUILTS)/i686-apple-darwin-4.2.1/bin/i686-apple-darwin11-
+KERNEL_HOST_TOOLCHAIN_ROOT := $(GCC_PREBUILTS)/host/i686-apple-darwin-4.2.1/bin/i686-apple-darwin11-
 else
-KERNEL_HOST_TOOLCHAIN_ROOT := $(GCC_PREBUILTS)/x86_64-linux-glibc2.17-4.8/bin/x86_64-linux-
+KERNEL_HOST_TOOLCHAIN_ROOT := $(GCC_PREBUILTS)/host/x86_64-linux-glibc2.17-4.8/bin/x86_64-linux-
 endif
 KERNEL_MAKE_FLAGS += HOSTCC=$(KERNEL_HOST_TOOLCHAIN_ROOT)gcc
 KERNEL_MAKE_FLAGS += HOSTCXX=$(KERNEL_HOST_TOOLCHAIN_ROOT)g++
