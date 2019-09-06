@@ -129,3 +129,13 @@ endif
 
 # Set use the full path to the make command
 KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_OS)-x86/bin/make
+
+# Set the full path to the gcc command
+GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/host
+ifeq ($(HOST_OS),darwin)
+KERNEL_HOST_TOOLCHAIN_ROOT := $(GCC_PREBUILTS)/i686-apple-darwin-4.2.1/bin/i686-apple-darwin11-
+else
+KERNEL_HOST_TOOLCHAIN_ROOT := $(GCC_PREBUILTS)/x86_64-linux-glibc2.17-4.8/bin/x86_64-linux-
+endif
+KERNEL_MAKE_FLAGS += HOSTCC=$(KERNEL_HOST_TOOLCHAIN_ROOT)gcc
+KERNEL_MAKE_FLAGS += HOSTCXX=$(KERNEL_HOST_TOOLCHAIN_ROOT)g++
