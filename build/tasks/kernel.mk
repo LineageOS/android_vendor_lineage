@@ -187,6 +187,9 @@ ifeq ($(TARGET_KERNEL_MODULES),)
     TARGET_KERNEL_MODULES := INSTALLED_KERNEL_MODULES
 endif
 
+# System tools are no longer allowed on 10+
+PATH_OVERRIDE += $(TOOLS_PATH_OVERRIDE)
+
 KERNEL_ADDITIONAL_CONFIG_OUT := $(KERNEL_OUT)/.additional_config
 
 # Internal implementation of make-kernel-target
