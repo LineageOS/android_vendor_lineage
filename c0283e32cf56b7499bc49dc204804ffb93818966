@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ea8d74cf_c4fe377f",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-09-06T21:30:41Z",
+      "side": 1,
+      "message": "Remove?",
+      "range": {
+        "startLine": 97,
+        "startChar": 18,
+        "endLine": 97,
+        "endChar": 49
+      },
+      "revId": "c0283e32cf56b7499bc49dc204804ffb93818966",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
