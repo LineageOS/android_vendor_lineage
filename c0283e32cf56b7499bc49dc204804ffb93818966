@@ -22,6 +22,23 @@
       "revId": "c0283e32cf56b7499bc49dc204804ffb93818966",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cdc1a561_edfd13c8",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2019-09-06T21:37:04Z",
+      "side": 1,
+      "message": "I suspect that it\u0027s still limited to no more than 2x cores (ie whatever nproc reports).  And -j means do as many tasks in parallel as the makefile setup allows (\"If the -j option is given without an argument, make will  not  limit  the number of jobs that can run simultaneously.\").\n\nSo I think it will try to run as many tasks as possible concurrently on 2x cores.  Probably not what we want.",
+      "revId": "c0283e32cf56b7499bc49dc204804ffb93818966",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
