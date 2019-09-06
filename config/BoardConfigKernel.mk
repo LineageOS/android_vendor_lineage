@@ -56,14 +56,17 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(strip $(TARGET_KERNEL_CROSS_COMPILE_PREF
 ifneq ($(TARGET_KERNEL_CROSS_COMPILE_PREFIX),)
 KERNEL_TOOLCHAIN_PREFIX ?= $(TARGET_KERNEL_CROSS_COMPILE_PREFIX)
 else ifeq ($(KERNEL_ARCH),arm64)
+KERNEL_TOOLCHAIN ?= $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     KERNEL_TOOLCHAIN_PREFIX ?= aarch64-linux-android-
 else
     KERNEL_TOOLCHAIN_PREFIX ?= aarch64-linux-androidkernel-
 endif
 else ifeq ($(KERNEL_ARCH),arm)
+KERNEL_TOOLCHAIN ?= $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX ?= arm-linux-androidkernel-
 else ifeq ($(KERNEL_ARCH),x86)
+KERNEL_TOOLCHAIN ?= $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/x86/x86_64-linux-android-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX ?= x86_64-linux-androidkernel-
 endif
 
