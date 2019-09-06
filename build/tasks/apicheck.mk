@@ -38,7 +38,7 @@ checkapi-lineage : check-lineage-public-api
 # (See lineage-sdk/Android.mk)
 # we need to add api-stubs as additional dependency of the api check.
 
-$(INTERNAL_LINEAGE_PLATFORM_API_FILE): lineage-api-stubs-docs
+$(INTERNAL_LINEAGE_PLATFORM_API_FILE):
 
 # Check that the API we're building hasn't broken the last-released
 # SDK version.
