@@ -41,72 +41,86 @@
 <sensitivePNS>
     <!--Greece-->
     <sensitivePN network="202">
-        <item>197</item>
-        <item>1018</item>
-        <item>1056</item>
-        <item>1065</item>
-        <item>1107</item>
-        <item>1109</item>
-        <item>15900</item>
+        <item>197</item> <!--National Emergency Social Assistance Hotline-->
+        <item>1018</item> <!--National Suicide Prevention Hotline-->
+        <item>1056</item> <!--National SOS Helpline for Children-->
+        <item>1107</item> <!--National Line for Child Protection-->
+        <item>1109</item> <!--Prevention of Human Trafficking Resource Helpline-->
+        <item>15900</item> <!--Prevention of Violence Against Women SOS Helpline-->
         <item>111525</item>
-        <item>116111</item>
-        <item>116123</item>
+        <item>116000</item> <!--European Hotline for Missing Children-->
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>116123</item> <!--European Emotional Support Helpline-->
     </sensitivePN>
     <!--Netherlands-->
     <sensitivePN network="204">
-        <item>116006</item>
-        <item>116111</item>
-        <item>116123</item>
-        <item>08000432</item>
-        <item>08002000</item>
-        <item>09000101</item>
-        <item>0882342450</item>
-        <item>09009999001</item>
+        <item>116006</item> <!--Victims of Crime, Traffic Accidents and Calamities Helpline-->
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>08000432</item> <!--National Helpline for Children and Teenagers-->
+        <item>08002000</item> <!--National Domestic Violence Helpline-->
+        <item>08007000</item> <!--National Hotline to Report Crime Anonymously-->
+        <item>09000101</item> <!--Victim Support Netherlands (Human Trafficking Helpline)-->
+        <item>0882342450</item> <!--Blijf Groep Helpline (Domestic Violence)-->
+        <item>09009999001</item> <!--National Sexual Abuse Helpline-->
     </sensitivePN>
     <!--Belgium-->
     <sensitivePN network="206">
-        <item>102</item>
-        <item>106</item>
+        <item>102</item> <!--Children and Youth Helpline (Dutch)-->
+        <item>103</item> <!--Children and Youth Helpline (French)-->
+        <item>106</item> <!--National Crisis Helpline (Dutch)-->
+        <item>107</item> <!--National Crisis Helpline (French)-->
+        <item>108</item> <!--National Crisis Helpline (German)-->
         <item>111</item>
         <item>116</item>
-        <item>1712</item>
-        <item>1813</item>
-        <item>116000</item>
-        <item>08000432</item>
-        <item>032185056</item>
-        <item>032391415</item>
+        <item>1712</item> <!--National Senior Citizen Mistreatment Hotline (Dutch)-->
+        <item>1813</item> <!--National Suicide Prevention Hotline (Dutch)-->
+        <item>116000</item> <!--European Hotline for Missing Children-->
+        <item>116006</item> <!--Victims of Crime, Traffic Accidents and Calamities Helpline-->
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>025129020</item> <!--Youth Aid Helpline (French)-->
+        <item>025343636</item> <!--National SOS Rape Hotline (French)-->
+        <item>025392744</item> <!--Family Violence Prevention Centre (French)-->
+        <item>026484014</item> <!--National Anonymous Crisis Support Helpline (English)-->
+        <item>032185056</item> <!--Support Helpline for Alcoholics' Friends and Families (Dutch)-->
+        <item>032391415</item> <!--Alcoholics Anonymous (Dutch)-->
         <item>078150300</item>
         <item>078151020</item>
+        <item>078152556</item> <!--Alcoholics Anonymous (French)-->
+        <item>080015801</item> <!--Cancer Foundation (Dutch/French)-->
+        <item>080015802</item> <!--Cancer Foundation (Dutch)-->
+        <item>080032123</item> <!--National Suicide Prevention Hotline (French)-->
         <item>080097079</item>
         <item>080099533</item>
     </sensitivePN>
     <!--France-->
-    <sensitivePN network="208,340,647">
-        <item>119</item>
+    <sensitivePN network="208,308,340,543,547,647">
+        <item>119</item> <!--Child Helpline International-->
         <item>3919</item>
     </sensitivePN>
     <!--Spain-->
     <sensitivePN network="214">
         <item>016</item>
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Hungary-->
     <sensitivePN network="216">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
     <!--Bosnia and Herzegovina-->
     <sensitivePN network="218">
-        <item>080050305</item>
+        <item>080050305</item> <!--Child Helpline International-->
     </sensitivePN>
     <!--Croatia-->
     <sensitivePN network="219">
         <item>116006</item>
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Serbia-->
     <sensitivePN network="220">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>2645328</item>
         <item>3192782</item>
         <item>3626006</item>
@@ -120,23 +134,22 @@
     <!--Italy-->
     <sensitivePN network="222">
         <item>1522</item>
-        <item>19696</item>
+        <item>19696</item> <!--Child Helpline International-->
     </sensitivePN>
     <!--Romania-->
     <sensitivePN network="226">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>0213114636</item>
     </sensitivePN>
     <!--Switzerland-->
     <sensitivePN network="228">
-        <item>147</item>
-        <item>116000</item>
-        <item>116111</item>
+        <item>147</item> <!--Child Helpline International-->
+        <item>116000</item> <!--European Hotline for Missing Children-->
     </sensitivePN>
     <!--Czech Republic-->
     <sensitivePN network="230">
         <item>116006</item>
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
         <item>222514040</item>
         <item>222580697</item>
@@ -155,18 +168,18 @@
     </sensitivePN>
     <!--Slovakia-->
     <sensitivePN network="231">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Austria-->
     <sensitivePN network="232">
-        <item>147</item>
+        <item>147</item> <!--Child Helpline International-->
         <item>116006</item>
         <item>116123</item>
         <item>0800222555</item>
     </sensitivePN>
-    <!--GB-->
+    <!--United Kingdom-->
     <sensitivePN network="234,235">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
         <item>08001111</item>
         <item>0800555111</item>
@@ -210,16 +223,16 @@
     <!--Denmark-->
     <sensitivePN network="238">
         <item>116006</item>
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Sweden-->
     <sensitivePN network="240">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
     <!--Norway-->
     <sensitivePN network="242">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>22424202</item>
         <item>22444050</item>
         <item>23227930</item>
@@ -228,20 +241,20 @@
     </sensitivePN>
     <!--Finland-->
     <sensitivePN network="244">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Lithuania-->
     <sensitivePN network="246">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
     <!--Latvia-->
     <sensitivePN network="247">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Estonia-->
     <sensitivePN network="248">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Russia-->
     <sensitivePN network="250">
@@ -252,65 +265,71 @@
     <sensitivePN network="255">
         <item>386</item>
         <item>772</item>
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>0800500225</item>
         <item>0800500335</item>
     </sensitivePN>
     <!--Belarus-->
     <sensitivePN network="257">
-        <item>88011001611</item>
+        <item>88011001611</item> <!--Child Helpline International-->
     </sensitivePN>
     <!--Moldova-->
     <sensitivePN network="255,259">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Poland-->
     <sensitivePN network="260">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
     <!--Germany-->
     <sensitivePN network="262">
         <item>116006</item>
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
         <item>08000116016</item>
         <item>08001110111</item>
         <item>08001110222</item>
+        <item>08001110333</item>
+        <item>08001110550</item>
     </sensitivePN>
     <!--Portugal-->
     <sensitivePN network="268">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>800202148</item>
     </sensitivePN>
     <!--Luxembourg-->
     <sensitivePN network="270">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Ireland-->
     <sensitivePN network="272">
         <item>116006</item>
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
     <!--Iceland-->
     <sensitivePN network="274">
-        <item>1717</item>
+        <item>1717</item> <!--Child Helpline International-->
+    </sensitivePN>
+    <!--Albania-->
+    <sensitivePN network="276">
+        <item>116111></item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Malta-->
     <sensitivePN network="278">
-        <item>179</item>
-        <item>116111</item>
+        <item>179</item> <!--National Helpline-->
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
     <!--Cyprus-->
     <sensitivePN network="280">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
     <!--Georgia-->
     <sensitivePN network="282">
-      <item>116111</item>
+      <item>116111</item> <!--European Helpline for Children and Adolescents-->
     </sensitivePN>
     <!--Armenia-->
     <sensitivePN network="283">
@@ -318,7 +337,7 @@
     </sensitivePN>
     <!--Bulgaria-->
     <sensitivePN network="284">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>028130250</item>
         <item>028223510</item>
         <item>029204238</item>
@@ -534,23 +553,23 @@
         <item>183</item>
         <item>05493810183</item>
         <item>05494412144</item>
-        <item>08504550070</item>
+        <item>08504550070</item> <!--Child Helpline International-->
     </sensitivePN>
     <!--Slovenia-->
     <sensitivePN network="293">
-        <item>116111</item>
+        <item>116111</item> <!--European Helpline for Children and Adolescents-->
         <item>116123</item>
     </sensitivePN>
-    <!--Macedonia-->
+    <!--Northern Macedonia-->
     <sensitivePN network="294">
         <item>192</item>
         <item>193</item>
         <item>194</item>
-        <item>080012222</item>
+        <item>080012222</item> <!--Child Helpline International-->
     </sensitivePN>
     <!--Montenegro-->
     <sensitivePN network="297">
-        <item>080081550</item>
+        <item>080081550</item> <!--Child Helpline International-->
     </sensitivePN>
     <!--Canada-->
     <sensitivePN network="302">
@@ -707,10 +726,10 @@
     </sensitivePN>
     <!--Azerbaijan-->
     <sensitivePN network="400">
-        <item>0124802280</item>
-        <item>0506802280</item>
-        <item>0518801180</item>
-        <item>0884802280</item>
+        <item>0124802280</item> <!--Child Helpline International-->
+        <item>0506802280</item> <!--Child Helpline International-->
+        <item>0518801180</item> <!--Child Helpline International-->
+        <item>0884802280</item> <!--Child Helpline International-->
     </sensitivePN>
     <!--India-->
     <sensitivePN network="404,405">
