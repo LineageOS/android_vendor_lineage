@@ -24,18 +24,16 @@ ifeq ($(TARGET_SCREEN_HEIGHT),)
     TARGET_SCREEN_HEIGHT := 1920
 endif
 
-define build-bootanimation
-    $(shell) vendor/lineage/bootanimation/generate-bootanimation.sh \
-    $(PRODUCT_OUT) \
-    $(TARGET_SCREEN_WIDTH) \
-    $(TARGET_SCREEN_HEIGHT) \
-    $(TARGET_BOOTANIMATION_HALF_RES)
-endef
-
 TARGET_GENERATED_BOOTANIMATION := $(TARGET_OUT_INTERMEDIATES)/BOOTANIMATION/bootanimation.zip
-$(TARGET_GENERATED_BOOTANIMATION):
-	@echo "Building bootanimation"
-	$(build-bootanimation)
+$(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
+	@rm -rf $(dir $@)
+	@echo "Building bootanimation.zip"
+	(export SOONG_ZIP=$(SOONG_ZIP); \
+    vendor/lineage/bootanimation/generate-bootanimation.sh \
+        $(PRODUCT_OUT) \
+        $(TARGET_SCREEN_WIDTH) \
+        $(TARGET_SCREEN_HEIGHT) \
+        $(TARGET_BOOTANIMATION_HALF_RES))
 
 ifeq ($(TARGET_BOOTANIMATION),)
     TARGET_BOOTANIMATION := $(TARGET_GENERATED_BOOTANIMATION)
@@ -59,5 +57,4 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/media
 include $(BUILD_SYSTEM)/base_rules.mk
 
 $(LOCAL_BUILT_MODULE): $(TARGET_BOOTANIMATION)
-	@mkdir -p $(dir $@)
 	@cp $(TARGET_BOOTANIMATION) $@
