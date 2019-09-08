@@ -29,6 +29,7 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	@rm -rf $(dir $@)
 	@echo "Building bootanimation.zip"
 	(export SOONG_ZIP=$(SOONG_ZIP); \
+	export HOST_OS=$(HOST_OS); \
     vendor/lineage/bootanimation/generate-bootanimation.sh \
         $(PRODUCT_OUT) \
         $(TARGET_SCREEN_WIDTH) \
@@ -37,16 +38,6 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 
 ifeq ($(TARGET_BOOTANIMATION),)
     TARGET_BOOTANIMATION := $(TARGET_GENERATED_BOOTANIMATION)
-    ifeq ($(shell command -v mogrify),)
-        $(info **********************************************)
-        $(info The boot animation could not be generated as)
-        $(info ImageMagick is not installed in your system.)
-        $(info $(space))
-        $(info Please install ImageMagick from this website:)
-        $(info https://imagemagick.org/script/binary-releases.php)
-        $(info **********************************************)
-        $(error stop)
-    endif
 endif
 
 include $(CLEAR_VARS)
