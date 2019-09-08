@@ -148,3 +148,11 @@ KERNEL_HOST_TOOLCHAIN_ROOT := $(GCC_PREBUILTS)/host/x86_64-linux-glibc2.17-4.8/b
 endif
 KERNEL_MAKE_FLAGS += HOSTCC=$(KERNEL_HOST_TOOLCHAIN_ROOT)gcc
 KERNEL_MAKE_FLAGS += HOSTCXX=$(KERNEL_HOST_TOOLCHAIN_ROOT)g++
+
+# Set the out dir for the kernel's O= arg
+# This needs to be an absolute path, so only set this if the standard out dir isn't used
+OUT_DIR_PREFIX := $(shell echo $(OUT_DIR) | sed -e 's|/target/.*$$||g')
+KERNEL_BUILD_OUT_PREFIX :=
+ifeq ($(OUT_DIR_PREFIX),out)
+KERNEL_BUILD_OUT_PREFIX := $(BUILD_TOP)/
+endif
