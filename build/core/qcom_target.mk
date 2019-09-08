@@ -17,6 +17,8 @@ endef
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 
+$(call set-device-specific-path,PLATFORM_SUPERPROJECT,platform-superproject,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT))
+
 $(call set-device-specific-path,AUDIO,audio,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/audio)
 $(call set-device-specific-path,DISPLAY,display,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/display)
 $(call set-device-specific-path,MEDIA,media,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/media)
@@ -37,6 +39,8 @@ $(call bt-vendor-set-path-variant,qcom-caf)
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
 else
+
+$(call set-device-specific-path,PLATFORM_SUPERPROJECT,platform-superproject,hardware/qcom)
 
 $(call project-set-path,qcom-audio,hardware/qcom/audio/default)
 $(call project-set-path,qcom-display,hardware/qcom/display/$(TARGET_BOARD_PLATFORM))
