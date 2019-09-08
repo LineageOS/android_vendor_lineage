@@ -17,6 +17,8 @@ endef
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 
+$(call set-device-specific-path,QCOM_SUPERPROJECT,qcom_superproject,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT))
+
 $(call set-device-specific-path,AUDIO,audio,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/audio)
 $(call set-device-specific-path,DISPLAY,display,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/display)
 $(call set-device-specific-path,MEDIA,media,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/media)
