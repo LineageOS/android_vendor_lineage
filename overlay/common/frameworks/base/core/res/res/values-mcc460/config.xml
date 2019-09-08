@@ -2,6 +2,7 @@
 <!--
 /*
 ** Copyright 2018, The LineageOS Project
+** Copyright 2018-2019, The MoKee Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -19,5 +20,5 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Remote server that can provide NTP responses. -->
-    <string translatable="false" name="config_ntpServer">2.android.pool.ntp.org</string>
+    <string translatable="false" name="config_ntpServer">ntp.ntsc.ac.cn</string>
 </resources>
