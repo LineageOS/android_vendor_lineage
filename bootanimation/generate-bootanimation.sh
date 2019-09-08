@@ -36,6 +36,4 @@ echo "$IMAGESCALEWIDTH $IMAGESCALEHEIGHT" 60 > "$OUT/bootanimation/desc.txt"
 cat "vendor/lineage/bootanimation/desc.txt" >> "$OUT/bootanimation/desc.txt"
 
 # Create bootanimation.zip
-cd "$OUT/bootanimation"
-
-zip -qr0 "$OUT/bootanimation.zip" .
+${SOONG_ZIP:-soong_zip} -o "$OUT/bootanimation.zip" -C "$OUT/bootanimation" -D "$OUT/bootanimation"
