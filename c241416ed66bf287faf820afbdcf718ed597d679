@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eb7f0a7f_da2d6c00",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2019-09-08T22:21:43Z",
+      "side": 1,
+      "message": "It\u0027s not ninja doing this, it\u0027s nproc, as is now done below, nproc --all will return the number of cores.",
+      "range": {
+        "startLine": 101,
+        "startChar": 0,
+        "endLine": 101,
+        "endChar": 49
+      },
+      "revId": "c241416ed66bf287faf820afbdcf718ed597d679",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
