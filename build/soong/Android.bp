@@ -42,4 +42,5 @@ cc_library_headers {
     generated_headers: ["generated_kernel_includes"],
     export_generated_headers: ["generated_kernel_includes"],
     vendor_available: true,
+    recovery_available: true,
 }
