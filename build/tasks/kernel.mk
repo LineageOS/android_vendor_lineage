@@ -244,7 +244,7 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG)
 		fi
 
 .PHONY: INSTALLED_KERNEL_MODULES
-INSTALLED_KERNEL_MODULES: depmod-host
+INSTALLED_KERNEL_MODULES: $(DEPMOD) $(KERNEL_CONFIG)
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Installing Kernel Modules"; \
 			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) modules_install); \
