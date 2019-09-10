@@ -77,6 +77,10 @@ else
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN)/$(KERNEL_TOOLCHAIN_PREFIX)
 endif
 
+# We need to add GCC toolchain to the path no matter what
+# for tools like `as`
+KERNEL_TOOLCHAIN_PATH_gcc := $(KERNEL_TOOLCHAIN_$(KERNEL_ARCH))/$(KERNEL_TOOLCHAIN_PREFIX_$(KERNEL_ARCH))
+
 ifneq ($(USE_CCACHE),)
     ifneq ($(CCACHE_EXEC),)
         # Android 10+ deprecates use of a build ccache. Only system installed ones are now allowed
