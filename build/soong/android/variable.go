@@ -11,6 +11,7 @@ type Product_variables struct {
 	}
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
+		Shared_libs []string
 	}
 	Should_skip_waiting_for_qsee struct {
 		Cflags []string
