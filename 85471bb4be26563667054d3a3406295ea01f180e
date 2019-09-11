@@ -25,6 +25,24 @@
     },
     {
       "key": {
+        "uuid": "8145b942_063322ff",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-09-11T21:09:11Z",
+      "side": 0,
+      "message": "\"once upon a time\"\nI think showing them all is the right thing to do now that only synced devices are shown",
+      "parentUuid": "a18c734f_4815aae7",
+      "revId": "85471bb4be26563667054d3a3406295ea01f180e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "47dcbbd2_fe8e8fd8",
         "filename": "build/envsetup.sh",
         "patchSetId": 1
