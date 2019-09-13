@@ -17,13 +17,8 @@ backup_file() {
   if [ -e "$1" -o -L "$1" ]; then
     local F=`basename "$1"`
     local D=`dirname "$1"`
-    # dont backup any apps that have odex files, they are useless
-    if ( echo "$F" | grep -q "\.apk$" ) && [ -e `echo "$1" | sed -e 's/\.apk$/\.odex/'` ]; then
-      echo "Skipping odexed apk $1";
-    else
-      mkdir -p "$C/$D"
-      copy_file "$1" "$C/$D/$F"
-    fi
+    mkdir -p "$C/$D"
+    copy_file "$1" "$C/$D/$F"
   fi
 }
 
