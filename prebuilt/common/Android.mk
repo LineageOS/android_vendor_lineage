@@ -10,13 +10,14 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
 ################################
-# Copies the APN list file into system/etc for the product as apns-conf.xml.
+# Copies the APN list file into $(TARGET_COPY_OUT_PRODUCT)/etc for the product as apns-conf.xml.
 # In the case where $(CUSTOM_APNS_FILE) is defined, the content of $(CUSTOM_APNS_FILE)
 # is added or replaced to the $(DEFAULT_APNS_FILE).
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := apns-conf.xml
 LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_COPY_OUT_PRODUCT)/etc
 
 DEFAULT_APNS_FILE := vendor/lineage/prebuilt/common/etc/apns-conf.xml
 
