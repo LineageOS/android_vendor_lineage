@@ -15,31 +15,11 @@
 -->
 
 <permissions>
-    <privapp-permissions package="com.android.camera2">
-        <permission name="android.permission.BIND_WALLPAPER"/>
-        <permission name="android.permission.PREVENT_POWER_KEY"/>
-    </privapp-permissions>
-
-    <!-- Additional permissions on top of privapp-permissions-platform.xml -->
-    <privapp-permissions package="com.android.dialer">
-        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
-    </privapp-permissions>
 
     <privapp-permissions package="com.android.fmradio">
         <permission name="android.permission.ACCESS_FM_RADIO"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    </privapp-permissions>
-
-    <!-- Additional permissions on top of privapp-permissions-platform.xml -->
-    <privapp-permissions package="com.android.launcher3">
-        <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
-        <permission name="android.permission.STATUS_BAR"/>
-    </privapp-permissions>
-
-    <!-- Additional permissions on top of privapp-permissions-platform.xml -->
-    <privapp-permissions package="com.android.systemui">
-        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
     </privapp-permissions>
 
     <privapp-permissions package="org.lineageos.audiofx">
