@@ -15,11 +15,6 @@ PRODUCT_PACKAGES += \
     org.lineageos.platform \
     org.lineageos.platform.xml
 
-# Lineage Hardware Abstraction Framework
-PRODUCT_PACKAGES += \
-    org.lineageos.hardware \
-    org.lineageos.hardware.xml
-
 # JNI Libraries
 PRODUCT_PACKAGES += \
     liblineage-sdk_platform_jni
