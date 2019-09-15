@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "4392ce77_30523cc6",
+        "filename": "config/common.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-15T12:29:49Z",
+      "side": 1,
+      "message": "$(TARGET_COPY_OUT_SYSTEM) while at it",
+      "range": {
+        "startLine": 89,
+        "startChar": 70,
+        "endLine": 89,
+        "endChar": 76
+      },
+      "revId": "318987ee0fe3fff5c808f1cf109ab1639e61f33b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ede28884_bf86b5fb",
         "filename": "config/common.mk",
         "patchSetId": 6
