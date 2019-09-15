@@ -87,6 +87,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
     vendor/lineage/config/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml \
+    vendor/lineage/config/permissions/privapp-permissions-lineage-product.xml:system/product/etc/permissions/privapp-permissions-lineage-product.xml \
     vendor/lineage/config/permissions/privapp-permissions-cm-legacy.xml:system/etc/permissions/privapp-permissions-cm-legacy.xml
 
 # Enforce privapp-permissions whitelist
