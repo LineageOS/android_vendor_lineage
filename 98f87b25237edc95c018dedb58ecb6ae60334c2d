@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b6e04000_776bee40",
+        "filename": "config/common.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-09-17T17:38:03Z",
+      "side": 1,
+      "message": "Maybe rename this to privapp-permissions-lineage-system.xml in source then?",
+      "range": {
+        "startLine": 86,
+        "startChar": 38,
+        "endLine": 86,
+        "endChar": 69
+      },
+      "revId": "98f87b25237edc95c018dedb58ecb6ae60334c2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
