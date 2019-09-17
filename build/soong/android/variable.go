@@ -59,6 +59,8 @@ type Product_variables struct {
 	}
 	Uses_nvidia_enhancements struct {
 		Cppflags []string
+		Shared_libs []string
+		Srcs []string
 	}
 	Uses_qcom_bsp_legacy struct {
 		Cppflags []string
