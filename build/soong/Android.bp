@@ -191,6 +191,23 @@ needs_netd_direct_connect_rule {
 }
 
 soong_config_module_type {
+    name: "legacy_hw_disk_encryption",
+    module_type: "cc_defaults",
+    config_namespace: "lineageQcomVars",
+    bool_variables: ["legacy_hw_disk_encryption"],
+    properties: ["cppflags"],
+}
+
+legacy_hw_disk_encryption {
+    name: "legacy_hw_disk_encryption_defaults",
+    soong_config_variables: {
+        legacy_hw_disk_encryption: {
+            cppflags: ["-DLEGACY_HW_DISK_ENCRYPTION"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "no_cameraserver",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
@@ -301,13 +318,34 @@ soong_config_module_type {
     module_type: "cc_defaults",
     config_namespace: "lineageNvidiaVars",
     bool_variables: ["uses_nvidia_enhancements"],
-    properties: ["cppflags"],
+    properties: [
+        "srcs",
+        "shared_libs",
+        "cppflags",
+        ],
 }
 
 nvidia_enhancements {
     name: "nvidia_enhancements_defaults",
     soong_config_variables: {
         uses_nvidia_enhancements: {
+            srcs: [""],
+            shared_libs: [""],
+            cppflags: ["-DNV_ANDROID_FRAMEWORK_ENHANCEMENTS"],
+        },
+    },
+}
+
+nvidia_enhancements {
+    name: "nvidia_enhancements_input",
+    soong_config_variables: {
+        uses_nvidia_enhancements: {
+           srcs: ["InputHook.cpp"],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.nvidia.hardware.shieldtech.inputflinger@2.0",
+            ],
             cppflags: ["-DNV_ANDROID_FRAMEWORK_ENHANCEMENTS"],
         },
     },
