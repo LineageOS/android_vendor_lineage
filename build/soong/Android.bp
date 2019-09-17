@@ -336,7 +336,11 @@ soong_config_module_type {
     module_type: "cc_defaults",
     config_namespace: "lineageNvidiaVars",
     bool_variables: ["uses_nvidia_enhancements"],
-    properties: ["cppflags"],
+    properties: [
+        "srcs",
+        "shared_libs",
+        "cppflags",
+    ],
 }
 
 nvidia_enhancements {
@@ -344,6 +348,27 @@ nvidia_enhancements {
     soong_config_variables: {
         uses_nvidia_enhancements: {
             cppflags: ["-DNV_ANDROID_FRAMEWORK_ENHANCEMENTS"],
+        },
+    },
+}
+
+nvidia_enhancements {
+    name: "nvidia_shieldtech_libs_defaults",
+    soong_config_variables: {
+        uses_nvidia_enhancements: {
+            shared_libs: [
+                "libhidlbase",
+                "vendor.nvidia.hardware.shieldtech.inputflinger@2.0",
+            ],
+        },
+    },
+}
+
+nvidia_enhancements {
+    name: "nvidia_shieldtech_reader_defaults",
+    soong_config_variables: {
+        uses_nvidia_enhancements: {
+            srcs: ["InputHook.cpp"],
         },
     },
 }
