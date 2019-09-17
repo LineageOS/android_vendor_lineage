@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "769c4967_ce618b8c",
+        "filename": "config/common.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-17T15:33:31Z",
+      "side": 1,
+      "message": "Nit: I would make it permissions/privapp-permissions-lineage.xml in the final destination.",
+      "range": {
+        "startLine": 87,
+        "startChar": 148,
+        "endLine": 87,
+        "endChar": 156
+      },
+      "revId": "f82d70fec93668a1861c2453537630653133a923",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
