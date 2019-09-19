@@ -22,5 +22,8 @@ FRAMEWORK_LINEAGE_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/lineage/build/core/ap
 
 BUILD_RRO_SYSTEM_PACKAGE := $(TOPDIR)vendor/lineage/build/core/system_rro.mk
 
+# Set generic definitions
+include $(TOPDIR)vendor/lineage/build/core/definitions.mk
+
 # Rules for QCOM targets
 include $(TOPDIR)vendor/lineage/build/core/qcom_target.mk
