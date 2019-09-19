@@ -17,6 +17,9 @@ type Product_variables struct {
 	Should_wait_for_qsee struct {
 		Cflags []string
 	}
+	Supports_extended_compress_format struct {
+		Cflags []string
+	}
 	Supports_hw_fde struct {
 		Cflags []string
 		Header_libs []string
