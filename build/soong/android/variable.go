@@ -12,6 +12,9 @@ type Product_variables struct {
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
+	Has_memfd_backport struct {
+		Cppflags []string
+	}
 	Should_skip_waiting_for_qsee struct {
 		Cflags []string
 	}
@@ -78,6 +81,7 @@ type ProductVariables struct {
 	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
+	Has_memfd_backport  *bool `json:",omitempty"`
 	Should_skip_waiting_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
