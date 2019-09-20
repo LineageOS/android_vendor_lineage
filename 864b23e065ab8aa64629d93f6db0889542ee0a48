@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dfa621e8_e59a6c43",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 19
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-09-20T19:17:03Z",
+      "side": 1,
+      "message": "We don\u0027t sync CAF camera for obvious reasons",
+      "range": {
+        "startLine": 24,
+        "startChar": 46,
+        "endLine": 24,
+        "endChar": 70
+      },
+      "revId": "864b23e065ab8aa64629d93f6db0889542ee0a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4dc4df0f_18a9298f",
+        "filename": "build/core/qcom_target.mk",
+        "patchSetId": 19
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-09-20T19:17:03Z",
+      "side": 1,
+      "message": "Same",
+      "range": {
+        "startLine": 27,
+        "startChar": 48,
+        "endLine": 27,
+        "endChar": 73
+      },
+      "revId": "864b23e065ab8aa64629d93f6db0889542ee0a48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
