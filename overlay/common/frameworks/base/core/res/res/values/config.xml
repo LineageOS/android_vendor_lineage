@@ -94,4 +94,11 @@
          Internet network (except when the current default network is mobile,
          in which case a DUN network will be used if required). -->
     <bool name="config_tether_upstream_automatic">true</bool>
+
+    <!-- The package name for the default wellbeing app.
+         This package must be trusted, as it has the permissions to control other applications
+         on the device.
+         Example: "com.android.wellbeing"
+     -->
+    <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
 </resources>
