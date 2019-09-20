@@ -283,6 +283,10 @@ function write_product_copy_files() {
                 local OUTTARGET=$(truncate_file $TARGET)
                 printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_PRODUCT)/%s%s\n' \
                     "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
+            elif prefix_match_file "odm/" $TARGET ; then
+                local OUTTARGET=$(truncate_file $TARGET)
+                printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n' \
+                    "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
             else
                 printf '    %s/proprietary/%s:system/%s%s\n' \
                     "$OUTDIR" "$TARGET" "$TARGET" "$LINEEND" >> "$PRODUCTMK"
@@ -299,7 +303,7 @@ function write_product_copy_files() {
 # write_packages:
 #
 # $1: The LOCAL_MODULE_CLASS for the given module list
-# $2: /product or /vendor partition
+# $2: /odm, /product, or /vendor partition
 # $3: type-specific extra flags
 # $4: Name of the array holding the target list
 #
@@ -341,6 +345,8 @@ function write_packages() {
             SRC+="/vendor"
         elif [ "$PARTITION" = "product" ]; then
             SRC+="/product"
+        elif [ "$PARTITION" = "odm" ]; then
+            SRC+="/odm"
         fi
 
         printf 'include $(CLEAR_VARS)\n'
@@ -422,6 +428,8 @@ function write_packages() {
             printf 'LOCAL_VENDOR_MODULE := true\n'
         elif [ "$PARTITION" = "product" ]; then
             printf 'LOCAL_PRODUCT_MODULE := true\n'
+        elif [ "$PARTITION" = "odm" ]; then
+            printf 'LOCAL_ODM_MODULE := true\n'
         fi
         printf 'include $(BUILD_PREBUILT)\n\n'
     done
@@ -494,6 +502,22 @@ function write_product_packages() {
         write_packages "SHARED_LIBRARIES" "product" "64" "P_LIB64" >> "$ANDROIDMK"
     fi
 
+    local T_P_LIB32=( $(prefix_match "odm/lib/") )
+    local T_P_LIB64=( $(prefix_match "odm/lib64/") )
+    local P_MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_P_LIB32[@]}") <(printf '%s\n' "${T_P_LIB64[@]}")) )
+    local P_LIB32=( $(comm -23 <(printf '%s\n' "${T_P_LIB32[@]}") <(printf '%s\n' "${P_MULTILIBS[@]}")) )
+    local P_LIB64=( $(comm -23 <(printf '%s\n' "${T_P_LIB64[@]}") <(printf '%s\n' "${P_MULTILIBS[@]}")) )
+
+    if [ "${#P_MULTILIBS[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "odm" "both" "P_MULTILIBS" >> "$ANDROIDMK"
+    fi
+    if [ "${#P_LIB32[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "odm" "32" "P_LIB32" >> "$ANDROIDMK"
+    fi
+    if [ "${#P_LIB64[@]}" -gt "0" ]; then
+        write_packages "SHARED_LIBRARIES" "odm" "64" "P_LIB64" >> "$ANDROIDMK"
+    fi
+
     # Apps
     local APPS=( $(prefix_match "app/") )
     if [ "${#APPS[@]}" -gt "0" ]; then
@@ -519,6 +543,14 @@ function write_product_packages() {
     if [ "${#P_PRIV_APPS[@]}" -gt "0" ]; then
         write_packages "APPS" "product" "priv-app" "P_PRIV_APPS" >> "$ANDROIDMK"
     fi
+    local P_APPS=( $(prefix_match "odm/app/") )
+    if [ "${#P_APPS[@]}" -gt "0" ]; then
+        write_packages "APPS" "odm" "" "P_APPS" >> "$ANDROIDMK"
+    fi
+    local P_PRIV_APPS=( $(prefix_match "odm/priv-app/") )
+    if [ "${#P_PRIV_APPS[@]}" -gt "0" ]; then
+        write_packages "APPS" "odm" "priv-app" "P_PRIV_APPS" >> "$ANDROIDMK"
+    fi
 
     # Framework
     local FRAMEWORK=( $(prefix_match "framework/") )
@@ -532,6 +564,10 @@ function write_product_packages() {
     local P_FRAMEWORK=( $(prefix_match "product/framework/") )
     if [ "${#P_FRAMEWORK[@]}" -gt "0" ]; then
         write_packages "JAVA_LIBRARIES" "product" "" "P_FRAMEWORK" >> "$ANDROIDMK"
+    fi
+    local P_FRAMEWORK=( $(prefix_match "odm/framework/") )
+    if [ "${#P_FRAMEWORK[@]}" -gt "0" ]; then
+        write_packages "JAVA_LIBRARIES" "odm" "" "P_FRAMEWORK" >> "$ANDROIDMK"
     fi
 
     # Etc
@@ -547,6 +583,10 @@ function write_product_packages() {
     if [ "${#P_ETC[@]}" -gt "0" ]; then
         write_packages "ETC" "product" "" "P_ETC" >> "$ANDROIDMK"
     fi
+    local P_ETC=( $(prefix_match "odm/etc/") )
+    if [ "${#P_ETC[@]}" -gt "0" ]; then
+        write_packages "ETC" "odm" "" "P_ETC" >> "$ANDROIDMK"
+    fi
 
     # Executables
     local BIN=( $(prefix_match "bin/") )
@@ -560,6 +600,10 @@ function write_product_packages() {
     local P_BIN=( $(prefix_match "product/bin/") )
     if [ "${#P_BIN[@]}" -gt "0" ]; then
         write_packages "EXECUTABLES" "product" "" "P_BIN" >> "$ANDROIDMK"
+    fi
+    local P_BIN=( $(prefix_match "odm/bin/") )
+    if [ "${#P_BIN[@]}" -gt "0" ]; then
+        write_packages "EXECUTABLES" "odm" "" "P_BIN" >> "$ANDROIDMK"
     fi
     local SBIN=( $(prefix_match "sbin/") )
     if [ "${#SBIN[@]}" -gt "0" ]; then
