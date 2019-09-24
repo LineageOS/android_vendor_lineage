@@ -4,7 +4,6 @@
 #
 
 export C=/tmp/backupdir
-export S=$2
 export V=17.1
 
 export ADDOND_VERSION=1
@@ -94,8 +93,35 @@ if [ -d /tmp/addon.d/ ]; then
 fi
 }
 
+determine_system_mount() {
+  if [[ ! -z $(mount | grep system) ]]; then
+    umount $(mount | grep system | sed "s|.*on ||;s| .*||")
+  fi
+
+  if [ -d /mnt/system ]; then
+    sysmount="/mnt/system"
+  elif [ -d /system_root ]; then
+    sysmount="/system_root"
+  else
+    sysmount="/system"
+  fi
+
+  export S=$sysmount/system
+}
+
+mount_system() {
+  mount -t ext4 $2 $sysmount -o rw,discard
+}
+
+unmount_system() {
+  umount $sysmount
+}
+
+determine_system_mount
+
 case "$1" in
   backup)
+    mount_system
     mkdir -p $C
     if check_prereq; then
         if check_whitelist system; then
@@ -107,8 +133,10 @@ case "$1" in
     run_stage pre-backup
     run_stage backup
     run_stage post-backup
+    unmount_system
   ;;
   restore)
+    mount_system
     if check_prereq; then
         if check_whitelist tmp; then
             exit 127
@@ -121,6 +149,7 @@ case "$1" in
     restore_addon_d
     rm -rf $C
     sync
+    unmount_system
   ;;
   *)
     echo "Usage: $0 {backup|restore}"
