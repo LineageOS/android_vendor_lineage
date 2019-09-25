@@ -15,11 +15,7 @@ $(call set-device-specific-path,DISPLAY,display,hardware/qcom-caf/$(QCOM_HARDWAR
 $(call set-device-specific-path,MEDIA,media,hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)/media)
 
 $(call set-device-specific-path,BT_VENDOR,bt-vendor,hardware/qcom-caf/bt)
-$(call set-device-specific-path,CAMERA,camera,hardware/qcom-caf/camera)
 $(call set-device-specific-path,DATA_IPA_CFG_MGR,data-ipa-cfg-mgr,vendor/qcom/opensource/data-ipa-cfg-mgr)
-$(call set-device-specific-path,GPS,gps,hardware/qcom-caf/gps)
-$(call set-device-specific-path,SENSORS,sensors,hardware/qcom-caf/sensors)
-$(call set-device-specific-path,LOC_API,loc-api,vendor/qcom/opensource/location)
 $(call set-device-specific-path,DATASERVICES,dataservices,vendor/qcom/opensource/dataservices)
 $(call set-device-specific-path,POWER,power,hardware/qcom-caf/power)
 $(call set-device-specific-path,THERMAL,thermal,hardware/qcom-caf/thermal)
