@@ -93,6 +93,7 @@ else
 endif
 
 PRODUCT_SOONG_NAMESPACES += \
+<<<<<<< HEAD   (9cfbef BoardConfigQcom: Fix setting UM4.9 and UM4.14 specific flags)
     hardware/qcom/audio-caf/$(QCOM_HARDWARE_VARIANT) \
     hardware/qcom/display-caf/$(QCOM_HARDWARE_VARIANT) \
     hardware/qcom/media-caf/$(QCOM_HARDWARE_VARIANT)
@@ -101,3 +102,6 @@ PRODUCT_SOONG_NAMESPACES += \
 ifeq ($(TARGET_HW_DISK_ENCRYPTION),true)
     TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
 endif
+=======
+    hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)
+>>>>>>> CHANGE (8a5dec build: Remove TARGET_CRYPTFS_HW_PATH)
