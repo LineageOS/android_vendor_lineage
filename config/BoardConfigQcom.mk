@@ -93,4 +93,5 @@ else
 endif
 
 PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)
+    hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT) \
+    vendor/qcom/opensource/audio-hal/$(QCOM_HARDWARE_VARIANT)
