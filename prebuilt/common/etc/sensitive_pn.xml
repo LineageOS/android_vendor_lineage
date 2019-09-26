@@ -61,151 +61,607 @@
       - Sexual assault helplines
       - Sexuality / gender identity helplines
       - Suicide prevention helplines
-      - Children & adolescent helplines
+      - Children &amp; adolescent helplines
 
      Thank you for your contributions! -->
 
 <sensitivePNS>
     <!--Greece-->
     <sensitivePN network="202">
-        <item>197</item> <!--National Emergency Social Assistance Hotline-->
-        <item>1018</item> <!--National Suicide Prevention Hotline-->
-        <item>1031</item> <!--Drug Addiction Support Helpline - OKANA-->
-        <item>1037</item> <!--Social Solidarity Helpline - Ministry of Macedonia, Thrace-->
-        <item>1056</item> <!--National Helpline for Children-->
-        <item>1065</item> <!--National Senior Citizen's Helpline-->
-        <item>1069</item> <!--National Helpline for People with Cancer-->
-        <item>1107</item> <!--National Line for Child Protection-->
-        <item>1109</item> <!--Prevention of Human Trafficking Resource Helpline-->
-        <item>1114</item> <!--Gambling Addiction Helpline - ΚΕΘΕΑ-->
-        <item>1145</item> <!--Addiction Support Helpline - ΚΕΘΕΑ-->
-        <item>1440</item> <!--National Domestic Violence Helpline - ΣΠΑΒΟ-->
-        <item>11528</item> <!--Sexuality and Gender Identity Helpline - ΔΙΠΛΑ ΣΟΥ-->
-        <item>15900</item> <!--Prevention of Violence Against Women SOS Helpline-->
-        <item>11525</item> <!--National Helpline for Children and Adolescents - Μαζί για το Παιδί-->
-        <item>116000</item> <!--European Hotline for Missing Children-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>2103474777</item> <!--Narcotics Anonymous Helpline - Athens-->
-        <item>2104113091</item> <!--Reception Center for Abused Women - Piraeus-->
-        <item>2104129101</item> <!--Reception Center for Abused Women - Piraeus-->
-        <item>2105235250</item> <!--Reception Center for Abused Women - Athens-->
-        <item>2105235318</item> <!--Reception Center for Abused Women - Athens-->
-        <item>2105239161</item> <!--Helpline for Family & Friends of an Alcoholic - Al-Anon-->
-        <item>2310625344</item> <!--Narcotics Anonymous Helpline - Northern Greece-->
-        <item>6934616181</item> <!--Alcoholics Anonymous for Family & Friends - Corfu-->
-        <item>6942848042</item> <!--Alcoholics Anonymous for Family & Friends - Corfu-->
-        <item>6946397576</item> <!--Helpline for Family & Friends of an Alcoholic - Al-Anon-->
-        <item>6986183484</item> <!--Alcoholics Anonymous Helpline-->
+        <item>
+            <number>197</number>
+            <name>National Emergency Social Assistance</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>1018</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+        </item>
+        <item>
+            <number>1031</number>
+            <name>Drug Addiction Support</name>
+            <categories>drugs|addiction</categories>
+            <organization>OKANA</organization>
+        </item>
+        <item>
+            <number>1037</number>
+            <name>Social Solidarity Helpline</name>
+            <organization>Ministry of Macedonia, Thrace</organization>
+        </item>
+        <item>
+            <number>1056</number>
+            <name>National Helpline for Children</name>
+            <categories>children</categories>
+        </item>
+        <item>
+            <number>1065</number>
+            <name>National Senior Citizen's Helpline</name>
+            <categories>senior</categories>
+        </item>
+        <item>
+            <number>1069</number>
+            <name>National Helpline for People with Cancer</name>
+        </item>
+        <item>
+            <number>1107</number>
+            <name>National Line for Child Protection</name>
+            <categories>children</categories>
+        </item>
+        <item>
+            <number>1109</number>
+            <name>Prevention of Human Trafficking Resource Helpline</name>
+            <categories>human trafficking</categories>
+        </item>
+        <item>
+            <number>1114</number>
+            <name>Gambling Addiction Helpline</name>
+            <categories>gambling</categories>
+            <organization>ΚΕΘΕΑ</organization>
+        </item>
+        <item>
+            <number>1145</number>
+            <name>Addiction Support</name>
+            <categories>addiction</categories>
+            <organization>ΚΕΘΕΑ</organization>
+        </item>
+        <item>
+            <number>1440</number>
+            <name>National Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
+            <organization>ΣΠΑΒΟ</organization>
+        </item>
+        <item>
+            <number>11528</number>
+            <name>Sexuality and Gender Identity Helpline</name>
+            <categories>sexuality|gender</categories>
+            <organization>ΔΙΠΛΑ ΣΟΥ</organization>
+        </item>
+        <item>
+            <number>15900</number>
+            <name>Prevention of Violence Against Women SOS Helpline</name>
+            <categories>violence|women</categories>
+        </item>
+        <item>
+            <number>11525</number>
+            <name>National Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+            <organization>Μαζί για το Παιδί</organization>
+        </item>
+        <item>
+            <number>116000</number>
+            <name>European Hotline for Missing Children</name>
+            <categories>missing children</categories>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>2103474777</number>
+            <name>Narcotics Anonymous Helpline - Athens</name>
+            <categories>alcohol|drugs|addiction</categories>
+        </item>
+        <item>
+            <number>2104113091</number>
+            <name>Reception Center for Abused Women - Piraeus</name>
+            <categories>women|abuse</categories>
+        </item>
+        <item>
+            <number>2104129101</number>
+            <name>Reception Center for Abused Women - Piraeus</name>
+            <categories>women|abuse</categories>
+        </item>
+        <item>
+            <number>2105235250</number>
+            <name>Reception Center for Abused Women - Athens</name>
+            <categories>women|abuse</categories>
+        </item>
+        <item>
+            <number>2105235318</number>
+            <name>Reception Center for Abused Women - Athens</name>
+            <categories>women|abuse</categories>
+        </item>
+        <item>
+            <number>2105239161</number>
+            <name>Helpline for Family &amp; Friends of an Alcoholic</name>
+            <categories>alcohol|family friends</categories>
+            <organization>Al-Anon</organization>
+        </item>
+        <item>
+            <number>2310625344</number>
+            <name>Narcotics Anonymous Helpline - Northern Greece</name>
+            <categories>drugs</categories>
+        </item>
+        <item>
+            <number>6934616181</number>
+            <name>Alcoholics Anonymous for Family &amp; Friends - Corfu</name>
+            <categories>alcohol|family friends</categories>
+        </item>
+        <item>
+            <number>6942848042</number>
+            <name>Alcoholics Anonymous for Family &amp; Friends - Corfu</name>
+            <categories>alcohol|family friends</categories>
+        </item>
+        <item>
+            <number>6946397576</number>
+            <name>Helpline for Family &amp; Friends of an Alcoholic</name>
+            <categories>alcohol</categories>
+            <organization>Al-Anon</organization>
+        </item>
+        <item>
+            <number>6986183484</number>
+            <name>Alcoholics Anonymous</name>
+            <categories>alcohol</categories>
+        </item>
     </sensitivePN>
     <!--Netherlands-->
     <sensitivePN network="204">
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>08000432</item> <!--National Helpline for Children and Teenagers-->
-        <item>08002000</item> <!--National Domestic Violence Helpline-->
-        <item>08007000</item> <!--National Hotline to Report Crime Anonymously-->
-        <item>09000101</item> <!--Victim Support Netherlands (Human Trafficking Helpline)-->
-        <item>09000113</item> <!--National Suicide Prevention Hotline-->
-        <item>09001450</item> <!--Psychological Support Helpline - MIND Korrelatie-->
-        <item>0882342450</item> <!--Blijf Groep Helpline (Domestic Violence)-->
-        <item>09001130113</item> <!--National Suicide Prevention Hotline-->
-        <item>09009999001</item> <!--National Sexual Abuse Helpline-->
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+            <categories>crime victims</categories>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>08000432</number>
+            <name>National Helpline for Children and Teenagers</name>
+            <categories>emotional support|children|teenagers</categories>
+        </item>
+        <item>
+            <number>08002000</number>
+            <name>National Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
+        </item>
+        <item>
+            <number>08007000</number>
+            <name>National Hotline to Report Crime Anonymously</name>
+            <categories>crime</categories>
+        </item>
+        <item>
+            <number>09000101</number>
+            <name>Victim Support</name>
+            <categories>human trafficking</categories>
+            <organization>Victim Support Netherlands</organization>
+            <website>https://www.slachtofferhulp.nl/</website>
+        </item>
+        <item>
+            <number>09000113</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+        </item>
+        <item>
+            <number>09001450</number>
+            <name>Psychological Support</name>
+            <categories>psychological</categories>
+            <organization>MIND Korrelatie</organization>
+        </item>
+        <item>
+            <number>0882342450</number>
+            <name>Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
+            <organization>Blijf Groep</organization>
+            <website>https://www.blijfgroep.nl/</website>
+        </item>
+        <item>
+            <number>09001130113</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+        </item>
+        <item>
+            <number>09009999001</number>
+            <name>National Sexual Abuse Helpline</name>
+            <categories>sexual abuse</categories>
+        </item>
     </sensitivePN>
     <!--Belgium-->
     <sensitivePN network="206">
-        <item>102</item> <!--Children and Adolescents Helpline (Dutch)-->
-        <item>103</item> <!--Children and Adolescents Helpline (French)-->
-        <item>106</item> <!--National Crisis Helpline (Dutch)-->
-        <item>107</item> <!--National Crisis Helpline (French)-->
-        <item>108</item> <!--National Crisis Helpline (German)-->
+        <item>
+            <number>102</number>
+            <name>Children and Adolescents Helpline</name>
+            <categories>children|adolescents</categories>
+            <languages>dutch</languages>
+        </item>
+        <item>
+            <number>103</number>
+            <name>Children and Adolescents Helpline</name>
+            <categories>children|adolescents</categories>
+            <languages>french</languages>
+        </item>
+        <item>
+            <number>106</number>
+            <name>National Crisis Helpline</name>
+            <languages>dutch</languages>
+        </item>
+        <item>
+            <number>107</number>
+            <name>National Crisis Helpline</name>
+            <languages>french</languages>
+        </item>
+        <item>
+            <number>108</number>
+            <name>National Crisis Helpline</name>
+            <languages>german</languages>
+        </item>
         <item>111</item>
         <item>116</item>
-        <item>1712</item> <!--National Senior Citizen Mistreatment Hotline (Dutch)-->
-        <item>1813</item> <!--National Suicide Prevention Hotline (Dutch)-->
-        <item>116000</item> <!--European Hotline for Missing Children-->
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>025129020</item> <!--Children and Adolescents Helpline (French)-->
-        <item>025343636</item> <!--National Sexual Assault Hotline (French)-->
-        <item>025392744</item> <!--Family Violence Prevention Centre (French)-->
-        <item>026484014</item> <!--National Anonymous Crisis Support Helpline (English)-->
-        <item>032185056</item> <!--Support Helpline for Alcoholics' Friends and Families (Dutch)-->
-        <item>032391415</item> <!--Alcoholics Anonymous (Dutch)-->
+        <item>
+            <number>1712</number>
+            <name>National Senior Citizen Mistreatment Hotline</name>
+            <categories>senior</categories>
+            <languages>dutch</languages>
+        </item>
+        <item>
+            <number>1813</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+            <languages>dutch</languages>
+        </item>
+        <item>
+            <number>116000</number>
+            <name>European Hotline for Missing Children</name>
+            <categories>missing children</categories>
+        </item>
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+            <categories>crime victims</categories>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>025129020</number>
+            <name>Children and Adolescents Helpline</name>
+            <categories>children|adolescents</categories>
+            <languages>french</languages>
+        </item>
+        <item>
+            <number>025343636</number>
+            <name>National Sexual Assault Hotline</name>
+            <categories>sexual assault</categories>
+            <languages>french</languages>
+        </item>
+        <item>
+            <number>025392744</number>
+            <name>Family Violence Prevention Centre</name>
+            <categories>family|violence</categories>
+        </item>
+        <item>
+            <number>026484014</number>
+            <name>National Anonymous Crisis Support</name>
+            <languages>english</languages>
+        </item>
+        <item>
+            <number>032185056</number>
+            <name>Support Helpline for Alcoholics' Friends and Families</name>
+            <categories>alcohol</categories>
+            <languages>dutch</languages>
+        </item>
+        <item>
+            <number>032391415</number>
+            <name>Alcoholics Anonymous</name>
+            <categories>alcohol</categories>
+            <languages>dutch</languages>
+        </item>
         <item>078150300</item>
         <item>078151020</item>
-        <item>078152556</item> <!--Alcoholics Anonymous (French)-->
-        <item>080015801</item> <!--Cancer Foundation (Dutch/French)-->
-        <item>080015802</item> <!--Cancer Foundation (Dutch)-->
-        <item>080032123</item> <!--National Suicide Prevention Hotline (French)-->
+        <item>
+            <number>078152556</number>
+            <name>Alcoholics Anonymous</name>
+            <categories>alcohol</categories>
+            <languages>french</languages>
+        </item>
+        <item>
+            <number>080015801</number>
+            <name>Cancer Foundation</name>
+            <categories>cancer</categories>
+            <languages>dutch|french</languages>
+        </item>
+        <item>
+            <number>080015802</number>
+            <name>Cancer Foundation</name>
+            <categories>cancer</categories>
+            <languages>dutch</languages>
+        </item>
+        <item>
+            <number>080032123</number>
+            <name>National Suicide Prevention</name>
+            <languages>french</languages>
+        </item>
         <item>080097079</item>
         <item>080099533</item>
     </sensitivePN>
     <!--France-->
     <sensitivePN network="208,308,340,543,547,647">
-        <item>119</item> <!--Child Helpline International-->
+        <item>
+            <number>119</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
         <item>3919</item>
     </sensitivePN>
     <!--Spain-->
     <sensitivePN network="214">
-        <item>016</item> <!--National Domestic Violence Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>717003717</item> <!--Psychological Aid Helpline - Teléfono de la Esperanza-->
-        <item>900202010</item> <!--Helpline for Children and Adolescents - ANAR-->
-        <item>914590055</item> <!--Psychological Aid Helpline - Teléfono de la Esperanza-->
+        <item>
+            <number>016</number>
+            <name>National Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>717003717</number>
+            <name>Psychological Aid</name>
+            <categories>psychological</categories>
+            <organization>Teléfono de la Esperanza</organization>
+        </item>
+        <item>
+            <number>900202010</number>
+            <name>Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+            <organization>ANAR</organization>
+        </item>
+        <item>
+            <number>914590055</number>
+            <name>Psychological Aid</name>
+            <organization>Teléfono de la Esperanza</organization>
+        </item>
     </sensitivePN>
     <!--Hungary-->
     <sensitivePN network="216">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>13337</item> <!--Legal Aid, Discrimination and Sexuality Helpline - Háttér Társaság-->
-        <item>13700</item> <!--Psychological Aid Helpline - Lelki elsösegély-->
-        <item>013293380</item> <!--Legal Aid, Discrimination and Sexuality Helpline - Háttér Társaság-->
-        <item>016333454</item> <!--Legal Aid Helpline - Háttér Társaság-->
-        <item>016333455</item> <!--AIDS Helpline - Háttér Társaság-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>13337</number>
+            <name>Legal Aid, Discrimination and Sexuality Helpline</name>
+            <categories>legal|discrimination|sexuality</categories>
+            <organization>Háttér Társaság</organization>
+        </item>
+        <item>
+            <number>13700</number>
+            <name>Psychological Aid</name>
+            <organization>Lelki elsösegély</organization>
+        </item>
+        <item>
+            <number>013293380</number>
+            <name>Legal Aid, Discrimination and Sexuality Helpline</name>
+            <organization>Háttér Társaság</organization>
+        </item>
+        <item>
+            <number>016333454</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>Háttér Társaság</organization>
+        </item>
+        <item>
+            <number>016333455</number>
+            <name>AIDS Helpline</name>
+            <organization>Háttér Társaság</organization>
+        </item>
     </sensitivePN>
     <!--Bosnia and Herzegovina-->
     <sensitivePN network="218">
-        <item>080050305</item> <!--Child Helpline International-->
+        <item>
+            <number>080050305</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Croatia-->
     <sensitivePN network="219">
-        <item>116000</item> <!--European Hotline for Missing Children-->
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>08000304</item> <!--Civil Servant Unethical Conduct Hotline - Ministry of Administration-->
-        <item>08000800</item> <!--Parental Support Helpline - Hrabri Telefon-->
-        <item>08005092</item> <!--Corruption Helpline - Ministry of Internal Affairs-->
-        <item>08005544</item> <!--Women's Emotional Support Helpline - AŽKZ-->
-        <item>016119174</item> <!--Women's Room Center for Sexual Rights Helpline - Ženska Soba-->
-        <item>016119444</item> <!--Center for Victims of Sexual Assault Helpline - Ženska Soba-->
-        <item>012376335</item> <!--Crisis and Suicide Prevention Center Hotline - KBC Zagreb-->
-        <item>012376470</item> <!--Crisis and Suicide Prevention Center Hotline - KBC Zagreb-->
-        <item>014551128</item> <!--Center for Women Victims of War - Rosa-->
-        <item>014551142</item> <!--Center for Women Victims of War - Rosa-->
-        <item>014611351</item> <!--Legal Aid Helpline - BaBe-->
-        <item>014655222</item> <!--Legal and Emotional Support Helpline - Ženska pomoć sada-->
-        <item>014663666</item> <!--Emotional Support Helpline - BaBe-->
-        <item>014811320</item> <!--Legal Aid Helpline - University of Zagreb-->
-        <item>014811324</item> <!--Legal Aid Helpline - University of Zagreb-->
-        <item>014828888</item> <!--Emotional Support Helpline - Psihološki centar TESA-->
-        <item>014833888</item> <!--Emotional Support Helpline - Plavi Telefon-->
-        <item>0800200144</item> <!--Legal Aid Helpline - BaBe-->
-        <item>0800655222</item> <!--Victims of Violence and Abuse Hotline - Ženska pomoć sada-->
-        <item>0911505225</item> <!--Women's Room Center for Sexual Rights Helpline - Ženska Soba-->
+        <item>
+            <number>116000</number>
+            <name>European Hotline for Missing Children</name>
+            <categories>missing children</categories>
+        </item>
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+            <categories>crime victims</categories>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>08000304</number>
+            <name>Civil Servant Unethical Conduct Hotline</name>
+            <organization>Ministry of Administration</organization>
+        </item>
+        <item>
+            <number>08000800</number>
+            <name>Parental Support</name>
+            <categories>parents</categories>
+            <organization>Hrabri Telefon</organization>
+        </item>
+        <item>
+            <number>08005092</number>
+            <name>Corruption Helpline</name>
+            <categories>corruption</categories>
+            <organization>Ministry of Internal Affairs</organization>
+        </item>
+        <item>
+            <number>08005544</number>
+            <name>Women's Emotional Support</name>
+            <categories>women|emotional support</categories>
+            <organization>AŽKZ</organization>
+        </item>
+        <item>
+            <number>016119174</number>
+            <name>Women's Room Center for Sexual Rights</name>
+            <categories>women|sexuality</categories>
+            <organization>Ženska Soba</organization>
+        </item>
+        <item>
+            <number>016119444</number>
+            <name>Center for Victims of Sexual Assault</name>
+            <categories>sexual assault</categories>
+            <organization>Ženska Soba</organization>
+        </item>
+        <item>
+            <number>012376335</number>
+            <name>Crisis and Suicide Prevention Center</name>
+            <categories>suicide|crisis</categories>
+            <organization>KBC Zagreb</organization>
+        </item>
+        <item>
+            <number>012376470</number>
+            <name>Crisis and Suicide Prevention Center</name>
+            <categories>suicide|crisis</categories>
+            <organization>KBC Zagreb</organization>
+        </item>
+        <item>
+            <number>014551128</number>
+            <name>Center for Women Victims of War</name>
+            <categories>women|war</categories>
+            <organization>Rosa</organization>
+        </item>
+        <item>
+            <number>014551142</number>
+            <name>Center for Women Victims of War</name>
+            <categories>women|war</categories>
+            <organization>Rosa</organization>
+        </item>
+        <item>
+            <number>014611351</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>BaBe</organization>
+        </item>
+        <item>
+            <number>014655222</number>
+            <name>Legal and Emotional Support</name>
+            <categories>legal aid|emotional support</categories>
+            <organization>Ženska pomoć sada</organization>
+        </item>
+        <item>
+            <number>014663666</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>BaBe</organization>
+        </item>
+        <item>
+            <number>014811320</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>University of Zagreb</organization>
+        </item>
+        <item>
+            <number>014811324</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>University of Zagreb</organization>
+        </item>
+        <item>
+            <number>014828888</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Psihološki centar TESA</organization>
+        </item>
+        <item>
+            <number>014833888</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Plavi Telefon</organization>
+        </item>
+        <item>
+            <number>0800200144</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>BaBe</organization>
+        </item>
+        <item>
+            <number>0800655222</number>
+            <name>Victims of Violence and Abuse Hotline</name>
+            <categories>violence|abuse</categories>
+            <organization>Ženska pomoć sada</organization>
+        </item>
+        <item>
+            <number>0911505225</number>
+            <name>Women's Room Center for Sexual Rights</name>
+            <categories>women|sexual rights</categories>
+            <organization>Ženska Soba</organization>
+        </item>
     </sensitivePN>
     <!--Serbia-->
     <sensitivePN network="220">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
         <item>2645328</item>
         <item>3192782</item>
         <item>3626006</item>
-        <item>0216623393</item> <!--Emotional Support and Suicide Prevention Hotline - Centar Srce-->
+        <item>
+            <number>0216623393</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <organization>Centar Srce</organization>
+        </item>
         <item>0800100600</item>
         <item>0800123456</item>
-        <item>0800300303</item> <!--Emotional Support and Suicide Prevention Hotline - Centar Srce-->
+        <item>
+            <number>0800300303</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <organization>Centar Srce</organization>
+        </item>
     </sensitivePN>
     <!--Kosovo-->
     <sensitivePN network="221">
@@ -214,24 +670,56 @@
     <!--Italy-->
     <sensitivePN network="222">
         <item>1522</item>
-        <item>19696</item> <!--Child Helpline International-->
+        <item>
+            <number>19696</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Romania-->
     <sensitivePN network="226">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
         <item>0213114636</item>
     </sensitivePN>
     <!--Switzerland-->
     <sensitivePN network="228">
-        <item>143</item> <!--National Adult Helpline (French/German/Italian)-->
-        <item>147</item> <!--Child Helpline International-->
-        <item>116000</item> <!--European Hotline for Missing Children-->
+        <item>
+            <number>143</number>
+            <name>National Adult Helpline</name>
+            <languages>french|german|italian</languages>
+        </item>
+        <item>
+            <number>147</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
+        <item>
+            <number>116000</number>
+            <name>European Hotline for Missing Children</name>
+            <categories>missing children</categories>
+        </item>
     </sensitivePN>
     <!--Czech Republic-->
     <sensitivePN network="230">
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+            <categories>crime victims</categories>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
         <item>222514040</item>
         <item>222580697</item>
         <item>224214214</item>
@@ -239,10 +727,20 @@
         <item>283872186</item>
         <item>284016292</item>
         <item>284016666</item>
-        <item>549241010</item> <!--Emotional Support / Suicide Prevention Hotline - Modra Linka-->
+        <item>
+            <number>549241010</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <organization>Modra Linka</organization>
+        </item>
         <item>596318080</item>
         <item>596618908</item>
-        <item>608902410</item> <!--Emotional Support / Suicide Prevention Hotline - Modra Linka-->
+        <item>
+            <number>608902410</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <organization>Modra Linka</organization>
+        </item>
         <item>737267939</item>
         <item>777734173</item>
         <item>777783146</item>
@@ -251,24 +749,74 @@
     </sensitivePN>
     <!--Slovakia-->
     <sensitivePN network="231">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Austria-->
     <sensitivePN network="232">
-        <item>142</item> <!--National Adult Helpline-->
-        <item>147</item> <!--Child Helpline International-->
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>15440820</item> <!--Women's Shelters Contact Number-->
-        <item>0800222555</item> <!--National Women's Helpline-->
-        <item>0800246247</item> <!--Men's Helpline - Männerotruf Styria-->
-        <item>67761343434</item> <!--National Human Trafficking Hotline - Federal Criminal Police-->
+        <item>
+            <number>142</number>
+            <name>National Adult Helpline</name>
+            <categories>adults</categories>
+        </item>
+        <item>
+            <number>147</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+            <categories>crime victims</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>15440820</number>
+            <name>Women's Shelters Contact Number</name>
+            <categories>women</categories>
+        </item>
+        <item>
+            <number>0800222555</number>
+            <name>National Women's Helpline</name>
+            <categories>women</categories>
+        </item>
+        <item>
+            <number>0800246247</number>
+            <name>Men's Helpline</name>
+            <categories>men</categories>
+            <organization>Männerotruf Styria</organization>
+        </item>
+        <item>
+            <number>67761343434</number>
+            <name>National Human Trafficking Hotline</name>
+            <categories>human trafficking</categories>
+            <organization>Federal Criminal Police</organization>
+        </item>
     </sensitivePN>
     <!--United Kingdom-->
     <sensitivePN network="234,235">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>08001111</item> <!--Helpline for Children and Adolescents - Childline-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>08001111</number>
+            <name>Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+            <organization>Childline</organization>
+        </item>
         <item>0800555111</item>
         <item>01179045999</item>
         <item>01179250680</item>
@@ -309,19 +857,45 @@
     </sensitivePN>
     <!--Denmark-->
     <sensitivePN network="238">
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Sweden-->
     <sensitivePN network="240">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
     </sensitivePN>
     <!--Norway-->
     <sensitivePN network="242">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>22400040</item> <!--National Crisis Helpline - Kirkens-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>22400040</number>
+            <name>National Crisis Helpline - Kirkens</name>
+        </item>
         <item>22424202</item>
         <item>22444050</item>
         <item>23227930</item>
@@ -330,20 +904,40 @@
     </sensitivePN>
     <!--Finland-->
     <sensitivePN network="244">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Lithuania-->
     <sensitivePN network="246">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
     </sensitivePN>
     <!--Latvia-->
     <sensitivePN network="247">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Estonia-->
     <sensitivePN network="248">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Russia-->
     <sensitivePN network="250">
@@ -354,81 +948,268 @@
     <sensitivePN network="255">
         <item>386</item>
         <item>772</item>
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
         <item>0800500225</item>
         <item>0800500335</item>
     </sensitivePN>
     <!--Belarus-->
     <sensitivePN network="257">
-        <item>88011001611</item> <!--Child Helpline International-->
+        <item>
+            <number>88011001611</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Moldova-->
     <sensitivePN network="255,259">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Poland-->
     <sensitivePN network="260">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
     </sensitivePN>
     <!--Germany-->
     <sensitivePN network="262">
-        <item>116000</item> <!--European Hotline for Missing Children-->
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>0308914019</item> <!--Helpline Directory for Self-help Groups - NAKOS-->
-        <item>08000116016</item> <!--National Helpline for Violence Against Women-->
-        <item>08001110111</item> <!--National Emotional Support Helpline-->
-        <item>08001110222</item> <!--National Emotional Support Helpline-->
-        <item>08001110333</item> <!--National Helpline for Children and Adolescents-->
-        <item>08001110550</item> <!--National Parents and Guardians Helpline-->
-        <item>08002255530</item> <!--National Sexual Abuse Hotline-->
-        <item>08002802801</item> <!--National Helpline for Children of Addicts-->
-        <item>08003332111</item> <!--National Emotional Support Helpline for Mothers-->
-        <item>08004040020</item> <!--National Anonymous Pregnancy and Birth Helpline-->
-        <item>030443509821</item> <!--Muslim Emotional Support Helpline (German/Turkish)-->
+        <item>
+            <number>116000</number>
+            <name>European Hotline for Missing Children</name>
+            <categories>missing children</categories>
+            <languages>german|english</languages>
+            <organization>Initiative Vermisste Kinder</organization>
+            <website>https://www.initiative-vermisste-kinder.de/</website>
+        </item>
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+            <categories>violence</categories>
+            <languages>german</languages>
+            <organization>Weisser Ring e.V.</organization>
+            <website>https://weisser-ring.de/</website>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>emotional support</categories>
+            <languages>german</languages>
+            <organization>Nummer Gegen Kummer</organization>
+            <website>https://www.nummergegenkummer.de/</website>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support|suicide</categories>
+            <languages>german</languages>
+            <organization>Telefonseelsorge</organization>
+            <website>https://www.telefonseelsorge.de/</website>
+        </item>
+        <item>
+            <number>0308914019</number>
+            <name>Helpline Directory for Self-help Groups</name>
+            <categories>generic</categories>
+            <languages>german</languages>
+            <organization>Selbsthilfe Kontakt- und Informationsstelle</organization>
+            <website>https://www.sekis-berlin.de/</website>
+        </item>
+        <item>
+            <number>08000116016</number>
+            <name>National Helpline for Violence Against Women</name>
+            <categories>women|violence</categories>
+            <languages>german</languages>
+            <organization>Hilfetelefon "Gewalt gegen Frauen"</organization>
+            <website>https://www.hilfetelefon.de/</website>
+        </item>
+        <item>
+            <number>08001110111</number>
+            <name>National Emotional Support</name>
+            <categories>emotional support|suicide</categories>
+            <languages>german</languages>
+            <organization>Telefonseelsorge</organization>
+            <website>https://www.telefonseelsorge.de/</website>
+        </item>
+        <item>
+            <number>08001110222</number>
+            <name>National Emotional Support</name>
+            <categories>emotional support|suicide</categories>
+            <languages>german</languages>
+            <organization>Telefonseelsorge</organization>
+            <website>https://www.telefonseelsorge.de/</website>
+        </item>
+        <item>
+            <number>08001110333</number>
+            <name>National Helpline for Children and Adolescents</name>
+            <categories>emotional support|children|adolescents</categories>
+            <languages>german</languages>
+            <organization>Nummer Gegen Kummer</organization>
+            <website>https://www.nummergegenkummer.de/</website>
+        </item>
+        <item>
+            <number>08001110550</number>
+            <name>National Parents and Guardians Helpline</name>
+            <categories>emotional support|parents</categories>
+            <languages>german</languages>
+            <organization>Nummer Gegen Kummer</organization>
+            <website>https://www.nummergegenkummer.de/elterntelefon.html</website>
+        </item>
+        <item>
+            <number>08002255530</number>
+            <name>National Sexual Abuse Hotline</name>
+            <categories>sexual abuse</categories>
+            <languages>german</languages>
+            <organization>Hilfeportal Sexueller Missbrauch</organization>
+            <website>https://www.hilfeportal-missbrauch.de/</website>
+        </item>
+        <item>
+            <number>08002802801</number>
+            <name>National Helpline for Children of Addicts</name>
+            <categories>children|addiction</categories>
+            <languages>german</languages>
+            <organization>SUCH(T)-UND WENDEPUNKT e.V.</organization>
+            <website>https://www.suchtundwendepunkt.de/</website>
+        </item>
+        <item>
+            <number>08003332111</number>
+            <name>National Emotional Support for Mothers</name>
+            <categories>mothers|emotional support</categories>
+            <languages>german</languages>
+            <organization>Frauen Sinnstiftung des ev. Kirchenkreises Stormarn</organization>
+            <website>https://www.kreis-stormarn.de/service/lvw/leistungen/index.html?lid=368</website>
+        </item>
+        <item>
+            <number>08004040020</number>
+            <name>National Anonymous Pregnancy and Birth Helpline</name>
+            <categories>pregnancy|birth</categories>
+            <languages>german</languages>
+            <organization>Beratung und Geburt - Vertraulich</organization>
+            <website>https://www.geburt-vertraulich.de</website>
+        </item>
+        <item>
+            <number>030443509821</number>
+            <name>Muslim Emotional Support</name>
+            <categories>muslim|emotional support</categories>
+            <languages>german|turkish</languages>
+            <organization>Muslimisches SeelsorgeTelefon (MuTeS)</organization>
+        </item>
     </sensitivePN>
     <!--Portugal-->
     <sensitivePN network="268">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
         <item>800202148</item>
     </sensitivePN>
     <!--Luxembourg-->
     <sensitivePN network="270">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Ireland-->
     <sensitivePN network="272">
-        <item>116006</item> <!--European Victims of Crime Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>
+            <number>116006</number>
+            <name>European Victims of Crime Helpline</name>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
     </sensitivePN>
     <!--Iceland-->
     <sensitivePN network="274">
-        <item>1717</item> <!--Child Helpline International-->
+        <item>
+            <number>1717</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Albania-->
     <sensitivePN network="276">
-        <item>116111></item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Malta-->
     <sensitivePN network="278">
-        <item>179</item> <!--National Helpline-->
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
-        <item>21239264</item> <!--Alcoholics Anonymous-->
-        <item>22942000</item> <!--Human Trafficking Hotline - Police General Headquarters-->
-        <item>79239264</item> <!--Alcoholics Anonymous-->
+        <item>
+            <number>179</number>
+            <name>National Helpline</name>
+        </item>
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>21239264</number>
+            <name>Alcoholics Anonymous</name>
+            <categories>alcohol</categories>
+        </item>
+        <item>
+            <number>22942000</number>
+            <name>Human Trafficking Hotline</name>
+            <categories>human trafficking</categories>
+            <organization>Police General Headquarters</organization>
+        </item>
+        <item>
+            <number>79239264</number>
+            <name>Alcoholics Anonymous</name>
+            <categories>alcohol</categories>
+        </item>
     </sensitivePN>
     <!--Cyprus-->
     <sensitivePN network="280">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
     </sensitivePN>
     <!--Georgia-->
     <sensitivePN network="282">
-      <item>116111</item> <!--European Helpline for Children and Adolescents-->
+      <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
     </sensitivePN>
     <!--Armenia-->
     <sensitivePN network="283">
@@ -436,7 +1217,11 @@
     </sensitivePN>
     <!--Bulgaria-->
     <sensitivePN network="284">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
         <item>028130250</item>
         <item>028223510</item>
         <item>029204238</item>
@@ -652,23 +1437,43 @@
         <item>183</item>
         <item>05493810183</item>
         <item>05494412144</item>
-        <item>08504550070</item> <!--Child Helpline International-->
+        <item>
+            <number>08504550070</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Slovenia-->
     <sensitivePN network="293">
-        <item>116111</item> <!--European Helpline for Children and Adolescents-->
-        <item>116123</item> <!--European Emotional Support Helpline-->
+        <item>
+            <number>116111</number>
+            <name>European Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+        </item>
+        <item>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
+        </item>
     </sensitivePN>
     <!--North Macedonia-->
     <sensitivePN network="294">
         <item>192</item>
         <item>193</item>
         <item>194</item>
-        <item>080012222</item> <!--Child Helpline International-->
+        <item>
+            <number>080012222</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Montenegro-->
     <sensitivePN network="297">
-        <item>080081550</item> <!--Child Helpline International-->
+        <item>
+            <number>080081550</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Canada-->
     <sensitivePN network="302">
@@ -732,7 +1537,13 @@
         <item>7806327070</item>
         <item>7806721035</item>
         <item>8002507010</item>
-        <item>8002632266</item> <!--Helpline for Children and Adolescents (French) - Tel-Jeunes-->
+        <item>
+            <number>8002632266</number>
+            <name>Helpline for Children and Adolescents</name>
+            <categories>children|adolescents</categories>
+            <languages>french</languages>
+            <organization>Tel-Jeunes</organization>
+        </item>
         <item>8002633045</item>
         <item>8002653333</item>
         <item>8002655609</item>
@@ -740,8 +1551,19 @@
         <item>8002670570</item>
         <item>8002675878</item>
         <item>8002681899</item>
-        <item>8002689688</item> <!--Emotional Support Helpline (LGBTQ) - Youthline-->
-        <item>8003615085</item> <!--Parental Support Helpline (French) - LigneParents-->
+        <item>
+            <number>8002689688</number>
+            <name>Emotional Support</name>
+            <categories>emotional support|lgbtq</categories>
+            <organization>Youthline</organization>
+        </item>
+        <item>
+            <number>8003615085</number>
+            <name>Parental Support</name>
+            <categories>parents</categories>
+            <languages>french</languages>
+            <organization>LigneParents</organization>
+        </item>
         <item>8003639010</item>
         <item>8003875437</item>
         <item>8004651100</item>
@@ -751,7 +1573,11 @@
         <item>8005630808</item>
         <item>8006610844</item>
         <item>8006612843</item>
-        <item>8006686868</item> <!--National Children and Adolescents Helpline (English/French)-->
+        <item>
+            <number>8006686868</number>
+            <name>National Children and Adolescents Helpline</name>
+            <languages>english|french</languages>
+        </item>
         <item>8006756168</item>
         <item>8007183850</item>
         <item>8072743201</item>
@@ -760,23 +1586,48 @@
         <item>8074686224</item>
         <item>8076238511</item>
         <item>8077373466</item>
-        <item>8334564566</item> <!--Suicide Prevention Hotline (English) - Crisis Services Canada-->
-        <item>8339001010</item> <!--National Human Trafficking Hotline (English/French)-->
-        <item>8552423310</item> <!--Emotional Support Helpline - Hope for Wellness (English/French/Cree/Ojibway/Inuktitut)-->
+        <item>
+            <number>8334564566</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <languages>english</languages>
+            <organization>Crisis Services Canada</organization>
+        </item>
+        <item>
+            <number>8339001010</number>
+            <name>National Human Trafficking Hotline</name>
+            <languages>english|french</languages>
+        </item>
+        <item>
+            <number>8552423310</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <languages>english|french|cree|ojibway|inuktitut</languages>
+            <organization>Hope for Wellness</organization>
+        </item>
         <item>8553061443</item>
         <item>8553224453</item>
         <item>8554432660</item>
         <item>8554453227</item>
         <item>8555544325</item>
         <item>8556871868</item>
-        <item>8662773553</item> <!--Suicide Prevention Hotline (French) - Crisis Services Canada-->
+        <item>
+            <number>8662773553</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <languages>french</languages>
+            <organization>Crisis Services Canada</organization>
+        </item>
         <item>8664209990</item>
         <item>8664371940</item>
         <item>8665232929</item>
         <item>8666067233</item>
         <item>8666075437</item>
         <item>8666613311</item>
-        <item>8668166555</item> <!--Justice of the Peace Centre-->
+        <item>
+            <number>8668166555</number>
+            <name>Justice of the Peace Centre</name>
+        </item>
         <item>8668607082</item>
         <item>8668630511</item>
         <item>8668637868</item>
@@ -788,7 +1639,12 @@
         <item>8679793333</item>
         <item>8772724334</item>
         <item>8773030910</item>
-        <item>8773306366</item> <!--Suicide Prevention Hotline (Transgender) - Trans Lifeline-->
+        <item>
+            <number>8773306366</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide|trans</categories>
+            <organization>Trans Lifeline</organization>
+        </item>
         <item>8773362433</item>
         <item>8773927583</item>
         <item>8775211188</item>
@@ -799,13 +1655,26 @@
         <item>8883223019</item>
         <item>8883320000</item>
         <item>8884143571</item>
-        <item>8884298167</item> <!--Nova Scotia Mental Health Crisis Helpline-->
+        <item>
+            <number>8884298167</number>
+            <name>National Mental Health Helpline</name>
+            <categories>addiction|mental health</categories>
+            <organization>Nova Scotia Health Authority</organization>
+            <website>http://www.nshealth.ca/service-details/Mental%20Health%20Mobile%20Crisis%20Telephone%20Line</website>
+        </item>
         <item>8886616167</item>
         <item>8887000996</item>
         <item>8887538681</item>
         <item>8887833111</item>
         <item>8889377731</item>
-        <item>9024298167</item> <!--Nova Scotia Mental Health Crisis Helpline-->
+        <item>
+            <number>9024298167</number>
+            <name>National Mental Health Helpline</name>
+            <categories>addiction|mental health</categories>
+            <categories>mental health</categories>
+            <organization>Nova Scotia Health Authority</organization>
+            <website>http://www.nshealth.ca/service-details/Mental%20Health%20Mobile%20Crisis%20Telephone%20Line</website>
+        </item>
         <item>9053334441</item>
         <item>9053636131</item>
         <item>9054331551</item>
@@ -815,24 +1684,66 @@
     </sensitivePN>
     <!--USA-->
     <sensitivePN network="310,311,312,313,316">
-        <item>8002738255</item> <!--National Suicide Prevention Lifeline (English)-->
-        <item>8004224453</item>
-        <item>8006214673</item>
-        <item>8006564673</item>
-        <item>8007994889</item> <!--National Suicide Prevention Lifeline (Deaf/Hard of hearing)-->
-        <item>8007997233</item>
-        <item>8558388255</item> <!--Helpline for Veterans, Family and Caregivers - Vets4Warriors-->
-        <item>8662231111</item>
-        <item>8663852699</item>
-        <item>8664887386</item> <!--Psychological Aid and Emotional Support Helpline (LGBTQ) - TrevorLifeline-->
-        <item>8666894357</item>
-        <item>8775658860</item> <!--Suicide Prevention Hotline (Transgender) - Trans Lifeline-->
-        <item>8886289454</item> <!--National Suicide Prevention Lifeline (Spanish)-->
+        <item>
+            <number>8002738255</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+            <languages>english</languages>
+            <organization>Lifeline</organization>
+        </item>
+        <item>18004224453</item>
+        <item>18006214673</item>
+        <item>18006564673</item>
+        <item>
+            <number>8007994889</number>
+            <name>National Suicide Prevention (Deaf/Hard of hearing)</name>
+            <categories>suicide</categories>
+            <organization>Lifeline</organization>
+            <website>https://suicidepreventionlifeline.org/help-yourself/for-deaf-hard-of-hearing/</website>
+        </item>
+        <item>18007997233</item>
+        <item>
+            <number>8558388255</number>
+            <name>Helpline for Veterans, Family and Caregivers</name>
+            <categories>veterans</categories>
+            <organization>Vets4Warriors</organization>
+        </item>
+        <item>18662231111</item>
+        <item>18663852699</item>
+        <item>
+            <number>8664887386</number>
+            <name>Psychological Aid and Emotional Support</name>
+            <categories>emotional support|psychological|lgbtq</categories>
+            <organization>TrevorLifeLine</organization>
+        </item>
+        <item>18666894357</item>
+        <item>
+            <number>8775658860</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide|trans</categories>
+            <organization>Trans Lifeline</organization>
+        </item>
+        <item>
+            <number>8886289454</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+            <languages>spanish</languages>
+            <organization>Lifeline</organization>
+        </item>
     </sensitivePN>
     <!--Puerto Rico-->
     <sensitivePN network="330">
-        <item>18002738255</item> <!--National Suicide Prevention Lifeline-->
-        <item>18009810023</item> <!--First Psychosocial Aid Helpline - ASSMCA-->
+        <item>
+            <number>18002738255</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+            <organization>Lifeline</organization>
+        </item>
+        <item>
+            <number>18009810023</number>
+            <name>First Psychosocial Aid</name>
+            <organization>ASSMCA</organization>
+        </item>
     </sensitivePN>
     <!--Antigua and Barbuda-->
     <sensitivePN network="344">
@@ -848,33 +1759,100 @@
     </sensitivePN>
     <!--Azerbaijan-->
     <sensitivePN network="400">
-        <item>0124802280</item> <!--Child Helpline International-->
-        <item>0506802280</item> <!--Child Helpline International-->
-        <item>0518801180</item> <!--Child Helpline International-->
-        <item>0884802280</item> <!--Child Helpline International-->
+        <item>
+            <number>0124802280</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
+        <item>
+            <number>0506802280</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
+        <item>
+            <number>0518801180</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
+        <item>
+            <number>0884802280</number>
+            <name>Child Helpline International</name>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--India-->
     <sensitivePN network="404,405">
         <item>1090</item>
         <item>1091</item>
         <item>1098</item>
-        <item>9820466726</item> <!--Suicide Prevention Hotline (English/Hindi) - AASRA-->
+        <item>
+            <number>9820466726</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <languages>english|hindi</languages>
+            <organization>AASRA</organization>
+        </item>
     </sensitivePN>
     <!--Pakistan-->
     <sensitivePN network="410">
-        <item>04235761999</item> <!--Suicide Prevention Hotline - MIND Organisation-->
+        <item>
+            <number>04235761999</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <organization>MIND Organisation</organization>
+        </item>
     </sensitivePN>
     <!--Israel-->
     <sensitivePN network="425">
-        <item>1201</item> <!--Emotional Support Hotline (Arabic/English/Hebrew/Russian) - ERAN-->
-        <item>1202</item> <!--Women's Sexual Assault Hotline - ARCCI-->
-        <item>1203</item> <!--Men and Youth Sexual Assault Hotline - ARCCI-->
+        <item>
+            <number>1201</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <languages>arabic|english|hebrew|russian</languages>
+            <organization>ERAN</organization>
+        </item>
+        <item>
+            <number>1202</number>
+            <name>Women's Sexual Assault Hotline</name>
+            <categories>sexual assault|women</categories>
+            <organization>ARCCI</organization>
+        </item>
+        <item>
+            <number>1203</number>
+            <name>Men and Youth Sexual Assault Hotline</name>
+            <categories>men|youth|sexual assault</categories>
+            <organization>ARCCI</organization>
+        </item>
         <item>1204</item>
-        <item>*2201</item> <!--Soldier's Hotline-->
-        <item>*3201</item> <!--Senior Citizen's Hotline-->
-        <item>025328000</item> <!--Religious Men's Sexual Assault Hotline - ARCCI-->
-        <item>026730002</item> <!--Religious Women's Sexual Assault Hotline (Amharic) - ARCCI-->
-        <item>046566813</item> <!--Arab Women's Sexual Assault Hotline - ARCCI-->
+        <item>
+            <number>*2201</number>
+            <name>Soldier's Hotline</name>
+            <categories>soldiers</categories>
+        </item>
+        <item>
+            <number>*3201</number>
+            <name>Senior Citizen's Hotline</name>
+            <categories>seniors</categories>
+        </item>
+        <item>
+            <number>025328000</number>
+            <name>Religious Men's Sexual Assault Hotline</name>
+            <categories>sexual assault|religion|men</categories>
+            <organization>ARCCI</organization>
+        </item>
+        <item>
+            <number>026730002</number>
+            <name>Religious Women's Sexual Assault Hotline</name>
+            <categories>women|sexual assault|religion</categories>
+            <languages>Amharic</languages>
+            <organization>ARCCI</organization>
+        </item>
+        <item>
+            <number>046566813</number>
+            <name>Arab Women's Sexual Assault Hotline</name>
+            <categories>women|sexual assault</categories>
+            <organization>ARCCI</organization>
+        </item>
     </sensitivePN>
     <!--Taiwan-->
     <sensitivePN network="466">
@@ -889,17 +1867,71 @@
     </sensitivePN>
     <!--Australia-->
     <sensitivePN network="505">
-        <item>131114</item> <!--Crisis Support and Suicide Prevention Hotline - Lifeline Australia-->
-        <item>1300224636</item> <!--Emotional Support and Suicide Prevention Hotline - Beyond Blue-->
-        <item>1300272736</item> <!--Parental Support Helpline - Tresillian-->
-        <item>1300301300</item> <!--Parental Support Helpline - Parentline-->
-        <item>1300308307</item> <!--Parental Support Helpline (SIDS) - Red Nose Grief and Loss-->
-        <item>1300368186</item> <!--Family Drug Addiction Support Helpline-->
-        <item>1300789978</item> <!--Men's Emotional Support Helpline - MensLine Australia-->
-        <item>1800050321</item> <!--National Family Relationship Advice Line-->
-        <item>1800187263</item> <!--Psychological Support Helpline - SANE Help Centre-->
-        <item>1800551800</item> <!--Children and Adolescents Helpline - Kids Helpline-->
-        <item>1800737732</item> <!--National Sexual Abuse and Domestic Violence Hotline - 1800Respect-->
+        <item>
+            <number>131114</number>
+            <name>Crisis Support and Suicide Prevention</name>
+            <categories>suicide|crisis</categories>
+            <organization>Lifeline Australia</organization>
+        </item>
+        <item>
+            <number>1300224636</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>suicide|emotional support</categories>
+            <organization>Beyond Blue</organization>
+        </item>
+        <item>
+            <number>1300272736</number>
+            <name>Parental Support</name>
+            <categories>parents</categories>
+            <organization>Tresillian</organization>
+        </item>
+        <item>
+            <number>1300301300</number>
+            <name>Parental Support</name>
+            <categories>parents</categories>
+            <organization>Parentline</organization>
+        </item>
+        <item>
+            <number>1300308307</number>
+            <name>Parental Support (SIDS)</name>
+            <categories>parents</categories>
+            <organization>Red Nose Grief and Loss</organization>
+            <website>https://rednose.org.au/</website>
+        </item>
+        <item>
+            <number>1300368186</number>
+            <name>Family Drug Addiction Support</name>
+            <categories>family|drugs</categories>
+        </item>
+        <item>
+            <number>1300789978</number>
+            <name>Men's Emotional Support</name>
+            <categories>emotional support|men</categories>
+            <organization>MensLine Australia</organization>
+        </item>
+        <item>
+            <number>1800050321</number>
+            <name>National Family Relationship Advice Line</name>
+            <categories>family</categories>
+        </item>
+        <item>
+            <number>1800187263</number>
+            <name>Psychological Support</name>
+            <categories>psychological</categories>
+            <organization>SANE Help Centre</organization>>
+        </item>
+        <item>
+            <number>1800551800</number>
+            <name>Children and Adolescents Helpline</name>
+            <categories>children|adolscents</categories>
+            <organization>Kids Helpline</organization>
+        </item>
+        <item>
+            <number>1800737732</number>
+            <name>National Sexual Abuse and Domestic Violence Hotline</name>
+            <categories>sexual abuse|domestic violence</categories>
+            <organization>1800Respect</organization>
+        </item>
     </sensitivePN>
     <!--Indonesia-->
     <sensitivePN network="510">
@@ -907,33 +1939,110 @@
     </sensitivePN>
     <!--Philippines-->
     <sensitivePN network="515">
-        <item>2919</item> <!--Emotional Support Helpline - Natasha Goulbourn Foundation-->
-        <item>9898727</item> <!--Suicide Prevention Hotline - Center for Mental Health-->
-        <item>025251743</item> <!--Emotional Support Helpline - Dial-a-Friend-->
-        <item>025251881</item> <!--Emotional Support Helpline - Dial-a-Friend-->
-        <item>028044673</item> <!--Emotional Support Helpline - Natasha Goulbourn Foundation-->
-        <item>09175584673</item> <!--Emotional Support Helpline - Natasha Goulbourn Foundation-->
-        <item>09179898727</item> <!--Suicide Prevention Hotline - Center for Mental Health-->
+        <item>
+            <number>2919</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Natasha Goulbourn Foundation</organization>
+        </item>
+        <item>
+            <number>9898727</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <organization>Center for Mental Health</organization>
+        </item>
+        <item>
+            <number>025251743</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Dial-a-Friend</organization>
+        </item>
+        <item>
+            <number>025251881</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Dial-a-Friend</organization>
+        </item>
+        <item>
+            <number>028044673</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Natasha Goulbourn Foundation</organization>
+        </item>
+        <item>
+            <number>09175584673</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Natasha Goulbourn Foundation</organization>
+        </item>
+        <item>
+            <number>09179898727</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <organization>Center for Mental Health</organization>
+        </item>
     </sensitivePN>
     <!--Singapore-->
     <sensitivePN network="525">
-        <item>18002214444</item> <!--Suicide Prevention Helpline - Samaritans of Singapore-->
+        <item>
+            <number>18002214444</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <organization>Samaritans of Singapore</organization>
+        </item>
     </sensitivePN>
     <!--New Zealand-->
     <sensitivePN network="530">
-        <item>0508828865</item> <!--Suicide Prevention Hotline - Lifeline Aotearoa-->
-        <item>0800543354</item> <!--Emotional Support Helpline - Lifeline Aotearoa-->
-        <item>0800543754</item> <!--Children and Adolescents Helpline - Lifeline Aotearoa-->
+        <item>
+            <number>0508828865</number>
+            <name>Suicide Prevention</name>
+            <categories>suicide</categories>
+            <organization>Lifeline Aotearoa</organization>
+        </item>
+        <item>
+            <number>0800543354</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>Lifeline Aotearoa</organization>
+        </item>
+        <item>
+            <number>0800543754</number>
+            <name>Children and Adolescents Helpline</name>
+            <organization>Lifeline Aotearoa</organization>
+        </item>
         <item>0800733843</item>
     </sensitivePN>
     <!--Morocco-->
     <sensitivePN network="604">
-        <item>080008888</item> <!--National Women's Domestic Violence and Abuse Helpline-->
-        <item>0522928989</item> <!--AIDS Assistance Helpline - ALCS-->
-        <item>0537718888</item> <!--Corruption Helpline - Prosecutor's Office-->
-        <item>0801002525</item> <!--AIDS Assistance Helpline - ALCS-->
-        <item>0802008088</item> <!--National Children's Domestic Violence and Abuse Helpline-->
-        <item>08001007676</item> <!--Corruption Helpline - Prosecutor's Office-->
+        <item>
+            <number>080008888</number>
+            <name>National Women's Domestic Violence and Abuse Helpline</name>
+            <categories>women|domestic violence|abuse</categories>
+        </item>
+        <item>
+            <number>0522928989</number>
+            <name>AIDS Assistance</name>
+            <organization>ALCS</organization>
+        </item>
+        <item>
+            <number>0537718888</number>
+            <name>Corruption Helpline</name>
+            <organization>Prosecutor's Office</organization>
+        </item>
+        <item>
+            <number>0801002525</number>
+            <name>AIDS Assistance</name>
+            <organization>ALCS</organization>
+        </item>
+        <item>
+            <number>0802008088</number>
+            <name>National Children's Domestic Violence and Abuse Helpline</name>
+        </item>
+        <item>
+            <number>08001007676</number>
+            <name>Corruption Helpline</name>
+            <organization>Prosecutor's Office</organization>
+        </item>
     </sensitivePN>
     <!--Brazil-->
     <sensitivePN network="724">
