@@ -16,6 +16,24 @@
       "revId": "ba2c78abf4a13ee1e43cdd0ae6945b4bb3b846ad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4a45a6c_dca794bb",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 24027
+      },
+      "writtenOn": "2019-09-27T22:06:06Z",
+      "side": 1,
+      "message": "its right over there but when building it shows error: vendor/xiaomi/sm6150-common/Android.bp:330:1: unrecognized module type \"android_app_import\"",
+      "parentUuid": "83b8387f_ec0108e5",
+      "revId": "ba2c78abf4a13ee1e43cdd0ae6945b4bb3b846ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
