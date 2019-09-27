@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "83b8387f_ec0108e5",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 24027
+      },
+      "writtenOn": "2019-09-27T22:01:06Z",
+      "side": 1,
+      "message": "https://ci.android.com/builds/submitted/5905783/linux/latest/view/soong_build.html",
+      "revId": "ba2c78abf4a13ee1e43cdd0ae6945b4bb3b846ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
