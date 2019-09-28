@@ -34,6 +34,46 @@
       "revId": "b74886c9f6d5f06e592d8f20cb5b9f32c42b6a21",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "058129ab_4b3fbb69",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-28T10:33:12Z",
+      "side": 1,
+      "message": "https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf/tree/gralloc/gralloc_priv.h?h\u003dLA.UM.8.1.r1-09400-sm8150.0#n73",
+      "revId": "b74886c9f6d5f06e592d8f20cb5b9f32c42b6a21",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9efc17ce_f9cd3249",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-28T10:33:12Z",
+      "side": 1,
+      "message": "This stopped being (1 \u003c\u003c 27), for some reason:  https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf/tree/gralloc/gralloc_priv.h?h\u003dLA.UM.8.1.r1-09400-sm8150.0#n78",
+      "range": {
+        "startLine": 55,
+        "startChar": 7,
+        "endLine": 55,
+        "endChar": 37
+      },
+      "revId": "b74886c9f6d5f06e592d8f20cb5b9f32c42b6a21",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
