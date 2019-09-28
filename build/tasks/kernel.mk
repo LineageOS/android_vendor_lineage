@@ -299,4 +299,11 @@ kernel: $(INSTALLED_KERNEL_TARGET)
 .PHONY: dtboimage
 dtboimage: $(INSTALLED_DTBOIMAGE_TARGET)
 
+ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
+$(BOARD_PREBUILT_DTBIMAGE_DIR): $(KERNEL_CONFIG)
+	$(call make-kernel-target,dtbs)
+.PHONY: dtbimage
+dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
+endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
+
 endif # TARGET_NO_KERNEL
