@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e3ff4c5_dc121399",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2019-09-28T09:36:46Z",
+      "side": 1,
+      "message": "need to check what the bits are",
+      "revId": "b74886c9f6d5f06e592d8f20cb5b9f32c42b6a21",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
