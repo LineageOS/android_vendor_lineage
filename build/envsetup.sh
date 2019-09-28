@@ -384,8 +384,6 @@ function installboot()
     adb wait-for-online
     adb root
     sleep 1
-    adb wait-for-online shell mount /system 2>&1 > /dev/null
-    adb wait-for-online remount
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/boot.img /cache/
@@ -433,8 +431,6 @@ function installrecovery()
     adb wait-for-online
     adb root
     sleep 1
-    adb wait-for-online shell mount /system 2>&1 >> /dev/null
-    adb wait-for-online remount
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/recovery.img /cache/
