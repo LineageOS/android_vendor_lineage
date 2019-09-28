@@ -99,30 +99,14 @@ function eat()
             echo "Nothing to eat"
             return 1
         fi
-        adb start-server # Prevent unexpected starting server message from adb get-state in the next line
-        if [ $(adb get-state) != device -a $(adb shell 'test -e /sbin/recovery 2> /dev/null; echo $?') != 0 ] ; then
-            echo "No device is online. Waiting for one..."
-            echo "Please connect USB and/or enable USB debugging"
-            until [ $(adb get-state) = device -o $(adb shell 'test -e /sbin/recovery 2> /dev/null; echo $?') = 0 ];do
-                sleep 1
-            done
-            echo "Device Found.."
-        fi
+        echo "Waiting for device..."
+        adb wait-for-online
+        echo "Found device"
         if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD"); then
-            # if adbd isn't root we can't write to /cache/recovery/
-            adb root
-            sleep 1
-            adb wait-for-device
-            cat << EOF > /tmp/command
---sideload_auto_reboot
-EOF
-            if adb push /tmp/command /cache/recovery/ ; then
-                echo "Rebooting into recovery for sideload installation"
-                adb reboot recovery
-                adb wait-for-sideload
-                adb sideload $ZIPPATH
-            fi
-            rm /tmp/command
+            echo "Rebooting to sideload for install"
+            adb reboot sideload-auto-reboot
+            adb wait-for-sideload
+            adb sideload $ZIPPATH
         else
             echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
         fi
@@ -380,23 +364,12 @@ function installboot()
             return 1
         fi
     fi
-    adb start-server
     adb wait-for-online
     adb root
-    sleep 1
-    adb wait-for-online shell mount /system 2>&1 > /dev/null
-    adb wait-for-online remount
+    adb wait-for-online
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/boot.img /cache/
-        if [ -e "$OUT/system/lib/modules/*" ];
-        then
-            for i in $OUT/system/lib/modules/*;
-            do
-                adb push $i /system/lib/modules/
-            done
-            adb shell chmod 644 /system/lib/modules/*
-        fi
         adb shell dd if=/cache/boot.img of=$PARTITION
         adb shell rm -rf /cache/boot.img
         echo "Installation complete."
@@ -429,12 +402,9 @@ function installrecovery()
             return 1
         fi
     fi
-    adb start-server
     adb wait-for-online
     adb root
-    sleep 1
-    adb wait-for-online shell mount /system 2>&1 >> /dev/null
-    adb wait-for-online remount
+    adb wait-for-online
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/recovery.img /cache/
@@ -794,8 +764,7 @@ function repodiff() {
 # Return success if adb is up and not in recovery
 function _adb_connected {
     {
-        if [[ "$(adb get-state)" == device &&
-              "$(adb shell 'test -e /sbin/recovery; echo $?')" != 0 ]]
+        if [[ "$(adb get-state)" == device ]]
         then
             return 0
         fi
