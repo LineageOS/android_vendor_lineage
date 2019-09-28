@@ -384,8 +384,7 @@ function installboot()
     adb wait-for-online
     adb root
     sleep 1
-    adb wait-for-online shell mount /system 2>&1 > /dev/null
-    adb wait-for-online remount
+    adb wait-for-online 
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/boot.img /cache/
@@ -396,6 +395,22 @@ function installboot()
                 adb push $i /system/lib/modules/
             done
             adb shell chmod 644 /system/lib/modules/*
+        fi
+        if [ -e "$OUT/odm/lib/modules/*" ];
+        then
+            for i in $OUT/odm/lib/modules/*;
+            do
+                adb push $i /odm/lib/modules/
+            done
+            adb shell chmod 644 /odm/lib/modules/*
+        fi
+        if [ -e "$OUT/vendor/lib/modules/*" ];
+        then
+            for i in $OUT/vendor/lib/modules/*;
+            do
+                adb push $i /vendor/lib/modules/
+            done
+            adb shell chmod 644 /vendor/lib/modules/*
         fi
         adb shell dd if=/cache/boot.img of=$PARTITION
         adb shell rm -rf /cache/boot.img
@@ -433,8 +448,6 @@ function installrecovery()
     adb wait-for-online
     adb root
     sleep 1
-    adb wait-for-online shell mount /system 2>&1 >> /dev/null
-    adb wait-for-online remount
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/recovery.img /cache/
