@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fb19412_2a9ff4e1",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1429,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-09-29T05:26:11Z",
+      "side": 1,
+      "message": "This is broken:\n\n./../../../vendor/lineage/build/tools/extract_utils.sh: line 1429: -z: command not found",
+      "revId": "ef0553ca465a11c12a0cff284f0fd4efaa124211",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b758c44d_2eef6ced",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 1571,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-09-29T05:26:11Z",
+      "side": 1,
+      "message": "Not totally sure if this is right, especially with SAR handling.",
+      "range": {
+        "startLine": 1571,
+        "startChar": 57,
+        "endLine": 1571,
+        "endChar": 70
+      },
+      "revId": "ef0553ca465a11c12a0cff284f0fd4efaa124211",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
