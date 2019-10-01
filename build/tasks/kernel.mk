@@ -202,6 +202,9 @@ define internal-make-kernel-target
 $(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_BUILD_OUT_PREFIX)$(1) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(2)
 endef
 
+DTBO_OUT := $(PRODUCT_OUT)/dtbo
+DTBS_OUT := $(PRODUCT_OUT)/dtbs
+
 # Make a kernel target
 # $(1): The kernel target to build (eg. defconfig, modules, modules_install)
 define make-kernel-target
@@ -211,13 +214,22 @@ endef
 # Make a DTBO target
 # $(1): The DTBO target to build (eg. dtbo.img, defconfig)
 define make-dtbo-target
-$(call internal-make-kernel-target,$(PRODUCT_OUT)/dtbo,$(1))
+$(call internal-make-kernel-target,$(DTBO_OUT),$(1))
 endef
 
 # Make a DTB targets
 # $(1): The DTB target to build (eg. dtbs, defconfig)
 define make-dtb-target
-$(call internal-make-kernel-target,$(PRODUCT_OUT)/dtbs,$(1))
+$(call internal-make-kernel-target,$(DTBS_OUT),$(1))
+endef
+
+define make-kernel-config
+$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(KERNEL_DEFCONFIG))
+$(hide) if [ ! -z "$(KERNEL_CONFIG_OVERRIDE)" ]; then \
+		echo "Overriding kernel config with '$(KERNEL_CONFIG_OVERRIDE)'"; \
+		echo $(KERNEL_CONFIG_OVERRIDE) >> $(1)/.config; \
+		$(call internal-make-kernel-target,$(1),oldconfig); \
+	fi
 endef
 
 $(KERNEL_OUT):
@@ -228,12 +240,7 @@ $(KERNEL_ADDITIONAL_CONFIG_OUT): $(KERNEL_OUT)
 
 $(KERNEL_CONFIG): $(KERNEL_DEFCONFIG_SRC) $(KERNEL_ADDITIONAL_CONFIG_OUT)
 	@echo "Building Kernel Config"
-	$(call make-kernel-target,VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(KERNEL_DEFCONFIG))
-	$(hide) if [ ! -z "$(KERNEL_CONFIG_OVERRIDE)" ]; then \
-			echo "Overriding kernel config with '$(KERNEL_CONFIG_OVERRIDE)'"; \
-			echo $(KERNEL_CONFIG_OVERRIDE) >> $(KERNEL_OUT)/.config; \
-			$(call make-kernel-target,oldconfig); \
-		fi
+	$(call make-kernel-config,$(KERNEL_OUT))
 	# Create defconfig build artifact
 	$(call make-kernel-target,savedefconfig)
 	$(hide) if [ ! -z "$(KERNEL_ADDITIONAL_CONFIG)" ]; then \
@@ -278,7 +285,7 @@ alldefconfig: $(KERNEL_OUT)
 ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
 $(BOARD_PREBUILT_DTBOIMAGE):
 	echo -e ${CL_GRN}"Building DTBO.img"${CL_RST}
-	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
+	$(call make-kernel-config,$(DTBO_OUT))
 	$(call make-dtbo-target,dtbo.img)
 endif # TARGET_NEEDS_DTBOIMAGE
 
@@ -307,7 +314,7 @@ dtboimage: $(INSTALLED_DTBOIMAGE_TARGET)
 ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
 $(BOARD_PREBUILT_DTBIMAGE_DIR):
 	echo -e ${CL_GRN}"Building DTBs"${CL_RST}
-	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
+	$(call make-kernel-config,$(DTBS_OUT))
 	$(call make-dtb-target,dtbs)
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
