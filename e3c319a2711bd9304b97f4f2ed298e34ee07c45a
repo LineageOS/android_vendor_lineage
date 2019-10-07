@@ -22,6 +22,30 @@
       "revId": "e3c319a2711bd9304b97f4f2ed298e34ee07c45a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f746efd6_2d14f78a",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 309,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-10-07T18:52:14Z",
+      "side": 1,
+      "message": "Make it a new patch, and kill DTBO\u0027s and all the rest too",
+      "parentUuid": "b9dc2a77_4d337ed9",
+      "range": {
+        "startLine": 309,
+        "startChar": 0,
+        "endLine": 309,
+        "endChar": 42
+      },
+      "revId": "e3c319a2711bd9304b97f4f2ed298e34ee07c45a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
