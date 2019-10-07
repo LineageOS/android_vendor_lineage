@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b9dc2a77_4d337ed9",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 309,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-10-07T18:47:28Z",
+      "side": 1,
+      "message": "ugh colors\nKill them while at it\necho \"Building DTBs\"",
+      "range": {
+        "startLine": 309,
+        "startChar": 0,
+        "endLine": 309,
+        "endChar": 42
+      },
+      "revId": "e3c319a2711bd9304b97f4f2ed298e34ee07c45a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
