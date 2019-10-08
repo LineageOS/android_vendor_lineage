@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e1f20a85_dc15790f",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 515,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-10-08T10:51:52Z",
+      "side": 1,
+      "message": "Spaces, not tabs.",
+      "range": {
+        "startLine": 515,
+        "startChar": 0,
+        "endLine": 515,
+        "endChar": 1
+      },
+      "revId": "7787b50ce6f1d3ee0b4ca24a101377083910cecc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
