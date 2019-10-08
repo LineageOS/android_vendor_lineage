@@ -14,7 +14,7 @@ type Product_variables struct {
 		Overrides []string
 		Shared_libs []string
 	}
-	Should_skip_waiting_for_qsee struct {
+	Should_wait_for_qsee struct {
 		Cflags []string
 	}
 	Supports_hw_fde struct {
