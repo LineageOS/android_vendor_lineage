@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b6222a51_94202ab9",
+        "filename": "prebuilt/common/bin/system-mount.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2019-10-09T22:26:15Z",
+      "side": 1,
+      "message": "This is the only place $system is used.  Better to use \"if mount | grep -esystem \u003e/dev/null; then\" and eliminate the above line.",
+      "revId": "edfb429e0e73df8755c5e29a4aa5e619d1ec30d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "76a474a4_fea7c8fb",
+        "filename": "prebuilt/common/bin/system-mount.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2019-10-09T22:26:15Z",
+      "side": 1,
+      "message": "Why are you passing 2 arguments to `backuptool.sh` when it only takes 1?",
+      "revId": "edfb429e0e73df8755c5e29a4aa5e619d1ec30d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
