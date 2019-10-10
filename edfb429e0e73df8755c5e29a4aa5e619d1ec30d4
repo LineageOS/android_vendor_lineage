@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "9696f90f_9b87684b",
+        "filename": "prebuilt/common/bin/system-mount.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2019-10-10T01:07:35Z",
+      "side": 1,
+      "message": "I prefer `mount -t ext4 \"$2\" $sys_mount -o ro,discard` here.  You\u0027re not going to be writing to the filesystem and in the event of a journal recovery the blocks will get discarded.  Adding \"-t ext4\" makes it more consistent with the below.",
+      "revId": "edfb429e0e73df8755c5e29a4aa5e619d1ec30d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "76a474a4_fea7c8fb",
         "filename": "prebuilt/common/bin/system-mount.sh",
         "patchSetId": 2
@@ -51,6 +68,41 @@
       "revId": "edfb429e0e73df8755c5e29a4aa5e619d1ec30d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ff1cd41_31bafda5",
+        "filename": "prebuilt/common/bin/system-mount.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2019-10-10T01:07:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f37d0438_159e1800",
+      "revId": "edfb429e0e73df8755c5e29a4aa5e619d1ec30d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b4a1133_7d7f2fd3",
+        "filename": "prebuilt/common/bin/system-mount.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2019-10-10T01:07:35Z",
+      "side": 1,
+      "message": "I prefer `mount -t ext4 \"$2\" $sys_mount -o rw,discard` here.  This makes it consistent with the above line and more consistent with nearly every invocation of `mount` out there (usually the \"-t\" is the first argument).\n\nThough unlikely $2 could nominally include spaces and should be quoted.  \"$2\" is shorter than \"$system_device\" and allows removing line 7.",
+      "revId": "edfb429e0e73df8755c5e29a4aa5e619d1ec30d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
