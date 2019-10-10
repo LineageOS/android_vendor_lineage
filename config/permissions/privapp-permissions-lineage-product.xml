@@ -25,6 +25,10 @@
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.gallery3d">
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    </privapp-permissions>
+
     <!-- Additional permissions on top of privapp-permissions-platform.xml -->
     <privapp-permissions package="com.android.launcher3">
         <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
