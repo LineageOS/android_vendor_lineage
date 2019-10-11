@@ -37,6 +37,40 @@
     },
     {
       "key": {
+        "uuid": "bd61b9f2_30566162",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2019-10-11T08:26:35Z",
+      "side": 1,
+      "message": "GRALLOC_USAGE_HW_2D",
+      "revId": "b74886c9f6d5f06e592d8f20cb5b9f32c42b6a21",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f6e06f9_b4d43740",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2019-10-11T08:26:35Z",
+      "side": 1,
+      "message": "GRALLOC_USAGE_EXTERNAL_DISP",
+      "revId": "b74886c9f6d5f06e592d8f20cb5b9f32c42b6a21",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "058129ab_4b3fbb69",
         "filename": "config/BoardConfigQcom.mk",
         "patchSetId": 2
