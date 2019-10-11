@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "14e56cae_b1098a2c",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 18220
+      },
+      "writtenOn": "2019-10-11T11:42:56Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be also changed?",
+      "revId": "f09a9110466743e50f6b11bb2f3efea84f1beced",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
