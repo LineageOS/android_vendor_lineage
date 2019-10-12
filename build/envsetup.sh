@@ -883,8 +883,10 @@ EOF
         rm -f $OUT/.chkfileperm.sh
     fi
 
+    RELOUT=$(echo $OUT | sed "s#^${ANDROID_BUILD_TOP}/##")
+
     stop_n_start=false
-    for TARGET in $(echo $LOC | tr " " "\n" | sed "s#.*$OUT##" | sort | uniq); do
+    for TARGET in $(echo $LOC | tr " " "\n" | sed "s#.*${RELOUT}##" | sort | uniq); do
         # Make sure file is in $OUT/system or $OUT/data
         case $TARGET in
             /system/*|/data/*)
