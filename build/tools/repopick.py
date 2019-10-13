@@ -366,6 +366,10 @@ if __name__ == '__main__':
             project_path = project_name_to_data[item['project']][item['branch']]
         elif args.path:
             project_path = args.path
+        elif item['project'] in project_name_to_data and len(project_name_to_data[item['project']]) == 1:
+            local_branch = list(project_name_to_data[item['project']])[0]
+            project_path = project_name_to_data[item['project']][local_branch]
+            print('WARNING: Project {0} has a different branch ("{1}" != "{2}")'.format(project_path, local_branch, item['branch']))
         elif args.ignore_missing:
             print('WARNING: Skipping {0} since there is no project directory for: {1}\n'.format(item['id'], item['project']))
             continue
