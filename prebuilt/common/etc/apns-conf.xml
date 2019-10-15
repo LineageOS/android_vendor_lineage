@@ -1314,6 +1314,7 @@
   <apn carrier="Virgin Mobile" mcc="310" mnc="120" apn="n.vmu.ispsn" user="Sprint" password="*" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mmsc.vmobl.com:8088/mms?" type="supl,mms,fota,dun" />
   <apn carrier="FreedomPop LTE" mcc="310" mnc="120" apn="n.f6.ispsn" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="supl,mms" bearer="14" />
   <apn carrier="FreedomPop EHRPD" mcc="310" mnc="120" apn="n.f6.ispsn" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="supl,mms" bearer="13" />
+  <apn carrier="Tello" mcc="310" mnc="120" apn="n.mi.ispsn" user="MDN@MVNO337.SPRINTPCS.COM" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="default,mms" bearer_bitmask="13|14" />
   <apn carrier="Sprint" mcc="310" mnc="120" apn="sprint" type="default,supl,mms,ims,cbs" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" bearer_bitmask="4|5|6|7|8|12" />
   <apn carrier="Sprint" mcc="310" mnc="120" apn="sprint" type="default,supl,mms,ims,cbs,dun" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" bearer_bitmask="4|5|6|7|8|12" profile_id="1" />
   <apn carrier="USCC" mcc="310" mnc="120" apn="internet" proxy="" port="80" user="" password="" mmsc="http://mmsc1.uscc.net/mmsc/MMS" mmsproxy="" mmsport="80" authtype="3" type="mms" />
