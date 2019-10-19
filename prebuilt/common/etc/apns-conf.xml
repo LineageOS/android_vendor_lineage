@@ -1316,6 +1316,7 @@
   <apn carrier="Virgin Mobile" mcc="310" mnc="120" apn="n.vmu.ispsn" user="Sprint" password="*" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mmsc.vmobl.com:8088/mms?" type="supl,mms,fota,dun" />
   <apn carrier="FreedomPop LTE" mcc="310" mnc="120" apn="n.f6.ispsn" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="supl,mms" bearer="14" />
   <apn carrier="FreedomPop EHRPD" mcc="310" mnc="120" apn="n.f6.ispsn" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="supl,mms" bearer="13" />
+  <apn carrier="Tello" mcc="310" mnc="120" apn="n.mi.ispsn" user="MDN@MVNO337.SPRINTPCS.COM" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="default,mms" bearer_bitmask="13|14" />																																																		
   <apn carrier="Sprint" mcc="310" mnc="120" apn="sprint" type="default,supl,mms,ims,cbs" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" bearer_bitmask="4|5|6|7|8|12" />
   <apn carrier="Sprint" mcc="310" mnc="120" apn="sprint" type="default,supl,mms,ims,cbs,dun" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" bearer_bitmask="4|5|6|7|8|12" profile_id="1" />
   <apn carrier="USCC" mcc="310" mnc="120" apn="internet" proxy="" port="80" user="" password="" mmsc="http://mmsc1.uscc.net/mmsc/MMS" mmsproxy="" mmsport="80" authtype="3" type="mms" />
@@ -2779,23 +2780,15 @@
   <apn carrier="Du MMS" mcc="424" mnc="03" apn="du" proxy="" port="" mmsproxy="10.19.18.4" mmsport="8080" mmsc="http://mms.du.ae:8002" user="" password="" authtype="1" type="mms" />
   <apn carrier="Du WAP" mcc="424" mnc="03" apn="du" proxy="10.19.18.4" port="8080" mmsc="" user="" password="" type="default,supl" />
   <apn carrier="du" mcc="424" mnc="03" apn="du" mmsc="http://mms.du.ae" mmsproxy="10.19.18.4" mmsport="9201" type="default,supl,mms" />
-  <apn carrier="3G Portal" mcc="425" mnc="01" apn="uwap.orange.co.il" mmsproxy="192.118.11.55" mmsport="8080" mmsc="http://192.168.220.15/servlets/mms" type="default,mms" />
-  <apn carrier="3G Portal" mcc="425" mnc="01" apn="uwap.orange.co.il" port="8080" type="default,supl" />
-  <apn carrier="MMS 3G" mcc="425" mnc="01" apn="uwap.orange.co.il" mmsc="http://192.168.220.15/servlets/mms" mmsport="8080" type="mms" />
-  <apn carrier="Internet 3G" mcc="425" mnc="01" apn="modem.orange.net.il" type="default,supl" />
-  <apn carrier="Orange IL" mcc="425" mnc="01" apn="internet" proxy="" port="" user="orange" password="orange" mmsc="" type="default,supl" />
-  <apn carrier="Orange IL MMS" mcc="425" mnc="01" apn="wap.orange.co.il" proxy="" port="" user="" password="" mmsc="http://192.168.220.15/servlets/mms" mmsproxy="" mmsport="8080" type="mms" />
-  <apn carrier="Vodafone MT" mcc="425" mnc="01" apn="Internet" proxy="" port="" user="" password="Internet" mmsc="" type="default,supl" />
-  <apn carrier="Cellcom 3G" mcc="425" mnc="02" apn="internetg" type="default,supl" />
-  <apn carrier="Cellcom MMS" mcc="425" mnc="02" apn="MMS" mmsproxy="172.31.29.38" mmsport="8080" mmsc="http://mms.cellcom.co.il" type="mms" />
-  <apn carrier="CellCOM" mcc="425" mnc="02" apn="sphone" type="default,supl" />
-  <apn carrier="CellCOM MMS" mcc="425" mnc="02" apn="mms" user="" password="" mmsc="http://mms.cellcom.co.il" mmsproxy="172.31.29.38" mmsport="8080" type="mms" />
+  <apn carrier="Partner" mcc="425" mnc="01" apn="uinternet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Partner MMS" mcc="425" mnc="01" apn="uinternet" proxy="" port="" user="" password="" mmsc="http://192.168.220.15/servlets/mms" mmsproxy="" mmsport="8080" type="mms" />																																  
+  <apn carrier="Cellcom" mcc="425" mnc="02" apn="internetg" type="default,supl" />
+  <apn carrier="Cellcom MMS" mcc="425" mnc="02" apn="mms" mmsproxy="172.31.29.38" mmsport="8080" mmsc="http://mms.cellcom.co.il" type="mms" />
+  <apn carrier="CellCOM" mcc="425" mnc="02" apn="sphone" type="default,supl" />														  
   <apn carrier="Sphone Pelephone" mcc="425" mnc="03" apn="sphone.pelephone.net.il" user="pcl@3g" password="pcl" type="default,supl" />
   <apn carrier="Multimedia Pelephone" mcc="425" mnc="03" apn="mms.pelephone.net.il" user="pcl@3g" password="pcl" mmsproxy="10.170.252.104" mmsport="9093" mmsc="http://mmsu.pelephone.net.il/" type="mms" />
   <apn carrier="Pelephone" mcc="425" mnc="03" apn="internet.pelephone.net.il" user="pcl@3g" password="pcl" type="default,supl" />
-  <apn carrier="Pelephone MMS" mcc="425" mnc="03" apn="mms.pelephone.net.il" user="pcl@3g" password="pcl" server="pelephone" mmsc="http://mmsu.pelephone.net.il" mmsproxy="10.170.9.54" mmsport="9093" type="mms" />
-  <apn carrier="Rami Levy" mcc="425" mnc="03" apn="internet.rl" user="rl@3g" password="rl" type="default,supl" />
-  <apn carrier="Rami Levey MMS" mcc="425" mnc="03" apn="internet.rl" user="rl@3g" password="rl" server="pelephone" mmsc="http://mmsu.pelephone.net.il" mmsproxy="10.170.9.54" mmsport="9093" type="mms" />
+  <apn carrier="Pelephone MMS" mcc="425" mnc="03" apn="mms.pelephone.net.il" user="pcl@3g" password="pcl" server="pelephone" mmsc="http://mmsu.pelephone.net.il" mmsproxy="10.170.9.54" mmsport="9093" type="mms" />																																																  
   <apn carrier="Pelephone Internet Static" mcc="425" mnc="03" apn="org.pelephone.net.il" user="pcl@rsingle" password="pcl" type="default,supl" />
   <apn carrier="Pelephone" mcc="425" mnc="03" apn="internet.pelephone.net.il" proxy="" port="" user="pcl@3g" password="pcl" mmsc="" type="default,supl" />
   <apn carrier="Pelephone MMS" mcc="425" mnc="03" apn="mms.pelephone.net.il" proxy="" port="" user="pcl@3g" password="pcl" server="pelephone" mmsc="http://mmsu.pelephone.net.il" mmsproxy="10.170.9.54" mmsport="9093" type="mms" />
@@ -2806,7 +2799,13 @@
   <apn carrier="Hot Mobile MMS" mcc="425" mnc="07" apn="mms.hotm" mmsc="http://mms.hotmobile.co.il" mmsport="80" type="mms" />
   <apn carrier="Golan Telecom" mcc="425" mnc="08" apn="internet.golantelecom.net.il" authtype="0" type="default,supl" />
   <apn carrier="Golan Telecom MMS" mcc="425" mnc="08" apn="mms.golantelecom.net.il" mmsc="http://mmsc.golantelecom.co.il" mmsproxy="10.224.228.81" mmsport="80" authtype="0" type="mms" />
+  <apn carrier="We4g" mcc="425" mnc="09" apn="we" type="default" />
   <apn carrier="YouPhone 3G" mcc="425" mnc="14" apn="data.youphone.co.il" mmsc="http://192.168.220.15/servlets/mms" mmsport="80" type="default,supl,mms" />
+  <apn carrier="Rami Levy" mcc="425" mnc="16" apn="internet.rl" user="rl@3g" password="rl" type="default,supl" />
+  <apn carrier="Rami Levey MMS" mcc="425" mnc="16" apn="internet.rl" user="rl@3g" password="rl" server="pelephone" mmsc="http://mmsu.pelephone.net.il" mmsproxy="10.170.9.54" mmsport="9093" type="mms" />
+  <apn carrier="Telzar" mcc="425" mnc="19" apn="netazi" type="default" />
+  <apn carrier="012 Mobile" mcc="425" mnc="24" apn="uinternet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="012 Mobiel MMS" mcc="425" mnc="24" apn="uinternet" mmsc="http://192.168.220.15/servlets/mms" mmsproxy="" mmsport="8080" type="mms" />												  
   <apn carrier="Batelco Internet" mcc="426" mnc="01" apn="internet.batelco.com" type="default,supl" />
   <apn carrier="Batelco WAP" mcc="426" mnc="01" apn="wap.batelco.com" user="wap" password="wap" authtype="0" proxy="192.168.1.2" port="80" type="default,supl" />
   <apn carrier="Batelco MMS" mcc="426" mnc="01" apn="mms.batelco.com" user="mms" password="mms" authtype="0" mmsc="http://192.168.36.10/servlets/mms" mmsproxy="192.168.1.2" mmsport="80" type="mms" />
