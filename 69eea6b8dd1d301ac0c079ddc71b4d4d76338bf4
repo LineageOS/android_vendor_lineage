@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "28b5e46d_bccdd995",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-10-22T14:58:43Z",
+      "side": 1,
+      "message": "Does it make sense to keep this?",
+      "range": {
+        "startLine": 263,
+        "startChar": 0,
+        "endLine": 263,
+        "endChar": 26
+      },
+      "revId": "69eea6b8dd1d301ac0c079ddc71b4d4d76338bf4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
