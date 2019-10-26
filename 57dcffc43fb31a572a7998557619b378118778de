@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e51375db_5f2a131a",
+        "filename": "overlay/common/packages/apps/Settings/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-10-26T20:09:13Z",
+      "side": 0,
+      "message": "lol?",
+      "range": {
+        "startLine": 3,
+        "startChar": 15,
+        "endLine": 3,
+        "endChar": 27
+      },
+      "revId": "57dcffc43fb31a572a7998557619b378118778de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b092366_3bf20bd8",
+        "filename": "overlay/common/packages/apps/Settings/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-10-26T20:09:13Z",
+      "side": 0,
+      "message": "Split to new change.",
+      "range": {
+        "startLine": 24,
+        "startChar": 4,
+        "endLine": 25,
+        "endChar": 58
+      },
+      "revId": "57dcffc43fb31a572a7998557619b378118778de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
