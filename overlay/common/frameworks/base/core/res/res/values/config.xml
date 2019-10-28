@@ -37,6 +37,8 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver</item>
         <item>com.google.android.setupwizard/com.google.android.setupwizard.time.DateTimeCheck</item>
+        <!-- Introduces issues with wifi connections, so disable it -->
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
     </string-array>
 
     <!-- Force enabling of some services that could have been previously disabled -->
