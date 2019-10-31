@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "87b86045_8851fec7",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-10-31T12:55:30Z",
+      "side": 1,
+      "message": "Wrong order",
+      "revId": "bb4ebc13ba3fca89c560d46fce3f05065c4751d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
