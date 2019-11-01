@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
     Updater \
     WeatherProvider
 
-# Berry styles
+# Themes
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
     LineageDarkTheme \
@@ -157,7 +157,8 @@ PRODUCT_PACKAGES += \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
-    LineageYellowAccent
+    LineageYellowAccent \
+    ThemePicker
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
