@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
     Updater \
     WeatherProvider
 
-# Themes
+# Accents
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
     LineageDarkTheme \
@@ -157,7 +157,11 @@ PRODUCT_PACKAGES += \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
-    LineageYellowAccent \
+    LineageYellowAccent
+
+# Themes
+PRODUCT_PACKAGES += \
+    LineageThemesStub \
     ThemePicker
 
 # Extra tools in Lineage
