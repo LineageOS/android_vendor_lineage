@@ -229,6 +229,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Conditionally build in su
 ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_PACKAGES += \
+    adb_root
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
     su
