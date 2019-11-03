@@ -92,6 +92,11 @@ else
     KERNEL_ADDITIONAL_CONFIG_SRC := /dev/null
 endif
 
+# Disable LTO by default on engineering builds
+ifeq ($(TARGET_BUILD_VARIANT), eng)
+    KERNEL_CONFIG_OVERRIDE += CONFIG_LTO_CLANG=n
+endif
+
 ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
 $(error BOARD_KERNEL_IMAGE_NAME not defined.)
 endif
