@@ -121,6 +121,11 @@ else
   KERNEL_MAKE_FLAGS += HOSTCFLAGS="-I/usr/include -I/usr/include/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu -L/usr/lib64"
 endif
 
+# Disable LTO by default on engineering builds
+ifeq ($(TARGET_BUILD_VARIANT), eng)
+  KERNEL_MAKE_FLAGS += CONFIG_LTO_CLANG=n
+endif
+
 ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
   KERNEL_MAKE_FLAGS += $(TARGET_KERNEL_ADDITIONAL_FLAGS)
 endif
