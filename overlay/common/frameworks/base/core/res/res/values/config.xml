@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
-               (C) 2017 The LineageOS Project
+               (C) 2017-2019 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -27,22 +27,10 @@
 
     <!-- Disable stock OTA components if installed -->
     <string-array name="config_globallyDisabledComponents" translatable="false">
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver</item>
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver</item>
-        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver</item>
-        <item>com.google.android.setupwizard/com.google.android.setupwizard.time.DateTimeCheck</item>
-    </string-array>
-
-    <!-- Force enabling of some services that could have been previously disabled -->
-    <string-array name="config_forceEnabledComponents" translatable="false">
-        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
+        <item>com.google.android.setupwizard/com.google.android.setupwizard.time.DateTimeCheck</item>
     </string-array>
 
     <string name="config_mms_user_agent">LineageOS</string>
