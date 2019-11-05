@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b9036c3a_feebfb77",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2019-11-05T08:02:05Z",
+      "side": 1,
+      "message": "Remove？",
+      "revId": "81de7927e9a6355875a67930a6a98e1949eaafd8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
