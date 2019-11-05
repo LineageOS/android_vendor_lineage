@@ -34,6 +34,24 @@
       "revId": "81de7927e9a6355875a67930a6a98e1949eaafd8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8381ff5_8302b634",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-11-05T12:18:06Z",
+      "side": 1,
+      "message": "I don\u0027t think that\u0027s a valid reason. If needed, it can be re-added in the future.",
+      "parentUuid": "a88037fa_00de96e0",
+      "revId": "81de7927e9a6355875a67930a6a98e1949eaafd8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
