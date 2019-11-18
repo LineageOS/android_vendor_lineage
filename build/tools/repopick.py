@@ -392,7 +392,11 @@ if __name__ == '__main__':
         for i in range(0, check_picked_count):
             if subprocess.call(['git', 'cat-file', '-e', 'HEAD~{0}'.format(i)], cwd=project_path, stderr=open(os.devnull, 'wb')):
                 continue
-            output = subprocess.check_output(['git', 'show', '-q', 'HEAD~{0}'.format(i)], cwd=project_path).split()
+            output = subprocess.check_output(['git', 'show', '-q', 'HEAD~{0}'.format(i)], cwd=project_path)
+            # make sure we have a string on Python 3
+            if isinstance(output, bytes):
+                output = output.decode('utf-8')
+            output = output.split()
             if 'Change-Id:' in output:
                 head_change_id = ''
                 for j,t in enumerate(reversed(output)):
