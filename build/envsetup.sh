@@ -14,6 +14,7 @@ Additional LineageOS functions:
 - mka:             Builds using SCHED_BATCH on all processors.
 - mkap:            Builds the module(s) using mka and pushes them to the device.
 - cmka:            Cleans and builds using mka.
+- picklist:        Utility to fetch many changes specified by a picklist.
 - repodiff:        Diff 2 different branches or tags within the same repo
 - repolastsync:    Prints date and time of last repo sync.
 - reposync:        Parallel repo sync using ionice and SCHED_BATCH.
@@ -918,6 +919,11 @@ alias mmap='dopush mma'
 alias mmmap='dopush mmma'
 alias mkap='dopush mka'
 alias cmkap='dopush cmka'
+
+function picklist() {
+    T=$(gettop)
+    $T/vendor/lineage/build/tools/picklist.py $@
+}
 
 function repopick() {
     T=$(gettop)
