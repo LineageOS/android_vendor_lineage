@@ -17,15 +17,6 @@
 -->
 <resources>
     <string name="themes_stub_package" translatable="false">org.lineageos.customization</string>
-    <!-- Authority of a provider in System UI that will provide preview info for available clockfaces. -->
-    <string name="clocks_provider_authority" translatable="false">com.android.keyguard.clock</string>
-
-    <!--Name of metadata in the main launcher Activity which values contains the authority
-        corresponding to a ContentProvider in launcher to provide available grids and
-        allow for changing them -->
-    <string name="grid_control_metadata_name" translatable="false">com.android.launcher3.grid.control</string>
-
-    <string name="launcher_overlayable_package" translatable="false">com.android.launcher3</string>
 
     <!-- List of packages whose icons are used to preview the icon shape for a theme. These are
         typically GMS apps so they should be available in GMS devices. -->
