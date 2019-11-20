@@ -36,5 +36,11 @@
         <item>com.google.android.apps.docs</item>
         <item>com.google.android.youtube</item>
         <item>com.android.vending</item>
+        <item>com.android.settings</item>
+        <item>com.android.deskclock</item>
+        <item>com.android.messaging</item>
+        <item>com.android.contacts</item>
+        <item>com.android.dialer</item>
+        <item>com.android.email</item>
     </array>
 </resources>
