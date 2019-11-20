@@ -23,7 +23,7 @@
     <!--Name of metadata in the main launcher Activity which values contains the authority
         corresponding to a ContentProvider in launcher to provide available grids and
         allow for changing them -->
-    <string name="grid_control_metadata_name" translatable="false">com.android.launcher3.grid.control</string>
+    <string name="grid_control_metadata_name" translatable="false">com.android.launcher3.grid_control</string>
 
     <string name="launcher_overlayable_package" translatable="false">com.android.launcher3</string>
 
