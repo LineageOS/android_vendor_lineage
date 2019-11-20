@@ -306,11 +306,13 @@ kernel: $(INSTALLED_KERNEL_TARGET)
 dtboimage: $(INSTALLED_DTBOIMAGE_TARGET)
 
 ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
+ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
 $(INSTALLED_DTBIMAGE_TARGET):
 	echo -e ${CL_GRN}"Building DTBs"${CL_RST}
 	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtb-target,dtbs)
 	cat $(shell find $(DTBS_OUT)/arch/$(KERNEL_ARCH)/boot/dts/** -type f -name "*.dtb" | sort) > $@
+endif
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
 endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
