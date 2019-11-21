@@ -20,7 +20,5 @@ FRAMEWORK_LINEAGE_PLATFORM_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_current.
 FRAMEWORK_LINEAGE_PLATFORM_REMOVED_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_removed.txt
 FRAMEWORK_LINEAGE_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/lineage/build/core/apicheck_msg_current.txt
 
-BUILD_RRO_SYSTEM_PACKAGE := $(TOPDIR)vendor/lineage/build/core/system_rro.mk
-
 # Rules for QCOM targets
 include $(TOPDIR)vendor/lineage/build/core/qcom_target.mk
