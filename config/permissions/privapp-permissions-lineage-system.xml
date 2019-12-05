@@ -38,6 +38,10 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="org.lineageos.jelly">
+        <permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    </privapp-permissions>
+
     <privapp-permissions package="org.lineageos.lineageparts">
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.READ_SEARCH_INDEXABLES"/>
