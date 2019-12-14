@@ -28,7 +28,17 @@ endif
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
+<<<<<<< HEAD   (71598e overlay: Use ntp.ntsc.ac.cn NTP server for Chinese users)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
+=======
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
+    lineage.service.adb.root=1
+
+ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
+  PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.device.cache_dir=/data/cache
+>>>>>>> CHANGE (3a3fb5 lineage: configs: common: Enable ADB root by default)
 else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
