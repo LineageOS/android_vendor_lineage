@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a3cf4340_c128d9e4",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2019-12-19T20:13:12Z",
+      "side": 1,
+      "message": "Since mounting /system was for pushing modules (when they exist), we should fix this at the same time (I guess now /vendor/lib/module and /odm/lib/modules).  Although, since module pushing won\u0027t be working at the moment anyway, apparently no-one currently using installboot cares so perhaps we should just remove the module pushing if block altogether.",
+      "revId": "bac653abfb4308bfdc7a1950a40ece35752171d6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}

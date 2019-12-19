@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ae3aaa5c_30c24274",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2019-12-19T20:13:12Z",
+      "side": 0,
+      "message": "I think we still need an \"adb wait-for-online\" by itself for the case when the adb root above takes longer than a second.",
+      "revId": "27180809c594cf6beeaeb206cced6fa42c086517",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
