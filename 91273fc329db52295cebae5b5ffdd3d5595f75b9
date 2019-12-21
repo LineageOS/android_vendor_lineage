@@ -34,6 +34,24 @@
       "revId": "91273fc329db52295cebae5b5ffdd3d5595f75b9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9c0da541_fa632609",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-12-21T20:23:59Z",
+      "side": 1,
+      "message": "Not sure why would we want it on vendor...\n\nThis is clearly system specific.",
+      "parentUuid": "403f32aa_47c96e46",
+      "revId": "91273fc329db52295cebae5b5ffdd3d5595f75b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
