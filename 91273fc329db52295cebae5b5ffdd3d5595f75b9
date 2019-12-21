@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f191503d_026e1dff",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-12-21T15:20:22Z",
+      "side": 1,
+      "message": "Should be TARGET_COPY_OUT_SYSTEM",
+      "revId": "91273fc329db52295cebae5b5ffdd3d5595f75b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
