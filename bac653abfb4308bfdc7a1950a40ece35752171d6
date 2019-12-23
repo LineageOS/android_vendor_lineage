@@ -16,6 +16,24 @@
       "revId": "bac653abfb4308bfdc7a1950a40ece35752171d6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1c780d74_337ab7bd",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-23T05:31:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a3cf4340_c128d9e4",
+      "revId": "bac653abfb4308bfdc7a1950a40ece35752171d6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
