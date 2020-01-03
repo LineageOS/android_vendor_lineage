@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9692db5d_da3673e4",
+        "filename": "prebuilt/common/bin/50-lineage.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-01-03T13:52:45Z",
+      "side": 1,
+      "message": "We could remove this for good.",
+      "range": {
+        "startLine": 6,
+        "startChar": 21,
+        "endLine": 6,
+        "endChar": 25
+      },
+      "revId": "42020e23f5b7a1647b2f8fafb95ff4cf8572e52c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
