@@ -16,6 +16,29 @@
       "revId": "bb053f9f1a6814ab4666202b9368b7fbaa0356c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f97570d6_bfae0716",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 8
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-01-07T22:30:21Z",
+      "side": 1,
+      "message": "Why calling creating this function and calling it when you can just avoid it?",
+      "range": {
+        "startLine": 121,
+        "startChar": 0,
+        "endLine": 121,
+        "endChar": 6
+      },
+      "revId": "bb053f9f1a6814ab4666202b9368b7fbaa0356c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
