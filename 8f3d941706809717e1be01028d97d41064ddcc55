@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e231fefd_9d5843d4",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2020-01-08T03:21:29Z",
+      "side": 0,
+      "message": "I would tend to reintroduce this as `export sysdev\u003d\"$(readlink -nf \"$2\")\"`, this ensures compatibility with older uses and makes the refinements below work.",
+      "revId": "8f3d941706809717e1be01028d97d41064ddcc55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}

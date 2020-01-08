@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5bef985f_a5969dea",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2020-01-08T03:21:29Z",
+      "side": 1,
+      "message": "Actually, this should be simplified to `if grep -q -e\"$sysdev\" /proc/mounts; then`.",
+      "parentUuid": "e0ba84d5_c1dafb7a",
+      "revId": "855fb15c788ce8c53f6c32fe1362da8c4198d81d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4602135d_9dcab62e",
         "filename": "prebuilt/common/bin/backuptool.sh",
         "patchSetId": 9
