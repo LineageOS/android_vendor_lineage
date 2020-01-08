@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e0ba84d5_c1dafb7a",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2020-01-08T01:14:03Z",
+      "side": 1,
+      "message": "I\u0027m unsure whether recovery /sbin/sh supports extensions of POSIX syntax or not.  The \"[[\" and \"]]\" are *not* POSIX, so this may be broken right now.\n\nI would be inclined to use \"$(grep -q -e\"$sysdev\" /proc/mounts)\" instead of \"$(mount | grep system)\".\n\n(adjust per the fate of $sysdev)",
+      "revId": "855fb15c788ce8c53f6c32fe1362da8c4198d81d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4602135d_9dcab62e",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2020-01-08T01:14:03Z",
+      "side": 1,
+      "message": "Perhaps `umount $(grep -e\"$sysdev\" /proc/mounts | cut -c$((${#sysdev}+2))- | cut -d\" \" -f1)` or `umount $(grep -e\"$sysdev\" /proc/mounts | cut -d\" \" -f2)` instead?  (adjust per the fate of $sysdev)\n\nYeah, being detail-oriented and trying to cut down on the number of processes...",
+      "revId": "855fb15c788ce8c53f6c32fe1362da8c4198d81d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1027ffcb_bebae354",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2020-01-08T01:14:03Z",
+      "side": 1,
+      "message": "Patchset 8 needed $sysdev since /here/ $2 is not the same as the global $2.  If you change the calling of mount_system to `mount_system $2` then $1 could be used here instead.  As is, this got broken.\n\nOne might also add an argument to mount read-write or read-only and use \"-o $1,discard\".",
+      "revId": "855fb15c788ce8c53f6c32fe1362da8c4198d81d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
