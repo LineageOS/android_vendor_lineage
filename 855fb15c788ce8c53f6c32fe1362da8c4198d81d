@@ -68,6 +68,40 @@
       "revId": "855fb15c788ce8c53f6c32fe1362da8c4198d81d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c2ec9079_21a877b0",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 25126
+      },
+      "writtenOn": "2020-01-08T12:01:30Z",
+      "side": 1,
+      "message": "If we exit the script early then system will remain mounted. Need to call unmount_system first.",
+      "revId": "855fb15c788ce8c53f6c32fe1362da8c4198d81d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "94a288d0_49396c38",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 25126
+      },
+      "writtenOn": "2020-01-08T12:01:30Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "855fb15c788ce8c53f6c32fe1362da8c4198d81d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
