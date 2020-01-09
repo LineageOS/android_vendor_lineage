@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bdb6110c_f21d848a",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 18177
+      },
+      "writtenOn": "2020-01-09T02:53:04Z",
+      "side": 1,
+      "message": "I do tend to agree with Adrian DC\u0027s comment about the \"ext4\" really should be getting passed in from other portions of the build system.  99% chance this will be ext4, but that \u003c1% chance...",
+      "revId": "87fffc72eb4732e0ab46b6093cc4067bb1ff61cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
