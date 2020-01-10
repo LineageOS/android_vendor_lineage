@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "015be795_d0a2114f",
+        "filename": "config/permissions/lineage-default-permissions.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2020-01-10T12:24:49Z",
+      "side": 1,
+      "message": "I\u0027m not sure if we wanna mark them fixed to avoid dealing with failures if user revoked them.",
+      "range": {
+        "startLine": 35,
+        "startChar": 70,
+        "endLine": 35,
+        "endChar": 81
+      },
+      "revId": "f9d47d6bcd2d619321e9a8e58b4f999348c91c75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
