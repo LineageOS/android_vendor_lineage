@@ -59,8 +59,7 @@ return 1
 check_blacklist() {
   if [ -f $S/addon.d/blacklist -a -d /$1/addon.d/ ]; then
       ## Discard any known bad backup scripts
-      cd /$1/addon.d/
-      for f in *sh; do
+      for f in /$1/addon.d/*sh; do
           [ -f $f ] || continue
           s=$(md5sum $f | cut -c-32)
           grep -q $s $S/addon.d/blacklist && rm -f $f
