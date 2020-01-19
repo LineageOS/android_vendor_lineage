@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "96220cb3_98b89108",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-01-19T18:53:54Z",
+      "side": 1,
+      "message": "the \"\" aren\u0027t needed",
+      "revId": "ebb2ebccba155064e1fbc47f2f9adff6258f7a0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
