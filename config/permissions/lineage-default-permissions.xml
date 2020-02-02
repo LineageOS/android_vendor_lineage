@@ -34,6 +34,5 @@
     <exception package="com.android.exchange">
         <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
         <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
-        <permission name="com.android.email.permission.READ_ATTACHMENT" fixed="false"/>
     </exception>
 </exceptions>
