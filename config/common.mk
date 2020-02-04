@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
     Exchange2 \
     Terminal
 
+# Chromium packages
+PRODUCT_PACKAGES += \
+    TrichromeWebView
+
 # Lineage packages
 PRODUCT_PACKAGES += \
     AudioFX \
