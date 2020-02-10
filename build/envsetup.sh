@@ -11,9 +11,8 @@ Additional LineageOS functions:
 - aospremote:      Add git remote for matching AOSP repository.
 - cafremote:       Add git remote for matching CodeAurora repository.
 - githubremote:    Add git remote for LineageOS Github.
-- mka:             Builds using SCHED_BATCH on all processors.
-- mkap:            Builds the module(s) using mka and pushes them to the device.
-- cmka:            Cleans and builds using mka.
+- mp:              Builds the module(s) and pushes them to the device.
+- cmp:             Cleans and builds.
 - repodiff:        Diff 2 different branches or tags within the same repo
 - repolastsync:    Prints date and time of last repo sync.
 - reposync:        Parallel repo sync using ionice and SCHED_BATCH.
@@ -56,7 +55,7 @@ function brunch()
 {
     breakfast $*
     if [ $? -eq 0 ]; then
-        mka bacon
+        m bacon
     else
         echo "No such item in brunch menu. Try 'breakfast'"
         return 1
@@ -747,27 +746,23 @@ function lineagerebase() {
     cd $pwd
 }
 
-function mka() {
-    m -j "$@"
-}
-
-function cmka() {
+function cm() {
     if [ ! -z "$1" ]; then
         for i in "$@"; do
             case $i in
                 bacon|otapackage|systemimage)
-                    mka installclean
-                    mka $i
+                    m installclean
+                    m $i
                     ;;
                 *)
-                    mka clean-$i
-                    mka $i
+                    m clean-$i
+                    m $i
                     ;;
             esac
         done
     else
-        mka clean
-        mka
+        m clean
+        m
     fi
 }
 
@@ -948,8 +943,8 @@ alias mmp='dopush mm'
 alias mmmp='dopush mmm'
 alias mmap='dopush mma'
 alias mmmap='dopush mmma'
-alias mkap='dopush mka'
-alias cmkap='dopush cmka'
+alias mp='dopush m'
+alias cmp='dopush cm'
 
 function repopick() {
     T=$(gettop)
