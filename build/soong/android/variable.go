@@ -28,6 +28,9 @@ type Product_variables struct {
 	Supports_hw_fde_perf struct {
 		Cflags []string
 	}
+	Target_face_unlock_camera_id struct {
+		Cppflags []string
+	}
 	Target_init_vendor_lib struct {
 		Whole_static_libs []string
 	}
@@ -65,6 +68,7 @@ type ProductVariables struct {
 	Supports_extended_compress_format  *bool `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
+	Target_face_unlock_camera_id  *string `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
