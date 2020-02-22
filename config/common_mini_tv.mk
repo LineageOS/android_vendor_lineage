@@ -1,5 +1,4 @@
-# Exclude AudioFX
-TARGET_EXCLUDES_AUDIOFX := true
+# This config is for legacy purposes, there are no atv product size variants
 
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mini.mk)
+# Inherit common atv Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_tv.mk)
