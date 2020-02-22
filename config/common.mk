@@ -13,11 +13,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-# Default notification/alarm sounds
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
-
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
@@ -127,40 +122,14 @@ PRODUCT_PACKAGES += \
 
 # AOSP packages
 PRODUCT_PACKAGES += \
-    Email \
-    ExactCalculator \
-    Exchange2 \
     Terminal
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
-    Backgrounds \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
-    Eleven \
-    Jelly \
-    LockClock \
-    Profiles \
-    TrebuchetQuickStep \
-    Updater \
-    WeatherProvider
-
-# Accents
-PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageDarkTheme \
-    LineageBlackAccent \
-    LineageBlueAccent \
-    LineageBrownAccent \
-    LineageCyanAccent \
-    LineageGreenAccent \
-    LineageOrangeAccent \
-    LineagePinkAccent \
-    LineagePurpleAccent \
-    LineageRedAccent \
-    LineageYellowAccent
+    Updater
 
 # Themes
 PRODUCT_PACKAGES += \
@@ -188,18 +157,6 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-# Custom off-mode charger
-ifeq ($(WITH_LINEAGE_CHARGER),true)
-PRODUCT_PACKAGES += \
-    lineage_charger_res_images \
-    font_log.png \
-    libhealthd.lineage
-endif
-
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
@@ -226,10 +183,6 @@ PRODUCT_PACKAGES += \
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
-
-# Media
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    media.recorder.show_manufacturer_and_model=true
 
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
