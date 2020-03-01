@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "56cb4eed_2b16ae77",
+        "filename": "config/BoardConfigLineage.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-03-01T20:03:01Z",
+      "side": 1,
+      "message": "ifeq ($(LINEAGE_BUILDTYPE), RELEASE)\nendif\nFollows common.mk logic",
+      "revId": "ee1ac2d862ed82cc8883bb29e8b69f7dd4a996e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
