@@ -22,6 +22,7 @@
 # These config vars are usually set in BoardConfig.mk:
 #
 #   TARGET_KERNEL_CONFIG               = Kernel defconfig
+#   TARGET_KERNEL_CONFIG_OVERRIDE      = Config options to override
 #   TARGET_KERNEL_VARIANT_CONFIG       = Variant defconfig, optional
 #   TARGET_KERNEL_SELINUX_CONFIG       = SELinux defconfig, optional
 #   TARGET_KERNEL_ADDITIONAL_CONFIG    = Additional defconfig, optional
@@ -60,6 +61,8 @@ ifneq ($(TARGET_NO_KERNEL),true)
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
 # kernel configuration - mandatory
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
+# optional kernel configuration variables
+KERNEL_CONFIG_OVERRIDE := $(TARGET_KERNEL_CONFIG_OVERRIDE)
 VARIANT_DEFCONFIG := $(TARGET_KERNEL_VARIANT_CONFIG)
 SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
 
