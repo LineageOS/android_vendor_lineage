@@ -1330,6 +1330,8 @@ function fix_xml() {
     grep -a '^<?xml version' "$XML" > "$TEMP_XML"
     grep -av '^<?xml version' "$XML" >> "$TEMP_XML"
 
+    sed -i 's/version="2.0"/version="1.0"/' "$TEMP_XML"
+
     mv "$TEMP_XML" "$XML"
 }
 
@@ -1594,7 +1596,9 @@ function extract() {
                 rm "$TMPDIR/classes"*
                 printf '    (updated %s from odex files)\n' "${SRC_FILE}"
             fi
-        elif [[ "${VENDOR_REPO_FILE}" =~ .xml$ ]]; then
+        fi
+        # Fix XML files
+        if [[ "${VENDOR_REPO_FILE}" =~ .xml$ ]]; then
             fix_xml "${VENDOR_REPO_FILE}"
         fi
         # Now run user-supplied fixup function
