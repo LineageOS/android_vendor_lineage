@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "575ad8ea_fc1862ed",
+        "filename": "build/soong/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-03-03T11:05:07Z",
+      "side": 1,
+      "message": "hmm, shouldn\u0027t this be \"usr/audio/include/uapi\"? Also this patch forced me to revert https://review.lineageos.org/q/If957ea9cb2f3d6dda94ebdf4e804937f48fde15e which is picked to pretty much every 845/8150 kernel on lineage.",
+      "range": {
+        "startLine": 33,
+        "startChar": 42,
+        "endLine": 33,
+        "endChar": 73
+      },
+      "revId": "17c52b6e0db78aaedd310236d479d23683641dbd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
