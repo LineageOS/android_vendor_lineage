@@ -46,6 +46,30 @@
       "revId": "17c52b6e0db78aaedd310236d479d23683641dbd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "395d634d_087d928c",
+        "filename": "build/soong/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2020-03-04T03:24:55Z",
+      "side": 1,
+      "message": "Ideally it should be techpack/*/include/uapi thus other techpack headers get exported as well (while they don\u0027t appear to be useful so far), but neither techpack/*/include/uapi nor techpack/**/include/uapi worked for me.",
+      "parentUuid": "7581fa7e_cdf950cb",
+      "range": {
+        "startLine": 33,
+        "startChar": 42,
+        "endLine": 33,
+        "endChar": 73
+      },
+      "revId": "17c52b6e0db78aaedd310236d479d23683641dbd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
