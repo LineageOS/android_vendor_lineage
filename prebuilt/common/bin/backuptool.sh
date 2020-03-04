@@ -33,12 +33,13 @@ restore_addon_d() {
 check_prereq() {
 # If there is no build.prop file the partition is probably empty.
 if [ ! -r $S/build.prop ]; then
-    exit 127
+    return 0
 fi
 if ! grep -q "^ro.lineage.version=$V.*" $S/build.prop; then
   echo "Not backing up files from incompatible version: $V"
-  exit 127
+  return 0
 fi
+return 1
 }
 
 # Execute /system/addon.d/*.sh scripts with $1 parameter
@@ -80,7 +81,10 @@ case "$1" in
   backup)
     mount_system
     mkdir -p $C
-    check_prereq
+    if ! check_prereq; then
+      unmount_system
+      exit 127
+    end
     preserve_addon_d
     run_stage pre-backup
     run_stage backup
@@ -89,7 +93,10 @@ case "$1" in
   ;;
   restore)
     mount_system
-    check_prereq
+    if ! check_prereq; then
+      unmount_system
+      exit 127
+    end
     run_stage pre-restore
     run_stage restore
     run_stage post-restore
