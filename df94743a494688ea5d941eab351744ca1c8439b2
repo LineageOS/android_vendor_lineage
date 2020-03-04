@@ -22,6 +22,30 @@
       "revId": "df94743a494688ea5d941eab351744ca1c8439b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c88f24ea_23a87a3a",
+        "filename": "config/common_tv.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-04T18:05:34Z",
+      "side": 1,
+      "message": "Ummm. How does an aosp tree handle this? I believe each device includes the google device stuff. I\u0027d like to keep differences to aosp at a minimum so our trees can be easily used in aosp. Also makes new version bringup easier.",
+      "parentUuid": "d220fa3d_5c7b62c6",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 58
+      },
+      "revId": "df94743a494688ea5d941eab351744ca1c8439b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }

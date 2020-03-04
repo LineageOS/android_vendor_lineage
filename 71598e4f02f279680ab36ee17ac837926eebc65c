@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "06c7958f_d6852d85",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-04T18:05:34Z",
+      "side": 0,
+      "message": "To be discussed elsewhere.",
+      "parentUuid": "8bc9c6a7_98151956",
+      "range": {
+        "startLine": 149,
+        "startChar": 4,
+        "endLine": 149,
+        "endChar": 22
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a5374811_4b286348",
         "filename": "config/common.mk",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2020-03-04T17:48:45Z",
       "side": 0,
       "message": "you sure? local media playback is pretty nice...",
+      "range": {
+        "startLine": 150,
+        "startChar": 4,
+        "endLine": 150,
+        "endChar": 10
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a73e1aa_510d4631",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-04T18:05:34Z",
+      "side": 0,
+      "message": "If someone writes a leanback interface for it, sure. But the tablet interface isn\u0027t smooth at best on atv, and more likely is completely unusable.",
+      "parentUuid": "a5374811_4b286348",
       "range": {
         "startLine": 150,
         "startChar": 4,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "644932b3_dc23bb23",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-04T18:05:34Z",
+      "side": 0,
+      "message": "Can be added back if integration is fixed. I believe the last time integration worked correctly was 13.0 and 14.1 was the last time it worked at all. TvLauncher doesn\u0027t have the widget hook that LeanbackLauncher did.",
+      "parentUuid": "c06f896b_664b96fe",
+      "range": {
+        "startLine": 153,
+        "startChar": 4,
+        "endLine": 153,
+        "endChar": 13
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "919d561e_8e9ff4f3",
         "filename": "config/common.mk",
         "patchSetId": 1
@@ -82,6 +154,24 @@
       "writtenOn": "2020-03-04T17:48:45Z",
       "side": 0,
       "message": "no, some of us have gms that works on both ;-p",
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1aa80399_2b8daa6a",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-04T18:05:34Z",
+      "side": 0,
+      "message": "Since TV gapps are a separate package officially, it would be better to set up the hooks for that. But I don\u0027t know what the official paths and requirements are to set up such a makefile.",
+      "parentUuid": "919d561e_8e9ff4f3",
       "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
