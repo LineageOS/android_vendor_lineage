@@ -74,7 +74,7 @@ fi
 case "$1" in
   backup)
     mkdir -p $C
-    if ! check_prereq; then
+    if check_prereq; then
       exit 127
     fi
     preserve_addon_d
@@ -83,7 +83,7 @@ case "$1" in
     run_stage post-backup
   ;;
   restore)
-    if ! check_prereq; then
+    if check_prereq; then
       exit 127
     fi
     run_stage pre-restore
