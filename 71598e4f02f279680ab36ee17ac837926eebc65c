@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8bc9c6a7_98151956",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-04T17:48:45Z",
+      "side": 0,
+      "message": "uhh, we want this tho?",
+      "range": {
+        "startLine": 149,
+        "startChar": 4,
+        "endLine": 149,
+        "endChar": 22
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a5374811_4b286348",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-04T17:48:45Z",
+      "side": 0,
+      "message": "you sure? local media playback is pretty nice...",
+      "range": {
+        "startLine": 150,
+        "startChar": 4,
+        "endLine": 150,
+        "endChar": 10
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c06f896b_664b96fe",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-04T17:48:45Z",
+      "side": 0,
+      "message": "leave, we can (and have in the past) used this.",
+      "range": {
+        "startLine": 153,
+        "startChar": 4,
+        "endLine": 153,
+        "endChar": 13
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "919d561e_8e9ff4f3",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-04T17:48:45Z",
+      "side": 0,
+      "message": "no, some of us have gms that works on both ;-p",
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}

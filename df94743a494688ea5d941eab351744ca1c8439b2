@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d220fa3d_5c7b62c6",
+        "filename": "config/common_tv.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-04T17:48:45Z",
+      "side": 1,
+      "message": "should we just include device/google/atv either here or in lineage/atv?",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 58
+      },
+      "revId": "df94743a494688ea5d941eab351744ca1c8439b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
