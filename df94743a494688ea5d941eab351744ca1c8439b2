@@ -46,6 +46,30 @@
       "revId": "df94743a494688ea5d941eab351744ca1c8439b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a34a77d3_87e4893e",
+        "filename": "config/common_tv.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-04T23:09:28Z",
+      "side": 1,
+      "message": "meh, yukawa is a goddam mess, I don\u0027t want to model after it, and all ATV\u0027s need google/atv, so I\u0027d prefer inclusion here or in lineage/atv",
+      "parentUuid": "c88f24ea_23a87a3a",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 58
+      },
+      "revId": "df94743a494688ea5d941eab351744ca1c8439b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
