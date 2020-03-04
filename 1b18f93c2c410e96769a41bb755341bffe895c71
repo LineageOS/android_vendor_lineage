@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ca0a266_81436069",
+        "filename": "prebuilt/common/bin/backuptool.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2020-03-04T17:25:35Z",
+      "side": 1,
+      "message": "I don\u0027t think \"backuping\" is a real word. \"Backup/restore\" would look better IMHO.",
+      "range": {
+        "startLine": 40,
+        "startChar": 8,
+        "endLine": 40,
+        "endChar": 17
+      },
+      "revId": "1b18f93c2c410e96769a41bb755341bffe895c71",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
