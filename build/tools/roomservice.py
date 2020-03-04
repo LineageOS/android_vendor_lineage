@@ -123,6 +123,12 @@ def get_manifest_path():
     except IndexError:
         return ".repo/manifests/{}".format(m.find("include").get("name"))
 
+def get_default_remote():
+    m = ElementTree.parse(get_manifest_path())
+    d = m.findall('default')[0]
+    r = d.get('remote')
+    return r.replace('refs/heads/', '').replace('refs/tags/', '')
+
 def get_default_revision():
     m = ElementTree.parse(get_manifest_path())
     d = m.findall('default')[0]
@@ -185,16 +191,27 @@ def add_to_manifest(repositories, fallback_branch = None):
         lm = ElementTree.Element("manifest")
 
     for repository in repositories:
+        if repository['remote']:
+            repo_remote = repository['remote']
+        else:
+            repo_remote = get_default_remote()
         repo_name = repository['repository']
         repo_target = repository['target_path']
+
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
             print('LineageOS/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
-        print('Adding dependency: LineageOS/%s -> %s' % (repo_name, repo_target))
-        project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "LineageOS/%s" % repo_name })
+        repo_path = repo_name
+        if repo_remote == get_default_remote():
+            repo_path = ("LineageOS/%s" % repo_name)
+
+        print('Adding dependency: %s -> %s' % (repo_path, repo_target))
+        project = ElementTree.Element("project", attrib = {
+            "path": repo_target,
+            "remote": repo_remote,
+            "name": "%s" % repo_path })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
