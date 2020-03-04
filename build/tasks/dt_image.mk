@@ -4,6 +4,10 @@
 ifeq ($(strip $(BOARD_CUSTOM_BOOTIMG_MK)),)
 ifeq ($(strip $(BOARD_KERNEL_SEPARATED_DT)),true)
 
+ifneq ($(BOARD_CUSTOM_DTIMG_MK),)
+include $(BOARD_CUSTOM_DTIMG_MK)
+else
+
 ifeq ($(strip $(BOARD_KERNEL_PREBUILT_DT)),)
 
 ifeq ($(strip $(TARGET_CUSTOM_DTBTOOL)),)
@@ -52,5 +56,6 @@ $(BOARD_PREBUILT_DTIMAGE) : $(BOARD_KERNEL_PREBUILT_DT) | $(ACP)
 	$(transform-prebuilt-to-target)
 
 endif # BOARD_KERNEL_PREBUILT_DT
+endif # BOARD_CUSTOM_DTIMG_MK
 endif # BOARD_KERNEL_SEPARATED_DT
 endif # BOARD_CUSTOM_BOOTIMG_MK
