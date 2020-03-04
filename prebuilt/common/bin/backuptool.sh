@@ -81,10 +81,10 @@ case "$1" in
   backup)
     mount_system
     mkdir -p $C
-    if ! check_prereq; then
+    if check_prereq; then
       unmount_system
       exit 127
-    end
+    fi
     preserve_addon_d
     run_stage pre-backup
     run_stage backup
@@ -93,10 +93,10 @@ case "$1" in
   ;;
   restore)
     mount_system
-    if ! check_prereq; then
+    if check_prereq; then
       unmount_system
       exit 127
-    end
+    fi
     run_stage pre-restore
     run_stage restore
     run_stage post-restore
