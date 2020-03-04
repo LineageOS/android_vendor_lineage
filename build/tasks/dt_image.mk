@@ -3,7 +3,6 @@
 #----------------------------------------------------------------------
 ifeq ($(strip $(BOARD_CUSTOM_BOOTIMG_MK)),)
 ifeq ($(strip $(BOARD_KERNEL_SEPARATED_DT)),true)
-INSTALLED_DTIMAGE_TARGET := $(PRODUCT_OUT)/dt.img
 
 ifeq ($(strip $(BOARD_KERNEL_PREBUILT_DT)),)
 
@@ -39,7 +38,7 @@ ifeq ($(strip $(BOARD_KERNEL_LZ4C_DT)),true)
 LZ4_DT_IMAGE := $(PRODUCT_OUT)/dt-lz4.img
 endif
 
-$(INSTALLED_DTIMAGE_TARGET): $(DTBTOOL) $(INSTALLED_KERNEL_TARGET)
+$(BOARD_PREBUILT_DTIMAGE): $(DTBTOOL) $(INSTALLED_KERNEL_TARGET)
 	$(build-dtimage-target)
 ifeq ($(strip $(BOARD_KERNEL_LZ4C_DT)),true)
 	prebuilts/tools-lineage/${HOST_OS}-x86/bin/lz4 -9 < $@ > $(LZ4_DT_IMAGE)
@@ -49,17 +48,9 @@ endif
 
 else
 
-$(INSTALLED_DTIMAGE_TARGET) : $(BOARD_KERNEL_PREBUILT_DT) | $(ACP)
+$(BOARD_PREBUILT_DTIMAGE) : $(BOARD_KERNEL_PREBUILT_DT) | $(ACP)
 	$(transform-prebuilt-to-target)
 
 endif # BOARD_KERNEL_PREBUILT_DT
-
-ALL_DEFAULT_INSTALLED_MODULES += $(INSTALLED_DTIMAGE_TARGET)
-ALL_MODULES.$(LOCAL_MODULE).INSTALLED += $(INSTALLED_DTIMAGE_TARGET)
-
-.PHONY: dtimage
-dtimage: $(INSTALLED_DTIMAGE_TARGET)
-
-
-endif
-endif
+endif # BOARD_KERNEL_SEPARATED_DT
+endif # BOARD_CUSTOM_BOOTIMG_MK
