@@ -209,6 +209,12 @@ define make-kernel-target
 $(call internal-make-kernel-target,$(KERNEL_OUT),$(1))
 endef
 
+# Make a DTB targets
+# $(1): The DTB target to build (eg. dtbs, defconfig)
+define make-dtb-target
+$(call internal-make-kernel-target,$(PRODUCT_OUT)/dtb,$(1))
+endef
+
 # Make a DTBO target
 # $(1): The DTBO target to build (eg. dtbo.img, defconfig)
 define make-dtbo-target
@@ -283,6 +289,7 @@ $(BOARD_PREBUILT_DTBOIMAGE):
 	$(call make-dtbo-target,dtbo.img)
 endif # TARGET_NEEDS_DTBOIMAGE
 
+ifeq ($(BOARD_KERNEL_SEPARATED_DTB),)
 ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
 ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
 $(INSTALLED_DTBIMAGE_TARGET):
@@ -292,6 +299,7 @@ $(INSTALLED_DTBIMAGE_TARGET):
 	cat $(shell find $(DTBS_OUT)/arch/$(KERNEL_ARCH)/boot/dts/** -type f -name "*.dtb" | sort) > $@
 endif
 endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
+endif # BOARD_KERNEL_SEPARATED_DTB
 
 endif # FULL_KERNEL_BUILD
 
@@ -308,6 +316,11 @@ endif
 
 INSTALLED_DTBOIMAGE_TARGET := $(PRODUCT_OUT)/dtbo.img
 ALL_PREBUILT += $(INSTALLED_DTBOIMAGE_TARGET)
+
+ifeq ($(BOARD_KERNEL_SEPARATED_DTB),true)
+INSTALLED_DTBIMAGE_TARGET := $(PRODUCT_OUT)/dtb.img
+ALL_PREBUILT += $(INSTALLED_DTBIMAGE_TARGET)
+endif
 
 .PHONY: kernel
 kernel: $(INSTALLED_KERNEL_TARGET)
