@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1bbf4821_d02e36ab",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-03-05T11:16:45Z",
+      "side": 1,
+      "message": "I\u0027d rather use wait-for-device since it also works with Google\u0027s ADB\nBut that\u0027s for another CL",
+      "range": {
+        "startLine": 103,
+        "startChar": 8,
+        "endLine": 103,
+        "endChar": 27
+      },
+      "revId": "b0567f7cc7426be92c8250dd8b7998834f9f8548",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
