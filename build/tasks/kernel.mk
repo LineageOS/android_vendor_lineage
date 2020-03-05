@@ -301,6 +301,16 @@ $(file) : $(KERNEL_BIN) | $(ACP)
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 endif
 
+ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
+ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
+$(INSTALLED_DTBIMAGE_TARGET):
+	echo -e ${CL_GRN}"Building DTBs"${CL_RST}
+	$(call make-bootimg-dtb-target,$(KERNEL_DEFCONFIG))
+	$(call make-bootimg-dtb-target,dtbs)
+	cat $(shell find $(DTBS_OUT)/arch/$(KERNEL_ARCH)/boot/dts/** -type f -name "*.dtb" | sort) > $@
+endif
+endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
+
 INSTALLED_DTBOIMAGE_TARGET := $(PRODUCT_OUT)/dtbo.img
 ALL_PREBUILT += $(INSTALLED_DTBOIMAGE_TARGET)
 
@@ -310,16 +320,7 @@ kernel: $(INSTALLED_KERNEL_TARGET)
 .PHONY: dtboimage
 dtboimage: $(INSTALLED_DTBOIMAGE_TARGET)
 
-ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
-ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
-$(INSTALLED_DTBIMAGE_TARGET):
-	echo -e ${CL_GRN}"Building DTBs"${CL_RST}
-	$(call make-bootimg-dtb-target,$(KERNEL_DEFCONFIG))
-	$(call make-bootimg-dtb-target,dtbs)
-	cat $(shell find $(DTBS_OUT)/arch/$(KERNEL_ARCH)/boot/dts/** -type f -name "*.dtb" | sort) > $@
-endif
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
-endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
 endif # TARGET_NO_KERNEL
