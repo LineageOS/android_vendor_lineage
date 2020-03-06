@@ -94,6 +94,30 @@
       "revId": "17c52b6e0db78aaedd310236d479d23683641dbd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "863e4fa7_285fabda",
+        "filename": "build/soong/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2020-03-06T02:57:19Z",
+      "side": 1,
+      "message": "because it\u0027s not used since the beginning",
+      "parentUuid": "a629ef97_a9001e37",
+      "range": {
+        "startLine": 33,
+        "startChar": 42,
+        "endLine": 33,
+        "endChar": 73
+      },
+      "revId": "17c52b6e0db78aaedd310236d479d23683641dbd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
