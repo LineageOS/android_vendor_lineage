@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.config.ringtone=Orion.ogg
 
+# Provisioning
+PRODUCT_DEFAULT_PROPERTIES += \
+    DEVICE_PROVISIONED=1
+
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
