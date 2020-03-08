@@ -123,6 +123,7 @@ PRODUCT_PACKAGES += \
 
 # AOSP packages
 PRODUCT_PACKAGES += \
+    Email \
     ExactCalculator \
     Exchange2 \
     Terminal
