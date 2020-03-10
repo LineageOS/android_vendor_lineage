@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7041df65_9c393c4d",
+        "filename": "build/tools/extract_utils.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 1205,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2020-03-10T07:20:03Z",
+      "side": 1,
+      "message": "Aren\u0027t you missing the $s ?",
+      "revId": "4a2b65fb60af23b6beccd8c405fc7cea90b9474d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
