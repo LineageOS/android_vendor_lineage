@@ -100,7 +100,7 @@ function eat()
             return 1
         fi
         echo "Waiting for device..."
-        adb wait-for-online
+        adb wait-for-device-recovery
         echo "Found device"
         if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD"); then
             echo "Rebooting to sideload for install"
@@ -364,9 +364,9 @@ function installboot()
             return 1
         fi
     fi
-    adb wait-for-online
+    adb wait-for-device-recovery
     adb root
-    adb wait-for-online
+    adb wait-for-device-recovery
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/boot.img /cache/
@@ -402,9 +402,9 @@ function installrecovery()
             return 1
         fi
     fi
-    adb wait-for-online
+    adb wait-for-device-recovery
     adb root
-    adb wait-for-online
+    adb wait-for-device-recovery
     if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/recovery.img /cache/
@@ -804,7 +804,6 @@ function dopush()
         adb connect "$TCPIPPORT"
     fi
     adb wait-for-device &> /dev/null
-    sleep 0.3
     adb remount &> /dev/null
 
     mkdir -p $OUT
