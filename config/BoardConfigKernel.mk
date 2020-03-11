@@ -128,7 +128,8 @@ endif
 TOOLS_PATH_OVERRIDE := \
     PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_OS)-x86/bin:$$PATH \
     LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_OS)-x86/lib:$$LD_LIBRARY_PATH \
-    PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
+    PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base \
+    BISON_PKGDATADIR=$(BUILD_TOP)/prebuilts/tools-lineage/common/bison
 
 # Set DTBO image locations so the build system knows to build them
 ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
