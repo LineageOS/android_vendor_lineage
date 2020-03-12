@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "85c57ec7_53c3f797",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2020-03-12T05:04:24Z",
+      "side": 1,
+      "message": "should be ro.apex.updatable",
+      "range": {
+        "startLine": 31,
+        "startChar": 30,
+        "endLine": 31,
+        "endChar": 47
+      },
+      "revId": "cf21f694983cc6d0989b7120fe4cd4439304e6fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
