@@ -1,8 +1,3 @@
-# APEX
-ifneq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
-    TARGET_FLATTEN_APEX := true
-endif
-
 # Charger
 ifeq ($(WITH_LINEAGE_CHARGER),true)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.lineage
