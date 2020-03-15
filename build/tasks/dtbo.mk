@@ -12,6 +12,7 @@ possible_dtbo_dirs = $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts $(KERNEL_OUT)/ar
 
 define build-dtboimage-target
     $(call pretty,"Target dtbo image: $(BOARD_PREBUILT_DTBOIMAGE)")
+ifeq ($(BOARD_CUSTOM_DTBOIMG_CFG),)
     $(hide) for dir in $(possible_dtbo_dirs); do \
                 if [ -d "$$dir" ]; then \
                     dtbo_dir="$$dir"; \
@@ -19,6 +20,9 @@ define build-dtboimage-target
                 fi; \
             done; \
             $(MKDTIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $$(find "$$dtbo_dir" -type f -name '*.dtbo' | sort)
+else
+    $(MKDTIMG) cfg_create $@ $(KERNEL_OUT)/$(BOARD_CUSTOM_DTBOIMG_CFG)
+endif # BOARD_CUSTOM_DTBOIMG_CFG
     $(hide) chmod a+r $@
 endef
 
