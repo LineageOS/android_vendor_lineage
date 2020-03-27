@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "81789677_bc4c1587",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-03-27T21:31:19Z",
+      "side": 1,
+      "message": "remove, mmp is the go-to",
+      "revId": "02e75d144b4feaa3fa4d0dbbea68428a244f6340",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b95e5fb_e15f4a58",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 910,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-03-27T21:31:19Z",
+      "side": 1,
+      "message": "nope, this makes a full build and push it\nadb sync does it better",
+      "revId": "02e75d144b4feaa3fa4d0dbbea68428a244f6340",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
