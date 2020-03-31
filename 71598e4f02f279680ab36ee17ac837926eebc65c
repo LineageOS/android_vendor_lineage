@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "9fddf932_3e1f8923",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-31T00:54:20Z",
+      "side": 0,
+      "message": "Putting back for now to get the bt pairing wizard back. Will readdress once we figure out how to access pairing for the gms path.",
+      "parentUuid": "06c7958f_d6852d85",
+      "range": {
+        "startLine": 149,
+        "startChar": 4,
+        "endLine": 149,
+        "endChar": 22
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a5374811_4b286348",
         "filename": "config/common.mk",
         "patchSetId": 1
@@ -117,6 +141,30 @@
       "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67f50de8_601367e4",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-31T00:54:20Z",
+      "side": 0,
+      "message": "It\u0027s still a tablet interface. I don\u0027t want to leave any tablet interface apps by default. If a user wants to load something like this up afterwards, that\u0027s their choice.",
+      "parentUuid": "52b112fc_09d8d2ee",
+      "range": {
+        "startLine": 150,
+        "startChar": 4,
+        "endLine": 150,
+        "endChar": 10
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -191,6 +239,30 @@
     },
     {
       "key": {
+        "uuid": "28ef3814_06ec0d0e",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-31T00:54:20Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "f9981b84_9394f032",
+      "range": {
+        "startLine": 153,
+        "startChar": 4,
+        "endLine": 153,
+        "endChar": 13
+      },
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "919d561e_8e9ff4f3",
         "filename": "config/common.mk",
         "patchSetId": 1
@@ -241,6 +313,24 @@
       "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5d7b0da_a3a18bb6",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2020-03-31T00:54:20Z",
+      "side": 0,
+      "message": "I\u0027ll move it back to common for now. I still think we should support the real google repos and not some internal custom layout that only a small handful of people will have access to, though.",
+      "parentUuid": "bec3e466_a47ac1ef",
+      "revId": "71598e4f02f279680ab36ee17ac837926eebc65c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
