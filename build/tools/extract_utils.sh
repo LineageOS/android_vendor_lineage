@@ -281,7 +281,7 @@ function write_product_copy_files() {
             printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_PRODUCT)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         elif prefix_match_file "system/product/" $TARGET ; then
-            local OUTTARGET=$(truncate_file $TARGET)
+            local OUTTARGET=$(truncate_file $(truncate_file $TARGET))
             printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_PRODUCT)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         elif prefix_match_file "odm/" $TARGET ; then
@@ -289,11 +289,11 @@ function write_product_copy_files() {
             printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         elif prefix_match_file "vendor/odm/" $TARGET ; then
-            local OUTTARGET=$(truncate_file $TARGET)
+            local OUTTARGET=$(truncate_file $(truncate_file $TARGET))
             printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         elif prefix_match_file "system/vendor/odm/" $TARGET ; then
-            local OUTTARGET=$(truncate_file $TARGET)
+            local OUTTARGET=$(truncate_file $(truncate_file $(truncate_file $TARGET)))
             printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         elif prefix_match_file "vendor/" $TARGET ; then
@@ -301,7 +301,7 @@ function write_product_copy_files() {
             printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_VENDOR)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         elif prefix_match_file "system/vendor/" $TARGET ; then
-            local OUTTARGET=$(truncate_file $TARGET)
+            local OUTTARGET=$(truncate_file $(truncate_file $TARGET))
             printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_VENDOR)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         elif prefix_match_file "system/" $TARGET ; then
