@@ -32,6 +32,9 @@ type Product_variables struct {
 	Target_shim_libs struct {
 		Cppflags []string
 	}
+	Target_ignores_ftp_pptp_conntrack_failure struct {
+		Cppflags []string
+	}
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
@@ -83,6 +86,7 @@ type ProductVariables struct {
 	Supports_legacy_hw_fde  *bool `json:",omitempty"`
 	Target_process_sdk_version_override *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
+	Target_ignores_ftp_pptp_conntrack_failure  *bool `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Uses_metadata_as_fde_key  *bool `json:",omitempty"`
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
