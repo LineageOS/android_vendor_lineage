@@ -22,3 +22,9 @@ NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
 # 1) Allowing a vendor remote service to run
 # 2) Routing Beyonder calls
 NV_ANDROID_BEYONDER_ENHANCEMENTS := true
+
+# Nvidia ShieldTech enhancements
+# Includes support for:
+# 1) NvAcessories (bluetooth only)
+# 2) Enhanced Input Device Filtering
+NV_ANDROID_SHIELDTECH_ENHANCEMENTS := true
