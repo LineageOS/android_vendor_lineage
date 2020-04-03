@@ -1,6 +1,5 @@
 # Permissions for lineage sdk services
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/org.lineageos.audio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.audio.xml \
     vendor/lineage/config/permissions/org.lineageos.hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.hardware.xml \
     vendor/lineage/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.livedisplay.xml \
     vendor/lineage/config/permissions/org.lineageos.performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.performance.xml \
@@ -14,10 +13,6 @@ PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
     org.lineageos.platform \
     org.lineageos.platform.xml
-
-# JNI Libraries
-PRODUCT_PACKAGES += \
-    liblineage-sdk_platform_jni
 
 ifndef LINEAGE_PLATFORM_SDK_VERSION
   # This is the canonical definition of the SDK version, which defines
