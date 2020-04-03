@@ -16,3 +16,9 @@
 # Includes support for:
 # 1) NvCPL / Application Profiles
 NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
+
+# Nvidia ShieldTech enhancements
+# Includes support for:
+# 1) NvAcessories (bluetooth only)
+# 2) Enhanced Input Device Filtering
+NV_ANDROID_SHIELDTECH_ENHANCEMENTS := true
