@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "02036154_6197d134",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-04-03T20:26:50Z",
+      "side": 1,
+      "message": "I know it\u0027s weird to see it empty but:\nDefault value will likely change by default in R\nHaving a random KERNEL_LD field in a make command without being able to grep for it would make me mad",
+      "revId": "c5977a3e002b7d3d2f42aed1f618fd25ef7f6d9b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
