@@ -19,3 +19,14 @@ include vendor/lineage/build/target/product/lineage_generic_target.mk
 TARGET_NO_KERNEL_OVERRIDE := true
 
 PRODUCT_NAME := lineage_arm64_ab
+
+# Baseline Nvidia framework enhancements
+# Includes support for:
+# 1) NvCPL / Application Profiles
+NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
+
+# Nvidia ShieldTech enhancements
+# Includes support for:
+# 1) NvAcessories (bluetooth only)
+# 2) Enhanced Input Device Filtering
+NV_ANDROID_SHIELDTECH_ENHANCEMENTS := true
