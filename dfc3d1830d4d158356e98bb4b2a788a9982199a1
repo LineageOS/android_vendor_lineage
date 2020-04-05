@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fb3c0fd5_8be98d26",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 25789
+      },
+      "writtenOn": "2020-04-05T16:46:03Z",
+      "side": 1,
+      "message": "dollar sign must be escaped in sed like this \\$$\notherwise my local build cannot find perl modules since last variable in TOOLS_PATH_OVERRIDE ends up with dollar sign appended: PERL5LIB\u003d/buildroot/prebuilts/tools-lineage/common/perl-base$\n\nShould be\n\nPATH_OVERRIDE_SOONG :\u003d $(shell echo $(TOOLS_PATH_OVERRIDE) | sed -e \u0027s|\\$$|\\$$\\$$|g\u0027)",
+      "revId": "dfc3d1830d4d158356e98bb4b2a788a9982199a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
