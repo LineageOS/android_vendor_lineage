@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "4907721f_506a7845",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2020-04-07T14:43:09Z",
+      "side": 1,
+      "message": "specifying :P",
+      "range": {
+        "startLine": 7,
+        "startChar": 14,
+        "endLine": 7,
+        "endChar": 24
+      },
+      "revId": "c5977a3e002b7d3d2f42aed1f618fd25ef7f6d9b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "02036154_6197d134",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 2
