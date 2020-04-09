@@ -22,6 +22,30 @@
       "revId": "cd3f5f0d593375da0913ac17b4bbe8bd968d6834",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7414695c_70817057",
+        "filename": "build/core/config.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2020-04-09T01:34:02Z",
+      "side": 1,
+      "message": "maybe in config/common.mk?",
+      "parentUuid": "cf9c6b4c_242e09d9",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 23
+      },
+      "revId": "cd3f5f0d593375da0913ac17b4bbe8bd968d6834",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
