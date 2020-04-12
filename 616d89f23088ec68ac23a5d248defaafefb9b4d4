@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "187e479d_3afa0ff3",
+        "filename": "build/tasks/dtb.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2020-04-12T18:32:25Z",
+      "side": 1,
+      "message": "$(INSTALLED_DTBIMAGE_TARGET) instead",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 26
+      },
+      "revId": "616d89f23088ec68ac23a5d248defaafefb9b4d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6010cc23_837d8e04",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2020-04-12T18:32:25Z",
+      "side": 1,
+      "message": "BOARD_PREBUILT_DTBIMAGE isn\u0027t a thing.",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 49
+      },
+      "revId": "616d89f23088ec68ac23a5d248defaafefb9b4d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
