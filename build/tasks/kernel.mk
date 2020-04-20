@@ -55,11 +55,15 @@
 #                                          modules in root instead of vendor
 #   NEED_KERNEL_MODULE_SYSTEM          = Optional, if true, install kernel
 #                                          modules in system instead of vendor
+#
+#   TARGET_KERNEL_EXT_MODULES          = Paths to external modules, assumed to be
+#                                          under TARGET_KERNEL_SOURCE-modules
 
 ifneq ($(TARGET_NO_KERNEL),true)
 
 ## Externally influenced variables
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
+EXT_MODULES_SRC := $(TARGET_KERNEL_SOURCE)-modules
 # kernel configuration - mandatory
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
 VARIANT_DEFCONFIG := $(TARGET_KERNEL_VARIANT_CONFIG)
@@ -226,6 +230,13 @@ define make-dtb-target
 $(call internal-make-kernel-target,$(DTBS_OUT),$(1))
 endef
 
+# Make a module target
+# $(1): The module path to build (The value passed to M=)
+# $(2): target to build (eg. modules_install)
+define make-module-target
+$(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(EXT_MODULES_SRC)/$(1) M=$(shell realpath --relative-to $(KERNEL_SRC) $(BUILD_TOP)/$(EXT_MODULES_SRC)/$(1)) KERNEL_SRC=$(BUILD_TOP)/$(KERNEL_SRC) O=$(KERNEL_BUILD_OUT_PREFIX)$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(KERNEL_LD) $(2)
+endef
+
 $(KERNEL_OUT):
 	mkdir -p $(KERNEL_OUT)
 
@@ -264,6 +275,16 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD)
 			modules=$$(find $(MODULES_INTERMEDIATES)/lib/modules/$$kernel_release -type f -name '*.ko'); \
 			($(call build-image-kernel-modules,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR))); \
 		fi
+	$(foreach mod,$(TARGET_KERNEL_EXT_MODULES), \
+		echo "Building External Kernel Module ($(mod))"; \
+		echo "realpath: $(shell realpath --relative-to $(KERNEL_SRC) $(BUILD_TOP)/$(EXT_MODULES_SRC)/$(mod))"; \
+		$(call make-module-target,$(mod)) || exit "$$?"; \
+		echo "Installing External Kernel Module ($(mod))"; \
+		$(call make-module-target,$(mod),INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) INSTALL_MOD_STRIP=1 modules_install); \
+		kernel_release=$$(cat $(KERNEL_RELEASE)) \
+		modules=$$(find $(MODULES_INTERMEDIATES)/lib/modules/$$kernel_release -type f -name '*.ko'); \
+		($(call build-image-kernel-modules,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR))); \
+	)
 
 .PHONY: kerneltags
 kerneltags: $(KERNEL_CONFIG)
