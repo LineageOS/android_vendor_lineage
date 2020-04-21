@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "acdcd1f6_b9a11550",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 284,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2020-04-21T13:24:31Z",
+      "side": 1,
+      "message": "realpath: ../coral-modules/wlan/qcacld-3.0 and\nrealpath: ../coral-modules/touch/fts\n\nFor the included examples",
+      "revId": "c9128701398797afcf34aaaa3de15b072211974d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
