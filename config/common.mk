@@ -149,8 +149,6 @@ PRODUCT_PACKAGES += \
 
 # Accents
 PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageDarkTheme \
     LineageBlackAccent \
     LineageBlueAccent \
     LineageBrownAccent \
@@ -161,6 +159,10 @@ PRODUCT_PACKAGES += \
     LineagePurpleAccent \
     LineageRedAccent \
     LineageYellowAccent
+
+# Primaries
+PRODUCT_PACKAGES += \
+    LineageBlackPrimary
 
 # Themes
 PRODUCT_PACKAGES += \
