@@ -39,6 +39,30 @@
       "revId": "faaad69feeae2a7b53bb3dcae81e97fd3f2d9d7f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b6f671c_d2e9a8c9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-04-21T12:44:16Z",
+      "side": 1,
+      "message": "Yes, brotli support in a separate commit.",
+      "parentUuid": "ad230528_210663ea",
+      "range": {
+        "startLine": 9,
+        "startChar": 3,
+        "endLine": 10,
+        "endChar": 39
+      },
+      "revId": "faaad69feeae2a7b53bb3dcae81e97fd3f2d9d7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
