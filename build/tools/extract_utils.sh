@@ -1474,8 +1474,14 @@ function extract() {
             if [ -a "$DUMPDIR"/payload.bin ]; then
                 echo "A/B style OTA zip detected. This is not supported at this time. Stopping..."
                 exit 1
+            fi
             # If OTA is block based, extract it.
-            elif [ -a "$DUMPDIR"/system.new.dat ]; then
+            if [ -a "$DUMPDIR"/system.new.dat.br ]; then
+                echo "Converting system.new.dat.br to system.new.dat"
+                brotli -d "$DUMPDIR"/system.new.dat.br
+                rm "$DUMPDIR"/system.new.dat.br
+            fi
+            if [ -a "$DUMPDIR"/system.new.dat ]; then
                 echo "Converting system.new.dat to system.img"
                 python "$LINEAGE_ROOT"/vendor/lineage/build/tools/sdat2img.py "$DUMPDIR"/system.transfer.list "$DUMPDIR"/system.new.dat "$DUMPDIR"/system.img 2>&1
                 rm -rf "$DUMPDIR"/system.new.dat "$DUMPDIR"/system
