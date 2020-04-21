@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     Updater
 
+# Primaries
+PRODUCT_PACKAGES += \
+    LineageBlackPrimary
+
 # Themes
 PRODUCT_PACKAGES += \
     LineageThemesStub \

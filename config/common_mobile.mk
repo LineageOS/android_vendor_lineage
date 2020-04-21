@@ -33,10 +33,12 @@ PRODUCT_PACKAGES += \
     TrebuchetQuickStep \
     WeatherProvider
 
+# Primaries
+PRODUCT_PACKAGES += \
+    LineageBlackPrimary
+
 # Accents
 PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageDarkTheme \
     LineageBlackAccent \
     LineageBlueAccent \
     LineageBrownAccent \
