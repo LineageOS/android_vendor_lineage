@@ -1470,10 +1470,10 @@ function extract() {
             unzip "$SRC" -d "$DUMPDIR"
             echo "$MD5" > "$DUMPDIR"/zipmd5.txt
 
-            # Stop if an A/B OTA zip is detected. We cannot extract these.
             if [ -a "$DUMPDIR"/payload.bin ]; then
-                echo "A/B style OTA zip detected. This is not supported at this time. Stopping..."
-                exit 1
+                echo "Extracting payload.bin..."
+                python "$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_android_ota_payload.py "$DUMPDIR"/payload.bin "$DUMPDIR" 2>&1
+                rm "$DUMPDIR"/payload.bin
             fi
 
             for PARTITION in "system" "odm" "product" "vendor"
@@ -1487,6 +1487,10 @@ function extract() {
                     echo "Converting "$PARTITION".new.dat to "$PARTITION".img"
                     python "$LINEAGE_ROOT"/vendor/lineage/build/tools/sdat2img.py "$DUMPDIR"/"$PARTITION".transfer.list "$DUMPDIR"/"$PARTITION".new.dat "$DUMPDIR"/"$PARTITION".img 2>&1
                     rm -rf "$DUMPDIR"/"$PARTITION".new.dat "$DUMPDIR"/"$PARTITION"
+                fi
+
+                # If image exists, extract it.
+                if [ -a "$DUMPDIR"/"$PARTITION".img ]; then
                     mkdir "$DUMPDIR"/"$PARTITION" "$DUMPDIR"/tmp
                     echo "Requesting sudo access to mount the "$PARTITION".img"
                     sudo mount -o loop "$DUMPDIR"/"$PARTITION".img "$DUMPDIR"/tmp
@@ -1495,6 +1499,9 @@ function extract() {
                     rm -rf "$DUMPDIR"/tmp "$DUMPDIR"/"$PARTITION".img
                 fi
             done
+
+            # Clean the rest images extracted from payload.bin
+            rm "$DUMPDIR"/*.img
         fi
 
         SRC="$DUMPDIR"
