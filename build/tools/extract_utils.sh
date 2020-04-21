@@ -1494,7 +1494,7 @@ function extract() {
                 if [ -a "$DUMPDIR"/"$PARTITION".img ]; then
                     mkdir "$DUMPDIR"/"$PARTITION" "$DUMPDIR"/tmp
                     echo "Requesting sudo access to mount the "$PARTITION".img"
-                    sudo mount -o loop "$DUMPDIR"/"$PARTITION".img "$DUMPDIR"/tmp
+                    sudo mount -o ro,loop "$DUMPDIR"/"$PARTITION".img "$DUMPDIR"/tmp
                     cp -r "$DUMPDIR"/tmp/* "$DUMPDIR"/"$PARTITION"/
                     sudo umount "$DUMPDIR"/tmp
                     rm -rf "$DUMPDIR"/tmp "$DUMPDIR"/"$PARTITION".img
