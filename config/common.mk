@@ -129,7 +129,34 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
+<<<<<<< HEAD
     Updater
+=======
+    Eleven \
+    Jelly \
+    LockClock \
+    Profiles \
+    TrebuchetQuickStep \
+    Updater \
+    WeatherProvider
+
+# Accents
+PRODUCT_PACKAGES += \
+    LineageBlackAccent \
+    LineageBlueAccent \
+    LineageBrownAccent \
+    LineageCyanAccent \
+    LineageGreenAccent \
+    LineageOrangeAccent \
+    LineagePinkAccent \
+    LineagePurpleAccent \
+    LineageRedAccent \
+    LineageYellowAccent
+>>>>>>> 78963019... lineage: build black primary theme
+
+# Primaries
+PRODUCT_PACKAGES += \
+    LineageBlackPrimary
 
 # Themes
 PRODUCT_PACKAGES += \
