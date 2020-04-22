@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f71a1567_8c911088",
+        "filename": "build/soong/android/variable.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-04-22T18:58:37Z",
+      "side": 1,
+      "message": "^^^^^^^",
+      "revId": "e540e08ca0349cfbf7443cbbc1dd4f3866611228",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
