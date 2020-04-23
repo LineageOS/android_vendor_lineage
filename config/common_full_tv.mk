@@ -3,6 +3,7 @@ $(call inherit-product, vendor/lineage/config/common_full.mk)
 
 PRODUCT_PACKAGES += \
     AppDrawer \
+    LeanbackIme \
     LineageCustomizer
 
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
