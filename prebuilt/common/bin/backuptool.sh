@@ -130,12 +130,12 @@ case "$1" in
             unmount_system
             exit 127
         fi
+        check_blacklist system
+        preserve_addon_d
+        run_stage pre-backup
+        run_stage backup
+        run_stage post-backup
     fi
-    check_blacklist system
-    preserve_addon_d
-    run_stage pre-backup
-    run_stage backup
-    run_stage post-backup
     unmount_system
   ;;
   restore)
@@ -145,14 +145,14 @@ case "$1" in
             unmount_system
             exit 127
         fi
+        check_blacklist tmp
+        run_stage pre-restore
+        run_stage restore
+        run_stage post-restore
+        restore_addon_d
+        rm -rf $C
+        sync
     fi
-    check_blacklist tmp
-    run_stage pre-restore
-    run_stage restore
-    run_stage post-restore
-    restore_addon_d
-    rm -rf $C
-    sync
     unmount_system
   ;;
   *)
