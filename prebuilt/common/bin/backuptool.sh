@@ -47,13 +47,13 @@ restore_addon_d() {
 check_prereq() {
 # If there is no build.prop file the partition is probably empty.
 if [ ! -r $S/build.prop ]; then
-    return 0
+    return 1
 fi
 if ! grep -q "^ro.lineage.version=$V.*" $S/build.prop; then
   echo "Not backing up files from incompatible version: $V"
-  return 0
+  return 2
 fi
-return 1
+return 0
 }
 
 check_blacklist() {
@@ -124,18 +124,18 @@ determine_system_mount
 case "$1" in
   backup)
     mount_system
-    mkdir -p $C
     if check_prereq; then
         if check_whitelist system; then
             unmount_system
             exit 127
         fi
+        mkdir -p $C
+        check_blacklist system
+        preserve_addon_d
+        run_stage pre-backup
+        run_stage backup
+        run_stage post-backup
     fi
-    check_blacklist system
-    preserve_addon_d
-    run_stage pre-backup
-    run_stage backup
-    run_stage post-backup
     unmount_system
   ;;
   restore)
@@ -145,14 +145,14 @@ case "$1" in
             unmount_system
             exit 127
         fi
+        check_blacklist tmp
+        run_stage pre-restore
+        run_stage restore
+        run_stage post-restore
+        restore_addon_d
+        rm -rf $C
+        sync
     fi
-    check_blacklist tmp
-    run_stage pre-restore
-    run_stage restore
-    run_stage post-restore
-    restore_addon_d
-    rm -rf $C
-    sync
     unmount_system
   ;;
   *)
