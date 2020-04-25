@@ -368,6 +368,7 @@ function write_blueprint_packages() {
             SRC+="/odm"
         fi
 
+        printf '\n'
         if [ "$CLASS" = "SHARED_LIBRARIES" ]; then
             printf 'cc_prebuilt_library_shared {\n'
             printf '\tname: "%s",\n' "$PKGNAME"
@@ -474,7 +475,7 @@ function write_blueprint_packages() {
         elif [ "$PARTITION" = "odm" ]; then
             printf '\tdevice_specific: true,\n'
         fi
-        printf '}\n\n'
+        printf '}\n'
     done
 }
 
@@ -1007,7 +1008,6 @@ EOF
     cat << EOF >> "$ANDROIDBP"
 soong_namespace {
 }
-
 EOF
 
     [ "$COMMON" -eq 1 ] && local DEVICE="$DEVICE_COMMON"
