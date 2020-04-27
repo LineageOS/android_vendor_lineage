@@ -17,7 +17,7 @@
 
     <privapp-permissions package="com.android.camera2">
         <permission name="android.permission.BIND_WALLPAPER"/>
-        <permission name="android.permission.PREVENT_POWER_KEY"/>
+        <permission name="lineage.permission.PREVENT_POWER_KEY"/>
     </privapp-permissions>
 
     <!-- Additional permissions on top of privapp-permissions-platform.xml -->
