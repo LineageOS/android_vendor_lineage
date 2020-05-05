@@ -362,10 +362,10 @@ if __name__ == '__main__':
         #   - check that the project path exists
         project_path = None
 
-        if item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
-            project_path = project_name_to_data[item['project']][item['branch']]
-        elif args.path:
+        if args.path:
             project_path = args.path
+        elif item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
+            project_path = project_name_to_data[item['project']][item['branch']]
         elif item['project'] in project_name_to_data and len(project_name_to_data[item['project']]) == 1:
             local_branch = list(project_name_to_data[item['project']])[0]
             project_path = project_name_to_data[item['project']][local_branch]
@@ -422,7 +422,8 @@ if __name__ == '__main__':
             method = 'ssh'
 
         # Try fetching from GitHub first if using default gerrit
-        if args.gerrit == default_gerrit:
+        # and project path is not overridden by command-line switch
+        if args.gerrit == default_gerrit and not args.path:
             if args.verbose:
                 print('Trying to fetch the change from GitHub')
 
@@ -440,7 +441,7 @@ if __name__ == '__main__':
                 print('ERROR: git command failed')
                 sys.exit(result)
         # Check if it worked
-        if args.gerrit != default_gerrit or os.stat(FETCH_HEAD).st_size == 0:
+        if args.gerrit != default_gerrit or args.path or os.stat(FETCH_HEAD).st_size == 0:
             # If not using the default gerrit or github failed, fetch from gerrit.
             if args.verbose:
                 if args.gerrit == default_gerrit:
