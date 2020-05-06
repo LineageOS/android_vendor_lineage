@@ -49,11 +49,6 @@
         <permission name="android.permission.MANAGE_USERS"/>
     </privapp-permissions>
 
-    <privapp-permissions package="org.lineageos.recorder">
-        <permission name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"/>
-        <permission name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
-    </privapp-permissions>
-
     <privapp-permissions package="org.lineageos.setupwizard">
         <permission name="android.permission.BACKUP"/>
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
