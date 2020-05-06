@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Backgrounds \
     Eleven \
+    Etar \
     Jelly \
     LockClock \
     Profiles \
