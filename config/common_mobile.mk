@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
     LineageRedAccent \
     LineageYellowAccent
 
+# Etar
+PRODUCT_PACKAGES += \
+    Etar
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
