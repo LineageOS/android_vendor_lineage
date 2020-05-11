@@ -86,5 +86,8 @@ else
     QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
 endif
 
+# Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
+ifneq ($(OVERRIDE_PRODUCT_SOONG_NAMESPACES),true)
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)
+endif
