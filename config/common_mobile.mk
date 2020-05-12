@@ -1,6 +1,9 @@
 # Inherit common mobile Lineage stuff
 $(call inherit-product, vendor/lineage/config/common.mk)
 
+# Include Lato fonts
+$(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
+
 # Default notification/alarm sounds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.config.notification_sound=Argon.ogg \
@@ -59,6 +62,11 @@ PRODUCT_PACKAGES += \
     font_log.png \
     libhealthd.lineage
 endif
+
+# Fonts
+PRODUCT_PACKAGES += \
+    fonts_customization.xml \
+    LineageLatoFont
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
