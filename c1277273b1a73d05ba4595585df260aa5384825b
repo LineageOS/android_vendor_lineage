@@ -16,6 +16,24 @@
       "revId": "c1277273b1a73d05ba4595585df260aa5384825b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58eb2983_540af780",
+        "filename": "config/common_mobile.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-05-13T14:11:25Z",
+      "side": 1,
+      "message": "ehhhhhhhhhh assuming +5M is something we should worry about...",
+      "parentUuid": "58ebcccb_9dd05d49",
+      "revId": "c1277273b1a73d05ba4595585df260aa5384825b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
