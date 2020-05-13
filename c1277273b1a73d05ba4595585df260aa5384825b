@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "58ebcccb_9dd05d49",
+        "filename": "config/common_mobile.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-05-13T10:54:39Z",
+      "side": 1,
+      "message": "Devices inheriting from mini already struggle to fit gapps into system partition. I am not sure about the size increase coming from these inclusions, but I\u0027d rather move this to common_full.mk.",
+      "revId": "c1277273b1a73d05ba4595585df260aa5384825b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
