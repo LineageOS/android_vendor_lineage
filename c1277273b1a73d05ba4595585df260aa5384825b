@@ -34,6 +34,24 @@
       "revId": "c1277273b1a73d05ba4595585df260aa5384825b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "51d470bf_4048b025",
+        "filename": "config/common_mobile.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-05-13T23:52:33Z",
+      "side": 1,
+      "message": "We should, considering that: https://github.com/LineageOS/android_vendor_lineage/blob/lineage-17.1/config/common_full.mk#L8",
+      "parentUuid": "58eb2983_540af780",
+      "revId": "c1277273b1a73d05ba4595585df260aa5384825b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
