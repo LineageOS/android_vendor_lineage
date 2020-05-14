@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3abf3a20_882704e9",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-05-14T16:21:49Z",
+      "side": 1,
+      "message": "What about\nQCOM_SOONG_NAMESPACE ?\u003d hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)\nand then use the variable in the path selection\nthis way device can override it",
+      "revId": "cf03bf631202ea07483956eda43042cefcbd462b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
