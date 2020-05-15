@@ -203,7 +203,7 @@ PATH_OVERRIDE += $(TOOLS_PATH_OVERRIDE)
 
 KERNEL_ADDITIONAL_CONFIG_OUT := $(KERNEL_OUT)/.additional_config
 
-KERNEL_MAKE_FLAGS += DTC=$(DTC)
+KERNEL_MAKE_FLAGS += DTC=$(KERNEL_BUILD_OUT_PREFIX)$(DTC)
 
 # Internal implementation of make-kernel-target
 # $(1): output path (The value passed to O=)
