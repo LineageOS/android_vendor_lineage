@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -1613,13 +1613,7 @@ function extract() {
         local POST_FIXUP_HASH=$(get_hash ${VENDOR_REPO_FILE})
 
         if [ -f "${VENDOR_REPO_FILE}" ]; then
-            local DIR=$(dirname "${VENDOR_REPO_FILE}")
-            local TYPE="${DIR##*/}"
-            if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
-                chmod 755 "${VENDOR_REPO_FILE}"
-            else
-                chmod 644 "${VENDOR_REPO_FILE}"
-            fi
+            chmod 644 "${VENDOR_REPO_FILE}"
         fi
 
         if [ "${KANG}" =  true ]; then
