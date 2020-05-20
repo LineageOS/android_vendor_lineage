@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "f76b5ea2_4fbc6d86",
+        "filename": "build/tasks/dtb.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2320
+      },
+      "writtenOn": "2020-05-20T08:59:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "187e479d_3afa0ff3",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 26
+      },
+      "revId": "616d89f23088ec68ac23a5d248defaafefb9b4d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6010cc23_837d8e04",
         "filename": "config/BoardConfigKernel.mk",
         "patchSetId": 3
@@ -45,6 +69,30 @@
       "revId": "616d89f23088ec68ac23a5d248defaafefb9b4d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b1b5b5ff_3e081c28",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 2320
+      },
+      "writtenOn": "2020-05-20T08:59:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6010cc23_837d8e04",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 49
+      },
+      "revId": "616d89f23088ec68ac23a5d248defaafefb9b4d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
