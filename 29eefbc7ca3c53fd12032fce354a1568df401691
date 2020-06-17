@@ -22,6 +22,30 @@
       "revId": "29eefbc7ca3c53fd12032fce354a1568df401691",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cad9dea8_17a44ea0",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 887,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2020-06-17T16:29:55Z",
+      "side": 1,
+      "message": "Could do the same for framework too,\n*/framework/* perhaps",
+      "parentUuid": "234f837f_5d0bb081",
+      "range": {
+        "startLine": 887,
+        "startChar": 12,
+        "endLine": 887,
+        "endChar": 58
+      },
+      "revId": "29eefbc7ca3c53fd12032fce354a1568df401691",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
