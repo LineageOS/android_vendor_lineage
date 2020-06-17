@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "234f837f_5d0bb081",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 887,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-06-17T16:24:08Z",
+      "side": 1,
+      "message": "*/SystemUI.apk\nOn devices with /product it\u0027ll be /product/SystemUI.apk\nAnd starting with R it moved to /system_ext/ so make it generic",
+      "range": {
+        "startLine": 887,
+        "startChar": 12,
+        "endLine": 887,
+        "endChar": 58
+      },
+      "revId": "29eefbc7ca3c53fd12032fce354a1568df401691",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
