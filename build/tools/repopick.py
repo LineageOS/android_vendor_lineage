@@ -253,6 +253,8 @@ if __name__ == '__main__':
         name = project.get('name')
         path = project.get('path')
         revision = project.get('revision')
+        if path is None:
+            path = name
         if revision is None:
             for remote in remotes:
                 if remote.get('name') == project.get('remote'):
