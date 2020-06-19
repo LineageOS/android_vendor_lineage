@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8c11be6d_5356e317",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "see below about returning what you\u0027re checking for",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "05b025e3_b12df3d8",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "see below about returning what you\u0027re checking for",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df1c7dab_4641bbd4",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "see below about returning what you\u0027re checking for",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a6c336b_bf4adb76",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "You could avoid repeating yourself and do something like\n\nshasum_prog \u003d \u0027sha1sum\u0027 if platform \u003d\u003d \u0027darwin\u0027 else \u0027shasum\u0027\n\nthen plug shasum_prog into subprocess",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f566e4c6_896ff90f",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "Just return this like:\n`return str(file).startswith(prefix)\n\ninstead of wrapping in if",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24f0032a_3bf5ca0a",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2eeb03cc_0975ef23",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "This doesn\u0027t return \"\" on failure, it returns None",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d97aa471_0735aa55",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-19T17:03:25Z",
+      "side": 1,
+      "message": "You don\u0027t use count, and this loop will run really fast, you might be better adding a sleep here or doing something like `adb wait-for-device`",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
