@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "a5845b5b_75c49d67",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Changed",
+      "parentUuid": "4f371880_81e74b6b",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 46
+      },
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ee92cedf_6de8f8b0",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 1
@@ -60,6 +84,30 @@
       "writtenOn": "2020-06-20T00:03:08Z",
       "side": 1,
       "message": "Is there any good reason to grant copyrights back to 2016 and to CyanogenMod at all -- is this based on prior copyrighted work?",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 47
+      },
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "484008d6_37a15a30",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Removed, I had copy-pasted it before uploading",
+      "parentUuid": "ee92cedf_6de8f8b0",
       "range": {
         "startLine": 2,
         "startChar": 0,
@@ -140,6 +188,24 @@
     },
     {
       "key": {
+        "uuid": "55a330b9_0428065e",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a6c336b_bf4adb76",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f566e4c6_896ff90f",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 1
@@ -154,6 +220,24 @@
       "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "baee2490_f26d6b75",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f566e4c6_896ff90f",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -174,6 +258,24 @@
     },
     {
       "key": {
+        "uuid": "2bd6abb5_3ff78656",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "24f0032a_3bf5ca0a",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2eeb03cc_0975ef23",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 1
@@ -191,6 +293,24 @@
     },
     {
       "key": {
+        "uuid": "49ee48f2_91baa3c3",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Fixed",
+      "parentUuid": "2eeb03cc_0975ef23",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "32b70c67_fe9acde3",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 1
@@ -205,6 +325,24 @@
       "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9177a02e_f723111c",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32b70c67_fe9acde3",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -231,6 +369,30 @@
     },
     {
       "key": {
+        "uuid": "87284bd2_f52c8121",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Nope, it\u0027s fine. That match is just a coincidence. Aim is to keep functions in this class which are dependent on 1st class.",
+      "parentUuid": "77e9f87e_bf2e0ae3",
+      "range": {
+        "startLine": 145,
+        "startChar": 6,
+        "endLine": 145,
+        "endChar": 16
+      },
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d97aa471_0735aa55",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 1
@@ -245,6 +407,24 @@
       "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "debd7a2a_099486e7",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-20T14:30:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d97aa471_0735aa55",
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
