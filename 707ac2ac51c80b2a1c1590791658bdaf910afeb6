@@ -208,6 +208,29 @@
     },
     {
       "key": {
+        "uuid": "77e9f87e_bf2e0ae3",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-06-20T12:55:51Z",
+      "side": 1,
+      "message": "missed the \"b\" and hit the \"v\"? should be \"AdbHelpers\", right?",
+      "range": {
+        "startLine": 145,
+        "startChar": 6,
+        "endLine": 145,
+        "endChar": 16
+      },
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d97aa471_0735aa55",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 1
