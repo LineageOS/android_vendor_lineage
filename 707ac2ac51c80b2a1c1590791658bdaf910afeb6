@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "1fde57af_9a6f5490",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2020-06-20T00:03:08Z",
+      "side": 1,
+      "message": "This doesn\u0027t convert (and I would -2 immediately if it dropped legacy extract utils mid-branch), it adds a py3 extract utils.",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 46
+      },
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ee92cedf_6de8f8b0",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2020-06-20T00:03:08Z",
+      "side": 1,
+      "message": "Is there any good reason to grant copyrights back to 2016 and to CyanogenMod at all -- is this based on prior copyrighted work?",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 47
+      },
+      "revId": "707ac2ac51c80b2a1c1590791658bdaf910afeb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8c11be6d_5356e317",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 1
