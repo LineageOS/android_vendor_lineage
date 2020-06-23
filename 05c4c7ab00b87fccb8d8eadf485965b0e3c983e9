@@ -70,6 +70,29 @@
     },
     {
       "key": {
+        "uuid": "3b43680e_0c3bff1a",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-06-23T16:13:38Z",
+      "side": 1,
+      "message": "could do the following instead:\n\nreturn spec.split(\u0027;\u0027, 1)[1] if \u0027;\u0027 in spec else \u0027\u0027\n\nbtw: is the inconsistent use of single/double quotes intentional?",
+      "range": {
+        "startLine": 132,
+        "startChar": 0,
+        "endLine": 136,
+        "endChar": 21
+      },
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1e389b16_f954eeea",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 2
@@ -81,6 +104,75 @@
       "writtenOn": "2020-06-23T15:06:43Z",
       "side": 1,
       "message": "why not\n\nPath(file).suffix \u003d\u003d \".mk\"\n\nto avoid partial matches such as a (made-up) file name \"myfile.amkb\"",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a163a71b_abcaa451",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-06-23T16:13:38Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 225,
+        "startChar": 0,
+        "endLine": 225,
+        "endChar": 8
+      },
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5fc84c87_28d61674",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-06-23T16:13:38Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 239,
+        "startChar": 0,
+        "endLine": 239,
+        "endChar": 8
+      },
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6902f6c9_f9c39441",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-06-23T16:13:38Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 241,
+        "startChar": 0,
+        "endLine": 241,
+        "endChar": 8
+      },
       "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
