@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "09ae187a_d38a2f07",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-23T15:06:43Z",
+      "side": 1,
+      "message": "Just do\n\nreturn process.returncode \u003d\u003d 0 and \"device\" in str(output)",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ed0bfacc_84eb25d2",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-23T15:06:43Z",
+      "side": 1,
+      "message": "You don\u0027t need this since you have it open as a contextmanager, it is closed when the `with` statement is finished with",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8b25c740_72542dec",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-23T15:06:43Z",
+      "side": 1,
+      "message": "Just do\n\nreturn process.returncode !\u003d 0",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ded911b2_186859a2",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-23T15:06:43Z",
+      "side": 1,
+      "message": "Just do\n\nreturn process.returncode !\u003d 0",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e389b16_f954eeea",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-23T15:06:43Z",
+      "side": 1,
+      "message": "why not\n\nPath(file).suffix \u003d\u003d \".mk\"\n\nto avoid partial matches such as a (made-up) file name \"myfile.amkb\"",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b669e0c_59740f27",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-06-23T15:06:43Z",
+      "side": 1,
+      "message": "No need for .close(), since you\u0027re using a context manager, see the comment I made for the same thing above",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
