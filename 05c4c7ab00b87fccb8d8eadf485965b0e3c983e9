@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "f0d5c094_43f577c5",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-24T06:05:39Z",
+      "side": 1,
+      "message": "That won\u0027t return a bool value though",
+      "parentUuid": "09ae187a_d38a2f07",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ed0bfacc_84eb25d2",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 2
@@ -33,6 +51,24 @@
       "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ecbda31c_72432e97",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-24T06:05:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ed0bfacc_84eb25d2",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -110,6 +146,24 @@
     },
     {
       "key": {
+        "uuid": "a69049e4_f6970310",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-24T06:05:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1e389b16_f954eeea",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a163a71b_abcaa451",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 2
@@ -130,6 +184,30 @@
       "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9c167b20_9db7d6f8",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-24T06:05:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a163a71b_abcaa451",
+      "range": {
+        "startLine": 225,
+        "startChar": 0,
+        "endLine": 225,
+        "endChar": 8
+      },
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -156,6 +234,30 @@
     },
     {
       "key": {
+        "uuid": "e429e889_31577efa",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-24T06:05:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5fc84c87_28d61674",
+      "range": {
+        "startLine": 239,
+        "startChar": 0,
+        "endLine": 239,
+        "endChar": 8
+      },
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6902f6c9_f9c39441",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 2
@@ -179,6 +281,30 @@
     },
     {
       "key": {
+        "uuid": "fd1a2b50_059db3b7",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-24T06:05:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6902f6c9_f9c39441",
+      "range": {
+        "startLine": 241,
+        "startChar": 0,
+        "endLine": 241,
+        "endChar": 8
+      },
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5b669e0c_59740f27",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 2
@@ -193,6 +319,24 @@
       "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1adbec44_4d4bde2f",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-06-24T06:05:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b669e0c_59740f27",
+      "revId": "05c4c7ab00b87fccb8d8eadf485965b0e3c983e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
