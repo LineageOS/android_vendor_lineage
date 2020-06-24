@@ -4,7 +4,11 @@
 #
 
 export C=/tmp/backupdir
-export SYSDEV="$(readlink -nf "$2")"
+if [ $2 != "system" ]; then
+  export SYSDEV="$(readlink -nf "$2")"
+else
+  export SYSDEV="$(readlink -nf "/dev/block/mapper/system")"
+fi
 export SYSFS="$3"
 export V=17.1
 
