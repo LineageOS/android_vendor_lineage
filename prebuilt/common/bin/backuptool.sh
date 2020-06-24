@@ -69,7 +69,13 @@ determine_system_mount() {
 }
 
 mount_system() {
-  mount -t $SYSFS $SYSDEV $SYSMOUNT -o rw,discard
+  if [ $(getprop ro.boot.dynamic_partitions) == "true" ]; then
+    mount -t $SYSFS $SYSDEV $SYSMOUNT -o ro,discard
+    blockdev --setrw $SYSDEV
+    mount -t $SYSFS $SYSDEV $SYSMOUNT -o rw,remount
+  else
+    mount -t $SYSFS $SYSDEV $SYSMOUNT -o rw,discard
+  fi
 }
 
 unmount_system() {
