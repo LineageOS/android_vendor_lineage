@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f62eadeb_1f08ec7e",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-06-25T16:11:35Z",
+      "side": 1,
+      "message": "here",
+      "revId": "b70b7c0cffa881f81daa34e06741cc721129eeca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f7a0e589_79b8e90a",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-06-25T16:11:35Z",
+      "side": 1,
+      "message": "here",
+      "revId": "b70b7c0cffa881f81daa34e06741cc721129eeca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}

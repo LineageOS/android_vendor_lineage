@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "505f4636_822d981e",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-06-25T16:11:35Z",
+      "side": 0,
+      "message": "here",
+      "revId": "87467210f3a4508f6bf9ed81fe37476f0c03ad3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
