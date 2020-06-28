@@ -31,6 +31,7 @@ lineage_generator {
 
     // Directories that can be imported by a cc_* module generated_headers property
     export_include_dirs: [
+        "usr/audio/include/uapi",
         "usr/include",
         "usr/include/audio/include/uapi",
         "usr/techpack/audio/include"
