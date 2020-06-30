@@ -253,7 +253,7 @@ if __name__ == '__main__':
         name = project.get('name')
         # when name and path are equal, "repo manifest" doesn't return a path at all, so fall back to name
         path = project.get('path', name)
-        revision = project.get('revision')
+        revision = project.get('upstream')
         if revision is None:
             for remote in remotes:
                 if remote.get('name') == project.get('remote'):
