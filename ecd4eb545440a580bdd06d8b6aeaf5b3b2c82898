@@ -1,0 +1,39 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "73d0fa74_6d9b99be",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-07-02T07:16:31Z",
+      "side": 1,
+      "message": "Personally, I\u0027m not a fan of globals if you can avoid it. Maybe you could make them instance variables and pass them to the class at __init__?\n\nIf you need to store it for the Helpers class too, you could store an instance of the Helpers class in AdvHelpers instance and call that, or pass the relevant variables to Helpers from AdvHelpers",
+      "parentUuid": "",
+      "revId": "ecd4eb545440a580bdd06d8b6aeaf5b3b2c82898",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc9d7e4d_d015eaee",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 418,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2020-07-02T07:16:31Z",
+      "side": 1,
+      "message": "Why not make this method a classmethod, then you can call cls.write_product_copy_files(matter) instead",
+      "revId": "ecd4eb545440a580bdd06d8b6aeaf5b3b2c82898",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
