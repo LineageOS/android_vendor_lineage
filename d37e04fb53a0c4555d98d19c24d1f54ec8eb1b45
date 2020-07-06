@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "37afd309_0b320dbf",
+        "filename": "build/tools/extract_utils.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-07-06T14:52:33Z",
+      "side": 1,
+      "message": "Shouldn\u0027t be set to \"2019\" unconditionally; see INITIAL_COPYRIGHT_YEAR in the old script",
+      "range": {
+        "startLine": 217,
+        "startChar": 22,
+        "endLine": 217,
+        "endChar": 26
+      },
+      "revId": "d37e04fb53a0c4555d98d19c24d1f54ec8eb1b45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
