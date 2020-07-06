@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "96b14aa8_d7031df3",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 18586
+      },
+      "writtenOn": "2020-07-06T20:52:31Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 7,
+        "startChar": 32,
+        "endLine": 7,
+        "endChar": 37
+      },
+      "revId": "d37e04fb53a0c4555d98d19c24d1f54ec8eb1b45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "37afd309_0b320dbf",
         "filename": "build/tools/extract_utils.py",
         "patchSetId": 8
