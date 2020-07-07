@@ -60,7 +60,7 @@ return 0
 # Execute /system/addon.d/*.sh scripts with $1 parameter
 run_stage() {
 if [ -d /postinstall/tmp/addon.d/ ]; then
-  for script in $(find /postinstall/tmp/addon.d/ -name '*.sh' |sort -n); do
+  for script in $(find /postinstall/tmp/addon.d/ -name '*.sh' -maxdepth 1 |sort -n); do
     # we have no /sbin/sh in android, only recovery
     # use /system/bin/sh here instead
     sed -i '0,/#!\/sbin\/sh/{s|#!/sbin/sh|#!/system/bin/sh|}' $script

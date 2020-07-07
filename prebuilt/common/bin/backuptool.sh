@@ -46,7 +46,7 @@ return 0
 # Execute /system/addon.d/*.sh scripts with $1 parameter
 run_stage() {
 if [ -d /tmp/addon.d/ ]; then
-  for script in $(find /tmp/addon.d/ -name '*.sh' |sort -n); do
+  for script in $(find /tmp/addon.d/ -name '*.sh' -maxdepth 1 |sort -n); do
     $script $1
   done
 fi
