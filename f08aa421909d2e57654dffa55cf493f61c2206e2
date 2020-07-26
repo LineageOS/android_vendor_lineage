@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3e9babd8_a490e245",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-07-26T13:28:16Z",
+      "side": 1,
+      "message": "snake case",
+      "range": {
+        "startLine": 115,
+        "startChar": 8,
+        "endLine": 115,
+        "endChar": 18
+      },
+      "revId": "f08aa421909d2e57654dffa55cf493f61c2206e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b07a4bc3_fc4820b8",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-07-26T13:28:16Z",
+      "side": 1,
+      "message": "same",
+      "range": {
+        "startLine": 119,
+        "startChar": 12,
+        "endLine": 119,
+        "endChar": 22
+      },
+      "revId": "f08aa421909d2e57654dffa55cf493f61c2206e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ecdb75a5_80140186",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-07-26T13:28:16Z",
+      "side": 1,
+      "message": "same",
+      "range": {
+        "startLine": 120,
+        "startChar": 11,
+        "endLine": 120,
+        "endChar": 21
+      },
+      "revId": "f08aa421909d2e57654dffa55cf493f61c2206e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
