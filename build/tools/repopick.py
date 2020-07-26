@@ -64,7 +64,7 @@ def fetch_query_via_ssh(remote_url, query):
     else:
         raise Exception('Malformed URI: Expecting ssh://[user@]host[:port]')
 
-    out = subprocess.check_output(['ssh', '-x', '-p{0}'.format(port), userhost, 'gerrit', 'query', '--format=JSON --patch-sets --current-patch-set', query])
+    out = subprocess.check_output(['ssh', '-x', f'-p{port}', userhost, 'gerrit', 'query', '--format=JSON --patch-sets --current-patch-set', query])
     if not hasattr(out, 'encode'):
         out = out.decode()
     reviews = []
@@ -82,7 +82,7 @@ def fetch_query_via_ssh(remote_url, query):
                     'fetch': {
                         'ssh': {
                             'ref': patch_set['ref'],
-                            'url': 'ssh://{0}:{1}/{2}'.format(userhost, port, data['project'])
+                            'url': f"ssh://{userhost}:{port}/{data['project']}"
                         }
                     },
                     'commit': {
@@ -96,7 +96,7 @@ def fetch_query_via_ssh(remote_url, query):
             reviews.append(review)
         except:
             pass
-    args.quiet or print('Found {0} reviews'.format(len(reviews)))
+    args.quiet or print(f'Found {len(reviews)} reviews')
     return reviews
 
 
@@ -111,17 +111,17 @@ def fetch_query_via_http(remote_url, query):
                     auth = requests.auth.HTTPBasicAuth(username=parts[1], password=parts[2])
         status_code = '-1'
         if auth:
-            url = '{0}/a/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'.format(remote_url, query)
+            url = f'{remote_url}/a/changes/?q={query}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'
             data = requests.get(url, auth=auth)
             status_code = str(data.status_code)
         if status_code != '200':
             #They didn't get good authorization or data, Let's try the old way
-            url = '{0}/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'.format(remote_url, query)
+            url = f'{remote_url}/changes/?q={query}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'
             data = requests.get(url)
         reviews = json.loads(data.text[5:])
     else:
         """Given a query, fetch the change numbers via http"""
-        url = '{0}/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'.format(remote_url, query)
+        url = f'{remote_url}/changes/?q={query}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'
         data = urllib.request.urlopen(url).read().decode('utf-8')
         reviews = json.loads(data[5:])
 
@@ -281,7 +281,7 @@ if __name__ == '__main__':
             return cmp(review_a['number'], review_b['number'])
 
     if args.topic:
-        reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
+        reviews = fetch_query(args.gerrit, f'topic:{args.topic}')
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
@@ -298,7 +298,7 @@ if __name__ == '__main__':
                     change_numbers.append(str(i))
             else:
                 change_numbers.append(c)
-        reviews = fetch_query(args.gerrit, ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
+        reviews = fetch_query(args.gerrit, ' OR '.join(f"change:{x.split('/')[0]}" for x in change_numbers))
 
     # make list of things to actually merge
     mergables = []
@@ -342,13 +342,13 @@ if __name__ == '__main__':
         if patchset:
             try:
                 mergables[-1]['fetch'] = [review['revisions'][x]['fetch'] for x in review['revisions'] if review['revisions'][x]['_number'] == patchset][0]
-                mergables[-1]['id'] = '{0}/{1}'.format(change, patchset)
+                mergables[-1]['id'] = f'{change}/{patchset}'
                 mergables[-1]['patchset'] = patchset
             except (IndexError, ValueError):
-                args.quiet or print('ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.'.format(change, patchset))
+                args.quiet or print(f'ERROR: The patch set {change}/{patchset} could not be found, using CURRENT_REVISION instead.')
 
     for item in mergables:
-        args.quiet or print('Applying change number {0}...'.format(item['id']))
+        args.quiet or print(f"Applying change number {item['id']}...")
         # Check if change is open and exit if it's not, unless -f is specified
         if (item['status'] != 'OPEN' and item['status'] != 'NEW' and item['status'] != 'DRAFT') and not args.query:
             if args.force:
@@ -368,12 +368,12 @@ if __name__ == '__main__':
         elif item['project'] in project_name_to_data and len(project_name_to_data[item['project']]) == 1:
             local_branch = list(project_name_to_data[item['project']])[0]
             project_path = project_name_to_data[item['project']][local_branch]
-            print('WARNING: Project {0} has a different branch ("{1}" != "{2}")'.format(project_path, local_branch, item['branch']))
+            print(f'WARNING: Project {project_path} has a different branch ("{local_branch}" != "{item["branch"]}")')
         elif args.ignore_missing:
-            print('WARNING: Skipping {0} since there is no project directory for: {1}\n'.format(item['id'], item['project']))
+            print(f"WARNING: Skipping {item['id']} since there is no project directory for: {item['project']}\n")
             continue
         else:
-            sys.stderr.write('ERROR: For {0}, could not determine the project path for project {1}\n'.format(item['id'], item['project']))
+            sys.stderr.write(f"ERROR: For {item['id']}, could not determine the project path for project {item['project']}\n")
             sys.exit(1)
 
         # If --start-branch is given, create the branch (more than once per path is okay; repo ignores gracefully)
@@ -389,9 +389,9 @@ if __name__ == '__main__':
         # Check if change is already picked to HEAD...HEAD~check_picked_count
         found_change = False
         for i in range(0, check_picked_count):
-            if subprocess.call(['git', 'cat-file', '-e', 'HEAD~{0}'.format(i)], cwd=project_path, stderr=open(os.devnull, 'wb')):
+            if subprocess.call(['git', 'cat-file', '-e', f'HEAD~{i}'], cwd=project_path, stderr=open(os.devnull, 'wb')):
                 continue
-            output = subprocess.check_output(['git', 'show', '-q', 'HEAD~{0}'.format(i)], cwd=project_path)
+            output = subprocess.check_output(['git', 'show', '-q', f'HEAD~{i}'], cwd=project_path)
             # make sure we have a string on Python 3
             if isinstance(output, bytes):
                 output = output.decode('utf-8')
@@ -403,7 +403,7 @@ if __name__ == '__main__':
                         head_change_id = output[len(output) - j]
                         break
                 if head_change_id.strip() == item['change_id']:
-                    print('Skipping {0} - already picked in {1} as HEAD~{2}'.format(item['id'], project_path, i))
+                    print(f"Skipping {item['id']} - already picked in {project_path} as HEAD~{i}")
                     found_change = True
                     break
         if found_change:
@@ -411,9 +411,9 @@ if __name__ == '__main__':
 
         # Print out some useful info
         if not args.quiet:
-            print('--> Subject:       "{0}"'.format(item['subject']))
-            print('--> Project path:  {0}'.format(project_path))
-            print('--> Change number: {0} (Patch Set {1})'.format(item['id'], item['patchset']))
+            print(f'--> Subject:       "{item["subject"]}')
+            print(f'--> Project path:  {project_path}')
+            print(f"--> Change number: {item['id']} (Patch Set {item['patchset']})")
 
         if 'anonymous http' in item['fetch']:
             method = 'anonymous http'
@@ -434,7 +434,7 @@ if __name__ == '__main__':
             else:
                 print(cmd)
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
-            FETCH_HEAD = '{0}/.git/FETCH_HEAD'.format(project_path)
+            FETCH_HEAD = f'{project_path}/.git/FETCH_HEAD'
             if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
                 print('ERROR: git command failed')
                 sys.exit(result)
@@ -445,7 +445,7 @@ if __name__ == '__main__':
                 if args.gerrit == default_gerrit:
                     print('Fetching from GitHub didn\'t work, trying to fetch the change from Gerrit')
                 else:
-                    print('Fetching from {0}'.format(args.gerrit))
+                    print(f'Fetching from {args.gerrit}')
 
             if args.pull:
                 cmd = ['git pull --no-edit', item['fetch'][method]['url'], item['fetch'][method]['ref']]
