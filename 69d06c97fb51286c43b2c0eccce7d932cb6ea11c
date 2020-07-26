@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5975ea66_e6e2bc85",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-07-26T15:58:40Z",
+      "side": 1,
+      "message": "doesn\u0027t seem like there\u0027s a variable named \"snakecase\"",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 31
+      },
+      "revId": "69d06c97fb51286c43b2c0eccce7d932cb6ea11c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3bf17f93_efd2d4f3",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2020-07-26T15:58:40Z",
+      "side": 1,
+      "message": "snake case",
+      "range": {
+        "startLine": 9,
+        "startChar": 22,
+        "endLine": 9,
+        "endChar": 31
+      },
+      "revId": "69d06c97fb51286c43b2c0eccce7d932cb6ea11c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
