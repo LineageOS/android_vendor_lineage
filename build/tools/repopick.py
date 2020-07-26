@@ -89,7 +89,7 @@ def fetch_query_via_ssh(remote_url, query):
                         }
                     },
                     'commit': {
-                        'parents': [{ 'commit': parent } for parent in patch_set['parents']]
+                        'parents': [{'commit': parent} for parent in patch_set['parents']]
                     },
                 } for patch_set in data['patchSets']},
                 'subject': data['subject'],
@@ -112,13 +112,13 @@ def fetch_query_via_http(remote_url, query):
                 parts = line.rstrip().split("|")
                 if parts[0] in remote_url:
                     auth = requests.auth.HTTPBasicAuth(username=parts[1], password=parts[2])
-        statusCode = '-1'
+        status_code = '-1'
         if auth:
             url = f'{remote_url}/a/changes/?q={query}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'
             data = requests.get(url, auth=auth)
-            statusCode = str(data.status_code)
-        if statusCode != '200':
-            #They didn't get good authorization or data, Let's try the old way
+            status_code = str(data.status_code)
+        if status_code != '200':
+            # They didn't get good authorization or data, Let's try the old way
             url = f'{remote_url}/changes/?q={query}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'
             data = requests.get(url)
         reviews = json.loads(data.text[5:])
@@ -142,6 +142,7 @@ def fetch_query(remote_url, query):
         return fetch_query_via_http(remote_url, query.replace(' ', '+'))
     else:
         raise Exception('Gerrit URL should be in the form http[s]://hostname/ or ssh://[user@]host[:port]')
+
 
 if __name__ == '__main__':
     # Default to LineageOS Gerrit
@@ -246,8 +247,8 @@ if __name__ == '__main__':
     remotes = xml_root.findall('remote')
     default_revision = xml_root.findall('default')[0].get('revision')
 
-    #dump project data into the a list of dicts with the following data:
-    #{project: {path, revision}}
+    # dump project data into the a list of dicts with the following data:
+    # {project: {path, revision}}
 
     for project in projects:
         name = project.get('name')
