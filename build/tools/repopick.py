@@ -171,22 +171,31 @@ if __name__ == '__main__':
         The --abandon-first argument, when used in conjunction with the
         --start-branch option, will cause repopick to abandon the specified
         branch in all repos first before performing any cherry picks.'''))
-    parser.add_argument('change_number', nargs='*', help='change number to cherry pick.  Use {change number}/{patchset number} to get a specific revision.')
-    parser.add_argument('-i', '--ignore-missing', action='store_true', help='do not error out if a patch applies to a missing directory')
-    parser.add_argument('-s', '--start-branch', nargs=1, help='start the specified branch before cherry picking')
-    parser.add_argument('-r', '--reset', action='store_true', help='reset to initial state (abort cherry-pick) if there is a conflict')
-    parser.add_argument('-a', '--abandon-first', action='store_true', help='before cherry picking, abandon the branch specified in --start-branch')
-    parser.add_argument('-b', '--auto-branch', action='store_true', help='shortcut to "--start-branch auto --abandon-first --ignore-missing"')
+    parser.add_argument('change_number', nargs='*',
+                        help='change number to cherry pick. Use {change number}/{patchset number} to get a specific revision.')
+    parser.add_argument('-i', '--ignore-missing', action='store_true',
+                        help='do not error out if a patch applies to a missing directory')
+    parser.add_argument('-s', '--start-branch', nargs=1,
+                        metavar='', help='start the specified branch before cherry picking')
+    parser.add_argument('-r', '--reset', action='store_true',
+                        help='reset to initial state (abort cherry-pick) if there is a conflict')
+    parser.add_argument('-a', '--abandon-first', action='store_true',
+                        help='before cherry picking, abandon the branch specified in --start-branch')
+    parser.add_argument('-b', '--auto-branch', action='store_true',
+                        help='shortcut to "--start-branch auto --abandon-first --ignore-missing"')
     parser.add_argument('-q', '--quiet', action='store_true', help='print as little as possible')
     parser.add_argument('-v', '--verbose', action='store_true', help='print extra information to aid in debug')
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
-    parser.add_argument('-P', '--path', help='use the specified path for the change')
-    parser.add_argument('-t', '--topic', help='pick all commits from a specified topic')
-    parser.add_argument('-Q', '--query', help='pick all commits using the specified query')
-    parser.add_argument('-g', '--gerrit', default=default_gerrit, help='Gerrit Instance to use. Form proto://[user@]host[:port]')
-    parser.add_argument('-e', '--exclude', nargs=1, help='exclude a list of commit numbers separated by a ,')
-    parser.add_argument('-c', '--check-picked', type=int, default=10, help='pass the amount of commits to check for already picked changes')
+    parser.add_argument('-P', '--path', metavar='', help='use the specified path for the change')
+    parser.add_argument('-t', '--topic', metavar='', help='pick all commits from a specified topic')
+    parser.add_argument('-Q', '--query', metavar='', help='pick all commits using the specified query')
+    parser.add_argument('-g', '--gerrit', default=default_gerrit,
+                        metavar='', help='Gerrit Instance to use. Form proto://[user@]host[:port]')
+    parser.add_argument('-e', '--exclude', nargs=1,
+                        metavar='', help='exclude a list of commit numbers separated by a ,')
+    parser.add_argument('-c', '--check-picked', type=int, default=10,
+                        metavar='', help='pass the amount of commits to check for already picked changes')
     args = parser.parse_args()
     if not args.start_branch and args.abandon_first:
         parser.error('if --abandon-first is set, you must also give the branch name with --start-branch')
