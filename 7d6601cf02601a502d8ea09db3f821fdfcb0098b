@@ -22,6 +22,24 @@
       "revId": "7d6601cf02601a502d8ea09db3f821fdfcb0098b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e676acab_5c24ddf0",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-07-27T11:33:02Z",
+      "side": 0,
+      "message": "use the generic /usb/bin/python if you really want to avoid env",
+      "parentUuid": "0a0096a9_cea9ea03",
+      "revId": "7d6601cf02601a502d8ea09db3f821fdfcb0098b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
