@@ -69,8 +69,9 @@ SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
 
 ## Internal variables
 DTC := $(HOST_OUT_EXECUTABLES)/dtc
-DTBS_OUT := $(PRODUCT_OUT)/dtbs
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
+DTBO_OUT := $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ
+DTB_OUT := $(TARGET_OUT_INTERMEDIATES)/DTB_OBJ
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
 KERNEL_RELEASE := $(KERNEL_OUT)/include/config/kernel.release
 
@@ -227,13 +228,13 @@ endef
 # Make a DTBO target
 # $(1): The DTBO target to build (eg. dtbo.img, defconfig)
 define make-dtbo-target
-$(call internal-make-kernel-target,$(PRODUCT_OUT)/dtbo,$(1))
+$(call internal-make-kernel-target,$(DTBO_OUT),$(1))
 endef
 
 # Make a DTB targets
 # $(1): The DTB target to build (eg. dtbs, defconfig)
 define make-dtb-target
-$(call internal-make-kernel-target,$(DTBS_OUT),$(1))
+$(call internal-make-kernel-target,$(DTB_OUT),$(1))
 endef
 
 $(KERNEL_OUT):
@@ -295,14 +296,33 @@ alldefconfig: $(KERNEL_OUT)
 	env KCONFIG_NOTIMESTAMP=true \
 		 $(call make-kernel-target,alldefconfig)
 
-ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
+ifeq (true,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
 MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
 MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg.py$(HOST_EXECUTABLE_SUFFIX)
 $(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
-	echo -e ${CL_GRN}"Building DTBO.img"${CL_RST}
+ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
+$(BOARD_PREBUILT_DTBOIMAGE):
+	@echo "Building dtbo.img"
+	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtbo-target,dtbs)
+	$(MKDTIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtbo" | sort)
+else
+$(BOARD_PREBUILT_DTBOIMAGE):
+	@echo "Building dtbo.img"
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbo.img)
-endif # TARGET_NEEDS_DTBOIMAGE
+endif # BOARD_KERNEL_SEPARATED_DTBO
+endif # TARGET_NEEDS_DTBOIMAGE/BOARD_KERNEL_SEPARATED_DTBO
+
+ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
+ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
+$(INSTALLED_DTBIMAGE_TARGET): $(DTC)
+	@echo "Building dtb.img"
+	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtb-target,dtbs)
+	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
+endif # !BOARD_PREBUILT_DTBIMAGE_DIR
+endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
 endif # FULL_KERNEL_BUILD
 
@@ -317,25 +337,13 @@ $(file) : $(KERNEL_BIN) | $(ACP)
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 endif
 
-INSTALLED_DTBOIMAGE_TARGET := $(PRODUCT_OUT)/dtbo.img
-ALL_PREBUILT += $(INSTALLED_DTBOIMAGE_TARGET)
-
 .PHONY: kernel
 kernel: $(INSTALLED_KERNEL_TARGET)
 
 .PHONY: dtboimage
 dtboimage: $(INSTALLED_DTBOIMAGE_TARGET)
 
-ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
-ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
-$(INSTALLED_DTBIMAGE_TARGET): $(DTC)
-	echo -e ${CL_GRN}"Building DTBs"${CL_RST}
-	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
-	$(call make-dtb-target,dtbs)
-	cat $(shell find $(DTBS_OUT)/arch/$(KERNEL_ARCH)/boot/dts/** -type f -name "*.dtb" | sort) > $@
-endif
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
-endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
 endif # TARGET_NO_KERNEL
