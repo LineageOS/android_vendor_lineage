@@ -141,9 +141,7 @@ else
         $(warning * Please add the TARGET_KERNEL_CONFIG variable to your   *)
         $(warning * BoardConfig.mk file                                    *)
         $(warning **********************************************************)
-        # $(error "NO KERNEL CONFIG")
     else
-        #$(info Kernel source found, building it)
         FULL_KERNEL_BUILD := true
         KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
     endif
@@ -278,18 +276,27 @@ alldefconfig: $(KERNEL_OUT)
 	env KCONFIG_NOTIMESTAMP=true \
 		 $(call make-kernel-target,alldefconfig)
 
-ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
+ifeq (true,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
 $(BOARD_PREBUILT_DTBOIMAGE): $(KERNEL_CONFIG)
+ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
+MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
+$(BOARD_PREBUILT_DTBOIMAGE): $(MKDTIMG)
+	@echo "Building dtbo.img"
+	$(call make-kernel-target,dtbs)
+	$(MKDTIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtbo" | sort)
+else
+$(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
 	$(call make-kernel-target,dtbo.img)
-endif # TARGET_NEEDS_DTBOIMAGE
+endif # BOARD_KERNEL_SEPARATED_DTBO
+endif # TARGET_NEEDS_DTBOIMAGE/BOARD_KERNEL_SEPARATED_DTBO
 
 ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
 ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
 $(INSTALLED_DTBIMAGE_TARGET): $(KERNEL_CONFIG)
-	@echo "Building DTBs"
+	@echo "Building dtb.img"
 	$(call make-kernel-target,dtbs)
-	cat $(shell find $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts/** -type f -name "*.dtb" | sort) > $@
+	cat $(shell find $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
 endif # !BOARD_PREBUILT_DTBIMAGE_DIR
 endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
@@ -305,9 +312,6 @@ $(file) : $(KERNEL_BIN) | $(ACP)
 
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 endif
-
-INSTALLED_DTBOIMAGE_TARGET := $(PRODUCT_OUT)/dtbo.img
-ALL_PREBUILT += $(INSTALLED_DTBOIMAGE_TARGET)
 
 .PHONY: kernel
 kernel: $(INSTALLED_KERNEL_TARGET)
