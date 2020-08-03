@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5accca70_654d07b7",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2020-08-03T03:22:52Z",
+      "side": 0,
+      "message": "nit: unrelated to DTB generation, maybe just make this a separate cleanup patch?",
+      "range": {
+        "startLine": 145,
+        "startChar": 8,
+        "endLine": 145,
+        "endChar": 37
+      },
+      "revId": "f66c94989e0f0e2e810bb69f1480b84872877355",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "395cf25c_186ecab2",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2020-08-03T03:22:52Z",
+      "side": 0,
+      "message": "Same",
+      "range": {
+        "startLine": 147,
+        "startChar": 8,
+        "endLine": 147,
+        "endChar": 49
+      },
+      "revId": "f66c94989e0f0e2e810bb69f1480b84872877355",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
