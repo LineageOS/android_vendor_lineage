@@ -41,6 +41,8 @@
 #                                          For example, for ARM devices,
 #                                          use zImage-dtb instead of zImage.
 #
+#   BOARD_DTBO_CFG                     = Path to a mkdtboimg.py config file
+#
 #   KERNEL_CC                          = The C Compiler used. This is automatically set based
 #                                          on whether the clang version is set, optional.
 #   KERNEL_LD                          = The Linker used. This is automatically set based
@@ -305,7 +307,11 @@ $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbs)
+ifdef BOARD_DTBO_CFG
+	$(MKDTBOIMG) cfg_create $@ $(BOARD_DTBO_CFG) -d $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts
+else
 	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtbo" | sort)
+endif
 else
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
