@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b38da98a_aeacc4ba",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-08-07T08:51:47Z",
+      "side": 1,
+      "message": "remove?",
+      "range": {
+        "startLine": 298,
+        "startChar": 49,
+        "endLine": 298,
+        "endChar": 74
+      },
+      "revId": "3257c97935f609bd6c39dbfffabd78be051b5ddd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
