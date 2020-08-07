@@ -22,6 +22,24 @@
       "revId": "3257c97935f609bd6c39dbfffabd78be051b5ddd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "791a5c77_6ca1076e",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-08-07T08:53:09Z",
+      "side": 1,
+      "message": "I think it\u0027s meant for Windows aka .exe\nSo it\u0027s useless, but build system does this for every out binary, so it\u0027s safe to keep it",
+      "parentUuid": "b38da98a_aeacc4ba",
+      "revId": "3257c97935f609bd6c39dbfffabd78be051b5ddd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
