@@ -598,6 +598,8 @@
   <apn carrier="OVIVO" mcc="234" mnc="15" apn="ovivomobile.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Ovivo" type="default,supl,dun,fota" />
   <apn carrier="BT Mobile" mcc="234" mnc="15" apn="btmobile.bt.com" proxy="" port="" user="bt" password="bt" mmsc="" mvno_type="spn" mvno_match_data="BT" authtype="1" type="default,supl" />
   <apn carrier="BT Mobile" mcc="234" mnc="15" apn="btmobile.bt.com" proxy="" port="" user="bt" password="bt" mmsc="http://mms.bt.com/servlets/mms" mmsproxy="212.183.137.12" mmsport="8799" mvno_type="spn" mvno_match_data="BT" authtype="1" type="mms" />
+  <apn carrier="Hits MMS" mcc="214" mnc="06" apn="mms.hitsmobile.es" mmsproxy="212.73.32.10" mmsport="80" mmsc="http://mms.hitsmobile.es/servlets/mms" user="wap@wap" password="wap125" authtype="1" type="mms" mvno_type="spn" mvno_match_data="Hits" />
+  <apn carrier="Hits Internet" mcc="214" mnc="06" apn="tel.hitsmobile.es" authtype="1" type="default,supl" mvno_type="spn" mvno_match_data="Hits" />
   <apn carrier="3 Internet" mcc="234" mnc="20" apn="three.co.uk" type="default,supl" />
   <apn carrier="3 Modem" mcc="234" mnc="20" apn="3internet" type="default,supl" />
   <apn carrier="3 MMS" mcc="234" mnc="20" apn="three.co.uk" proxy="" port="" user="" password="" mmsc="http://mms.um.three.co.uk:10021/mmsc" mmsproxy="217.171.129.2" mmsport="8799" type="mms" />
@@ -1055,6 +1057,10 @@
   <apn carrier="Cyfrowy Polsat MMS" mcc="260" mnc="12" apn="mms.cyfrowypolsat.pl" proxy="" port="" user="" password="" mmsc="http://mms.cyfrowypolsat.pl:8002" mmsproxy="79.171.2.33" mmsport="8080" type="mms" />
   <apn carrier="Aero2" mcc="260" mnc="17" apn="darmowy" type="default,supl" />
   <apn carrier="Truphone PL" mcc="260" mnc="33" apn="truphone.com" type="default,supl" />
+  <apn carrier="Callmobile Internet" mcc="262" mnc="01" apn="internet.t-d1.de" proxy="193.254.160.002" port="9201" user="T-Mobile" password="wap" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="callmobile.de" mcc="262" mnc="01" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" mvno_type="spn" mvno_match_data="callmobile.de" type="default,supl,mms" />
+  <apn carrier="Telekom DE-MMS" mcc="262" mnc="01" apn="internet.t-mobile" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" type="mms" />
+  <apn carrier="Telekom DE" mcc="262" mnc="01" apn="internet.telekom" user="t-mobile" password="tm" type="default,supl" />
   <apn carrier="Telekom IMS" mcc="262" mnc="01" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
   <apn carrier="Telekom Internet" mcc="262" mnc="01" apn="internet.telekom" user="telekom" password="telekom" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="109.237.176.193" mmsport="8008" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17" authtype="1" type="mms,default,supl,ia" protocol="IPV4V6" />
   <apn carrier="Telekom Internet" mcc="262" mnc="01" apn="hos" user="telekom" password="telekom" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="109.237.176.193" mmsport="8008" bearer_bitmask="18" authtype="1" type="mms,supl" protocol="IPV4V6" user_visible="false" />
