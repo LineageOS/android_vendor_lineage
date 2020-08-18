@@ -1,0 +1,40 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "40cb4580_d643c8e2",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 13
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-08-18T12:09:22Z",
+      "side": 1,
+      "message": "ditto\nadd both mkdtimg and mkdtboimg as deps",
+      "parentUuid": "",
+      "revId": "3fa7d6fbe50269d1f5ce4aba564e1a39c0709aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "868e22f1_3e30e7a5",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 13
+      },
+      "lineNbr": 318,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-08-18T12:09:22Z",
+      "side": 1,
+      "message": "where is $(DTBS) coming from? it\u0027s undefined\nadd $(DTC) there",
+      "parentUuid": "",
+      "revId": "3fa7d6fbe50269d1f5ce4aba564e1a39c0709aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
