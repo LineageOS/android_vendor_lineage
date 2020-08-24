@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f27d4399_9afeac54",
+        "filename": "build/tasks/dtbo.mk",
+        "patchSetId": 14
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 14437
+      },
+      "writtenOn": "2020-08-24T13:47:59Z",
+      "side": 0,
+      "message": "This was introduced primarily for begonia (and for potentially other recent MediaTek devices); The dtbo image has 2 certs appended to it. Without it, the bootloader does not continue and reboots the device even before logo loads. The rules were slightly modified to run a python script for aligning and appending the certs correctly. Might wanna speak to Aayush (TheImpulson) regarding this.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 35
+      },
+      "revId": "14c51c7c4ac478535239ad16a6008f4bcda182bb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
