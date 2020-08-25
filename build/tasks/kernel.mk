@@ -43,6 +43,8 @@
 #
 #   BOARD_DTBO_CFG                     = Path to a mkdtboimg.py config file
 #
+#   BOARD_CUSTOM_DTBOIMG_MK            = Path to a custom dtboimage makefile
+#
 #   KERNEL_CC                          = The C Compiler used. This is automatically set based
 #                                          on whether the clang version is set, optional.
 #   KERNEL_LD                          = The Linker used. This is automatically set based
@@ -301,6 +303,9 @@ MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
 MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg.py$(HOST_EXECUTABLE_SUFFIX)
 $(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
 ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
+ifneq ($(BOARD_CUSTOM_DTBOIMG_MK),)
+include $(BOARD_CUSTOM_DTBOIMG_MK)
+else
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
@@ -315,6 +320,7 @@ $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbo.img)
+endif # BOARD_CUSTOM_DTBOIMG_MK
 endif # BOARD_KERNEL_SEPARATED_DTBO
 endif # TARGET_NEEDS_DTBOIMAGE/BOARD_KERNEL_SEPARATED_DTBO
 
