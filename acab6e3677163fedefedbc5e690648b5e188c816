@@ -16,6 +16,24 @@
       "revId": "acab6e3677163fedefedbc5e690648b5e188c816",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d9240bce_564e82a4",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2020-08-27T19:55:30Z",
+      "side": 1,
+      "message": "No it is used by other targets lower in this file, which run only manually (defconf for instance)",
+      "parentUuid": "563cfb9c_7bd57ea3",
+      "revId": "acab6e3677163fedefedbc5e690648b5e188c816",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
