@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "563cfb9c_7bd57ea3",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-08-27T19:37:51Z",
+      "side": 1,
+      "message": "now unused I guess",
+      "revId": "acab6e3677163fedefedbc5e690648b5e188c816",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
