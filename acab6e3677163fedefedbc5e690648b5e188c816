@@ -34,6 +34,24 @@
       "revId": "acab6e3677163fedefedbc5e690648b5e188c816",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11b8c343_39223ee1",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2020-08-30T15:46:02Z",
+      "side": 1,
+      "message": "Removed in PS3 in favour to two mkdir -p additions in \"kernelsavedefconfig\" and \"alldefconfig\"",
+      "parentUuid": "d9240bce_564e82a4",
+      "revId": "acab6e3677163fedefedbc5e690648b5e188c816",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
