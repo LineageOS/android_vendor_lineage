@@ -17,6 +17,15 @@ copy_file() {
   cp -dp --preserve=a "$1" "$2"
 }
 
+move_file() {
+  old=`umask`
+  umask 0322
+  mkdir -m755 -p `dirname $2`
+  umask "$old"
+
+  mv "$1" "$2"
+}
+
 backup_file() {
   if [ -e "$1" -o -L "$1" ]; then
     # dont backup any apps that have odex files, they are useless
@@ -30,7 +39,7 @@ backup_file() {
 
 restore_file() {
   if [ -e "$C/$1" -o -L "$C/$1" ]; then
-    copy_file "$C/$1" "/postinstall/$1";
+    move_file "$C/$1" "/postinstall/$1";
     if [ -n "$2" ]; then
       echo "Deleting obsolete file $2"
       rm "$2";
