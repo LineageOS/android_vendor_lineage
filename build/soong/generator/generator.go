@@ -121,9 +121,8 @@ func (g *Module) DepsMutator(ctx android.BottomUpMutatorContext) {
 	android.ExtractSourcesDeps(ctx, g.properties.Tool_files)
 	if g, ok := ctx.Module().(*Module); ok {
 		if len(g.properties.Tools) > 0 {
-			ctx.AddFarVariationDependencies([]blueprint.Variation{
-				{"arch", ctx.Config().BuildOsVariant},
-			}, hostToolDepTag, g.properties.Tools...)
+			ctx.AddFarVariationDependencies(ctx.Config().BuildOSTarget.Variations(),
+				hostToolDepTag, g.properties.Tools...)
 		}
 	}
 }
