@@ -1,4 +1,4 @@
-PATH_OVERRIDE_SOONG := $(shell echo $(TOOLS_PATH_OVERRIDE) | sed -e 's|$$|$$$$|g')
+PATH_OVERRIDE_SOONG := $(shell echo $(TOOLS_PATH_OVERRIDE))
 
 # Add variables that we wish to make available to soong here.
 EXPORT_TO_SOONG := \
