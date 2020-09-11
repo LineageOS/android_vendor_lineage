@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f79dc344_fb528099",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-09-11T21:16:50Z",
+      "side": 1,
+      "message": "Indent is wrong (try: go fmt)",
+      "revId": "0c901ecee372f14987fcbbd5fbed7a80fdf5c886",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
