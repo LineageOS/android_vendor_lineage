@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df925436_8246716b",
+        "filename": "build/tasks/bacon.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3075
+      },
+      "writtenOn": "2020-09-14T21:12:54Z",
+      "side": 1,
+      "message": "no real need to change the variable name.  leaving it as MD5SUM shrinks the patch one line.",
+      "revId": "340b3094f84462883d82a449e4f710b4d35209e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
