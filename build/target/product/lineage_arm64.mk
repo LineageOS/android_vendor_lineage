@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,5 +15,7 @@
 $(call inherit-product, build/target/product/aosp_arm64.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_target.mk
+
+TARGET_NO_KERNEL_OVERRIDE := true
 
 PRODUCT_NAME := lineage_arm64
