@@ -103,7 +103,7 @@ endif
 KERNEL_MAKE_FLAGS :=
 
 # Add back threads, ninja cuts this to $(nproc)/2
-KERNEL_MAKE_FLAGS += -j$(shell nproc --all)
+KERNEL_MAKE_FLAGS += -j$(shell $(prebuilt_build_tools_lineage_bin)/nproc --all)
 
 ifeq ($(KERNEL_ARCH),arm)
   # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
