@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b04749a1_7c1c3265",
+        "filename": "build/tools/picklist.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 515,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-09-17T09:06:55Z",
+      "side": 1,
+      "message": "This is kind of confusing as I believe that this indicates we must give the repository\u0027s name as an argument which I did and got this error:\n\ntheimpulson@packet:/raid/los18$ picklist -j$(nproc --all) -r LineageOS/android_build -g my_picklist.yml\nThese projects do not exist in your repo manifest: LineageOS/android_build\n\nSo, I tried it giving the path instead of name from the manifest, and that worked.\nMaybe explicitly state in the help message that the path to the repo as given in manifest must be given as an argument?",
+      "revId": "d4caa31364693f77ea0f2163836a76cd9bf0e464",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
