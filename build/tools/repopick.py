@@ -426,8 +426,8 @@ if __name__ == '__main__':
             print('--> Project path:  {0}'.format(project_path))
             print('--> Change number: {0} (Patch Set {1})'.format(item['id'], item['patchset']))
 
-        if 'anonymous http' in item['fetch']:
-            method = 'anonymous http'
+        if 'http' in item['fetch']:
+            method = 'http'
         else:
             method = 'ssh'
 
