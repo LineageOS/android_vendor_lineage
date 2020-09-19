@@ -183,6 +183,12 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+ifeq ($(TARGET_USE_QTI_BT_STACK),true)
+PRODUCT_PACKAGES += \
+    libbluetooth_qti \
+    libbluetooth_qti_jni
+endif #TARGET_USE_QTI_BT_STACK
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
