@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "63089ab5_a7d1959b",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-09-20T12:48:58Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it better to make it uppercase? Also, split the variables creation to different commit.",
+      "range": {
+        "startLine": 102,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 28
+      },
+      "revId": "c647e8bec1f6645870f9436b7bd4004c8494c02c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
