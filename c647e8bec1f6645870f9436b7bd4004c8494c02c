@@ -22,6 +22,30 @@
       "revId": "c647e8bec1f6645870f9436b7bd4004c8494c02c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e1c6b84_95b27f05",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2020-09-20T12:57:10Z",
+      "side": 1,
+      "message": "idk what coding style do we follow, but aosp uses lowercase https://github.com/LineageOS/android_build/blob/lineage-18.0/core/config.mk#L523",
+      "parentUuid": "63089ab5_a7d1959b",
+      "range": {
+        "startLine": 102,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 28
+      },
+      "revId": "c647e8bec1f6645870f9436b7bd4004c8494c02c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
