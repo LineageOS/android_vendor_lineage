@@ -4,6 +4,7 @@ add_json_val_default = $(call add_json_val, $(1), $(if $(strip $(2)), $(2), $(3)
 _json_contents := $(_json_contents)    "Lineage":{$(newline)
 
 # See build/core/soong_config.mk for the add_json_* functions you can use here.
+$(call add_json_bool, Allow_empty_slotsuffix, $(filter true,$(TARGET_ALLOW_EMPTY_SLOTSUFFIX)))
 $(call add_json_str_omitempty, Additional_gralloc_10_usage_bits, $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS))
 $(call add_json_bool, Apply_msm8974_1440p_egl_workaround, $(filter true,$(TARGET_MSM8974_1440P_EGL_WORKAROUND)))
 $(call add_json_val_default, Bootloader_message_offset, $(BOOTLOADER_MESSAGE_OFFSET), 0)
