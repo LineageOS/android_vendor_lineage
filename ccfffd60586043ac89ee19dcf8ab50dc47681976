@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "d20b09cc_b807668b",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-09-23T09:08:30Z",
+      "side": 1,
+      "message": "That var isn\u0027t set at this point, if not set by the device. We could default it to stable version, tho.",
+      "parentUuid": "b7253143_a54fdf03",
+      "range": {
+        "startLine": 55,
+        "startChar": 68,
+        "endLine": 55,
+        "endChar": 82
+      },
+      "revId": "ccfffd60586043ac89ee19dcf8ab50dc47681976",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "393e1af2_42f6d608",
         "filename": "config/BoardConfigKernel.mk",
         "patchSetId": 4
