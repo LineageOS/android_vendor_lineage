@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b7253143_a54fdf03",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-09-23T05:37:08Z",
+      "side": 1,
+      "message": "$(TARGET_KERNEL_CLANG_VERSION) instead?",
+      "range": {
+        "startLine": 55,
+        "startChar": 68,
+        "endLine": 55,
+        "endChar": 82
+      },
+      "revId": "ccfffd60586043ac89ee19dcf8ab50dc47681976",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "393e1af2_42f6d608",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-09-23T05:37:08Z",
+      "side": 1,
+      "message": "I am not sure but shouldn\u0027t this be not needed if we use https://review.lineageos.org/c/LineageOS/android_kernel_nokia_sdm660/+/285576 ?",
+      "range": {
+        "startLine": 123,
+        "startChar": 108,
+        "endLine": 123,
+        "endChar": 120
+      },
+      "revId": "ccfffd60586043ac89ee19dcf8ab50dc47681976",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
