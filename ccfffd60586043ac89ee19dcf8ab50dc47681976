@@ -45,6 +45,30 @@
       "revId": "ccfffd60586043ac89ee19dcf8ab50dc47681976",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4b8996f1_255e9033",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-09-23T08:44:22Z",
+      "side": 1,
+      "message": "I don\u0027t think we should rely on that.",
+      "parentUuid": "393e1af2_42f6d608",
+      "range": {
+        "startLine": 123,
+        "startChar": 108,
+        "endLine": 123,
+        "endChar": 120
+      },
+      "revId": "ccfffd60586043ac89ee19dcf8ab50dc47681976",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
