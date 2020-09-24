@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "673b1db0_0d900b12",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-09-24T11:12:35Z",
+      "side": 1,
+      "message": "As stated previously, this is the current stable version as determined later on in the build system by $(LLVM_PREBUILTS_VERSION).",
+      "range": {
+        "startLine": 55,
+        "startChar": 74,
+        "endLine": 55,
+        "endChar": 88
+      },
+      "revId": "a413b6ee55636766dc61644bc1fc899117fb4aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
