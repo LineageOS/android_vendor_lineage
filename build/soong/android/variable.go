@@ -8,6 +8,7 @@ type Product_variables struct {
 	}
 	Bootloader_message_offset struct {
 		Cflags []string
+		Export_cflags []string
 	}
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
