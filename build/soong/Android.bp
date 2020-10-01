@@ -228,7 +228,10 @@ soong_config_module_type {
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
     value_variables: ["bootloader_message_offset"],
-    properties: ["cflags"],
+    properties: [
+        "cflags",
+        "export_cflags",
+    ],
 }
 
 bootloader_message_offset {
@@ -236,6 +239,7 @@ bootloader_message_offset {
     soong_config_variables: {
         bootloader_message_offset: {
             cflags: ["-DBOARD_RECOVERY_BLDRMSG_OFFSET=%s"],
+            export_cflags: ["-DBOARD_RECOVERY_BLDRMSG_OFFSET=%s"],
         },
     },
 }
