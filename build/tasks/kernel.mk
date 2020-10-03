@@ -308,7 +308,7 @@ $(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
 ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
-	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtbo-target,VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) $(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbs)
 ifdef BOARD_DTBO_CFG
 	$(MKDTBOIMG) cfg_create $@ $(BOARD_DTBO_CFG) -d $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts
@@ -318,7 +318,7 @@ endif
 else
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
-	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtbo-target,VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) $(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbo.img)
 endif # BOARD_KERNEL_SEPARATED_DTBO
 endif # BOARD_CUSTOM_DTBOIMG_MK
@@ -328,7 +328,7 @@ ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
 ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
 $(INSTALLED_DTBIMAGE_TARGET): $(DTC)
 	@echo "Building dtb.img"
-	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtb-target,VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) $(KERNEL_DEFCONFIG))
 	$(call make-dtb-target,dtbs)
 	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
 endif # !BOARD_PREBUILT_DTBIMAGE_DIR
