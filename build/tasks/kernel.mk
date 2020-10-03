@@ -70,6 +70,7 @@ KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
 VARIANT_DEFCONFIG := $(TARGET_KERNEL_VARIANT_CONFIG)
 SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
+KERNEL_DEFCONFIGS := VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(KERNEL_DEFCONFIG)
 
 ## Internal variables
 DTC := $(HOST_OUT_EXECUTABLES)/dtc
@@ -247,7 +248,7 @@ $(KERNEL_ADDITIONAL_CONFIG_OUT): $(KERNEL_OUT)
 
 $(KERNEL_CONFIG): $(KERNEL_DEFCONFIG_SRC) $(KERNEL_ADDITIONAL_CONFIG_OUT)
 	@echo "Building Kernel Config"
-	$(call make-kernel-target,VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(KERNEL_DEFCONFIG))
+	$(call make-kernel-target,$(KERNEL_DEFCONFIGS))
 	$(hide) if [ ! -z "$(KERNEL_CONFIG_OVERRIDE)" ]; then \
 			echo "Overriding kernel config with '$(KERNEL_CONFIG_OVERRIDE)'"; \
 			echo $(KERNEL_CONFIG_OVERRIDE) >> $(KERNEL_OUT)/.config; \
@@ -289,7 +290,7 @@ kerneltags: $(KERNEL_CONFIG)
 .PHONY: kernelsavedefconfig alldefconfig
 
 kernelsavedefconfig: $(KERNEL_OUT)
-	$(call make-kernel-target,$(KERNEL_DEFCONFIG))
+	$(call make-kernel-target,$(KERNEL_DEFCONFIGS))
 	env KCONFIG_NOTIMESTAMP=true \
 		 $(call make-kernel-target,savedefconfig)
 	cp $(KERNEL_OUT)/defconfig $(KERNEL_DEFCONFIG_SRC)
@@ -308,7 +309,7 @@ $(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
 ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
-	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtbo-target,$(KERNEL_DEFCONFIGS))
 	$(call make-dtbo-target,dtbs)
 ifdef BOARD_DTBO_CFG
 	$(MKDTBOIMG) cfg_create $@ $(BOARD_DTBO_CFG) -d $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts
@@ -318,7 +319,7 @@ endif
 else
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
-	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtbo-target,$(KERNEL_DEFCONFIGS))
 	$(call make-dtbo-target,dtbo.img)
 endif # BOARD_KERNEL_SEPARATED_DTBO
 endif # BOARD_CUSTOM_DTBOIMG_MK
@@ -328,7 +329,7 @@ ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
 ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
 $(INSTALLED_DTBIMAGE_TARGET): $(DTC)
 	@echo "Building dtb.img"
-	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtb-target,$(KERNEL_DEFCONFIGS))
 	$(call make-dtb-target,dtbs)
 	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
 endif # !BOARD_PREBUILT_DTBIMAGE_DIR
