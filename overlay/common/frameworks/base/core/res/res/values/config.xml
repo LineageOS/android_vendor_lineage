@@ -101,5 +101,11 @@
         <item>com.viber.voip</item>
         <item>com.linkedin.android</item>
         <item>com.tencent.mm</item>
+        <item>nekox.messenger</item>
+        <item>org.telegram.plus</item>
+        <item>org.thunderdog.challegram</item>
+        <item>im.vector.app</item>
+        <item>cx.ring</item>
+        <item>org.briarproject.briar.android</item>
     </string-array>
 </resources>
