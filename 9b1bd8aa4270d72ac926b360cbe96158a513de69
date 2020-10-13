@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6c818ab9_476afe48",
+        "filename": "build/soong/soong_config.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-10-13T09:11:09Z",
+      "side": 1,
+      "message": "Maybe Target_uses_ to match the boardconfig flag and go along with existing Target_* soong configs.",
+      "range": {
+        "startLine": 28,
+        "startChar": 22,
+        "endLine": 28,
+        "endChar": 27
+      },
+      "revId": "9b1bd8aa4270d72ac926b360cbe96158a513de69",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
