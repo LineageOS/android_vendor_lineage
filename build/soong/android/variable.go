@@ -67,6 +67,9 @@ type Product_variables struct {
 		Cppflags []string
 		Shared_libs []string
 	}
+	Uses_pre_uplink_features_netmgrd struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
