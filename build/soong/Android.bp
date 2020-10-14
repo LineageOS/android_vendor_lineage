@@ -26,12 +26,17 @@ lineage_generator {
         "usr/audio/include/uapi",
         "usr/include",
         "usr/include/audio/include/uapi",
-        "usr/techpack/audio/include"
+        "usr/techpack/audio/include",
     ],
 
     // Sources for dependency tracking
     dep_root: "$(TARGET_KERNEL_SOURCE)",
-    dep_files: [ "Makefile", "include/**/*", "arch/$(KERNEL_ARCH)/include/**/*", "techpack/audio/include/**/*"],
+    dep_files: [
+        "Makefile",
+        "include/**/*",
+        "arch/$(KERNEL_ARCH)/include/**/*",
+        "techpack/audio/include/**/*",
+    ],
 }
 
 cc_library_headers {
@@ -40,4 +45,321 @@ cc_library_headers {
     export_generated_headers: ["generated_kernel_includes"],
     vendor_available: true,
     recovery_available: true,
+}
+
+soong_config_module_type {
+    name: "librmnetctl_defaults_pre_uplink",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["USES_PRE_UPLINK_FEATURES_NETMGRD"],
+    properties: ["cflags"],
+}
+
+librmnetctl_defaults_pre_uplink {
+    name: "librmnetctl_pre_uplink",
+    soong_config_variables: {
+        USES_PRE_UPLINK_FEATURES_NETMGRD: {
+            cflags: ["-DNO_UPLINK_FEATURES"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "qti_camera_device_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["USES_QTI_CAMERA_DEVICE"],
+    properties: [
+        "cppflags",
+        "shared_libs",
+    ],
+}
+
+qti_camera_device_defaults {
+    name: "qti_camera_device",
+    soong_config_variables: {
+        USES_QTI_CAMERA_DEVICE: {
+            cppflags: ["-DQTI_CAMERA_DEVICE"],
+            shared_libs: ["vendor.qti.hardware.camera.device@1.0"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "extended_compress_format_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["SUPPORTS_EXTENDED_COMPRESS_FORMAT"],
+    properties: ["cflags"],
+}
+
+extended_compress_format_defaults {
+    name: "extended_compress_format",
+    soong_config_variables: {
+        SUPPORTS_EXTENDED_COMPRESS_FORMAT: {
+            cflags: ["-DENABLE_EXTENDED_COMPRESS_FORMAT"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "target_shim_libs_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    value_variables: ["TARGET_LD_SHIM_LIBS"],
+    properties: ["cppflags"],
+}
+
+target_shim_libs_defaults {
+    name: "target_shim_libs",
+    soong_config_variables: {
+        TARGET_LD_SHIM_LIBS: {
+            cppflags: ["-DLD_SHIM_LIBS=\"%s\""],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "qti_cryptfs_qsee_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["SHOULD_WAIT_FOR_QSEE"],
+    properties: ["cflags"],
+}
+
+qti_cryptfs_qsee_defaults {
+    name: "qti_cryptfs_qsee",
+    soong_config_variables: {
+        SHOULD_WAIT_FOR_QSEE: {
+            cflags: ["-DWAIT_FOR_QSEE"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "vendor_init_lib_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    value_variables: ["TARGET_INIT_VENDOR_LIB"],
+    properties: ["whole_static_libs"],
+}
+
+vendor_init_lib_defaults {
+    name: "vendor_init_lib",
+    soong_config_variables: {
+        TARGET_INIT_VENDOR_LIB: {
+            whole_static_libs: ["%s"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "galloc_10_usage_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    value_variables: ["ADDITIONAL_GRALLOC_10_USAGE_BITS"],
+    properties: ["cflags"],
+}
+
+galloc_10_usage_defaults {
+    name: "galloc_10_usage",
+    soong_config_variables: {
+        ADDITIONAL_GRALLOC_10_USAGE_BITS: {
+            cflags: ["-DADDNL_GRALLOC_10_USAGE_BITS=%s"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "msm8974_1440p_egl_workaround_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["APPLY_MSM8974_1440P_EGL_WORKAROUND"],
+    properties: ["cflags"],
+}
+
+msm8974_1440p_egl_workaround_defaults {
+    name: "msm8974_1440p_egl_workaround",
+    soong_config_variables: {
+        APPLY_MSM8974_1440P_EGL_WORKAROUND: {
+            cflags: ["-DALLOW_TOO_LARGE_DIMENSIONS"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "surfaceflinger_fod_lib_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    value_variables: ["TARGET_SURFACEFLINGER_FOD_LIB"],
+    properties: [
+        "cflags",
+        "whole_static_libs",
+    ],
+}
+
+surfaceflinger_fod_lib_defaults {
+    name: "surfaceflinger_fod_lib",
+    soong_config_variables: {
+        TARGET_SURFACEFLINGER_FOD_LIB: {
+            cflags: ["-DTARGET_PROVIDES_FOD_LIB"],
+            whole_static_libs: ["%s"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "qcom_um_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    value_variables: ["QCOM_SOONG_NAMESPACE"],
+    properties: [
+        "cflags",
+        "header_libs",
+    ],
+}
+
+qcom_um_defaults {
+    name: "qcom_um",
+    soong_config_variables: {
+        QCOM_SOONG_NAMESPACE: {
+            cflags: ["-DQCOM_UM_FAMILY"],
+            header_libs: ["//%s:display_intf_headers"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "recovery_skip_ev_rel_input_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["RECOVERY_SKIP_EV_REL_INPUT"],
+    properties: ["cflags"],
+}
+
+recovery_skip_ev_rel_input_defaults {
+    name: "recovery_skip_ev_rel_input",
+    soong_config_variables: {
+        RECOVERY_SKIP_EV_REL_INPUT: {
+            cflags: ["-DSKIP_EV_REL"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "ignores_ftp_pptp_conntrack_failure_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["IGNORES_FTP_PPTP_CONNTRACK_FAILURE"],
+    properties: ["cppflags"],
+}
+
+ignores_ftp_pptp_conntrack_failure_defaults {
+    name: "ignores_ftp_pptp_conntrack_failure",
+    soong_config_variables: {
+        IGNORES_FTP_PPTP_CONNTRACK_FAILURE: {
+            cppflags: ["-DIGNORES_FTP_PPTP_CONNTRACK_FAILURE"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "needs_netd_direct_connect_rule_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["NEEDS_NETD_DIRECT_CONNECT_RULE"],
+    properties: ["cppflags"],
+}
+
+needs_netd_direct_connect_rule_defaults {
+    name: "needs_netd_direct_connect_rule",
+    soong_config_variables: {
+        NEEDS_NETD_DIRECT_CONNECT_RULE: {
+            cppflags: ["-DNEEDS_NETD_DIRECT_CONNECT_RULE"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "has_legacy_camera_hal1_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["HAS_LEGACY_CAMERA_HAL1"],
+    properties: [
+        "cflags",
+        "overrides",
+        "shared_libs",
+    ],
+}
+
+has_legacy_camera_hal1_defaults {
+    name: "has_legacy_camera_hal1",
+    soong_config_variables: {
+        HAS_LEGACY_CAMERA_HAL1: {
+            overrides: ["cameraserver"],
+            cflags: [
+                "-DNO_CAMERA_SERVER",
+                "-Wno-overloaded-virtual",
+            ],
+            shared_libs: [
+                "libcameraservice",
+                "libgui",
+                "libhidlbase",
+                "android.hardware.camera.common@1.0",
+                "android.hardware.camera.provider@2.6",
+                "android.hardware.camera.device@3.4",
+            ],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "bootloader_message_offset_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    value_variables: ["BOOTLOADER_MESSAGE_OFFSET"],
+    properties: ["cflags"],
+}
+
+bootloader_message_offset_defaults {
+    name: "bootloader_message_offset",
+    soong_config_variables: {
+        BOOTLOADER_MESSAGE_OFFSET: {
+            cflags: ["-DBOARD_RECOVERY_BLDRMSG_OFFSET=%s"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "uses_qcom_bsp_legacy_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    bool_variables: ["USES_QCOM_BSP_LEGACY"],
+    properties: ["cppflags"],
+}
+
+uses_qcom_bsp_legacy_defaults {
+    name: "uses_qcom_bsp_legacy",
+    soong_config_variables: {
+        USES_QCOM_BSP_LEGACY: {
+            cppflags: ["-DQCOM_BSP_LEGACY"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "uses_camera_parameter_library_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "LINEAGE",
+    value_variables: ["USES_CAMERA_PARAMETER_LIBRARY"],
+    properties: ["whole_static_libs"],
+}
+
+uses_camera_parameter_library_defaults {
+    name: "uses_camera_parameter_library",
+    soong_config_variables: {
+        USES_CAMERA_PARAMETER_LIBRARY: {
+            whole_static_libs: ["%s"],
+        },
+    },
 }
