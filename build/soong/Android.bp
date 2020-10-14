@@ -49,3 +49,25 @@ cc_library_headers {
     vendor_available: true,
     recovery_available: true,
 }
+
+// Soong configs
+soong_config_module_type {
+    name: "surfaceflinger_qcom_extensions",
+    module_type: "cc_defaults",
+    config_namespace: "QCOM_TARGET",
+    bool_variables: ["BOARD_PLATFORM_UM_FAMILY"],
+    value_variables: ["BOARD_PLATFORM_SOONG_NAMESPACE"],
+    properties: ["cflags", "header_libs"],
+}
+
+surfaceflinger_qcom_extensions {
+    name: "surfaceflinger_qcom_ext_defaults",
+    soong_config_variables: {
+        BOARD_PLATFORM_UM_FAMILY: {
+            cflags: ["-DQCOM_UM_FAMILY"],
+        },
+        BOARD_PLATFORM_SOONG_NAMESPACE: {
+            header_libs: ["//%s/display:display_intf_headers"],
+        },
+    },
+}

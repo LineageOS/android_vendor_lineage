@@ -14,10 +14,6 @@ type Product_variables struct {
 		Overrides []string
 		Shared_libs []string
 	}
-	Qcom_um_soong_namespace struct {
-		Cflags []string
-		Header_libs []string
-	}
 	Recovery_skip_ev_rel_input struct {
 		Cflags []string
 	}
