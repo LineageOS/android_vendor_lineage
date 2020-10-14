@@ -52,6 +52,23 @@ cc_library_headers {
 
 // Soong configs
 soong_config_module_type {
+    name: "librmnetctl_defaults_pre_uplink",
+    module_type: "cc_defaults",
+    config_namespace: "DATASERVICES",
+    bool_variables: ["USES_PRE_UPLINK_FEATURES_NETMGRD"],
+    properties: ["cflags"],
+}
+
+librmnetctl_defaults_pre_uplink {
+    name: "librmnetctl_pre_uplink",
+    soong_config_variables: {
+        USES_PRE_UPLINK_FEATURES_NETMGRD: {
+            cflags: ["-DNO_UPLINK_FEATURES"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "surfaceflinger_qcom_extensions",
     module_type: "cc_defaults",
     config_namespace: "QCOM_TARGET",
