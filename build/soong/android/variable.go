@@ -3,9 +3,6 @@ type Product_variables struct {
 	Additional_gralloc_10_usage_bits struct {
 		Cppflags []string
 	}
-	Apply_msm8974_1440p_egl_workaround struct {
-		Cflags []string
-	}
 	Bootloader_message_offset struct {
 		Cflags []string
 	}
@@ -68,7 +65,6 @@ type Product_variables struct {
 
 type ProductVariables struct {
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
-	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Qcom_um_soong_namespace  *string `json:",omitempty"`
