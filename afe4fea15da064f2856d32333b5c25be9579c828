@@ -46,6 +46,30 @@
       "revId": "afe4fea15da064f2856d32333b5c25be9579c828",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0ff8883_ce4cac45",
+        "filename": "build/soong/Android.bp",
+        "patchSetId": 15
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 25126
+      },
+      "writtenOn": "2020-10-16T16:39:00Z",
+      "side": 1,
+      "message": "Yes, builds fine now with eleven-legacy-camera.",
+      "parentUuid": "98e19cdd_e3c499e7",
+      "range": {
+        "startLine": 341,
+        "startChar": 0,
+        "endLine": 360,
+        "endChar": 1
+      },
+      "revId": "afe4fea15da064f2856d32333b5c25be9579c828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
