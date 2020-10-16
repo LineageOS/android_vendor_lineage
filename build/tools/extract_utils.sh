@@ -447,6 +447,7 @@ function write_blueprint_packages() {
             fi
             printf '\tname: "%s",\n' "$PKGNAME"
             printf '\towner: "%s",\n' "$VENDOR"
+            printf '\tcheck_elf_files: false,\n'
             if [ "$ARGS" = "rootfs" ]; then
                 SRC="$SRC/rootfs"
                 if [ "$EXTRA" = "sbin" ]; then
