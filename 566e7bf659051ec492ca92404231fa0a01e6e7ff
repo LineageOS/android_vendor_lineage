@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c00ce687_f8ae1405",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 16
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-10-16T11:51:23Z",
+      "side": 1,
+      "message": "Not sure how this goes when BOARD_USES_QCOM_HARDWARE is not set.\n\nNote: \n\n\u003e  ifeq ($(BOARD_USES_QCOM_HARDWARE),true)\n\u003e  include vendor/lineage/config/BoardConfigQcom.mk\n\u003e  endif",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 59
+      },
+      "revId": "566e7bf659051ec492ca92404231fa0a01e6e7ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
