@@ -151,7 +151,7 @@ ignores_ftp_pptp_conntrack_failure_defaults {
     name: "ignores_ftp_pptp_conntrack_failure",
     soong_config_variables: {
         ignores_ftp_pptp_conntrack_failure: {
-            cppflags: ["DIGNORES_FTP_PPTP_CONNTRACK_FAILURE"],
+            cppflags: ["-DIGNORES_FTP_PPTP_CONNTRACK_FAILURE"],
         },
     },
 }
