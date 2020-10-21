@@ -1,7 +1,7 @@
 # Build fingerprint
 ifneq ($(BUILD_FINGERPRINT),)
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+    ro.build.fingerprint=$(shell echo $(BUILD_FINGERPRINT))
 endif
 
 # LineageOS System Version
