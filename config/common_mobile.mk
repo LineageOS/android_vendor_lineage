@@ -53,14 +53,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# Custom off-mode charger
-ifeq ($(WITH_LINEAGE_CHARGER),true)
-PRODUCT_PACKAGES += \
-    lineage_charger_res_images \
-    font_log.png \
-    libhealthd.lineage
-endif
-
 # Customizations
 PRODUCT_PACKAGES += \
     LineageNavigationBarNoHint \
