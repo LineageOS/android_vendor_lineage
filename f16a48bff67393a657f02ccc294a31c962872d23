@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e1b7df88_55c9efa0",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 807,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2020-10-22T08:34:09Z",
+      "side": 1,
+      "message": "These are filtered by MCC and MNC based on the inserted SIM in the APN menu on the device anyway. \"SE\" should therefore probably be removed. The APN name is usually also left in the original localized language, meaning \"and\" should perhaps be replaced with \"och\" or something like \"\u0026amp;\" (i.e. \"\u0026\" which works in basically every language). In other words, my suggestion is to name it \"Tele2 Internet \u0026amp; MMS\".",
+      "range": {
+        "startLine": 807,
+        "startChar": 16,
+        "endLine": 807,
+        "endChar": 41
+      },
+      "revId": "f16a48bff67393a657f02ccc294a31c962872d23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "299db863_4ee946bc",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 808,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2020-10-22T08:34:09Z",
+      "side": 1,
+      "message": "Outdated?",
+      "revId": "f16a48bff67393a657f02ccc294a31c962872d23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c0ed5bf_26610792",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 809,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2020-10-22T08:34:09Z",
+      "side": 1,
+      "message": "Outdated?",
+      "revId": "f16a48bff67393a657f02ccc294a31c962872d23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
