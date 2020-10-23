@@ -177,7 +177,7 @@ def is_in_manifest(projectpath):
 
     return False
 
-def add_to_manifest(repositories, fallback_branch = None):
+def add_to_manifest(repositories):
     try:
         lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
         lm = lm.getroot()
@@ -187,23 +187,18 @@ def add_to_manifest(repositories, fallback_branch = None):
     for repository in repositories:
         repo_name = repository['repository']
         repo_target = repository['target_path']
+        repo_revision = repository['revision']
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
             print('LineageOS/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
         print('Adding dependency: LineageOS/%s -> %s' % (repo_name, repo_target))
-        project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "LineageOS/%s" % repo_name })
-
-        if 'branch' in repository:
-            project.set('revision',repository['branch'])
-        elif fallback_branch:
-            print("Using fallback branch %s for %s" % (fallback_branch, repo_name))
-            project.set('revision', fallback_branch)
-        else:
-            print("Using default branch for %s" % repo_name)
-
+        project = ElementTree.Element("project", attrib = {
+            "path": repo_target,
+            "remote": "github",
+            "name": "LineageOS/%s" % repo_name,
+            "revision": repo_revision })
         lm.append(project)
 
     indent(lm, 0)
@@ -214,7 +209,7 @@ def add_to_manifest(repositories, fallback_branch = None):
     f.write(raw_xml)
     f.close()
 
-def fetch_dependencies(repo_path, fallback_branch = None):
+def fetch_dependencies(repo_path):
     print('Looking for dependencies in %s' % repo_path)
     dependencies_path = repo_path + '/lineage.dependencies'
     syncable_repos = []
@@ -229,9 +224,9 @@ def fetch_dependencies(repo_path, fallback_branch = None):
             if not is_in_manifest(dependency['target_path']):
                 fetch_list.append(dependency)
                 syncable_repos.append(dependency['target_path'])
-                verify_repos.append(dependency['target_path'])
-            else:
-                verify_repos.append(dependency['target_path'])
+                if 'revision' not in dependency:
+                    dependency['revision'] = get_default_or_fallback_revision(dependency['repository']);
+            verify_repos.append(dependency['target_path'])
 
             if not os.path.isdir(dependency['target_path']):
                 syncable_repos.append(dependency['target_path'])
@@ -240,7 +235,7 @@ def fetch_dependencies(repo_path, fallback_branch = None):
 
         if len(fetch_list) > 0:
             print('Adding dependencies to manifest')
-            add_to_manifest(fetch_list, fallback_branch)
+            add_to_manifest(fetch_list)
     else:
         print('%s has no additional dependencies.' % repo_path)
 
@@ -253,6 +248,31 @@ def fetch_dependencies(repo_path, fallback_branch = None):
 
 def has_branch(branches, revision):
     return revision in [branch['name'] for branch in branches]
+
+def get_default_or_fallback_revision(repo_name):
+    default_revision = get_default_revision()
+    print("Default revision: %s" % default_revision)
+    print("Checking branch info")
+
+    githubreq = urllib.request.Request("https://api.github.com/repos/LineageOS/" + repo_name + "/branches")
+    add_auth(githubreq)
+    result = json.loads(urllib.request.urlopen(githubreq).read().decode())
+    if has_branch(result, default_revision):
+        return default_revision;
+
+    if os.getenv('ROOMSERVICE_BRANCHES'):
+        fallbacks = list(filter(bool, os.getenv('ROOMSERVICE_BRANCHES').split(' ')))
+        for fallback in fallbacks:
+            if has_branch(result, fallback):
+                print("Using fallback branch: %s" % fallback)
+                return fallback
+
+    print("Default revision %s not found in %s. Bailing." % (default_revision, repo_name))
+    print("Branches found:")
+    for branch in [branch['name'] for branch in result]:
+        print(branch)
+    print("Use the ROOMSERVICE_BRANCHES environment variable to specify a list of fallback branches.")
+    sys.exit()
 
 if depsonly:
     repo_path = get_from_manifest(device)
@@ -270,48 +290,17 @@ else:
             print("Found repository: %s" % repository['name'])
             
             manufacturer = repo_name.replace("android_device_", "").replace("_" + device, "")
-            
-            default_revision = get_default_revision()
-            print("Default revision: %s" % default_revision)
-            print("Checking branch info")
-            githubreq = urllib.request.Request(repository['branches_url'].replace('{/branch}', ''))
-            add_auth(githubreq)
-            result = json.loads(urllib.request.urlopen(githubreq).read().decode())
-
-            ## Try tags, too, since that's what releases use
-            if not has_branch(result, default_revision):
-                githubreq = urllib.request.Request(repository['tags_url'].replace('{/tag}', ''))
-                add_auth(githubreq)
-                result.extend (json.loads(urllib.request.urlopen(githubreq).read().decode()))
-            
             repo_path = "device/%s/%s" % (manufacturer, device)
-            adding = {'repository':repo_name,'target_path':repo_path}
-            
-            fallback_branch = None
-            if not has_branch(result, default_revision):
-                if os.getenv('ROOMSERVICE_BRANCHES'):
-                    fallbacks = list(filter(bool, os.getenv('ROOMSERVICE_BRANCHES').split(' ')))
-                    for fallback in fallbacks:
-                        if has_branch(result, fallback):
-                            print("Using fallback branch: %s" % fallback)
-                            fallback_branch = fallback
-                            break
+            revision = get_default_or_fallback_revision(repo_name);
 
-                if not fallback_branch:
-                    print("Default revision %s not found in %s. Bailing." % (default_revision, repo_name))
-                    print("Branches found:")
-                    for branch in [branch['name'] for branch in result]:
-                        print(branch)
-                    print("Use the ROOMSERVICE_BRANCHES environment variable to specify a list of fallback branches.")
-                    sys.exit()
-
-            add_to_manifest([adding], fallback_branch)
+            device_repository = {'repository':repo_name,'target_path':repo_path,'revision':revision}
+            add_to_manifest([device_repository])
 
             print("Syncing repository to retrieve project.")
             os.system('repo sync --force-sync %s' % repo_path)
             print("Repository synced!")
 
-            fetch_dependencies(repo_path, fallback_branch)
+            fetch_dependencies(repo_path)
             print("Done")
             sys.exit()
 
