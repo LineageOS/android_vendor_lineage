@@ -99,8 +99,10 @@ else
     KERNEL_ADDITIONAL_CONFIG_SRC := /dev/null
 endif
 
-ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
-$(error BOARD_KERNEL_IMAGE_NAME not defined.)
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+    ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
+        $(error BOARD_KERNEL_IMAGE_NAME not defined.)
+    endif
 endif
 TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
 
