@@ -281,6 +281,23 @@ nvidia_enhancements {
 
 // QCOM specific config modules
 soong_config_module_type {
+    name: "ipacm_no_mtu",
+    module_type: "cc_defaults",
+    config_namespace: "lineageQcomVars",
+    bool_variables: ["uses_no_mtu_ipacm"],
+    properties: ["cflags"],
+}
+
+ipacm_no_mtu {
+    name: "ipacm_no_mtu_defaults",
+    soong_config_variables: {
+        uses_no_mtu_ipacm: {
+            cflags: ["-DNO_MTU"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "librmnetctl_pre_uplink",
     module_type: "cc_defaults",
     config_namespace: "lineageQcomVars",
