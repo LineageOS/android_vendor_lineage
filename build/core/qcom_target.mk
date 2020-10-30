@@ -24,7 +24,4 @@ $(call set-device-specific-path,WLAN,wlan,hardware/qcom-caf/wlan)
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
 
-PRODUCT_SOONG_NAMESPACES += \
-    $(call project-path-for,qcom-data-ipa-cfg-mgr)
-
 endif
