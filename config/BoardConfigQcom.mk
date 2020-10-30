@@ -1,3 +1,13 @@
+# Get device-specific HALs from project pathmap
+define get-device-specific-path
+$(if $(USE_DEVICE_SPECIFIC_$(1)), \
+    $(if $(DEVICE_SPECIFIC_$(1)_PATH), \
+        $(eval path := $(DEVICE_SPECIFIC_$(1)_PATH)), \
+        $(eval path := $(TARGET_DEVICE_DIR)/$(2))), \
+    $(eval path := $(3))) \
+    $(path)
+endef
+
 # Platform names
 KONA := kona #SM8250
 LITO := lito #SM7250
@@ -95,4 +105,6 @@ endif
 
 # Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
 QCOM_SOONG_NAMESPACE ?= hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)
-PRODUCT_SOONG_NAMESPACES += $(QCOM_SOONG_NAMESPACE)
+PRODUCT_SOONG_NAMESPACES += \
+    $(QCOM_SOONG_NAMESPACE) \
+    $(call get-device-specific-path,DATA_IPA_CFG_MGR,data-ipa-cfg-mgr,vendor/qcom/opensource/data-ipa-cfg-mgr)
