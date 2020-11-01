@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
     Eleven \
     Etar \
     Jelly \
-    LockClock \
     Profiles \
     TrebuchetQuickStep
 
