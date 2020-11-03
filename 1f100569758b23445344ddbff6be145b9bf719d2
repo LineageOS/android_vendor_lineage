@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "152b17f6_7dfbb0d8",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2020-11-03T17:54:42Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "0a40ae2d_1490591f",
+      "range": {
+        "startLine": 296,
+        "startChar": 2,
+        "endLine": 296,
+        "endChar": 162
+      },
+      "revId": "1f100569758b23445344ddbff6be145b9bf719d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3dd75b5e_f8c5c443",
         "filename": "prebuilt/common/etc/apns-conf.xml",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "1f100569758b23445344ddbff6be145b9bf719d2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f69d19c_ccb908c9",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 297,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2020-11-03T17:54:42Z",
+      "side": 1,
+      "message": "Removed the copy",
+      "parentUuid": "3dd75b5e_f8c5c443",
+      "range": {
+        "startLine": 297,
+        "startChar": 0,
+        "endLine": 297,
+        "endChar": 218
+      },
+      "revId": "1f100569758b23445344ddbff6be145b9bf719d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
