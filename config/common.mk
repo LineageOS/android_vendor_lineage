@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
     LineageThemesStub \
     ThemePicker
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
     7z \
