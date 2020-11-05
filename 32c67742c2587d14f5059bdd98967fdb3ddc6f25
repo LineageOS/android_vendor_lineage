@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6177aa51_ff0112cd",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 17401
+      },
+      "writtenOn": "2020-11-05T11:59:15Z",
+      "side": 1,
+      "message": "shouldnt this be `default,dun` according to the linked website?",
+      "range": {
+        "startLine": 292,
+        "startChar": 118,
+        "endLine": 292,
+        "endChar": 139
+      },
+      "revId": "32c67742c2587d14f5059bdd98967fdb3ddc6f25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a935e435_240bb3b1",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 17401
+      },
+      "writtenOn": "2020-11-05T11:59:15Z",
+      "side": 1,
+      "message": "and this one should be `Internet`",
+      "range": {
+        "startLine": 293,
+        "startChar": 146,
+        "endLine": 293,
+        "endChar": 158
+      },
+      "revId": "32c67742c2587d14f5059bdd98967fdb3ddc6f25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
