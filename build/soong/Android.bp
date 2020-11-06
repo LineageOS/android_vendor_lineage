@@ -49,6 +49,23 @@ cc_library_headers {
     recovery_available: true,
 }
 
+soong_config_module_type {
+    name: "disable_post_render_cleanup",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["disable_post_render_cleanup"],
+    properties: ["cppflags"],
+}
+
+disable_post_render_cleanup {
+    name: "disable_post_render_cleanup_defaults",
+    soong_config_variables: {
+        disable_post_render_cleanup: {
+            cppflags: ["-DDISABLE_POST_RENDER_CLEANUP"],
+        },
+    },
+}
+
 // Target platform agnostic config modules
 soong_config_module_type {
     name: "gralloc_10_usage_bits",
