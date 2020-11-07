@@ -1072,6 +1072,7 @@
   <apn carrier="Alice" mcc="262" mnc="07" apn="internet.partner1" authtype="0" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.41" mmsport="8080" mvno_type="spn" mvno_match_data="Alice" />
   <apn carrier="Fonic Prepaid" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" mvno_match_data="26207515" mvno_type="imsi" />
   <apn carrier="Lidl Mobile" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" mvno_match_data="26207520" mvno_type="imsi" />
+  <apn carrier="netzclub" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tchibo Internet" mcc="262" mnc="07" apn="webmobil1" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.8" mmsport="8080" type="default,supl,mms" mvno_match_data="26207500" mvno_type="imsi" />
   <apn carrier="O2 DE IMS" mcc="262" mnc="08" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2620739" mvno_type="imsi" />
   <apn carrier="Lebara" mcc="262" mnc="01" apn="internet.t-mobile" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="172.28.23.131" mmsport="8008" mvno_type="spn" mvno_match_data="Lebara" type="default,supl,mms" />
