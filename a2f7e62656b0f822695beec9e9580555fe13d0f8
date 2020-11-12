@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9448d1_0c7ce1f3",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-11-12T19:01:20Z",
+      "side": 1,
+      "message": "This won\u0027t work.",
+      "revId": "a2f7e62656b0f822695beec9e9580555fe13d0f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
