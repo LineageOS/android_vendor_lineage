@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b049a430_46108105",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 17117
+      },
+      "writtenOn": "2020-11-12T19:15:02Z",
+      "side": 1,
+      "message": "well it does work:\nPRODUCT_SOONG_NAMESPACES\u003dvendor/xiaomi/sm6250-common device/xiaomi/sm6250-common hardware/google/interfaces hardware/google/pixel hardware/xiaomi vendor/xiaomi/miatoll device/xiaomi/miatoll hardware/qcom-caf/sm8150 vendor/qcom/opensource/data-ipa-cfg-mgr vendor/qcom/opensource/commonsys/packages/apps/Bluetooth vendor/qcom/opensource/commonsys/system/bt/conf",
+      "parentUuid": "da9448d1_0c7ce1f3",
+      "revId": "a2f7e62656b0f822695beec9e9580555fe13d0f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a0764b07_e058c40c",
         "filename": "config/common.mk",
         "patchSetId": 2
