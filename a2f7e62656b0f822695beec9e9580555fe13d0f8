@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "437a7f7e_82451790",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-11-12T19:18:13Z",
+      "side": 1,
+      "message": "Do you see the line I pointed out? What I am trying to explain is that builds will be broken on non-QCOM devices not opting-in for QCOM_HARDWARE.",
+      "parentUuid": "b049a430_46108105",
+      "revId": "a2f7e62656b0f822695beec9e9580555fe13d0f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a0764b07_e058c40c",
         "filename": "config/common.mk",
         "patchSetId": 2
