@@ -279,8 +279,8 @@ else
     endif
 endif
 
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    vendor/lineage/build/target/product/security/lineage
+#PRODUCT_EXTRA_RECOVERY_KEYS += \
+#    vendor/lineage/build/target/product/security/lineage
 
 -include vendor/lineage-priv/keys/keys.mk
 
