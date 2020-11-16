@@ -433,3 +433,20 @@ stagefright_qcom_legacy {
         },
     },
 }
+
+soong_config_module_type {
+    name: "fod_always_on_hbm",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["fod_always_on_hbm"],
+    properties: ["cppflags"],
+}
+
+fod_always_on_hbm {
+    name: "fod_always_on_hbm_defaults",
+    soong_config_variables: {
+        fod_always_on_hbm: {
+            cppflags: ["-DFOD_ALWAYS_ON_HBM"],
+        },
+    },
+}
