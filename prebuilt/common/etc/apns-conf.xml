@@ -32,23 +32,19 @@
   <apn carrier="VZW Test IMS" mcc="001" mnc="010" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="VZW Test CBS" mcc="001" mnc="010" apn="VZWAPP" type="cbs,mms" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Virgin Mobile US" mcc="200" mnc="053" apn="0" port="" mmsproxy="205.239.233.136" mmsport="81" mmsc="http://mmsc.vmobl.com:8088/mms?" type="mms" />
-  <apn carrier="Cosmote Internet" mcc="202" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Cosmote MMS" mcc="202" mnc="01" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmsc.cosmote.gr:8002" mmsproxy="10.10.10.20" mmsport="8080" type="mms" />
-  <apn carrier="Vodafone Web" mcc="202" mnc="05" apn="internet.vodafone.gr" user="user" password="pass" authtype="3" type="default,supl" />
-  <apn carrier="Vf live!" mcc="202" mnc="05" apn="wap.vodafone.gr" proxy="213.249.19.49" port="5080" mmsc="" user="user" password="pass" authtype="3" type="default,supl" />
-  <apn carrier="Vf live! Prepay" mcc="202" mnc="05" apn="wapkarta.vodafone.gr" proxy="213.249.19.49" port="5080" mmsc="" user="user" password="pass" authtype="3" type="default,supl" />
-  <apn carrier="Vf Mobile Broadband" mcc="202" mnc="05" apn="internet" user="" password="" type="default,supl" />
-  <apn carrier="Vf Mobile Internet" mcc="202" mnc="05" apn="webonly.vodafone.gr" user="" password="" type="default,supl" />
-  <apn carrier="Vf kartointernet" mcc="202" mnc="05" apn="websession" user="" password="" type="default,supl" />
-  <apn carrier="Vf MMS" mcc="202" mnc="05" apn="mms.vodafone.net" proxy="" port="" mmsproxy="213.249.19.49" mmsport="5080" mmsc="http://mms.vodafone.gr" user="user" password="pass" authtype="1" type="mms" />
-  <apn carrier="Vf Internet Corporate" mcc="202" mnc="05" apn="internet" user="user" password="pass" type="default,supl" />
-  <apn carrier="Vodafone GR" mcc="202" mnc="05" apn="surfonly.vodafone.gr" type="default,supl" />
-  <apn carrier="Vodafone GR Prepaid" mcc="202" mnc="05" apn="webkarta.vodafone.gr" type="default,supl" />
-  <apn carrier="Q-Telecom Internet" mcc="202" mnc="09" apn="myq" type="default,supl" />
-  <apn carrier="Q-Telecom MMS" mcc="202" mnc="09" apn="q-mms.myq.gr" mmsc="http://mms.myq.gr" mmsproxy="192.168.80.134" mmsport="8080" type="mms" />
-  <apn carrier="WIND Internet" mcc="202" mnc="10" apn="gint.b-online.gr" user="" password="" type="default,supl" />
-  <apn carrier="WIND MMS" mcc="202" mnc="10" apn="mnet.b-online.gr" proxy="" port="" mmsproxy="192.168.200.11" mmsport="9401" mmsc="http://192.168.200.95/servlets/mms" user="" password="" type="mms" />
-  <apn carrier="Cyta GR" mcc="202" mnc="14" apn="internet.cyta.gr" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Cosmote Internet" mcc="202" mnc="01" apn="internet" type="default" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="Cosmote IMS" mcc="202" mnc="01" apn="ims" type="ims" authtype="1" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="Cosmote MMS" mcc="202" mnc="01" apn="mms" mmsc="http://mmsc.cosmote.gr:8002" mmsport="8080" mmsproxy="10.10.10.20" type="mms" protocol="IPV4V6" roaming_protocol="IP" />
+  <apn carrier="Vf Internet" mcc="202" mnc="05" apn="internet.vodafone.gr" type="default,supl,dun" protocol="IP" roaming_protocol="IP" />
+  <apn carrier="Vf IMS" mcc="202" mnc="05" apn="ims" type="ims" protocol="IP" roaming_protocol="IP" />
+  <apn carrier="Vf MMS" mcc="202" mnc="05" apn="mms.vodafone.net" mmsc="http://mms.vodafone.gr" mmsport="5080" mmsproxy="213.249.19.49" password="pass" type="mms" user="user" protocol="IP" roaming_protocol="IP" />
+  <apn carrier="Q-Telecom Internet" mcc="202" mnc="09" apn="myq" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Q-Telecom MMS GPRS" mcc="202" mnc="09" apn="q-mms.myq.gr" mmsc="http://mms.myq.gr" mmsproxy="192.168.80.134" mmsport="8080" type="mms" />
+  <apn carrier="Wind Internet" mcc="202" mnc="10" apn="gint.b-online.gr" type="default" protocol="IP" roaming_protocol="IP" />
+  <apn carrier="Wind IMS" mcc="202" mnc="10" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IP" />
+  <apn carrier="Wind MMS" mcc="202" mnc="10" apn="mnet.b-online.gr" mmsc="http://192.168.200.95/servlets/mms" mmsport="9401" mmsproxy="192.168.200.11" type="mms" protocol="IP" roaming_protocol="IP" />
+  <apn carrier="Nova Internet" mcc="202" mnc="17" apn="internet.nova.gr" type="default" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Nova MMS" mcc="202" mnc="17" apn="mms.nova.gr" mmsc="http://mms.nova.gr/mms/" mmsport="8080" mmsproxy="212.251.24.200" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Tele2 NL" mcc="204" mnc="02" apn="internet.tele2.nl" mmsc="http://mmsc.tele2.nl" mmsproxy="193.12.40.64" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tele2 GPRS" mcc="204" mnc="02" apn="Tele2 GPRS" proxy="130.244.196.090" port="8080" mmsproxy="193.012.040.064" mmsport="8080" mmsc="" user="" password="" type="default,supl,mms" />
   <apn carrier="MVNO NL" mcc="204" mnc="03" apn="internet.mvno.mobi" user="mvno" password="mvno" authtype="1" type="default,supl" mvno_match_data="20403" mvno_type="imsi" />
