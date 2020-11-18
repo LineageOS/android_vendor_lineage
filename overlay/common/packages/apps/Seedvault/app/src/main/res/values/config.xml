@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Normally, restoring from backup is only available during initial device setup.
+    You can make it always available at your own risk.
+    Keep in mind that the Auto-Restore feature works independently from this.
+
+    Launch an intent with the action "com.stevesoltys.seedvault.RESTORE_BACKUP"
+    to trigger restore during device setup.
+    -->
+    <bool name="show_restore_in_settings">true</bool>
+</resources>
