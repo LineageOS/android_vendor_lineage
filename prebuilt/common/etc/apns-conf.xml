@@ -506,6 +506,7 @@
   <apn carrier="Mobilkom" mcc="232" mnc="01" apn="a1.net" user="ppp@a1plus.at" password="ppp" type="default,supl" />
   <apn carrier="A1" mcc="232" mnc="01" apn="a1.net" proxy="" port="" user="ppp@A1plus.at" password="ppp" server="*" mmsc="http://mmsc.A1.net" mmsproxy="194.48.124.71" mmsport="8001" type="default,supl,mms" />
   <apn carrier="Mobilkom MMS" mcc="232" mnc="01" apn="free.a1.net" proxy="" port="" user="ppp@a1plus.at" password="ppp" mmsc="http://mmsc.a1.net" mmsproxy="194.48.124.71" mmsport="8001" type="mms" />
+  <apn carrier="educom" mcc="232" mnc="01" apn="webapn.at" type="default,supl" />
   <apn carrier="T-Mobile Internet" mcc="232" mnc="03" apn="gprsinternet" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.at/servlets/mms" mmsproxy="010.012.000.020" mmsport="80" authtype="1" type="default,supl" />
   <apn carrier="T-Mobile MMS" mcc="232" mnc="03" apn="gprsmms" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.at/servlets/mms" mmsproxy="010.012.000.020" mmsport="80" authtype="1" type="mms" />
   <apn carrier="3 AT" mcc="232" mnc="05" apn="drei.at" server="http://mobile.drei.at" mmsc="http://mmsc" mmsproxy="213.094.078.133" mmsport="8799" type="default,supl,mms" />
