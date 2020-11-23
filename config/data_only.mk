@@ -4,5 +4,4 @@ PRODUCT_PACKAGES += \
 
 # Telephony packages
 PRODUCT_PACKAGES += \
-    Stk \
-    CellBroadcastReceiver
+    Stk
