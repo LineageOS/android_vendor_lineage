@@ -49,6 +49,23 @@ cc_library_headers {
     recovery_available: true,
 }
 
+soong_config_module_type {
+    name: "disable_killing_oneshot_service",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["disable_killing_oneshot_service"],
+    properties: ["cppflags"],
+}
+
+disable_killing_oneshot_service {
+    name: "disable_killing_oneshot_service_defaults",
+    soong_config_variables: {
+        disable_killing_oneshot_service: {
+            cppflags: ["-DDISABLE_KILLING_ONESHOT_SERVICE"],
+        },
+    },
+}
+
 // Target platform agnostic config modules
 soong_config_module_type {
     name: "disable_postrender_cleanup",
