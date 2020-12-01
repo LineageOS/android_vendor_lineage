@@ -30,8 +30,7 @@ PRODUCT_PACKAGES += \
     Etar \
     Jelly \
     Profiles \
-    Seedvault \
-    TrebuchetQuickStep
+    Seedvault
 
 # Accents
 PRODUCT_PACKAGES += \
