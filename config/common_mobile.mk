@@ -25,8 +25,21 @@ PRODUCT_PACKAGES += \
     Etar \
     Jelly \
     Profiles \
-    Seedvault \
+    Seedvault
+
+ifeq ($(PRODUCT_TYPE), go)
+PRODUCT_PACKAGES += \
+    TrebuchetQuickStepGo
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    TrebuchetQuickStepGo
+else
+PRODUCT_PACKAGES += \
     TrebuchetQuickStep
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    TrebuchetQuickStep
+endif
 
 # Accents
 PRODUCT_PACKAGES += \
