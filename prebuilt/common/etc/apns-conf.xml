@@ -1312,7 +1312,7 @@
   <apn carrier="Sprint internet" mcc="310" mnc="120" apn="n.ispsn" type="mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Boost" mcc="310" mnc="120" apn="cinet.spcs" type="supl,mms,dun,fota" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Credo Mobile" mcc="310" mnc="120" apn="n.w1.ispsn" type="mms" mmsc="http://mms.plspictures.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="Ting" mcc="310" mnc="120" apn="n.t8.ispsn" type="supl,mms" mmsc="http://mms.plspictures.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Ting" mcc="310" mnc="120" apn="n.t8.ispsn" type="default,supl,mms" mmsc="http://mms.plspictures.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Ringplus" mcc="310" mnc="120" apn="n.r5.ispsn" type="supl,mms" mmsc="http://mms.plspictures.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Virgin Mobile" mcc="310" mnc="120" apn="n.vmu.ispsn" user="Sprint" password="*" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mmsc.vmobl.com:8088/mms?" type="supl,mms,fota,dun" />
   <apn carrier="FreedomPop LTE" mcc="310" mnc="120" apn="n.f6.ispsn" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="supl,mms" bearer="14" />
