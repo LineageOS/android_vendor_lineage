@@ -1813,6 +1813,9 @@ function generate_prop_list_from_image() {
 
     find "$image_dir" -not -type d | sed "s#^$image_dir/##" | while read -r FILE
     do
+        if suffix_match_file ".odex" "$FILE" || suffix_match_file ".vdex" "$FILE" ; then
+            continue
+        fi
         # Skip VENDOR_SKIP_FILES since it will be re-generated at build time
         if array_contains "$FILE" "${VENDOR_SKIP_FILES[@]}"; then
             continue
