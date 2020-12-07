@@ -16,11 +16,30 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Package name(s) containing location provider support.
+         These packages can contain services implementing location providers,
+         such as the Geocode Provider, Network Location Provider, and Fused
+         Location Provider.
+         The signatures of packages named below and installed in the system
+         image are "allowed" signatures.
+         The location framework checks ALL installed packages if they provide
+         an implementation of a specific location provider and compares the
+         signature of the package with the list of allowed signatures.
+
+         The location framework has support for installation of new or
+         updated location providers at run-time. However the new package must
+         have a signature that matches the signature of at least one package
+         on this list which is installed in the system image.
+
+         The chosen package for the specific location provider does not
+         depend on the order of this list. -->
     <string-array name="config_locationProviderPackageNames" translatable="false">
         <!-- The Google provider -->
         <item>com.google.android.gms</item>
         <!-- The standard AOSP fused location provider -->
         <item>com.android.location.fused</item>
+        <!-- The MicroG Unified location provider -->
+        <item>org.microg.nlp</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
