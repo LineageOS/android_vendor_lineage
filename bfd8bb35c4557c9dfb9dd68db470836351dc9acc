@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e96852a8_c37aaddf",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 972,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-12-07T12:36:26Z",
+      "side": 1,
+      "message": "move the whole thing down below \"Beeline MMS\", the ordering is by mcc/mnc",
+      "range": {
+        "startLine": 972,
+        "startChar": 2,
+        "endLine": 972,
+        "endChar": 129
+      },
+      "revId": "bfd8bb35c4557c9dfb9dd68db470836351dc9acc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8827bdca_ac372dd7",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 972,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-12-07T12:36:26Z",
+      "side": 1,
+      "message": "remove spaces around the equal-character",
+      "range": {
+        "startLine": 972,
+        "startChar": 42,
+        "endLine": 972,
+        "endChar": 45
+      },
+      "revId": "bfd8bb35c4557c9dfb9dd68db470836351dc9acc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b58e2c0_1af49cf7",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 972,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-12-07T12:36:26Z",
+      "side": 1,
+      "message": "can remove empty user and password",
+      "range": {
+        "startLine": 972,
+        "startChar": 87,
+        "endLine": 972,
+        "endChar": 106
+      },
+      "revId": "bfd8bb35c4557c9dfb9dd68db470836351dc9acc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
