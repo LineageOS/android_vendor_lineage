@@ -21,6 +21,8 @@
         <item>com.google.android.gms</item>
         <!-- The standard AOSP fused location provider -->
         <item>com.android.location.fused</item>
+		<!-- The MicroG Unified location provider -->
+		<item>org.microg.nlp</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
