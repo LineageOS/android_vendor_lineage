@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +11,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_arm.mk \
-    $(LOCAL_DIR)/lineage_arm64.mk \
-    $(LOCAL_DIR)/lineage_x86.mk \
-    $(LOCAL_DIR)/lineage_x86_64.mk \
-    $(LOCAL_DIR)/lineage_tv_arm.mk \
-    $(LOCAL_DIR)/lineage_tv_arm64.mk \
-    $(LOCAL_DIR)/lineage_tv_x86.mk \
-    $(LOCAL_DIR)/lineage_tv_x86_64.mk
+$(call inherit-product, device/google/atv/products/atv_base.mk)
+$(call inherit-product, device/lineage/atv/lineage_atv.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tv.mk)
+
+PRODUCT_COPY_FILES += \
+    device/generic/goldfish/data/etc/permissions/privapp-permissions-goldfish.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-goldfish.xml \
+
+# Allow building otatools
+TARGET_FORCE_OTA_PACKAGE := true
