@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0a8285d4_c7c3dc7c",
+        "filename": "README.mkdn",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2020-12-09T18:40:24Z",
+      "side": 1,
+      "message": "Can we just drop this block and simply point to wiki?",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 3
+      },
+      "revId": "ffa7dcf5415d995b6c74c84b2cbdb7690646a7be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9793604_5674041c",
+        "filename": "README.mkdn",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2020-12-09T18:40:24Z",
+      "side": 1,
+      "message": "This should point to buildkite now, in a separate commit",
+      "range": {
+        "startLine": 35,
+        "startChar": 44,
+        "endLine": 35,
+        "endChar": 93
+      },
+      "revId": "ffa7dcf5415d995b6c74c84b2cbdb7690646a7be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
