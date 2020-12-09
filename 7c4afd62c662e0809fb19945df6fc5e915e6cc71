@@ -16,6 +16,24 @@
       "revId": "7c4afd62c662e0809fb19945df6fc5e915e6cc71",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8afb2fd1_8e802751",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 27552
+      },
+      "writtenOn": "2020-12-09T00:03:18Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "010a5182_cb4d89ea",
+      "revId": "7c4afd62c662e0809fb19945df6fc5e915e6cc71",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
