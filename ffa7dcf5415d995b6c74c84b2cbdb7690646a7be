@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "262acbd0_79a905f1",
+        "filename": "README.mkdn",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-12-10T12:14:22Z",
+      "side": 1,
+      "message": "It\u0027s gone for good. It\u0027s here anyway: https://github.com/LineageOS/android#getting-started",
+      "parentUuid": "48fdae14_34750676",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 3
+      },
+      "revId": "ffa7dcf5415d995b6c74c84b2cbdb7690646a7be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b9793604_5674041c",
         "filename": "README.mkdn",
         "patchSetId": 2
