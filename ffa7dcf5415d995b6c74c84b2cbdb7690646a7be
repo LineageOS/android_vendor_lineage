@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "48fdae14_34750676",
+        "filename": "README.mkdn",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 23715
+      },
+      "writtenOn": "2020-12-10T12:12:05Z",
+      "side": 1,
+      "message": "I think it\u0027s useful to have the repo init command here, so people who are familiar with the process can just copy it immediately from this page, instead of typing manually or going to the wiki, scrolling down and finding that line.",
+      "parentUuid": "0a8285d4_c7c3dc7c",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 3
+      },
+      "revId": "ffa7dcf5415d995b6c74c84b2cbdb7690646a7be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b9793604_5674041c",
         "filename": "README.mkdn",
         "patchSetId": 2
