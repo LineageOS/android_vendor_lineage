@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "85386865_cf69c507",
+        "filename": "prebuilt/common/bin/backuptool_ab.functions",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-12-29T21:18:49Z",
+      "side": 0,
+      "message": "This was wrong, it should have been `rm \"/postinstall/$2\"`",
+      "revId": "024a3c0bc620445edf2621718a029632bcdcb783",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
