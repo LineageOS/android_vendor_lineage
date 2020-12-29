@@ -8,8 +8,19 @@ export SYSDEV="$(readlink -nf "$2")"
 export SYSFS="$3"
 export V=18.1
 
+export ADDOND_VERSION=3
+
+# Partitions to mount for backup/restore in V3
+export all_V3_partitions="vendor product system_ext odm oem"
+
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
+
+get_script_version() {
+  version=$(grep "^# ADDOND_VERSION=" $1 | cut -d= -f2)
+  [ -z "$version" ] && version=1
+  echo $version
+}
 
 # Preserve /system/addon.d in /tmp/addon.d
 preserve_addon_d() {
@@ -47,11 +58,20 @@ return 0
 run_stage() {
 if [ -d /tmp/addon.d/ ]; then
   for script in $(find /tmp/addon.d/ -name '*.sh' |sort -n); do
-    $script $1
+    if [ $(get_script_version $f) -ge 3 ]; then
+      mount_extra $all_V3_partitions
+      $script $1
+    else
+      umount_extra $all_V3_partitions
+      ADDOND_VERSION= $script $1
+    fi
   done
 fi
 }
 
+#####################
+### Mount helpers ###
+#####################
 determine_system_mount() {
   if grep -q -e"^$SYSDEV" /proc/mounts; then
     umount $(grep -e"^$SYSDEV" /proc/mounts | cut -d" " -f2)
@@ -78,6 +98,29 @@ unmount_system() {
 
 determine_system_mount
 
+DYNAMIC_PARTITIONS=$(getprop ro.boot.dynamic_partitions)
+BLK_PATH=$(dirname "$SYSDEV")
+
+mount_extra() {
+  for partition in $@; do
+    mnt_point="/$partition"
+    mountpoint "$mnt_point" >/dev/null 2>&1 && break
+
+    blk_dev="${BLK_PATH}/${partition}${SLOT_SUFFIX}"
+    if [ -e "$blk_dev" ]; then
+      [ "$DYNAMIC_PARTITIONS" = "true" ] && blockdev --setrw "$blk_dev"
+      mkdir -p "$mnt_point"
+      mount -o rw "$blk_dev" "$mnt_point"
+    fi
+  done
+}
+
+umount_extra() {
+  for partition in $@; do
+    umount -l "/$partition" 2>/dev/null
+  done
+}
+
 case "$1" in
   backup)
     mount_system
@@ -96,6 +139,7 @@ case "$1" in
       run_stage pre-restore
       run_stage restore
       run_stage post-restore
+      umount_extra $all_V3_partitions
       restore_addon_d
       rm -rf $C
       sync
