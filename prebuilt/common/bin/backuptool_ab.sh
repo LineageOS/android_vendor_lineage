@@ -7,7 +7,10 @@ export S=/system
 export C=/postinstall/tmp/backupdir
 export V=18.1
 
-export ADDOND_VERSION=2
+export ADDOND_VERSION=3
+
+# Partitions to mount for backup/restore in V3
+export all_V3_partitions="vendor product system_ext odm oem"
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 mkdir -p /postinstall/tmp/
@@ -20,13 +23,11 @@ preserve_addon_d() {
     mkdir -p /postinstall/tmp/addon.d/
     cp -a /system/addon.d/* /postinstall/tmp/addon.d/
 
-    # Discard any scripts that aren't at least our version level
+    # Discard any version 1 script, as it is not compatible with a/b
     for f in /postinstall/tmp/addon.d/*sh; do
       SCRIPT_VERSION=$(grep "^# ADDOND_VERSION=" $f | cut -d= -f2)
-      if [ -z "$SCRIPT_VERSION" ]; then
-        SCRIPT_VERSION=1
-      fi
-      if [ $SCRIPT_VERSION -lt $ADDOND_VERSION ]; then
+      [ -z "$SCRIPT_VERSION" ] && SCRIPT_VERSION=1
+      if [ $SCRIPT_VERSION = 1 ]; then
         rm $f
       fi
     done
@@ -60,16 +61,70 @@ return 0
 
 # Execute /system/addon.d/*.sh scripts with $1 parameter
 run_stage() {
-if [ -d /postinstall/tmp/addon.d/ ]; then
-  for script in $(find /postinstall/tmp/addon.d/ -name '*.sh' |sort -n); do
+scripts_path="/postinstall/tmp/addon.d/"
+if [ -d $scripts_path ]; then
+  for script in $(find $scripts_path -name '*.sh' |sort -n); do
     # we have no /sbin/sh in android, only recovery
     # use /system/bin/sh here instead
     sed -i '0,/#!\/sbin\/sh/{s|#!/sbin/sh|#!/system/bin/sh|}' $script
     # we can't count on /tmp existing on an A/B device, so utilize /postinstall/tmp as tmpfs
     sed -i 's|. /tmp/backuptool.functions|. /postinstall/tmp/backuptool.functions|g' $script
-    $script $1
+
+    SCRIPT_VERSION=$(grep "^# ADDOND_VERSION=" $script | cut -d= -f2)
+    [ -z "$SCRIPT_VERSION" ] && SCRIPT_VERSION=1
+    if [ $SCRIPT_VERSION -ge 3 ]; then
+      [ "$1" = "pre-restore" ] && mount_extra $all_V3_partitions
+      ADDON_V3=true $script $1
+      [ "$1" = "post-restore" ] && umount_extra $all_V3_partitions
+    else
+      umount_extra $all_V3_partitions
+      $script $1
+    fi
   done
 fi
+}
+
+#####################
+### Mount helpers ###
+#####################
+DYNAMIC_PARTITIONS=$(getprop ro.boot.dynamic_partitions)
+if [ "$DYNAMIC_PARTITIONS" = "true" ]; then
+    BLK_PATH="/dev/block/mapper"
+else
+    BLK_PATH=/dev/block/bootdevice/by-name
+fi
+
+CURRENTSLOT=$(getprop ro.boot.slot_suffix)
+if [ ! -z "$CURRENTSLOT" ]; then
+  if [ "$CURRENTSLOT" = "_a" ]; then
+    # Opposite slot
+    SLOT_SUFFIX="_b"
+  else
+    SLOT_SUFFIX="_a"
+  fi
+fi
+
+to_upper() {
+  echo "$1" | tr '[a-z]' '[A-Z]'
+}
+
+mount_extra() {
+  for partition in $1; do
+    mnt_point="/postinstall/$partition"
+    mountpoint "$mnt_point" && break
+
+    blk_dev="${BLK_PATH}/${partition}${SLOT_SUFFIX}"
+    if [ -e "$blk_dev" ]; then
+      [ "$DYNAMIC_PARTITIONS" = "true" ] && block --setrw "$blk_dev"
+      mount -o rw "$blk_dev" "$mnt_point"
+    fi
+  done
+}
+
+umount_extra() {
+  for partition in $1; do
+    umount -l "/$partition"
+  done
 }
 
 case "$1" in
