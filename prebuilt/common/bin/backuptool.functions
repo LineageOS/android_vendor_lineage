@@ -34,10 +34,13 @@ restore_file() {
     if [ ! -d "$DIR" ]; then
       mkdir -p "$DIR";
     fi
-    copy_file "$C/$DIR/$FILE" "$1";
+    copy_file "$C/$DIR/$FILE" $(get_output_path "$1");
     if [ -n "$2" ]; then
       echo "Deleting obsolete file $2"
-      rm "$2";
+      rm $(get_output_path "$2");
     fi
   fi
 }
+
+# In recovery we mounted all partitions in the right place, so we can rely on symlink resolution
+alias get_output_path=realpath
