@@ -11,6 +11,7 @@ export ADDOND_VERSION=2
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 mkdir -p /postinstall/tmp/
+mountpoint /postinstall/tmp >/dev/null 2>&1 || mount -t tmpfs tmpfs /postinstall/tmp
 cp -f /postinstall/system/bin/backuptool_ab.functions /postinstall/tmp/backuptool.functions
 
 # Preserve /system/addon.d in /tmp/addon.d
@@ -64,8 +65,7 @@ if [ -d /postinstall/tmp/addon.d/ ]; then
     # we have no /sbin/sh in android, only recovery
     # use /system/bin/sh here instead
     sed -i '0,/#!\/sbin\/sh/{s|#!/sbin/sh|#!/system/bin/sh|}' $script
-    # we can't count on /tmp existing on an A/B device, so utilize /postinstall/tmp
-    # as a pseudo-/tmp dir
+    # we can't count on /tmp existing on an A/B device, so utilize /postinstall/tmp as tmpfs
     sed -i 's|. /tmp/backuptool.functions|. /postinstall/tmp/backuptool.functions|g' $script
     $script $1
   done
@@ -89,6 +89,7 @@ case "$1" in
       run_stage post-restore
       restore_addon_d
       rm -rf $C
+      umount /postinstall/tmp
       rm -rf /postinstall/tmp
       sync
     fi
