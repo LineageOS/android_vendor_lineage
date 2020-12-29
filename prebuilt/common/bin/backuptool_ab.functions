@@ -39,10 +39,35 @@ backup_file() {
 
 restore_file() {
   if [ -e "$C/$1" -o -L "$C/$1" ]; then
-    move_file "$C/$1" "/postinstall/$1";
+    move_file "$C/$1" $(get_output_path "$1");
     if [ -n "$2" ]; then
       echo "Deleting obsolete file $2"
-      rm "$2";
+      rm $(get_output_path "$2");
     fi
   fi
+}
+
+get_output_path() {
+  if [ $ADDOND_VERSION -lt 3 ]; then
+    echo "/postinstall/$1"
+    return
+  fi
+
+  file=$(echo "$1" | sed "s|^$S/||")
+  if __is_on_mounted_partition "$file"; then
+    echo "/postinstall/$file"
+  else
+    echo "/postinstall/$1"
+  fi
+}
+
+__is_on_mounted_partition() {
+  for p in $all_V3_partitions; do
+    mnt_point="/postinstall/$p"
+    if echo "$1" | grep -q "^$p/" && [ ! -L "$mnt_point" ] && mountpoint >/dev/null 2>&1 "$mnt_point"; then
+      return 0
+    fi
+  done
+
+  return 1
 }
