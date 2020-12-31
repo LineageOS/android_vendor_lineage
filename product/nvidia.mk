@@ -16,3 +16,18 @@
 # Includes support for:
 # 1) NvCPL / Application Profiles
 NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
+<<<<<<< PATCH SET (8ab620 Nvidia: Indicate support for Beyonder)
+
+# Nvidia ShieldTech enhancements
+# Includes support for:
+# 1) NvAcessories (bluetooth only)
+# 2) Enhanced Input Device Filtering
+NV_ANDROID_SHIELDTECH_ENHANCEMENTS := true
+
+# Nvidia Beyonder remote app enhancements
+# Includes support for:
+# 1) Allowing a vendor remote service to run
+# 2) Routing Beyonder calls
+NV_ANDROID_BEYONDER_ENHANCEMENTS := true
+=======
+>>>>>>> BASE      (212b37 config: Exclude LatinIME dictionaries from RRO overlays)
