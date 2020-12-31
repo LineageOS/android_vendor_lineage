@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD   (7c4281 soong: Add TARGET_LEGACY_HW_DISK_ENCRYPTION conditional)
+=======
+>>>>>>> 3ebd8720... Nvidia: Indicate support for Beyonder
 # Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,3 +27,9 @@ NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
 # 1) NvAcessories (bluetooth only)
 # 2) Enhanced Input Device Filtering
 NV_ANDROID_SHIELDTECH_ENHANCEMENTS := true
+
+# Nvidia Beyonder remote app enhancements
+# Includes support for:
+# 1) Allowing a vendor remote service to run
+# 2) Routing Beyonder calls
+NV_ANDROID_BEYONDER_ENHANCEMENTS := true
