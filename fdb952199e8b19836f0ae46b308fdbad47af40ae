@@ -22,6 +22,30 @@
       "revId": "fdb952199e8b19836f0ae46b308fdbad47af40ae",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83df0553_27609afe",
+        "filename": "config/common_mobile.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2020-12-31T15:11:17Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f327e225_f572c070",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 9
+      },
+      "revId": "fdb952199e8b19836f0ae46b308fdbad47af40ae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
