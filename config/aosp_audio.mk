@@ -27,10 +27,14 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/media/audio/alarms/Argon-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Argon-old.ogg \
     vendor/lineage/prebuilt/common/media/audio/alarms/Carbon-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Carbon-old.ogg \
     vendor/lineage/prebuilt/common/media/audio/alarms/Krypton-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Krypton-old.ogg \
-    vendor/lineage/prebuilt/common/media/audio/alarms/Neon-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Neon-old.ogg \
     vendor/lineage/prebuilt/common/media/audio/alarms/Osmium-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Osmium-old.ogg \
     vendor/lineage/prebuilt/common/media/audio/alarms/Oxygen-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Oxygen-old.ogg \
     vendor/lineage/prebuilt/common/media/audio/alarms/Platinum-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Platinum-old.ogg
+
+ifneq ($(TARGET_REDUCES_RINGTONES),true)
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/media/audio/alarms/Neon-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Neon-old.ogg
+endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/F1_New_SMS.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/F1_New_SMS.ogg \
@@ -119,11 +123,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/newwavelabs/Champagne_Edition.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Champagne_Edition.ogg \
     $(LOCAL_PATH)/newwavelabs/Club_Cubano.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Club_Cubano.ogg \
     $(LOCAL_PATH)/newwavelabs/CrayonRock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/CrayonRock.ogg \
-    $(LOCAL_PATH)/newwavelabs/CrazyDream.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/CrazyDream.ogg \
     $(LOCAL_PATH)/newwavelabs/CurveBall.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/CurveBall.ogg \
     $(LOCAL_PATH)/newwavelabs/DancinFool.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/DancinFool.ogg \
     $(LOCAL_PATH)/newwavelabs/DonMessWivIt.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/DonMessWivIt.ogg \
-    $(LOCAL_PATH)/newwavelabs/DreamTheme.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/DreamTheme.ogg \
     $(LOCAL_PATH)/newwavelabs/Eastern_Sky.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Eastern_Sky.ogg \
     $(LOCAL_PATH)/newwavelabs/Enter_the_Nexus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Enter_the_Nexus.ogg \
     $(LOCAL_PATH)/newwavelabs/EtherShake.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/EtherShake.ogg \
@@ -171,7 +173,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ringtones/Lyra.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Lyra.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Andromeda.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Andromeda.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Aquila.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Aquila.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/ArgoNavis.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/ArgoNavis.ogg \
     $(LOCAL_PATH)/ringtones/ogg/CanisMajor.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/CanisMajor.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Carina.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Carina.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Centaurus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Centaurus.ogg \
@@ -179,22 +180,29 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ringtones/ogg/Draco.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Draco.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Girtab.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Girtab.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Hydra.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Hydra.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/Kuma.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Kuma.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Machina.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Machina.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Orion.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Orion.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Pegasus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Pegasus.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/Perseus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Perseus.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/Pyxis.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Pyxis.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/Rasalas.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Rasalas.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Rigel.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Rigel.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Scarabaeus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Scarabaeus.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/Sceptrum.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Sceptrum.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Solarium.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Solarium.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/Themos.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Themos.ogg \
-    $(LOCAL_PATH)/ringtones/ogg/UrsaMinor.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/UrsaMinor.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Zeta.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zeta.ogg \
     $(LOCAL_PATH)/ringtones/Testudo.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Testudo.ogg \
     $(LOCAL_PATH)/ringtones/Vespa.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Vespa.ogg
+
+ifneq ($(TARGET_REDUCES_RINGTONES),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/newwavelabs/CrazyDream.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/CrazyDream.ogg \
+    $(LOCAL_PATH)/newwavelabs/DreamTheme.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/DreamTheme.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/ArgoNavis.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/ArgoNavis.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/Kuma.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Kuma.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/Perseus.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Perseus.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/Pyxis.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Pyxis.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/Rasalas.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Rasalas.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/Sceptrum.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Sceptrum.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/Themos.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Themos.ogg \
+    $(LOCAL_PATH)/ringtones/ogg/UrsaMinor.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/UrsaMinor.ogg
+endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/effects/ogg/ChargingStarted.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/ChargingStarted.ogg \
