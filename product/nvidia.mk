@@ -16,3 +16,9 @@
 # Includes support for:
 # 1) NvCPL / Application Profiles
 NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
+
+# Nvidia Beyonder remote app enhancements
+# Includes support for:
+# 1) Allowing a vendor remote service to run
+# 2) Routing Beyonder calls
+NV_ANDROID_BEYONDER_ENHANCEMENTS := true
