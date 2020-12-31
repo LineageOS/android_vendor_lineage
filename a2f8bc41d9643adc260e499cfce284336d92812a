@@ -16,6 +16,24 @@
       "revId": "a2f8bc41d9643adc260e499cfce284336d92812a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "62d7d799_25d6b88b",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2020-12-31T20:59:02Z",
+      "side": 1,
+      "message": "That\u0027s kind of weird that you need to flag WITH_GMS to enable WITH_GMS_FI/WITH_GMS_GO/etc.",
+      "parentUuid": "71d95e9c_edd792b7",
+      "revId": "a2f8bc41d9643adc260e499cfce284336d92812a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
