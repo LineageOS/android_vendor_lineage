@@ -34,6 +34,24 @@
       "revId": "a2f8bc41d9643adc260e499cfce284336d92812a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a261e73_6e2616a6",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2020-12-31T20:59:58Z",
+      "side": 1,
+      "message": "I guess this should be ifeq ($(PRODUCT_IS_ATV),true) \u0026\u0026 ifeq ($(WITH_GMS,true)",
+      "parentUuid": "62d7d799_25d6b88b",
+      "revId": "a2f8bc41d9643adc260e499cfce284336d92812a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
