@@ -17,9 +17,14 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Exchange2
 
+# AudioFX
+ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
+PRODUCT_PACKAGES += \
+    AudioFX
+endif
+
 # Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     Eleven \
     Etar \
