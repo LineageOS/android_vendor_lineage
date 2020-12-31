@@ -19,13 +19,18 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     Eleven \
     Etar \
     Jelly \
     Profiles \
     Seedvault
+
+# AudioFX
+ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
+PRODUCT_PACKAGES += \
+    AudioFX
+endif
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
