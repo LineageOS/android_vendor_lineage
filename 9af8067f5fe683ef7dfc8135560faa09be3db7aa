@@ -16,6 +16,24 @@
       "revId": "9af8067f5fe683ef7dfc8135560faa09be3db7aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "48514895_1a90c38a",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-01-05T22:19:06Z",
+      "side": 1,
+      "message": "sm7250 only maybe.\nIn facts it\u0027s what https://android.googlesource.com/device/google/redbull/+/refs/tags/android-11.0.0_r28/device-common.mk#37 would do, as they expect it synced there (but proprietary)",
+      "parentUuid": "5f757bda_155bc61a",
+      "revId": "9af8067f5fe683ef7dfc8135560faa09be3db7aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
