@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bdbd291f_98ad1952",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-01-05T17:58:14Z",
+      "side": 1,
+      "message": "This can be killed then.",
+      "range": {
+        "startLine": 61,
+        "startChar": 4,
+        "endLine": 61,
+        "endChar": 24
+      },
+      "revId": "9570d5ec37d2360282e4bbee93e397afe9ea2bcc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c8c9a119_c8e69969",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-01-05T17:58:14Z",
+      "side": 1,
+      "message": "Remove.",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 96,
+        "endChar": 76
+      },
+      "revId": "9570d5ec37d2360282e4bbee93e397afe9ea2bcc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "81e25716_b2201061",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-01-05T17:58:14Z",
+      "side": 1,
+      "message": "Replace with $(QCOM_SOONG_NAMESPACE)",
+      "range": {
+        "startLine": 101,
+        "startChar": 67,
+        "endLine": 101,
+        "endChar": 119
+      },
+      "revId": "9570d5ec37d2360282e4bbee93e397afe9ea2bcc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
