@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f757bda_155bc61a",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-01-05T22:07:34Z",
+      "side": 1,
+      "message": "Aosp sm8150 and sm7250 would also want this, but I guess they\u0027ll have to do it in their device trees",
+      "revId": "9af8067f5fe683ef7dfc8135560faa09be3db7aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
