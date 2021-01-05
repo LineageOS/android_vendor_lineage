@@ -58,7 +58,8 @@ SOONG_CONFIG_lineageQcomVars += \
 # Only create soong_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_lineageQcomVars += \
-    qcom_soong_namespace
+    qcom_soong_namespace \
+    qcom_display_headers_namespace
 endif
 
 # Soong bool variables
@@ -93,6 +94,12 @@ SOONG_CONFIG_lineageGlobalVars_target_surfaceflinger_fod_lib := $(TARGET_SURFACE
 SOONG_CONFIG_lineageGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_lineageQcomVars_qcom_soong_namespace := $(QCOM_SOONG_NAMESPACE)
+ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    SOONG_CONFIG_lineageQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
+    PRODUCT_SOONG_NAMESPACES += $(SOONG_CONFIG_lineageQcomVars_qcom_display_headers_namespace)
+else
+    SOONG_CONFIG_lineageQcomVars_qcom_display_headers_namespace := $(SOONG_CONFIG_lineageQcomVars_qcom_soong_namespace)/display
+endif
 endif
 
 ifneq ($(TARGET_USE_QTI_BT_STACK),true)
