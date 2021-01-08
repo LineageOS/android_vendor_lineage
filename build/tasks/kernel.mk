@@ -182,6 +182,8 @@ $(INSTALLED_VENDORIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 endif
 MODULES_INTERMEDIATES := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,kernel_modules)
 
+KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_vendor_ramdisk)
+
 # Add host bin out dir to path
 PATH_OVERRIDE := PATH=$(KERNEL_BUILD_OUT_PREFIX)$(HOST_OUT_EXECUTABLES):$$PATH
 ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
@@ -258,6 +260,7 @@ define build-image-kernel-modules-lineage
     cp $(1) $(4)/lib/modules/0.0/$(3)lib/modules
     $(DEPMOD) -b $(4) 0.0
     sed -e 's/\(.*modules.*\):/\/\1:/g' -e 's/ \([^ ]*modules[^ ]*\)/ \/\1/g' $(4)/lib/modules/0.0/modules.dep > $(2)/lib/modules/modules.dep
+    cp $(4)/lib/modules/0.0/modules.softdep $(2)/lib/modules
     cp $(4)/lib/modules/0.0/modules.alias $(2)/lib/modules
 endef
 
@@ -302,6 +305,17 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
 				; mv $$(find $$kernel_modules_dir -name $(word 1,$(p))) $$kernel_modules_dir/$(word 2,$(p))); \
 			modules=$$(find $$kernel_modules_dir -type f -name '*.ko'); \
 			($(call build-image-kernel-modules-lineage,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR))); \
+			ls $(KERNEL_MODULES_OUT)/lib/modules | cat | grep '\.ko' > $(KERNEL_MODULES_OUT)/lib/modules/modules.load; \
+			$(if $(BOOT_KERNEL_MODULES),\
+				$(foreach m, $(BOOT_KERNEL_MODULES),\
+					$$(sed -i '/$(m)/d' $(KERNEL_MODULES_OUT)/lib/modules/modules.load)); \
+				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES); do \
+					p=$$(find $$kernel_modules_dir -type f -name $$m); \
+					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from BOOT_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
+				done); \
+				[ $$? -ne 0 ] && exit 1; \
+				($(call build-image-kernel-modules-lineage,$$vendor_boot_modules,$(TARGET_VENDOR_RAMDISK_OUT),/,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR))); \
+				ls $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules | cat | grep '\.ko' > $(TARGET_VENDOR_RAMDISK_OUT)/lib/modules/modules.load; ) \
 		fi
 
 .PHONY: kerneltags
