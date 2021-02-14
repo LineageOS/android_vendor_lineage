@@ -348,6 +348,23 @@ librmnetctl_pre_uplink {
     },
 }
 
+needs_netd_direct_connect_rule {
+    name: "omx_legacy_rescaling_defaults",
+    soong_config_variables: {
+        needs_netd_direct_connect_rule: {
+            cppflags: ["-DUSE_LEGACY_RESCALING"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "omx_legacy_rescaling",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["omx_legacy_rescaling"],
+    properties: ["cppflags"],
+}
+
 soong_config_module_type {
     name: "qti_camera_device",
     module_type: "cc_defaults",
