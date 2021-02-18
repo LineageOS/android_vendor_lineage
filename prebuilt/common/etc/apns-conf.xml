@@ -612,9 +612,6 @@
   <apn carrier="Truphone UK" mcc="234" mnc="25" apn="truphone.com" type="default,supl" />
   <apn carrier="UK - Lycamobile Web" mcc="234" mnc="26" apn="data.lycamobile.co.uk" proxy="" port="" user="lmuk" password="plus" mmsc="" mvno_type="spn" mvno_match_data="Lycamobile" authtype="1" type="default,supl" />
   <apn carrier="UK - Lycamobile MMS" mcc="234" mnc="26" apn="" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Lycamobile" authtype="1" type="mms" />
-  <apn carrier="T-Mobile Internet" mcc="234" mnc="30" apn="general.t-mobile.uk" proxy="" port="" user="t-mobile" password="tm" mmsc="" authtype="1" type="default,supl" />
-  <apn carrier="T-Mobile Broadband" mcc="234" mnc="30" apn="broadband.t-mobile.uk" user="T-Mobile" password="TM" type="default,dun" />
-  <apn carrier="T-Mobile PictureMessage" mcc="234" mnc="30" apn="general.t-mobile.uk" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.co.uk:8002" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="EE Internet" mcc="234" mnc="30" apn="everywhere" proxy="" port="" user="eesecure" password="secure" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="EE MMS" mcc="234" mnc="30" apn="eezone" proxy="" port="" user="eesecure" password="secure" mmsc="http://mms/" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="EE Internet" mcc="234" mnc="30" apn="everywhere" proxy="" port="" user="eesecure" password="secure" mmsc="" mvno_type="pnn" mvno_match_data="EE" authtype="1" type="default,supl" />
@@ -631,16 +628,10 @@
   <apn carrier="BT MMS" mcc="234" mnc="30" apn="mms.bt.com" proxy="" port="" user="bt" password="bt" mmsc="http://mms" mmsproxy="149.254.201.135" mmsport="8080" mvno_type="spn" mvno_match_data="BT" authtype="1" type="mms" />
   <apn carrier="BT One Phone Internet" mcc="234" mnc="30" apn="btmobile.bt.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="BT" type="default,supl" />
   <apn carrier="BT MMS" mcc="234" mnc="30" apn="mms.btonephone.com" proxy="" port="" user="" password="" mmsc="http://mmsc" mmsproxy="proxy.btonephone.com" mmsport="8080" mvno_type="spn" mvno_match_data="BT" type="mms" />
-  <apn carrier="T-Mobile Internet" mcc="234" mnc="31" apn="general.t-mobile.uk" proxy="" port="" user="t-mobile" password="tm" mmsc="" authtype="1" type="default,supl" />
-  <apn carrier="T-Mobile Broadband" mcc="234" mnc="31" apn="broadband.t-mobile.uk" user="T-Mobile" password="TM" type="default,dun" />
-  <apn carrier="T-Mobile PictureMessage" mcc="234" mnc="31" apn="general.t-mobile.uk" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.co.uk:8002" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Virgin UK" mcc="234" mnc="31" apn="goto.virginmobile.uk" user="user" type="default,supl" />
   <apn carrier="Virgin UK MMS" mcc="234" mnc="31" apn="goto.virginmobile.uk" user="" password="" mmsc="http://mms.virginmobile.co.uk:8002" mmsproxy="193.30.166.2" mmsport="8080" type="mms" />
   <apn carrier="EE Internet" mcc="234" mnc="31" apn="everywhere" proxy="" port="" user="eesecure" password="secure" mmsc="" authtype="1" type="default,supl,dun" />
   <apn carrier="EE MMS" mcc="234" mnc="31" apn="eezone" proxy="" port="" user="eesecure" password="secure" mmsc="http://mms/" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="T-Mobile Internet" mcc="234" mnc="32" apn="general.t-mobile.uk" proxy="" port="" user="t-mobile" password="tm" mmsc="" authtype="1" type="default,supl" />
-  <apn carrier="T-Mobile Broadband" mcc="234" mnc="32" apn="broadband.t-mobile.uk" user="T-Mobile" password="TM" type="default,dun" />
-  <apn carrier="T-Mobile PictureMessage" mcc="234" mnc="32" apn="general.t-mobile.uk" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.co.uk:8002" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Virgin UK" mcc="234" mnc="32" apn="goto.virginmobile.uk" user="user" type="default,supl" />
   <apn carrier="Virgin UK MMS" mcc="234" mnc="32" apn="goto.virginmobile.uk" user="" password="" mmsc="http://mms.virginmobile.co.uk:8002" mmsproxy="193.30.166.2" mmsport="8080" type="mms" />
   <apn carrier="EE Internet" mcc="234" mnc="32" apn="everywhere" proxy="" port="" user="eesecure" password="secure" mmsc="" authtype="1" type="default,supl,dun" />
