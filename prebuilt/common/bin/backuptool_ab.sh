@@ -10,7 +10,7 @@ export V=18.1
 export ADDOND_VERSION=3
 
 # Partitions to mount for backup/restore in V3
-export all_V3_partitions="vendor product system_ext odm oem"
+export all_V3_partitions="vendor product system_ext"
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 mkdir -p /postinstall/tmp/
