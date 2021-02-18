@@ -3194,6 +3194,7 @@
   <apn carrier="Telstra Internet" mcc="505" mnc="01" apn="Telstra.wap" type="default,supl" />
   <apn carrier="Telstra w/ Portal" mcc="505" mnc="01" apn="telstra.internet" proxy="10.1.1.181" port="80" mmsc="http://mmsc.telstra.com:8002" mmsproxy="10.1.1.181" mmsport="80" type="default,supl,mms" />
   <apn carrier="Telstra 3G Pay by Time" mcc="505" mnc="01" apn="telstra.pcpack" password="telstra" type="default,supl,mms" />
+  <apn carrier="Belong Internet/MMS" mcc="505" mnc="01" apn="mdata.net.au" mmsc="http://mmsc.mdata.net.au:8003" mmsproxy="10.1.1.180" mmsport="80" type="default,dun,supl,mms" protocol="IPV4V6" roaming_protocol="IPV4" />
   <apn carrier="Optus Preconnect" mcc="505" mnc="02" apn="preconnect" user="" password="" type="default,supl" />
   <apn carrier="Optus Yesinternet" mcc="505" mnc="02" apn="yesinternet" user="" password="" type="default,supl" />
   <apn carrier="Optus ConnectCap" mcc="505" mnc="02" apn="connectcap" user="" password="" type="default,supl" />
