@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dfa4d389_7b912411",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 625,
+      "author": {
+        "id": 25707
+      },
+      "writtenOn": "2021-02-18T23:58:43Z",
+      "side": 1,
+      "message": "Looks like there\u0027s some more duplicates here, for some reason.",
+      "revId": "59ee13a7b924fc72f57460efaacfe10455894810",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "70182564_99e24851",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 632,
+      "author": {
+        "id": 25707
+      },
+      "writtenOn": "2021-02-18T23:58:43Z",
+      "side": 1,
+      "message": "And more here...",
+      "revId": "59ee13a7b924fc72f57460efaacfe10455894810",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
