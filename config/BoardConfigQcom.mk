@@ -22,6 +22,20 @@ QSSI_SUPPORTED_PLATFORMS := $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY)
 
 BOARD_USES_ADRENO := true
 
+# Add bredr_vs_btadva to soong config namespaces
+SOONG_CONFIG_NAMESPACES += bredr_vs_btadva
+
+# Add supported variables to bredr_vs_btadva config
+SOONG_CONFIG_bredr_vs_btadva += \
+    bredr_or_btadva
+
+# Set default values for bredr_vs_btadva config
+ifneq "$(wildcard vendor/qcom/proprietary/commonsys/bt/bt_adv_audio)" ""
+    SOONG_CONFIG_bredr_vs_btadva_bredr_or_btadva := btadva
+else
+    SOONG_CONFIG_bredr_vs_btadva_bredr_or_btadva := bredr
+endif #ifneq "$(wildcard vendor/qcom/proprietary/commonsys/bt/bt_adv_audio)" ""
+
 # Add qtidisplay to soong config namespaces
 SOONG_CONFIG_NAMESPACES += qtidisplay
 

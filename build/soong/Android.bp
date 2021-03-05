@@ -50,6 +50,30 @@ cc_library_headers {
     recovery_available: true,
 }
 
+// Define a soong config module type to determine BREDR vs BT advance audio configuration.
+soong_config_module_type {
+    name: "bredr_vs_btadva_cc_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "bredr_vs_btadva",
+    variables: ["bredr_or_btadva"],
+    // Properties can be extended to other properties as well.
+    properties: ["cflags", "include_dirs", "static_libs", "whole_static_libs", "srcs", "required"],
+}
+
+soong_config_module_type {
+    name: "bredr_vs_btadva_java_defaults",
+    module_type: "java_defaults",
+    config_namespace: "bredr_vs_btadva",
+    variables: ["bredr_or_btadva"],
+    // Properties can be extended to other properties as well
+    properties: ["cflags", "include_dirs", "static_libs", "whole_static_libs", "srcs"],
+}
+
+soong_config_string_variable {
+    name: "bredr_or_btadva",
+    values: ["bredr", "btadva"],
+}
+
 // Target platform agnostic config modules
 soong_config_module_type {
     name: "disable_postrender_cleanup",
