@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84fc665a_b523ef43",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 27558
+      },
+      "writtenOn": "2021-03-05T12:44:34Z",
+      "side": 1,
+      "message": "chosen",
+      "range": {
+        "startLine": 34,
+        "startChar": 13,
+        "endLine": 34,
+        "endChar": 20
+      },
+      "revId": "44e7e413f2eee2925c48ae61c7639569aa307414",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
