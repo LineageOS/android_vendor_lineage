@@ -13,6 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, device/google/atv/products/aosp_tv_arm.mk)
+$(call inherit-product, build/target/product/gsi_release.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_tv_target.mk
 

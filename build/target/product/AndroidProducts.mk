@@ -19,6 +19,10 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_arm64.mk \
     $(LOCAL_DIR)/lineage_x86.mk \
     $(LOCAL_DIR)/lineage_x86_64.mk \
+    $(LOCAL_DIR)/lineage_arm_ab.mk \
+    $(LOCAL_DIR)/lineage_arm64_ab.mk \
+    $(LOCAL_DIR)/lineage_x86_ab.mk \
+    $(LOCAL_DIR)/lineage_x86_64_ab.mk \
     $(LOCAL_DIR)/lineage_tv_arm.mk \
     $(LOCAL_DIR)/lineage_tv_arm64.mk \
     $(LOCAL_DIR)/lineage_tv_x86.mk \
@@ -29,6 +33,10 @@ COMMON_LUNCH_CHOICES := \
     lineage_arm64-userdebug \
     lineage_x86-userdebug \
     lineage_x86_64-userdebug \
+    lineage_arm_ab-userdebug \
+    lineage_arm64_ab-userdebug \
+    lineage_x86_ab-userdebug \
+    lineage_x86_64_ab-userdebug \
     lineage_tv_arm-userdebug \
     lineage_tv_arm64-userdebug \
     lineage_tv_x86-userdebug \

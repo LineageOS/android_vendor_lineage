@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/gsi_release.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_COPY_FILES += \
