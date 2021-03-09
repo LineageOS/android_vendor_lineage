@@ -13,6 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, build/target/product/aosp_x86_64.mk)
+$(call inherit-product, build/target/product/gsi_release.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_target.mk
 
