@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c48af62f_5d047b2b",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2692,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-03-12T13:14:39Z",
+      "side": 1,
+      "message": "remove, duplicate",
+      "range": {
+        "startLine": 2692,
+        "startChar": 0,
+        "endLine": 2692,
+        "endChar": 50
+      },
+      "revId": "f4f56aea291307bb426ec73bfc6e10c406239a4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "44024795_be95dcb5",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3010,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-03-12T13:14:39Z",
+      "side": 1,
+      "message": "double \u003e",
+      "range": {
+        "startLine": 3010,
+        "startChar": 56,
+        "endLine": 3010,
+        "endChar": 58
+      },
+      "revId": "f4f56aea291307bb426ec73bfc6e10c406239a4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
