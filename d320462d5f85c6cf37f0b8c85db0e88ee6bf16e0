@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f587a3ff_023c8e60",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1765,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2021-03-15T14:05:09Z",
+      "side": 1,
+      "message": "indentation",
+      "range": {
+        "startLine": 1765,
+        "startChar": 6,
+        "endLine": 1765,
+        "endChar": 12
+      },
+      "revId": "d320462d5f85c6cf37f0b8c85db0e88ee6bf16e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
