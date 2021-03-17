@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "257f2a79_6b9b7be4",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 27502
+      },
+      "writtenOn": "2021-03-17T07:25:37Z",
+      "side": 1,
+      "message": "add 5.4 family",
+      "revId": "74bf137c7cf84a121116776bb40a6daa4d4856f3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
