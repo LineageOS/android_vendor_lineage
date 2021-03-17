@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7fa7ee2a_00bf3ed2",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-03-17T08:43:03Z",
+      "side": 1,
+      "message": "#SM8350",
+      "range": {
+        "startLine": 9,
+        "startChar": 18,
+        "endLine": 9,
+        "endChar": 19
+      },
+      "revId": "6679ac8ab39a2d7f21a9d46e7d1e81f2a69f45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c79979af_03a48086",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-03-17T08:43:03Z",
+      "side": 1,
+      "message": "How is this okay?",
+      "range": {
+        "startLine": 53,
+        "startChar": 68,
+        "endLine": 53,
+        "endChar": 69
+      },
+      "revId": "6679ac8ab39a2d7f21a9d46e7d1e81f2a69f45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2addd318_2a69854c",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-03-17T08:43:03Z",
+      "side": 1,
+      "message": "Same error here.",
+      "range": {
+        "startLine": 64,
+        "startChar": 68,
+        "endLine": 64,
+        "endChar": 69
+      },
+      "revId": "6679ac8ab39a2d7f21a9d46e7d1e81f2a69f45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
