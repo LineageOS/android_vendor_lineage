@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "55239f9e_c1c83448",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 27502
+      },
+      "writtenOn": "2021-03-17T08:44:57Z",
+      "side": 1,
+      "message": "Missed out the commas, sorry ;_;",
+      "parentUuid": "c79979af_03a48086",
+      "range": {
+        "startLine": 53,
+        "startChar": 68,
+        "endLine": 53,
+        "endChar": 69
+      },
+      "revId": "6679ac8ab39a2d7f21a9d46e7d1e81f2a69f45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2addd318_2a69854c",
         "filename": "config/BoardConfigQcom.mk",
         "patchSetId": 2
