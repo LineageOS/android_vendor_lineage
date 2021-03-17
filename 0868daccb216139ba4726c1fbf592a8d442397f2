@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3809b5a7_fa7c2b62",
+        "filename": "build/core/vendor/qcom_boards.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-03-17T09:32:36Z",
+      "side": 1,
+      "message": "Stray space.",
+      "range": {
+        "startLine": 12,
+        "startChar": 27,
+        "endLine": 12,
+        "endChar": 28
+      },
+      "revId": "0868daccb216139ba4726c1fbf592a8d442397f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
