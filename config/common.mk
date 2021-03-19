@@ -103,6 +103,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
+# Disable Async MTE for system_server
+PRODUCT_PRODUCT_PROPERTIES += \
+    arm64.memtag.process.system_server=off
+
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
 include vendor/lineage/config/lineage_sdk_common.mk
