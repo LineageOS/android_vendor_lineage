@@ -164,23 +164,30 @@ umount_extra() {
   done
 }
 
+cleanup() {
+  umount_extra $all_V3_partitions
+  umount /postinstall/tmp
+  rm -rf /postinstall/tmp
+}
+
 case "$1" in
   backup)
     if check_prereq; then
       mkdir -p $C
       preserve_addon_d
       run_stages pre-backup backup post-backup
+    else
+      cleanup
     fi
   ;;
   restore)
     if check_prereq; then
       run_stages pre-restore restore post-restore
-      umount_extra $all_V3_partitions
       restore_addon_d
-      rm -rf $C
-      umount /postinstall/tmp
-      rm -rf /postinstall/tmp
+      cleanup
       sync
+    else
+      cleanup
     fi
   ;;
   *)
