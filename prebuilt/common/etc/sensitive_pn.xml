@@ -296,50 +296,58 @@
             <name>Children and Adolescents Helpline</name>
             <categories>children|adolescents</categories>
             <languages>dutch</languages>
+            <organization>Awel</organization>
+            <website>https://www.awel.be/babbel</website>
         </item>
         <item>
             <number>103</number>
             <name>Children and Adolescents Helpline</name>
             <categories>children|adolescents</categories>
             <languages>french</languages>
+            <organization>Ecoute-Enfants</organization>
+            <website>https://www.103ecoute.be/</website>
         </item>
         <item>
             <number>106</number>
             <name>National Crisis Helpline</name>
             <languages>dutch</languages>
+            <organization>Tele-Onthaal</organization>
+            <website>https://www.tele-onthaal.be</website>
         </item>
         <item>
             <number>107</number>
             <name>National Crisis Helpline</name>
             <languages>french</languages>
+            <organization>Télé-Accueil</organization>
+            <website>https://www.tele-accueil.be/</website>
         </item>
         <item>
             <number>108</number>
             <name>National Crisis Helpline</name>
             <languages>german</languages>
-        </item>
-        <item>
-            <number>111</number>
-        </item>
-        <item>
-            <number>116</number>
+            <organization>Telefonhilfe</organization>
         </item>
         <item>
             <number>1712</number>
-            <name>National Senior Citizen Mistreatment Hotline</name>
-            <categories>senior</categories>
+            <name>National Helpline for Violence, Abuse and Child Abuse</name>
+            <categories>violence|abuse|children</categories>
             <languages>dutch</languages>
+            <website>https://1712.be/</website>
         </item>
         <item>
             <number>1813</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>dutch</languages>
+            <organization>Zelfmoord 1813</organization>
+            <website>https://www.zelfmoord1813.be/</website>
         </item>
         <item>
             <number>116000</number>
             <name>European Hotline for Missing Children</name>
             <categories>missing children</categories>
+            <organization>Child Focus</organization>
+            <website>https://www.childfocus.be/</website>
         </item>
         <item>
             <number>116006</number>
@@ -622,15 +630,22 @@
         </item>
         <item>
             <number>078150300</number>
+            <organization>Centrum Algemeen Welzijnswerk</organization>
+            <website>https://www.caw.be/</website>
         </item>
         <item>
             <number>078151020</number>
+            <name>National Addiction helpline</name>
+            <categories>alcohol|drugs|gambling|addiction</categories>
+            <organization>De Druglijn</organization>
+            <website>https://www.druglijn.be/</website>
         </item>
         <item>
             <number>078152556</number>
             <name>Alcoholics Anonymous</name>
             <categories>alcohol</categories>
             <languages>french</languages>
+            <website>https://alcooliquesanonymes.be/</website>
         </item>
         <item>
             <number>080013500</number>
@@ -665,9 +680,15 @@
         </item>
         <item>
             <number>080097079</number>
+            <name>Child Abuse Helpline</name>
+            <organization>Vertrouwenscentrum kindermishandeling</organization>
+            <website>https://www.vertrouwenscentrum-kindermishandeling.be/</website>
         </item>
         <item>
             <number>080099533</number>
+            <name>Gender and Sexual Diversity Helpline</name>
+            <organization>çavaria vzw</organization>
+            <website>http://cavaria.be/holebifoon</website>
         </item>
         <item>
             <number>089700370</number>
@@ -793,6 +814,9 @@
         </item>
         <item>
             <number>3919</number>
+            <name>National Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
+            <organization>National Federation Solidarity Women - FNSF</organization>
         </item>
     </sensitivePN>
     <!--Spain-->
@@ -1020,9 +1044,13 @@
         </item>
         <item>
             <number>2645328</number>
+            <name>National Helpline for Violence Against Women and Children</name>
+            <categories>violence|women|children</categories>
         </item>
         <item>
             <number>3192782</number>
+            <name>Youth Helpline</name>
+            <categories>adolescents|youth</categories>
         </item>
         <item>
             <number>3626006</number>
@@ -1034,10 +1062,20 @@
             <organization>Centar Srce</organization>
         </item>
         <item>
+            <number>0800100007</number>
+            <name>Support Helpline for Women Victims of Violence</name>
+            <categories>women|violence</categories>
+            <website>https://www.womenngo.org.rs/</website>
+        </item>
+        <item>
             <number>0800100600</number>
+            <name>Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
         </item>
         <item>
             <number>0800123456</number>
+            <name>National Helpline for Children</name>
+            <categories>emotional support|children</categories>
         </item>
         <item>
             <number>0800300303</number>
@@ -1050,12 +1088,17 @@
     <sensitivePN network="221">
         <item>
             <number>080011112</number>
+            <name>Anti-Trafficking and Domestic Violence Helpline</name>
+            <categories>human trafficking|domestic violence</categories>
         </item>
     </sensitivePN>
     <!--Italy-->
     <sensitivePN network="222">
         <item>
             <number>1522</number>
+            <name>National Hotline for Victims of Violence</name>
+            <categories>women|violence</categories>
+            <organization>Department for Equal Opportunities</organization>
         </item>
         <item>
             <number>19696</number>
@@ -1076,9 +1119,15 @@
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
             <categories>children|adolescents</categories>
+            <organization>Sensi Blu Foundation</organization>
+            <website>http://www.fundatiasensiblu.ro</website>
         </item>
         <item>
             <number>0213114636</number>
+            <name>Helpline for Domestic Violence</name>
+            <categories>domestic violence</categories>
+            <organization>Sensi Blu Foundation</organization>
+            <website>http://www.fundatiasensiblu.ro</website>
         </item>
     </sensitivePN>
     <!--Switzerland-->
@@ -1118,15 +1167,29 @@
         </item>
         <item>
             <number>222514040</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>SOS centrum- Diakonie ČCE – SKP v Praze</organization>
+            <website>https://www.soscentrum.cz/</website>
         </item>
         <item>
             <number>222580697</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>Prazska linka duvery</organization>
+            <website>https://www.csspraha.cz/prazska-linka-duvery</website>
         </item>
         <item>
             <number>224214214</number>
+            <name>Psychological Crisis Helpline</name>
+            <categories>psychological|legal|mental health</categories>
         </item>
         <item>
             <number>241484149</number>
+            <name>Children and Adolescents Helpline</name>
+            <categories>crisis|children|adolescents</categories>
+            <organization>Dětské krizové centrum</organization>
+            <website>https://www.ditekrize.cz/pomahame-detem/</website>
         </item>
         <item>
             <number>283872186</number>
@@ -1150,6 +1213,13 @@
             <number>596618908</number>
         </item>
         <item>
+            <number>608004444</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>SOS centrum- Diakonie ČCE – SKP v Praze</organization>
+            <website>https://www.soscentrum.cz/</website>
+        </item>
+        <item>
             <number>608902410</number>
             <name>Emotional Support and Suicide Prevention</name>
             <categories>emotional support|suicide</categories>
@@ -1160,6 +1230,10 @@
         </item>
         <item>
             <number>777734173</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>SOS centrum- Diakonie ČCE – SKP v Praze</organization>
+            <website>https://www.soscentrum.cz/</website>
         </item>
         <item>
             <number>777783146</number>
