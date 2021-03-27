@@ -296,50 +296,58 @@
             <name>Children and Adolescents Helpline</name>
             <categories>children|adolescents</categories>
             <languages>dutch</languages>
+            <organization>Awel</organization>
+            <website>https://www.awel.be/babbel</website>
         </item>
         <item>
             <number>103</number>
             <name>Children and Adolescents Helpline</name>
             <categories>children|adolescents</categories>
             <languages>french</languages>
+            <organization>Ecoute-Enfants</organization>
+            <website>https://www.103ecoute.be/</website>
         </item>
         <item>
             <number>106</number>
             <name>National Crisis Helpline</name>
             <languages>dutch</languages>
+            <organization>Tele-Onthaal</organization>
+            <website>https://www.tele-onthaal.be</website>
         </item>
         <item>
             <number>107</number>
             <name>National Crisis Helpline</name>
             <languages>french</languages>
+            <organization>Télé-Accueil</organization>
+            <website>https://www.tele-accueil.be/</website>
         </item>
         <item>
             <number>108</number>
             <name>National Crisis Helpline</name>
             <languages>german</languages>
-        </item>
-        <item>
-            <number>111</number>
-        </item>
-        <item>
-            <number>116</number>
+            <organization>Telefonhilfe</organization>
         </item>
         <item>
             <number>1712</number>
-            <name>National Senior Citizen Mistreatment Hotline</name>
-            <categories>senior</categories>
+            <name>National Helpline for Violence, Abuse and Child Abuse</name>
+            <categories>violence|abuse|children</categories>
             <languages>dutch</languages>
+            <website>https://1712.be/</website>
         </item>
         <item>
             <number>1813</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>dutch</languages>
+            <organization>Zelfmoord 1813</organization>
+            <website>https://www.zelfmoord1813.be/</website>
         </item>
         <item>
             <number>116000</number>
             <name>European Hotline for Missing Children</name>
             <categories>missing children</categories>
+            <organization>Child Focus</organization>
+            <website>https://www.childfocus.be/</website>
         </item>
         <item>
             <number>116006</number>
@@ -622,15 +630,22 @@
         </item>
         <item>
             <number>078150300</number>
+            <organization>Centrum Algemeen Welzijnswerk</organization>
+            <website>https://www.caw.be/</website>
         </item>
         <item>
             <number>078151020</number>
+            <name>National Addiction helpline</name>
+            <categories>alcohol|drugs|gambling|addiction</categories>
+            <organization>De Druglijn</organization>
+            <website>https://www.druglijn.be/</website>
         </item>
         <item>
             <number>078152556</number>
             <name>Alcoholics Anonymous</name>
             <categories>alcohol</categories>
             <languages>french</languages>
+            <website>https://alcooliquesanonymes.be/</website>
         </item>
         <item>
             <number>080013500</number>
@@ -665,9 +680,15 @@
         </item>
         <item>
             <number>080097079</number>
+            <name>Child Abuse Helpline</name>
+            <organization>Vertrouwenscentrum kindermishandeling</organization>
+            <website>https://www.vertrouwenscentrum-kindermishandeling.be/</website>
         </item>
         <item>
             <number>080099533</number>
+            <name>Gender and Sexual Diversity Helpline</name>
+            <organization>çavaria vzw</organization>
+            <website>http://cavaria.be/holebifoon</website>
         </item>
         <item>
             <number>089700370</number>
@@ -793,6 +814,9 @@
         </item>
         <item>
             <number>3919</number>
+            <name>National Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
+            <organization>National Federation Solidarity Women - FNSF</organization>
         </item>
     </sensitivePN>
     <!--Spain-->
@@ -1020,9 +1044,13 @@
         </item>
         <item>
             <number>2645328</number>
+            <name>National Helpline for Violence Against Women and Children</name>
+            <categories>violence|women|children</categories>
         </item>
         <item>
             <number>3192782</number>
+            <name>Youth Helpline</name>
+            <categories>adolescents|youth</categories>
         </item>
         <item>
             <number>3626006</number>
@@ -1034,10 +1062,20 @@
             <organization>Centar Srce</organization>
         </item>
         <item>
+            <number>0800100007</number>
+            <name>Support Helpline for Women Victims of Violence</name>
+            <categories>women|violence</categories>
+            <website>https://www.womenngo.org.rs/</website>
+        </item>
+        <item>
             <number>0800100600</number>
+            <name>Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
         </item>
         <item>
             <number>0800123456</number>
+            <name>National Helpline for Children</name>
+            <categories>emotional support|children</categories>
         </item>
         <item>
             <number>0800300303</number>
@@ -1050,12 +1088,17 @@
     <sensitivePN network="221">
         <item>
             <number>080011112</number>
+            <name>Anti-Trafficking and Domestic Violence Helpline</name>
+            <categories>human trafficking|domestic violence</categories>
         </item>
     </sensitivePN>
     <!--Italy-->
     <sensitivePN network="222">
         <item>
             <number>1522</number>
+            <name>National Hotline for Victims of Violence</name>
+            <categories>women|violence</categories>
+            <organization>Department for Equal Opportunities</organization>
         </item>
         <item>
             <number>19696</number>
@@ -1076,9 +1119,15 @@
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
             <categories>children|adolescents</categories>
+            <organization>Sensi Blu Foundation</organization>
+            <website>http://www.fundatiasensiblu.ro</website>
         </item>
         <item>
             <number>0213114636</number>
+            <name>Helpline for Domestic Violence</name>
+            <categories>domestic violence</categories>
+            <organization>Sensi Blu Foundation</organization>
+            <website>http://www.fundatiasensiblu.ro</website>
         </item>
     </sensitivePN>
     <!--Switzerland-->
@@ -1117,25 +1166,51 @@
             <categories>emotional support</categories>
         </item>
         <item>
+            <number>222221124</number>
+            <name>Drug Addiction Support</name>
+            <categories>drugs</categories>
+            <oragnization>Drop In</oragnization>
+            <website>https://www.dropin.cz</website>
+        </item>
+        <item>
             <number>222514040</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>SOS centrum- Diakonie ČCE – SKP v Praze</organization>
+            <website>https://www.soscentrum.cz/</website>
         </item>
         <item>
             <number>222580697</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>Prazska linka duvery</organization>
+            <website>https://www.csspraha.cz/prazska-linka-duvery</website>
         </item>
         <item>
             <number>224214214</number>
+            <name>Psychological Crisis Helpline</name>
+            <categories>psychological|legal|mental health</categories>
         </item>
         <item>
             <number>241484149</number>
+            <name>Children and Adolescents Helpline</name>
+            <categories>crisis|children|adolescents</categories>
+            <organization>Dětské krizové centrum</organization>
+            <website>https://www.ditekrize.cz/pomahame-detem/</website>
         </item>
         <item>
             <number>283872186</number>
-        </item>
-        <item>
-            <number>284016292</number>
+            <name>National Drug and Addiction Helpline</name>
+            <categories>drugs|gambling|addiction</categories>
+            <organization>Sananim z.ú.</organization>
+            <website>http://www.sananim.cz</website>
         </item>
         <item>
             <number>284016666</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide prevention</categories>
+            <organization>Psychiatrická nemocnice Bohnice</organization>
+            <website>https://bohnice.cz/krizova-pomoc/</website>
         </item>
         <item>
             <number>549241010</number>
@@ -1145,9 +1220,24 @@
         </item>
         <item>
             <number>596318080</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support|mental health|</categories>
+            <organization>Centrum psychologicke pomoci</organization>
+            <website>https://www.cepp.cz/kdy-pomahame/linka-duvery/</website>
         </item>
         <item>
             <number>596618908</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <organization>MNOF</organization>
+            <website>https://www.mnof.cz/linka-duvery</website>
+        </item>
+        <item>
+            <number>608004444</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>SOS centrum- Diakonie ČCE – SKP v Praze</organization>
+            <website>https://www.soscentrum.cz/</website>
         </item>
         <item>
             <number>608902410</number>
@@ -1157,18 +1247,35 @@
         </item>
         <item>
             <number>737267939</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <organization>MNOF</organization>
+            <website>https://www.mnof.cz/linka-duvery</website>
         </item>
         <item>
             <number>777734173</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>SOS centrum- Diakonie ČCE – SKP v Praze</organization>
+            <website>https://www.soscentrum.cz/</website>
         </item>
         <item>
             <number>777783146</number>
+            <name>Psychological Crisis Helpline</name>
+            <categories>psychological|legal|mental health</categories>
         </item>
         <item>
             <number>777800983</number>
+            <name>Crisis Helpline</name>
+            <organization>Fokus Praha, z.ú.</organization>
+            <website>https://fokus-praha.cz/pomahame/centrum-podskali/krizovy-tym</website>
         </item>
         <item>
             <number>800200007</number>
+            <name>Senior Helpline</name>
+            <categories>senior</categories>
+            <organization>Plzensky Kraj</organization>
+            <website>https://www.plzensky-kraj.cz/linka-senioru-800-200-007</website>
         </item>
     </sensitivePN>
     <!--Slovakia-->
@@ -1243,54 +1350,115 @@
         </item>
         <item>
             <number>0800555111</number>
+            <name>Crime Helpline</name>
+            <categories>crime</categories>
+            <organization>CrimeStoppers</organization>
+            <website>https://crimestoppers-uk.org/</website>
         </item>
         <item>
             <number>01179045999</number>
-        </item>
-        <item>
-            <number>01179250680</number>
+            <name>Domestic Violene Legal Advice Helpline</name>
+            <categories>legal|domestic violence</categories>
+            <organization>Lyon Davidson Solicitors</organization>
+            <website>https://www.lyonsdavidson.co.uk/personal-law/family-law/relationship-breakdown/</website>
         </item>
         <item>
             <number>01642683045</number>
+            <name>Forced Marriage and Honour Based Violence Charity</name>
+            <categories>domestic violence|abuse|forced marriage</categories>
+            <organization>Halo Project</organization>
+            <website>https://www.haloproject.org.uk/</website>
         </item>
         <item>
             <number>01708765200</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support</categories>
+            <organization>SupportLine</organization>
+            <website>https://www.supportline.org.uk/</website>
         </item>
         <item>
             <number>02070080151</number>
+            <name>National Forced Marriage Helpline</name>
+            <categories>forced marriage</categories>
+            <organization>Forced Marriage Unit, UK Gov.</organization>
+            <website>https://www.gov.uk/guidance/forced-marriage</website>
         </item>
         <item>
             <number>02072516577</number>
+            <name>Women Rights Helpline - Family Law</name>
+            <categories>women|legal aid|domestic violence|abuse</categories>
+            <organization>Rights of Women</organization>
+            <website>https://rightsofwomen.org.uk/</website>
         </item>
         <item>
             <number>02072518887</number>
+            <name>Women Rights Helpline - Criminal Law</name>
+            <categories>women|legal aid|domestic violence</categories>
+            <organization>Rights of Women</organization>
+            <website>https://rightsofwomen.org.uk/</website>
         </item>
         <item>
             <number>02073830700</number>
+            <name>Abuse Helpline for People with Learning Disabilities</name>
+            <categories>abuse</categories>
+            <organization>Respond</organization>
+            <website>http://www.respond.org.uk/</website>
         </item>
         <item>
             <number>02073957700</number>
+            <name>Domestic Abuse Helpline for Women and Children</name>
+            <categories>domestic abuse|women|children</categories>
+            <organization>Refuge</organization>
+            <website>https://www.refuge.org.uk</website>
         </item>
         <item>
             <number>02074907689</number>
+            <name>Immigration Law Helpline</name>
+            <categories>immigration|legal aid</categories>
+            <organization>Rights of Women</organization>
+            <website>https://rightsofwomen.org.uk/</website>
         </item>
         <item>
             <number>02076081137</number>
+            <name>Women Rights Helpline - Family Law - London</name>
+            <categories>women|legal aid|domestic violence|abuse</categories>
+            <organization>Rights of Women</organization>
+            <website>https://rightsofwomen.org.uk/</website>
         </item>
         <item>
             <number>02077042040</number>
+            <name>LGBT+ Hate Crime Helpline</name>
+            <categories>lgbtq|crime</categories>
+            <organization>Galop</organization>
+            <website>https://www.galop.org.uk</website>
+        </item>
+        <item>
+            <number>02077303300</number>
+            <name>Bullying and Child Abuse Helpline - For Children</name>
+            <categories>bullying|child abuse</categories>
+            <organization>Kidscape</organization>
+            <website>https://www.kidscape.org.uk/</website>
         </item>
         <item>
             <number>02078235430</number>
+            <name>Bullying and Child Abuse Helpline - For Parents</name>
+            <categories>bullying|parents</categories>
+            <organization>Kidscape</organization>
+            <website>https://www.kidscape.org.uk/</website>
         </item>
         <item>
             <number>02085710800</number>
-        </item>
-        <item>
-            <number>02085719595</number>
+            <name>Immigrant Women Domestic Violence Helpline</name>
+            <categories>immigration|women|domestic violence</categories>
+            <organization>Southall Black Sisters</organization>
+            <website>https://southallblacksisters.org.uk</website>
         </item>
         <item>
             <number>02380338080</number>
+            <name>Rape and Sexual Abuse Helpline</name>
+            <categories>female|adult|sexual abuse</categories>
+            <organization>CIS'ters</organization>
+            <website>https://cisters.org.uk/</website>
         </item>
         <item>
             <number>02920496920</number>
@@ -1312,9 +1480,17 @@
         </item>
         <item>
             <number>08009995428</number>
+            <name>National LGBT+ Domestic Abuse Helpline</name>
+            <categories>lgbtw|domestic abuse</categories>
+            <organization>Galop</organization>
+            <website>https://www.galop.org.uk</website>
         </item>
         <item>
             <number>08082000247</number>
+            <name>National Domestic Violence Helpline</name>
+            <categories>domestic violence</categories>
+            <organization>Next Link</organization>
+            <website>https://nextlinkhousing.co.uk/</website>
         </item>
         <item>
             <number>08088005000</number>
@@ -1968,13 +2144,28 @@
             <number>051843021</number>
         </item>
         <item>
+            <number>052521028</number>
+            <name>Varna Public Support Center - Vladislavovo</name>
+            <categories>domestic abuse|psychological</categories>
+            <organization>Vladislavovo Foundation</organization>
+        </item>
+        <item>
             <number>052609677</number>
+            <name>Domestic Abuse And Trafficking Center</name>
+            <categories>domestic abuse|human trafficking</categories>
+            <organization>SOS - Families at risk Foundation</organization>
         </item>
         <item>
             <number>052613830</number>
+            <name>Domestic Abuse And Trafficking Center</name>
+            <categories>domestic abuse|human trafficking</categories>
+            <organization>SOS - Families at risk Foundation</organization>
         </item>
         <item>
-            <number>052820693</number>
+            <number>052820694</number>
+            <name>Varna Public Services Center</name>
+            <categories>children|family</categories>
+            <organization>Varna Municipality</organization>
         </item>
         <item>
             <number>052919779</number>
@@ -1984,15 +2175,30 @@
         </item>
         <item>
             <number>053725343</number>
+            <name>Novi Pazar Consultation Center for Domestic Abuse Victims</name>
+            <categories>children|adults|domestic abuse|legal aid</categories>
+            <organization>Association S-O-S Women and Children Victims of Abuse</organization>
+        </item>
+        <item>
+            <number>054800025</number>
+            <name>Shumen Public Services Center</name>
+            <categories>children|family|psychological|legal aid|generic</categories>
+            <organization></organization>
         </item>
         <item>
             <number>054833124</number>
+            <name>Shumen Mother and Child Center</name>
+            <categories>children|mothers|domestic abuse</categories>
+            <organization>Shumen Municipality</organization>
         </item>
         <item>
             <number>054850777</number>
         </item>
         <item>
             <number>054869958</number>
+            <name>Shumen Childrens' Domestic Abuse Center</name>
+            <categories>children|domestic abuse</categories>
+            <organization>Shumen Municipality</organization>
         </item>
         <item>
             <number>055022125</number>
@@ -2019,10 +2225,23 @@
             <number>056825601</number>
         </item>
         <item>
+            <number>057997856</number>
+            <name>Balchik Public Support Center</name>
+            <categories>children|adults|domestic abuse|psychological</categories>
+            <organization>Sonic Start</organization>
+            <website>https://balchik1.sonikstart.eu/</website>
+        </item>
+        <item>
             <number>058601088</number>
+            <name>Dobrich Municipal Public Support Center</name>
+            <categories>children|adults|domestic abuse|psychological</categories>
+            <organization>Dobrich Municipality</organization>
         </item>
         <item>
             <number>058605472</number>
+            <name>Dobrich Public Support Center</name>
+            <categories>children|adults|domestic abuse|psychological</categories>
+            <organization>Bulgarian Red Cross</organization>
         </item>
         <item>
             <number>059632435</number>
@@ -2186,12 +2405,21 @@
         </item>
         <item>
             <number>086732268</number>
+            <name>Alfatar Childrens' Crisis Center</name>
+            <categories>children|psychological</categories>
+            <organization>Alfatar Municipality</organization>
         </item>
         <item>
             <number>086820487</number>
+            <name>Silistra Domestic Abuse Consultative Center</name>
+            <categories>domestic violence</categories>
+            <organization>Women's Association Ekaterina Karavelova</organization>
         </item>
         <item>
             <number>086821495</number>
+            <name>Silistra Victims' Crisis Center</name>
+            <categories>human trafficking|domestic violence</categories>
+            <organization>Women's Association Ekaterina Karavelova</organization>
         </item>
         <item>
             <number>091232064</number>
@@ -2293,6 +2521,12 @@
             <number>0879819195</number>
         </item>
         <item>
+            <number>0879838917</number>
+            <name>Varna Legal Aid Center</name>
+            <categories>legal aid</categories>
+            <organization>National Bureau for Legal Aid</organization>
+        </item>
+        <item>
             <number>0879993859</number>
         </item>
         <item>
@@ -2303,9 +2537,15 @@
         </item>
         <item>
             <number>0882290920</number>
+            <name>Varna Public Services Center</name>
+            <categories>children|family</categories>
+            <organization>Varna Municipality</organization>
         </item>
         <item>
             <number>0882290980</number>
+            <name>Varna Public Services Center</name>
+            <categories>children|family</categories>
+            <organization>Varna Municipality</organization>
         </item>
         <item>
             <number>0882330008</number>
@@ -2365,7 +2605,19 @@
             <number>0887900324</number>
         </item>
         <item>
+            <number>0887787288</number>
+            <name>Varna Public Support Center - Vladislavovo</name>
+            <categories>domestic abuse|psychological</categories>
+            <organization>Vladislavovo Foundation</organization>
+        </item>
+        <item>
             <number>0888111703</number>
+        </item>
+        <item>
+            <number>0888454274</number>
+            <name>Provadiya Public Support Center</name>
+            <categories>children|parents|domestic abuse|psychological</categories>
+            <organization>Provadiya Municipality</organization>
         </item>
         <item>
             <number>0888628146</number>
@@ -2375,6 +2627,10 @@
         </item>
         <item>
             <number>0888885909</number>
+            <name>Balchik Public Support Center</name>
+            <categories>children|adults|domestic abuse|psychological</categories>
+            <organization>Sonic Start</organization>
+            <website>https://balchik1.sonikstart.eu/</website>
         </item>
         <item>
             <number>0889040412</number>
@@ -2401,6 +2657,12 @@
             <number>0893474238</number>
         </item>
         <item>
+            <number>0893361106</number>
+            <name>ZaKrila Zone Childrens' Center</name>
+            <categories>abuse|children|psychological|legal aid</categories>
+            <organization>Association Institute for Social Activities and Practices</organization>
+        </item>
+        <item>
             <number>0894412380</number>
         </item>
         <item>
@@ -2414,6 +2676,9 @@
         </item>
         <item>
             <number>0895140600</number>
+            <name>Dulovo Public Support Center</name>
+            <categories>children|domestic abuse</categories>
+            <organization>Dulovo Municipality</organization>
         </item>
         <item>
             <number>0896662766</number>
@@ -2974,6 +3239,14 @@
             <categories>suicide</categories>
             <languages>english</languages>
             <organization>Lifeline</organization>
+        </item>
+        <item>
+            <number>8002738255</number>
+            <name>Veterans Crisis Line</name>
+            <categories>suicide|veterans</categories>
+            <languages>english</languages>
+            <organization>Lifeline</organization>
+            <website>https://www.veteranscrisisline.net/</website>
         </item>
         <item>
             <number>18004224453</number>
