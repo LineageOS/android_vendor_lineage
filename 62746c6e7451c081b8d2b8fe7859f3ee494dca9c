@@ -16,6 +16,24 @@
       "revId": "62746c6e7451c081b8d2b8fe7859f3ee494dca9c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "76304e76_4723e3ff",
+        "filename": "prebuilt/common/bin/backuptool_ab.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-03-28T15:50:36Z",
+      "side": 1,
+      "message": "/postinstall/tmp needs to persist between backup and restore.\nthis script is called twice with the two parameters",
+      "parentUuid": "4a12bfcd_abc343b3",
+      "revId": "62746c6e7451c081b8d2b8fe7859f3ee494dca9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
