@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a12bfcd_abc343b3",
+        "filename": "prebuilt/common/bin/backuptool_ab.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-03-28T15:01:34Z",
+      "side": 1,
+      "message": "Why don\u0027t you simply call cleanup here at the end?",
+      "revId": "62746c6e7451c081b8d2b8fe7859f3ee494dca9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
