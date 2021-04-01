@@ -145,7 +145,8 @@ fi
 mount_extra() {
   for partition in $@; do
     mnt_point="/postinstall/$partition"
-    mountpoint "$mnt_point" >/dev/null 2>&1 && break
+    mountpoint "$mnt_point" >/dev/null 2>&1 && continue
+    [ -L "$mnt_point" ] && continue
 
     blk_dev=$(find_block "$partition")
     if [ -n "$blk_dev" ]; then
