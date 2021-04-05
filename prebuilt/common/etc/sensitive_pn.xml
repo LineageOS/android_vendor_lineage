@@ -1423,6 +1423,93 @@
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
             <categories>children|adolescents</categories>
+            <organization>Mannerheimin Lastensuojeluliitto</organization>
+            <website>https://www.nuortennetti.fi/apua-ja-tukea/lasten-ja-nuorten-puhelin/</website>
+        </item>
+        <item>
+            <number>0925250111</number>
+            <name>Kriisipuhelin</name>
+            <categories>mental health</categories>
+            <organization>Mieli ry</organization>
+            <website>https://mieli.fi/fi/tukea-ja-apua/kriisipuhelin-keskusteluapua-numerossa-09-2525-0111</website>
+            <languages>finnish</languages>
+        </item>
+        <item>
+            <number>0925250112</number>
+            <name>Kristelefon</name>
+            <categories>mental health</categories>
+            <organization>Mieli ry</organization>
+            <website>https://mieli.fi/fi/tukea-ja-apua/kriisipuhelin-keskusteluapua-numerossa-09-2525-0111</website>
+            <languages>swedish</languages>
+        </item>
+            <number>0925250113</number>
+            <name>Crisis helpline</name>
+            <categories>mental health</categories>
+            <organization>Mieli ry</organization>
+            <website>https://mieli.fi/fi/tukea-ja-apua/kriisipuhelin-keskusteluapua-numerossa-09-2525-0111</website>
+            <languages>arabic|english</languages>
+        </item>
+            <number>020391920</number>
+            <name>Valtakunnallinen mielenterveysneuvonta</name>
+            <categories>mental health</categories>
+            <organization>Mielenterveyden keskusliitto</organization>
+            <website>https://www.mtkl.fi/mista-apua/</website>
+        </item>
+        </item>
+            <number>0800177599</number>
+            <name>Vertaistukipuhelin</name>
+            <categories>peer support|mental health</categories>
+            <organization>Mielenterveyden keskusliitto</organization>
+            <website>https://www.mtkl.fi/mista-apua/</website>
+        </item>
+        </item>
+            <number>080090045</number>
+            <name>Päihdeneuvonta</name>
+            <categories>drugs|alcohol</categories>
+            <organization>Ehyt ry</organization>
+            <website>https://ehyt.fi/paihde-peli-info/paihdeneuvonta/</website>
+        </item>
+        </item>
+            <number>080098066</number>
+            <name>Irti huumeista</name>
+            <categories>drugs</categories>
+            <organization>Irti huumeista ry</organization>
+            <website>https://irtihuumeista.fi/</website>
+        </item>
+        </item>
+            <number>080094884</number>
+            <name>Poikien puhelin</name>
+            <categories>boys</categories>
+            <organization>Väestöliitto</organization>
+            <website>http://www.vaestoliitto.fi/vaestoliitto/mita_vaestoliitto_tekee/palvelut/puhelinneuvonta/poikien_puhelin/</website>
+        </item>
+        </item>
+            <number>080090045</number>
+            <name>Vanhempainpuhelin</name>
+            <categories>parents</categories>
+            <organization>Mannerheimin Lastensuojeluliitto</organization>
+            <website>https://www.mll.fi/vanhemmille/toiminta-lapsiperheille/vanhempainpuhelin/</website>
+        </item>
+        <item>
+            <number>0453259595</number>
+            <name>KÄPY-tukipuhelin</name>
+            <categories>child death</categories>
+            <organization>KÄPY - Lapsikuolemaperheet ry</organization>
+            <website>https://kapy.fi/surevalle/keskustelutuki/</website>
+        </item>        
+        <item>
+            <number>080005005</number>
+            <name>Nollalinja</name>
+            <categories>violence</categories>
+            <organization>Terveyden ja hyvinvoinnin laitos|Setlementti Tampere ry</organization>
+            <website>https://www.nollalinja.fi/</website>
+        </item>
+        <item>
+            <number>080002400/number>
+            <name>Women's Line</name>
+            <categories>violence|women|girls</categories>
+            <organization>Naisten Linja Suomessa ry</organization>
+            <website>https://www.naistenlinja.fi/</website>
         </item>
     </sensitivePN>
     <!--Lithuania-->
