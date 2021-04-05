@@ -1702,8 +1702,91 @@
     <sensitivePN network="274">
         <item>
             <number>1717</number>
-            <name>Child Helpline International</name>
-            <categories>children</categories>
+            <name>Hjálparsími Rauða krossins 1717</name>
+            <categories>emotional|mental health|children|adolescent|sexual assault</categories>
+            <languages>icelandic|english</languages>
+            <organization>Rauði krossinn á Íslandi</organization>
+            <website>https://www.raudikrossinn.is/1717/</website>
+    </item>
+    <item>
+            <number>5307600</number>
+            <name>SÁÁ Skriftofa</name>
+            <categories>rehab</categories>
+            <languages>icelandic</languages>
+            <organization>Samtök áhugafólks um áfengis- og vímuefnavandann</organization>
+            <website>https://saa.is/</website>
+    </item>
+    <item>
+            <number>5611205</number>
+            <name>Kvennaathvarf Reykjavík</name>
+            <categories>women</categories>
+            <languages>icelandic</languages>
+            <organization>kvennaathvarf</organization>
+            <website>https://www.kvennaathvarf.is/</website>
+    </item>
+    <item>
+            <number>5611206</number>
+            <name>Kvennaathvarfið Akureyri</name>
+            <categories>women</categories>
+            <languages>icelandic</languages>
+            <organization>Kvennaathvarf</organization>
+            <website>https://www.kvennaathvarf.is/</website>
+    </item>
+    <item>
+            <number>5626868</number>
+            <name>Stígamót</name>
+            <categories>sexual assault</categories>
+            <languages>icelandic</languages>
+            <organization>Stígamót</organization>
+            <website>https://stigamot.is/</website>
+    </item>
+    <item>
+            <number>6612915</number>
+            <name>Hjálparsími NA</name>
+            <categories>drugs|addiction</categories>
+            <languages>icelandic|english</languages>
+            <organization>NA-Samtökin á Íslandi</organization>
+            <website>https://nai.is/</website>
+    </item>
+    <item>
+            <number>7687888</number>
+            <name>Al-Anon stuðnings- og upplýsingasími</name>
+            <categories>alcohol|family friends</categories>
+            <languages>icelandic</languages>
+            <organization>Al-Anon á Íslandi</organization>
+            <website>http://www.al-anon.is/</website>
+    </item>
+    <item>
+            <number>7775504</number>
+            <name>Neyðarsími AA Reykjanes</name>
+            <categories>alcohol</categories>
+            <languages>icelandic</languages>
+            <organization>AA samtökin á Íslandi</organization>
+            <website>https://www.aa.is/</website>
+    </item>
+    <item>
+            <number>8005005</number>
+            <name>Lögreglan nafnlausar upplýsingar</name>
+            <categories>anonymous crime reporting</categories>
+            <languages>icelandic|english</languages>
+            <organization>Lögreglan</organization>
+            <website>https://www.logreglan.is/</website>
+    </item>
+    <item>
+            <number>8494012</number>
+            <name>Neyðarsími AA Akureyri</name>
+            <categories>alcohol</categories>
+            <languages>icelandic</languages>
+            <organization>AA samtökin á Íslandi</organization>
+            <website>https://www.aa.is/</website>
+    </item>
+    <item>
+            <number>8951050</number>
+            <name>Neyðarsími AA Stór-Reykjavíkursvæðið</name>
+            <categories>alcohol</categories>
+            <languages>icelandic</languages>
+            <organization>AA samtökin á Íslandi</organization>
+            <website>https://www.aa.is/</website>
         </item>
     </sensitivePN>
     <!--Albania-->
