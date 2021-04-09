@@ -3370,24 +3370,176 @@
     <!--New Zealand-->
     <sensitivePN network="530">
         <item>
+            <number>1737</number>
+            <name>Need to talk?</name>
+            <categories>mental health</categories>
+            <organization>National Telehealth Service</organization>
+        </item>
+        <item>
+            <number>080017371737</number>
+            <name>Need to talk?</name>
+            <categories>mental health</categories>
+            <organization>National Telehealth Service</organization>
+        </item>
+        <item>
             <number>0508828865</number>
-            <name>Suicide Prevention</name>
-            <categories>suicide</categories>
+            <name>Suicide Crisis Helpline</name>
+            <categories>suicide|mental health</categories>
             <organization>Lifeline Aotearoa</organization>
         </item>
         <item>
             <number>0800543354</number>
-            <name>Emotional Support</name>
-            <categories>emotional support</categories>
+            <name>Lifeline 24/7 Helpline</name>
+            <categories>mental health</categories>
             <organization>Lifeline Aotearoa</organization>
         </item>
         <item>
             <number>0800543754</number>
-            <name>Children and Adolescents Helpline</name>
+            <name>Kidsline</name>
             <organization>Lifeline Aotearoa</organization>
+            <categories>youth|mental health</categories>
         </item>
         <item>
             <number>0800733843</number>
+            <name>Women's Refuge</name>
+            <categories>domestic violence</categories>
+            <organization>Women's Refuge</organization>
+        </item>
+        <item>
+            <number>0800726666</number>
+            <name>Samaritans</name>
+            <categories>mental health</categories>
+            <organization>Samaritans</organization>
+        </item>
+        <item>
+            <number>0800111757</number>
+            <name>Depression.org.nz</name>
+            <categories>mental health</categories>
+            <organization>Depression.org.nz</organization>
+        </item>
+        <item>
+            <number>08006885463</number>
+            <name>OUTLine NZ</name>
+            <categories>sexuality|gender identity</categories>
+            <organization>OUTLineNZ</organization>
+        </item>
+        <item>
+            <number>0800376633</number>
+            <name>Youthline</name>
+            <categories>youth|mental health</categories>
+            <organization>Youthline</organization>
+        </item>
+        <item>
+            <number>0800568856</number>
+            <name>Parent Help</name>
+            <categories>parenting|mental health</categories>
+            <organization>ParentHelp</organization>
+        </item>
+        <item>
+            <number>08003585453</number>
+            <name>Healthline</name>
+            <categories>health</categories>
+            <organization>Healthline</organization>
+        </item>
+        <item>
+            <number>093585453</number>
+            <name>Healthline</name>
+            <categories>health</categories>
+            <organization>Healthline</organization>
+        </item>
+        <item>
+            <number>0800611116</number>
+            <name>Healthline</name>
+            <categories>health</categories>
+            <organization>Healthline</organization>
+        </item>
+        <item>
+            <number>0800787797</number>
+            <name>Alcohol and Drug helpline</name>
+            <categories>alcohol|drug|addiction</categories>
+            <organization>AlcoholDrugHelp</organization>
+        </item>
+        <item>
+            <number>08007877978</number>
+            <name>Alcohol and Drug helpline (Maori)</name>
+            <categories>alcohol|drug|addiction</categories>
+            <organization>AlcoholDrugHelp</organization>
+        </item>
+        <item>
+            <number>0800787799</number>
+            <name>Alcohol and Drug helpline (Pasifika)</name>
+            <categories>alcohol|drug|addiction</categories>
+            <organization>AlcoholDrugHelp</organization>
+        </item>
+        <item>
+            <number>0800456450</number>
+            <name>Are You OK?</name>
+            <categories>family violence|domestic violence</categories>
+            <organization>AreYouOK?</organization>
+        </item>
+        <item>
+            <number>0800654655</number>
+            <name>Gambling Helpline</name>
+            <categories>gambling</categories>
+            <organization>Gambling Helpine</organization>
+        </item>
+        <item>
+            <number>08002694389</number>
+            <name>AnxietyNZ</name>
+            <categories>mental health|depression</categories>
+            <organization>AnxietyNZ Trust</organization>
+        </item>
+        <item>
+            <number>0508744633</number>
+            <name>Shine</name>
+            <categories>domestic violence|family violence</categories>
+            <organization></organization>
+        </item>
+        <item>
+            <number>0800778778</number>
+            <name>Quitline</name>
+            <categories>smoking|tobacco|vaping</categories>
+            <organization>Homecare Medical</organization>
+        </item>
+        <item>
+            <number>0800742584</number>
+            <name>Shakti New Zealand</name>
+            <categories>domestic violence|sexual abuse|discrimination|women|youth|migrant|refugee</categories>
+            <organization></organization>
+        </item>
+        <item>
+            <number>0800883300</number>
+            <name>Rape Crisis</name>
+            <categories>sexual abuse</categories>
+            <organization>National Collective of Rape Crisis and Related Groups Aotearoa</organization>
+        </item>
+        <item>
+            <number>033798415</number>
+            <name>Warmline Canterbury</name>
+            <categories>mental health|addiction</categories>
+            <organization>Comcare Trust</organization>
+        </item>
+        <item>
+            <number>0800899276</number>
+            <name>Warmline Canterbury</name>
+            <categories>mental health|addiction</categories>
+            <organization>Comcare Trust</organization>
+        </item>
+        <item>
+            <number>0800200207</number>
+            <name>Warmline Wellington</name>
+            <categories>mental health|addiction</categories>
+        </item>
+        <item>
+            <number>0508927654</number>
+            <name>Warmline Auckland</name>
+            <categories>mental health|addiction</categories>
+        </item>
+        <item>
+            <number>08009428787</number>
+            <name>WhatsUp?</name>
+            <categories>family|youth|dating|bullying|mental health|relationships</categories>
+            <organization>Barnardos New Zealand</organization>
         </item>
     </sensitivePN>
     <!--Egypt-->
