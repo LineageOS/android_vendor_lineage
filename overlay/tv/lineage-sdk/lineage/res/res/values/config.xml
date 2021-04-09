@@ -19,6 +19,7 @@
 
     <!-- Disable LiveDisplay on ATV -->
     <integer name="config_defaultLiveDisplayMode">0</integer>
+    <bool name="config_enableLiveDisplay">false</bool>
 
     <!-- Control the behavior when the user double-taps the home button.
             0 - Nothing
