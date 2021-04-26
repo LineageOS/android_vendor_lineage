@@ -68,6 +68,23 @@ disable_postrender_cleanup {
 }
 
 soong_config_module_type {
+    name: "disable_stream_out_event_callback",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["disable_stream_out_event_callback"],
+    properties: ["cppflags"],
+}
+
+disable_stream_out_event_callback {
+    name: "disable_stream_out_event_callback_defaults",
+    soong_config_variables: {
+        disable_stream_out_event_callback: {
+            cppflags: ["-DDISABLE_STREAM_OUT_EVENT_CALLBACK"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "gralloc_10_usage_bits",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
