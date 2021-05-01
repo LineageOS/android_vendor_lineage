@@ -1062,6 +1062,8 @@
   <apn carrier="Telekom Internet" mcc="262" mnc="01" apn="internet.telekom" user="telekom" password="telekom" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="109.237.176.193" mmsport="8008" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17" authtype="1" type="mms,default,supl,ia" protocol="IPV4V6" />
   <apn carrier="Telekom Internet" mcc="262" mnc="01" apn="hos" user="telekom" password="telekom" mmsc="http://mms.t-mobile.de/servlets/mms" mmsproxy="109.237.176.193" mmsport="8008" bearer_bitmask="18" authtype="1" type="mms,supl" protocol="IPV4V6" user_visible="false" />
   <apn carrier="Telekom Internet" mcc="262" mnc="01" apn="internet.telekom" user="telekom" password="telekom" authtype="1" mmsproxy="172.28.23.131" mmsc="http://mms.t-mobile.de/servlets/mms" mmsport="8008" mvno_match_data="debitel" mvno_type="spn" protocol="IP" />
+  <apn carrier="LIDL Connect" mcc="262" mnc="02" apn="web.vodafone.de" type="default" />
+  <apn carrier="LIDL MMS" mcc="262" mnc="02" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" authtype="2" type="mms"/>
   <apn carrier="Vodafone DE" mcc="262" mnc="02" apn="" type="ia" protocol="IPV4V6" />
   <apn carrier="Vodafone DE-MMS" mcc="262" mnc="02" apn="event.vodafone.de" mmsc="http://139.7.24.1/servlets/mms" mmsproxy="139.7.29.17" mmsport="80" type="mms" />
   <apn carrier="Vodafone DE" mcc="262" mnc="02" apn="web.vodafone.de" type="default,supl" />
