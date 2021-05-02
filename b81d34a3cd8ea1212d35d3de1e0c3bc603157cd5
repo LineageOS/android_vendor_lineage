@@ -16,6 +16,24 @@
       "revId": "b81d34a3cd8ea1212d35d3de1e0c3bc603157cd5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "76ae4822_a1334c44",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-05-02T15:27:59Z",
+      "side": 1,
+      "message": "Most I can say is \"Blame the operator\", they also use this name for Vodafone IT, but I see it\u0027s set as \"Vodafone IT\" in this file, so makes sense to me to rename it as well",
+      "parentUuid": "12436a1c_4077dc61",
+      "revId": "b81d34a3cd8ea1212d35d3de1e0c3bc603157cd5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
