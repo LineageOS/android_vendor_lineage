@@ -497,6 +497,9 @@
   <apn carrier="Telekom SK MMS" mcc="231" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
   <apn carrier="Telekom SK" mcc="231" mnc="04" apn="internet" type="default,supl" />
   <apn carrier="Telekom SK MMS" mcc="231" mnc="04" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
+  <apn carrier="Tesco - SK" mcc="231" mnc="06" apn="o2internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Tesco - SK MMS" mcc="231" mnc="06" apn="o2mms" proxy="" port="" user="" password="" mmsc="http://mms.o2world.sk:8002" mmsproxy="10.97.1.11" mmsport="8080" type="mms" />
+  <apn carrier="4KA SK" mcc="231" mnc="03" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="T-Mobile SK" mcc="231" mnc="04" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="T-Mobile SK MMS" mcc="231" mnc="04" apn="mms" proxy="" port="" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="231" mnc="05" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
