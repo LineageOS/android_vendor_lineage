@@ -78,10 +78,10 @@ if not depsonly:
         result = json.loads(urllib.request.urlopen(githubreq).read().decode())
     except urllib.error.URLError:
         print("Failed to search GitHub")
-        sys.exit()
+        sys.exit(1)
     except ValueError:
         print("Failed to parse return data from GitHub")
-        sys.exit()
+        sys.exit(1)
     for res in result.get('items', []):
         repositories.append(res)
 
