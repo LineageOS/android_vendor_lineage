@@ -85,6 +85,23 @@ gralloc_10_usage_bits {
 }
 
 soong_config_module_type {
+    name: "max_valid_magnetic_field",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: ["override_max_valid_magnetic_field"],
+    properties: ["cppflags"],
+}
+
+max_valid_magnetic_field {
+    name: "max_valid_magnetic_field_defaults",
+    soong_config_variables: {
+        override_max_valid_magnetic_field: {
+            cppflags: ["-DOVERRIDE_MAX_VALID_MAGNETIC_FIELD=%f"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "target_process_sdk_version_overrides",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
