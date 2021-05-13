@@ -3314,6 +3314,8 @@
   <apn carrier="SH Data Postpaid" mcc="525" mnc="05" apn="shwap" type="default,supl" />
   <apn carrier="SH Data Prepaid" mcc="525" mnc="05" apn="shppd" type="default,supl" />
   <apn carrier="SH MMS Postpaid" mcc="525" mnc="05" apn="shmms" mmsc="http://mms.starhubgee.com.sg:8002/" mmsproxy="10.12.1.80" mmsport="80" type="mms" />
+  <apn carrier="TPG SG" mcc="525" mnc="10" apn="TPG" type="default,mms,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="TPG SG IMS" mcc="525" mnc="10" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="B-Mobile MMS" mcc="528" mnc="02" apn="bmobilemms" mmsc="http://mms.bmobile.com.bn/was" mmsproxy="129.9.10.20" mmsport="6500" type="mms" />
   <apn carrier="B-Mobile" mcc="528" mnc="02" apn="bmobilewap" type="default,supl" />
   <apn carrier="DSTCom" mcc="528" mnc="11" apn="dst.internet" user="internet" password="internet" type="default,supl" />
