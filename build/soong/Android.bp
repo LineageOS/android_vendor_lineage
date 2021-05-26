@@ -85,6 +85,23 @@ gralloc_10_usage_bits {
 }
 
 soong_config_module_type {
+    name: "has_hh_vsync_issue",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["has_hh_vsync_issue"],
+    properties: ["cppflags"],
+}
+
+has_hh_vsync_issue {
+    name: "has_hh_vsync_issue_defaults",
+    soong_config_variables: {
+        has_hh_vsync_issue: {
+            cppflags: ["-DHAS_HH_VSYNC_ISSUE"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "target_process_sdk_version_overrides",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
