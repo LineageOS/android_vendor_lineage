@@ -27,7 +27,9 @@ lineage_generator {
     export_include_dirs: [
         "usr/audio/include/uapi",
         "usr/include",
+        "usr/include/audio",
         "usr/include/audio/include/uapi",
+        "usr/include/display",
         "usr/techpack/audio/include",
     ],
 
