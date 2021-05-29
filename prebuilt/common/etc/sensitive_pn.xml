@@ -1450,8 +1450,139 @@
     <sensitivePN network="248">
         <item>
             <number>116111</number>
-            <name>European Helpline for Children and Adolescents</name>
+            <name>Lasteabi (Eestist helistades)</name>
             <categories>children|adolescents</categories>
+            <organization>Lasteabi</organization>
+            <website>https://www.lasteabi.ee</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>+3726004434</number>
+            <name>Lasteabi (välismaalt helistades)</name>
+            <categories>children|adolescents</categories>
+            <organization>Lasteabi</organization>
+            <website>https://www.lasteabi.ee</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>126</number>
+            <name>Usaldustelefon (psühholoogiline abi, iga päev 19-23)</name>
+            <categories>psychological|mental_health</categories>
+            <organization>MTÜ Hingeabi Assotsiatsioon Usaldus</organization>
+            <website>https://video.usaldus.ee</website>
+            <languages>estonian</languages>
+        </item>
+        <item>
+            <number>127</number>
+            <name>Usaldustelefon (психологическая помощь, ежедневно 19-23)</name>
+            <categories>psychological|mental_health</categories>
+            <organization>MTÜ Hingeabi Assotsiatsioon Usaldus</organization>
+            <website>https://video.usaldus.ee</website>
+            <languages>russian</languages>
+        </item>
+        <item>
+            <number>6558088</number>
+            <name>Eluliin - emotsionaalne tugi</name>
+            <categories>psychological|mental_health|domestic_violence|abuse|suicide|family</categories>
+            <organization>MTÜ Eluliin</organization>
+            <website>https://www.eluliin.ee/emotsionaalse-toe-telefon</website>
+            <languages>estonian</languages>
+        </item>
+        <item>
+            <number>6555688</number>
+            <name>Eluliin - "Линия жизни"</name>
+            <categories>psychological|mental_health|domestic_violence|abuse|suicide|family</categories>
+            <organization>MTÜ Eluliin</organization>
+            <website>https://www.eluliin.ee/emotsionaalse-toe-telefon</website>
+            <languages>russian</languages>
+        </item>
+        <item>
+            <number>5515491</number>
+            <name>Eluliini Naiste tugikeskus</name>
+            <categories>women</categories>
+            <organization>MTÜ Eluliin</organization>
+            <website>https://www.eluliin.ee/</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>1492</number>
+            <name>Eesti Naiste Varjupaikade Liit - tugitelefon</name>
+            <categories>women</categories>
+            <organization>Eesti Naiste Varjupaikade Liit</organization>
+            <website>https://www.naisteliin.ee/?id=115</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>15333</number>
+            <name>Assistance for foreign women in Estonia (Mon 10-15)</name>
+            <categories>women</categories>
+            <organization>International Women's Assistance (IWA) Centre</organization>
+            <website>https://www.eluliin.ee/iwa</website>
+            <languages>english|finnish|russian|german</languages>
+        </item>
+        <item>
+            <number>6556140</number>
+            <name>Inimkaubandusohvrite nõustamine (T 12-16)</name>
+            <categories>human_trafficking</categories>
+            <organization>MTÜ Eluliin</organization>
+            <website>https://www.eluliin.ee/en/node/19</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>5515491</number>
+            <name>Inimkaubandusohvrite nõustamine (muul ajal)</name>
+            <categories>human_trafficking</categories>
+            <organization>MTÜ Eluliin</organization>
+            <website>https://www.eluliin.ee/en/node/19</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>6607320</number>
+            <name>Inimkaubanduse ennetamise ja ohvrite abistamise nõustamisliin (E-R 10-18)</name>
+            <categories>human_trafficking</categories>
+            <organization>MTÜ Living for Tomorrow</organization>
+            <website>https://www.sm.ee/et/abiandvad-organisatsioonid-eestis</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>1220</number>
+            <name>Perearsti nõuandetelefon</name>
+            <categories>health|family</categories>
+            <organization>Perearsti Nõuandeliin OÜ</organization>
+            <website>https://www.1220.ee</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>6346630</number>
+            <name>Perearsti nõuandetelefon (lauatelefon)</name>
+            <categories>health|family</categories>
+            <organization>Perearsti Nõuandeliin OÜ</organization>
+            <website>https://www.1220.ee</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>+3726346630</number>
+            <name>Family Doctor's Advice Line (every day 15-17)</name>
+            <categories>health|family</categories>
+            <organization>Perearsti Nõuandeliin OÜ</organization>
+            <website>https://www.1220.ee/about-the-advice-line/</website>
+            <languages>english</languages>
+        </item>
+        <item>
+            <number>1599</number>
+            <name>Nõuandetelefon "Lastearst kuuleb" (E-R 15-22, L,P 8-22)</name>
+            <categories>children</categories>
+            <organization>SA Tallinna Lastehaigla</organization>
+            <website>https://www.lastehaigla.ee/nouaendetelefon-lastearst-kuuleb-1599/</website>
+            <languages>estonian|russian</languages>
+        </item>
+        <item>
+            <number>6616766</number>
+            <name>Teadmata kadunud inimeste otsimine</name>
+            <categories>missing_children|family</categories>
+            <organization>Kadunud SA</organization>
+            <website>https://kadunud.ee</website>
+            <languages>estonian|russian</languages>
         </item>
     </sensitivePN>
     <!--Russia-->
