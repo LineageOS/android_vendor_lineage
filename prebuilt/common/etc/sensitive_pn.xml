@@ -1063,6 +1063,22 @@
             <categories>children</categories>
         </item>
         <item>
+            <number>116000</number>
+            <name>European Hotline for Missing Children</name>
+            <categories>missing children</categories>
+            <languages>italian|english</languages>
+            <organization>Ministry of Interior</organization>
+            <website>http://116-000.it/</website>
+        </item>
+        <item>
+            <number>0223272327</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <languages>italian</languages>
+            <organization>Telefono Amico Italia</organization>
+            <website>https://www.telefonoamico.it</website>
+        </item>
+        <item>
             <number>0677208977</number>
             <name>Emotional Support and Suicide Prevention</name>
             <categories>emotional support|suicide</categories>
