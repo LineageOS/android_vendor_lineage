@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bce83a98_e29ee589",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 1070,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-06-03T19:54:20Z",
+      "side": 1,
+      "message": "\u003corganization\u003eMinistry of Interior\u003c/organization\u003e\n\u003cwebsite\u003ehttp://116-000.it/\u003c/website\u003e",
+      "range": {
+        "startLine": 1065,
+        "startChar": 7,
+        "endLine": 1070,
+        "endChar": 15
+      },
+      "revId": "9c10a4385c6a58832bf4c84d99d8c42ca14ca20a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
