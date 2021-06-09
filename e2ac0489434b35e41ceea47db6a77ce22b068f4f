@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "767304cf_a013eeff",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-06-09T14:31:52Z",
+      "side": 1,
+      "message": "Only Snap*?\nI\u0027d rather not want to see CAF merged in the other repos",
+      "revId": "e2ac0489434b35e41ceea47db6a77ce22b068f4f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
