@@ -16,6 +16,24 @@
       "revId": "e2ac0489434b35e41ceea47db6a77ce22b068f4f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c849b502_0ed67e6c",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2021-06-09T15:36:11Z",
+      "side": 1,
+      "message": "I get what you\u0027re saying, but cafremote works properly for all the other repos, so why wouldn\u0027t we make it correct for these two?",
+      "parentUuid": "767304cf_a013eeff",
+      "revId": "e2ac0489434b35e41ceea47db6a77ce22b068f4f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
