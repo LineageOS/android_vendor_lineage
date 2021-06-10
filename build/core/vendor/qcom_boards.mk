@@ -63,6 +63,7 @@ UM_4_19_FAMILY := \
     bengal
 
 UM_5_4_FAMILY := \
+    holi \
     lahaina
 
 UM_PLATFORMS := $(UM_3_18_FAMILY) $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY)
