@@ -1,5 +1,6 @@
 prebuilt_etc_xml {
     name: "sensitive_pn.xml",
+    product_specific: true,
     src: "etc/sensitive_pn.xml",
     schema: ":spn-schema",
 }
