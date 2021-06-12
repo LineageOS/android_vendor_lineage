@@ -74,8 +74,12 @@ function breakfast()
         lunch
     else
         if [[ "$target" =~ -(user|userdebug|eng)$ ]]; then
-            # A buildtype was specified, assume a full device name
-            lunch $target
+            # A buildtype was specified
+            if [[ "$target" =~ ^lineage_ ]]; then
+                lunch $target
+            else
+                lunch lineage_$target
+            fi
         else
             # This is probably just the Lineage model name
             if [ -z "$variant" ]; then
