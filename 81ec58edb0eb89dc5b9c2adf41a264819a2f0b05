@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f5b64ba3_d006cdd9",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2021-06-12T19:19:45Z",
+      "side": 1,
+      "message": "also might as well go with `\u003d~ ^lineage_` to match code above better",
+      "range": {
+        "startLine": 78,
+        "startChar": 28,
+        "endLine": 78,
+        "endChar": 42
+      },
+      "revId": "81ec58edb0eb89dc5b9c2adf41a264819a2f0b05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
