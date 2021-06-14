@@ -16,9 +16,20 @@ PRODUCT_PACKAGES += \
     Profiles \
     Seedvault
 
+# These apps require access to hidden API so they need to stay in /system
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/permissions/permissions_com.stevesoltys.seedvault.xml \
+    system/etc/sysconfig/whitelist_com.stevesoltys.seedvault.xml \
+    system/priv-app/Seedvault/%
+
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
 PRODUCT_PACKAGES += \
     AudioFX
+
+# These apps require access to hidden API so they need to stay in /system
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/permissions/privapp_whitelist_org.lineageos.audiofx.xml \
+    system/priv-app/AudioFX/%
 endif
 
 ifeq ($(PRODUCT_TYPE), go)

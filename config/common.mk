@@ -30,6 +30,9 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/lineage/prebuilt/common/bin/50-lineage.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-lineage.sh
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/addon.d/50-lineage.sh
+
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
@@ -49,9 +52,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-sysconfig.xml
 
+# AOSP has no support of loading framework resources from /system_ext
+# so the SDK has to stay in /system for now
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/sysconfig/lineage-sysconfig.xml
+
 # Lineage-specific init rc file
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-system.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.lineage-system.rc
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/init/init.lineage-system.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
@@ -111,6 +122,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.lineage-updater.rc
 
+# These apps require access to hidden API so they need to stay in /system
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/init/init.lineage-updater.rc \
+    system/etc/permissions/privapp_whitelist_org.lineageos.updater.xml \
+    system/priv-app/Updater/Updater.apk
+
 # Themes
 PRODUCT_PACKAGES += \
     LineageThemesStub \
@@ -134,6 +151,11 @@ PRODUCT_PACKAGES += \
     unrar \
     vim \
     zip
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/curl \
+    system/bin/getcap \
+    system/bin/setcap
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -159,6 +181,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
+
+ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/procmem
+endif
 
 # Root
 PRODUCT_PACKAGES += \
