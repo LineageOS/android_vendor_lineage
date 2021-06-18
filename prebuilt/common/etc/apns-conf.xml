@@ -2972,6 +2972,8 @@
   <apn carrier="Vinaphone 3G" mcc="452" mnc="02" apn="m3-world" user="mms" password="mms" type="default,supl" />
   <apn carrier="Viettel 3G" mcc="452" mnc="04" apn="v-internet" type="default,supl" />
   <apn carrier="Viettel MMS" mcc="452" mnc="04" apn="v-mms" mmsc="http://mms.viettelmobile.com.vn/mms" mmsproxy="192.168.233.10" mmsport="9201" type="mms" />
+  <apn carrier="Itelecom MMS" mcc="452" mnc="08" apn="e-mms" user="mms" password="mms" mmsc="http://10.18.2.172:38090" mmsproxy="10.18.2.183" mmsport="8080" type="mms" />
+  <apn carrier="Itelecom 4G" mcc="452" mnc="08" apn="e-internet" user="mms" password="mms" type="default,supl" />
   <apn carrier="Vietnamobile 3G" mcc="452" mnc="05" apn="internet" type="default,supl" />
   <apn carrier="Vietnamobile MMS" mcc="452" mnc="05" apn="mms" proxy="" port="" mmsproxy="10.10.128.44" mmsport="8080" mmsc="http://10.10.128.58/servlets/mms" type="mms" />
   <apn carrier="BeeLine VN 3G" mcc="452" mnc="07" apn="internet" type="default,supl" />
