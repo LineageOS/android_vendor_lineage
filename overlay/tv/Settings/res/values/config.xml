@@ -1,0 +1,8 @@
+<!--
+     SPDX-FileCopyrightText: 2025 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Determines whether the "Take bug report" option is shown in quick settings. -->
+    <bool name="config_quick_settings_show_take_bugreport">false</bool>
+</resources>
