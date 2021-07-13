@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "937a04da_ed6979d8",
+        "filename": "build/target/product/lineage_generic_car_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 29072
+      },
+      "writtenOn": "2021-07-13T06:52:12Z",
+      "side": 1,
+      "message": "I\u0027m wondering if the generic product targets should include an emulator specific include. Would it be possible to exclude this and rely on packages/..../build/car.mk inherited in common_car.mk and then add the generic car requirements?",
+      "revId": "eb0be30d514293e09d6f3fb6c4cd13c9d1a94fd8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
