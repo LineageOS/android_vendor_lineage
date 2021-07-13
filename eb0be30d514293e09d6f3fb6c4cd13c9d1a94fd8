@@ -16,6 +16,24 @@
       "revId": "eb0be30d514293e09d6f3fb6c4cd13c9d1a94fd8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b6aa8a99_9aa95a63",
+        "filename": "build/target/product/lineage_generic_car_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 28299
+      },
+      "writtenOn": "2021-07-13T14:21:19Z",
+      "side": 1,
+      "message": "I assumed this lineage_generic_car_target.mk file was specific to emulator/GSI and that other devices can be converted into car builds by adding:\n\n$(call inherit-product, vendor/lineage/config/common_full_car.mk)",
+      "parentUuid": "937a04da_ed6979d8",
+      "revId": "eb0be30d514293e09d6f3fb6c4cd13c9d1a94fd8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
