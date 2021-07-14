@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "beab81e1_019c9de5",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-07-14T20:05:04Z",
+      "side": 1,
+      "message": "Edit these one to make them work with both kernel types",
+      "range": {
+        "startLine": 348,
+        "startChar": 0,
+        "endLine": 397,
+        "endChar": 4
+      },
+      "revId": "7d8a57e6a5762960e04c2d6fdf84086b229abb25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "700b08c2_b41cd731",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-07-14T20:05:04Z",
+      "side": 1,
+      "message": "Do not do a copy of standard kernel build targets",
+      "range": {
+        "startLine": 453,
+        "startChar": 0,
+        "endLine": 511,
+        "endChar": 5
+      },
+      "revId": "7d8a57e6a5762960e04c2d6fdf84086b229abb25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
