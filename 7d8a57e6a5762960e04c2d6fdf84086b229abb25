@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0dc05531_5cd307fd",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 22856
+      },
+      "writtenOn": "2021-07-20T12:47:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "beab81e1_019c9de5",
+      "range": {
+        "startLine": 348,
+        "startChar": 0,
+        "endLine": 397,
+        "endChar": 4
+      },
+      "revId": "7d8a57e6a5762960e04c2d6fdf84086b229abb25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "700b08c2_b41cd731",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "7d8a57e6a5762960e04c2d6fdf84086b229abb25",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2b56c0da_9d2058d9",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 22856
+      },
+      "writtenOn": "2021-07-20T12:47:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "700b08c2_b41cd731",
+      "range": {
+        "startLine": 453,
+        "startChar": 0,
+        "endLine": 511,
+        "endChar": 5
+      },
+      "revId": "7d8a57e6a5762960e04c2d6fdf84086b229abb25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
