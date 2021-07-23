@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "38951419_71b692b7",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-23T22:27:32Z",
+      "side": 1,
+      "message": "the recovery only defconfig should not define any modules, but i\u0027d still make sure this only runs once, with the right defconfig.",
+      "parentUuid": "52b97a45_ef82c1e1",
+      "range": {
+        "startLine": 279,
+        "startChar": 0,
+        "endLine": 299,
+        "endChar": 4
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5af8ec18_92052051",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 3
