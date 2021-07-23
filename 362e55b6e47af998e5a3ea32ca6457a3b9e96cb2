@@ -19,6 +19,29 @@
     },
     {
       "key": {
+        "uuid": "d70f6f6d_038c02ce",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-23T22:34:21Z",
+      "side": 1,
+      "message": "arguably this should run only once too?\nthen make TARGET_PREBUILT_INT_RECOVERY_KERNEL call directly internal-make-kernel-target instead of this (then you don\u0027t need to move these rules to a function at all)",
+      "range": {
+        "startLine": 275,
+        "startChar": 0,
+        "endLine": 278,
+        "endChar": 4
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "52b97a45_ef82c1e1",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 3
@@ -77,6 +100,29 @@
       "writtenOn": "2021-07-23T22:25:02Z",
       "side": 1,
       "message": "document the parameters to the function in the line above",
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e55776f6_bb006d3e",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 329,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-23T22:34:21Z",
+      "side": 1,
+      "message": "who uses this?",
+      "range": {
+        "startLine": 324,
+        "startChar": 0,
+        "endLine": 329,
+        "endChar": 0
+      },
       "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
