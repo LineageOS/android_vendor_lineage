@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6ebc6754_73f3c626",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 273,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-23T22:25:02Z",
+      "side": 1,
+      "message": "document the parameters to the function in the line above",
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52b97a45_ef82c1e1",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-23T22:25:02Z",
+      "side": 1,
+      "message": "this should not run twice.\nconsider adding a parameter to toggle the building and packaging of kernel modules, and only enable it for TARGET_PREBUILT_INT_KERNEL",
+      "range": {
+        "startLine": 279,
+        "startChar": 0,
+        "endLine": 299,
+        "endChar": 4
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5af8ec18_92052051",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 302,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-23T22:25:02Z",
+      "side": 1,
+      "message": "document the parameters to the function in the line above",
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
