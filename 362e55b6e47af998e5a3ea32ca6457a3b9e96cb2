@@ -113,6 +113,30 @@
     },
     {
       "key": {
+        "uuid": "619dadba_5e17b002",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 28037
+      },
+      "writtenOn": "2021-07-24T16:46:35Z",
+      "side": 1,
+      "message": "I know, which is why i said i was under the wrong impression. Now my question is that in my opinion, using internal-make-kernel-target in the rule for TARGET_PREBUILT_INT_RECOVERY_KERNEL goes against the idea of having it as \"internal\"; instead i could use the right now unused make-recovery-kernel-target instead",
+      "parentUuid": "a8005fa0_41af1b21",
+      "range": {
+        "startLine": 275,
+        "startChar": 0,
+        "endLine": 278,
+        "endChar": 4
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "52b97a45_ef82c1e1",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 3
