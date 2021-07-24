@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "0de1626a_cc05e167",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 28037
+      },
+      "writtenOn": "2021-07-24T14:33:21Z",
+      "side": 1,
+      "message": "This works, i was under the wrong impression that for appended-dtb images you needed to run this, but the kernel makefile just creates de dtb\u0027s if the option is selected; so all this can be put back into the TARGET_PREBUILT_INT_KERNEL rule. However, i\u0027m not sure if using internal-make-kernel-target is OK; as it seems to be used only by other fucntions, in which case i could just keep and use make-recovery-kernel-target, and keep this more in-line with the pre-existing code",
+      "parentUuid": "d70f6f6d_038c02ce",
+      "range": {
+        "startLine": 275,
+        "startChar": 0,
+        "endLine": 278,
+        "endChar": 4
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "52b97a45_ef82c1e1",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 3
