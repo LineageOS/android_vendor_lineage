@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "94021998_7bac87db",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-24T16:36:59Z",
+      "side": 1,
+      "message": "RECOVERY_KERNEL_OUT",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 12
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6ebc6754_73f3c626",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 3
@@ -54,6 +77,30 @@
       "side": 1,
       "message": "This works, i was under the wrong impression that for appended-dtb images you needed to run this, but the kernel makefile just creates de dtb\u0027s if the option is selected; so all this can be put back into the TARGET_PREBUILT_INT_KERNEL rule. However, i\u0027m not sure if using internal-make-kernel-target is OK; as it seems to be used only by other fucntions, in which case i could just keep and use make-recovery-kernel-target, and keep this more in-line with the pre-existing code",
       "parentUuid": "d70f6f6d_038c02ce",
+      "range": {
+        "startLine": 275,
+        "startChar": 0,
+        "endLine": 278,
+        "endChar": 4
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8005fa0_41af1b21",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-24T16:36:59Z",
+      "side": 1,
+      "message": "No it does not make sense to me how this would be for -dtb appended kernel images. The kernel makefile will figure out it shall build dtbs itself (example https://github.com/LineageOS/android_kernel_google_redbull/blob/lineage-18.1/arch/arm64/Makefile#L179). With that said, i cannot figure out why we\u0027re doing this step at all.\n\nIn any case currently the dtbs will be outputed to RECOVERY_OBJ but nothing will use them (INSTALLED_DTBIMAGE_TARGET will still use KERNEL_OBJ). This also shows how if you use dtb.img and your recovery defconfig produces different dtbs, they will be ignored.",
+      "parentUuid": "0de1626a_cc05e167",
       "range": {
         "startLine": 275,
         "startChar": 0,
@@ -146,6 +193,29 @@
         "startChar": 0,
         "endLine": 329,
         "endChar": 0
+      },
+      "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fa5adb3a_2e49ccaf",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 463,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-24T16:36:59Z",
+      "side": 1,
+      "message": "unused",
+      "range": {
+        "startLine": 462,
+        "startChar": 0,
+        "endLine": 463,
+        "endChar": 112
       },
       "revId": "362e55b6e47af998e5a3ea32ca6457a3b9e96cb2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
