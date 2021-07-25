@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "85ed0dcc_3e4fca25",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-25T10:15:11Z",
+      "side": 1,
+      "message": "below KERNEL_OUT?",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 63
+      },
+      "revId": "bd19f608fe9aaa0d68a0592464b3aad33302c057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a2a0446a_9b47c5a8",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-25T10:15:11Z",
+      "side": 1,
+      "message": "below KERNEL_RELEASE?",
+      "range": {
+        "startLine": 85,
+        "startChar": 0,
+        "endLine": 86,
+        "endChar": 79
+      },
+      "revId": "bd19f608fe9aaa0d68a0592464b3aad33302c057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27854348_ea0c7168",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-25T10:15:11Z",
+      "side": 1,
+      "message": "missing whitespace",
+      "range": {
+        "startLine": 96,
+        "startChar": 30,
+        "endLine": 96,
+        "endChar": 33
+      },
+      "revId": "bd19f608fe9aaa0d68a0592464b3aad33302c057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a0c0e66d_b33ed61c",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-07-25T10:15:11Z",
+      "side": 1,
+      "message": "endif # FULL_RECOVERY_KERNEL_BUILD or FULL_KERNEL_BUILD",
+      "revId": "bd19f608fe9aaa0d68a0592464b3aad33302c057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
