@@ -37,5 +37,5 @@
     <string name="config_backup_settings_intent" translatable="false">settings://com.android.settings.backup.transport</string>
 
     <!-- Manufacturer backup settings label -->
-    <string name="config_backup_settings_label" translatable="true">@string/backup_transport_setting_label</string>
+    <string name="config_backup_settings_label" translatable="true">com.android.settings:string/backup_transport_setting_label</string>
 </resources>
