@@ -58,6 +58,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+ifneq ($(WITH_LINEAGE_CHARGER),false)
+PRODUCT_PACKAGES += \
+    lineage_charger_animation
+endif
+
 # Customizations
 PRODUCT_PACKAGES += \
     IconShapeSquareOverlay \
