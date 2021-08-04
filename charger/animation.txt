@@ -1,0 +1,26 @@
+# animation: num_cycles, first_frame_repeats, animation_file
+animation: 7 1 charger/battery_scale
+
+# frame: disp_time min_level max_level
+frame: 500 0 4
+frame: 500 0 9
+frame: 500 5 14
+frame: 500 10 19
+frame: 500 15 24
+frame: 500 20 29
+frame: 500 25 34
+frame: 500 30 39
+frame: 500 35 44
+frame: 500 40 49
+frame: 500 45 54
+frame: 500 50 59
+frame: 500 55 64
+frame: 500 60 69
+frame: 500 65 74
+frame: 500 70 79
+frame: 500 75 84
+frame: 500 80 89
+frame: 500 85 94
+frame: 500 90 99
+frame: 500 95 99
+frame: 1000 100 100
