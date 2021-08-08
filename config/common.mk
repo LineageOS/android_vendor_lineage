@@ -186,7 +186,10 @@ endif
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/no-rro
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/lineage/overlay/common \
+    vendor/lineage/overlay/no-rro
 
 PRODUCT_VERSION_MAJOR = 18
 PRODUCT_VERSION_MINOR = 1

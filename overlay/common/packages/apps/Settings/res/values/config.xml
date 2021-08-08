@@ -32,10 +32,4 @@
     <string name="config_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
     <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
     <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
-
-    <!-- Manufacturer backup settings to launch -->
-    <string name="config_backup_settings_intent" translatable="false">settings://com.android.settings.backup.transport</string>
-
-    <!-- Manufacturer backup settings label -->
-    <string name="config_backup_settings_label" translatable="true">@string/backup_transport_setting_label</string>
 </resources>
