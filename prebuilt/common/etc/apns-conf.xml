@@ -556,7 +556,7 @@
   <apn carrier="O2 Contract" mcc="234" mnc="10" apn="wap.o2.co.uk" proxy="193.113.200.195" port="8080" user="o2wap" password="password" mmsc="http://mmsc.mms.o2.co.uk:8002/" mmsproxy="193.113.200.195" mmsport="8080" type="default,hipri,supl,mms" />
   <apn carrier="O2 PAYG" mcc="234" mnc="10" apn="payandgo.o2.co.uk" proxy="193.113.200.195" port="8080" user="payandgo" password="password" mmsc="http://mmsc.mms.o2.co.uk:8002/" mmsproxy="193.113.200.195" mmsport="8080" type="default,hipri,supl,mms" />
   <apn carrier="O2 WEB" mcc="234" mnc="10" apn="mobile.o2.co.uk" proxy="" port="" user="O2web" password="O2web" mmsc="" type="default,supl" />
-  <apn carrier="giffgaff" mcc="234" mnc="10" apn="giffgaff.com" user="giffgaff" password="" mmsc="http://mmsc.mediamessaging.co.uk:8002" mmsproxy="82.132.254.1" mmsport="8080" authtype="3" mvno_type="spn" mvno_match_data="giffgaff" protocol="IPV4" roaming_protocol="IPV4" type="default,supl,mms" />
+  <apn carrier="giffgaff" mcc="234" mnc="10" apn="giffgaff.com" user="gg" password="p" mmsc="http://mmsc.mediamessaging.co.uk:8002" authtype="1" mvno_type="spn" mvno_match_data="giffgaff" protocol="IPV4V6" roaming_protocol="IPV4" type="default,hipri,supl,mms,ims" />
   <apn carrier="Tesco Mobile" mcc="234" mnc="10" apn="prepay.tesco-mobile.com" proxy="193.113.200.195" port="8080" user="tescowap" password="password" mmsc="http://mmsc.mms.o2.co.uk:10021/mmsc" mmsproxy="193.113.200.195" mmsport="8080" mvno_type="spn" mvno_match_data="TESCO" authtype="1" type="default,supl,mms" />
   <apn carrier="Tesco UK" mcc="234" mnc="10" apn="prepay.tesco-mobile.com" proxy="193.113.200.195" port="8080" user="tescowap" password="password" mmsc="http://mmsc.mms.02.co.uk:8002" mmsproxy="193.113.200.195" mmsport="8080" mvno_type="spn" mvno_match_data="TESCO" type="default,supl,mms,wap" />
   <apn carrier="O2 Internet(pre)" mcc="234" mnc="11" apn="payandgo.o2.co.uk" user="payandgo" password="password" type="default,supl" />
@@ -606,7 +606,6 @@
   <apn carrier="3 MMS" mcc="234" mnc="20" apn="three.co.uk" proxy="" port="" user="" password="" mmsc="http://mms.um.three.co.uk:10021/mmsc" mmsproxy="217.171.129.2" mmsport="8799" type="mms" />
   <apn carrier="3 UK" mcc="234" mnc="20" apn="three.co.uk" proxy="" port="" user="" password="" mmsc="http://mms.um.three.co.uk:10021/mmsc" mmsproxy="217.171.129.2" mmsport="8799" type="default,supl,mms" />
   <apn carrier="FreedomPop" mcc="234" mnc="20" apn="freedompop.foggmobile.com" type="" />
-  <apn carrier="Giffgaff" mcc="234" mnc="20" apn="giffgaff.com" proxy="" port="" user="giffgaff" password="user" mmsc="http://mmsc.mediamessaging.co.uk:8002" mmsproxy="193.113.200.195" mmsport="8080" mvno_type="spn" mvno_match_data="giffgaff" type="default,supl,mms" />
   <apn carrier="iD Mobile (UK)" mcc="234" mnc="20" apn="id" proxy="" port="" user="" password="" mmsc="http://mms.um.idmobile.co.uk:10021/mmsc" mmsproxy="mms.idmobile.co.uk" mmsport="8799" type="default,mms" />
   <apn carrier="BT Business" mcc="234" mnc="230" apn="btmobile.bt.com" user="bt" password="bt" mmsc="http://mms/" mmsproxy="149.254.201.135" mmsport="8080" authtype="1" type="default,supl,mms" />
   <apn carrier="Truphone UK" mcc="234" mnc="25" apn="truphone.com" type="default,supl" />
