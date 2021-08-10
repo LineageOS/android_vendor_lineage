@@ -573,6 +573,7 @@
   <apn carrier="Vodafone MMS(Post)" mcc="234" mnc="15" apn="wap.vodafone.co.uk" proxy="" port="" user="wap" password="wap" mmsc="http://mms.vodafone.co.uk/servlets/mms" mmsproxy="212.183.137.12" mmsport="8799" type="mms" />
   <apn carrier="Vodafone UK Contract Internet" mcc="234" mnc="15" apn="Internet" user="web" password="web" server="*" mmsc="http://mms.vodafone.co.uk/servlets/mms" mmsproxy="212.183.137.012" mmsport="8799" type="default,supl,mms" />
   <apn carrier="Vodafone Post-pay ISP" mcc="234" mnc="15" apn="internet" user="web" password="web" type="default,supl" />
+  <apn carrier="VOXI (Vodafone UK)" mcc="234" mnc="15" apn="pp.vodafone.co.uk" user="wap" password="wap" mmsc="http://mms.vodafone.co.uk/servlets/mms" mmsproxy="212.183.137.12" mmsport="8799" authtype="0" type="default,supl,mms" />
   <apn carrier="Talkmobile" mcc="234" mnc="15" apn="payg.talkmobile.co.uk" type="default,supl" />
   <apn carrier="Talkmobile MMS" mcc="234" mnc="15" apn="payg.talkmobile.co.uk" user="wap" password="password" mmsc="http://mms.talkmobile.co.uk/servlets/mms" mmsproxy="212.183.137.12" mmsport="8799" type="mms" />
   <apn carrier="Vodafone Prepay" mcc="234" mnc="15" apn="pp.vodafone.co.uk" user="wap" password="wap" mmsc="http://mms.vodafone.co.uk/servlets/mms" mmsproxy="212.183.137.12" mmsport="8799" type="default,supl,mms" />
