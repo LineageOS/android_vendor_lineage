@@ -1245,10 +1245,14 @@
         <item>
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
+            <organization>Child Helpline International</organization>
+            <website>https://www.childhelplineinternational.org/</website>
         </item>
         <item>
             <number>116123</number>
-            <name>European Emotional Support</name>
+            <name>Emotional Support</name>
+            <organization>Samaritans</organization>
+            <website>https://www.samaritans.org/</website>
             <categories>emotional support</categories>
         </item>
         <item>
@@ -1256,87 +1260,188 @@
             <name>Helpline for Children and Adolescents</name>
             <categories>children|adolescents</categories>
             <organization>Childline</organization>
+            <website>https://www.childline.org.uk/</website>
         </item>
         <item>
             <number>0800555111</number>
+            <name>Anonymous Legal Helpline</name>
+            <organization>Crimestoppers</organization>
+            <website>https://crimestoppers-uk.org/</website>
+            <categories>legal</categories>
         </item>
         <item>
             <number>01179045999</number>
+            <name>Legal Advice Helpline</name>
+            <categories>legal</categories>
+            <organization>Lyons Davidson</organization>
+            <website>https://www.lyonsdavidson.co.uk/personal-law/family-law/relationship-breakdown/</website>
         </item>
         <item>
             <number>01179250680</number>
+            <name>Domestic Abuse Helpline</name>
+            <categories>domestic abuse</categories>
+            <organization>Nextlink</organization>
+            <website>https://nextlinkhousing.co.uk/</website>
         </item>
         <item>
             <number>01642683045</number>
+            <name>Abuse And Violence Helpline</name>
+            <categories>domestic abuse|forced marriages|fgm</categories>
+            <organization>HALO Project</organization>
+            <website>https://bedsdv.org.uk/get-help/halo-project/</website>
         </item>
         <item>
             <number>01708765200</number>
+            <name>Emotional Support Helpline</name>
+            <organization>Support Line</organization>
+            <website>https://www.supportline.org.uk/contact-us/</website>
         </item>
         <item>
             <number>02070080151</number>
+            <name>Forced Marriage Unit Helpline</name>
+            <categories>forced marriage</categories>
+            <organization>Wiltshire Safeguarding Vulnerable People Partnership</organization>
+            <website>https://www.wiltshirescb.org.uk/honour-based-abuse-forced-marriage/</website>
         </item>
         <item>
             <number>02072516577</number>
+            <name>National Family Law Helpline</name>
+            <categories>family|women|legal</categories>
+            <organization>Rights of Women</organization>
+            <website>https://rightsofwomen.org.uk/get-advice/family-law/</website>
         </item>
         <item>
             <number>02072518887</number>
+            <name>Abusive Relationship Helpline</name>
+            <categories>domestic abuse|women</categories>
+            <organization>Rights of Women</organization>
+            <website>https://www.nuh.nhs.uk/sexual-assault</website>
         </item>
         <item>
             <number>02073830700</number>
+            <name>Domestic Abuse Therapy For People with Learning Difficulties</name>
+            <categories>domestic abuse|learning difficulties|children</categories>
+            <organization>Respond</organization>
+            <website>https://respond.org.uk/</website>
         </item>
         <item>
             <number>02073957700</number>
+            <name>Refuge For Women and Children</name>
+            <categories>refuge|women|children</categories>
+            <organization>Refuge</organization>
+            <website>https://www.refuge.org.uk/get-involved/contact-us/</website>
         </item>
         <item>
             <number>02074907689</number>
+            <name>Immigration Legal Advice</name>
+            <categories>women|immigration|legal</categories>
+            <organization>Rights Of Women</organization>
+            <website>https://rightsofwomen.org.uk/get-advice/immigration-and-asylum-law/</website>
         </item>
         <item>
             <number>02076081137</number>
+            <name>Legal Advice</name>
+            <categories>women|legal</categories>
+            <organization>Rights Of Women</organization>
+            <website>https://www.rasasc.org.uk/independent-sexual-violence-advocate-service/other-legal-advice/</website>
         </item>
         <item>
             <number>02077042040</number>
+            <name>LGBT+ Domestic Abuse Helpline</name>
+            <categories>lgbtq|domestic abuse</categories>
+            <organization>GALOP</organization>
+            <website>https://www.kingston.gov.uk/domestic-sexual-violence/covid-19-domestic-abuse?documentId=596&categoryId=20154</website>
         </item>
         <item>
             <number>02078235430</number>
-        </item>
-        <item>
-            <number>02085710800</number>
+            <name>Bullying and Child Abuse Helpline</name>
+            <categories>bullying|child abuse|children</categories>
+            <organization>Kidscape</organization>
+            <website>https://www.kidscape.org.uk/</website>
         </item>
         <item>
             <number>02085719595</number>
+            <name>BAME Women Domestic Abuse Helpline</name>
+            <categories>forced marriage|domestic abuse|black|women</categories>
+            <organization>Southall Sisters</organization>
+            <website>https://southallblacksisters.org.uk/</website>
         </item>
         <item>
             <number>02380338080</number>
+            <name>Rape and Sexual Abuse of Children</name>
+            <categories>rape|sexual abuse|children</categories>
+            <organization>CISTERS</organization>
+            <website>https://www.cisters.org.uk/</website>
         </item>
         <item>
             <number>02920496920</number>
+            <name>Domestic Abuse Helpline</name>
+            <categories>hbv|forced marriage|muslim|wales</categories>
+            <organization>Henna Foundation</organization>
+            <website>https://steppingstonesnorthwales.co.uk/domestic-abuse/</website>
         </item>
         <item>
             <number>03003300630</number>
+            <name>Mental Health And Wellbeing LGBT+ Helpline</name>
+            <categories>mental health|lgbtq</categories>
+            <organization>RCASU</organization>
+            <website>https://www.rcasu.org.uk/union/support_advice/mentalhealth/</website>
         </item>
         <item>
             <number>08000149084</number>
+            <name>West Mercia Women's Aid</name>
+            <categories>women|children|domestic abuse</categories>
+            <organization>CRUSH</organization>
+            <website>https://www.westmerciawomensaid.org/contact-us/</website>
         </item>
         <item>
             <number>08000271234</number>
+            <name>Scotland Domestic Abuse and Forced Marriage Helpline</name>
+            <categories>forced marriage</categories>
+            <organization>Scotland’s domestic abuse and forced marriage helpline</organization>
+            <website>https://sdafmh.org.uk/contact-us/</website>
         </item>
         <item>
             <number>08005999247</number>
+            <name>Bedfordshire Domestic Abuse Helpline</name>
+            <categories>domestic abuse|forced marriage</categories>
+            <organization>Karma Nirvana</organization>
+            <website>https://karmanirvana.org.uk/</website>
         </item>
         <item>
             <number>08008010327</number>
+            <name>Respect Helpline for Male Domestic Abuse Victims</name>
+            <categories>domestic abuse|adults|children|men|boys</categories>
+            <organization>Respect</organization>
+            <website>https://www.respect.uk.net/</website>
         </item>
         <item>
             <number>08009995428</number>
+            <name>Domestic Abuse</name>
+            <categories>domestic abuse|adults</categories>
+            <organization>Colchester Borough Homes</organization>
+            <website>https://cbhomes.org.uk/help-and-advice/domestic-abuse/</website>
         </item>
         <item>
             <number>08082000247</number>
+            <name>National Domestic Abuse Helpline</name>
+            <categories>refuge|adults|domestic abuse</categories>
+            <organization>Refuge</organization>
+            <website>https://www.nationaldahelpline.org.uk/</website>
         </item>
         <item>
             <number>08088005000</number>
+            <name>Helpline for Protecting Children</name>
+            <categories>children</categories>
+            <organization>NSPCC</organization>
+            <website>https://www.nspcc.org.uk/keeping-children-safe/our-services/nspcc-helpline/</website>
         </item>
         <item>
             <number>08088010331</number>
+            <name>National Association for People Abused in Childhood</name>
+            <categories>adults|sexual abuse</categories>
+            <organization>Milton Keynes Council</organization>
+            <website>https://www.milton-keynes.gov.uk/social-care-and-health/adult-social-care/directory-search/service/331</website>
         </item>
         <item>
             <number>08088010400</number>
@@ -1347,33 +1452,103 @@
         </item>
         <item>
             <number>08088010456</number>
+            <name>Rape and Sexual Abuse Support (Women And Girls)</name>
+            <categories>women|girls|sexual abuse|rape|children|adults</categories>
+            <organization>Somerset and Avon</organization>
+            <website>https://www.sarsas.org.uk/</website>
         </item>
         <item>
             <number>08088010464</number>
+            <name>Rape and Sexual Abuse Support (Men And Boys)</name>
+            <categories>men|boys|sexual abuse|rape|children|adults</categories>
+            <organization>Somerset and Avon</organization>
+            <website>https://www.sarsas.org.uk/</website>
+        </item>
+        <item>
+            <number>01554752422</number>
+            <name>Domestic Abuse Service</name>
+            <categories>domestic abuse|adults|children|mental health</categories>
+            <organization>Threshold</organization>
+            <website>http://threshold-das.org.uk/</website>
+        </item>
+        <item>
+            <number>01554742227</number>
+            <name>Llanelli East Child Care Team</name>
+            <categories>children|mental health</categories>
+            <organization>Family Information Service Carmarthenshire</organization>
+            <website>https://fis.carmarthenshire.gov.wales/child-protection/</website>
+        </item>
+        <item>
+            <number>01554742158</number>
+            <name>Llanelli West Child Care Team</name>
+            <categories>children|mental health</categories>
+            <organization>Family Information Service Carmarthenshire</organization>
+            <website>https://fis.carmarthenshire.gov.wales/child-protection/</website>
+        </item>
+        <item>
+            <number>01558825414</number>
+            <name>Dinefwr Child Care Team</name>
+            <categories>children|mental health</categories>
+            <organization>Family Information Service Carmarthenshire</organization>
+            <website>https://fis.carmarthenshire.gov.wales/child-protection/</website>
+        </item>
+        <item>
+            <number>01269597474</number>
+            <name>Carmarthenshire Domestic Abuse Service</name>
+            <categories>domestic abuse|adults|children</categories>
+            <organization>Family Information Service Carmarthenshire</organization>
+            <website>https://fis.carmarthenshire.gov.wales/child-protection/</website>
         </item>
         <item>
             <number>08088010800</number>
+            <name>Carmarthenshire 24 Hour Helpline</name>
+            <organization>Family Information Service Carmarthenshire</organization>
+            <website>https://fis.carmarthenshire.gov.wales/</website>
         </item>
         <item>
             <number>08088020300</number>
+            <name>National Stalking Helpline</name>
+            <categories>stalking|adults</categories>
         </item>
         <item>
             <number>08088021414</number>
+            <name>Domestic And Sexual Abuse Helpline</name>
+            <categories>domestic abuse|sexual abuse|adults|children</categories>
+            <organization>Family Support NI</organization>
+            <website>https://www.familysupportni.gov.uk/Service/7158/domesticsexual-abuse/domestic-sexual-abuse-helpline--nexus</website>
         </item>
         <item>
             <number>08088029999</number>
+            <name>National Rape Crisis Helpline</name>
+            <categories>sexual abuse|mental health|children|adults</del>
+            <organization>RASASC</organization>
+            <website>https://www.rasasc.org.uk/helpline/</website>
         </item>
         <item>
             <number>08088081111</number>
+            <name>Learning Disability Helpline</name>
+            <categories>disability|mental health</categories>
+            <organization>Mencap</organization>
+            <website>https://www.mencap.org.uk/advice-and-support/our-services/learning-disability-helpline</website>
         </item>
         <item>
             <number>08088088141</number>
+            <name>Slough Safeguarding</name>
+            <categories>children|abuse|wellbeing</categories>
+            <organization>Slough Safeguarding Partnership</organization>
+            <website>https://www.sloughsafeguardingpartnership.org.uk/</website>
         </item>
         <item>
             <number>08453030900</number>
+            <name>BurnCentreCare</name>
+            <categories>chidren|adults</categories>
+            <organization>BurnCentreCare</organization>
+            <website>http://www.burncentrecare.co.uk/</website>
         </item>
         <item>
-            <number>08454582914</number>
+            <number>03454582914</number>
+            <name>Womankind, Bristol Women's Therapy Centre</name>
+            <categories>women</categories>
         </item>
     </sensitivePN>
     <!--Denmark-->
