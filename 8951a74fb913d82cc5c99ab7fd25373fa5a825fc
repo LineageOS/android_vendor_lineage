@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de36512c_31edf273",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1251,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-08-14T09:57:24Z",
+      "side": 1,
+      "message": "we explicitely chose more generic names here, since the org names don\u0027t always tell that much\nPlease use the \u003corganization\u003e and \u003cwebsite\u003e tags instead",
+      "revId": "8951a74fb913d82cc5c99ab7fd25373fa5a825fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f2fb1243_a961e952",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1267,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-08-14T09:57:24Z",
+      "side": 1,
+      "message": "e.g. this would be \"Legal advice helpline\"",
+      "revId": "8951a74fb913d82cc5c99ab7fd25373fa5a825fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
