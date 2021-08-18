@@ -3200,6 +3200,13 @@
             <categories>abuse|suicide</categories>
         </item>
     </sensitivePN>
+    <!--China Mainland-->
+    <sensitivePN network="460">
+        <item>
+            <number>01082951332</number>
+            <name>北京心理援助热线(全国可用) Beijing Psychological assistance hotline(For Entire China Mainland)</name>
+        </item>
+    </sensitivePN>
     <!--Taiwan-->
     <sensitivePN network="466">
         <item>
