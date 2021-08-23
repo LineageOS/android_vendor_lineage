@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "87cbebe5_0358eb9a",
+        "filename": "overlay/common/packages/apps/Dialer/java/com/android/voicemail/impl/res/xml/vvm_config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2021-08-23T05:42:23Z",
+      "side": 1,
+      "message": "this line was removed in previous change, so don\u0027t add it back",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 72
+      },
+      "revId": "e69026d3e8d50a57b065e9bf19bdbad6d8014d4e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
