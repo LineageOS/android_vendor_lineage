@@ -83,6 +83,16 @@ DTB_OUT := $(TARGET_OUT_INTERMEDIATES)/DTB_OBJ
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
 KERNEL_RELEASE := $(KERNEL_OUT)/include/config/kernel.release
 
+ifneq (,$(findstring gki,$(KERNEL_DEFCONFIG)))
+    ifeq ($(shell [ -d $(KERNEL_SRC)/scripts/gki" ] && \
+        [ "$(KERNEL_DEFCONFIG)" != "gki_defconfig" ] && \
+        echo "true"), true)
+        # Generate the defconfig file from the fragments
+        cmd := $(PATH_OVERRIDE) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CC) KERN_OUT=$(KERNEL_OUT) MAKE_PATH=$(shell dirname $(KERNEL_MAKE_CMD))/ TARGET_BUILD_VARIANT=user $(TARGET_KERNEL_SOURCE)/scripts/gki/generate_defconfig.sh $(KERNEL_DEFCONFIG)
+        _x := $(shell $(cmd))
+    endif
+endif
+
 ifeq ($(KERNEL_ARCH),x86_64)
 KERNEL_DEFCONFIG_ARCH := x86
 else
