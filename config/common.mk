@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     Updater
 
+# Lineage FCM
+PRODUCT_PACKAGES += \
+    framework_compatibility_matrix.lineage.xml
+
 # Themes
 PRODUCT_PACKAGES += \
     LineageThemesStub \
