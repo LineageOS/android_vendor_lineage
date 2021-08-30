@@ -1,0 +1,7 @@
+vintf_compatibility_matrix {
+    name: "framework_compatibility_matrix.lineage.xml",
+    stem: "compatibility_matrix.lineage.xml",
+    srcs: [
+        "compatibility_matrix.lineage.xml",
+    ],
+}
