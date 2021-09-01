@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
 
 # Lineage FCM
 PRODUCT_PACKAGES += \
-    framework_compatibility_matrix.lineage.xml
+    framework_compatibility_matrix.lineage.5.xml
 
 # Themes
 PRODUCT_PACKAGES += \

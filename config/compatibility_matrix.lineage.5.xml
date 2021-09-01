@@ -2,7 +2,7 @@
      Copyright (C) 2021 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<compatibility-matrix version="2.0" type="framework">
+<compatibility-matrix version="2.0" type="framework" level="5">
     <!-- Camera -->
     <hal format="hidl" optional="true">
         <name>vendor.lineage.camera.motor</name>
