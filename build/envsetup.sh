@@ -806,7 +806,7 @@ function dopush()
     adb remount &> /dev/null
 
     mkdir -p $OUT
-    ($func $*|tee $OUT/.log;return ${PIPESTATUS[0]})
+    (NINJA_STATUS= $func $*|tee $OUT/.log;return ${PIPESTATUS[0]})
     ret=$?;
     if [ $ret -ne 0 ]; then
         rm -f $OUT/.log;return $ret
