@@ -24,7 +24,6 @@ import (
 	"github.com/google/blueprint/proptools"
 
 	"android/soong/android"
-	"android/soong/shared"
 	"path/filepath"
 )
 
@@ -150,8 +149,6 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	if len(g.properties.Tools) > 0 {
 		ctx.VisitDirectDepsBlueprint(func(module blueprint.Module) {
 			switch ctx.OtherModuleDependencyTag(module) {
-			case android.SourceDepTag:
-				// Nothing to do
 			case hostToolDepTag:
 				tool := ctx.OtherModuleName(module)
 				var path android.OptionalPath
@@ -230,9 +227,25 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		}
 	}
 
-	cmd := lineageExpandVariables(ctx, String(g.properties.Cmd))
+	exCmd := lineageExpandVariables(ctx, String(g.properties.Cmd))
 
-	rawCommand, err := android.Expand(cmd, func(name string) (string, error) {
+	// Dummy output dep
+	dummyDep := android.PathForModuleGen(ctx, ".dummy_dep")
+
+	genDir := android.PathForModuleGen(ctx)
+
+	// Pick a unique rule name and the user-visible description.
+	manifestName := "aex.sbox.textproto"
+	desc := "generate"
+        name := "generator"
+	manifestPath := android.PathForModuleOut(ctx, manifestName)
+
+	// Use a RuleBuilder to create a rule that runs the command inside an sbox sandbox.
+	rule := android.NewRuleBuilder(pctx, ctx).Sbox(genDir, manifestPath).SandboxTools()
+	rule.Command().Text("touch").Output(dummyDep)
+        cmd := rule.Command()
+
+	rawCommand, err := android.Expand(exCmd, func(name string) (string, error) {
 		switch name {
 		case "location":
 			if len(g.properties.Tools) == 0 && len(toolFiles) == 0 {
@@ -245,7 +258,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 				return tools[toolFiles[0].Rel()].String(), nil
 			}
 		case "genDir":
-			return "__SBOX_OUT_DIR__", nil
+			return android.PathForModuleGen(ctx).String(), nil
 		default:
 			if strings.HasPrefix(name, "location ") {
 				label := strings.TrimSpace(strings.TrimPrefix(name, "location "))
@@ -264,36 +277,14 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		return
 	}
 
-	// Dummy output dep
-	dummyDep := android.PathForModuleGen(ctx, ".dummy_dep")
-
-	// tell the sbox command which directory to use as its sandbox root
-	buildDir := android.PathForOutput(ctx).String()
-	sandboxPath := shared.TempDirForOutDir(buildDir)
-
-	genDir := android.PathForModuleGen(ctx)
-	// Escape the command for the shell
-	rawCommand = "'" + strings.Replace(rawCommand, "'", `'\''`, -1) + "'"
-	sandboxCommand := fmt.Sprintf("$sboxCmd --sandbox-path %s --output-root %s --copy-all-output -c %s && touch %s",
-		sandboxPath, genDir, rawCommand, dummyDep.String())
-
-	ruleParams := blueprint.RuleParams{
-		Command:     sandboxCommand,
-		CommandDeps: []string{"$sboxCmd"},
-	}
-	g.rule = ctx.Rule(pctx, "generator", ruleParams)
-
-	params := android.BuildParams{
-		Rule:        g.rule,
-		Description: "generate",
-		Output:      dummyDep,
-		Inputs:      g.inputDeps,
-		Implicits:   g.implicitDeps,
-	}
+	cmd.Text(rawCommand)
+	cmd.ImplicitOutput(dummyDep)
+	cmd.Implicits(g.inputDeps)
+	cmd.Implicits(g.implicitDeps)
 
 	g.outputDeps = append(g.outputDeps, dummyDep)
 
-	ctx.Build(pctx, params)
+	rule.Build(name, desc)
 }
 
 func NewGenerator() *Module {
