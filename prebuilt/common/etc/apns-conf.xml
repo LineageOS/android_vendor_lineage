@@ -1115,8 +1115,8 @@
   <apn carrier="MMS Nova" mcc="274" mnc="11" apn="mms.nova.is" proxy="" port="" user="" password="" mmsc="http://mmsc.nova.is" mmsproxy="10.10.2.60" mmsport="8080" type="mms" />
   <apn carrier="Net Nova" mcc="274" mnc="11" apn="net.nova.is" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Tal" mcc="274" mnc="12" apn="internet.tal.is" mmsc="http://mms.tal.is/servlets/mms" mmsproxy="213.167.138.210" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="AMC" mcc="276" mnc="01" apn="internet.amc" type="default,supl" />
-  <apn carrier="AMC MMS" mcc="276" mnc="01" apn="mms" mmsc="http://195.167.65.220:8002" mmsproxy="10.10.10.20" mmsport="8080" type="mms" />
+  <apn carrier="One Internet" mcc="276" mnc="01" apn="internet.one" type="default" protocol="IPV4" roaming_protocol="IPV4" />
+  <apn carrier="ONE-MMS" mcc="276" mnc="01" apn="mms" mmsc="http://195.167.65.220:8002" mmsproxy="10.10.10.20" mmsport="8080" type="mms" />
   <apn carrier="Vodafone AL" mcc="276" mnc="02" apn="vodafoneweb" type="default,supl" />
   <apn carrier="Vodafone AL" mcc="276" mnc="02" apn="Twa" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Vodafone AL MMS" mcc="276" mnc="02" apn="vfalmms" proxy="" port="" user="" password="" mmsc="http://mmsc.vodafone.al" mmsproxy="10.0.9.2" mmsport="8080" type="mms" />
