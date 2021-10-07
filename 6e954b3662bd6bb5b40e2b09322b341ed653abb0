@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "319502fb_21e310b7",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 25640
+      },
+      "writtenOn": "2021-10-07T08:49:41Z",
+      "side": 1,
+      "message": "This should be lineage ig",
+      "revId": "6e954b3662bd6bb5b40e2b09322b341ed653abb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
