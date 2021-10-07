@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "d6f7a819_ab49c237",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-10-07T10:46:49Z",
+      "side": 1,
+      "message": "lineage_generator",
+      "range": {
+        "startLine": 7,
+        "startChar": 7,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "1bbffe0a1041b7de36cbf9f43d03b05f5f6db07b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5b81f071_58bc1dcc",
         "filename": "build/soong/generator/generator.go",
         "patchSetId": 4
