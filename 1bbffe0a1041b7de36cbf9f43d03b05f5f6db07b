@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "273eb83f_999632a9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-10-07T10:48:48Z",
+      "side": 1,
+      "message": "is it branded? We should make it generic..",
+      "parentUuid": "d6f7a819_ab49c237",
+      "range": {
+        "startLine": 7,
+        "startChar": 7,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "1bbffe0a1041b7de36cbf9f43d03b05f5f6db07b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5b81f071_58bc1dcc",
         "filename": "build/soong/generator/generator.go",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2021-10-07T10:37:33Z",
       "side": 1,
       "message": "PathForOutput as Luca said or it\u0027s not applicable here?",
+      "range": {
+        "startLine": 270,
+        "startChar": 19,
+        "endLine": 270,
+        "endChar": 35
+      },
+      "revId": "1bbffe0a1041b7de36cbf9f43d03b05f5f6db07b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0704402e_526edd83",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 4
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-10-07T10:48:48Z",
+      "side": 1,
+      "message": "I haven\u0027t checked, I found an example, but there might be different semantic meaning between the 2 variants.\nTry to understand which one if proper",
+      "parentUuid": "5b81f071_58bc1dcc",
       "range": {
         "startLine": 270,
         "startChar": 19,
