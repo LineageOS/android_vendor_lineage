@@ -49,6 +49,29 @@
     },
     {
       "key": {
+        "uuid": "2ce23cb2_6f9000ab",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-10-07T10:49:27Z",
+      "side": 1,
+      "message": "It is branded",
+      "range": {
+        "startLine": 31,
+        "startChar": 29,
+        "endLine": 31,
+        "endChar": 46
+      },
+      "revId": "1bbffe0a1041b7de36cbf9f43d03b05f5f6db07b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5b81f071_58bc1dcc",
         "filename": "build/soong/generator/generator.go",
         "patchSetId": 4
