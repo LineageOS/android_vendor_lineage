@@ -16,6 +16,29 @@
       "revId": "6e954b3662bd6bb5b40e2b09322b341ed653abb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0e9428e8_ef9b6542",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-10-07T09:43:21Z",
+      "side": 1,
+      "message": "We can probably just use PathForOutput(ctx, \"generator\")\nSomething like that",
+      "range": {
+        "startLine": 244,
+        "startChar": 56,
+        "endLine": 244,
+        "endChar": 68
+      },
+      "revId": "6e954b3662bd6bb5b40e2b09322b341ed653abb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
