@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5b81f071_58bc1dcc",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 4
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-10-07T10:37:33Z",
+      "side": 1,
+      "message": "PathForOutput as Luca said or it\u0027s not applicable here?",
+      "range": {
+        "startLine": 270,
+        "startChar": 19,
+        "endLine": 270,
+        "endChar": 35
+      },
+      "revId": "1bbffe0a1041b7de36cbf9f43d03b05f5f6db07b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
