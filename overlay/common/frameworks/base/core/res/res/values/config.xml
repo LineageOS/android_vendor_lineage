@@ -128,6 +128,11 @@
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
 
+    <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
+         handle wallpaper cropping.
+    -->
+    <string name="config_wallpaperCropperPackage" translatable="false">com.android.wallpaper</string>
+
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing
             1 - Global actions menu
