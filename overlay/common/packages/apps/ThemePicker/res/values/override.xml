@@ -18,21 +18,4 @@
 <resources>
     <string name="themes_stub_package" translatable="false">org.lineageos.customization</string>
     <string name="clocks_stub_package" translatable="false">org.lineageos.customization</string>
-
-    <!-- List of packages whose icons are used to preview the icon shape for a theme. These are
-        typically GMS apps so they should be available in GMS devices. -->
-    <array name="icon_shape_preview_packages">
-        <item>com.google.android.gm</item>
-        <item>com.google.android.googlequicksearchbox</item>
-        <item>com.google.android.apps.photos</item>
-        <item>com.google.android.apps.docs</item>
-        <item>com.google.android.youtube</item>
-        <item>com.android.vending</item>
-        <item>com.android.settings</item>
-        <item>com.android.deskclock</item>
-        <item>com.android.messaging</item>
-        <item>com.android.contacts</item>
-        <item>com.android.dialer</item>
-        <item>com.android.email</item>
-    </array>
 </resources>
