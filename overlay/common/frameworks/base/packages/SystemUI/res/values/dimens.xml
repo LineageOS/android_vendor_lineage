@@ -17,4 +17,7 @@
 -->
 <resources>
     <dimen name="rounded_corner_content_padding">8dp</dimen>
+
+    <!-- Remove power menu shadow -->
+    <dimen name="global_actions_translate">0dp</dimen>
 </resources>
