@@ -22,5 +22,27 @@
 
         <!-- Use new privacy indicators for location -->
         <item>privacy/location_indicators_enabled=true</item>
+
+        <!--
+            Keep track of more app ops for privacy dashboard display.
+
+            From AppOpsManager.RUNTIME_AND_APPOP_PERMISSIONS_OPS:
+            Location: COARSE_LOCATION, FINE_LOCATION
+            Camera: CAMERA
+            Microphone: RECORD_AUDIO
+            Calendar: READ_CALENDAR, WRITE_CALENDAR
+            Call logs: READ_CALL_LOG, WRITE_CALL_LOG
+            Contacts: READ_CONTACTS, WRITE_CONTACTS, GET_ACCOUNTS
+            Files and media: READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, ACCESS_MEDIA_LOCATION
+            Nearby devices: BLUETOOTH_SCAN, BLUETOOTH_CONNECT, BLUETOOTH_ADVERTISE, UWB_RANGING
+            Phone: READ_PHONE_STATE, READ_PHONE_NUMBERS, CALL_PHONE, READ_CALL_LOG, WRITE_CALL_LOG, ADD_VOICEMAIL, USE_SIP, PROCESS_OUTGOING_CALLS, ANSWER_PHONE_CALLS, ACCEPT_HANDOVER
+            Body sensors: ACTIVITY_RECOGNITION
+            SMS: SEND_SMS, RECEIVE_SMS, READ_SMS, RECEIVE_WAP_PUSH, RECEIVE_MMS, READ_CELL_BROADCASTS
+
+            From PrivacyItemController:
+            Camera: PHONE_CALL_CAMERA
+            Microphone: PHONE_CALL_MICROPHONE
+        -->
+        <item>privacy/discrete_history_ops_cslist=0,109,1,108,26,101,27,102,106,100,8,9,6,7,4,5,62,59,60,90,77,111,114,112,51,65,13,6,7,52,53,54,69,74,79,113,20,16,14,19,18,57</item>
     </string-array>
 </resources>
