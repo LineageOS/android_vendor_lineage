@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "afeefc14_7962a9b6",
+        "filename": "build/target/product/AndroidProducts.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2021-10-11T22:24:17Z",
+      "side": 1,
+      "message": "Nit: no newline here",
+      "revId": "c4ba6956e8fb18361af0ec7a481521120cb75401",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
