@@ -134,13 +134,6 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
-# Filesystems tools
-PRODUCT_PACKAGES += \
-    fsck.ntfs \
-    mke2fs \
-    mkfs.ntfs \
-    mount.ntfs
-
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
