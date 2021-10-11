@@ -1,1 +1,0 @@
-RECOVERY_VARIANT := twrp
