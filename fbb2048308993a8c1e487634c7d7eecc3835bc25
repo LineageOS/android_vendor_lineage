@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ef8ce00_b4241f8f",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 23597
+      },
+      "writtenOn": "2021-10-12T09:37:38Z",
+      "side": 1,
+      "message": "Maybe the first \"udfps\" should be capitalized?",
+      "revId": "fbb2048308993a8c1e487634c7d7eecc3835bc25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
