@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5e357030_e8756a1f",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 10
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-10-13T13:04:06Z",
+      "side": 1,
+      "message": "Unused I think",
+      "revId": "77621928f3c948e665b5b398c9584c2faca2e0ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
