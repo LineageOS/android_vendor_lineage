@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "627282a5_1ee46408",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 11
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-10-13T13:36:53Z",
+      "side": 1,
+      "message": "I don\u0027t think this is correct, removing it does nothing and using Inputs as previously causes this:\nfork/exec /home/arian/android/lineage-19.0/out/.path/bash: argument list too long\n\nIn which case would the inputDeps be required?",
+      "range": {
+        "startLine": 278,
+        "startChar": 2,
+        "endLine": 278,
+        "endChar": 25
+      },
+      "revId": "a1baa94e8554fbf47046ff6f6fe69026588f2abe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}

@@ -16,6 +16,24 @@
       "revId": "77621928f3c948e665b5b398c9584c2faca2e0ac",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "067a76b2_ba91c329",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 10
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-10-13T13:36:53Z",
+      "side": 1,
+      "message": "Right, this can be removed.",
+      "parentUuid": "5e357030_e8756a1f",
+      "revId": "77621928f3c948e665b5b398c9584c2faca2e0ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
