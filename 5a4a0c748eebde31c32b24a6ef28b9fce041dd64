@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d6783cd7_5cd79522",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 12
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-10-15T13:14:29Z",
+      "side": 1,
+      "message": "AOSP is also using PathForModuleOut in genrule. Maybe we want to change the manifest name to something else?\nhttps://android.googlesource.com/platform/build/soong/+/refs/tags/android-12.0.0_r1/genrule/genrule.go#404",
+      "range": {
+        "startLine": 268,
+        "startChar": 17,
+        "endLine": 268,
+        "endChar": 41
+      },
+      "revId": "5a4a0c748eebde31c32b24a6ef28b9fce041dd64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}

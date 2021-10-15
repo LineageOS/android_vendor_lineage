@@ -22,6 +22,30 @@
       "revId": "a1baa94e8554fbf47046ff6f6fe69026588f2abe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "115bb661_65ae47f1",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 11
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-10-15T13:14:29Z",
+      "side": 1,
+      "message": "AOSP did the same in genrule here, so it should be fine. https://android.googlesource.com/platform/build/soong/+/3d680512183432ba7234f3cce03be6185e439e08%5E%21/genrule/genrule.go",
+      "parentUuid": "627282a5_1ee46408",
+      "range": {
+        "startLine": 278,
+        "startChar": 2,
+        "endLine": 278,
+        "endChar": 25
+      },
+      "revId": "a1baa94e8554fbf47046ff6f6fe69026588f2abe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
