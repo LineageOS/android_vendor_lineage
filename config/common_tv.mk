@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    LineageCustomizer
+    LineageCustomizer \
+    Seedvault
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
