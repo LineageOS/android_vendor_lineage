@@ -17,6 +17,9 @@ $(call inherit-product, build/target/product/gsi_release.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_target.mk
 
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
 PRODUCT_NAME := lineage_x86_64
 
 PRODUCT_SDK_ADDON_NAME := lineage
