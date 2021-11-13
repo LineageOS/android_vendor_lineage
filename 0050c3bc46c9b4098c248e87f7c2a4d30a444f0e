@@ -16,6 +16,24 @@
       "message": "This works, just outright removing references to the hosts includes and libs. But I don\u0027t know why those were added in the first place. Verified building foster, arm64 atv.",
       "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d6d519e_3aadfd84",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17401
+      },
+      "writtenOn": "2021-11-13T22:36:20Z",
+      "side": 1,
+      "message": "\u003e This works, just outright removing references to the hosts includes and libs. But I don\u0027t know why those were added in the first place. Verified building foster, arm64 atv.\n\napparently those were added because of some openssl weirdness, see https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/259778",
+      "parentUuid": "abfe08b0_41549d0e",
+      "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
