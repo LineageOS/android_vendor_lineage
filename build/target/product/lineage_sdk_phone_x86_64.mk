@@ -16,6 +16,9 @@ $(call inherit-product, build/target/product/sdk_phone_x86_64.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_target.mk
 
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
 # Overrides
 PRODUCT_NAME := lineage_sdk_phone_x86_64
 PRODUCT_MODEL := LineageOS Android SDK built for x86_64
