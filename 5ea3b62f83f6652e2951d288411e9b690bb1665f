@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21da8429_c5d24406",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2021-11-13T18:57:15Z",
+      "side": 1,
+      "message": "Cherry-picked from the universal5420 gerrit:\nhttps://review.exynos5420.com/c/exynos5420/android_device_samsung_universal5420-common/+/8395\n\nNo idea why this works, but it fixes the compile errors on Fedora 35.",
+      "revId": "5ea3b62f83f6652e2951d288411e9b690bb1665f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
