@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "272406a7_dff5f40e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2021-11-13T13:46:36Z",
+      "side": 1,
+      "message": "\ncan merge it is safe was tested at voltage os\n\n\nhttps://github.com/VoltageOS/vendor_voltage/blob/12/prebuilt/common/etc/apns-conf.xml",
+      "revId": "fbed3e48f729eb23818f6cfe419b92e6a59068a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
