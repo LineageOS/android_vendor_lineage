@@ -125,7 +125,6 @@ PRODUCT_PACKAGES += \
     getcap \
     htop \
     lib7z \
-    libsepol \
     nano \
     pigz \
     setcap \
