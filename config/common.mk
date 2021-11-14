@@ -49,9 +49,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-sysconfig.xml
 
-# Copy all Lineage-specific init rc files
-$(foreach f,$(wildcard vendor/lineage/prebuilt/common/etc/init/*.rc),\
-	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
+# Lineage-specific init rc file
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/init/init.lineage-system.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.lineage-system.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
@@ -108,6 +108,9 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard \
     Updater
 
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
+
 # Themes
 PRODUCT_PACKAGES += \
     LineageThemesStub \
@@ -142,6 +145,9 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
+
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
 # rsync
 PRODUCT_PACKAGES += \
