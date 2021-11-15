@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca06febb_e5916f39",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-11-15T18:18:27Z",
+      "side": 1,
+      "message": "Please verify that the wifi page is fine now. It looked fine for me but I couldn\u0027t reproduce the wallpaper issue every time.",
+      "revId": "49b8b44fd0d97199564c87addf4eb6388a130b15",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
