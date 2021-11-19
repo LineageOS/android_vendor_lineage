@@ -34,6 +34,23 @@
       "parentUuid": "abfe08b0_41549d0e",
       "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e2b82a9_a70afd03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28133
+      },
+      "writtenOn": "2021-11-19T16:03:11Z",
+      "side": 1,
+      "message": "Build fine without error on Fedora 35 with glibc 2.34",
+      "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
