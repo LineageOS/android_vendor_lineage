@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "87cbebe5_0358eb9a",
         "filename": "overlay/common/packages/apps/Dialer/java/com/android/voicemail/impl/res/xml/vvm_config.xml",
@@ -20,8 +21,31 @@
         "endChar": 72
       },
       "revId": "e69026d3e8d50a57b065e9bf19bdbad6d8014d4e",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b367ddff_ee82b7c0",
+        "filename": "overlay/common/packages/apps/Dialer/java/com/android/voicemail/impl/res/xml/vvm_config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2021-11-22T07:09:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "87cbebe5_0358eb9a",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 72
+      },
+      "revId": "e69026d3e8d50a57b065e9bf19bdbad6d8014d4e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
