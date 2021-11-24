@@ -1,0 +1,4 @@
+readonly lineageos_branch=lineage-19.0
+
+readonly prev_aosp_tag=android-12.0.0_r18
+readonly aosp_tag=android-12.0.0_r26
