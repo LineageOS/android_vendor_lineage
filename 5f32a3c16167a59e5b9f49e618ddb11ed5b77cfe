@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0adb07f9_f5fd7d3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2021-11-30T11:20:40Z",
+      "side": 1,
+      "message": "its there in gapps. in google.xml",
+      "revId": "5f32a3c16167a59e5b9f49e618ddb11ed5b77cfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
