@@ -743,14 +743,12 @@
   <apn carrier="Siminn MMS" mcc="238" mnc="30" apn="mmssp" proxy="" port="" user="" password="" mmsc="http://mms.telia.dk" mmsproxy="193.209.134.131" mmsport="8080" type="mms" />
   <apn carrier="Telenor Internet" mcc="238" mnc="77" apn="Internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="238" mnc="77" apn="telenor" proxy="" port="" user="" password="" mmsc="http://mms.telenor.dk" mmsproxy="212.88.64.8" mmsport="8080" type="mms" />
-  <apn carrier="Telia Internet" mcc="240" mnc="01" apn="online.telia.se" proxy="10.254.254.254" port="8080" mmsc="" user="" password="" type="default,supl" spn="Telia" />
-  <apn carrier="Telia MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" mmsproxy="193.209.134.132" mmsport="80" mmsc="http://mmss" user="" password="" type="mms" spn="Telia" />
   <apn carrier="Halebop Internet" mcc="240" mnc="01" apn="halebop.telia.se" proxy="10.254.254.254" port="8080" mmsc="" user="" password="" type="default,supl" spn="Halebop" />
   <apn carrier="Halebop MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" mmsproxy="193.209.134.132" mmsport="80" mmsc="http://mmss" user="" password="" type="mms" spn="Halebop" />
   <apn carrier="Halebop Internet" mcc="240" mnc="01" apn="halebop.telia.se" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="halebop" type="default,supl" />
   <apn carrier="Halebop MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" user="" password="" mmsc="http://mmss/" mmsproxy="193.209.134.132" mmsport="80" mvno_type="spn" mvno_match_data="halebop" type="mms" />
-  <apn carrier="Telia MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" user="" password="" mmsc="http://mmss/" mmsproxy="193.209.134.132" mmsport="80" type="mms" />
   <apn carrier="Telia Internet" mcc="240" mnc="01" apn="online.telia.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Telia MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" user="" password="" mmsc="http://mmss/" mmsproxy="193.209.134.132" mmsport="80" type="mms" />
   <apn carrier="TDC Internet" mcc="240" mnc="01" apn="internet.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="TDC WAP" mcc="240" mnc="01" apn="internet.se" proxy="194.182.251.15" port="8080" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="TDC MMS" mcc="240" mnc="01" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms.tdc.se:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
