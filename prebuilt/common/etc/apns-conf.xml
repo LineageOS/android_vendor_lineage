@@ -2,6 +2,7 @@
 <!--
 /*
 ** Copyright 2006, Google Inc.
+** Copyright 2016-2021 The LineageOS project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -19,6 +20,7 @@
 
 <!-- use empty string to specify no proxy or port -->
 <!-- This version must agree with that in apps/common/res/apns.xml -->
+<!-- Possible values for auth_type: 0 (None), 1 (PAP), 2 (CHAP), 3 (PAP or CHAP) -->
 <apns version="8">
   <apn carrier="Test Internet" mcc="001" mnc="01" apn="VZWINTERNET" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Test FOTA" mcc="001" mnc="01" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
