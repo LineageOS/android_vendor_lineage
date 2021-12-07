@@ -69,18 +69,18 @@
   <apn carrier="Truphone" mcc="204" mnc="04" apn="truphone.com" type="default,dun" mvno_match_data="20404794" mvno_type="imsi" />
   <apn carrier="KPN 4G LTE" mcc="204" mnc="08" apn="KPN4G.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="KPN GPRS" mcc="204" mnc="08" apn="internet" user="kpn" password="gprs" type="default,supl" />
-  <apn carrier="KPN Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="*" spn="KPN" />
-  <apn carrier="Hi Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="*" spn="HI" />
+  <apn carrier="KPN Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="*" />
+  <apn carrier="Hi Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="*" />
   <apn carrier="Simyo Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" authtype="1" type="default,supl,mms" />
   <apn carrier="Ortel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" authtype="1" type="default,supl,mms" />
   <apn carrier="Youfone Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" type="default" />
   <apn carrier="Lebara Internet" mcc="204" mnc="08" apn="multimedia.lebara.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" authtype="1" type="default,supl,mms" />
-  <apn carrier="AH Mobiel Internet" mcc="204" mnc="08" apn="multimedia.ah.nl" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="*" spn="AH Mobiel" />
+  <apn carrier="AH Mobiel Internet" mcc="204" mnc="08" apn="multimedia.ah.nl" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="*" />
   <apn carrier="MVNO NL" mcc="204" mnc="08" apn="internet.mvno.mobi" user="mvno" password="mvno" authtype="1" type="default,supl" mvno_match_data="204080950" mvno_type="imsi" />
   <apn carrier="Telfort Internet" mcc="204" mnc="08" apn="internet" mmsc="http://mms" mmsproxy="" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Lycamobile NL" mcc="204" mnc="09" apn="data.lycamobile.nl" user="lmnl" password="plus" type="default,supl" />
-  <apn carrier="Telfort Internet" mcc="204" mnc="12" apn="internet" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" spn="Telfort" authtype="1" type="default,supl,mms" />
-  <apn carrier="AH Mobiel Internet" mcc="204" mnc="12" apn="multimedia.ah.nl" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" spn="AH Mobiel" />
+  <apn carrier="Telfort Internet" mcc="204" mnc="12" apn="internet" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" authtype="1" type="default,supl,mms" />
+  <apn carrier="AH Mobiel Internet" mcc="204" mnc="12" apn="multimedia.ah.nl" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" />
   <apn carrier="T-Mobile Internet" mcc="204" mnc="16" apn="internet" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="T-Mobile NL" mcc="204" mnc="16" apn="smartsites.t-mobile" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="T-Mobile MMS" mcc="204" mnc="16" apn="mms" proxy="" port="" user="tmobilemms" password="tmobilemms" mmsc="http://t-mobilemms" mmsproxy="010.010.010.011" mmsport="8080" authtype="1" type="mms" />
@@ -123,15 +123,15 @@
   <apn carrier="Orange FR-MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" server="*" mmsc="http://mms.orange.fr" mmsproxy="192.168.10.200" mmsport="8080" type="mms" />
   <apn carrier="Orange MMS" mcc="208" mnc="01" apn="Orange.acte" proxy="" port="" user="Orange" password="orange" mmsc="http://mms.orange.fr" mmsproxy="192.168.10.200" mmsport="8080" type="mms" />
   <apn carrier="Orange Internet" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" mmsc="" type="tethering" />
-  <apn carrier="Carrefour WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" spn="Carrefour" type="default,supl" />
-  <apn carrier="Carrefour MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="Carrefour" type="mms" />
-  <apn carrier="NRJ WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" spn="NRJ (ORANGE)" type="default,supl" />
-  <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="NRJ (ORANGE)" type="mms" />
-  <apn carrier="Tele2 WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" spn="Tele 2" type="default,supl" />
-  <apn carrier="Tele2 MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="Tele 2" type="mms" />
-  <apn carrier="Virgin Mobile" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" spn="Virgin" type="default,supl" />
+  <apn carrier="Carrefour WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" type="default,supl" />
+  <apn carrier="Carrefour MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" type="mms" />
+  <apn carrier="NRJ WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" mmsc="" user="orange" password="orange" type="default,supl" />
+  <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" type="mms" />
+  <apn carrier="Tele2 WAP" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" type="default,supl" />
+  <apn carrier="Tele2 MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" type="mms" />
+  <apn carrier="Virgin Mobile" mcc="208" mnc="01" apn="ofnew.fr" proxy="192.168.10.100" port="8080" user="orange" password="orange" type="default,supl" />
   <apn carrier="Virgin" mcc="208" mnc="01" apn="ofnew.fr" proxy="" port="" user="orange" password="orange" mmsc="" mvno_type="spn" mvno_match_data="Virgin" authtype="1" type="default,supl" />
-  <apn carrier="Virgin Mobile MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" spn="Virgin" type="mms" />
+  <apn carrier="Virgin Mobile MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" mmsproxy="192.168.10.200" mmsport="8080" mmsc="http://mms.orange.fr" user="orange" password="orange" type="mms" />
   <apn carrier="Internet Entreprise" mcc="208" mnc="01" apn="internet-entreprise" proxy="" port="" user="orange" password="orange" mmsc="" type="tethering" />
   <apn carrier="NRJ WEB" mcc="208" mnc="01" apn="ofnew.fr" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="NRJ Mobile" authtype="1" type="default,supl" />
   <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.fr/" mmsproxy="192.168.10.200" mmsport="8080" mvno_type="spn" mvno_match_data="NRJ Mobile" authtype="1" type="mms" />
@@ -148,7 +148,7 @@
   <apn carrier="Syma" mcc="208" mnc="01" apn="symamobile.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Syma" type="default,supl" />
   <apn carrier="Lebara internet" mcc="208" mnc="01" apn="fr.lebara.mobi" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="NRJ WEB" mcc="208" mnc="01" apn="ofnew.fr" proxy="" port="" user="orange" password="orange" mmsc="" mvno_type="spn" mvno_match_data="NRJ Mobile" authtype="1" type="default,supl" />
-  <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.fr/" mmsproxy="192.168.10.200" mmsport="8080" mvno_type="spn" mvno_match_data="NRJ Mobile" spn="NRJ Mobile" authtype="1" type="mms" />
+  <apn carrier="NRJ MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.fr/" mmsproxy="192.168.10.200" mmsport="8080" mvno_type="spn" mvno_match_data="NRJ Mobile" authtype="1" type="mms" />
   <apn carrier="C le MMS" mcc="208" mnc="01" apn="orange.acte" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.fr" mmsproxy="192.168.10.200" mmsport="8080" mvno_type="spn" mvno_match_data="NRJ Mobile" authtype="1" type="mms" />
   <apn carrier="Orange GPRS ISP" mcc="208" mnc="02" apn="orange.fr" type="default,supl" />
   <apn carrier="MMS Orange GPRS" mcc="208" mnc="02" apn="orange.acte" proxy="" port="" user="orange" password="orange" mmsc="http://mms.orange.fr/" mmsproxy="192.168.10.200" mmsport="8080" type="mms" />
@@ -160,20 +160,20 @@
   <apn carrier="SFR" mcc="208" mnc="09" apn="sl2sfr" server="*" type="default,supl" />
   <apn carrier="SFR WAP" mcc="208" mnc="09" apn="wapsfr" user="none" password="none" server="*" proxy="195.115.25.129" port="8080" type="default,supl" />
   <apn carrier="SFR ACCESS DATA" mcc="208" mnc="09" apn="websfr" type="default,supl" />
-  <apn carrier="Auchan WAP" mcc="208" mnc="10" apn="wap65" proxy="192.168.21.8" port="8080" spn="Auchan" type="default,supl" />
-  <apn carrier="Auchan MMS" mcc="208" mnc="10" apn="mms65" proxy="" port="" mmsproxy="10.143.156.8" mmsport="8080" mmsc="http://mms65" spn="Auchan" type="mms" />
-  <apn carrier="WAP simplicime" mcc="208" mnc="10" apn="wapdebitel" proxy="192.168.21.3" port="8080" spn="Debitel" type="default,supl" />
-  <apn carrier="MMS simplicime" mcc="208" mnc="10" apn="mmsdebitel" proxy="" port="" mmsproxy="10.143.156.3" mmsport="8080" mmsc="http://mmsdebitel" spn="Debitel" type="mms" />
-  <apn carrier="WEB simplicime" mcc="208" mnc="10" apn="internetdebitel" spn="Debitel" type="default,supl" />
-  <apn carrier="WAP LeclercMobile" mcc="208" mnc="10" apn="wap66" proxy="192.168.21.9" port="8080" spn="Leclerc" type="default,supl" />
-  <apn carrier="MMS LeclercMobile" mcc="208" mnc="10" apn="mms66" proxy="" port="" mmsproxy="10.143.156.9" mmsport="8080" mmsc="http://mms65" spn="Leclerc" type="mms" />
-  <apn carrier="NRJ WAP" mcc="208" mnc="10" apn="wapnrj" proxy="192.168.21.5" port="8080" spn="NRJ (SFR)" type="default,supl" />
-  <apn carrier="NRJ MMS" mcc="208" mnc="10" apn="mmsnrj" proxy="" port="" mmsproxy="10.143.156.5" mmsport="8080" mmsc="http://mmsnrj" user="" password="" spn="NRJ (SFR)" type="mms" />
-  <apn carrier="NRJ WEB" mcc="208" mnc="10" apn="fnetnrj" proxy="" port="" user="" password="" mmsc="" spn="NRJ (SFR)" type="default,supl" />
+  <apn carrier="Auchan WAP" mcc="208" mnc="10" apn="wap65" proxy="192.168.21.8" port="8080" type="default,supl" />
+  <apn carrier="Auchan MMS" mcc="208" mnc="10" apn="mms65" proxy="" port="" mmsproxy="10.143.156.8" mmsport="8080" mmsc="http://mms65" type="mms" />
+  <apn carrier="WAP simplicime" mcc="208" mnc="10" apn="wapdebitel" proxy="192.168.21.3" port="8080" type="default,supl" />
+  <apn carrier="MMS simplicime" mcc="208" mnc="10" apn="mmsdebitel" proxy="" port="" mmsproxy="10.143.156.3" mmsport="8080" mmsc="http://mmsdebitel" type="mms" />
+  <apn carrier="WEB simplicime" mcc="208" mnc="10" apn="internetdebitel" type="default,supl" />
+  <apn carrier="WAP LeclercMobile" mcc="208" mnc="10" apn="wap66" proxy="192.168.21.9" port="8080" type="default,supl" />
+  <apn carrier="MMS LeclercMobile" mcc="208" mnc="10" apn="mms66" proxy="" port="" mmsproxy="10.143.156.9" mmsport="8080" mmsc="http://mms65" type="mms" />
+  <apn carrier="NRJ WAP" mcc="208" mnc="10" apn="wapnrj" proxy="192.168.21.5" port="8080" type="default,supl" />
+  <apn carrier="NRJ MMS" mcc="208" mnc="10" apn="mmsnrj" proxy="" port="" mmsproxy="10.143.156.5" mmsport="8080" mmsc="http://mmsnrj" user="" password="" type="mms" />
+  <apn carrier="NRJ WEB" mcc="208" mnc="10" apn="fnetnrj" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="NRJ Mobile FR Internet" mcc="208" mnc="10" apn="internetnrj" proxy="" port="" user="" password="" mmsc="" type="dun" />
-  <apn carrier="SFR Internet Mobile" mcc="208" mnc="10" apn="sl2sfr" user="" password="" spn="F SFR" type="default,supl" />
-  <apn carrier="SFR MMS" mcc="208" mnc="10" apn="mmssfr" proxy="" port="" mmsproxy="10.151.0.1" mmsport="8080" mmsc="http://mms1" user="" password="" spn="F SFR" type="mms" />
-  <apn carrier="SFR WEB" mcc="208" mnc="10" apn="websfr" user="" password="" spn="F SFR" type="default,dun" />
+  <apn carrier="SFR Internet Mobile" mcc="208" mnc="10" apn="sl2sfr" user="" password="" type="default,supl" />
+  <apn carrier="SFR MMS" mcc="208" mnc="10" apn="mmssfr" proxy="" port="" mmsproxy="10.151.0.1" mmsport="8080" mmsc="http://mms1" user="" password="" type="mms" />
+  <apn carrier="SFR WEB" mcc="208" mnc="10" apn="websfr" user="" password="" type="default,dun" />
   <apn carrier="SFR WAP" mcc="208" mnc="10" apn="wapsfr" proxy="195.115.25.129" port="8080" user="none" password="none" server="*" mmsc="" type="default,supl" />
   <apn carrier="SFR MMS" mcc="208" mnc="10" apn="mmssfr" proxy="" port="" user="" password="" mmsc="http://mms1" mmsproxy="10.151.0.1" mmsport="8080" type="mms" />
   <apn carrier="SFR" mcc="208" mnc="10" apn="sl2sfr" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
@@ -240,7 +240,7 @@
   <apn carrier="Syma" mcc="208" mnc="30" apn="symacom.fr" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="BouyguesGPRS ISP" mcc="208" mnc="88" apn="ebouygtel.com" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="MMS Bouygues" mcc="208" mnc="88" apn="mmsbouygtel.com" proxy="" port="" user="" password="" mmsc="http://mms.bouyguestelecom.fr/mms/wapenc" mmsproxy="62.201.129.226" mmsport="8080" type="mms" />
-  <apn carrier="NRJ WEB" mcc="209" mnc="01" apn="ofnew.fr" user="orange" password="orange" spn="NRJ (ORANGE)" type="default,supl" />
+  <apn carrier="NRJ WEB" mcc="209" mnc="01" apn="ofnew.fr" user="orange" password="orange" type="default,supl" />
   <apn carrier="Vodafone ES" mcc="214" mnc="01" apn="airtelwap.es" proxy="" port="" mmsc="" user="wap@wap" password="wap125" authtype="0" type="default,supl" />
   <apn carrier="Vodafone ES MMS" mcc="214" mnc="01" apn="mms.vodafone.net" proxy="" port="" mmsproxy="212.73.32.10" mmsport="80" mmsc="http://mmsc.vodafone.es/servlets/mms" user="wap@wap" password="wap125" authtype="0" type="mms" />
   <apn carrier="Vodafone ES IMS" mcc="214" mnc="01" apn="ims" type="ims" protocol="IPV4V6" />
@@ -407,8 +407,8 @@
   <apn carrier="Vodafone IT IMS" mcc="222" mnc="10" apn="ims" type="ims" protocol="IPV4V6" />
   <apn carrier="Internet da cellulare" mcc="222" mnc="10" apn="wap.omnitel.it" proxy="10.128.201.76" port="80" type="default,supl" />
   <apn carrier="PosteMobile" mcc="222" mnc="10" apn="internet.postemobile.it" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="PosteMobile" type="default,supl" />
-  <apn carrier="PosteMobile WAP" mcc="222" mnc="10" apn="wap.postemobile.it" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="PosteMobile" spn="Post mobile" type="default,supl" />
-  <apn carrier="PosteMobile MMS" mcc="222" mnc="10" apn="mms.postemobile.it" proxy="" port="" user="" password="" mmsc="http://mms.postemobile.it/servlets/mms" mmsproxy="10.128.224.10" mmsport="80" mvno_type="spn" mvno_match_data="PosteMobile" spn="Post mobile" type="mms" />
+  <apn carrier="PosteMobile WAP" mcc="222" mnc="10" apn="wap.postemobile.it" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="PosteMobile" type="default,supl" />
+  <apn carrier="PosteMobile MMS" mcc="222" mnc="10" apn="mms.postemobile.it" proxy="" port="" user="" password="" mmsc="http://mms.postemobile.it/servlets/mms" mmsproxy="10.128.224.10" mmsport="80" mvno_type="spn" mvno_match_data="PosteMobile" type="mms" />
   <apn carrier="Lycamobile" mcc="222" mnc="10" apn="data.lycamobile.it" user="lmit" password="plus" type="default,supl" />
   <apn carrier="ho.mobile Internet" mcc="222" mnc="10" apn="web.ho-mobile.it" type="default,supl" protocol="IP" roaming_protocol="IP" mvno_type="gid" mvno_match_data="20" />
   <apn carrier="ho.mobile Tethering" mcc="222" mnc="10" apn="internet.ho-mobile.it" type="dun" protocol="IP" roaming_protocol="IP" mvno_type="gid" mvno_match_data="20" />
@@ -723,7 +723,7 @@
   <apn carrier="M1 MMS GPRS" mcc="238" mnc="10" apn="mms" proxy="" port="" user="" password="" mmsc="http://192.168.241.114:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
   <apn carrier="M1 WAP GPRS" mcc="238" mnc="10" apn="wap" proxy="194.182.251.15" port="8080" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Lycamobile DK" mcc="238" mnc="12" apn="data.lycamobile.dk" user="lmdk" password="plus" type="default,supl" />
-  <apn carrier="Call me Internet" mcc="238" mnc="20" apn="websp" user="" password="" spn="Callme" type="default,supl" />
+  <apn carrier="Call me Internet" mcc="238" mnc="20" apn="websp" user="" password="" type="default,supl" />
   <apn carrier="CallMe MMS" mcc="238" mnc="20" apn="mmssp" proxy="" port="" mmsproxy="193.209.134.131" mmsport="80" mmsc="http://mms.telia.dk" user="" password="" type="mms" />
   <apn carrier="Call me Internet" mcc="238" mnc="20" apn="websp" authtype="2" mvno_match_data="Call me" mvno_type="spn" type="default,supl" />
   <apn carrier="Call me MMS" mcc="238" mnc="20" apn="mmssp" mmsc="http://mms.telia.dk" mmsproxy="193.209.134.131" mmsport="8080" authtype="2" mvno_match_data="Call me" mvno_type="spn" type="mms" />
@@ -743,8 +743,8 @@
   <apn carrier="Siminn MMS" mcc="238" mnc="30" apn="mmssp" proxy="" port="" user="" password="" mmsc="http://mms.telia.dk" mmsproxy="193.209.134.131" mmsport="8080" type="mms" />
   <apn carrier="Telenor Internet" mcc="238" mnc="77" apn="Internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="238" mnc="77" apn="telenor" proxy="" port="" user="" password="" mmsc="http://mms.telenor.dk" mmsproxy="212.88.64.8" mmsport="8080" type="mms" />
-  <apn carrier="Halebop Internet" mcc="240" mnc="01" apn="halebop.telia.se" proxy="10.254.254.254" port="8080" mmsc="" user="" password="" type="default,supl" spn="Halebop" />
-  <apn carrier="Halebop MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" mmsproxy="193.209.134.132" mmsport="80" mmsc="http://mmss" user="" password="" type="mms" spn="Halebop" />
+  <apn carrier="Halebop Internet" mcc="240" mnc="01" apn="halebop.telia.se" proxy="10.254.254.254" port="8080" mmsc="" user="" password="" type="default,supl" />
+  <apn carrier="Halebop MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" mmsproxy="193.209.134.132" mmsport="80" mmsc="http://mmss" user="" password="" type="mms" />
   <apn carrier="Halebop Internet" mcc="240" mnc="01" apn="halebop.telia.se" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="halebop" type="default,supl" />
   <apn carrier="Halebop MMS" mcc="240" mnc="01" apn="mms.telia.se" proxy="" port="" user="" password="" mmsc="http://mmss/" mmsproxy="193.209.134.132" mmsport="80" mvno_type="spn" mvno_match_data="halebop" type="mms" />
   <apn carrier="Telia Internet" mcc="240" mnc="01" apn="online.telia.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
@@ -799,8 +799,8 @@
   <apn carrier="Tele2 MMS" mcc="240" mnc="07" apn="internet.tele2.no" proxy="" port="" user="" password="" mmsc="http://mmsc.tele2.no" mmsproxy="193.12.40.14" mmsport="8080" type="mms" />
   <apn carrier="Spring data" mcc="240" mnc="07" apn="data.springmobil.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Spring MMS" mcc="240" mnc="07" apn="mms.springmobil.se" proxy="" port="" user="" password="" mmsc="http://mms.springmobil.se" mmsproxy="213.88.184.37" mmsport="8080" type="mms" />
-  <apn carrier="Glocalnet Mobilsurf" mcc="240" mnc="08" apn="services.glocalnet.se" proxy="172.30.253.241" port="8799" mmsc="" user="" password="" authtype="3" type="default,supl" spn="Glocalnet" />
-  <apn carrier="Glocalnet MMS" mcc="240" mnc="08" apn="services.glocalnet.se" proxy="" port="" mmsproxy="172.30.253.241" mmsport="8799" mmsc="http://mms" user="" password="" authtype="3" type="mms" spn="Glocalnet" />
+  <apn carrier="Glocalnet Mobilsurf" mcc="240" mnc="08" apn="services.glocalnet.se" proxy="172.30.253.241" port="8799" mmsc="" user="" password="" authtype="3" type="default,supl" />
+  <apn carrier="Glocalnet MMS" mcc="240" mnc="08" apn="services.glocalnet.se" proxy="" port="" mmsproxy="172.30.253.241" mmsport="8799" mmsc="http://mms" user="" password="" authtype="3" type="mms" />
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="08" apn="services.telenor.se" proxy="172.30.253.241" port="8799" mmsc="" user="" password="" authtype="3" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="240" mnc="08" apn="services.telenor.se" proxy="" port="" mmsproxy="172.30.253.241" mmsport="8799" mmsc="http://mms" user="" password="" authtype="3" type="mms" />
   <apn carrier="Telenor SE" mcc="240" mnc="08" apn="internet.telenor.se" type="default,supl" />
