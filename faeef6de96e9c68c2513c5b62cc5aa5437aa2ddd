@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac34ee33_3b3e5037",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-12-09T18:03:46Z",
+      "side": 1,
+      "message": "Verified on unofficial xiaomi sm6150 and TP1803. Indentation follows the existing style of the namespaces for qti bt stack.",
+      "revId": "faeef6de96e9c68c2513c5b62cc5aa5437aa2ddd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6f5d49ac_ea960d1b",
@@ -31,6 +48,24 @@
       "writtenOn": "2021-12-06T15:50:19Z",
       "side": 1,
       "message": "Is this indentation intended?",
+      "revId": "faeef6de96e9c68c2513c5b62cc5aa5437aa2ddd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "809bcdbe_6f2b8c3b",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-12-09T18:03:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f5d49ac_ea960d1b",
       "revId": "faeef6de96e9c68c2513c5b62cc5aa5437aa2ddd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
