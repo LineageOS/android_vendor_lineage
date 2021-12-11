@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2863489c_364b8914",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2021-12-11T00:56:37Z",
+      "side": 1,
+      "message": "I would backport this to other branches but\n - clearly nobody was using it\n - this looks like it might break some poorly weirdly configured devices, so better leave shipping branches alone",
+      "revId": "c62763daeff3fae5dbd440453d9fe7b2a1c39b6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
