@@ -3213,6 +3213,7 @@
   <apn carrier="Celcom 3G MMS" mcc="502" mnc="19" apn="celcom3g" mmsc="http://mms.celcom.net.my" mmsproxy="10.128.1.242" mmsport="8080" type="mms" />
   <apn carrier="Celcom 2G Internet" mcc="502" mnc="19" apn="celcom.net.my" type="default,supl" />
   <apn carrier="Celcom 2G MMS" mcc="502" mnc="19" apn="mms.celcom.net.my" mmsc="http://mms.celcom.net.my" mmsproxy="10.128.1.242" mmsport="8080" type="mms" />
+  <apn carrier="Unifi" mcc="502" mnc="153" apn="unifi" type="default,supl" />
   <apn carrier="Telstra Internet" mcc="505" mnc="01" apn="telstra.wap" user="" password="" type="default,supl" />
   <apn carrier="Telstra Broadband" mcc="505" mnc="01" apn="telstra.internet" user="" password="" type="dun" />
   <apn carrier="Telstra MMS" mcc="505" mnc="01" apn="telstra.mms" proxy="" port="" mmsproxy="10.1.1.180" mmsport="80" mmsc="http://mmsc.telstra.com:8002" user="" password="" type="mms" />
