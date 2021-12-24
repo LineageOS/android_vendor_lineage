@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c399bb27_03f4d7bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2021-12-24T18:03:38Z",
+      "side": 1,
+      "message": "This eliminates defining namespace in device projects.\nPlease share your suggestions.",
+      "revId": "3bea7534ee2b9f82894d892aa57e73d00ad1294f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
