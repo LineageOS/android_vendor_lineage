@@ -156,4 +156,7 @@ ifeq ($(TARGET_USE_QTI_BT_STACK),true)
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
+else
+PRODUCT_SOONG_NAMESPACES += \
+	packages/apps/Bluetooth
 endif #TARGET_USE_QTI_BT_STACK
