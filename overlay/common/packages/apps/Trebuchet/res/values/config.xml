@@ -19,4 +19,7 @@
     <!-- Default packages -->
     <string name="wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
 
+    <!-- Enable All Apps header scrim (works fine with our fixed search UI) -->
+    <bool name="config_header_protection_supported">true</bool>
+
 </resources>
