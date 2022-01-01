@@ -16,6 +16,24 @@
       "message": "So, is this only applicable to R+ GMS?",
       "revId": "c47552ae6b1638c8db05813787d94299a9684553",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5fb8d81b_a8c068b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22648
+      },
+      "writtenOn": "2022-01-01T18:41:25Z",
+      "side": 1,
+      "message": "Yeah, I don\u0027t think this applies to Q and older, though it\u0027s always possible to check by dumpsys\u0027ing GMS on Q. On R, this OTA notification always appears on first boot upon completing setup, which is how I tested this patch.",
+      "parentUuid": "f8440f11_e7d928c4",
+      "revId": "c47552ae6b1638c8db05813787d94299a9684553",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
