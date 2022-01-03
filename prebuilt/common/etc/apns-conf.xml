@@ -1190,9 +1190,9 @@
   <apn carrier="ProMonte MMS" mcc="297" mnc="01" apn="mms.promonte.com" proxy="" port="" user="mms" password="mms" mmsc="http://mm.vor.promonte.com" mmsproxy="192.168.246.5" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile CG MMS" mcc="297" mnc="02" apn="mms" proxy="" port="" user="38267" password="38267" mmsc="http://192.168.180.100/servlets/mms" mmsproxy="10.0.5.19" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile CG" mcc="297" mnc="02" apn="tmcg-wnw" proxy="" port="" user="38267" password="38267" mmsc="" type="default,supl" />
-  <apn carrier="TELUS SP" mcc="302" mnc="220" apn="sp.telus.com" type="default,mms,supl,hipri,ia" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" protocol="IPV6" roaming_protocol="IP" mvno_match_data="5455" mvno_type="gid" />
+  <apn carrier="TELUS SP" mcc="302" mnc="220" apn="sp.telus.com" type="default,mms,supl,hipri,ia" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" protocol="IP" roaming_protocol="IP" mvno_match_data="5455" mvno_type="gid" />
   <apn carrier="TELUS ISP" mcc="302" mnc="220" apn="isp.telus.com" server="*" type="dun" protocol="IP" mvno_match_data="5455" mvno_type="gid" />
-  <apn carrier="TELUS IMS" mcc="302" mnc="220" apn="ims" type="ims" protocol="IPV6" mvno_match_data="5455" mvno_type="gid" user_visible="false" />
+  <apn carrier="TELUS IMS" mcc="302" mnc="220" apn="ims" type="ims" protocol="IP" mvno_match_data="5455" mvno_type="gid" user_visible="false" />
   <apn carrier="Koodo SP" mcc="302" mnc="220" apn="sp.koodo.com" type="*" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" protocol="IP" roaming_protocol="IP" mvno_match_data="4B4F" mvno_type="gid" />
   <apn carrier="Koodo IMS" mcc="302" mnc="220" apn="ims" type="ims" protocol="IPV6" mvno_match_data="4B4F" mvno_type="gid" />
   <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="5043" mvno_type="gid" />
@@ -1200,9 +1200,9 @@
   <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,agps,supl,fota,hipri" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_type="gid" mvno_match_data="4D4F" />
   <apn carrier="Tethered Mobile Internet" mcc="302" mnc="220" apn="isp.mb.com" type="dun" mvno_type="gid" mvno_match_data="4D4F" />
   <apn carrier="Public Mobile" mcc="302" mnc="220" apn="sp.mb.com" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" type="default,supl,mms" />
-  <apn carrier="TELUS SP" mcc="302" mnc="221" apn="sp.telus.com" type="default,mms,supl,hipri,ia" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" protocol="IPV6" roaming_protocol="IP" mvno_match_data="5455" mvno_type="gid" />
+  <apn carrier="TELUS SP" mcc="302" mnc="221" apn="sp.telus.com" type="default,mms,supl,hipri,ia" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" protocol="IP" roaming_protocol="IP" mvno_match_data="5455" mvno_type="gid" />
   <apn carrier="TELUS ISP" mcc="302" mnc="221" apn="isp.telus.com" server="*" type="dun" protocol="IP" mvno_match_data="5455" mvno_type="gid" />
-  <apn carrier="TELUS IMS" mcc="302" mnc="221" apn="ims" type="ims" protocol="IPV6" mvno_match_data="5455" mvno_type="gid" user_visible="false" />
+  <apn carrier="TELUS IMS" mcc="302" mnc="221" apn="ims" type="ims" protocol="IP" mvno_match_data="5455" mvno_type="gid" user_visible="false" />
   <apn carrier="Koodo SP" mcc="302" mnc="221" apn="sp.koodo.com" type="*" mmsc="http://aliasredirect.net/proxy/koodo/mmsc" mmsproxy="74.49.0.18" mmsport="80" protocol="IP" roaming_protocol="IP" mvno_match_data="4B4F" mvno_type="gid" />
   <apn carrier="Koodo IMS" mcc="302" mnc="221" apn="ims" type="ims" protocol="IPV6" mvno_match_data="4B4F" mvno_type="gid" />
   <apn carrier="PC mobile" mcc="302" mnc="221" apn="sp.mb.com" type="default,mms,supl" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="5043" mvno_type="gid" />
