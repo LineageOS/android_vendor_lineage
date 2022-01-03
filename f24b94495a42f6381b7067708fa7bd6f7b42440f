@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b82045a_4197a9c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30034
+      },
+      "writtenOn": "2022-01-03T19:03:28Z",
+      "side": 1,
+      "message": "Please review and merge the APN settings fix I made for the mobile service provider Telus.  Thanks.",
+      "revId": "f24b94495a42f6381b7067708fa7bd6f7b42440f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
