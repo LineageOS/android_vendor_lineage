@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b77752cc_73a7e8e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-01-04T20:26:12Z",
+      "side": 1,
+      "message": "Mike, I need you to re-V+1 the new patch after commit msg change - dumb gerrit thing.",
+      "revId": "a3d87a5d8d99201f1e23239684d552bce9ba1229",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
