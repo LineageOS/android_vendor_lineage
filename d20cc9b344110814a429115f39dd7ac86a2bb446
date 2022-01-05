@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69c54109_d9a424ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2022-01-05T13:58:12Z",
+      "side": 1,
+      "message": "PackageManager: allow build-time disabling of components is still not picked yet.",
+      "revId": "d20cc9b344110814a429115f39dd7ac86a2bb446",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
