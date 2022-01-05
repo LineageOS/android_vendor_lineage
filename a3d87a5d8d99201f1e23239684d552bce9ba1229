@@ -16,6 +16,23 @@
       "message": "Mike, I need you to re-V+1 the new patch after commit msg change - dumb gerrit thing.",
       "revId": "a3d87a5d8d99201f1e23239684d552bce9ba1229",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22e64578_62c5de94",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30034
+      },
+      "writtenOn": "2022-01-05T01:29:14Z",
+      "side": 1,
+      "message": "V+1ed",
+      "revId": "a3d87a5d8d99201f1e23239684d552bce9ba1229",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

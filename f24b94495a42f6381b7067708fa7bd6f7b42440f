@@ -50,6 +50,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "c74b0f2c_aea18e3c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 30034
+      },
+      "writtenOn": "2022-01-05T01:29:14Z",
+      "side": 1,
+      "message": "An empty line has been added.",
+      "parentUuid": "00031668_2e5abb77",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 47
+      },
+      "revId": "f24b94495a42f6381b7067708fa7bd6f7b42440f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "8b82045a_4197a9c1",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
