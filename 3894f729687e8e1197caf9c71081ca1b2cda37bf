@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "32ff2c39_32796991",
         "filename": "config/BoardConfigSoong.mk",
@@ -20,8 +21,31 @@
         "endChar": 57
       },
       "revId": "3894f729687e8e1197caf9c71081ca1b2cda37bf",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "548bf71e_ef9fb289",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-01-09T19:40:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32ff2c39_32796991",
+      "range": {
+        "startLine": 96,
+        "startChar": 56,
+        "endLine": 96,
+        "endChar": 57
+      },
+      "revId": "3894f729687e8e1197caf9c71081ca1b2cda37bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

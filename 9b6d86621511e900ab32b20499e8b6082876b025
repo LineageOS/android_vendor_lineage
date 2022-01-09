@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "c429e866_60aec564",
         "filename": "build/soong/Android.bp",
@@ -14,8 +15,25 @@
       "side": 1,
       "message": "There should be an underscore in front of \"udfps\".",
       "revId": "9b6d86621511e900ab32b20499e8b6082876b025",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5183ceaa_6a44a550",
+        "filename": "build/soong/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-01-09T19:40:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c429e866_60aec564",
+      "revId": "9b6d86621511e900ab32b20499e8b6082876b025",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

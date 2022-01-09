@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "1ef8ce00_b4241f8f",
         "filename": "config/BoardConfigSoong.mk",
@@ -14,8 +15,25 @@
       "side": 1,
       "message": "Maybe the first \"udfps\" should be capitalized?",
       "revId": "fbb2048308993a8c1e487634c7d7eecc3835bc25",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "777aa6b6_10796120",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-01-09T19:40:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1ef8ce00_b4241f8f",
+      "revId": "fbb2048308993a8c1e487634c7d7eecc3835bc25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
