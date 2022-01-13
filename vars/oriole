@@ -1,0 +1,38 @@
+readonly prev_build_id=SD1A.210817.037 # Nov 2021
+readonly build_id=SQ1D.211205.016.A1 # Dec 2021
+
+readonly prev_aosp_tag="android-12.0.0_r14"
+readonly aosp_tag="android-12.0.0_r18"
+
+readonly kernel=raviole
+
+readonly image_url="https://dl.google.com/dl/android/aosp/oriole-sq1d.211205.016.a1-factory-f588dce8.zip"
+readonly image_sha256="f588dce824359427508a3459d7e4cc20bf21f7db368867dea74a9c04649220b9"
+
+readonly flash_url="https://flash.android.com/build/7957957?target=oriole-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-sq1d.211205.016.a1-4fa45f8d.zip"
+readonly ota_sha256="4fa45f8d5e442b4632b74d8615ad2189af2276b9334f44e15cd1e216e301646f"
+
+readonly security_patch="2021-12-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Need OTA zip for firmware, not supported by image_unpacker yet
+readonly needs_ota=true
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in raven
+)

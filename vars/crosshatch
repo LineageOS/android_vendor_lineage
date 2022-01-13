@@ -1,0 +1,39 @@
+readonly prev_build_id=SP1A.210812.015 # Oct 2021
+readonly build_id=SP1A.210812.016.A2 # Oct 2021
+
+readonly prev_aosp_tag="android-12.0.0_r1"
+readonly aosp_tag="android-12.0.0_r25"
+
+readonly kernel=msm-4.9
+
+readonly image_url="https://dl.google.com/dl/android/aosp/crosshatch-sp1a.210812.016.a2-factory-0de199e1.zip"
+readonly image_sha256="0de199e10b56e3673a75384e41b570080f2d94b0e7b5e7d4b7cec31461f7a0c4"
+
+readonly flash_url="https://flash.android.com/build/7979095?target=crosshatch-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/crosshatch-ota-sp1a.210812.016.a2-a843fa3f.zip"
+readonly ota_sha256="a843fa3fb88fc0b17413d488b9fefb296e362c6e4c286560685cda7d604e9e98"
+
+readonly security_patch="2021-10-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  cmnlib
+  cmnlib64
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/crosshatch
+  device/google/crosshatch-sepolicy
+)

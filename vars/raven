@@ -1,0 +1,41 @@
+readonly prev_build_id=SD1A.210817.037 # Nov 2021
+readonly build_id=SQ1D.211205.016.A1 # Dec 2021
+
+readonly prev_aosp_tag="android-12.0.0_r14"
+readonly aosp_tag="android-12.0.0_r18"
+
+readonly kernel=raviole
+
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-sq1d.211205.016.a1-factory-86d212b2.zip"
+readonly image_sha256="86d212b21f8f6a13dac286e3246b859801ec27923d3d9e4b20218a1722e3d243"
+
+readonly flash_url="https://flash.android.com/build/7957957?target=raven-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-sq1d.211205.016.a1-81234517.zip"
+readonly ota_sha256="8123451727768bc1777e5bb56c333c2674ea1a688e174aef2fdee759e442c1ce"
+
+readonly security_patch="2021-12-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Need OTA zip for firmware, not supported by image_unpacker yet
+readonly needs_ota=true
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/gs101
+  device/google/gs101-sepolicy
+  device/google/gs-common
+  device/google/raviole
+)

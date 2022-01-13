@@ -1,0 +1,2 @@
+readonly prev_kernel_tag=android-12.0.0_r0.23 # Dec 2021
+readonly kernel_tag=android-12.0.0_r0.33 # Jan 2022

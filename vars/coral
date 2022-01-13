@@ -1,0 +1,38 @@
+readonly prev_build_id=SQ1A.211205.008 # Dec 2021
+readonly build_id=SQ1A.220105.002 # Jan 2022
+
+readonly prev_aosp_tag="android-12.0.0_r16"
+readonly aosp_tag="android-12.0.0_r26"
+
+readonly kernel=msm-4.14
+
+readonly image_url="https://dl.google.com/dl/android/aosp/coral-sq1a.220105.002-factory-2ce64cb5.zip"
+readonly image_sha256="2ce64cb55b48943116ccd96767418767a7f15a12b13c22b0b641b5cb209557f4"
+
+readonly flash_url="https://flash.android.com/build/7961164?target=coral-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/coral-ota-sq1a.220105.002-9bc7001d.zip"
+readonly ota_sha256="9bc7001dc4623bc32de326778001f68086c13350df552fa199c9ad572c84525b"
+
+readonly security_patch="2022-01-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/coral
+  device/google/coral-sepolicy
+)

@@ -1,0 +1,37 @@
+readonly prev_build_id=SQ1A.211205.008 # Dec 2021
+readonly build_id=SQ1A.220105.002 # Jan 2022
+
+readonly prev_aosp_tag="android-12.0.0_r16"
+readonly aosp_tag="android-12.0.0_r26"
+
+readonly kernel=msm-4.14
+
+readonly image_url="https://dl.google.com/dl/android/aosp/flame-sq1a.220105.002-factory-635ac9dd.zip"
+readonly image_sha256="635ac9dd5a096f4f3eb4e26b1553063681bbb225c57f600ba9dc14e64eba53a3"
+
+readonly flash_url="https://flash.android.com/build/7961164?target=flame-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/flame-ota-sq1a.220105.002-aec4fc6e.zip"
+readonly ota_sha256="aec4fc6eb79b2e011bc7f97736e30dfb5770a8fef099b1f6e174888cde51dd1c"
+
+readonly security_patch="2022-01-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in coral
+)

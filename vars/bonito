@@ -1,0 +1,39 @@
+readonly prev_build_id=SQ1A.211205.008 # Dec 2021
+readonly build_id=SQ1A.220105.002 # Jan 2022
+
+readonly prev_aosp_tag="android-12.0.0_r16"
+readonly aosp_tag="android-12.0.0_r26"
+
+readonly kernel=msm-4.9
+
+readonly image_url="https://dl.google.com/dl/android/aosp/bonito-sq1a.220105.002-factory-4f5ed95d.zip"
+readonly image_sha256="4f5ed95d5ad5e02180e05b5965ef827fa59d6cedef40355a5bad3ce4ba353cba"
+
+readonly flash_url="https://flash.android.com/build/7961164?target=bonito-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/bonito-ota-sq1a.220105.002-79fd8383.zip"
+readonly ota_sha256="79fd83830df6340f3185c54adb74341add89580f0bba60127ee98067082aecc8"
+
+readonly security_patch="2022-01-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  cmnlib
+  cmnlib64
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/bonito
+  device/google/bonito-sepolicy
+)

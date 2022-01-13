@@ -1,0 +1,43 @@
+readonly prev_build_id=SQ1A.211205.008 # Dec 2021
+readonly build_id=SQ1A.220105.002 # Jan 2022
+
+readonly prev_aosp_tag="android-12.0.0_r16"
+readonly aosp_tag="android-12.0.0_r26"
+
+readonly kernel=barbet
+
+readonly prev_kernel_tag=android-12.0.0_r0.25 # Dec 2021
+readonly kernel_tag=android-12.0.0_r0.35 # Jan 2022
+
+readonly image_url="https://dl.google.com/dl/android/aosp/barbet-sq1a.220105.002-factory-723b994c.zip"
+readonly image_sha256="723b994c919862d665e05a3d023b2c82fad72ce5addb29305e04e60072412c81"
+
+readonly flash_url="https://flash.android.com/build/7961164?target=barbet-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-sq1a.220105.002-74dc0676.zip"
+readonly ota_sha256="74dc067694f58d7414394b30938c8a3a53d1667c9d8bb4a4a146b8cb0d23f78e"
+
+readonly security_patch="2022-01-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  featenabler
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in redfin
+  device/google/barbet
+  device/google/barbet-sepolicy
+)

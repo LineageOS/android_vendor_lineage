@@ -1,0 +1,38 @@
+readonly prev_build_id=SP1A.210812.015 # Oct 2021
+readonly build_id=SP1A.210812.016.A2 # Oct 2021
+
+readonly prev_aosp_tag="android-12.0.0_r1"
+readonly aosp_tag="android-12.0.0_r25"
+
+readonly kernel=msm-4.9
+
+readonly image_url="https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.a2-factory-0e1330df.zip"
+readonly image_sha256="0e1330dfe4606b92fb441592f1f9e1d8a0a3bd99ade19df6e21cbb003a9593d8"
+
+readonly flash_url="https://flash.android.com/build/7979095?target=blueline-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/blueline-ota-sp1a.210812.016.a2-4c10edc0.zip"
+readonly ota_sha256="4c10edc002c2485f47d418669fafe3a293d87915c9a7cae04f18214e409a9fda"
+
+readonly security_patch="2021-10-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  cmnlib
+  cmnlib64
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in crosshatch
+)

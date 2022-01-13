@@ -1,0 +1,38 @@
+readonly prev_build_id=SQ1A.211205.008 # Dec 2021
+readonly build_id=SQ1A.220105.002 # Jan 2022
+
+readonly prev_aosp_tag="android-12.0.0_r16"
+readonly aosp_tag="android-12.0.0_r26"
+
+readonly kernel=msm-4.14
+
+readonly image_url="https://dl.google.com/dl/android/aosp/sunfish-sq1a.220105.002-factory-8f5138d8.zip"
+readonly image_sha256="8f5138d8da3c16117e771f80679938ba97824126c6859b15c1c909a38075fd24"
+
+readonly flash_url="https://flash.android.com/build/7961164?target=sunfish-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/sunfish-ota-sq1a.220105.002-66cfb70f.zip"
+readonly ota_sha256="66cfb70f0e2e11506d199d36110e0bcf78914298629a9b427eb1920ab95f6239"
+
+readonly security_patch="2022-01-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/sunfish
+  device/google/sunfish-sepolicy
+)

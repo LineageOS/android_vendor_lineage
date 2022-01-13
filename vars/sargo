@@ -1,0 +1,38 @@
+readonly prev_build_id=SQ1A.211205.008 # Dec 2021
+readonly build_id=SQ1A.220105.002 # Jan 2022
+
+readonly prev_aosp_tag="android-12.0.0_r16"
+readonly aosp_tag="android-12.0.0_r26"
+
+readonly kernel=msm-4.9
+
+readonly image_url="https://dl.google.com/dl/android/aosp/sargo-sq1a.220105.002-factory-500674e4.zip"
+readonly image_sha256="500674e470a607a5d41f1809779521c032ed4b19322eec294774771400f42188"
+
+readonly flash_url="https://flash.android.com/build/7961164?target=sargo-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/sargo-ota-sq1a.220105.002-6c59f2a9.zip"
+readonly ota_sha256="6c59f2a91af78fa5b4f56b6928eb6f190e6363de585a411d400cc00c38e554e7"
+
+readonly security_patch="2022-01-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  cmnlib
+  cmnlib64
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in bonito
+)
