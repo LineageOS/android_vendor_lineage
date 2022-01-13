@@ -37,5 +37,4 @@ readonly firmware_partitions=(
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/coral
-  device/google/coral-sepolicy
 )

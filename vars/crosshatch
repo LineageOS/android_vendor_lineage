@@ -38,5 +38,4 @@ readonly firmware_partitions=(
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/crosshatch
-  device/google/crosshatch-sepolicy
 )
