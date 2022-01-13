@@ -1,0 +1,16 @@
+# Google Pixels
+# Usage: ${devices[@]}
+readonly devices=(
+  crosshatch
+  blueline
+  bonito
+  sargo
+  coral
+  flame
+  sunfish
+  redfin
+  bramble
+  barbet
+  raven
+  oriole
+)
