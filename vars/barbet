@@ -20,7 +20,6 @@ readonly firmware_partitions=(
 device_repos=(
   # common repos in redfin
   device/google/barbet
-  device/google/barbet-sepolicy
 )
 
 # Updated manually
