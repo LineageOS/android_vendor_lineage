@@ -1,0 +1,44 @@
+# Pixel 6
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in raven
+)
+
+# Need OTA zip for firmware, not supported by image_unpacker yet
+readonly needs_ota=true
+
+# Updated manually
+
+readonly prev_build_id=S2B3.220205.007.A1 # 12L Beta 3
+readonly build_id=SP2A.220305.013.A3 # Mar 2022
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="unknown"
+readonly aosp_tag="android-12.1.0_r2"
+
+readonly prev_build_number="8133516"
+readonly build_number="8229987"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/oriole-sp2a.220305.013.a3-factory-8bea92d1.zip"
+readonly image_sha256="8bea92d1215036b9d6d3f8e04c9cd07857ff46d810207cfcbdfcf65670b1c5f6"
+
+readonly flash_url="https://flash.android.com/build/8229987?target=oriole-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-sp2a.220305.013.a3-d7b50e71.zip"
+readonly ota_sha256="d7b50e710759d7cfcac7ca4057970ff4a4395ee61c750ce51af4159bf3fba873"
+
+readonly security_patch="2022-03-05"
