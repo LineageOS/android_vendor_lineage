@@ -1,0 +1,46 @@
+# Pixel 3 XL
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  cmnlib
+  cmnlib64
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/crosshatch
+  device/google/crosshatch-sepolicy
+)
+
+# Updated manually
+
+readonly prev_build_id=SP1A.210812.016.A2 # Oct 2021
+readonly build_id=SP1A.210812.016.C1 # Feb 2022
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-12.0.0_r25"
+readonly aosp_tag="android-12.0.0_r31"
+
+readonly prev_build_number="7979095"
+readonly build_number="8029091"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/crosshatch-sp1a.210812.016.c1-factory-67ea87fc.zip"
+readonly image_sha256="67ea87fcce2c2ea5da0d0a12b476a4bb1844040bd7c20f17f105d13b253e2a62"
+
+readonly flash_url="https://flash.android.com/build/8029091?target=crosshatch-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/crosshatch-ota-sp1a.210812.016.c1-d3a532dd.zip"
+readonly ota_sha256="d3a532dd7e61bd1c038ccbf3de1a3063b210b7677c4814e63e5b2070688799a5"
+
+readonly security_patch="2021-10-05"
