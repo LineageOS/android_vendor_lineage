@@ -1,0 +1,13 @@
+# Entire file updated manually
+readonly prev_calyxos_branch=android12
+readonly calyxos_branch=android12
+
+readonly prev_common_aosp_tag=android-12.0.0_r27 # Jan 2022, Pixel 6
+readonly common_aosp_tag=android-12.0.0_r29 # Feb 2022, Pixel 6
+
+readonly prev_common_aosp_build_id=SQ1D.220105.007 # Jan 2022, Pixel 6
+readonly common_aosp_build_id=SQ1D.220205.003 # Feb 2022, Pixel 6
+
+readonly topic=feb22
+
+readonly lineageos_branch=lineage-19.0

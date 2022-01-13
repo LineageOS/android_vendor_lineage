@@ -1,0 +1,43 @@
+readonly prev_build_id=SQ1A.220105.002 # Jan 2022
+readonly build_id=SQ1A.220205.002 # Feb 2022
+
+readonly prev_aosp_tag="android-12.0.0_r26"
+readonly aosp_tag="android-12.0.0_r28"
+
+readonly kernel=redbull
+
+readonly prev_build_number="7961164"
+readonly build_number="8010174"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/bramble-sq1a.220205.002-factory-d2deade9.zip"
+readonly image_sha256="d2deade9b7bb6de91a23f65111d16bde821df2798be27eff80ea9673459bc3b9"
+
+readonly flash_url="https://flash.android.com/build/8010174?target=bramble-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-sq1a.220205.002-4a5e41c5.zip"
+readonly ota_sha256="4a5e41c59154f691bfb8fa9767fdd836611efaf03ffcf69ff4e4290b00487bb8"
+
+readonly security_patch="2022-02-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  featenabler
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in redfin
+  device/google/bramble
+  device/google/bramble-sepolicy
+)

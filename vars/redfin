@@ -1,0 +1,44 @@
+readonly prev_build_id=SQ1A.220105.002 # Jan 2022
+readonly build_id=SQ1A.220205.002 # Feb 2022
+
+readonly prev_aosp_tag="android-12.0.0_r26"
+readonly aosp_tag="android-12.0.0_r28"
+
+readonly kernel=redbull
+
+readonly prev_build_number="7961164"
+readonly build_number="8010174"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/redfin-sq1a.220205.002-factory-734556ab.zip"
+readonly image_sha256="734556ab21017c1871a4df7ddfcecb79b7adb5f43cc01bc1a22d65912bacbef9"
+
+readonly flash_url="https://flash.android.com/build/8010174?target=redfin-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-sq1a.220205.002-84ba2421.zip"
+readonly ota_sha256="84ba2421780145c02aec5ba1602544852df25e151090103d0806f5e6de8bace3"
+
+readonly security_patch="2022-02-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  featenabler
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/redbull
+  device/google/redbull-sepolicy
+  device/google/redfin
+  device/google/redfin-sepolicy
+)

@@ -1,0 +1,41 @@
+readonly prev_build_id=SQ1D.220105.007 # Jan 2022
+readonly build_id=SQ1D.220205.003 # Feb 2022
+
+readonly prev_aosp_tag="android-12.0.0_r27"
+readonly aosp_tag="android-12.0.0_r29"
+
+readonly kernel=raviole
+
+readonly prev_build_number="8030436"
+readonly build_number="8069835"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/oriole-sq1d.220205.003-factory-a5a63f2a.zip"
+readonly image_sha256="a5a63f2a775ed53ee84bdd6de21b1c683944b3a4bb4571c940771f3b75cbe65c"
+
+readonly flash_url="https://flash.android.com/build/8069835?target=oriole-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-sq1d.220205.003-22e71d3d.zip"
+readonly ota_sha256="22e71d3db5ba46d43ac16b18501f7a587a1b526e8ecd49539160419b5c8ec4f2"
+
+readonly security_patch="2022-02-05"
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Need OTA zip for firmware, not supported by image_unpacker yet
+readonly needs_ota=true
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in raven
+)
