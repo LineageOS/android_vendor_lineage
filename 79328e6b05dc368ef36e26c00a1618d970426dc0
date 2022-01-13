@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d54de0ea_7ba6de9f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-01-13T21:58:58Z",
+      "side": 1,
+      "message": "I\u0027d suggest leaving them in and just handling them separately in scripts\n\nThat way:\n* We have a list of sepolicy repoes to merge\n* We have the right tags for them.",
+      "revId": "79328e6b05dc368ef36e26c00a1618d970426dc0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
