@@ -19,9 +19,7 @@ readonly firmware_partitions=(
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/redbull
-  device/google/redbull-sepolicy
   device/google/redfin
-  device/google/redfin-sepolicy
 )
 
 # Updated manually

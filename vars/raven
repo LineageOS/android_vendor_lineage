@@ -16,7 +16,6 @@ readonly firmware_partitions=(
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/gs101
-  device/google/gs101-sepolicy
   device/google/raviole
 )
 
