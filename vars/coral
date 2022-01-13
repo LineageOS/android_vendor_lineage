@@ -1,0 +1,45 @@
+# Pixel 4 XL
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  abl
+  aop
+  devcfg
+  hyp
+  keymaster
+  qupfw
+  tz
+  uefisecapp
+  xbl
+  xbl_config
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/coral
+  device/google/coral-sepolicy
+)
+
+# Updated manually
+
+readonly prev_build_id=SQ1A.220205.002 # Feb 2022
+readonly build_id=SP2A.220305.012 # Mar 2022
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-12.0.0_r28"
+readonly aosp_tag="android-12.1.0_r1"
+
+readonly prev_build_number="8010174"
+readonly build_number="8177914"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/coral-sp2a.220305.012-factory-1b787a94.zip"
+readonly image_sha256="1b787a94e2bf49609a33140414d4c08f2ba0ea4e6de101dd186ce01dd6f69816"
+
+readonly flash_url="https://flash.android.com/build/8177914?target=coral-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/coral-ota-sp2a.220305.012-a2a622e2.zip"
+readonly ota_sha256="a2a622e2e9e9d61696e509e4ad38f6199cf3aabd9f6ddfb21cd1fb799cb6d739"
+
+readonly security_patch="2022-03-05"
