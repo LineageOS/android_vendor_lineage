@@ -35,5 +35,4 @@ readonly firmware_partitions=(
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/bonito
-  device/google/bonito-sepolicy
 )

@@ -36,5 +36,4 @@ readonly firmware_partitions=(
 device_repos=(
   # common repos in redfin
   device/google/bramble
-  device/google/bramble-sepolicy
 )
