@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49ced66e_271f7a3c",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-01-17T12:53:48Z",
+      "side": 1,
+      "message": "You could make it more generic if renamed to something like: TARGET_ENFORCE_QSSI",
+      "range": {
+        "startLine": 23,
+        "startChar": 9,
+        "endLine": 23,
+        "endChar": 30
+      },
+      "revId": "56aeb00b7ff55ac65985cd154243bedff553b918",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
