@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4978f0b0_3913739c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-01-23T23:25:06Z",
+      "side": 1,
+      "message": "I don\u0027t really agree with reverting commits in the QTI BT repositories instead of just introducing what it wants (this).\n\nhttps://github.com/ZVNexus/android_vendor_qcom_opensource_packages_apps_Bluetooth/commit/55708827d753af7cb5b4521e33da09921df2029c\n\nhttps://github.com/ZVNexus/android_vendor_qcom_opensource_system_bt/commit/1c417e996eb2113ee4a37b5e2c83a9cff8e07dad\n\nhttps://github.com/ZVNexus/android_vendor_qcom_opensource_bluetooth_ext/commit/ec5ff0fe2ae99a9350789549dc30269e4ccd9b9c\n",
+      "revId": "c5fb047c38507b4eb8274cec8beeb2fd2372f4ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
