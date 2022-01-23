@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d9f665f_c901c1a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-01-23T05:48:06Z",
+      "side": 1,
+      "message": "Verified on ZenFone 8 and booted: https://github.com/ZVNexus/android_device_asus_sake/commit/b27f58389b5e5a2b4cd678bb4a1a0e78a132291e",
+      "revId": "e220ca26256981d08d6d2e3d4e1d902d3e21f74f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
