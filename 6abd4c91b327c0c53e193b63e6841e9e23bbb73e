@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eaef10df_f02ed2bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2022-01-23T22:06:33Z",
+      "side": 1,
+      "message": "This is useless and depends on proprietary headers anyway, I just reverted relevant changes in BT HALs accordingly",
+      "revId": "6abd4c91b327c0c53e193b63e6841e9e23bbb73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
