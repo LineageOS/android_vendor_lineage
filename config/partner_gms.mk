@@ -11,5 +11,6 @@ else ifeq ($(WITH_GMS_MINIMAL),true)
 $(call inherit-product, vendor/partner_gms/products/gms_minimal.mk)
 else
 $(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
+$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
 endif
 endif
