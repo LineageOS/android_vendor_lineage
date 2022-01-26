@@ -33,6 +33,24 @@
       "message": "No longer necessary after: https://review.lineageos.org/c/LineageOS/android/+/319588 + https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/319587",
       "revId": "c5fb047c38507b4eb8274cec8beeb2fd2372f4ab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d87e2e7_1b77e548",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-01-26T15:13:21Z",
+      "side": 1,
+      "message": "Looks good, abandoning.",
+      "parentUuid": "6d36cde1_1ffedf65",
+      "revId": "c5fb047c38507b4eb8274cec8beeb2fd2372f4ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
