@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0813ad1_57430919",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-01-27T12:14:14Z",
+      "side": 1,
+      "message": "I think the TV-specific overlay can be removed as it looks to include the common overlay also.",
+      "revId": "a119798305b88cc012fbf96fb1d18675aca704e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
