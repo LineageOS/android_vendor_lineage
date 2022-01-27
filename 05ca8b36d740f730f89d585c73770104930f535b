@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e65a089e_97b2d582",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-01-27T15:45:47Z",
+      "side": 1,
+      "message": "intentional - atv won\u0027t boot without them",
+      "range": {
+        "startLine": 4,
+        "startChar": 7,
+        "endLine": 4,
+        "endChar": 23
+      },
+      "revId": "05ca8b36d740f730f89d585c73770104930f535b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
