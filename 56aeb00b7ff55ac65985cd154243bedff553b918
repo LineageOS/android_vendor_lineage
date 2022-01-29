@@ -142,6 +142,30 @@
       },
       "revId": "56aeb00b7ff55ac65985cd154243bedff553b918",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a0fb3bf_777d3941",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-01-29T18:47:03Z",
+      "side": 1,
+      "message": "Usually goes to BoadConfig.mk, lineage_{device}.mk certainly not.",
+      "parentUuid": "2b17a271_d601da70",
+      "range": {
+        "startLine": 23,
+        "startChar": 9,
+        "endLine": 23,
+        "endChar": 30
+      },
+      "revId": "56aeb00b7ff55ac65985cd154243bedff553b918",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
