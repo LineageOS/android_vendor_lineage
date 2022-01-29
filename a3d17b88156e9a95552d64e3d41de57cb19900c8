@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3bd4d59_3e767c92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-01-29T17:45:59Z",
+      "side": 1,
+      "message": "Checked against official sources: https://community.unifi.com.my/t5/unifi-Tips-Guides/How-to-set-APN-settings/td-p/15495\nLooks like they really don\u0027t need any other of the fields set",
+      "revId": "a3d17b88156e9a95552d64e3d41de57cb19900c8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
