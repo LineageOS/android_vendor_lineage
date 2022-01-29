@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ff3125b_122d0340",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-01-29T06:19:08Z",
+      "side": 1,
+      "message": "The problem this used to solve seems not relevant to these activities anymore, as they\u0027re verifiably for APEXs.",
+      "revId": "8b88cd2dc05bc170644b5176f4bc72b10ea856b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
