@@ -118,6 +118,30 @@
       },
       "revId": "56aeb00b7ff55ac65985cd154243bedff553b918",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b17a271_d601da70",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2022-01-29T17:48:15Z",
+      "side": 1,
+      "message": "Done.\n\nSo, this should be set in lineage_{device}.mk or device.mk or BoardConfig.mk?",
+      "parentUuid": "b2fd1db0_525f5d97",
+      "range": {
+        "startLine": 23,
+        "startChar": 9,
+        "endLine": 23,
+        "endChar": 30
+      },
+      "revId": "56aeb00b7ff55ac65985cd154243bedff553b918",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
