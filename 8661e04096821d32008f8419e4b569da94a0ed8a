@@ -16,6 +16,24 @@
       "message": "got a link to carrier website to verify this?",
       "revId": "8661e04096821d32008f8419e4b569da94a0ed8a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9eb3dc1_cb809494",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2022-01-29T16:20:02Z",
+      "side": 1,
+      "message": "https://community.unifi.com.my/t5/plan/How-to-configure-my-phone-data-settings/ta-p/11283",
+      "parentUuid": "45b27d45_8aa3553e",
+      "revId": "8661e04096821d32008f8419e4b569da94a0ed8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
