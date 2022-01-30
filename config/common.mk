@@ -140,6 +140,11 @@ PRODUCT_PACKAGES += \
     vim \
     zip
 
+ifneq ($(TARGET_EXCLUDE_EXTRA_RECOVERY_TOOLS),true)
+PRODUCT_PACKAGES += \
+    nano_recovery
+endif
+
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
     system/bin/getcap \
