@@ -1,6 +1,6 @@
 # LineageOS core functionality
 on init
-    export TERMINFO /product/etc/terminfo
+    export TERMINFO /system_ext/etc/terminfo
 
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -z
