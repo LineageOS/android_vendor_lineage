@@ -201,6 +201,12 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     TrebuchetOverlay
 
+ifeq ($(INCLUDE_PIXEL_LAUNCHER),true)
+PRODUCT_PACKAGES += \
+    NexusLauncherOverlay \
+    PixelLauncherConfigOverlay
+endif
+
 # Translations
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
