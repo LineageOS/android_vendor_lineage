@@ -42,6 +42,14 @@
         <item>org.microg.nlp</item>
     </string-array>
 
+    <!-- Update device/google/raviole whenever this is updated -->
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- DejaVuLocationService -->
+        <item>org.fitchfamily.android.dejavu</item>
+        <!-- MozillaNlpBackend -->
+        <item>org.microg.nlp.backend.ichnaea</item>
+    </string-array>
+
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- Disable stock OTA components if installed -->
