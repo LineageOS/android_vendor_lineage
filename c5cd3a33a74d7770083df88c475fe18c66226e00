@@ -101,6 +101,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3a57657_61b73913",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-09T20:29:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "234a501f_81d23732",
+      "range": {
+        "startLine": 6,
+        "startChar": 7,
+        "endLine": 6,
+        "endChar": 32
+      },
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ad9896bd_944466fa",
@@ -148,6 +172,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b72f3edc_90dbccbe",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-09T20:29:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "145193e5_a669ce5e",
+      "range": {
+        "startLine": 15,
+        "startChar": 7,
+        "endLine": 15,
+        "endChar": 22
+      },
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8e9cfb16_c04b156e",
@@ -185,6 +233,30 @@
       "side": 1,
       "message": "Overlooked this one. Ignore.",
       "parentUuid": "8e9cfb16_c04b156e",
+      "range": {
+        "startLine": 21,
+        "startChar": 7,
+        "endLine": 21,
+        "endChar": 22
+      },
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60f89de1_f9df1e9b",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-09T20:29:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d93ca2eb_ff9ec983",
       "range": {
         "startLine": 21,
         "startChar": 7,
