@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a600217c_be61f9f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2022-02-09T20:24:44Z",
+      "side": 1,
+      "message": "it basically boils down to laws and license agreements.\n\ni am not sure if i am allowed to comment the reasons here, except this is the one to use for devices shipping in EU.\n\nan alternative would be to allow specifying the proper makefile to include instead of all these conditions.\n\nor not including the else branch and let device trees set the proper ones.",
+      "parentUuid": "05fe1be4_d0db6a09",
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fbb086cc_a1a19b9b",
         "filename": "config/partner_gms.mk",
         "patchSetId": 2
@@ -49,6 +67,30 @@
       "writtenOn": "2022-02-09T20:15:09Z",
       "side": 1,
       "message": "Should be inherit-product",
+      "range": {
+        "startLine": 6,
+        "startChar": 7,
+        "endLine": 6,
+        "endChar": 32
+      },
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "234a501f_81d23732",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2022-02-09T20:24:44Z",
+      "side": 1,
+      "message": "will do tomorrow if that is fine :)",
+      "parentUuid": "fbb086cc_a1a19b9b",
       "range": {
         "startLine": 6,
         "startChar": 7,
