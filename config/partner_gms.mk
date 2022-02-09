@@ -1,20 +1,30 @@
 ifeq ($(WITH_GMS),true)
-ifeq ($(WITH_GMS_TV),true)
-$(call inherit-product, vendor/partner_gms-tv/products/gms.mk)
-$(call inherit-product, vendor/partner_gms-tv/products/mainline_modules.mk)
-else ifeq ($(WITH_GMS_FI),true)
-$(call inherit-product, vendor/partner_gms/products/fi.mk)
-$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
-else ifeq ($(WITH_GMS_GO),true)
-$(call inherit-product, vendor/partner_gms/products/gms_go.mk)
-$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_s_low_ram.mk)
-else ifeq ($(WITH_GMS_GO_2GB),true)
-$(call inherit-product, vendor/partner_gms/products/gms_go_2gb.mk)
-$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_s_low_ram.mk)
-else ifeq ($(WITH_GMS_MINIMAL),true)
-$(call inherit-product, vendor/partner_gms/products/gms_minimal.mk)
-else
-$(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
-$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
-endif
+    # Special handling for Android TV
+    ifeq ($(WITH_GMS_TV),true)
+        $(call inherit-product, vendor/partner_gms-tv/products/gms.mk)
+        $(call inherit-product-if-exists, vendor/partner_gms-tv/products/mainline_modules.mk)
+    else
+        # Specify the GMS makefile you want to use, for example:
+        #   - fi.mk             - Project Fi
+        #   - gms.mk            - default GMS
+        #   - gms_go.mk         - low ram devices
+        #   - gms_go_2gb.mk     - low ram devices (2GB)
+        #   - gms_64bit_only.mk - devices supporting 64-bit only
+        ifneq ($(GMS_MAKEFILE),)
+            $(call inherit-product, vendor/partner_gms/products/$(GMS_MAKEFILE))
+        else
+            $(call inherit-product, vendor/partner_gms/products/gms.mk)
+        endif
+
+        # Specify the mainline module makefile you want to use, for example:
+        #   - mainline_modules.mk              - updatable apex
+        #   - mainline_modules_flatten_apex.mk - flatten apex
+        #   - mainline_modules_low_ram.mk      - low ram devices
+        ifneq ($(MAINLINE_MODULES_MAKEFILE),)
+            $(call inherit-product, vendor/partner_modules/build/$(MAINLINE_MODULES_MAKEFILE))
+        else
+            # Do not fail if not existing, as it is valid to use GMS without mainline modules
+            $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
+        endif
+    endif
 endif
