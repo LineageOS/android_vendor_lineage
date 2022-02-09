@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05fe1be4_d0db6a09",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-09T20:11:25Z",
+      "side": 1,
+      "message": "so, we can do this, but - please explain the logic behind the diff eea options tho, never understood that - nor why this is the correct one to use?",
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
