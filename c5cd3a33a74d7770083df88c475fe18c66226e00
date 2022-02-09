@@ -16,6 +16,75 @@
       "message": "so, we can do this, but - please explain the logic behind the diff eea options tho, never understood that - nor why this is the correct one to use?",
       "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fbb086cc_a1a19b9b",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-09T20:15:09Z",
+      "side": 1,
+      "message": "Should be inherit-product",
+      "range": {
+        "startLine": 6,
+        "startChar": 7,
+        "endLine": 6,
+        "endChar": 32
+      },
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad9896bd_944466fa",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-09T20:15:09Z",
+      "side": 1,
+      "message": "Same here.",
+      "range": {
+        "startLine": 15,
+        "startChar": 7,
+        "endLine": 15,
+        "endChar": 22
+      },
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e9cfb16_c04b156e",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-09T20:15:09Z",
+      "side": 1,
+      "message": "And here.",
+      "range": {
+        "startLine": 21,
+        "startChar": 7,
+        "endLine": 21,
+        "endChar": 22
+      },
+      "revId": "c5cd3a33a74d7770083df88c475fe18c66226e00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
