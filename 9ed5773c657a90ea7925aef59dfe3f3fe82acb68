@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2d6485b_c85d966f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-10T16:28:53Z",
+      "side": 1,
+      "message": "What if someone wants to opt-in for mainline_modules?",
+      "revId": "9ed5773c657a90ea7925aef59dfe3f3fe82acb68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
