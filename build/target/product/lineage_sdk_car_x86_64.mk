@@ -14,8 +14,6 @@
 
 include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_arm64.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_x86_64.mk)
 
-TARGET_NO_KERNEL_OVERRIDE := true
-
-PRODUCT_NAME := lineage_car_arm64
+PRODUCT_NAME := lineage_sdk_car_x86_64
