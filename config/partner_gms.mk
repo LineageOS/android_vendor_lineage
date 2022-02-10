@@ -16,7 +16,7 @@ ifeq ($(WITH_GMS),true)
         ifneq ($(GMS_MAKEFILE),)
             $(call inherit-product, vendor/partner_gms/products/$(GMS_MAKEFILE))
         else
-            $(call inherit-product, vendor/partner_gms/products/gms.mk)
+            $(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
         endif
 
         # Specify the mainline module makefile you want to use, for example:
