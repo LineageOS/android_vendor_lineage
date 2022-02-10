@@ -2,7 +2,7 @@ ifeq ($(WITH_GMS),true)
     # Special handling for Android TV
     ifeq ($(WITH_GMS_TV),true)
         $(call inherit-product, vendor/partner_gms-tv/products/gms.mk)
-        $(call inherit-product-if-exists, vendor/partner_gms-tv/products/mainline_modules.mk)
+        $(call inherit-product, vendor/partner_gms-tv/products/mainline_modules.mk)
     else
         # Specify the GMS makefile you want to use, for example:
         #   - fi.mk             - Project Fi
@@ -22,9 +22,6 @@ ifeq ($(WITH_GMS),true)
         #   - mainline_modules_low_ram.mk      - low ram devices
         ifneq ($(MAINLINE_MODULES_MAKEFILE),)
             $(call inherit-product, vendor/partner_modules/build/$(MAINLINE_MODULES_MAKEFILE))
-        else
-            # Do not fail if not existing, as it is valid to use GMS without mainline modules
-            $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
         endif
     endif
 endif
