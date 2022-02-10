@@ -16,6 +16,24 @@
       "message": "What if someone wants to opt-in for mainline_modules?",
       "revId": "9ed5773c657a90ea7925aef59dfe3f3fe82acb68",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee0de71d_1ba59217",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-10T18:19:34Z",
+      "side": 1,
+      "message": "AFAIK Car builds don\u0027t have APEX at the moment. At least, not updatable. the GMS package has no references to it, and even unpacks the most common module APEX ExtServices into an APK.",
+      "parentUuid": "a2d6485b_c85d966f",
+      "revId": "9ed5773c657a90ea7925aef59dfe3f3fe82acb68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
