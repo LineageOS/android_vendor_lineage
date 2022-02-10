@@ -22,6 +22,30 @@
       },
       "revId": "21551d3cf6f2fc46bcb78ba129e267bb7a37d460",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "48b0ba40_6bc6816e",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-10T16:17:12Z",
+      "side": 1,
+      "message": "I mean, point in case, I leave mainline modules out of mobile builds to avoid conflicts with our features, but am forced to include them on ATV as its required.",
+      "parentUuid": "e85c431f_9a62d7b2",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 95
+      },
+      "revId": "21551d3cf6f2fc46bcb78ba129e267bb7a37d460",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
