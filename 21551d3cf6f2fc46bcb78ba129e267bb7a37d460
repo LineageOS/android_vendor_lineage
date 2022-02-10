@@ -46,6 +46,30 @@
       },
       "revId": "21551d3cf6f2fc46bcb78ba129e267bb7a37d460",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bc5ea62b_44e0a83b",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-10T16:21:44Z",
+      "side": 1,
+      "message": "Follow-up change, again. This is just the same behavior as before current change.",
+      "parentUuid": "48b0ba40_6bc6816e",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 95
+      },
+      "revId": "21551d3cf6f2fc46bcb78ba129e267bb7a37d460",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
