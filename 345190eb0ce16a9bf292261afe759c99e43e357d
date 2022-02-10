@@ -50,6 +50,29 @@
       "message": "I have tested this with axolotl and:\n\nGMS_MAKEFILE :\u003d gms_eea_v2_type4c.mk\nMAINLINE_MODULES_MAKEFILE :\u003d mainline_modules.mk\n\nIf i rm -rf vendor/partner_modules, it errors out as expected because of the missing makefile.\n\nI can not complete a build with mainline modules, only with GMS, as the mainline modules i have for S are outdated and broken. Asked for a newer version.\n\nBut this is an issue of the modules and not of this change.",
       "revId": "345190eb0ce16a9bf292261afe759c99e43e357d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f0e094a_00e8a62e",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-10T16:05:26Z",
+      "side": 1,
+      "message": "while we\u0027re here lets just add car as well. Newer supported target in Lineage\n\nWITH_GMS_CAR and vendor/partner_gms-car/products/gms.mk",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 93
+      },
+      "revId": "345190eb0ce16a9bf292261afe759c99e43e357d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
