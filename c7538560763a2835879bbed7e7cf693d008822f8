@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ec638bb8_54b65964",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2022-02-11T06:32:05Z",
+      "side": 1,
+      "message": "shouldn\u0027t we remove this at all then to be inline with the mainline modules one?\n\nmeans the new way to enable it would then be to set WITH_GMS, additional flags for car or tv, specify makefiles to use partner_gms or do your own thing.",
+      "range": {
+        "startLine": 18,
+        "startChar": 8,
+        "endLine": 19,
+        "endChar": 81
+      },
+      "revId": "c7538560763a2835879bbed7e7cf693d008822f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
