@@ -16,6 +16,23 @@
       "message": "Are we not going to have GSI targets now?",
       "revId": "07c2bbaa3a6d1368d6edee87fe42b36d3b4295cb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c11e9d67_0f6a33be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29147
+      },
+      "writtenOn": "2022-02-11T17:20:00Z",
+      "side": 1,
+      "message": "I\u0027ll add those in another commit. Need to set up a device for testing gsi first.\n\nWas planning on fixing lineage_x86/arm at the same time if I\u0027m the first one there",
+      "revId": "07c2bbaa3a6d1368d6edee87fe42b36d3b4295cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
