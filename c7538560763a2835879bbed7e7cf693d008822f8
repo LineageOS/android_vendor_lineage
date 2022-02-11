@@ -22,6 +22,30 @@
       },
       "revId": "c7538560763a2835879bbed7e7cf693d008822f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c547f43_018899cb",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-11T09:10:02Z",
+      "side": 1,
+      "message": "IMO, we should leave as is. There was a logical explanation to do that for mainline modules. People that don\u0027t want to set a specific GMS makefile can keep doing what they did before.",
+      "parentUuid": "ec638bb8_54b65964",
+      "range": {
+        "startLine": 18,
+        "startChar": 8,
+        "endLine": 19,
+        "endChar": 81
+      },
+      "revId": "c7538560763a2835879bbed7e7cf693d008822f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
