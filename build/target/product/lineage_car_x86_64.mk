@@ -12,10 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/lineage/build/target/product/lineage_generic_car_target.mk
+$(call inherit-product, device/generic/car/gsi_car_arm64.mk)
+$(call inherit-product, build/target/product/gsi_release.mk)
 
-$(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
+include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := lineage_sdk_car_arm64
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
+PRODUCT_NAME := lineage_car_x86_64
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/app/Home/Home.apk
+
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
