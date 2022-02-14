@@ -19,6 +19,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_arm64.mk \
     $(LOCAL_DIR)/lineage_x86.mk \
     $(LOCAL_DIR)/lineage_x86_64.mk \
+    $(LOCAL_DIR)/lineage_car_arm64.mk \
+    $(LOCAL_DIR)/lineage_car_x86_64.mk \
     $(LOCAL_DIR)/lineage_tv_arm.mk \
     $(LOCAL_DIR)/lineage_tv_arm64.mk \
     $(LOCAL_DIR)/lineage_tv_x86.mk \
