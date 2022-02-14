@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7bebb4d_164c8885",
+        "filename": "build/target/product/lineage_car_arm64.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-14T23:25:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0a553394_d4d4e877",
+      "range": {
+        "startLine": 1,
+        "startChar": 16,
+        "endLine": 1,
+        "endChar": 25
+      },
+      "revId": "767af67c7fd75eb40f2adbc9e3d9d13bfea06bba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5a486c30_53a56478",
@@ -37,6 +61,30 @@
       "writtenOn": "2022-02-14T23:20:16Z",
       "side": 1,
       "message": "2022",
+      "range": {
+        "startLine": 1,
+        "startChar": 16,
+        "endLine": 1,
+        "endChar": 25
+      },
+      "revId": "767af67c7fd75eb40f2adbc9e3d9d13bfea06bba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "938e28ee_90400701",
+        "filename": "build/target/product/lineage_car_x86_64.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-14T23:25:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a486c30_53a56478",
       "range": {
         "startLine": 1,
         "startChar": 16,
