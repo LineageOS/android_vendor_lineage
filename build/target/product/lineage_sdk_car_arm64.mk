@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2018-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_arm64.mk)
+$(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
