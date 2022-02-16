@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d0fe7fbd_7a1194d9",
+        "filename": "build/target/product/lineage_car_x86_64.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-16T15:54:25Z",
+      "side": 1,
+      "message": "eh, if we do that we need to do mobile/tv - we totally could tho.",
+      "parentUuid": "d0655061_e19dabc1",
+      "revId": "f803cc7e44d60cd06b2ee2954a61b65a00f82f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ced24654_2d0166d7",
         "filename": "build/target/product/lineage_car_x86_64.mk",
         "patchSetId": 8
@@ -48,6 +66,30 @@
       "writtenOn": "2022-02-16T13:28:01Z",
       "side": 1,
       "message": "Most of this can be removed since it is already inherited from gsi_car_arm64.mk or it\u0027s dependencies. I think this whole file can be as simple as:\n\n$(call inherit-product, device/generic/car/gsi_car_arm64.mk)\n\ninclude vendor/lineage/build/target/product/lineage_generic_car_target.mk\n\nPRODUCT_NAME :\u003d lineage_car_x86_64",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 72
+      },
+      "revId": "f803cc7e44d60cd06b2ee2954a61b65a00f82f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08e80161_32f5162c",
+        "filename": "build/target/product/lineage_car_x86_64.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-16T15:54:25Z",
+      "side": 1,
+      "message": "k, will try.",
+      "parentUuid": "ced24654_2d0166d7",
       "range": {
         "startLine": 15,
         "startChar": 0,
