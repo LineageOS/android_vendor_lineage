@@ -1,6 +1,8 @@
 ifeq ($(WITH_GMS),true)
 ifeq ($(WITH_GMS_TV),true)
 $(call inherit-product, vendor/partner_gms-tv/products/gms.mk)
+else ifeq ($(WITH_GMS_CAR),true)
+$(call inherit-product, vendor/partner_gms-car/products/gms.mk)
 else ifeq ($(WITH_GMS_FI),true)
 $(call inherit-product, vendor/partner_gms/products/fi.mk)
 else ifeq ($(WITH_GMS_GO),true)
