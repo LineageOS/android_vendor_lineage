@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70d31a4a_014ec7b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29147
+      },
+      "writtenOn": "2022-02-21T13:58:33Z",
+      "side": 1,
+      "message": "gsi_product.mk uses copy instead of proper module causing the duplicate target file. Easiest might be to patch this file to remove it\n\n# PRODUCT_COPY_FILES +\u003d \\\n#     device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml",
+      "revId": "25d8c683a3bf3db53c6545917e85d4f8e278f36d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
