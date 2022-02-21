@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "899bb361_23e18f6e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-21T22:27:48Z",
+      "side": 1,
+      "message": "Compiles \u0026 boots, functionality remains largely the same except cleaner \u0026 we can remove BOARD_USES_QCOM_HARDWARE from every single tree.",
+      "revId": "d70eb2b957e71f1a8a0a75bd8781c770bad0a1b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
