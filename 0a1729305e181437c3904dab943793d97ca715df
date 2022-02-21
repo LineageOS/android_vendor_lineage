@@ -16,6 +16,24 @@
       "message": "i see no point in this?",
       "revId": "0a1729305e181437c3904dab943793d97ca715df",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1896cc1d_30a164be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-21T07:50:22Z",
+      "side": 1,
+      "message": "The point is that there was no point to begin with, this also applies to KONA/LITO/BENGAL/MSMNILE/ATOLL from the looks of it.",
+      "parentUuid": "b0e65059_38616cf7",
+      "revId": "0a1729305e181437c3904dab943793d97ca715df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
