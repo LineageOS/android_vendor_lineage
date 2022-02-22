@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "47583215_1b6eb49f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-22T19:56:29Z",
+      "side": 1,
+      "message": "mobile data doesn\u0027t work on car or normal GSI?",
+      "parentUuid": "6f270159_43101c0a",
+      "revId": "f803cc7e44d60cd06b2ee2954a61b65a00f82f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d0655061_e19dabc1",
