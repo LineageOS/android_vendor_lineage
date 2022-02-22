@@ -163,4 +163,14 @@
              2 - MODE_NIGHT_YES
     -->
     <integer name="config_defaultNightMode">2</integer>
+
+    <!-- Controls the navigation bar interaction mode:
+         0: 3 button mode (back, home, overview buttons)
+         1: 2 button mode (back, home buttons + swipe up for overview)
+         2: gestures only for back, home and overview -->
+    <integer name="config_navBarInteractionMode">2</integer>
+
+    <!-- Controls whether hints for gestural navigation are shown when the device is setup.
+         This should only be set when the device has gestural navigation enabled by default. -->
+    <bool name="config_showGesturalNavigationHints">true</bool>
 </resources>
