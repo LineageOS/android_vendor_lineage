@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a9448d3_448fb272",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-22T12:51:11Z",
+      "side": 1,
+      "message": "Removed the TV-specific overlays, and SUW shouldTM be ready for dark mode now.",
+      "revId": "0163a26c4e9798ec35b7fcfefd5e583fb15c6932",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
