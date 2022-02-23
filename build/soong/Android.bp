@@ -257,3 +257,20 @@ surfaceflinger_qcom_extensions {
         },
     },
 }
+
+soong_config_module_type {
+    name: "qcom_no_fm_firmware",
+    module_type: "cc_defaults",
+    config_namespace: "lineageQcomVars",
+    bool_variables: ["qcom_no_fm_firmware"],
+    properties: ["cppflags"],
+}
+
+qcom_no_fm_firmware {
+    name: "qcom_no_fm_firmware_defaults",
+    soong_config_variables: {
+        qcom_no_fm_firmware: {
+            cppflags: ["-DQCOM_NO_FM_FIRMWARE"],
+        },
+    },
+}
