@@ -16,6 +16,24 @@
       "message": "Um, but why? I could maybe see why this is necessary for devices that use something like Loki or Bump, but I don\u0027t see why we need this across the board.",
       "revId": "219819d82105d613746073e88205cd39093edcd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7c4dd88_63f4ecd7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-23T16:56:56Z",
+      "side": 1,
+      "message": "people frequently install magisk and other shit that invalidates the recovery-from-boot patch.\n\n\nThis allows it to still install a newer recovery image with modified /boot - a common case",
+      "parentUuid": "c272243a_990ee841",
+      "revId": "219819d82105d613746073e88205cd39093edcd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
