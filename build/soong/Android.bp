@@ -42,12 +42,22 @@ lineage_generator {
     ],
 }
 
-cc_library_headers {
-    name: "generated_kernel_headers",
+cc_defaults {
+    name: "generated_kernel_header_defaults",
     generated_headers: ["generated_kernel_includes"],
     export_generated_headers: ["generated_kernel_includes"],
     vendor_available: true,
     recovery_available: true,
+}
+
+cc_library_headers {
+    name: "generated_kernel_headers",
+    defaults: ["generated_kernel_header_defaults"],
+}
+
+cc_library_headers {
+    name: "qti_kernel_headers",
+    defaults: ["generated_kernel_header_defaults"],
 }
 
 // Target platform agnostic config modules
