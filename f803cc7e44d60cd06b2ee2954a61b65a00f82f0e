@@ -54,6 +54,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4835d5e5_bfc06f99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29147
+      },
+      "writtenOn": "2022-02-24T09:43:06Z",
+      "side": 1,
+      "message": "im just trying phone GSI at this point by updating lineage_arm64 to inherit from gsi_arm64. I\u0027ll try testing pure aosp gsi target, it worked on AOSP but havent tried from lineage source yet",
+      "parentUuid": "47583215_1b6eb49f",
+      "revId": "f803cc7e44d60cd06b2ee2954a61b65a00f82f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d0655061_e19dabc1",
