@@ -33,6 +33,24 @@
       "message": "Looks mostly ok, but I would still keep BOARD_USES_QCOM_HARDWARE flag usage, someone might still want to use AOSP HALs with blobs from Pixels (and maybe don\u0027t include qcom_boards.mk when the device doesn\u0027t set BOARD_USES_QCOM_HARDWARE)\n",
       "revId": "d70eb2b957e71f1a8a0a75bd8781c770bad0a1b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "921f4e84_929b6ed9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-25T14:06:56Z",
+      "side": 1,
+      "message": "A large part of this was to drop custom flag usage (BOARD_USES_QCOM_HARDWARE), so that kind of defeats the purpose. Are there any devices on LOS 19 that do this? Or LOS 18 for that matter.",
+      "parentUuid": "29dcbbfb_f0e0c525",
+      "revId": "d70eb2b957e71f1a8a0a75bd8781c770bad0a1b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
