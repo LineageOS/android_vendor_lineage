@@ -69,6 +69,24 @@
       "parentUuid": "921f4e84_929b6ed9",
       "revId": "d70eb2b957e71f1a8a0a75bd8781c770bad0a1b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "68ca0563_74b70f7c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-25T14:20:33Z",
+      "side": 1,
+      "message": "IMO we shouldn\u0027t be making commit decisions based on people who don\u0027t have trees in the org, but that\u0027s just my opinion. Can they not just use blobs from another device and use CAF HALs? They should generally be more up to date than whatever Pixels are using.",
+      "parentUuid": "07fc298d_e98c37d2",
+      "revId": "d70eb2b957e71f1a8a0a75bd8781c770bad0a1b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
