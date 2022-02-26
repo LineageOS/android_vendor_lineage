@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "236d7758_3d128bf5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-02-26T22:01:26Z",
+      "side": 1,
+      "message": "Also RT prio is now set via standard cgroups interfaces when required via .rc TaskProfiles",
+      "revId": "dccf8d63c2804cd48703ef5dfb564648d0fb5785",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
