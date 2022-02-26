@@ -16,6 +16,24 @@
       "message": "https://github.com/LineageOS/android_frameworks_native/commit/7e654fcc223f6d191528028b7781bb23254115d7\nis the only usecase.",
       "revId": "05413b930d1ca6084ecb3be0ab25c7d9b7df4100",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42876593_1c4997f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-02-26T18:50:20Z",
+      "side": 1,
+      "message": "and display HALs",
+      "parentUuid": "94ac4240_4224ebe9",
+      "revId": "05413b930d1ca6084ecb3be0ab25c7d9b7df4100",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
