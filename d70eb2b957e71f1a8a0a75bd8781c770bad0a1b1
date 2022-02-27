@@ -87,6 +87,23 @@
       "parentUuid": "07fc298d_e98c37d2",
       "revId": "d70eb2b957e71f1a8a0a75bd8781c770bad0a1b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8feb9dd9_968bdc1c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-27T05:09:59Z",
+      "side": 1,
+      "message": "I have no opinion on this tbh.\n\nI like the cleanup but am unsure about dropping the var.",
+      "revId": "d70eb2b957e71f1a8a0a75bd8781c770bad0a1b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
