@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea79682a_e0e2e0cd",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-02-27T23:22:42Z",
+      "side": 0,
+      "message": "Shouldn\u0027t remove this one",
+      "revId": "346541bbd3e9c08f680fb8f6d81db770b4ca7608",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
