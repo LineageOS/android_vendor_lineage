@@ -16,6 +16,24 @@
       "message": "Shouldn\u0027t remove this one",
       "revId": "346541bbd3e9c08f680fb8f6d81db770b4ca7608",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49d5488f_3b582a44",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-27T23:24:32Z",
+      "side": 0,
+      "message": "Why? Kind of ruins the point of the predefined list of SoCs in the MSM VIDC list if we\u0027re just going to add any random SoC to it.",
+      "parentUuid": "ea79682a_e0e2e0cd",
+      "revId": "346541bbd3e9c08f680fb8f6d81db770b4ca7608",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
