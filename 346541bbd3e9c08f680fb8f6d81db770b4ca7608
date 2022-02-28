@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "134618b9_9961309c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26777
+      },
+      "writtenOn": "2022-02-28T00:28:33Z",
+      "side": 1,
+      "message": "msm7k\u0027s graphics drivers doesn\u0027t even work properly on Oreo and up, should\u0027ve removed these a long time ago.",
+      "revId": "346541bbd3e9c08f680fb8f6d81db770b4ca7608",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
