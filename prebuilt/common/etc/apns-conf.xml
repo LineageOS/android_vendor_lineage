@@ -1351,9 +1351,9 @@
   <apn carrier="GIV Mobile" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="ROK mobile" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl,admin" />
   <apn carrier="UVA Wireless" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl,admin" />
-  <apn carrier="PTel" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
-  <apn carrier="Ready SIM" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
-  <apn carrier="Red Pocket" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" mmsproxy="216.155.165.50" mmsport="8080" type="default,mms,supl" />
+  <apn carrier="Consumer Cellular" carrier_id="10023" mcc="310" mnc="260" apn="wholesale" proxy="" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" mmsproxy="" mmsport="80" user="" password="" type="default,mms,supl,hipri" mvno_type="gid" mvno_match_data="2AC9" />
+  <apn carrier="Red Pocket Mobile" carrier_id="10011" mcc="310" mnc="260" apn="wholesale" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" mvno_type="gid" mvno_match_data="4201" />
+  <apn carrier="ZIP SIM" carrier_id="2071" mcc="310" mnc="260" apn="wholesale" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" mvno_type="gid" mvno_match_data="7031" />
   <apn carrier="Univision Mobile" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://uvm.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="554d" type="default,mms,supl" />
   <apn carrier="Brightspot" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://brtspt.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="GoSmart" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://gsmt.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
