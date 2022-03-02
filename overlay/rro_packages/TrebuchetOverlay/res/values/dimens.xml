@@ -15,6 +15,6 @@
 -->
 
 <resources>
-<!-- For Themed icon support -->
-    <dimen name="theme_icon_size">24dp</dimen>
+     <!-- For Themed icon support -->
+     <dimen name="theme_icon_size">24dp</dimen>
 </resources>
