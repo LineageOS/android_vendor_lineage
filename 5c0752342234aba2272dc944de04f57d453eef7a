@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85f86cc8_14f0b676",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29147
+      },
+      "writtenOn": "2022-03-03T14:05:01Z",
+      "side": 1,
+      "message": "There are lots if similar APNs for this carrier, how do I know if they need updating? I updated the one that was the closest match to my working phone.",
+      "revId": "5c0752342234aba2272dc944de04f57d453eef7a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
