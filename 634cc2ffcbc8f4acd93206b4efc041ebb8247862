@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6744481_0ce29007",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29147
+      },
+      "writtenOn": "2022-03-03T14:08:09Z",
+      "side": 1,
+      "message": "This only works when commenting out PRODUCT_COPY_FILES for apns-conf in device/generic/common/gsi_product.mk. Do you know any cleaner way to workaround this conflict? This repo isn\u0027t forked so kind of annoying to fork just to comment this out.",
+      "revId": "634cc2ffcbc8f4acd93206b4efc041ebb8247862",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
