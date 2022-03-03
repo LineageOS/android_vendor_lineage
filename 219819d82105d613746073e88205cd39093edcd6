@@ -69,6 +69,24 @@
       "parentUuid": "fbd42a2a_4e4c345a",
       "revId": "219819d82105d613746073e88205cd39093edcd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01d21b4f_ff9ae2db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-03T20:01:22Z",
+      "side": 1,
+      "message": "aware of intent, that implies to set it if it isn\u0027t already set - I was asking if in practice it actually overrides from device tree for inheritance order",
+      "parentUuid": "bf88d08c_fd09f28c",
+      "revId": "219819d82105d613746073e88205cd39093edcd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
