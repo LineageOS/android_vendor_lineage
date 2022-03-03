@@ -51,6 +51,24 @@
       "message": "Jarl - can this be overridden from device tree?",
       "revId": "219819d82105d613746073e88205cd39093edcd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf88d08c_fd09f28c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22856
+      },
+      "writtenOn": "2022-03-03T16:40:59Z",
+      "side": 1,
+      "message": "Yes, ?\u003d allows exactly that.",
+      "parentUuid": "fbd42a2a_4e4c345a",
+      "revId": "219819d82105d613746073e88205cd39093edcd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
