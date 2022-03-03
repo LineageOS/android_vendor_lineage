@@ -34,6 +34,23 @@
       "parentUuid": "c272243a_990ee841",
       "revId": "219819d82105d613746073e88205cd39093edcd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fbd42a2a_4e4c345a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-03T16:11:51Z",
+      "side": 1,
+      "message": "Jarl - can this be overridden from device tree?",
+      "revId": "219819d82105d613746073e88205cd39093edcd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
