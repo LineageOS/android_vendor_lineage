@@ -12,14 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_x86_64.mk)
-$(call inherit-product, build/target/product/gsi_release.mk)
+$(call inherit-product, device/generic/common/gsi_x86_64.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_target.mk
 
-TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
-# Enable mainline checking
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+TARGET_NO_KERNEL_OVERRIDE := true
 
 PRODUCT_NAME := lineage_x86_64
