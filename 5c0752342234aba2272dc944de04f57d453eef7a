@@ -34,6 +34,23 @@
       "parentUuid": "85f86cc8_14f0b676",
       "revId": "5c0752342234aba2272dc944de04f57d453eef7a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a87e7f3f_0496a0d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-04T22:30:59Z",
+      "side": 1,
+      "message": "Tom: leave a V+1 and we can merge",
+      "revId": "5c0752342234aba2272dc944de04f57d453eef7a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
