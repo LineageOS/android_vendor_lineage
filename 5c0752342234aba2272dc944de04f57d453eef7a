@@ -16,6 +16,24 @@
       "message": "There are lots if similar APNs for this carrier, how do I know if they need updating? I updated the one that was the closest match to my working phone.",
       "revId": "5c0752342234aba2272dc944de04f57d453eef7a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0dc3f51_e2637a3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-04T22:30:48Z",
+      "side": 1,
+      "message": "carrier info seems to think only this one.",
+      "parentUuid": "85f86cc8_14f0b676",
+      "revId": "5c0752342234aba2272dc944de04f57d453eef7a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
