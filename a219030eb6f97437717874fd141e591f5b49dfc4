@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e058da53_1fc493cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-03-06T08:22:49Z",
+      "side": 1,
+      "message": "All outstanding issues with SUW should be resolved now, GTG.",
+      "revId": "a219030eb6f97437717874fd141e591f5b49dfc4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
