@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70a9cc37_966a6e28",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-03-06T07:46:00Z",
+      "side": 1,
+      "message": "Compiles, verify RROs are generated at product/overlay/*__auto_generated_rro_product.apk, boots and verified a few of the resources overlaid are working (e.g. dark mode, gestures). This saves a ton of time on compile when making small overlay changes.",
+      "revId": "4e1e6dd47cc645c94b26c95f9e4aa7ce9ca6cf62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
