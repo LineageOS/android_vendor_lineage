@@ -46,6 +46,30 @@
       },
       "revId": "a5cd0a81d230db7d007665b0af56c14687fc41d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f1e3ce3_78fe5081",
+        "filename": "overlay/rro_packages/TrebuchetOverlay/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-07T19:00:21Z",
+      "side": 1,
+      "message": "Okay, I assumed it was the same partition as the actual packages that are overlayed.",
+      "parentUuid": "bcd54334_4afc0030",
+      "range": {
+        "startLine": 8,
+        "startChar": 4,
+        "endLine": 8,
+        "endChar": 20
+      },
+      "revId": "a5cd0a81d230db7d007665b0af56c14687fc41d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
