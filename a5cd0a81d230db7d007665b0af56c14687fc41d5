@@ -22,6 +22,30 @@
       },
       "revId": "a5cd0a81d230db7d007665b0af56c14687fc41d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcd54334_4afc0030",
+        "filename": "overlay/rro_packages/TrebuchetOverlay/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-03-07T18:46:19Z",
+      "side": 1,
+      "message": "No, all Lineage overlays go to /product (at least the auto generated ones).",
+      "parentUuid": "57243692_3e2beb6e",
+      "range": {
+        "startLine": 8,
+        "startChar": 4,
+        "endLine": 8,
+        "endChar": 20
+      },
+      "revId": "a5cd0a81d230db7d007665b0af56c14687fc41d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
