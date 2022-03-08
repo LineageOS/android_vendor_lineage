@@ -1,6 +1,6 @@
 <?xml version="2.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2021 The LineageOS Project
+     Copyright (C) 2021-2022 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
@@ -102,6 +102,10 @@
         <version>1.0</version>
         <interface>
             <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IHighTouchPollingRate</name>
             <instance>default</instance>
         </interface>
         <interface>
