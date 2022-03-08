@@ -1,6 +1,6 @@
 <?xml version="2.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2021 The LineageOS Project
+     Copyright (C) 2021-2022 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
@@ -69,30 +69,6 @@
         </interface>
         <interface>
             <name>ISunlightEnhancement</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <!-- Fingerprint -->
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
-        <version>1.0</version>
-        <interface>
-            <name>IFingerprintInscreen</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <!-- Power -->
-    <hal format="aidl" optional="true">
-        <name>vendor.lineage.power</name>
-        <interface>
-            <name>IPower</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.power</name>
-        <interface>
-            <name>ILineagePower</name>
             <instance>default</instance>
         </interface>
     </hal>
