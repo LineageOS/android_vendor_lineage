@@ -16,6 +16,23 @@
       "message": "I don\u0027t necessarily care if this get\u0027s merged, esp to a dead branch. It\u0027s just a (better) alternate to https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/318916",
       "revId": "8483332b0700ddafdbadbde7d8d742fe159afce9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7638ff5a_b3ff4ceb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24080
+      },
+      "writtenOn": "2022-03-11T17:56:23Z",
+      "side": 1,
+      "message": "Builds OK for sargo on Ubuntu 21.10",
+      "revId": "8483332b0700ddafdbadbde7d8d742fe159afce9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
