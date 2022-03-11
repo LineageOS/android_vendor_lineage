@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae5faf1d_ce95e170",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2022-03-11T17:00:14Z",
+      "side": 1,
+      "message": "I don\u0027t necessarily care if this get\u0027s merged, esp to a dead branch. It\u0027s just a (better) alternate to https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/318916",
+      "revId": "8483332b0700ddafdbadbde7d8d742fe159afce9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
