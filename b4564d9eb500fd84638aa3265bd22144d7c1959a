@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6967c9fa_c7224f9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-11T12:42:57Z",
+      "side": 1,
+      "message": "Not needed here -  https://github.com/LineageOS/android_vendor_lineage/commit/127800a6b36fffd1107decf492d4fe4e55bbe21f was only merged to lineage-19.0.",
+      "revId": "b4564d9eb500fd84638aa3265bd22144d7c1959a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
