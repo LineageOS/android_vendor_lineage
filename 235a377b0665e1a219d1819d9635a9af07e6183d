@@ -16,6 +16,23 @@
       "message": "Needed after https://github.com/LineageOS/android_vendor_lineage/commit/127800a6b36fffd1107decf492d4fe4e55bbe21f",
       "revId": "235a377b0665e1a219d1819d9635a9af07e6183d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de4d3a70_2646b2b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-11T12:45:26Z",
+      "side": 1,
+      "message": "Device tree change: https://review.lineageos.org/c/LineageOS/android_device_samsung_gts4lv/+/326177",
+      "revId": "235a377b0665e1a219d1819d9635a9af07e6183d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
