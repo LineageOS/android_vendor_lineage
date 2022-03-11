@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a0729d4_8feba2b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-11T12:30:16Z",
+      "side": 1,
+      "message": "Unless it can be built globally for all devices (or maybe those that inherit from full configs)?",
+      "revId": "cb1fb23513f8287fd0c68ac26ae3886d4321423e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
