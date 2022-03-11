@@ -137,6 +137,24 @@
       "message": "This avoids both the libc and openssl problems... https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/326186",
       "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45de4631_bfb574c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24481
+      },
+      "writtenOn": "2022-03-11T21:57:32Z",
+      "side": 1,
+      "message": "I Assume this expects the kernel to be compiled via clang ? i can give it a test but first i need to figure out how to do a 3.10 clang...",
+      "parentUuid": "13c2f3c1_c756c917",
+      "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
