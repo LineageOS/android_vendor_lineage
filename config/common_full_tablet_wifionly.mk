@@ -3,6 +3,7 @@ $(call inherit-product, vendor/lineage/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
+    androidx.window.extensions \
     LatinIME
 
 # Include Lineage LatinIME dictionaries
