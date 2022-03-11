@@ -50,6 +50,23 @@
       "message": "Build fine without error on Fedora 35 with glibc 2.34 on chagallwifi",
       "revId": "8483332b0700ddafdbadbde7d8d742fe159afce9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b798876_f92e7a33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24481
+      },
+      "writtenOn": "2022-03-11T22:08:18Z",
+      "side": 1,
+      "message": "Compiled on trelte on Kubuntu 21.10 without issues.",
+      "revId": "8483332b0700ddafdbadbde7d8d742fe159afce9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
