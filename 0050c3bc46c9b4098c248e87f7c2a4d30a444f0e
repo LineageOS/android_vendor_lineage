@@ -191,6 +191,23 @@
       "parentUuid": "4f14c2ef_f436f74d",
       "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2025516c_c454f039",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-12T14:42:27Z",
+      "side": 1,
+      "message": "Alternative merged, can be abandoned.",
+      "revId": "0050c3bc46c9b4098c248e87f7c2a4d30a444f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
