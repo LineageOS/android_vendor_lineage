@@ -185,16 +185,24 @@ def add_to_manifest(repositories, fallback_branch = None):
         lm = ElementTree.Element("manifest")
 
     for repository in repositories:
+        aosp = False
         repo_name = repository['repository']
+        # GitHub does not support slashes in repo names
+        if ("/" in repo_name):
+            aosp = True
         repo_target = repository['target_path']
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
-            print('LineageOS/%s already fetched to %s' % (repo_name, repo_target))
+            print('%s%s already fetched to %s' % ("AOSP: " if aosp else "LineageOS/", repo_name, repo_target))
             continue
 
-        print('Adding dependency: LineageOS/%s -> %s' % (repo_name, repo_target))
-        project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "LineageOS/%s" % repo_name })
+        print('Adding dependency: %s%s -> %s' % ("AOSP: " if aosp else "LineageOS/",repo_name, repo_target))
+        if aosp:
+            project = ElementTree.Element("project", attrib = { "path": repo_target,
+                "remote": "aosp", "name": "%s" % repo_name })
+        else:
+            project = ElementTree.Element("project", attrib = { "path": repo_target,
+                "remote": "github", "name": "LineageOS/%s" % repo_name })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
