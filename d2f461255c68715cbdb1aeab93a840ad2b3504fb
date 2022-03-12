@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9661f5bd_b6a4898c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2022-03-12T15:53:05Z",
+      "side": 1,
+      "message": "Monet is enabled by default for 12L:\nhttps://github.com/LineageOS/android_frameworks_base/blob/ce06d43e7de2426bb7589c794f439a874f4ed8c1/packages/SystemUI/res/values/flags.xml#L21",
+      "revId": "d2f461255c68715cbdb1aeab93a840ad2b3504fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
