@@ -72,7 +72,7 @@ ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
         else
             TARGET_VENDOR_RELEASE_BUILD_ID := $(shell date -u +%Y%m%d)
         endif
-        LINEAGE_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(LINEAGE_BUILD)
+        LINEAGE_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(LINEAGE_BUILD)
     endif
 endif
 endif
