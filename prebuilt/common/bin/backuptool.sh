@@ -6,7 +6,7 @@
 export C=/tmp/backupdir
 export SYSDEV="$(readlink -nf "$2")"
 export SYSFS="$3"
-export V=19.0
+export V=19.1
 
 export ADDOND_VERSION=3
 
