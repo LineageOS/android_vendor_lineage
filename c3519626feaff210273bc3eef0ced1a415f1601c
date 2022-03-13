@@ -16,6 +16,24 @@
       "message": "roll in the change to stop exposing minor version. from my perspective, maintenance version can die too",
       "revId": "c3519626feaff210273bc3eef0ced1a415f1601c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8281632_913b669c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-13T17:53:16Z",
+      "side": 1,
+      "message": "Will kill maintenance version in a follow up",
+      "parentUuid": "a4586331_9533077a",
+      "revId": "c3519626feaff210273bc3eef0ced1a415f1601c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
