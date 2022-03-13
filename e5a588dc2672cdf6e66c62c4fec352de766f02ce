@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f8fc151_887555cc",
+        "filename": "config/common_mini_phone.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-13T23:20:30Z",
+      "side": 1,
+      "message": "Maybe we should even drop it in mini_phone configs.",
+      "range": {
+        "startLine": 7,
+        "startChar": 4,
+        "endLine": 7,
+        "endChar": 35
+      },
+      "revId": "e5a588dc2672cdf6e66c62c4fec352de766f02ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
