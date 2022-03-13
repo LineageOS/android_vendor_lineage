@@ -3,7 +3,8 @@ $(call inherit-product, vendor/lineage/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
-    LatinIME
+    LatinIME \
+    NavigationBarMode2ButtonOverlay
 
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
