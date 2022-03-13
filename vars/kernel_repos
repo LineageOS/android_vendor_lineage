@@ -1,7 +1,7 @@
 # Usage: ${kernel_repos[@]}
 readonly kernel_repos=(
-  msm-4.9
-  msm-4.14
-  redbull
   barbet
+  redbull
+  msm-4.14
+  msm-4.9
 )
