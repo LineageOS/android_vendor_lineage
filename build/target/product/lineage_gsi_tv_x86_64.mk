@@ -16,7 +16,7 @@ $(call inherit-product, device/google/atv/products/aosp_tv_x86_64.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_tv_target.mk
 
-PRODUCT_NAME := lineage_tv_x86_64
+PRODUCT_NAME := lineage_gsi_tv_x86_64
 
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
 

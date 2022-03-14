@@ -21,10 +21,10 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_gsi_x86_64.mk \
     $(LOCAL_DIR)/lineage_gsi_car_arm64.mk \
     $(LOCAL_DIR)/lineage_gsi_car_x86_64.mk \
-    $(LOCAL_DIR)/lineage_tv_arm.mk \
-    $(LOCAL_DIR)/lineage_tv_arm64.mk \
-    $(LOCAL_DIR)/lineage_tv_x86.mk \
-    $(LOCAL_DIR)/lineage_tv_x86_64.mk \
+    $(LOCAL_DIR)/lineage_gsi_tv_arm.mk \
+    $(LOCAL_DIR)/lineage_gsi_tv_arm64.mk \
+    $(LOCAL_DIR)/lineage_gsi_tv_x86.mk \
+    $(LOCAL_DIR)/lineage_gsi_tv_x86_64.mk \
     $(LOCAL_DIR)/lineage_sdk_car_arm64.mk \
     $(LOCAL_DIR)/lineage_sdk_car_x86_64.mk \
     $(LOCAL_DIR)/lineage_sdk_phone_x86.mk \
@@ -39,10 +39,10 @@ COMMON_LUNCH_CHOICES := \
     lineage_gsi_x86_64-userdebug \
     lineage_gsi_car_arm64-userdebug \
     lineage_gsi_car_x86_64-userdebug \
-    lineage_tv_arm-userdebug \
-    lineage_tv_arm64-userdebug \
-    lineage_tv_x86-userdebug \
-    lineage_tv_x86_64-userdebug \
+    lineage_gsi_tv_arm-userdebug \
+    lineage_gsi_tv_arm64-userdebug \
+    lineage_gsi_tv_x86-userdebug \
+    lineage_gsi_tv_x86_64-userdebug \
     lineage_sdk_car_arm64-userdebug \
     lineage_sdk_car_x86_64-userdebug \
     lineage_sdk_phone_x86-userdebug \
