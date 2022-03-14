@@ -16,6 +16,24 @@
       "message": "For the cert bits to work it\u0027d have to be after keys.mk",
       "revId": "89c7f4db75d3a8c34309081cb7ef75fb93ec903d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b720f94f_c4b399de",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-03-14T01:44:00Z",
+      "side": 1,
+      "message": "Handled in 326683: config: Remove custom LINEAGE_DISPLAY_VERSION logic for !testkey | https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/326683",
+      "parentUuid": "02a979c0_b3bed023",
+      "revId": "89c7f4db75d3a8c34309081cb7ef75fb93ec903d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
