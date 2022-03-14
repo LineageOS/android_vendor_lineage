@@ -22,6 +22,30 @@
       },
       "revId": "5cda92aee96437ebc7ef6e998bfc4cff32e6f2b0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5fef3a6_29028ec0",
+        "filename": "config/version.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-03-14T16:19:24Z",
+      "side": 1,
+      "message": "Fixed in a different way",
+      "parentUuid": "61930051_48c98010",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 5
+      },
+      "revId": "5cda92aee96437ebc7ef6e998bfc4cff32e6f2b0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
