@@ -16,6 +16,23 @@
       "message": "Works without gapps",
       "revId": "32f063a5960bb932fdcdc697dd0c42f0fd987e9f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1aab0ffa_d707bd35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-03-15T16:27:58Z",
+      "side": 1,
+      "message": "This should be fine?",
+      "revId": "32f063a5960bb932fdcdc697dd0c42f0fd987e9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
