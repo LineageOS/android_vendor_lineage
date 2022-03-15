@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "702e4939_1377c160",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11866
+      },
+      "writtenOn": "2022-03-15T13:27:54Z",
+      "side": 1,
+      "message": "This breaks devices with physical buttons as even with navbar disabled bottom middle of the screen would act as multitasking ",
+      "revId": "7ee253ba0158b1ab1fffa4d17af47c59313b2ac1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
