@@ -33,6 +33,23 @@
       "message": "This should be fine?",
       "revId": "32f063a5960bb932fdcdc697dd0c42f0fd987e9f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "faafd436_500794ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-15T16:31:45Z",
+      "side": 1,
+      "message": "eh \"if we see issues, revert is one button away\" - and the overlay itself applies as intended",
+      "revId": "32f063a5960bb932fdcdc697dd0c42f0fd987e9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
