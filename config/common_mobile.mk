@@ -52,8 +52,7 @@ PRODUCT_PACKAGES += \
     IconShapeSquircleOverlay \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
-    IconShapeVesselOverlay \
-    LineageNavigationBarNoHint
+    IconShapeVesselOverlay
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

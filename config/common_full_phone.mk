@@ -4,6 +4,7 @@ $(call inherit-product, vendor/lineage/config/common_full.mk)
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME \
+    LineageNavigationBarNoHint \
     NavigationBarMode2ButtonOverlay
 
 # Include Lineage LatinIME dictionaries
