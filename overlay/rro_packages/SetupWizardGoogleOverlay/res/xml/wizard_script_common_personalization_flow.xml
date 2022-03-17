@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WizardScript wizard:version="2"
+  xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard">
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.OPA_OPT_IN;B.valuePropSkippable=true;end" id="opa" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.SUGGESTED_ACTIONS;end" id="suggested_actions" />
+</WizardScript>
