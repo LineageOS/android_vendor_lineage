@@ -16,6 +16,23 @@
       "message": "ugh, broken",
       "revId": "d8ea9a7417b32cff782c9bc7f38c722af23fd103",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4c91ddd_db15232b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-17T23:49:38Z",
+      "side": 1,
+      "message": "vendor/lineage/overlay/rro_packages/SetupWizardGoogleOverlay/res/xml/wizard_script_common_personalization_flow.xml:2: error: attribute com.google.android.setupwizard:version not found.\nvendor/lineage/overlay/rro_packages/SetupWizardGoogleOverlay/res/xml/wizard_script_common_personalization_flow.xml:4: error: attribute com.google.android.setupwizard:uri not found.\nvendor/lineage/overlay/rro_packages/SetupWizardGoogleOverlay/res/xml/wizard_script_common_personalization_flow.xml:5: error: attribute com.google.android.setupwizard:uri not found.",
+      "revId": "d8ea9a7417b32cff782c9bc7f38c722af23fd103",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
