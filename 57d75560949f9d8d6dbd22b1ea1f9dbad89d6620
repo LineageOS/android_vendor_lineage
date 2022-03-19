@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78129d97_5448aa96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29147
+      },
+      "writtenOn": "2022-03-19T17:45:27Z",
+      "side": 1,
+      "message": "constant crashes on non-car /vendor but thats expected",
+      "revId": "57d75560949f9d8d6dbd22b1ea1f9dbad89d6620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
