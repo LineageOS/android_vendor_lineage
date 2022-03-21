@@ -51,6 +51,24 @@
       "message": "Same type of resource here.",
       "revId": "905b4fdf90bf077b644d5f2a3a8487eee33def2f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7070a3b0_d850e9da",
+        "filename": "overlay/common/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-03-21T20:06:51Z",
+      "side": 1,
+      "message": "It\u0027s a reference to another resource in android, it\u0027s weird down there",
+      "parentUuid": "ff14a31d_c1284ef7",
+      "revId": "905b4fdf90bf077b644d5f2a3a8487eee33def2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
