@@ -717,7 +717,7 @@ function lineagerebase() {
 }
 
 function mka() {
-    m -j "$@"
+    m
 }
 
 function cmka() {
