@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad4768f5_1dbd2c89",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-03-21T19:59:45Z",
+      "side": 1,
+      "message": "Actually not so fast, I don\u0027t know if RRO handle this kind of resource",
+      "revId": "905b4fdf90bf077b644d5f2a3a8487eee33def2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
