@@ -16,6 +16,41 @@
       "message": "Actually not so fast, I don\u0027t know if RRO handle this kind of resource",
       "revId": "905b4fdf90bf077b644d5f2a3a8487eee33def2f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd9e7f39_afbf09cf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-21T20:02:03Z",
+      "side": 1,
+      "message": "Why not?",
+      "parentUuid": "ad4768f5_1dbd2c89",
+      "revId": "905b4fdf90bf077b644d5f2a3a8487eee33def2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff14a31d_c1284ef7",
+        "filename": "overlay/common/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-21T20:02:03Z",
+      "side": 1,
+      "message": "Same type of resource here.",
+      "revId": "905b4fdf90bf077b644d5f2a3a8487eee33def2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
