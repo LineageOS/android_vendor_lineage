@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "028f28d7_7a913b30",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 719,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-22T14:58:20Z",
+      "side": 1,
+      "message": "alias mka\u003dm",
+      "revId": "0eeb8a24cf7eacd35c9552f2b2ce3d8e565b6935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
