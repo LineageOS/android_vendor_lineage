@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c698c6b9_fe912013",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-22T19:02:41Z",
+      "side": 1,
+      "message": "some people are used to typing `mka`, so no.",
+      "parentUuid": "af029832_4da7a6f7",
+      "revId": "0eeb8a24cf7eacd35c9552f2b2ce3d8e565b6935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "028f28d7_7a913b30",
