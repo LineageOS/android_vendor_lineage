@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "883d8a1c_3b768030",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-23T22:27:05Z",
+      "side": 1,
+      "message": "Verified with:\n\n\u003e  adb shell pm dump com.google.android.gms | grep disabledComponents -A60\n\nLooks like the following are disabled by default (maybe not on Pixels?):\n\n\u003e  com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity\n\u003e  com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService\n\u003e  com.google.android.gms/com.google.android.gms.update.SystemUpdateService\n\nBut the following really gets disabled:\n\n\u003e  com.google.android.gms/com.google.android.gms.update.OtaSuggestionSummaryProvider",
+      "revId": "4dada7f7601bb9cf93a4eb5024aa1e6fc713a254",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
