@@ -158,6 +158,33 @@ surfaceflinger_udfps_lib {
 }
 
 soong_config_module_type {
+    name: "trust_usb_control",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: [
+        "target_trust_usb_control_path",
+        "target_trust_usb_control_enable",
+        "target_trust_usb_control_disable",
+    ],
+    properties: ["cppflags"],
+}
+
+trust_usb_control {
+    name: "trust_usb_control_defaults",
+    soong_config_variables: {
+        target_trust_usb_control_path: {
+            cppflags: ["-DUSB_CONTROL_PATH=\"%s\""],
+        },
+        target_trust_usb_control_enable: {
+            cppflags: ["-DUSB_CONTROL_ENABLE=\"%s\""],
+        },
+        target_trust_usb_control_disable: {
+            cppflags: ["-DUSB_CONTROL_DISABLE=\"%s\""],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "ignores_ftp_pptp_conntrack_failure_defaults",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
