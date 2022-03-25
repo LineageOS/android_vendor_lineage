@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5919b6b_602907f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-25T15:05:27Z",
+      "side": 1,
+      "message": "Please confirm if this is what\u0027s intended not to break scripts using it.",
+      "revId": "18f121f4fb761b073ea51682efa7330c01ff6c98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
