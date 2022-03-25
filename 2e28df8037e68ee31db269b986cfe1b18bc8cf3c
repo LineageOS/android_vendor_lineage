@@ -16,6 +16,24 @@
       "message": "At this point just delete mka as a whole. Make people get used to typing \u0027m\u0027. It\u0027s a 2-letter difference, it\u0027s not like people are going to need to retrain muscle memory for the following weeks.",
       "revId": "2e28df8037e68ee31db269b986cfe1b18bc8cf3c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc70bf39_5f7c7a3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-25T01:59:06Z",
+      "side": 1,
+      "message": "scripts - no point it killing it.",
+      "parentUuid": "42aa9a6d_6421df17",
+      "revId": "2e28df8037e68ee31db269b986cfe1b18bc8cf3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
