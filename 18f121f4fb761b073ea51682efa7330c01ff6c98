@@ -16,6 +16,23 @@
       "message": "Please confirm if this is what\u0027s intended not to break scripts using it.",
       "revId": "18f121f4fb761b073ea51682efa7330c01ff6c98",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24fa0020_ce0568f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-25T15:16:54Z",
+      "side": 1,
+      "message": "nolenjohnson@ODS-PROD:~$ cat bin/tools/generic/lineage-test \n#!/bin/bash\ncd ~/lineage-19\nsource \"build/envsetup.sh\"\nmka\n\nnolenjohnson@ODS-PROD:~$ lineage-test\n/home/nolenjohnson/bin/tools/generic/lineage-test: line 4: mka: command not found\n\nnolenjohnson@ODS-PROD:~$ repopick 327371\nApplying change number 327371...\n--\u003e Subject:       \"lineage: Make mka a function again\"\n--\u003e Project path:  vendor/lineage\n--\u003e Change number: 327371 (Patch Set 3)\n[\u0027git fetch github\u0027, u\u0027refs/changes/71/327371/3\u0027]\nremote: Enumerating objects: 4, done.\nremote: Counting objects: 100% (4/4), done.\nremote: Compressing objects: 100% (4/4), done.\nremote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0\nUnpacking objects: 100% (4/4), 9.08 KiB | 9.08 MiB/s, done.\nFrom https://github.com/LineageOS/android_vendor_lineage\n * branch              refs/changes/71/327371/3 -\u003e FETCH_HEAD\n[detached HEAD 5fd9e24b] lineage: Make mka a function again\n Date: Thu Mar 24 21:35:33 2022 -0400\n 1 file changed, 4 insertions(+), 2 deletions(-)\n\nnolenjohnson@ODS-PROD:~$ lineage-test\nbuild/make/core/soong_config.mk:199: warning: BOARD_PLAT_PUBLIC_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS instead.\nbuild/make/core/soong_config.mk:200: warning: BOARD_PLAT_PRIVATE_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS instead.\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nPLATFORM_VERSION_CODENAME\u003dREL\nPLATFORM_VERSION\u003d12\nTARGET_PRODUCT\u003daosp_arm\nTARGET_BUILD_VARIANT\u003deng\nTARGET_BUILD_TYPE\u003drelease\nTARGET_ARCH\u003darm\nTARGET_ARCH_VARIANT\u003darmv7-a-neon\nTARGET_CPU_VARIANT\u003dgeneric\nHOST_ARCH\u003dx86_64\nHOST_2ND_ARCH\u003dx86\nHOST_OS\u003dlinux\nHOST_OS_EXTRA\u003dLinux-5.4.0-104-generic-x86_64-Ubuntu-20.04.4-LTS\nHOST_CROSS_OS\u003dwindows\nHOST_CROSS_ARCH\u003dx86\nHOST_CROSS_2ND_ARCH\u003dx86_64\nHOST_BUILD_TYPE\u003drelease\nBUILD_ID\u003dSP2A.220305.012\nOUT_DIR\u003d/mnt/Data/out/lineage-19\nPRODUCT_SOONG_NAMESPACES\u003ddevice/generic/goldfish device/generic/goldfish-opengl hardware/google/camera hardware/google/camera/devices/EmulatedCamera device/generic/goldfish device/generic/goldfish-opengl\nWITH_GMS\u003dtrue\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n",
+      "revId": "18f121f4fb761b073ea51682efa7330c01ff6c98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
