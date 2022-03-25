@@ -52,6 +52,24 @@
       "parentUuid": "cc70bf39_5f7c7a3a",
       "revId": "2e28df8037e68ee31db269b986cfe1b18bc8cf3c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6a46993_dd2f81f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30722
+      },
+      "writtenOn": "2022-03-25T10:28:33Z",
+      "side": 1,
+      "message": "removing this function breaks the API and user scripts. As long as it\u0027s compatible there is no need to worry.",
+      "parentUuid": "c09884d2_eac2a304",
+      "revId": "2e28df8037e68ee31db269b986cfe1b18bc8cf3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
