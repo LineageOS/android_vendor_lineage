@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cb8ccfb_31f15302",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-03-25T05:10:32Z",
+      "side": 1,
+      "message": "Verified on foster_e_hdd building nvgpu modifications in fwn",
+      "revId": "9788aeb967e3812f9d356a7d7115042f013ff44e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
