@@ -16,6 +16,23 @@
       "message": "can\u0027t say much about a dictionary...",
       "revId": "0ac353e3219620530f168e6d0bea972c2f00ff91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f47d14c6_b37a70eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-03-28T16:25:07Z",
+      "side": 1,
+      "message": "Is the source license compatible with Apache?",
+      "revId": "0ac353e3219620530f168e6d0bea972c2f00ff91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
