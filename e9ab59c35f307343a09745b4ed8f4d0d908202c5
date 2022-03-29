@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4bd59959_b5b5687e",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-03-29T22:38:38Z",
+      "side": 1,
+      "message": "Might I suggest appending a $(TARGET_KERNEL_ADDITIONAL_CONFIG) here - that would keep existing makefiles working.",
+      "revId": "e9ab59c35f307343a09745b4ed8f4d0d908202c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
