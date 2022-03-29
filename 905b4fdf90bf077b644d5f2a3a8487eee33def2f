@@ -36,6 +36,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f59bdb66_d0343b47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-03-29T13:51:46Z",
+      "side": 1,
+      "message": "we will have to do something about lineagepart\u0027s system icons, It doesnt work well now, better if we make this device specific and dont blacklist anything globally.",
+      "revId": "905b4fdf90bf077b644d5f2a3a8487eee33def2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ff14a31d_c1284ef7",
