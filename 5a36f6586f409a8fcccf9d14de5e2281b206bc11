@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59d0fe0c_f6d68565",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29147
+      },
+      "writtenOn": "2022-03-30T14:15:06Z",
+      "side": 1,
+      "message": "This will also affect builds with GMS where setup wizard is replaced. Old behaviour only kicked in when Lineage SUW is installed",
+      "revId": "5a36f6586f409a8fcccf9d14de5e2281b206bc11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
