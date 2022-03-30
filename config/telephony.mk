@@ -19,3 +19,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
+
+# Disable mobile data by default
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.com.android.mobiledata=false
