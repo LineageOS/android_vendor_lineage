@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6bff37b_cf248e60",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-31T22:38:05Z",
+      "side": 1,
+      "message": "I think that this totally makes sense.",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 60
+      },
+      "revId": "6e5bea3e03853186abfec2cb8e2faa02ca689d1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a4ab4fe_6cdbabd0",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-31T22:38:05Z",
+      "side": 1,
+      "message": "Is it worth here tho?",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 12
+      },
+      "revId": "6e5bea3e03853186abfec2cb8e2faa02ca689d1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
