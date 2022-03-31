@@ -16,6 +16,24 @@
       "message": "Might I suggest appending a $(TARGET_KERNEL_ADDITIONAL_CONFIG) here - that would keep existing makefiles working.",
       "revId": "e9ab59c35f307343a09745b4ed8f4d0d908202c5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87969bcc_0c0698a1",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-03-31T09:43:27Z",
+      "side": 1,
+      "message": "I would prefer to not keep support for old flags, especially since we\u0027re in the middle of 18.1 -\u003e 19.1, maintainers can be forced to adapt to this logic",
+      "parentUuid": "4bd59959_b5b5687e",
+      "revId": "e9ab59c35f307343a09745b4ed8f4d0d908202c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
