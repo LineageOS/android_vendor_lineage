@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e64ee74_32541ae1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-04-01T02:23:22Z",
+      "side": 1,
+      "message": "left comment out, but still configurable if the user has a custom car GMS to build",
+      "revId": "d8bec6d021f90df2fa7729668807e6cd1b49f479",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
