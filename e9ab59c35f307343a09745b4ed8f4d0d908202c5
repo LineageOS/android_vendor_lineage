@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ac36d6c_dcdffbf1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-04-03T23:51:35Z",
+      "side": 1,
+      "message": "I agree with Seba - if we\u0027re only doing this for 19.1 anyway, may as well take the op to change the old flag.",
+      "revId": "e9ab59c35f307343a09745b4ed8f4d0d908202c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4bd59959_b5b5687e",
