@@ -26,5 +26,6 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
+        <item>com.google.android.gms/com.google.android.gms.update.phone.PopupDialog</item>
     </string-array>
 </resources>
