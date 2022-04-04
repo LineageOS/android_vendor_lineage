@@ -16,6 +16,23 @@
       "message": "missing HALs",
       "revId": "7c5c3c5e1e5e700d8565441441105d3c1e9c6a6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb5768cc_15cbf513",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2022-04-04T12:35:37Z",
+      "side": 1,
+      "message": "this is enabled by default in qcom split makefile and disabled for headless targets.",
+      "revId": "7c5c3c5e1e5e700d8565441441105d3c1e9c6a6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
