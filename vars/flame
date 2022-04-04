@@ -22,23 +22,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SQ1A.220205.002 # Feb 2022
-readonly build_id=SP2A.220305.012 # Mar 2022
+readonly prev_build_id=SP2A.220305.012 # Mar 2022
+readonly build_id=SP2A.220405.003 # Apr 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.0.0_r28"
-readonly aosp_tag="android-12.1.0_r1"
+readonly prev_aosp_tag="android-12.1.0_r1"
+readonly aosp_tag="android-12.1.0_r3"
 
-readonly prev_build_number="8010174"
-readonly build_number="8177914"
+readonly prev_build_number="8177914"
+readonly build_number="8210211"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/flame-sp2a.220305.012-factory-44625682.zip"
-readonly image_sha256="44625682d28344540bdd34e2dab678c794d7343208593942d75844ed0ebe20c9"
+readonly image_url="https://dl.google.com/dl/android/aosp/flame-sp2a.220405.003-factory-0138b220.zip"
+readonly image_sha256="0138b22040a493223b621fffe1f1d288d307c67524432805f674be05925c3580"
 
-readonly flash_url="https://flash.android.com/build/8177914?target=flame-user&signed"
+readonly flash_url="https://flash.android.com/build/8210211?target=flame-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/flame-ota-sp2a.220305.012-661704c8.zip"
-readonly ota_sha256="661704c8530e990a600ca054abb615d0d986955129db7802b2b0dbd3ac489ee5"
+readonly ota_url="https://dl.google.com/dl/android/aosp/flame-ota-sp2a.220405.003-4cfe45f7.zip"
+readonly ota_sha256="4cfe45f79eaf6914f618ed11e6943a612623c0a31c51bd02cd35324df37c1242"
 
-readonly security_patch="2022-03-05"
+readonly security_patch="2022-04-05"
