@@ -51,6 +51,24 @@
       "parentUuid": "4bd59959_b5b5687e",
       "revId": "e9ab59c35f307343a09745b4ed8f4d0d908202c5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf229cc9_96eae2cc",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-04-04T01:47:58Z",
+      "side": 1,
+      "message": "I agree - if we\u0027re gonna change it now is the time",
+      "parentUuid": "87969bcc_0c0698a1",
+      "revId": "e9ab59c35f307343a09745b4ed8f4d0d908202c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
