@@ -8,6 +8,7 @@ TRINKET := trinket #SM6125
 ATOLL := atoll #SM6250
 LAHAINA := lahaina #SM8350
 HOLI := holi #SM4350
+TARO := taro #SM8450
 
 UM_3_18_FAMILY := msm8996
 UM_4_4_FAMILY := msm8998
@@ -15,6 +16,7 @@ UM_4_9_FAMILY := sdm845 sdm710
 UM_4_14_FAMILY := $(MSMNILE) $(MSMSTEPPE) $(TRINKET) $(ATOLL)
 UM_4_19_FAMILY := $(KONA) $(LITO) $(BENGAL)
 UM_5_4_FAMILY := $(LAHAINA) $(HOLI)
+UM_5_10_FAMILY := $(TARO)
 
 ifeq (,$(TARGET_ENFORCES_QSSI))
 UM_3_18_FAMILY += msm8937 msm8953
@@ -32,7 +34,8 @@ UM_PLATFORMS := \
     $(UM_4_9_FAMILY) \
     $(UM_4_14_FAMILY) \
     $(UM_4_19_FAMILY) \
-    $(UM_5_4_FAMILY)
+    $(UM_5_4_FAMILY) \
+    $(UM_5_10_FAMILY)
 
 LEGACY_UM_PLATFORMS := \
     msm8937 msm8953 msm8996 \
@@ -48,7 +51,8 @@ QSSI_SUPPORTED_PLATFORMS := \
     $(UM_4_9_FAMILY) \
     $(UM_4_14_FAMILY) \
     $(UM_4_19_FAMILY) \
-    $(UM_5_4_FAMILY)
+    $(UM_5_4_FAMILY) \
+    $(UM_5_10_FAMILY)
 
 BOARD_USES_ADRENO := true
 
@@ -61,16 +65,24 @@ SOONG_CONFIG_qtidisplay += \
     headless \
     llvmsa \
     gralloc4 \
+    displayconfig_enabled \
     udfps \
-    default
+    default \
+    var1 \
+    var2 \
+    var3
 
 # Set default values for qtidisplay config
 SOONG_CONFIG_qtidisplay_drmpp ?= false
 SOONG_CONFIG_qtidisplay_headless ?= false
 SOONG_CONFIG_qtidisplay_llvmsa ?= false
 SOONG_CONFIG_qtidisplay_gralloc4 ?= false
+SOONG_CONFIG_qtidisplay_displayconfig_enabled ?= false
 SOONG_CONFIG_qtidisplay_udfps ?= false
 SOONG_CONFIG_qtidisplay_default ?= true
+SOONG_CONFIG_qtidisplay_var1 ?= false
+SOONG_CONFIG_qtidisplay_var2 ?= false
+SOONG_CONFIG_qtidisplay_var3 ?= false
 
 # Tell HALs that we're compiling an AOSP build with an in-line kernel
 TARGET_COMPILE_WITH_MSM_KERNEL := true
@@ -85,14 +97,19 @@ TARGET_USES_QCOM_MM_AUDIO := true
 TARGET_USES_COLOR_METADATA := true
 
 # Enable DRM PP driver on UM platforms that support it
-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_drmpp := true
     TARGET_USES_DRM_PP := true
 endif
 
 # Enable Gralloc4 on UM platforms that support it
-ifneq ($(filter $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(UM_5_4_FAMILY) $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_gralloc4 := true
+endif
+
+# Enable displayconfig on every UM platform
+ifeq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+    SOONG_CONFIG_qtidisplay_displayconfig_enabled := true
 endif
 
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
@@ -104,7 +121,7 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 13)
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 21)
 
 # Mark GRALLOC_USAGE_PRIVATE_HEIF_VIDEO as valid gralloc bit on UM platforms that support it
-ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY) $(UM_5_4_FAMILY) $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS += | (1 << 27)
 endif
 
@@ -134,6 +151,8 @@ else ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sm8250
 else ifneq ($(filter $(UM_5_4_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     QCOM_HARDWARE_VARIANT := sm8350
+else ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    QCOM_HARDWARE_VARIANT := sm8450
 else
     MSM_VIDC_TARGET_LIST := $(TARGET_BOARD_PLATFORM)
     QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
