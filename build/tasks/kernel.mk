@@ -22,8 +22,9 @@
 # These config vars are usually set in BoardConfig.mk:
 #
 #   TARGET_KERNEL_CONFIG               = List of kernel defconfigs, first one being the base one,
-#                                          while all the others are fragments that will be merged.
+#                                          while all the others are fragments that will be merged
 #                                          to main one in .config.
+#   TARGET_KERNEL_RECOVERY_CONFIG      = Same as above, but applicable to recovery kernel instead.
 #   TARGET_KERNEL_VARIANT_CONFIG       = Variant defconfig, optional
 #   TARGET_KERNEL_SELINUX_CONFIG       = SELinux defconfig, optional
 #
