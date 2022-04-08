@@ -34,6 +34,24 @@
       "parentUuid": "61b6c56e_5522c129",
       "revId": "4934e6f7a5e2d2c6ec2952db1ea37c765c7f03d0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27502547_d9fea7f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-04-08T06:59:48Z",
+      "side": 1,
+      "message": "Likely not.\nMaking this array empty would solve both problems too.",
+      "parentUuid": "49df6e11_2750c0ea",
+      "revId": "4934e6f7a5e2d2c6ec2952db1ea37c765c7f03d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
