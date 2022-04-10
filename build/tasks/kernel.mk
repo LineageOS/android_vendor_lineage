@@ -305,6 +305,22 @@ define make-kernel-config
 	$(call internal-make-kernel-target,$(1),savedefconfig)
 endef
 
+# Generate recovery kernel .config from a given defconfig
+# $(1): Output path (The value passed to O=)
+# $(2): The defconfig to process (just the filename, no need for full path to file)
+define make-recovery-kernel-config
+	$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(2))
+	$(hide) if [ ! -z "$(KERNEL_CONFIG_OVERRIDE)" ]; then \
+			echo "Overriding kernel config with '$(KERNEL_CONFIG_OVERRIDE)'"; \
+			echo $(KERNEL_CONFIG_OVERRIDE) >> $(1)/.config; \
+			$(call make-kernel-target,oldconfig); \
+		fi
+	# Create defconfig build artifact
+	$(call internal-make-kernel-target,$(1),savedefconfig)
+endef
+
+
+
 # Make a kernel target
 # $(1): The kernel target to build (eg. defconfig, modules, modules_install)
 define make-kernel-target
@@ -480,7 +496,7 @@ $(RECOVERY_KERNEL_OUT):
 
 $(RECOVERY_KERNEL_CONFIG): $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Recovery Kernel Config"
-	$(call make-kernel-config,$(RECOVERY_KERNEL_OUT),$(RECOVERY_DEFCONFIG))
+	$(call make-recovery-kernel-config,$(RECOVERY_KERNEL_OUT),$(RECOVERY_DEFCONFIG))
 
 $(TARGET_PREBUILT_INT_RECOVERY_KERNEL): $(RECOVERY_KERNEL_CONFIG) $(DEPMOD) $(DTC)
 	@echo "Building Recovery Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
