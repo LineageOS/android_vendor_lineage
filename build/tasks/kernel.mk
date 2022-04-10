@@ -484,6 +484,7 @@ $(RECOVERY_KERNEL_CONFIG): $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
 
 $(TARGET_PREBUILT_INT_RECOVERY_KERNEL): $(RECOVERY_KERNEL_CONFIG) $(DEPMOD) $(DTC)
 	@echo "Building Recovery Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
+	$(call make-recovery-kernel-target,olddefconfig)
 	$(call make-recovery-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
 
 
