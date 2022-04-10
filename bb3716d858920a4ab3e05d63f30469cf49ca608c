@@ -16,6 +16,41 @@
       "message": "Isn\u0027t it the correct behaviour...?",
       "revId": "bb3716d858920a4ab3e05d63f30469cf49ca608c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8014bef_f6b2c0f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2022-04-10T21:35:25Z",
+      "side": 1,
+      "message": "Default behavior calls the original func to enable LTO again...",
+      "parentUuid": "96428c77_20ba240f",
+      "revId": "bb3716d858920a4ab3e05d63f30469cf49ca608c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36f16a1c_08da09c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2022-04-10T21:35:25Z",
+      "side": 1,
+      "message": "Mine doesn\u0027t boot in recovery with LTO enabled somehow (reboots into bootloader right away), and disabling it apparently fixes it, if anyone is wondering why I need to have separate defconfigs w/ and w/o LTO.",
+      "revId": "bb3716d858920a4ab3e05d63f30469cf49ca608c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
