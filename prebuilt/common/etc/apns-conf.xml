@@ -3395,6 +3395,7 @@
   <apn carrier="Etisalat WAP" apn="etisalat" mmsc="http://10.71.131.7:38090" mmsproxy="10.71.130.29" mmsport="8080" mcc="602" mnc="03" authtype="1" type="*" />
   <apn carrier="Etisalat MMS" apn="etisalat" mmsc="http://10.71.131.7:38090" mmsproxy="10.71.130.29" mmsport="8080" mcc="602" mnc="03" type="mms" />
   <apn carrier="Etisalat internet" mcc="602" mnc="03" apn="Etisalat" mmsc="http://10.71.131.7:38090" mmsproxy="10.71.130.29" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="We Internet" mcc="602" mnc="04" apn="internet" type="default" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="Vodafone GPRS Internet" mcc="602" mnc="12" apn="internet.vodafone.net" proxy="" port="" user="internet" password="internet" authtype="2" type="default,supl" />
   <apn carrier="Mobilis" mcc="603" mnc="01" apn="internet" user="internet" password="internet" type="default,supl" />
   <apn carrier="Mobilis MMS" mcc="603" mnc="01" apn="mms" user="mms" password="mms" mmsc="http://172.025.049.009/servlets/mms" mmsproxy="172.25.49.2" mmsport="8080" type="mms" />
