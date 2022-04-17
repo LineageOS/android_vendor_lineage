@@ -353,6 +353,23 @@ camera_parameter_library {
     },
 }
 
+soong_config_module_type {
+    name: "powerhal_tap_to_wake",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: ["target_tap_to_wake_node"],
+    properties: ["cppflags"],
+}
+
+powerhal_tap_to_wake {
+    name: "powerhal_tap_to_wake_defaults",
+    soong_config_variables: {
+        target_tap_to_wake_node: {
+            cppflags: ["-DTAP_TO_WAKE_NODE=\"%s\""],
+        },
+    },
+}
+
 // NVIDIA specific config modules
 soong_config_module_type {
     name: "nvidia_enhancements",
