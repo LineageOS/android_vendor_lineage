@@ -60,6 +60,10 @@ SOONG_CONFIG_lineageQcomVars += \
     uses_qcom_bsp_legacy \
     uses_qti_camera_device
 
+SOONG_CONFIG_NAMESPACES += OPLUS_FINGERPRINT
+SOONG_CONFIG_OPLUS_FINGERPRINT += \
+    DIMLAYER_HBM_PATH
+
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_lineageQcomVars += \
@@ -104,6 +108,7 @@ SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_path := $(TARGET_TRUST_U
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_enable := $(TARGET_TRUST_USB_CONTROL_ENABLE)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_disable := $(TARGET_TRUST_USB_CONTROL_DISABLE)
 SOONG_CONFIG_lineageGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
+SOONG_CONFIG_OPLUS_FINGERPRINT_DIMLAYER_HBM_PATH := $(DIMLAYER_HBM_PATH)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_lineageQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
