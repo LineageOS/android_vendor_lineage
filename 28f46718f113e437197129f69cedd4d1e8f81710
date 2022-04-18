@@ -16,6 +16,23 @@
       "message": "This also need be moved somewhere else ?",
       "revId": "28f46718f113e437197129f69cedd4d1e8f81710",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63dbf803_ce5f0f26",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-04-18T12:56:37Z",
+      "side": 1,
+      "message": "Eh, just put:\n```\nSOONG_CONFIG_NAMESPACES +\u003d OPLUS_FINGERPRINT\nSOONG_CONFIG_OPLUS_FINGERPRINT :\u003d DIMLAYER_HBM_PATH\nSOONG_CONFIG_OPLUS_FINGERPRINT_DIMLAYER_HBM_PATH :\u003d /sys/something\n```\nin your boardconfig.",
+      "revId": "28f46718f113e437197129f69cedd4d1e8f81710",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
