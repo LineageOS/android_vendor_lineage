@@ -525,3 +525,37 @@ stagefright_qcom_legacy {
         },
     },
 }
+
+soong_config_module_type {
+    name: "uses_oplus_dimlayer_bl_en",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["uses_oplus_dimlayer_bl_en"],
+    properties: ["cppflags"],
+}
+
+uses_oplus_dimlayer_bl_en {
+    name: "uses_oplus_dimlayer_bl_en_defaults",
+    soong_config_variables: {
+        uses_oplus_dimlayer_bl_en: {
+            cppflags: ["-DTARGET_USES_OPLUS_DIMLAYER_BL_EN"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "uses_oplus_dimlayer_hbm",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["uses_oplus_dimlayer_hbm"],
+    properties: ["cppflags"],
+}
+
+uses_oplus_dimlayer_hbm {
+    name: "uses_oplus_dimlayer_hbm_defaults",
+    soong_config_variables: {
+        uses_oplus_dimlayer_hbm: {
+            cppflags: ["-DTARGET_USES_OPLUS_DIMLAYER_HBM"],
+        },
+    },
+}
