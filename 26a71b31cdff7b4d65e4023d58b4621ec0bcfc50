@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8ee534aa_9f19cb49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28423
+      },
+      "writtenOn": "2022-04-18T15:55:02Z",
+      "side": 1,
+      "message": "hi, WE was not very helpful when I first approached, so I pulled these from the dump of my device, but I did find a source (Apologies for the unhelpful Telecom vendor) \n\nhttps://www.te.eg/wps/portal/te/Personal/Help%20And%20Support%20l/FAQ/?1dmy\u0026urile\u003dwcm%3Apath%3A%2FTE%2FHelp%2FFAQ%2F#:~:text\u003dSettings%20%2D%3E%20Cellular%20%2D%3E%20Cellular%20Data%20Options%20%2D%3E%20Cellular%20Data%20Network%20%2D%3E%20PERSONAL%20HOTSPOT%20SETTINSG%20%2D%3E%20APN%3A%20Enter%20%E2%80%9CInternet.te.eg%E2%80%9D\n\nbut the exact apn wasn\u0027t the most stable, (internet not internet.te.eg), so i reached out to customer service, and they confirmed the one pulled from my device (POCO X4 Pro 5G, MiUi, 13.0.9 Global), they also confirmed that they do not have MMS",
+      "parentUuid": "87612193_b26a153b",
+      "revId": "26a71b31cdff7b4d65e4023d58b4621ec0bcfc50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "979ee9c6_5a191720",
         "filename": "prebuilt/common/etc/apns-conf.xml",
         "patchSetId": 1
@@ -60,6 +78,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5ad79e24_551ef2b4",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3398,
+      "author": {
+        "id": 28423
+      },
+      "writtenOn": "2022-04-18T15:55:02Z",
+      "side": 1,
+      "message": "I suppose it should be \"default,supl\" but when We confirmed the APN over phone, they made sure i set \"default\" not \"default,supl\", again though, just tested that and it works, these conclusions are a mix of what We Customer service \u0026 the stock apn config of my phone dictate",
+      "parentUuid": "979ee9c6_5a191720",
+      "range": {
+        "startLine": 3398,
+        "startChar": 75,
+        "endLine": 3398,
+        "endChar": 82
+      },
+      "revId": "26a71b31cdff7b4d65e4023d58b4621ec0bcfc50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9f1a9474_b6d2d112",
         "filename": "prebuilt/common/etc/apns-conf.xml",
         "patchSetId": 1
@@ -71,6 +113,30 @@
       "writtenOn": "2022-04-18T13:17:30Z",
       "side": 1,
       "message": "not sure where this is from?",
+      "range": {
+        "startLine": 3399,
+        "startChar": 2,
+        "endLine": 3399,
+        "endChar": 110
+      },
+      "revId": "26a71b31cdff7b4d65e4023d58b4621ec0bcfc50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e8dfcc33_615083ec",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3399,
+      "author": {
+        "id": 28423
+      },
+      "writtenOn": "2022-04-18T15:55:02Z",
+      "side": 1,
+      "message": "I just imported the apn\u0027s from the device, this was there, hence I imported it, I do doubt it is needed though since the device works fine without it",
+      "parentUuid": "9f1a9474_b6d2d112",
       "range": {
         "startLine": 3399,
         "startChar": 2,
