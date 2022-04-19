@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17c54120_5317a5a3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-04-19T20:35:00Z",
+      "side": 1,
+      "message": "For pick for now.\n\nBroken on partner_gms",
+      "revId": "05b9c562d976d07f155662235d20fe3889e06f11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
