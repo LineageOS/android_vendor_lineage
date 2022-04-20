@@ -16,6 +16,24 @@
       "message": "i think its still needed for this https://review.lineageos.org/c/LineageOS/android_packages_apps_Settings/+/322745",
       "revId": "010ff9ca3feb16b2a32e45de8a6e6a3f2b5c92c5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88ab1164_5c3281d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18590
+      },
+      "writtenOn": "2022-04-20T15:23:45Z",
+      "side": 1,
+      "message": "those are not reliant on stub packages, only overlays already present in system",
+      "parentUuid": "7e2ed126_e920b74d",
+      "revId": "010ff9ca3feb16b2a32e45de8a6e6a3f2b5c92c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
