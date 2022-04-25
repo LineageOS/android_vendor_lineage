@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40e2875e_4ba912f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-04-25T14:12:03Z",
+      "side": 1,
+      "message": "I don\u0027t think I\u0027m going to get that working on tablets, so maybe it\u0027s ok for now.",
+      "revId": "7908d8e7739e6a236116bad8c9c54eb6a6c2f45d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
