@@ -25,23 +25,23 @@ readonly needs_ota=true
 
 # Updated manually
 
-readonly prev_build_id=SP2A.220305.013.A3 # Mar 2022
-readonly build_id=SP2A.220405.004 # Apr 2022
+readonly prev_build_id=SP2A.220405.004 # Apr 2022
+readonly build_id=SP2A.220505.002 # May 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r2"
-readonly aosp_tag="android-12.1.0_r4"
+readonly prev_aosp_tag="android-12.1.0_r4"
+readonly aosp_tag="android-12.1.0_r5"
 
-readonly prev_build_number="8229987"
-readonly build_number="8233519"
+readonly prev_build_number="8233519"
+readonly build_number="8353555"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/raven-sp2a.220405.004-factory-bce807a6.zip"
-readonly image_sha256="bce807a636fe86eea129336c6f0ddbc026fa4b0af888bc25c92ffb3d007ba543"
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-sp2a.220505.002-factory-e1266508.zip"
+readonly image_sha256="e12665088bb6f6aa4d1064e95daf6f2f47fcf4f1ca4e7e93dcb772651cefb3a1"
 
-readonly flash_url="https://flash.android.com/build/8233519?target=raven-user&signed"
+readonly flash_url="https://flash.android.com/build/8353555?target=raven-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-sp2a.220405.004-197e873a.zip"
-readonly ota_sha256="197e873a43f21642bbf69f4f3e51d626cf9ece4fcd120a4c91e3df55e1a757b5"
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-sp2a.220505.002-fb9e19f9.zip"
+readonly ota_sha256="fb9e19f968082b392dcb35c9209fb0c1ba75fb1d5aa5915d255629a2aa240e94"
 
-readonly security_patch="2022-04-05"
+readonly security_patch="2022-05-05"

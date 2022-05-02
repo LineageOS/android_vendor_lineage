@@ -25,23 +25,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SP2A.220305.012 # Mar 2022
-readonly build_id=SP2A.220405.003 # Apr 2022
+readonly prev_build_id=SP2A.220405.003 # Apr 2022
+readonly build_id=SP2A.220505.002 # May 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r1"
-readonly aosp_tag="android-12.1.0_r3"
+readonly prev_aosp_tag="android-12.1.0_r3"
+readonly aosp_tag="android-12.1.0_r5"
 
-readonly prev_build_number="8177914"
-readonly build_number="8210211"
+readonly prev_build_number="8210211"
+readonly build_number="8353555"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bramble-sp2a.220405.003-factory-41421655.zip"
-readonly image_sha256="414216557c52a927c5ac9623910e60e478a9310ad7a7b1f0a21efc618f4fe2c5"
+readonly image_url="https://dl.google.com/dl/android/aosp/bramble-sp2a.220505.002-factory-dfbd855d.zip"
+readonly image_sha256="dfbd855da5b31ce2d48582b07a3420943ddba6eb6652017903f3ebada0080a60"
 
-readonly flash_url="https://flash.android.com/build/8210211?target=bramble-user&signed"
+readonly flash_url="https://flash.android.com/build/8353555?target=bramble-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-sp2a.220405.003-080c4046.zip"
-readonly ota_sha256="080c4046e7c63921c2df982888e37130fd2791bce3772d1cd57f57a41bb3866d"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-sp2a.220505.002-d22d3d1e.zip"
+readonly ota_sha256="d22d3d1e4e0704b4ba94702e229911c9712bfd703e58b15a56d93356a5a237ec"
 
-readonly security_patch="2022-04-05"
+readonly security_patch="2022-05-05"
