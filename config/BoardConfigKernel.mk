@@ -49,6 +49,8 @@
 #   TARGET_KERNEL_EXT_MODULES          = Optional, the external modules we are
 #                                          building. Defaults to empty
 #
+#   TARGET_KERNEL_INCLUDE_HOST_HEADERS = Include host headers, defaults to false
+#
 #   KERNEL_TOOLCHAIN_PREFIX            = Overrides TARGET_KERNEL_CROSS_COMPILE_PREFIX,
 #                                          Set this var in shell to override
 #                                          toolchain specified in BoardConfig.mk
