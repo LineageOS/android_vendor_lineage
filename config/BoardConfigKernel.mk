@@ -49,6 +49,8 @@
 #   TARGET_KERNEL_EXT_MODULES          = Optional, the external modules we are
 #                                          building. Defaults to empty
 #
+#   TARGET_KERNEL_INCLUDE_HOST_HEADERS = Include host headers, defaults to false
+#
 #   KERNEL_TOOLCHAIN_PREFIX            = Overrides TARGET_KERNEL_CROSS_COMPILE_PREFIX,
 #                                          Set this var in shell to override
 #                                          toolchain specified in BoardConfig.mk
@@ -104,8 +106,36 @@ endif
 # Clear this first to prevent accidental poisoning from env
 KERNEL_MAKE_FLAGS :=
 
+<<<<<<< HEAD   (9d239d August 2023 Security update)
 # Add back threads, ninja cuts this to $(getconf _NPROCESSORS_ONLN)/2
 KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
+=======
+# Add back threads, ninja cuts this to $(nproc)/2
+KERNEL_MAKE_FLAGS += -j$(shell prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin/nproc --all)
+
+ifeq ($(KERNEL_ARCH),arm)
+  # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
+  KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+endif
+
+ifeq ($(KERNEL_ARCH),arm64)
+  # Avoid "unsupported RELA relocation: 311" errors (R_AARCH64_ADR_GOT_PAGE)
+  KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+endif
+
+ifeq ($(HOST_OS),darwin)
+  KERNEL_MAKE_FLAGS += HOSTCFLAGS="-I$(BUILD_TOP)/external/elfutils/libelf -I/usr/local/opt/openssl/include -fuse-ld=lld" HOSTLDFLAGS="-L/usr/local/opt/openssl/lib -fuse-ld=lld"
+else
+  KERNEL_MAKE_FLAGS += HOSTCFLAGS="-fuse-ld=lld" HOSTLDFLAGS="-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld"
+  ifeq ($(TARGET_KERNEL_INCLUDE_HOST_HEADERS),true)
+    KERNEL_MAKE_FLAGS += CPATH="/usr/include:/usr/include/x86_64-linux-gnu"
+  endif
+endif
+
+ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
+  KERNEL_MAKE_FLAGS += $(TARGET_KERNEL_ADDITIONAL_FLAGS)
+endif
+>>>>>>> CHANGE (c55d4e config: BoardConfigKernel: Make host headers optional)
 
 TOOLS_PATH_OVERRIDE := \
     PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
