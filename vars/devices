@@ -11,6 +11,4 @@ readonly devices=(
   flame
   bonito
   sargo
-  crosshatch
-  blueline
 )
