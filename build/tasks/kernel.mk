@@ -445,6 +445,7 @@ $(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
 ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
+	rm -rf $(DTBO_OUT)
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtbo-target,dtbs)
 ifdef BOARD_DTBO_CFG
@@ -465,6 +466,7 @@ ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
 ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
 $(INSTALLED_DTBIMAGE_TARGET): $(DTC)
 	@echo "Building dtb.img"
+	rm -rf $(DTB_OUT)
 	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtb-target,dtbs)
 	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
