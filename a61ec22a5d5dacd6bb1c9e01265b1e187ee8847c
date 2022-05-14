@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0906269a_5fa68b33",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-05-14T15:34:12Z",
+      "side": 1,
+      "message": "that\u0027s not dialer but TeleService in packages/services/Telephony",
+      "range": {
+        "startLine": 47,
+        "startChar": 8,
+        "endLine": 47,
+        "endChar": 38
+      },
+      "revId": "a61ec22a5d5dacd6bb1c9e01265b1e187ee8847c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
