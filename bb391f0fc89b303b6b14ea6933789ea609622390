@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bef9e7a8_6a89b03d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-14T15:38:14Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_google_raviole/+/327547 ",
+      "revId": "bb391f0fc89b303b6b14ea6933789ea609622390",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
