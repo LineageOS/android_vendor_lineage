@@ -42,6 +42,11 @@
         <item>org.microg.nlp</item>
     </string-array>
 
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- TeleService -->
+        <item>com.android.phone</item>
+    </string-array>
+
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- Enable lockscreen rotation by default -->
