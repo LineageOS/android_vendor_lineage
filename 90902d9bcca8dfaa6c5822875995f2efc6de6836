@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e4cab6d_9da08996",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-14T17:54:16Z",
+      "side": 1,
+      "message": "Tested on alioth, no more phone service location indicator",
+      "revId": "90902d9bcca8dfaa6c5822875995f2efc6de6836",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
