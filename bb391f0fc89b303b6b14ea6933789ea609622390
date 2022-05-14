@@ -16,6 +16,23 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_google_raviole/+/327547 ",
       "revId": "bb391f0fc89b303b6b14ea6933789ea609622390",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2d29832_8983c4fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-05-14T15:39:39Z",
+      "side": 1,
+      "message": "should we also set this global\nhttps://review.lineageos.org/c/LineageOS/android_device_google_raviole/+/327547",
+      "revId": "bb391f0fc89b303b6b14ea6933789ea609622390",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
