@@ -33,6 +33,23 @@
       "message": "\u003e Patch Set 5:\n\u003e \n\u003e Before adding such a workaround, I\u0027d suggest what exactly is causing those location requests in the first place. Is it something we have control over (IOW, build from source), or is it some QCOM blob running under the telephony service UID?\n\nI think its related to this, not sure though. it was merged in May SP .\nhttps://github.com/LineageOS/android_frameworks_base/commit/abb41637225c95d5530bff275531a446be66a18c",
       "revId": "90902d9bcca8dfaa6c5822875995f2efc6de6836",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c15aede6_805fbf19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-05-17T14:30:49Z",
+      "side": 1,
+      "message": "\u003e Patch Set 5:\n\u003e \n\u003e I somewhat doubt it\u0027s related to that. That patch just removes location info from the service state broadcast for receivers not holding the location permission, it doesn\u0027t change anything regarding location requests.\n\nAfter reverting the commit in question, I have gotten zero location requests from Phone Services.",
+      "revId": "90902d9bcca8dfaa6c5822875995f2efc6de6836",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
