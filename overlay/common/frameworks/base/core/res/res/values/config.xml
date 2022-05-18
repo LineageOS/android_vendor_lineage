@@ -45,6 +45,8 @@
     <string-array name="config_locationExtraPackageNames" translatable="false">
         <!-- TeleService -->
         <item>com.android.phone</item>
+        <!-- CneApp -->
+        <item>com.qualcomm.qti.cne</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
