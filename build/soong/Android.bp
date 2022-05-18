@@ -390,27 +390,6 @@ librmnetctl_pre_uplink {
 }
 
 soong_config_module_type {
-    name: "qti_camera_device",
-    module_type: "cc_defaults",
-    config_namespace: "lineageQcomVars",
-    bool_variables: ["uses_qti_camera_device"],
-    properties: [
-        "cppflags",
-        "shared_libs",
-    ],
-}
-
-qti_camera_device {
-    name: "qti_camera_device_defaults",
-    soong_config_variables: {
-        uses_qti_camera_device: {
-            cppflags: ["-DQTI_CAMERA_DEVICE"],
-            shared_libs: ["vendor.qti.hardware.camera.device@1.0"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "extended_compress_format",
     module_type: "cc_defaults",
     config_namespace: "lineageQcomVars",
