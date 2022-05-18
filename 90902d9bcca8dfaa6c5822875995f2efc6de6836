@@ -67,6 +67,23 @@
       "message": "Interesting. On a first glance, that broadcast should only cause the location app op to be \u0027noted\u0027, not \u0027started\u0027 (the latter being the state recorded by the location indicator). I\u0027ll investigate this.",
       "revId": "90902d9bcca8dfaa6c5822875995f2efc6de6836",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc8445bd_3f6dbdb7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2022-05-18T07:53:26Z",
+      "side": 1,
+      "message": "Looks I was right about the broadcast only causes the location access to be \u0027noted\u0027, but it also looks like that\u0027s sufficient to show the location indicator (-\u003e https://github.com/LineageOS/android_frameworks_base/blob/lineage-19.1/packages/SystemUI/src/com/android/systemui/appops/AppOpsControllerImpl.java#L417).\n\nIt still feels somewhat weird to me that passive reception of a broadcast causes the same visual outcome in SystemUI as an active access (e.g. registering a location listener), but I guess that\u0027s the way it\u0027s intended to work, so this patch seems correct.",
+      "revId": "90902d9bcca8dfaa6c5822875995f2efc6de6836",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
