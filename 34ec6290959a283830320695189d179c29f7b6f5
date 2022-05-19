@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77e74624_2100a38f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-05-19T08:04:49Z",
+      "side": 1,
+      "message": "Not exactly sure if we should have device specific packages here, but...qcom is 9x% of the build roster...",
+      "revId": "34ec6290959a283830320695189d179c29f7b6f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
