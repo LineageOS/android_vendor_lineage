@@ -16,6 +16,24 @@
       "message": "Not exactly sure if we should have device specific packages here, but...qcom is 9x% of the build roster...",
       "revId": "34ec6290959a283830320695189d179c29f7b6f5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f756506d_5db5f21d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2022-05-19T08:18:50Z",
+      "side": 1,
+      "message": "Exactly that what I was thinking as well. Additionally, managing this overlay in some device / SoC vendor specific repo will be more error prone, I think, as we would need to track changes done here in that repo as well.",
+      "parentUuid": "77e74624_2100a38f",
+      "revId": "34ec6290959a283830320695189d179c29f7b6f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
