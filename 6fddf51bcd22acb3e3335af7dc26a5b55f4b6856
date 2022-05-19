@@ -16,6 +16,24 @@
       "message": "\u003c!-- CneApp --\u003e?",
       "revId": "6fddf51bcd22acb3e3335af7dc26a5b55f4b6856",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4d80fd8_945a6c54",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2022-05-19T07:07:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eb68f8f7_f4a79d3e",
+      "revId": "6fddf51bcd22acb3e3335af7dc26a5b55f4b6856",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
