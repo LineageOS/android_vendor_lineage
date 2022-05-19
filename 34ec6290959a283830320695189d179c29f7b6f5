@@ -52,6 +52,41 @@
       "parentUuid": "f756506d_5db5f21d",
       "revId": "34ec6290959a283830320695189d179c29f7b6f5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4cc4e834_360da505",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-05-19T14:02:53Z",
+      "side": 1,
+      "message": "From what I see config_locationVendorExtraPackageNames doesn\u0027t exist, we can\u0027t add new config overlays in fw/base due to symbol issues and we can\u0027t read SDK symbols in that part of the fw/base code, so I don\u0027t see how we would do this in another way.",
+      "parentUuid": "fd0ba299_f8193ae2",
+      "revId": "34ec6290959a283830320695189d179c29f7b6f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e2d266c_d59a4b76",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-05-19T14:02:53Z",
+      "side": 1,
+      "message": "Might as well add https://review.lineageos.org/c/LineageOS/android_device_google_raviole/+/327547 here too",
+      "revId": "34ec6290959a283830320695189d179c29f7b6f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
