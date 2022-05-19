@@ -34,6 +34,24 @@
       "parentUuid": "77e74624_2100a38f",
       "revId": "34ec6290959a283830320695189d179c29f7b6f5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd0ba299_f8193ae2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-05-19T09:01:39Z",
+      "side": 1,
+      "message": "Ideally we could extend fwb change to take into account config_locationVendorExtraPackageNames and maintain it in a common qcom repo.",
+      "parentUuid": "f756506d_5db5f21d",
+      "revId": "34ec6290959a283830320695189d179c29f7b6f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
