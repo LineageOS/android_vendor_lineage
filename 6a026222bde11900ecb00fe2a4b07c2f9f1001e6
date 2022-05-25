@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd9561b6_96bd420f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-05-25T22:22:20Z",
+      "side": 1,
+      "message": "Though, this is of note, as it has auto-handling/detection https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/326397",
+      "revId": "6a026222bde11900ecb00fe2a4b07c2f9f1001e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
