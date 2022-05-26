@@ -16,6 +16,23 @@
       "message": "Though, this is of note, as it has auto-handling/detection https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/326397",
       "revId": "6a026222bde11900ecb00fe2a4b07c2f9f1001e6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d74e27d5_e271a4cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-05-26T01:08:38Z",
+      "side": 1,
+      "message": "I have tested this with a test repository (basically another AOSP repo that\u0027s unrelated to what I am building) and it works (actually it worked before I submitted, but didn\u0027t bother to set code-review/verified).\n\nFor reference, I could a Pixel 3a XL \"bonito\" device repo in a dummy directory when building for the Pixel 3 \"blueline\"/\"crosshatch\" in a non-submitted lineage.dependencies.",
+      "revId": "6a026222bde11900ecb00fe2a4b07c2f9f1001e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
