@@ -10,6 +10,7 @@ Additional LineageOS functions:
 - lineageremote:   Add git remote for LineageOS Gerrit Review.
 - aospremote:      Add git remote for matching AOSP repository.
 - cafremote:       Add git remote for matching CodeAurora repository.
+- cloremote:       Add git remote for matching CodeLinaro repository.
 - githubremote:    Add git remote for LineageOS Github.
 - mka:             Builds using SCHED_BATCH on all processors.
 - mkap:            Builds the module(s) using mka and pushes them to the device.
@@ -316,6 +317,32 @@ function cafremote()
     fi
     git remote add caf https://source.codeaurora.org/quic/la/$PFX$PROJECT
     echo "Remote 'caf' created"
+}
+
+function cloremote()
+{
+    if ! git rev-parse --git-dir &> /dev/null
+    then
+        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
+        return 1
+    fi
+    git remote rm clo 2> /dev/null
+    local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+     # Google moved the repo location in Oreo
+    if [ $PROJECT = "build/make" ]
+    then
+        PROJECT="build"
+    fi
+    if [[ $PROJECT =~ "qcom/opensource" ]];
+    then
+        PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
+    fi
+    if (echo $PROJECT | grep -qv "^device")
+    then
+        local PFX="platform/"
+    fi
+    git remote add clo https://git.codelinaro.org/clo/la/$PFX$PROJECT
+    echo "Remote 'clo' created"
 }
 
 function githubremote()
