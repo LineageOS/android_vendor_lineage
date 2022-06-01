@@ -49,6 +49,8 @@
         <item>com.android.phone</item>
         <!-- CneApp -->
         <item>com.qualcomm.qti.cne</item>
+        <!-- ImsService -->
+        <item>com.shannon.imsservice</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
