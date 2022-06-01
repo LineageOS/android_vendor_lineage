@@ -45,6 +45,8 @@
     <string-array name="config_locationExtraPackageNames" translatable="false">
         <!-- TeleService -->
         <item>com.android.phone</item>
+        <!-- ImsService -->
+        <item>com.shannon.imsservice</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
