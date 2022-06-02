@@ -33,6 +33,23 @@
       "message": "I have tested this with a test repository (basically another AOSP repo that\u0027s unrelated to what I am building) and it works (actually it worked before I submitted, but didn\u0027t bother to set code-review/verified).\n\nFor reference, I could a Pixel 3a XL \"bonito\" device repo in a dummy directory when building for the Pixel 3 \"blueline\"/\"crosshatch\" in a non-submitted lineage.dependencies.",
       "revId": "6a026222bde11900ecb00fe2a4b07c2f9f1001e6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7eb01714_e60c5215",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-02T20:53:54Z",
+      "side": 1,
+      "message": "I think we will be going with the competing solution https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/326397 - it auto detects remote type based on prefix.",
+      "revId": "6a026222bde11900ecb00fe2a4b07c2f9f1001e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
