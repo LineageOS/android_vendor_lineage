@@ -393,7 +393,8 @@ if __name__ == '__main__':
 
         # Determine the maximum commits to check already picked changes
         check_picked_count = args.check_picked
-        branch_commits_count = int(subprocess.check_output(['git', 'rev-list', '--count', 'HEAD'], cwd=project_path))
+        max_count = '--max-count={0}'.format(check_picked_count + 1)
+        branch_commits_count = int(subprocess.check_output(['git', 'rev-list', '--count', max_count, 'HEAD'], cwd=project_path))
         if branch_commits_count <= check_picked_count:
             check_picked_count = branch_commits_count - 1
 
