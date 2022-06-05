@@ -16,6 +16,23 @@
       "message": "Tested it a little, working ok",
       "revId": "ae618da8e0dc07ba50fceae479164b34cb99ae26",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b44c60b7_2f0bb474",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-06-05T22:14:22Z",
+      "side": 1,
+      "message": "Add myself to the CC list.",
+      "revId": "ae618da8e0dc07ba50fceae479164b34cb99ae26",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
