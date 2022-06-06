@@ -25,26 +25,26 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_kernel_tag=android-12.1.0_r0.15 # Apr 2022
-readonly kernel_tag=android-12.1.0_r0.21 # May 2022
+readonly prev_kernel_tag=android-12.1.0_r0.21 # May 2022
+readonly kernel_tag=android-12.1.0_r0.27 # Jun 2022
 
-readonly prev_build_id=SP2A.220405.003 # Apr 2022
-readonly build_id=SP2A.220505.002 # May 2022
+readonly prev_build_id=SP2A.220505.002 # May 2022
+readonly build_id=SQ3A.220605.009.A1 # Jun 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r3"
-readonly aosp_tag="android-12.1.0_r5"
+readonly prev_aosp_tag="android-12.1.0_r5"
+readonly aosp_tag="android-12.1.0_r7"
 
-readonly prev_build_number="8210211"
-readonly build_number="8353555"
+readonly prev_build_number="8353555"
+readonly build_number="8643238"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/barbet-sp2a.220505.002-factory-78d755fd.zip"
-readonly image_sha256="78d755fd9ee779f253c6058173b8b8a1334962ceb11762298280ef5fc1f1a5e3"
+readonly image_url="https://dl.google.com/dl/android/aosp/barbet-sq3a.220605.009.a1-factory-f7c6bb71.zip"
+readonly image_sha256="f7c6bb714e5e20a4fa59e5cc1568fd7d8064d21fbdf528eff141ecbb2c552f71"
 
-readonly flash_url="https://flash.android.com/build/8353555?target=barbet-user&signed"
+readonly flash_url="https://flash.android.com/build/8643238?target=barbet-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-sp2a.220505.002-89da2c33.zip"
-readonly ota_sha256="89da2c3347269f61250288c901cc1012b7f775aaeca60c840dc34111adb020bd"
+readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-sq3a.220605.009.a1-575330e9.zip"
+readonly ota_sha256="575330e91f643cdf0b1fb73a62c52e393bf5d48fa7a0777de9a577a82995acd8"
 
-readonly security_patch="2022-05-05"
+readonly security_patch="2022-06-05"

@@ -23,23 +23,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SP2A.220405.003 # Apr 2022
-readonly build_id=SP2A.220505.002 # May 2022
+readonly prev_build_id=SP2A.220505.002 # May 2022
+readonly build_id=SQ3A.220605.009.A1 # Jun 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r3"
-readonly aosp_tag="android-12.1.0_r5"
+readonly prev_aosp_tag="android-12.1.0_r5"
+readonly aosp_tag="android-12.1.0_r7"
 
-readonly prev_build_number="8210211"
-readonly build_number="8353555"
+readonly prev_build_number="8353555"
+readonly build_number="8643238"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/sunfish-sp2a.220505.002-factory-2ca902f1.zip"
-readonly image_sha256="2ca902f10574fa45806c598e8cf10584aa2dc3dd0fb1cf75882e50426187221c"
+readonly image_url="https://dl.google.com/dl/android/aosp/sunfish-sq3a.220605.009.a1-factory-7d440084.zip"
+readonly image_sha256="7d440084e8672cab1f283bea308c69387883ab7af660de4cc018312f483d2daf"
 
-readonly flash_url="https://flash.android.com/build/8353555?target=sunfish-user&signed"
+readonly flash_url="https://flash.android.com/build/8643238?target=sunfish-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/sunfish-ota-sp2a.220505.002-88e5da83.zip"
-readonly ota_sha256="88e5da832a1d6452c0b9a81ff27274dc2a57c2116cf5eb4d1da4cb6877e0d4a6"
+readonly ota_url="https://dl.google.com/dl/android/aosp/sunfish-ota-sq3a.220605.009.a1-5b848a53.zip"
+readonly ota_sha256="5b848a530505c3e056ae954b7f3d38045081aff553921509075b8d32f399ee63"
 
-readonly security_patch="2022-05-05"
+readonly security_patch="2022-06-05"
