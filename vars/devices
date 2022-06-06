@@ -9,6 +9,4 @@ readonly devices=(
   sunfish
   coral
   flame
-  bonito
-  sargo
 )
