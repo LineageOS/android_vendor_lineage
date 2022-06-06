@@ -23,23 +23,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SP2A.220405.003 # Apr 2022
-readonly build_id=SP2A.220505.002 # May 2022
+readonly prev_build_id=SP2A.220505.002 # May 2022
+readonly build_id=SP2A.220505.006 # May 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r3"
-readonly aosp_tag="android-12.1.0_r5"
+readonly prev_aosp_tag="android-12.1.0_r5"
+readonly aosp_tag="android-12.1.0_r6"
 
-readonly prev_build_number="8210211"
-readonly build_number="8353555"
+readonly prev_build_number="8353555"
+readonly build_number="8561491"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/sargo-sp2a.220505.002-factory-f89f634a.zip"
-readonly image_sha256="f89f634ad7bcdb201997ef51f8a260afcd5bb6769144490ba307539cfe96b672"
+readonly image_url="https://dl.google.com/dl/android/aosp/sargo-sp2a.220505.006-factory-978959e1.zip"
+readonly image_sha256="978959e1abaa1d39d2a26eafeebae69e90f6a82bcc214750f40e73bebed24767"
 
-readonly flash_url="https://flash.android.com/build/8353555?target=sargo-user&signed"
+readonly flash_url="https://flash.android.com/build/8561491?target=sargo-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/sargo-ota-sp2a.220505.002-bbbac63a.zip"
-readonly ota_sha256="bbbac63a7b9a59da5d1195d91ff72df6519f2596ba02d980666c135bcadef25b"
+readonly ota_url="https://dl.google.com/dl/android/aosp/sargo-ota-sp2a.220505.006-361c0735.zip"
+readonly ota_sha256="361c0735ea2c641c083c1cdc45f56df9721b7600b755a2b535aafe8b4ff1e605"
 
 readonly security_patch="2022-05-05"
