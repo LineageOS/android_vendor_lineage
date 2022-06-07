@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5bdffcd7_50b1130a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2022-06-07T07:32:08Z",
+      "side": 1,
+      "message": "Need to test if it was fixed in https://github.com/Evolution-X/frameworks_base/commit/e2608c01b74ea2f7da1727d68abf1a07abe3f780",
+      "revId": "9c4fd99fb89cca91b5553e7f2616c3b0c74ee5ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
