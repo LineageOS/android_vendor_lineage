@@ -16,6 +16,24 @@
       "message": "That\u0027s how it\u0027s supposed to work, you want GMS to override platform overlays (and Lineage overlays).",
       "revId": "6bcb80faac0b1cbe8809300c6e170cda2d722d16",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9a34ee4_d60ec3bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-07T17:04:58Z",
+      "side": 1,
+      "message": "Well that breaks lineage overlays like location indicator exempt.",
+      "parentUuid": "4561410c_9b6b12e9",
+      "revId": "6bcb80faac0b1cbe8809300c6e170cda2d722d16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
