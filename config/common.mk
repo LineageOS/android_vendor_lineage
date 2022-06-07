@@ -199,6 +199,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/lineage/overlay/no-rro
 
 PRODUCT_PACKAGES += \
+    FrameworksOverlay \
+    SettingsProviderOverlay \
+    SystemUIOverlay \
     TrebuchetOverlay
 
 # Translations
