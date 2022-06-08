@@ -52,6 +52,24 @@
       "parentUuid": "f9a34ee4_d60ec3bf",
       "revId": "6bcb80faac0b1cbe8809300c6e170cda2d722d16",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "680234d6_be6f6ac1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-08T11:46:44Z",
+      "side": 1,
+      "message": "dunno.. it\u0027s broken with gapps",
+      "parentUuid": "54fa1ffd_40d9f206",
+      "revId": "6bcb80faac0b1cbe8809300c6e170cda2d722d16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
