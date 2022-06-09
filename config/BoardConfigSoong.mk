@@ -109,5 +109,7 @@ SOONG_CONFIG_lineageQcomVars_qcom_display_headers_namespace := $(QCOM_SOONG_NAME
 endif
 
 ifneq ($(TARGET_USE_QTI_BT_STACK),true)
+ifeq ($(BOARD_HAVE_BLUETOOTH),true)
 PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
+endif #BOARD_HAVE_BLUETOOTH
 endif #TARGET_USE_QTI_BT_STACK
