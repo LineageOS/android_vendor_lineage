@@ -16,6 +16,24 @@
       "message": "Will need manual rebase.\n\n3a will need to be dropped too, this month or next?",
       "revId": "66b6c56b8478687790e93b55d5d2e1856c3bccb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "412ff29f_f495290d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-09T16:47:32Z",
+      "side": 1,
+      "message": "Let\u0027s keep that one more month and we can drop it after July ASB",
+      "parentUuid": "102af495_b41f9f6f",
+      "revId": "66b6c56b8478687790e93b55d5d2e1856c3bccb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
