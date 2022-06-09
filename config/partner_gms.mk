@@ -1,6 +1,6 @@
 ifeq ($(WITH_GMS),true)
     # Special handling for Android TV
-    ifeq ($(WITH_GMS_TV),true)
+    ifeq ($(PRODUCT_IS_ATV),true)
         ifneq ($(GMS_MAKEFILE),)
             # Specify the GMS makefile you want to use, for example:
             #   - gms.mk            - default Android TV GMS
@@ -12,7 +12,7 @@ ifeq ($(WITH_GMS),true)
         endif
         $(call inherit-product, vendor/partner_gms-tv/products/mainline_modules.mk)
     # Special handling for Android Automotive
-    else ifeq ($(WITH_GMS_CAR),true)
+    else ifeq ($(PRODUCT_IS_AUTO),true)
         ifneq ($(GMS_MAKEFILE),)
             $(call inherit-product, vendor/partner_gms-car/products/$(GMS_MAKEFILE))
         else
