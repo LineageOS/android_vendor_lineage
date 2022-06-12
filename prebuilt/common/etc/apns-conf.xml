@@ -1358,7 +1358,6 @@
   <apn carrier="Univision Mobile" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://uvm.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="554d" type="default,mms,supl" />
   <apn carrier="GoSmart" carrier_id="2064" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://gsmt.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="4753" type="default,mms,supl" />
   <apn carrier="Straight Talk" mcc="310" mnc="260" apn="wap.tracfone" port="8080" mmsc="http://mms.tracfone.com" mvno_type="gid" mvno_match_data="deff" type="default,mms,supl" />
-  <apn carrier="Telcel America" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" mmsproxy="216.155.165.40" mmsport="8080" type="default,mms,supl" />
   <apn carrier="Tracfone" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" type="default,mms,supl" />
   <apn carrier="SIMPLE" carrier_id="2078" mcc="310" mnc="260" apn="simple" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" type="default,mms,supl,hipri,fota" mvno_type="gid" mvno_match_data="534D" />
   <apn carrier="SIMPLE IMS" carrier_id="2078" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" bearer_bitmask="14|20" mtu="1440" mvno_type="gid" mvno_match_data="534D" user_visible="false" />
