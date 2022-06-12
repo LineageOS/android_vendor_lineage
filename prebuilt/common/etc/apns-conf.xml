@@ -1350,7 +1350,6 @@
   <apn carrier="Family Mobile" carrier_id="2063" mcc="310" mnc="260" apn="web.omwtoday.com" port="" mmsc="http://wirelessfour.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="4D4B" type="default,mms,supl" />
   <apn carrier="Ultra" mcc="310" mnc="260" apn="Wholesale" port="8080" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="6132" type="default,mms,supl,dun" />
   <apn carrier="GIV Mobile" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
-  <apn carrier="ROK mobile" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl,admin" />
   <apn carrier="Consumer Cellular" carrier_id="10023" mcc="310" mnc="260" apn="wholesale" proxy="" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" mmsproxy="" mmsport="80" user="" password="" type="default,mms,supl,hipri" mvno_type="gid" mvno_match_data="2AC9" />
   <apn carrier="Red Pocket Mobile" carrier_id="10011" mcc="310" mnc="260" apn="wholesale" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" mvno_type="gid" mvno_match_data="4201" />
   <apn carrier="ZIP SIM" carrier_id="2071" mcc="310" mnc="260" apn="wholesale" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" mvno_type="gid" mvno_match_data="7031" />
