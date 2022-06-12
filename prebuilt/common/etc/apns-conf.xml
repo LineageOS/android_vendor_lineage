@@ -1345,8 +1345,6 @@
   <apn carrier="MetroPCS 260" mcc="310" mnc="260" apn="fast.metropcs.com" protocol="IPV6" roaming_protocol="IPV4V6" mvno_match_data="6D" mvno_type="gid" type="ia" mtu="1440" />
   <apn carrier="MetroPCS 260" mcc="310" mnc="260" apn="fast.metropcs.com" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" protocol="IPV6" roaming_protocol="IP" mvno_match_data="6D" mvno_type="gid" type="default,supl,mms,dun" mtu="1440" />
   <apn carrier="MetroPCS 260 IMS" mcc="310" mnc="260" apn="ims" type="ims" mvno_match_data="6D" mvno_type="gid" protocol="IPV6" roaming_protocol="IPV6" mtu="1440" />
-  <apn carrier="TFWAP" carrier_id="10001" mcc="310" mnc="260" apn="wap.tracfone" mmsc="http://TF.mmsmvno.com/mms/wapenc" type="default,mms,supl" protocol="IP" roaming_protocol="IP" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17" mvno_type="gid" mvno_match_data="DDFF" />
-  <apn carrier="TFWAP" carrier_id="10001" mcc="310" mnc="260" apn="wap.tracfone" mmsc="http://TF.mmsmvno.com/mms/wapenc" type="default,mms,supl" protocol="IP" roaming_protocol="IP" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17" mvno_type="gid" mvno_match_data="DEFF" />
   <apn carrier="Family Mobile" carrier_id="2063" mcc="310" mnc="260" apn="web.omwtoday.com" port="" mmsc="http://wirelessfour.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="4D4B" type="default,mms,supl" />
   <apn carrier="Ultra" mcc="310" mnc="260" apn="Wholesale" port="8080" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="6132" type="default,mms,supl,dun" />
   <apn carrier="GIV Mobile" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
@@ -1357,8 +1355,6 @@
   <apn carrier="ZIP SIM" carrier_id="2071" mcc="310" mnc="260" apn="wholesale" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" mvno_type="gid" mvno_match_data="7031" />
   <apn carrier="Univision Mobile" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://uvm.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="554d" type="default,mms,supl" />
   <apn carrier="GoSmart" carrier_id="2064" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://gsmt.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="4753" type="default,mms,supl" />
-  <apn carrier="Straight Talk" mcc="310" mnc="260" apn="wap.tracfone" port="8080" mmsc="http://mms.tracfone.com" mvno_type="gid" mvno_match_data="deff" type="default,mms,supl" />
-  <apn carrier="Tracfone" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" type="default,mms,supl" />
   <apn carrier="SIMPLE" carrier_id="2078" mcc="310" mnc="260" apn="simple" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" type="default,mms,supl,hipri,fota" mvno_type="gid" mvno_match_data="534D" />
   <apn carrier="SIMPLE IMS" carrier_id="2078" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" bearer_bitmask="14|20" mtu="1440" mvno_type="gid" mvno_match_data="534D" user_visible="false" />
   <apn carrier="SIMPLE IMS" carrier_id="2078" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" bearer_bitmask="18" mtu="1440" mvno_type="gid" mvno_match_data="534D" user_visible="false" />
@@ -1366,7 +1362,14 @@
   <apn carrier="Ting Data" carrier_id="2080" mcc="310" mnc="260" apn="wholesale" mvno_type="gid" mvno_match_data="6135" type="default,admin,fota,mms,supl,hipri,internet,dun" protocol="IPV6" roaming_protocol="IPV6" />
   <apn carrier="Ting MMS" carrier_id="2080" mcc="310" mnc="260" apn="wholesale" mvno_type="gid" mvno_match_data="6135" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" type="mms" protocol="IP" roaming_protocol="IP" />
   <apn carrier="US Mobile" mcc="310" mnc="260" apn="PWG" mmsc="http://pwg.mmsmvno.com/mms/wapenc" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="StraightTalk T-Mobile" mcc="310" mnc="260" apn="wap.tracfone" proxy="" port="8080" user="" password="" mmsc="http://mmsc.tracfone.com" type="default,supl,mms" />
+  <apn carrier="TFWAP" carrier_id="10001" mcc="310" mnc="260" apn="wap.tracfone" mmsc="http://TF.mmsmvno.com/mms/wapenc" type="default,mms,supl" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20" mvno_type="gid" mvno_match_data="DDFF" />
+  <apn carrier="TFWAP IMS" carrier_id="10001" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" bearer_bitmask="14|20" mtu="1440" mvno_type="gid" mvno_match_data="DDFF" user_visible="false"/>
+  <apn carrier="TFWAP IMS" carrier_id="10001" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" bearer_bitmask="18" mtu="1440" mvno_type="gid" mvno_match_data="DDFF" user_visible="false" />
+  <apn carrier="TFWAP" carrier_id="10001" mcc="310" mnc="260" apn="wap.tracfone" mmsc="http://TF.mmsmvno.com/mms/wapenc" type="default,mms,supl" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20" mvno_type="gid" mvno_match_data="DEFF" />
+  <apn carrier="TFWAP IMS" carrier_id="10001" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" bearer_bitmask="14|20" mtu="1440" mvno_type="gid" mvno_match_data="DEFF" user_visible="false" />
+  <apn carrier="TFWAP IMS" carrier_id="10001" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" bearer_bitmask="18" mtu="1440" mvno_type="gid" mvno_match_data="DEFF" user_visible="false" />
+  <apn carrier="service" carrier_id="10001" mcc="310" mnc="260" apn="service" mmsc="http://TF.mmsmvno.com/mms/wapenc" type="mms" bearer_bitmask="18" mvno_type="gid" mvno_match_data="DDFF" user_visible="false" />
+  <apn carrier="service" carrier_id="10001" mcc="310" mnc="260" apn="service" mmsc="http://TF.mmsmvno.com/mms/wapenc" type="mms" bearer_bitmask="18" mvno_type="gid" mvno_match_data="DEFF" user_visible="false" />
   <apn carrier="ATT Nextgenphone" carrier_id="2028" mcc="310" mnc="280" apn="nxtgenphone" mmsc="http://mmsc.mobile.att.net" mmsproxy="proxy.mobile.att.net" mmsport="80" type="default,mms,supl,hipri,fota" protocol="IPV4V6" roaming_protocol="IPV4V6" mtu="1410" mvno_type="gid" mvno_match_data="4102" user_editable="false" />
   <apn carrier="ATT WAP" carrier_id="2028" mcc="310" mnc="280" apn="wap.cingular" proxy="wireless.cingular.com" port="80" mmsc="http://mmsc.cingular.com/" mmsproxy="wireless.cingular.com" server="cingulargprs.com" type="default,mms,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="4102" user_editable="false" />
   <apn carrier="ATT IMS" carrier_id="2028" mcc="310" mnc="280" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="4102" user_visible="false" />
