@@ -1360,7 +1360,6 @@
   <apn carrier="Straight Talk" mcc="310" mnc="260" apn="wap.tracfone" port="8080" mmsc="http://mms.tracfone.com" mvno_type="gid" mvno_match_data="deff" type="default,mms,supl" />
   <apn carrier="Telcel America" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" mmsproxy="216.155.165.40" mmsport="8080" type="default,mms,supl" />
   <apn carrier="Tracfone" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" type="default,mms,supl" />
-  <apn carrier="CellOne WAP" mcc="310" mnc="260" apn="wap.cellular1.net" proxy="10.10.0.97" port="9201" mmsc="http://mms.cellular1.net/ecit/mms.php" mmsproxy="10.10.0.97" mmsport="9201" type="default,supl,mms" authtype="0" />
   <apn carrier="SIMPLE" carrier_id="2078" mcc="310" mnc="260" apn="simple" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" type="default,mms,supl,hipri,fota" mvno_type="gid" mvno_match_data="534D" />
   <apn carrier="SIMPLE IMS" carrier_id="2078" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" bearer_bitmask="14|20" mtu="1440" mvno_type="gid" mvno_match_data="534D" user_visible="false" />
   <apn carrier="SIMPLE IMS" carrier_id="2078" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" bearer_bitmask="18" mtu="1440" mvno_type="gid" mvno_match_data="534D" user_visible="false" />
@@ -1402,8 +1401,8 @@
   <apn carrier="nep.data" mcc="310" mnc="290" apn="nep.data" proxy="" port="" type="default,supl" authtype="0" />
   <apn carrier="nep.mms" mcc="310" mnc="290" apn="nep.mms" mmsc="http://mmsgprs.com" mmsproxy="" mmsport="80" type="mms" authtype="0" />
   <apn carrier="Truphone" mcc="310" mnc="300" apn="truphone.com" type="default,dun" />
-  <apn carrier="CellOne NEAZ" mcc="310" mnc="320" apn="isp.cellularoneaz.net" type="default,supl" authtype="0" />
-  <apn carrier="CellOne NEAZ MMS" mcc="310" mnc="320" apn="wap.c1csky.net" mmsc="http://mmsc.c1neaz.csky.us:6672" mmsproxy="209.4.229.94" mmsport="9401" type="mms" authtype="0" />
+  <apn carrier="Cellular One NEAZ ISP" carrier_id="1796" mcc="310" mnc="320" apn="isp.cellularoneaz.net" type="default,supl" />
+  <apn carrier="Cellular One ClearSky MMS" carrier_id="1796" mcc="310" mnc="320" apn="wap.c1csky.net" mmsc="http://mmsc.c1neaz.csky.us:6672" mmsproxy="209.4.229.94" mmsport="9401" type="mms" />
   <apn carrier="Westlink Internet" mcc="310" mnc="340" apn="internet.westlink" type="default,supl" authtype="0" />
   <apn carrier="Westlink MMS" mcc="310" mnc="340" apn="mms.westlink" mmsc="http://mms2.westlinkcom.com/mms/" mmsproxy="199.221.134.43" mmsport="8080" type="mms" authtype="0" />
   <apn carrier="ATT WAP" mcc="310" mnc="380" apn="wap.cingular" proxy="wireless.cingular.com" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="wireless.cingular.com" mmsport="80" type="default,mms" />
@@ -1472,8 +1471,8 @@
   <apn carrier="ATT WAP" mcc="310" mnc="560" apn="wap.cingular" proxy="wireless.cingular.com" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="wireless.cingular.com" mmsport="80" type="default,mms" />
   <apn carrier="ATT Broadband" mcc="310" mnc="560" apn="Broadband" type="default,supl" />
   <apn carrier="DobsonMMS" mcc="310" mnc="560" apn="dobsoncellularwap" proxy="" port="" user="" password="" mmsc="http://mmsc" mmsproxy="172.23.1.252" mmsport="8799" type="mms" />
-  <apn carrier="Cellular One Smartphone" mcc="310" mnc="570" apn="internet" type="default,supl" authtype="0" />
-  <apn carrier="Cellular One MMS" mcc="310" mnc="570" apn="clearsky" mmsc="http://mmsc.mtpcs.csky.us:6672/" mmsproxy="209.4.229.229" mmsport="9201" type="mms" authtype="0" />
+  <apn carrier="Cellular One Smartphone" carrier_id="1800" mcc="310" mnc="570" apn="internet" type="default,supl" />
+  <apn carrier="Cellular One MMS" carrier_id="1800" mcc="310" mnc="570" apn="clearsky" mmsc="http://mmsc.mtpcs.csky.us:6672/" mmsproxy="209.4.229.229" mmsport="9201" type="mms" />
   <apn carrier="ChinookMMS" mcc="310" mnc="570" apn="wapgw.chinookwireless.net" proxy="" port="" user="" password="" mmsc="http://mms.cellonenation.net/mms/" mmsproxy="204.181.155.195" mmsport="8080" type="mms" />
   <apn carrier="Inland Cellular" mcc="310" mnc="580" apn="internet.inland.com" type="default,mms" authtype="3" mmsc="http://mms.inland3g.com/inland/mms.php" />
   <apn carrier="Inland Cellular FOTA" mcc="310" mnc="580" apn="ota.inland.com" type="fota" bearer="14" protocol="IPV4V6" roaming_protocol="IPV4V6" />
