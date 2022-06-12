@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0be36b4c_f377d7de",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 462,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-06-12T11:19:29Z",
+      "side": 1,
+      "message": "The manual timestamp update shouldn\u0027t be necessary according to https://stackoverflow.com/questions/4440500/depending-on-directories-in-make , but not work for me w/o it for unknown reason",
+      "range": {
+        "startLine": 462,
+        "startChar": 1,
+        "endLine": 462,
+        "endChar": 29
+      },
+      "revId": "728f35453fbf64cb94537f40a7731cf43bc0f1be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "38fa0207_9561b880",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 477,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-06-12T11:19:29Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 477,
+        "startChar": 1,
+        "endLine": 477,
+        "endChar": 28
+      },
+      "revId": "728f35453fbf64cb94537f40a7731cf43bc0f1be",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
