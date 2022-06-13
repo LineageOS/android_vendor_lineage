@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "037ba759_2521b0fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-13T00:06:47Z",
+      "side": 1,
+      "message": "Stops defaulting to U.S. Mobile.",
+      "revId": "9d9d50d17778997533b9621c5788d492ea6ba15c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
