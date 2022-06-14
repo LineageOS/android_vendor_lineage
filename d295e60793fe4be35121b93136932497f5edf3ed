@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91f3e671_a90dc004",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-06-14T12:53:11Z",
+      "side": 1,
+      "message": "Since there\u0027s no regression here with user_editable, I\u0027m fine merging this patch.",
+      "revId": "d295e60793fe4be35121b93136932497f5edf3ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
