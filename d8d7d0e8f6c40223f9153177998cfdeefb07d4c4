@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "21d0f08c_2a8755b2",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1475,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-14T17:31:09Z",
+      "side": 1,
+      "message": "These should stay where they were, this file is sorted by mcc,mnc",
+      "range": {
+        "startLine": 1474,
+        "startChar": 0,
+        "endLine": 1475,
+        "endChar": 193
+      },
+      "revId": "d8d7d0e8f6c40223f9153177998cfdeefb07d4c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
