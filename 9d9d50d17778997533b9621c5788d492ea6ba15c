@@ -16,6 +16,40 @@
       "message": "Stops defaulting to U.S. Mobile.",
       "revId": "9d9d50d17778997533b9621c5788d492ea6ba15c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "10ae2a96_698f83d3",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1339,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-06-14T12:28:39Z",
+      "side": 1,
+      "message": "Maybe this should be a followup change, but having user_editable\u003d\"false\" is bad for us.",
+      "revId": "9d9d50d17778997533b9621c5788d492ea6ba15c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0bfb08e_959f6b5b",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1340,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-06-14T12:28:39Z",
+      "side": 1,
+      "message": "Same here",
+      "revId": "9d9d50d17778997533b9621c5788d492ea6ba15c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
