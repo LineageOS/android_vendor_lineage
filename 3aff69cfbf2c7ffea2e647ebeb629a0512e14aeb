@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8340c01e_a10818bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-06-14T20:46:40Z",
+      "side": 1,
+      "message": "Mike, Kevin, Luk,\n\nAny opinions on this? I\u0027m tempted to say we don\u0027t really care if Google (or anyone else) sets user_editable\u003d\"false\" as we maintain our own APN list...",
+      "revId": "3aff69cfbf2c7ffea2e647ebeb629a0512e14aeb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
