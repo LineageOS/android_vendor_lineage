@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5c70d3d_b9c1e792",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1339,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-14T12:33:33Z",
+      "side": 1,
+      "message": "Yeah I would do it in a follow up change, since this is just checking out the APNs to what Pixels have right now.",
+      "parentUuid": "10ae2a96_698f83d3",
+      "revId": "9d9d50d17778997533b9621c5788d492ea6ba15c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e0bfb08e_959f6b5b",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-06-14T12:28:39Z",
       "side": 1,
       "message": "Same here",
+      "revId": "9d9d50d17778997533b9621c5788d492ea6ba15c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ac8492a_d605df98",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1340,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-14T12:33:33Z",
+      "side": 1,
+      "message": "Ditto",
+      "parentUuid": "e0bfb08e_959f6b5b",
       "revId": "9d9d50d17778997533b9621c5788d492ea6ba15c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
