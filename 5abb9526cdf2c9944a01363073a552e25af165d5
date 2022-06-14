@@ -16,6 +16,24 @@
       "message": "It\u0027s Straight Talk, not Straigh Talk or StraighTalk",
       "revId": "5abb9526cdf2c9944a01363073a552e25af165d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4cd0768f_6d009dee",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-14T12:34:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "489993df_4b03cbb3",
+      "revId": "5abb9526cdf2c9944a01363073a552e25af165d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
