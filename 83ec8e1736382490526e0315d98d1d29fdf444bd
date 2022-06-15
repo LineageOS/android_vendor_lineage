@@ -75,6 +75,30 @@
       },
       "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4d9f360_080b252c",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-15T16:59:52Z",
+      "side": 1,
+      "message": "Why would you want to make it override-able by device trees? If their kernel source is 4.19 for example, it\u0027s not like they could say otherwise in device tree.",
+      "parentUuid": "b40960f8_e860878d",
+      "range": {
+        "startLine": 54,
+        "startChar": 22,
+        "endLine": 54,
+        "endChar": 24
+      },
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
