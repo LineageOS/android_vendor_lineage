@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21c49f79_d71ec826",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-15T16:18:27Z",
+      "side": 1,
+      "message": "Can\u0027t we force users to set it manually instead of parsing it from Makefile?",
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b40960f8_e860878d",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-15T16:18:27Z",
+      "side": 1,
+      "message": "?\u003d",
+      "range": {
+        "startLine": 54,
+        "startChar": 22,
+        "endLine": 54,
+        "endChar": 24
+      },
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
