@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8edb34ee_cfc66541",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1314,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-06-15T12:14:46Z",
+      "side": 1,
+      "message": "I\u0027d probably just leave the Sprint one alone for now...there might still be a few legacy stragglers and I\u0027d rather not break them. Good catch.",
+      "parentUuid": "4d1ecacd_51b117c2",
+      "range": {
+        "startLine": 1314,
+        "startChar": 0,
+        "endLine": 1314,
+        "endChar": 255
+      },
+      "revId": "ac096c92e7f84600262278796d5ee7669733d3d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9570343f_1af7d8ab",
         "filename": "prebuilt/common/etc/apns-conf.xml",
         "patchSetId": 2
