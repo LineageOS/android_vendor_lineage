@@ -22,6 +22,30 @@
       },
       "revId": "ac096c92e7f84600262278796d5ee7669733d3d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "909416e4_0f356152",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1657,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-15T13:41:25Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "ce3ec9e3_400915f1",
+      "range": {
+        "startLine": 1654,
+        "startChar": 0,
+        "endLine": 1657,
+        "endChar": 223
+      },
+      "revId": "ac096c92e7f84600262278796d5ee7669733d3d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
