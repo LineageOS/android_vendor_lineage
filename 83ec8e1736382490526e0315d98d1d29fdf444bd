@@ -99,6 +99,30 @@
       },
       "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea93a524_5a5fe464",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-15T17:50:37Z",
+      "side": 1,
+      "message": "I would like to not break prebuilt kernel support where possible",
+      "parentUuid": "b4d9f360_080b252c",
+      "range": {
+        "startLine": 54,
+        "startChar": 22,
+        "endLine": 54,
+        "endChar": 24
+      },
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
