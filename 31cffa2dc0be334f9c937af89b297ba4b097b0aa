@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "124713ae_bc705b94",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1350,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-06-15T04:33:06Z",
+      "side": 1,
+      "message": "duplicated",
+      "range": {
+        "startLine": 1350,
+        "startChar": 189,
+        "endLine": 1350,
+        "endChar": 227
+      },
+      "revId": "31cffa2dc0be334f9c937af89b297ba4b097b0aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
