@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c346022f_de21e4fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-15T16:33:17Z",
+      "side": 1,
+      "message": "Why do it manually when you can do it automatically?",
+      "parentUuid": "4514774d_46801d5f",
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b40960f8_e860878d",
