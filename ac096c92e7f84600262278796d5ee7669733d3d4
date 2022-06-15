@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce3ec9e3_400915f1",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1657,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-06-15T06:07:00Z",
+      "side": 0,
+      "message": "Are you sure this should be removed?\nTelcel America (was an mvno owned by tracfone using t-mobile network) was folded into Simple Mobile. They\u0027ve been gone since jan2021.\nBut Telcel (owned by América Móvil) is currently the largest carrier in Mexico that\u0027s still in service. There\u0027s even a few mvno\u0027s in mexico that use Telcel\u0027s network.",
+      "range": {
+        "startLine": 1654,
+        "startChar": 0,
+        "endLine": 1657,
+        "endChar": 223
+      },
+      "revId": "ac096c92e7f84600262278796d5ee7669733d3d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
