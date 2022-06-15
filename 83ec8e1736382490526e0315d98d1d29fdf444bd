@@ -123,6 +123,30 @@
       },
       "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7069154b_12703a7a",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-15T18:21:22Z",
+      "side": 1,
+      "message": "It doesn\u0027t break prebuilt kernel support, if the kernel version isn\u0027t defined then it will just not set the LLVM flags, which is fine considering the kernel is prebuilt.",
+      "parentUuid": "ea93a524_5a5fe464",
+      "range": {
+        "startLine": 54,
+        "startChar": 22,
+        "endLine": 54,
+        "endChar": 24
+      },
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
