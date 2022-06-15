@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d1ecacd_51b117c2",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1314,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-06-15T07:39:59Z",
+      "side": 1,
+      "message": "This is Ting\u0027s apn for sprint network. The carrier_id and mvno you added is for ting on t-mobile network. 310/260.\nI know sprint was merged into tmo, but i\u0027m wondering if this will result in some ill effect if anyone is using it. Probably not a big deal since ting may have already switch their sprint users over to tmo network.  But just wanted to note my concern here.\nUnfortunately it appears there is no separate carrier_id for ting on sprint, but there is for ting on dish, tmo, and at\u0026t.",
+      "range": {
+        "startLine": 1314,
+        "startChar": 0,
+        "endLine": 1314,
+        "endChar": 255
+      },
+      "revId": "ac096c92e7f84600262278796d5ee7669733d3d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9570343f_1af7d8ab",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1336,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-06-15T07:39:59Z",
+      "side": 1,
+      "message": "looks like we should use this one here:\nhttps://github.com/LineageOS/android_packages_providers_TelephonyProvider/blob/lineage-19.1/assets/latest_carrier_id/carrier_list.textpb#L11072-L11079",
+      "range": {
+        "startLine": 1336,
+        "startChar": 0,
+        "endLine": 1336,
+        "endChar": 275
+      },
+      "revId": "ac096c92e7f84600262278796d5ee7669733d3d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
