@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7031222b_87c27132",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-16T21:32:49Z",
+      "side": 1,
+      "message": "Document TARGET_KERNEL_VERSION here (make a generic description, not specific to LLVM stuff)",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 1
+      },
+      "revId": "d3b2ce76a5636e08bffe8b7edae5d9a782bb7c9e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
