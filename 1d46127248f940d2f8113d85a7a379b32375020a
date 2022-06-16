@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da570937_693c8b82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-16T16:53:00Z",
+      "side": 1,
+      "message": "Verified myself that this works on cheeseburger.\n\n\u0027/home/nexus/LOS/out/target/product/cheeseburger/obj/KERNEL_OBJ\u0027\nmake: Leaving directory \u0027/home/nexus/LOS/kernel/oneplus/msm8998\u0027\n[100% 4599/4599] Target boot image: out/target/product/cheeseburger/boot.img\n\n#### build completed successfully (04:18 (mm:ss)) ####\n",
+      "revId": "1d46127248f940d2f8113d85a7a379b32375020a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
