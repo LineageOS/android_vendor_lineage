@@ -111,14 +111,16 @@ KERNEL_MAKE_FLAGS :=
 # Add back threads, ninja cuts this to $(nproc)/2
 KERNEL_MAKE_FLAGS += -j$(shell prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin/nproc --all)
 
-ifeq ($(KERNEL_ARCH),arm)
-  # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
-  KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
-endif
+ifeq ($(TARGET_KERNEL_CLANG_COMPILE),false)
+  ifeq ($(KERNEL_ARCH),arm)
+    # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
+    KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+  endif
 
-ifeq ($(KERNEL_ARCH),arm64)
-  # Avoid "unsupported RELA relocation: 311" errors (R_AARCH64_ADR_GOT_PAGE)
-  KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+  ifeq ($(KERNEL_ARCH),arm64)
+    # Avoid "unsupported RELA relocation: 311" errors (R_AARCH64_ADR_GOT_PAGE)
+    KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+  endif
 endif
 
 ifeq ($(HOST_OS),darwin)
