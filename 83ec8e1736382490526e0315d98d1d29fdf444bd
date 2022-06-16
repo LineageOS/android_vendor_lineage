@@ -171,6 +171,30 @@
       },
       "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eff81f14_720d965f",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-16T14:57:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1769b6c_6a89c3fc",
+      "range": {
+        "startLine": 54,
+        "startChar": 22,
+        "endLine": 54,
+        "endChar": 24
+      },
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
