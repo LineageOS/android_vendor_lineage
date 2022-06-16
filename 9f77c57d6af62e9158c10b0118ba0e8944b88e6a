@@ -52,6 +52,24 @@
       "parentUuid": "bce02bb1_41aa6dd0",
       "revId": "9f77c57d6af62e9158c10b0118ba0e8944b88e6a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb768d30_61dd9772",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-16T14:55:04Z",
+      "side": 1,
+      "message": "Went with BOARD_KERNEL_SEPARATED_DTBO. Also removed DTC since only having DTC_EXT filled in works.",
+      "parentUuid": "fff02b71_79e567dd",
+      "revId": "9f77c57d6af62e9158c10b0118ba0e8944b88e6a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
