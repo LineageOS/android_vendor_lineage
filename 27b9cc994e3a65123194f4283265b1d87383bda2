@@ -22,6 +22,30 @@
       },
       "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b95be211_2b12f18b",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-16T08:08:49Z",
+      "side": 1,
+      "message": "Bestas was reporting that it broke boot on Pixel 5, which is 4.19 so I didn\u0027t include it. It\u0027s a whitelist since if it didn\u0027t work on 4.19, it shouldn\u0027t work on any lower versions, and we currently don\u0027t support 5.10 due to GKI stuff so whitelist for 5.4 made sense.",
+      "parentUuid": "7e53855f_563cf764",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 158,
+        "endChar": 5
+      },
+      "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
