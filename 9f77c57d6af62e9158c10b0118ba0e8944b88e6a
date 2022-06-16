@@ -16,6 +16,24 @@
       "message": "What\u0027s this actually doing?\n\n1. kernel already compiles and uses its shipped dtc by default: https://github.com/LineageOS/android_kernel_motorola_sm8250/blob/lineage-19.1/scripts/Makefile.lib#L302-L306\n2. DTC_EXT overrides DTC\n3. aosp dtc is preferred",
       "revId": "9f77c57d6af62e9158c10b0118ba0e8944b88e6a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bce02bb1_41aa6dd0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-16T08:10:59Z",
+      "side": 1,
+      "message": "It prefers DTC from kernel: DTC \u003d $(objtree)/scripts/dtc/dtc. I tested with warning guards in scripts/Makefile.lib. We don\u0027t have DTC_EXT exported anywhere, so it\u0027s going to use kernel\u0027s DTC every time. We can remove the DTC export probably, just have it here since wasn\u0027t sure if older kernels had a different check for using external DTC.",
+      "parentUuid": "2d1c1ff8_bd00d1ea",
+      "revId": "9f77c57d6af62e9158c10b0118ba0e8944b88e6a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
