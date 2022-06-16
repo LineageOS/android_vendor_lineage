@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e53855f_563cf764",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-06-16T07:06:55Z",
+      "side": 1,
+      "message": "google backported this to android 4.19 as well. Meanwhile it should be better to perform \u003e\u003d check rather than hardcoded whitelist",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 158,
+        "endChar": 5
+      },
+      "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
