@@ -142,6 +142,30 @@
       },
       "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "46e878ed_522129a9",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-16T08:39:43Z",
+      "side": 1,
+      "message": "1.) I wouldn\u0027t say this is rice, CLO enables some LLVM binutils in production by default on all 5.4 targets. Seeing as we compile the kernel with Clang, compiling with LLVM binutils is preferred.\n\n2.) Why are they not able to switch back? If they pass LLVM\u003d0, and LLVM_IAS\u003d0 in device tree to kernel flags, it will effectively revert this change only for them. This works out of the box on 5.4 CLO so I don\u0027t see how this would fail on any device either.",
+      "parentUuid": "e46736ef_c9be0772",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 158,
+        "endChar": 5
+      },
+      "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
