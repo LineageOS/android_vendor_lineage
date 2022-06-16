@@ -46,6 +46,30 @@
       },
       "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b818ff1_57a14371",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-06-16T08:18:16Z",
+      "side": 1,
+      "message": "It boots fine on nio, which is also 4.19. But given the fact that 5.4 being the only affected version, I think it\u0027s overkill to set this in common config.",
+      "parentUuid": "b95be211_2b12f18b",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 158,
+        "endChar": 5
+      },
+      "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
