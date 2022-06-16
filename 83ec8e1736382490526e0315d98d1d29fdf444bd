@@ -147,6 +147,30 @@
       },
       "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1769b6c_6a89c3fc",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-06-16T12:04:39Z",
+      "side": 1,
+      "message": "TARGET_KERNEL_VERSION isn\u0027t only used for this specific use case, take a look at how we manage something like msm8937/msm8953 3.18 vs 4.9 differences, and we\u0027ll now do the same for sdm660 with 4.4 vs 4.14 vs 4.19. We should not take for granted that kernel sources are always available. I would really appreciate if this could be overridden. If you use prebuilt kernel + you need to define TARGET_KERNEL_VERSION for something unrelated TARGET_KERNEL_VERSION would become empty.",
+      "parentUuid": "7069154b_12703a7a",
+      "range": {
+        "startLine": 54,
+        "startChar": 22,
+        "endLine": 54,
+        "endChar": 24
+      },
+      "revId": "83ec8e1736382490526e0315d98d1d29fdf444bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
