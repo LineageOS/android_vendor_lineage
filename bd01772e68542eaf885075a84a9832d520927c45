@@ -52,6 +52,24 @@
       "parentUuid": "dd3c04dd_19513aaa",
       "revId": "bd01772e68542eaf885075a84a9832d520927c45",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3611358_5fe3ee5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-06-16T16:39:28Z",
+      "side": 1,
+      "message": "Are there any 4.4 devices currently shipping?",
+      "parentUuid": "dbc7df24_56bec698",
+      "revId": "bd01772e68542eaf885075a84a9832d520927c45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
