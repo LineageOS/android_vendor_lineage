@@ -118,6 +118,30 @@
       },
       "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e46736ef_c9be0772",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-06-16T08:32:04Z",
+      "side": 1,
+      "message": "1. I think we do minimal customization in common config. If 5.4 does not boot with gnu binutils, this patch should really be done, but it\u0027s obviously not the case and more of ricing...\n\n2. Maintainers can easily enable llvm tools by one line of code in their device tree. However, they\u0027re unable to switch back to gnu binutils after this patch (even though no one would like to do this)",
+      "parentUuid": "fb1735bf_51f9c633",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 158,
+        "endChar": 5
+      },
+      "revId": "27b9cc994e3a65123194f4283265b1d87383bda2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
