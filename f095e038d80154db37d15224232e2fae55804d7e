@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c59a22a9_036af560",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-16T06:52:35Z",
+      "side": 1,
+      "message": "Breaks 4.9\n\nclang-12: error: unable to execute command: Executable \"ld\" doesn\u0027t exist!\nclang-12: error: linker command failed with exit code 1 (use -v to see invocation)",
+      "revId": "f095e038d80154db37d15224232e2fae55804d7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
