@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51117bb2_3b73c34a",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1360,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-06-17T23:08:44Z",
+      "side": 1,
+      "message": "was this one accidentally missed?  it\u0027s a TMO Straight Talk APN.",
+      "range": {
+        "startLine": 1360,
+        "startChar": 0,
+        "endLine": 1360,
+        "endChar": 178
+      },
+      "revId": "e46686cf06e88373e7c0794918d41180df5bd3b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
