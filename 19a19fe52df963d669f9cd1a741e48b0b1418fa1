@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "906a4ded_5e1b843e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2681
+      },
+      "writtenOn": "2022-06-17T15:49:49Z",
+      "side": 1,
+      "message": "Picked the whole chain, and now theres only TMobile and US Mobile options inthe APN list - and now my 5g data doesn\u0027t randomly stop because of random APN changes",
+      "revId": "19a19fe52df963d669f9cd1a741e48b0b1418fa1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
