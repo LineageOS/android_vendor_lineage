@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ea869bd_46f1f075",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-17T09:08:15Z",
+      "side": 1,
+      "message": "4 spaces to match above",
+      "range": {
+        "startLine": 268,
+        "startChar": 0,
+        "endLine": 268,
+        "endChar": 2
+      },
+      "revId": "5e32a7709391f8ecd8e66cb416cefc8ed5f68107",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
