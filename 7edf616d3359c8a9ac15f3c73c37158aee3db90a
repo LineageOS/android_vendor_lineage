@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "348dc663_ceefb23a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-06-18T21:31:38Z",
+      "side": 1,
+      "message": "Makes sense to remove user_editable.\nAnd the rest of the chain looks good too.",
+      "revId": "7edf616d3359c8a9ac15f3c73c37158aee3db90a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
