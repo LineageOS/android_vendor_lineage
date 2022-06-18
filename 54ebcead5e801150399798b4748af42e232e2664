@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "525a19c0_c8a1eea4",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1365,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-06-18T02:19:36Z",
+      "side": 1,
+      "message": "this apn can just be deleted. it\u0027s a duplicate of the \"Family Mobile\" apn above.\nalso, the mmsproxy is no longer needed in the family mobile apn.\nwe can do it in a separate commit, if you prefer.",
+      "range": {
+        "startLine": 1365,
+        "startChar": 0,
+        "endLine": 1365,
+        "endChar": 256
+      },
+      "revId": "54ebcead5e801150399798b4748af42e232e2664",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
