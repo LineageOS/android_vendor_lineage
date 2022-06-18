@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67e35c49_5455bb1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-06-18T08:24:22Z",
+      "side": 1,
+      "message": "Removed in https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/282509/",
+      "revId": "7522845ec5dbbd36680a502f3ab3fc04ebdc81f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
