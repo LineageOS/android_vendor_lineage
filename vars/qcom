@@ -1,0 +1,8 @@
+declare -A qcom_group_revision
+qcom_group_revision[qssi]=LA.QSSI.12.0.r1-07800.01-qssi.0
+qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02200-89xx.0
+qcom_group_revision[sdm660]=LA.UM.10.2.1.r1-03800-sdm660.0
+qcom_group_revision[sdm845]=LA.UM.10.3.r1-01700-sdm845.0
+qcom_group_revision[msmnile]=LA.UM.9.1.r1-11900.02-SMxxx0.QSSI12.0
+qcom_group_revision[kona]=LA.UM.9.12.r1-14300-SMxx50.0
+qcom_group_revision[lahaina]=LA.UM.9.14.r1-19800-LAHAINA.QSSI13.0
