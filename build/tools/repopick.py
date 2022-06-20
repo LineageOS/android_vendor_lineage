@@ -186,6 +186,8 @@ if __name__ == '__main__':
     parser.add_argument('-q', '--quiet', action='store_true', help='print as little as possible')
     parser.add_argument('-v', '--verbose', action='store_true', help='print extra information to aid in debug')
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
+    parser.add_argument('-F', '--fork-org', metavar='',
+                        help='Provide a profile or organization name forking our repository to apply patches to')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', metavar='', help='use the specified path for the change')
     parser.add_argument('-t', '--topic', metavar='', help='pick all commits from a specified topic')
@@ -359,7 +361,7 @@ if __name__ == '__main__':
                 args.quiet or print('ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.'.format(change, patchset))
 
     for item in mergables:
-        args.quiet or print('Applying change number {0}...'.format(item['id']))
+        args.quiet or print('\nApplying change number {0}...'.format(item['id']))
         # Check if change is open and exit if it's not, unless -f is specified
         if (item['status'] != 'OPEN' and item['status'] != 'NEW' and item['status'] != 'DRAFT') and not args.query:
             if args.force:
@@ -380,6 +382,11 @@ if __name__ == '__main__':
             local_branch = list(project_name_to_data[item['project']])[0]
             project_path = project_name_to_data[item['project']][local_branch]
             print('WARNING: Project {0} has a different branch ("{1}" != "{2}")'.format(project_path, local_branch, item['branch']))
+        elif args.fork_org:
+            forked_item=item['project'].replace('LineageOS', args.fork_org)
+            if item['project'].replace('LineageOS', args.fork_org) in project_name_to_data and item['branch'] in project_name_to_data[forked_item]:
+                project_path = project_name_to_data[forked_item][item['branch']]
+            print('WARNING: Applying patch on a forked project {0} instead of {1}'.format(forked_item, item['project']))
         elif args.ignore_missing:
             print('WARNING: Skipping {0} since there is no project directory for: {1}\n'.format(item['id'], item['project']))
             continue
