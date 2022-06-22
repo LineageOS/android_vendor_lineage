@@ -86,6 +86,7 @@ KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 RECOVERY_KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/RECOVERY_KERNEL_OBJ
 DTBO_OUT := $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ
 DTB_OUT := $(TARGET_OUT_INTERMEDIATES)/DTB_OBJ
+GEN_COMPDB := vendor/lineage/tools/kernel_gen_compile_commands.py
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
 KERNEL_RELEASE := $(KERNEL_OUT)/include/config/kernel.release
 RECOVERY_KERNEL_CONFIG := $(RECOVERY_KERNEL_OUT)/.config
@@ -433,6 +434,10 @@ kernelsavedefconfig: $(KERNEL_OUT)
 alldefconfig: $(KERNEL_OUT)
 	env KCONFIG_NOTIMESTAMP=true \
 		 $(call make-kernel-target,alldefconfig)
+
+.PHONY: kernelcompdb
+kernelcompdb: $(TARGET_PREBUILT_INT_KERNEL)
+	$(GEN_COMPDB) -d $(KERNEL_OUT) -o $(KERNEL_SRC)/compile_commands.json
 
 ifeq (true,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
 ifneq ($(BOARD_CUSTOM_DTBOIMG_MK),)
