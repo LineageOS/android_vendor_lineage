@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6da1e8f2_f11de658",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-06-22T08:00:16Z",
+      "side": 1,
+      "message": "verified working with 4.19",
+      "revId": "4dabefe7a19d0f21006be66240714ccf1d450b76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "813c5663_e33c76ae",
+        "filename": "tools/kernel_gen_compile_commands.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2022-06-22T08:00:16Z",
+      "side": 1,
+      "message": "might be a concern, relocate elsewhere?",
+      "range": {
+        "startLine": 2,
+        "startChar": 27,
+        "endLine": 2,
+        "endChar": 34
+      },
+      "revId": "4dabefe7a19d0f21006be66240714ccf1d450b76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
