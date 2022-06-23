@@ -174,7 +174,7 @@ KERNEL_MAKE_FLAGS += HOSTCXX=$(CLANG_PREBUILTS)/bin/clang++
 
 # Use LLVM's substitutes for GNU binutils if compatible kernel version.
 ifneq ($(TARGET_KERNEL_CLANG_COMPILE), false)
-ifneq (,$(filter 5.4 5.10, $(TARGET_KERNEL_VERSION)))
+ifneq (,$(filter 4.19 5.4 5.10, $(TARGET_KERNEL_VERSION)))
     KERNEL_MAKE_FLAGS += LLVM=1 LLVM_IAS=1
     KERNEL_MAKE_FLAGS += LD=$(CLANG_PREBUILTS)/bin/ld.lld
     KERNEL_MAKE_FLAGS += AR=$(CLANG_PREBUILTS)/bin/llvm-ar
