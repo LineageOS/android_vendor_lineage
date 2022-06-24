@@ -12,9 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/gsi_release.mk)
-$(call inherit-product, device/google/atv/products/atv_base.mk)
 $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
+
+# Artifact Path Exclusions
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/init/init.lineage.atv.rc \
+    system/etc/permissions/privapp-permissions-lineage-atv.xml \
+    system/priv-app/TVLauncherNoGMS/TVLauncherNoGMS.apk \
+    system/priv-app/TVRecommendationsNoGMS/TVRecommendationsNoGMS.apk
