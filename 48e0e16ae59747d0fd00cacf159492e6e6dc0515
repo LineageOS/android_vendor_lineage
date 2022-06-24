@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0de0ce0f_1690a958",
+        "filename": "build/target/product/lineage_generic_tv_target.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-24T15:33:27Z",
+      "side": 1,
+      "message": "we should move these to the repo\u0027s where they are introduced instead.",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 69
+      },
+      "revId": "48e0e16ae59747d0fd00cacf159492e6e6dc0515",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
