@@ -25,3 +25,6 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 # Overrides
 PRODUCT_NAME := lineage_sdk_tv_arm
 PRODUCT_MODEL := LineageOS Android TV SDK built for ARM
+
+PRODUCT_SDK_ADDON_NAME := lineage
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
