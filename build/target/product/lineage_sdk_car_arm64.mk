@@ -21,3 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_arm64.mk)
 TARGET_NO_KERNEL_OVERRIDE := true
 
 PRODUCT_NAME := lineage_sdk_car_arm64
+
+PRODUCT_SDK_ADDON_NAME := lineage
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
