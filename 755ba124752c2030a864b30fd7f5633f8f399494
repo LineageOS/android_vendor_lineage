@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2655d6be_16bf2a4e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15734
+      },
+      "writtenOn": "2022-06-24T11:30:00Z",
+      "side": 1,
+      "message": "Pretty sure we had removed that for a reason (324325). Has that been fixed?",
+      "revId": "755ba124752c2030a864b30fd7f5633f8f399494",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
