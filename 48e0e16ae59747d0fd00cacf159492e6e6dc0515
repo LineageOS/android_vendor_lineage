@@ -22,6 +22,30 @@
       },
       "revId": "48e0e16ae59747d0fd00cacf159492e6e6dc0515",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ac01be0_76928afb",
+        "filename": "build/target/product/lineage_generic_tv_target.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-24T16:05:13Z",
+      "side": 0,
+      "message": "its already here in this makefile. https://github.com/LineageOS/android_device_google_atv/blob/lineage-19.1/products/sdk_atv_armv7.mk#L24",
+      "parentUuid": "91840cbe_ee463eff",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 63
+      },
+      "revId": "48e0e16ae59747d0fd00cacf159492e6e6dc0515",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
