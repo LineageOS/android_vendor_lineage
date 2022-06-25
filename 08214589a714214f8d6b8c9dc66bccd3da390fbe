@@ -33,6 +33,23 @@
       "message": "Meh, put comment on the wrong commit. This is properly verified on foster.",
       "revId": "08214589a714214f8d6b8c9dc66bccd3da390fbe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5001e211_88fe66f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-06-25T00:14:18Z",
+      "side": 1,
+      "message": "To clarify, I only verified that the binaries build, I don\u0027t have ntfs media to test operation with.",
+      "revId": "08214589a714214f8d6b8c9dc66bccd3da390fbe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
