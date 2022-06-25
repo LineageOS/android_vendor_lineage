@@ -46,6 +46,30 @@
       },
       "revId": "48e0e16ae59747d0fd00cacf159492e6e6dc0515",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ccddb48_d4f8d44e",
+        "filename": "build/target/product/lineage_generic_tv_target.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-25T17:22:06Z",
+      "side": 0,
+      "message": "No tho?https://github.com/LineageOS/android_device_google_atv/blob/43d9939b241c99aa3ac3eb8f64a5be07a096f984/products/aosp_tv_arm.mk#L67 gsi_release is guarded in a way we won\u0027t hit\n\nand we include bits of atv_base (system, product, etc.) but not all the needed components of it?",
+      "parentUuid": "8ac01be0_76928afb",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 63
+      },
+      "revId": "48e0e16ae59747d0fd00cacf159492e6e6dc0515",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
