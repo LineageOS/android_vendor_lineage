@@ -70,6 +70,30 @@
       },
       "revId": "48e0e16ae59747d0fd00cacf159492e6e6dc0515",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4e49083_3f3f81c7",
+        "filename": "build/target/product/lineage_generic_tv_target.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-26T16:40:45Z",
+      "side": 0,
+      "message": "Kept atv_base.mk. Moved gsi_release.mk to atv arm and arm64. The x86, x86_64 tv gsi targets isn\u0027t building with it.\n\nbuild/make/core/tasks/sdk-addon.mk:82: error: overriding commands for target `out/host/linux-x86/obj/\nSDK_ADDON/lineage_intermediates/lineage-eng.althaf-linux-x86-img/\u0027, previously defined at build/make/\ncore/tasks/sdk-addon.mk:82",
+      "parentUuid": "6ccddb48_d4f8d44e",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 63
+      },
+      "revId": "48e0e16ae59747d0fd00cacf159492e6e6dc0515",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
