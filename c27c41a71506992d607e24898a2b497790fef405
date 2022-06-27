@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3365a2de_4358ba2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26672
+      },
+      "writtenOn": "2022-06-27T17:39:31Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e Those devices are matching stock.\n\u003e \n\u003e the only time AOD is on is when stock enables it.\n\nHappens in X00TD too. Seems like this happens from ScreenUndimDetector.java",
+      "revId": "c27c41a71506992d607e24898a2b497790fef405",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
