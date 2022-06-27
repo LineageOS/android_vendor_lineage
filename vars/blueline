@@ -23,23 +23,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SP1A.210812.016.A2 # Oct 2021
-readonly build_id=SP1A.210812.016.C1 # Feb 2022
+readonly prev_build_id=SP1A.210812.016.C1 # Feb 2022
+readonly build_id=SP1A.210812.016.C2 # Jun 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.0.0_r25"
-readonly aosp_tag="android-12.0.0_r31"
+readonly prev_aosp_tag="android-12.0.0_r31"
+readonly aosp_tag="android-12.0.0_r34"
 
-readonly prev_build_number="7979095"
-readonly build_number="8029091"
+readonly prev_build_number="8029091"
+readonly build_number="8618562"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c1-factory-b41403db.zip"
-readonly image_sha256="b41403db20d13a6f74f8a626ee9ee591adb435768d9f8cf40fefc8c294e2a4e1"
+readonly image_url="https://dl.google.com/dl/android/aosp/blueline-sp1a.210812.016.c2-factory-fa981d87.zip"
+readonly image_sha256="fa981d87b6b28a1996161accbb147f46fe29663bb2ce6cc13dc9e500cbc59c93"
 
-readonly flash_url="https://flash.android.com/build/8029091?target=blueline-user&signed"
+readonly flash_url="https://flash.android.com/build/8618562?target=blueline-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/blueline-ota-sp1a.210812.016.c1-e72a1a2b.zip"
-readonly ota_sha256="e72a1a2be3a2fbe211a430776c66810fc48ab222e9441bb48d27d6a8f3cf07c2"
+readonly ota_url="https://dl.google.com/dl/android/aosp/blueline-ota-sp1a.210812.016.c2-f7ebc6b3.zip"
+readonly ota_sha256="f7ebc6b326be1b40355d1e0b6d5e5e73204878f3419dec954eb35e1677bb12a1"
 
 readonly security_patch="2021-10-05"
