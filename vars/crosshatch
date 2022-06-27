@@ -23,23 +23,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SP1A.210812.016.A2 # Oct 2021
-readonly build_id=SP1A.210812.016.C1 # Feb 2022
+readonly prev_build_id=SP1A.210812.016.C1 # Feb 2022
+readonly build_id=SP1A.210812.016.C2 # Jun 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.0.0_r25"
-readonly aosp_tag="android-12.0.0_r31"
+readonly prev_aosp_tag="android-12.0.0_r31"
+readonly aosp_tag="android-12.0.0_r34"
 
-readonly prev_build_number="7979095"
-readonly build_number="8029091"
+readonly prev_build_number="8029091"
+readonly build_number="8618562"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/crosshatch-sp1a.210812.016.c1-factory-67ea87fc.zip"
-readonly image_sha256="67ea87fcce2c2ea5da0d0a12b476a4bb1844040bd7c20f17f105d13b253e2a62"
+readonly image_url="https://dl.google.com/dl/android/aosp/crosshatch-sp1a.210812.016.c2-factory-27f59137.zip"
+readonly image_sha256="27f59137f9802f6913f92d820bb0cbd80793f6e4a80c5f05e1242810903d4aea"
 
-readonly flash_url="https://flash.android.com/build/8029091?target=crosshatch-user&signed"
+readonly flash_url="https://flash.android.com/build/8618562?target=crosshatch-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/crosshatch-ota-sp1a.210812.016.c1-d3a532dd.zip"
-readonly ota_sha256="d3a532dd7e61bd1c038ccbf3de1a3063b210b7677c4814e63e5b2070688799a5"
+readonly ota_url="https://dl.google.com/dl/android/aosp/crosshatch-ota-sp1a.210812.016.c2-efea980d.zip"
+readonly ota_sha256="efea980d6359363b645435a5d077228d9a00d6f9772bf6adf16e26090dba0d53"
 
 readonly security_patch="2021-10-05"
