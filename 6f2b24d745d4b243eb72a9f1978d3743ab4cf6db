@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0e6cba7_b40b5ad7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-07-04T04:08:02Z",
+      "side": 1,
+      "message": "Thanks for your comment! Hopefully I addressed it.\n\nI am new to Android OS development, so sorry if I did the wrong thing.",
+      "revId": "6f2b24d745d4b243eb72a9f1978d3743ab4cf6db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
