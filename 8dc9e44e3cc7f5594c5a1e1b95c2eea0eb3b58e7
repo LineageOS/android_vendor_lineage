@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c482135b_10663e06",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-07-04T03:49:00Z",
+      "side": 1,
+      "message": "GKI kernel modules are supposed to be installed to $(KERNEL_MODULES_OUT)/lib/modules/$(TARGET_KERNEL_VERSION)-gki as per CLO",
+      "revId": "8dc9e44e3cc7f5594c5a1e1b95c2eea0eb3b58e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
