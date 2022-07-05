@@ -25,7 +25,10 @@
 #   TARGET_KERNEL_CONFIG               = List of kernel defconfigs, first one being the base one,
 #                                          while all the others are fragments that will be merged
 #                                          to main one in .config.
-#   TARGET_KERNEL_RECOVERY_CONFIG      = Same as above, but applicable to recovery kernel instead.
+#   TARGET_KERNEL_GKI_CONFIG           = Same as TARGET_KERNEL_CONFIG, but applicable to GKI
+#                                          kernel instead.
+#   TARGET_KERNEL_RECOVERY_CONFIG      = Same as TARGET_KERNEL_CONFIG, but applicable to recovery
+#                                          kernel instead.
 #   TARGET_KERNEL_VARIANT_CONFIG       = Variant defconfig, optional
 #   TARGET_KERNEL_SELINUX_CONFIG       = SELinux defconfig, optional
 #
@@ -77,6 +80,7 @@ ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
 # kernel configuration - mandatory
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
+KERNEL_GKI_DEFCONFIG := $(TARGET_KERNEL_GKI_CONFIG)
 RECOVERY_DEFCONFIG := $(TARGET_KERNEL_RECOVERY_CONFIG)
 VARIANT_DEFCONFIG := $(TARGET_KERNEL_VARIANT_CONFIG)
 SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
@@ -84,13 +88,17 @@ SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
 ## Internal variables
 DTC := $(HOST_OUT_EXECUTABLES)/dtc
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
+KERNEL_GKI_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_GKI_OBJ
 RECOVERY_KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/RECOVERY_KERNEL_OBJ
 DTBO_OUT := $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ
 DTB_OUT := $(TARGET_OUT_INTERMEDIATES)/DTB_OBJ
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
 KERNEL_RELEASE := $(KERNEL_OUT)/include/config/kernel.release
+KERNEL_GKI_CONFIG := $(KERNEL_GKI_OUT)/.config
+KERNEL_GKI_RELEASE := $(KERNEL_GKI_OUT)/include/config/kernel.release
 RECOVERY_KERNEL_CONFIG := $(RECOVERY_KERNEL_OUT)/.config
 RECOVERY_KERNEL_RELEASE := $(RECOVERY_KERNEL_OUT)/include/config/kernel.release
+INSTALLED_KERNEL_GKI_TARGET := $(PRODUCT_OUT)/kernel-gki
 
 ifeq ($(KERNEL_ARCH),x86_64)
 KERNEL_DEFCONFIG_ARCH := x86
@@ -99,10 +107,13 @@ KERNEL_DEFCONFIG_ARCH := $(KERNEL_ARCH)
 endif
 KERNEL_DEFCONFIG_DIR := $(KERNEL_SRC)/arch/$(KERNEL_DEFCONFIG_ARCH)/configs
 ALL_KERNEL_DEFCONFIG_SRCS := $(foreach config,$(KERNEL_DEFCONFIG),$(KERNEL_DEFCONFIG_DIR)/$(config))
+ALL_KERNEL_GKI_DEFCONFIG_SRCS := $(foreach config,$(KERNEL_GKI_DEFCONFIG),$(KERNEL_DEFCONFIG_DIR)/$(config))
 ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS := $(foreach config,$(RECOVERY_DEFCONFIG),$(KERNEL_DEFCONFIG_DIR)/$(config))
 
 BASE_KERNEL_DEFCONFIG := $(word 1, $(KERNEL_DEFCONFIG))
 BASE_KERNEL_DEFCONFIG_SRC := $(word 1, $(ALL_KERNEL_DEFCONFIG_SRCS))
+BASE_KERNEL_GKI_DEFCONFIG := $(word 1, $(KERNEL_GKI_DEFCONFIG))
+BASE_KERNEL_GKI_DEFCONFIG_SRC := $(word 1, $(ALL_KERNEL_GKI_DEFCONFIG_SRCS))
 BASE_RECOVERY_KERNEL_DEFCONFIG := $(word 1, $(RECOVERY_DEFCONFIG))
 BASE_RECOVERY_KERNEL_DEFCONFIG_SRC := $(word 1, $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS))
 
@@ -112,6 +123,8 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
     endif
 endif
 TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
+
+TARGET_PREBUILT_INT_KERNEL_GKI := $(KERNEL_GKI_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
 
 TARGET_PREBUILT_INT_RECOVERY_KERNEL := $(RECOVERY_KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
 
@@ -186,6 +199,22 @@ else
     endif
 endif
 
+ifneq ($(TARGET_KERNEL_GKI_CONFIG),)
+    ifeq "$(wildcard $(KERNEL_SRC) )" ""
+        $(warning *******************************************************************)
+        $(warning *                                                                 *)
+        $(warning * No GKI kernel source was found, please make sure your device is *)
+        $(warning * properly configured to download the GKI kernel repository to    *)
+        $(warning * $(KERNEL_SRC), or remove TARGET_KERNEL_GKI_CONFIG from the      *)
+        $(warning * relevant BoardConfig.mk                                         *)
+        $(warning *                                                                 *)
+        $(warning *******************************************************************)
+        $(error "NO GKI KERNEL SOURCE")
+    endif
+    FULL_KERNEL_GKI_BUILD := true
+    NEEDS_KERNEL_GKI_COPY := true
+endif
+
 ifneq ($(TARGET_KERNEL_RECOVERY_CONFIG),)
     ifeq "$(wildcard $(KERNEL_SRC) )" ""
     ifeq ($(TARGET_PREBUILT_RECOVERY_KERNEL),)
@@ -224,7 +253,7 @@ else
     endif
 endif
 
-ifeq ($(or $(FULL_RECOVERY_KERNEL_BUILD), $(FULL_KERNEL_BUILD)),true)
+ifeq ($(or $(FULL_RECOVERY_KERNEL_BUILD), $(FULL_KERNEL_BUILD), $(FULL_KERNEL_GKI_BUILD)),true)
 # Add host bin out dir to path
 PATH_OVERRIDE := PATH=$(KERNEL_BUILD_OUT_PREFIX)$(HOST_OUT_EXECUTABLES):$$PATH
 ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
@@ -318,6 +347,12 @@ define make-kernel-target
 $(call internal-make-kernel-target,$(KERNEL_OUT),$(1))
 endef
 
+# Make a GKI kernel target
+# $(1): The kernel target to build (eg. defconfig, modules, modules_install)
+define make-gki-kernel-target
+$(call internal-make-kernel-target,$(KERNEL_GKI_OUT),$(1))
+endef
+
 # Make a recovery kernel target
 # $(1): The kernel target to build (eg. defconfig, modules, modules_install)
 define make-recovery-kernel-target
@@ -358,7 +393,7 @@ define build-image-kernel-modules-lineage
     done
 endef
 
-endif # FULL_RECOVERY_KERNEL_BUILD or FULL_KERNEL_BUILD
+endif # FULL_RECOVERY_KERNEL_BUILD, FULL_KERNEL_BUILD or FULL_KERNEL_GKI_BUILD
 
 ifeq ($(FULL_KERNEL_BUILD),true)
 
@@ -489,6 +524,29 @@ endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
 endif # FULL_KERNEL_BUILD
 
+ifeq ($(FULL_KERNEL_GKI_BUILD),true)
+
+$(KERNEL_GKI_OUT):
+	mkdir -p $(KERNEL_GKI_OUT)
+
+$(KERNEL_GKI_CONFIG): $(ALL_KERNEL_GKI_DEFCONFIG_SRCS)
+	@echo "Building GKI Kernel Config"
+	$(call make-kernel-config,$(KERNEL_GKI_OUT),$(KERNEL_GKI_DEFCONFIG))
+
+$(TARGET_PREBUILT_INT_KERNEL_GKI): $(KERNEL_GKI_CONFIG) $(DEPMOD) $(DTC)
+	@echo "Building GKI Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
+	$(call make-gki-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
+	$(hide) if grep -q '^CONFIG_OF=y' $(KERNEL_GKI_CONFIG); then \
+			echo "Building DTBs"; \
+			$(call make-gki-kernel-target,dtbs); \
+		fi
+	$(hide) if grep -q '=m' $(KERNEL_GKI_CONFIG); then \
+			echo "Building GKI Kernel Modules"; \
+			$(call make-gki-kernel-target,modules) || exit "$$?"; \
+		fi
+
+endif
+
 ifeq ($(FULL_RECOVERY_KERNEL_BUILD),true)
 
 $(RECOVERY_KERNEL_OUT):
@@ -507,6 +565,11 @@ endif
 
 ## Install it
 
+ifeq ($(NEEDS_KERNEL_GKI_COPY), true)
+$(INSTALLED_KERNEL_GKI_TARGET): $(TARGET_PREBUILT_INT_KERNEL_GKI)
+	$(transform-prebuilt-to-target)
+endif
+
 ifeq ($(NEEDS_KERNEL_COPY),true)
 $(INSTALLED_KERNEL_TARGET): $(KERNEL_BIN)
 	$(transform-prebuilt-to-target)
@@ -519,6 +582,9 @@ endif
 
 .PHONY: recovery-kernel
 recovery-kernel: $(INSTALLED_RECOVERY_KERNEL_TARGET)
+
+.PHONY: kernel-gki
+kernel-gki: $(INSTALLED_KERNEL_GKI_TARGET)
 
 .PHONY: kernel
 kernel: $(INSTALLED_KERNEL_TARGET)
