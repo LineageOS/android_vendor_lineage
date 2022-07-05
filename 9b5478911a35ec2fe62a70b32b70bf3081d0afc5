@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90bf5e98_079df890",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-07-05T03:02:18Z",
+      "side": 1,
+      "message": "Crap. I accidentally overwrote your modifications with my patch.",
+      "revId": "9b5478911a35ec2fe62a70b32b70bf3081d0afc5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
