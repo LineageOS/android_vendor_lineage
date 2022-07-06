@@ -2985,7 +2985,29 @@
     <!--USA-->
     <sensitivePN network="310,311,312,313,316">
         <item>
-            <number>8002738255</number>
+            <number>18772570012</number>
+            <name>National Abortion Federation Hotline</name>
+            <categories>reproductive care</categories>
+        </item>
+        <item>
+            <number>18884930092</number>
+            <name>All Options pregnancy counseling hotline</name>
+            <categories>reproductive care</categories>
+            <organization>All-Options</organization>
+        </item>
+        <item>
+            <number>18332462632</number>
+            <name>Miscarriage + Abortion Hotline</name>
+            <categories>reproductive care</categories>
+        </item>
+        <item>
+            <number>18448682812</number>
+            <name>Repro Legal Helpline</name>
+            <categories>reproductive care</categories>
+            <website>https://www.reprolegalhelpline.org/</website>
+        </item>
+        <item>
+            <number>18002738255</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>english</languages>
@@ -2993,52 +3015,71 @@
         </item>
         <item>
             <number>18004224453</number>
+            <name>Childhelp National Child Abuse Hotline</name>
+            <categories>children|abuse</categories>
         </item>
         <item>
             <number>18006214673</number>
+            <name>Domestic violence hotline</name>
+            <categories>abuse</categories>
+            <organization>Safe Horizon</organization>
+        </item>
+        <item>
+            <number>18007862929</number>
+            <name>National Runaway Safeline</name>
+            <categories>homeless|youth</categories>
         </item>
         <item>
             <number>18006564673</number>
+            <name>National Sexual Assault Hotline</name>
+            <categories>abuse|sexual assault</categories>
+            <organization>Rape Abuse Incest National Network</organization>
         </item>
         <item>
-            <number>8007994889</number>
+            <number>18007994889</number>
             <name>National Suicide Prevention (Deaf/Hard of hearing)</name>
             <categories>suicide</categories>
             <organization>Lifeline</organization>
-            <website>https://suicidepreventionlifeline.org/help-yourself/for-deaf-hard-of-hearing/</website>
         </item>
         <item>
             <number>18007997233</number>
+            <name>National Domestic Violence Hotline</name>
         </item>
         <item>
-            <number>8558388255</number>
+            <number>18558388255</number>
             <name>Helpline for Veterans, Family and Caregivers</name>
             <categories>veterans</categories>
             <organization>Vets4Warriors</organization>
         </item>
         <item>
             <number>18662231111</number>
+            <name>Minnesota Emergency Shelter and Crisis Hotline</name>
+            <organization>MN Day One® Crisis Line</organization>
         </item>
         <item>
             <number>18663852699</number>
+            <name>Minnesota General Crime Victims Hotline</name>
         </item>
         <item>
-            <number>8664887386</number>
+            <number>18664887386</number>
             <name>Psychological Aid and Emotional Support</name>
             <categories>emotional support|psychological|lgbtq</categories>
             <organization>TrevorLifeLine</organization>
         </item>
         <item>
             <number>18666894357</number>
+            <name>Crime Victims Hotline</name>
+            <categories>crime victims|emotional support</categories>
+            <organization>Safe Horizon</organization>
         </item>
         <item>
-            <number>8775658860</number>
+            <number>18775658860</number>
             <name>Suicide Prevention</name>
             <categories>suicide|trans</categories>
             <organization>Trans Lifeline</organization>
         </item>
         <item>
-            <number>8886289454</number>
+            <number>18886289454</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>spanish</languages>
