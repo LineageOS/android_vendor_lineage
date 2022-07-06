@@ -2,10 +2,10 @@
 readonly prev_lineageos_branch=lineage-19.0
 readonly lineageos_branch=lineage-19.1
 
-readonly prev_common_aosp_tag=android-12.1.0_r5 # May 2022, Pixels 3a - 6
-readonly common_aosp_tag=android-12.1.0_r7 # Jun 2022, Pixels 4 - 5, and 6 VZW
+readonly prev_common_aosp_tag=android-12.1.0_r7 # Jun 2022, Pixels 4 - 5, and 6 VZW
+readonly common_aosp_tag=android-12.1.0_r11 # Jul 2022, Pixels 4 - 5, and 6 VZW
 
-readonly prev_common_aosp_build_id=SP2A.220505.002 # May 2022, Pixels 3a - 6
-readonly common_aosp_build_id=SQ3A.220605.009.A1 # Jun 2022, Pixels 4 - 5, and 6 VZW
+readonly prev_common_aosp_build_id=SQ3A.220605.009.A1 # Jun 2022, Pixels 4 - 5, and 6 VZW
+readonly common_aosp_build_id=SQ3A.220705.003.A1 # Jul 2022, Pixels 4 - 5, and 6 VZW
 
-readonly topic=S_asb_2022-06
+readonly topic=S_asb_2022-07
