@@ -2,8 +2,8 @@
 
 # Updated manually
 
-readonly prev_kernel_tag=android-12.1.0_r0.22 # May 2022
-readonly kernel_tag=android-12.1.0_r0.28 # Jun 2022
+readonly prev_kernel_tag=android-12.1.0_r0.28 # Jun 2022
+readonly kernel_tag=android-12.1.0_r0.35 # Jul 2022
 
 # Match with version string in commit message of prebuilt kernel
 readonly prev_gki_tag=android12-5.10-2021-12_r8 # May 2022
