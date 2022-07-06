@@ -22,23 +22,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SP2A.220505.002 # May 2022
-readonly build_id=SQ3A.220605.009.A1 # Jun 2022
+readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
+readonly build_id=SQ3A.220705.003.A1 # Jul 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r5"
-readonly aosp_tag="android-12.1.0_r7"
+readonly prev_aosp_tag="android-12.1.0_r7"
+readonly aosp_tag="android-12.1.0_r11"
 
-readonly prev_build_number="8353555"
-readonly build_number="8643238"
+readonly prev_build_number="8643238"
+readonly build_number="8672226"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/coral-sq3a.220605.009.a1-factory-c6d6ea9f.zip"
-readonly image_sha256="c6d6ea9f00bde8db03c19c50e601612e0bd189ffadd6391936684a96b0106646"
+readonly image_url="https://dl.google.com/dl/android/aosp/coral-sq3a.220705.003.a1-factory-7d161018.zip"
+readonly image_sha256="7d16101823b6e63d453c2d31f1e81a68cf98b07aecf790e1d4d67e129d9f5793"
 
-readonly flash_url="https://flash.android.com/build/8643238?target=coral-user&signed"
+readonly flash_url="https://flash.android.com/build/8672226?target=coral-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/coral-ota-sq3a.220605.009.a1-80393254.zip"
-readonly ota_sha256="803932548152683fd415c6403fac15a01516ca215ffe430affd60d0a9d07aa4a"
+readonly ota_url="https://dl.google.com/dl/android/aosp/coral-ota-sq3a.220705.003.a1-75a07f91.zip"
+readonly ota_sha256="75a07f9179f594cdf178c4d9b3e47a5818915f47464434fd7cdbbe3692ceb19f"
 
-readonly security_patch="2022-06-05"
+readonly security_patch="2022-07-05"

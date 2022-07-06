@@ -24,23 +24,23 @@ device_repos=(
 
 # Updated manually
 
-readonly prev_build_id=SP2A.220505.002 # May 2022
-readonly build_id=SQ3A.220605.009.A1 # Jun 2022
+readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
+readonly build_id=SQ3A.220705.003.A1 # Jul 2022
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r5"
-readonly aosp_tag="android-12.1.0_r7"
+readonly prev_aosp_tag="android-12.1.0_r7"
+readonly aosp_tag="android-12.1.0_r11"
 
-readonly prev_build_number="8353555"
-readonly build_number="8643238"
+readonly prev_build_number="8643238"
+readonly build_number="8672226"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/redfin-sq3a.220605.009.a1-factory-391bb7ac.zip"
-readonly image_sha256="391bb7ac33e8b8079d62347f6868f2d1e7b77e8655fadd01bde6edb0f341ef0d"
+readonly image_url="https://dl.google.com/dl/android/aosp/redfin-sq3a.220705.003.a1-factory-b193f96f.zip"
+readonly image_sha256="b193f96f8b0b9acc832fc4c3df3350bc05bf1acf189d19c8c7a992d1d7566e51"
 
-readonly flash_url="https://flash.android.com/build/8643238?target=redfin-user&signed"
+readonly flash_url="https://flash.android.com/build/8672226?target=redfin-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-sq3a.220605.009.a1-b07256d6.zip"
-readonly ota_sha256="b07256d636dc8e21bf0c7b9d1f59fac182b0eacd5da133cc24bae6e9a97544e7"
+readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-sq3a.220705.003.a1-6e8011e7.zip"
+readonly ota_sha256="6e8011e7b18112886285499fb70d90ba0683b430a2ac429b42885d419b3d7649"
 
-readonly security_patch="2022-06-05"
+readonly security_patch="2022-07-05"
