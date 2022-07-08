@@ -104,6 +104,24 @@
       "message": "\u003e Patch Set 10:\n\u003e \n\u003e \u003e Patch Set 10:\n\u003e  \u003e \n\u003e  \u003e (1 comment)\n\u003e \n\u003e you say this as if we have infrastructure for, and don\u0027t explicitly disallow prebuilt kernel in charter \n\u003e \n\u003e neither of which we do\n\nWhat do you mean infrastructure? It\u0027ll take just as much infrastructure to do this than before. You\u0027re just building it in a different location.\n\nDisallowed in charter because 5.10 wasn\u0027t out when that charter rule was written, it\u0027s a different story now. No OEM builds inline anymore. Qualcomm got rid of their kernel build task. It\u0027s a massive PITA to compile inline now with the way they set up 5.10.",
       "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93a91655_233e8fea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-07-08T18:49:51Z",
+      "side": 1,
+      "message": "\u003e Disallowed in charter because 5.10 wasn\u0027t out when that charter rule was written, it\u0027s a different story now. No OEM builds inline anymore. Qualcomm got rid of their kernel build task. It\u0027s a massive PITA to compile inline now with the way they set up 5.10.\n\nIMHO for GKI devices like raviole, we should not build inline. Instead, we should just build the kernel externally and use a prebuilt kernel from there.\n\nWe could just run a script to build the kernel in the build system, and then use a \"prebuilt\" from the freshly built kernel.\n\nWanting to build the kernel inline is holding us back. Other ROMs like ProtonAOSP and GrapheneOS already have Pixel 6 support since they don\u0027t need inline kernel building like us, they just use GKI like the Pixel 6 stock.\n\nWhat worked in the past may not work now. What worked for a Nexus 6P or even a Pixel 5 won\u0027t work for a Pixel 6.",
+      "parentUuid": "45dacc13_57e2c31f",
+      "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
