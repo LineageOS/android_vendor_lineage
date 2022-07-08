@@ -33,6 +33,24 @@
       "message": "If your intention is to help making raviole ship, this is not necessary.\nWe already ship gki devices without us having to support gkis (oneplus sm8350, for example)\n\nThis could be interesting but again doesn\u0027t matter for shipping raviole.",
       "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf91c27d_900d3fc2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-07-08T15:58:03Z",
+      "side": 1,
+      "message": "This is for 5.4 devices which ship both GKI/QGKI, trying to get OP9 to boot GKI (all 5.4 QCOM devices ship QGKI currently). But this is broken right now anyways since still need to add module support and fix the overriding target.",
+      "parentUuid": "c9d9f3ff_564037af",
+      "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
