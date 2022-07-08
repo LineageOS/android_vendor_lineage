@@ -21,7 +21,7 @@ device_repos=(
   device/google/crosshatch
 )
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
 readonly prev_build_id=SP1A.210812.016.C1 # Feb 2022
 readonly build_id=SP1A.210812.016.C2 # Jun 2022

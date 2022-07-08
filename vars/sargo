@@ -21,7 +21,7 @@ device_repos=(
   # common repos in bonito
 )
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
 readonly prev_build_id=SP2A.220505.002 # May 2022
 readonly build_id=SP2A.220505.006 # May 2022
