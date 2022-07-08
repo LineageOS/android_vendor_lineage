@@ -33,6 +33,23 @@
       "message": "For ROG 3",
       "revId": "28e4434f87426feb46c693c29772f43349fa5464",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f29edbff_1951d1b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2022-07-08T23:59:27Z",
+      "side": 1,
+      "message": "You should probably be checking SUBVERION as well since LLVM_IAS breaks build on pre v5.4.76 builds (tested on NordN200). https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/arch/arm64?h\u003dv5.4.76\u0026id\u003dd94589900d98a20ea28324a7ae4568edb5db77fd was the start of the fix",
+      "revId": "28e4434f87426feb46c693c29772f43349fa5464",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
