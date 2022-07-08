@@ -1,6 +1,6 @@
 # Pixel 4, 4a
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
 readonly prev_kernel_tag=android-12.1.0_r0.25 # Jun 2022
 readonly kernel_tag=android-12.1.0_r0.32 # Jul 2022

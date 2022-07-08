@@ -22,10 +22,10 @@ device_repos=(
   device/google/barbet
 )
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
 readonly prev_kernel_tag=android-12.1.0_r0.27 # Jun 2022
-readonly kernel_tag=android-12.1.0_r0.34 # Jun 2022
+readonly kernel_tag=android-12.1.0_r0.34 # Jul 2022
 
 readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
 readonly build_id=SQ3A.220705.003.A1 # Jul 2022

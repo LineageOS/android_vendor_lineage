@@ -22,7 +22,7 @@ device_repos=(
 # Need OTA zip for firmware, not supported by image_unpacker yet
 readonly needs_ota=true
 
-# Updated manually
+# Updated semi-manually via pixel/update-any-var.sh
 
 readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
 readonly build_id=SQ3A.220705.003.A1 # Jul 2022
