@@ -42,15 +42,19 @@
         <item>org.microg.nlp</item>
     </string-array>
 
-    <string-array name="config_locationExtraPackageNames" translatable="false">
+    <!-- List of system components which are allowed to receive ServiceState entries in an
+         un-sanitized form, even if the location toggle is off. This is intended ONLY for system
+         components, such as the telephony stack, which require access to the full ServiceState for
+         tasks such as network registration. -->
+    <string-array name="config_serviceStateLocationAllowedPackages">
         <!-- Bluetooth -->
-        <item>com.android.bluetooth</item>
+        <item>"com.android.bluetooth"</item>
         <!-- TeleService -->
-        <item>com.android.phone</item>
+        <item>"com.android.phone"</item>
         <!-- CneApp -->
-        <item>com.qualcomm.qti.cne</item>
+        <item>"com.qualcomm.qti.cne"</item>
         <!-- ImsService -->
-        <item>com.shannon.imsservice</item>
+        <item>"com.shannon.imsservice"</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
