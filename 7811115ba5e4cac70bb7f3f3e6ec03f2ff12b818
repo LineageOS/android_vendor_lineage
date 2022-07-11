@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fe19344_520c0c80",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2022-07-11T04:14:09Z",
+      "side": 1,
+      "message": "Hi,\nCould you please help get the source commit reference link for this?\n\nThanks.",
+      "revId": "7811115ba5e4cac70bb7f3f3e6ec03f2ff12b818",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
