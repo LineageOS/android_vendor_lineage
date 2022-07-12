@@ -1,6 +1,6 @@
 # Entire file updated manually
-readonly prev_lineageos_branch=lineage-19.0
-readonly lineageos_branch=lineage-19.1
+readonly prev_os_branch=lineage-19.0
+readonly os_branch=lineage-19.1
 
 readonly prev_common_aosp_tag=android-12.1.0_r7 # Jun 2022, Pixels 4 - 5, and 6 VZW
 readonly common_aosp_tag=android-12.1.0_r11 # Jul 2022, Pixels 4 - 5, and 6 VZW
