@@ -16,6 +16,24 @@
       "message": "Hi,\nCould you please help get the source commit reference link for this?\n\nThanks.",
       "revId": "7811115ba5e4cac70bb7f3f3e6ec03f2ff12b818",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27340df2_e852eb05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-07-14T15:26:20Z",
+      "side": 1,
+      "message": "https://git.codelinaro.org/clo/la/platform/vendor/qcom/lahaina/-/commit/d1e0065907573fc002153f38e6b28a80d28687f0",
+      "parentUuid": "4fe19344_520c0c80",
+      "revId": "7811115ba5e4cac70bb7f3f3e6ec03f2ff12b818",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
