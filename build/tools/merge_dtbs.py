@@ -47,10 +47,11 @@ def split_array(array, cells):
 	return frozenset(tuple(array[i*cells:(i*cells)+cells]) for i in range(len(array) // cells))
 
 class DeviceTreeInfo(object):
-	def __init__(self, plat, board, pmic):
+	def __init__(self, plat, board, pmic, extra_ids=None):
 		self.plat_id = plat
 		self.board_id = board
 		self.pmic_id = pmic
+		self.extra_ids = extra_ids or {}
 
 	def __str__(self):
 		s = ""
@@ -60,13 +61,20 @@ class DeviceTreeInfo(object):
 			s += " board-id = <{}>;".format(" ".join(map(str, self.board_id)))
 		if self.pmic_id is not None:
 			s += " pmic-id = <{}>;".format(" ".join(map(str, self.pmic_id)))
+		for extra_id, value in self.extra_ids.items():
+			s += " {} = <{}>;".format(extra_id, " ".join(map(str, value or [])))
 		return s.strip()
 
 	def __repr__(self):
 		return "<{} {}>".format(self.__class__.__name__, str(self))
 
 	def has_any_properties(self):
-		return self.plat_id is not None or self.board_id is not None or self.pmic_id is not None
+		return any([
+			self.plat_id,
+			self.board_id,
+			self.pmic_id,
+			*self.extra_ids.values()
+		])
 
 	def __sub__(self, other):
 		"""
@@ -89,11 +97,16 @@ class DeviceTreeInfo(object):
 		assert self.plat_id is None or isinstance(self.plat_id, (set, frozenset))
 		assert self.board_id is None or isinstance(self.board_id, (set, frozenset))
 		assert self.pmic_id is None or isinstance(self.pmic_id, (set, frozenset))
+		for extra_id, value in self.extra_ids.items():
+			assert value is None or isinstance(value, (set, frozenset))
 		assert other in self
 
 		new_plat = other.plat_id is not None and self.plat_id != other.plat_id
 		new_board = other.board_id is not None and self.board_id != other.board_id
 		new_pmic = other.pmic_id is not None and self.pmic_id != other.pmic_id
+		new_extra_ids = {}
+		for extra_id, value in self.extra_ids.items():
+			new_extra_ids[extra_id] = other.extra_ids.get(extra_id) is not None and value != other.extra_ids.get(extra_id)
 
 		res = set()
 		# Create the devicetree that matches other exactly
@@ -104,13 +117,14 @@ class DeviceTreeInfo(object):
 			s.board_id = other.board_id
 		if new_pmic:
 			s.pmic_id = other.pmic_id
+		s.extra_ids.update({extra_id: other.extra_ids.get(extra_id) for extra_id in s.extra_ids if new_extra_ids.get(extra_id)})
 		res.add(s)
 
 		# now create the other possibilities by removing any combination of
 		# other's plat, board, and/or pmic. Set logic (unique elemnts) handles
 		# duplicate devicetrees IDs spit out by this loop
-		for combo in combinations_with_replacement([True, False], 3):
-			if not any((c and n) for (c, n) in zip(combo, (new_plat, new_board, new_pmic))):
+		for combo in combinations_with_replacement([True, False], 3 + len(self.extra_ids)):
+			if not any((c and n) for (c, n) in zip(combo, (new_plat, new_board, new_pmic) + tuple(new_extra_ids))):
 				continue
 			s = copy.deepcopy(self)
 			if combo[0] and new_plat:
@@ -119,12 +133,15 @@ class DeviceTreeInfo(object):
 				s.board_id -= other.board_id
 			if combo[2] and new_pmic:
 				s.pmic_id -= other.pmic_id
+			for i, extra_id in enumerate(new_extra_ids):
+				if combo[3 + i] and new_extra_ids[extra_id]:
+					s.extra_ids[extra_id] -= other.extra_ids.get(extra_id)
 			res.add(s)
 		return res
 
 	def __hash__(self):
-		# Hash should only consider msm-id/board-id/pmic-id
-		return hash((self.plat_id, self.board_id, self.pmic_id))
+		# Hash should only consider msm-id/board-id/pmic-id/extra ids
+		return hash((self.plat_id, self.board_id, self.pmic_id) + tuple(self.extra_ids.values()))
 
 	def __and__(self, other):
 		s = copy.deepcopy(self)
@@ -133,11 +150,15 @@ class DeviceTreeInfo(object):
 				setattr(s, prop, None)
 			else:
 				setattr(s, prop, getattr(self, prop) & getattr(other, prop))
+		for extra_id in self.extra_ids:
+			if self.extra_ids.get(extra_id) is None or other.extra_ids.get(extra_id) is None:
+				s.extra_ids[extra_id] = None
+			else:
+				s.extra_ids[extra_id] = self.extra_ids.get(extra_id) & other.extra_ids.get(extra_id)
 		return s
 
-	def _do_equivalent(self, other, property):
-		other_prop = getattr(other, property)
-		self_prop = getattr(self, property)
+	@staticmethod
+	def _do_equivalent(self_prop, other_prop):
 		if other_prop is None:
 			return True
 		return self_prop == other_prop
@@ -151,12 +172,18 @@ class DeviceTreeInfo(object):
 			return False
 		if not other.has_any_properties():
 			return False
-		return all(map(lambda p: self._do_equivalent(other, p), ['plat_id', 'board_id', 'pmic_id']))
+		return (
+			all(
+				DeviceTreeInfo._do_equivalent(getattr(self, p), getattr(other, p))
+				for p in ['plat_id', 'board_id', 'pmic_id']
+			) and all(
+				DeviceTreeInfo._do_equivalent(self.extra_ids.get(extra_id), other.extra_ids.get(extra_id))
+				for extra_id in self.extra_ids
+			)
+		)
 
-
-	def _do_gt(self, other, property):
-		other_prop = getattr(other, property)
-		self_prop = getattr(self, property)
+	@staticmethod
+	def _do_gt(self_prop, other_prop):
 		# if either property doesn't exist, it could merge in ABL
 		if self_prop is None or other_prop is None:
 			return True
@@ -183,12 +210,19 @@ class DeviceTreeInfo(object):
 			return False
 		if not other.has_any_properties():
 			return False
-		return all(map(lambda p: self._do_gt(other, p), ['plat_id', 'board_id', 'pmic_id']))
+		return (
+			all(
+				DeviceTreeInfo._do_gt(getattr(self, p), getattr(other, p))
+				for p in ['plat_id', 'board_id', 'pmic_id']
+			) and all(
+				DeviceTreeInfo._do_gt(self.extra_ids.get(extra_id), other.extra_ids.get(extra_id))
+				for extra_id in self.extra_ids
+			)
+		)
 
 
-	def _do_contains(self, other, property):
-		other_prop = getattr(other, property)
-		self_prop = getattr(self, property)
+	@staticmethod
+	def _do_contains(self_prop, other_prop):
 		# if other property doesn't exist, it can apply here
 		if other_prop is None:
 			return True
@@ -217,7 +251,15 @@ class DeviceTreeInfo(object):
 			return False
 		if not other.has_any_properties():
 			return False
-		return all(map(lambda p: self._do_contains(other, p), ['plat_id', 'board_id', 'pmic_id']))
+		return (
+			all(
+				DeviceTreeInfo._do_contains(getattr(self, p), getattr(other, p))
+				for p in ['plat_id', 'board_id', 'pmic_id']
+			) and all(
+				DeviceTreeInfo._do_contains(self.extra_ids.get(extra_id), other.extra_ids.get(extra_id))
+				for extra_id in self.extra_ids
+			)
+		)
 
 class DeviceTree(DeviceTreeInfo):
 	def __init__(self, filename):
@@ -228,7 +270,13 @@ class DeviceTree(DeviceTreeInfo):
 		# default pmic-id-size is 4
 		pmic_id_size = self.get_prop('/', 'qcom,pmic-id-size', check_output=False) or 4
 		pmic_id = split_array(self.get_prop('/', 'qcom,pmic-id', check_output=False), pmic_id_size)
-		super().__init__(msm_id, board_id, pmic_id)
+		extra_keys = [
+			'oplus,hw-id',
+			'oplus,project-id',
+			'xiaomi,miboard-id',
+		]
+		extra_ids = {key: split_array(self.get_prop('/', key, check_output=False), 2) for key in extra_keys}
+		super().__init__(msm_id, board_id, pmic_id, extra_ids)
 
 		if not self.has_any_properties():
 			logging.warning('{} has no properties and may match with any other devicetree'.format(os.path.basename(self.filename)))
@@ -264,11 +312,11 @@ class InnerMergedDeviceTree(DeviceTreeInfo):
 	It has a platform, board, and pmic ID, the "base" devicetree, and some set of add-on
 	devicetrees
 	"""
-	def __init__(self, filename, plat_id, board_id, pmic_id, techpacks=None):
+	def __init__(self, filename, plat_id, board_id, pmic_id, extra_ids=None, techpacks=None):
 		self.base = filename
 		# All inner merged device trees start with zero techpacks
 		self.techpacks = techpacks or []
-		super().__init__(plat_id, board_id, pmic_id)
+		super().__init__(plat_id, board_id, pmic_id, extra_ids)
 
 	def try_add(self, techpack):
 		if not isinstance(techpack, DeviceTree):
@@ -324,6 +372,13 @@ class InnerMergedDeviceTree(DeviceTreeInfo):
 			logging.debug('  {}'.format(' '.join(cmd)))
 			subprocess.run(cmd, check=True)
 
+		for extra_id, value in self.extra_ids.items():
+			if value:
+				board_iter = value if isinstance(value, tuple) else chain.from_iterable(value)
+				cmd = ['fdtput', '-t', 'i', out_file, '/', extra_id] + list(map(str, board_iter))
+				logging.debug('  {}'.format(' '.join(cmd)))
+				subprocess.run(cmd, check=True)
+
 		return DeviceTree(out_file)
 
 	def get_name(self):
@@ -346,7 +401,7 @@ class InnerMergedDeviceTree(DeviceTreeInfo):
 
 class MergedDeviceTree(object):
 	def __init__(self, other):
-		self.merged_devicetrees = {InnerMergedDeviceTree(other.filename, other.plat_id, other.board_id, other.pmic_id)}
+		self.merged_devicetrees = {InnerMergedDeviceTree(other.filename, other.plat_id, other.board_id, other.pmic_id, other.extra_ids)}
 
 	def merged_dt_try_add(self, techpack):
 		did_add = False
