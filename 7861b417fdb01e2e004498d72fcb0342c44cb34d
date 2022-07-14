@@ -16,6 +16,24 @@
       "message": "You only want to use HOST_EXECUTABLE_SUFFIX for native executables.",
       "revId": "7861b417fdb01e2e004498d72fcb0342c44cb34d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86292541_e8f69a10",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 483,
+      "author": {
+        "id": 29914
+      },
+      "writtenOn": "2022-07-14T19:56:35Z",
+      "side": 1,
+      "message": "It is the same way in DTBO rule a few lines up, i guess it could be removed from there as well\n\noriginal commit: https://github.com/LineageOS/android_vendor_lineage/commit/e523884e31d0ec3ca27e84150483b3343023664a",
+      "parentUuid": "d2b6b4d7_b780b562",
+      "revId": "7861b417fdb01e2e004498d72fcb0342c44cb34d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
