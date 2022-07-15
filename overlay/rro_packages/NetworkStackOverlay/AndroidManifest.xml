@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.networkstack.overlay">
+
+    <overlay
+        android:isStatic="true"
+        android:priority="100"
+        android:targetPackage="com.android.networkstack"
+        android:targetName="NetworkStackConfig" />
+</manifest>
