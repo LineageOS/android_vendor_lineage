@@ -140,6 +140,24 @@
       "parentUuid": "93a91655_233e8fea",
       "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "214916ee_4173f4e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-07-18T00:53:50Z",
+      "side": 1,
+      "message": "The still best solution is out of tree modules and core kernel repo forked and building inline - Amlogic does external kernel modules already, as does NVidia.",
+      "parentUuid": "4c73ce1c_74106112",
+      "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
