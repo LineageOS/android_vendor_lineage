@@ -158,6 +158,24 @@
       "parentUuid": "4c73ce1c_74106112",
       "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b142575_60a3f46e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-07-18T09:57:13Z",
+      "side": 1,
+      "message": "I am proposing an alternative to building inline: build the kernel using the build_slider.sh in the kernel repo (and attach just that to the kernel.mk build), but then use a \"prebuilt\" kernel which is the one we just built with build_slider.sh.\n\nIt may work terribly, but still an option. I feel it\u0027s a good option since we avoid having to reinvent the wheel with GKI building.\n\nAlso, as a reversal to what I said earlier, an OEM only has to worry about one brand of device: themselves. Samsung doesn\u0027t care how OnePlus kernels are built, and OnePlus doesn\u0027t care how Sony or Xiaomi kernels are built. Lineage has to build for many OEMs, it\u0027s a different story for us. So a pre-compiled kernel isn\u0027t exactly an option for us.\n\nROMs like GrapheneOS and ProtonAOSP only support non-EOL Pixel devices so they get away with prebuilt kernels fine, we support many devices so we can\u0027t use prebuilts the same way.",
+      "parentUuid": "214916ee_4173f4e8",
+      "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
