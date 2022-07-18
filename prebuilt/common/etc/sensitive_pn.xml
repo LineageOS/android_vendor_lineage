@@ -2985,20 +2985,39 @@
     <!--USA-->
     <sensitivePN network="310,311,312,313,316">
         <item>
-            <number>8002738255</number>
+            <number>988</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>english</languages>
             <organization>Lifeline</organization>
+            <website>https://988lifeline.org/</website>
+        </item>
+        <item>
+            <number>8002738255</number>
+            <name>National Suicide Prevention (legacy number)</name>
+            <categories>suicide</categories>
+            <languages>english</languages>
+            <organization>Lifeline</organization>
+            <website>https://988lifeline.org/</website>
         </item>
         <item>
             <number>18004224453</number>
+            <name>National Child Abuse Hotline</name>
+            <organization>Childhelp</organization>
+            <website>https://www.childhelp.org/</website>
         </item>
         <item>
             <number>18006214673</number>
+            <name>NYC Safe Horizon - Domestic Abuse Hotline</name>
+            <organization>coalition for the homeless</organization>
+            <website>https://www.coalitionforthehomeless.org/resources/safe-horizon-domestic-violence-hotline/</website>
         </item>
         <item>
             <number>18006564673</number>
+            <name>National Sexual Assault Hotline</name>
+            <categories>sexual abuse</categories>
+            <organization>RAINN</organization>
+            <website>https://www.rainn.org/resources</website>
         </item>
         <item>
             <number>8007994889</number>
@@ -3009,6 +3028,10 @@
         </item>
         <item>
             <number>18007997233</number>
+            <name>National Sexual Assault Hotline</name>
+            <categories>sexual abuse</categories>
+            <organization>RAINN</organization>
+            <website>https://www.rainn.org/about-national-sexual-assault-telephone-hotline</website>
         </item>
         <item>
             <number>8558388255</number>
@@ -3018,9 +3041,17 @@
         </item>
         <item>
             <number>18662231111</number>
+            <name>Minnesota Day One Crisis Line</name>
+            <categories>minnesota</categories>
+            <organization>Cornerstone</organization>
+            <website>https://cornerstonemn.org/abuse-help-minnesota/violence-survivor/</website>
         </item>
         <item>
             <number>18663852699</number>
+            <name>Minnesota Day One Crisis Line (alternate)</name>
+            <categories>minnesota</categories>
+            <organization>Cornerstone</organization>
+            <website>https://cornerstonemn.org/abuse-help-minnesota/violence-survivor/</website>
         </item>
         <item>
             <number>8664887386</number>
@@ -3030,11 +3061,13 @@
         </item>
         <item>
             <number>18666894357</number>
+            <name>Safe Horizon NYC Crime Victims Hotline</name>
+            <website>https://www.safehorizon.org/hotlines</website>
         </item>
         <item>
             <number>8775658860</number>
-            <name>Suicide Prevention</name>
-            <categories>suicide|trans</categories>
+            <name>Trans Lifeline</name>
+            <categories>trans</categories>
             <organization>Trans Lifeline</organization>
         </item>
         <item>
