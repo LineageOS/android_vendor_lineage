@@ -122,6 +122,24 @@
       "parentUuid": "45dacc13_57e2c31f",
       "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c73ce1c_74106112",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-07-18T00:51:27Z",
+      "side": 1,
+      "message": "OEM\u0027s haven\u0027t been building kernel inline for ages Alex. That doesn\u0027t mean it\u0027s not possible. And ultimately a moot point.\n\nIf you want to change the charter rule, then go for it, directors can decide if they want to allow prebuilt kernels.\n\n\"What infra\" - cool - kernel build tasks that need to be kicked off prior to every build, then copy logic to put it in the right place, or what, maintainer builds it tosses it in a repo and commits it themselves? That won\u0027t fly.\n\nTired of people saying \"jUst UsE PreBuilT\" when it\u0027s not a simple switch to flip.\n\nUnless you\u0027re pitching just using the google provided prebuilts. That could work fine, but there are definitely things we\u0027d change if we were building from source - e.g. DirtyPipe which took Google way longer to patch than it should\u0027ve.\n\nLet\u0027s look past all that and say, \"use prebuilt Google kernels and deal with it\" - sure - now figure out where to host the Camera APEX (critical to camera functionality) in a sustainable manner. Only thing I\u0027ve seen proposed that would work is to extract said APEX and drop stuff on relevant partitions - and yet no one has done such.",
+      "parentUuid": "93a91655_233e8fea",
+      "revId": "0de29232c72be662c442c96a6416c351bf5ef2ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
