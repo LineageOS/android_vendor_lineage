@@ -3007,22 +3007,34 @@
             <website>https://www.reprolegalhelpline.org/</website>
         </item>
         <item>
-            <number>18002738255</number>
+            <number>988</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>english</languages>
             <organization>Lifeline</organization>
+            <website>https://988lifeline.org/</website>
+        </item>
+        <item>
+            <number>18002738255</number>
+            <name>National Suicide Prevention (legacy number)</name>
+            <categories>suicide</categories>
+            <languages>english</languages>
+            <organization>Lifeline</organization>
+            <website>https://988lifeline.org/</website>
         </item>
         <item>
             <number>18004224453</number>
-            <name>Childhelp National Child Abuse Hotline</name>
+            <name>National Child Abuse Hotline</name>
             <categories>children|abuse</categories>
+            <organization>Childhelp</organization>
+            <website>https://www.childhelp.org/</website>
         </item>
         <item>
             <number>18006214673</number>
             <name>Domestic violence hotline</name>
             <categories>abuse</categories>
             <organization>Safe Horizon</organization>
+            <website>https://www.coalitionforthehomeless.org/resources/safe-horizon-domestic-violence-hotline/</website>
         </item>
         <item>
             <number>18007862929</number>
@@ -3034,6 +3046,7 @@
             <name>National Sexual Assault Hotline</name>
             <categories>abuse|sexual assault</categories>
             <organization>Rape Abuse Incest National Network</organization>
+            <website>https://www.rainn.org/resources/</website>
         </item>
         <item>
             <number>18007994889</number>
@@ -3044,6 +3057,8 @@
         <item>
             <number>18007997233</number>
             <name>National Domestic Violence Hotline</name>
+            <categories>abuse</categories>
+            <website>https://www.thehotline.org/</website>
         </item>
         <item>
             <number>18558388255</number>
@@ -3054,11 +3069,16 @@
         <item>
             <number>18662231111</number>
             <name>Minnesota Emergency Shelter and Crisis Hotline</name>
-            <organization>MN Day One® Crisis Line</organization>
+            <categories>minnesota</categories>
+            <organization>Cornerstone</organization>
+            <website>https://cornerstonemn.org/abuse-help-minnesota/violence-survivor/</website>
         </item>
         <item>
             <number>18663852699</number>
             <name>Minnesota General Crime Victims Hotline</name>
+            <categories>minnesota</categories>
+            <organization>Cornerstone</organization>
+            <website>https://cornerstonemn.org/abuse-help-minnesota/violence-survivor/</website>
         </item>
         <item>
             <number>18664887386</number>
@@ -3071,12 +3091,14 @@
             <name>Crime Victims Hotline</name>
             <categories>crime victims|emotional support</categories>
             <organization>Safe Horizon</organization>
+            <website>https://www.safehorizon.org/hotlines/</website>
         </item>
         <item>
             <number>18775658860</number>
-            <name>Suicide Prevention</name>
-            <categories>suicide|trans</categories>
+            <name>Trans Lifeline</name>
+            <categories>trans</categories>
             <organization>Trans Lifeline</organization>
+            <website>https://translifeline.org/hotline/</website>
         </item>
         <item>
             <number>18886289454</number>
