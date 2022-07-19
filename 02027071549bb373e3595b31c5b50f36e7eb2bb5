@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "dc318571_824f51a8",
         "filename": "build/soong/Android.bp",
@@ -20,8 +21,31 @@
         "endChar": 30
       },
       "revId": "02027071549bb373e3595b31c5b50f36e7eb2bb5",
-      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
-      "unresolved": true
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9f7e472_8f81f1a0",
+        "filename": "build/soong/Android.bp",
+        "patchSetId": 10
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 27741
+      },
+      "writtenOn": "2022-07-19T18:12:37Z",
+      "side": 1,
+      "message": "fixed by patchset 14",
+      "parentUuid": "dc318571_824f51a8",
+      "range": {
+        "startLine": 332,
+        "startChar": 0,
+        "endLine": 333,
+        "endChar": 30
+      },
+      "revId": "02027071549bb373e3595b31c5b50f36e7eb2bb5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
