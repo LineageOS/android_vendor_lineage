@@ -69,6 +69,9 @@
 #
 #   TARGET_FORCE_PREBUILT_KERNEL       = Optional, use TARGET_PREBUILT_KERNEL even if
 #                                          kernel sources are present
+#
+#   TARGET_EXTERNAL_MODULES            = Optional, the external modules we are
+#                                          building
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -275,6 +278,13 @@ define internal-make-kernel-target
 $(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_BUILD_OUT_PREFIX)$(1) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(KERNEL_LD) $(2)
 endef
 
+# Make a external module target
+# $(1): source path (The value passed to -C)
+# $(2): target to build (eg. defconfig, modules, dtbo.img)
+define make-external-module-target
+$(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C ./ M=$(1) KERNEL_SRC=$(KERNEL_SRC) O=$(KERNEL_BUILD_OUT_PREFIX)$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(KERNEL_LD) $(2)
+endef
+
 # Generate kernel .config from a given defconfig
 # $(1): Output path (The value passed to O=)
 # $(2): The defconfig to process (just the filename, no need for full path to file)
@@ -407,10 +417,20 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
 			$(call make-kernel-target,dtbs); \
 		fi
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
+			rootdir_mpath=$$(shell python3 -c 'import os,sys;print(os.path.relpath(*(sys.argv[1:])))' $(BUILD_TOP) $(BUILD_TOP)/$(KERNEL_SRC))
 			echo "Building Kernel Modules"; \
 			$(call make-kernel-target,modules) || exit "$$?"; \
+			echo "Building External Kernel Modules"; \
+			$(foreach p, $(TARGET_EXTERNAL_MODULES),\
+				mkdir $(KERNEL_BUILD_OUT_PREFIX)$(KERNEL_OUT)/$(mpath); \
+				cd $(BUILD_TOP)/$(p); \
+				$(call make-external-module-target,$$rootdir_mpath/$(p),modules)); \
 			echo "Installing Kernel Modules"; \
 			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) INSTALL_MOD_STRIP=1 modules_install); \
+			echo "Installing External Kernel Modules"; \
+			$(foreach p, $(TARGET_EXTERNAL_MODULES),\
+				cd $(BUILD_TOP)/$(p); \
+				$(call make-external-module-target,$$rootdir_mpath/$(p),INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) INSTALL_MOD_STRIP=1 modules_install)); \
 			kernel_release=$$(cat $(KERNEL_RELEASE)) \
 			kernel_modules_dir=$(MODULES_INTERMEDIATES)/lib/modules/$$kernel_release \
 			$(foreach s, $(TARGET_MODULE_ALIASES),\
