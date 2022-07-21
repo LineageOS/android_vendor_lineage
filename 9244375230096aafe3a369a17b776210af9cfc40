@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbf453b7_540c8d02",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-07-21T22:03:10Z",
+      "side": 1,
+      "message": "This does not build external modules correctly. I need to work to fix this.",
+      "revId": "9244375230096aafe3a369a17b776210af9cfc40",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
