@@ -38,6 +38,11 @@
 #   TARGET_KERNEL_DTB                  = Name of the kernel Makefile target that
 #                                        generates the *.dtb targets. Defaults to dtbs
 #
+#   TARGET_KERNEL_EXT_MODULE_ROOT      = Optional, the external modules root directory
+#                                          Defaults to empty
+#   TARGET_KERNEL_EXT_MODULES          = Optional, the external modules we are
+#                                          building. Defaults to empty
+#
 #   KERNEL_TOOLCHAIN_PREFIX            = Overrides TARGET_KERNEL_CROSS_COMPILE_PREFIX,
 #                                          Set this var in shell to override
 #                                          toolchain specified in BoardConfig.mk
@@ -155,6 +160,10 @@ endif
 
 # Set the default dtb target
 TARGET_KERNEL_DTB ?= dtbs
+
+# Set no external modules by default
+TARGET_KERNEL_EXT_MODULE_ROOT ?=
+TARGET_KERNEL_EXT_MODULES ?=
 
 # Set use the full path to the make command
 KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/make
