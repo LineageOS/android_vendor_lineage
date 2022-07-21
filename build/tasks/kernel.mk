@@ -69,6 +69,12 @@
 #
 #   TARGET_FORCE_PREBUILT_KERNEL       = Optional, use TARGET_PREBUILT_KERNEL even if
 #                                          kernel sources are present
+#
+#   TARGET_EXTERNAL_MODULE_PATH        = Optional, the path of the external modules
+#                                          if we are building a GKI-based device
+#
+#   TARGET_EXTERNAL_MODULES            = Optional, the external modules we are
+#                                          building
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -411,6 +417,12 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
 			$(call make-kernel-target,modules) || exit "$$?"; \
 			echo "Installing Kernel Modules"; \
 			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) INSTALL_MOD_STRIP=1 modules_install); \
+			echo "Building External Kernel Modules"; \
+			$(foreach p, $(TARGET_EXTERNAL_MODULES),\
+				$(call make-kernel-target,M=$(TARGET_EXTERNAL_MODULE_PATH)/$(p))); \
+			echo "Installing External Kernel Modules"; \
+			$(foreach p, $(TARGET_EXTERNAL_MODULES),\
+				$(call make-kernel-target,M=$(TARGET_EXTERNAL_MODULE_PATH)/$(p) modules_install)); \
 			kernel_release=$$(cat $(KERNEL_RELEASE)) \
 			kernel_modules_dir=$(MODULES_INTERMEDIATES)/lib/modules/$$kernel_release \
 			$(foreach s, $(TARGET_MODULE_ALIASES),\
