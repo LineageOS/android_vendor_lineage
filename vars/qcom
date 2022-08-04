@@ -1,8 +1,10 @@
 declare -A qcom_group_revision
-qcom_group_revision[qssi]=LA.QSSI.12.0.r1-07800.01-qssi.0
-qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02200-89xx.0
-qcom_group_revision[sdm660]=LA.UM.10.2.1.r1-03800-sdm660.0
+qcom_group_revision[qssi]=LA.QSSI.13.0.r1-05500-qssi.0
+qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02300-89xx.0
+qcom_group_revision[sdm660]=LA.UM.10.2.1.r1-04300-sdm660.0
 qcom_group_revision[sdm845]=LA.UM.10.3.r1-01700-sdm845.0
-qcom_group_revision[msmnile]=LA.UM.9.1.r1-11900.02-SMxxx0.QSSI12.0
-qcom_group_revision[kona]=LA.UM.9.12.r1-14300-SMxx50.0
-qcom_group_revision[lahaina]=LA.UM.9.14.r1-19800-LAHAINA.QSSI13.0
+qcom_group_revision[msmnile]=LA.UM.9.1.r1-12200-SMxxx0.QSSI13.0
+qcom_group_revision[kona]=LA.UM.9.12.r1-14600-SMxx50.QSSI13.0
+qcom_group_revision[lahaina]=LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-16000-WAIPIO.QSSI13.0
+qcom_group_revision[waipio-video]=VIDEO.LA.2.0.r1-05300-WAIPIO.0
