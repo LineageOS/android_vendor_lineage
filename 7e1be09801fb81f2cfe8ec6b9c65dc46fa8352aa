@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d2a40e6_9c88c879",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-08-04T20:09:04Z",
+      "side": 1,
+      "message": "vendor/lineage/config/BoardConfigKernel.mk:112: warning: KERNEL_MAKE_FLAGS:  -j24\n",
+      "revId": "7e1be09801fb81f2cfe8ec6b9c65dc46fa8352aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
