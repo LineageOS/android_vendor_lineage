@@ -1,5 +1,6 @@
 # Usage: ${kernel_repos[@]}
 readonly kernel_repos=(
+  raviole
   barbet
   redbull
   msm-4.14
