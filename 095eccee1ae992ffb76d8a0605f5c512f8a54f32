@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4923b6bc_e93ff88a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-08-05T16:51:30Z",
+      "side": 1,
+      "message": "Can this not moved to new project (say vendor/pixel ?)\n\nThis is unused for majority of devices and has lot of commits.",
+      "revId": "095eccee1ae992ffb76d8a0605f5c512f8a54f32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
