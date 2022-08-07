@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6cda3b59_4d9eeb79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-08-07T19:31:54Z",
+      "side": 1,
+      "message": "Not sure if this works for existing installations, but it definitely made my LatinIME list more dictionaries after factory reset.",
+      "revId": "7551e9ecddec2ce197b7ae48ac4767a55288f32f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
