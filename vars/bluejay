@@ -29,23 +29,23 @@ readonly kernel_tag=android-12.1.0_r0.40 # Jun 2022
 readonly prev_gki_tag="NA"
 readonly gki_tag=android12-5.10-2021-12_r8 # Jun 2022
 
-readonly prev_build_id="NA"
-readonly build_id="SD2A.220601.003"
+readonly prev_build_id="SD2A.220601.003"
+readonly build_id="SD2A.220601.003.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="NA"
-readonly aosp_tag="android-12.1.0_r18"
+readonly prev_aosp_tag="android-12.1.0_r18"
+readonly aosp_tag="android-12.1.0_r25"
 
-readonly prev_build_number="NA"
-readonly build_number="8804744"
+readonly prev_build_number="8804744"
+readonly build_number="8836721"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-sd2a.220601.003-factory-96c1bea8.zip"
-readonly image_sha256="96c1bea8fd18761238007ad4d36ba66649b97548b6722b69c35bbf4fc643f31f"
+readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-sd2a.220601.003.b1-factory-79324336.zip"
+readonly image_sha256="793243360b349c377124e25193f757f16c5de731d2ddb9209eec3998e412eaf8"
 
-readonly flash_url="https://flash.android.com/build/8804744?target=bluejay-user&signed"
+readonly flash_url="https://flash.android.com/build/8836721?target=bluejay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-sd2a.220601.003-ddfde1f7.zip"
-readonly ota_sha256="ddfde1f7edcdbb2b3de41d24f6c3f31587f836f387cab4cc6d16adee32bcab8a"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-sd2a.220601.003.b1-8b8a81b7.zip"
+readonly ota_sha256="8b8a81b7496152c6c02e7f79f7eae60be0843785b042963a3fb9e329f517c1b8"
 
 readonly security_patch="2022-06-01"
