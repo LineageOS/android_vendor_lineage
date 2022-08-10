@@ -481,7 +481,7 @@ $(INSTALLED_DTBIMAGE_TARGET): $(DTC) $(DTB_OUT)
 	@echo "Building dtb.img"
 	$(hide) find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | xargs rm -f
 	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
-	$(call make-dtb-target,dtbs)
+	$(call make-dtb-target,$(TARGET_KERNEL_DTB))
 	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
 	$(hide) touch -c $(DTB_OUT)
 endif # !BOARD_PREBUILT_DTBIMAGE_DIR
