@@ -466,7 +466,7 @@ else
 	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtbo" | sort)
 endif # BOARD_DTBO_CFG
 else
-	$(call make-dtbo-target,dtbo.img)
+	$(call make-dtbo-target,$(TARGET_KERNEL_DTBO))
 endif # BOARD_KERNEL_SEPARATED_DTBO
 	$(hide) touch -c $(DTBO_OUT)
 endif # BOARD_CUSTOM_DTBOIMG_MK
