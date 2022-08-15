@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f0a4ecf5_debaa2bb",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 18
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-08-15T17:28:13Z",
+      "side": 1,
+      "message": "that\u0027s fine, but why not simply use readlink?",
+      "revId": "fadfdbf4f59e9bd86ed6d1b8b32e27aaff0403a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
