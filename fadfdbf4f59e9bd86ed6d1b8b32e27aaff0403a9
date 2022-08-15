@@ -16,6 +16,24 @@
       "message": "that\u0027s fine, but why not simply use readlink?",
       "revId": "fadfdbf4f59e9bd86ed6d1b8b32e27aaff0403a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80c41180_232c6142",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 18
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 23782
+      },
+      "writtenOn": "2022-08-15T18:58:44Z",
+      "side": 1,
+      "message": "The reason why I didn\u0027t use readlink is because the --relative-to was missing in the readlink we have. That\u0027s why I use python for this, otherwise we can\u0027t get relative paths for gki.",
+      "parentUuid": "f0a4ecf5_debaa2bb",
+      "revId": "fadfdbf4f59e9bd86ed6d1b8b32e27aaff0403a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
