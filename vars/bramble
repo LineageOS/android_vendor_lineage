@@ -24,23 +24,23 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id=SQ3A.220605.009.A1 # Jun 2022
-readonly build_id=SQ3A.220705.003.A1 # Jul 2022
+readonly prev_build_id="SQ3A.220705.003.A1"
+readonly build_id="TP1A.220624.014"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r7"
-readonly aosp_tag="android-12.1.0_r11"
+readonly prev_aosp_tag="android-12.1.0_r11"
+readonly aosp_tag="android-13.0.0_r1"
 
-readonly prev_build_number="8643238"
-readonly build_number="8672226"
+readonly prev_build_number="8672226"
+readonly build_number="8819323"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bramble-sq3a.220705.003.a1-factory-87426cb6.zip"
-readonly image_sha256="87426cb607e5d7758f14e04d2ef277438f5e7ebcc7807419171e16c77f494753"
+readonly image_url="https://dl.google.com/dl/android/aosp/bramble-tp1a.220624.014-factory-2969e152.zip"
+readonly image_sha256="2969e15279c46057b38740c40805bb7a9493dc25a4f8d3f1030dff5319268cf9"
 
-readonly flash_url="https://flash.android.com/build/8672226?target=bramble-user&signed"
+readonly flash_url="https://flash.android.com/build/8819323?target=bramble-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-sq3a.220705.003.a1-1fefa3a0.zip"
-readonly ota_sha256="1fefa3a0a8b4f0e7bde6baf008b20613312184428d754d1387e73aecda7d6f1e"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-tp1a.220624.014-2a3dda42.zip"
+readonly ota_sha256="2a3dda42e0989fe4e0c7153badfa90dc3da361d968848387b7cca4ee7a8f45a8"
 
-readonly security_patch="2022-07-05"
+readonly security_patch="2022-08-05"
