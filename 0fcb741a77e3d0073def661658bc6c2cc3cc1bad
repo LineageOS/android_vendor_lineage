@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60277a11_6f53d0a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29914
+      },
+      "writtenOn": "2022-08-17T20:12:11Z",
+      "side": 1,
+      "message": "Tested on exynos990/universal2100, looks good to me.",
+      "revId": "0fcb741a77e3d0073def661658bc6c2cc3cc1bad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
