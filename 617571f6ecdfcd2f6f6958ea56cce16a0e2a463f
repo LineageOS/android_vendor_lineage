@@ -16,6 +16,23 @@
       "message": "turns out that this is actually executable file.",
       "revId": "617571f6ecdfcd2f6f6958ea56cce16a0e2a463f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7037a6f1_a403c131",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-08-21T10:20:15Z",
+      "side": 1,
+      "message": "$ file /mnt/android-out/common-out/lineage-19.1/soong/host/linux-x86/bin/mkdtboimg.py\n/mnt/android-out/common-out/lineage-19.1/soong/host/linux-x86/bin/mkdtboimg.py: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.24, with debug_info, not stripped\n",
+      "revId": "617571f6ecdfcd2f6f6958ea56cce16a0e2a463f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
