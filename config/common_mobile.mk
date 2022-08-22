@@ -14,7 +14,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Jelly \
     Profiles \
-    Seedvault
+
+#    Seedvault
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
 PRODUCT_PACKAGES += \
