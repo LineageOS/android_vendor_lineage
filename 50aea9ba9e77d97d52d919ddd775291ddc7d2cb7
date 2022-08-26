@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "809c0988_a0421f1d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-08-26T18:09:52Z",
+      "side": 1,
+      "message": "Could use ticks here, too. I thought \"it must be \u0027use x by default\u0027, not \u0027use x as by default\u0027\" - just so it\u0027s clearer when only looking at commit titles?",
+      "range": {
+        "startLine": 7,
+        "startChar": 28,
+        "endLine": 7,
+        "endChar": 33
+      },
+      "revId": "50aea9ba9e77d97d52d919ddd775291ddc7d2cb7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
