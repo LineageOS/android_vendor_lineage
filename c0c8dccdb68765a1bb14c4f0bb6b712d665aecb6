@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bec18750_b840ae1d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-08-29T15:24:01Z",
+      "side": 1,
+      "message": "Let\u0027s enable this once we have at least one translation sync in 13.",
+      "revId": "c0c8dccdb68765a1bb14c4f0bb6b712d665aecb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
