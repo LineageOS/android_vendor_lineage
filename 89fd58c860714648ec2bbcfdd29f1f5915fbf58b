@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3981be76_ea7b165c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-08-30T00:18:34Z",
+      "side": 1,
+      "message": "Should we remove a-fam platforms here?",
+      "revId": "89fd58c860714648ec2bbcfdd29f1f5915fbf58b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
