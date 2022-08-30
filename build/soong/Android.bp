@@ -270,23 +270,6 @@ bootloader_message_offset {
 }
 
 soong_config_module_type {
-    name: "camera_parameter_library",
-    module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
-    value_variables: ["uses_camera_parameter_lib"],
-    properties: ["whole_static_libs"],
-}
-
-camera_parameter_library {
-    name: "camera_parameter_library_defaults",
-    soong_config_variables: {
-        uses_camera_parameter_lib: {
-            whole_static_libs: ["%s"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "egl_display_array",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
