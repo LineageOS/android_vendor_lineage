@@ -23,23 +23,23 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id=SP2A.220505.002 # May 2022
-readonly build_id=SP2A.220505.006 # May 2022
+readonly prev_build_id="SP2A.220505.006"
+readonly build_id="SP2A.220505.008"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-12.1.0_r5"
-readonly aosp_tag="android-12.1.0_r6"
+readonly prev_aosp_tag="android-12.1.0_r6"
+readonly aosp_tag="android-12.1.0_r27"
 
-readonly prev_build_number="8353555"
-readonly build_number="8561491"
+readonly prev_build_number="8561491"
+readonly build_number="8782922"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bonito-sp2a.220505.006-factory-5adf2317.zip"
-readonly image_sha256="5adf23171f3efd561b8b9394d4e167e70e821d768ac6f753d0091996804ea37e"
+readonly image_url="https://dl.google.com/dl/android/aosp/bonito-sp2a.220505.008-factory-db19d2aa.zip"
+readonly image_sha256="db19d2aaff36f29b7f58f11acad856f9382dafa1ae9160a692782e27cd7b0002"
 
-readonly flash_url="https://flash.android.com/build/8561491?target=bonito-user&signed"
+readonly flash_url="https://flash.android.com/build/8782922?target=bonito-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bonito-ota-sp2a.220505.006-a854942b.zip"
-readonly ota_sha256="a854942b648e70d3195b327fc4d34af8780ff5f6915d20e1ccdeffdfc94cb1cd"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bonito-ota-sp2a.220505.008-37a410d5.zip"
+readonly ota_sha256="37a410d5a370771625e9c607913ab94b07e1bebdb1b0c1a931854d48b5defe53"
 
 readonly security_patch="2022-05-05"
