@@ -2,6 +2,9 @@
 readonly prev_os_branch=lineage-19.1
 readonly os_branch=lineage-20.0
 
+readonly prev_device_branch=lineage-19.1
+readonly device_branch=lineage-20
+
 readonly prev_common_aosp_tag=android-13.0.0_r3 # Aug 2022, Pixel 6a
 readonly common_aosp_tag=android-13.0.0_r4 # Sep 2022, Pixel 4 - 6
 
