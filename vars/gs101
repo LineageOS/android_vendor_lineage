@@ -1,0 +1,6 @@
+# Pixel 6, 6 Pro, 6a
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly prev_kernel_tag=android-13.0.0_r0.14 # Sep 2022
+readonly kernel_tag=android-13.0.0_r0.15 # Sep 2022
