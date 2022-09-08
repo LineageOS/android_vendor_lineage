@@ -16,6 +16,29 @@
       "message": "I\u0027m OK with this, as long as we communicate this to maintainers.",
       "revId": "37fe439adca70995e2fb2283a6e2dd313bf1a18e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b545341_3a71cdb8",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-08T08:46:00Z",
+      "side": 1,
+      "message": "Update comment accordingly",
+      "range": {
+        "startLine": 176,
+        "startChar": 2,
+        "endLine": 176,
+        "endChar": 71
+      },
+      "revId": "37fe439adca70995e2fb2283a6e2dd313bf1a18e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
