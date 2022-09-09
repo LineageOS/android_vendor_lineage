@@ -16,6 +16,24 @@
       "message": "This is needed for \u003e\u003d5.10 but breaks \u003c\u003d4.14, we need to figure out if it\u0027s easy to fix kernel side :/",
       "revId": "6c5af06cc68047acc589df0c37073500d410a19c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ef0407e_664584ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-09T20:29:48Z",
+      "side": 1,
+      "message": "Or try adding -Qunused-arguments to this command, just like https://github.com/mikeNG/android_kernel_google_msm-4.14/commit/334b3e9845aad943c51f50df042650c3b576c9e6",
+      "parentUuid": "4b04160c_7a7eaa83",
+      "revId": "6c5af06cc68047acc589df0c37073500d410a19c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
