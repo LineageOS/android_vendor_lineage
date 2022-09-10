@@ -51,6 +51,24 @@
       "message": "https://github.com/Linux4/android_kernel_samsung_exynos9820/commit/4e1a8ab41ba1eb1202ddf6954d2ba5640e378c56\n\nand\n\nhttps://github.com/Linux4/android_kernel_samsung_exynos9820/commit/4a48068c9d73e16ceb0c8ec36ca7dcaf8b1d80e6\n\nmake this change work on 4.14",
       "revId": "6c5af06cc68047acc589df0c37073500d410a19c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "307db15f_a1a4d2e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-10T20:09:43Z",
+      "side": 1,
+      "message": "Works with https://review.lineageos.org/q/I8332132775e7cc220eb7d1e20911223bca65e1e2, at least until 4.9. Need to check with a 4.4 kernel.",
+      "parentUuid": "917b5af7_a27aed62",
+      "revId": "6c5af06cc68047acc589df0c37073500d410a19c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
