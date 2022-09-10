@@ -34,6 +34,23 @@
       "parentUuid": "4b04160c_7a7eaa83",
       "revId": "6c5af06cc68047acc589df0c37073500d410a19c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "917b5af7_a27aed62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25925
+      },
+      "writtenOn": "2022-09-10T06:56:05Z",
+      "side": 1,
+      "message": "https://github.com/Linux4/android_kernel_samsung_exynos9820/commit/4e1a8ab41ba1eb1202ddf6954d2ba5640e378c56\n\nand\n\nhttps://github.com/Linux4/android_kernel_samsung_exynos9820/commit/4a48068c9d73e16ceb0c8ec36ca7dcaf8b1d80e6\n\nmake this change work on 4.14",
+      "revId": "6c5af06cc68047acc589df0c37073500d410a19c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
