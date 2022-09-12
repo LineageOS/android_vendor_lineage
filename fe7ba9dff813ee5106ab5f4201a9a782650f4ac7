@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59c9ba17_4288b726",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-12T09:38:27Z",
+      "side": 1,
+      "message": "Verified on 4.4 and 4.9 kernels.",
+      "revId": "fe7ba9dff813ee5106ab5f4201a9a782650f4ac7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
