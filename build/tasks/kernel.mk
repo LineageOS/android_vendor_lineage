@@ -496,12 +496,18 @@ $(DTB_OUT):
 	mkdir -p $(DTB_OUT)
 
 $(INSTALLED_DTBIMAGE_TARGET): $(DTC) $(DTB_OUT)
+ifeq ($(TARGET_WANTS_EMPTY_DTB),true)
+	@rm -f $@
+	echo "empty" > $@
+else
 	@echo "Building dtb.img"
 	$(hide) find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | xargs rm -f
 	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
 	$(call make-dtb-target,$(TARGET_KERNEL_DTB))
 	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
 	$(hide) touch -c $(DTB_OUT)
+endif # !TARGET_WANTS_EMPTY_DTB
+
 endif # !BOARD_PREBUILT_DTBIMAGE_DIR
 endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
