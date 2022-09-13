@@ -22,6 +22,30 @@
       },
       "revId": "2a78b63573cfc0ba0085df7c8676ee8d87e94c90",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f045d2_cc5cea4c",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-13T00:28:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ccfd1dd6_2656339d",
+      "range": {
+        "startLine": 20,
+        "startChar": 23,
+        "endLine": 20,
+        "endChar": 38
+      },
+      "revId": "2a78b63573cfc0ba0085df7c8676ee8d87e94c90",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
