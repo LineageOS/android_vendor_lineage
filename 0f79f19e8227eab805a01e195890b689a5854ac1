@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b72abc07_2b3d1a2c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25925
+      },
+      "writtenOn": "2022-09-13T07:00:08Z",
+      "side": 1,
+      "message": "This is needed when using health AIDL HAL for offline charger",
+      "revId": "0f79f19e8227eab805a01e195890b689a5854ac1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
