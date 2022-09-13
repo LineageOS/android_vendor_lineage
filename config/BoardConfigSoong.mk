@@ -44,14 +44,9 @@ SOONG_CONFIG_lineageNvidiaVars += \
 
 SOONG_CONFIG_NAMESPACES += lineageQcomVars
 SOONG_CONFIG_lineageQcomVars += \
+    qcom_display_headers_namespace \
     supports_extended_compress_format \
     uses_pre_uplink_features_netmgrd
-
-# Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
-ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
-SOONG_CONFIG_lineageQcomVars += \
-    qcom_display_headers_namespace
-endif
 
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
