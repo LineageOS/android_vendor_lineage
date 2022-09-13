@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8d8702d_66814a4b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-13T19:28:53Z",
+      "side": 1,
+      "message": "Target \"wants\" is kinda cringe, but I guess it\u0027s already too late to rename.",
+      "revId": "01969fe3ccb9df1082cd241b47f3b7012e21e4e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
