@@ -34,6 +34,24 @@
       "parentUuid": "d8d8702d_66814a4b",
       "revId": "01969fe3ccb9df1082cd241b47f3b7012e21e4e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc317720_966d61a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-13T19:51:57Z",
+      "side": 1,
+      "message": "I was referring to https://review.lineageos.org/c/LineageOS/android_device_amlogic_common/+/338431, which has been merged. Just leave it then.",
+      "parentUuid": "7015603e_31616389",
+      "revId": "01969fe3ccb9df1082cd241b47f3b7012e21e4e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
