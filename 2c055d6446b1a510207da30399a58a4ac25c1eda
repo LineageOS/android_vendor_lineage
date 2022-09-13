@@ -33,6 +33,24 @@
       "message": "after this change, we could add msm8909 to UM too as QCOM did update it to UM for wearables and other IoT devices.",
       "revId": "2c055d6446b1a510207da30399a58a4ac25c1eda",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0599571d_583a148e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-13T14:19:04Z",
+      "side": 1,
+      "message": "Feel free to do so, if there is any device building lineage.",
+      "parentUuid": "10c27e1e_82dc85e9",
+      "revId": "2c055d6446b1a510207da30399a58a4ac25c1eda",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
