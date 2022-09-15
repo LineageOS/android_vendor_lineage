@@ -508,34 +508,19 @@
   <apn carrier="mms" mcc="231" mnc="06" apn="o2 mms" proxy="" port="" mmsproxy="10.97.1.11" mmsport="8080" mmsc="http://mms.o2world.sk:8002" user="" password="" type="mms" />
   <apn carrier="O2 SK" mcc="231" mnc="06" apn="o2internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="O2 SK MMS" mcc="231" mnc="06" apn="o2mms" proxy="" port="" user="" password="" mmsc="http://mms.o2world.sk:8002" mmsproxy="10.97.1.11" mmsport="8080" type="mms" />
-  <apn carrier="live!" mcc="232" mnc="01" apn="A1.net" proxy="194.48.124.71" port="8001" mmsc="" user="ppp@A1plus.at" password="ppp" authtype="1" type="default,supl" />
-  <apn carrier="A1 MMS" mcc="232" mnc="01" apn="free.A1.net" proxy="" port="" mmsproxy="194.48.124.71" mmsport="8001" mmsc="http://mmsc.A1.net" user="ppp@A1plus.at" password="ppp" authtype="1" type="mms" />
-  <apn carrier="Mobilkom" mcc="232" mnc="01" apn="a1.net" user="ppp@a1plus.at" password="ppp" type="default,supl" />
-  <apn carrier="A1" mcc="232" mnc="01" apn="a1.net" proxy="" port="" user="ppp@A1plus.at" password="ppp" server="*" mmsc="http://mmsc.A1.net" mmsproxy="194.48.124.71" mmsport="8001" type="default,supl,mms" />
-  <apn carrier="Mobilkom MMS" mcc="232" mnc="01" apn="free.a1.net" proxy="" port="" user="ppp@a1plus.at" password="ppp" mmsc="http://mmsc.a1.net" mmsproxy="194.48.124.71" mmsport="8001" type="mms" />
-  <apn carrier="T-Mobile Internet" mcc="232" mnc="03" apn="gprsinternet" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.at/servlets/mms" mmsproxy="010.012.000.020" mmsport="80" authtype="1" type="default,supl" />
-  <apn carrier="T-Mobile MMS" mcc="232" mnc="03" apn="gprsmms" proxy="" port="" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.at/servlets/mms" mmsproxy="010.012.000.020" mmsport="80" authtype="1" type="mms" />
-  <apn carrier="3 AT" mcc="232" mnc="05" apn="drei.at" server="http://mobile.drei.at" mmsc="http://mmsc" mmsproxy="213.094.078.133" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="Orange AT-MMS" mcc="232" mnc="05" apn="orange.mms" proxy="" port="" user="mms" password="mms" server="*" mmsc="http://mmsc.orange.at/mms/wapenc" mmsproxy="194.24.128.118" mmsport="8080" type="mms" />
-  <apn carrier="Orange Web" mcc="232" mnc="05" apn="orange.smartphone" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="tele.ring web" mcc="232" mnc="07" apn="web" proxy="" port="" user="web@telering.at" password="web" mmsc="http://relay.mms.telering.at" mmsproxy="212.095.031.050" mmsport="80" authtype="1" type="default,supl" />
-  <apn carrier="telering mms" mcc="232" mnc="07" apn="mms" proxy="" port="" user="web@telering.at" password="web" mmsc="http://relay.mms.telering.at" mmsproxy="212.095.031.050" mmsport="80" authtype="1" type="mms" />
+  <apn carrier="A1 Internet" mcc="232" mnc="01" apn="a1.net" user="ppp@a1plus.at" password="ppp" authtype="1" protocol="IPV4V6" type="default,supl" />
+  <apn carrier="A1 MMS" mcc="232" mnc="01" apn="free.A1.net" user="ppp@a1plus.at" password="ppp" authtype="1" mmsc="http://mmsc.A1.net" mmsproxy="194.48.124.71" mmsport="8001" type="mms" />
+  <apn carrier="T-Mobile A Internet" mcc="232" mnc="03" apn="internet.t-mobile.at" user="t-mobile" password="tm" authtype="1" type="default,supl" />
+  <apn carrier="T-Mobile A MMS" mcc="232" mnc="03" apn="gprsmms" user="t-mobile" password="tm" authtype="1" mmsc="http://mmsc.t-mobile.at/servlets/mms" mmsproxy="10.12.0.20" mmsport="80" type="mms" />
+  <apn carrier="3 AT" mcc="232" mnc="05" apn="drei.at" server="http://mobile.drei.at" mmsc="http://mmsc" mmsproxy="213.94.78.133" mmsport="8799" type="default,supl,mms" />
   <apn carrier="HoT Internet" mcc="232" mnc="07" apn="webaut" type="default,supl" />
-  <apn carrier="HoT MMS" mcc="232" mnc="07" apn="mmsaut" user="" password="" mmsc="http://mmsaut.at/send" mmsproxy="212.95.31.50" mmsport="80" type="mms" />
-  <apn carrier="tele.ring MMS" mcc="232" mnc="07" apn="mms" proxy="" port="" user="wap@telering.at" password="wap" mmsc="http://relay.mms.telering.at" mmsproxy="212.95.31.50" mmsport="8080" type="mms" />
-  <apn carrier="tele.ring WEB" mcc="232" mnc="07" apn="web" proxy="" port="" user="web@telering.at" password="web" mmsc="" type="default,supl" />
-  <apn carrier="Planet 3" mcc="232" mnc="10" apn="drei.at" user="" password="" type="default,supl" />
-  <apn carrier="3MMS" mcc="232" mnc="10" apn="drei.at" proxy="" port="" mmsproxy="213.94.78.133" mmsport="8799" mmsc="http://mmsc" user="" password="" type="mms" />
-  <apn carrier="3 AT" mcc="232" mnc="10" apn="drei.at" server="http://mobile.drei.at" mmsc="http://mmsc" mmsproxy="213.094.078.133" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="Drei A" mcc="232" mnc="10" apn="drei.at" proxy="" port="" user="drei" password="" server="http://mobile.drei.at" mmsc="http://mmsc" mmsproxy="213.94.78.133" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="Bob" mcc="232" mnc="11" apn="bob.at" proxy="" port="" user="data@bob.at" password="ppp" server="http://start.bob.at/" mmsc="" type="default,supl" />
-  <apn carrier="Bob MMS" mcc="232" mnc="11" apn="mms.bob.at" proxy="194.48.124.7" port="8001" user="data@bob.at" password="web" server="http://start.bob.at/" mmsc="http://mmsc.bob.at" mmsproxy="194.48.124.7" mmsport="8001" type="mms" />
-  <apn carrier="Orange World" mcc="232" mnc="12" apn="orange.world" proxy="194.24.128.118" port="80" mmsc="" user="wap" password="wap" authtype="3" type="default,supl" />
-  <apn carrier="Orange Web" mcc="232" mnc="12" apn="orange.web" user="web" password="web" authtype="3" type="default,supl" />
-  <apn carrier="Orange MMS" mcc="232" mnc="12" apn="orange.mms" proxy="" port="" mmsproxy="194.24.128.118" mmsport="8080" mmsc="http://mmsc.orange.at/mms/wapenc" user="mms" password="mms" authtype="3" type="mms" />
-  <apn carrier="Orange Video" mcc="232" mnc="12" apn="orange.video" user="video" password="" authtype="3" type="default,supl" />
-  <apn carrier="Yesss" mcc="232" mnc="12" apn="webapn.at" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="UPC Mobile" mcc="232" mnc="13" apn="internet.at.upcmobile.com" type="default,supl" />
+  <apn carrier="HoT MMS" mcc="232" mnc="07" apn="mmsaut" mmsc="http://mmsaut.at/send" mmsproxy="212.95.31.50" mmsport="80" type="mms" />
+  <apn carrier="3 AT" mcc="232" mnc="10" apn="drei.at" server="http://mobile.drei.at" mmsc="http://mmsc" mmsproxy="213.94.78.133" mmsport="8799" type="default,supl,mms" />
+  <apn carrier="Bob" mcc="232" mnc="11" apn="data.bob" user="data@bob.at" password="ppp" type="default,supl" />
+  <apn carrier="Bob MMS" mcc="232" mnc="11" apn="mms.bob.at" user="data@bob.at" password="ppp" mmsc="http://mmsc.bob.at" mmsproxy="194.48.124.7" mmsport="8001" type="mms" />
+  <apn carrier="Yesss" mcc="232" mnc="12" apn="webapn.at" protocol="IPV4V6" type="default,supl" />
+  <apn carrier="T-Mobile A Internet" mcc="232" mnc="13" apn="internet.t-mobile.at" user="t-mobile" password="tm" authtype="1" type="default,supl" />
+  <apn carrier="T-Mobile A MMS" mcc="232" mnc="13" apn="gprsmms" user="t-mobile" password="tm" mmsc="http://mmsc.t-mobile.at/servlets/mms" mmsproxy="10.12.0.20" mmsport="80" authtype="1" type="mms" />
   <apn carrier="spusu" mcc="232" mnc="17" apn="mass.at" type="default,supl" />
   <apn carrier="UBIQUISYS" mcc="234" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Vectone Mobile" type="default,supl,mms" />
   <apn carrier="Tesco Prepay" mcc="234" mnc="01" apn="prepay.tesco-mobile.com" user="tescowap" password="password" server="http://wap.tesco-mobile.com/" proxy="193.113.200.195" port="9201" type="default,supl,mms" />
