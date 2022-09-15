@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+ifneq ($(WITH_LINEAGE_CHARGER),false)
 LOCAL_PATH := $(call my-dir)
 
 # Set lineage_charger_density to the density bucket of the device.
@@ -84,3 +84,4 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/res/values/charger
 LOCAL_REQUIRED_MODULES := lineage_charger_battery_scale_vendor lineage_charger_battery_fail_vendor
 include $(BUILD_PREBUILT)
+endif
