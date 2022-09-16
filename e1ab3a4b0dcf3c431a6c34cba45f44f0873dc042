@@ -34,6 +34,23 @@
       "parentUuid": "88fced0b_2f6903da",
       "revId": "e1ab3a4b0dcf3c431a6c34cba45f44f0873dc042",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32a47664_d7025d31",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2022-09-16T13:54:48Z",
+      "side": 1,
+      "message": "This clang version is not synced on aosp 13 anymore. Google doesn\u0027t build the kernel inline like we do. The clang version didn\u0027t match previously either, why should it now instead of using the clang version which is already available and synced by aosp?",
+      "revId": "e1ab3a4b0dcf3c431a6c34cba45f44f0873dc042",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
