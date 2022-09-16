@@ -16,6 +16,24 @@
       "message": "We could check `TARGET_KERNEL_VERSION`",
       "revId": "e1ab3a4b0dcf3c431a6c34cba45f44f0873dc042",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3eb39b0d_d9ac71df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-16T13:54:00Z",
+      "side": 1,
+      "message": "Yes, since the revert won\u0027t fit for both pixels anyway.",
+      "parentUuid": "88fced0b_2f6903da",
+      "revId": "e1ab3a4b0dcf3c431a6c34cba45f44f0873dc042",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
