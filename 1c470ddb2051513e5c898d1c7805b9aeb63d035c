@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59102061_8dfb85f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-09-16T13:37:42Z",
+      "side": 1,
+      "message": "I feel like this is what\u0027s causing many of the issues reported.\n\nGoogle _might_ be building kernels with a different version",
+      "revId": "1c470ddb2051513e5c898d1c7805b9aeb63d035c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
