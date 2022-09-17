@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46a92cac_51a77a16",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-17T20:27:05Z",
+      "side": 1,
+      "message": "we like to get carrier configs from carrier websites linked, do you have those?",
+      "revId": "2facdaed06516482e6a93f95ffb75fc8b2004741",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
