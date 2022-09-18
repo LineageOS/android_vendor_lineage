@@ -16,6 +16,23 @@
       "message": "we like to get carrier configs from carrier websites linked, do you have those?",
       "revId": "2facdaed06516482e6a93f95ffb75fc8b2004741",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "09815c93_ace0a639",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-09-18T09:14:14Z",
+      "side": 1,
+      "message": "sure do, thats where i got the updated data from, but didn\u0027t want to clutter up the commit message:\n\na1: https://www.a1.net/handyhilfe/topic/internet/apn-einstellungen/device/samsung/galaxy-a52\n\nmagenta/t-mobile: https://www.magenta.at/hilfe-service/services/hardwaresupport/device/samsung/galaxy-s9/topic/internet/internet-einrichten-apn-einstellungen/choice/magenta-apn-einstellungen\n\n3: https://www.drei.at/de/info/support/handyeinstellungen/\n\nhot: https://www.hot.at/config/faqs/HoT_Einstellungen_Endgera_te.pdf\n\nbob: https://www.bob.at/wp-content/uploads/IOS_APNs.pdf\n\nyesss: https://www.yesss.at/fragen/erste-schritte-mit-yesss#faq_62\n\nspusu: https://www.spusu.at/faq-apn",
+      "revId": "2facdaed06516482e6a93f95ffb75fc8b2004741",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
