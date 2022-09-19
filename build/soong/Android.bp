@@ -71,7 +71,7 @@ gralloc_10_usage_bits {
 soong_config_module_type {
     name: "gralloc_handle_reserved_size",
     module_type: "cc_defaults",
-    config_namespace: "calyxGlobalVars",
+    config_namespace: "lineageGlobalVars",
     bool_variables: ["gralloc_handle_has_reserved_size"],
     properties: ["export_cflags"],
 }
