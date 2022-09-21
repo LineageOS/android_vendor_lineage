@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4419752c_b27c8cad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26332
+      },
+      "writtenOn": "2022-09-21T15:32:18Z",
+      "side": 1,
+      "message": "surya still has the bug in T for which this flag was introduced:\ndeep sleep time gets added to the video recording time\nso this is still needed, the aosp patch isn\u0027t working for us\n\non the other hand, the alternative kernel patch does fix the bug:\nhttps://github.com/subhajeetmuhuri/android_kernel_xiaomi_surya/commit/d36cb8f66e7526f1c16c80e8043510d835c7d145",
+      "revId": "de2a55c8d366e969a746e689a367a30b03dc3641",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
