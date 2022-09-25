@@ -34,6 +34,24 @@
       "parentUuid": "4419752c_b27c8cad",
       "revId": "de2a55c8d366e969a746e689a367a30b03dc3641",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e851581a_1ed5b5e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-25T11:39:30Z",
+      "side": 1,
+      "message": "Can you just fix it in kernel then?",
+      "parentUuid": "b01ee563_11893f51",
+      "revId": "de2a55c8d366e969a746e689a367a30b03dc3641",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
