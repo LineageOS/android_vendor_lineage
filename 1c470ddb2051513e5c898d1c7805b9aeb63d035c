@@ -33,6 +33,24 @@
       "message": "sunfish: r416183b\n\ngs101: r450784e\n\nhttps://android.googlesource.com/device/google/sunfish-kernel/+/929d3d7229c9ed21c49dd4b98883920ad190b2cf\n\nhttps://android.googlesource.com/device/google/raviole-kernel/+/ac1ca232e23f6b06ae3f489013103f50d53a0b3f",
       "revId": "1c470ddb2051513e5c898d1c7805b9aeb63d035c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0bf5a147_f4d9f554",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-26T13:49:02Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5e000e55_2d7cd8f6",
+      "revId": "1c470ddb2051513e5c898d1c7805b9aeb63d035c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
