@@ -33,6 +33,24 @@
       "message": "Maybe we should add it directly here, because regardless of TARGET_ENFORCES_QSSI is true, msm8953 must use legacy-um ipacm.",
       "revId": "095d080b5639946026c210aefcbdd00b566d2a9f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f7d61dd_6c262ab8",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 23878
+      },
+      "writtenOn": "2022-09-28T16:04:15Z",
+      "side": 1,
+      "message": "That works for me.",
+      "parentUuid": "6bf57e70_a4c4f69d",
+      "revId": "095d080b5639946026c210aefcbdd00b566d2a9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
