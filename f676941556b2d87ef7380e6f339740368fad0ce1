@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c0636b8_4c720d32",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-28T15:34:08Z",
+      "side": 1,
+      "message": "What is exactly the usecase here? You can use USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR.",
+      "revId": "f676941556b2d87ef7380e6f339740368fad0ce1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
