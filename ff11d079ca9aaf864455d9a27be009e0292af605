@@ -16,6 +16,24 @@
       "message": "I don\u0027t understand, the target isn\u0027t built when you opt-out - it isn\u0027t a boardflag - it is a product flag.",
       "revId": "ff11d079ca9aaf864455d9a27be009e0292af605",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "741e82c5_330b7387",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23878
+      },
+      "writtenOn": "2022-09-28T16:14:46Z",
+      "side": 1,
+      "message": "When including the chain for MotoCharger the build system ignores the current opt-out. \nThe build system ends up building MotoCharger \u0026 LineageCharger even though it is opt-out already.\n\nEnd result here is even though vendor/lineage/charger/ is opt-out it builds and overwrites the MotoCharger items.\n\nThe current-opt method works fine unless adding the MotoCharger",
+      "parentUuid": "7033eb84_47294df1",
+      "revId": "ff11d079ca9aaf864455d9a27be009e0292af605",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
