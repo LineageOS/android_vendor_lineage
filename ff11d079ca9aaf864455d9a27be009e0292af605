@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7033eb84_47294df1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-28T15:38:19Z",
+      "side": 1,
+      "message": "I don\u0027t understand, the target isn\u0027t built when you opt-out - it isn\u0027t a boardflag - it is a product flag.",
+      "revId": "ff11d079ca9aaf864455d9a27be009e0292af605",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
