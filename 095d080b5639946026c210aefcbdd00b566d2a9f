@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9179ebd4_0549d6ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-28T15:43:27Z",
+      "side": 1,
+      "message": "I feel like this should be solved in some other way.",
+      "revId": "095d080b5639946026c210aefcbdd00b566d2a9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bf57e70_a4c4f69d",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-28T15:43:27Z",
+      "side": 1,
+      "message": "Maybe we should add it directly here, because regardless of TARGET_ENFORCES_QSSI is true, msm8953 must use legacy-um ipacm.",
+      "revId": "095d080b5639946026c210aefcbdd00b566d2a9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
