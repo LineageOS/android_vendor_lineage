@@ -16,6 +16,23 @@
       "message": "Can confirm, as expected, works on my devices, as well as makes GSI play nicely on pro1 with respect to LiveDisplay",
       "revId": "9f9e32f9ed7aefe29a9eb06011aecc56854f3b58",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a953ffb_a04f522a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-29T20:18:24Z",
+      "side": 1,
+      "message": "exynos9610, and amlogic_g12 are the only two devices I have that don\u0027t set this on stock, and they\u0027re not the majority.",
+      "revId": "9f9e32f9ed7aefe29a9eb06011aecc56854f3b58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
