@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e99d7b2c_a9fdb689",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-29T19:27:25Z",
+      "side": 1,
+      "message": "Can confirm, as expected, works on my devices, as well as makes GSI play nicely on pro1 with respect to LiveDisplay",
+      "revId": "9f9e32f9ed7aefe29a9eb06011aecc56854f3b58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
