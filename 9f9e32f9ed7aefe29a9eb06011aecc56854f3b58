@@ -50,6 +50,23 @@
       "message": "update exynos does set this, nvidia and amlogic are only two exceptions.\n\nGlobal enough to me.",
       "revId": "9f9e32f9ed7aefe29a9eb06011aecc56854f3b58",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8a3f2ad_d18610ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17401
+      },
+      "writtenOn": "2022-09-29T20:29:42Z",
+      "side": 1,
+      "message": "fine by me",
+      "revId": "9f9e32f9ed7aefe29a9eb06011aecc56854f3b58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
