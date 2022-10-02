@@ -70,6 +70,24 @@
       "parentUuid": "3d176a24_cdafc8af",
       "revId": "7861b417fdb01e2e004498d72fcb0342c44cb34d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "82c41f1e_680ba349",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 483,
+      "author": {
+        "id": 25925
+      },
+      "writtenOn": "2022-10-02T08:18:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c0589e5e_f979186f",
+      "revId": "7861b417fdb01e2e004498d72fcb0342c44cb34d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
