@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
+    Aperture \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
