@@ -22,23 +22,23 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TP1A.220624.014"
-readonly build_id="TP1A.220905.004"
+readonly prev_build_id="TP1A.220905.004"
+readonly build_id="TP1A.221005.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r1"
-readonly aosp_tag="android-13.0.0_r4"
+readonly prev_aosp_tag="android-13.0.0_r4"
+readonly aosp_tag="android-13.0.0_r7"
 
-readonly prev_build_number="8819323"
-readonly build_number="8927612"
+readonly prev_build_number="8927612"
+readonly build_number="9012097"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/flame-tp1a.220905.004-factory-d3d046c8.zip"
-readonly image_sha256="d3d046c81803d74bb7327a99a8e66884256f2853fb14c2f555a2f7719a6961f8"
+readonly image_url="https://dl.google.com/dl/android/aosp/flame-tp1a.221005.002-factory-f91d46b5.zip"
+readonly image_sha256="f91d46b51e2e7a83c75f5d8655717d938def82a89f6ce87db5cfd0ac4bca8cc4"
 
-readonly flash_url="https://flash.android.com/build/8927612?target=flame-user&signed"
+readonly flash_url="https://flash.android.com/build/9012097?target=flame-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/flame-ota-tp1a.220905.004-0c8049f1.zip"
-readonly ota_sha256="0c8049f140f449408e3bce0797f9d09aa02b828ec558fb59c63c55ced7bda019"
+readonly ota_url="https://dl.google.com/dl/android/aosp/flame-ota-tp1a.221005.002-c29c98cb.zip"
+readonly ota_sha256="c29c98cbf630bc4d37faf0c3a80e11d3afe91bc1acaf8d4af8a763bfc9106ec4"
 
-readonly security_patch="2022-09-05"
+readonly security_patch="2022-10-05"
