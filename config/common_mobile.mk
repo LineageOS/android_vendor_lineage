@@ -8,6 +8,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Apps
 PRODUCT_PACKAGES += \
+    Aperture \
     Backgrounds \
     Eleven \
     Etar \
