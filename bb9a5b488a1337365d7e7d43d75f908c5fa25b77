@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3abd82f1_c209f8ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-10-04T21:22:45Z",
+      "side": 1,
+      "message": "I would rather namespace common libperfmgr power HAL and import Pixel namespaces in its Android.bp, then device trees will add hardware/lineage/interfaces/power/aidl/libperfmgr to PRODUCT_SOONG_NAMESPACES\nI don\u0027t think everyone wants to have Pixel stuff globally imported",
+      "revId": "bb9a5b488a1337365d7e7d43d75f908c5fa25b77",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
