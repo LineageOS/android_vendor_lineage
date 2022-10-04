@@ -201,6 +201,23 @@ egl_display_array {
     },
 }
 
+soong_config_module_type {
+    name: "powerhal_mode_ext",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: ["target_powerhal_mode_ext"],
+    properties: ["cppflags"],
+}
+
+powerhal_mode_ext {
+    name: "powerhal_mode_ext_defaults",
+    soong_config_variables: {
+        target_powerhal_mode_ext: {
+            cppflags: ["-DTARGET_POWERHAL_MODE_EXT=\"%s\""],
+        },
+    },
+}
+
 // NVIDIA specific config modules
 soong_config_module_type {
     name: "nvidia_enhancements",
