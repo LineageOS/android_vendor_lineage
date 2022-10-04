@@ -152,6 +152,13 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/fsck.ntfs \
+    system/bin/mkfs.ntfs \
+    system/bin/mount.ntfs \
+    system/lib64/libfuse-lite.so \
+    system/lib64/libntfs-3g.so
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
