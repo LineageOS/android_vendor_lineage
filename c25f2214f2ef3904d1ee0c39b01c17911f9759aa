@@ -16,6 +16,24 @@
       "message": "Is this expected to kill the branch tag in dependencies? I was picking the topic for testing stuff on 20 and roomservice was failing on my kernel because the branch name is non-standard. Found that I had to change the branch tag to revision. Perhaps support for the branch tag could be kept as an alias to revision, so all users of the tag wouldn\u0027t have to change before this gets merged.",
       "revId": "c25f2214f2ef3904d1ee0c39b01c17911f9759aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60e97352_aa0cc066",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2022-10-08T22:55:43Z",
+      "side": 1,
+      "message": "That looks like an oversight on my end. I think I actually didn\u0027t realize we already supported \u0027branch\u0027",
+      "parentUuid": "da986ac2_e1f94b00",
+      "revId": "c25f2214f2ef3904d1ee0c39b01c17911f9759aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
