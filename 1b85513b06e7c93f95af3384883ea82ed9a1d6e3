@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0647124f_a0bd5b0d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-10-09T00:58:05Z",
+      "side": 1,
+      "message": "Verified on foster. Deps correctly pulls kernel and device trees with no minor version and hals with the minor version.",
+      "revId": "1b85513b06e7c93f95af3384883ea82ed9a1d6e3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
