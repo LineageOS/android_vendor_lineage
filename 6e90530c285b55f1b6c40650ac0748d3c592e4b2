@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1620bd6_a132ad94",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-10-09T00:56:43Z",
+      "side": 1,
+      "message": "Verified breakfasting foster. Branch tag works as expected.",
+      "revId": "6e90530c285b55f1b6c40650ac0748d3c592e4b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
