@@ -1,0 +1,48 @@
+# Pixel 7 Pro
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/gs201
+  device/google/pantah
+)
+
+# Need OTA zip for firmware, not supported by image_unpacker yet
+readonly needs_ota=true
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly prev_build_id="TD1A.220804.009.A2"
+readonly build_id="TD1A.220804.031"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly aosp_branch="android13-d1-release"
+
+readonly prev_aosp_tag="android-13.0.0_r9"
+readonly aosp_tag="android-13.0.0_r11"
+
+readonly prev_build_number="8940162"
+readonly build_number="9071314"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-td1a.220804.031-factory-6152f6f3.zip"
+readonly image_sha256="6152f6f3d8437be0ef840ed7056f15d0f52ba181a1d029ff84bd9d83c860d49f"
+
+readonly flash_url="https://flash.android.com/build/9071314?target=cheetah-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-td1a.220804.031-cd81a567.zip"
+readonly ota_sha256="cd81a56734f58f4a6d518c856452fc45eaad3dfa59e5c9d6dbf2893e9a7ac0f6"
+
+readonly security_patch="2022-10-05"

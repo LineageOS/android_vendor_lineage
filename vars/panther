@@ -1,0 +1,47 @@
+# Pixel 7
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in cheetah
+)
+
+# Need OTA zip for firmware, not supported by image_unpacker yet
+readonly needs_ota=true
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly prev_build_id="TD1A.220804.009.A2"
+readonly build_id="TD1A.220804.031"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly aosp_branch="android13-d1-release"
+
+readonly prev_aosp_tag="android-13.0.0_r9"
+readonly aosp_tag="android-13.0.0_r11"
+
+readonly prev_build_number="8940162"
+readonly build_number="9071314"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-td1a.220804.031-factory-2f036a47.zip"
+readonly image_sha256="2f036a472dfba2c4fbf4511a359b83f359678bc02fe817a40a3bb5e816b17034"
+
+readonly flash_url="https://flash.android.com/build/9071314?target=panther-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-td1a.220804.031-8236abf4.zip"
+readonly ota_sha256="8236abf41254bf5101d676eddaaa57520325357f743ab5da1b0aa2251be98cf5"
+
+readonly security_patch="2022-10-05"
