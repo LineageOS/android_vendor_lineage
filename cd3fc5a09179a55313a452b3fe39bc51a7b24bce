@@ -16,6 +16,24 @@
       "message": "Actually seems AOSP fix does not fix at least Surya? Will need more testing, Kernel side fix is possible, but i guess more devices will be affected as surya is not the only one with this issue.",
       "revId": "cd3fc5a09179a55313a452b3fe39bc51a7b24bce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72e10a70_4b880b5a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-10-15T21:00:41Z",
+      "side": 1,
+      "message": "No, it is the only one lol - Surya is the only device that has used this flag: https://github.com/search?q\u003dorg%3ALineageOS+TARGET_CAMERA_BOOTTIME_TIMESTAMP\u0026type\u003dcode",
+      "parentUuid": "4a910a5b_4c552b94",
+      "revId": "cd3fc5a09179a55313a452b3fe39bc51a7b24bce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
