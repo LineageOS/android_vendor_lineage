@@ -34,6 +34,24 @@
       "parentUuid": "4a910a5b_4c552b94",
       "revId": "cd3fc5a09179a55313a452b3fe39bc51a7b24bce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc3bdca9_746561b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-10-17T10:25:13Z",
+      "side": 1,
+      "message": "Then go ahead and remove it. We fix it kernel side for 20.",
+      "parentUuid": "72e10a70_4b880b5a",
+      "revId": "cd3fc5a09179a55313a452b3fe39bc51a7b24bce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
