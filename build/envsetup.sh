@@ -824,10 +824,10 @@ function dopush()
     # Install: <file>
     if [ $is_gnu_sed -gt 0 ]; then
         LOC="$(cat $OUT/.log | sed -r -e 's/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g' -e 's/^\[ {0,2}[0-9]{1,3}% [0-9]{1,6}\/[0-9]{1,6}\] +//' \
-            | grep '^Install: ' | cut -d ':' -f 2)"
+            | grep '^Install ' | cut -d ' ' -f 2)"
     else
         LOC="$(cat $OUT/.log | sed -E "s/"$'\E'"\[([0-9]{1,3}((;[0-9]{1,3})*)?)?[m|K]//g" -E "s/^\[ {0,2}[0-9]{1,3}% [0-9]{1,6}\/[0-9]{1,6}\] +//" \
-            | grep '^Install: ' | cut -d ':' -f 2)"
+            | grep '^Install ' | cut -d ' ' -f 2)"
     fi
 
     # Copy: <file>
