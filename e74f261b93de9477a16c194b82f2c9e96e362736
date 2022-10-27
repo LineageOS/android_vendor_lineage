@@ -33,6 +33,23 @@
       "message": "The thing is that the commit that landed AOSP master branch (pointed in the commit message) will invalidate this in the future and force a revert. Shouldn\u0027t we just pick it instead?",
       "revId": "e74f261b93de9477a16c194b82f2c9e96e362736",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19c4f2e0_e539fa3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-10-27T16:29:13Z",
+      "side": 1,
+      "message": "Pushed https://review.lineageos.org/c/LineageOS/android_build_soong/+/342813. I think we should go with it instead.",
+      "revId": "e74f261b93de9477a16c194b82f2c9e96e362736",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
