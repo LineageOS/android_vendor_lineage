@@ -50,6 +50,23 @@
       "message": "Pushed https://review.lineageos.org/c/LineageOS/android_build_soong/+/342813. I think we should go with it instead.",
       "revId": "e74f261b93de9477a16c194b82f2c9e96e362736",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6dc725c0_8a549b39",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2022-10-27T16:47:44Z",
+      "side": 1,
+      "message": "as Colin pointed out, dopush should parse the build data but since it got merged ",
+      "revId": "e74f261b93de9477a16c194b82f2c9e96e362736",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
