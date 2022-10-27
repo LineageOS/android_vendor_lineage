@@ -84,6 +84,24 @@
       "message": "erm +2 the wrong change",
       "revId": "e74f261b93de9477a16c194b82f2c9e96e362736",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "68372ffe_813bcadc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-10-27T17:00:58Z",
+      "side": 1,
+      "message": "Yea, I was going to ask you that. ;)",
+      "parentUuid": "a9e422f6_be138bb6",
+      "revId": "e74f261b93de9477a16c194b82f2c9e96e362736",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
