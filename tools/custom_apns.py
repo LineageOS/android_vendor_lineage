@@ -29,26 +29,27 @@ def main(argv):
     else:
         raise ValueError("Wrong number of arguments %s" % len(argv))
 
-    custom_apn_names = []
+    custom_apn_names = set()
     with open(custom_override_file, 'r') as f:
         for line in f:
             xmltree = parseString(line)
             carrier = xmltree.getElementsByTagName('apn')[0].getAttribute('carrier')
-            custom_apn_names.append('"' + carrier + '"')
+            custom_apn_names.add('"' + carrier + '"')
 
     with open(original_file, 'r') as input_file:
         with open(output_file_path, 'w') as output_file:
             for line in input_file:
-                writeOriginalLine = True
+                found_custom_apns = set()
                 for apn in custom_apn_names:
                     if apn in line:
                         with open(custom_override_file, 'r') as custom_file:
                             for override_line in custom_file:
                                 if apn in override_line:
                                     output_file.write(override_line)
-                                    writeOriginalLine = False
-                                    custom_apn_names.remove(apn)
-                if writeOriginalLine:
+                                    found_custom_apns.add(apn)
+                if found_custom_apns:
+                    custom_apn_names -= found_custom_apns
+                else:
                     if "</apns>" in line:
                         if custom_apn_names:
                             for apn in custom_apn_names:
