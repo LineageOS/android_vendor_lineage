@@ -247,9 +247,11 @@ ifneq ($(TARGET_KERNEL_MODULES),)
     $(error TARGET_KERNEL_MODULES is no longer supported!)
 endif
 
-# 5.10+ can fully compile without gcc
-ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
-    PATH_OVERRIDE += PATH=$(KERNEL_TOOLCHAIN_PATH_gcc):$$PATH
+ifeq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
+    # 5.10+ can fully compile without gcc
+    ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
+        PATH_OVERRIDE += PATH=$(KERNEL_TOOLCHAIN_PATH_gcc):$$PATH
+    endif
 endif
 
 # System tools are no longer allowed on 10+
