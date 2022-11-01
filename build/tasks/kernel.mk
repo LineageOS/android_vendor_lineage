@@ -243,10 +243,6 @@ ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
     endif
 endif
 
-ifneq ($(TARGET_KERNEL_MODULES),)
-    $(error TARGET_KERNEL_MODULES is no longer supported!)
-endif
-
 ifeq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
     # 5.10+ can fully compile without gcc
     ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
