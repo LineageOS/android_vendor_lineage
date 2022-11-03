@@ -16,6 +16,24 @@
       "message": "If this is supposedly the fix to https://gitlab.com/LineageOS/issues/android/-/issues/4865 we should do it.",
       "revId": "4365ab9f5c7469de4e3f6822d4938b0cbab9eea2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fbcc98e2_04ad4610",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-11-03T22:32:52Z",
+      "side": 1,
+      "message": "It is the fix to that, but https://github.com/LineageOS/android_frameworks_base/commit/fce1b15db00aae4447456359ac1c16bf773bbb26 was supposed to fix it properly. It still crashes for some somehow",
+      "parentUuid": "c94e332b_3d230a55",
+      "revId": "4365ab9f5c7469de4e3f6822d4938b0cbab9eea2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
