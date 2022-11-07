@@ -22,23 +22,23 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TP1A.220905.004"
-readonly build_id="TP1A.221005.002"
+readonly prev_build_id="TP1A.221005.002"
+readonly build_id="TP1A.221105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r4"
-readonly aosp_tag="android-13.0.0_r7"
+readonly prev_aosp_tag="android-13.0.0_r7"
+readonly aosp_tag="android-13.0.0_r12"
 
-readonly prev_build_number="8927612"
-readonly build_number="9012097"
+readonly prev_build_number="9012097"
+readonly build_number="9080065"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/sunfish-tp1a.221005.002-factory-ce14ad3c.zip"
-readonly image_sha256="ce14ad3cb569d75b9db381ca075fee374bc7f72b7c3c65a6c01f23fec9794361"
+readonly image_url="https://dl.google.com/dl/android/aosp/sunfish-tp1a.221105.002-factory-4fcff485.zip"
+readonly image_sha256="4fcff485a0614555a436a65d6a12b83cdfaf9f8f4da502e7b3a94c061279042b"
 
-readonly flash_url="https://flash.android.com/build/9012097?target=sunfish-user&signed"
+readonly flash_url="https://flash.android.com/build/9080065?target=sunfish-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/sunfish-ota-tp1a.221005.002-305cd73e.zip"
-readonly ota_sha256="305cd73eb0083f6fff2de45816b28dc92c3c6c8bb830a168c783d5e8987cd163"
+readonly ota_url="https://dl.google.com/dl/android/aosp/sunfish-ota-tp1a.221105.002-7047c381.zip"
+readonly ota_sha256="7047c3814d810a94c62711a36aaa27abd7682fe49354afffd4a9f87711a2612a"
 
-readonly security_patch="2022-10-05"
+readonly security_patch="2022-11-05"

@@ -29,23 +29,23 @@ readonly kernel_tag=android-12.1.0_r0.40 # Jun 2022
 readonly prev_gki_tag="NA"
 readonly gki_tag=android12-5.10-2021-12_r8 # Jun 2022
 
-readonly prev_build_id="TP1A.220905.004.A2"
-readonly build_id="TP1A.221005.003"
+readonly prev_build_id="TP1A.221005.003"
+readonly build_id="TP1A.221105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r6"
-readonly aosp_tag="android-13.0.0_r8"
+readonly prev_aosp_tag="android-13.0.0_r8"
+readonly aosp_tag="android-13.0.0_r12"
 
-readonly prev_build_number="9014697"
-readonly build_number="9018821"
+readonly prev_build_number="9018821"
+readonly build_number="9080065"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-tp1a.221005.003-factory-79e6bc1a.zip"
-readonly image_sha256="79e6bc1a7b7084ae2e3a8d4eddd49ac943476ad55f0254a9902658432576264c"
+readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-tp1a.221105.002-factory-efca1d2d.zip"
+readonly image_sha256="efca1d2d250ba552411cf214ae1e9bacb23106dbd08f4ee9c264e03e545da953"
 
-readonly flash_url="https://flash.android.com/build/9018821?target=bluejay-user&signed"
+readonly flash_url="https://flash.android.com/build/9080065?target=bluejay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-tp1a.221005.003-574bf4cf.zip"
-readonly ota_sha256="574bf4cf0ad1f1cb563592a9dfa76876a70f9e5aa4c3e0afea4dcbbfe55d7320"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-tp1a.221105.002-1bd63cb3.zip"
+readonly ota_sha256="1bd63cb33d23288224f4a14891fc75e72d6483fb952f58ca095a8308765a0cb8"
 
-readonly security_patch="2022-10-05"
+readonly security_patch="2022-11-05"

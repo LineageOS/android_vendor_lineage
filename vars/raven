@@ -24,23 +24,23 @@ readonly needs_ota=true
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TP1A.220905.004"
-readonly build_id="TP1A.221005.002"
+readonly prev_build_id="TP1A.221005.002"
+readonly build_id="TP1A.221105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r4"
-readonly aosp_tag="android-13.0.0_r7"
+readonly prev_aosp_tag="android-13.0.0_r7"
+readonly aosp_tag="android-13.0.0_r12"
 
-readonly prev_build_number="8927612"
-readonly build_number="9012097"
+readonly prev_build_number="9012097"
+readonly build_number="9080065"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/raven-tp1a.221005.002-factory-d61dff29.zip"
-readonly image_sha256="d61dff29d5c9ba513a959d1b87be08df59432c7c0dc17092ab462d12492adfd5"
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-tp1a.221105.002-factory-3b4905f4.zip"
+readonly image_sha256="3b4905f427347fde761269ecf629722f5d5346c4bc0d46dbefc50e039508f9eb"
 
-readonly flash_url="https://flash.android.com/build/9012097?target=raven-user&signed"
+readonly flash_url="https://flash.android.com/build/9080065?target=raven-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-tp1a.221005.002-36884de3.zip"
-readonly ota_sha256="36884de3192743526017155aac86e7d7e83fa97b98c335325db108bb49335560"
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-tp1a.221105.002-0508bbb1.zip"
+readonly ota_sha256="0508bbb193495cee46403309450b8013d6f167a3f0e5012914ddeebd42113d8f"
 
-readonly security_patch="2022-10-05"
+readonly security_patch="2022-11-05"
