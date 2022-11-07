@@ -5,10 +5,10 @@ readonly os_branch=lineage-20.0
 readonly prev_device_branch=lineage-19.1
 readonly device_branch=lineage-20
 
-readonly prev_common_aosp_tag=android-13.0.0_r8 # Oct 2022, Pixel 6a
-readonly common_aosp_tag=android-13.0.0_r11 # Oct 2022, Pixel 7
+readonly prev_common_aosp_tag=android-13.0.0_r11 # Oct 2022, Pixel 7
+readonly common_aosp_tag=android-13.0.0_r13 # Nov 2022, Pixel 7
 
-readonly prev_common_aosp_build_id=TP1A.221005.003 # Oct 2022, Pixel 6a
-readonly common_aosp_build_id=TD1A.220804.031 # Oct 2022, Pixel 7
+readonly prev_common_aosp_build_id=TD1A.220804.031 # Oct 2022, Pixel 7
+readonly common_aosp_build_id=TD1A.221105.001 # Nov 2022, Pixel 7
 
-readonly topic=T_asb_2022-10_gs201
+readonly topic=T_asb_2022-11
