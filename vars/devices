@@ -10,6 +10,4 @@ readonly devices=(
   redfin
   bramble
   sunfish
-  coral
-  flame
 )
