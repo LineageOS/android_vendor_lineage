@@ -12,6 +12,7 @@ readonly firmware_partitions=(
   ldfw
   modem
 )
+
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/bluejay
@@ -21,13 +22,6 @@ device_repos=(
 readonly needs_ota=true
 
 # Updated semi-manually via pixel/update-any-var.sh
-
-readonly prev_kernel_tag="NA"
-readonly kernel_tag=android-12.1.0_r0.40 # Jun 2022
-
-# Match with version string in commit message of prebuilt kernel
-readonly prev_gki_tag="NA"
-readonly gki_tag=android12-5.10-2021-12_r8 # Jun 2022
 
 readonly prev_build_id="TP1A.221005.003"
 readonly build_id="TP1A.221105.002"

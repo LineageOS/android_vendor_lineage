@@ -29,8 +29,6 @@ readonly build_id="TD1A.221105.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly aosp_branch="android13-d1-release"
-
 readonly prev_aosp_tag="android-13.0.0_r11"
 readonly aosp_tag="android-13.0.0_r13"
 
