@@ -12,6 +12,7 @@ readonly firmware_partitions=(
   ldfw
   modem
 )
+
 # Usage: ${device_repos[@]}
 device_repos=(
   # common repos in raven
