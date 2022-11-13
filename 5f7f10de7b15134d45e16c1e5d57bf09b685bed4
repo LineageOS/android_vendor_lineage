@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ef99be4_bbcc3275",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20587
+      },
+      "writtenOn": "2022-11-13T17:16:48Z",
+      "side": 1,
+      "message": "Unfortunately this is still not enough to have this script fully working.\nCarriers such as \"Cable \u0026amp; Wireless\" and \"IMS\" will be skipped as well as some semi-random others. See https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/344205 and dependencies for fixes.",
+      "revId": "5f7f10de7b15134d45e16c1e5d57bf09b685bed4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
