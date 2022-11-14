@@ -31,6 +31,8 @@
 #   TARGET_KERNEL_CLANG_PATH           = Clang prebuilts path, optional
 #
 #   TARGET_KERNEL_LLVM_BINUTILS        = Use LLVM binutils, defaults to true
+#   TARGET_KERNEL_NO_GCC               = Fully compile the kernel without GCC.
+#                                        Defaults to false
 #   TARGET_KERNEL_VERSION              = Reported kernel version in top level kernel
 #                                        makefile. Can be overriden in device trees
 #                                        in the event of prebuilt kernel.
@@ -71,6 +73,13 @@ KERNEL_VERSION := $(shell grep -s "^VERSION = " $(TARGET_KERNEL_SOURCE)/Makefile
 KERNEL_PATCHLEVEL := $(shell grep -s "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
 TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
+# 5.10+ can fully compile without GCC by default
+ifneq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
+    TARGET_KERNEL_NO_GCC ?= true
+else
+    TARGET_KERNEL_NO_GCC ?= false
+endif
+
 ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
     KERNEL_CLANG_VERSION := clang-$(TARGET_KERNEL_CLANG_VERSION)
 else
@@ -95,8 +104,17 @@ KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
 TOOLS_PATH_OVERRIDE := \
     PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
 
-# 5.10+ can fully compile without gcc
-ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
+# Use LLVM's substitutes for GNU binutils
+ifneq ($(TARGET_KERNEL_CLANG_COMPILE), false)
+    ifneq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
+        KERNEL_MAKE_FLAGS += LLVM=1 LLVM_IAS=1
+        ifneq ($(TARGET_KERNEL_NO_GCC), false)
+            KERNEL_NO_GCC := true
+        endif
+    endif
+endif
+
+ifeq ($(KERNEL_NO_GCC), false)
     GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)
     # arm64 toolchain
     KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-linux-android-4.9/bin
@@ -191,13 +209,6 @@ TARGET_KERNEL_EXT_MODULES ?=
 
 # Set use the full path to the make command
 KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/make
-
-# Use LLVM's substitutes for GNU binutils
-ifneq ($(TARGET_KERNEL_CLANG_COMPILE), false)
-    ifneq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
-        KERNEL_MAKE_FLAGS += LLVM=1 LLVM_IAS=1
-    endif
-endif
 
 # Since Linux 4.16, flex and bison are required
 KERNEL_MAKE_FLAGS += LEX=$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/flex
