@@ -188,12 +188,6 @@ endif
 # Root
 PRODUCT_PACKAGES += \
     adb_root
-ifneq ($(TARGET_BUILD_VARIANT),user)
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su
-endif
-endif
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
