@@ -23,23 +23,23 @@ readonly needs_ota=true
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TD1A.220804.031"
-readonly build_id="TD1A.221105.001"
+readonly prev_build_id="TD1A.221105.001"
+readonly build_id="TQ1A.221205.011"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r11"
-readonly aosp_tag="android-13.0.0_r13"
+readonly prev_aosp_tag="android-13.0.0_r13"
+readonly aosp_tag="android-13.0.0_r16"
 
-readonly prev_build_number="9071314"
-readonly build_number="9104446"
+readonly prev_build_number="9104446"
+readonly build_number="9244662"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-td1a.221105.001-factory-10a338fe.zip"
-readonly image_sha256="10a338fe6bb94c1d329b3d7e1d5617c57dd938eae3439434d1d5b91ce73dd3d9"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-tq1a.221205.011-factory-ab58bb03.zip"
+readonly image_sha256="ab58bb03b5aba9a5b289cb554bad9fb37d9b24c57792e24172127a3f0f3551a3"
 
-readonly flash_url="https://flash.android.com/build/9104446?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/9244662?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-td1a.221105.001-6f05b2cf.zip"
-readonly ota_sha256="6f05b2cfeb68cf4f88561989f422310211a619d3e39638309894cbc548ebbd38"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-tq1a.221205.011-7bdbdb25.zip"
+readonly ota_sha256="7bdbdb253c847c262d0523f228ab18f543a4cc0ad3c6c71ddd99a839662a2f1a"
 
-readonly security_patch="2022-11-05"
+readonly security_patch="2022-12-05"
