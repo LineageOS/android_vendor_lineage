@@ -16,6 +16,8 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Package of the stub apk containing the themes descriptions -->
     <string name="themes_stub_package" translatable="false">org.lineageos.customization</string>
+    <!-- Package of the stub apk containing the clock content -->
     <string name="clocks_stub_package" translatable="false">org.lineageos.customization</string>
 </resources>
