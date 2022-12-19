@@ -2,7 +2,7 @@
 <!--
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2017-2021 The LineageOS Project
+ * Copyright (C) 2017-2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1793,655 +1793,206 @@
     <!--Bulgaria-->
     <sensitivePN network="284">
         <item>
+            <number>116000</number>
+            <name>European Missing Children Hotline</name>
+            <categories>abuse|adolescents|children|human trafficking</categories>
+            <organization>Nadja Centre Foundation</organization>
+            <website>https://www.centrenadja.com/</website>
+        </item>
+        <item>
             <number>116111</number>
-            <name>European Helpline for Children and Adolescents</name>
-            <categories>children|adolescents</categories>
+            <name>National Children and Adolescents Helpline</name>
+            <categories>adolescents|children</categories>
+            <organization>State Agency for Child Protection</organization>
+            <website>https://www.116111.bg/</website>
         </item>
         <item>
-            <number>024923030</number>
-            <name>Sofia Red Cross Trust Helpline</name>
-            <categories>emotional support|suicide|hiv|human trafficking|addiction</categories>
-            <organization>Bulgarian Red Cross</organization>
-            <website>https://www.redcross.bg/</website>
+            <number>124123</number>
+            <name>National Children's Online Safety Helpline</name>
+            <categories>adolescents|bullying|children|parents</categories>
+            <organization>Bulgarian Safe Internet Center</organization>
+            <website>https://www.safenet.bg/</website>
         </item>
         <item>
-            <number>028130250</number>
+            <number>024270437</number>
+            <name>Foundation I Want a Baby</name>
+            <categories>birth|psychological</categories>
+            <organization>Foundation I Want a Baby</organization>
+            <website>https://iskambebe.bg/</website>
         </item>
         <item>
-            <number>028223510</number>
+            <number>028073030</number>
+            <name>Commission for Protection Against Discrimination</name>
+            <categories>discrimination</categories>
+            <organization>National Commission for Protection Against Discrimination</organization>
+            <website>https://www.kzd-nondiscrimination.com/</website>
         </item>
         <item>
-            <number>029204238</number>
+            <number>028078050</number>
+            <name>National Commission to Combat Human Trafficking</name>
+            <categories>human trafficking</categories>
+            <organization>National Commission to Combat Human Trafficking</organization>
+            <website>https://antitraffic.government.bg/</website>
         </item>
         <item>
-            <number>029339010</number>
+            <number>029394774</number>
+            <name>International Organization for Migration Bulgaria</name>
+            <categories>immigration|human trafficking</categories>
+            <organization>International Organization for Migration Bulgaria</organization>
+            <website>https://bulgaria.iom.int/</website>
         </item>
         <item>
-            <number>029339011</number>
-        </item>
-        <item>
-            <number>029360011</number>
-        </item>
-        <item>
-            <number>029360535</number>
-        </item>
-        <item>
-            <number>029361026</number>
-        </item>
-        <item>
-            <number>029569529</number>
-        </item>
-        <item>
-            <number>029635357</number>
+            <number>029813318</number>
+            <name>Bulgarian Helsinki Committee Legal Aid Program</name>
+            <categories>discrimination|human rights|legal aid</categories>
+            <organization>Bulgarian Helsinki Committee</organization>
+            <website>https://www.bghelsinki.org/</website>
         </item>
         <item>
             <number>029817686</number>
-            <name>National Abuse and Human Trafficking Hotline</name>
-            <categories>abuse|human trafficking</categories>
+            <name>National Abuse Hotline</name>
+            <categories>abuse|domestic violence|human trafficking|sexual abuse</categories>
             <organization>Animus Association Foundation</organization>
-            <website>http://animusassociation.org/</website>
+            <website>https://animusassociation.org/</website>
         </item>
         <item>
-            <number>029835205</number>
-        </item>
-        <item>
-            <number>029835305</number>
-        </item>
-        <item>
-            <number>029835405</number>
-        </item>
-        <item>
-            <number>030181771</number>
-        </item>
-        <item>
-            <number>030412049</number>
-        </item>
-        <item>
-            <number>030454240</number>
-        </item>
-        <item>
-            <number>030712038</number>
-        </item>
-        <item>
-            <number>030728824</number>
-        </item>
-        <item>
-            <number>031182290</number>
-        </item>
-        <item>
-            <number>031348618</number>
-        </item>
-        <item>
-            <number>031452059</number>
-        </item>
-        <item>
-            <number>031822316</number>
-        </item>
-        <item>
-            <number>032207253</number>
-        </item>
-        <item>
-            <number>032260708</number>
-        </item>
-        <item>
-            <number>032512989</number>
-        </item>
-        <item>
-            <number>032622322</number>
-        </item>
-        <item>
-            <number>032658150</number>
-        </item>
-        <item>
-            <number>032660530</number>
-        </item>
-        <item>
-            <number>032814072</number>
-        </item>
-        <item>
-            <number>032943444</number>
-        </item>
-        <item>
-            <number>033127352</number>
-        </item>
-        <item>
-            <number>033555771</number>
-        </item>
-        <item>
-            <number>033762547</number>
-        </item>
-        <item>
-            <number>034447530</number>
-        </item>
-        <item>
-            <number>035172233</number>
-        </item>
-        <item>
-            <number>035762023</number>
-        </item>
-        <item>
-            <number>035950344</number>
-        </item>
-        <item>
-            <number>036328858</number>
-        </item>
-        <item>
-            <number>036417274</number>
-        </item>
-        <item>
-            <number>036417275</number>
-        </item>
-        <item>
-            <number>036514145</number>
-        </item>
-        <item>
-            <number>037049991</number>
-        </item>
-        <item>
-            <number>037391076</number>
-        </item>
-        <item>
-            <number>038620392</number>
+            <number>029885062</number>
+            <name>Foundation Access to Information Program Legal Aid Helpline</name>
+            <categories></categories>
+            <organization>Foundation Access to Information Program</organization>
+            <website>https://www.aip-bg.org/</website>
         </item>
         <item>
             <number>038624685</number>
-        </item>
-        <item>
-            <number>038662138</number>
-        </item>
-        <item>
-            <number>039126095</number>
-        </item>
-        <item>
-            <number>041695554</number>
+            <name>Regional Domestic Violence Helpline (Haskovo)</name>
+            <categories>abuse|children|domestic violence|legal aid|psychological|women</categories>
+            <organization>HD Gender Perspectives Foundation</organization>
+            <website>http://hdgender.eu/</website>
         </item>
         <item>
             <number>042641111</number>
+            <name>Samaritans Abuse Victim Helpline</name>
+            <categories>abuse|adolescents|children|domestic violence|women</categories>
+            <organization>Samaritans</organization>
+            <website>https://www.samaritans.bg/</website>
         </item>
         <item>
-            <number>042660328</number>
+            <number>061822181</number>
+            <name>Regional Domestic Violence Helpline (Gorna Oryahovitsa)</name>
+            <categories>abuse|adolescents|children|domestic violence|women</categories>
+            <organization>Association Maria Center</organization>
+            <website>https://centermaria.org/</website>
         </item>
         <item>
-            <number>043162866</number>
+            <number>070010323</number>
+            <name>National Stop Smoking Helpline</name>
+            <categories>addiction</categories>
+            <organization>Regional Health Inspectorate</organization>
         </item>
         <item>
-            <number>044667257</number>
+            <number>070018250</number>
+            <name>National Legal Aid Helpline</name>
+            <categories>legal aid</categories>
+            <organization>National Bureau for Legal Aid</organization>
+            <website>https://www.nbpp.government.bg/</website>
         </item>
         <item>
-            <number>046622056</number>
+            <number>070040150</number>
+            <name>Domestic Abuse Victims Hotline</name>
+            <categories>abuse|domestic violence</categories>
+            <organization>Association Demetra</organization>
+            <website>https://demetra-bg.org/</website>
         </item>
         <item>
-            <number>046662904</number>
-            <name>Yambol Red Cross Trust Helpline</name>
-            <categories>emotional support|suicide|hiv|human trafficking|addiction</categories>
+            <number>076601010</number>
+            <name>Regional Domestic Violence Helpline (Kardzhali)</name>
+            <categories>abuse|adolescents|children|domestic violence|women</categories>
+            <organization>PULS Foundation</organization>
+            <website>https://www.pulsfoundation.org/</website>
+        </item>
+        <item>
+            <number>080011466</number>
+            <name>Red Cross Support Contact Centre</name>
+            <categories>addiction|emotional support|hiv|human trafficking|suicide</categories>
             <organization>Bulgarian Red Cross</organization>
             <website>https://www.redcross.bg/</website>
         </item>
         <item>
-            <number>047616468</number>
-        </item>
-        <item>
-            <number>051843021</number>
-        </item>
-        <item>
-            <number>052609677</number>
-        </item>
-        <item>
-            <number>052613830</number>
-        </item>
-        <item>
-            <number>052820693</number>
-        </item>
-        <item>
-            <number>052919779</number>
-        </item>
-        <item>
-            <number>053432050</number>
-        </item>
-        <item>
-            <number>053725343</number>
-        </item>
-        <item>
-            <number>054833124</number>
-        </item>
-        <item>
-            <number>054850777</number>
-        </item>
-        <item>
-            <number>054869958</number>
-        </item>
-        <item>
-            <number>055022125</number>
-        </item>
-        <item>
-            <number>055513072</number>
-        </item>
-        <item>
-            <number>055513074</number>
-        </item>
-        <item>
-            <number>055922113</number>
-        </item>
-        <item>
-            <number>056530405</number>
-        </item>
-        <item>
-            <number>056815618</number>
-        </item>
-        <item>
-            <number>056825205</number>
-        </item>
-        <item>
-            <number>056825601</number>
-        </item>
-        <item>
-            <number>058601088</number>
-        </item>
-        <item>
-            <number>058605472</number>
-        </item>
-        <item>
-            <number>059632435</number>
-        </item>
-        <item>
-            <number>060161142</number>
-        </item>
-        <item>
-            <number>060161144</number>
-        </item>
-        <item>
-            <number>060161146</number>
-        </item>
-        <item>
-            <number>060161148</number>
-        </item>
-        <item>
-            <number>060161632</number>
-        </item>
-        <item>
-            <number>060162889</number>
-        </item>
-        <item>
-            <number>060167025</number>
-        </item>
-        <item>
-            <number>061052712</number>
-        </item>
-        <item>
-            <number>061132620</number>
-        </item>
-        <item>
-            <number>061416934</number>
-        </item>
-        <item>
-            <number>061613713</number>
-        </item>
-        <item>
-            <number>061822181</number>
-        </item>
-        <item>
-            <number>061922187</number>
-        </item>
-        <item>
-            <number>062602604</number>
-        </item>
-        <item>
-            <number>063140086</number>
-        </item>
-        <item>
-            <number>064824156</number>
-        </item>
-        <item>
-            <number>064846713</number>
-        </item>
-        <item>
-            <number>065093117</number>
-        </item>
-        <item>
-            <number>065522034</number>
-        </item>
-        <item>
-            <number>066805419</number>
-        </item>
-        <item>
-            <number>066805770</number>
-        </item>
-        <item>
-            <number>066809818</number>
-        </item>
-        <item>
-            <number>067052014</number>
-        </item>
-        <item>
-            <number>067532790</number>
-        </item>
-        <item>
-            <number>067675574</number>
-        </item>
-        <item>
-            <number>068602928</number>
-        </item>
-        <item>
-            <number>070019559</number>
-        </item>
-        <item>
-            <number>070150441</number>
-        </item>
-        <item>
-            <number>071722085</number>
-        </item>
-        <item>
-            <number>072093336</number>
-        </item>
-        <item>
-            <number>072166663</number>
-        </item>
-        <item>
-            <number>072695038</number>
-        </item>
-        <item>
-            <number>074422316</number>
-        </item>
-        <item>
-            <number>075161157</number>
-        </item>
-        <item>
-            <number>076601010</number>
-        </item>
-        <item>
-            <number>076603360</number>
-        </item>
-        <item>
-            <number>076695005</number>
-        </item>
-        <item>
-            <number>077313010</number>
-        </item>
-        <item>
-            <number>077787488</number>
-        </item>
-        <item>
-            <number>078529171</number>
-        </item>
-        <item>
-            <number>078939608</number>
-        </item>
-        <item>
             <number>080011977</number>
+            <name>National Domestic Violence Victim Helpline</name>
+            <categories>abuse|domestic violence</categories>
+            <organization>Alliance for defence against gender-based violence</organization>
+            <website>https://www.alliancedv.org/</website>
         </item>
         <item>
             <number>080018017</number>
+            <name>Vselena Support Centre for Sexual Abuse Victims</name>
+            <categories>abuse|sexual abuse|sexual assault</categories>
+            <organization>Vselena Support Centre</organization>
+            <website>https://vselena.bg</website>
         </item>
         <item>
             <number>080018676</number>
-            <name>National Abuse and Human Trafficking Hotline</name>
-            <categories>abuse|human trafficking</categories>
+            <name>National Abuse Hotline</name>
+            <categories>abuse|domestic violence|human trafficking|sexual abuse</categories>
             <organization>Animus Association Foundation</organization>
-            <website>http://animusassociation.org/</website>
+            <website>https://animusassociation.org/</website>
         </item>
         <item>
             <number>080020100</number>
+            <name>National Human Trafficking Helpline</name>
+            <categories>human trafficking|legal aid</categories>
+            <organization>A21 Bulgaria</organization>
+            <website>https://080020100.bg/</website>
         </item>
         <item>
-            <number>081222033</number>
+            <number>080030097</number>
+            <name>National Rare Disease Helpline</name>
+            <categories>mental health|psychological</categories>
+            <organization>Bulgarian Huntington Association</organization>
+            <website>https://www.facebook.com/huntington.bg/</website>
         </item>
         <item>
-            <number>082813380</number>
+            <number>0882873238</number>
+            <name>Foundation for Access to Rights Legal Aid Hotline</name>
+            <categories>human rights|legal aid</categories>
+            <organization>Foundation for Access to Rights</organization>
+            <website>https://farbg.eu/</website>
         </item>
         <item>
-            <number>082826770</number>
+            <number>0878738148</number>
+            <name>Refugee Women Council Migrant Helpline</name>
+            <categories>immigration</categories>
+            <organization>Council of Refugee Women in Bulgaria</organization>
+            <website>https://crw-bg.org/</website>
         </item>
         <item>
-            <number>084660283</number>
+            <number>0876925006</number>
+            <name>Foundation IVOR Hotline</name>
+            <categories>AIDS|HIV</categories>
+            <organization>Foundation IVOR</organization>
+            <website>https://ivor.bg/</website>
         </item>
         <item>
-            <number>084772560</number>
+            <number>0887470742</number>
+            <name>Center for Migrant Legal Aid</name>
+            <categories>human rights|immigration|legal aid</categories>
+            <organization>Center for Legal Aid - Voice in Bulgaria</organization>
+            <website>https://www.centerforlegalaid.com/</website>
         </item>
         <item>
-            <number>084872020</number>
+            <number>0888243666</number>
+            <name>Foundation Bilitis</name>
+            <categories>lgbtq|sexuality|trans</categories>
+            <organization>Foundation Bilitis</organization>
+            <website>https://bilitis.org/</website>
         </item>
         <item>
-            <number>086732268</number>
-        </item>
-        <item>
-            <number>086820487</number>
-        </item>
-        <item>
-            <number>086821495</number>
-        </item>
-        <item>
-            <number>091232064</number>
-        </item>
-        <item>
-            <number>092620063</number>
-        </item>
-        <item>
-            <number>092620484</number>
-        </item>
-        <item>
-            <number>094600606</number>
-        </item>
-        <item>
-            <number>095380116</number>
-        </item>
-        <item>
-            <number>096300134</number>
-        </item>
-        <item>
-            <number>096300491</number>
-        </item>
-        <item>
-            <number>096303270</number>
-        </item>
-        <item>
-            <number>097380953</number>
-        </item>
-        <item>
-            <number>0876244006</number>
-        </item>
-        <item>
-            <number>0876400660</number>
-        </item>
-        <item>
-            <number>0876552572</number>
-        </item>
-        <item>
-            <number>0877330225</number>
-        </item>
-        <item>
-            <number>0877622665</number>
-        </item>
-        <item>
-            <number>0877655353</number>
-        </item>
-        <item>
-            <number>0877966850</number>
-        </item>
-        <item>
-            <number>0878121910</number>
-        </item>
-        <item>
-            <number>0878238102</number>
-        </item>
-        <item>
-            <number>0878324320</number>
-        </item>
-        <item>
-            <number>0878394250</number>
-        </item>
-        <item>
-            <number>0878567620</number>
-        </item>
-        <item>
-            <number>0878567659</number>
-        </item>
-        <item>
-            <number>0878628756</number>
-        </item>
-        <item>
-            <number>0879260101</number>
-        </item>
-        <item>
-            <number>0879387620</number>
-        </item>
-        <item>
-            <number>0879453503</number>
-        </item>
-        <item>
-            <number>0879530460</number>
-        </item>
-        <item>
-            <number>0879532892</number>
-        </item>
-        <item>
-            <number>0879535905</number>
-        </item>
-        <item>
-            <number>0879606855</number>
-        </item>
-        <item>
-            <number>0879612223</number>
-        </item>
-        <item>
-            <number>0879816911</number>
-        </item>
-        <item>
-            <number>0879819195</number>
-        </item>
-        <item>
-            <number>0879993859</number>
-        </item>
-        <item>
-            <number>0882071603</number>
-        </item>
-        <item>
-            <number>0882165368</number>
-        </item>
-        <item>
-            <number>0882290920</number>
-        </item>
-        <item>
-            <number>0882290980</number>
-        </item>
-        <item>
-            <number>0882330008</number>
-        </item>
-        <item>
-            <number>0882384587</number>
-        </item>
-        <item>
-            <number>0882420038</number>
-        </item>
-        <item>
-            <number>0883256622</number>
-        </item>
-        <item>
-            <number>0884029213</number>
-        </item>
-        <item>
-            <number>0884199173</number>
-        </item>
-        <item>
-            <number>0884301016</number>
-        </item>
-        <item>
-            <number>0884843400</number>
-        </item>
-        <item>
-            <number>0884877595</number>
-        </item>
-        <item>
-            <number>0884940688</number>
-        </item>
-        <item>
-            <number>0884959367</number>
-        </item>
-        <item>
-            <number>0884977296</number>
-        </item>
-        <item>
-            <number>0885546493</number>
-        </item>
-        <item>
-            <number>0885584855</number>
-        </item>
-        <item>
-            <number>0886203742</number>
-        </item>
-        <item>
-            <number>0886207985</number>
-        </item>
-        <item>
-            <number>0886785906</number>
-        </item>
-        <item>
-            <number>0887302241</number>
-        </item>
-        <item>
-            <number>0887900324</number>
-        </item>
-        <item>
-            <number>0888111703</number>
-        </item>
-        <item>
-            <number>0888628146</number>
-        </item>
-        <item>
-            <number>0888818510</number>
-        </item>
-        <item>
-            <number>0888885909</number>
-        </item>
-        <item>
-            <number>0889040412</number>
-        </item>
-        <item>
-            <number>0889111848</number>
-        </item>
-        <item>
-            <number>0889393132</number>
-        </item>
-        <item>
-            <number>0889667600</number>
-        </item>
-        <item>
-            <number>0889799855</number>
-        </item>
-        <item>
-            <number>0893328940</number>
-        </item>
-        <item>
-            <number>0893455930</number>
-        </item>
-        <item>
-            <number>0893474238</number>
-        </item>
-        <item>
-            <number>0894412380</number>
-        </item>
-        <item>
-            <number>0894420941</number>
-        </item>
-        <item>
-            <number>0894438106</number>
-        </item>
-        <item>
-            <number>0895514923</number>
-        </item>
-        <item>
-            <number>0895140600</number>
-        </item>
-        <item>
-            <number>0896662766</number>
-        </item>
-        <item>
-            <number>0897013236</number>
-        </item>
-        <item>
-            <number>0898575963</number>
-        </item>
-        <item>
-            <number>0899846850</number>
+            <number>0888991866</number>
+            <name>National Drugs, Alcohol and Gambling Infoline</name>
+            <categories>alcohol|addiction|drugs|gambling</categories>
+            <organization>Association Solidarity</organization>
+            <website>https://www.drugsinfo-bg.org/</website>
         </item>
     </sensitivePN>
     <!--Turkey-->
