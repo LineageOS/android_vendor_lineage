@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "070e3057_7d4afaf3",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1546,
+      "author": {
+        "id": 19552
+      },
+      "writtenOn": "2022-12-19T14:07:36Z",
+      "side": 1,
+      "message": "Is this correct? The website doesn\u0027t seem to be connected to a burn care centre, and the name for the hotline/helpline is kind of ambiguous.",
+      "range": {
+        "startLine": 1546,
+        "startChar": 21,
+        "endLine": 1546,
+        "endChar": 70
+      },
+      "revId": "bd914ee450de67e413a3f0dd4df32f5708d6f3dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
