@@ -1794,15 +1794,9 @@
     <sensitivePN network="284">
         <item>
             <number>116111</number>
-            <name>European Helpline for Children and Adolescents</name>
+            <name>National Children and Adolescents Helpline</name>
             <categories>children|adolescents</categories>
-        </item>
-        <item>
-            <number>024923030</number>
-            <name>Sofia Red Cross Trust Helpline</name>
-            <categories>emotional support|suicide|hiv|human trafficking|addiction</categories>
-            <organization>Bulgarian Red Cross</organization>
-            <website>https://www.redcross.bg/</website>
+            <website>https://www.116111.bg/</website>
         </item>
         <item>
             <number>028130250</number>
@@ -1838,8 +1832,8 @@
             <number>029817686</number>
             <name>National Abuse and Human Trafficking Hotline</name>
             <categories>abuse|human trafficking</categories>
-            <organization>Animus Association Foundation</organization>
-            <website>http://animusassociation.org/</website>
+            <organization>Foundation Animus Association</organization>
+            <website>https://animusassociation.org/</website>
         </item>
         <item>
             <number>029835205</number>
@@ -1969,13 +1963,6 @@
         </item>
         <item>
             <number>046622056</number>
-        </item>
-        <item>
-            <number>046662904</number>
-            <name>Yambol Red Cross Trust Helpline</name>
-            <categories>emotional support|suicide|hiv|human trafficking|addiction</categories>
-            <organization>Bulgarian Red Cross</organization>
-            <website>https://www.redcross.bg/</website>
         </item>
         <item>
             <number>047616468</number>
@@ -2167,6 +2154,13 @@
             <number>078939608</number>
         </item>
         <item>
+            <number>080011466</number>
+            <name>Red Cross Support Contact Centre</name>
+            <categories>emotional support|suicide|hiv|human trafficking|addiction</categories>
+            <organization>Bulgarian Red Cross</organization>
+            <website>https://www.redcross.bg/</website>
+        </item>
+        <item>
             <number>080011977</number>
         </item>
         <item>
@@ -2174,10 +2168,10 @@
         </item>
         <item>
             <number>080018676</number>
-            <name>National Abuse and Human Trafficking Hotline</name>
-            <categories>abuse|human trafficking</categories>
+            <name>National Abuse Hotline</name>
+            <categories>abuse|domestic violence|human trafficking|sexual abuse</categories>
             <organization>Animus Association Foundation</organization>
-            <website>http://animusassociation.org/</website>
+            <website>https://animusassociation.org/</website>
         </item>
         <item>
             <number>080020100</number>
