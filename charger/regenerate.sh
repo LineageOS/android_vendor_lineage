@@ -14,7 +14,7 @@ for DENSITY in mdpi:160 hdpi:240 xhdpi:320 xxhdpi:480 xxxhdpi:640; do
 
     for SVG in svg/*.svg; do
         PNG="$DPI/$(basename $SVG | cut -f1 -d '.').png"
-        convert -density $WIDTH -resize ${WIDTH}x${WIDTH} $SVG $PNG
+        convert -density $WIDTH -resize ${WIDTH}x${WIDTH} $SVG png24:$PNG
     done
 
     SCALEFILE="$DPI/battery_scale.png"
