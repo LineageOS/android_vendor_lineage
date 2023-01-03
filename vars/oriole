@@ -23,23 +23,23 @@ readonly needs_ota=true
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TP1A.221105.002"
-readonly build_id="TQ1A.221205.011"
+readonly prev_build_id="TQ1A.221205.011"
+readonly build_id="TQ1A.230105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r12"
-readonly aosp_tag="android-13.0.0_r16"
+readonly prev_aosp_tag="android-13.0.0_r16"
+readonly aosp_tag="android-13.0.0_r23"
 
-readonly prev_build_number="9080065"
-readonly build_number="9244662"
+readonly prev_build_number="9244662"
+readonly build_number="9325679"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/oriole-tq1a.221205.011-factory-c9a67c51.zip"
-readonly image_sha256="c9a67c51367fc638c55bb05f8c92ce9617fd549b342a1025d9e366cc9139851d"
+readonly image_url="https://dl.google.com/dl/android/aosp/oriole-tq1a.230105.002-factory-df40e2ff.zip"
+readonly image_sha256="df40e2ffecd32e48a368034303d306cf990342bbf85cd30d1b2035150c871f39"
 
-readonly flash_url="https://flash.android.com/build/9244662?target=oriole-user&signed"
+readonly flash_url="https://flash.android.com/build/9325679?target=oriole-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-tq1a.221205.011-92335215.zip"
-readonly ota_sha256="92335215f90b4a838348492db3595ab55e9c0a0dd4ed976b52e25a20cad8ffbd"
+readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-tq1a.230105.002-24b2622a.zip"
+readonly ota_sha256="24b2622ae78e7df8652326a10b5bcc770d94ace1d74da3fead9714a899c074b7"
 
-readonly security_patch="2022-12-05"
+readonly security_patch="2023-01-05"

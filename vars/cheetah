@@ -24,23 +24,23 @@ readonly needs_ota=true
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TD1A.221105.001"
-readonly build_id="TQ1A.221205.011"
+readonly prev_build_id="TQ1A.221205.011"
+readonly build_id="TQ1A.230105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r13"
-readonly aosp_tag="android-13.0.0_r16"
+readonly prev_aosp_tag="android-13.0.0_r16"
+readonly aosp_tag="android-13.0.0_r23"
 
-readonly prev_build_number="9104446"
-readonly build_number="9244662"
+readonly prev_build_number="9244662"
+readonly build_number="9325679"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-tq1a.221205.011-factory-b144b426.zip"
-readonly image_sha256="b144b4262b6a349efe756a9446c9e9ce9123d839280f5e5b06ebbc661c577b68"
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-tq1a.230105.002-factory-34d676ff.zip"
+readonly image_sha256="34d676ff4d260f02d9ada1f16f24fd7995c9b9ca832410099950d9c510db8793"
 
-readonly flash_url="https://flash.android.com/build/9244662?target=cheetah-user&signed"
+readonly flash_url="https://flash.android.com/build/9325679?target=cheetah-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-tq1a.221205.011-23c84042.zip"
-readonly ota_sha256="23c84042a0d4f5236ff446f1b77deca01b9004b20414b688d571f1d8399724e2"
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-tq1a.230105.002-0c8fdd0d.zip"
+readonly ota_sha256="0c8fdd0d42af8477338bf841524327f3aa253cf4a562eadc6a6198c3da88ed19"
 
-readonly security_patch="2022-12-05"
+readonly security_patch="2023-01-05"
