@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9a3e047_87775a9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-01-07T17:33:51Z",
+      "side": 1,
+      "message": "msm8937 has got QSSI support too, Legitimate vendor blobs can be taken from some Nokia devices",
+      "revId": "c3496f060a520146fd7db8a16e389b5a2f9f4089",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
