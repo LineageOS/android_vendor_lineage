@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4ed1c011_711efb11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2023-01-07T18:31:01Z",
+      "side": 1,
+      "message": "Bruno/Nolen,\nAny suggestion on this?",
+      "revId": "ef519578e754831e55257c1fd563bd767652b23c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8bb394fa_ec0cca73",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2023-01-07T18:31:01Z",
+      "side": 1,
+      "message": "Let\u0027s come up with some different name please.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 19
+      },
+      "revId": "ef519578e754831e55257c1fd563bd767652b23c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
