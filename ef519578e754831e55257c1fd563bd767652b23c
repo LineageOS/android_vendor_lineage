@@ -39,6 +39,30 @@
       },
       "revId": "ef519578e754831e55257c1fd563bd767652b23c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4c87526a_3c8616fc",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-01-07T21:38:25Z",
+      "side": 1,
+      "message": "How about calling it UM_LEGACY_4_9_FAMILY?\n\nor give me suggestions please... sorry that my english is poor",
+      "parentUuid": "8bb394fa_ec0cca73",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 19
+      },
+      "revId": "ef519578e754831e55257c1fd563bd767652b23c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
