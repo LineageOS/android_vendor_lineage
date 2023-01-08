@@ -20,6 +20,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "84d3dca4_7d5382f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2023-01-08T00:17:51Z",
+      "side": 1,
+      "message": "Works on gtowifi. Better solution than what I had (add msm8937 to `QSSI_SUPPORTED_PLATFORMS`, then override `QCOM_SOONG_NAMESPACE` to msm8953 in device tree.)\n\nMy vendor blobs can be found at https://github.com/lifehackerhansol-android/android_vendor_samsung_gtowifi/commits/lineage-19.1-oss-blobs, all from stock gtowifi A11.",
+      "revId": "ef519578e754831e55257c1fd563bd767652b23c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8bb394fa_ec0cca73",
         "filename": "config/BoardConfigQcom.mk",
         "patchSetId": 2
