@@ -177,6 +177,7 @@ case "$1" in
       mkdir -p $C
       preserve_addon_d
       run_stages pre-backup backup post-backup
+      umount_extra $all_V3_partitions
     else
       cleanup
     fi
