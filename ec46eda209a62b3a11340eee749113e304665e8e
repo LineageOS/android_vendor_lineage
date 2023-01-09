@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8b4c879_d3152a43",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 28232
+      },
+      "writtenOn": "2023-01-09T04:50:02Z",
+      "side": 1,
+      "message": "Not happy with calling this legacy. SDM845 is older and was dropped support by QC earlier(April 2022) than 8953(August 2022).\n\nMoreover, none of the 845 based devices we support have QSSI.",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 21
+      },
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
