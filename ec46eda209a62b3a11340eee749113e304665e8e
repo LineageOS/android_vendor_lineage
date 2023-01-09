@@ -22,6 +22,30 @@
       },
       "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c4c3e6a_999bf05a",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-01-09T07:02:58Z",
+      "side": 1,
+      "message": "or how about calling it UM_4_9_MSM_FAMILY ?",
+      "parentUuid": "d8b4c879_d3152a43",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 21
+      },
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
