@@ -46,6 +46,30 @@
       },
       "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f1451fa_1f075f24",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-01-09T17:07:11Z",
+      "side": 1,
+      "message": "The current naming is proper. msm8953 and msm8937 are indeed legacy and released before sdm845, released on kernel 3.18 instead of 4.9. EOL date doesn\u0027t mean anything in this case.\n\nLaunch dates:\nmsm8937: 02/11/2016\nmsm8953: 2/11/2016\nsdm845: 02/12/2018\n\nAs for QSSI I don\u0027t understand your argument, sdm845 has been in QSSI_SUPPORTED_PLATFORMS list since a long time, its display HAL requires the flag to be set (read the end of BoardConfigQcom.mk)",
+      "parentUuid": "8c4c3e6a_999bf05a",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 21
+      },
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
