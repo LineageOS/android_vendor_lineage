@@ -143,6 +143,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "51c64faf_34e87f76",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-01-10T11:41:59Z",
+      "side": 1,
+      "message": "Having newer kernel version doesn\u0027t mean the SoC gained new capabilities.",
+      "parentUuid": "f36fdd0f_1eb783c7",
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "27de985b_aaa48697",
@@ -160,6 +178,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "562180ae_b8dddbd4",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-01-10T11:41:59Z",
+      "side": 1,
+      "message": "Not supported",
+      "parentUuid": "27de985b_aaa48697",
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3fbead0c_3b9f8652",
@@ -173,6 +209,24 @@
       "writtenOn": "2023-01-10T09:31:25Z",
       "side": 1,
       "message": "...and here?",
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84e19803_6eb039f8",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-01-10T11:41:59Z",
+      "side": 1,
+      "message": "Not supported either https://git.codelinaro.org/clo/la/device/qcom/common/-/blob/LA.UM.10.6.2.r1-02500-89xx.0/base.mk#L67",
+      "parentUuid": "3fbead0c_3b9f8652",
       "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
