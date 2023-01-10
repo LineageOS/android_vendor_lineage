@@ -91,6 +91,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "45e1efc0_3c0b5543",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-01-10T09:37:05Z",
+      "side": 1,
+      "message": "msm8937 \u0026 msm8953 still uses MDSS (fbdev) in k4.9 (even k4.19)",
+      "parentUuid": "21d5b58b_fb6749f0",
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "27de985b_aaa48697",
         "filename": "config/BoardConfigQcom.mk",
         "patchSetId": 2
