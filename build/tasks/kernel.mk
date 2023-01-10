@@ -433,8 +433,12 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(PAHOLE)
 			$(foreach s, $(TARGET_MODULE_ALIASES),\
 				$(eval p := $(subst :,$(space),$(s))) \
 				; mv $$(find $$kernel_modules_dir -name $(word 1,$(p))) $$kernel_modules_dir/$(word 2,$(p))); \
-			modules=$$(find $$kernel_modules_dir -type f -name '*.ko'); \
-			($(call build-image-kernel-modules-lineage,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD))); \
+			vendor_dlkm_modules=$$(for m in $(BOARD_VENDOR_KERNEL_MODULES_LOAD); do \
+				p=$$(find $$kernel_modules_dir -type f -name $$m); \
+				if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from BOARD_VENDOR_KERNEL_MODULES_LOAD was not found" 1>&2 && exit 1; fi; \
+			done); \
+			[ $$? -ne 0 ] && exit 1; \
+			($(call build-image-kernel-modules-lineage,$$vendor_dlkm_modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD))); \
 			$(if $(BOOT_KERNEL_MODULES),\
 				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES); do \
 					p=$$(find $$kernel_modules_dir -type f -name $$m); \
