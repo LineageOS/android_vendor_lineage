@@ -1,6 +1,29 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "6cde90fd_12fd97a4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-01-10T19:33:23Z",
+      "side": 1,
+      "message": "Move this to commit message to avoid link rot\nYou can just keep the explanation from line 26",
+      "range": {
+        "startLine": 22,
+        "startChar": 18,
+        "endLine": 22,
+        "endChar": 48
+      },
+      "revId": "72e952ee5b7e1341c8f8db0eadd863eca71d0c75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "fe857219_92214ab6",
