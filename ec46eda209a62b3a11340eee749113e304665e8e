@@ -125,6 +125,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "95b32d34_63fe0881",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-01-10T11:37:48Z",
+      "side": 1,
+      "message": "About TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS:\nI\u0027m new to this, I don\u0027t know how to determine whether if it needs that tho\n\nI can\u0027t see any difference among some platforms on frameworks/native/tree/libs/ui/Gralloc*.cpp, and I don\u0027t know where else should I check\n\nLA.UM.8.6.r1-02900-89xx.0/LA.UM.8.6.r1-05300-89xx.0/LA.UM.8.6.2.r1-09500-89xx.0:\nGralloc2: bits \u003d bits | ((1 \u003c\u003c 10) | (1 \u003c\u003c 13) | (1 \u003c\u003c 21) | (1 \u003c\u003c 27));\nGralloc3: bits \u003d bits | ((1 \u003c\u003c 13) | (1 \u003c\u003c 21));\n\nLA.UM.9.6.2.r1-04800-89xx.0/LA.UM.9.6.3.r1-06000-89xx.0/LA.UM.9.3.r1-02300-sdm845.0/LA.UM.9.2.r1-03500-SDMxx0.0:\nGralloc2: bits \u003d bits | ((1 \u003c\u003c 10) | (1 \u003c\u003c 13) | (1 \u003c\u003c 21) | (1 \u003c\u003c 27));\nGralloc3: bits \u003d bits | ((1 \u003c\u003c 13) | (1 \u003c\u003c 21));\nGralloc4: bits \u003d bits | ((1 \u003c\u003c 10) | (1 \u003c\u003c 13) | (1 \u003c\u003c 21) | (1 \u003c\u003c 27));\n\n-----\n\nAbout MASTER_SIDE_CP_TARGET_LIST:\nOn LA.UM.9.6.3.r1-06200-89xx.0 device/qcom/common/base.mk, msm8937 \u0026 msm8953 are still not listed in",
+      "parentUuid": "f36fdd0f_1eb783c7",
+      "revId": "ec46eda209a62b3a11340eee749113e304665e8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "27de985b_aaa48697",
