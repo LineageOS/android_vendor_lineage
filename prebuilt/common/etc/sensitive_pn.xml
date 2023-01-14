@@ -787,12 +787,36 @@
     <!--France-->
     <sensitivePN network="208,308,340,543,547,647">
         <item>
+            <number>0972394050</number>
+            <name>Generic Helpline</name>
+            <categories>generic</categories>
+            <organization>SOS Amitié</organization>
+            <website>https://www.sos-amitie.com/</website>
+        </item>
+        <item>
             <number>119</number>
             <name>Child Helpline International</name>
             <categories>children</categories>
         </item>
         <item>
+            <number>3114</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+            <website>https://3114.fr/</website>
+        </item>
+        <item>
             <number>3919</number>
+            <name>National Domestic Violence Hotline</name>
+            <organization>National Federation Solidarity Women</organization>
+            <website>https://www.solidaritefemmes.org/</website>
+            <categories>domestic violence|women</categories>
+        </item>
+        <item>
+            <number>3989</number>
+            <name>National Tobacco Info Service</number>
+            <categories>addiction</categories>
+            <organization>Public health France</organization>
+            <website>https://www.tabac-info-service.fr/</website>
         </item>
     </sensitivePN>
     <!--Spain-->
