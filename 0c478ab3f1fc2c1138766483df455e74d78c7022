@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e52af24_1f926573",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-01-14T22:33:53Z",
+      "side": 1,
+      "message": "I don\u0027t like this because a modules load list might only contain top level modules and none of the dependencies and would work fine, because modprobe automatically loads dependencies. This would only copy said top level modules and none of the dependencies, causing failures. Also, some devices with modules enabled could be using custom lkm scripts and not modules load at all. This change would cause those previously working devices to fail to build period.",
+      "revId": "0c478ab3f1fc2c1138766483df455e74d78c7022",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
