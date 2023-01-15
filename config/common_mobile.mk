@@ -65,3 +65,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
+
+# Themes
+PRODUCT_PACKAGES += \
+    LineageBlackTheme \
+    LineageThemesStub \
+    ThemePicker
