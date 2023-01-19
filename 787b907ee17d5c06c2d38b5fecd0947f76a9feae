@@ -16,6 +16,24 @@
       "message": "Doesn\u0027t break anything existing and allows using 4.9 on msm8937",
       "revId": "787b907ee17d5c06c2d38b5fecd0947f76a9feae",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "407d6713_c1033fa1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-01-19T21:57:49Z",
+      "side": 1,
+      "message": "Though, k4.9 (even k4.19) also works with k3.18/Q blobs on msm8937 (msm8953 too)\nWe\u0027ve been using it for almost 3 years\n\nand Q blobs can still be used in LOS20 (someone else who I know is using it)\nIt\u0027s just that I wish to use newer stuff and avoid using hacks/shims as much as possible\n\nk4.9 was already available in O/P times, and few people migrated to it on P, then a lot of people migrated to it since Q",
+      "parentUuid": "294dbd07_833954ab",
+      "revId": "787b907ee17d5c06c2d38b5fecd0947f76a9feae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
