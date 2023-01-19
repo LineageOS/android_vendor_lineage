@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db89705c_65a43d0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-01-19T15:26:16Z",
+      "side": 1,
+      "message": "Doesn\u0027t break anything existing and allows using 4.19 on sdm660",
+      "revId": "16343b4662fbfff06bbe90a8650bf0e7bfb4ff3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
