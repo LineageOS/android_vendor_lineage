@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "294dbd07_833954ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-01-19T15:26:40Z",
+      "side": 1,
+      "message": "Doesn\u0027t break anything existing and allows using 4.9 on msm8937",
+      "revId": "787b907ee17d5c06c2d38b5fecd0947f76a9feae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
