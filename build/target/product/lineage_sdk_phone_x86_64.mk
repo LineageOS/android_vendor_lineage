@@ -19,6 +19,8 @@ include vendor/lineage/build/target/product/lineage_generic_target.mk
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
+PRODUCT_MODULE_BUILD_FROM_SOURCE := true
+
 # Overrides
 PRODUCT_NAME := lineage_sdk_phone_x86_64
 PRODUCT_MODEL := LineageOS Android SDK built for x86_64
