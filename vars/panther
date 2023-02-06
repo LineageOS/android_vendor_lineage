@@ -23,23 +23,23 @@ readonly needs_ota=true
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TQ1A.221205.011"
-readonly build_id="TQ1A.230105.001.A2"
+readonly prev_build_id="TQ1A.230105.001.A2"
+readonly build_id="TQ1A.230205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r16"
-readonly aosp_tag="android-13.0.0_r20"
+readonly prev_aosp_tag="android-13.0.0_r20"
+readonly aosp_tag="android-13.0.0_r30"
 
-readonly prev_build_number="9244662"
-readonly build_number="9325585"
+readonly prev_build_number="9325585"
+readonly build_number="9471150"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-tq1a.230105.001.a2-factory-264b1602.zip"
-readonly image_sha256="264b1602f8f2afdd974500ff11835a28176fa35d8168443a05206576d94dc982"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-tq1a.230205.002-factory-d504ff3a.zip"
+readonly image_sha256="d504ff3a0aa586e6f1dbab904b597d6441c9e83a864673b359ce0d00163f586e"
 
-readonly flash_url="https://flash.android.com/build/9325585?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/9471150?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-tq1a.230105.001.a2-9e100a75.zip"
-readonly ota_sha256="9e100a75920e99b474cb3473963685038c218ea063b605c955581eb9427f278a"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-tq1a.230205.002-23dcb575.zip"
+readonly ota_sha256="23dcb57551646c9436dec2a895cc489088cd75520a4b769bec3e63f971472a5b"
 
-readonly security_patch="2023-01-05"
+readonly security_patch="2023-02-05"

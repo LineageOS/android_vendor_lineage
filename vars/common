@@ -5,10 +5,10 @@ readonly os_branch=lineage-20.0
 readonly prev_device_branch=lineage-19.1
 readonly device_branch=lineage-20
 
-readonly prev_common_aosp_tag=android-13.0.0_r16 # Dec 2022, supported Pixels
-readonly common_aosp_tag=android-13.0.0_r20 # Jan 2023, Pixel 6, 6 Pro, 7 Pro
+readonly prev_common_aosp_tag=android-13.0.0_r20 # Jan 2023, Pixel 6, 6 Pro, 7 Pro
+readonly common_aosp_tag=android-13.0.0_r30 # Feb 2023, Supported Pixels
 
-readonly prev_common_aosp_build_id=TQ1A.221205.011 # Dec 2022, supported Pixels
-readonly common_aosp_build_id=TQ1A.230105.002 # Jan 2023, Pixel 6, 6 Pro, 7 Pro
+readonly prev_common_aosp_build_id=TQ1A.230105.002 # Jan 2023, Pixel 6, 6 Pro, 7 Pro
+readonly common_aosp_build_id=TQ1A.230205.002 # Feb 2023, Supported Pixels
 
-readonly topic=T_asb_2023-01
+readonly topic=T_asb_2023-02
