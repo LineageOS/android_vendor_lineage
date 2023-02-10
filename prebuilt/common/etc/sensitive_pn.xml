@@ -224,19 +224,46 @@
     <!--Netherlands-->
     <sensitivePN network="204">
         <item>
+            <number>113</number>
+            <name>National Suicide Prevention Hotline</name>
+            <categories>suicide</categories>
+            <organization>Stichting 113 Zelfmoordpreventie</organization>
+            <website>https://www.113.nl/</website>
+        </item>
+        <item>
+            <number>116000</number>
+            <name>European Hotline for Missing Children</name>
+            <categories>children</categories>
+            <organization>Centrum IKO</organization>
+            <website>http://www.116000.nl/</website>
+        </item>
+        <item>
             <number>116006</number>
             <name>European Victims of Crime Helpline</name>
             <categories>crime victims</categories>
+            <organization>Slachtoffer Hulp Nederland</organization>
+            <website>https://www.slachtofferhulp.nl/</website>
         </item>
         <item>
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
-            <categories>children|adolescents</categories>
+            <categories>adolescents|children|teenagers</categories>
+            <organization>De Kindertelefoon</organization>
+            <website>https://www.kindertelefoon.nl/</website>
         </item>
         <item>
-            <number>116123</number>
-            <name>European Emotional Support</name>
-            <categories>emotional support</categories>
+            <number>08000113</number>
+            <name>National Suicide Prevention Hotline</name>
+            <categories>suicide</categories>
+            <organization>Stichting 113 Zelfmoordpreventie</organization>
+            <website>https://www.113.nl/</website>
+        </item>
+        <item>
+            <number>08000118</number>
+            <name>Center for Sexual Violence Helpline</name>
+            <categories>sexual abuse|sexual assault</categories>
+            <organization>Landelijk Centrum Seksueel Geweld</organization>
+            <website>https://centrumseksueelgeweld.nl/</website>
         </item>
         <item>
             <number>08000432</number>
@@ -247,29 +274,50 @@
             <number>08002000</number>
             <name>National Domestic Violence Helpline</name>
             <categories>domestic violence</categories>
+            <organization>Veilig Thuis</organization>
+            <website>https://veiligthuis.nl/</website>
+        </item>
+        <item>
+            <number>08000432</number>
+            <name>Child Helpline</name>
+            <categories>adolescents|children|teenagers</categories>
+            <organization>De Kindertelefoon</organization>
+            <website>https://www.kindertelefoon.nl/</website>
+        </item>
+        <item>
+            <number>08000432</number>
+            <name>Everything Okay? Helpline</name>
+            <categories>abuse|addiction|sexuality|emotional support</categories>
+            <organization>De Kindertelefoon</organization>
+            <website>https://www.allesoke.nl/</website>
         </item>
         <item>
             <number>08007000</number>
-            <name>National Hotline to Report Crime Anonymously</name>
+            <name>National Anonymous Crime Reporting Hotline</name>
             <categories>crime</categories>
+            <organization>Meld Misdaad Anoniem</organization>
+            <website>https://www.meldmisdaadanoniem.nl/</website>
         </item>
         <item>
             <number>09000101</number>
-            <name>Victim Support</name>
-            <categories>human trafficking</categories>
-            <organization>Victim Support Netherlands</organization>
+            <name>Victim Support Helpline</name>
+            <categories>human trafficking|crime victims</categories>
+            <organization>Slachtoffer Hulp Nederland</organization>
             <website>https://www.slachtofferhulp.nl/</website>
         </item>
         <item>
-            <number>09000113</number>
-            <name>National Suicide Prevention</name>
-            <categories>suicide</categories>
-        </item>
-        <item>
             <number>09001450</number>
-            <name>Psychological Support</name>
+            <name>MIND Korrelatie Helpline</name>
             <categories>psychological</categories>
             <organization>MIND Korrelatie</organization>
+            <website>https://mindkorrelatie.nl/</website>
+        </item>
+        <item>
+            <number>0880767000</number>
+            <name>The Listening Line Helpline</name>
+            <categories>abuse|addiction|emotional support</categories>
+            <organization>Stichting Sensoor de landelijke Luisterlijn</organization>
+            <website>https://www.deluisterlijn.nl/</website>
         </item>
         <item>
             <number>0882342450</number>
@@ -279,14 +327,53 @@
             <website>https://www.blijfgroep.nl/</website>
         </item>
         <item>
-            <number>09001130113</number>
-            <name>National Suicide Prevention</name>
-            <categories>suicide</categories>
+            <number>0882342450</number>
+            <name>Fier Helpline</name>
+            <categories>domestic violence|emotional support|sexual abuse</categories>
+            <organization>Fier</organization>
+            <website>https://www.fier.nl/</website>
+        </item>
+        <item>
+            <number>0883744744</number>
+            <name>Domestic Abuse Helpline</name>
+            <categories>abuse|birth|domestic violence|pregnancy</categories>
+            <organization>Stichting Moviera</organization>
+            <website>https://www.moviera.nl/</website>
+        </item>
+        <item>
+            <number>0885054334</number>
+            <name>Depression Helpline</name>
+            <categories>psychological support</categories>
+            <organization>Depressie Vereniging</organization>
+            <website>https://depressievereniging.nl/</website>
+        </item>
+        <item>
+            <number>0202615275</number>
+            <name>Online Sexual Abuse Helpline</name>
+            <categories>sexual abuse</categories>
+            <organization>Help Wanted NL</organization>
+            <website>https://www.helpwanted.nl/</website>
+        </item>
+        <item>
+            <number>0343753009</number>
+            <name>Emotional Support Helpline</name>
+            <categories>emotional support|psychological support</categories>
+            <organization>ADF Stichting</organization>
+            <website>https://adfstichting.nl/</website>
+        </item>
+        <item>
+            <number>09002546674</number>
+            <name>Family Helpline</name>
+            <categories>emotional support|family</categories>
+            <organization>Naasten Centraal</organization>
+            <website>https://www.naastencentraal.nl/</website>
         </item>
         <item>
             <number>09009999001</number>
             <name>National Sexual Abuse Helpline</name>
             <categories>sexual abuse</categories>
+            <organization>Slachtofferhulp Nederland</organization>
+            <website>https://www.verbreekdestilte.nl/</website>
         </item>
     </sensitivePN>
     <!--Belgium-->
@@ -1108,6 +1195,7 @@
             <number>147</number>
             <name>Child Helpline International</name>
             <categories>children</categories>
+            <website>https://www.147.ch/</website>
         </item>
         <item>
             <number>116000</number>
