@@ -224,9 +224,18 @@
     <!--Netherlands-->
     <sensitivePN network="204">
         <item>
+            <number>113</number>
+            <name>National Suicide Prevention Hotline</name>
+            <categories>suicide</categories>
+            <organization>Stichting 113 Zelfmoordpreventie</organization>
+            <website>https://www.113.nl/</website>
+        </item>
+        <item>
             <number>116006</number>
             <name>European Victims of Crime Helpline</name>
             <categories>crime victims</categories>
+            <organization>Slachtoffer Hulp Nederland</organization>
+            <website>https://www.slachtofferhulp.nl/</website>
         </item>
         <item>
             <number>116111</number>
@@ -237,6 +246,13 @@
             <number>116123</number>
             <name>European Emotional Support</name>
             <categories>emotional support</categories>
+        </item>
+        <item>
+            <number>08000113</number>
+            <name>National Suicide Prevention Hotline</name>
+            <categories>suicide</categories>
+            <organization>Stichting 113 Zelfmoordpreventie</organization>
+            <website>https://www.113.nl/</website>
         </item>
         <item>
             <number>08000432</number>
@@ -255,21 +271,17 @@
         </item>
         <item>
             <number>09000101</number>
-            <name>Victim Support</name>
-            <categories>human trafficking</categories>
-            <organization>Victim Support Netherlands</organization>
+            <name>Victim Support Helpline</name>
+            <categories>human trafficking|crime victims</categories>
+            <organization>Slachtoffer Hulp Nederland</organization>
             <website>https://www.slachtofferhulp.nl/</website>
         </item>
         <item>
-            <number>09000113</number>
-            <name>National Suicide Prevention</name>
-            <categories>suicide</categories>
-        </item>
-        <item>
             <number>09001450</number>
-            <name>Psychological Support</name>
+            <name>MIND Korrelatie Helpline</name>
             <categories>psychological</categories>
             <organization>MIND Korrelatie</organization>
+            <website>https://mindkorrelatie.nl/</website>
         </item>
         <item>
             <number>0882342450</number>
@@ -279,14 +291,11 @@
             <website>https://www.blijfgroep.nl/</website>
         </item>
         <item>
-            <number>09001130113</number>
-            <name>National Suicide Prevention</name>
-            <categories>suicide</categories>
-        </item>
-        <item>
             <number>09009999001</number>
             <name>National Sexual Abuse Helpline</name>
             <categories>sexual abuse</categories>
+            <organization>Slachtofferhulp Nederland</organization>
+            <website>https://www.verbreekdestilte.nl/</website>
         </item>
     </sensitivePN>
     <!--Belgium-->
@@ -1108,6 +1117,7 @@
             <number>147</number>
             <name>Child Helpline International</name>
             <categories>children</categories>
+            <website>https://www.147.ch/</website>
         </item>
         <item>
             <number>116000</number>
