@@ -11,6 +11,7 @@ readonly firmware_partitions=(
   gsa
   ldfw
   modem
+  pvmfw
 )
 
 # Usage: ${device_repos[@]}
