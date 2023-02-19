@@ -1,6 +1,7 @@
 ifeq ($(WITH_GMS),true)
     # Special handling for Android TV
     ifeq ($(PRODUCT_IS_ATV),true)
+        PRODUCT_SOONG_NAMESPACES += vendor/partner_gms-tv
         ifneq ($(GMS_MAKEFILE),)
             # Specify the GMS makefile you want to use, for example:
             #   - gms.mk            - default Android TV GMS
@@ -13,6 +14,7 @@ ifeq ($(WITH_GMS),true)
         $(call inherit-product, vendor/partner_gms-tv/products/mainline_modules.mk)
     # Special handling for Android Automotive
     else ifeq ($(PRODUCT_IS_AUTO),true)
+        PRODUCT_SOONG_NAMESPACES += vendor/partner_gms-car
         ifneq ($(GMS_MAKEFILE),)
             $(call inherit-product, vendor/partner_gms-car/products/$(GMS_MAKEFILE))
         else
@@ -26,6 +28,7 @@ ifeq ($(WITH_GMS),true)
         #   - gms_go_2gb.mk     - low ram devices (2GB)
         #   - gms_64bit_only.mk - devices supporting 64-bit only
         #   - gms_minimal.mk    - minimal GMS
+        PRODUCT_SOONG_NAMESPACES += vendor/partner_gms
         ifneq ($(GMS_MAKEFILE),)
             $(call inherit-product, vendor/partner_gms/products/$(GMS_MAKEFILE))
         else
