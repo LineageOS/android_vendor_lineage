@@ -68,6 +68,23 @@
       "message": "This is likely the right fix: https://review.lineageos.org/c/LineageOS/android_device_google_gs101/+/349292",
       "revId": "981e28a0afad91e63b39480799804ea4a8350d4c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fcfc525c_4fab506f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-02-19T21:01:47Z",
+      "side": 1,
+      "message": "Can you vote on the other commit then?",
+      "revId": "981e28a0afad91e63b39480799804ea4a8350d4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
