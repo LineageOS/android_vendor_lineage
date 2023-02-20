@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e508ef5_a5aaf961",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-02-20T23:33:12Z",
+      "side": 1,
+      "message": "shouldn\u0027t gms.mk do that?",
+      "range": {
+        "startLine": 12,
+        "startChar": 67,
+        "endLine": 12,
+        "endChar": 73
+      },
+      "revId": "6d5ca418de6c3a883c4191d8c278bf7d61444356",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
