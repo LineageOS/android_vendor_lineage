@@ -2008,7 +2008,7 @@
   <apn carrier="Aircel GPRS" mcc="404" mnc="42" apn="aircelwap" proxy="172.17.83.69" port="8080" type="default,supl" />
   <apn carrier="Aircel MMS" mcc="404" mnc="42" apn="aircelmms" mmsc="http://172.17.83.67/servlets/mms/" mmsproxy="172.17.83.69" mmsport="8080" type="mms" />
   <apn carrier="Aircel" mcc="404" mnc="42" apn="aircelwap" type="default,supl" />
-  <apn carrier="Vodafone" mcc="404" mnc="43" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="default,supl,mms" />
+  <apn carrier="Vodafone" mcc="404" mnc="43" apn="portalnmms" proxy="10.10.1.100" port="9401" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="supl,mms" />
   <apn carrier="Vodafone IN MMS" mcc="404" mnc="43" apn="portalnmms" mmsc="http://mms1.live.vodafone.in/mms/" mmsproxy="10.10.1.100" mmsport="9401" type="mms" />
   <apn carrier="Vodafone IN" mcc="404" mnc="43" apn="www" type="default,supl" />
   <apn carrier="IDEA Internet" mcc="404" mnc="44" apn="internet" type="default,supl" />
