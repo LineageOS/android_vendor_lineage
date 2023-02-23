@@ -2962,6 +2962,7 @@
   <apn carrier="Vietnamobile MMS" mcc="452" mnc="05" apn="mms" proxy="" port="" mmsproxy="10.10.128.44" mmsport="8080" mmsc="http://10.10.128.58/servlets/mms" type="mms" />
   <apn carrier="BeeLine VN 3G" mcc="452" mnc="07" apn="internet" type="default,supl" />
   <apn carrier="Beeline VN MMS" mcc="452" mnc="07" apn="MMS" user="mms" password="mms" mmsc="http://mms" mmsproxy="10.16.70.199" mmsport="8080" type="mms" />
+  <apn carrier="Wintel Internet" mcc="452" mnc="09" apn="m9-wintel" type="default,supl" />
   <apn carrier="csl" mcc="454" mnc="00" apn="mobile" mmsc="http://192.168.58.171:8002" mmsproxy="192.168.59.51" mmsport="8080" type="default,mms,hipri" authtype="3" mvno_match_data="01020000" mvno_type="gid" />
   <apn carrier="csl Tethering" mcc="454" mnc="00" apn="lte.internet" type="dun" mvno_match_data="01020000" mvno_type="gid" />
   <apn carrier="csl" mcc="454" mnc="00" apn="mobile" mmsc="http://192.168.58.171:8002" mmsproxy="192.168.59.51" mmsport="8080" authtype="3" type="default,mms,hipri" />
