@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "725358eb_55363206",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32427
+      },
+      "writtenOn": "2023-02-23T07:02:53Z",
+      "side": 1,
+      "message": "New Vietnam apn: https://wintel.vn/huong-dan-cai-dat-apn",
+      "revId": "80da6afd4321948ba0383608d8eb068962b929d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
