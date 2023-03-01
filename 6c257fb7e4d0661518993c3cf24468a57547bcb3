@@ -69,6 +69,30 @@
       },
       "revId": "6c257fb7e4d0661518993c3cf24468a57547bcb3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd2e7306_91d3b072",
+        "filename": "config/permissions/org.lineageos.health.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-03-01T15:42:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d9e540c_085438d2",
+      "range": {
+        "startLine": 18,
+        "startChar": 52,
+        "endLine": 18,
+        "endChar": 73
+      },
+      "revId": "6c257fb7e4d0661518993c3cf24468a57547bcb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
