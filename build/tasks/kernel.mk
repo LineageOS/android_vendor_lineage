@@ -239,7 +239,11 @@ ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
     endif
     PATH_OVERRIDE += PATH=$(TARGET_KERNEL_CLANG_PATH)/bin:$$PATH
     ifeq ($(KERNEL_CC),)
-        KERNEL_CC := CC="$(CCACHE_BIN) clang --cuda-path=/dev/null --hip-path=/dev/null"
+        CLANG_EXTRA_FLAGS := --cuda-path=/dev/null
+        ifeq ($(shell $(TARGET_KERNEL_CLANG_PATH)/bin/clang -v --hip-path=/dev/null >/dev/null 2>&1; echo $$?),0)
+            CLANG_EXTRA_FLAGS += --hip-path=/dev/null
+        endif
+        KERNEL_CC := CC="$(CCACHE_BIN) clang $(CLANG_EXTRA_FLAGS)"
     endif
 endif
 
