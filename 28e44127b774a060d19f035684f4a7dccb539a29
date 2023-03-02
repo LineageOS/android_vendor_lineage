@@ -22,6 +22,30 @@
       },
       "revId": "28e44127b774a060d19f035684f4a7dccb539a29",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "674942cc_6819fec8",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-03-02T12:54:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f7a8fdb6_df733560",
+      "range": {
+        "startLine": 244,
+        "startChar": 30,
+        "endLine": 244,
+        "endChar": 32
+      },
+      "revId": "28e44127b774a060d19f035684f4a7dccb539a29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
