@@ -103,6 +103,41 @@
       "parentUuid": "4c908519_fb6a2231",
       "revId": "6992921ac8a3c725e6961799fc26a2ca87079598",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b629809_eb2bc3f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-03-02T20:46:51Z",
+      "side": 1,
+      "message": "I don\u0027t have to have fun because this is necessary for all users of this operator.",
+      "parentUuid": "4c908519_fb6a2231",
+      "revId": "6992921ac8a3c725e6961799fc26a2ca87079598",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1208bb0_594b1f61",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-03-02T20:46:51Z",
+      "side": 1,
+      "message": "here you can see that they have removed the information about their apns\n\nhttps://www.one.al/search?q\u003da53",
+      "revId": "6992921ac8a3c725e6961799fc26a2ca87079598",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
