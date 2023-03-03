@@ -1,6 +1,6 @@
 <?xml version="2.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2021-2022 The LineageOS Project
+     Copyright (C) 2021-2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
@@ -19,6 +19,13 @@
         <version>1.0</version>
         <interface>
             <name>IFastCharge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.health</name>
+        <interface>
+            <name>IChargingControl</name>
             <instance>default</instance>
         </interface>
     </hal>
