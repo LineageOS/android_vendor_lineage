@@ -29,6 +29,8 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import copy
+from collections import defaultdict
+import graphlib
 import os
 import sys
 import subprocess
@@ -293,10 +295,16 @@ class DeviceTree(DeviceTreeInfo):
 		if not self.has_any_properties():
 			logging.warning('{} has no properties and may match with any other devicetree'.format(os.path.basename(self.filename)))
 
+	def list_props(self,node):
+		r = subprocess.run(["fdtget", "-p", self.filename, node],check=False, stdout=subprocess.PIPE,stderr= subprocess.DEVNULL)
+		if r.returncode != 0:
+			return []
+		out = r.stdout.decode("utf-8").strip()
+		return out.splitlines()[:-1]
+
+
 	def get_prop(self, node, property, prop_type='i', check_output=True):
-		r = subprocess.run(["fdtget", "-t", prop_type, self.filename, node, property],
-			check=check_output, stdout=subprocess.PIPE,
-			stderr=None if check_output else subprocess.DEVNULL)
+		r = subprocess.run(["fdtget", "-t", prop_type, self.filename, node, property],check=check_output, stdout=subprocess.PIPE,stderr=None if check_output else subprocess.DEVNULL)
 		if r.returncode != 0:
 			return None
 		out = r.stdout.decode("utf-8").strip()
@@ -460,6 +468,36 @@ class MergedDeviceTree(object):
 		for mdt in self.merged_devicetrees:
 			yield mdt.save(name, out_dir)
 
+def find_symbol(dtbs, symbol):
+	for symbols, _, dt in dtbs:
+		if symbol in symbols:
+			return dt
+
+def create_adjacency(dtbs):
+	graph = {}
+	for _, fixups, dt in dtbs:
+		graph[dt] = set()
+		for fixup in fixups:
+			graph[dt].add(find_symbol(dtbs, fixup))
+	return graph
+
+def parse_tech_dt_files(folder):
+	dtbs = []
+	for root, dirs, files in os.walk(folder):
+		for filename in files:
+			if os.path.splitext(filename)[1] in ['.dtbo','.dtb']:
+				filepath = os.path.join(root, filename)
+				dt = DeviceTree(filepath)
+				dtbs.append((dt.list_props('/__symbols__'), dt.list_props('/__fixups__'), filepath))
+	graph = create_adjacency(dtbs)
+	ts = graphlib.TopologicalSorter(graph)
+	order = list(ts.static_order())
+	devicetrees = []
+	for dt in order:
+		if dt: # Check the value is 'None'
+			devicetrees.append(DeviceTree(dt))
+	return devicetrees
+
 def parse_dt_files(dt_folder):
 	devicetrees = []
 	for root, dirs, files in os.walk(dt_folder):
@@ -489,7 +527,7 @@ def main():
 	logging.info('Parsed bases: \n{}'.format(all_bases))
 
 	logging.info('Parsing techpack dtb files from {}'.format(args.techpack))
-	techpacks = parse_dt_files(args.techpack)
+	techpacks = parse_tech_dt_files(args.techpack)
 	all_techpacks = '\n'.join(list(map(lambda x: str(x), techpacks)))
 	logging.info('Parsed techpacks: \n{}'.format(all_techpacks))
 
