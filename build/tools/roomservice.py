@@ -72,7 +72,7 @@ def add_auth(githubreq):
         githubreq.add_header("Authorization","Basic %s" % githubauth)
 
 if not depsonly:
-    githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=%s+user:LineageOS+in:name+fork:true+sort:updated+per_page:100" % device)
+    githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=_device_+_%s+user:LineageOS+in:name+fork:true+sort:updated+per_page:100" % device)
     add_auth(githubreq)
     try:
         result = json.loads(urllib.request.urlopen(githubreq).read().decode())
