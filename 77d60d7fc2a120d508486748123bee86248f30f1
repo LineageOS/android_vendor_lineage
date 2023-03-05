@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d46bfe4c_2975e8db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-03-05T16:19:24Z",
+      "side": 1,
+      "message": "Don\u0027t do this. If you want to apply it to another branch, then cherry-pick the change. It will retain the original commit metadata.",
+      "revId": "77d60d7fc2a120d508486748123bee86248f30f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
