@@ -16,6 +16,23 @@
       "message": "Again, wrong change-Id.\n\nLuk, can you restore https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/316733 ?",
       "revId": "0114fb85924b034890eb982ea5aec3ebcc6e9d34",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f936b93_c0fd51cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-03-05T17:49:54Z",
+      "side": 1,
+      "message": "Abandon this. Proper change is https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/316733.",
+      "revId": "0114fb85924b034890eb982ea5aec3ebcc6e9d34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
