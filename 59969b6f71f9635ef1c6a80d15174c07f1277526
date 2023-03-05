@@ -16,6 +16,23 @@
       "message": "done",
       "revId": "59969b6f71f9635ef1c6a80d15174c07f1277526",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e696971_518863a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-03-05T17:58:20Z",
+      "side": 1,
+      "message": "If los 17.1 is still in use, add it there as well.",
+      "revId": "59969b6f71f9635ef1c6a80d15174c07f1277526",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
