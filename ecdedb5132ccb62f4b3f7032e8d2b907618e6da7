@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce0ea49b_d43fc750",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-03-05T15:43:28Z",
+      "side": 1,
+      "message": "you can abandon this because it is already merged\n\nhttps://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/350224/",
+      "revId": "ecdedb5132ccb62f4b3f7032e8d2b907618e6da7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
