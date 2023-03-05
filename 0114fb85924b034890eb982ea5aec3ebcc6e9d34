@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e36720e6_ae8fbae6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-03-05T17:48:28Z",
+      "side": 1,
+      "message": "Again, wrong change-Id.\n\nLuk, can you restore https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/316733 ?",
+      "revId": "0114fb85924b034890eb982ea5aec3ebcc6e9d34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
