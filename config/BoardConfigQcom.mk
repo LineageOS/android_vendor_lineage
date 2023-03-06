@@ -116,6 +116,11 @@ ifeq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
     SOONG_CONFIG_qtidisplay_displayconfig_enabled := true
 endif
 
+# UM_5_10_FAMILY HALs have reserved_size in gralloc handle
+ifneq ($(filter $(UM_5_10_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+    TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= true
+endif
+
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
 
 # Mark GRALLOC_USAGE_EXTERNAL_DISP as valid gralloc bit
