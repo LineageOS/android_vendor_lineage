@@ -51,6 +51,23 @@
       "parentUuid": "1e696971_518863a7",
       "revId": "59969b6f71f9635ef1c6a80d15174c07f1277526",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c19419f9_8b665191",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32479
+      },
+      "writtenOn": "2023-03-06T19:24:37Z",
+      "side": 1,
+      "message": "I Like Lineage Os But I\u0027m Still running On 18.1 heltkor \nI Would Like If You Released New Updates.\nMy Device Is Note 3 SM-N900L Heltkor",
+      "revId": "59969b6f71f9635ef1c6a80d15174c07f1277526",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
