@@ -22,6 +22,30 @@
       },
       "revId": "090f29e47d868c1d7e1a85c8fa2c6d3cd39fd767",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "180a91af_8c53e632",
+        "filename": "config/permissions/org.lineageos.health.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-03-10T08:10:35Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5399d8eb_141471cc",
+      "range": {
+        "startLine": 4,
+        "startChar": 5,
+        "endLine": 14,
+        "endChar": 35
+      },
+      "revId": "090f29e47d868c1d7e1a85c8fa2c6d3cd39fd767",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
