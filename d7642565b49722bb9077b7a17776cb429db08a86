@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4eb86e31_96c5ffbc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2023-03-10T13:07:36Z",
+      "side": 1,
+      "message": "Whole topic works fine on xiaomi msm8953 (ysl, daisy, tissot)",
+      "revId": "d7642565b49722bb9077b7a17776cb429db08a86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
