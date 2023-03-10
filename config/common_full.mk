@@ -11,7 +11,11 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
     FontLatoOverlay \
-    FontRubikOverlay
+    FontRubikOverlay \
+    LockClockFontLatoOverlay \
+    LockClockFontNotoSerifOverlay \
+    LockClockFontRubikOverlay \
+    LockClockFontSourceSansProOverlay
 
 # Recorder
 PRODUCT_PACKAGES += \
