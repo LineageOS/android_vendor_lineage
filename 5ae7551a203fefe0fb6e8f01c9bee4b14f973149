@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d704fb2_a3c2df81",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18377
+      },
+      "writtenOn": "2023-03-25T21:15:04Z",
+      "side": 1,
+      "message": "This appears to have completely removed the option for 2-button navigation in build `LINEAGE-20.0-20230324-NIGHTLY-RACER-SIGNED`\n\nWas that the intent? Am I missing some other newer changes or image? I was hoping 2Button would still be available.\n\nI am not sure why two button nav should have been removed, so if this was intentional, could I get more details?",
+      "revId": "5ae7551a203fefe0fb6e8f01c9bee4b14f973149",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
