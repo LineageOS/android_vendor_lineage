@@ -3128,15 +3128,8 @@
   <apn carrier="FarEasTone MMS" mcc="466" mnc="01" apn="fetnet01" mmsc="http://mms" mmsproxy="210.241.199.199" mmsport="9201" type="mms" />
   <apn carrier="KGT" mcc="466" mnc="88" apn="internet" type="default,supl" />
   <apn carrier="KGT MMS" mcc="466" mnc="88" apn="kgtmms" mmsc="http://mms.kgtmms.net.tw/mms/wapenc" mmsproxy="172.28.33.5" mmsport="8080" type="mms" />
-  <apn carrier="VIBO-vibo" mcc="466" mnc="89" apn="vibo" proxy="172.24.128.36" port="8080" mmsc="" user="" password="" authtype="1" type="default,supl" />
-  <apn carrier="VIBO-internet" mcc="466" mnc="89" apn="internet" user="" password="" authtype="1" type="default,supl" />
-  <apn carrier="VIBOONE" mcc="466" mnc="89" apn="viboone" user="" password="" authtype="1" type="default,supl" />
-  <apn carrier="VIBO-MMS " mcc="466" mnc="89" apn="vibo" proxy="" port="" mmsproxy="172.24.128.36" mmsport="8080" mmsc="http://mms" user="" password="" authtype="1" type="mms" />
-  <apn carrier="震旦電信(AURORA) (MMS)" mcc="466" mnc="89" apn="aurorawap" mmsc="http://auroramms" mmsproxy="172.24.128.36" mmsport="8080" type="mms" />
-  <apn carrier="震旦電信(AURORA) (Internet)" mcc="466" mnc="89" apn="auroraweb" type="default,supl" />
-  <apn carrier="Vibo" mcc="466" mnc="89" apn="internet" type="default,supl" />
-  <apn carrier="威寶電信(VIBO)" mcc="466" mnc="89" apn="vibo" mmsc="http://mms" mmsproxy="172.24.128.36" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="Vibo" mcc="466" mnc="89" apn="vibo" mmsc="http://mms" mmsproxy="172.24.128.36" mmsport="8080" type="mms" />
+  <apn carrier="T Star-Internet" mcc="466" mnc="89" apn="internet" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="T Star-MMS" mcc="466" mnc="89" apn="internet" mmsproxy="172.24.128.36" mmsport="8080" mmsc="http://mms.vibo.net.tw" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="中華電信 (emome)" mcc="466" mnc="92" apn="emome" user="" password="" type="default,supl" />
   <apn carrier="中華電信 (Internet)" mcc="466" mnc="92" apn="internet" user="" password="" type="default,supl" />
   <apn carrier="中華電信 (MMS)" mcc="466" mnc="92" apn="emome" proxy="" port="" mmsproxy="10.1.1.1" mmsport="8080" mmsc="http://mms.emome.net:8002" user="" password="" type="mms" />
