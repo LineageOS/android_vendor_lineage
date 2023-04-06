@@ -16,6 +16,24 @@
       "message": "Just squash it with the previous?",
       "revId": "41f2a02b50e692e56a44d2e793ed49400875c347",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "28c44187_66e1424e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-04-06T19:14:02Z",
+      "side": 1,
+      "message": "k",
+      "parentUuid": "5c02796b_9b8226ed",
+      "revId": "41f2a02b50e692e56a44d2e793ed49400875c347",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
