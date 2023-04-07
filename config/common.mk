@@ -267,6 +267,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_transaction_tracing=false
 endif
 
+# Helper script for enabling USB data based on the current type-C role
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor_bin/init.enable_usb_data.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.enable_usb_data.sh
+
 # Audio files
 $(call inherit-product, vendor/lineage/audio/audio.mk)
 
