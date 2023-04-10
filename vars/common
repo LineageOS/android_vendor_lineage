@@ -5,12 +5,12 @@ readonly os_branch=lineage-20.0
 readonly prev_device_branch=lineage-19.1
 readonly device_branch=lineage-20
 
-readonly prev_common_aosp_tag=android-13.0.0_r30 # Feb 2023, Supported Pixels
-readonly common_aosp_tag=android-13.0.0_r35 # Mar 2023, Pixel 4a - 5a, 7 Pro
+readonly prev_common_aosp_tag=android-13.0.0_r35 # Mar 2023, Pixel 4a - 5a, 7 Pro
+readonly common_aosp_tag=android-13.0.0_r41 # Apr 2023, Pixel 6 - 7 Pro
 
-readonly prev_common_aosp_build_id=TQ1A.230205.002 # Feb 2023, Supported Pixels
-readonly common_aosp_build_id=TQ2A.230305.008.C1 # Mar 2023, Pixel 4a - 5a, 7 Pro
+readonly prev_common_aosp_build_id=TQ2A.230305.008.C1 # Mar 2023, Pixel 4a - 5a, 7 Pro
+readonly common_aosp_build_id=TQ2A.230405.003.E1 # Apr 2023, Pixel 6 - 7 Pro
 
-readonly topic=T_asb_2023-03
+readonly topic=T_asb_2023-04
 
 readonly merge_method="merge"
