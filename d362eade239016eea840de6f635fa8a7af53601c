@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b918b46_a56e6fd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-04-11T22:48:19Z",
+      "side": 1,
+      "message": "What can we do about this (excluding using non auto-generated RROs)?",
+      "revId": "d362eade239016eea840de6f635fa8a7af53601c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
