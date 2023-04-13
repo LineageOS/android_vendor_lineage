@@ -271,6 +271,12 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vendor_bin/init.enable_usb_data.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.enable_usb_data.sh
 
+# Debuggable builds will have USB activated early, when this property hasn't been set elsewhere.
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.init.trust_restrict_usb=0
+endif
+
 # Audio files
 $(call inherit-product, vendor/lineage/audio/audio.mk)
 
