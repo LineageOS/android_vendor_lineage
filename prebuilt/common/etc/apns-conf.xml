@@ -3312,19 +3312,22 @@
   <apn carrier="DTAC GPRS WEB" mcc="520" mnc="18" apn="www.dtac.co.th" type="default,supl" />
   <apn carrier="True" mcc="520" mnc="99" apn="internet" user="true" password="true" type="default,supl" />
   <apn carrier="True MMS" mcc="520" mnc="99" apn="mms" user="true" password="true" mmsc="http://mms.trueworld.net:8002" mmsproxy="10.4.7.39" mmsport="8080" type="mms" />
-  <apn carrier="SingTel (PostPaid)" mcc="525" mnc="01" apn="e-ideas" mmsproxy="165.21.42.84" mmsport="8080" mmsc="http://mms.singtel.com:10021/mmsc" type="default,supl,mms" />
-  <apn carrier="SingTel (PrePaid)" mcc="525" mnc="01" apn="hicard" mmsproxy="165.21.42.84" mmsport="8080" mmsc="http://mms.singtel.com:10021/mmsc" type="default,supl,mms" />
-  <apn carrier="SingTel (PostPaid)" mcc="525" mnc="02" apn="e-ideas" mmsproxy="165.21.42.84" mmsport="8080" mmsc="http://mms.singtel.com:10021/mmsc" type="default,supl,mms" />
-  <apn carrier="SingTel (PrePaid)" mcc="525" mnc="02" apn="hicard" mmsproxy="165.21.42.84" mmsport="8080" mmsc="http://mms.singtel.com:10021/mmsc" type="default,supl,mms" />
-  <apn carrier="Sunsurf Mobile" mcc="525" mnc="03" apn="sunsurf" type="default,supl" />
-  <apn carrier="M1 MMS(3G)" mcc="525" mnc="03" apn="miworld" user="65" password="user123" mmsc="http://mmsgw:8002" mmsproxy="172.16.14.10" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Sunsurf Mobile" mcc="525" mnc="04" apn="sunsurf" type="default,supl" />
-  <apn carrier="M1 MMS(3G)" mcc="525" mnc="04" apn="miworld" user="65" password="user123" authtype="1" mmsc="http://mmsgw:8002" mmsproxy="172.16.14.10" mmsport="8080" type="mms" />
-  <apn carrier="SH Data Postpaid" mcc="525" mnc="05" apn="shwap" type="default,supl" />
-  <apn carrier="SH Data Prepaid" mcc="525" mnc="05" apn="shppd" type="default,supl" />
-  <apn carrier="SH MMS Postpaid" mcc="525" mnc="05" apn="shmms" mmsc="http://mms.starhubgee.com.sg:8002/" mmsproxy="10.12.1.80" mmsport="80" type="mms" />
-  <apn carrier="TPG SG" mcc="525" mnc="10" apn="TPG" type="default,mms,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="TPG SG IMS" mcc="525" mnc="10" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Singtel (Postpaid)" carrier_id="31" mcc="525" mnc="01" apn="e-ideas" mmsproxy="165.21.42.84" mmsport="8080" mmsc="http://mms.singtel.com:10021/mmsc" type="default,ia,supl,mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Singtel (Prepaid)" carrier_id="31" mcc="525" mnc="01" apn="hicard" mmsproxy="165.21.42.84" mmsport="8080" mmsc="http://mms.singtel.com:10021/mmsc" type="default,ia,supl,mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Singtel IMS" carrier_id="31" mcc="525" mnc="01" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Singtel Ut" carrier_id="31" mcc="525" mnc="01" apn="stm-ut" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Sunsurf Mobile" carrier_id="1706" mcc="525" mnc="03" apn="sunsurf" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="M1 MMS" carrier_id="1706" mcc="525" mnc="03" apn="miworld" user="65" password="user123" mmsc="http://mmsgw:8002" mmsproxy="172.16.14.10" mmsport="8080" authtype="1" type="mms" />
+  <apn carrier="M1 IMS" carrier_id="1706" mcc="525" mnc="03" apn="IMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="M1 XCAP" carrier_id="1706" mcc="525" mnc="03" apn="XCAP" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" network_type_bitmask="18" user_visible="false" />
+  <apn carrier="M1 hos" carrier_id="1706" mcc="525" mnc="03" apn="hos" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20" user_visible="false" />
+  <apn carrier="giga" carrier_id="2434" mcc="525" mnc="05" apn="giga" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="SH Data Postpaid" carrier_id="1707" mcc="525" mnc="05" apn="shwap" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="SH Data Prepaid" carrier_id="1707" mcc="525" mnc="05" apn="shppd" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="SH IMS" carrier_id="1707" mcc="525" mnc="05" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="SH XCAP" carrier_id="1707" mcc="525" mnc="05" apn="shxcap" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="亞太電信(APT) (Internet)" carrier_id="1707" mcc="525" mnc="05" apn="gtnet" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IP" mvno_type="gid" mvno_match_data="0A" />
+  <apn carrier="SIMBA" mcc="525" mnc="10" apn="tpg" type="default,ia,supl" protocol="IPV4V6" />
   <apn carrier="B-Mobile MMS" mcc="528" mnc="02" apn="bmobilemms" mmsc="http://mms.bmobile.com.bn/was" mmsproxy="129.9.10.20" mmsport="6500" type="mms" />
   <apn carrier="B-Mobile" mcc="528" mnc="02" apn="bmobilewap" type="default,supl" />
   <apn carrier="DSTCom" mcc="528" mnc="11" apn="dst.internet" user="internet" password="internet" type="default,supl" />
