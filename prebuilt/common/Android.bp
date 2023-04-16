@@ -4,3 +4,20 @@ prebuilt_etc_xml {
     src: "etc/sensitive_pn.xml",
     schema: ":spn-schema",
 }
+
+android_app_import {
+    name: "SettingsGoogleFutureFaceEnroll",
+    apk: "priv-app/SettingsGoogleFutureFaceEnroll/SettingsGoogleFutureFaceEnroll.apk",
+    certificate: "platform",
+    privileged: true,
+    required: ["privapp_whitelist_settings.future.face.enroll.xml"],
+    system_ext_specific: true,
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_settings.future.face.enroll.xml",
+    sub_dir: "permissions",
+    src: "etc/permissions/settings.future.face.enroll.xml",
+    filename_from_src: true,
+    system_ext_specific: true,
+}
