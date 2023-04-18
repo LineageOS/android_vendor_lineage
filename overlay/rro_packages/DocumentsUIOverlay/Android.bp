@@ -1,0 +1,9 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "DocumentsUIOverlay",
+    product_specific: true,
+}
