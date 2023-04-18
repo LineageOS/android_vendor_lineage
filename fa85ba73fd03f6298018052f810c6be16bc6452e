@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac5b0579_23ac40e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-04-18T19:34:22Z",
+      "side": 1,
+      "message": "Ensure it is being applied ( as testing via UI etc ), I don\u0027t know why but making it static somehow didn\u0027t apply it last time",
+      "revId": "fa85ba73fd03f6298018052f810c6be16bc6452e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
