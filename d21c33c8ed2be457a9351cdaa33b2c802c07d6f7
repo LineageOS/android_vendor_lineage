@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d5cc091_f3e0c55e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-04-22T14:13:57Z",
+      "side": 1,
+      "message": "Which is the exact build command that is failing here?",
+      "revId": "d21c33c8ed2be457a9351cdaa33b2c802c07d6f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
