@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c991368_8201c42a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-04-22T10:32:30Z",
+      "side": 1,
+      "message": "Source: https://stackoverflow.com/a/73888189/6437140",
+      "revId": "b2f07d3bbb66cf9c9d067b1c6e71c4ae6f6f8735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
