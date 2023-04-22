@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74672673_cce100c4",
+        "filename": "build/target/product/lineage_sdk_phone_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-04-22T13:17:42Z",
+      "side": 1,
+      "message": "this flag has nothing to do with \"Enable mainline checking\"",
+      "revId": "b33f1454ce388b28904a69b9e48897408eedc0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
