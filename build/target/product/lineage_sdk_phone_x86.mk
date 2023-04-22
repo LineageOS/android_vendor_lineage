@@ -1,4 +1,4 @@
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +15,9 @@
 $(call inherit-product, build/target/product/sdk_phone_x86.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_target.mk
+
+# Always build modules from source
+PRODUCT_MODULE_BUILD_FROM_SOURCE := true
 
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
