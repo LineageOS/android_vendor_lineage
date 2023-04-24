@@ -1,10 +1,10 @@
 declare -A qcom_group_revision
-qcom_group_revision[qssi]=LA.QSSI.13.0.r1-09400-qssi.0
+qcom_group_revision[qssi]=LA.QSSI.13.0.r1-09800-qssi.0
 qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02500-89xx.0
-qcom_group_revision[sdm660]=LA.UM.11.2.1.r1-03300-sdm660.0
+qcom_group_revision[sdm660]=LA.UM.11.2.1.r1-03400-sdm660.0
 qcom_group_revision[sdm845]=LA.UM.10.3.r1-01700-sdm845.0
-qcom_group_revision[msmnile]=LA.UM.9.1.r1-13100-SMxxx0.QSSI13.0
-qcom_group_revision[kona]=LA.UM.9.12.r1-15200-SMxx50.QSSI13.0
-qcom_group_revision[lahaina]=LA.UM.9.14.r1-21200-LAHAINA.QSSI13.0
-qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-20700-WAIPIO.0
-qcom_group_revision[waipio-video]=VIDEO.LA.2.0.r1-07900-WAIPIO.0
+qcom_group_revision[msmnile]=LA.UM.9.1.r1-13400-SMxxx0.QSSI12.0
+qcom_group_revision[kona]=LA.UM.9.12.r1-15300-SMxx50.QSSI12.0
+qcom_group_revision[lahaina]=LA.UM.9.14.r1-21300-LAHAINA.QSSI12.0
+qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-21300-WAIPIO.QSSI14.0
+qcom_group_revision[waipio-video]=VIDEO.LA.2.0.r1-08100-WAIPIO.0
