@@ -34,6 +34,24 @@
       "parentUuid": "74672673_cce100c4",
       "revId": "b33f1454ce388b28904a69b9e48897408eedc0d8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37fa588f_4b9516b0",
+        "filename": "build/target/product/lineage_sdk_phone_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-04-24T20:09:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b229e951_905ff31d",
+      "revId": "b33f1454ce388b28904a69b9e48897408eedc0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
