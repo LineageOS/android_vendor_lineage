@@ -34,6 +34,24 @@
       "parentUuid": "ea7e7072_f4a496fa",
       "revId": "1cc1c8a0a0f337c4dc14bb96d02e1dc244d03782",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77178e78_ad8b20eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-04-27T10:02:06Z",
+      "side": 1,
+      "message": "Was the fork already requested? Anyway, unless I am really going blind, I don\u0027t see this flag anywhere in CLO repos.",
+      "parentUuid": "ad8c8156_05981ef0",
+      "revId": "1cc1c8a0a0f337c4dc14bb96d02e1dc244d03782",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
