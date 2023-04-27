@@ -16,6 +16,24 @@
       "message": "I wonder why this was even merged, since I don\u0027t see this flag used anywhere in our repositories.",
       "revId": "1cc1c8a0a0f337c4dc14bb96d02e1dc244d03782",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad8c8156_05981ef0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17257
+      },
+      "writtenOn": "2023-04-27T09:42:10Z",
+      "side": 1,
+      "message": "because we don\u0027t have the hals forked",
+      "parentUuid": "ea7e7072_f4a496fa",
+      "revId": "1cc1c8a0a0f337c4dc14bb96d02e1dc244d03782",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
