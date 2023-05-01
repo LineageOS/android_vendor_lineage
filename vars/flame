@@ -22,7 +22,6 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TP1A.221005.002"
 readonly build_id="TP1A.221005.002.B2"
 
 # Updated automatically via pixel/update-device-vars.sh
@@ -30,7 +29,6 @@ readonly build_id="TP1A.221005.002.B2"
 readonly prev_aosp_tag="android-13.0.0_r7"
 readonly aosp_tag="android-13.0.0_r31"
 
-readonly prev_build_number="9012097"
 readonly build_number="9382335"
 
 readonly image_url="https://dl.google.com/dl/android/aosp/flame-tp1a.221005.002.b2-factory-38e4f49a.zip"

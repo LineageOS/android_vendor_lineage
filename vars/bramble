@@ -24,7 +24,6 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_build_id="TQ2A.230405.003"
 readonly build_id="TQ2A.230505.002"
 
 # Updated automatically via pixel/update-device-vars.sh
@@ -32,7 +31,6 @@ readonly build_id="TQ2A.230505.002"
 readonly prev_aosp_tag="android-13.0.0_r38"
 readonly aosp_tag="android-13.0.0_r43"
 
-readonly prev_build_number="9719927"
 readonly build_number="9891397"
 
 readonly image_url="https://dl.google.com/dl/android/aosp/bramble-tq2a.230505.002-factory-c5aac8fc.zip"
