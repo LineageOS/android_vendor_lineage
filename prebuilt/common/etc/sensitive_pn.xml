@@ -240,34 +240,65 @@
         </item>
         <item>
             <number>08000432</number>
-            <name>National Helpline for Children and Teenagers</name>
-            <categories>emotional support|children|teenagers</categories>
+            <name>Kindertelefoon (gratis)</name>
+	    <organisation>De Kindertelefoon</organisation>
+            <website>https://www.kindertelefoon.nl/</website>
+	    <categories>emotional support|children|teenagers</categories>
+	    <availability>11:00 until 21:00</availability>
         </item>
         <item>
             <number>08002000</number>
-            <name>National Domestic Violence Helpline</name>
+            <name>Veilig Thuis (gratis)</name>
+	    <organization>Veilig Thuis</organization>
+	    <website>https://veiligthuis.nl/</website>
             <categories>domestic violence</categories>
+	    <availability>24/7</availability>
         </item>
         <item>
             <number>08007000</number>
-            <name>National Hotline to Report Crime Anonymously</name>
+            <name>Meld Misdaad Anoniem (gratis)</name>
+	    <organization>Meld Misdaad Anoniem</organization>
+	    <website>https://www.meldmisdaadanoniem.nl/</website>
             <categories>crime</categories>
+	    <availability>workdays 8:00 until 22:00 weekend 9:00 until 17:00</availability>
         </item>
         <item>
             <number>09000101</number>
-            <name>Victim Support</name>
+            <name>Slachtoffer Hulp (geen extra kosten)</name>
             <categories>human trafficking</categories>
-            <organization>Victim Support Netherlands</organization>
+            <organization>Slachtoffer Hulp Nederland</organization>
             <website>https://www.slachtofferhulp.nl/</website>
+	    <availability>Monday to Friday 8:00 until 20:00 Saturday 10:00 until 17:00</availability>
         </item>
         <item>
-            <number>09000113</number>
-            <name>National Suicide Prevention</name>
+            <number>113</number>
+            <name>113 ZelfmoordPreventie (geen extra kosten)</name>
+	    <organization>Stichting 113 ZelfmoordPreventie</organization>
+	    <website>https://www.113.nl/</website>
+	    <availability>24/7</availability>
+            <categories>suicide</categories>
+        </item>
+        <item>
+            <number>08000113</number>
+            <name>113 ZelfmoordPreventie (gratis)</name>
+            <organization>Stichting 113 ZelfmoordPreventie</organization>
+            <website>https://www.113.nl/</website>
+            <availability>24/7</availability>
+            <categories>suicide</categories>
+        </item>
+        <item>
+            <number>0203113888</number>
+            <name>113 Hulplijn voor omgeving (geen extra kosten)</name>
+	    <organization>Stichting 113 ZelfmoordPreventie</organization>
+            <website>https://www.113.nl/maak-je-je-zorgen-om-iemand</website>
+            <availability>Workdays 10:00 until 16:00</availability>
             <categories>suicide</categories>
         </item>
         <item>
             <number>09001450</number>
-            <name>Psychological Support</name>
+            <name>MIND Korrelatie (geen extra kosten)</name>
+	    <website>https://mindkorrelatie.nl/</website>
+	    <availability>monday to friday 9:00 until 21:00</availability>
             <categories>psychological</categories>
             <organization>MIND Korrelatie</organization>
         </item>
@@ -279,9 +310,12 @@
             <website>https://www.blijfgroep.nl/</website>
         </item>
         <item>
-            <number>09001130113</number>
-            <name>National Suicide Prevention</name>
-            <categories>suicide</categories>
+            <number>09000767</number>
+            <name>De luisterlijn (geen extra kosten)</name>
+            <categories>Emotional support</categories>
+	    <organization>De luisterlijn</organization>
+	    <website>https://www.deluisterlijn.nl/</website>
+	    <availability>24/7</availability>
         </item>
         <item>
             <number>09009999001</number>
