@@ -252,6 +252,13 @@
             <website>https://www.kindertelefoon.nl/</website>
         </item>
         <item>
+            <number>0203113888</number>
+            <name>Suicide Prevention for Friends and Family</name>
+            <categories>suicide</categories>
+            <organization>Stichting 113 ZelfmoordPreventie</organization>
+            <website>https://www.113.nl/maak-je-je-zorgen-om-iemand</website>
+        </item>
+        <item>
             <number>08000113</number>
             <name>National Suicide Prevention Hotline</name>
             <categories>suicide</categories>
@@ -269,6 +276,8 @@
             <number>08000432</number>
             <name>National Helpline for Children and Teenagers</name>
             <categories>emotional support|children|teenagers</categories>
+            <organization>De Kindertelefoon</organization>
+            <website>https://www.kindertelefoon.nl/</website>
         </item>
         <item>
             <number>08002000</number>
