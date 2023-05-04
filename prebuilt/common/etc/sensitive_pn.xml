@@ -240,34 +240,50 @@
         </item>
         <item>
             <number>08000432</number>
-            <name>National Helpline for Children and Teenagers</name>
+            <name>Helpline for Children and Teenagers</name>
+            <organisation>De Kindertelefoon</organisation>
+            <website>https://www.kindertelefoon.nl/</website>
             <categories>emotional support|children|teenagers</categories>
         </item>
         <item>
             <number>08002000</number>
-            <name>National Domestic Violence Helpline</name>
+            <name>Domestic Violence Helpline</name>
+            <organization>Veilig Thuis</organization>
+            <website>https://veiligthuis.nl/</website>
             <categories>domestic violence</categories>
         </item>
         <item>
             <number>08007000</number>
-            <name>National Hotline to Report Crime Anonymously</name>
+            <name>Anonymous Crime Hotline</name>
+            <organization>Meld Misdaad Anoniem</organization>
+            <website>https://www.meldmisdaadanoniem.nl/</website>
             <categories>crime</categories>
         </item>
         <item>
             <number>09000101</number>
-            <name>Victim Support</name>
+            <name>Victim Hotline</name>
             <categories>human trafficking</categories>
-            <organization>Victim Support Netherlands</organization>
+            <organization>Slachtoffer Hulp Nederland</organization>
             <website>https://www.slachtofferhulp.nl/</website>
         </item>
         <item>
-            <number>09000113</number>
-            <name>National Suicide Prevention</name>
+            <number>08000113</number>
+            <name>Suicide Prevention Hotline</name>
+            <organization>Stichting 113 ZelfmoordPreventie</organization>
+            <website>https://www.113.nl/</website>
+            <categories>suicide</categories>
+        </item>
+        <item>
+            <number>0203113888</number>
+            <name>Suicide Prevention for Friends and Family</name>
+            <organization>Stichting 113 ZelfmoordPreventie</organization>
+            <website>https://www.113.nl/maak-je-je-zorgen-om-iemand</website>
             <categories>suicide</categories>
         </item>
         <item>
             <number>09001450</number>
-            <name>Psychological Support</name>
+            <name>Mentalhealth Helpline</name>
+            <website>https://mindkorrelatie.nl/</website>
             <categories>psychological</categories>
             <organization>MIND Korrelatie</organization>
         </item>
@@ -279,9 +295,11 @@
             <website>https://www.blijfgroep.nl/</website>
         </item>
         <item>
-            <number>09001130113</number>
-            <name>National Suicide Prevention</name>
-            <categories>suicide</categories>
+            <number>09000767</number>
+            <name>Emotional Support Helpline</name>
+            <categories>Emotional support</categories>
+            <organization>De luisterlijn</organization>
+            <website>https://www.deluisterlijn.nl/</website>
         </item>
         <item>
             <number>09009999001</number>
@@ -2709,6 +2727,7 @@
             <categories>suicide</categories>
             <languages>english|hindi</languages>
             <organization>AASRA</organization>
+            <website>http://www.aasra.info/</website>
         </item>
     </sensitivePN>
     <!--Pakistan-->
