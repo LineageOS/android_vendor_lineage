@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c684aa5_8b12c013",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-05-05T18:05:19Z",
+      "side": 1,
+      "message": "While we appreciate the effort and contribution, I found a few issues with this patch which need to be addressed before this can be used.\n(in case you don\u0027t know about amending yet, here is a handy link: https://wiki.lineageos.org/how-to/submitting-patches#submitting-patch-sets )\n\nThe comments I had apply to all places there, I didn\u0027t comment on all instances",
+      "revId": "734c7c59686cf695b3ed768290f693385aa8186f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "07456c83_32e66e76",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-05-05T18:05:19Z",
+      "side": 1,
+      "message": "we don\u0027t add this anywhere else, wouldn\u0027t add it here",
+      "range": {
+        "startLine": 243,
+        "startChar": 33,
+        "endLine": 243,
+        "endChar": 41
+      },
+      "revId": "734c7c59686cf695b3ed768290f693385aa8186f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b3995cf_c5618cad",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-05-05T18:05:19Z",
+      "side": 1,
+      "message": "rest of the document uses spaces for indentation - need to keep doing it like that",
+      "range": {
+        "startLine": 244,
+        "startChar": 1,
+        "endLine": 244,
+        "endChar": 5
+      },
+      "revId": "734c7c59686cf695b3ed768290f693385aa8186f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bd4ba9eb_3440ce46",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-05-05T18:05:19Z",
+      "side": 1,
+      "message": "please don\u0027t invent new fields - this one doesn\u0027t exist. Also we have nobody to keep these updated really and such things tend to get outdated rather sooner than later",
+      "range": {
+        "startLine": 247,
+        "startChar": 6,
+        "endLine": 247,
+        "endChar": 18
+      },
+      "revId": "734c7c59686cf695b3ed768290f693385aa8186f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d336a55_cfcb715d",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 259,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-05-05T18:05:19Z",
+      "side": 1,
+      "message": "this is already the org name - it\u0027s the hotline for anonymous crime reporting (\"national\" is debatable, maybe)\nYou should keep the names except for when they are wrong - and also keep them in english",
+      "range": {
+        "startLine": 259,
+        "startChar": 18,
+        "endLine": 259,
+        "endChar": 38
+      },
+      "revId": "734c7c59686cf695b3ed768290f693385aa8186f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
