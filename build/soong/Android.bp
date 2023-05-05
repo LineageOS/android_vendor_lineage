@@ -205,6 +205,37 @@ egl_display_array {
     },
 }
 
+soong_config_module_type {
+    name: "health_charging_control",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["target_health_charging_control_bypasses_battery"],
+    value_variables: [
+        "target_health_charging_control_path",
+        "target_health_charging_control_enable",
+        "target_health_charging_control_disable",
+    ],
+    properties: ["cppflags"],
+}
+
+health_charging_control {
+    name: "health_charging_control_defaults",
+    soong_config_variables: {
+        target_health_charging_control_bypasses_battery: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_BYPASSES_BATTERY"],
+        },
+        target_health_charging_control_path: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_PATH=\"%s\""],
+        },
+        target_health_charging_control_enable: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_ENABLE=\"%s\""],
+        },
+        target_health_charging_control_disable: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_DISABLE=\"%s\""],
+        },
+    },
+}
+
 // NVIDIA specific config modules
 soong_config_module_type {
     name: "nvidia_enhancements",
