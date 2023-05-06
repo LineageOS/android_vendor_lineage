@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "156fb0f2_d5b42f40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-05-06T08:52:49Z",
+      "side": 1,
+      "message": "Requires a fork of external/zstd: https://github.com/DroidFreak32/android_external_zstd\n\n@Nolen Johnson, FYI Fork request has already been raised for rsync-zstd topic.\n\nIf that gets accepted, This can add support for additional tools",
+      "revId": "15815d538293e39e1307c577703519147a7c9022",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
