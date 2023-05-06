@@ -16,3 +16,7 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     Recorder
+
+# Zstd cmdline tools
+PRODUCT_PACKAGES += \
+    zstd
