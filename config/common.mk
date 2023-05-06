@@ -127,7 +127,8 @@ PRODUCT_PACKAGES += \
     htop \
     nano \
     setcap \
-    vim
+    vim \
+    zstd
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
