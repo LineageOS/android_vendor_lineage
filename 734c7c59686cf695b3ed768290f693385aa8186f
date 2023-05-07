@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7beaf75c_3c879aab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-05-07T22:34:05Z",
+      "side": 1,
+      "message": "@japie3krekel replies can only be seen by everyone if you actually reply on gerrit where I added my comments\na) first point: costs: we don\u0027t have or maintain that info for other numbers and the name field is just not meant for it. also, since you also agreed on availability being visible on the website: this should be as well, shouldn\u0027t it?\nb) names: should be as generic as possible - the org field, which you changed as well contains that info and is easily accessible with one click on any entry",
+      "revId": "734c7c59686cf695b3ed768290f693385aa8186f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "07456c83_32e66e76",
