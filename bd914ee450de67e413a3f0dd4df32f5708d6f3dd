@@ -22,6 +22,30 @@
       },
       "revId": "bd914ee450de67e413a3f0dd4df32f5708d6f3dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b838b54_94a5b67b",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1546,
+      "author": {
+        "id": 32659
+      },
+      "writtenOn": "2023-05-08T14:22:30Z",
+      "side": 1,
+      "message": "Hello, original maintainer (freshgum) here.  I\u0027ve done some research and it looks like that should have been http://www.burncentrecare.co.uk/.\n\nI\u0027m conscious of the time gap between my initial upload of this patch and your reviewal and, as such, there will need to be time spent checking all links and information.  I have to admit that I\u0027m tentative to invest any further substantial amounts of time into this, so perhaps a formal review would be in order?\n\nI also note the sister patch, https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/306154, which also seems to have been abandoned.  I would very much hope this patch does not meet the same fate as, due to the time invested, it would be very nice if it could help someone.",
+      "parentUuid": "070e3057_7d4afaf3",
+      "range": {
+        "startLine": 1546,
+        "startChar": 21,
+        "endLine": 1546,
+        "endChar": 70
+      },
+      "revId": "bd914ee450de67e413a3f0dd4df32f5708d6f3dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
