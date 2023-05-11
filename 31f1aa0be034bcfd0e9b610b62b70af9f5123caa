@@ -16,6 +16,23 @@
       "message": "moved to common_full as per suggestion",
       "revId": "31f1aa0be034bcfd0e9b610b62b70af9f5123caa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61b508c3_183dc607",
+        "filename": "config/common_full.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-05-11T14:41:50Z",
+      "side": 1,
+      "message": "can we instead add the symlink targets here vs in the required entry of the zstd module?",
+      "revId": "31f1aa0be034bcfd0e9b610b62b70af9f5123caa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
