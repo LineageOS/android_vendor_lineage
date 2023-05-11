@@ -33,6 +33,24 @@
       "message": "can we instead add the symlink targets here vs in the required entry of the zstd module?",
       "revId": "31f1aa0be034bcfd0e9b610b62b70af9f5123caa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e828f218_767edcf8",
+        "filename": "config/common_full.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-05-11T15:00:49Z",
+      "side": 1,
+      "message": "I simply followed the way bzip2 repo is configured in AOSP:\n\nhttps://android.googlesource.com/platform/external/bzip2/+/refs/tags/android-13.0.0_r49/Android.bp#100\n\nBut if you think it\u0027s cleaner, I will look into how to add the targets here itself.",
+      "parentUuid": "61b508c3_183dc607",
+      "revId": "31f1aa0be034bcfd0e9b610b62b70af9f5123caa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
