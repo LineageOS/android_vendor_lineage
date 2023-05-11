@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2022 The LineageOS Project
+# Copyright (C) 2018-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -74,7 +74,7 @@ KERNEL_PATCHLEVEL := $(shell grep -s "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Ma
 TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
 # 5.10+ can fully compile without GCC by default
-ifneq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
+ifeq ($(shell expr $(TARGET_KERNEL_VERSION) \>= 5.10), 1)
     TARGET_KERNEL_NO_GCC ?= true
 endif
 
