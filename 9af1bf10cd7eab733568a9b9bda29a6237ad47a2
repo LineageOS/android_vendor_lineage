@@ -16,6 +16,24 @@
       "message": "Waiting for aosp merge or whatever",
       "revId": "9af1bf10cd7eab733568a9b9bda29a6237ad47a2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ded087a6_3043bcd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2023-05-11T19:32:38Z",
+      "side": 1,
+      "message": "Missed\n\n```\n  \u003capn carrier\u003d\"SIMBA\"\n      mcc\u003d\"525\"\n      mnc\u003d\"10\"\n      apn\u003d\"tpg\"\n      type\u003d\"default,ia,supl\"\n      protocol\u003d\"IPV4V6\"\n```",
+      "parentUuid": "64e238c6_a41b4f1f",
+      "revId": "9af1bf10cd7eab733568a9b9bda29a6237ad47a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
