@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2022 The LineageOS Project
+# Copyright (C) 2018-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,9 +33,6 @@
 #   TARGET_KERNEL_LLVM_BINUTILS        = Use LLVM binutils, defaults to true
 #   TARGET_KERNEL_NO_GCC               = Fully compile the kernel without GCC.
 #                                        Defaults to false
-#   TARGET_KERNEL_VERSION              = Reported kernel version in top level kernel
-#                                        makefile. Can be overriden in device trees
-#                                        in the event of prebuilt kernel.
 #
 #   TARGET_KERNEL_DTBO_PREFIX          = Override path prefix of TARGET_KERNEL_DTBO.
 #                                        Defaults to empty
@@ -71,11 +68,12 @@ endif
 
 KERNEL_VERSION := $(shell grep -s "^VERSION = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
 KERNEL_PATCHLEVEL := $(shell grep -s "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
-TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
 # 5.10+ can fully compile without GCC by default
-ifneq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
-    TARGET_KERNEL_NO_GCC ?= true
+ifeq ($(shell expr $(KERNEL_VERSION) \>= 5), 1)
+    ifeq ($(shell expr $(KERNEL_PATCHLEVEL) \>= 10), 1)
+        TARGET_KERNEL_NO_GCC ?= true
+    endif
 endif
 
 ifeq ($(TARGET_KERNEL_NO_GCC), true)
