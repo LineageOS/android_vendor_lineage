@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d246eaf_3cc56379",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-05-13T12:10:32Z",
+      "side": 1,
+      "message": "That\u0027s fine on my side",
+      "revId": "dcf0e8899a3d2c7921de34a88b9abdfc209fb952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
