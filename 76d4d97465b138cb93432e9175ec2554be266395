@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4de5156_302554cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-05-16T21:35:04Z",
+      "side": 1,
+      "message": "Why did you abandon this btw? I had to do https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/356573 and https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/356575 for sm8550.",
+      "revId": "76d4d97465b138cb93432e9175ec2554be266395",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d1872a14_51421e84",
