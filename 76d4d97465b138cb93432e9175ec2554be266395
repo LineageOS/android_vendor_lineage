@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d14e27e_80aba18d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-05-17T05:23:34Z",
+      "side": 1,
+      "message": "Xiaomi sm8450 blobs were old enough to break with the reserved_size handle",
+      "parentUuid": "e4de5156_302554cb",
+      "revId": "76d4d97465b138cb93432e9175ec2554be266395",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d1872a14_51421e84",
