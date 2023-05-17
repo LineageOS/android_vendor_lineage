@@ -321,6 +321,23 @@ health_charging_control {
     },
 }
 
+soong_config_module_type {
+    name: "with_selinux_permissive",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["with_selinux_permissive"],
+    properties: ["cppflags"],
+}
+
+with_selinux_permissive {
+    name: "with_selinux_permissive_defaults",
+    soong_config_variables: {
+        with_selinux_permissive: {
+            cppflags: ["-DWITH_SELINUX_PERMISSIVE"],
+        },
+    },
+}
+
 // NVIDIA specific config modules
 soong_config_module_type {
     name: "nvidia_enhancements",
