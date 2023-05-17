@@ -37,6 +37,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
+    target_with_selinux_permissive \
     uses_egl_display_array
 
 SOONG_CONFIG_NAMESPACES += lineageNvidiaVars

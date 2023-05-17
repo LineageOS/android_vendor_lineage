@@ -205,6 +205,23 @@ egl_display_array {
     },
 }
 
+soong_config_module_type {
+    name: "with_selinux_permissive",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: ["target_with_selinux_permissive"],
+    properties: ["cppflags"],
+}
+
+with_selinux_permissive {
+    name: "with_selinux_permissive_defaults",
+    soong_config_variables: {
+        target_with_selinux_permissive: {
+            cppflags: ["-DTARGET_WITH_SELINUX_PERMISSIVE"],
+        },
+    },
+}
+
 // NVIDIA specific config modules
 soong_config_module_type {
     name: "nvidia_enhancements",
