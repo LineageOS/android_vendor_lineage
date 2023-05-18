@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "576b4ef6_abd48aef",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-05-18T13:27:48Z",
+      "side": 1,
+      "message": "I would guess something like 5.4 also matches this.\n\nCompare major and minor version separately",
+      "range": {
+        "startLine": 77,
+        "startChar": 44,
+        "endLine": 77,
+        "endChar": 52
+      },
+      "revId": "e3b1b708933aa713e4471bf064ba81ea6d7d4337",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
