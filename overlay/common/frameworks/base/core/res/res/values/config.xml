@@ -51,6 +51,9 @@
         <item>com.qualcomm.qti.cne</item>
         <!-- ImsService -->
         <item>com.shannon.imsservice</item>
+        <!-- Apps that constantly show the indicator -->
+        <item>com.nest.android</item>
+        <item>com.nianticlabs.pokemongo</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
