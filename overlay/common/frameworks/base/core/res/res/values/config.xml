@@ -53,6 +53,10 @@
         <item>com.shannon.imsservice</item>
         <!-- MediaTek ImsService -->
         <item>com.mediatek.ims</item>
+        <!-- Apps that constantly show the indicator -->
+        <item>com.jiobit.app</item>
+        <item>com.nest.android</item>
+        <item>com.nianticlabs.pokemongo</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
