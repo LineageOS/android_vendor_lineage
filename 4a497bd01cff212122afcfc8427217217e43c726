@@ -16,6 +16,23 @@
       "message": "ModuleNotFoundError: No module named \u0027_ssl\u0027\nLooks like R is missing some python stuff that S and T have available.",
       "revId": "4a497bd01cff212122afcfc8427217217e43c726",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17322007_312caf9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-05-21T02:17:10Z",
+      "side": 1,
+      "message": "Since R is basically legacy anyways, probably not that big a deal to abandon this here and just worry about S+.",
+      "revId": "4a497bd01cff212122afcfc8427217217e43c726",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
