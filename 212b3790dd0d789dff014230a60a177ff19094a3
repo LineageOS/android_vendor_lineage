@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a4b462f_57ea8153",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22730
+      },
+      "writtenOn": "2023-05-25T00:16:17Z",
+      "side": 1,
+      "message": "This commit was fixing a bug that appeared since 17.1 when only the 7 default dictionaries from the AOSP keyboard where selectable and it was reported to be fixed in 19.1. 18.1 is still active (bacon), so this should be also committed there. The file \"common_full_tablet.mk\" from the cherry-pick commit was removed because it was new added from 19.1 and probably not set up in 18.1\nThanks for a merge.",
+      "revId": "212b3790dd0d789dff014230a60a177ff19094a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
