@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58d95348_4a68c210",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2023-05-29T19:19:55Z",
+      "side": 1,
+      "message": "AGPS improves overall GPS performance. Should not be disabled by default.",
+      "revId": "f570e5542e09dbea3bc97af2defc0329b34b02fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
