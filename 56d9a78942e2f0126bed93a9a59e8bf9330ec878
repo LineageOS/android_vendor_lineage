@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da6de53b_4251f0d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-05-31T03:46:05Z",
+      "side": 1,
+      "message": "This cannot be merged unless the related framework code is approved. Marking -1 for clarity that this is only for picking, at least right now.",
+      "revId": "56d9a78942e2f0126bed93a9a59e8bf9330ec878",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
