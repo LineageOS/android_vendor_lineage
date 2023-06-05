@@ -5,11 +5,11 @@ readonly aosp_tag_match=android-13.0 # For update-device-vars.sh
 readonly os_branch=lineage-20.0
 readonly device_branch=lineage-20
 
-readonly prev_common_aosp_tag=android-13.0.0_r41 # Apr 2023, Pixel 6 - 7 Pro
-readonly common_aosp_tag=android-13.0.0_r43 # May 2023, Pixel 4a - 7 Pro
+readonly prev_common_aosp_tag=android-13.0.0_r43 # May 2023, Pixel 4a - 7 Pro
+readonly common_aosp_tag=android-13.0.0_r52 # Jun 2023, Pixel 7 - 7a
 
-readonly common_aosp_build_id=TQ2A.230505.002 # May 2023, Pixel 4a - 7 Pro
+readonly common_aosp_build_id=TQ3A.230605.012 # Jun 2023, Pixel 7 - 7a
 
-readonly topic=T_asb_2023-05
+readonly topic=T_asb_2023-06
 
 readonly merge_method="merge"

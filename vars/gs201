@@ -1,6 +1,6 @@
-# Pixel 7, 7 Pro
+# Pixel 7, 7 Pro, 7a
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_kernel_tag=android-13.0.0_r0.70 # Apr 2023
-readonly kernel_tag=android-13.0.0_r0.75 # May 2023
+readonly prev_kernel_tag=android-13.0.0_r0.75 # May 2023
+readonly kernel_tag=android-13.0.0_r0.85 # Jun 2023
