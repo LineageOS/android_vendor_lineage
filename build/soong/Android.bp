@@ -278,3 +278,20 @@ surfaceflinger_qcom_extensions {
         },
     },
 }
+
+soong_config_module_type {
+    name: "use_gralloc1",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["use_gralloc1"],
+    properties: ["export_cflags"],
+}
+
+use_gralloc1 {
+    name: "use_gralloc1_defaults",
+    soong_config_variables: {
+        use_gralloc1: {
+            export_cflags: ["-DUSE_GRALLOC1"],
+        },
+    },
+}
