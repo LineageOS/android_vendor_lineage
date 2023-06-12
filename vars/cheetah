@@ -19,8 +19,7 @@ device_repos=(
   device/google/pantah
 )
 
-# Need OTA zip for firmware, not supported by image_unpacker yet
-readonly needs_ota=true
+readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
