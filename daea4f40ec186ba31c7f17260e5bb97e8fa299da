@@ -16,6 +16,23 @@
       "message": "Request by a user",
       "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbcfba2e_4eba9cef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-06-18T22:52:22Z",
+      "side": 1,
+      "message": "need some sort of URL reference from carrier or their docs on it",
+      "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
