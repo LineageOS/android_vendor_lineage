@@ -33,6 +33,23 @@
       "message": "need some sort of URL reference from carrier or their docs on it",
       "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58c07c2f_c05d1234",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-06-19T08:13:32Z",
+      "side": 1,
+      "message": "This is url.\n\nhttps://unomobile.it",
+      "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
