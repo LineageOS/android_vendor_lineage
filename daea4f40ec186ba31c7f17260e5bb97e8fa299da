@@ -50,6 +50,24 @@
       "message": "This is url.\n\nhttps://unomobile.it",
       "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e35fbad_74f79b3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-06-19T10:50:06Z",
+      "side": 1,
+      "message": "Direct link to APN settings, please.",
+      "parentUuid": "58c07c2f_c05d1234",
+      "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
