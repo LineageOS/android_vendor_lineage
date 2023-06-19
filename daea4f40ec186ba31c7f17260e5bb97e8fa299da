@@ -68,6 +68,23 @@
       "parentUuid": "58c07c2f_c05d1234",
       "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0343735_8cce5e77",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-06-19T11:06:55Z",
+      "side": 1,
+      "message": "https://unomobileonline.it/apn-unomobile/",
+      "revId": "daea4f40ec186ba31c7f17260e5bb97e8fa299da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
