@@ -68,6 +68,23 @@
       "message": "I tried to add defaults but it gives me the message that the operator does not allow adding apn of type dun.",
       "revId": "4b3a3880b0c73faca724287cd6d22a0604c8c6e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc4939cc_9010b344",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-06-20T17:34:26Z",
+      "side": 1,
+      "message": "anyway try merging the branches if it doesn\u0027t work when the weekly build is released I\u0027ll let you know",
+      "revId": "4b3a3880b0c73faca724287cd6d22a0604c8c6e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
