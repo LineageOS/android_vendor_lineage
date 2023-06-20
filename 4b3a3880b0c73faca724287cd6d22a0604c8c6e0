@@ -16,6 +16,23 @@
       "message": "where did you get the extra fields?",
       "revId": "4b3a3880b0c73faca724287cd6d22a0604c8c6e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d90ca26b_fd2127c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-06-20T17:21:17Z",
+      "side": 1,
+      "message": "to an unofficial site.  but it works.  or you can use the defaults\n\nThis is default. default,supl,dun",
+      "revId": "4b3a3880b0c73faca724287cd6d22a0604c8c6e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
