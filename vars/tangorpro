@@ -1,0 +1,42 @@
+# Pixel Tablet
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/tangorpro
+)
+
+readonly fbpk_version="v2"
+readonly wifi_only=true
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="TQ3A.230605.009.A1"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-13.0.0_r55"
+readonly aosp_tag="android-13.0.0_r56"
+
+readonly build_number="10100517"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-tq3a.230605.009.a1-factory-6e0496d1.zip"
+readonly image_sha256="6e0496d1eb40223bf43ac2f0da76e648330722b978d6613e59ad0ea5b8eb580d"
+
+readonly flash_url="https://flash.android.com/build/10100517?target=tangorpro-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-tq3a.230605.009.a1-19ab82f9.zip"
+readonly ota_sha256="19ab82f9b22d4632b03394d6454f40002294c2821216e9bf9bd1bc4f4c1d7da5"
+
+readonly security_patch="2023-06-05"
