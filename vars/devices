@@ -1,6 +1,7 @@
 # All supported devices
 # Usage: ${devices[@]}
 readonly devices=(
+  tangorpro
   lynx
   cheetah
   panther
