@@ -40,14 +40,9 @@
     <!-- Display -->
     <hal format="hidl" optional="true">
         <name>vendor.lineage.livedisplay</name>
-        <version>2.0</version>
-        <version>2.1</version>
+        <version>2.0-1</version>
         <interface>
             <name>IAdaptiveBacklight</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IAntiFlicker</name>
             <instance>default</instance>
         </interface>
         <interface>
@@ -78,6 +73,7 @@
             <name>ISunlightEnhancement</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.1::IAntiFlicker/default</fqname>
     </hal>
     <!-- Touch -->
     <hal format="hidl" optional="true">
