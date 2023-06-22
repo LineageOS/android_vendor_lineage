@@ -34,4 +34,9 @@
     <!-- Icons that don't show in a collapsed statusbar on keyguard -->
     <string-array name="config_keyguard_statusbar_icon_blocklist" translatable="false">
     </string-array>
+
+    <!-- ComponentName for the file browsing app that the system would expect to be used in work
+         profile. The icon for this app will be shown to the user when informing them that a
+         screenshot has been saved to work profile. If blank, a default icon will be shown. -->
+    <string name="config_sceenshotWorkProfileFilesApp" translatable="false">com.android.documentsui/.files.LauncherActivity</string>
 </resources>
