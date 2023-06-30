@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d173bf4d_08a2904b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19165
+      },
+      "writtenOn": "2023-06-30T20:50:46Z",
+      "side": 1,
+      "message": "even on blobs shipped with your A13? This flag is needed for moto sm8450/sm8475, otherwise gralloc complains, and display doesnt work (our hals are based on DISPLAY.LA.2.0.r1-06900-WAIPIO.0 for A12 release and DISPLAY.LA.2.0.r1-09100-WAIPIO.0 for A13 release)",
+      "parentUuid": "4d14e27e_80aba18d",
+      "revId": "76d4d97465b138cb93432e9175ec2554be266395",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d1872a14_51421e84",
