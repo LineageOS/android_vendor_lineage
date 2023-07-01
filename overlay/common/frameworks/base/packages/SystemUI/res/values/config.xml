@@ -23,7 +23,7 @@
     <bool name="config_hspa_data_distinguishable">true</bool>
 
     <!-- SystemUI Plugins that can be loaded on user builds. -->
-    <string-array name="config_pluginWhitelist" translatable="false">
+    <string-array name="config_pluginAllowlist" translatable="false">
         <item>com.android.systemui.plugin.globalactions.wallet</item>
     </string-array>
 
