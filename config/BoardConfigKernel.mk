@@ -69,8 +69,13 @@ else
     KERNEL_ARCH := $(TARGET_KERNEL_ARCH)
 endif
 
+ifneq ($(TARGET_KERNEL_SOURCE),)
 KERNEL_VERSION := $(shell grep -s "^VERSION = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
 KERNEL_PATCHLEVEL := $(shell grep -s "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
+else
+KERNEL_VERSION := 2
+KERNEL_PATCHLEVEL := 6
+endif
 TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
 # 5.10+ can fully compile without GCC by default
