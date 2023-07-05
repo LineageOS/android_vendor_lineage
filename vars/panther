@@ -22,21 +22,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3A.230605.012"
+readonly build_id="TQ3A.230705.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r43"
-readonly aosp_tag="android-13.0.0_r52"
+readonly prev_aosp_tag="android-13.0.0_r52"
+readonly aosp_tag="android-13.0.0_r61"
 
-readonly build_number="10204971"
+readonly build_number="10216780"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-tq3a.230605.012-factory-e1c06028.zip"
-readonly image_sha256="e1c06028a2211dabb0826aa93093428ccd99d227ca77ca4310e7943bb59c7361"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-tq3a.230705.001-factory-b12ec778.zip"
+readonly image_sha256="b12ec778e723204bc1cc8d4968ac360190d84e5b4ca69ccaefefe2d3d01aff91"
 
-readonly flash_url="https://flash.android.com/build/10204971?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/10216780?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-tq3a.230605.012-9bd4b51f.zip"
-readonly ota_sha256="9bd4b51f1adaebe52d251e1ff34221196c5bdc82c4d4f1015f48fa3a99ce3b34"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-tq3a.230705.001-1467c429.zip"
+readonly ota_sha256="1467c42957c634b1dae3d7662208c425f109fdcc69b9247014a522e131067105"
 
-readonly security_patch="2023-06-05"
+readonly security_patch="2023-07-05"
