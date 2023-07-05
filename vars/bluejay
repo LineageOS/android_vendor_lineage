@@ -22,21 +22,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3A.230605.010"
+readonly build_id="TQ3A.230705.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r43"
-readonly aosp_tag="android-13.0.0_r50"
+readonly prev_aosp_tag="android-13.0.0_r50"
+readonly aosp_tag="android-13.0.0_r61"
 
-readonly build_number="10121037"
+readonly build_number="10216780"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-tq3a.230605.010-factory-1d224b94.zip"
-readonly image_sha256="1d224b9463d6903a27e90d3413726925e91c55b2774449617f4e2f8ea767b745"
+readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-tq3a.230705.001-factory-d748864f.zip"
+readonly image_sha256="d748864f62a09e4d237b4638ea2c3db2172a1fbdacea2801a03f100cfdb8b30f"
 
-readonly flash_url="https://flash.android.com/build/10121037?target=bluejay-user&signed"
+readonly flash_url="https://flash.android.com/build/10216780?target=bluejay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-tq3a.230605.010-a67dbf36.zip"
-readonly ota_sha256="a67dbf3626dd2f9fd187b83b738b7152b0200fb2bf031c469e00777b47f8b002"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-tq3a.230705.001-1c9bce8d.zip"
+readonly ota_sha256="1c9bce8ded42b6cf1a133436ef902d2fda3f4c0c78a127f4611ab1067613d6fe"
 
-readonly security_patch="2023-06-05"
+readonly security_patch="2023-07-05"
