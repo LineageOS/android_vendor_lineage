@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c91b4b82_f216948e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-07-09T23:51:04Z",
+      "side": 1,
+      "message": "This is a no-op for the tegra devkits since those tablet targets inherit full, so fine by me.",
+      "revId": "0415cfd127debfd14fe2a78b9a5cadbf04acf99e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
