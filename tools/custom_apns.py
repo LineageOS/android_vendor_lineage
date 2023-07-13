@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -15,12 +15,12 @@
 # limitations under the License.
 #
 
+import importlib
 import re
 import sys
 
 def main(argv):
-    reload(sys)
-    sys.setdefaultencoding('utf8')
+    importlib.reload(sys)
     original_file = 'vendor/lineage/prebuilt/common/etc/apns-conf.xml'
 
     if len(argv) == 3:

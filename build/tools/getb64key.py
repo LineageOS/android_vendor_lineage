@@ -1,12 +1,10 @@
-#!/usr/bin/env python
-
-from __future__ import print_function
+#!/usr/bin/env python3
 
 import base64
 import sys
 
 pkFile = open(sys.argv[1], 'rb').readlines()
-base64Key = ""
+base64Key = b""
 inCert = False
 for line in pkFile:
     if line.startswith(b"-"):
@@ -15,4 +13,4 @@ for line in pkFile:
 
     base64Key += line.strip()
 
-print(base64.b16encode(base64.b64decode(base64Key)).lower())
+print(base64.b16encode(base64.b64decode(base64Key)).lower().decode())
