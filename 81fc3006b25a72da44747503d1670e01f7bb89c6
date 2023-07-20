@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2d46e3b_d5be1cc2",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-07-20T18:17:36Z",
+      "side": 1,
+      "message": "The correct PATH is being forced here, how can you end up with different clang in your PATH?",
+      "range": {
+        "startLine": 240,
+        "startChar": 4,
+        "endLine": 240,
+        "endChar": 64
+      },
+      "revId": "81fc3006b25a72da44747503d1670e01f7bb89c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
