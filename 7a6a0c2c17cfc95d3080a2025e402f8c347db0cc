@@ -51,6 +51,24 @@
       "parentUuid": "09d6950c_459eb52a",
       "revId": "7a6a0c2c17cfc95d3080a2025e402f8c347db0cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48ad7a75_cfcc28f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28270
+      },
+      "writtenOn": "2023-07-21T05:34:18Z",
+      "side": 1,
+      "message": "https://github.com/LeafOS-Project/android_vendor_leaf/commit/11341abe73cdb6911118ae5e4eb7ac7f76f9006f\n\nnvm got it. Well its squashed with this commit. It was already done by Samar",
+      "parentUuid": "b3d5ba0b_1ecb1b6c",
+      "revId": "7a6a0c2c17cfc95d3080a2025e402f8c347db0cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
