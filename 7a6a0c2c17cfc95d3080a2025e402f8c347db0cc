@@ -33,6 +33,24 @@
       "message": "Its fine and works but the authorship is different. \n\nhttps://github.com/begonia-dev/android_device_redmi_begonia/commit/faaf1d646d98b648e02d4fa4305145758681c44f\n\nIt was done already on device side so maybe its better to author the guy who did it.",
       "revId": "7a6a0c2c17cfc95d3080a2025e402f8c347db0cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3d5ba0b_1ecb1b6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28024
+      },
+      "writtenOn": "2023-07-21T05:31:45Z",
+      "side": 1,
+      "message": "They\u0027ve labelled this overlay under \"config_systemAudioIntelligence\" which is certainly wrong, this commit puts it under right component, that is \"config_locationProviderPackageNames\" \u0026 hence the authorship",
+      "parentUuid": "09d6950c_459eb52a",
+      "revId": "7a6a0c2c17cfc95d3080a2025e402f8c347db0cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
