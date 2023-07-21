@@ -51,6 +51,8 @@
         <item>com.qualcomm.qti.cne</item>
         <!-- ImsService -->
         <item>com.shannon.imsservice</item>
+        <!-- MediaTek ImsService -->
+        <item>com.mediatek.ims</item>
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
