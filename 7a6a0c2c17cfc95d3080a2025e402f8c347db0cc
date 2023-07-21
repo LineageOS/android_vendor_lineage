@@ -69,6 +69,24 @@
       "parentUuid": "b3d5ba0b_1ecb1b6c",
       "revId": "7a6a0c2c17cfc95d3080a2025e402f8c347db0cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7022f5ce_b1853b1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28024
+      },
+      "writtenOn": "2023-07-21T09:45:42Z",
+      "side": 1,
+      "message": "https://gitlab.com/techyminati/android_vendor_lineage/-/commit/73626890367eda39f69e9dd4481c380dafdefbdf\n\nOriginal change from Nov\u0027 22, merged in this build: https://t.me/realme_c11_c12_c15_update/549 .\n\nWas private until i decided to upload it to los gerrit.",
+      "parentUuid": "48ad7a75_cfcc28f2",
+      "revId": "7a6a0c2c17cfc95d3080a2025e402f8c347db0cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
