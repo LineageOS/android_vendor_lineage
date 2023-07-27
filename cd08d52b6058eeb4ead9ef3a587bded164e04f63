@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2847db2c_9e93c037",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-27T14:29:48Z",
+      "side": 1,
+      "message": "This should be fine on all these devices.\nAs long as gr_priv_handle.h and QtiGrallocPriv.v match that is",
+      "revId": "cd08d52b6058eeb4ead9ef3a587bded164e04f63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
