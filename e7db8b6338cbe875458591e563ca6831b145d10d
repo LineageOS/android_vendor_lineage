@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d87be6d9_c05057ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-27T15:08:05Z",
+      "side": 1,
+      "message": "New dataservices is needed for new platforms (see https://review.lineageos.org/c/356572).",
+      "revId": "e7db8b6338cbe875458591e563ca6831b145d10d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3ed4b21_32585222",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-27T15:08:05Z",
+      "side": 1,
+      "message": "I have only added 5.15 family (kalama) here, but I am wondering if 5.10 family (taro) couldn\u0027t use it as well. In that case the conditions would became similar to those from data-ipa-cfg-mgr.",
+      "range": {
+        "startLine": 206,
+        "startChar": 22,
+        "endLine": 206,
+        "endChar": 36
+      },
+      "revId": "e7db8b6338cbe875458591e563ca6831b145d10d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
