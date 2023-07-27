@@ -16,6 +16,52 @@
       "message": "This should be fine on all these devices.\nAs long as gr_priv_handle.h and QtiGrallocPriv.v match that is",
       "revId": "cd08d52b6058eeb4ead9ef3a587bded164e04f63",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b612500_8207bcf0",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-27T14:45:29Z",
+      "side": 1,
+      "message": "Maybe \"?\" instead of \":\" to allow devices to override this, no?",
+      "range": {
+        "startLine": 142,
+        "startChar": 62,
+        "endLine": 142,
+        "endChar": 63
+      },
+      "revId": "cd08d52b6058eeb4ead9ef3a587bded164e04f63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68e69bb2_c8c33b09",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-27T14:45:29Z",
+      "side": 1,
+      "message": "Same.",
+      "range": {
+        "startLine": 143,
+        "startChar": 44,
+        "endLine": 143,
+        "endChar": 45
+      },
+      "revId": "cd08d52b6058eeb4ead9ef3a587bded164e04f63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
