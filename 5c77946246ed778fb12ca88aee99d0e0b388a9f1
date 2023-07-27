@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f230bb_fa0d7ffc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-27T23:05:11Z",
+      "side": 1,
+      "message": "Sucessfully built lemonadep (lahaina) and salami (kalama).",
+      "revId": "5c77946246ed778fb12ca88aee99d0e0b388a9f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
