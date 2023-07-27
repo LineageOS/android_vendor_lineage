@@ -57,6 +57,30 @@
       },
       "revId": "e7db8b6338cbe875458591e563ca6831b145d10d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40002b7d_d37aeb13",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-27T15:25:53Z",
+      "side": 1,
+      "message": "taro \"needs\" the old one",
+      "parentUuid": "a3ed4b21_32585222",
+      "range": {
+        "startLine": 206,
+        "startChar": 22,
+        "endLine": 206,
+        "endChar": 36
+      },
+      "revId": "e7db8b6338cbe875458591e563ca6831b145d10d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
