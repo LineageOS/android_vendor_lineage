@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d95e9fc_3461c2d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-27T15:20:53Z",
+      "side": 1,
+      "message": "Just to clarify, above change was enough for completing builds, but new dataservices has much more stuff in it.",
+      "parentUuid": "d87be6d9_c05057ef",
+      "revId": "e7db8b6338cbe875458591e563ca6831b145d10d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3ed4b21_32585222",
