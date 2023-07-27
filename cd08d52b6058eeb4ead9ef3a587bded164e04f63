@@ -20,6 +20,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f08283eb_1ab1df9f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19165
+      },
+      "writtenOn": "2023-07-27T14:54:03Z",
+      "side": 1,
+      "message": "On moto sm84xx only TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE is set, setting both breaks display stack\nmoto sm8550 is fine with both set",
+      "revId": "cd08d52b6058eeb4ead9ef3a587bded164e04f63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1b612500_8207bcf0",
         "filename": "config/BoardConfigQcom.mk",
         "patchSetId": 6
