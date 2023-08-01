@@ -16,6 +16,24 @@
       "message": "What devices are setting this flag at the moment?",
       "revId": "9d0a2f227196a643008451595431673831e88788",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f17f3195_d5394323",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-08-01T19:03:15Z",
+      "side": 1,
+      "message": "nx (not yet shipped, but nearing), and Tegra devkits will after today.",
+      "parentUuid": "f4cd29b1_f2d4f654",
+      "revId": "9d0a2f227196a643008451595431673831e88788",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
