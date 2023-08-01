@@ -74,9 +74,11 @@ KERNEL_PATCHLEVEL := $(shell grep -s "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Ma
 TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
 # 5.10+ can fully compile without GCC by default
-ifeq ($(shell expr $(KERNEL_VERSION) \>= 5), 1)
-    ifeq ($(shell expr $(KERNEL_PATCHLEVEL) \>= 10), 1)
-        TARGET_KERNEL_NO_GCC ?= true
+ifneq ($(KERNEL_VERSION),)
+    ifeq ($(shell expr $(KERNEL_VERSION) \>= 5), 1)
+        ifeq ($(shell expr $(KERNEL_PATCHLEVEL) \>= 10), 1)
+            TARGET_KERNEL_NO_GCC ?= true
+        endif
     endif
 endif
 
