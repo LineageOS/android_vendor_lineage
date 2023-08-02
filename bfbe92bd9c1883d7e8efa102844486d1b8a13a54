@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c042dd2f_2184b067",
+        "filename": "vars/qcom",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-08-02T18:35:29Z",
+      "side": 1,
+      "message": "Add these to the end, it\u0027s sorted by platform release date, not alphabetical",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 69
+      },
+      "revId": "bfbe92bd9c1883d7e8efa102844486d1b8a13a54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
