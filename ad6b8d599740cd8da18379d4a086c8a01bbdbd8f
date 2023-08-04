@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d520f18c_d42eb8c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-08-04T19:30:05Z",
+      "side": 1,
+      "message": "Fixes building tegra 5.10 kernel with xor-neon enabled.",
+      "revId": "ad6b8d599740cd8da18379d4a086c8a01bbdbd8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
