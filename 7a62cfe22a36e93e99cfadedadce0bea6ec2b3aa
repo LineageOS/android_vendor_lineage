@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1076b92e_70ef27c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-08-04T19:20:12Z",
+      "side": 1,
+      "message": "For some time, I have had odd issues with system headers interfering with some modules I build, like bootloaders or kernel, which use a gcc target compiler. This is the reason why. These headers should be limited to host only and should not be polluting the target paths.",
+      "revId": "7a62cfe22a36e93e99cfadedadce0bea6ec2b3aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
