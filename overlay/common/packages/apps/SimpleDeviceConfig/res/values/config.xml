@@ -50,5 +50,8 @@
 
         <!-- Disable always screen on -->
         <item>attention_manager_service/keep_screen_on_enabled=false</item>
+
+        <!-- Show notification volume control slider separate from ring -->
+        <item>systemui/volume_separate_notification=true</item>
     </string-array>
 </resources>
