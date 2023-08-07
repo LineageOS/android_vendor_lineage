@@ -23,21 +23,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3A.230705.001"
+readonly build_id="TQ3A.230805.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r50"
-readonly aosp_tag="android-13.0.0_r61"
+readonly prev_aosp_tag="android-13.0.0_r61"
+readonly aosp_tag="android-13.0.0_r67"
 
-readonly build_number="10216780"
+readonly build_number="10316531"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/raven-tq3a.230705.001-factory-4dccec83.zip"
-readonly image_sha256="4dccec8352d9923cffae116e111b1d48f5dba2e54776b2d8df52442faf43dc59"
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-tq3a.230805.001-factory-0fd44486.zip"
+readonly image_sha256="0fd444861eb5aab2177095b117676d426013b0ddf4b1b6c7d62f483249dc1eab"
 
-readonly flash_url="https://flash.android.com/build/10216780?target=raven-user&signed"
+readonly flash_url="https://flash.android.com/build/10316531?target=raven-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-tq3a.230705.001-a3707614.zip"
-readonly ota_sha256="a37076145dd1aff8fdb897c3fc7ffc62f8b840d48dcb2ab9624a2787be0b7a57"
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-tq3a.230805.001-094c3b89.zip"
+readonly ota_sha256="094c3b896df983658bbd2a3dfbe991a36018b10ed69bc0b98f74da627388eda6"
 
-readonly security_patch="2023-07-05"
+readonly security_patch="2023-08-05"

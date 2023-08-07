@@ -22,21 +22,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3C.230705.001.C1"
+readonly build_id="TQ3C.230805.001.A3"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r58"
-readonly aosp_tag="android-13.0.0_r65"
+readonly prev_aosp_tag="android-13.0.0_r65"
+readonly aosp_tag="android-13.0.0_r72"
 
-readonly build_number="10333960"
+readonly build_number="10345103"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/felix-tq3c.230705.001.c1-factory-65f97575.zip"
-readonly image_sha256="65f9757548e811cc904b83accea8f8ec6f92cd1cf599a18efa9ab5b6ed65943e"
+readonly image_url="https://dl.google.com/dl/android/aosp/felix-tq3c.230805.001.a3-factory-16fbd16c.zip"
+readonly image_sha256="16fbd16ccffedd4a5e8e0d640aee59f29be7dd3201c870c0a3852cdb22e82b2f"
 
-readonly flash_url="https://flash.android.com/build/10333960?target=felix-user&signed"
+readonly flash_url="https://flash.android.com/build/10345103?target=felix-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-tq3c.230705.001.c1-4419bfbb.zip"
-readonly ota_sha256="4419bfbbae6e2f4807cbf4eb8c893221e4666ff4bae7d0447ecdd39ac2408aaa"
+readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-tq3c.230805.001.a3-fd9117a3.zip"
+readonly ota_sha256="fd9117a3f53b7206714cd9d80d6d6b440f75f39c5b60f4336143596263394e54"
 
-readonly security_patch="2023-07-05"
+readonly security_patch="2023-08-05"

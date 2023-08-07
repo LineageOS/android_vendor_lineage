@@ -22,21 +22,21 @@ readonly wifi_only=true
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3A.230705.001.B4"
+readonly build_id="TQ3A.230805.001.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r56"
-readonly aosp_tag="android-13.0.0_r63"
+readonly prev_aosp_tag="android-13.0.0_r63"
+readonly aosp_tag="android-13.0.0_r71"
 
-readonly build_number="10255998"
+readonly build_number="10317384"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-tq3a.230705.001.b4-factory-42ee72b7.zip"
-readonly image_sha256="42ee72b73f845ad6540c3196646278d69e8b20e1a4c5a5a45205ca04d647e96f"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-tq3a.230805.001.b1-factory-a80c8245.zip"
+readonly image_sha256="a80c82456d60193103f26f19be5efc8702e3b78b66659ed8b9248074b519c64a"
 
-readonly flash_url="https://flash.android.com/build/10255998?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/10317384?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-tq3a.230705.001.b4-ee536602.zip"
-readonly ota_sha256="ee536602478ad27ab3a7df58e7333e7b96add597dd44401ac4ef2a75db6cea1d"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-tq3a.230805.001.b1-eba8b280.zip"
+readonly ota_sha256="eba8b280bb1f47f74afadd3f680b5fe8ded26fc59ba07153269061dbca738334"
 
-readonly security_patch="2023-07-05"
+readonly security_patch="2023-08-05"
