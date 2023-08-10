@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ded56b15_a8e74d46",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-08-10T21:25:04Z",
+      "side": 1,
+      "message": "ingot needs modules copied to recovery, which is why I looked into this. But there\u0027s several devices that do manual snippets per device to copy modules to recovery, so this could be more generally useful. This currently does no handle the separate recovery defconfig path.",
+      "revId": "00d82890f897112888063ec7e2e683ccb3fc193d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
