@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b5b1fed_fa277ad1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2023-08-12T02:42:42Z",
+      "side": 1,
+      "message": "The .config malformation may have been introduced in any version newer than LLVM 14.0.6, but I haven\u0027t personally checked which one actually does.",
+      "revId": "0465cddce3cf79555a74ca2a65f4df7b97a66a8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
