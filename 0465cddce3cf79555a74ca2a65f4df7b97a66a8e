@@ -87,6 +87,24 @@
       "parentUuid": "9d7d940a_bdc9f36d",
       "revId": "0465cddce3cf79555a74ca2a65f4df7b97a66a8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6aa0f41e_6368674b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2023-08-16T20:18:23Z",
+      "side": 1,
+      "message": "I didn\u0027t see any commits in android12-5.10 or android13-5.10 branches which is about cuda-path or hip-path",
+      "parentUuid": "4402ee87_4a3a9a5c",
+      "revId": "0465cddce3cf79555a74ca2a65f4df7b97a66a8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
