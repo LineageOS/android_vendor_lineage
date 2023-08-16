@@ -34,6 +34,23 @@
       "parentUuid": "9b5b1fed_fa277ad1",
       "revId": "0465cddce3cf79555a74ca2a65f4df7b97a66a8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bef9831f_c3305345",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-08-16T19:29:05Z",
+      "side": 1,
+      "message": "review thoughts internally were: Revert https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/346647 and fix kernel instead.",
+      "revId": "0465cddce3cf79555a74ca2a65f4df7b97a66a8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
