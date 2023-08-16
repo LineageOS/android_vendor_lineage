@@ -69,6 +69,24 @@
       "parentUuid": "bef9831f_c3305345",
       "revId": "0465cddce3cf79555a74ca2a65f4df7b97a66a8e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4402ee87_4a3a9a5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-08-16T20:03:19Z",
+      "side": 1,
+      "message": "Revert that commit, and handle this issue in the kernel (aka, cherry-pick the upstream commit that fixes it)",
+      "parentUuid": "9d7d940a_bdc9f36d",
+      "revId": "0465cddce3cf79555a74ca2a65f4df7b97a66a8e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
