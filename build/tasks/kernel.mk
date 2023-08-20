@@ -474,6 +474,9 @@ MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg.py$(HOST_EXECUTABLE_SUFFIX)
 $(DTBO_OUT):
 	mkdir -p $(DTBO_OUT)
 
+ifdef BOARD_USE_QCOM_MERGE_DTBS
+$(BOARD_PREBUILT_DTBOIMAGE): $(INSTALLED_DTBIMAGE_TARGET)
+endif
 $(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG) $(DTBO_OUT)
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
@@ -484,7 +487,11 @@ ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
 ifdef BOARD_DTBO_CFG
 	$(MKDTBOIMG) cfg_create $@ $(BOARD_DTBO_CFG) -d $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts
 else
+ifdef BOARD_USE_QCOM_MERGE_DTBS
+	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTB_OUT)/out -type f -name "*.dtbo" | sort)
+else
 	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtbo" | sort)
+endif # BOARD_USE_QCOM_MERGE_DTBS
 endif # BOARD_DTBO_CFG
 else
 	$(call make-dtbo-target,$(TARGET_KERNEL_DTBO))
@@ -505,6 +512,9 @@ ifdef BOARD_DTB_CFG
 MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg.py$(HOST_EXECUTABLE_SUFFIX)
 $(INSTALLED_DTBIMAGE_TARGET): $(MKDTBOIMG)
 endif
+ifdef BOARD_USE_QCOM_MERGE_DTBS
+$(INSTALLED_DTBIMAGE_TARGET): $(HOST_OUT_EXECUTABLES)/fdtget $(HOST_OUT_EXECUTABLES)/fdtput $(HOST_OUT_EXECUTABLES)/fdtoverlay $(HOST_OUT_EXECUTABLES)/fdtoverlaymerge $(HOST_OUT_EXECUTABLES)/ufdt_apply_overlay
+endif
 $(INSTALLED_DTBIMAGE_TARGET): $(DTC) $(DTB_OUT)
 ifeq ($(TARGET_WANTS_EMPTY_DTB),true)
 	@rm -f $@
@@ -517,7 +527,13 @@ else
 ifdef BOARD_DTB_CFG
 	$(MKDTBOIMG) cfg_create $@ $(BOARD_DTB_CFG) -d $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts
 else
+ifdef BOARD_USE_QCOM_MERGE_DTBS
+	mkdir -p $(DTB_OUT)/out
+	PATH=$(abspath $(HOST_OUT_EXECUTABLES)):$${PATH} python3 $(BUILD_TOP)/vendor/lineage/build/tools/merge_dtbs.py $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts $(DTB_OUT)/out
+	cat $(shell find $(DTB_OUT)/out -type f -name "*.dtb" | sort) > $@
+else
 	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
+endif # BOARD_USE_QCOM_MERGE_DTBS
 endif # BOARD_DTB_CFG
 	$(hide) touch -c $(DTB_OUT)
 endif # !TARGET_WANTS_EMPTY_DTB
