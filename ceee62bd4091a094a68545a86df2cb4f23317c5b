@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a6d9c0a_a10065e7",
+        "filename": "vars/qcom",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-08-25T07:34:18Z",
+      "side": 1,
+      "message": "These aren\u0027t on https://wiki.codelinaro.org/en/clo/la/release so I don\u0027t know how to actually find the latest tags.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 69
+      },
+      "revId": "ceee62bd4091a094a68545a86df2cb4f23317c5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
