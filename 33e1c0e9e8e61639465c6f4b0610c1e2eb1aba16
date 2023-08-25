@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bead214_4542a66e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-08-25T14:38:26Z",
+      "side": 1,
+      "message": "I\u0027d rather rename BOARD_USES_QCOM_MERGE_DTBS to BOARD_USES_QCOM_MERGE_DTBS_SCRIPT",
+      "revId": "33e1c0e9e8e61639465c6f4b0610c1e2eb1aba16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
