@@ -16,6 +16,24 @@
       "message": "ingot needs modules copied to recovery, which is why I looked into this. But there\u0027s several devices that do manual snippets per device to copy modules to recovery, so this could be more generally useful. This currently does no handle the separate recovery defconfig path.",
       "revId": "00d82890f897112888063ec7e2e683ccb3fc193d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac05c487_2ccdc3cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-08-28T16:25:28Z",
+      "side": 1,
+      "message": "What modules need to be copied to recovery that aren\u0027t defined in it\u0027s own modules.load file?\n\nWhen I was doing salami bringup I had to do this - https://github.com/OnePlus-11-Development/android_device_oneplus_sm8550-common/commit/a428cad900f5d1c6454685c4ae4c70dacacfbb66 - but in my case IIRC these are needed for recovery and boot.",
+      "parentUuid": "ded56b15_a8e74d46",
+      "revId": "00d82890f897112888063ec7e2e683ccb3fc193d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
