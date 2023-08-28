@@ -34,6 +34,24 @@
       "parentUuid": "ded56b15_a8e74d46",
       "revId": "00d82890f897112888063ec7e2e683ccb3fc193d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26ebecab_df50e3f5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-08-28T17:23:52Z",
+      "side": 1,
+      "message": "Devices like that load recovery modules from vendor_boot. Ingot was set up to have modules in the recovery image itself, making it independent of vendor_boot. Thus the existing handling for vendor_boot and recovery modules doesn\u0027t work.  Plus like I said in my earlier comment, this is useful for pre-vendor_boot targets which need a handful of modules in recovery. On tegra, I currently have an AndroidBoard snippet to copy a list of ko\u0027s which then get manually insmod\u0027ed in an rc snippet. This simplifies those cases as well.",
+      "parentUuid": "ac05c487_2ccdc3cd",
+      "revId": "00d82890f897112888063ec7e2e683ccb3fc193d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
