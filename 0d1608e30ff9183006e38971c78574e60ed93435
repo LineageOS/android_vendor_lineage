@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "011c6d0a_2a317c3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-08-28T16:21:19Z",
+      "side": 1,
+      "message": "Looks okay to me, despite I still can\u0027t get working dtbo.img for salami (sm8550). I have compared the script with the 5.15 CLO tag and it\u0027s the same, so go ahead.",
+      "revId": "0d1608e30ff9183006e38971c78574e60ed93435",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
