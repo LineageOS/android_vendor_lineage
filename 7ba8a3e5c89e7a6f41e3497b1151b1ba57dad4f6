@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aca7b1dc_da16bd50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25925
+      },
+      "writtenOn": "2023-09-06T11:14:05Z",
+      "side": 1,
+      "message": "GS201 devicetrees will need to be updated after this change, I think there\u0027s been a little copy paste error from GS101 that made this mistake stay unnoticed:\n\nhttps://github.com/LineageOS/android_device_google_felix/blob/lineage-20/BoardConfigLineage.mk#L20\n\nvs\n\nhttps://github.com/LineageOS/android_device_google_gs201/commit/e43d27b01d21f7ec85a6eed07567e888592cc956#diff-9f7f4d8fbc391db3dea7174589f13e7594aec1022466817b7158b5c9793b7e58L392",
+      "revId": "7ba8a3e5c89e7a6f41e3497b1151b1ba57dad4f6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
