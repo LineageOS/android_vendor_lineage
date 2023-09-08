@@ -66,13 +66,31 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/res/images/charger
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := lineage_charger_font
+LOCAL_MODULE_STEM := percent_font.png
+LOCAL_SRC_FILES := $(lineage_charger_density)/percent_font.png
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/res/images/charger
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := lineage_charger_font_vendor
+LOCAL_MODULE_STEM := percent_font.png
+LOCAL_SRC_FILES := $(lineage_charger_density)/percent_font.png
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/res/images/charger
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := lineage_charger_animation
 LOCAL_MODULE_STEM := animation.txt
 LOCAL_SRC_FILES := animation.txt
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/res/values/charger
-LOCAL_REQUIRED_MODULES := lineage_charger_battery_scale lineage_charger_battery_fail
+LOCAL_REQUIRED_MODULES := lineage_charger_battery_scale lineage_charger_battery_fail lineage_charger_font
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -82,5 +100,5 @@ LOCAL_SRC_FILES := animation.txt
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/res/values/charger
-LOCAL_REQUIRED_MODULES := lineage_charger_battery_scale_vendor lineage_charger_battery_fail_vendor
+LOCAL_REQUIRED_MODULES := lineage_charger_battery_scale_vendor lineage_charger_battery_fail_vendor lineage_charger_font_vendor
 include $(BUILD_PREBUILT)
