@@ -29,31 +29,35 @@ def main(argv):
     else:
         raise ValueError("Wrong number of arguments %s" % len(argv))
 
-    custom_apn_names = set()
+    custom_apns = []
     with open(custom_override_file, 'r') as f:
         for line in f:
-            custom_apn_names.add(re.search(r'carrier="[^"]+"', line).group(0))
+            name = re.search(r'carrier="[^"]+"', line).group(0)
+            mcc = re.search(r'mcc="[^"]+"', line).group(0)
+            mnc = re.search(r'mnc="[^"]+"', line).group(0)
+            custom_apns.append({'name': name, 'mcc': mcc, 'mnc': mnc})
 
     with open(original_file, 'r') as input_file:
         with open(output_file_path, 'w') as output_file:
             for line in input_file:
-                found_custom_apns = set()
-                for apn in custom_apn_names:
-                    if apn in line:
+                found_custom_apns = []
+                for apn in custom_apns:
+                    if all(item in line for item in apn.values()):
                         with open(custom_override_file, 'r') as custom_file:
                             for override_line in custom_file:
-                                if apn in override_line:
+                                if all(item in override_line for item in apn.values()):
                                     output_file.write(override_line)
-                                    found_custom_apns.add(apn)
+                                    found_custom_apns.append(apn)
                 if found_custom_apns:
-                    custom_apn_names -= found_custom_apns
+                    for found in found_custom_apns:
+                        custom_apns.remove(found)
                 else:
                     if "</apns>" in line:
-                        if custom_apn_names:
-                            for apn in custom_apn_names:
+                        if custom_apns:
+                            for apn in custom_apns:
                                 with open(custom_override_file, 'r') as custom_file:
                                     for override_line in custom_file:
-                                        if apn in override_line:
+                                        if all(item in override_line for item in apn.values()):
                                             output_file.write(override_line)
                     output_file.write(line)
 
