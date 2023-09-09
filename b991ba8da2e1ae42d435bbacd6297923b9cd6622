@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "348a285d_00b484aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-09T15:36:29Z",
+      "side": 1,
+      "message": "This nicely handles my usecase: sm8550 device, with the modules defined by Google for 5.15 kernels - https://android.googlesource.com/kernel/common/+/refs/heads/android13-5.15-lts/android/gki_system_dlkm_modules.",
+      "revId": "b991ba8da2e1ae42d435bbacd6297923b9cd6622",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
