@@ -16,6 +16,40 @@
       "message": "This nicely handles my usecase: sm8550 device, with the modules defined by Google for 5.15 kernels - https://android.googlesource.com/kernel/common/+/refs/heads/android13-5.15-lts/android/gki_system_dlkm_modules.",
       "revId": "b991ba8da2e1ae42d435bbacd6297923b9cd6622",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5d11584_24d94dac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-09T15:41:08Z",
+      "side": 1,
+      "message": "that\u0027s correct, you could easily make those modules inline tho, they all are from mainline",
+      "revId": "b991ba8da2e1ae42d435bbacd6297923b9cd6622",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d2bd565_af432cda",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 455,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-09T15:41:08Z",
+      "side": 1,
+      "message": "this should be fine minus when you have lots of \"system\" modules and they exceed the max line of bash, but I\u0027m not exactly sure how you\u0027d solve it",
+      "revId": "b991ba8da2e1ae42d435bbacd6297923b9cd6622",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
