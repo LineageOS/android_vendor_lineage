@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8ea5577_b482416c",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-10T21:17:42Z",
+      "side": 1,
+      "message": "this is kind of weird\ncan\u0027t you inline this variable within the rule definition?",
+      "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
