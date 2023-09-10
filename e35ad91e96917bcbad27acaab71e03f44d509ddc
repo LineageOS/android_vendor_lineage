@@ -39,6 +39,30 @@
       },
       "revId": "e35ad91e96917bcbad27acaab71e03f44d509ddc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7bae69c_eaea58e7",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 468,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2023-09-10T16:11:30Z",
+      "side": 1,
+      "message": "Having a separate list for copy and load would be nice. I\u0027ve blocked a change that used the vendor modules load var to copy stuff to the vendor modules folder, because my tegra targets only list the top level modules in load, not the deps.",
+      "parentUuid": "25c26265_098422bb",
+      "range": {
+        "startLine": 468,
+        "startChar": 164,
+        "endLine": 468,
+        "endChar": 191
+      },
+      "revId": "e35ad91e96917bcbad27acaab71e03f44d509ddc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
