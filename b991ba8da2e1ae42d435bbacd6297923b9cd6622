@@ -68,6 +68,24 @@
       "parentUuid": "0d2bd565_af432cda",
       "revId": "b991ba8da2e1ae42d435bbacd6297923b9cd6622",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "116fc1f7_57b2497f",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 455,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-10T11:50:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e145c741_4cf4b5a7",
+      "revId": "b991ba8da2e1ae42d435bbacd6297923b9cd6622",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
