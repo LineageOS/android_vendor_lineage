@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc110b49_001428dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-10T15:13:57Z",
+      "side": 1,
+      "message": "Final thoughts?",
+      "revId": "e35ad91e96917bcbad27acaab71e03f44d509ddc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25c26265_098422bb",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 468,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-10T15:13:57Z",
+      "side": 1,
+      "message": "Should I consider BOARD_SYSTEM_KERNEL_MODULES_LOAD here instead, for the case where only some of the GKI modules are loaded (rest are deps)?",
+      "range": {
+        "startLine": 468,
+        "startChar": 164,
+        "endLine": 468,
+        "endChar": 191
+      },
+      "revId": "e35ad91e96917bcbad27acaab71e03f44d509ddc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
