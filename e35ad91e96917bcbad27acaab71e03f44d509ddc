@@ -63,6 +63,30 @@
       },
       "revId": "e35ad91e96917bcbad27acaab71e03f44d509ddc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "056f8128_bf7b6233",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 468,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-10T17:44:16Z",
+      "side": 1,
+      "message": "Yea, makes sense. In the case of android13-5.15 only zram.ko can be loaded (zsmalloc.ko is its dep).",
+      "parentUuid": "f7bae69c_eaea58e7",
+      "range": {
+        "startLine": 468,
+        "startChar": 164,
+        "endLine": 468,
+        "endChar": 191
+      },
+      "revId": "e35ad91e96917bcbad27acaab71e03f44d509ddc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
