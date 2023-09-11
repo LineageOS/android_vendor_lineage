@@ -54,6 +54,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c747e42_0ade78f5",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-11T12:43:02Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "43167816_cf719702",
+      "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "53756d11_4b6ec60f",
@@ -91,6 +109,30 @@
       "side": 1,
       "message": "Okay, I tried that before, but I get this:\n\n\u003e  error: kati doesn\u0027t support passing results of $(shell) to other make constructs: echo 5\".\"15",
       "parentUuid": "53756d11_4b6ec60f",
+      "range": {
+        "startLine": 466,
+        "startChar": 201,
+        "endLine": 466,
+        "endChar": 211
+      },
+      "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a5cf86d_08f28b37",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-11T12:43:02Z",
+      "side": 1,
+      "message": "Acknowledged\ndidn\u0027t notice TARGET_KERNEL_VERSION is using $(shell) already",
+      "parentUuid": "8248e04a_9dcf70db",
       "range": {
         "startLine": 466,
         "startChar": 201,
