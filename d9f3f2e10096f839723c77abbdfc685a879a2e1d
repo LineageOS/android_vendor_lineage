@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e1272b1_d72ecf5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-11T14:52:38Z",
+      "side": 1,
+      "message": "The font file was taken from Pixel animation and scaled for different DPI.\n \nTested on xhdpi and xxhdpi devices.\n\nPS1 is a white version, also we can keep current frame animation logic.  All depending on which variant will eventually be chosen as the best... let\u0027s see?",
+      "revId": "d9f3f2e10096f839723c77abbdfc685a879a2e1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
