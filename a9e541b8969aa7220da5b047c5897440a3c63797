@@ -34,6 +34,47 @@
       "parentUuid": "a8ea5577_b482416c",
       "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43167816_cf719702",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-11T08:25:57Z",
+      "side": 1,
+      "message": "see inline reply",
+      "parentUuid": "b4712f63_42926654",
+      "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53756d11_4b6ec60f",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-11T08:25:57Z",
+      "side": 1,
+      "message": "it seems to be only used here\nyou can likely do after `$(if $(BOARD_SYSTEM_KERNEL_MODULES)`\ngki_suffic\u003dandroid$(PLATFORM_VERSION)-$(TARGET_KERNEL_VERSION)",
+      "range": {
+        "startLine": 466,
+        "startChar": 201,
+        "endLine": 466,
+        "endChar": 211
+      },
+      "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
