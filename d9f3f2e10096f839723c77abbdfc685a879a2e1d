@@ -16,6 +16,23 @@
       "message": "The font file was taken from Pixel animation and scaled for different DPI.\n \nTested on xhdpi and xxhdpi devices.\n\nPS1 is a white version, also we can keep current frame animation logic.  All depending on which variant will eventually be chosen as the best... let\u0027s see?",
       "revId": "d9f3f2e10096f839723c77abbdfc685a879a2e1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "839785fc_6d531648",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-11T15:03:28Z",
+      "side": 1,
+      "message": "I\u0027d rather not use the one from pixels\nCan you try https://gist.github.com/luca020400/632cda3155c7bcb8261abdacac0314f7? ( base64 encoded )\nThat\u0027s from AOSP",
+      "revId": "d9f3f2e10096f839723c77abbdfc685a879a2e1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
