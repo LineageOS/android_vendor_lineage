@@ -69,6 +69,24 @@
       "parentUuid": "1e1272b1_d72ecf5c",
       "revId": "d9f3f2e10096f839723c77abbdfc685a879a2e1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c771c3a_7b938504",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-11T18:54:02Z",
+      "side": 1,
+      "message": "I\u0027ve already tried it, but to be honest, thin font doesn\u0027t look as good with the current graphics.\n\nSo I tried to make our own one and where used \"Roboto Bold\" font",
+      "parentUuid": "7a6d4d44_fbb44efc",
+      "revId": "d9f3f2e10096f839723c77abbdfc685a879a2e1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
