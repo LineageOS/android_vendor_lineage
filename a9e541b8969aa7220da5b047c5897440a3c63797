@@ -16,6 +16,24 @@
       "message": "this is kind of weird\ncan\u0027t you inline this variable within the rule definition?",
       "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4712f63_42926654",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-11T08:20:37Z",
+      "side": 1,
+      "message": "What do you mean with within the rule definition?",
+      "parentUuid": "a8ea5577_b482416c",
+      "revId": "a9e541b8969aa7220da5b047c5897440a3c63797",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
