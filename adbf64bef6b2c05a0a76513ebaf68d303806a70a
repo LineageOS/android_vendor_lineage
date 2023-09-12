@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de254a0b_97b82ecf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-12T11:24:22Z",
+      "side": 1,
+      "message": "PS4: Switched to Roboto Medium",
+      "revId": "adbf64bef6b2c05a0a76513ebaf68d303806a70a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
