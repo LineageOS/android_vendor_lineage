@@ -16,6 +16,24 @@
       "message": "asher: what font should we be using?",
       "revId": "c07d018a8118ce23d3fa386183b947d072af41a4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "816f58cd_d8b719f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 8649
+      },
+      "writtenOn": "2023-09-12T01:10:57Z",
+      "side": 1,
+      "message": "Given the size of the type you could probably drop to a lighter weight. My rough mockup suggests Medium or Regular could theoretically work, and is more inline with Material3\u0027s type ramp: https://imgur.com/a/iz7SWVh",
+      "parentUuid": "2a7a8f08_b1d191ba",
+      "revId": "c07d018a8118ce23d3fa386183b947d072af41a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
