@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "12c274a3_0104c50f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-13T17:42:24Z",
+      "side": 1,
+      "message": "regardless, this is better",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ac7940f1_1e61c9ae",
@@ -53,6 +70,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "97223b4a_0683bfd3",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-13T17:42:24Z",
+      "side": 1,
+      "message": "eh I guess that\u0027s fine",
+      "parentUuid": "ea66bd1b_b33ed8fa",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c0baf164_22969c99",
@@ -84,6 +119,24 @@
       "side": 1,
       "message": "This is \"rm -rf out/target/product/device/obj/BOOTANIMATION/\", so it removes all recursively in this folder including itself.",
       "parentUuid": "c0baf164_22969c99",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6fa19773_d96866e4",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-13T17:42:24Z",
+      "side": 1,
+      "message": "I think you\u0027ll want to also rm the new intermediate directory, you may end up with stale data here if the rule gets re-run?",
+      "parentUuid": "516cb4ce_46283f5f",
       "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
