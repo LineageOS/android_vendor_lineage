@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ea66bd1b_b33ed8fa",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-13T17:38:43Z",
+      "side": 1,
+      "message": "Um, but why?\n\"out/target/product/device/obj/BOOTANIMATION/bootanimation_intermediates/*\" for generated source files of bootanimation.zip\n\nWhile bootanimation.zip will be located in the root folder. Should we actually create a dedicated folder just for bootanimation.zip?",
+      "parentUuid": "ac7940f1_1e61c9ae",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c0baf164_22969c99",
         "filename": "bootanimation/Android.mk",
         "patchSetId": 1
@@ -48,6 +66,24 @@
       "writtenOn": "2023-09-13T17:21:08Z",
       "side": 1,
       "message": "these rm/mkdir needs to be revised I think",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "516cb4ce_46283f5f",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-13T17:38:43Z",
+      "side": 1,
+      "message": "This is \"rm -rf out/target/product/device/obj/BOOTANIMATION/\", so it removes all recursively in this folder including itself.",
+      "parentUuid": "c0baf164_22969c99",
       "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
