@@ -16,6 +16,40 @@
       "message": "It works for me, but idk how right it\u0027s done... maybe there are better solutions",
       "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ac7940f1_1e61c9ae",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-13T17:21:08Z",
+      "side": 1,
+      "message": "I think we can move this target to the intermediates as well\n\nwe can have a bootanimation and bootanimationwork",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c0baf164_22969c99",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-13T17:21:08Z",
+      "side": 1,
+      "message": "these rm/mkdir needs to be revised I think",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
