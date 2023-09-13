@@ -139,6 +139,24 @@
       "parentUuid": "516cb4ce_46283f5f",
       "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a76d9fb3_bff65d8a",
+        "filename": "bootanimation/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-13T17:54:03Z",
+      "side": 1,
+      "message": "The new intermediate directory will be located inside the old one, so rm-rf will take care of that too",
+      "parentUuid": "6fa19773_d96866e4",
+      "revId": "f47fff4799c89a0c3d6acdcf6c1d854e2dc44ece",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
