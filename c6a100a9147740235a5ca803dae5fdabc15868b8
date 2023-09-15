@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f899cc11_fa4970eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-15T13:29:47Z",
+      "side": 1,
+      "message": "This should not break anyone\u0027s setup and extends support as explained in the commit message.",
+      "revId": "c6a100a9147740235a5ca803dae5fdabc15868b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
