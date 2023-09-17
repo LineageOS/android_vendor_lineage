@@ -47,6 +47,54 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c24d4b16_b26da978",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-17T11:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0f9a2558_b2acce46",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 82,
+        "endChar": 25
+      },
+      "revId": "55a04e2658634026c6c25cb4838a7c58fce38634",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15ff9e74_1980c0bd",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-17T11:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9c310111_7d011fce",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 82,
+        "endChar": 25
+      },
+      "revId": "55a04e2658634026c6c25cb4838a7c58fce38634",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3cfe5f6_975b7d52",
@@ -60,6 +108,30 @@
       "writtenOn": "2023-09-16T16:16:59Z",
       "side": 1,
       "message": "This part isn\u0027t needed",
+      "range": {
+        "startLine": 565,
+        "startChar": 73,
+        "endLine": 565,
+        "endChar": 101
+      },
+      "revId": "55a04e2658634026c6c25cb4838a7c58fce38634",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa64e0b4_dcff5ab8",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 565,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-17T11:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a3cfe5f6_975b7d52",
       "range": {
         "startLine": 565,
         "startChar": 73,
