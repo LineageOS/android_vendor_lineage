@@ -24,21 +24,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3A.230805.001"
+readonly build_id="TQ3A.230901.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r61"
-readonly aosp_tag="android-13.0.0_r67"
+readonly prev_aosp_tag="android-13.0.0_r67"
+readonly aosp_tag="android-13.0.0_r75"
 
-readonly build_number="10316531"
+readonly build_number="10750268"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/barbet-tq3a.230805.001-factory-5c469710.zip"
-readonly image_sha256="5c46971029cca35c63706e200fd780ff6297ade42161a7081e4b6fa4abc7d126"
+readonly image_url="https://dl.google.com/dl/android/aosp/barbet-tq3a.230901.001-factory-533f6127.zip"
+readonly image_sha256="533f6127fd5cafb1667b3e177d9e9a4d70035f427861010f5c06befaaa5dfd9b"
 
-readonly flash_url="https://flash.android.com/build/10316531?target=barbet-user&signed"
+readonly flash_url="https://flash.android.com/build/10750268?target=barbet-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-tq3a.230805.001-b086b73a.zip"
-readonly ota_sha256="b086b73a72394a2890a6a3135420791ee766cf5bad8aa7045d718470157b6d1e"
+readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-tq3a.230901.001-3dd5e91e.zip"
+readonly ota_sha256="3dd5e91e3a3fe612e9d1d6b4d787113053c31d740a9f227b7243b3befeaa5263"
 
-readonly security_patch="2023-08-05"
+readonly security_patch="2023-09-01"
