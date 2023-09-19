@@ -68,6 +68,24 @@
       "message": "makes sense to use prebuilt, and it matches Google\u0027s",
       "revId": "231338af58bd5bb3449df529410e7f2967bb16d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc99f164_a6733fff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-19T16:43:03Z",
+      "side": 1,
+      "message": "By the way, prebuilt pahole is newer than the one we were building.\n\n\u003e  bgcngm@analog:~/android/lineage$ which pahole\n\u003e  /home/bgcngm/android/lineage/out/host/linux-x86/bin/pahole\n\u003e  bgcngm@analog:~/android/lineage$ pahole --version\n\u003e  v1.19\n\u003e  bgcngm@analog:~/android/lineage$ prebuilts/kernel-build-tools/linux-x86/bin/pahole --version\n\u003e  v1.23",
+      "parentUuid": "b4f6e608_d3892407",
+      "revId": "231338af58bd5bb3449df529410e7f2967bb16d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
