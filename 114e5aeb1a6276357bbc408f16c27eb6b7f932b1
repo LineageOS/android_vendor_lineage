@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "839eba0e_fe6100c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 12249
+      },
+      "writtenOn": "2023-09-20T06:17:58Z",
+      "side": 1,
+      "message": "Tested using Mint eSIM on Pixel 6",
+      "revId": "114e5aeb1a6276357bbc408f16c27eb6b7f932b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
