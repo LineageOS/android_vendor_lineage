@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2dd96d04_5c700ea2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-20T08:19:46Z",
+      "side": 1,
+      "message": "I don\u0027t see these components enabled. Ran this cmd:\n\n\u003e adb shell pm dump com.google.android.gms | grep disabledComponents -A340",
+      "revId": "670ea09a8653f3354a87044ee55358a839be2725",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
