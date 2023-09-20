@@ -234,7 +234,7 @@ if __name__ == '__main__':
         for pline in plist.splitlines():
             matchObj = re.match(r'Local Branches.*\[(.*)\]', pline)
             if matchObj:
-                local_branches = re.split('\s*,\s*', matchObj.group(1))
+                local_branches = re.split(r'\s*,\s*', matchObj.group(1))
                 if any(args.start_branch[0] in s for s in local_branches):
                     needs_abandon = True
 
@@ -298,7 +298,7 @@ if __name__ == '__main__':
         reviews = fetch_query(args.gerrit, args.query)
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
     if args.change_number:
-        change_url_re = re.compile('https?://.+?/([0-9]+(?:/[0-9]+)?)/?')
+        change_url_re = re.compile(r'https?://.+?/([0-9]+(?:/[0-9]+)?)/?')
         for c in args.change_number:
             change_number = change_url_re.findall(c)
             if change_number:
