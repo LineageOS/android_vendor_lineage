@@ -51,6 +51,24 @@
       "parentUuid": "cb565baf_31401ed1",
       "revId": "f43b3acfc51c34abb58b0447137f82644bc39e8f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8abcb983_d6eac6b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-24T15:12:04Z",
+      "side": 1,
+      "message": "Before/after: https://i.imgur.com/0GDUyyy.gif",
+      "parentUuid": "1ee982f1_0cfa0aa3",
+      "revId": "f43b3acfc51c34abb58b0447137f82644bc39e8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
