@@ -33,6 +33,24 @@
       "message": "Vusal: Can we get final screen photos of the current state? Maybe a video?\n\nOnce we do: Asher - can you give design CR+1? Or additional thoughts ofc.",
       "revId": "f43b3acfc51c34abb58b0447137f82644bc39e8f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ee982f1_0cfa0aa3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-24T14:23:32Z",
+      "side": 1,
+      "message": "Here you go: https://i.imgur.com/fm0Awy8.gif",
+      "parentUuid": "cb565baf_31401ed1",
+      "revId": "f43b3acfc51c34abb58b0447137f82644bc39e8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
