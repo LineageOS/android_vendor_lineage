@@ -20,8 +20,8 @@ $(TARGET_GENERATED_BOOTANIMATION): INTERMEDIATES := $(TARGET_OUT_INTERMEDIATES)/
 $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	@echo "Building bootanimation.zip"
 	@rm -rf $(dir $@)
-	@mkdir -p $(dir $@)
-	$(hide) tar xfp vendor/lineage/bootanimation/bootanimation.tar -C $(INTERMEDIATES)
+	@mkdir -p $(dir $@)/bootanimation
+	$(hide) tar xfp vendor/lineage/bootanimation/bootanimation.tar -C $(INTERMEDIATES)/bootanimation
 	$(hide) if [ $(TARGET_SCREEN_HEIGHT) -lt $(TARGET_SCREEN_WIDTH) ]; then \
 	    IMAGEWIDTH=$(TARGET_SCREEN_HEIGHT); \
 	else \
@@ -35,12 +35,12 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	IMAGEHEIGHT=$$(expr $$IMAGEWIDTH / 3); \
 	RESOLUTION="$$IMAGEWIDTH"x"$$IMAGEHEIGHT"; \
 	for part_cnt in 0 1 2 3 4; do \
-	    mkdir -p $(INTERMEDIATES)/part$$part_cnt; \
+	    mkdir -p $(INTERMEDIATES)/bootanimation/part$$part_cnt; \
 	done; \
-	prebuilts/tools-lineage/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.png; \
-	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT 60" > $(INTERMEDIATES)/desc.txt; \
-	cat vendor/lineage/bootanimation/desc.txt >> $(INTERMEDIATES)/desc.txt
-	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -D $(INTERMEDIATES)
+	prebuilts/tools-lineage/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/bootanimation/*/*.png; \
+	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT 60" > $(INTERMEDIATES)/bootanimation/desc.txt; \
+	cat vendor/lineage/bootanimation/desc.txt >> $(INTERMEDIATES)/bootanimation/desc.txt
+	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES)/bootanimation -D $(INTERMEDIATES)/bootanimation
 
 ifeq ($(TARGET_BOOTANIMATION),)
     TARGET_BOOTANIMATION := $(TARGET_GENERATED_BOOTANIMATION)
