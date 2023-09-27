@@ -69,6 +69,23 @@
       "parentUuid": "1ee982f1_0cfa0aa3",
       "revId": "f43b3acfc51c34abb58b0447137f82644bc39e8f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43cc7f34_77cb9676",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 8649
+      },
+      "writtenOn": "2023-09-27T16:39:33Z",
+      "side": 1,
+      "message": "Thanks for the previews. If we\u0027re looking for general feedback, I would say the design functionally looks fine, however it seems complex for Android\u0027s updated aesthetic (M3). Would suggest trying to reduce the borders (in appearance or just how many).\n\nThanks for the previews. If we\u0027re looking for general feedback, I would say functionally the change looks fine. From an art standpoint, the change to the ring seems complex for Android\u0027s updated aesthetic (M3). I would ask what the purpose of adding the borders is solving artistically or functionally given the new state info. Happy to offer suggestions but since it\u0027s not my design I\u0027d welcome Vusal to work on it!",
+      "revId": "f43b3acfc51c34abb58b0447137f82644bc39e8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
