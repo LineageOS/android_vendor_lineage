@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2764e990_bf719a2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-09-29T17:23:29Z",
+      "side": 1,
+      "message": "Imo it should always stay at the same color (lineage teal), no matter the charging level. I like the last preview regarding the overall design, though (left and right, so both borderless variants. right one resembles the circle battery we also have in the status bar, if that means anything)",
+      "revId": "68f092d5057f6dfd689f817ae641dd3960afee14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
