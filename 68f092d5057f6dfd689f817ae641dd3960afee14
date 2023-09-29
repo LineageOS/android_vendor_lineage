@@ -16,6 +16,24 @@
       "message": "Imo it should always stay at the same color (lineage teal), no matter the charging level. I like the last preview regarding the overall design, though (left and right, so both borderless variants. right one resembles the circle battery we also have in the status bar, if that means anything)",
       "revId": "68f092d5057f6dfd689f817ae641dd3960afee14",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "169a3da6_36eeea1d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14734
+      },
+      "writtenOn": "2023-09-29T18:39:43Z",
+      "side": 1,
+      "message": "Okay, lineage teal looks cool, let\u0027s review it too. But maybe display at least a low charging level (up to 10% or 15%) as most of vendors do? \n\nI changed the color so it\u0027s not \"aggressive\" red now\n\nhttps://imgur.com/CnPQd1l",
+      "parentUuid": "2764e990_bf719a2a",
+      "revId": "68f092d5057f6dfd689f817ae641dd3960afee14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
