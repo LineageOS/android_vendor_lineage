@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022 The LineageOS Project
+     Copyright (C) 2022-2023 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
 
     <!-- Fingerprint -->
     <color name="biometric_enroll_intro_color_icon">@*android:color/accent_device_default_dark</color>
-
-    <!-- Pattern -->
-    <color name="lock_pattern_view_regular_color">@*android:color/accent_device_default_dark</color>
-    <color name="setup_lock_pattern_view_success_color_light">@*android:color/accent_device_default_dark</color>
 
 </resources>
