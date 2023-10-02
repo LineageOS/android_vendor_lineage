@@ -39,6 +39,30 @@
       },
       "revId": "ceee62bd4091a094a68545a86df2cb4f23317c5b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4386e631_32480258",
+        "filename": "vars/qcom",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-02T12:06:12Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3a6d9c0a_a10065e7",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 69
+      },
+      "revId": "ceee62bd4091a094a68545a86df2cb4f23317c5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
