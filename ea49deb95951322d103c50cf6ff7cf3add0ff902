@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5bca704_5fa154f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-02T12:19:13Z",
+      "side": 1,
+      "message": "You forgot to merge https://review.lineageos.org/q/topic:%22LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0%22",
+      "revId": "ea49deb95951322d103c50cf6ff7cf3add0ff902",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
