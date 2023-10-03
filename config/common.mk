@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
     TrebuchetOverlay
 
 # Translations
-CUSTOM_LOCALES += \
+CUSTOM_LOCALES ?= \
     ast_ES \
     gd_GB \
     cy_GB
