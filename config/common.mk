@@ -209,10 +209,12 @@ PRODUCT_PACKAGES += \
     TrebuchetOverlay
 
 # Translations
+ifneq ($(PRODUCT_SIZE),mini)
 CUSTOM_LOCALES += \
     ast_ES \
     gd_GB \
     cy_GB
+endif
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
