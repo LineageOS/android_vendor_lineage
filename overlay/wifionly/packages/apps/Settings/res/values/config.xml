@@ -15,8 +15,17 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Whether call_volume should be shown or not. -->
+    <bool name="config_show_call_volume">false</bool>
+
+    <!-- Whether data_saver should be shown or not. -->
+    <bool name="config_show_data_saver">false</bool>
+
     <!-- Whether to show emergency gesture in Settings -->
     <bool name="config_show_emergency_gesture_settings">false</bool>
+
+    <!-- Whether to show a preference item for mobile plan -->
+    <bool name="config_show_mobile_plan">false</bool>
 
     <!-- Whether sim related information is visible to the end user. -->
     <bool name="config_show_sim_info">false</bool>
