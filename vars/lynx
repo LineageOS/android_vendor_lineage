@@ -22,21 +22,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3A.230901.001"
+readonly build_id="UP1A.231005.007"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r67"
-readonly aosp_tag="android-13.0.0_r75"
+readonly prev_aosp_tag="android-13.0.0_r75"
+readonly aosp_tag="android-14.0.0_r1"
 
-readonly build_number="10750268"
+readonly build_number="10754064"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-tq3a.230901.001-factory-c54b4a33.zip"
-readonly image_sha256="c54b4a33f42db91904a0b1ffb6c272207437b14e2331fc093b9f111e3b6d4ee4"
+readonly image_url="https://dl.google.com/dl/android/aosp/lynx-up1a.231005.007-factory-aea9c006.zip"
+readonly image_sha256="aea9c006e58d9c8b07ba7262c80a2fdde073c20811a82824abfd8e58c2575ce1"
 
-readonly flash_url="https://flash.android.com/build/10750268?target=lynx-user&signed"
+readonly flash_url="https://flash.android.com/build/10754064?target=lynx-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-tq3a.230901.001-79bacf86.zip"
-readonly ota_sha256="79bacf863b8de86041086834b94e428a73337922cd73bde116f25c5deb57db3f"
+readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-up1a.231005.007-e2085c49.zip"
+readonly ota_sha256="e2085c49ca7f3b3dd9dc6dfacae5ceb87ec11969e25f929893a08e5e2cf9436a"
 
-readonly security_patch="2023-09-01"
+readonly security_patch="2023-10-05"
