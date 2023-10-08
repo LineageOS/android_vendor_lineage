@@ -1,15 +1,15 @@
 # Entire file updated manually
-readonly android_version=13 # For update-build-desc-fingerprint.sh
-readonly aosp_tag_match=android-13.0 # For update-device-vars.sh
+readonly android_version=14 # For update-build-desc-fingerprint.sh
+readonly aosp_tag_match=android-14.0 # For update-device-vars.sh
 
-readonly os_branch=lineage-20.0
-readonly device_branch=lineage-20
+readonly os_branch=lineage-21.0
+readonly device_branch=lineage-21
 
-readonly prev_common_aosp_tag=android-13.0.0_r67 # Aug 2023, Pixel 4a - 7a
-readonly common_aosp_tag=android-13.0.0_r75 # Sep 2023
+readonly prev_common_aosp_tag=android-13.0.0_r75 # Sep 2023
+readonly common_aosp_tag=android-14.0.0_r1 # Oct 2023, Pixel 4a (5G) - 7a
 
-readonly common_aosp_build_id=TQ3A.230905.001 # Sep 2023, Pixel 4a (5G) - 7a
+readonly common_aosp_build_id=UP1A.231005.007 # Oct 2023, Pixel 4a (5G) - 7a
 
-readonly topic=T_asb_2023-09
+readonly topic=U_asb_2023-10
 
 readonly merge_method="merge"
