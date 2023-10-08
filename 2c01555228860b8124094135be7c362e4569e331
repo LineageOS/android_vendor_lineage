@@ -16,6 +16,24 @@
       "message": "hi\nyour commit message isn\u0027t supposed to be a comment (which you can write like I do now) but actually describe the patch in the format like this:\n\nFirst line (~ 50 chars)\nempty line\nlines to describe more (if necessary)\nat 80 chars max each\nempty line\nchange id\n\n\nyour first patchset was better in that regard, please amend once more\ndidnt look at the patch content right now",
       "revId": "2c01555228860b8124094135be7c362e4569e331",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c492e57_15f73d9d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32652
+      },
+      "writtenOn": "2023-10-08T10:00:02Z",
+      "side": 1,
+      "message": "fixed it\nill keep it in mind for future patches",
+      "parentUuid": "b1ef5da4_a8dddd7e",
+      "revId": "2c01555228860b8124094135be7c362e4569e331",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
