@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24a363f0_95a02199",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4420
+      },
+      "writtenOn": "2023-10-09T21:42:46Z",
+      "side": 1,
+      "message": "This is just meant to be a quick fix for now. Other solution works be to use single quotes.",
+      "revId": "9a59609d59c328ef08a8d7014b6aeb3fdb75c0fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
