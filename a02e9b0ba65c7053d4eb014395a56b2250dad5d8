@@ -68,6 +68,24 @@
       "message": "Not exactly sure how this works, but I\u0027m pretty sure the resources will still be baked in in some cases even if you don\u0027t have the locale in the list. How much space do you really gain from 3 locales?",
       "revId": "a02e9b0ba65c7053d4eb014395a56b2250dad5d8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "866f9c11_686ddb5f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-09T21:43:19Z",
+      "side": 1,
+      "message": "The resources are indeed baked.",
+      "parentUuid": "6871d92f_ec9de714",
+      "revId": "a02e9b0ba65c7053d4eb014395a56b2250dad5d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
