@@ -216,6 +216,13 @@ CUSTOM_LOCALES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 
+# Virtualization artifacts
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/health \
+    system/%/libcuttlefish_fs.so \
+    system/%/libcuttlefish_utils.so \
+    system/%/libfruit.so
+
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
