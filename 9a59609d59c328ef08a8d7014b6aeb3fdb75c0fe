@@ -51,6 +51,24 @@
       "parentUuid": "003e28e3_ddce0b7b",
       "revId": "9a59609d59c328ef08a8d7014b6aeb3fdb75c0fe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9aaeffa4_12ab9677",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 4420
+      },
+      "writtenOn": "2023-10-10T11:30:46Z",
+      "side": 1,
+      "message": "$($1)",
+      "parentUuid": "0406872f_12f45e52",
+      "revId": "9a59609d59c328ef08a8d7014b6aeb3fdb75c0fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
