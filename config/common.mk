@@ -213,6 +213,13 @@ CUSTOM_LOCALES += \
     gd_GB \
     cy_GB
 
+# Virtualization artifacts
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/health \
+    system/%/libcuttlefish_fs.so \
+    system/%/libcuttlefish_utils.so \
+    system/%/libfruit.so
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 
