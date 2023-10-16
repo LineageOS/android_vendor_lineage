@@ -41,6 +41,16 @@
          This can be overridden to false for devices that support voice and/or sms . -->
     <bool name="config_mobile_data_capable">false</bool>
 
+    <!-- Number of physical SIM slots on the device. This includes both eSIM and pSIM slots, and
+         is not necessarily the same as the number of phones/logical modems supported by the device.
+         For example, a multi-sim device can have 2 phones/logical modems, but 3 physical slots,
+         or a single SIM device can have 1 phones/logical modems, but 2 physical slots (one eSIM
+         and one pSIM) -->
+    <integer name="config_num_physical_slots">0</integer>
+
+    <!-- Flag indicating device support for EAP SIM, AKA, AKA' -->
+    <bool name="config_eap_sim_based_auth_supported">false</bool>
+
     <!-- This string array should be overridden by the device to present a list of network
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->
