@@ -105,7 +105,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Disable Async MTE for system_server
 PRODUCT_PRODUCT_PROPERTIES += \
-    arm64.memtag.process.system_server=off
+    persist.arm64.memtag.system_server=off
 
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
