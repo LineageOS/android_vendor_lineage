@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af810a65_5fa9a779",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-10-17T06:58:04Z",
+      "side": 1,
+      "message": "Hi, mind adding an explanation of the changes in the commit message?",
+      "revId": "5608bd14f3f1fd0f970831ce636907e65d7af3de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
