@@ -73,8 +73,12 @@ def add_auth(githubreq):
         githubreq.add_header("Authorization","Basic %s" % githubauth)
 
 if not depsonly:
+<<<<<<< HEAD   (27847c lineage: kernel: Use getconf instead of nproc)
     githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=%s+user:LineageOS+in:name+fork:true" % device)
     add_auth(githubreq)
+=======
+    githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/mirror/main/default.xml")
+>>>>>>> CHANGE (6b8c2b lineage: s/master/main/)
     try:
         result = json.loads(urllib.request.urlopen(githubreq).read().decode())
     except urllib.error.URLError:
