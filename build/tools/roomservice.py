@@ -73,7 +73,7 @@ def add_auth(githubreq):
         githubreq.add_header("Authorization","Basic %s" % githubauth)
 
 if not depsonly:
-    githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/mirror/master/default.xml")
+    githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/mirror/main/default.xml")
     try:
         result = ElementTree.fromstring(urllib.request.urlopen(githubreq).read().decode())
     except urllib.error.URLError:
