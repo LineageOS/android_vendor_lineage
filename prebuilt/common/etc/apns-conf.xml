@@ -2876,68 +2876,55 @@
   <apn carrier="Perfectum" mcc="434" mnc="06" apn="default" user="perfectum@perfectum.com" password="a" type="default,supl" />
   <apn carrier="MTS Internet" mcc="434" mnc="07" apn="net.mts.uz" user="mts" password="mts" authtype="1" type="default,supl" />
   <apn carrier="MTS MMS" mcc="434" mnc="07" apn="mms.mts.uz" proxy="" port="" mmsproxy="10.10.0.10" mmsport="8080" mmsc="http://mmsc/was" user="mts" password="mts" authtype="1" type="mms" />
-  <apn carrier="em.std" mcc="440" mnc="00" apn="em.std" user="em" password="em" type="default,supl" bearer="14" />
-  <apn carrier="@nifty do LTE" mcc="440" mnc="10" apn="lte.fenics.jp" user="nifty@lte.nifty.com" password="nifty" authtype="3" type="default,supl" />
-  <apn carrier="AsahiNet 3G" mcc="440" mnc="10" apn="3g.mobac.net" user="d@w3.asahinet.jp" password="0000" authtype="3" type="default,supl" />
-  <apn carrier="AsahiNet 3G 128K" mcc="440" mnc="10" apn="3g.mobac.net" user="d@x3.asahinet.jp" password="0000" authtype="3" type="default,supl" />
-  <apn carrier="AsahiNet LTE" mcc="440" mnc="10" apn="lte.mobac.net" user="d@w.asahinet.jp" password="0000" authtype="3" type="default,supl" />
-  <apn carrier="AsahiNet LTE 128K" mcc="440" mnc="10" apn="lte.mobac.net" user="d@x.asahinet.jp" password="0000" authtype="3" type="default,supl" />
-  <apn carrier="BB.excite" mcc="440" mnc="10" apn="vmobile.jp" user="bb@excite.co.jp" password="excite" authtype="3" type="default,supl" />
-  <apn carrier="BIGLOBE" mcc="440" mnc="10" apn="biglobe.jp" user="user" password="0000" authtype="2" type="default,supl" />
-  <apn carrier="DMM mobile" mcc="440" mnc="10" apn="dmm.com" user="dmm@dmm.com" password="dmm" authtype="3" type="default,supl" />
-  <apn carrier="DMM mobile" mcc="440" mnc="10" apn="vmobile.jp" user="dmm@dmm.com" password="dmm" authtype="3" type="default,supl" />
-  <apn carrier="DTI" mcc="440" mnc="10" apn="dream.jp" user="user@dream.jp" password="dti" authtype="2" type="default,supl" />
-  <apn carrier="FREETEL" mcc="440" mnc="10" apn="freetel.link" user="freetel@freetel.link" password="freetel" authtype="3" type="default,supl" />
-  <apn carrier="IIJmio/BIC SIM" mcc="440" mnc="10" apn="iijmio.jp" user="mio@iij" password="iij" authtype="3" type="default,supl" />
-  <apn carrier="MosimosiiX" mcc="440" mnc="10" apn="vdm.jp" user="talk@vdm" password="1010" authtype="3" type="default,supl" />
-  <apn carrier="NifMo 3G" mcc="440" mnc="10" apn="mdb.nifty.com" user="mdb@nifty" password="nifty" authtype="3" type="default,supl" />
-  <apn carrier="NifMo LTE" mcc="440" mnc="10" apn="mda.nifty.com" user="mda@nifty" password="nifty" authtype="3" type="default,supl" />
-  <apn carrier="OCN 3G" mcc="440" mnc="10" apn="3g-d-2.ocn.ne.jp" user="mobileid@ocn" password="mobile" authtype="2" type="default,supl" />
-  <apn carrier="OCN LTE" mcc="440" mnc="10" apn="lte-d.ocn.ne.jp" user="mobileid@ocn" password="mobile" authtype="2" type="default,supl" />
-  <apn carrier="So-net" mcc="440" mnc="10" apn="so-net.jp" user="nuro" password="nuro" authtype="2" type="default,supl" />
-  <apn carrier="U-mobile" mcc="440" mnc="10" apn="umobile.jp" user="umobile@umobile.jp" password="umobile" authtype="3" type="default,supl" />
-  <apn carrier="U-mobile Max" mcc="440" mnc="10" apn="dm.jplat.net" user="umobile@umobile.jp" password="umobile" authtype="3" type="default,supl" />
-  <apn carrier="U-mobile Premium" mcc="440" mnc="10" apn="umob.jp" user="umob" password="umob" authtype="3" type="default,supl" />
-  <apn carrier="Wi-Ho!" mcc="440" mnc="10" apn="bbnw.jp" user="user" password="0000" authtype="3" type="default,supl" />
-  <apn carrier="WirelessGate 3G" mcc="440" mnc="10" apn="foma01.wi-gate.net" user="wg@sim" password="wg" authtype="3" type="default,supl" />
-  <apn carrier="WirelessGate LTE" mcc="440" mnc="10" apn="xi01.wi-gate.net" user="wg@sim" password="wg" authtype="3" type="default,supl" />
-  <apn carrier="Wonderlink F" mcc="440" mnc="10" apn="lte.fenics.jp" user="wl@s.lte.fenics.jp" password="p123456w" authtype="1" type="default,supl" />
-  <apn carrier="Wonderlink I" mcc="440" mnc="10" apn="vmobile.jp" user="wl@wlte.net" password="p123456w" authtype="2" type="default,supl" />
-  <apn carrier="b-mobile 4g" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@4g" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="b-mobile aeon" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@aeon" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="b-mobile am" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@am" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="b-mobile fr" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@fr" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="b-mobile spd" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@spd" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="b-mobile u300" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@u300" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="b-mobile xsim" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@xsim" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="b-mobile zsim" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@zsim" password="bmobile" authtype="3" type="default,supl" />
-  <apn carrier="hi-ho" mcc="440" mnc="10" apn="vmobile.jp" user="lte@hi-ho" password="hi-ho" authtype="3" type="default,supl" />
-  <apn carrier="mineo D" mcc="440" mnc="10" apn="mineo-d.jp" user="mineo@k-opti.com" password="mineo" authtype="2" type="default,supl" />
-  <apn carrier="mopera U" mcc="440" mnc="10" apn="mopera.net" type="default,supl" />
-  <apn carrier="mopera U Bizho" mcc="440" mnc="10" apn="mpr2.bizho.net" type="default,supl" />
-  <apn carrier="mopera U FF" mcc="440" mnc="10" apn="open.mopera.net" type="default,supl" />
-  <apn carrier="mopera U Flat" mcc="440" mnc="10" apn="mopera.flat.foma.ne.jp" type="default,supl" />
-  <apn carrier="spモード" mcc="440" mnc="10" apn="spmode.ne.jp" type="default,supl" />
-  <apn carrier="楽天ブロードバンドデータSIM　エントリー2!" mcc="440" mnc="10" apn="mmtmobile.jp" user="mobile@rakutenbb.jp" password="rakutenbb" authtype="3" type="default,supl" />
-  <apn carrier="楽天モバイル" mcc="440" mnc="10" apn="rmobile.jp" user="rm" password="0000" authtype="3" type="default,supl" />
-  <apn carrier="楽天モバイル" mcc="440" mnc="10" apn="vdm.jp" user="rakuten@vdm" password="vrkt" authtype="3" type="default,supl" />
-  <apn carrier="IMS" mcc="440" mnc="10" apn="ims" type="ims" protocol="IPV6" />
-  <apn carrier="Y!mobile" mcc="440" mnc="20" apn="plus.acs.jp" user="ym" password="ym" mmsc="http://mms-s" mmsproxy="andmms.plusacs.ne.jp" mmsport="8080" authtype="2" type="default,supl,mms" />
-  <apn carrier="andoworld" mcc="440" mnc="20" apn="andoworld.softbank.ne.jp" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" authtype="2" type="default,supl,mms" />
-  <apn carrier="fourgsmartphone" mcc="440" mnc="20" apn="fourgsmartphone" user="" password="" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" authtype="2" type="default,supl,mms" />
-  <apn carrier="jpspir" mcc="440" mnc="20" apn="jpspir" user="sirobit" password="amstkoi" mmsc="http://mms/" mmsproxy="smilemms.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="open" mcc="440" mnc="20" apn="open.softbank.ne.jp" user="opensoftbank" password="ebMNuX1FIHg9d3DA" mmsc="http://mms/" mmsproxy="mmsopen.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="plus.softbank" mcc="440" mnc="20" apn="plus.softbank" user="plus" password="softbank" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" authtype="3" type="default,supl,mms" />
-  <apn carrier="plus.4g" mcc="440" mnc="20" apn="plus.4g" user="plus" password="4g" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" authtype="3" type="default,supl,mms" />
-  <apn carrier="sbm" mcc="440" mnc="20" apn="sbm" user="data" password="softbank" type="default,supl" />
-  <apn carrier="sbm4glte" mcc="440" mnc="20" apn="sbm4glte" user="data" password="softbank" type="default,supl" />
-  <apn carrier="smile.world" mcc="440" mnc="20" apn="smile.world" user="dna1trop" password="so2t3k3m2a" mmsc="http://mms/" mmsproxy="smilemms.softbank.ne.jp" mmsport="8080" authtype="1" type="default,supl,mms" />
-  <apn carrier="IMS" mcc="440" mnc="20" apn="IMS" type="ims" protocol="IPV6" />
-  <apn carrier="U-mobile Super" mcc="440" mnc="20" apn="plus.acs.jp" user="ym" password="ym" authtype="2" type="default,supl" />
-  <apn carrier="LTE NET" mcc="440" mnc="50" apn="uno.au-net.ne.jp" user="685840734641020@uno.au-net.ne.jp" password="KpyrR6BP" authtype="2" type="default,mms,supl,hipri" protocol="IPV4V6" roaming_protocol="IP" />
-  <apn carrier="LTE NET for DATA" mcc="440" mnc="50" apn="au.au-net.ne.jp" user="user@au.au-net.ne.jp" password="au" authtype="2" type="default,mms,supl,hipri" protocol="IPV4V6" roaming_protocol="IP" />
-  <apn carrier="UQ mobile" mcc="440" mnc="50" apn="uqmobile.jp" user="uq@uqmobile.jp" password="uq" mmsc="http://mms.ezweb.ne.jp/MMS" mmsport="80" authtype="2" type="default,supl,hipri,dun" />
-  <apn carrier="mineo A" mcc="440" mnc="50" apn="mineo.jp" user="mineo@k-opti.com" password="mineo" authtype="2" type="default,supl,hipri" />
+  <apn carrier="ドコモ(mopera)" mcc="440" mnc="10" apn="mopera.net" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="ドコモ(spモード)" mcc="440" mnc="10" apn="spmode.ne.jp" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="AEON MOBILE(タイプ1)" mcc="440" mnc="10" apn="i-aeonmobile.com" user="user" password="0000" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="AEON MOBILE(タイプ2)" mcc="440" mnc="10" apn="n-aeonmobile.com" user="user@n-aeonmobile.com" password="0000" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="AsahiNet LTE" mcc="440" mnc="10" apn="lte.mobac.net" user="d@w.asahinet.jp" password="0000" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="BIGLOBE(タイプD)" mcc="440" mnc="10" apn="biglobe.jp" user="user" password="0000" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="b-mobile(ドコモ)" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@4g" password="bmobile" authtype="3" type="default,supl" />
+  <apn carrier="DTI" mcc="440" mnc="10" apn="dti.jp" user="dti" password="dti" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="FREETEL" mcc="440" mnc="10" apn="freetel.link" user="freetel@freetel.link" password="freetel" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="HISモバイル(ドコモ)" mcc="440" mnc="10" apn="dm.jplat.net" user="his@his" password="his" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="IIJmio(タイプD)" mcc="440" mnc="10" apn="iijmio.jp" user="mio@iij" password="iij" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="LINEモバイル(D)" mcc="440" mnc="10" apn="line.me" user="line@line" password="line" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="LINEモバイル(ベーシック)" mcc="440" mnc="10" apn="linemobile.jp" user="line@line" password="line" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="nifty(LTE)" mcc="440" mnc="10" apn="mda.nifty.com" user="mda@nifty" password="nifty" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="nuromobile(D)" mcc="440" mnc="10" apn="so-net.jp" user="nuro" password="nuro" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="mineo(ドコモプラン)" mcc="440" mnc="10" apn="mineo-d.jp" user="mineo@k-opti.com" password="mineo" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="OCN モバイル ONE(新コース プライベートIP)" mcc="440" mnc="10" apn="ocn.ne.jp" user="mobileid@ocn" password="mobile" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="OCN モバイル ONE(新コース グローバルIP)" mcc="440" mnc="10" apn="lte.ocn.ne.jp" user="mobileid@ocn" password="mobile" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="OCN モバイル ONE(LTE)" mcc="440" mnc="10" apn="lte-d.ocn.ne.jp" user="mobileid@ocn" password="mobile" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="日本通信SIM" mcc="440" mnc="10" apn="dm.jplat.net" user="jci@jci" password="jci" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="IMS" mcc="440" mnc="10" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_editable="0" user_visible="false" />
+  <apn carrier="楽天(rakuten.jp)" mcc="440" mnc="11" apn="rakuten.jp" protocol="IPV4V6" roaming_protocol="IPV4V6" type="default,ia,supl" />
+  <apn carrier="IMS" mcc="440" mnc="11" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_editable="0" user_visible="false" />
+  <apn carrier="Emergency for SUPL" mcc="440" mnc="11" apn="sos" type="emergency" protocol="IPV4V6" roaming_protocol="IPV4V6" user_editable="0" user_visible="false" />
+  <apn carrier="Softbank(jpspir)" mcc="440" mnc="20" apn="jpspir" user="sirobit" password="amstkoi" mmsc="http://mms/" mmsproxy="smilemms.softbank.ne.jp" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="SoftBank(4G/5G)" mcc="440" mnc="20" apn="plus.4g" user="plus" password="4g" mmsc="http://mms/" mmsproxy="andmms.softbank.ne.jp" mmsport="8080" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="Softbank(sbm4glte)" mcc="440" mnc="20" apn="sbm4glte" user="data" password="softbank" type="default,supl" />
+  <apn carrier="b-mobile(ソフトバンク)" mcc="440" mnc="20" apn="sb.mvno" user="jci@jci" password="jci" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="LINEモバイル(S)" mcc="440" mnc="20" apn="line.me" user="line@line" password="line" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="LINEMO" mcc="440" mnc="20" apn="plus.acs.jp" user="lm" password="lm" authtype="2" type="default,ia,mms,supl,hipri" />
+  <apn carrier="mineo(Sプラン)" mcc="440" mnc="20" apn="mineo-s.jp" user="mineo@k-opti.com" password="mineo" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="nuromobile(S)" mcc="440" mnc="20" apn="so-net.jp" user="nuro" password="nuro" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="Y!mobile" mcc="440" mnc="20" apn="plus.acs.jp" user="ym" password="ym" mmsc="http://mms-s" mmsproxy="andmms.plusacs.ne.jp" mmsport="8080" authtype="2" type="default,ia,mms,supl,hipri" />
+  <apn carrier="IMS" mcc="440" mnc="20" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" user_editable="0" user_visible="false" />
+  <apn carrier="IMS" mcc="440" mnc="50" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_editable="0" user_visible="false" />
+  <apn carrier="au(LTE NET)" mcc="440" mnc="51" apn="uno.au-net.ne.jp" user="685840734641020@uno.au-net.ne.jp" password="KpyrR6BP" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="au(LTE NET for DATA)" mcc="440" mnc="51" apn="au.au-net.ne.jp" user="user@au.au-net.ne.jp" password="au" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="au(5G NET)" mcc="440" mnc="51" apn="uad5gn.au-net.ne.jp" user="au@uad5gn.au-net.ne.jp" password="au" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="au(5G NET for DATA)" mcc="440" mnc="51" apn="au5g.au-net.ne.jp" user="user@au5g.au-net.ne.jp" password="au" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="AEON MOBILE" mcc="440" mnc="51" apn="i-aeonmobile.com" user="user" password="0000" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="BIGLOBEモバイル(タイプA)" mcc="440" mnc="51" apn="biglobe.jp" user="user" password="0000" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="IIJmio(タイプA)" mcc="440" mnc="51" apn="iijmio.jp" user="mio@iij" password="iij" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="J:COM MOBILE(Aプラン)" mcc="440" mnc="51" apn="jcommobile.jp" user="jcom@jcommobile.jp" password="jcom" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="LINEモバイル(A)" mcc="440" mnc="51" apn="line.me" user="line@line" password="line" authtype="3" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="mineo(auプラン)" mcc="440" mnc="51" apn="mineo.jp" user="mineo@k-opti.com" password="mineo" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="nuromobile(A)" mcc="440" mnc="51" apn="so-net.jp" user="nuro" password="nuro" authtype="2" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="povo2.0" mcc="440" mnc="51" apn="povo.jp" protocol="IPV4V6" type="default,ia,mms,supl,hipri,fota,cbs" />
+  <apn carrier="UQ mobile" mcc="440" mnc="51" apn="uqmobile.jp" user="uq@uqmobile.jp" password="uq" authtype="2" type="default,ia,mms,supl,hipri" protocol="IPV4V6" roaming_protocol="IPV4V6" mmsc="http://mms.ezweb.ne.jp/MMS" mmsport="80" />
+  <apn carrier="IMS" mcc="440" mnc="51" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_editable="0" user_visible="false" />
   <apn carrier="SKT IA" mcc="450" mnc="05" apn="" type="ia" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="SKT IMS" mcc="450" mnc="05" apn="IMS" type="ims" protocol="IPV4V6" />
   <apn carrier="SKT LTE INTERNET" mcc="450" mnc="05" apn="lte.sktelecom.com" type="default,mms,supl,fota,cbs" mmsc="http://omms.nate.com:9082/oma_mms" mmsproxy="smart.nate.com" mmsport="9093" server="*" protocol="IPV4V6" />
