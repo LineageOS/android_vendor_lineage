@@ -13,5 +13,5 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES := \
-	NotoSansCJK-VF-Android.otf.ttc \
-	override_noto_sans_cjk
+    NotoSansCJK-VF-Android.otf.ttc \
+    override_noto_sans_cjk
