@@ -35,3 +35,8 @@ PRODUCT_PACKAGES += \
     fonts_customization.xml \
     FontLatoOverlay \
     FontRubikOverlay
+
+# Include Noto Sans CJK VF to replace fonts in system, size delta = ~12.6MB
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/noto-cjk-vf/fonts-sans.mk)
+# Include Noto Serif CJK VF to replace fonts in system, size delta = ~30.5MB
+$(call inherit-product-if-exists, vendor/lineage/prebuilt/noto-cjk-vf/fonts-serif.mk)
