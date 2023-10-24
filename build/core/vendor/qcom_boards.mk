@@ -1,21 +1,8 @@
 # Board platforms lists to be used for
 # TARGET_BOARD_PLATFORM specific featurization
 
-# Platform name variables - used in makefiles everywhere
-KONA := kona #SM8250
-LITO := lito #SM7250
-BENGAL := bengal #SM6115
-MSMNILE := msmnile #SM8150
-MSMSTEPPE := sm6150
-TRINKET := trinket #SM6125
-ATOLL := atoll #SM6250
-LAHAINA := lahaina #SM8350
-HOLI := holi #SM4350
-TARO := taro #SM8450
-PARROT := parrot #SM6450
-KALAMA := kalama #SM8550
+include hardware/qcom-caf/common/qcom_defs.mk
 
-# UM Family
 QCOM_BOARD_PLATFORMS += msm8937
 QCOM_BOARD_PLATFORMS += msm8953
 QCOM_BOARD_PLATFORMS += msm8996
