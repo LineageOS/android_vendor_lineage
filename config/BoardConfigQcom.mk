@@ -61,6 +61,9 @@ QSSI_SUPPORTED_PLATFORMS := \
 
 BOARD_USES_ADRENO := true
 
+# Vibrator HAL
+$(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+
 # Add qtidisplay to soong config namespaces
 SOONG_CONFIG_NAMESPACES += qtidisplay
 
