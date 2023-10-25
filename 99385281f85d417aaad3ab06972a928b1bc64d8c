@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ce63f85_88acc358",
+        "filename": "build/core/vendor/qcom_boards.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-10-25T00:17:11Z",
+      "side": 1,
+      "message": "The reason for this is to not break builds in case one repo inits without qcom groups.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 1
+      },
+      "revId": "99385281f85d417aaad3ab06972a928b1bc64d8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
