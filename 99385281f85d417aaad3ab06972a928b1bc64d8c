@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "02e456f7_7c31880f",
+        "filename": "build/core/vendor/qcom_boards.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-26T16:43:03Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "6ce63f85_88acc358",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 1
+      },
+      "revId": "99385281f85d417aaad3ab06972a928b1bc64d8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d0d44c05_efd32e98",
