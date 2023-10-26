@@ -22,6 +22,29 @@
       },
       "revId": "99385281f85d417aaad3ab06972a928b1bc64d8c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0d44c05_efd32e98",
+        "filename": "config/BoardConfigQcom.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-26T16:17:34Z",
+      "side": 1,
+      "message": "These also need to be in qcom_defs and in the sepolicy makefile check",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 5
+      },
+      "revId": "99385281f85d417aaad3ab06972a928b1bc64d8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
