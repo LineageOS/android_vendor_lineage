@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe0b4312_891dcf85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2023-10-27T23:10:23Z",
+      "side": 1,
+      "message": "looks like this one should be used instead: https://github.com/LineageOS/android_packages_providers_TelephonyProvider/blob/lineage-19.1/assets/latest_carrier_id/carrier_list.textpb#L11072-L11079\n\ncarrier_id 2080 is for ting 310/260",
+      "revId": "de6e2edef0282731771587287c2d1c1a217c8b86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
