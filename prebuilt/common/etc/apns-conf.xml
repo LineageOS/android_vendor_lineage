@@ -518,7 +518,7 @@
   <apn carrier="HoT Internet" mcc="232" mnc="07" apn="webaut" type="default,supl" />
   <apn carrier="HoT MMS" mcc="232" mnc="07" apn="mmsaut" mmsc="http://mmsaut.at/send" mmsproxy="212.95.31.50" mmsport="80" type="mms" />
   <apn carrier="3 AT" mcc="232" mnc="10" apn="drei.at" server="http://mobile.drei.at" mmsc="http://mmsc" mmsproxy="213.94.78.133" mmsport="8799" type="default,supl,mms" />
-  <apn carrier="Bob" mcc="232" mnc="11" apn="data.bob" user="data@bob.at" password="ppp" type="default,supl" />
+  <apn carrier="Bob" mcc="232" mnc="11" apn="bob.at" user="data@bob.at" password="ppp" protocol="IPV4V6" type="default,supl" />
   <apn carrier="Bob MMS" mcc="232" mnc="11" apn="mms.bob.at" user="data@bob.at" password="ppp" mmsc="http://mmsc.bob.at" mmsproxy="194.48.124.7" mmsport="8001" type="mms" />
   <apn carrier="Yesss" mcc="232" mnc="12" apn="webapn.at" protocol="IPV4V6" type="default,supl" />
   <apn carrier="T-Mobile A Internet" mcc="232" mnc="13" apn="internet.t-mobile.at" user="t-mobile" password="tm" authtype="1" type="default,supl" />
