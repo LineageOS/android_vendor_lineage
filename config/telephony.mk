@@ -1,3 +1,8 @@
+# GMS
+ifeq ($(WITH_GMS),true)
+WITH_GMS_COMMS_SUITE := true
+endif
+
 # Sensitive Phone Numbers list
 PRODUCT_PACKAGES += \
     sensitive_pn.xml
