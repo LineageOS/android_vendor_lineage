@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcb6b530_ae35715b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2023-10-29T19:34:23Z",
+      "side": 1,
+      "message": "KB19, if you can add Verified+1 if this works for you, we can submit this",
+      "revId": "fc245a2d541d4033612a2f4b934bf9c5fb5483ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
