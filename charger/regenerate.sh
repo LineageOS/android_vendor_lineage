@@ -9,8 +9,8 @@ for DENSITY in mdpi:160 hdpi:240 xhdpi:320 xxhdpi:480 xxxhdpi:640; do
     DPI=$(echo $DENSITY | cut -f1 -d ':')
     WIDTH=$(echo $DENSITY | cut -f2 -d ':')
 
-    rm -rf $DPI
-    mkdir $DPI
+    rm $DPI/battery_fail.png
+    rm $DPI/battery_scale.png
 
     for SVG in svg/*.svg; do
         PNG="$DPI/$(basename $SVG | cut -f1 -d '.').png"
