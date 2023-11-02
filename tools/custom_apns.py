@@ -17,10 +17,10 @@
 
 import re
 import sys
+from importlib import reload
 
 def main(argv):
     reload(sys)
-    sys.setdefaultencoding('utf8')
     original_file = 'vendor/lineage/prebuilt/common/etc/apns-conf.xml'
 
     if len(argv) == 3:
