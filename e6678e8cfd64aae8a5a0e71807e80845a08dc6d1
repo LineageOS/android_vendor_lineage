@@ -33,6 +33,24 @@
       "message": "FYI this affects those of us trying to skip unused repos like remoteexecution-client, to save on SSD space.",
       "revId": "e6678e8cfd64aae8a5a0e71807e80845a08dc6d1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2680486f_6ae9197a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-04T00:38:16Z",
+      "side": 1,
+      "message": "No it does not. You just need to remove it properly:\n\n  \u003cremove-project name\u003d\"platform/prebuilts/remoteexecution-client\" /\u003e",
+      "parentUuid": "1483cb85_9041d45c",
+      "revId": "e6678e8cfd64aae8a5a0e71807e80845a08dc6d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
