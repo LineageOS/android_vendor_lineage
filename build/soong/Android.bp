@@ -377,3 +377,27 @@ surfaceflinger_qcom_extensions {
         },
     },
 }
+
+soong_config_module_type {
+    name: "qti_vibrator_hal",
+    module_type: "cc_defaults",
+    config_namespace: "lineageQcomVars",
+    bool_variables: ["qti_vibrator_use_effect_stream"],
+    value_variables: ["qti_vibrator_effect_lib"],
+    properties: [
+        "cppflags",
+        "shared_libs",
+    ],
+}
+
+qti_vibrator_hal {
+    name: "qti_vibrator_hal_defaults",
+    soong_config_variables: {
+        qti_vibrator_use_effect_stream: {
+            cppflags: ["-DUSE_EFFECT_STREAM"],
+        },
+        qti_vibrator_effect_lib: {
+            shared_libs: ["%s"],
+        },
+    },
+}
