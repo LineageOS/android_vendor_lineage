@@ -16,6 +16,23 @@
       "message": "Verified building tegra. Nolen verified on coral that this doesn\u0027t violate artifact restrictions. When this is merged, the 18.1 and 19.1 copies should be merged as well.",
       "revId": "e6678e8cfd64aae8a5a0e71807e80845a08dc6d1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1483cb85_9041d45c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2023-11-04T00:14:15Z",
+      "side": 1,
+      "message": "FYI this affects those of us trying to skip unused repos like remoteexecution-client, to save on SSD space.",
+      "revId": "e6678e8cfd64aae8a5a0e71807e80845a08dc6d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
