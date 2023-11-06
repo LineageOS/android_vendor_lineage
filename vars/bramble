@@ -24,21 +24,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UP1A.231005.007"
+readonly build_id="UP1A.231105.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r75"
-readonly aosp_tag="android-14.0.0_r1"
+readonly prev_aosp_tag="android-14.0.0_r1"
+readonly aosp_tag="android-14.0.0_r13"
 
-readonly build_number="10754064"
+readonly build_number="10817346"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bramble-up1a.231005.007-factory-fc548663.zip"
-readonly image_sha256="fc54866335ba7efdcca38e61fcd939025f5140df2490a61c8a824f03267850b2"
+readonly image_url="https://dl.google.com/dl/android/aosp/bramble-up1a.231105.001-factory-98e180ca.zip"
+readonly image_sha256="98e180caf107c721657624aebebfe5b179cb7f692221099c6a5905d5546f59ae"
 
-readonly flash_url="https://flash.android.com/build/10754064?target=bramble-user&signed"
+readonly flash_url="https://flash.android.com/build/10817346?target=bramble-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-up1a.231005.007-231386fe.zip"
-readonly ota_sha256="231386fedfa64b0456bf0287b485d89bb3cc96955075737d36a64a5d8fc9e5f3"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-up1a.231105.001-db54d066.zip"
+readonly ota_sha256="db54d0663e2fadd098b1c11e00e98a9e7acf7e66d46316ca7350d8be66c54894"
 
-readonly security_patch="2023-10-05"
+readonly security_patch="2023-11-05"
