@@ -24,21 +24,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UP1A.231005.007"
+readonly build_id="UP1A.231105.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r75"
-readonly aosp_tag="android-14.0.0_r1"
+readonly prev_aosp_tag="android-14.0.0_r1"
+readonly aosp_tag="android-14.0.0_r13"
 
-readonly build_number="10754064"
+readonly build_number="10817346"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/barbet-up1a.231005.007-factory-b7a4ba5f.zip"
-readonly image_sha256="b7a4ba5f8bc1728d64a7ee800226ffa6a07799e9da2d34940e3974758ee7ed39"
+readonly image_url="https://dl.google.com/dl/android/aosp/barbet-up1a.231105.001-factory-e3a984c3.zip"
+readonly image_sha256="e3a984c37ec2ecf11da5ce94a910f02419128984b82bcbd8875a099bbbbd1d08"
 
-readonly flash_url="https://flash.android.com/build/10754064?target=barbet-user&signed"
+readonly flash_url="https://flash.android.com/build/10817346?target=barbet-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-up1a.231005.007-5932cd00.zip"
-readonly ota_sha256="5932cd006310f8d0ccab15db866115cb2ab7d0c5667d4847e411d3769e5c60b5"
+readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-up1a.231105.001-b68f1873.zip"
+readonly ota_sha256="b68f18733639e35cc33497b6094b0732cba39d9bc6b9d7a16c5f93317116b3aa"
 
-readonly security_patch="2023-10-05"
+readonly security_patch="2023-11-05"
