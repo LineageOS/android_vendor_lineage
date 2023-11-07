@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74759e24_12feca95",
+        "filename": "overlay/common/lineage-sdk/lineage/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-11-07T01:08:39Z",
+      "side": 1,
+      "message": "put below this?",
+      "revId": "e065ed6a640fef949ebc8301bfb443240500cf05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
