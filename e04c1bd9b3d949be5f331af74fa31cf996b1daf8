@@ -16,6 +16,24 @@
       "message": "Added a description of the changes to the commit message.\nIs this operation correct for me to perform? This is my first time using Gerrit and I don\u0027t really understand how to use it.",
       "revId": "e04c1bd9b3d949be5f331af74fa31cf996b1daf8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b9cf860_67a62445",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-11-09T19:53:03Z",
+      "side": 1,
+      "message": "hey, yeah you did it right but we would like links to carrier sites to confirm any added apn\u0027s in the message.",
+      "parentUuid": "ff4365ce_c64ba9f2",
+      "revId": "e04c1bd9b3d949be5f331af74fa31cf996b1daf8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
