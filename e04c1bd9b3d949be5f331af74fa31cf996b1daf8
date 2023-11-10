@@ -34,6 +34,24 @@
       "parentUuid": "ff4365ce_c64ba9f2",
       "revId": "e04c1bd9b3d949be5f331af74fa31cf996b1daf8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5842cfa5_b2374acc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33047
+      },
+      "writtenOn": "2023-11-10T01:11:24Z",
+      "side": 1,
+      "message": "Although it is in Japanese, I have added a link to the carrier\u0027s site.",
+      "parentUuid": "8b9cf860_67a62445",
+      "revId": "e04c1bd9b3d949be5f331af74fa31cf996b1daf8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
