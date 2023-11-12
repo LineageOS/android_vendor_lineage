@@ -15,9 +15,6 @@
 -->
 
 <resources>
-    <!-- Search bar -->
-    <dimen name="search_bar_corner_radius">24.0dip</dimen>
-
     <!-- Fingerprint -->
     <dimen name="udfps_lottie_translate_y">-500dp</dimen>
 </resources>
