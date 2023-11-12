@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dcc0758a_8efd72e6",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 838,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-12T12:00:23Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 838,
+        "startChar": 15,
+        "endLine": 838,
+        "endChar": 16
+      },
+      "revId": "4054b90e6590af4eaeda1d95ad39cabce8fbcaee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
