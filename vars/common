@@ -6,10 +6,11 @@ readonly os_branch=lineage-21.0
 readonly device_branch=lineage-21
 
 readonly prev_common_aosp_tag=android-14.0.0_r1 # Oct 2023, Pixel 4a (5G) - 7a
-readonly common_aosp_tag=android-14.0.0_r14 # Nov 2023, Pixel 6 - 7a
 
-readonly common_aosp_build_id=UP1A.231105.003 # Nov 2023, Pixel 6 - 7a
+readonly common_aosp_tag=android-14.0.0_r12 # Nov 2023, Pixel 8/8 Pro
 
-readonly topic=U_asb_2023-11
+readonly common_aosp_build_id=UD1A.231105.004 # Nov 2023, Pixel 8/8 Pro
+
+readonly topic=shusky
 
 readonly merge_method="merge"

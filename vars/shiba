@@ -1,0 +1,44 @@
+# Pixel 8
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in husky
+)
+
+readonly fbpk_version="v2"
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="UD1A.230803.041"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly aosp_branch="android14-d1-release"
+
+readonly prev_aosp_tag="NA"
+readonly aosp_tag="android-14.0.0_r11"
+
+readonly build_number="10808477"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/shiba-ud1a.230803.041-factory-3ed11735.zip"
+readonly image_sha256="3ed11735021f723d9dd49ba98170d4a5ad0d88e9c54338723674886a2a334b54"
+
+readonly flash_url="https://flash.android.com/build/10808477?target=shiba-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-ud1a.230803.041-6bbb528c.zip"
+readonly ota_sha256="6bbb528c219cc0065c6a64cd82ddab0b138591b3064580659b1163c5f397c7bc"
+
+readonly security_patch="2023-10-05"

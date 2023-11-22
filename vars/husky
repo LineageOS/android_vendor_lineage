@@ -1,0 +1,47 @@
+# Pixel 8 Pro
+
+# Usage: ${firmware_partitions[@]}
+readonly firmware_partitions=(
+  bl1
+  pbl
+  bl2
+  abl
+  bl31
+  tzsw
+  gsa
+  ldfw
+  modem
+)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/gs-common
+  device/google/zuma
+  device/google/zuma-sepolicy
+  device/google/shusky
+)
+
+readonly fbpk_version="v2"
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="UD1A.230803.041"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly aosp_branch="android14-d1-release"
+
+readonly prev_aosp_tag="NA"
+readonly aosp_tag="android-14.0.0_r11"
+
+readonly build_number="10808477"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/husky-ud1a.230803.041-factory-f26063c5.zip"
+readonly image_sha256="f26063c5cd9d4810d2f69007dbb8af5f7f06a1e7a2f866a1e8a121e89c445c00"
+
+readonly flash_url="https://flash.android.com/build/10808477?target=husky-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-ud1a.230803.041-cca7e111.zip"
+readonly ota_sha256="cca7e1116663aadbf103f7c841d301bf5f0ea6a680e8774391bc45ea282e27f9"
+
+readonly security_patch="2023-10-05"
