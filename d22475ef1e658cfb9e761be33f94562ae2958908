@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e14ff66_f9cd5f74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2681
+      },
+      "writtenOn": "2023-11-22T20:58:24Z",
+      "side": 1,
+      "message": "Not updated for November security patch, won\u0027t build in the standard 21 tree anyway",
+      "revId": "d22475ef1e658cfb9e761be33f94562ae2958908",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
