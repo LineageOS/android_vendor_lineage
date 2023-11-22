@@ -1,0 +1,31 @@
+# Pixel 8 Pro
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/gs-common
+  device/google/zuma
+  device/google/shusky
+)
+
+readonly fbpk_version="v2"
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="UQ1A.231205.015"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="NA"
+readonly aosp_tag="android-14.0.0_r17"
+
+readonly build_number="11084887"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/husky-uq1a.231205.015-factory-3cd41d9b.zip"
+readonly image_sha256="3cd41d9b3138e1abece66c48e46c5218a1ee09cfb4c86c6c9b49f9cb18c5e102"
+
+readonly flash_url="https://flash.android.com/build/11084887?target=husky-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-uq1a.231205.015-c52b44d3.zip"
+readonly ota_sha256="c52b44d343081f59a0018e6749a0c220c314035d9e2be60a7bd93e86ef7543f6"
+
+readonly security_patch="2023-12-05"

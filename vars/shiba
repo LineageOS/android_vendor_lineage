@@ -1,0 +1,29 @@
+# Pixel 8
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in husky
+)
+
+readonly fbpk_version="v2"
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="UQ1A.231205.015"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="NA"
+readonly aosp_tag="android-14.0.0_r17"
+
+readonly build_number="11084887"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/shiba-uq1a.231205.015-factory-ac56e72d.zip"
+readonly image_sha256="ac56e72deba62082ee2dcc1dd9438ce3c6cfd2dfa2f5a6e74d61ac3e528dfe87"
+
+readonly flash_url="https://flash.android.com/build/11084887?target=shiba-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-uq1a.231205.015-4033cf00.zip"
+readonly ota_sha256="4033cf0085e6a831758513a1c6cb9d9d40ef0357d968cae89fa554f8c869bc0d"
+
+readonly security_patch="2023-12-05"
