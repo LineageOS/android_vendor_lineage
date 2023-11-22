@@ -42,13 +42,13 @@ lineage_generator {
     ],
 }
 
-cc_library_headers {
-    name: "generated_kernel_headers",
-    generated_headers: ["generated_kernel_includes"],
-    export_generated_headers: ["generated_kernel_includes"],
-    vendor_available: true,
-    recovery_available: true,
-}
+// cc_library_headers {
+//     name: "generated_kernel_headers",
+//     generated_headers: ["generated_kernel_includes"],
+//     export_generated_headers: ["generated_kernel_includes"],
+//     vendor_available: true,
+//    recovery_available: true,
+// }
 
 // Target platform agnostic config modules
 soong_config_module_type {
