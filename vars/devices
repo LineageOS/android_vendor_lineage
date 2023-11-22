@@ -1,6 +1,8 @@
 # All supported devices
 # Usage: ${devices[@]}
 readonly devices=(
+  husky
+  shiba
   felix
   tangorpro
   lynx
