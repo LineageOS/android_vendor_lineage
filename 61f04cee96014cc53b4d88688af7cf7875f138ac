@@ -16,6 +16,24 @@
       "message": "would it be feasible to make non-VAB devices default to this?",
       "revId": "61f04cee96014cc53b4d88688af7cf7875f138ac",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c5d630c_44b22835",
+        "filename": "config/BoardConfigReservedSize.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-11-29T15:22:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0aaf9b57_de7b3e14",
+      "revId": "61f04cee96014cc53b4d88688af7cf7875f138ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
