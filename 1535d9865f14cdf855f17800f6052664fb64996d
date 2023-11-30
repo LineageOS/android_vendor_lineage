@@ -39,6 +39,30 @@
       },
       "revId": "1535d9865f14cdf855f17800f6052664fb64996d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "305d44c6_9effad45",
+        "filename": "config/BoardConfigReservedSize.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-11-30T03:10:02Z",
+      "side": 1,
+      "message": "ex. in my personal builds I have a vendor/extra entry that defines WITH_GMS, and also defines that 10mb be reserved if the build _is_ with gms.",
+      "parentUuid": "2629a9c5_519d5484",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 53
+      },
+      "revId": "1535d9865f14cdf855f17800f6052664fb64996d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
