@@ -20,6 +20,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "1ca7cb6d_df0421e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-11-30T21:33:25Z",
+      "side": 1,
+      "message": "for tracking, Magisk when installed to /system (for persistence purposes on non A/B devices) uses 26.5MB.",
+      "revId": "1535d9865f14cdf855f17800f6052664fb64996d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "2629a9c5_519d5484",
         "filename": "config/BoardConfigReservedSize.mk",
         "patchSetId": 2
