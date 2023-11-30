@@ -16,6 +16,29 @@
       "message": "works on hotdogb/instantnoodlep.",
       "revId": "1535d9865f14cdf855f17800f6052664fb64996d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2629a9c5_519d5484",
+        "filename": "config/BoardConfigReservedSize.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-11-30T03:09:16Z",
+      "side": 1,
+      "message": "A bit tempted to say that we should if this and add some logic - devices that reserve _0_ space like those that build WITH_GMS rn can\u0027t have any add-ons (e.g. Magisk) install anything to /system/addon.d.\n\nI\u0027m tempted to say that if it\u0027s not WITH_GMS, use this value, else (even if it\u0027s with_gms), reserve, like, 10mb? just enough for addon.d scripts",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 53
+      },
+      "revId": "1535d9865f14cdf855f17800f6052664fb64996d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
