@@ -1,21 +1,5 @@
 # Pixel 5
 
-# Usage: ${firmware_partitions[@]}
-readonly firmware_partitions=(
-  abl
-  aop
-  devcfg
-  hyp
-  keymaster
-  qupfw
-  tz
-  uefisecapp
-  xbl
-  xbl_config
-  featenabler
-  modem
-)
-
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/redbull

@@ -1,18 +1,5 @@
 # Pixel 7 Pro
 
-# Usage: ${firmware_partitions[@]}
-readonly firmware_partitions=(
-  bl1
-  pbl
-  bl2
-  abl
-  bl31
-  tzsw
-  gsa
-  ldfw
-  modem
-)
-
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/gs201

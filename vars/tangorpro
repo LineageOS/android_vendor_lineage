@@ -1,17 +1,5 @@
 # Pixel Tablet
 
-# Usage: ${firmware_partitions[@]}
-readonly firmware_partitions=(
-  bl1
-  pbl
-  bl2
-  abl
-  bl31
-  tzsw
-  gsa
-  ldfw
-)
-
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/tangorpro
