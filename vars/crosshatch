@@ -1,21 +1,5 @@
 # Pixel 3 XL
 
-# Usage: ${firmware_partitions[@]}
-readonly firmware_partitions=(
-  abl
-  aop
-  cmnlib
-  cmnlib64
-  devcfg
-  hyp
-  keymaster
-  qupfw
-  tz
-  xbl
-  xbl_config
-  modem
-)
-
 # Usage: ${device_repos[@]}
 device_repos=(
   device/google/crosshatch
