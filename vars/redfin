@@ -2,7 +2,7 @@
 
 # Usage: ${device_repos[@]}
 device_repos=(
-  device/google/redbull
+  # common repos in barbet
   device/google/redfin
 )
 
