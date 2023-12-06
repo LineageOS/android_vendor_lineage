@@ -10,6 +10,4 @@ readonly devices=(
   raven
   oriole
   barbet
-  redfin
-  bramble
 )
