@@ -2,7 +2,7 @@
 
 # Usage: ${device_repos[@]}
 device_repos=(
-  # common repos in redfin
+  # common repos in barbet
   device/google/bramble
 )
 
