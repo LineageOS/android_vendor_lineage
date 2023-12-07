@@ -464,6 +464,9 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
 				; mv $$(find $$kernel_modules_dir -name $(word 1,$(p))) $$kernel_modules_dir/$(word 2,$(p))); \
 			all_modules=$$(find $$kernel_modules_dir -type f -name '*.ko'); \
 			filtered_modules=""; \
+			for m in $(BOARD_VENDOR_KERNEL_MODULES_LOAD); do \
+				if ! grep -q "$$m" <<< "$(all_modules)"; then echo "ERROR: $$m from BOARD_VENDOR_KERNEL_MODULES_LOAD was not found" 1>&2 && exit 1; fi; \
+			done; \
 			$(if $(SYSTEM_KERNEL_MODULES),\
 				gki_modules=$$(for m in $(SYSTEM_KERNEL_MODULES); do \
 					p=$$(find $$kernel_modules_dir -type f -name $$m); \
