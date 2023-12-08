@@ -16,6 +16,24 @@
       "message": "Uh... this also breaks pixels setup.",
       "revId": "63d71b3025ef748521cf18017ad2429c65cfb711",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b1f3440_ef62cd5f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-12-08T11:07:37Z",
+      "side": 1,
+      "message": "Latest patchset takes into acount current pixels setup.",
+      "parentUuid": "a45ae471_558c3463",
+      "revId": "63d71b3025ef748521cf18017ad2429c65cfb711",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
