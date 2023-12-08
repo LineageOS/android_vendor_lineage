@@ -16,6 +16,24 @@
       "message": "Tested? Getting false negatives on OP11",
       "revId": "7f01fc3a2acc2cd973e52498699b6c2a6e7a4ec0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99561b15_3ca1aa01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31578
+      },
+      "writtenOn": "2023-12-08T04:39:40Z",
+      "side": 1,
+      "message": "Tested on sony sm8550 and seems to work fine.\n\nBuild does not error normally and errors if a non-existent module is added to modules.load file",
+      "parentUuid": "0003d3fa_1ccdae50",
+      "revId": "7f01fc3a2acc2cd973e52498699b6c2a6e7a4ec0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
