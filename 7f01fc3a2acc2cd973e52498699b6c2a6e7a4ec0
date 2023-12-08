@@ -34,6 +34,24 @@
       "parentUuid": "0003d3fa_1ccdae50",
       "revId": "7f01fc3a2acc2cd973e52498699b6c2a6e7a4ec0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4318e79_07bd7d33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-12-08T07:25:37Z",
+      "side": 1,
+      "message": "Yes, tested on salami.",
+      "parentUuid": "99561b15_3ca1aa01",
+      "revId": "7f01fc3a2acc2cd973e52498699b6c2a6e7a4ec0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
