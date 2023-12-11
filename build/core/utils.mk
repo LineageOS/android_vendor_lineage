@@ -201,3 +201,12 @@ $(strip \
   $(if $(strip $(acn)),true,) \
 )
 endef
+
+# $(call add-radio-file-size-checked,path,size)
+define add-radio-file-size-checked
+  $(eval path := $(LOCAL_PATH)/$(1))
+  $(eval size := $(shell stat -c "%s" "$(path)"))
+  $(if $(filter $(size),$(2)),
+    $(call add-radio-file,$(1)),
+    $(error size of $(path) != $(2)))
+endef
