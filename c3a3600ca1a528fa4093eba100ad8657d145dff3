@@ -69,6 +69,23 @@
       "parentUuid": "ba3d59ee_a770a932",
       "revId": "c3a3600ca1a528fa4093eba100ad8657d145dff3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "433ee041_1ecb956a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-12-13T00:10:11Z",
+      "side": 1,
+      "message": "Nothing exploded on my lot of pixels and motosm7325/moto8250",
+      "revId": "c3a3600ca1a528fa4093eba100ad8657d145dff3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
