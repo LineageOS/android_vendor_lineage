@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "074cad5a_e5bc3bd8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-12-24T13:02:47Z",
+      "side": 1,
+      "message": "Someone on IRC complained that after following build guide on wiki, there\u0027s no vendor_boot.img in $OUT.",
+      "revId": "32188df665e2e79221c16bf523a0899a604a0acf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
