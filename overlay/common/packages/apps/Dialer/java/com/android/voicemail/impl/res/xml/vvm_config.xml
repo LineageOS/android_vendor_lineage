@@ -252,7 +252,7 @@
         </string-array>
         <int name="vvm_port_number_int" value="0" />
         <string name="vvm_destination_number_string">900080006200</string>
-        <string name="vvm_type_string">vvm_type_vvm3_mvno</string>
+        <string name="vvm_type_string">vvm_type_vvm3</string>
         <string name="vvm_client_prefix_string">//VZWVVM</string>
         <boolean name="vvm_cellular_data_required_bool" value="true" />
         <boolean name="vvm_legacy_mode_enabled_bool" value="true" />
