@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d7a3175_317b8474",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2023-12-29T06:56:45Z",
+      "side": 1,
+      "message": "Whether or not an update is detected seems to rely on some other factors, if the device is locked or not, and if the build date is older than some period of time.",
+      "revId": "0eab43aee7147d1b1db8f7b76b1077413788b115",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
