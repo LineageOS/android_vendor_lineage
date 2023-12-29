@@ -27,5 +27,6 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
+        <item>com.google.android.setupwizard/com.google.android.setupwizard.update.OtaUpdateActivity</item>
     </string-array>
 </resources>
