@@ -23,9 +23,11 @@
         <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SettingsSecurityEntryPoint</item>
         <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.phone.PopupDialog</item>
+        <item>com.google.android.gms/com.google.android.gms.update.OtaSuggestionActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.OtaSuggestionSummaryProvider</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdatePersistentListenerService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
         <item>com.google.android.setupwizard/com.google.android.setupwizard.update.OtaUpdateActivity</item>
     </string-array>
