@@ -267,6 +267,12 @@ def main():
         help="print extra information to aid in debug",
     )
     parser.add_argument(
+        "-l",
+        "--list",
+        action="store_true",
+        help="Only list changes to pick but don't actually perform any actions",
+    )
+    parser.add_argument(
         "-f",
         "--force",
         action="store_true",
@@ -351,7 +357,7 @@ def main():
         sys.exit(1)
 
     # If --abandon-first is given, abandon the branch before starting
-    if args.abandon_first:
+    if args.abandon_first and not args.list:
         # Determine if the branch already exists; skip the abandon if it does not
         plist = subprocess.check_output(["repo", "info"], text=True)
         needs_abandon = False
@@ -518,6 +524,7 @@ def main():
 
         item = {
             "subject": review["subject"],
+            "project": review["project"],
             "project_path": project_path,
             "branch": review["branch"],
             "change_id": review["change_id"],
@@ -546,6 +553,13 @@ def main():
                     )
 
         mergables[project_path].append(item)
+
+    if args.list:
+        print("=" * 80)
+        for project_items in mergables.values():
+            for items in project_items:
+                print("Would apply change number {0} to project '{1}'.".format(item["id"], item["project"]))
+        return
 
     # round 1: start branch and drop picked changes
     for project_path in mergables:
