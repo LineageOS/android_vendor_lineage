@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0238299_8043abf3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26658
+      },
+      "writtenOn": "2023-12-31T17:19:58Z",
+      "side": 1,
+      "message": "Solves the issue in the 17.1 branch and the code looks fine.\n\nThank you Alex!",
+      "revId": "c911c790a642ce2747781c0ccdb5dec77b0e0977",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
