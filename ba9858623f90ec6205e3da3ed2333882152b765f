@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9954159f_71226610",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20587
+      },
+      "writtenOn": "2023-12-31T12:06:59Z",
+      "side": 1,
+      "message": "This was observed in https://review.lineageos.org/c/LineageOS/android_packages_services_Telecomm/+/378065 and I created https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/378477 for verification.\nTry `repopick -t Q_asb_2023-12 --list | grep -F Telecomm` and observe the prior to this change it will be:\n\u003e Would apply change number 369703 to project \"LineageOS/android_packages_services_Telecomm\".\n\u003e Would apply change number 378065 to project \"LineageOS/android_packages_services_Telecomm\".\n\u003e Would apply change number 378123 to project \"LineageOS/android_packages_services_Telecomm\".\n\nAfter it is correctly:\n\u003e Would apply change number 369703 to project \"LineageOS/android_packages_services_Telecomm\".\n\u003e Would apply change number 378123 to project \"LineageOS/android_packages_services_Telecomm\".\n\u003e Would apply change number 378065 to project \"LineageOS/android_packages_services_Telecomm\".",
+      "revId": "ba9858623f90ec6205e3da3ed2333882152b765f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
