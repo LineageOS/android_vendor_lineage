@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90119634_37e6a4a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26658
+      },
+      "writtenOn": "2023-12-31T14:02:37Z",
+      "side": 1,
+      "message": "Hi Alex,\n\nthis commit does indeed resolve the issue reported here\nhttps://review.lineageos.org/c/LineageOS/android_packages_services_Telecomm/+/378065\nHowever, the one reported here\nhttps://review.lineageos.org/c/LineageOS/android_frameworks_base/+/365453\nwould return if I wouldn\u0027t continue to manually sync\nhttps://review.lineageos.org/c/LineageOS/android_frameworks_base/+/378097\nprior to the `Q_asb_2023-08` topic.",
+      "revId": "12d482cda1a4ebc3130a95dbc3ffb03bba89d6dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
