@@ -185,6 +185,7 @@ if __name__ == '__main__':
                         help='shortcut to "--start-branch auto --abandon-first --ignore-missing"')
     parser.add_argument('-q', '--quiet', action='store_true', help='print as little as possible')
     parser.add_argument('-v', '--verbose', action='store_true', help='print extra information to aid in debug')
+    parser.add_argument('-l', '--list', action='store_true', help='Only list changes to pick but don\'t actually perform any actions')
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', metavar='', help='use the specified path for the change')
@@ -225,7 +226,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     # If --abandon-first is given, abandon the branch before starting
-    if args.abandon_first:
+    if args.abandon_first and not args.list:
         # Determine if the branch already exists; skip the abandon if it does not
         plist = subprocess.check_output(['repo', 'info'])
         if not hasattr(plist, 'encode'):
@@ -359,6 +360,13 @@ if __name__ == '__main__':
                 args.quiet or print('ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.'.format(change, patchset))
 
     for item in mergables:
+        is_open = item['status'] == 'OPEN' or item['status'] == 'NEW' or item['status'] == 'DRAFT'
+        if args.list:
+            if is_open or args.force:
+                print('Would apply change number {0} to project "{1}".'.format(item['id'], item['project']))
+            else:
+                print('Not applying closed change number {0} to project "{1}".'.format(item['id'], item['project']))
+            continue
         args.quiet or print('Applying change number {0}...'.format(item['id']))
         # Check if change is open and exit if it's not, unless -f is specified
         if (item['status'] != 'OPEN' and item['status'] != 'NEW' and item['status'] != 'DRAFT') and not args.query:
