@@ -279,24 +279,41 @@ if __name__ == '__main__':
     reviews = []
     change_numbers = []
 
-    def cmp_reviews(review_a, review_b):
-        current_a = review_a['current_revision']
-        parents_a = [r['commit'] for r in review_a['revisions'][current_a]['commit']['parents']]
-        current_b = review_b['current_revision']
-        parents_b = [r['commit'] for r in review_b['revisions'][current_b]['commit']['parents']]
-        if current_a in parents_b:
-            return -1
-        elif current_b in parents_a:
-            return 1
-        else:
-            return cmp(review_a['number'], review_b['number'])
+    def make_cmp_reviews(reviews):
+        direct_parents = {
+            r['current_revision']: [p['commit'] for p in r['revisions'][r['current_revision']]['commit']['parents']]
+            for r in reviews
+        }
+        def get_parents(revision):
+            parents = direct_parents.get(revision, [])
+            for parent in parents:
+                yield parent
+            # Recurse
+            for parent in parents:
+                for p in get_parents(parent):
+                    yield p
+
+        def cmp_reviews(review_a, review_b):
+            # Sort by project first
+            project_diff = cmp(review_a['project'], review_b['project'])
+            if project_diff != 0:
+                return project_diff
+            current_a = review_a['current_revision']
+            current_b = review_b['current_revision']
+            if current_a in get_parents(current_b):
+                return -1
+            elif current_b in get_parents(current_a):
+                return 1
+            else:
+                return cmp(review_a['number'], review_b['number'])
+        return cmp_reviews
 
     if args.topic:
         reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
-        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
+        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(make_cmp_reviews(reviews)))]
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
-        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
+        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(make_cmp_reviews(reviews)))]
     if args.change_number:
         change_url_re = re.compile('https?://.+?/([0-9]+(?:/[0-9]+)?)/?')
         for c in args.change_number:
