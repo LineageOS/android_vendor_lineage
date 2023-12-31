@@ -280,6 +280,11 @@ if __name__ == '__main__':
     change_numbers = []
 
     def cmp_reviews(review_a, review_b):
+        # Checking for parent-relationship only makes sense if both are from the same project.
+        # As only adjacent items are compared sort by project first.
+        project_diff = cmp(review_a['project'], review_b['project'])
+        if project_diff != 0:
+            return project_diff
         current_a = review_a['current_revision']
         parents_a = [r['commit'] for r in review_a['revisions'][current_a]['commit']['parents']]
         current_b = review_b['current_revision']
