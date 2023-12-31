@@ -368,8 +368,8 @@ if __name__ == '__main__':
                 print('Not applying closed change number {0} to project "{1}".'.format(item['id'], item['project']))
             continue
         args.quiet or print('Applying change number {0}...'.format(item['id']))
-        # Check if change is open and exit if it's not, unless -f is specified
-        if (item['status'] != 'OPEN' and item['status'] != 'NEW' and item['status'] != 'DRAFT') and not args.query:
+        # Check if change is open and skip if it's not, unless -f is specified
+        if not is_open:
             if args.force:
                 print('!! Force-picking a closed change !!\n')
             else:
