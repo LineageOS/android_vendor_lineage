@@ -934,12 +934,12 @@ alias cmkap='dopush cmka'
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/lineage/build/tools/repopick.py $@
+    $T/vendor/lineage/build/tools/repopick.py "$@"
 }
 
 function sort-blobs-list() {
     T=$(gettop)
-    $T/tools/extract-utils/sort-blobs-list.py $@
+    $T/tools/extract-utils/sort-blobs-list.py "$@"
 }
 
 function fixup_common_out_dir() {
