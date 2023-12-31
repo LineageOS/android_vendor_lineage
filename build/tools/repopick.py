@@ -185,6 +185,7 @@ if __name__ == '__main__':
                         help='shortcut to "--start-branch auto --abandon-first --ignore-missing"')
     parser.add_argument('-q', '--quiet', action='store_true', help='print as little as possible')
     parser.add_argument('-v', '--verbose', action='store_true', help='print extra information to aid in debug')
+    parser.add_argument('-l', '--list', action='store_true', help='Only list changes to pick but don\'t actually perform any actions')
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', metavar='', help='use the specified path for the change')
@@ -225,7 +226,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     # If --abandon-first is given, abandon the branch before starting
-    if args.abandon_first:
+    if args.abandon_first and not args.list:
         # Determine if the branch already exists; skip the abandon if it does not
         plist = subprocess.check_output(['repo', 'info'])
         if not hasattr(plist, 'encode'):
@@ -279,24 +280,41 @@ if __name__ == '__main__':
     reviews = []
     change_numbers = []
 
-    def cmp_reviews(review_a, review_b):
-        current_a = review_a['current_revision']
-        parents_a = [r['commit'] for r in review_a['revisions'][current_a]['commit']['parents']]
-        current_b = review_b['current_revision']
-        parents_b = [r['commit'] for r in review_b['revisions'][current_b]['commit']['parents']]
-        if current_a in parents_b:
-            return -1
-        elif current_b in parents_a:
-            return 1
-        else:
-            return cmp(review_a['number'], review_b['number'])
+    def make_cmp_reviews(reviews):
+        direct_parents = {
+            r['current_revision']: [p['commit'] for p in r['revisions'][r['current_revision']]['commit']['parents']]
+            for r in reviews
+        }
+        def get_parents(revision):
+            parents = direct_parents.get(revision, [])
+            for parent in parents:
+                yield parent
+            # Recurse
+            for parent in parents:
+                for p in get_parents(parent):
+                    yield p
+
+        def cmp_reviews(review_a, review_b):
+            # Sort by project first
+            project_diff = cmp(review_a['project'], review_b['project'])
+            if project_diff != 0:
+                return project_diff
+            current_a = review_a['current_revision']
+            current_b = review_b['current_revision']
+            if current_a in get_parents(current_b):
+                return -1
+            elif current_b in get_parents(current_a):
+                return 1
+            else:
+                return cmp(review_a['number'], review_b['number'])
+        return cmp_reviews
 
     if args.topic:
         reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
-        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
+        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(make_cmp_reviews(reviews)))]
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
-        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
+        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(make_cmp_reviews(reviews)))]
     if args.change_number:
         change_url_re = re.compile('https?://.+?/([0-9]+(?:/[0-9]+)?)/?')
         for c in args.change_number:
@@ -359,9 +377,16 @@ if __name__ == '__main__':
                 args.quiet or print('ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.'.format(change, patchset))
 
     for item in mergables:
+        is_open = item['status'] == 'OPEN' or item['status'] == 'NEW' or item['status'] == 'DRAFT'
+        if args.list:
+            if is_open or args.force:
+                print('Would apply change number {0} to project "{1}".'.format(item['id'], item['project']))
+            else:
+                print('Not applying closed change number {0} to project "{1}".'.format(item['id'], item['project']))
+            continue
         args.quiet or print('Applying change number {0}...'.format(item['id']))
-        # Check if change is open and exit if it's not, unless -f is specified
-        if (item['status'] != 'OPEN' and item['status'] != 'NEW' and item['status'] != 'DRAFT') and not args.query:
+        # Check if change is open and skip if it's not, unless -f is specified
+        if not is_open:
             if args.force:
                 print('!! Force-picking a closed change !!\n')
             else:
