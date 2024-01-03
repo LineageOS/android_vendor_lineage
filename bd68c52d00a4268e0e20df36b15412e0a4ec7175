@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9613b355_fd9bd5fc",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-01-03T12:17:55Z",
+      "side": 1,
+      "message": "4 spaces not 8",
+      "range": {
+        "startLine": 79,
+        "startChar": 8,
+        "endLine": 79,
+        "endChar": 12
+      },
+      "revId": "bd68c52d00a4268e0e20df36b15412e0a4ec7175",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
