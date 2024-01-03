@@ -11,21 +11,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.231205.015"
+readonly build_id="UQ1A.240105.004"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="NA"
-readonly aosp_tag="android-14.0.0_r17"
+readonly prev_aosp_tag="android-14.0.0_r17"
+readonly aosp_tag="android-14.0.0_r20"
 
-readonly build_number="11084887"
+readonly build_number="11206848"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/husky-uq1a.231205.015-factory-3cd41d9b.zip"
-readonly image_sha256="3cd41d9b3138e1abece66c48e46c5218a1ee09cfb4c86c6c9b49f9cb18c5e102"
+readonly image_url="https://dl.google.com/dl/android/aosp/husky-uq1a.240105.004-factory-498499a8.zip"
+readonly image_sha256="498499a85689c8813dd2454f849b3df4f1a9961624de935d74741996dc1924fb"
 
-readonly flash_url="https://flash.android.com/build/11084887?target=husky-user&signed"
+readonly flash_url="https://flash.android.com/build/11206848?target=husky-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-uq1a.231205.015-c52b44d3.zip"
-readonly ota_sha256="c52b44d343081f59a0018e6749a0c220c314035d9e2be60a7bd93e86ef7543f6"
+readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-uq1a.240105.004-dbd5246a.zip"
+readonly ota_sha256="dbd5246acf6ebf97fa9575261b577df2a7590aee9d211f7b7960de17e21d1700"
 
-readonly security_patch="2023-12-05"
+readonly security_patch="2024-01-05"
