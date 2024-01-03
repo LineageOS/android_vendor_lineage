@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e1cb8cd_66d54785",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-01-03T17:28:32Z",
+      "side": 1,
+      "message": "Didn\u0027t go through SuW with a device having an update pending, so can\u0027t really +V that. Will +V anyway if no objections arise further",
+      "revId": "47ef8a77723f9b43aeb6b9211ece50e7efae4fa2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
