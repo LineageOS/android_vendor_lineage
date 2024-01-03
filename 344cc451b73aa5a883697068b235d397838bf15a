@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9bcd93e_d9bfadef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2024-01-03T19:11:18Z",
+      "side": 1,
+      "message": "I don\u0027t think we should disable this globally. On devices with high refresh rate display this allows apps (like Google Maps) to save power by setting the refresh rate to 60FPS, for whatever that\u0027s worth.",
+      "revId": "344cc451b73aa5a883697068b235d397838bf15a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
