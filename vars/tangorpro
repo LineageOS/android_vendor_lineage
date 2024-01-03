@@ -10,21 +10,21 @@ readonly wifi_only=true
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.231205.015"
+readonly build_id="UQ1A.240105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r14"
-readonly aosp_tag="android-14.0.0_r17"
+readonly prev_aosp_tag="android-14.0.0_r17"
+readonly aosp_tag="android-14.0.0_r19"
 
-readonly build_number="11084887"
+readonly build_number="11129216"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-uq1a.231205.015-factory-90e76582.zip"
-readonly image_sha256="90e7658230ae00ee6ce0dd741f1e2e80278b72984bb3774598a52e1152d49ae4"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-uq1a.240105.002-factory-628b08cd.zip"
+readonly image_sha256="628b08cdf3e0f0086bb54aaeed5d749cfcc333291d2986eea3b28f3b09ad282a"
 
-readonly flash_url="https://flash.android.com/build/11084887?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/11129216?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-uq1a.231205.015-1b0c6e1e.zip"
-readonly ota_sha256="1b0c6e1e97979f84416a1d1ce423731d1deebfb5c86b4499344b6fa5ac3e107a"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-uq1a.240105.002-ab6f538c.zip"
+readonly ota_sha256="ab6f538ca2cea56fe466e053443b7e3a6fdcb62582f58aa41cc402fa3de783a4"
 
-readonly security_patch="2023-12-05"
+readonly security_patch="2024-01-05"
