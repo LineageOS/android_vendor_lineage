@@ -22,6 +22,30 @@
       },
       "revId": "0f05cbbee9ba818abc41b1275ebb102c8e35f723",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d05d3a96_823faf19",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 427,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-01-04T20:31:10Z",
+      "side": 1,
+      "message": "Ah whee, it gets built if that flag is set or if boot image ver \u003e\u003d 3. I can try later and see if the building flag is exposed in kernel.mk.",
+      "parentUuid": "d4d264d0_dc472b01",
+      "range": {
+        "startLine": 427,
+        "startChar": 13,
+        "endLine": 427,
+        "endChar": 44
+      },
+      "revId": "0f05cbbee9ba818abc41b1275ebb102c8e35f723",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
