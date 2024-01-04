@@ -422,7 +422,18 @@
             <item value="311180?gid1=3434" />
             <item value="311180?gid1=3436" />
         </string-array>
-        <string name="vvm_type_string">vvm_type_disabled</string>
+        <int name="vvm_port_number_int" value="5499" />
+        <string name="vvm_destination_number_string">94183567</string>
+        <string-array name="carrier_vvm_package_name_string_array">
+            <item value="com.att.mobile.android.vvm" />
+        </string-array>
+        <string name="vvm_type_string">vvm_type_advvm</string>
+        <boolean name="vvm_legacy_mode_enabled_bool" value="true" />
+        <boolean name="vvm_ignore_transcription" value="true" />
+        <boolean name="vvm_transcription_always_allowed" value="true" />
+        <boolean name="vvm_use_direct_tls_connection" value="true" />
+        <boolean name="vvm_change_greeting_enabled_bool" value="true" />
+        <boolean name="vvm_greeting_update_bool" value="false" />
     </pbundle_as_map>
     <pbundle_as_map>
         <string-array name="mccmnc">
