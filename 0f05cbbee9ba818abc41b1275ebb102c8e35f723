@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d4d264d0_dc472b01",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 427,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-04T19:05:31Z",
+      "side": 1,
+      "message": "Maybe we should change this to BUILDING_VENDOR_BOOT_IMAGE (https://github.com/LineageOS/android_build/blob/lineage-21.0/core/board_config.mk#L512-L523). My 5.15 QCOM device doesn\u0027t set PRODUCT_BUILD_VENDOR_BOOT_IMAGE, even tho it builds vendor_boot.img.",
+      "range": {
+        "startLine": 427,
+        "startChar": 13,
+        "endLine": 427,
+        "endChar": 44
+      },
+      "revId": "0f05cbbee9ba818abc41b1275ebb102c8e35f723",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
