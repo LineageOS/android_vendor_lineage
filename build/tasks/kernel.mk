@@ -127,22 +127,29 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
     ifneq ($(TARGET_PREBUILT_KERNEL),)
         HAS_PREBUILT_KERNEL := true
         NEEDS_KERNEL_COPY := true
+        ifneq ($(filter kernel/prebuilts/%,$(TARGET_PREBUILT_KERNEL)),)
+            PREBUILT_KERNEL_IS_GKI := true
+        endif
     else
         $(foreach cf,$(PRODUCT_COPY_FILES), \
             $(eval _src := $(call word-colon,1,$(cf))) \
             $(eval _dest := $(call word-colon,2,$(cf))) \
             $(ifeq kernel,$(_dest), \
-                $(eval HAS_PREBUILT_KERNEL := true)))
+                $(eval HAS_PREBUILT_KERNEL := true)) \
+            $(ifneq $(filter kernel/prebuilts/%,$(_src)),, \
+                $(eval PREBUILT_KERNEL_IS_GKI := true)))
     endif
 
     ifneq ($(HAS_PREBUILT_KERNEL),)
-        $(warning ***************************************************************)
-        $(warning * Using prebuilt kernel binary instead of source              *)
-        $(warning * THIS IS DEPRECATED, AND IS NOT ADVISED.                     *)
-        $(warning * Please configure your device to download the kernel         *)
-        $(warning * source repository to $(KERNEL_SRC))
-        $(warning * for more information                                        *)
-        $(warning ***************************************************************)
+        ifeq ($(PREBUILT_KERNEL_IS_GKI),)
+            $(warning ***************************************************************)
+            $(warning * Using non-GKI prebuilt kernel binary instead of source      *)
+            $(warning * THIS IS DEPRECATED, AND IS NOT ADVISED.                     *)
+            $(warning * Please configure your device to download the kernel         *)
+            $(warning * source repository to $(KERNEL_SRC))
+            $(warning * for more information                                        *)
+            $(warning ***************************************************************)
+        endif
         FULL_KERNEL_BUILD := false
         KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
     else
@@ -171,9 +178,11 @@ else
         $(error "NO KERNEL CONFIG")
     else
         ifneq ($(TARGET_FORCE_PREBUILT_KERNEL),)
-            ifneq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
-                $(error "PREBUILT KERNEL IS NOT ALLOWED ON OFFICIAL BUILDS!")
-            else
+            ifeq ($(filter kernel/prebuilts/%,$(TARGET_PREBUILT_KERNEL)),)
+                # If the prebuilt kernel is not GKI kernel
+                ifneq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
+                    $(error "PREBUILT NON-GKI KERNEL IS NOT ALLOWED ON OFFICIAL BUILDS!")
+                endif
                 $(warning **********************************************************)
                 $(warning * Kernel source found and configuration was defined,     *)
                 $(warning * but prebuilt kernel is being forced.                   *)
@@ -184,9 +193,9 @@ else
                 $(warning * Please unset TARGET_FORCE_PREBUILT_KERNEL              *)
                 $(warning * to build the kernel from source.                       *)
                 $(warning **********************************************************)
-                FULL_KERNEL_BUILD := false
-                KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
             endif
+            FULL_KERNEL_BUILD := false
+            KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
         else
             FULL_KERNEL_BUILD := true
             KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
