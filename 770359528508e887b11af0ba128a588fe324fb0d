@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff148165_2041d65f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-01-06T07:13:27Z",
+      "side": 1,
+      "message": "needs a charter change to accompany.\n\nThis can go in without charter I guess, but that conversation needs to happen too.",
+      "revId": "770359528508e887b11af0ba128a588fe324fb0d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
