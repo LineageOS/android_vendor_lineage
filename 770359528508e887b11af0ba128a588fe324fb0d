@@ -16,6 +16,23 @@
       "message": "needs a charter change to accompany.\n\nThis can go in without charter I guess, but that conversation needs to happen too.",
       "revId": "770359528508e887b11af0ba128a588fe324fb0d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a1f80ed_e9095c7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-01-07T08:32:25Z",
+      "side": 1,
+      "message": "Just realized, have to use the same toolchains and build env to build the modules, so that they have matching ABI with the kernel\n\nWould need to implement this later (or... even have to abandon this idea?)",
+      "revId": "770359528508e887b11af0ba128a588fe324fb0d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
