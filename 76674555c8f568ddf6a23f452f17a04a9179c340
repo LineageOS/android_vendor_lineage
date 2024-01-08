@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f3e9a0d_5a4dd744",
+        "filename": "config/partner_gms.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-08T11:26:37Z",
+      "side": 1,
+      "message": "could also drop if-exists here?",
+      "range": {
+        "startLine": 37,
+        "startChar": 44,
+        "endLine": 37,
+        "endChar": 45
+      },
+      "revId": "76674555c8f568ddf6a23f452f17a04a9179c340",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
