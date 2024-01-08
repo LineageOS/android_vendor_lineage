@@ -16,6 +16,23 @@
       "message": "leaving CR/V here as the rest could get lost.\n\nsm8450 updates - fine on osom sm8475 (ingot)\nsm8350 updates - fine on moto sm7325 (berlin)\nsm8250 updates - fine on fxtec bengal (pro1x)\nsm8150 updates - fine on nubia sm8150 (TP1803)\n\nAuxillary repos changes - didn\u0027t break any of my other devices in any clear way.",
       "revId": "5a787a88b22280b063d76a3e07a3bafbd8c6322e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66ce0e3b_35d80e3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-01-08T21:28:10Z",
+      "side": 1,
+      "message": "implied: pro1x needs the legacy IMS change as well",
+      "revId": "5a787a88b22280b063d76a3e07a3bafbd8c6322e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
