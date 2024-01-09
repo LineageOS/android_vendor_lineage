@@ -40,6 +40,9 @@
 #                                          For example, for ARM devices,
 #                                          use zImage-dtb instead of zImage.
 #
+#   BOARD_KERNEL_APPEND_DTBS           = List of DTBs to be appended to the kernel image,
+#                                          wildcard is allowed for filename.
+#
 #   BOARD_DTB_CFG                      = Path to a mkdtboimg config file for dtb.img
 #
 #   BOARD_DTBO_CFG                     = Path to a mkdtboimg config file
@@ -347,6 +350,22 @@ define make-dtb-target
 $(call internal-make-kernel-target,$(DTB_OUT),$(1))
 endef
 
+# Make DTBs and append (to kernel image)
+# $(1): output directory path (The value passed to O=)
+# $(2): output kernel image path
+define make-dtbs-and-append
+	$(hide) if grep -q '^CONFIG_OF=y' $(1)/.config; then \
+			echo "Building DTBs"; \
+			$(call internal-make-kernel-target,$(1),dtbs); \
+			$(if $(BOARD_KERNEL_APPEND_DTBS),\
+				echo "Appending DTBs to the kernel image";\
+				$(foreach dtb,$(BOARD_KERNEL_APPEND_DTBS),\
+					cat `find $(1)/arch/$(KERNEL_ARCH)/boot/dts/$(dir $(dtb)) -maxdepth 1 -type f -name "$(notdir $(dtb))"` >> $(2);\
+				)\
+			)\
+		fi
+endef
+
 # $(1): modules list
 # $(2): output dir
 # $(3): mount point
@@ -446,11 +465,9 @@ $(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
 
 $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
 	@echo "Building Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
+	$(hide) rm -f $@
 	$(call make-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
-	$(hide) if grep -q '^CONFIG_OF=y' $(KERNEL_CONFIG); then \
-			echo "Building DTBs"; \
-			$(call make-kernel-target,dtbs); \
-		fi
+	$(call make-dtbs-and-append,$(KERNEL_OUT),$@)
 	$(hide) if grep -q '=m' $(KERNEL_CONFIG); then \
 			echo "Building Kernel Modules"; \
 			$(call make-kernel-target,modules) || exit "$$?"; \
@@ -620,7 +637,9 @@ $(RECOVERY_KERNEL_CONFIG): $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
 
 $(TARGET_PREBUILT_INT_RECOVERY_KERNEL): $(RECOVERY_KERNEL_CONFIG) $(DEPMOD) $(DTC)
 	@echo "Building Recovery Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
+	$(hide) rm -f $@
 	$(call make-recovery-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
+	$(call make-dtbs-and-append,$(RECOVERY_KERNEL_OUT),$@)
 
 
 endif
