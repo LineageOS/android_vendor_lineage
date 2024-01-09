@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5bb51e2_dd5d853e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-01-09T18:08:08Z",
+      "side": 1,
+      "message": "It was for avoiding DTBs getting appended for twice, now I\u0027ve switched to another logic and it should be better..?",
+      "revId": "953d2eb3ad5d6ffed0bde6275fd1e18a441e19d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
