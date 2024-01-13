@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2013-15 The CyanogenMod Project
-#           (C) 2017    The LineageOS Project
+# Copyright (C) 2013-2015 The CyanogenMod Project
+#           (C) 2017-2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,8 +20,6 @@
 # Run repopick.py -h for a description of this utility.
 #
 
-from __future__ import print_function
-
 import sys
 import json
 import os
@@ -35,17 +33,7 @@ from xml.etree import ElementTree
 try:
     import requests
 except ImportError:
-    try:
-        # For python3
-        import urllib.error
-        import urllib.request
-    except ImportError:
-        # For python2
-        import imp
-        import urllib2
-        urllib = imp.new_module('urllib')
-        urllib.error = urllib2
-        urllib.request = urllib2
+    import urllib.request
 
 
 # cmp() is not available in Python 3, define it manually
@@ -423,7 +411,7 @@ if __name__ == '__main__':
 
         # Print out some useful info
         if not args.quiet:
-            print(u'--> Subject:       "{0}"'.format(item['subject']))
+            print('--> Subject:       "{0}"'.format(item['subject']))
             print('--> Project path:  {0}'.format(project_path))
             print('--> Change number: {0} (Patch Set {1})'.format(item['id'], item['patchset']))
 
