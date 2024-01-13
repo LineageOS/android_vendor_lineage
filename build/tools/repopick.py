@@ -20,8 +20,6 @@
 # Run repopick.py -h for a description of this utility.
 #
 
-from __future__ import print_function
-
 import sys
 import json
 import os
@@ -35,17 +33,8 @@ from xml.etree import ElementTree
 try:
     import requests
 except ImportError:
-    try:
-        # For python3
-        import urllib.error
-        import urllib.request
-    except ImportError:
-        # For python2
-        import imp
-        import urllib2
-        urllib = imp.new_module('urllib')
-        urllib.error = urllib2
-        urllib.request = urllib2
+    import urllib.error
+    import urllib.request
 
 
 # cmp() is not available in Python 3, define it manually
