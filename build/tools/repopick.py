@@ -29,8 +29,12 @@ import sys
 import textwrap
 import urllib.parse
 import urllib.request
+from collections import defaultdict
 from functools import cmp_to_key
 from xml.etree import ElementTree
+
+# Default to LineageOS Gerrit
+DEFAULT_GERRIT = "https://review.lineageos.org"
 
 
 # cmp() is not available in Python 3, define it manually
@@ -114,7 +118,6 @@ def fetch_query_via_ssh(remote_url, query):
             reviews.append(review)
         except:
             pass
-    args.quiet or print("Found {0} reviews".format(len(reviews)))
     return reviews
 
 
@@ -179,10 +182,11 @@ def fetch_query(remote_url, query):
         )
 
 
-if __name__ == "__main__":
-    # Default to LineageOS Gerrit
-    default_gerrit = "https://review.lineageos.org"
+def is_closed(status):
+    return status not in ("OPEN", "NEW", "DRAFT")
 
+
+def main():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=textwrap.dedent(
@@ -269,7 +273,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-g",
         "--gerrit",
-        default=default_gerrit,
+        default=DEFAULT_GERRIT,
         metavar="",
         help="Gerrit Instance to use. Form proto://[user@]host[:port]",
     )
@@ -373,10 +377,6 @@ if __name__ == "__main__":
         revision = revision.split("refs/heads/")[-1]
         project_name_to_data[name][revision] = path
 
-    # get data on requested changes
-    reviews = []
-    change_numbers = []
-
     def cmp_reviews(review_a, review_b):
         current_a = review_a["current_revision"]
         parents_a = [
@@ -393,18 +393,20 @@ if __name__ == "__main__":
         else:
             return cmp(review_a["number"], review_b["number"])
 
+    # get data on requested changes
     if args.topic:
         reviews = fetch_query(args.gerrit, "topic:{0}".format(args.topic))
         change_numbers = [
             str(r["number"]) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))
         ]
-    if args.query:
+    elif args.query:
         reviews = fetch_query(args.gerrit, args.query)
         change_numbers = [
             str(r["number"]) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))
         ]
-    if args.change_number:
+    else:
         change_url_re = re.compile(r"https?://.+?/([0-9]+(?:/[0-9]+)?)/?")
+        change_numbers = []
         for c in args.change_number:
             change_number = change_url_re.findall(c)
             if change_number:
@@ -421,7 +423,7 @@ if __name__ == "__main__":
         )
 
     # make list of things to actually merge
-    mergables = []
+    mergables = defaultdict(list)
 
     # If --exclude is given, create the list of commits to ignore
     exclude = []
@@ -446,32 +448,71 @@ if __name__ == "__main__":
             print("Change %d not found, skipping" % change)
             continue
 
-        mergables.append(
-            {
-                "subject": review["subject"],
-                "project": review["project"],
-                "branch": review["branch"],
-                "change_id": review["change_id"],
-                "change_number": review["number"],
-                "status": review["status"],
-                "fetch": None,
-                "patchset": review["revisions"][review["current_revision"]]["_number"],
-            }
-        )
+        # Check if change is open and exit if it's not, unless -f is specified
+        if is_closed(review["status"]) and not args.force:
+            print(
+                "Change {} status is {}. Skipping the cherry pick.\nUse -f to force this pick.".format(
+                    change, review["status"]
+                )
+            )
+            continue
 
-        mergables[-1]["fetch"] = review["revisions"][review["current_revision"]][
-            "fetch"
-        ]
-        mergables[-1]["id"] = change
+        # Convert the project name to a project path
+        #   - check that the project path exists
+        if (
+            review["project"] in project_name_to_data
+            and review["branch"] in project_name_to_data[review["project"]]
+        ):
+            project_path = project_name_to_data[review["project"]][review["branch"]]
+        elif args.path:
+            project_path = args.path
+        elif (
+            review["project"] in project_name_to_data
+            and len(project_name_to_data[review["project"]]) == 1
+        ):
+            local_branch = list(project_name_to_data[review["project"]])[0]
+            project_path = project_name_to_data[review["project"]][local_branch]
+            print(
+                'WARNING: Project {0} has a different branch ("{1}" != "{2}")'.format(
+                    project_path, local_branch, review["branch"]
+                )
+            )
+        elif args.ignore_missing:
+            print(
+                "WARNING: Skipping {0} since there is no project directory for: {1}\n".format(
+                    review["id"], review["project"]
+                )
+            )
+            continue
+        else:
+            sys.stderr.write(
+                "ERROR: For {0}, could not determine the project path for project {1}\n".format(
+                    review["id"], review["project"]
+                )
+            )
+            sys.exit(1)
+
+        item = {
+            "subject": review["subject"],
+            "project_path": project_path,
+            "branch": review["branch"],
+            "change_id": review["change_id"],
+            "change_number": review["number"],
+            "status": review["status"],
+            "patchset": review["revisions"][review["current_revision"]]["_number"],
+            "fetch": review["revisions"][review["current_revision"]]["fetch"],
+            "id": change,
+        }
+
         if patchset:
             try:
-                mergables[-1]["fetch"] = [
+                item["fetch"] = [
                     review["revisions"][x]["fetch"]
                     for x in review["revisions"]
                     if review["revisions"][x]["_number"] == patchset
                 ][0]
-                mergables[-1]["id"] = "{0}/{1}".format(change, patchset)
-                mergables[-1]["patchset"] = patchset
+                item["id"] = "{0}/{1}".format(change, patchset)
+                item["patchset"] = patchset
             except (IndexError, ValueError):
                 args.quiet or print(
                     "ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.".format(
@@ -479,61 +520,9 @@ if __name__ == "__main__":
                     )
                 )
 
-    for item in mergables:
-        args.quiet or print("Applying change number {0}...".format(item["id"]))
-        # Check if change is open and exit if it's not, unless -f is specified
-        if (
-            item["status"] != "OPEN"
-            and item["status"] != "NEW"
-            and item["status"] != "DRAFT"
-        ):
-            if args.force:
-                print("!! Force-picking a closed change !!\n")
-            else:
-                print(
-                    "Change status is "
-                    + item["status"]
-                    + ". Skipping the cherry pick.\nUse -f to force this pick."
-                )
-                continue
+        mergables[project_path].append(item)
 
-        # Convert the project name to a project path
-        #   - check that the project path exists
-        project_path = None
-
-        if (
-            item["project"] in project_name_to_data
-            and item["branch"] in project_name_to_data[item["project"]]
-        ):
-            project_path = project_name_to_data[item["project"]][item["branch"]]
-        elif args.path:
-            project_path = args.path
-        elif (
-            item["project"] in project_name_to_data
-            and len(project_name_to_data[item["project"]]) == 1
-        ):
-            local_branch = list(project_name_to_data[item["project"]])[0]
-            project_path = project_name_to_data[item["project"]][local_branch]
-            print(
-                'WARNING: Project {0} has a different branch ("{1}" != "{2}")'.format(
-                    project_path, local_branch, item["branch"]
-                )
-            )
-        elif args.ignore_missing:
-            print(
-                "WARNING: Skipping {0} since there is no project directory for: {1}\n".format(
-                    item["id"], item["project"]
-                )
-            )
-            continue
-        else:
-            sys.stderr.write(
-                "ERROR: For {0}, could not determine the project path for project {1}\n".format(
-                    item["id"], item["project"]
-                )
-            )
-            sys.exit(1)
-
+    for project_path, per_path_mergables in mergables.items():
         # If --start-branch is given, create the branch (more than once per path is okay; repo ignores gracefully)
         if args.start_branch:
             subprocess.run(["repo", "start", args.start_branch[0], project_path])
@@ -557,9 +546,8 @@ if __name__ == "__main__":
         if branch_commits_count <= check_picked_count:
             check_picked_count = branch_commits_count - 1
 
-        # Check if change is already picked to HEAD...HEAD~check_picked_count
-        found_change = False
-        for i in range(0, check_picked_count):
+        picked_change_ids = []
+        for i in range(check_picked_count):
             if subprocess.call(
                 ["git", "cat-file", "-e", "HEAD~{0}".format(i)],
                 cwd=project_path,
@@ -571,116 +559,130 @@ if __name__ == "__main__":
             )
             output = output.split()
             if "Change-Id:" in output:
-                head_change_id = ""
                 for j, t in enumerate(reversed(output)):
                     if t == "Change-Id:":
                         head_change_id = output[len(output) - j]
+                        picked_change_ids.append(head_change_id.strip())
                         break
-                if head_change_id.strip() == item["change_id"]:
-                    print(
-                        "Skipping {0} - already picked in {1} as HEAD~{2}".format(
-                            item["id"], project_path, i
-                        )
-                    )
-                    found_change = True
-                    break
-        if found_change:
-            continue
 
-        # Print out some useful info
-        if not args.quiet:
-            print('--> Subject:       "{0}"'.format(item["subject"]))
-            print("--> Project path:  {0}".format(project_path))
-            print(
-                "--> Change number: {0} (Patch Set {1})".format(
-                    item["id"], item["patchset"]
+        for item in per_path_mergables:
+            # Check if change is already picked to HEAD...HEAD~check_picked_count
+            if item["change_id"] in picked_change_ids:
+                print(
+                    "Skipping {0} - already picked in {1}".format(
+                        item["id"], project_path
+                    )
                 )
+                continue
+
+            apply_change(args, item)
+
+
+def apply_change(args, item):
+    args.quiet or print("Applying change number {0}...".format(item["id"]))
+    if is_closed(item["status"]):
+        print("!! Force-picking a closed change !!\n")
+
+    project_path = item["project_path"]
+
+    # Print out some useful info
+    if not args.quiet:
+        print('--> Subject:       "{0}"'.format(item["subject"]))
+        print("--> Project path:  {0}".format(project_path))
+        print(
+            "--> Change number: {0} (Patch Set {1})".format(
+                item["id"], item["patchset"]
             )
+        )
 
-        if "anonymous http" in item["fetch"]:
-            method = "anonymous http"
-        else:
-            method = "ssh"
+    if "anonymous http" in item["fetch"]:
+        method = "anonymous http"
+    else:
+        method = "ssh"
 
-        if args.pull:
-            cmd = ["git", "pull", "--no-edit"]
-        else:
-            cmd = ["git", "fetch"]
-        if args.quiet:
-            cmd.append("--quiet")
-        cmd.extend(["", item["fetch"][method]["ref"]])
+    if args.pull:
+        cmd = ["git", "pull", "--no-edit"]
+    else:
+        cmd = ["git", "fetch"]
+    if args.quiet:
+        cmd.append("--quiet")
+    cmd.extend(["", item["fetch"][method]["ref"]])
 
-        # Try fetching from GitHub first if using default gerrit
-        if args.gerrit == default_gerrit:
-            if args.verbose:
-                print("Trying to fetch the change from GitHub")
+    # Try fetching from GitHub first if using default gerrit
+    if args.gerrit == DEFAULT_GERRIT:
+        if args.verbose:
+            print("Trying to fetch the change from GitHub")
 
-            cmd[-2] = "github"
-            if not args.quiet:
-                print(cmd)
-            result = subprocess.call(cmd, cwd=project_path)
-            FETCH_HEAD = "{0}/.git/FETCH_HEAD".format(project_path)
-            if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
-                print("ERROR: git command failed")
-                sys.exit(result)
-        # Check if it worked
-        if args.gerrit != default_gerrit or os.stat(FETCH_HEAD).st_size == 0:
-            # If not using the default gerrit or github failed, fetch from gerrit.
-            if args.verbose:
-                if args.gerrit == default_gerrit:
-                    print(
-                        "Fetching from GitHub didn't work, trying to fetch the change from Gerrit"
-                    )
-                else:
-                    print("Fetching from {0}".format(args.gerrit))
-
-            cmd[-2] = item["fetch"][method]["url"]
-            if not args.quiet:
-                print(cmd)
-            result = subprocess.call(cmd, cwd=project_path)
-            if result != 0:
-                print("ERROR: git command failed")
-                sys.exit(result)
-        # Perform the cherry-pick
-        if not args.pull:
-            if args.quiet:
-                cmd_out = subprocess.DEVNULL
+        cmd[-2] = "github"
+        if not args.quiet:
+            print(cmd)
+        result = subprocess.call(cmd, cwd=project_path)
+        FETCH_HEAD = "{0}/.git/FETCH_HEAD".format(project_path)
+        if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
+            print("ERROR: git command failed")
+            sys.exit(result)
+    # Check if it worked
+    if args.gerrit != DEFAULT_GERRIT or os.stat(FETCH_HEAD).st_size == 0:
+        # If not using the default gerrit or github failed, fetch from gerrit.
+        if args.verbose:
+            if args.gerrit == DEFAULT_GERRIT:
+                print(
+                    "Fetching from GitHub didn't work, trying to fetch the change from Gerrit"
+                )
             else:
-                cmd_out = None
+                print("Fetching from {0}".format(args.gerrit))
+
+        cmd[-2] = item["fetch"][method]["url"]
+        if not args.quiet:
+            print(cmd)
+        result = subprocess.call(cmd, cwd=project_path)
+        if result != 0:
+            print("ERROR: git command failed")
+            sys.exit(result)
+    # Perform the cherry-pick
+    if not args.pull:
+        if args.quiet:
+            cmd_out = subprocess.DEVNULL
+        else:
+            cmd_out = None
+        result = subprocess.call(
+            ["git", "cherry-pick", "--ff", item["revision"]],
+            cwd=project_path,
+            stdout=cmd_out,
+            stderr=cmd_out,
+        )
+        if result != 0:
             result = subprocess.call(
-                ["git", "cherry-pick", "--ff", item["revision"]],
+                ["git", "diff-index", "--quiet", "HEAD", "--"],
                 cwd=project_path,
                 stdout=cmd_out,
                 stderr=cmd_out,
             )
-            if result != 0:
-                result = subprocess.call(
-                    ["git", "diff-index", "--quiet", "HEAD", "--"],
+            if result == 0:
+                print(
+                    "WARNING: git command resulted with an empty commit, aborting cherry-pick"
+                )
+                subprocess.call(
+                    ["git", "cherry-pick", "--abort"],
                     cwd=project_path,
                     stdout=cmd_out,
                     stderr=cmd_out,
                 )
-                if result == 0:
-                    print(
-                        "WARNING: git command resulted with an empty commit, aborting cherry-pick"
-                    )
-                    subprocess.call(
-                        ["git", "cherry-pick", "--abort"],
-                        cwd=project_path,
-                        stdout=cmd_out,
-                        stderr=cmd_out,
-                    )
-                elif args.reset:
-                    print("ERROR: git command failed, aborting cherry-pick")
-                    subprocess.call(
-                        ["git", "cherry-pick", "--abort"],
-                        cwd=project_path,
-                        stdout=cmd_out,
-                        stderr=cmd_out,
-                    )
-                    sys.exit(result)
-                else:
-                    print("ERROR: git command failed")
-                    sys.exit(result)
-        if not args.quiet:
-            print("")
+            elif args.reset:
+                print("ERROR: git command failed, aborting cherry-pick")
+                subprocess.call(
+                    ["git", "cherry-pick", "--abort"],
+                    cwd=project_path,
+                    stdout=cmd_out,
+                    stderr=cmd_out,
+                )
+                sys.exit(result)
+            else:
+                print("ERROR: git command failed")
+                sys.exit(result)
+    if not args.quiet:
+        print("")
+
+
+if __name__ == "__main__":
+    main()
