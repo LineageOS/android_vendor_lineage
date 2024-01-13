@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd2febf2_75e4d7aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-13T16:20:03Z",
+      "side": 1,
+      "message": "there is still large room for clean-up, but now I can finish luk\u0027s picklist in 1 minute...",
+      "revId": "71213bfc2c52e1be8604e1d99739f1d0c08c7778",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
