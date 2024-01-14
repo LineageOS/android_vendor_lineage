@@ -60,7 +60,7 @@ def fetch_query_via_ssh(remote_url, query):
     elif remote_url.count(":") == 1:
         (uri, userhost) = remote_url.split(":")
         userhost = userhost[2:]
-        port = 29418
+        port = "29418"
     else:
         raise Exception("Malformed URI: Expecting ssh://[user@]host[:port]")
 
@@ -68,16 +68,19 @@ def fetch_query_via_ssh(remote_url, query):
         [
             "ssh",
             "-x",
-            "-p{0}".format(port),
+            "-p",
+            port,
             userhost,
             "gerrit",
             "query",
-            "--format=JSON --patch-sets --current-patch-set",
+            "--format",
+            "JSON",
+            "--patch-sets",
+            "--current-patch-set",
             query,
-        ]
+        ],
+        text=True,
     )
-    if not hasattr(out, "encode"):
-        out = out.decode()
     reviews = []
     for line in out.split("\n"):
         try:
@@ -317,9 +320,7 @@ if __name__ == "__main__":
     # If --abandon-first is given, abandon the branch before starting
     if args.abandon_first:
         # Determine if the branch already exists; skip the abandon if it does not
-        plist = subprocess.check_output(["repo", "info"])
-        if not hasattr(plist, "encode"):
-            plist = plist.decode()
+        plist = subprocess.check_output(["repo", "info"], text=True)
         needs_abandon = False
         for pline in plist.splitlines():
             matchObj = re.match(r"Local Branches.*\[(.*)\]", pline)
@@ -332,14 +333,14 @@ if __name__ == "__main__":
             # Perform the abandon only if the branch already exists
             if not args.quiet:
                 print("Abandoning branch: %s" % args.start_branch[0])
-            subprocess.check_output(["repo", "abandon", args.start_branch[0]])
+            subprocess.run(["repo", "abandon", args.start_branch[0]])
             if not args.quiet:
                 print("")
 
     # Get the main manifest from repo
     #   - convert project name and revision to a path
     project_name_to_data = {}
-    manifest = subprocess.check_output(["repo", "manifest"])
+    manifest = subprocess.check_output(["repo", "manifest"], text=True)
     xml_root = ElementTree.fromstring(manifest)
     projects = xml_root.findall("project")
     remotes = xml_root.findall("remote")
@@ -528,16 +529,22 @@ if __name__ == "__main__":
 
         # If --start-branch is given, create the branch (more than once per path is okay; repo ignores gracefully)
         if args.start_branch:
-            subprocess.check_output(
-                ["repo", "start", args.start_branch[0], project_path]
-            )
+            subprocess.run(["repo", "start", args.start_branch[0], project_path])
 
         # Determine the maximum commits to check already picked changes
         check_picked_count = args.check_picked
-        max_count = "--max-count={0}".format(check_picked_count + 1)
         branch_commits_count = int(
             subprocess.check_output(
-                ["git", "rev-list", "--count", max_count, "HEAD"], cwd=project_path
+                [
+                    "git",
+                    "rev-list",
+                    "--count",
+                    "--max-count",
+                    str(check_picked_count + 1),
+                    "HEAD",
+                ],
+                cwd=project_path,
+                text=True,
             )
         )
         if branch_commits_count <= check_picked_count:
@@ -553,11 +560,8 @@ if __name__ == "__main__":
             ):
                 continue
             output = subprocess.check_output(
-                ["git", "show", "-q", "HEAD~{0}".format(i)], cwd=project_path
+                ["git", "show", "-q", f"HEAD~{i}"], cwd=project_path, text=True
             )
-            # make sure we have a string on Python 3
-            if isinstance(output, bytes):
-                output = output.decode("utf-8")
             output = output.split()
             if "Change-Id:" in output:
                 head_change_id = ""
@@ -591,20 +595,23 @@ if __name__ == "__main__":
         else:
             method = "ssh"
 
+        if args.pull:
+            cmd = ["git", "pull", "--no-edit"]
+        else:
+            cmd = ["git", "fetch"]
+        if args.quiet:
+            cmd.append("--quiet")
+        cmd.extend(["", item["fetch"][method]["ref"]])
+
         # Try fetching from GitHub first if using default gerrit
         if args.gerrit == default_gerrit:
             if args.verbose:
                 print("Trying to fetch the change from GitHub")
 
-            if args.pull:
-                cmd = ["git pull --no-edit github", item["fetch"][method]["ref"]]
-            else:
-                cmd = ["git fetch github", item["fetch"][method]["ref"]]
-            if args.quiet:
-                cmd.append("--quiet")
-            else:
+            cmd[-2] = "github"
+            if not args.quiet:
                 print(cmd)
-            result = subprocess.call([" ".join(cmd)], cwd=project_path, shell=True)
+            result = subprocess.call(cmd, cwd=project_path)
             FETCH_HEAD = "{0}/.git/FETCH_HEAD".format(project_path)
             if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
                 print("ERROR: git command failed")
@@ -620,60 +627,47 @@ if __name__ == "__main__":
                 else:
                     print("Fetching from {0}".format(args.gerrit))
 
-            if args.pull:
-                cmd = [
-                    "git pull --no-edit",
-                    item["fetch"][method]["url"],
-                    item["fetch"][method]["ref"],
-                ]
-            else:
-                cmd = [
-                    "git fetch",
-                    item["fetch"][method]["url"],
-                    item["fetch"][method]["ref"],
-                ]
-            if args.quiet:
-                cmd.append("--quiet")
-            else:
+            cmd[-2] = item["fetch"][method]["url"]
+            if not args.quiet:
                 print(cmd)
-            result = subprocess.call([" ".join(cmd)], cwd=project_path, shell=True)
+            result = subprocess.call(cmd, cwd=project_path)
             if result != 0:
                 print("ERROR: git command failed")
                 sys.exit(result)
         # Perform the cherry-pick
         if not args.pull:
-            cmd = ["git cherry-pick --ff FETCH_HEAD"]
             if args.quiet:
-                cmd_out = open(os.devnull, "wb")
+                cmd_out = subprocess.DEVNULL
             else:
                 cmd_out = None
             result = subprocess.call(
-                cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out
+                ["git", "cherry-pick", "--ff", item["revision"]],
+                cwd=project_path,
+                stdout=cmd_out,
+                stderr=cmd_out,
             )
             if result != 0:
-                cmd = ["git diff-index --quiet HEAD --"]
                 result = subprocess.call(
-                    cmd, cwd=project_path, shell=True, stdout=cmd_out, stderr=cmd_out
+                    ["git", "diff-index", "--quiet", "HEAD", "--"],
+                    cwd=project_path,
+                    stdout=cmd_out,
+                    stderr=cmd_out,
                 )
                 if result == 0:
                     print(
                         "WARNING: git command resulted with an empty commit, aborting cherry-pick"
                     )
-                    cmd = ["git cherry-pick --abort"]
                     subprocess.call(
-                        cmd,
+                        ["git", "cherry-pick", "--abort"],
                         cwd=project_path,
-                        shell=True,
                         stdout=cmd_out,
                         stderr=cmd_out,
                     )
                 elif args.reset:
                     print("ERROR: git command failed, aborting cherry-pick")
-                    cmd = ["git cherry-pick --abort"]
                     subprocess.call(
-                        cmd,
+                        ["git", "cherry-pick", "--abort"],
                         cwd=project_path,
-                        shell=True,
                         stdout=cmd_out,
                         stderr=cmd_out,
                     )
