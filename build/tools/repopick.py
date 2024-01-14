@@ -57,10 +57,10 @@ def fetch_query_via_ssh(remote_url, query):
     We have to get the data, then transform it to match what we're expecting from the HTTP RESET API
     """
     if remote_url.count(":") == 2:
-        (uri, userhost, port) = remote_url.split(":")
+        (_, userhost, port) = remote_url.split(":")
         userhost = userhost[2:]
     elif remote_url.count(":") == 1:
-        (uri, userhost) = remote_url.split(":")
+        (_, userhost) = remote_url.split(":")
         userhost = userhost[2:]
         port = "29418"
     else:
@@ -117,7 +117,7 @@ def fetch_query_via_ssh(remote_url, query):
                 "status": data["status"],
             }
             reviews.append(review)
-        except:
+        except Exception:
             pass
     return reviews
 
@@ -376,6 +376,8 @@ def main():
     projects = xml_root.findall("project")
     remotes = xml_root.findall("remote")
     default_revision = xml_root.findall("default")[0].get("revision")
+    if not default_revision:
+        raise ValueError("Failed to get revision from manifest")
 
     # dump project data into the a list of dicts with the following data:
     # {project: {path, revision}}
@@ -534,11 +536,12 @@ def main():
                     item["revision"] = x
                     break
             else:
-                args.quiet or print(
-                    "ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.".format(
-                        change, patchset
+                if not args.quiet:
+                    print(
+                        "ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.".format(
+                            change, patchset
+                        )
                     )
-                )
 
         mergables[project_path].append(item)
 
@@ -665,7 +668,8 @@ def do_git_fetch_pull(args, item):
 
 
 def apply_change(args, item):
-    args.quiet or print("Applying change number {0}...".format(item["id"]))
+    if not args.quiet:
+        print("Applying change number {0}...".format(item["id"]))
     if is_closed(item["status"]):
         print("!! Force-picking a closed change !!\n")
 
