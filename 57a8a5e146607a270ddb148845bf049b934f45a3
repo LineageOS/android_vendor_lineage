@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "50027452_3ca57335",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-14T05:18:51Z",
+      "side": 1,
+      "message": "1. subsequent patch uses py3-only features\n2. no one uses py2 in 2024",
+      "parentUuid": "b52ce52b_2b71c3bb",
+      "revId": "57a8a5e146607a270ddb148845bf049b934f45a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "97b5343f_3eb8cc9e",
@@ -31,6 +49,30 @@
       "writtenOn": "2024-01-13T16:27:41Z",
       "side": 1,
       "message": "Update while at it.",
+      "range": {
+        "startLine": 4,
+        "startChar": 16,
+        "endLine": 4,
+        "endChar": 24
+      },
+      "revId": "57a8a5e146607a270ddb148845bf049b934f45a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8bc2ceb7_4526f0ef",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-14T05:18:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "97b5343f_3eb8cc9e",
       "range": {
         "startLine": 4,
         "startChar": 16,
