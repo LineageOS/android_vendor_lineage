@@ -641,28 +641,27 @@ def do_git_fetch_pull(args, item):
         if not args.quiet:
             print(cmd)
         result = subprocess.call(cmd, cwd=project_path)
-        FETCH_HEAD = "{0}/.git/FETCH_HEAD".format(project_path)
-        if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
-            print("ERROR: git command failed")
-            sys.exit(result)
-    # Check if it worked
-    if args.gerrit != DEFAULT_GERRIT or os.stat(FETCH_HEAD).st_size == 0:
-        # If not using the default gerrit or github failed, fetch from gerrit.
-        if args.verbose:
-            if args.gerrit == DEFAULT_GERRIT:
-                print(
-                    "Fetching from GitHub didn't work, trying to fetch the change from Gerrit"
-                )
-            else:
-                print("Fetching from {0}".format(args.gerrit))
+        # Check if it worked
+        if result == 0 or commit_exists(project_path, item["revision"]):
+            return
+        print("ERROR: git command failed")
 
-        cmd[-2] = item["fetch"][method]["url"]
-        if not args.quiet:
-            print(cmd)
-        result = subprocess.call(cmd, cwd=project_path)
-        if result != 0:
-            print("ERROR: git command failed")
-            sys.exit(result)
+    # If not using the default gerrit or github failed, fetch from gerrit.
+    if args.verbose:
+        if args.gerrit == DEFAULT_GERRIT:
+            print(
+                "Fetching from GitHub didn't work, trying to fetch the change from Gerrit"
+            )
+        else:
+            print("Fetching from {0}".format(args.gerrit))
+
+    cmd[-2] = item["fetch"][method]["url"]
+    if not args.quiet:
+        print(cmd)
+    result = subprocess.call(cmd, cwd=project_path)
+    if result != 0 and not commit_exists(project_path, item["revision"]):
+        print("ERROR: git command failed")
+        sys.exit(result)
 
 
 def apply_change(args, item):
