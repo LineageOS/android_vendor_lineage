@@ -51,6 +51,24 @@
       "parentUuid": "8cd1b303_ec965fbc",
       "revId": "26aca85c713d32a722f2aff56f3ed74a96aaf305",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e39d5dd_9b8f3b13",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-14T10:32:08Z",
+      "side": 1,
+      "message": "note: it was \"working\" because invoked with shell\u003dTrue...",
+      "parentUuid": "6ea721d3_dffb8239",
+      "revId": "26aca85c713d32a722f2aff56f3ed74a96aaf305",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
