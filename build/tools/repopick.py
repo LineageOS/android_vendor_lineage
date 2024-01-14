@@ -27,13 +27,9 @@ import re
 import subprocess
 import sys
 import textwrap
+import urllib.request
 from functools import cmp_to_key
 from xml.etree import ElementTree
-
-try:
-    import requests
-except ImportError:
-    import urllib.request
 
 
 # cmp() is not available in Python 3, define it manually
@@ -120,39 +116,37 @@ def fetch_query_via_ssh(remote_url, query):
     return reviews
 
 
-def fetch_query_via_http(remote_url, query):
-    if "requests" in sys.modules:
-        auth = None
-        if os.path.isfile(os.getenv("HOME") + "/.gerritrc"):
-            f = open(os.getenv("HOME") + "/.gerritrc", "r")
-            for line in f:
-                parts = line.rstrip().split("|")
-                if parts[0] in remote_url:
-                    auth = requests.auth.HTTPBasicAuth(
-                        username=parts[1], password=parts[2]
-                    )
-        status_code = "-1"
-        if auth:
-            url = "{0}/a/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS".format(
-                remote_url, query
-            )
-            data = requests.get(url, auth=auth)
-            status_code = str(data.status_code)
-        if status_code != "200":
-            # They didn't get good authorization or data, Let's try the old way
-            url = "{0}/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS".format(
-                remote_url, query
-            )
-            data = requests.get(url)
-        reviews = json.loads(data.text[5:])
-    else:
-        """Given a query, fetch the change numbers via http"""
-        url = "{0}/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS".format(
-            remote_url, query
-        )
-        data = urllib.request.urlopen(url).read().decode("utf-8")
-        reviews = json.loads(data[5:])
+def fetch_query_via_http(remote_url, query, auth=True):
+    """Given a query, fetch the change numbers via http"""
+    url_suffix = f"/changes/?q={query}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS"
+    if auth:
+        gerritrc = os.path.expanduser("~/.gerritrc")
+        username = password = ""
+        if os.path.isfile(gerritrc):
+            with open(gerritrc, "r") as f:
+                for line in f:
+                    parts = line.rstrip().split("|")
+                    if parts[0] in remote_url:
+                        username, password = parts[1], parts[2]
 
+        if username and password:
+            url = remote_url + "/a" + url_suffix
+            password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
+            password_mgr.add_password(None, url, username, password)
+            auth_handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
+            opener = urllib.request.build_opener(auth_handler)
+            response = opener.open(url)
+            if response.getcode() != 200:
+                # They didn't get good authorization or data, Let's try the old way
+                return fetch_query_via_http(remote_url, query, False)
+        else:
+            return fetch_query_via_http(remote_url, query, False)
+    else:
+        url = remote_url + url_suffix
+        response = urllib.request.urlopen(url)
+
+    data = response.read().decode("utf-8")
+    reviews = json.loads(data[5:])
     for review in reviews:
         review["number"] = review.pop("_number")
 
