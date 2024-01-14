@@ -16,6 +16,23 @@
       "message": "tested and works very nice, thanks!",
       "revId": "26aca85c713d32a722f2aff56f3ed74a96aaf305",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8cd1b303_ec965fbc",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-14T09:56:55Z",
+      "side": 1,
+      "message": "`[\u0027git cherry-pick --ff\u0027, item[\u0027revision\u0027]]`?",
+      "revId": "26aca85c713d32a722f2aff56f3ed74a96aaf305",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
