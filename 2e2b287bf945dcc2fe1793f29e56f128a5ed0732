@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b728cc8_50321f6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-19T23:16:31Z",
+      "side": 1,
+      "message": "I wrote this commit message, but then realized that PRODUCT_IS_ATV is set by Google and not us in device/google/atv tree, which all ATV devices seem to inherit from in its specific trees. We need to standardize this.",
+      "revId": "2e2b287bf945dcc2fe1793f29e56f128a5ed0732",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
