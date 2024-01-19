@@ -16,6 +16,46 @@
       "message": "I wrote this commit message, but then realized that PRODUCT_IS_ATV is set by Google and not us in device/google/atv tree, which all ATV devices seem to inherit from in its specific trees. We need to standardize this.",
       "revId": "2e2b287bf945dcc2fe1793f29e56f128a5ed0732",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c65cd940_2bc88a97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-19T23:52:40Z",
+      "side": 1,
+      "message": "And remove the device/google/atv inhiterance from the device trees.",
+      "revId": "2e2b287bf945dcc2fe1793f29e56f128a5ed0732",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18e0bdc6_f6735ba2",
+        "filename": "config/common_car.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-19T23:52:40Z",
+      "side": 1,
+      "message": "IMO, we should do it like this, for ATV.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 71
+      },
+      "revId": "2e2b287bf945dcc2fe1793f29e56f128a5ed0732",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
