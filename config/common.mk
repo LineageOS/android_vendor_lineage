@@ -106,10 +106,14 @@ PRODUCT_PACKAGES += \
     build-manifest
 
 # Lineage packages
+ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard \
+    LineageSetupWizard
+endif
+
+PRODUCT_PACKAGES += \
     Updater
 
 PRODUCT_COPY_FILES += \
