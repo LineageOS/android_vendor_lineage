@@ -95,6 +95,19 @@ ifneq ($(TARGET_DISABLE_EPPE),true)
 $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(LINEAGE_BUILD)/$(TARGET_PRODUCT).mk),product_manifest.xml rild Calendar Launcher3 Launcher3Go Launcher3QuickStep Launcher3QuickStepGo android.hidl.memory@1.0-impl.vendor vndk_apex_snapshot_package)
 endif
 
+ifeq ($(PRODUCT_IS_ATV),)
+# Include AOSP audio files
+include vendor/lineage/config/aosp_audio.mk
+
+# Include Lineage audio files
+include vendor/lineage/config/lineage_audio.mk
+
+# Default notification/alarm sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.notification_sound=Argon.ogg \
+    ro.config.alarm_alert=Hassium.ogg
+endif
+
 # Bootanimation
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
@@ -109,6 +122,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     Updater
+
+ifeq ($(PRODUCT_IS_ATV),)
+PRODUCT_PACKAGES += \
+    ExactCalculator \
+    Jelly
+endif
 
 ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 PRODUCT_PACKAGES += \
