@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7793a459_bb067757",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-20T14:11:35Z",
+      "side": 1,
+      "message": "Can\u0027t skip LineageSettingsProvider since frameworks/sdk depends on it.",
+      "revId": "603d17277b9f777cb61079f93d7c967aed7b00fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
