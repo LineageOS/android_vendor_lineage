@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91fd789c_adec5c8e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-20T09:45:00Z",
+      "side": 1,
+      "message": "any issue of the CL left to be resolved? I\u0027ve been using it for days and haven\u0027t noticed regressions so far.",
+      "revId": "01a5597c374b9ccf2f48c3101556b3f0c3889b7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
