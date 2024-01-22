@@ -33,6 +33,29 @@
       "message": "I would have kept requests, but urllib is fine too",
       "revId": "b3f3a8fbe4063bf6c4f37e522b4a734067b99004",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fbe0bc2a_c655d382",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-22T15:39:18Z",
+      "side": 1,
+      "message": "It turns out that gerrit hates this one to be url-encoded. The raw string looks like `change:368310+OR+change:368311`, and the request will fail if it\u0027s encoded.\n\nThis is also the case for curl. For instance,\n\u003e curl \u0027https://review.lineageos.org/changes?q\u003dchange:368310+OR+change:368311\u0026o\u003dCURRENT_REVISION\u0026o\u003dALL_REVISIONS\u0026o\u003dALL_COMMITS\u0027\n\nworks, but\n\u003e curl https://review.lineageos.org/changes --get --data-urlencode \u0027q\u003dchange:368310+OR+change:368311\u0027 --data-urlencode \u0027o\u003dCURRENT_REVISION\u0027 --data-urlencode \u0027o\u003dALL_REVISIONS\u0027 --data-urlencode \u0027o\u003dALL_COMMITS\u0027\n\nfails",
+      "range": {
+        "startLine": 127,
+        "startChar": 17,
+        "endLine": 127,
+        "endChar": 22
+      },
+      "revId": "b3f3a8fbe4063bf6c4f37e522b4a734067b99004",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
