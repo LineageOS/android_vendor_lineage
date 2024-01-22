@@ -34,6 +34,24 @@
       "parentUuid": "bf979467_199eded8",
       "revId": "b31e9bd3dce0f05ac7b59eb0d5c9a71cf60ba939",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77b6df48_a5923146",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-22T16:03:51Z",
+      "side": 1,
+      "message": "I considered it at the very beginning, but turning this script into async code requires more refactoring so I took the easier approach.",
+      "parentUuid": "e2faa810_f394c898",
+      "revId": "b31e9bd3dce0f05ac7b59eb0d5c9a71cf60ba939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
