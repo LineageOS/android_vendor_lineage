@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "155da3ef_d94b4781",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-22T16:01:21Z",
+      "side": 1,
+      "message": "requests is nice and cleaner but it\u0027s a third-party library. implicitly depending on it isn\u0027t a good idea.",
+      "parentUuid": "e86ab4a1_dbd5088b",
+      "revId": "b3f3a8fbe4063bf6c4f37e522b4a734067b99004",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fbe0bc2a_c655d382",
