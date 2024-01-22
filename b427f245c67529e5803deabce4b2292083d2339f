@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "46082956_62b2b779",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-22T13:23:25Z",
+      "side": 1,
+      "message": "\"--format\", \"JSON\" doesn\u0027t work?",
+      "revId": "b427f245c67529e5803deabce4b2292083d2339f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7eae1751_30fa83af",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 541,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-22T13:23:25Z",
+      "side": 1,
+      "message": "similar here.",
+      "revId": "b427f245c67529e5803deabce4b2292083d2339f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c112b04_8f093d23",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 602,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-22T13:23:25Z",
+      "side": 1,
+      "message": "what is the point of empty arg?",
+      "revId": "b427f245c67529e5803deabce4b2292083d2339f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
