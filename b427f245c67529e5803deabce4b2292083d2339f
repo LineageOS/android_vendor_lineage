@@ -104,6 +104,24 @@
       "parentUuid": "3c112b04_8f093d23",
       "revId": "b427f245c67529e5803deabce4b2292083d2339f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "408bba3e_9a5b3e47",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 602,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-22T15:08:48Z",
+      "side": 1,
+      "message": "ah, ok",
+      "parentUuid": "8bb329f5_8145dbae",
+      "revId": "b427f245c67529e5803deabce4b2292083d2339f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
