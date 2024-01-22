@@ -56,6 +56,30 @@
       },
       "revId": "b3f3a8fbe4063bf6c4f37e522b4a734067b99004",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3d58559_55ea65e1",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-22T15:58:55Z",
+      "side": 1,
+      "message": "not the case, gerrit is sane. the old insane code replaced spaces with plus signs before passing to this function so the plus signs get encoded twice...",
+      "parentUuid": "fbe0bc2a_c655d382",
+      "range": {
+        "startLine": 127,
+        "startChar": 17,
+        "endLine": 127,
+        "endChar": 22
+      },
+      "revId": "b3f3a8fbe4063bf6c4f37e522b4a734067b99004",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
