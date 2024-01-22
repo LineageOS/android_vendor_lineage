@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f44621b_a9637e65",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-22T15:07:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "46082956_62b2b779",
+      "revId": "b427f245c67529e5803deabce4b2292083d2339f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7eae1751_30fa83af",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a31425fc_347b9288",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 541,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-22T15:07:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7eae1751_30fa83af",
+      "revId": "b427f245c67529e5803deabce4b2292083d2339f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3c112b04_8f093d23",
@@ -48,6 +84,24 @@
       "writtenOn": "2024-01-22T13:23:25Z",
       "side": 1,
       "message": "what is the point of empty arg?",
+      "revId": "b427f245c67529e5803deabce4b2292083d2339f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8bb329f5_8145dbae",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 602,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-01-22T15:07:55Z",
+      "side": 1,
+      "message": "it\u0027s the placeholder for git remote and will be replaced below",
+      "parentUuid": "3c112b04_8f093d23",
       "revId": "b427f245c67529e5803deabce4b2292083d2339f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
