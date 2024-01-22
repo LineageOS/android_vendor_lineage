@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8ce95eb_36c4f810",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-22T13:24:52Z",
+      "side": 1,
+      "message": "urllib.parse.urlencode pls?",
+      "revId": "a117388ab1f19749fc248130c29836d172b5740c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
