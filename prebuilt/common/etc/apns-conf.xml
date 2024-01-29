@@ -1187,7 +1187,7 @@
   <apn carrier="Tethered Mobile Internet" mcc="302" mnc="220" apn="isp.mb.com" type="dun" mvno_type="gid" mvno_match_data="50" />
   <apn carrier="Mobile Internet" mcc="302" mnc="220" apn="sp.mb.com" type="default,mms,agps,supl,fota,hipri" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_type="gid" mvno_match_data="4D4F" />
   <apn carrier="Tethered Mobile Internet" mcc="302" mnc="220" apn="isp.mb.com" type="dun" mvno_type="gid" mvno_match_data="4D4F" />
-  <apn carrier="Public Mobile" mcc="302" mnc="220" apn="sp.mb.com" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="74.49.0.18" mmsport="80" mvno_match_data="50" mvno_type="gid" type="default,supl,mms" />
+  <apn carrier="Public Mobile" mcc="302" mnc="220" apn="sp.mb.com" mmsc="http://aliasredirect.net/proxy/mb/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" mvno_match_data="50" mvno_type="gid" type="default,supl,mms" />
   <apn carrier="TELUS SP" mcc="302" mnc="221" apn="sp.telus.com" type="default,mms,supl,hipri,ia" mmsc="http://aliasredirect.net/proxy/mmsc" mmsproxy="mmscproxy.mobility.ca" mmsport="8799" protocol="IP" roaming_protocol="IP" mvno_match_data="5455" mvno_type="gid" />
   <apn carrier="TELUS ISP" mcc="302" mnc="221" apn="isp.telus.com" server="*" type="dun" protocol="IP" mvno_match_data="5455" mvno_type="gid" />
   <apn carrier="TELUS IMS" mcc="302" mnc="221" apn="ims" type="ims" protocol="IP" mvno_match_data="5455" mvno_type="gid" user_visible="false" />
