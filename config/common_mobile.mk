@@ -3,7 +3,8 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds
+    Backgrounds \
+    Glimpse
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
