@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0857d251_95070f9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2024-02-02T04:02:53Z",
+      "side": 1,
+      "message": "tests good on Public Mobile and should be good for the other MVNO\u0027s too\n\nhttps://photos.app.goo.gl/egWQjTnQyFwzvgCB9\n\nbeforehand I was already having issues with MMS receiving and sending",
+      "revId": "9316937bb7cdd02bacf59f66a02d8208cef73f83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
