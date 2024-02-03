@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e17837db_4a57c52d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-02-03T20:30:31Z",
+      "side": 1,
+      "message": "Verified on foster for atv. Long press power brings up the assistant overlay. Needs verification on mobile that no regressions are seen.",
+      "revId": "1b42278da28aea97deff600b8373e289240c53e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
