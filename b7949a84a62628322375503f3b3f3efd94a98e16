@@ -33,6 +33,24 @@
       "message": "What about config_wallpaper_picker_action ?",
       "revId": "b7949a84a62628322375503f3b3f3efd94a98e16",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aafc44e6_65b94168",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-02-04T15:02:02Z",
+      "side": 1,
+      "message": "It\u0027s unused",
+      "parentUuid": "8e2617d8_b29c74fd",
+      "revId": "b7949a84a62628322375503f3b3f3efd94a98e16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
