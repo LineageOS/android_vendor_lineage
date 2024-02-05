@@ -16,6 +16,23 @@
       "message": "Verified building foster against a 6.1 kernel, modules were copied to boot. My vendor_boot targets have not been brought up to 21 yet, so I need independent verification of that path.",
       "revId": "f16cd409d9be80c1047948402725b6164f1558bd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74481e9e_fa68df0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-05T00:04:07Z",
+      "side": 1,
+      "message": "nothing explodes on my flight of devices.",
+      "revId": "f16cd409d9be80c1047948402725b6164f1558bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
