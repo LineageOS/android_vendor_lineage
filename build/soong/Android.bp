@@ -82,6 +82,23 @@ aapt_version_code {
 }
 
 soong_config_module_type {
+    name: "target_audio_broken_threadpool",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["target_audio_broken_threadpool"],
+    properties: ["cflags"],
+}
+
+target_audio_broken_threadpool {
+    name: "audio_broken_threadpool_defaults",
+    soong_config_variables: {
+        target_audio_broken_threadpool: {
+            cflags: ["-DDISABLE_AUDIO_THREADPOOL"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
