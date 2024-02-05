@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a9d7edc_e279abff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2024-02-05T21:21:38Z",
+      "side": 1,
+      "message": "Tested with hawao.\nIn case there are more than nine notifications present, the AOD display shows a row of nine icons and an overflow dot. Takes approx. 70% of the portrait screen width.\nThis maximum of nine corresponds quite well with the limit of four (plus overvlow dot) for the notification area in the statusbar (less then half the width of the screen).",
+      "revId": "40121fc964d4e23ee9e718e1f2416a31f84f8130",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
