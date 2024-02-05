@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.240105.004"
+readonly build_id="UQ1A.240205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r17"
-readonly aosp_tag="android-14.0.0_r20"
+readonly prev_aosp_tag="android-14.0.0_r20"
+readonly aosp_tag="android-14.0.0_r22"
 
-readonly build_number="11206848"
+readonly build_number="11224170"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-uq1a.240105.004-factory-dbeec671.zip"
-readonly image_sha256="dbeec67184b93b6537caadbeedafd5d5cbc885e2770eee0f49b4bb0754365af6"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-uq1a.240205.002-factory-a5612ce9.zip"
+readonly image_sha256="a5612ce96f6d6f615d56ce71ae25acdc32aeddd08bd0fc7b76c21f91aa8d26a4"
 
-readonly flash_url="https://flash.android.com/build/11206848?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/11224170?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-uq1a.240105.004-5082e782.zip"
-readonly ota_sha256="5082e782a0e554c8335f09d197e80c7e74abf284c41daefaa2cd08a7cdf0b85d"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-uq1a.240205.002-016d485b.zip"
+readonly ota_sha256="016d485b0c3cbd123ee0aec4b33f776823a05033b0f9cc5fd4cb212c5299f165"
 
-readonly security_patch="2024-01-05"
+readonly security_patch="2024-02-05"
