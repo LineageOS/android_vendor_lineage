@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.240105.004"
+readonly build_id="UQ1A.240205.004"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r17"
-readonly aosp_tag="android-14.0.0_r20"
+readonly prev_aosp_tag="android-14.0.0_r20"
+readonly aosp_tag="android-14.0.0_r25"
 
-readonly build_number="11206848"
+readonly build_number="11269751"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/shiba-uq1a.240105.004-factory-9afb0b07.zip"
-readonly image_sha256="9afb0b075fe67d4460602d2a7db60b742e3145e51e2e3902ff54f665b5ba5550"
+readonly image_url="https://dl.google.com/dl/android/aosp/shiba-uq1a.240205.004-factory-5f3de3c0.zip"
+readonly image_sha256="5f3de3c0ba9b5f209766ab376a56ffaad768bfaaa0e3b71bdbcdda9ef640c98e"
 
-readonly flash_url="https://flash.android.com/build/11206848?target=shiba-user&signed"
+readonly flash_url="https://flash.android.com/build/11269751?target=shiba-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-uq1a.240105.004-bdf10181.zip"
-readonly ota_sha256="bdf101819e964db2fcb51144001f16c8f77a41f15353decad8cbf8e9395196bf"
+readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-uq1a.240205.004-824ca3e4.zip"
+readonly ota_sha256="824ca3e4ed66d0bd7336f29cb17f48f481ec2fc3f540b857d1872c3f16985159"
 
-readonly security_patch="2024-01-05"
+readonly security_patch="2024-02-05"

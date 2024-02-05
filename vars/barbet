@@ -8,21 +8,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.240105.002"
+readonly build_id="UQ1A.240205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r16"
-readonly aosp_tag="android-14.0.0_r19"
+readonly prev_aosp_tag="android-14.0.0_r19"
+readonly aosp_tag="android-14.0.0_r22"
 
-readonly build_number="11129216"
+readonly build_number="11224170"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/barbet-uq1a.240105.002-factory-204a0106.zip"
-readonly image_sha256="204a01061f3300b88066729324e6c53dcf8846db4ba5e225baf1f17fe88feca2"
+readonly image_url="https://dl.google.com/dl/android/aosp/barbet-uq1a.240205.002-factory-47ba0232.zip"
+readonly image_sha256="47ba02322ff666232a707728b7a65437d7218bd098e1e66c391299ef07f99c5a"
 
-readonly flash_url="https://flash.android.com/build/11129216?target=barbet-user&signed"
+readonly flash_url="https://flash.android.com/build/11224170?target=barbet-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-uq1a.240105.002-75a841be.zip"
-readonly ota_sha256="75a841be3e2741cd6af9a00bd1d0ce86a11a28a12e2dd29ad641d069330a2d49"
+readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-uq1a.240205.002-0185ae5d.zip"
+readonly ota_sha256="0185ae5dcd13a4f4f88e484287b4a121956cf34b5e3b5b95caec10333f87374d"
 
-readonly security_patch="2024-01-05"
+readonly security_patch="2024-02-05"

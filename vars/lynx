@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.240105.004"
+readonly build_id="UQ1A.240205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r17"
-readonly aosp_tag="android-14.0.0_r20"
+readonly prev_aosp_tag="android-14.0.0_r20"
+readonly aosp_tag="android-14.0.0_r22"
 
-readonly build_number="11206848"
+readonly build_number="11224170"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-uq1a.240105.004-factory-2c92ba1c.zip"
-readonly image_sha256="2c92ba1cf2cd6f3724481215f896bf60ad99fb1b2f519733e303d4bc1dbf3bc3"
+readonly image_url="https://dl.google.com/dl/android/aosp/lynx-uq1a.240205.002-factory-b7826107.zip"
+readonly image_sha256="b78261072fde04777fd4687271c4e0bdfe75fa63d84fb00cc75bc2a33e08dee5"
 
-readonly flash_url="https://flash.android.com/build/11206848?target=lynx-user&signed"
+readonly flash_url="https://flash.android.com/build/11224170?target=lynx-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-uq1a.240105.004-82d41b41.zip"
-readonly ota_sha256="82d41b41663d63cde672535a1da8b9b7ec973e0d110758de156df2c6a22659e0"
+readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-uq1a.240205.002-1e197bab.zip"
+readonly ota_sha256="1e197bab937764e51d740895061a3c4ea2e0a3f69aa0198946c8d7542ed356d3"
 
-readonly security_patch="2024-01-05"
+readonly security_patch="2024-02-05"

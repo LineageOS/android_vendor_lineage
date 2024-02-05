@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.240105.002"
+readonly build_id="UQ1A.240205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r17"
-readonly aosp_tag="android-14.0.0_r19"
+readonly prev_aosp_tag="android-14.0.0_r19"
+readonly aosp_tag="android-14.0.0_r22"
 
-readonly build_number="11129216"
+readonly build_number="11224170"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-uq1a.240105.002-factory-d1dd7f0b.zip"
-readonly image_sha256="d1dd7f0b3210c45b5b8ebe2d041dab6deb0d1f55a07c64e3d8e519e97178a8b8"
+readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-uq1a.240205.002-factory-c6eba0d2.zip"
+readonly image_sha256="c6eba0d2f6780666d3d103f6af8e1eabf95681e7c58c72f6337b7f265bf9b511"
 
-readonly flash_url="https://flash.android.com/build/11129216?target=bluejay-user&signed"
+readonly flash_url="https://flash.android.com/build/11224170?target=bluejay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-uq1a.240105.002-6e3cf627.zip"
-readonly ota_sha256="6e3cf627f60d1c005569196291ce7ed53fd2dd64872d623c160fc019eb9596c7"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-uq1a.240205.002-3eb29a13.zip"
+readonly ota_sha256="3eb29a13b4b1e9507b6e4074bf9325837de72bc1dd7fd45e84d5c4670a09e84d"
 
-readonly security_patch="2024-01-05"
+readonly security_patch="2024-02-05"
