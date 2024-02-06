@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ebb6b218_592e6fa9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-02-06T19:14:39Z",
+      "side": 1,
+      "message": "For example, In my own build server, The kernel trees in kernel/ in LineageOS tree are symlink\u0027d to somewhere outside of LineageOS tree. When I build for a officially supported device, whenever roomservice runs, it ends up deleting the entire kernel tree directory (yes, not just the symlink) and tries to sync the repo from LineageOS Github",
+      "revId": "e22ab54a36b1671d765568a7bfd2ee824b7d227e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
