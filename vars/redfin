@@ -8,21 +8,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UP1A.231105.001"
+readonly build_id="UP1A.231105.001.B2"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r1"
-readonly aosp_tag="android-14.0.0_r13"
+readonly prev_aosp_tag="android-14.0.0_r13"
+readonly aosp_tag="android-14.0.0_r28"
 
-readonly build_number="10817346"
+readonly build_number="11260668"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/redfin-up1a.231105.001-factory-4e32c252.zip"
-readonly image_sha256="4e32c25205ac3969c75723b7b283d632cc1d209da4014aa8ee9e083110855475"
+readonly image_url="https://dl.google.com/dl/android/aosp/redfin-up1a.231105.001.b2-factory-4e5a2679.zip"
+readonly image_sha256="4e5a26793d8400f13b72cbd17aeb284e040b3236436f0c6f3119ccc77d4495ad"
 
-readonly flash_url="https://flash.android.com/build/10817346?target=redfin-user&signed"
+readonly flash_url="https://flash.android.com/build/11260668?target=redfin-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-up1a.231105.001-cb2967ff.zip"
-readonly ota_sha256="cb2967ff065f205953b29e31ef9a598c7f35167d5ebabb5e79ee05efb05b5b9d"
+readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-up1a.231105.001.b2-17322169.zip"
+readonly ota_sha256="17322169afdc648e2e9ff46eee16156d5bdccd8842acb41b870b905cc28fe3b5"
 
 readonly security_patch="2023-11-05"
