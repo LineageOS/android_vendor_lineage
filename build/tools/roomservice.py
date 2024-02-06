@@ -40,6 +40,10 @@ except ImportError:
 
 from xml.etree import ElementTree
 
+dryrun = os.getenv('ROOMSERVICE_DRYRUN') == "true"
+if dryrun:
+    print("Dry run roomservice, no change will be made.")
+
 product = sys.argv[1]
 
 if len(sys.argv) > 2:
@@ -180,6 +184,9 @@ def is_in_manifest(projectpath):
     return False
 
 def add_to_manifest(repositories):
+    if dryrun:
+        return
+
     try:
         lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
         lm = lm.getroot()
@@ -243,7 +250,8 @@ def fetch_dependencies(repo_path):
 
     if len(syncable_repos) > 0:
         print('Syncing dependencies')
-        os.system('repo sync --force-sync %s' % ' '.join(syncable_repos))
+        if not dryrun:
+            os.system('repo sync --force-sync %s' % ' '.join(syncable_repos))
 
     for deprepo in verify_repos:
         fetch_dependencies(deprepo)
