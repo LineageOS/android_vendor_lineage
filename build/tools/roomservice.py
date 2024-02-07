@@ -202,12 +202,20 @@ def add_to_manifest(repositories):
             print('LineageOS/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
-        print('Adding dependency: LineageOS/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = {
             "path": repo_target,
             "remote": "github",
             "name": "LineageOS/%s" % repo_name,
             "revision": repo_revision })
+        if repo_remote := repository.get("remote", None):
+            # aosp- remotes are only used for kernel prebuilts, thus they
+            # don't let you customize clone-depth/revision.
+            if repo_remote.startswith("aosp-"):
+                project.attrib["name"] = repo_name
+                project.attrib["remote"] = repo_remote
+                project.attrib["clone-depth"] = "1"
+                del project.attrib["revision"]
+        print("Adding dependency: %s -> %s" % (project.attrib["name"], project.attrib["path"]))
         lm.append(project)
 
     indent(lm, 0)
@@ -234,7 +242,10 @@ def fetch_dependencies(repo_path):
                 fetch_list.append(dependency)
                 syncable_repos.append(dependency['target_path'])
                 if 'branch' not in dependency:
-                    dependency['branch'] = get_default_or_fallback_revision(dependency['repository'])
+                    if dependency.get('remote', 'github') == 'github':
+                        dependency['branch'] = get_default_or_fallback_revision(dependency['repository'])
+                    else:
+                        dependency['branch'] = None
             verify_repos.append(dependency['target_path'])
 
             if not os.path.isdir(dependency['target_path']):
