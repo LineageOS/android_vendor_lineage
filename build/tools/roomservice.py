@@ -203,6 +203,11 @@ def add_to_manifest(repositories):
             "revision": repo_revision })
         if repo_depth := repository.get("depth", None):
             project.attrib["depth"] = str(repo_depth)
+        if repo_remote := repository.get("remote", None):
+            if repo_remote.startswith("aosp-"):
+                project.attrib["name"] = repo_name
+                project.attrib["remote"] = repo_remote
+                del project.attrib["revision"]
         lm.append(project)
 
     indent(lm, 0)
