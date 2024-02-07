@@ -9,7 +9,7 @@ ifeq ($(WITH_GMS),true)
                 #   - gms_minimal.mk    - minimal Android TV GMS
                 $(call inherit-product, vendor/partner_gms-tv/products/$(GMS_MAKEFILE))
             else
-                $(call inherit-product, vendor/partner_gms-tv/products/gms.mk)
+                $(call inherit-product-if-exists, vendor/partner_gms-tv/products/gms.mk)
             endif
             $(call inherit-product, vendor/partner_gms-tv/products/mainline_modules.mk)
         endif
@@ -19,7 +19,7 @@ ifeq ($(WITH_GMS),true)
             ifneq ($(GMS_MAKEFILE),)
                 $(call inherit-product, vendor/partner_gms-car/products/$(GMS_MAKEFILE))
             else
-                $(call inherit-product, vendor/partner_gms-car/products/gms.mk)
+                $(call inherit-product-if-exists, vendor/partner_gms-car/products/gms.mk)
             endif
         endif
    else
@@ -34,7 +34,7 @@ ifeq ($(WITH_GMS),true)
             ifneq ($(GMS_MAKEFILE),)
                 $(call inherit-product, vendor/partner_gms/products/$(GMS_MAKEFILE))
             else
-                $(call inherit-product, vendor/partner_gms/products/gms.mk)
+                $(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
             endif
         endif
 
