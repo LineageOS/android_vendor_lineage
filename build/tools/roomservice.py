@@ -201,6 +201,11 @@ def add_to_manifest(repositories):
             "remote": "github",
             "name": "LineageOS/%s" % repo_name,
             "revision": repo_revision })
+        if repo_remote := repository.get("remote", None):
+            if repo_remote.startswith("aosp-"):
+                project.attrib["name"] = repo_name
+                project.attrib["remote"] = repo_remote
+                del project.attrib["revision"]
         lm.append(project)
 
     indent(lm, 0)
@@ -227,7 +232,10 @@ def fetch_dependencies(repo_path):
                 fetch_list.append(dependency)
                 syncable_repos.append(dependency['target_path'])
                 if 'branch' not in dependency:
-                    dependency['branch'] = get_default_or_fallback_revision(dependency['repository'])
+                    if dependency.get('remote', 'github') == 'github':
+                        dependency['branch'] = get_default_or_fallback_revision(dependency['repository'])
+                    else:
+                        dependency['branch'] = None
             verify_repos.append(dependency['target_path'])
 
             if not os.path.isdir(dependency['target_path']):
