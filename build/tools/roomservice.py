@@ -201,6 +201,8 @@ def add_to_manifest(repositories):
             "remote": "github",
             "name": "LineageOS/%s" % repo_name,
             "revision": repo_revision })
+        if repo_depth := repository.get("depth", None):
+            project.attrib["depth"] = str(repo_depth)
         lm.append(project)
 
     indent(lm, 0)
