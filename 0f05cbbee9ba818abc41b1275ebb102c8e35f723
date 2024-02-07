@@ -46,6 +46,30 @@
       },
       "revId": "0f05cbbee9ba818abc41b1275ebb102c8e35f723",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06d02d9b_8c312510",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 427,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-02-07T17:44:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d05d3a96_823faf19",
+      "range": {
+        "startLine": 427,
+        "startChar": 13,
+        "endLine": 427,
+        "endChar": 44
+      },
+      "revId": "0f05cbbee9ba818abc41b1275ebb102c8e35f723",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
