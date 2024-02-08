@@ -51,6 +51,24 @@
       "parentUuid": "c640247d_111dcd49",
       "revId": "c31712a0a381b86e0d79da6dd3661561eb217818",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "115be064_882a70fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-02-08T12:08:21Z",
+      "side": 1,
+      "message": "dunno, I use http for AOSP gerrit only.\nbtw does the --gerrit argument work for your case? I\u0027d prefer to fix that if not.",
+      "parentUuid": "5c17f36a_d802630f",
+      "revId": "c31712a0a381b86e0d79da6dd3661561eb217818",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
