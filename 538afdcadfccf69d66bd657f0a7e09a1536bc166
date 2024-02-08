@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2ffbbff_a17c2b62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-02-08T13:05:36Z",
+      "side": 1,
+      "message": "the following may also work if logging is not important here\n```\nper_path_mergables \u003d [x for x in per_path_mergables if x[\"change_id\"] not in picked_change_ids]\n```\n\nI\u0027m open to all solutions above",
+      "revId": "538afdcadfccf69d66bd657f0a7e09a1536bc166",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e43ab308_30aa2010",
