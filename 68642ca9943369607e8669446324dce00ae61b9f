@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1aa530fe_3f025cc8",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 588,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-02-08T12:52:58Z",
+      "side": 0,
+      "message": "alternatively, we can do per_path_mergables.copy() here.",
+      "revId": "68642ca9943369607e8669446324dce00ae61b9f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
