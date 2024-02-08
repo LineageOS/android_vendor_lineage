@@ -87,6 +87,30 @@
       },
       "revId": "538afdcadfccf69d66bd657f0a7e09a1536bc166",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3127234c_80783cb0",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 588,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-02-08T13:06:36Z",
+      "side": 1,
+      "message": "can\u0027t we simply do\n        per_path_mergables \u003d list(filter(lambda x: x[\"change_id\"] not in picked_change_ids, per_path_mergables))\nwe loose the print, but...",
+      "parentUuid": "520103ee_d932c5dd",
+      "range": {
+        "startLine": 588,
+        "startChar": 20,
+        "endLine": 588,
+        "endChar": 24
+      },
+      "revId": "538afdcadfccf69d66bd657f0a7e09a1536bc166",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
