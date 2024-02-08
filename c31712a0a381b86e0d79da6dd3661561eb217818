@@ -16,6 +16,23 @@
       "message": "Any better idea?",
       "revId": "c31712a0a381b86e0d79da6dd3661561eb217818",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c640247d_111dcd49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-02-08T11:53:54Z",
+      "side": 1,
+      "message": "setup HTTP credentials should allow picking private changes via http?",
+      "revId": "c31712a0a381b86e0d79da6dd3661561eb217818",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
