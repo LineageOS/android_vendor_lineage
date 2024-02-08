@@ -69,6 +69,24 @@
       "parentUuid": "5c17f36a_d802630f",
       "revId": "c31712a0a381b86e0d79da6dd3661561eb217818",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0aa2ed9_54331a8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-02-08T12:09:28Z",
+      "side": 1,
+      "message": "Partially; I can get list of changes, but fetching them fails because \"github\" remote is only used for DEFAULT_GERRIT.",
+      "parentUuid": "115be064_882a70fa",
+      "revId": "c31712a0a381b86e0d79da6dd3661561eb217818",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
