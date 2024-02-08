@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "818226cf_5e583270",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-02-08T13:10:46Z",
+      "side": 1,
+      "message": "Eh, I think logging is worth something, maybe `for item in [x for x in per_path_mergables if x[\"change_id\"] in picked_change_ids]:` instead of using list(filter())? Both of them do essentially the same thing, it\u0027s just different syntax",
+      "parentUuid": "a2ffbbff_a17c2b62",
+      "revId": "538afdcadfccf69d66bd657f0a7e09a1536bc166",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e43ab308_30aa2010",
