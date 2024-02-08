@@ -35,7 +35,7 @@ from functools import cmp_to_key, partial
 from xml.etree import ElementTree
 
 # Default to LineageOS Gerrit
-DEFAULT_GERRIT = "https://review.lineageos.org"
+DEFAULT_GERRIT = os.environ.get("REPOPICK_DEFAULT_GERRIT", "https://review.lineageos.org")
 
 
 # cmp() is not available in Python 3, define it manually
