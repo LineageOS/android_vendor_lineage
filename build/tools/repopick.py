@@ -587,15 +587,17 @@ def main():
                         picked_change_ids.append(head_change_id.strip())
                         break
 
-        for item in per_path_mergables:
-            # Check if change is already picked to HEAD...HEAD~check_picked_count
+        def filter_picked(item):
             if item["change_id"] in picked_change_ids:
                 print(
                     "Skipping {0} - already picked in {1}".format(
                         item["id"], project_path
                     )
                 )
-                per_path_mergables.remove(item)
+                return False
+            return True
+
+        mergables[project_path] = list(filter(filter_picked, per_path_mergables))
 
     # round 2: fetch changes in parallel if not pull
     if not args.pull:
