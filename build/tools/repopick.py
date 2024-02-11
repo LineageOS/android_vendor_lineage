@@ -624,7 +624,7 @@ def do_git_fetch_pull(args, item):
     project_path = item["project_path"]
 
     # commit object already exists, no need to fetch
-    if commit_exists(project_path, item["revision"]):
+    if not args.pull and commit_exists(project_path, item["revision"]):
         return
 
     if "anonymous http" in item["fetch"]:
