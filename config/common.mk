@@ -96,6 +96,7 @@ $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(LINEAGE_BUI
 endif
 
 ifeq ($(PRODUCT_IS_ATV),)
+ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 # Include AOSP audio files
 include vendor/lineage/config/aosp_audio.mk
 
@@ -106,6 +107,7 @@ include vendor/lineage/config/lineage_audio.mk
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound=Argon.ogg \
     ro.config.alarm_alert=Hassium.ogg
+endif
 endif
 
 # Bootanimation
