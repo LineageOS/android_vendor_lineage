@@ -36,6 +36,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c9dbcf7_f5a93e5a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-02-11T02:55:17Z",
+      "side": 1,
+      "message": "what about this:\n```\nkeep_indices \u003d []\nfor i, item in enumerate(per_path_mergables):\n  if item in ...:\n    ...\n  else:\n    keep_indices.append(i)\nper_path_mergables \u003d per_path_mergables[keep_indices]\n```\n\nthe major advantage is replacing `.remove()` with simple indexing, which eliminates its extra time complexity",
+      "revId": "538afdcadfccf69d66bd657f0a7e09a1536bc166",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e43ab308_30aa2010",
