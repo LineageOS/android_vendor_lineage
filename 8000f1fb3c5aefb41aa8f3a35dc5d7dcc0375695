@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9475c59e_ccb52ae6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30922
+      },
+      "writtenOn": "2024-02-12T14:00:13Z",
+      "side": 1,
+      "message": "This is dependent on https://review.lineageos.org/c/LineageOS/android_packages_apps_Dialer/+/378864 and https://review.lineageos.org/c/LineageOS/android_frameworks_base/+/379259, but again not sure if/how dependency can be added.",
+      "revId": "8000f1fb3c5aefb41aa8f3a35dc5d7dcc0375695",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
