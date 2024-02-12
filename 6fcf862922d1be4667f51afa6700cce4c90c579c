@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d02c5337_3cfb7a9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-02-12T09:40:01Z",
+      "side": 1,
+      "message": "Well, if this is the case just move it back to mobile makefile.",
+      "revId": "6fcf862922d1be4667f51afa6700cce4c90c579c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
