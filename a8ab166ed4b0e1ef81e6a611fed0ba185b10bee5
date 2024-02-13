@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3633854_4b0d569d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17945
+      },
+      "writtenOn": "2024-02-13T04:12:27Z",
+      "side": 1,
+      "message": "Verified arm64 emulator builds and runs on M1 MBP natively.\nRequires https://review.lineageos.org/c/LineageOS/android_build/+/382407\n\nWhile `m sdk_addon` directly fails, `m \u0026\u0026 m sdk_addon` will work",
+      "revId": "a8ab166ed4b0e1ef81e6a611fed0ba185b10bee5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
