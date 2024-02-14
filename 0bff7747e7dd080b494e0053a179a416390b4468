@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff692c3f_0fba46db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-02-14T22:47:09Z",
+      "side": 1,
+      "message": "should be fine\nwe could avoid resize and simply tell bootanim the size of the anim images, but I don\u0027t know how that exactly works in regard to down/up scaling (works fine on 1080p)",
+      "revId": "0bff7747e7dd080b494e0053a179a416390b4468",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
