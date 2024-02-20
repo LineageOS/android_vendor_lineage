@@ -6,6 +6,7 @@ $(call inherit-product, device/lineage/atv/lineage_atv.mk)
 
 # AOSP packages
 PRODUCT_PACKAGES += \
+    EasterEgg \
     LeanbackIME
 
 # Lineage packages
