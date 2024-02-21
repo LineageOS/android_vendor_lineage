@@ -33,6 +33,23 @@
       "message": "I think most devices would benefit.",
       "revId": "40121fc964d4e23ee9e718e1f2416a31f84f8130",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7dde2ad9_38706e34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-02-21T20:28:20Z",
+      "side": 1,
+      "message": "IMO this is a device specific change and not something that should be globally changed",
+      "revId": "40121fc964d4e23ee9e718e1f2416a31f84f8130",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
