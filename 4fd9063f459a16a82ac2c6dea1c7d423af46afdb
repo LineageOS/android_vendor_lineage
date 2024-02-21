@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c06bd48_aa7387f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-02-21T17:11:06Z",
+      "side": 1,
+      "message": "Fixes GMS SUW theme with the rest of the topic",
+      "revId": "4fd9063f459a16a82ac2c6dea1c7d423af46afdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bde1cfb0_7dacfae9",
@@ -50,6 +67,24 @@
       "side": 1,
       "message": "I see",
       "parentUuid": "7bc41efb_7e46cc93",
+      "revId": "4fd9063f459a16a82ac2c6dea1c7d423af46afdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "064dd242_305c2987",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-02-21T17:11:06Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "4a863223_25f5a015",
       "revId": "4fd9063f459a16a82ac2c6dea1c7d423af46afdb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
