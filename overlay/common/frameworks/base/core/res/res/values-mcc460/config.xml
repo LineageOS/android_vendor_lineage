@@ -19,6 +19,13 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Remote server that can provide NTP responses. -->
-    <string translatable="false" name="config_ntpServer">ntp.ntsc.ac.cn</string>
+    <!-- SNTP client config: NTP servers to use to obtain an accurate time.
+         Items must be in the form: "ntp://<host>[:port]"
+         This is not a registered IANA URI scheme. -->
+    <string-array translatable="false" name="config_ntpServers">
+        <item>ntp://ntp.aliyun.com</item>
+        <item>ntp://ntp.tencent.com</item>
+        <item>ntp://ntp.ntsc.ac.cn</item>
+    </string-array>
+
 </resources>
