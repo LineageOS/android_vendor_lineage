@@ -22,6 +22,30 @@
       },
       "revId": "1fc295073aa679f7d18bbe6d6440dc47e2972faf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f95e5fb8_f16d29f4",
+        "filename": "config/BoardConfigCalyx.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-03-01T09:31:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2f236a9f_d2dc1967",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 47
+      },
+      "revId": "1fc295073aa679f7d18bbe6d6440dc47e2972faf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
