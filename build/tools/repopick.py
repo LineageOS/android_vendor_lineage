@@ -650,7 +650,7 @@ def do_git_fetch_pull(args, item):
             print(cmd)
         result = subprocess.call(cmd, cwd=project_path)
         # Check if it worked
-        if result == 0 or commit_exists(project_path, item["revision"]):
+        if result == 0:
             return
         print("ERROR: git command failed")
 
