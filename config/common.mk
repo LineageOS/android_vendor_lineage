@@ -121,7 +121,8 @@ PRODUCT_COPY_FILES += \
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
+    SimpleDeviceConfig \
+    SimpleSettingsConfig
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
