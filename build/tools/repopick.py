@@ -504,14 +504,14 @@ def main():
         elif args.ignore_missing:
             print(
                 "WARNING: Skipping {0} since there is no project directory for: {1}\n".format(
-                    review["id"], review["project"]
+                    review["number"], review["project"]
                 )
             )
             continue
         else:
             sys.stderr.write(
                 "ERROR: For {0}, could not determine the project path for project {1}\n".format(
-                    review["id"], review["project"]
+                    review["number"], review["project"]
                 )
             )
             sys.exit(1)
