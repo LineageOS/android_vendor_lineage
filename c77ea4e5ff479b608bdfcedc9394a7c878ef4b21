@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "82c390c7_34decc3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-03-12T20:05:51Z",
+      "side": 1,
+      "message": "Something is screwy with syntax here. The if condition is ALWAYS returning true, regardless if the find gets anything or not. Which means that ps1 always hit the exit 1 and failed. PS2 works around this by echoing back to a var during the loop and checking if that is non-empty. However, if I remove the if and just run the loop, the exit conditional there always returns true and fails all builds. I have no idea what\u0027s going on, but this patchset does list all dups, then only exits on a real failure. As ugly and technically redundant as the flow is.",
+      "revId": "c77ea4e5ff479b608bdfcedc9394a7c878ef4b21",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
