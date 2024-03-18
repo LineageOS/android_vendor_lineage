@@ -16,6 +16,24 @@
       "message": "why private?",
       "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd133421_2d52fe51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28158
+      },
+      "writtenOn": "2024-03-18T08:20:40Z",
+      "side": 1,
+      "message": "A minor roadblock, one of my devices isn\u0027t building anymore. While I\u0027m sure this isn\u0027t the cause, would still like to investigate.",
+      "parentUuid": "4e4ac234_7f13b825",
+      "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
