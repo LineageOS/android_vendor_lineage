@@ -46,6 +46,30 @@
       },
       "revId": "f4c8b1720d7d2b3500d6db800f15fd96e72ebc47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b81135f6_b3c582aa",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-03-20T18:47:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "75129b3c_77870c14",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 72,
+        "endChar": 109
+      },
+      "revId": "f4c8b1720d7d2b3500d6db800f15fd96e72ebc47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
