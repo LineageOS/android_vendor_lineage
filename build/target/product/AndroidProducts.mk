@@ -28,7 +28,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_sdk_car_arm64.mk \
     $(LOCAL_DIR)/lineage_sdk_car_x86_64.mk \
     $(LOCAL_DIR)/lineage_sdk_phone_arm64.mk \
-    $(LOCAL_DIR)/lineage_sdk_phone_x86.mk \
     $(LOCAL_DIR)/lineage_sdk_phone_x86_64.mk \
     $(LOCAL_DIR)/lineage_sdk_tv_arm.mk \
     $(LOCAL_DIR)/lineage_sdk_tv_x86.mk
@@ -47,7 +46,6 @@ COMMON_LUNCH_CHOICES := \
     lineage_sdk_car_arm64-userdebug \
     lineage_sdk_car_x86_64-userdebug \
     lineage_sdk_phone_arm64-userdebug \
-    lineage_sdk_phone_x86-userdebug \
     lineage_sdk_phone_x86_64-userdebug \
     lineage_sdk_tv_arm-userdebug \
     lineage_sdk_tv_x86-userdebug
