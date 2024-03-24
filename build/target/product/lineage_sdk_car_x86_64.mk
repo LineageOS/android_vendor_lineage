@@ -16,7 +16,7 @@ include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
 $(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_x86_64.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
 
 PRODUCT_NAME := lineage_sdk_car_x86_64
 
