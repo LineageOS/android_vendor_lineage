@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d1d3d2b_eb4f9d19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-03-25T18:13:26Z",
+      "side": 1,
+      "message": "how about https://android-review.googlesource.com/c/platform/build/soong/+/3003676?",
+      "revId": "d8a21b7341fcb94b3d765816db1d3e53cec1ab25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
