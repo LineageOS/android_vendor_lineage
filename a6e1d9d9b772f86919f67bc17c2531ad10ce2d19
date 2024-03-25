@@ -16,6 +16,24 @@
       "message": "fyi, if you wanna avoid this then I did this back in the day https://review.lineageos.org/q/topic:twelve-nano-on-recovery",
       "revId": "a6e1d9d9b772f86919f67bc17c2531ad10ce2d19",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b88607c6_1933203e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-03-25T15:40:11Z",
+      "side": 1,
+      "message": "I think my solution is more elegant, even if it\u0027s less portable.",
+      "parentUuid": "a07e3683_45250f23",
+      "revId": "a6e1d9d9b772f86919f67bc17c2531ad10ce2d19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
