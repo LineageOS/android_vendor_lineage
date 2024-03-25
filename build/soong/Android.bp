@@ -17,6 +17,20 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
+bootstrap_go_package {
+    name: "soong-prebuilt-etc-dir",
+    pkgPath: "lineage/soong/prebuilt-etc-dir",
+    deps: [
+        "soong-android",
+        "soong-etc",
+        "soong-phony",
+    ],
+    srcs: [
+        "prebuilt_etc_dir.go",
+    ],
+    pluginFor: ["soong_build"],
+}
+
 lineage_generator {
     name: "generated_kernel_includes",
 
