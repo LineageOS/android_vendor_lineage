@@ -16,6 +16,24 @@
       "message": "how about https://android-review.googlesource.com/c/platform/build/soong/+/3003676?",
       "revId": "d8a21b7341fcb94b3d765816db1d3e53cec1ab25",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f90f9ca2_9003b7b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-03-25T21:43:10Z",
+      "side": 1,
+      "message": "not ideal, but still less annoying than having to list files one by one.",
+      "parentUuid": "1d1d3d2b_eb4f9d19",
+      "revId": "d8a21b7341fcb94b3d765816db1d3e53cec1ab25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
