@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc6ab86b_4b568ce1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-03-25T16:03:51Z",
+      "side": 1,
+      "message": "Pre-qpr2, this kept the mobile styling, but made it dark. Post-qpr2, this invokes full tv styling. Magic. Verified on foster.",
+      "revId": "5815591564e3bdee52389f491e0ddb0e3c5d4594",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
