@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "237f6bc4_09df30ca",
+        "filename": "build/target/product/lineage_sdk_phone_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-03-26T14:51:36Z",
+      "side": 1,
+      "message": "Since this is 64-bit only, shouldn\u0027t we rename our target too, to match?\n\n`lineage_sdk_phone64_x86_64`",
+      "revId": "1c69ed407e0f023c5f03664284d23a8651599ed6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
