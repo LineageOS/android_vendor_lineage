@@ -34,6 +34,24 @@
       "parentUuid": "237f6bc4_09df30ca",
       "revId": "1c69ed407e0f023c5f03664284d23a8651599ed6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bbeae78d_25633a48",
+        "filename": "build/target/product/lineage_sdk_phone_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 17656
+      },
+      "writtenOn": "2024-03-26T19:40:04Z",
+      "side": 1,
+      "message": "I don\u0027t have a \"strong\" opinion on that, but I personally tend to leave it as it is to have the same target name across all releases - further, having the \u002764\u0027 twice in the target name does not really add any value...",
+      "parentUuid": "5757e21d_e2ec8e29",
+      "revId": "1c69ed407e0f023c5f03664284d23a8651599ed6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
