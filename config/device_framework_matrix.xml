@@ -4,6 +4,15 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
+    <!-- Radio Config (backend) -->
+    <hal format="hidl" optional="true">
+        <name>lineage.hardware.radio.config</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Camera -->
     <hal format="hidl" optional="true">
         <name>vendor.lineage.camera.motor</name>
