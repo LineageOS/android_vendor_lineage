@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b240a109_a52f85fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22176
+      },
+      "writtenOn": "2024-03-30T16:27:40Z",
+      "side": 1,
+      "message": "This change is for Ultra-legacy devices with old kernels. if it matters to them then V+ CR+",
+      "revId": "9f6343286cac3e79b0d33472d9839577200c7e08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
