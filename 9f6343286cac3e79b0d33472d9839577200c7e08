@@ -51,6 +51,24 @@
       "message": "I actually ran into this when building a device as 32-bit on 4.4 kernel.",
       "revId": "9f6343286cac3e79b0d33472d9839577200c7e08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7a7fcef_baa7035b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22176
+      },
+      "writtenOn": "2024-03-31T01:00:16Z",
+      "side": 1,
+      "message": "Yes, this is also required for 32-bit devices with higher kernels",
+      "parentUuid": "994168b6_2c16f307",
+      "revId": "9f6343286cac3e79b0d33472d9839577200c7e08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
