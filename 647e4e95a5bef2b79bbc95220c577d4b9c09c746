@@ -16,6 +16,23 @@
       "message": "Verified building exfat module for foster",
       "revId": "647e4e95a5bef2b79bbc95220c577d4b9c09c746",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "068cc260_e69f0925",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-04-01T13:55:10Z",
+      "side": 1,
+      "message": "should be 3, shouldn\u0027t it?",
+      "revId": "647e4e95a5bef2b79bbc95220c577d4b9c09c746",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
