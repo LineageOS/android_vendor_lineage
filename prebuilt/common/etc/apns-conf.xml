@@ -500,6 +500,7 @@
   <apn carrier="T-Mobile MMS" mcc="231" mnc="02" apn="mms" proxy="" port="" mmsproxy="192.168.001.001" mmsport="8080" mmsc="http://mms" user="mms" password="mms" authtype="1" type="mms" />
   <apn carrier="Telekom SK" mcc="231" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="Telekom SK MMS" mcc="231" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
+  <apn carrier="4ka Internet" mcc="231" mnc="03" apn="internet" user="" password="" authtype="1" type="default,ia,supl" mvno_type="spn" mvno_match_data="4KA SK" />
   <apn carrier="Telekom SK" mcc="231" mnc="04" apn="internet" type="default,supl" />
   <apn carrier="Telekom SK MMS" mcc="231" mnc="04" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile SK" mcc="231" mnc="04" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
