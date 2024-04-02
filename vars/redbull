@@ -2,5 +2,5 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly prev_kernel_tag=android-14.0.0_r0.20 # Dec 2023
-readonly kernel_tag=android-14.0.0_r0.32 # Jan 2024
+readonly prev_kernel_tag=android-14.0.0_r0.32 # Jan 2024
+readonly kernel_tag=android-14.0.0_r0.58 # Apr 2024

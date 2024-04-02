@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP1A.240305.019.A1"
+readonly build_id="AP1A.240405.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r22"
-readonly aosp_tag="android-14.0.0_r29"
+readonly prev_aosp_tag="android-14.0.0_r29"
+readonly aosp_tag="android-14.0.0_r30"
 
-readonly build_number="11445699"
+readonly build_number="11480754"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/oriole-ap1a.240305.019.a1-factory-0eee36d2.zip"
-readonly image_sha256="0eee36d2b694758d00a85d999bafc67b050bb78b253dac2f2f14f9b491b90d5a"
+readonly image_url="https://dl.google.com/dl/android/aosp/oriole-ap1a.240405.002-factory-537b4123.zip"
+readonly image_sha256="537b41232421841af442cd819911bfbae6cc3ed99b25289b713f1668f27c23af"
 
-readonly flash_url="https://flash.android.com/build/11445699?target=oriole-user&signed"
+readonly flash_url="https://flash.android.com/build/11480754?target=oriole-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-ap1a.240305.019.a1-fdb8770a.zip"
-readonly ota_sha256="fdb8770a11010b5d90bab4caa2a580ab4c5999ee8ea2d54d96eb6c2b6d58d7ca"
+readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-ap1a.240405.002-bee2137c.zip"
+readonly ota_sha256="bee2137c171e42a703c45215e1fbe991610b043b5fea35e31d66750f7d53f1fd"
 
-readonly security_patch="2024-03-05"
+readonly security_patch="2024-04-05"
