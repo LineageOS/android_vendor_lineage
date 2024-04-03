@@ -1,6 +1,0 @@
-# Pixel 4, 4a
-
-# Updated semi-manually via pixel/update-any-var.sh
-
-readonly prev_kernel_tag=android-13.0.0_r0.101 # Jul 2023
-readonly kernel_tag=android-13.0.0_r0.110 # Aug 2023
