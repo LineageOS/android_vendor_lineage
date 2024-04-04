@@ -34,6 +34,23 @@
       "parentUuid": "4e4ac234_7f13b825",
       "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22918a72_7d08a42b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28158
+      },
+      "writtenOn": "2024-04-04T16:15:20Z",
+      "side": 1,
+      "message": "looks like it was a device side issue, settings as public again.",
+      "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
