@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "10d62ab9_fe09d634",
+        "filename": "release/release_config_map.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-04-08T16:06:04Z",
+      "side": 1,
+      "message": "we should do something like\n`$(declare-release-config lineage_ap1a, ap1a, $(local_dir)build_config/lineage_ap1a.scl)`\notherwise we\u0027ll lose the other ap1a configs won\u0027t we?\n(lineage_ap1a: ap1a with lineage_ap1a overrides)\n\nRELEASE_ACONFIG_VALUE_SETS is marked as append so we\u0027ll automatically pull in the aconfig_value_set-ap1a",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 71
+      },
+      "revId": "8dae23e11fa592b9a368deb5449369473768c0aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
