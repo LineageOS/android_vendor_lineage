@@ -22,6 +22,30 @@
       },
       "revId": "8dae23e11fa592b9a368deb5449369473768c0aa",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80366e0f_05952f6c",
+        "filename": "release/release_config_map.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-04-08T16:16:20Z",
+      "side": 1,
+      "message": "On my tests with the current code, all the values from the original ap1a config get pulled, and RELEASE_ACONFIG_VALUE_SETS gets extended, leaving both the original config set and our custom one too.\n\nThere are some examples from AOSP: https://cs.android.com/android/platform/superproject/main/+/main:build/make/core/release_config.mk;l\u003d82?q\u003ddeclare-release-config\n\nIf I understand that correctly, adding a third argument will just make the $(1) release to use the configs from the $(3) release and the directly declared on $(2).\n\nI believe we should be fine without the $(3) override argument, due to this last 2 lines of the declare-release-config function:\n$(eval _all_release_configs.$(strip $(1)).DECLARED_IN :\u003d $(_included) $(_all_release_configs.$(strip $(1)).DECLARED_IN))\n    $(eval _all_release_configs.$(strip $(1)).FILES :\u003d $(_all_release_configs.$(strip $(1)).FILES) $(strip $(2)))\n\nDeclaring the same one just appends the new config files to the existing ones.",
+      "parentUuid": "10d62ab9_fe09d634",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 71
+      },
+      "revId": "8dae23e11fa592b9a368deb5449369473768c0aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
