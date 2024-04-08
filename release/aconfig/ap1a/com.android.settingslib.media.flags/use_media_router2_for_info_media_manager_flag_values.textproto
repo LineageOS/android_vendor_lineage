@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settingslib.media.flags"
+  name: "use_media_router2_for_info_media_manager"
+  state: ENABLED
+  permission: READ_WRITE
+}
