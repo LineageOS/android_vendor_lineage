@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58d05b54_b6f93696",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-04-18T04:41:09Z",
+      "side": 1,
+      "message": "went with 9mb as unsure how 8mb is calc\u0027d and the conversions with that are always weird, plus even if more granular, would only save like 4mb total.",
+      "revId": "d40b8bfc6fb9357b8c5f7d8e56b40490bd4ba56e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
