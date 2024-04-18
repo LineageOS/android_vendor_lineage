@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c073b0d8_35b3ca3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-04-18T04:17:28Z",
+      "side": 1,
+      "message": "razor and I were talking about this - apparently a lot of users hit this issue.\n\nWe think that the minimum is 10mb to not do overlayfs, but it may be lower - testing needed.",
+      "revId": "b889378fc68cc2c7a39002428cc05b812919b178",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
