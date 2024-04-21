@@ -133,23 +133,6 @@ gralloc_handle_custom_content_md_reserved_size {
 }
 
 soong_config_module_type {
-    name: "sdmcore_has_is_display_hw_available",
-    module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
-    bool_variables: ["sdmcore_has_is_display_hw_available_func"],
-    properties: ["cflags"],
-}
-
-sdmcore_has_is_display_hw_available {
-    name: "sdmcore_has_is_display_hw_available_func_defaults",
-    soong_config_variables: {
-        sdmcore_has_is_display_hw_available_func: {
-            cflags: ["-DSDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "gralloc_handle_reserved_size",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
