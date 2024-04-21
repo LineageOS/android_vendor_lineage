@@ -16,6 +16,23 @@
       "message": "fixed the newline",
       "revId": "f5f596e36a01367c39ff7a2e22285c02ca7605de",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c46b8bac_d32b0b12",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-04-21T02:48:28Z",
+      "side": 1,
+      "message": "Fine WITH_GMS as well",
+      "revId": "f5f596e36a01367c39ff7a2e22285c02ca7605de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
