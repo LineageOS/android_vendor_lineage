@@ -24,7 +24,6 @@
         <string-array name="mccmnc">
             <item value="20826" />
         </string-array>
-        <string name="feature_flag_name">vvm_carrier_flag_el_telecom</string>
         <int name="vvm_port_number_int" value="5499" />
         <string name="vvm_destination_number_string">8860</string>
         <string name="vvm_type_string">vvm_type_omtp</string>
@@ -435,7 +434,7 @@
         <string name="feature_flag_name">vvm_carrier_cellcom</string>
         <string-array name="mccmnc">
             <item value="311480?gid1=BA00040000000000" />
-            <item value="311850?gid1=BA00040000000000" />
+            <item value="311850" />
         </string-array>
         <int name="vvm_port_number_int" value="0" />
         <string name="vvm_destination_number_string">9966</string>
@@ -446,33 +445,6 @@
             <item value="com.cellcom.cellcomvisualvoicemail" />
         </string-array>
         <boolean name="vvm_legacy_mode_enabled_bool" value="true" />
-    </pbundle_as_map>
-    <pbundle_as_map>
-        <string name="feature_flag_name">vvm_carrier_cellcom_disabled</string>
-        <string-array name="mccmnc">
-            <item value="311480?gid1=BA00040000000000" />
-            <item value="311850" />
-        </string-array>
-        <string name="vvm_type_string">vvm_type_disabled</string>
-    </pbundle_as_map>
-    <pbundle_as_map>
-        <string name="feature_flag_name">disable_vvm_carrier_flag_metro_pcs</string>
-        <string-array name="mccmnc">
-            <item value="310240?gid1=6D38" />
-            <item value="310260?gid1=6D38" />
-            <item value="00101?gid1=6D38" />
-            <item value="310160?gid1=6D38" />
-            <item value="310200?gid1=6D38" />
-            <item value="310210?gid1=6D38" />
-            <item value="310220?gid1=6D38" />
-            <item value="310230?gid1=6D38" />
-            <item value="310250?gid1=6D38" />
-            <item value="310270?gid1=6D38" />
-            <item value="310490?gid1=6D38" />
-            <item value="310660?gid1=6D38" />
-            <item value="310800?gid1=6D38" />
-        </string-array>
-        <string name="vvm_type_string">vvm_type_disabled</string>
     </pbundle_as_map>
     <pbundle_as_map>
         <string name="feature_flag_name">enable_vvm_carrier_flag_metro_pcs</string>
@@ -501,5 +473,27 @@
         <string name="vvm_transcription_allowed_for_carrier_flag_name"> vvm_tmobile_us_allows_transcription </string>
         <boolean name="vvm_ignore_transcription" value="true" />
         <boolean name="vvm_change_greeting_enabled_bool" value="true" />
+    </pbundle_as_map>
+    <pbundle_as_map>
+        <string name="feature_flag_name">enable_vvm_carrier_flag_claro_pr</string>
+        <string-array name="mccmnc">
+            <item value="330110" />
+            <item value="33011" />
+        </string-array>
+        <int name="vvm_port_number_int" value="148" />
+        <string name="vvm_destination_number_string">8860</string>
+        <string name="vvm_type_string">vvm_type_omtp</string>
+    </pbundle_as_map>
+    <pbundle_as_map>
+        <string name="feature_flag_name">enable_vvm_carrier_sunrise</string>
+        <string-array name="mccmnc">
+            <item value="22802" />
+        </string-array>
+        <int name="vvm_port_number_int" value="5499" />
+        <int name="vvm_ssl_port_number_int" value="993" />
+        <string name="vvm_destination_number_string">3030</string>
+        <string name="vvm_type_string">vvm_type_omtp</string>
+        <boolean name="vvm_cellular_data_required_bool" value="false" />
+        <boolean name="vvm_ssl_enabled_bool" value="true" />
     </pbundle_as_map>
 </list>
