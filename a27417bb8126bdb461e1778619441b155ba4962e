@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a28261f7_bcd2f870",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-04-27T21:14:14Z",
+      "side": 1,
+      "message": "Alright, but we need to prompt users in Updater then.\n\n\"If you remount OTA is very likely to fail, $here is how to fix it\"",
+      "revId": "a27417bb8126bdb461e1778619441b155ba4962e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
