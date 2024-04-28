@@ -4,6 +4,15 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
+    <!-- Radio (backend) -->
+    <hal format="hidl" optional="true">
+        <name>lineage.hardware.radio</name>
+        <version>1.0-6</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Radio Config (backend) -->
     <hal format="hidl" optional="true">
         <name>lineage.hardware.radio.config</name>
