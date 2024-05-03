@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a73f479_ab5e9548",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-05-03T17:26:02Z",
+      "side": 1,
+      "message": "This properly reports duplicates on tegra android common kernel bringup and does not error when duplicates are removed. Testing was requested on qcom several days ago and no failures have been reported.",
+      "revId": "27126a3fb2b27583c8651f274883138f1c0bee62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
