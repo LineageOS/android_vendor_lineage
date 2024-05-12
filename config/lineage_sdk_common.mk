@@ -1,5 +1,6 @@
 # Permissions for lineage sdk services
 PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/org.lineageos.accessories.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.accessories.xml \
     vendor/lineage/config/permissions/org.lineageos.globalactions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.globalactions.xml \
     vendor/lineage/config/permissions/org.lineageos.hardware.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.hardware.xml \
     vendor/lineage/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
