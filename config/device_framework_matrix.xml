@@ -13,6 +13,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Accessories -->
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.accessories</name>
+        <interface>
+            <name>IAccessories</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Camera -->
     <hal format="hidl" optional="true">
         <name>vendor.lineage.camera.motor</name>
