@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2024 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<permissions>
+    <!-- The feature listed here coincides with the AccessoriesInterfaceService declared as
+        part of the external lineage service init in SystemServer. If this xml isn't present
+        on the device, the service will not be published as a binder service!
+    -->
+    <feature name="org.lineageos.accessories" />
+</permissions>
