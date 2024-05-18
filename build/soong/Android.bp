@@ -428,3 +428,22 @@ qti_vibrator_hal {
         },
     },
 }
+
+soong_config_module_type {
+    name: "power_libperfmgr",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: ["power_libperfmgr_mode_extension_lib"],
+    properties: [
+        "whole_static_libs",
+    ],
+}
+
+power_libperfmgr {
+    name: "power_libperfmgr_defaults",
+    soong_config_variables: {
+        power_libperfmgr_mode_extension_lib: {
+            whole_static_libs: ["%s"],
+        },
+    },
+}
