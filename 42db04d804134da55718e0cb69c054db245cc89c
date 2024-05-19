@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4dfb5099_e5792321",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2024-05-19T01:16:10Z",
+      "side": 1,
+      "message": "should also add carrier_id, like here: https://android.googlesource.com/device/sample/+/5a389ccd371d884bd79a8a54521ab5db717667c0/etc/apns-full-conf.xml#34428",
+      "revId": "42db04d804134da55718e0cb69c054db245cc89c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
