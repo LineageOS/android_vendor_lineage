@@ -46,6 +46,30 @@
       },
       "revId": "c0a82d6799151c268fb77ca2606122baf3150d38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ffece4f_365ab915",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-05-19T14:22:08Z",
+      "side": 1,
+      "message": "If we go with that dummy (sounds good to me), we can completely get rid of the MODE_EXT define in power hal and the TARGET_POWER_LIBPERFMGR_ENABLE_MODE_EXTENSION flag here.",
+      "parentUuid": "8f53973f_257ac213",
+      "range": {
+        "startLine": 97,
+        "startChar": 46,
+        "endLine": 97,
+        "endChar": 51
+      },
+      "revId": "c0a82d6799151c268fb77ca2606122baf3150d38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
