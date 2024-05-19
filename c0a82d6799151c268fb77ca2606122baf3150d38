@@ -70,6 +70,30 @@
       },
       "revId": "c0a82d6799151c268fb77ca2606122baf3150d38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d67d6834_c8d049d9",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-05-19T14:27:23Z",
+      "side": 1,
+      "message": "Indeed, I\u0027ll update this.",
+      "parentUuid": "3ffece4f_365ab915",
+      "range": {
+        "startLine": 97,
+        "startChar": 46,
+        "endLine": 97,
+        "endChar": 51
+      },
+      "revId": "c0a82d6799151c268fb77ca2606122baf3150d38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
