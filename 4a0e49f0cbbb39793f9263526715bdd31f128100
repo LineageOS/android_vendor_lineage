@@ -68,6 +68,23 @@
       "message": "This helps when we don\u0027t need to include qcom/Makefile - with oplus sources where necessary main dtb are populated in oplus directory itself",
       "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef82dc81_f2dd3006",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-05-28T09:00:07Z",
+      "side": 1,
+      "message": "I need to verify if this breaks salami.",
+      "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
