@@ -51,6 +51,23 @@
       "message": "looks like it was a device side issue, settings as public again.",
       "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9323352_62da586a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30416
+      },
+      "writtenOn": "2024-05-28T08:50:49Z",
+      "side": 1,
+      "message": "This helps when we don\u0027t need to include qcom/Makefile - with oplus sources where necessary main dtb are populated in oplus directory itself",
+      "revId": "4a0e49f0cbbb39793f9263526715bdd31f128100",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
