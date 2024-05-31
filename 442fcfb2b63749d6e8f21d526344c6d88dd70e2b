@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d2852bb_613c3b1d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33546
+      },
+      "writtenOn": "2024-05-31T22:31:31Z",
+      "side": 1,
+      "message": "I\u0027m not 100% sure how I feel about this. Ideally, more parts of the configs for phone/tablets/foldables should be commonized (like creating a LatinIME.mk for those related options). Also, I\u0027m not sold on the name \"foldable_book\". I chose it because \"foldable\" is ambiguous and this config isn\u0027t intended for flip/clamshell-style foldables. I\u0027d love to get some more opinions on this.",
+      "revId": "442fcfb2b63749d6e8f21d526344c6d88dd70e2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
