@@ -447,3 +447,28 @@ qti_vibrator_hal {
         },
     },
 }
+
+soong_config_module_type {
+    name: "wifi_force_disable_aidlcaps",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: [
+        "wifi_force_disable_aidlchipcaps",
+        "wifi_force_disable_aidlstacaps",
+    ],
+    properties: [
+        "cppflags",
+    ],
+}
+
+wifi_force_disable_aidlchipcaps {
+    name: "wifi_force_disable_aidlcaps_defaults",
+    soong_config_variables: {
+        wifi_force_disable_aidlchipcaps: {
+            cppflags: ["-DWIFI_FORCE_DISABLE_AIDLCHIPCAPS=%s"],
+        },
+        wifi_force_disable_aidlstaifacecaps: {
+            cppflags: ["-DWIFI_FORCE_DISABLE_AIDLSTAIFACECAPS=%s"],
+        },
+    },
+}
