@@ -33,6 +33,24 @@
       "message": "But do we want to do this globally or just override it in the affected devices? AFAIK nothing broke except pixels",
       "revId": "51cbd4fd602d8cbfa1526234e0d511df4af45878",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba77d566_553f3002",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-06-07T21:09:43Z",
+      "side": 1,
+      "message": "I think global reduction is appropriate personally - everyone is effected the same amount by the growth, pixels are just the broken ones.\n\nI think it\u0027s fine.",
+      "parentUuid": "39f03761_7847ccb7",
+      "revId": "51cbd4fd602d8cbfa1526234e0d511df4af45878",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
