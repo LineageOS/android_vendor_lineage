@@ -34,6 +34,24 @@
       "parentUuid": "615d60aa_bfd01ce6",
       "revId": "0b38e3ab5d04755988532b0d690c4ec2fb5aec8b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e740159_1ee9d56c",
+        "filename": "config/BoardConfigReservedSize.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-06-07T21:10:24Z",
+      "side": 1,
+      "message": "yeahhh it breaks AML - something about being out of nodes avail - should have been a standalone change, but it is needed.",
+      "parentUuid": "4c5efec8_b1d779bf",
+      "revId": "0b38e3ab5d04755988532b0d690c4ec2fb5aec8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
