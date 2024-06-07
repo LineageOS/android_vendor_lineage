@@ -16,6 +16,23 @@
       "message": "bonito was only around 3 MB over max, so we don\u0027t have to decrease reserved space that much.  Just figured 100 MB would give us some room to grow. Feel free to adjust as you like.",
       "revId": "51cbd4fd602d8cbfa1526234e0d511df4af45878",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39f03761_7847ccb7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-06-07T19:18:24Z",
+      "side": 1,
+      "message": "But do we want to do this globally or just override it in the affected devices? AFAIK nothing broke except pixels",
+      "revId": "51cbd4fd602d8cbfa1526234e0d511df4af45878",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
