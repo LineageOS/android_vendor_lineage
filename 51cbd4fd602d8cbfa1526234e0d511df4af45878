@@ -51,6 +51,24 @@
       "parentUuid": "39f03761_7847ccb7",
       "revId": "51cbd4fd602d8cbfa1526234e0d511df4af45878",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6831465_7619abc4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2024-06-08T03:58:36Z",
+      "side": 1,
+      "message": "i thought global was appropriate too, but fine with either way.",
+      "parentUuid": "ba77d566_553f3002",
+      "revId": "51cbd4fd602d8cbfa1526234e0d511df4af45878",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
