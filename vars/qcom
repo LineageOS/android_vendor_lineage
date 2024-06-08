@@ -1,10 +1,10 @@
 declare -A qcom_group_revision
 # https://git.codelinaro.org/clo/la/platform/frameworks/base/-/tags?sort=updated_desc&search=LA.QSSI.14.0.r1
-qcom_group_revision[qssi]=LA.QSSI.14.0.r1-14000-qssi.0
+qcom_group_revision[qssi]=LA.QSSI.14.0.r1-15700-qssi.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.10.6.2.r1
 qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02500-89xx.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.12.2.1.r1
-qcom_group_revision[sdm660]=LA.UM.12.2.1.r1-03100-sdm660.0
+qcom_group_revision[sdm660]=LA.UM.12.2.1.r1-03500-sdm660.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.10.3.r1
 qcom_group_revision[sdm845]=LA.UM.10.3.r1-01700-sdm845.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.9.1.r1
@@ -12,12 +12,12 @@ qcom_group_revision[msmnile]=LA.UM.9.1.r1-16000-SMxxx0.QSSI14.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.9.12.r1
 qcom_group_revision[kona]=LA.UM.9.12.r1-18300-SMxx50.QSSI14.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.9.14.r1
-qcom_group_revision[lahaina]=LA.UM.9.14.r1-24200-LAHAINA.QSSI13.0
+qcom_group_revision[lahaina]=LA.UM.9.14.r1-24700-LAHAINA.QSSI15.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.1.0.r1
-qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-25300-WAIPIO.QSSI15.0
+qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-25800-WAIPIO.QSSI14.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.8.0.r1
-qcom_group_revision[kailua-audio]=AUDIO.LA.8.0.r1-10200-KAILUA.0
+qcom_group_revision[kailua-audio]=AUDIO.LA.8.0.r1-10800-KAILUA.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.13.2.0.r1
-qcom_group_revision[kailua-vendor]=LA.VENDOR.13.2.0.r1-22900-KAILUA.QSSI15.0
+qcom_group_revision[kailua-vendor]=LA.VENDOR.13.2.0.r1-23800-KAILUA.QSSI14.0
 # https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.3.0.r1
-qcom_group_revision[kailua-video]=VIDEO.LA.3.0.r1-07400-KAILUA.0
+qcom_group_revision[kailua-video]=VIDEO.LA.3.0.r1-07800-KAILUA.0
