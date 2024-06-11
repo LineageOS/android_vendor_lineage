@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP1A.240505.005"
+readonly build_id="AP2A.240605.024"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r33"
-readonly aosp_tag="android-14.0.0_r35"
+readonly prev_aosp_tag="android-14.0.0_r35"
+readonly aosp_tag="android-14.0.0_r50"
 
-readonly build_number="11677807"
+readonly build_number="11860263"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-ap1a.240505.005-factory-60dc7de9.zip"
-readonly image_sha256="60dc7de9d849c29e6be14e33908e4f4fd41d20ae6b9ae2cf72aeaa29a9a1c9a7"
+readonly image_url="https://dl.google.com/dl/android/aosp/lynx-ap2a.240605.024-factory-00dd1f3b.zip"
+readonly image_sha256="00dd1f3bf9ba140ebc378c636c214789ab2454d0403b3e7d7111f5f75d77ec71"
 
-readonly flash_url="https://flash.android.com/build/11677807?target=lynx-user&signed"
+readonly flash_url="https://flash.android.com/build/11860263?target=lynx-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-ap1a.240505.005-811cb704.zip"
-readonly ota_sha256="811cb7040b1028e69f21b650684290ac32d00ef01e26a7db2c16abf59b283ceb"
+readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-ap2a.240605.024-a82ac4bb.zip"
+readonly ota_sha256="a82ac4bb1e8c071073620d141b55a7b8b68c6f99a9fd68fb942c5882f61f8a41"
 
-readonly security_patch="2024-05-05"
+readonly security_patch="2024-06-05"
