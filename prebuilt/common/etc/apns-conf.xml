@@ -284,6 +284,8 @@
   <apn carrier="INTERNET GPRS" mcc="214" mnc="06" apn="airtelnet.es" proxy="" port="" user="vodafone" password="vodafone" mmsc="" type="default,supl" />
   <apn carrier="TeleCable Internet" mcc="214" mnc="06" apn="internet.telecable.es" proxy="" port="" user="telecable" password="telecable" mmsc="" mvno_type="spn" mvno_match_data="Telecable" type="default,supl" />
   <apn carrier="TeleCable MMS" mcc="214" mnc="06" apn="mms.telecable.es" proxy="" port="" user="telecable" password="telecable" mmsc="http://mms.telecable.es/mms/" mmsproxy="212.89.0.84" mmsport="8080" mvno_type="spn" mvno_match_data="Telecable" type="mms" />
+  <apn carrier="Hits MMS" mcc="214" mnc="06" apn="mms.hitsmobile.es" proxy="" port="" user="wap@wap" password="wap125" mmsc="http://mms.hitsmobile.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" mvno_type="spn" mvno_match_data="Hits" type="mms" />
+  <apn carrier="Hits Internet" mcc="214" mnc="06" apn="tel.hitsmobile.es" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Hits" type="default,supl" />
   <apn carrier="Movistar" mcc="214" mnc="07" apn="telefonica.es" proxy="" port="8080" user="telefonica" password="telefonica" mmsc="http://mms.movistar.com" mmsproxy="" mmsport="8080" authtype="1" type="default,mms,supl" />
   <apn carrier="Conexión Compartida" mcc="214" mnc="07" apn="movistar.es" user="MOVISTAR" password="MOVISTAR" authtype="1" type="dun" />
   <apn carrier="Jazztel MMS" mcc="214" mnc="07" apn="jazzmms" proxy="" port="" user="" password="" mmsc="http://jazztelmms.com/servlets/mms" mmsproxy="37.132.0.10" mmsport="8080" mvno_type="spn" mvno_match_data="JAZZTEL" type="mms" />
@@ -590,8 +592,6 @@
   <apn carrier="OVIVO" mcc="234" mnc="15" apn="ovivomobile.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Ovivo" type="default,supl,dun,fota" />
   <apn carrier="BT Mobile" mcc="234" mnc="15" apn="btmobile.bt.com" proxy="" port="" user="bt" password="bt" mmsc="" mvno_type="spn" mvno_match_data="BT" authtype="1" type="default,supl" />
   <apn carrier="BT Mobile" mcc="234" mnc="15" apn="btmobile.bt.com" proxy="" port="" user="bt" password="bt" mmsc="http://mms.bt.com/servlets/mms" mmsproxy="212.183.137.12" mmsport="8799" mvno_type="spn" mvno_match_data="BT" authtype="1" type="mms" />
-  <apn carrier="Hits MMS" mcc="214" mnc="06" apn="mms.hitsmobile.es" proxy="" port="" user="wap@wap" password="wap125" mmsc="http://mms.hitsmobile.es/servlets/mms" mmsproxy="212.73.32.10" mmsport="80" mvno_type="spn" mvno_match_data="Hits" type="mms" />
-  <apn carrier="Hits Internet" mcc="214" mnc="06" apn="tel.hitsmobile.es" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="Hits" type="default,supl" />
   <apn carrier="3 Internet" mcc="234" mnc="20" apn="three.co.uk" type="default,supl" />
   <apn carrier="3 Modem" mcc="234" mnc="20" apn="3internet" type="default,supl" />
   <apn carrier="3 MMS" mcc="234" mnc="20" apn="three.co.uk" proxy="" port="" user="" password="" mmsc="http://mms.um.three.co.uk:10021/mmsc" mmsproxy="217.171.129.2" mmsport="8799" type="mms" />
