@@ -882,10 +882,8 @@
   <apn carrier="Saunalahti Wap" mcc="244" mnc="21" apn="wap.saunalahti.fi" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Saunalahti Internet" mcc="244" mnc="21" apn="internet.saunalahti" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Saunalahti MMS" mcc="244" mnc="21" apn="mms.saunalahti.fi" proxy="" port="" user="" password="" mmsc="http://mms.saunalahti.fi:8002/" mmsproxy="62.142.4.197" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Sonera Internet" mcc="244" mnc="91" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Sonera MMS" mcc="244" mnc="91" apn="wap.sonera.net" proxy="" port="" user="" password="" mmsc="http://mms.sonera.fi:8002" mmsproxy="195.156.25.33" mmsport="80" type="mms" />
-  <apn carrier="Tele Finland Internet" mcc="244" mnc="91" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Tele Finland MMS" mcc="244" mnc="91" apn="wap.sonera.net" proxy="" port="" user="" password="" mmsc="http://mms.sonera.fi:8002" mmsproxy="195.156.25.33" mmsport="80" type="mms" />
+  <apn carrier="Telia Finland Internet" mcc="244" mnc="91" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Telia Finland MMS" mcc="244" mnc="91" apn="mms" proxy="" port="" user="" password="" mmsc="http://mms/" mmsproxy="195.156.25.33" mmsport="8080" type="mms" />
   <apn carrier="Omnitel MMS" mcc="246" mnc="01" apn="gprs.mms.lt" proxy="" port="" user="mms" password="mms" mmsc="http://mms.omnitel.net:8002/" mmsproxy="194.176.32.149" mmsport="8080" type="mms" />
   <apn carrier="Omnitel" mcc="246" mnc="01" apn="gprs.startas.lt" proxy="" port="" user="omni" password="omni" mmsc="" type="default,supl" />
   <apn carrier="Omnitel Internet" mcc="246" mnc="01" apn="omnitel" proxy="" port="" user="omni" password="omni" mmsc="" type="default,supl" />
