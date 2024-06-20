@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cf6589b_ad000582",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-06-20T22:12:14Z",
+      "side": 1,
+      "message": "\u003e just repo init with ssh remote?\n\nNo, here we have HTTPS mirror sites hosted by universities, the only downside is they only fetches branches, doesn\u0027t fetch all the refs",
+      "revId": "ebdbc685692ca8d77130f4b7b4a37c72bdb40633",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
