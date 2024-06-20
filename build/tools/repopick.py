@@ -518,6 +518,7 @@ def main():
 
         item = {
             "subject": review["subject"],
+            "project": review["project"],
             "project_path": project_path,
             "branch": review["branch"],
             "change_id": review["change_id"],
@@ -645,9 +646,10 @@ def do_git_fetch_pull(args, item):
         if args.verbose:
             print("Trying to fetch the change from GitHub")
 
-        cmd[-2] = "github"
-        if not args.quiet:
-            print(cmd)
+        cmd[-2] = "ssh://git@github.com/" + item["project"]
+        if args.pull:
+            cmd.append("--no-ff")
+        print(cmd)
         result = subprocess.call(cmd, cwd=project_path)
         # Check if it worked
         if result == 0 or commit_exists(project_path, item["revision"]):
