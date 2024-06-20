@@ -75,7 +75,7 @@ def add_auth(githubreq):
 if not depsonly:
     githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/mirror/main/default.xml")
     try:
-        result = ElementTree.fromstring(urllib.request.urlopen(githubreq).read().decode())
+        result = ElementTree.fromstring(urllib.request.urlopen(githubreq, timeout=10).read().decode())
     except urllib.error.URLError:
         print("Failed to fetch data from GitHub")
         sys.exit(1)
@@ -261,7 +261,7 @@ def get_default_or_fallback_revision(repo_name):
 
     githubreq = urllib.request.Request("https://api.github.com/repos/LineageOS/" + repo_name + "/branches")
     add_auth(githubreq)
-    result = json.loads(urllib.request.urlopen(githubreq).read().decode())
+    result = json.loads(urllib.request.urlopen(githubreq, timeout=5).read().decode())
     if has_branch(result, default_revision):
         return default_revision
 
