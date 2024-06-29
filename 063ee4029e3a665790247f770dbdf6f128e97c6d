@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3d892df_aeac4925",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-06-29T18:44:36Z",
+      "side": 1,
+      "message": "Still needed to show the audio output icon when no media is playing and A2DP is connected.",
+      "revId": "063ee4029e3a665790247f770dbdf6f128e97c6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
