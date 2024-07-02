@@ -10,21 +10,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240605.024"
+readonly build_id="AP2A.240705.004"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r34"
-readonly aosp_tag="android-14.0.0_r50"
+readonly prev_aosp_tag="android-14.0.0_r50"
+readonly aosp_tag="android-14.0.0_r52"
 
-readonly build_number="11860263"
+readonly build_number="11875680"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/raven-ap2a.240605.024-factory-ec9948cb.zip"
-readonly image_sha256="ec9948cb9f9a6cf39a8392abe21d783ac2fadc3380de3f68663e12b3fe657c38"
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-ap2a.240705.004-factory-02dd665c.zip"
+readonly image_sha256="02dd665c4dbcca60084d2f04b4a4ea85f7c374217a7443f203a899f7a6bc01c3"
 
-readonly flash_url="https://flash.android.com/build/11860263?target=raven-user&signed"
+readonly flash_url="https://flash.android.com/build/11875680?target=raven-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-ap2a.240605.024-9fe0dd60.zip"
-readonly ota_sha256="9fe0dd60f1ef4a2e3f10cc253881f7cc5bb8226fa9664832ef8c92b6bf6761ef"
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-ap2a.240705.004-f958fe50.zip"
+readonly ota_sha256="f958fe502a5c006a15d9c865ab01ba222d7edbfa80a7d14a9e4861b2c61633a4"
 
-readonly security_patch="2024-06-05"
+readonly security_patch="2024-07-05"
