@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240605.024"
+readonly build_id="AP2A.240705.004"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r35"
-readonly aosp_tag="android-14.0.0_r50"
+readonly prev_aosp_tag="android-14.0.0_r50"
+readonly aosp_tag="android-14.0.0_r52"
 
-readonly build_number="11860263"
+readonly build_number="11875680"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-ap2a.240605.024-factory-17c9b82b.zip"
-readonly image_sha256="17c9b82b277d2ae39d03695f875d80d2738b4aedebcbbeab583c00c6dcf171a1"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-ap2a.240705.004-factory-42a1bfe9.zip"
+readonly image_sha256="42a1bfe94a30f3cb2c37e0c268c06bbe0ea9fadb49ee1ade88b0352d85708fc0"
 
-readonly flash_url="https://flash.android.com/build/11860263?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/11875680?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-ap2a.240605.024-e6aff00e.zip"
-readonly ota_sha256="e6aff00ee8ad6b40b4474a8242c91bdea07f894d321cf897512e9ff0967ce7d8"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-ap2a.240705.004-5ce14c35.zip"
+readonly ota_sha256="5ce14c350d8eabe92e844d25473446a01f39688c0d14001fff10ef3631e1a8ab"
 
-readonly security_patch="2024-06-05"
+readonly security_patch="2024-07-05"

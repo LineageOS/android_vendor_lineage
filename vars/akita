@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240605.024"
+readonly build_id="AP2A.240705.005"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r41"
-readonly aosp_tag="android-14.0.0_r50"
+readonly prev_aosp_tag="android-14.0.0_r50"
+readonly aosp_tag="android-14.0.0_r53"
 
-readonly build_number="11860263"
+readonly build_number="11942872"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/akita-ap2a.240605.024-factory-0023bc62.zip"
-readonly image_sha256="0023bc62e4f482b89321b4e54841bdb85af6aa169c9fe87f70d009a74de15f43"
+readonly image_url="https://dl.google.com/dl/android/aosp/akita-ap2a.240705.005-factory-df5f07ce.zip"
+readonly image_sha256="df5f07ce1bb72f1c3802178aa367c5d21cedbbc46fd34adbc9d9a09baf4bd1e0"
 
-readonly flash_url="https://flash.android.com/build/11860263?target=akita-user&signed"
+readonly flash_url="https://flash.android.com/build/11942872?target=akita-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/akita-ota-ap2a.240605.024-2bc858b1.zip"
-readonly ota_sha256="2bc858b188c12e33ff30ac0fa8a7dd83918a88aab0eaf42b72631f2e2fd07ef1"
+readonly ota_url="https://dl.google.com/dl/android/aosp/akita-ota-ap2a.240705.005-fbd833f2.zip"
+readonly ota_sha256="fbd833f292ff08e0ca173644a11181f5395082729f5ae2730e47ba85778c811a"
 
-readonly security_patch="2024-06-05"
+readonly security_patch="2024-07-05"
