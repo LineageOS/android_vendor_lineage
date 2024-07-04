@@ -1055,6 +1055,7 @@
   <apn carrier="O2 DE IMS" carrier_id="1456" mcc="262" mnc="07" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2620739" mvno_type="imsi" user_visible="false" />
   <apn carrier="O2 DE Internet Prepaid" carrier_id="10003" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" mvno_match_data="2620749" mvno_type="imsi" />
   <apn carrier="O2 DE IMS" carrier_id="10003" mcc="262" mnc="07" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2620749" mvno_type="imsi" user_visible="false" />
+  <apn carrier="O2 DE Internet" carrier_id="1456" mcc="262" mnc="23" apn="internet" type="default,supl" />
   <apn carrier="Alice" mcc="262" mnc="07" apn="internet.partner1" authtype="0" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.41" mmsport="8080" mvno_type="spn" mvno_match_data="Alice" />
   <apn carrier="Fonic Prepaid" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" mvno_match_data="26207515" mvno_type="imsi" />
   <apn carrier="Lidl Mobile" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" mvno_match_data="26207520" mvno_type="imsi" />
