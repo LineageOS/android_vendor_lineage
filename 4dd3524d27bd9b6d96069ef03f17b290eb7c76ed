@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d44c14d7_dc64a8ec",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1058,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-07-07T10:49:15Z",
+      "side": 1,
+      "message": "The apns are sorted by mcc and mnc combinations, not grouped by carrier (though often enough wrong ^^).  -\u003e move to L#1067 before Truphone",
+      "revId": "4dd3524d27bd9b6d96069ef03f17b290eb7c76ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
