@@ -405,17 +405,20 @@ else ifeq ($(BOARD_USES_VENDOR_DLKMIMAGE),true)
 KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR_DLKM)
 KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_vendor)
 KERNEL_MODULE_MOUNTPOINT := vendor_dlkm
+KERNEL_MODULES_INTERMEDIATES := vendor_dlkmimage_intermediates
 $(INSTALLED_VENDOR_DLKMIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 else
 KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR)
 KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_vendor)
 KERNEL_MODULE_MOUNTPOINT := vendor
+KERNEL_MODULES_INTERMEDIATES := vendorimage_intermediates
 $(INSTALLED_VENDORIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 endif
 ifeq ($(BOARD_USES_SYSTEM_DLKMIMAGE),true)
 SYSTEM_KERNEL_MODULES_OUT := $(TARGET_OUT_SYSTEM_DLKM)
 SYSTEM_KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_system_dlkm)
 SYSTEM_KERNEL_MODULE_MOUNTPOINT := system_dlkm
+SYSTEM_KERNEL_MODULES_INTERMEDIATES := system_dlkmimage_intermediates
 $(INSTALLED_SYSTEM_DLKMIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 endif
 MODULES_INTERMEDIATES := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,kernel_modules)
@@ -457,7 +460,7 @@ $(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(KERNEL_DEFCONFIG))
 
-$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
+$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $($(KERNEL_MODULES_INTERMEDIATES))/file_list.txt
 	@echo "Building Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
 	$(call make-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
 	$(hide) if grep -q '^CONFIG_OF=y' $(KERNEL_CONFIG); then \
@@ -522,6 +525,12 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
 				[ $$? -ne 0 ] && exit 1; \
 				($(call build-image-kernel-modules-lineage,$$recovery_modules,$(KERNEL_RECOVERY_MODULES_OUT),/,$(KERNEL_RECOVERY_DEPMOD_STAGING_DIR),$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD),/)) || exit "$$?"; \
 			) \
+			kernel_out_dir=$(KERNEL_MODULES_OUT)/lib/modules \
+			out_modules=$$(find $$kernel_out_dir -type f -name '*.ko' -o -name 'modules.*'); \
+			$$(for n in $$out_modules; do \
+				module_name=$$(basename $$n); \
+				echo lib/modules/"$$module_name" >> $($(KERNEL_MODULES_INTERMEDIATES))/file_list.txt; \
+			done); \
 		fi
 
 .PHONY: kerneltags
