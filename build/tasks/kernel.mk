@@ -457,7 +457,7 @@ $(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(KERNEL_DEFCONFIG))
 
-$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
+$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(vendorimage_intermediates)/file_list.txt
 	@echo "Building Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
 	$(call make-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
 	$(hide) if grep -q '^CONFIG_OF=y' $(KERNEL_CONFIG); then \
@@ -490,6 +490,15 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC)
 				[ -n "$$err" ] && exit 1; \
 			) \
 			all_modules=$$(find $$kernel_modules_dir -type f -name '*.ko'); \
+			$$(for n in $$all_modules; do \
+				module_name=$$(basename $$n); \
+				echo lib/modules/"$$module_name" >> $(vendorimage_intermediates)/file_list.txt; \
+			done); \
+			txt_modules=$$(find $$kernel_modules_dir -type f -name 'modules.alias' -o -name 'modules.blocklist' -o -name 'modules.dep' -o -name 'modules.load' -o -name 'modules.softdep'); \
+			$$(for n in $$txt_modules; do \
+				module_name=$$(basename $$n); \
+				echo lib/modules/"$$module_name" >> $(vendorimage_intermediates)/file_list.txt; \
+			done); \
 			filtered_modules=""; \
 			$(if $(SYSTEM_KERNEL_MODULES),\
 				gki_modules=$$(for m in $(SYSTEM_KERNEL_MODULES); do \
