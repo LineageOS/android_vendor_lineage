@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62c96dfb_020bfb15",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-08T09:18:59Z",
+      "side": 1,
+      "message": "This should account for all usecases now.\n\nNote for those that missed the conversation, the issue found on \"some\" devices that failed to boot after unsetting BUILD_BROKEN_INCORRECT_PARTITION_IMAGES was simply because the kernel modules were missing from system_dlkm/vendor/vendor_dlkm images. It could only be noticed if one was building images alone to then fastboot flash, target-files were never affected.",
+      "revId": "4fa85a8cdcaae22468599be988944f2ab1ddcfbe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
