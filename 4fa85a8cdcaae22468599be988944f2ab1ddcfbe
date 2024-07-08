@@ -16,6 +16,23 @@
       "message": "This should account for all usecases now.\n\nNote for those that missed the conversation, the issue found on \"some\" devices that failed to boot after unsetting BUILD_BROKEN_INCORRECT_PARTITION_IMAGES was simply because the kernel modules were missing from system_dlkm/vendor/vendor_dlkm images. It could only be noticed if one was building images alone to then fastboot flash, target-files were never affected.",
       "revId": "4fa85a8cdcaae22468599be988944f2ab1ddcfbe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fceb8218_19e18c3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-07-08T09:29:49Z",
+      "side": 1,
+      "message": "It fails to build here:\n/bin/bash: line 1: out/target/product/hawao/obj/PACKAGING/vendor_intermediates/file_list.txt: No such file or directory",
+      "revId": "4fa85a8cdcaae22468599be988944f2ab1ddcfbe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
