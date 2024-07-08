@@ -51,6 +51,23 @@
       "parentUuid": "fceb8218_19e18c3b",
       "revId": "4fa85a8cdcaae22468599be988944f2ab1ddcfbe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9de98c90_4ed4da1a",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 474,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-08T09:50:13Z",
+      "side": 1,
+      "message": "@mkbestas@lineageos.org try adding here:\n\n$($(KERNEL_MODULES_INTERMEDIATES))/file_list.txt\n\nNot sure how to do that conditionally, tho.",
+      "revId": "4fa85a8cdcaae22468599be988944f2ab1ddcfbe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
