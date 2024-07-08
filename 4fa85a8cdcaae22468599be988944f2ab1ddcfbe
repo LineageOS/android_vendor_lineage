@@ -33,6 +33,24 @@
       "message": "It fails to build here:\n/bin/bash: line 1: out/target/product/hawao/obj/PACKAGING/vendor_intermediates/file_list.txt: No such file or directory",
       "revId": "4fa85a8cdcaae22468599be988944f2ab1ddcfbe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45987426_509998cf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-08T09:44:50Z",
+      "side": 1,
+      "message": "No sure why... I have tested on radxa0 (kmods on vendor), lemonadep (kmods on vendor_dlkm) and salami (kmods both on system_dlkm and vendor_dlkm).",
+      "parentUuid": "fceb8218_19e18c3b",
+      "revId": "4fa85a8cdcaae22468599be988944f2ab1ddcfbe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
