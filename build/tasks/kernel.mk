@@ -423,7 +423,11 @@ else
 KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR)
 KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_vendor)
 KERNEL_MODULE_MOUNTPOINT := vendor
+ifneq ($(BUILDING_VENDOR_IMAGE),)
 KERNEL_MODULES_PARTITION_FILE_LIST := $(vendorimage_intermediates)/file_list.txt
+else # No vendor partition
+KERNEL_MODULES_PARTITION_FILE_LIST := $(systemimage_intermediates)/file_list.txt
+endif # BUILDING_VENDOR_IMAGE
 $(INSTALLED_VENDORIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 endif
 ifeq ($(BOARD_USES_SYSTEM_DLKMIMAGE),true)
