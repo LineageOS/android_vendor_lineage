@@ -1,6 +1,29 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "2438a3d1_476c1d7f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-11T18:03:49Z",
+      "side": 1,
+      "message": "Also, this is not 100% accurate. We have devices that are not treble on stock configuration, but now building vendor (using unused partition as vendor or even converted to dynamic partitions).",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 50
+      },
+      "revId": "198c9399668e4f5fa5a7c62902dade54b6526b01",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "0f41abbd_2e62146b",
