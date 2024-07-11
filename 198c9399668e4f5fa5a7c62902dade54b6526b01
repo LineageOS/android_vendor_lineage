@@ -16,6 +16,23 @@
       "message": "Fixes compilation on:\n- joan (A-only no vendor)\n- NB1 (A/B no vendor)\n\nNo change on:\n- gtowifi (A-only vendor)\n- flashlmdd (A/B vendor)",
       "revId": "198c9399668e4f5fa5a7c62902dade54b6526b01",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a27c9b50_522b2768",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 425,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-11T17:50:48Z",
+      "side": 1,
+      "message": "I would prefer a board config flag here.",
+      "revId": "198c9399668e4f5fa5a7c62902dade54b6526b01",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
