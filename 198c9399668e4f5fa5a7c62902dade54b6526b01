@@ -33,6 +33,24 @@
       "message": "I would prefer a board config flag here.",
       "revId": "198c9399668e4f5fa5a7c62902dade54b6526b01",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37be1d1a_476b3843",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 425,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-07-11T17:53:19Z",
+      "side": 1,
+      "message": "Initially I had TARGET_COPY_OUT_VENDOR (see PS1), but luk told me to do it this way...",
+      "parentUuid": "a27c9b50_522b2768",
+      "revId": "198c9399668e4f5fa5a7c62902dade54b6526b01",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
