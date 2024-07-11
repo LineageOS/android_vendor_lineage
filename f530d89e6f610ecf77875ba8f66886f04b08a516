@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6662830_16b6faaf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-07-11T14:57:18Z",
+      "side": 1,
+      "message": "\u003capn carrier\u003d\"DIGI Spain\" mcc\u003d\"214\" mnc\u003d\"05\" apn\u003d\"internet.digimobil.es\" mvno_type\u003d\"gid\" mvno_match_data\u003d\"44474553\" type\u003d\"default,ia,supl\" /\u003e\n  \u003capn carrier\u003d\"DIGI Spain\" mcc\u003d\"226\" mnc\u003d\"05\" apn\u003d\"internet.digimobil.es\" mvno_type\u003d\"gid\" mvno_match_data\u003d\"44474553\" type\u003d\"default,ia,supl\" /\u003e These should also be needed perhaps? At least according to https://apn.how/es/digi-spain https://apn.how/ro/digi-spain/xiaomi-14-pro and on the apns-conf from AOSP",
+      "revId": "f530d89e6f610ecf77875ba8f66886f04b08a516",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
