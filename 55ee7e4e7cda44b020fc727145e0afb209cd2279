@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c65f617a_7d69aa7e",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:10:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f902c622_a3082a7b",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d472a8db_c5a80673",
@@ -116,6 +134,24 @@
       "writtenOn": "2024-07-18T03:08:01Z",
       "side": 1,
       "message": "to be added",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0b9fffc_b8b4c8b8",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:10:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f37006f3_8825f736",
       "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
