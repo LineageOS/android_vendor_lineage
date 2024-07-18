@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fab35cbb_f3242b43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "Rebase on https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/348792?usp\u003dmerge-conflict",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f902c622_a3082a7b",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "should be added but below categories",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d472a8db_c5a80673",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 252,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "duplicated",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7c73ceb_8dca50d3",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 259,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "duplicated",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "023923f6_c9acb4cc",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "dupe",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ee6c4a7_77928f49",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "dupe",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f37006f3_8825f736",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "to be added",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2471fc48_1b4f31ab",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "dupe",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "badbcbdf_2a9bbbf6",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 302,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "dupe",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90260d9d_b32a7dce",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 2730,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T03:08:01Z",
+      "side": 1,
+      "message": "already added",
+      "revId": "55ee7e4e7cda44b020fc727145e0afb209cd2279",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
