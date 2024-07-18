@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8beecd00_d6211456",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T02:43:58Z",
+      "side": 1,
+      "message": "08000450\n\n432 is what\u0027s above.",
+      "revId": "e6c6718a4713a02585f673369fa8fc9c2a296adc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de58d296_38640866",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2024-07-18T02:43:58Z",
+      "side": 1,
+      "message": "I don\u0027t see this number on the website\n\ni do see 0882080000 for advice and registrations",
+      "revId": "e6c6718a4713a02585f673369fa8fc9c2a296adc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
