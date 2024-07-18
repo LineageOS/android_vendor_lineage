@@ -1473,10 +1473,57 @@
     <!--Russia-->
     <sensitivePN network="250">
         <item>
-            <number>88002000122</number>
+            <number>84959895050</number>
+            <languages>russian</languages>
+            <name>Служба психологической помощи</name>
+            <categories>emotional support|psychological|suicide prevention</categories>
+            <organization>Интернет-служба Экстренной психологической помощи МЧС России</organization>
+            <website>https://psi.mchs.gov.ru/</website>
         </item>
         <item>
-            <number>88002500015</number>
+            <number>84999010201</number>
+            <languages>russian</languages>
+            <name>Телефон доверия для переживших сексуальное насилие</name>
+            <categories>abuse|sexual abuse|sexual assault</categories>
+            <organization>Центр Сёстры</organization>
+            <website>https://sisters-help.ru/</website>
+        </item>
+        <item>
+            <number>88002000122</number>
+            <languages>russian</languages>
+            <name>Телефон доверия</name>
+            <categories>children|adolescents|adults|mental health|emotional support|psychological|suicide prevention</categories>
+            <website>https://telefon-doveria.ru/</website>
+        </item>
+        <item>
+            <number>88002340707</number>
+            <languages>russian</languages>
+            <name>Помощь для мигрантов и беженцев</name>
+            <organization>Российский Красный Крест</organization>
+            <website>https://www.redcross.ru/</website>
+        </item>
+        <item>
+            <number>88007000600</number>
+            <languages>russian</languages>
+            <name>Всероссийский телефон доверия для женщин, пострадавших от домашнего насилия</name>
+            <categories>women|abuse|sexual abuse|sexual assault</categories>
+            <organization>Центр АННА</organization>
+        </item>
+        <item>
+            <number>88314228447</number>
+            <languages>russian</languages>
+            <name>Остановим коррупцию</name>
+            <categories>corruption</categories>
+            <organization>Центральное межрегиональное следственное управление на транспорте Следственного комитета Российской Федерации</organization>
+            <website>https://psut.sledcom.ru/</website>
+        </item>
+        <item>
+            <number>88314228462</number>
+            <languages>russian</languages>
+            <name>Ребенок в опасности</name>
+            <categories>children|adolescents</categories>
+            <organization>Центр АННА</organization>
+            <website>https://psut.sledcom.ru/</website>
         </item>
     </sensitivePN>
     <!--Ukraine-->
