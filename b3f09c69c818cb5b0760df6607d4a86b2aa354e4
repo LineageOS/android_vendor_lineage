@@ -16,6 +16,23 @@
       "message": "After this commit, the problem of a \"dirty\" build arises.\n\nlog - https://paste.crdroid.net/2mXWcn",
       "revId": "b3f09c69c818cb5b0760df6607d4a86b2aa354e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01b32b6c_0eb744b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2024-07-19T13:04:11Z",
+      "side": 1,
+      "message": "It is very easy to reproduce:\n1) We do a clean build\n2) At the end, run the build again (without deleting the out folder)\n\nTested on hotdog build",
+      "revId": "b3f09c69c818cb5b0760df6607d4a86b2aa354e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
