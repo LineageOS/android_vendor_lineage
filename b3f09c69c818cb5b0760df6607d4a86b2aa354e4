@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bab89458_26116653",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2024-07-19T11:23:29Z",
+      "side": 1,
+      "message": "After this commit, the problem of a \"dirty\" build arises.\n\nlog - https://paste.crdroid.net/2mXWcn",
+      "revId": "b3f09c69c818cb5b0760df6607d4a86b2aa354e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
