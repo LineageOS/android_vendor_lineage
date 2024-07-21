@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a915094e_f56056e8",
+        "filename": "config/common_mobile_full.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-21T19:29:56Z",
+      "side": 0,
+      "message": "Maybe rename to full_mobile.mk since you introduce full_tablet.mk later on.",
+      "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "365c8781_a101e665",
+        "filename": "config/common_mobile_mini.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-21T19:29:56Z",
+      "side": 0,
+      "message": "and mini_mobile.mk here",
+      "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
