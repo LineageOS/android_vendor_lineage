@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a237b8b3_4afaa126",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-21T14:00:16Z",
+      "side": 1,
+      "message": "If inheritting `common_full.mk` in `tablet.mk` instead of each `common_full_tablet*.mk` is fine then lgtm",
+      "revId": "7d005529c5a687f2f2cfa0a5d61c56c73b8776a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
