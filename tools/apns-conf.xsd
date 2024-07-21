@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<xs:schema version="2.0"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="mcc">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="mnc">
+        <xs:union>
+            <xs:simpleType>
+              <xs:restriction base='xs:token'>
+                <xs:pattern value=""/>
+              </xs:restriction>
+            </xs:simpleType>
+            <xs:simpleType>
+              <xs:restriction base="xs:integer">
+                <xs:pattern value="\d{2,3}"/>
+              </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+
+    <!--
+         frameworks/base/telephony/java/android/telephony/data/ApnSetting.java,
+         TYPE_*_STRING
+    -->
+    <xs:simpleType name="apnType">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(\*|default|mms|supl|dun|hipri|fota|ims|cbs|ia|emergency|mcx|xcap|vsim|bip|enterprise|rcs)(,(\*|default|mms|supl|dun|hipri|fota|ims|cbs|ia|emergency|mcx|xcap|vsim|bip|enterprise|rcs))*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--
+         frameworks/base/telephony/java/android/telephony/data/ApnSetting.java,
+         PROTOCOL_INT_MAP
+    -->
+    <xs:simpleType name="protocol">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="IP" />
+            <xs:enumeration value="IPV6" />
+            <xs:enumeration value="IPV4V6" />
+            <xs:enumeration value="PPP" />
+            <xs:enumeration value="NON-IP" />
+            <xs:enumeration value="UNSTRUCTURED" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--
+         frameworks/base/telephony/java/android/telephony/data/ApnSetting.java,
+         AUTH_TYPE_*
+    -->
+    <xs:simpleType name="authtype">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--
+         frameworks/base/core/java/android/provider/Telephony.java,
+         SKIP_464XLAT_*
+    -->
+    <xs:simpleType name="skip_464xlat">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--
+         frameworks/base/telephony/java/android/telephony/data/ApnSetting.java,
+         MVNO_TYPE_STRING
+    -->
+    <xs:simpleType name="mvnoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="spn" />
+            <xs:enumeration value="imsi" />
+            <xs:enumeration value="gid" />
+            <xs:enumeration value="iccid" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--
+         packages/providers/TelephonyProvider/src/com/android/providers/telephony/TelephonyProvider.java,
+         TelephonyProvider::getInfrastructureListFromString
+    -->
+    <xs:simpleType name="infrastructure_bitmask">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(cellular|satellite)(\|(cellular|satellite))*" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="bitmask">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d+(\|\d+)*" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="apn">
+        <xs:attribute name="mcc" type="mcc" />
+        <xs:attribute name="mnc" type="mnc" />
+        <xs:attribute name="carrier" type="xs:string" />
+        <xs:attribute name="apn" type="xs:string" />
+        <xs:attribute name="user" type="xs:string" />
+        <xs:attribute name="server" type="xs:anyURI" />
+        <xs:attribute name="password" type="xs:string" />
+        <xs:attribute name="proxy" type="xs:anyURI" />
+        <xs:attribute name="port" type="xs:string" />
+        <xs:attribute name="mmsproxy" type="xs:anyURI" />
+        <xs:attribute name="mmsport" type="xs:string" />
+        <xs:attribute name="mmsc" type="xs:anyURI" />
+        <xs:attribute name="type" type="apnType" />
+        <xs:attribute name="protocol" type="protocol" />
+        <xs:attribute name="roaming_protocol" type="protocol" />
+        <xs:attribute name="authtype" type="authtype" />
+        <xs:attribute name="bearer" type="xs:integer" />
+        <xs:attribute name="profile_id" type="xs:integer" />
+        <xs:attribute name="max_conns" type="xs:integer" />
+        <xs:attribute name="wait_time" type="xs:integer" />
+        <xs:attribute name="max_conns_time" type="xs:integer" />
+        <xs:attribute name="mtu" type="xs:integer" />
+        <xs:attribute name="mtu_v4" type="xs:integer" />
+        <xs:attribute name="mtu_v6" type="xs:integer" />
+        <xs:attribute name="apn_set_id" type="xs:integer" />
+        <xs:attribute name="carrier_id" type="xs:integer" />
+        <xs:attribute name="skip_464xlat" type="skip_464xlat" />
+        <xs:attribute name="carrier_enabled" type="xs:boolean" />
+        <xs:attribute name="modem_cognitive" type="xs:boolean" />
+        <xs:attribute name="user_visible" type="xs:boolean" />
+        <xs:attribute name="user_editable" type="xs:boolean" />
+        <xs:attribute name="always_on" type="xs:boolean" />
+        <xs:attribute name="esim_bootstrap_provisioning" type="xs:boolean" />
+        <xs:attribute name="infrastructure_bitmask" type="infrastructure_bitmask" />
+        <xs:attribute name="network_type_bitmask" type="bitmask" />
+        <xs:attribute name="lingering_network_type_bitmask" type="bitmask" />
+        <xs:attribute name="bearer_bitmask" type="bitmask" />
+        <xs:attribute name="mvno_type" type="mvnoType" />
+        <xs:attribute name="mvno_match_data" type="xs:string" />
+    </xs:complexType>
+
+    <xs:element name="apns">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="apn" type="apn" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="version" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
