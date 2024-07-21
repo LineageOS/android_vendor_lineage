@@ -16,6 +16,24 @@
       "message": "@bgcngm@gmail.com no idea if this is better",
       "revId": "b51f33446c1326dcd4a6760c3eff9803058359f0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bae4bb7_e6030a3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-21T17:11:24Z",
+      "side": 1,
+      "message": "I don\u0027t know. At this point I\u0027d rather introduce something like https://github.com/LineageOS/android_vendor_lineage/blob/lineage-21.0/config/common_full_go_phone.mk#L1-L2 to differentiate between MINI and FULL in a single common_tablet.mk.",
+      "parentUuid": "d7977a69_498d9668",
+      "revId": "b51f33446c1326dcd4a6760c3eff9803058359f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
