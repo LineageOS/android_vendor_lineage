@@ -2840,6 +2840,129 @@
             <categories>abuse|suicide</categories>
         </item>
     </sensitivePN>
+    <!--Hong Kong, China-->
+    <sensitivePN network="454">
+        <item>
+            <number>18111</number>
+            <name>18111 Mental Health Support Hotline</name>
+            <categories>emotional support</categories>
+            <languages>chinese|english</languages>
+            <organization>Advisory Committee on Mental Health</organization>
+            <website>https://www.shallwetalk.hk/</website>
+        </item>
+        <item>
+            <number>18288</number>
+            <name>24-hour Crisis Hotline</name>
+            <categories>domestic violence</categories>
+            <languages>chinese|english</languages>
+            <organization>Caritas Family Crisis Support Centre</organization>
+            <website>https://fcsc.caritas.org.hk/</website>
+        </item>
+        <item>
+            <number>22951386</number>
+            <name>MAN Hotline</name>
+            <categories>emotional support|men</categories>
+            <languages>chinese|english</languages>
+            <organization>Harmony House</organization>
+            <website>https://www.harmonyhousehk.org/</website>
+        </item>
+        <item>
+            <number>23755322</number>
+            <name>RainLily Hotline</name>
+            <categories>women|sexual assault</categories>
+            <languages>chinese|english</languages>
+            <organization>RainLily</organization>
+            <website>https://rainlily.org.hk/</website>
+        </item>
+        <item>
+            <number>23820000</number>
+            <name>24-hour suicide prevention hotline</name>
+            <categories>suicide</categories>
+            <languages>chinese|english</languages>
+            <organization>Suicide Prevention Services</organization>
+            <website>https://www.sps.org.hk/</website>
+        </item>
+        <item>
+            <number>23820777</number>
+            <name>Youth Link</name>
+            <categories>suicide|adolscents</categories>
+            <languages>chinese|english</languages>
+            <organization>Suicide Prevention Services</organization>
+            <website>https://www.sps.org.hk/</website>
+        </item>
+        <item>
+            <number>23820881</number>
+            <name>Live Life! Hotline for Elderly</name>
+            <categories>suicide|elderly</categories>
+            <languages>chinese|english</languages>
+            <organization>Suicide Prevention Services</organization>
+            <website>https://www.sps.org.hk/</website>
+        </item>
+        <item>
+            <number>23822007</number>
+            <name>Suicide Prevention Service for the Elderly</name>
+            <categories>suicide|elderly</categories>
+            <languages>chinese|english</languages>
+            <organization>Suicide Prevention Services</organization>
+            <website>https://www.sps.org.hk/</website>
+        </item>
+        <item>
+            <number>23822737</number>
+            <name>Services for Survivors of Suicide Loss</name>
+            <categories>suicide|emotional support</categories>
+            <languages>chinese|english</languages>
+            <organization>Suicide Prevention Services</organization>
+            <website>https://www.sps.org.hk/</website>
+        </item>
+        <item>
+            <number>23866256</number>
+            <name>Women's Helpline</name>
+            <categories>women|sexual assault|domestic violence|emotional support</categories>
+            <languages>chinese|english</languages>
+            <organization>Hong Kong Federation of Women's Centres</organization>
+            <website>https://womencentre.org.hk/</website>
+        </item>
+        <item>
+            <number>23892222</number>
+            <name>24-Hour Emotional Support Hotline</name>
+            <categories>suicide|emotional support</categories>
+            <languages>chinese</languages>
+            <organization>The Samaritans Befrienders Hong Kong</organization>
+            <website>https://sbhk.org.hk/</website>
+        </item>
+        <item>
+            <number>23892223</number>
+            <name>24-Hour Emotional Support Hotline</name>
+            <categories>suicide|emotional support</categories>
+            <languages>english</languages>
+            <organization>The Samaritans Befrienders Hong Kong</organization>
+            <website>https://sbhk.org.hk/</website>
+        </item>
+        <item>
+            <number>25220434</number>
+            <name>24 Hours Woman Hotline</name>
+            <categories>women|emotional support|domestic violence|reproductive care</categories>
+            <languages>chinese|english</languages>
+            <organization>Harmony House</organization>
+            <website>https://www.harmonyhousehk.org/</website>
+        </item>
+        <item>
+            <number>25256265</number>
+            <name>Caritas Specialised Treatment and Prevention Project Against Sexual Violence</name>
+            <categories>sexual assault|domestic violence|emotional support</categories>
+            <languages>chinese|english</languages>
+            <organization>Caritas</organization>
+            <website>https://family.caritas.org.hk/</website>
+        </item>
+        <item>
+            <number>31610000</number>
+            <name>Children counselling hotline</name>
+            <categories>domestic violence|emotional support|children</categories>
+            <languages>chinese|english</languages>
+            <organization>Caritas Family Crisis Support Centre</organization>
+            <website>http://kids.caritas.org.hk/</website>
+        </item>
+    </sensitivePN>
     <!--Taiwan-->
     <sensitivePN network="466">
         <item>
