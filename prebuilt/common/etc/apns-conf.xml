@@ -950,7 +950,7 @@
   <apn carrier="MMS" mcc="250" mnc="17" apn="mms.usi.ru" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="192.168.168.192" mmsport="8080" type="mms" />
   <apn carrier="Tele2 RU" mcc="250" mnc="20" apn="internet.tele2.ru" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Tele2 RU MMS" mcc="250" mnc="20" apn="mms.tele2.ru" proxy="" port="" user="" password="" mmsc="http://mmsc.tele2.ru" mmsproxy="193.12.40.65" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="VTB" mcc="250" mnc="26" apn="vtb" proxy="" port="" user="" password="" mmsc="" authtype="" type="default,supl" />
+  <apn carrier="VTB" mcc="250" mnc="26" apn="vtb" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="MegaFon Internet" mcc="250" mnc="30" apn="Internet" user="gdata" password="gdata" authtype="1" type="default,supl" />
   <apn carrier="MegaFon MMS" mcc="250" mnc="30" apn="mms" mmsproxy="10.10.10.10" mmsport="8080" mmsc="http://mmsc:8002" user="mms" password="mms" authtype="1" type="mms" />
   <apn carrier="USI GPRS" mcc="250" mnc="39" apn="internet.usi.ru" type="default,supl" />
@@ -959,9 +959,9 @@
   <apn carrier="МТС Центр MMS" mcc="250" mnc="39" apn="mms.mts.ru" proxy="" port="" user="mts" password="mts" mmsc="http://mmsc" mmsproxy="192.168.192.192" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="Beeline internet" mcc="250" mnc="44" apn="internet.beeline.ru" proxy="" port="" user="beeline" password="beeline" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Beeline MMS" mcc="250" mnc="44" apn="mms.beeline.ru" proxy="" port="" user="beeline" password="beeline" mmsc="http://mms/" mmsproxy="192.168.94.23" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="GPB Mobile" mcc="250" mnc="45" apn="gpb" proxy="" port="" user="" password="" mmsc="" authtype="" type="default,supl" />
-  <apn carrier="SberMobile" mcc="250" mnc="50" apn="internet.sberbank-tele.com" proxy="" port="" user="" password="" mmsc="" authtype="" type="default,supl" />
-  <apn carrier="Tinkoff Mobile" mcc="250" mnc="62" apn="m.tinkoff" proxy="" port="" user="" password="" mmsc="" authtype="" type="default,supl" />
+  <apn carrier="GPB Mobile" mcc="250" mnc="45" apn="gpb" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="SberMobile" mcc="250" mnc="50" apn="internet.sberbank-tele.com" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="Tinkoff Mobile" mcc="250" mnc="62" apn="m.tinkoff" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="МТС-интернет" mcc="250" mnc="92" apn="internet.mts.ru" proxy="" port="" user="mts" password="mts" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="МТС Центр MMS" mcc="250" mnc="92" apn="mms.mts.ru" proxy="" port="" user="mts" password="mts" mmsc="http://mmsc" mmsproxy="192.168.192.192" mmsport="8080" authtype="1" type="mms" />
   <apn carrier="МТС-интернет" mcc="250" mnc="93" apn="internet.mts.ru" proxy="" port="" user="mts" password="mts" mmsc="" authtype="1" type="default,supl" />
