@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13713f34_fc1b2238",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-21T18:14:00Z",
+      "side": 1,
+      "message": "Few questions:\n\n- Is ro.support_one_handed_mode only applicable to full phone variant? Why is it excluded from mini?\n- Same doubt for persist.settings.large_screen_opt.enabled, does it require `window_extensions.mk` to work? Does `window_extensions.mk` really take that much space?",
+      "revId": "18e98e73487fa85df81a7da10709414f89434d0b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
