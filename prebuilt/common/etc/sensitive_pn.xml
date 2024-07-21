@@ -2963,6 +2963,16 @@
             <website>http://kids.caritas.org.hk/</website>
         </item>
     </sensitivePN>
+    <!--China-->
+    <sensitivePN network="460,461">
+        <item>
+            <number>12355</number>
+            <name>青少年心理咨询和法律援助热线电话</name>
+            <categories>domestic violence|emotional support|children</categories>
+            <languages>chinese</languages>
+            <organization>The Communist Youth League of China</organization>
+        </item>
+    </sensitivePN>
     <!--Taiwan-->
     <sensitivePN network="466">
         <item>
