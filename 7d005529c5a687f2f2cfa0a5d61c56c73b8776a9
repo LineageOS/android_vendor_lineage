@@ -16,6 +16,23 @@
       "message": "If inheritting `common_full.mk` in `tablet.mk` instead of each `common_full_tablet*.mk` is fine then lgtm",
       "revId": "7d005529c5a687f2f2cfa0a5d61c56c73b8776a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fdbdd625_2784c042",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-21T15:46:44Z",
+      "side": 1,
+      "message": "Hmmm... actually, tablet.mk will end up with almost everything from full_tablet that doesn\u0027t /obviously/ fit to mini_tablet.",
+      "revId": "7d005529c5a687f2f2cfa0a5d61c56c73b8776a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
