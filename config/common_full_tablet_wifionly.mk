@@ -1,7 +1,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
-# Inherit full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full.mk)
+# Inherit mobile full common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_mobile_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
