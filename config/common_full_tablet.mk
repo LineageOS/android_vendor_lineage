@@ -1,7 +1,7 @@
 # Inherit mobile full common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_mobile_full.mk)
 
-# Inherit full tablet common Lineage stuff
-$(call inherit-product, vendor/lineage/config/full_tablet.mk)
+# Inherit tablet common Lineage stuff
+$(call inherit-product, vendor/lineage/config/tablet.mk)
 
 $(call inherit-product, vendor/lineage/config/telephony.mk)
