@@ -16,6 +16,24 @@
       "message": "Are those reasonable defaults?",
       "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45c768b6_d946105b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-07-21T12:12:55Z",
+      "side": 1,
+      "message": "looks almost exactly like config we have on gts4lvwifi except with few extra bits.",
+      "parentUuid": "2c881b1b_2647c36b",
+      "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
