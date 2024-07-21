@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "80b7764b_ca13d5e9",
+        "filename": "config/common_mobile_full.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-21T19:52:03Z",
+      "side": 0,
+      "message": "There\u0027s a substantial difference between `full_tablet.mk` and those fragments: They inherit `common_mobile.mk`, the full tablet one doesn\u0027t include anything, it just enables some stuff\n\nWould have named it `common_full_tablet.mk` if it didn\u0027t already exist (why didn\u0027t we call it `common_full_tablet_telephony.mk`...)\n\nbut I could rename it to `common_tablet.mk` if we can get rid of full-specific stuff, since Luca confirmed this is kinda important to include for all tablet targets",
+      "parentUuid": "a915094e_f56056e8",
+      "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "365c8781_a101e665",
         "filename": "config/common_mobile_mini.mk",
         "patchSetId": 4
@@ -31,6 +49,24 @@
       "writtenOn": "2024-07-21T19:29:56Z",
       "side": 0,
       "message": "and mini_mobile.mk here",
+      "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "66a2f7a4_3300ca18",
+        "filename": "config/common_mobile_mini.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-21T19:52:03Z",
+      "side": 0,
+      "message": "Ditto",
+      "parentUuid": "365c8781_a101e665",
       "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
