@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "11e1ed0c_98fbe45c",
+        "filename": "config/common_mobile_full.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-21T20:42:06Z",
+      "side": 0,
+      "message": "Acknowledged",
+      "parentUuid": "80b7764b_ca13d5e9",
+      "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "365c8781_a101e665",
@@ -67,6 +85,24 @@
       "side": 0,
       "message": "Ditto",
       "parentUuid": "365c8781_a101e665",
+      "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0452bf29_3563e5fe",
+        "filename": "config/common_mobile_mini.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-21T20:42:06Z",
+      "side": 0,
+      "message": "Acknowledged",
+      "parentUuid": "66a2f7a4_3300ca18",
       "revId": "eece9d8dc8aa3e6467dbfd5c5eba1a730dea040e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
