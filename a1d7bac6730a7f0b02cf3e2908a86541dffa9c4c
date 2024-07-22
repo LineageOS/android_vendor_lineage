@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43cf7a2b_56e98d8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-22T10:39:17Z",
+      "side": 1,
+      "message": "Nolen pinky promised this isn\u0027t used anymore now",
+      "revId": "a1d7bac6730a7f0b02cf3e2908a86541dffa9c4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
