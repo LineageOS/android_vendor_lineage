@@ -16,6 +16,24 @@
       "message": "isn\u0027t the fi too early?\nbut I guess moving it could break dirty builds in case the deps/alias change...",
       "revId": "b50770d5067a5e190fb776b386f58959c1b27c54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d862e939_b9a00db5",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 386,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-07-22T16:00:37Z",
+      "side": 1,
+      "message": "no idea, i just did bare minimum to unbreak dirty rebuilds. I\u0027d prefer to not spend time reworking makefiles.",
+      "parentUuid": "6d664a6c_9c392b45",
+      "revId": "b50770d5067a5e190fb776b386f58959c1b27c54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
