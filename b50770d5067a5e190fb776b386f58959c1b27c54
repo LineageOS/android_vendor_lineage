@@ -34,6 +34,24 @@
       "parentUuid": "6d664a6c_9c392b45",
       "revId": "b50770d5067a5e190fb776b386f58959c1b27c54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ce7e708_29c5a551",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 386,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-07-22T16:03:01Z",
+      "side": 1,
+      "message": "Nope, something else is fishy.",
+      "parentUuid": "d862e939_b9a00db5",
+      "revId": "b50770d5067a5e190fb776b386f58959c1b27c54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
