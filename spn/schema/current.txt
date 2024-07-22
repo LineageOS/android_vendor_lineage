@@ -1,0 +1,40 @@
+// Signature format: 2.0
+package org.lineageos.lib.phone.spn {
+
+  public class Item {
+    ctor public Item();
+    method public String getCategories();
+    method public String getLanguages();
+    method public String getName();
+    method public String getNumber();
+    method public String getOrganization();
+    method public String getWebsite();
+    method public void setCategories(String);
+    method public void setLanguages(String);
+    method public void setName(String);
+    method public void setNumber(String);
+    method public void setOrganization(String);
+    method public void setWebsite(String);
+  }
+
+  public class SensitivePN {
+    ctor public SensitivePN();
+    method public java.util.List<org.lineageos.lib.phone.spn.Item> getItem();
+    method public String getNetwork();
+    method public void setNetwork(String);
+  }
+
+  public class SensitivePNS {
+    ctor public SensitivePNS();
+    method public java.util.List<org.lineageos.lib.phone.spn.SensitivePN> getSensitivePN();
+  }
+
+  public class XmlParser {
+    ctor public XmlParser();
+    method public static org.lineageos.lib.phone.spn.SensitivePNS read(java.io.InputStream) throws javax.xml.datatype.DatatypeConfigurationException, java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+    method public static String readText(org.xmlpull.v1.XmlPullParser) throws java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+    method public static void skip(org.xmlpull.v1.XmlPullParser) throws java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+  }
+
+}
+
