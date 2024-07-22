@@ -1,0 +1,38 @@
+name: gerrit checks
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        type: string
+      gerrit-ref:
+        type: string
+      change:
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: lineageos-infra/fetch-gerrit-change@main
+      with:
+        gerrit-ref: ${{ inputs.gerrit-ref }}
+        ref: ${{ inputs.ref }}
+
+    - name: Check if build/action.yml exists
+      id: check
+      run: |
+        if [ -f ./.github/workflows/build/action.yml ]; then
+          echo "run=1" >> "$GITHUB_OUTPUT"
+        fi
+
+    - name: Build
+      if: ${{ steps.check.outputs.run }}
+      uses: ./.github/workflows/build
+
+    - uses: lineageos-infra/gerrit-vote@main
+      if: ${{ steps.check.outputs.run && always() }}
+      with:
+        auth: ${{ secrets.GERRIT_VOTE_CREDS }}
+        change: ${{ inputs.change }}
+        ref: ${{ inputs.ref }}
