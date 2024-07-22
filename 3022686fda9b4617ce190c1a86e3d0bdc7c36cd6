@@ -46,6 +46,30 @@
       },
       "revId": "3022686fda9b4617ce190c1a86e3d0bdc7c36cd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e23283dd_7a70ce34",
+        "filename": ".github/workflows/build/action.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-07-22T13:00:43Z",
+      "side": 1,
+      "message": "it might be better to read branch from vars/common",
+      "parentUuid": "9932dafb_ce6a2b81",
+      "range": {
+        "startLine": 13,
+        "startChar": 110,
+        "endLine": 13,
+        "endChar": 122
+      },
+      "revId": "3022686fda9b4617ce190c1a86e3d0bdc7c36cd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
