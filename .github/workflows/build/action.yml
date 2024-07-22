@@ -1,0 +1,13 @@
+name: build
+
+runs:
+    using: composite
+
+    steps:
+    - name: Install dependencies
+      shell: bash
+      run: sudo apt -y install libxml2-utils
+
+    - name: Validate sensitive_pn.xml
+      shell: bash
+      run: xmllint --noout --schema <(curl -s https://raw.githubusercontent.com/LineageOS/android_lineage-sdk/lineage-21.0/lib/SpnInfo.xsd) prebuilt/common/etc/sensitive_pn.xml
