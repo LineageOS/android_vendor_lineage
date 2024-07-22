@@ -22,6 +22,30 @@
       },
       "revId": "3022686fda9b4617ce190c1a86e3d0bdc7c36cd6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9932dafb_ce6a2b81",
+        "filename": ".github/workflows/build/action.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-07-22T12:59:50Z",
+      "side": 1,
+      "message": "yes, but it\u0027ll always return default branch.",
+      "parentUuid": "b4fde501_5a5a4e38",
+      "range": {
+        "startLine": 13,
+        "startChar": 110,
+        "endLine": 13,
+        "endChar": 122
+      },
+      "revId": "3022686fda9b4617ce190c1a86e3d0bdc7c36cd6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
