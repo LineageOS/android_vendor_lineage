@@ -16,6 +16,23 @@
       "message": "Nolen pinky promised this isn\u0027t used anymore now",
       "revId": "a1d7bac6730a7f0b02cf3e2908a86541dffa9c4c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "68261552_4859bb59",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-07-23T03:36:37Z",
+      "side": 1,
+      "message": "no need to take my word for it ;p - https://github.com/search?q\u003dorg%3ALineageOS%20CUSTOM_APNS_FILE\u0026type\u003dcode - it is only used in two trees (one of which is deprecated in favor of a new tree), and even then only on lineage-20 not lineage-21.",
+      "revId": "a1d7bac6730a7f0b02cf3e2908a86541dffa9c4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
