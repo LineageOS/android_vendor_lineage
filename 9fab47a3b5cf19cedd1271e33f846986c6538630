@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e4e7aac8_b724eb84",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1599,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-07-23T01:31:36Z",
+      "side": 0,
+      "message": "apn\u003d\"Broadband\" ype\u003d\"default\"",
+      "range": {
+        "startLine": 1599,
+        "startChar": 51,
+        "endLine": 1599,
+        "endChar": 82
+      },
+      "revId": "9fab47a3b5cf19cedd1271e33f846986c6538630",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
