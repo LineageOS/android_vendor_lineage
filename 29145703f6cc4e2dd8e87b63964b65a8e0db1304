@@ -16,6 +16,24 @@
       "message": "This needs it https://review.lineageos.org/c/LineageOS/android_device_virt_virtio-common/+/398476",
       "revId": "29145703f6cc4e2dd8e87b63964b65a8e0db1304",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "679458f7_5ba8baed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-26T22:33:09Z",
+      "side": 1,
+      "message": "You should technically make it depend on `INTERNAL_OTA_PACKAGE_TARGET`, people could build a zip with `m otapackage`",
+      "parentUuid": "f3b2a97c_d7b068fc",
+      "revId": "29145703f6cc4e2dd8e87b63964b65a8e0db1304",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
