@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aadf6b0a_20517312",
+        "filename": "config/full_tablet.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-07-27T10:58:41Z",
+      "side": 1,
+      "message": "probably product is the correct place for software features",
+      "revId": "a934185e6920d6536f1f7d357285655dc7051d46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
