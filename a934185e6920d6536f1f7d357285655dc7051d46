@@ -16,6 +16,24 @@
       "message": "probably product is the correct place for software features",
       "revId": "a934185e6920d6536f1f7d357285655dc7051d46",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "269a48e4_0c927b12",
+        "filename": "config/full_tablet.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-29T20:48:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aadf6b0a_20517312",
+      "revId": "a934185e6920d6536f1f7d357285655dc7051d46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
