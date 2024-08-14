@@ -57,9 +57,6 @@
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Enable lockscreen rotation by default -->
-    <bool name="config_enableLockScreenRotation">true</bool>
-
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
          app standby.  These are not enabled by default because they require a standard
          cloud-to-device messaging service for apps to interact correctly with the modes
