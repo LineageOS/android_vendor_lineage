@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfe45f50_3b71b7e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2024-08-14T10:03:02Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_frameworks_base/blob/lineage-21.0/core/res/res/values-sw600dp/config.xml#L24",
+      "revId": "24e8949f1bc07c95a666ad644f835692ceeb7260",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
