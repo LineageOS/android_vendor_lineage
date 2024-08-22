@@ -350,6 +350,33 @@ health_charging_control {
     },
 }
 
+soong_config_module_type {
+    name: "powershare",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: [
+        "target_powershare_path",
+        "target_powershare_enabled",
+        "target_powershare_disabled",
+    ],
+    properties: ["cppflags"],
+}
+
+powershare {
+    name: "powershare_defaults",
+    soong_config_variables: {
+        target_powershare_path: {
+            cppflags: ["-DPOWERSHARE_PATH=\"%s\""],
+        },
+        target_powershare_enabled: {
+            cppflags: ["-DPOWERSHARE_ENABLED=\"%s\""],
+        },
+        target_powershare_disabled: {
+            cppflags: ["-DPOWERSHARE_DISABLED=\"%s\""],
+        },
+    },
+}
+
 // NVIDIA specific config modules
 soong_config_module_type {
     name: "nvidia_enhancements",
