@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6e5902a_d0f78346",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-08-29T19:37:33Z",
+      "side": 1,
+      "message": "This allows to have a common dtbo image for multiple different devices with the same qcom soc and avoid having to guard building each dtbo only for the specific product.",
+      "revId": "21e9dd8b67bc4cdd7ab2571266b6983dd86551f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
