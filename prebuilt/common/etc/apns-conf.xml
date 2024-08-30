@@ -3147,7 +3147,7 @@
   <apn carrier="Grameenphone" mcc="470" mnc="01" apn="gpinternet" type="default,supl" />
   <apn carrier="Grameenphone MMS" mcc="470" mnc="01" apn="gpmms" mmsc="http://mms.gpsurf.net/servlets/mms" mmsproxy="10.128.1.2" mmsport="8080" type="mms" />
   <apn carrier="Grameenphone WAP" mcc="470" mnc="01" apn="gpinternet" proxy="10.128.1.2" port="8080" type="default,supl" />
-  <apn carrier="Grameenphone" mcc="470" mnc="01" apn="gpinterneth" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Grameenphone" mcc="470" mnc="01" apn="gpinternet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Robi MMS" mcc="470" mnc="02" apn="wap" mmsc="http://192.168.23.4/was" mmsproxy="192.168.023.007" mmsport="9028" type="mms" />
   <apn carrier="Robi" mcc="470" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="Robi WAP" mcc="470" mnc="02" apn="wap" proxy="10.128.1.2" port="9208" type="default,supl" />
