@@ -31,4 +31,13 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
         <item>com.google.android.setupwizard/com.google.android.setupwizard.update.OtaUpdateActivity</item>
     </string-array>
+
+    <string-array name="config_app_dependencies">
+        <item>com.google.android.gms</item>
+    </string-array>
+
+    <string-array name="config_app_dependent_packages">
+        <item>com.android.hotwordenrollment.okgoogle</item>
+        <item>com.android.hotwordenrollment.xgoogle</item>
+    </string-array>
 </resources>
