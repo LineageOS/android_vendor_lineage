@@ -51,6 +51,23 @@
       "parentUuid": "d92d2b42_46bf389e",
       "revId": "48940146b542db7305c36366924591878d866d2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "968a7a7d_fe73f2fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29669
+      },
+      "writtenOn": "2024-09-01T16:07:30Z",
+      "side": 1,
+      "message": "https://github.com/crdroidandroid/android_vendor_crdroid/commit/1302b1743a7cc275d477517ce83336099c76b5db\n\n2 years ago ?",
+      "revId": "48940146b542db7305c36366924591878d866d2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
