@@ -33,6 +33,24 @@
       "message": "https://github.com/crdroidandroid/android_vendor_crdroid/commit/4c11094d2346ebe32472b5672743557b0b29f357",
       "revId": "48940146b542db7305c36366924591878d866d2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c374225_ca2183df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33707
+      },
+      "writtenOn": "2024-09-01T14:16:10Z",
+      "side": 1,
+      "message": "I did that since a long time, but if you want Apon to credited I will do that.",
+      "parentUuid": "d92d2b42_46bf389e",
+      "revId": "48940146b542db7305c36366924591878d866d2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
