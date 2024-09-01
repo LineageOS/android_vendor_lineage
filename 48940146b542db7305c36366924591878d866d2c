@@ -16,6 +16,23 @@
       "message": "Proof: https://blog.bdshop.com/bd-all-operator-internet-settings/amp/",
       "revId": "48940146b542db7305c36366924591878d866d2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d92d2b42_46bf389e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29669
+      },
+      "writtenOn": "2024-09-01T08:17:16Z",
+      "side": 1,
+      "message": "https://github.com/crdroidandroid/android_vendor_crdroid/commit/4c11094d2346ebe32472b5672743557b0b29f357",
+      "revId": "48940146b542db7305c36366924591878d866d2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
