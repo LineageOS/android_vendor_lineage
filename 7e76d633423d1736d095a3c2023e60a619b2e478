@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7115263_6bd01829",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2024-09-02T16:20:09Z",
+      "side": 1,
+      "message": "This works for `otter`.\nHowever this solution also only allows one exact duplicate without infra changes.\n\nFor example\n- amazon_otter\n  - no lineage-21, skipped\n- shift_otter\n  - lineage-21 found, taken\n- thift_otter\n  - lineage-21 found but took `shift_otter` already, because alphabetical order decides here.",
+      "revId": "7e76d633423d1736d095a3c2023e60a619b2e478",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
