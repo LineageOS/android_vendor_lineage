@@ -9,7 +9,7 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240905.003"
+readonly build_id="AP31.240617.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
@@ -18,8 +18,8 @@ readonly aosp_tag="android-14.0.0_r67"
 
 readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/husky-ap2a.240905.003-factory-3d55ebeb.zip"
-readonly image_sha256="3d55ebeba69775da9e7443f3046f3a4931d9453a7e5fd050fe1f0721c34cbd1e"
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/husky_beta-ap31.240617.015-factory-3ea91639.zip"
+readonly image_sha256="3ea916391d4aba1d9c8319d455af7adbc8985d8c3e6fd1580e433cc5e700e396"
 
 readonly flash_url="https://flash.android.com/build/12231197?target=husky-user&signed"
 

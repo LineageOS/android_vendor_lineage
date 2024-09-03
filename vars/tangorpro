@@ -7,7 +7,7 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240905.003"
+readonly build_id="AP31.240617.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
@@ -16,8 +16,8 @@ readonly aosp_tag="android-14.0.0_r67"
 
 readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-ap2a.240905.003-factory-f4e19247.zip"
-readonly image_sha256="f4e192474ac4554d8e8ce5c0723b6b9b42d973d24e614d64518d78f7b033283a"
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/tangorpro_beta-ap31.240617.015-factory-31d6113c.zip"
+readonly image_sha256="31d6113c78f8efca5082a99c9db4b2247d79adad19794f4d605215bf1d8eaa16"
 
 readonly flash_url="https://flash.android.com/build/12231197?target=tangorpro-user&signed"
 

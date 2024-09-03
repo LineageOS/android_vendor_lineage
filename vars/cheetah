@@ -8,7 +8,7 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240905.003"
+readonly build_id="AP31.240617.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
@@ -17,8 +17,8 @@ readonly aosp_tag="android-14.0.0_r67"
 
 readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-ap2a.240905.003-factory-ba67b76e.zip"
-readonly image_sha256="ba67b76ea0f43f5d827898094b3bfd8d5af9368c486719e15a48ce3cdfacb5d2"
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/cheetah_beta-ap31.240617.015-factory-b3cbda21.zip"
+readonly image_sha256="b3cbda21224704c89434e34c7c247907b65a1ace3f90b7c5617ed32489ee2ed4"
 
 readonly flash_url="https://flash.android.com/build/12231197?target=cheetah-user&signed"
 

@@ -7,7 +7,7 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240905.003"
+readonly build_id="AP31.240617.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
@@ -16,8 +16,8 @@ readonly aosp_tag="android-14.0.0_r67"
 
 readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-ap2a.240905.003-factory-55a88575.zip"
-readonly image_sha256="55a8857543f686b0888dcbd5dc5621f54e327bb1c4bfbc73dcbb8eebcee3d4bc"
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/panther_beta-ap31.240617.015-factory-001001a9.zip"
+readonly image_sha256="001001a9daccd2334bcd594dc5c0531784575432ea3c76e4f7c8dc49681cb179"
 
 readonly flash_url="https://flash.android.com/build/12231197?target=panther-user&signed"
 
