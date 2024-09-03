@@ -7,7 +7,7 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240905.003"
+readonly build_id="AP31.240617.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
@@ -16,8 +16,8 @@ readonly aosp_tag="android-14.0.0_r67"
 
 readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/felix-ap2a.240905.003-factory-e9cd2949.zip"
-readonly image_sha256="e9cd2949bf406cf621b39b89431423bcc1d36e189548478781e18774d7e70b3b"
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/felix_beta-ap31.240617.015-factory-eb65ceb5.zip"
+readonly image_sha256="eb65ceb5896b852e2f2a99f137536787dfd7608d39e0f572cc08fce919f9f94f"
 
 readonly flash_url="https://flash.android.com/build/12231197?target=felix-user&signed"
 
