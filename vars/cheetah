@@ -10,21 +10,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240805.005"
+readonly build_id="AP2A.240905.003"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r52"
-readonly aosp_tag="android-14.0.0_r55"
+readonly prev_aosp_tag="android-14.0.0_r55"
+readonly aosp_tag="android-14.0.0_r67"
 
-readonly build_number="12025142"
+readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-ap2a.240805.005-factory-3f647705.zip"
-readonly image_sha256="3f647705f30a9cc5c149e35604f50935f666bce4f7489a79b921579b128839cd"
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-ap2a.240905.003-factory-ba67b76e.zip"
+readonly image_sha256="ba67b76ea0f43f5d827898094b3bfd8d5af9368c486719e15a48ce3cdfacb5d2"
 
-readonly flash_url="https://flash.android.com/build/12025142?target=cheetah-user&signed"
+readonly flash_url="https://flash.android.com/build/12231197?target=cheetah-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-ap2a.240805.005-263ad45e.zip"
-readonly ota_sha256="263ad45e06aaf7a9e7344816a577c20fae8a56fc2a280b2f0625742b04e3589f"
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-ap2a.240905.003-be18c366.zip"
+readonly ota_sha256="be18c366e7e374d9ba3001af83efe7bd1d6e3292b691224761fbd7c0f2a19cdf"
 
-readonly security_patch="2024-08-05"
+readonly security_patch="2024-09-05"
