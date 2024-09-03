@@ -9,7 +9,7 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240905.003"
+readonly build_id="AP31.240617.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
@@ -18,8 +18,8 @@ readonly aosp_tag="android-14.0.0_r67"
 
 readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-ap2a.240905.003-factory-e2128987.zip"
-readonly image_sha256="e2128987957fa1e9ac54cae9ef25c6031af231c2aecd2dbebd3b2a19e7d180b5"
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/lynx_beta-ap31.240617.015-factory-dad0b9c2.zip"
+readonly image_sha256="dad0b9c2ae1cd2cb1e08c5df1c6c6b8b5dacc9a79d66ee9ab364a7e1091d4223"
 
 readonly flash_url="https://flash.android.com/build/12231197?target=lynx-user&signed"
 
