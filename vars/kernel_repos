@@ -1,4 +1,3 @@
 # Usage: ${kernel_repos[@]}
 readonly kernel_repos=(
-  kernel/google/redbull
 )
