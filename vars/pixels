@@ -12,5 +12,4 @@ readonly devices=(
   bluejay
   raven
   oriole
-  barbet
 )
