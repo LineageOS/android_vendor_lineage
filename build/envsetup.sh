@@ -1,29 +1,3 @@
-function __print_lineage_functions_help() {
-cat <<EOF
-Additional LineageOS functions:
-- cout:            Changes directory to out.
-- mmp:             Builds all of the modules in the current directory and pushes them to the device.
-- mmap:            Builds all of the modules in the current directory and its dependencies, then pushes the package to the device.
-- mmmp:            Builds all of the modules in the supplied directories and pushes them to the device.
-- lineagegerrit:   A Git wrapper that fetches/pushes patch from/to LineageOS Gerrit Review.
-- lineagerebase:   Rebase a Gerrit change and push it again.
-- lineageremote:   Add git remote for LineageOS Gerrit Review.
-- aospremote:      Add git remote for matching AOSP repository.
-- cloremote:       Add git remote for matching CodeLinaro repository.
-- githubremote:    Add git remote for LineageOS Github.
-- mka:             Builds using SCHED_BATCH on all processors.
-- mkap:            Builds the module(s) using mka and pushes them to the device.
-- cmka:            Cleans and builds using mka.
-- repodiff:        Diff 2 different branches or tags within the same repo
-- repolastsync:    Prints date and time of last repo sync.
-- reposync:        Parallel repo sync using ionice and SCHED_BATCH.
-- repopick:        Utility to fetch changes from Gerrit.
-- sort-blobs-list: Sort proprietary-files.txt sections with LC_ALL=C.
-- installboot:     Installs a boot.img to the connected device.
-- installrecovery: Installs a recovery.img to the connected device.
-EOF
-}
-
 function mk_timer()
 {
     local start_time=$(date +"%s")
