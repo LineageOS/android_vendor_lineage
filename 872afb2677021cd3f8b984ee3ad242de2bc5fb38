@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b7efb62_6fcc588a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-09-05T20:50:36Z",
+      "side": 1,
+      "message": "https://cs.android.com/android/platform/superproject/main/+/main:system/core/rootdir/Android.bp;l\u003d138\nMore examples",
+      "revId": "872afb2677021cd3f8b984ee3ad242de2bc5fb38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
