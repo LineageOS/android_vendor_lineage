@@ -121,6 +121,23 @@
       "parentUuid": "4da715f7_e3f9adf2",
       "revId": "48940146b542db7305c36366924591878d866d2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab12f967_e188fc2c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-09-05T13:03:50Z",
+      "side": 1,
+      "message": "Kids, stop fighting over an APN config correction, both of you will not get money over this, nor will this land you a job.\n\nimho, for such change, whoever uploads a commit on _LineageOS Gerrit_ wins, crDroid nor OmniROM links count, if you care about authorship why not upload it to this Gerrit instance in the first place?",
+      "revId": "48940146b542db7305c36366924591878d866d2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
