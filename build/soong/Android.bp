@@ -81,6 +81,10 @@ aapt_version_code {
     },
 }
 
+//    cppflags: select(soong_config_variable("lineageGlobalVars", "camera_override_format_from_reserved"), {
+//        true: ["-DTARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED"],
+//        default: [],
+//    }),
 soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
@@ -98,6 +102,10 @@ camera_override_format_from_reserved {
     },
 }
 
+//    cppflags: select(soong_config_variable("lineageGlobalVars", "additional_gralloc_10_usage_bits"), {
+//        any @ bits: ["-DADDNL_GRALLOC_10_USAGE_BITS=%" + bits],
+//        default: [],
+//    }),
 soong_config_module_type {
     name: "gralloc_10_usage_bits",
     module_type: "cc_defaults",
@@ -115,6 +123,10 @@ gralloc_10_usage_bits {
     },
 }
 
+//    export_cflags: select(soong_config_variable("lineageGlobalVars", "gralloc_handle_has_custom_content_md_reserved_size"), {
+//        true: ["-DGRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE"],
+//        default: [],
+//    }),
 soong_config_module_type {
     name: "gralloc_handle_custom_content_md_reserved_size",
     module_type: "cc_defaults",
@@ -132,6 +144,10 @@ gralloc_handle_custom_content_md_reserved_size {
     },
 }
 
+//    export_cflags: select(soong_config_variable("lineageGlobalVars", "gralloc_handle_has_reserved_size"), {
+//        true: ["-DGRALLOC_HANDLE_HAS_RESERVED_SIZE"],
+//        default: [],
+//    }),
 soong_config_module_type {
     name: "gralloc_handle_reserved_size",
     module_type: "cc_defaults",
@@ -149,6 +165,10 @@ gralloc_handle_reserved_size {
     },
 }
 
+//    export_cflags: select(soong_config_variable("lineageGlobalVars", "gralloc_handle_has_ubwcp_format"), {
+//        true: ["-DGRALLOC_HANDLE_HAS_UBWCP_FORMAT"],
+//        default: [],
+//    }),
 soong_config_module_type {
     name: "gralloc_handle_ubwcp_format",
     module_type: "cc_defaults",
@@ -166,6 +186,10 @@ gralloc_handle_ubwcp_format {
     },
 }
 
+//    cppflags: select(soong_config_variable("lineageGlobalVars", "target_ld_shim_libs"), {
+//        any @ libs: ["-DLD_SHIM_LIBS=\"" + libs + "\""],
+//        default: [],
+//    }),
 soong_config_module_type {
     name: "target_shim_libs",
     module_type: "cc_defaults",
