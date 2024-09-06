@@ -152,7 +152,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 				var path android.OptionalPath
 
 				if t, ok := module.(HostToolProvider); ok {
-					if !t.(android.Module).Enabled() {
+					if !t.(android.Module).Enabled(ctx) {
 						if ctx.Config().AllowMissingDependencies() {
 							ctx.AddMissingDependencies([]string{tool})
 						} else {
