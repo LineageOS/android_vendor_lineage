@@ -16,6 +16,5 @@
 aconfig_value_set {
     name: "aconfig_value_set-lineage-ap3a",
     values: [
-        "aconfig-values-ap3a-com.android.settingslib.media.flags-all",
     ],
 }
