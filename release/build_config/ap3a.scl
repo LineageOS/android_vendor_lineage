@@ -18,6 +18,6 @@ load("//build/make/core/release_config.scl", "value")
 
 values = [
     # keep-sorted start numeric=yes
-    value("RELEASE_ACONFIG_VALUE_SETS", "aconfig_value_set-lineage-ap2a"),
+    value("RELEASE_ACONFIG_VALUE_SETS", "aconfig_value_set-lineage-ap3a"),
     # keep-sorted end
 ]
