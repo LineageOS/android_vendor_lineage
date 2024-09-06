@@ -1,5 +1,5 @@
 //
-// Copyright 2024 Google Inc. All rights reserved.
+// Copyright (C) 2024 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,10 +13,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-aconfig_values {
-    name: "aconfig-values-ap2a-com.android.settingslib.media.flags-all",
-    package: "com.android.settingslib.media.flags",
-    srcs: [
-        "*_flag_values.textproto",
+aconfig_value_set {
+    name: "aconfig_value_set-lineage-ap3a",
+    values: [
+        "aconfig-values-ap3a-com.android.settingslib.media.flags-all",
     ],
 }
