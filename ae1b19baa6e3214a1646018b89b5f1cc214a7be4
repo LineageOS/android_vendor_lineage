@@ -22,6 +22,30 @@
       },
       "revId": "ae1b19baa6e3214a1646018b89b5f1cc214a7be4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08d6f83e_0c7d4fbb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 9783
+      },
+      "writtenOn": "2024-09-08T10:59:34Z",
+      "side": 1,
+      "message": "I seem to be resistent to learning",
+      "parentUuid": "01a40af4_e66394b6",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 18
+      },
+      "revId": "ae1b19baa6e3214a1646018b89b5f1cc214a7be4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
