@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de1b8626_71c9d933",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2024-09-08T19:52:13Z",
+      "side": 1,
+      "message": "I think its better to use the aosp apn instead. That one has carrier_id and mvno flags that this one is missing.\nhttps://android.googlesource.com/device/sample/+/main/etc/apns-full-conf.xml#8845\nBoth internet and ims apn there.\nAlso, since it\u0027s an mvno, it should be added in the line below the parent Telekom apn.",
+      "revId": "712c9c32a277a001d476285a47cb47966341cd35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
