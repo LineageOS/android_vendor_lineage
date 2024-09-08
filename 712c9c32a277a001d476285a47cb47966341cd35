@@ -16,6 +16,24 @@
       "message": "I think its better to use the aosp apn instead. That one has carrier_id and mvno flags that this one is missing.\nhttps://android.googlesource.com/device/sample/+/main/etc/apns-full-conf.xml#8845\nBoth internet and ims apn there.\nAlso, since it\u0027s an mvno, it should be added in the line below the parent Telekom apn.",
       "revId": "712c9c32a277a001d476285a47cb47966341cd35",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "105e1ef8_66004feb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9783
+      },
+      "writtenOn": "2024-09-08T20:26:59Z",
+      "side": 1,
+      "message": "I was going for an alphabetical order, but mvno makes sense. Will move it.\n\nAs for the AOSP APN: Congstar themselves list \"telekom\" and \"tm\" as user and password for the NEW configs and \"congstar \"for old devices not using IPv6. AOSP uses \"congstar\" and \"cs\" but uses IPV4V6, which doesn\u0027t align with congstars provided information. This is why I was undecided about using the AOSP config straight away.\n\n\nI can test them either way, but TBH i am not much of a valid test target because my husky keeps on refusing a mobile data connection on that eSIM after a while alltogether, no matter which APN I use.",
+      "parentUuid": "de1b8626_71c9d933",
+      "revId": "712c9c32a277a001d476285a47cb47966341cd35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
