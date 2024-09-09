@@ -18,7 +18,7 @@ function check_product()
         TARGET_BUILD_VARIANT= \
         TARGET_BUILD_TYPE= \
         TARGET_BUILD_APPS= \
-        get_build_var TARGET_DEVICE > /dev/null
+        _get_build_var_cached TARGET_DEVICE > /dev/null
     # hide successful answers, but allow the errors to show
 }
 
@@ -110,7 +110,7 @@ function dddclient()
    local OUT_VENDOR_SO_SYMBOLS=$(get_abs_build_var TARGET_OUT_VENDOR_SHARED_LIBRARIES_UNSTRIPPED)
    local OUT_EXE_SYMBOLS=$(get_symbols_directory)
    local PREBUILTS=$(get_abs_build_var ANDROID_PREBUILTS)
-   local ARCH=$(get_build_var TARGET_ARCH)
+   local ARCH=$(_get_build_var_cached TARGET_ARCH)
    local GDB
    case "$ARCH" in
        arm) GDB=arm-linux-androideabi-gdb;;
@@ -189,7 +189,7 @@ function dddclient()
        if [ "$USE64BIT" != "" ] ; then
            WHICH_GDB=$ANDROID_TOOLCHAIN/$GDB64
        # 32-bit exe / 32-bit platform
-       elif [ "$(get_build_var TARGET_2ND_ARCH)" = "" ]; then
+       elif [ "$(_get_build_var_cached TARGET_2ND_ARCH)" = "" ]; then
            WHICH_GDB=$ANDROID_TOOLCHAIN/$GDB
        # 32-bit exe / 64-bit platform
        else
@@ -890,8 +890,8 @@ function sort-blobs-list() {
 }
 
 function fixup_common_out_dir() {
-    common_out_dir=$(get_build_var OUT_DIR)/target/common
-    target_device=$(get_build_var TARGET_DEVICE)
+    common_out_dir=$(_get_build_var_cached OUT_DIR)/target/common
+    target_device=$(_get_build_var_cached TARGET_DEVICE)
     common_target_out=common-${target_device}
     if [ ! -z $LINEAGE_FIXUP_COMMON_OUT ]; then
         if [ -d ${common_out_dir} ] && [ ! -L ${common_out_dir} ]; then
