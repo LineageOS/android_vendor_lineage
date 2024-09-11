@@ -87,22 +87,6 @@ def exists_in_tree(lm, path):
             return True
     return False
 
-# in-place prettyprint formatter
-def indent(elem, level=0):
-    i = "\n" + level*"  "
-    if len(elem):
-        if not elem.text or not elem.text.strip():
-            elem.text = i + "  "
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-        for elem in elem:
-            indent(elem, level+1)
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-    else:
-        if level and (not elem.tail or not elem.tail.strip()):
-            elem.tail = i
-
 def get_manifest_path():
     '''Find the current manifest path
     In old versions of repo this is at .repo/manifest.xml
@@ -207,7 +191,7 @@ def add_to_manifest(repositories):
         print("Adding dependency: %s -> %s" % (project.attrib["name"], project.attrib["path"]))
         lm.append(project)
 
-    indent(lm, 0)
+    ElementTree.indent(lm)
     raw_xml = ElementTree.tostring(lm).decode()
     raw_xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + raw_xml
 
