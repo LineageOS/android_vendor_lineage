@@ -192,12 +192,8 @@ def add_to_manifest(repositories):
         lm.append(project)
 
     ElementTree.indent(lm)
-    raw_xml = ElementTree.tostring(lm).decode()
-    raw_xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + raw_xml
-
-    f = open('.repo/local_manifests/roomservice.xml', 'w')
-    f.write(raw_xml)
-    f.close()
+    tree = ElementTree.ElementTree(lm)
+    tree.write('.repo/local_manifests/roomservice.xml', encoding='UTF-8', xml_declaration=True)
 
 def fetch_dependencies(repo_path):
     print('Looking for dependencies in %s' % repo_path)
