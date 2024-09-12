@@ -36,3 +36,11 @@ LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_V
 
 # Display version
 LINEAGE_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR)-$(LINEAGE_VERSION_SUFFIX)
+
+# LineageOS version properties
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lineage.version=$(LINEAGE_VERSION) \
+    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION) \
+    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
+    ro.modversion=$(LINEAGE_VERSION)
