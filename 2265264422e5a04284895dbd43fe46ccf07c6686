@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c6471c1_d9f0d004",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28024
+      },
+      "writtenOn": "2024-09-15T14:24:13Z",
+      "side": 1,
+      "message": "This is needed by BSNL 4G Users in Madhya Pradesh, India Circle (North), Else Internet does not work at all neither IMS Registers",
+      "revId": "2265264422e5a04284895dbd43fe46ccf07c6686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
