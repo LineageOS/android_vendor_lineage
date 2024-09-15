@@ -16,6 +16,24 @@
       "message": "again, it\u0027s enabled by default.",
       "revId": "6bcaecb3d2ef2fa94c470b61ea0c9b1521f449b6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0526076_702d5124",
+        "filename": "overlay/common/packages/apps/SimpleDeviceConfig/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 29097
+      },
+      "writtenOn": "2024-09-15T17:29:34Z",
+      "side": 1,
+      "message": "I know it and I wrote it in the description. I explicitly added this because just by setting the provider in device config nothing happened, I had to enable also the feature flag in order to let it appear in settings. Probably a clean install wouldn\u0027t have had this issue.",
+      "parentUuid": "346cf4d6_2f09f7f1",
+      "revId": "6bcaecb3d2ef2fa94c470b61ea0c9b1521f449b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
