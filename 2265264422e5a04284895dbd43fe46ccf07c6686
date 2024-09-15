@@ -16,6 +16,23 @@
       "message": "This is needed by BSNL 4G Users in Madhya Pradesh, India Circle (North), Else Internet does not work at all neither IMS Registers",
       "revId": "2265264422e5a04284895dbd43fe46ccf07c6686",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40a7b84c_e7fc1e73",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-09-15T18:51:09Z",
+      "side": 1,
+      "message": "link to carrier doc for APN in commit msg?",
+      "revId": "2265264422e5a04284895dbd43fe46ccf07c6686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
