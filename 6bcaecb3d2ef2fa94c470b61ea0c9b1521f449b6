@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "346cf4d6_2f09f7f1",
+        "filename": "overlay/common/packages/apps/SimpleDeviceConfig/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-09-15T17:22:42Z",
+      "side": 1,
+      "message": "again, it\u0027s enabled by default.",
+      "revId": "6bcaecb3d2ef2fa94c470b61ea0c9b1521f449b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
