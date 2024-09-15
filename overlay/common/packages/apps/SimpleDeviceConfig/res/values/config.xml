@@ -50,5 +50,9 @@
 
         <!-- Disable always screen on -->
         <item>attention_manager_service/keep_screen_on_enabled=false</item>
+
+        <!-- Media Provider -->
+        <item>mediaprovider/cloud_media_feature_enabled=true</item>
+        <item>mediaprovider/allowed_cloud_providers=com.google.android.apps.photos.cloudpicker</item>
     </string-array>
 </resources>
