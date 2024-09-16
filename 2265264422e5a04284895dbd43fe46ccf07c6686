@@ -67,6 +67,24 @@
       "message": "Hi Nolen, BSNL carrier is indian government owned carrier - Unfortunately they don\u0027t list APNs on their website, they send APN Configuration Update/Carrier Configuration Update to devices over the air through OMA CP (Client Provision) - User needs to install it by themselves. I can share screenshot of configuration settings they sent.",
       "revId": "2265264422e5a04284895dbd43fe46ccf07c6686",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "995ef02a_79a26ed9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-09-16T20:04:18Z",
+      "side": 1,
+      "message": "No need, that explanation works, pls add it to the commit msg, and fix razors comment",
+      "parentUuid": "9f71c7cf_1d9ab40b",
+      "revId": "2265264422e5a04284895dbd43fe46ccf07c6686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
