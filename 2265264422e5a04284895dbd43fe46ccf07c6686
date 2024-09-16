@@ -50,6 +50,23 @@
       "message": "added on the wrong line.  list is sorted by mcc #.\nalso, the \"bsnl net\" apn is already in the xml, so just update it.\nalso, please add carrier_id\u003d\"1549\"\nhttps://android.googlesource.com/device/sample/+/refs/tags/android-14.0.0_r67/etc/apns-full-conf.xml#24228\n\nhttps://android.googlesource.com/platform/packages/providers/TelephonyProvider/+/refs/tags/android-14.0.0_r67/assets/latest_carrier_id/carrier_list.textpb#3914",
       "revId": "2265264422e5a04284895dbd43fe46ccf07c6686",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f71c7cf_1d9ab40b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28024
+      },
+      "writtenOn": "2024-09-16T02:40:45Z",
+      "side": 1,
+      "message": "Hi Nolen, BSNL carrier is indian government owned carrier - Unfortunately they don\u0027t list APNs on their website, they send APN Configuration Update/Carrier Configuration Update to devices over the air through OMA CP (Client Provision) - User needs to install it by themselves. I can share screenshot of configuration settings they sent.",
+      "revId": "2265264422e5a04284895dbd43fe46ccf07c6686",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
