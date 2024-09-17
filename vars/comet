@@ -1,10 +1,11 @@
-# Pixel 8 Pro
+# Pixel 9 Pro Fold
 
 # Usage: ${device_repos[@]}
 device_repos=(
-  device/google/zuma
-  device/google/shusky
+  device/google/comet
 )
+
+readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
@@ -20,7 +21,7 @@ readonly build_number="12231197"
 readonly image_url="https://dl.google.com/developers/android/vic/images/factory/husky_beta-ap31.240617.015-factory-3ea91639.zip"
 readonly image_sha256="3ea916391d4aba1d9c8319d455af7adbc8985d8c3e6fd1580e433cc5e700e396"
 
-readonly flash_url="https://flash.android.com/build/12231197?target=husky-user&signed"
+readonly flash_url="https://flash.android.com/build/12231197?target=comet-user&signed"
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-ap2a.240905.003-b20862e1.zip"
 readonly ota_sha256="b20862e1a8eb63fccca0219ee8651cf8e3542d9c5f3aa7161f93e3c7f4c201a1"
