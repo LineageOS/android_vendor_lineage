@@ -1,9 +1,10 @@
-# Pixel 8 Pro
+# Pixel 9 Pro XL
 
 # Usage: ${device_repos[@]}
 device_repos=(
-  device/google/zuma
-  device/google/shusky
+  device/google/gs-common
+  device/google/zumapro
+  device/google/caimito
 )
 
 readonly fbpk_version="v2"
@@ -19,10 +20,10 @@ readonly aosp_tag="android-14.0.0_r67"
 
 readonly build_number="12231197"
 
-readonly image_url="https://dl.google.com/developers/android/vic/images/factory/husky_beta-ap31.240617.015-factory-3ea91639.zip"
-readonly image_sha256="3ea916391d4aba1d9c8319d455af7adbc8985d8c3e6fd1580e433cc5e700e396"
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/komodo_beta-ap31.240617.015-factory-1a2d73d5.zip"
+readonly image_sha256="1a2d73d51ae5edbfeab097a1a7dc0975d142c1d1a6696c634b453140f4d05b27"
 
-readonly flash_url="https://flash.android.com/build/12231197?target=husky-user&signed"
+readonly flash_url="https://flash.android.com/build/12231197?target=komodo-user&signed"
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-ap2a.240905.003-b20862e1.zip"
 readonly ota_sha256="b20862e1a8eb63fccca0219ee8651cf8e3542d9c5f3aa7161f93e3c7f4c201a1"

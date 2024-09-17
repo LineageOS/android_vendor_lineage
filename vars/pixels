@@ -1,6 +1,10 @@
 # Google Pixels, currently supported in AOSP
 # Usage: ${devices[@]}
 readonly devices=(
+  comet
+  komodo
+  caiman
+  tokay
   akita
   husky
   shiba
