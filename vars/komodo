@@ -1,0 +1,29 @@
+# Pixel 9 Pro XL
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/gs-common
+  device/google/zumapro
+  device/google/caimito
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="AP3A.241005.015"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-14.0.0_r67"
+readonly aosp_tag="android-15.0.0_r2"
+
+readonly build_number="12366759"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/komodo-ap3a.241005.015-factory-2ef380c8.zip"
+readonly image_sha256="2ef380c8ded2820c017081427c4a9bec1324cf116e038cfa0d166aeb9df298ed"
+
+readonly flash_url="https://flash.android.com/build/12366759?target=komodo-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-ap3a.241005.015-56f40758.zip"
+readonly ota_sha256="56f407586996c9e6aed6fe18df90febdb09dc56bbe496a9923da30d5034760b3"
+
+readonly security_patch="2024-10-05"

@@ -1,0 +1,27 @@
+# Pixel 9
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in komodo
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="AP3A.241005.015"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-14.0.0_r67"
+readonly aosp_tag="android-15.0.0_r2"
+
+readonly build_number="12366759"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/tokay-ap3a.241005.015-factory-88013873.zip"
+readonly image_sha256="880138730c75aca3dd388759fa1711cab650aad21047889d5adf6bfa514ac87a"
+
+readonly flash_url="https://flash.android.com/build/12366759?target=tokay-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-ap3a.241005.015-8894bda5.zip"
+readonly ota_sha256="8894bda50281db30834bff55813ff53bcc823b39f310ebafcdaaa423e5acb01a"
+
+readonly security_patch="2024-10-05"

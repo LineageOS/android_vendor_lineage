@@ -2,7 +2,6 @@
 
 # Usage: ${device_repos[@]}
 device_repos=(
-  device/google/gs-common
   device/google/zuma
   device/google/shusky
 )
