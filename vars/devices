@@ -1,6 +1,10 @@
 # All supported devices
 # Usage: ${devices[@]}
 readonly devices=(
+  comet
+  komodo
+  caiman
+  tokay
   akita
   husky
   shiba
