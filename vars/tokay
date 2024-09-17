@@ -1,0 +1,29 @@
+# Pixel 9
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in komodo
+)
+
+readonly fbpk_version="v2"
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="AP31.240617.015"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-14.0.0_r55"
+readonly aosp_tag="android-14.0.0_r67"
+
+readonly build_number="12231197"
+
+readonly image_url="https://dl.google.com/developers/android/vic/images/factory/tokay_beta-ap31.240617.015-factory-3bec1d19.zip"
+readonly image_sha256="3bec1d190e0ca673d92cbb9eea588f4917c352e0dc0941b0e2ee052dc0899a46"
+
+readonly flash_url="https://flash.android.com/build/12231197?target=tokay-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-ap2a.240905.003-fccccd6f.zip"
+readonly ota_sha256="fccccd6f7b62048c317fb6c48536afbbbb5b58940a4da64490c4e35ec4f8f747"
+
+readonly security_patch="2024-09-05"
