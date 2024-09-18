@@ -19,5 +19,9 @@ qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-26400-WAIPIO.QSSI15.0
 qcom_group_revision[kailua-audio]=AUDIO.LA.8.0.r1-11300-KAILUA.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.13.2.0.r1
 qcom_group_revision[kailua-vendor]=LA.VENDOR.13.2.0.r1-24300-KAILUA.QSSI15.0
-# https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.3.0.r1
-qcom_group_revision[kailua-video]=VIDEO.LA.3.0.r1-08200-KAILUA.0
+# https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.9.0.r1
+qcom_group_revision[lanai-audio]=AUDIO.LA.9.0.r1-07200-lanai.0
+# https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.14.3.0.r1
+qcom_group_revision[lanai-vendor]=LA.VENDOR.14.3.0.r1-16800-lanai.QSSI15.0
+# https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.4.0.r2
+qcom_group_revision[lanai-video]=VIDEO.LA.4.0.r2-05900-lanai.0
