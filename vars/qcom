@@ -1,6 +1,6 @@
 declare -A qcom_group_revision
-# https://git.codelinaro.org/clo/la/platform/frameworks/base/-/tags?sort=updated_desc&search=LA.QSSI.14.0.r1
-qcom_group_revision[qssi]=LA.QSSI.14.0.r1-16700-qssi.0
+# https://git.codelinaro.org/clo/la/platform/frameworks/base/-/tags?sort=updated_desc&search=LA.QSSI.15.0.r1
+qcom_group_revision[qssi]=LA.QSSI.15.0.r1-09500-qssi.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.10.6.2.r1
 qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02500-89xx.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.12.2.1.r1
