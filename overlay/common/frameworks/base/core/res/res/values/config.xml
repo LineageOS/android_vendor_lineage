@@ -53,6 +53,10 @@
         <item>com.shannon.imsservice</item>
         <!-- MediaTek ImsService -->
         <item>com.mediatek.ims</item>
+        <!-- SystemUI -->
+        <item>com.android.systemui</item>
+        <!-- The standard AOSP fused location provider -->
+        <item>com.android.location.fused</item>
     </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
