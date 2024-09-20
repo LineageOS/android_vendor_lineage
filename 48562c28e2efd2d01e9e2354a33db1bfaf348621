@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78ffabca_aed6a117",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33707
+      },
+      "writtenOn": "2024-09-20T17:00:35Z",
+      "side": 1,
+      "message": "Prevents the unnecessary location indicator after booting the device",
+      "revId": "48562c28e2efd2d01e9e2354a33db1bfaf348621",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
