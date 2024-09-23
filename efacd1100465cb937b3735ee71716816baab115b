@@ -68,6 +68,24 @@
       "parentUuid": "679b85eb_136d7bc5",
       "revId": "efacd1100465cb937b3735ee71716816baab115b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8ca5b14_0c54bfeb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-09-23T18:16:20Z",
+      "side": 1,
+      "message": "probably would be better to use ../../prebuilts/build-tools/linux-x86/bin/py3-cmd in shebang, otherwise issues won\u0027t be noticed by people working on this script unless they use breakfast.",
+      "parentUuid": "2650169f_643b53a1",
+      "revId": "efacd1100465cb937b3735ee71716816baab115b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
