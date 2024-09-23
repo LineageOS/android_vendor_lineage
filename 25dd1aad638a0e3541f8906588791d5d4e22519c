@@ -34,6 +34,41 @@
       "parentUuid": "085a440c_05c0bac0",
       "revId": "25dd1aad638a0e3541f8906588791d5d4e22519c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb5c4fc3_22321139",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-09-23T20:55:41Z",
+      "side": 1,
+      "message": "I think it\u0027s unnecessary",
+      "parentUuid": "15482a92_79148e2a",
+      "revId": "25dd1aad638a0e3541f8906588791d5d4e22519c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91aed185_8673097e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-09-23T20:55:41Z",
+      "side": 1,
+      "message": "This seems fine enough to me.\n\ndepending on OTAPACKAGE is fine but this works just as well",
+      "revId": "25dd1aad638a0e3541f8906588791d5d4e22519c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
