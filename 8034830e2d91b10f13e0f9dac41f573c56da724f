@@ -16,6 +16,24 @@
       "message": "Well, after 3h looking for the infos/editing, all the changes were already here:\n\nhttps://android.googlesource.com/device/sample/+blame/main/etc/apns-full-conf.xml",
       "revId": "8034830e2d91b10f13e0f9dac41f573c56da724f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3604c96_11bab084",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-09-24T03:41:55Z",
+      "side": 1,
+      "message": "Yeah, we maintain our own that has a LOT of carriers not in the AOSP one which is less maintained.\n\nI know its rough but it\u0027s the better solution.",
+      "parentUuid": "99ebefef_393f0545",
+      "revId": "8034830e2d91b10f13e0f9dac41f573c56da724f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
