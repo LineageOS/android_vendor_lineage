@@ -3665,70 +3665,54 @@
   <apn carrier="Personal MMS" mcc="722" mnc="341" apn="mms" proxy="" port="" mmsproxy="172.25.7.31" mmsport="8080" mmsc="http://mms.personal.com" user="mms" password="mms" type="mms" />
   <apn carrier="Personal" mcc="722" mnc="341" apn="datos.personal.com" user="datos" password="datos" type="default,supl" />
   <apn carrier="Personal MMS" mcc="722" mnc="341" apn="mms" user="mms" password="mms" mmsc="http://mms.personal.com/" mmsproxy="172.025.007.031" mmsport="9201" type="mms" />
-  <apn carrier="TIM Connect FAST" mcc="724" mnc="02" apn="timbrasil.br" user="tim" password="tim" mmsc="http://www.google.com.br" authtype="1" type="default,supl" />
-  <apn carrier="TIM WAP FAST" mcc="724" mnc="02" apn="wap.tim.br" user="tim" password="tim" mmsc="http://wap.tim.com.br" proxy="200.244.116.65" port="8080" type="default,supl" />
-  <apn carrier="TIM MMS" mcc="724" mnc="02" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="02" apn="tim.br" proxy="" port="" user="tim" password="tim" mmsc="null" type="default,supl" />
-  <apn carrier="TIM Connect FAST" mcc="724" mnc="03" apn="timbrasil.br" user="tim" password="tim" mmsc="http://www.google.com.br" authtype="1" type="default,supl" />
-  <apn carrier="TIM WAP FAST" mcc="724" mnc="03" apn="wap.tim.br" user="tim" password="tim" mmsc="http://wap.tim.com.br" proxy="200.244.116.65" port="8080" type="default,supl" />
-  <apn carrier="TIM MMS" mcc="724" mnc="03" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="03" apn="tim.br" proxy="" port="" user="tim" password="tim" mmsc="null" type="default,supl" />
-  <apn carrier="TIM Connect FAST" mcc="724" mnc="04" apn="timbrasil.br" user="tim" password="tim" mmsc="http://www.google.com.br" authtype="1" type="default,supl" />
-  <apn carrier="TIM WAP FAST" mcc="724" mnc="04" apn="wap.tim.br" user="tim" password="tim" mmsc="http://wap.tim.com.br" proxy="200.244.116.65" port="8080" type="default,supl" />
-  <apn carrier="TIM MMS" mcc="724" mnc="04" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="TIM BR CONNECT FAST" mcc="724" mnc="04" apn="tim.br" proxy="" port="" user="tim" password="tim" mmsc="null" type="default,supl" />
-  <apn carrier="Claro Dados" mcc="724" mnc="05" apn="claro.com.br" mmsc="http://www.google.com.br" user="claro" password="claro" authtype="1" type="default,supl" />
-  <apn carrier="Portal Claro" mcc="724" mnc="05" apn="wap.claro.com.br" proxy="200.169.126.11" port="8799" mmsc="http://wap.claro.com.br" user="claro" password="claro" type="default,supl" />
-  <apn carrier="Claro Foto" mcc="724" mnc="05" apn="mms.claro.com.br" proxy="" port="" mmsproxy="200.169.126.10" mmsport="8799" mmsc="http://mms.claro.com.br" user="claro" password="claro" authtype="1" type="mms" />
-  <apn carrier="Vivo Internet" mcc="724" mnc="06" apn="zap.vivo.com.br" mmsc="http://www.google.com.br" user="vivo" password="vivo" authtype="1" type="default,supl" />
-  <apn carrier="Vivo WAP" mcc="724" mnc="06" apn="wap.vivo.com.br" proxy="200.142.130.104" port="80" mmsc="http://termwapgsm2.vivo.com.br" user="vivo" password="vivo" type="default,supl" />
-  <apn carrier="Vivo MMS" mcc="724" mnc="06" apn="mms.vivo.com.br" proxy="" port="" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" />
+  <apn carrier="TIM IMS" mcc="724" mnc="02" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="TIM Connect" mcc="724" mnc="02" apn="timbrasil.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="189.40.191.96" mmsport="8080" authtype="1" type="default,ia,supl,mms,xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="TIM IMS" mcc="724" mnc="03" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="TIM Connect" mcc="724" mnc="03" apn="timbrasil.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="189.40.191.96" mmsport="8080" authtype="1" type="default,ia,supl,mms,xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="TIM IMS" mcc="724" mnc="04" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="TIM Connect" mcc="724" mnc="04" apn="timbrasil.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="189.40.191.96" mmsport="8080" authtype="1" type="default,ia,supl,mms,xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Java Session" mcc="724" mnc="05" apn="java.claro.com.br" user="claro" password="claro" type="default,ia,supl" />
+  <apn carrier="Claro Foto" mcc="724" mnc="05" apn="mms.claro.com.br" mmsproxy="200.169.126.10" mmsport="8799" mmsc="http://mms.claro.com.br" user="claro" password="claro" type="mms" />
+  <apn carrier="Vivo Internet" mcc="724" mnc="06" apn="zap.vivo.com.br" user="vivo" password="vivo" authtype="1" type="default" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="VIVO XCAP" mcc="724" mnc="06" apn="xcap.ims" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo IMS" mcc="724" mnc="06" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo MMS" mcc="724" mnc="06" apn="mms.vivo.com.br" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="SCTL MMS" mcc="724" mnc="07" apn="mms.sercomtel.com.br" user="sercomtel" password="sercomtel" mmsc="http://mms.claro.com.br" mmsproxy="200.169.126.10" mmsport="8799" type="mms" />
-  <apn carrier="SCTL GPRS" mcc="724" mnc="07" apn="sercomtel.com.br" user="sercomtel" password="sercomtel" mmsc="null" type="default,supl" />
-  <apn carrier="TIM Connect FAST" mcc="724" mnc="08" apn="timbrasil.br" user="tim" password="tim" mmsc="http://www.google.com.br" authtype="1" type="default,supl" />
-  <apn carrier="TIM WAP FAST" mcc="724" mnc="08" apn="wap.tim.br" user="tim" password="tim" mmsc="http://wap.tim.com.br" proxy="200.244.116.65" port="8080" type="default,supl" />
-  <apn carrier="TIM MMS" mcc="724" mnc="08" apn="mms.tim.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="200.179.66.242" mmsport="8080" authtype="1" type="mms" />
-  <apn carrier="Vivo Internet" mcc="724" mnc="10" apn="zap.vivo.com.br" mmsc="http://www.google.com.br" user="vivo" password="vivo" authtype="1" type="default,supl" />
-  <apn carrier="Vivo WAP" mcc="724" mnc="10" apn="wap.vivo.com.br" proxy="200.142.130.104" port="80" mmsc="http://termwapgsm2.vivo.com.br" user="vivo" password="vivo" type="default,supl" />
-  <apn carrier="Vivo MMS" mcc="724" mnc="10" apn="mms.vivo.com.br" proxy="" port="" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" />
-  <apn carrier="VIVO ZAP" mcc="724" mnc="10" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="null" type="default,supl" />
-  <apn carrier="Vivo Internet" mcc="724" mnc="11" apn="zap.vivo.com.br" mmsc="http://www.google.com.br" user="vivo" password="vivo" authtype="1" type="default,supl" />
-  <apn carrier="Vivo WAP" mcc="724" mnc="11" apn="wap.vivo.com.br" proxy="200.142.130.104" port="80" mmsc="http://termwapgsm2.vivo.com.br" user="vivo" password="vivo" type="default,supl" />
-  <apn carrier="Vivo MMS" mcc="724" mnc="11" apn="mms.vivo.com.br" proxy="" port="" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" />
-  <apn carrier="VIVO ZAP" mcc="724" mnc="11" apn="zap.vivo.com.br" user="vivo" password="vivo" mmsc="null" type="default,supl" />
-  <apn carrier="Oi Velox" mcc="724" mnc="16" apn="gprs.oi.com.br" mmsc="http://www.google.com.br" user="oi" password="oi" authtype="1" type="default,supl" />
-  <apn carrier="Oi WAP GPRS" mcc="724" mnc="16" apn="wapgprs.oi.com.br" proxy="200.222.108.241" port="3128" mmsc="http://wap.oi.com.br" user="oiwap" password="oiwap" type="default,supl" />
-  <apn carrier="Oi MMS" mcc="724" mnc="16" apn="mmsgprs.oi.com.br" proxy="" port="" mmsproxy="192.168.10.50" mmsport="3128" mmsc="http://200.222.42.204:8002/" user="oimms" password="oioioi" authtype="1" type="mms" />
-  <apn carrier="BrT Internet" mcc="724" mnc="16" apn="brt.br" user="brt" password="brt" mmsc="null" type="default,supl" />
-  <apn carrier="BrT MMS" mcc="724" mnc="16" apn="mms.brt.br" user="brt" password="brt" mmsc="http://mms.brasiltelecom.com.br/" mmsproxy="200.96.8.29" mmsport="8080" type="mms" />
+  <apn carrier="SCTL GPRS" mcc="724" mnc="07" apn="sercomtel.com.br" user="sercomtel" password="sercomtel" type="default,ia,supl" />
+  <apn carrier="Vivo Internet" mcc="724" mnc="10" apn="zap.vivo.com.br" user="vivo" password="vivo" authtype="1" type="default" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="VIVO XCAP" mcc="724" mnc="10" apn="xcap.ims" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo IMS" mcc="724" mnc="10" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo MMS" mcc="724" mnc="10" apn="mms.vivo.com.br" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Vivo Internet" mcc="724" mnc="11" apn="zap.vivo.com.br" user="vivo" password="vivo" authtype="1" type="default" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="VIVO XCAP" mcc="724" mnc="11" apn="xcap.ims" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo IMS" mcc="724" mnc="11" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo MMS" mcc="724" mnc="11" apn="mms.vivo.com.br" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Sercomtel:MMS" mcc="724" mnc="15" apn="mms.sercomtel.com.br" user="sercomtel" password="sercomtel" mmsc="http://mms.claro.com.br" mmsproxy="200.169.126.10" mmsport="8799" authtype="1" type="mms" />
+  <apn carrier="Sercomtel:Dados" mcc="724" mnc="15" apn="sercomtel.com.br" user="sercomtel" password="sercomtel" authtype="1" type="default,ia,supl" />
+  <apn carrier="Oi Internet" mcc="724" mnc="16" apn="gprs.oi.com.br" user="oi" password="oi" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Oi MMS" mcc="724" mnc="16" apn="mmsgprs.oi.com.br" mmsproxy="192.168.10.50" mmsport="3128" mmsc="http://200.222.42.204:8002/" user="oimms" password="oioioi" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Correios Celular" mcc="724" mnc="17" apn="internet.br" type="default,supl" />
-  <apn carrier="Telemig GPRS" mcc="724" mnc="19" apn="gprs.telemigcelular.com.br" user="celular" password="celular" mmsc="null" type="default,supl" />
-  <apn carrier="Telemig MMS" mcc="724" mnc="19" apn="mmsgprs.telemigcelular.com.br" user="celular" password="celular" mmsc="http://mms.telemigcelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
-  <apn carrier="Vivo Internet" mcc="724" mnc="23" apn="zap.vivo.com.br" mmsc="http://www.google.com.br" user="vivo" password="vivo" authtype="1" type="default,supl" />
-  <apn carrier="Vivo WAP" mcc="724" mnc="23" apn="wap.vivo.com.br" proxy="200.142.130.104" port="80" mmsc="http://termwapgsm2.vivo.com.br" user="vivo" password="vivo" type="default,supl" />
-  <apn carrier="Vivo MMS" mcc="724" mnc="23" apn="mms.vivo.com.br" proxy="" port="" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" />
-  <apn carrier="Telemig GPRS" mcc="724" mnc="23" apn="gprs.telemigcelular.com.br" user="celular" password="celular" mmsc="null" type="default,supl" />
-  <apn carrier="Telemig MMS" mcc="724" mnc="23" apn="mmsgprs.telemigcelular.com.br" user="celular" password="celular" mmsc="http://mms.telemigcelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
-  <apn carrier="Telemig GPRS" mcc="724" mnc="23" apn="gprs.telemigcelular.com.br" proxy="" port="" user="celular" password="celular" mmsc="null" type="default,supl" />
-  <apn carrier="Telemig MMS" mcc="724" mnc="23" apn="mmsgprs.telemigcelular.com.br" proxy="" port="" user="celular" password="celular" mmsc="http://mms.telemigcelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
-  <apn carrier="Oi Velox" mcc="724" mnc="24" apn="gprs.oi.com.br" mmsc="http://www.google.com.br" user="oi" password="oi" authtype="1" type="default,supl" />
-  <apn carrier="Oi WAP GPRS" mcc="724" mnc="24" apn="wapgprs.oi.com.br" proxy="200.222.108.241" port="3128" mmsc="http://wap.oi.com.br" user="oiwap" password="oiwap" type="default,supl" />
-  <apn carrier="Oi MMS" mcc="724" mnc="24" apn="mmsgprs.oi.com.br" proxy="" port="" mmsproxy="192.168.10.50" mmsport="3128" mmsc="http://200.222.42.204:8002/" user="oimms" password="oioioi" authtype="1" type="mms" />
-  <apn carrier="Amazonia GPRS" mcc="724" mnc="24" apn="gprs.amazoniacelular.com.br" user="celular" password="celular" mmsc="null" type="default,supl" />
-  <apn carrier="Amazonia MMS" mcc="724" mnc="24" apn="mmsgprs.amazoniacelular.com.br" user="celular" password="celular" mmsc="http://mms.amazoniacelular.com.br" mmsproxy="200.192.230.142" mmsport="8080" type="mms" />
-  <apn carrier="Oi Velox" mcc="724" mnc="31" apn="gprs.oi.com.br" mmsc="http://www.google.com.br" user="oi" password="oi" authtype="1" type="default,supl" />
-  <apn carrier="Oi WAP GPRS" mcc="724" mnc="31" apn="wapgprs.oi.com.br" proxy="200.222.108.241" port="3128" mmsc="http://wap.oi.com.br" user="oiwap" password="oiwap" type="default,supl" />
-  <apn carrier="Oi MMS" mcc="724" mnc="31" apn="mmsgprs.oi.com.br" proxy="" port="" mmsproxy="192.168.10.50" mmsport="3128" mmsc="http://200.222.42.204:8002/" user="oimms" password="oioioi" authtype="1" type="mms" />
-  <apn carrier="Oi" mcc="724" mnc="31" apn="gprs.oi.com.br" proxy="" port="" user="oi" password="oi" mmsc="null" type="default,supl" />
-  <apn carrier="CTBC MMS" mcc="724" mnc="32" apn="mms.ctbc.br" user="ctbc" password="1212" mmsc="http://mms.ctbccelular.com.br/was" mmsproxy="172.29.7.70" mmsport="8080" type="mms" />
-  <apn carrier="CTBC MMS" mcc="724" mnc="33" apn="mms.ctbc.br" user="ctbc" password="1212" mmsc="http://mms.ctbccelular.com.br/was" mmsproxy="172.29.7.70" mmsport="8080" type="mms" />
-  <apn carrier="CTBC 3G" mcc="724" mnc="34" apn="ctbc.br" mmsc="http://www.google.com.br" user="ctbc" password="1212" authtype="1" type="default,supl" />
-  <apn carrier="CTBC WAP" mcc="724" mnc="34" apn="wap.ctbc.br" proxy="172.29.7.70" port="8080" mmsc="http://wap.ctbccelular.com.br" user="ctbc" password="1212" type="default,supl" />
-  <apn carrier="CTBC MMS" mcc="724" mnc="34" apn="mms.ctbc.br" proxy="" port="" mmsproxy="172.29.7.70" mmsport="8080" mmsc="http://mms.ctbccelular.com.br/was" user="ctbc" password="1212" authtype="1" type="mms" />
+  <apn carrier="Vivo Internet" mcc="724" mnc="23" apn="zap.vivo.com.br" user="vivo" password="vivo" authtype="1" type="default" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="VIVO XCAP" mcc="724" mnc="23" apn="xcap.ims" type="xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo IMS" mcc="724" mnc="23" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="Vivo MMS" mcc="724" mnc="23" apn="mms.vivo.com.br" mmsproxy="200.142.130.104" mmsport="80" mmsc="http://termnat.vivomms.com.br:8088/mms" user="vivo" password="vivo" authtype="1" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Oi Internet" mcc="724" mnc="24" apn="gprs.oi.com.br" user="oi" password="oi" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Oi MMS" mcc="724" mnc="24" apn="mmsgprs.oi.com.br" mmsproxy="192.168.10.50" mmsport="3128" mmsc="http://200.222.42.204:8002/" user="oimms" password="oioioi" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Unifique" mcc="724" mnc="29" apn="unifique.br" type="default,ims,supl,xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Oi Internet" mcc="724" mnc="31" apn="gprs.oi.com.br" user="oi" password="oi" type="default,ia,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Oi MMS" mcc="724" mnc="31" apn="mmsgprs.oi.com.br" mmsproxy="192.168.10.50" mmsport="3128" mmsc="http://200.222.42.204:8002/" user="oimms" password="oioioi" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Algar Telecom Internet" mcc="724" mnc="32" apn="algar.br" user="algar" password="1212" type="default,ia" />
+  <apn carrier="Algar MMS" mcc="724" mnc="32" apn="algar.br" user="algar" password="1212" mmsc="http://mms.ctbccelular.com.br/was" mmsproxy="172.29.7.70" mmsport="8080" type="mms" />
+  <apn carrier="Algar Telecom Internet" mcc="724" mnc="33" apn="algar.br" user="algar" password="1212" type="default,ia" />
+  <apn carrier="Algar MMS" mcc="724" mnc="33" apn="algar.br" user="algar" password="1212" mmsc="http://mms.ctbccelular.com.br/was" mmsproxy="172.29.7.70" mmsport="8080" type="mms" />
+  <apn carrier="Algar Telecom Internet" mcc="724" mnc="34" apn="algar.br" user="algar" password="1212" type="default,ia" />
+  <apn carrier="Algar MMS" mcc="724" mnc="34" apn="algar.br" user="algar" password="1212" mmsc="http://mms.ctbccelular.com.br/was" mmsproxy="172.29.7.70" mmsport="8080" type="mms" />
   <apn carrier="Nextel Internet" mcc="724" mnc="39" apn="datacard.nextel3g.net.br" mmsc="http://www.google.com.br" user="Nextel3g" password="nextel" authtype="1" type="default,supl" />
   <apn carrier="Nextel WAP" mcc="724" mnc="39" apn="wap.nextel3g.net.br" user="" password="" type="default,supl" />
   <apn carrier="Nextel MMS" mcc="724" mnc="39" apn="mms.nextel3g.net.br" proxy="" port="" mmsproxy="129.129.129.104" mmsport="8080" mmsc="http://3gmms.nextel3g.net.br" user="" password="" authtype="1" type="mms" />
   <apn carrier="Nextel 3G" mcc="724" mnc="39" apn="datacard.nextel3g.net.br" type="default,supl" />
+  <apn carrier="TIM IMS" mcc="724" mnc="54" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="TIM Connect" mcc="724" mnc="54" apn="timbrasil.br" user="tim" password="tim" mmsc="http://mms.tim.br" mmsproxy="189.40.191.96" mmsport="8080" authtype="1" type="default,ia,supl,mms,xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Internet Movil" mcc="730" mnc="01" apn="imovil.entelpcs.cl" user="entelpcs" password="entelpcs" type="default,supl" />
   <apn carrier="Entel PCS" mcc="730" mnc="01" apn="bam.entelpcs.cl" user="entelpcs" password="entelpcs" proxy="10.99.0.10" port="8080" type="default,supl" />
   <apn carrier="Entel MMS" mcc="730" mnc="01" apn="mms.entelpcs.cl" proxy="" port="" mmsproxy="10.99.0.10" mmsport="8080" mmsc="http://mmsc.entelpcs.cl" user="entelpcs" password="entelmms" type="mms" />
