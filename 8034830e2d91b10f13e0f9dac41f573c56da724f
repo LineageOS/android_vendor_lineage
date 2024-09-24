@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99ebefef_393f0545",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13368
+      },
+      "writtenOn": "2024-09-24T03:32:16Z",
+      "side": 1,
+      "message": "Well, after 3h looking for the infos/editing, all the changes were already here:\n\nhttps://android.googlesource.com/device/sample/+blame/main/etc/apns-full-conf.xml",
+      "revId": "8034830e2d91b10f13e0f9dac41f573c56da724f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
