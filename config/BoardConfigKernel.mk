@@ -140,7 +140,7 @@ ifneq ($(KERNEL_NO_GCC), true)
     KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-androidkernel-
     # x86 toolchain
     KERNEL_TOOLCHAIN_x86 := $(GCC_PREBUILTS)/x86/x86_64-linux-android-4.9/bin
-    KERNEL_TOOLCHAIN_PREFIX_x86 := x86_64-linux-android-
+    KERNEL_TOOLCHAIN_PREFIX_x86 := x86_64-linux-androidkernel-
 
     TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(strip $(TARGET_KERNEL_CROSS_COMPILE_PREFIX))
     ifneq ($(TARGET_KERNEL_CROSS_COMPILE_PREFIX),)
@@ -159,6 +159,25 @@ ifneq ($(KERNEL_NO_GCC), true)
     # We need to add GCC toolchain to the path no matter what
     # for tools like `as`
     KERNEL_TOOLCHAIN_PATH_gcc := $(KERNEL_TOOLCHAIN_$(KERNEL_ARCH))
+
+    # Every GCC executables has a prefix, not automatically included if not cross compiling
+    ifeq ($(KERNEL_ARCH),x86)
+        KERNEL_MAKE_FLAGS += $(strip \
+                                AR=$(KERNEL_TOOLCHAIN_PREFIX)ar \
+                                NM=$(KERNEL_TOOLCHAIN_PREFIX)nm \
+                                OBJCOPY=$(KERNEL_TOOLCHAIN_PREFIX)objcopy \
+                                OBJDUMP=$(KERNEL_TOOLCHAIN_PREFIX)objdump \
+                                READELF=$(KERNEL_TOOLCHAIN_PREFIX)readelf \
+                                OBJSIZE=$(KERNEL_TOOLCHAIN_PREFIX)size \
+                                STRIP=$(KERNEL_TOOLCHAIN_PREFIX)strip \
+                                )
+        ifeq ($(TARGET_KERNEL_CLANG_COMPILE),false)
+            KERNEL_MAKE_FLAGS += $(strip \
+                                    CC=$(KERNEL_TOOLCHAIN_PREFIX)gcc \
+                                    LD=$(KERNEL_TOOLCHAIN_PREFIX)ld \
+                                    )
+        endif
+    endif
 
     ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
         KERNEL_CROSS_COMPILE := CROSS_COMPILE="$(KERNEL_TOOLCHAIN_PATH)"
@@ -194,7 +213,9 @@ ifneq ($(KERNEL_NO_GCC), true)
     endif
 
     # Set the full path to the clang command and LLVM binutils
+    KERNEL_MAKE_FLAGS += HOSTAR=$(TARGET_KERNEL_CLANG_PATH)/bin/llvm-ar
     KERNEL_MAKE_FLAGS += HOSTCC=$(TARGET_KERNEL_CLANG_PATH)/bin/clang
+    KERNEL_MAKE_FLAGS += HOSTLD=$(TARGET_KERNEL_CLANG_PATH)/bin/ld.lld
     KERNEL_MAKE_FLAGS += HOSTCXX=$(TARGET_KERNEL_CLANG_PATH)/bin/clang++
     ifneq ($(TARGET_KERNEL_CLANG_COMPILE), false)
         ifneq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
