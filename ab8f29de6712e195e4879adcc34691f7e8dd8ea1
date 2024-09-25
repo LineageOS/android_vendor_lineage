@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0dc0628_2d8ff8a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-09-25T11:38:44Z",
+      "side": 1,
+      "message": "https://github.com/nathanchance/android-kernel-clang/issues/11",
+      "revId": "ab8f29de6712e195e4879adcc34691f7e8dd8ea1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
