@@ -43,6 +43,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "068da085_baab76bd",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 33707
+      },
+      "writtenOn": "2024-09-26T13:47:19Z",
+      "side": 1,
+      "message": "Adding `com.android.systemui` to `config_locationExtraPackageNames` helps stop the annoying location indicator popup that shows up after the device boots. Since SystemUI is responsible for displaying things like notifications and location icons, including it in the configuration ensures it properly handles location indicators, preventing any unpolished or default popups from appearing.",
+      "parentUuid": "4f815ef7_66160552",
+      "range": {
+        "startLine": 56,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 41
+      },
+      "revId": "f0a73b6794e4f309ce3fc6ada08351f0875f56bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d2b7335f_48fe9b1e",
         "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
         "patchSetId": 2
