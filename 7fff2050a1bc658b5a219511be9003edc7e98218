@@ -16,6 +16,24 @@
       "message": "I think this can be better fixed in the code\nhttps://github.com/crdroidx/android_frameworks_base/commit/399aa806c1988bcfaa185b06e0a504a973905f2b",
       "revId": "7fff2050a1bc658b5a219511be9003edc7e98218",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56ee7089_12dc4e0a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-09-27T18:45:14Z",
+      "side": 1,
+      "message": "Of course I could bring back the V1 logic, but I don\u0027t want to change it just because when we can fix it \"properly\" by adding an RRO to the gapps package",
+      "parentUuid": "9dff9cf7_8746f207",
+      "revId": "7fff2050a1bc658b5a219511be9003edc7e98218",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
