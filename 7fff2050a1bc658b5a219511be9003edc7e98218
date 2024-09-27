@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9dff9cf7_8746f207",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2024-09-27T18:40:01Z",
+      "side": 1,
+      "message": "I think this can be better fixed in the code\nhttps://github.com/crdroidx/android_frameworks_base/commit/399aa806c1988bcfaa185b06e0a504a973905f2b",
+      "revId": "7fff2050a1bc658b5a219511be9003edc7e98218",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
