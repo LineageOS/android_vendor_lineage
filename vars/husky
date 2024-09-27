@@ -7,8 +7,6 @@ device_repos=(
   device/google/shusky
 )
 
-readonly fbpk_version="v2"
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="AP2A.240905.003"
