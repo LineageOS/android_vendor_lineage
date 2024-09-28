@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b4d3b9a_2cf823e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-09-28T18:49:46Z",
+      "side": 1,
+      "message": "yeah, kernel 7.x isn\u0027t out yet but why not...",
+      "revId": "2fe3a7c50be5c34b5fa7586509a97d145549e474",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
