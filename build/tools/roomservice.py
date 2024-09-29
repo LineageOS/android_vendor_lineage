@@ -259,9 +259,6 @@ def fetch_dependencies(repo_path):
 def has_branch(branches, revision):
     return revision in [branch['name'] for branch in branches]
 
-def get_default_revision_no_minor():
-    return get_default_revision().rsplit('.', 1)[0]
-
 def get_default_or_fallback_revision(repo_name):
     default_revision = get_default_revision()
     print("Default revision: %s" % default_revision)
@@ -273,14 +270,12 @@ def get_default_or_fallback_revision(repo_name):
     if has_branch(result, default_revision):
         return default_revision
 
-    fallbacks = [ get_default_revision_no_minor() ]
     if os.getenv('ROOMSERVICE_BRANCHES'):
-        fallbacks += list(filter(bool, os.getenv('ROOMSERVICE_BRANCHES').split(' ')))
-
-    for fallback in fallbacks:
-        if has_branch(result, fallback):
-            print("Using fallback branch: %s" % fallback)
-            return fallback
+        fallbacks = list(filter(bool, os.getenv('ROOMSERVICE_BRANCHES').split(' ')))
+        for fallback in fallbacks:
+            if has_branch(result, fallback):
+                print("Using fallback branch: %s" % fallback)
+                return fallback
 
     print("Default revision %s not found in %s. Bailing." % (default_revision, repo_name))
     print("Branches found:")
