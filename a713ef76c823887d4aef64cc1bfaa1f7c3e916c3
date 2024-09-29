@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4ed1878e_17512f5c",
+        "filename": "vars/qcom",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-09-29T19:44:33Z",
+      "side": 1,
+      "message": "15",
+      "range": {
+        "startLine": 2,
+        "startChar": 101,
+        "endLine": 2,
+        "endChar": 103
+      },
+      "revId": "a713ef76c823887d4aef64cc1bfaa1f7c3e916c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
