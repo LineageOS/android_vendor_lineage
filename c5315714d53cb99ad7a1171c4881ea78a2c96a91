@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0f6c7b68_a480df81",
+        "filename": "build/target/product/lineage_gsi_arm64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-09-29T18:19:21Z",
+      "side": 1,
+      "message": "this is required because inhering makefile above overwrites product device ans thus we end up with 32-bit build.",
+      "revId": "c5315714d53cb99ad7a1171c4881ea78a2c96a91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
