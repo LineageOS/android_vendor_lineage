@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06b38d81_17f80e90",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-12T06:57:59Z",
+      "side": 1,
+      "message": "doesn\u0027t seem to work properly with GMS IA injected activities (Digital Wellbeing, Google)",
+      "revId": "4e60dcd2180677fa758220af97eae2b08605bbc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
