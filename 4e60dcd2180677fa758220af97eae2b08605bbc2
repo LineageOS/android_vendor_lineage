@@ -16,6 +16,41 @@
       "message": "doesn\u0027t seem to work properly with GMS IA injected activities (Digital Wellbeing, Google)",
       "revId": "4e60dcd2180677fa758220af97eae2b08605bbc2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d432c3b7_59d98fee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26678
+      },
+      "writtenOn": "2024-10-13T14:55:41Z",
+      "side": 1,
+      "message": "\u003e doesn\u0027t seem to work properly with GMS IA injected activities (Digital Wellbeing, Google)\n\nApparently, it was Google\u0027s doing. It caused issue on my custom settings design. Uninstalling GMS update fixes it",
+      "revId": "4e60dcd2180677fa758220af97eae2b08605bbc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f160fe2_dbc44f2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26678
+      },
+      "writtenOn": "2024-10-13T14:55:41Z",
+      "side": 1,
+      "message": "\u003e doesn\u0027t seem to work properly with GMS IA injected activities (Digital Wellbeing, Google)",
+      "parentUuid": "06b38d81_17f80e90",
+      "revId": "4e60dcd2180677fa758220af97eae2b08605bbc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
