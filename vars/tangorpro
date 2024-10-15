@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP2A.240905.003"
+readonly build_id="AP3A.241005.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r55"
-readonly aosp_tag="android-14.0.0_r67"
+readonly prev_aosp_tag="android-14.0.0_r67"
+readonly aosp_tag="android-15.0.0_r2"
 
-readonly build_number="12231197"
+readonly build_number="12366759"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-ap2a.240905.003-factory-f4e19247.zip"
-readonly image_sha256="f4e192474ac4554d8e8ce5c0723b6b9b42d973d24e614d64518d78f7b033283a"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-ap3a.241005.015-factory-70bcf7f4.zip"
+readonly image_sha256="70bcf7f432921a84bfedd6e8b226196a58c6ebb142914717749404ae61bac9c2"
 
-readonly flash_url="https://flash.android.com/build/12231197?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/12366759?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-ap2a.240905.003-4d96c06a.zip"
-readonly ota_sha256="4d96c06a4ae5808ffff6c6a3dd63f214e3ddb9267f18d374878d911c67a0ee61"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-ap3a.241005.015-56044903.zip"
+readonly ota_sha256="5604490361420e12d5d7088c76d9c998c9cd6acc1c029d76f0d3baef1ebd1384"
 
-readonly security_patch="2024-09-05"
+readonly security_patch="2024-10-05"
