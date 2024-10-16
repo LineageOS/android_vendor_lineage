@@ -1,0 +1,4 @@
+name: "RELEASE_PIXEL_AIDL_BATTERY_MITIGATION_HAL"
+value: {
+  bool_value: true
+}
