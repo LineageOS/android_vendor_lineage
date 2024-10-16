@@ -1,0 +1,8 @@
+name: "RELEASE_PIXEL_AIDL_BATTERY_MITIGATION_HAL"
+namespace: "android_UNKNOWN"
+description: "Using this flag to control AIDL Battery Mitigation Hal on Pixel phone."
+value: {
+  bool_value: false
+}
+workflow: LAUNCH
+containers: "vendor"
