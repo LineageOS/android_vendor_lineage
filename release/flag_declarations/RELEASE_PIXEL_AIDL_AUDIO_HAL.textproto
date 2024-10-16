@@ -1,0 +1,8 @@
+name: "RELEASE_PIXEL_AIDL_AUDIO_HAL"
+namespace: "android_UNKNOWN"
+description: "Using this flag to control AIDL Audio Hal on Pixel phone."
+value: {
+  bool_value: false
+}
+workflow: LAUNCH
+containers: "vendor"
