@@ -136,6 +136,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "670e49ca_e8b2a7c3",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 33707
+      },
+      "writtenOn": "2024-10-17T05:30:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d2b7335f_48fe9b1e",
+      "range": {
+        "startLine": 58,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 47
+      },
+      "revId": "f0a73b6794e4f309ce3fc6ada08351f0875f56bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1382cedd_574762d3",
@@ -149,6 +173,30 @@
       "writtenOn": "2024-09-22T20:38:50Z",
       "side": 1,
       "message": "devices using that should probably just drop it",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 42
+      },
+      "revId": "f0a73b6794e4f309ce3fc6ada08351f0875f56bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f73334f_fec28f6e",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 33707
+      },
+      "writtenOn": "2024-10-17T05:30:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1382cedd_574762d3",
       "range": {
         "startLine": 60,
         "startChar": 0,
