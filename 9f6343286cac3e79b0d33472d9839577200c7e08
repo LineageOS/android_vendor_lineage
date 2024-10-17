@@ -69,6 +69,23 @@
       "parentUuid": "994168b6_2c16f307",
       "revId": "9f6343286cac3e79b0d33472d9839577200c7e08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c210669b_2557066d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-10-17T21:56:58Z",
+      "side": 1,
+      "message": "Saw this issue building an armv7 target on ack 6.1.",
+      "revId": "9f6343286cac3e79b0d33472d9839577200c7e08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
