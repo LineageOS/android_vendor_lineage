@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c45467b_a63e789a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2024-10-20T08:38:24Z",
+      "side": 1,
+      "message": "Do we even need this?  It looks like we haven\u0027t even been using this override in over 10 years. Or maybe I missed it somewhere else.\nref: https://github.com/LineageOS/android_build/commit/b78faab7c64e555e88ff9b59b06b112361fcfa91",
+      "revId": "b9f088abc24342833f53e113044e1b6479f366a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
