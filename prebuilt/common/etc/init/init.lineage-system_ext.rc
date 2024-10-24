@@ -3,7 +3,7 @@ on init
     export TERMINFO /system_ext/etc/terminfo
 
 # bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -z
+service lineage-bugreport /system/bin/dumpstate -d -p -z
     oneshot
     disabled
     keycodes 114 115 116
