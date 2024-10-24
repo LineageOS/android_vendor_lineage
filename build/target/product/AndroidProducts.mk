@@ -15,6 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/lineage_cf_car_arm64.mk \
+    $(LOCAL_DIR)/lineage_cf_car_x86_64.mk \
+    $(LOCAL_DIR)/lineage_cf_phone_arm64.mk \
+    $(LOCAL_DIR)/lineage_cf_phone_x86_64.mk \
+    $(LOCAL_DIR)/lineage_cf_tv_x86_64.mk \
     $(LOCAL_DIR)/lineage_gsi_arm.mk \
     $(LOCAL_DIR)/lineage_gsi_arm64.mk \
     $(LOCAL_DIR)/lineage_gsi_x86.mk \
@@ -34,6 +39,11 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_sdk_tv_x86_64.mk
 
 COMMON_LUNCH_CHOICES := \
+    lineage_cf_car_arm64-userdebug \
+    lineage_cf_car_x86_64-userdebug \
+    lineage_cf_phone_arm64-userdebug \
+    lineage_cf_phone_x86_64-userdebug \
+    lineage_cf_tv_x86_64-userdebug \
     lineage_gsi_arm-userdebug \
     lineage_gsi_arm64-userdebug \
     lineage_gsi_x86-userdebug \
