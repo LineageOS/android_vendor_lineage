@@ -9,21 +9,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP3A.241005.015"
+readonly build_id="AP3A.241105.008"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r67"
-readonly aosp_tag="android-15.0.0_r2"
+readonly prev_aosp_tag="android-15.0.0_r2"
+readonly aosp_tag="android-15.0.0_r5"
 
-readonly build_number="12366759"
+readonly build_number="12485168"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/komodo-ap3a.241005.015-factory-2ef380c8.zip"
-readonly image_sha256="2ef380c8ded2820c017081427c4a9bec1324cf116e038cfa0d166aeb9df298ed"
+readonly image_url="https://dl.google.com/dl/android/aosp/komodo-ap3a.241105.008-factory-56147c26.zip"
+readonly image_sha256="56147c2639398c077ab201d7989a4c52e21bdcfe314a7c7200f7fc1550e7600f"
 
-readonly flash_url="https://flash.android.com/build/12366759?target=komodo-user&signed"
+readonly flash_url="https://flash.android.com/build/12485168?target=komodo-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-ap3a.241005.015-56f40758.zip"
-readonly ota_sha256="56f407586996c9e6aed6fe18df90febdb09dc56bbe496a9923da30d5034760b3"
+readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-ap3a.241105.008-9be9eed2.zip"
+readonly ota_sha256="9be9eed251c48ddef18cecb85f2aa5f2dd7d200d31d0fb3606c8c213e0838043"
 
-readonly security_patch="2024-10-05"
+readonly security_patch="2024-11-05"

@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP3A.241005.015"
+readonly build_id="AP3A.241105.007"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r67"
-readonly aosp_tag="android-15.0.0_r2"
+readonly prev_aosp_tag="android-15.0.0_r2"
+readonly aosp_tag="android-15.0.0_r4"
 
-readonly build_number="12366759"
+readonly build_number="12470370"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-ap3a.241005.015-factory-0418766c.zip"
-readonly image_sha256="0418766c3333b58172a29ad72c717ba034fef28a3f83c76981d2822a2ca02a7c"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-ap3a.241105.007-factory-05e7464e.zip"
+readonly image_sha256="05e7464e01e762ed689089a0284ef8e738301b0fb1feb1c1029d202eb1d8bd6e"
 
-readonly flash_url="https://flash.android.com/build/12366759?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/12470370?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-ap3a.241005.015-59cef26e.zip"
-readonly ota_sha256="59cef26e514fc0c2704c5960ac1329d4c84067ae3d0271d5c0ad2c420594d7bd"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-ap3a.241105.007-fe11110e.zip"
+readonly ota_sha256="fe11110ee40b0d440603ecb1a426155239fa542eb7b460000275e02205b58f2b"
 
-readonly security_patch="2024-10-05"
+readonly security_patch="2024-11-05"
