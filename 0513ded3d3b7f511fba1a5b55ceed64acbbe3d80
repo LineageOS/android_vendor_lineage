@@ -1,4 +1,28 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "257e4253_0218b72e",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-09T08:54:31Z",
+      "side": 1,
+      "message": "Was it intended to polute soong namespaces if device has no FM at all?",
+      "range": {
+        "startLine": 148,
+        "startChar": 0,
+        "endLine": 149,
+        "endChar": 37
+      },
+      "revId": "0513ded3d3b7f511fba1a5b55ceed64acbbe3d80",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
