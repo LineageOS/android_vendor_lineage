@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff33c3ed_95c8290d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26313
+      },
+      "writtenOn": "2024-11-09T15:36:44Z",
+      "side": 1,
+      "message": "From official site - default,supl \nhttps://www.tbank.ru/mobile-operator/help/communication/sim-card/choose-tariff/internet/?internal_source\u003dsearch_help\u0026card\u003dout-of-service",
+      "revId": "5fdfd1fcc5b54fcf792dc9d1489e32567c89b7bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
