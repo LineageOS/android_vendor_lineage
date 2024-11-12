@@ -16,6 +16,24 @@
       "message": "The application remains in QS.\n1. Start program\n2. Play track\n3. Stop track\n4. Clear all recent\n\nThe application continues to hang in Quick Settings.\nYou can\u0027t swipe it away.",
       "revId": "5fef4a6dee73f2ad98d1ec8f0592a38da6ba9cf7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0dbf2a0a_b7be4117",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-11-12T12:44:35Z",
+      "side": 1,
+      "message": "This is working as intended, because it supports resumption (aka: click play on the QS notification while it\u0027s closed, it will resume from there)\n\nOT:\nThis is yet another reminder that\n\nGerrit. is. not. for. bug. reports.\n\nYou\u0027re supposedly a developer, and I\u0027m sick of seeing such behavior from you guys, upload patches instead of being a wannabe QA team, it\u0027s annoying.",
+      "parentUuid": "92ac80d7_d6d11598",
+      "revId": "5fef4a6dee73f2ad98d1ec8f0592a38da6ba9cf7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
