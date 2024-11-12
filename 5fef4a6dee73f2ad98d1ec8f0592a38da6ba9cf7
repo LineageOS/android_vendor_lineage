@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92ac80d7_d6d11598",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2024-11-12T10:30:31Z",
+      "side": 1,
+      "message": "The application remains in QS.\n1. Start program\n2. Play track\n3. Stop track\n4. Clear all recent\n\nThe application continues to hang in Quick Settings.\nYou can\u0027t swipe it away.",
+      "revId": "5fef4a6dee73f2ad98d1ec8f0592a38da6ba9cf7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
