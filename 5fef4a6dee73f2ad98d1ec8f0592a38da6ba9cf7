@@ -34,6 +34,24 @@
       "parentUuid": "92ac80d7_d6d11598",
       "revId": "5fef4a6dee73f2ad98d1ec8f0592a38da6ba9cf7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9bc378d7_cba96623",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2024-11-13T05:24:09Z",
+      "side": 1,
+      "message": "I offer you 1000 apologies.\nI can get what I want using the settings:\nSettings -- Sound \u0026 vibration -- Media - Pin media player or Show media on lock screen\nOnce again - I\u0027m sorry, Sebastiano.",
+      "parentUuid": "0dbf2a0a_b7be4117",
+      "revId": "5fef4a6dee73f2ad98d1ec8f0592a38da6ba9cf7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
