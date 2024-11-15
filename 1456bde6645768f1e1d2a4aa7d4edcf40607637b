@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "493d236f_e640a587",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33707
+      },
+      "writtenOn": "2024-11-15T08:31:48Z",
+      "side": 1,
+      "message": "fixes unnecessary location indicator popup",
+      "parentUuid": "f3d8e604_41f541bc",
+      "revId": "1456bde6645768f1e1d2a4aa7d4edcf40607637b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2c3fd7f0_cdbbe686",
