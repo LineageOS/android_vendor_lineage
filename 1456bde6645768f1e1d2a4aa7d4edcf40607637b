@@ -69,6 +69,24 @@
       "parentUuid": "2c3fd7f0_cdbbe686",
       "revId": "1456bde6645768f1e1d2a4aa7d4edcf40607637b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f72660a3_8fef8dd8",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 33707
+      },
+      "writtenOn": "2024-11-15T08:34:46Z",
+      "side": 1,
+      "message": "Didn\u0027t get what you mean",
+      "parentUuid": "707c792d_93d724f4",
+      "revId": "1456bde6645768f1e1d2a4aa7d4edcf40607637b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
