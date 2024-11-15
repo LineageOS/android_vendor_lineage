@@ -51,6 +51,24 @@
       "message": "Why isn\u0027t it placed just below?",
       "revId": "1456bde6645768f1e1d2a4aa7d4edcf40607637b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "707c792d_93d724f4",
+        "filename": "overlay/common/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-15T08:32:17Z",
+      "side": 1,
+      "message": "^",
+      "parentUuid": "2c3fd7f0_cdbbe686",
+      "revId": "1456bde6645768f1e1d2a4aa7d4edcf40607637b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
