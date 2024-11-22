@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db32c0dd_02df1934",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-22T19:53:13Z",
+      "side": 1,
+      "message": "Will merge next Monday after I get a SIM card.",
+      "revId": "5ce0b09f1afca622d7e44b64e7bff4653bd3ec36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
