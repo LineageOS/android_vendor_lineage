@@ -62,26 +62,6 @@ cc_library_headers {
 
 // Target platform agnostic config modules
 soong_config_module_type {
-    name: "aapt_version_code",
-    module_type: "java_defaults",
-    config_namespace: "lineageGlobalVars",
-    value_variables: ["aapt_version_code"],
-    properties: ["aaptflags"],
-}
-
-aapt_version_code {
-    name: "aapt_version_code_defaults",
-    soong_config_variables: {
-        aapt_version_code: {
-            aaptflags: [
-                "--version-code",
-                "%s",
-            ],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
