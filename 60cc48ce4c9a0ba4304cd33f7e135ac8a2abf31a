@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30f3a6a3_b52b6378",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-11-22T02:54:34Z",
+      "side": 1,
+      "message": "Fixes tegra 5.10 and newer ack while not regressing tegra 4.9, qcom 5.10, or qcom 4.19.",
+      "revId": "60cc48ce4c9a0ba4304cd33f7e135ac8a2abf31a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
