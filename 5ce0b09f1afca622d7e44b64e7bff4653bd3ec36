@@ -16,6 +16,23 @@
       "message": "Will merge next Monday after I get a SIM card.",
       "revId": "5ce0b09f1afca622d7e44b64e7bff4653bd3ec36",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6361560_3617a237",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-23T21:58:29Z",
+      "side": 1,
+      "message": "Actually got the SIM card today.",
+      "revId": "5ce0b09f1afca622d7e44b64e7bff4653bd3ec36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
