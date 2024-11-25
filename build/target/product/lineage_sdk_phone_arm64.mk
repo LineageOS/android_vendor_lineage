@@ -15,6 +15,9 @@
 $(call inherit-product, device/generic/goldfish/64bitonly/product/sdk_phone64_arm64.mk)
 $(call inherit-product, vendor/lineage/build/target/product/lineage_sdk_phone_arm64_board.mk)
 
+# Inherit tablet common Lineage stuff
+$(call inherit-product, vendor/lineage/config/tablet.mk)
+
 include vendor/lineage/build/target/product/lineage_generic_target.mk
 
 # Always build modules from source
