@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3c6d363_dd6a1620",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-11-25T14:28:18Z",
+      "side": 1,
+      "message": "This is kinda misleading. Isn\u0027t it better to explicitly include windoe_extensions without this inheritance?",
+      "revId": "8b0343440acf832deef6c23fbfe2a1b33240136c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
