@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd9d374e_a6eaf664",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34426
+      },
+      "writtenOn": "2024-11-26T09:56:31Z",
+      "side": 1,
+      "message": "Android 13",
+      "revId": "5c70cfdf50b2e2365f61db3f566937691a709661",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
