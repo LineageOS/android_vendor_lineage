@@ -16,6 +16,23 @@
       "message": "just ff 22.0 after merging 21?",
       "revId": "e4adee926cd8da0c879cdb7eb6d88d27a8b53b32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad850bbc_67a25bf7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2024-12-04T16:16:08Z",
+      "side": 1,
+      "message": "Tested with a fresh checkout and:\n- `breakfast axolotl`\n  - unique codename\n- `breakfast otter`\n  - duplicate codename\n  - it tried `amazon_otter` before (cm-12.1, no lineage release) and then `shift_otter`",
+      "revId": "e4adee926cd8da0c879cdb7eb6d88d27a8b53b32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
