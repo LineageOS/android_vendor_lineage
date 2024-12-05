@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP3A.241105.007"
+readonly build_id="AP4A.241205.013"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r2"
-readonly aosp_tag="android-15.0.0_r4"
+readonly prev_aosp_tag="android-15.0.0_r4"
+readonly aosp_tag="android-15.0.0_r6"
 
-readonly build_number="12470370"
+readonly build_number="12621605"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-ap3a.241105.007-factory-52b18be6.zip"
-readonly image_sha256="52b18be632607a89ccbf667e094cc73e7af59a2edd38a75493594d2990518a8f"
+readonly image_url="https://dl.google.com/dl/android/aosp/lynx-ap4a.241205.013-factory-2cfa9b95.zip"
+readonly image_sha256="2cfa9b95c0b91bc071205abbc0bc86690cb72b01c2b8c9bf152db6922cafb6e6"
 
-readonly flash_url="https://flash.android.com/build/12470370?target=lynx-user&signed"
+readonly flash_url="https://flash.android.com/build/12621605?target=lynx-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-ap3a.241105.007-26c0a712.zip"
-readonly ota_sha256="26c0a712700daff8c732d613cd82630255c4866300c45374a7fe4213d0f4d01b"
+readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-ap4a.241205.013-c8013227.zip"
+readonly ota_sha256="c8013227e36b3186a53f8a47e85bbba4651744f0195831313c37f6cd59beaddc"
 
-readonly security_patch="2024-11-05"
+readonly security_patch="2024-12-05"

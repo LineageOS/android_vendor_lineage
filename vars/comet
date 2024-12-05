@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP3A.241105.008"
+readonly build_id="AP4A.241205.013"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r2"
-readonly aosp_tag="android-15.0.0_r5"
+readonly prev_aosp_tag="android-15.0.0_r4"
+readonly aosp_tag="android-15.0.0_r6"
 
-readonly build_number="12485168"
+readonly build_number="12621605"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/comet-ap3a.241105.008-factory-342ea0db.zip"
-readonly image_sha256="342ea0dbe713b5b6589a1be4fcd5bce95e244c1af9ad753b9142f8fc993582d8"
+readonly image_url="https://dl.google.com/dl/android/aosp/comet-ap4a.241205.013-factory-c38dc0ba.zip"
+readonly image_sha256="c38dc0bacde39ac8c4be0b709fcf1f816baf0df16f2742f6e7f99cb38c2a5bd9"
 
-readonly flash_url="https://flash.android.com/build/12485168?target=comet-user&signed"
+readonly flash_url="https://flash.android.com/build/12621605?target=comet-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/comet-ota-ap3a.241105.008-ebe2f388.zip"
-readonly ota_sha256="ebe2f38837b4f8a32dc04f5d3ac53bc9b1ff722fa7cb000237204deadd70179a"
+readonly ota_url="https://dl.google.com/dl/android/aosp/comet-ota-ap4a.241205.013-616bfa66.zip"
+readonly ota_sha256="616bfa66d15b5dfd5c76e00d2a8c78a09ffef320eff56d31bcca51d4e8a003b0"
 
-readonly security_patch="2024-11-05"
+readonly security_patch="2024-12-05"

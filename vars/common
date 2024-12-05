@@ -5,11 +5,11 @@ readonly aosp_tag_match=android-15.0 # For update-device-vars.sh
 readonly os_branch=lineage-22.0
 readonly device_branch=lineage-22.0
 
-readonly prev_common_aosp_tag=android-15.0.0_r2 # Oct 2024, Pixel 6 - 9
-readonly common_aosp_tag=android-15.0.0_r5 # Nov 2024, Pixel 9
+readonly prev_common_aosp_tag=android-15.0.0_r5 # Nov 2024, Pixel 9
+readonly common_aosp_tag=android-15.0.0_r6 # Dec 2024, Pixel 6-9
 
-readonly common_aosp_build_id=AP3A.241105.008 # Nov 2024, Pixel 9
+readonly common_aosp_build_id=AP4A.241205.013 # Dec 2024, Pixel 6-9
 
-readonly topic=V_asb_2024-11
+readonly topic=V_asb_2024-12
 
 readonly merge_method="merge"
