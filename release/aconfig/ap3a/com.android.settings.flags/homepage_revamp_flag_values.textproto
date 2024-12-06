@@ -1,6 +1,0 @@
-flag_value {
-  package: "com.android.settings.flags"
-  name: "homepage_revamp"
-  state: ENABLED
-  permission: READ_WRITE
-}

@@ -1,8 +1,0 @@
-name: "RELEASE_KERNEL_KOMODO_DIR"
-namespace: "android_UNKNOWN"
-description: ""
-value: {
-  string_value: ""
-}
-workflow: PREBUILT
-containers: "vendor"

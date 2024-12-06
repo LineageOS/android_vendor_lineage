@@ -1,6 +1,0 @@
-flag_value {
-  package: "com.android.server.notification"
-  name: "notification_hide_unused_channels"
-  state: ENABLED
-  permission: READ_WRITE
-}
