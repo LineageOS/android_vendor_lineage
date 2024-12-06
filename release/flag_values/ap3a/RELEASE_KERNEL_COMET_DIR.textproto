@@ -1,4 +1,0 @@
-name: "RELEASE_KERNEL_COMET_DIR"
-value: {
-  string_value: "device/google/comet-kernels/6.1/24Q3-12386881"
-}

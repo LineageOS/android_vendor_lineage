@@ -13,7 +13,7 @@
 // limitations under the License.
 
 aconfig_values {
-  name: "aconfig-values-ap3a-com.android.server.notification-all",
+  name: "aconfig-values-ap4a-com.android.server.notification-all",
   package: "com.android.server.notification",
   srcs: [
     "*_flag_values.textproto",

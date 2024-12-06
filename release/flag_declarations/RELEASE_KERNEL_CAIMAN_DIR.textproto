@@ -1,8 +1,0 @@
-name: "RELEASE_KERNEL_CAIMAN_DIR"
-namespace: "android_UNKNOWN"
-description: ""
-value: {
-  string_value: ""
-}
-workflow: PREBUILT
-containers: "vendor"
