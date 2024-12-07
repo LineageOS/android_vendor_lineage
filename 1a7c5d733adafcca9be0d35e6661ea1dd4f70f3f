@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0965f51_9f10f119",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-12-07T19:21:23Z",
+      "side": 1,
+      "message": "lge_hardware uses it, not sure if it\u0027s \"already\" in 22.0",
+      "revId": "1a7c5d733adafcca9be0d35e6661ea1dd4f70f3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
