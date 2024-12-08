@@ -16,6 +16,23 @@
       "message": "lge_hardware uses it, not sure if it\u0027s \"already\" in 22.0",
       "revId": "1a7c5d733adafcca9be0d35e6661ea1dd4f70f3f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e6208b6_b9493b77",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-12-08T18:28:28Z",
+      "side": 1,
+      "message": "I haven\u0027t brought up 22 yet on any LG device. I\u0027ll keep this in mind when doing so though.\n\n(Interestingly someone created the branch but I don\u0027t remember doing that)",
+      "revId": "1a7c5d733adafcca9be0d35e6661ea1dd4f70f3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
