@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
+    Catapult \
     LineageCustomizer
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
