@@ -282,6 +282,9 @@ def main():
         "-t", "--topic", metavar="", help="pick all commits from a specified topic"
     )
     parser.add_argument(
+        "-H", "--hashtag", metavar="", help="pick all commits from a specified hashtag"
+    )
+    parser.add_argument(
         "-Q", "--query", metavar="", help="pick all commits using the specified query"
     )
     parser.add_argument(
@@ -327,9 +330,9 @@ def main():
     if args.quiet and args.verbose:
         parser.error("--quiet and --verbose cannot be specified together")
 
-    if (1 << bool(args.change_number) << bool(args.topic) << bool(args.query)) != 2:
+    if (1 << bool(args.change_number) << bool(args.topic) << bool(args.hashtag) << bool(args.query)) != 2:
         parser.error(
-            "One (and only one) of change_number, topic, and query are allowed"
+            "One (and only one) of change_number, topic, hashtag and query are allowed"
         )
 
     # Change current directory to the top of the tree
@@ -420,6 +423,11 @@ def main():
     # get data on requested changes
     if args.topic:
         reviews = fetch_query(args.gerrit, "topic:{0}".format(args.topic))
+        change_numbers = [
+            str(r["number"]) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))
+        ]
+    elif args.hashtag:
+        reviews = fetch_query(args.gerrit, "hashtag:{0}".format(args.hashtag))
         change_numbers = [
             str(r["number"]) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))
         ]
