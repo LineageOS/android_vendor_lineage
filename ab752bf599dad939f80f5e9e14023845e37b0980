@@ -102,6 +102,24 @@
       "message": "I wish it wasn\u0027t necessary to deviate so much from aosp\u0027s apns, but theirs has shown to be lacking at times. Especially with canadian apns, as this change shows. At least they have done some updates to it very recently.\nThanks for thorough contribution.",
       "revId": "ab752bf599dad939f80f5e9e14023845e37b0980",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f12fb7b_76fd9c55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-12-09T07:38:37Z",
+      "side": 1,
+      "message": "We barely follow AOSP at this point, the only update it sees is from Sony nowadays, pixel APNs are different and pooled server side from Google and carrier contributions directly.\nUpdating this list with what we come across is the best we can do.",
+      "parentUuid": "783302db_aeb34175",
+      "revId": "ab752bf599dad939f80f5e9e14023845e37b0980",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
