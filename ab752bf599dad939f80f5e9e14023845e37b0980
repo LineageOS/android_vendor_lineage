@@ -85,6 +85,23 @@
       "message": "Mike, not sure if you have any objection, but this seemed sane last time I/we checked",
       "revId": "ab752bf599dad939f80f5e9e14023845e37b0980",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "783302db_aeb34175",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2024-12-09T02:32:07Z",
+      "side": 1,
+      "message": "I wish it wasn\u0027t necessary to deviate so much from aosp\u0027s apns, but theirs has shown to be lacking at times. Especially with canadian apns, as this change shows. At least they have done some updates to it very recently.\nThanks for thorough contribution.",
+      "revId": "ab752bf599dad939f80f5e9e14023845e37b0980",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
