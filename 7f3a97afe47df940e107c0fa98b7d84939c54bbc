@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1510ce68_315f67a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-12-09T18:12:59Z",
+      "side": 1,
+      "message": "FYI I haven\u0027t ran any formatting commands on the code",
+      "revId": "7f3a97afe47df940e107c0fa98b7d84939c54bbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
