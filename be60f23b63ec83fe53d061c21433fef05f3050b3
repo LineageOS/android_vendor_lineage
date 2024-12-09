@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ebcb91e_de87e3ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-12-09T18:20:12Z",
+      "side": 1,
+      "message": "repopick.py: error: argument -t/--topic: not allowed with argument -H/--hashtag\nrepopick.py: error: argument -q/--quiet: not allowed with argument -v/--verbose",
+      "revId": "be60f23b63ec83fe53d061c21433fef05f3050b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
