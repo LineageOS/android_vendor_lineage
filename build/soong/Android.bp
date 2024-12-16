@@ -62,6 +62,23 @@ cc_library_headers {
 
 // Target platform agnostic config modules
 soong_config_module_type {
+    name: "camera_ids_remap_property",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: ["target_camera_ids_remap_property"],
+    properties: ["cppflags"],
+}
+
+camera_ids_remap_property {
+    name: "camera_ids_remap_property_defaults",
+    soong_config_variables: {
+        target_camera_ids_remap_property: {
+            cppflags: ["-DTARGET_CAMERA_IDS_REMAP_PROPERTY=\"%s\""],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
