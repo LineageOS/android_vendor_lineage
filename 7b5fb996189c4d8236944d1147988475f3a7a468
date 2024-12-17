@@ -16,6 +16,23 @@
       "message": "maybe \nhttps://gerrit.omnirom.org/c/android_vendor_omni/+/1518/2\n\nbest regards",
       "revId": "7b5fb996189c4d8236944d1147988475f3a7a468",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a98a44f_9d88e3b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2024-12-17T20:03:39Z",
+      "side": 1,
+      "message": "this bump breaks qcom_sm8350 build:\n```\n../../../../../../kernel/motorola/sm6375/drivers/staging/android/ion/heaps/msm_ion.c:253:35: error: comparison of different enumeration types (\u0027enum ion_heap_type\u0027 and \u0027enum msm_ion_heap_types\u0027) [-Werror,-Wenum-compare]\n  253 |         if (IS_ERR(heap) || !(heap-\u003etype \u003d\u003d ION_HEAP_TYPE_SECURE_CARVEOUT ||\n```\nTo fix use something like this: https://github.com/kristofpetho/kernel_oneplus_sm8350/commit/60313005a76bc8e42ce6a30a4920ba9ecfd1c741",
+      "revId": "7b5fb996189c4d8236944d1147988475f3a7a468",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
