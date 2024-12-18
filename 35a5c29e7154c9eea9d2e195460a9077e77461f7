@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd3a0282_9a720184",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-12-18T10:34:59Z",
+      "side": 1,
+      "message": "During discussion about I13a3bd186e7fc48e797e3c6f9039a1dae1fb733f it was decided to use fixed common property name for camera IDs remapping. So no need to extend soong.\n\nAbandoning.",
+      "revId": "35a5c29e7154c9eea9d2e195460a9077e77461f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
