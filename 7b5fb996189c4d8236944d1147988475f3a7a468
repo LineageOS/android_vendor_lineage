@@ -50,6 +50,24 @@
       "message": "and ftr another fix for a Motorola camera techpack needed with newer clang:\nhttps://github.com/sevenrock/android_kernel_motorola_sm6375/commit/b0bcba41994e1644ba9a051d5924e00aa761bf1f",
       "revId": "7b5fb996189c4d8236944d1147988475f3a7a468",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4626ec94_72938d45",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2024-12-18T17:48:05Z",
+      "side": 1,
+      "message": "Thanks! Fixed by https://review.lineageos.org/c/LineageOS/android_kernel_qcom_sm8350/+/411951",
+      "parentUuid": "4a98a44f_9d88e3b4",
+      "revId": "7b5fb996189c4d8236944d1147988475f3a7a468",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
