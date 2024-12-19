@@ -330,9 +330,7 @@ function privateremote()
         return 1
     fi
     git remote rm private 2> /dev/null
-    local REMOTE=$(git config --get remote.github.projectname)
-
-    local PROJECT=$(echo $REMOTE | sed -e "s#https://github.com/##g")
+    local PROJECT=$(git config --get remote.github.projectname)
 
     git remote add private git@github.com:$PROJECT.git
     echo "Remote 'private' created"
