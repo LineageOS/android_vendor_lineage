@@ -15,6 +15,7 @@ Additional LineageOS functions:
 - aospremote:      Add git remote for matching AOSP repository.
 - cloremote:       Add git remote for matching CodeLinaro repository.
 - githubremote:    Add git remote for LineageOS Github.
+- privateremote:   Add git remote for Github with ssh access.
 - mka:             Alias to "m".
 - mkap:            Builds the module(s) using mka and pushes them to the device.
 - cmka:            Cleans and builds using mka.
