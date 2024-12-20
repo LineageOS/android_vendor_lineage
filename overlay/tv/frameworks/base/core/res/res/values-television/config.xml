@@ -17,4 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Max number of columns for power menu lite -->
     <integer name="power_menu_lite_max_columns">4</integer>
+
+    <!-- Colon separated list of package names that should be granted Notification Listener access -->
+    <string name="config_defaultListenerAccessPackages" translatable="false">org.lineageos.tv.launcher</string>
 </resources>
