@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3310daef_14dc0f80",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-12-20T20:35:50Z",
+      "side": 1,
+      "message": "Why is this here instead of in device/lineage/atv? We\u0027ve been trying to put as much atv specific as we can over there instead.",
+      "revId": "795495578c48129aef037b344dc2f2a99bd7d9fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
