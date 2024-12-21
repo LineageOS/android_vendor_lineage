@@ -16,6 +16,24 @@
       "message": "What was this for, by the way?",
       "revId": "4fdaf0759fc5f90509a1d2f1cc69517c309efcff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0b21e16_ba9ed6d1",
+        "filename": "config/common_tv.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2024-12-21T21:44:42Z",
+      "side": 1,
+      "message": "It\u0027s used to setup defaults for app/game/suggestion row orders via parter customization.",
+      "parentUuid": "7d601bf2_2a246170",
+      "revId": "4fdaf0759fc5f90509a1d2f1cc69517c309efcff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
