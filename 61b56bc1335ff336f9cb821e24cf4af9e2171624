@@ -16,6 +16,24 @@
       "message": "I still get \u0027no notification access\u0027 in Catapult with the current patchset.",
       "revId": "61b56bc1335ff336f9cb821e24cf4af9e2171624",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05dd565b_d983e8e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-12-22T02:50:17Z",
+      "side": 1,
+      "message": "My initial problem was caused by a gms rro overriding this overlay. After resolving that issue, notifications are now available by default for both the gms and non-gms use cases.",
+      "parentUuid": "f9bd18ea_44614563",
+      "revId": "61b56bc1335ff336f9cb821e24cf4af9e2171624",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
