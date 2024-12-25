@@ -16,6 +16,24 @@
       "message": "actually, make this ifneq eng?",
       "revId": "539b51c266850fa2e6748e368927b0e8797cc2fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95a0ad9c_a033a2c0",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2024-12-25T06:58:49Z",
+      "side": 1,
+      "message": "framework doesn\u0027t enable this for user build so we only need to take care of userdebug",
+      "parentUuid": "0de18078_1fb46d9a",
+      "revId": "539b51c266850fa2e6748e368927b0e8797cc2fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
