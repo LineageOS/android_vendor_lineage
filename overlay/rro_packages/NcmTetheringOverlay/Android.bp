@@ -1,0 +1,13 @@
+//
+// SPDX-FileCopyrightText: The Android Open Source Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+runtime_resource_overlay {
+    name: "NcmTetheringOverlay",
+    vendor: true,
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The Android Open Source Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- List of regexpressions describing the interface (if any) that represent tetherable
+         USB interfaces.  If the device doesn't want to support tethering over USB this should
+         be empty.  An example would be "usb.*" -->
+    <string-array translatable="false" name="config_tether_usb_regexs">
+        <item>rndis\\d</item>
+    </string-array>
+
+    <!-- List of regexpressions describing the interface (if any) that represent tetherable
+         NCM interfaces.  If the device doesn't want to support tethering over NCM this should
+         be empty. -->
+    <string-array translatable="false" name="config_tether_ncm_regexs">
+        <item>ncm\\d</item>
+    </string-array>
+
+    <!-- Which USB function should be enabled when TETHERING_USB is requested. 0: RNDIS, 1: NCM.
+         -->
+    <integer translatable="false" name="config_tether_usb_functions">1</integer>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The Android Open Source Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.networkstack.tethering.overlay.ncm">
+
+    <overlay
+        android:isStatic="true"
+        android:priority="0"
+        android:targetName="TetheringConfig"
+        android:targetPackage="com.android.networkstack.tethering" />
+</manifest>
