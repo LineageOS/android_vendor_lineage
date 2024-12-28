@@ -16,6 +16,24 @@
       "message": "Currently fails with:\n\n\u003e[ 74% 21903/29531 39m51s remaining] //vendor/lineage/prebuilt/common:apns-conf.xml xmllint-xsd\n\u003eFAILED: out/soong/.intermediates/vendor/lineage/prebuilt/common/apns-conf.xml/android_arm64_armv8-a-branchprot/apns-conf.xml-timestamp\n\u003eout/host/linux-x86/bin/xmllint --schema vendor/lineage/tools/apns-conf.xsd vendor/lineage/prebuilt/common/etc/apns-conf.xml \u003e /dev/null \u0026\u0026 touch -a out/soong/.intermediates/vendor/lineage/prebuilt/c\n\u003eommon/apns-conf.xml/android_arm64_armv8-a-branchprot/apns-conf.xml-timestamp\n\u003evendor/lineage/prebuilt/common/etc/apns-conf.xml:1078: Schemas validity error : Element \u0027apn\u0027, attribute \u0027mmsproxy\u0027: \u00272a00:0fbc:2200:c999:0109:1f87:2:1\u0027 is not a valid value of the atomic type \u0027xs:a\nnyURI\u0027.\n\u003evendor/lineage/prebuilt/common/etc/apns-conf.xml fails to validate\n\u003e17:05:31 ninja failed with: exit status 1\n\u003e\n\u003e#### failed to build some targets (05:25 (mm:ss)) ####\n\n\nThis is because of the XML schema validator introduced in https://github.com/LineageOS/android_vendor_lineage/commit/c3a46252ee6b4b6116ae4a6a681d90acaf9a942a",
       "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d304cbd_e48a223a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-12-28T18:59:20Z",
+      "side": 1,
+      "message": "try http://https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/413143/comments/532d9211_daae4a0a",
+      "parentUuid": "532d9211_daae4a0a",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
