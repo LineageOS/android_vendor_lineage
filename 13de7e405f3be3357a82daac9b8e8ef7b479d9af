@@ -105,6 +105,23 @@
       "parentUuid": "2e6dc089_26d408e3",
       "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7333fda8_796888f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-12-28T19:51:23Z",
+      "side": 1,
+      "message": "then we\u0027d need a new xsd type that allows either ipv4 or ipv6.",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
