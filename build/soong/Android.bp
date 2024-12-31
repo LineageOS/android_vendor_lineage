@@ -60,6 +60,16 @@ cc_library_headers {
     defaults: ["generated_kernel_header_defaults"],
 }
 
+soong_config_module_type {
+    name: "target_board_platform_cc_library_shared",
+    module_type: "cc_library_shared",
+    config_namespace: "ANDROID",
+    value_variables: ["target_board_platform"],
+    properties: [
+        "name",
+    ],
+}
+
 // Target platform agnostic config modules
 soong_config_module_type {
     name: "camera_override_format_from_reserved",
