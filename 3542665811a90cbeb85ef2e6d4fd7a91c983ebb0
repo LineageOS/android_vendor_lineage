@@ -116,6 +116,24 @@
       "parentUuid": "d1143652_d13a0f8d",
       "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eedc0cdd_2b4816f8",
+        "filename": "tools/apns-conf.xsd",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 26788
+      },
+      "writtenOn": "2025-01-01T10:05:46Z",
+      "side": 1,
+      "message": "Looking at the current apn-confs.xml, it\u0027s more often an IPv4 or IPv6 address then a hostname.",
+      "parentUuid": "9718325d_fe72c10d",
+      "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
