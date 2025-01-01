@@ -56,6 +56,24 @@
       "message": "i think this needs to be an hostname, https://cs.android.com/android/platform/superproject/main/+/main:frameworks/base/telephony/java/android/telephony/data/ApnSetting.java;drc\u003db4d6320e2ae398b36f0aaafb2ecd83609d2d99af;l\u003d2392",
       "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1143652_d13a0f8d",
+        "filename": "tools/apns-conf.xsd",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-01-01T10:04:11Z",
+      "side": 1,
+      "message": "well can\u0027t be an URL, anything else that is an host or ip works",
+      "parentUuid": "9718325d_fe72c10d",
+      "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
