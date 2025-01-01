@@ -16,6 +16,29 @@
       "message": "seems ok?",
       "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c41bd77_0418a996",
+        "filename": "tools/apns-conf.xsd",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 26788
+      },
+      "writtenOn": "2025-01-01T09:59:24Z",
+      "side": 1,
+      "message": "small typo, IPv6 instead of IpV6.",
+      "range": {
+        "startLine": 116,
+        "startChar": 23,
+        "endLine": 116,
+        "endChar": 27
+      },
+      "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
