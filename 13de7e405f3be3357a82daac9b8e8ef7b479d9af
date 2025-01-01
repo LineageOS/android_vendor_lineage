@@ -157,6 +157,92 @@
       "message": "hmm, isn\u0027t this the mmsc field? I don\u0027t see any URI in the mmsproxy field, only in the mmsc field.",
       "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c713e042_4de00e47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-01T07:54:59Z",
+      "side": 1,
+      "message": "I think you\u0027re referring to mmsc, which is a full URL.\n\nThe mmsproxy field is only a hostname, which may be an IP address or a DNS name ([ref](https://cs.android.com/android/platform/superproject/main/+/main:frameworks/base/telephony/java/android/telephony/data/ApnSetting.java;l\u003d2390-2396;drc\u003db4d6320e2ae398b36f0aaafb2ecd83609d2d99af)).",
+      "parentUuid": "ae028fe8_d9abfaee",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77fd4460_34f51cc7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-01T07:54:59Z",
+      "side": 1,
+      "message": "The ones from the AOSP APNs XML may be out of date, as they were last changed in 2022 ([1](https://android-review.googlesource.com/c/device/sample/+/2007275), [2](https://android-review.googlesource.com/c/device/sample/+/2098337)) and do not match the ones from google\u0027s latest carriersettings (notably the internet auth_type and limiting xcap to LTE).\n\nHave you tested these APNs with the network over at least LTE and VoWiFi?",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4c0d3886_633e4d2c",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1075,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-01T07:54:59Z",
+      "side": 1,
+      "message": "In the google carriersettings for 1and1_de, internet also has auth_type\u003d1, where 1 is CHAP.",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04951fe5_4c35ab72",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1076,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-01T07:54:59Z",
+      "side": 1,
+      "message": "In the google carriersettings for 1and1_de, ims also has bearer_bitmask\u003d14|18|20, where 14 is LTE, 18 is IWLAN, and 20 is NR. This one probably isn\u0027t as critical since that basically covers everything.",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22881e37_3ec26b91",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1077,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-01T07:54:59Z",
+      "side": 1,
+      "message": "In the google carriersettings for 1and1_de, xcap also has bearer_bitmask\u003d14, where 14 is LTE.",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
