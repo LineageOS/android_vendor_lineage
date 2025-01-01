@@ -2,7 +2,7 @@
 <!--
 /*
 ** Copyright 2006, Google Inc.
-** Copyright 2016-2024 The LineageOS Project
+** Copyright 2016-2025 The LineageOS Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -1478,15 +1478,13 @@
   <apn carrier="WCW-MMS only" mcc="310" mnc="180" apn="mms.wcc.net" proxy="209.55.70.244" port="80" mmsc="http://mms.wcc.net" mmsproxy="209.55.70.246" mmsport="80" user="3257630000" password="mmsc" type="default,mms" authtype="3" />
   <apn carrier="Ting Data" carrier_id="2523" mcc="310" mnc="240" apn="wireless.dish.com" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" protocol="IPV4V6" roaming_protocol="IPV4V6" type="default,fota,mms,supl,hipri,dun" mvno_type="gid" mvno_match_data="6430" />
   <apn carrier="Mint" mcc="310" mnc="240" apn="Wholesale" type="default,supl,mms,ia" mmsc="http://wholesale.mmsmvno.com/mms/wapenc" mmsport="8080" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="756D" />
-  <apn carrier="T-Mobile US IMS" carrier_id="1" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" bearer_bitmask="14|20" mtu="1440" user_visible="false" />
-  <apn carrier="T-Mobile US IMS" carrier_id="1" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" bearer_bitmask="18" mtu="1440" user_visible="false" />
-  <apn carrier="T-Mobile MMS" carrier_id="1" mcc="310" mnc="260" apn="TMUS" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="mms,xcap" protocol="IPV6" roaming_protocol="IPV6" bearer_bitmask="18" />
+  <apn carrier="T-Mobile US IMS" carrier_id="1" mcc="310" mnc="260" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV4V6" bearer_bitmask="14|18|20" mtu="1440" user_visible="false" />
+  <apn carrier="T-Mobile MMS" carrier_id="1" mcc="310" mnc="260" apn="TMUS" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="mms,xcap" protocol="IPV6" roaming_protocol="IPV6" bearer_bitmask="18" user_visible="false" />
   <apn carrier="T-Mobile US" carrier_id="1" mcc="310" mnc="260" apn="fast.t-mobile.com" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,ia,mms,xcap" protocol="IPV6" bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20" mtu="1440" />
   <apn carrier="T-Mobile Tethering" carrier_id="1" mcc="310" mnc="260" apn="pcweb.tmobile.com" type="dun" protocol="IPV6" user_visible="false" />
   <apn carrier="T-Mobile Emergency" carrier_id="1" mcc="310" mnc="260" apn="sos" type="emergency" protocol="IPV6" roaming_protocol="IPV4V6" user_visible="false" />
   <apn carrier="Project Fi - T" mcc="310" mnc="260" apn="h2g2" type="ia" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="31026097" mvno_type="imsi" />
   <apn carrier="Project Fi - T" mcc="310" mnc="260" apn="h2g2" user="none" server="*" password="none" mmsc="http://mmsc1.g-mms.com/mms/wapenc" protocol="IPV6" roaming_protocol="IP" mvno_match_data="31026097" mvno_type="imsi" />
-  <apn carrier="T-Mobile IMS" mcc="310" mnc="260" apn="ims" type="ims" modem_cognitive="true" protocol="IPV6" />
   <apn carrier="MetroPCS 260" mcc="310" mnc="260" apn="fast.metropcs.com" protocol="IPV6" roaming_protocol="IPV4V6" mvno_match_data="6D" mvno_type="gid" type="ia" mtu="1440" />
   <apn carrier="MetroPCS 260" mcc="310" mnc="260" apn="fast.metropcs.com" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" protocol="IPV6" roaming_protocol="IP" mvno_match_data="6D" mvno_type="gid" type="default,supl,mms,dun" mtu="1440" />
   <apn carrier="MetroPCS 260 IMS" mcc="310" mnc="260" apn="ims" type="ims" mvno_match_data="6D" mvno_type="gid" protocol="IPV6" roaming_protocol="IPV6" mtu="1440" />
