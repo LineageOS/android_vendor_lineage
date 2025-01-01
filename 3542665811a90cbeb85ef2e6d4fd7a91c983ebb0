@@ -98,6 +98,24 @@
       "parentUuid": "9718325d_fe72c10d",
       "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ec59c61_8c8c135e",
+        "filename": "tools/apns-conf.xsd",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-01-01T10:04:55Z",
+      "side": 1,
+      "message": "i\u0027m abusing anyuri with `/` restriction on it fyi.",
+      "parentUuid": "d1143652_d13a0f8d",
+      "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
