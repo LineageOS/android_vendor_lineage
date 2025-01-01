@@ -41,6 +41,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b35f426_1887a577",
+        "filename": "tools/apns-conf.xsd",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-01-01T10:04:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9c41bd77_0418a996",
+      "range": {
+        "startLine": 116,
+        "startChar": 23,
+        "endLine": 116,
+        "endChar": 27
+      },
+      "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9718325d_fe72c10d",

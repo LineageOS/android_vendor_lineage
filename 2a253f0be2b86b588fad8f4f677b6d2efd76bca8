@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "609a218b_30e1261e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-01-01T10:04:15Z",
+      "side": 1,
+      "message": "this also seems to pass for `mmsproxy\u003d\"z2a00:0fbc:2200:c999:0109:1f87:2:1z\"`, not sure how to make it anchored when ^$ doesn\u0027t work...",
+      "revId": "2a253f0be2b86b588fad8f4f677b6d2efd76bca8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
