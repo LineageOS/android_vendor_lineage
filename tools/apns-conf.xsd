@@ -105,6 +105,29 @@
         </xs:restriction>
     </xs:simpleType>
 
+    <xs:simpleType name="ip_or_hostname">
+        <xs:union>
+            <!-- Allow xs:anyURI if it doesn't contain a forward slash character -->
+            <xs:simpleType>
+                <xs:restriction base="xs:anyURI">
+                    <xs:pattern value="[^/]+" />
+                </xs:restriction>
+            </xs:simpleType>
+            <!-- Allow IPv6 string -->
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="([A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}" />
+                </xs:restriction>
+            </xs:simpleType>
+            <!-- Allow empty string -->
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+
     <xs:complexType name="apn">
         <xs:attribute name="mcc" type="mcc" />
         <xs:attribute name="mnc" type="mnc" />
@@ -113,9 +136,9 @@
         <xs:attribute name="user" type="xs:string" />
         <xs:attribute name="server" type="xs:anyURI" />
         <xs:attribute name="password" type="xs:string" />
-        <xs:attribute name="proxy" type="xs:anyURI" />
+        <xs:attribute name="proxy" type="ip_or_hostname" />
         <xs:attribute name="port" type="xs:string" />
-        <xs:attribute name="mmsproxy" type="xs:anyURI" />
+        <xs:attribute name="mmsproxy" type="ip_or_hostname" />
         <xs:attribute name="mmsport" type="xs:string" />
         <xs:attribute name="mmsc" type="xs:anyURI" />
         <xs:attribute name="type" type="apnType" />
