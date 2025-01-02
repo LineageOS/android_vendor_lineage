@@ -134,6 +134,24 @@
       "parentUuid": "9718325d_fe72c10d",
       "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74e94524_8125a23a",
+        "filename": "tools/apns-conf.xsd",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-02T06:58:03Z",
+      "side": 1,
+      "message": "Yes, it does need to be a hostname, but hostname refers to the URL component hostname (as opposed to a full URL with a scheme and everything, c.f., the check for a http prefix), not a literal hostname.",
+      "parentUuid": "eedc0cdd_2b4816f8",
+      "revId": "3542665811a90cbeb85ef2e6d4fd7a91c983ebb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

@@ -16,6 +16,40 @@
       "message": "this also seems to pass for `mmsproxy\u003d\"z2a00:0fbc:2200:c999:0109:1f87:2:1z\"`, not sure how to make it anchored when ^$ doesn\u0027t work...",
       "revId": "2a253f0be2b86b588fad8f4f677b6d2efd76bca8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec3564d6_6e1a85ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-02T06:58:03Z",
+      "side": 1,
+      "message": "LGTM, validates latest lineage, google, and samsung apns successfully.",
+      "revId": "2a253f0be2b86b588fad8f4f677b6d2efd76bca8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "595ff9d4_944ec83f",
+        "filename": "tools/apns-conf.xsd",
+        "patchSetId": 2
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-02T06:58:03Z",
+      "side": 1,
+      "message": "nitpick: this would let opaque URIs through (e.g., \u0027scheme:example\u0027)",
+      "revId": "2a253f0be2b86b588fad8f4f677b6d2efd76bca8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
