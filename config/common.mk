@@ -221,6 +221,9 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 endif
 endif
 
+# CJK VF
+$(call soong_config_set,noto_sans_cjk_config,use_var_font,true)
+
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     CarSystemUI \
