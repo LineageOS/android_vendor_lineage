@@ -232,6 +232,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "85dddeb7_3c177fb0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2025-01-02T06:52:10Z",
+      "side": 1,
+      "message": "It looks like it was updated to them in patchset 2 based on my comments. If it works with the google ones, then probably leave it that way since it\u0027s newer.\n\nMMS probably works fine and isn\u0027t different between the two.",
+      "parentUuid": "477d51a0_af6f0667",
+      "revId": "13de7e405f3be3357a82daac9b8e8ef7b479d9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4c0d3886_633e4d2c",
         "filename": "prebuilt/common/etc/apns-conf.xml",
         "patchSetId": 1
