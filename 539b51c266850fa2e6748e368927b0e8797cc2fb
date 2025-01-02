@@ -51,6 +51,24 @@
       "parentUuid": "0de18078_1fb46d9a",
       "revId": "539b51c266850fa2e6748e368927b0e8797cc2fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb716a92_88f52793",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-01-02T10:36:45Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "95a0ad9c_a033a2c0",
+      "revId": "539b51c266850fa2e6748e368927b0e8797cc2fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
