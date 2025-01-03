@@ -33,6 +33,24 @@
       "message": "The carriersettings has mtu_v6\u003d1440 as well. The mtu field is [only](https://cs.android.com/android/platform/superproject/main/+/main:frameworks/base/telephony/java/android/telephony/data/ApnSetting.java;l\u003d1075-1078;drc\u003db4d6320e2ae398b36f0aaafb2ecd83609d2d99af) used as the default for mtu_v4 if it is not set.\n\nNevertheless, this wasn\u0027t set before, so it probably isn\u0027t a big deal (android will use a mtu provided by the network instead of these if one is set there).",
       "revId": "2c0fce34d8b09a2080975da236af05b0d30416b3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2840fc10_727e996d",
+        "filename": "prebuilt/common/etc/apns-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1481,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-01-03T07:29:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6c8970e_d56a580c",
+      "revId": "2c0fce34d8b09a2080975da236af05b0d30416b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
