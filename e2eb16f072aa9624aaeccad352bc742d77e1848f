@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3198aec3_17096f5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-01-05T16:50:33Z",
+      "side": 1,
+      "message": "this is already a default as of ap3a\n\n```\n$ sha1sum $OUT/system/fonts/NotoSansCJK-Regular.ttc external/noto-fonts/notosanscjk/{NotoSansCJK-Regular.ttc,NotoSansCJK-wght-400-900.otf.ttc}\n001a55e62de2e0c7a9b31c6ceb92b66ccbe72639  /home/luk/lineage-22/out/target/product/instantnoodlep/system/fonts/NotoSansCJK-Regular.ttc\n2f68b6afbbfed60db7cc2450c194803a48b468ab  external/noto-fonts/notosanscjk/NotoSansCJK-Regular.ttc\n001a55e62de2e0c7a9b31c6ceb92b66ccbe72639  external/noto-fonts/notosanscjk/NotoSansCJK-wght-400-900.otf.ttc\n```",
+      "revId": "e2eb16f072aa9624aaeccad352bc742d77e1848f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
