@@ -19,7 +19,6 @@ from __future__ import print_function
 import base64
 import glob
 import json
-import netrc
 import os
 import re
 import subprocess
@@ -50,17 +49,6 @@ if not depsonly:
     print("Device %s not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS)." % device)
 
 repositories = []
-
-try:
-    authtuple = netrc.netrc().authenticators("api.github.com")
-
-    if authtuple:
-        auth_string = ('%s:%s' % (authtuple[0], authtuple[2])).encode()
-        githubauth = base64.encodestring(auth_string).decode().replace('\n', '')
-    else:
-        githubauth = None
-except:
-    githubauth = None
 
 if not depsonly:
     githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/mirror/main/default.xml")
@@ -262,7 +250,7 @@ def get_default_or_fallback_revision(repo_name):
 
     try:
         stdout = subprocess.run(
-            ["git", "ls-remote", "-b", "https://:@github.com/LineageOS/" + repo_name],
+            ["git", "ls-remote", "-h", "https://:@github.com/LineageOS/" + repo_name],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         ).stdout.decode()
