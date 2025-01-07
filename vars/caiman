@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP4A.241205.013"
+readonly build_id="AP4A.250105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r4"
-readonly aosp_tag="android-15.0.0_r6"
+readonly prev_aosp_tag="android-15.0.0_r6"
+readonly aosp_tag="android-15.0.0_r10"
 
-readonly build_number="12621605"
+readonly build_number="12701944"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/caiman-ap4a.241205.013-factory-d7703f4c.zip"
-readonly image_sha256="d7703f4cd55e0214d03d35a31cba4c7da1e05966fd68b356653de68ee70c8f9f"
+readonly image_url="https://dl.google.com/dl/android/aosp/caiman-ap4a.250105.002-factory-c63e0cc2.zip"
+readonly image_sha256="c63e0cc23ddf96bf963dc9e473024ee0059009143addb5d54c5d3731e8ef0317"
 
-readonly flash_url="https://flash.android.com/build/12621605?target=caiman-user&signed"
+readonly flash_url="https://flash.android.com/build/12701944?target=caiman-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/caiman-ota-ap4a.241205.013-b914a097.zip"
-readonly ota_sha256="b914a097abef5ecc62792fe9cf103b84c676ba64736e7cdc3802102901c87116"
+readonly ota_url="https://dl.google.com/dl/android/aosp/caiman-ota-ap4a.250105.002-678a8519.zip"
+readonly ota_sha256="678a85190456a7140d34fa2ef10c54c8bd92da2293d6bfca40075649723e4388"
 
-readonly security_patch="2024-12-05"
+readonly security_patch="2025-01-05"

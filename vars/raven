@@ -8,21 +8,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP4A.241205.013"
+readonly build_id="AP4A.250105.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r4"
-readonly aosp_tag="android-15.0.0_r6"
+readonly prev_aosp_tag="android-15.0.0_r6"
+readonly aosp_tag="android-15.0.0_r10"
 
-readonly build_number="12621605"
+readonly build_number="12701944"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/raven-ap4a.241205.013-factory-c80f7d84.zip"
-readonly image_sha256="c80f7d847f1bd90ec9b4fbd575ece39e3f3987c04cc9a70ffd5895047933f66e"
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-ap4a.250105.002-factory-a6237d24.zip"
+readonly image_sha256="a6237d24518841c6d60c1df36932ed31fda9ee55575bef1d1b59f52aeabb6a8a"
 
-readonly flash_url="https://flash.android.com/build/12621605?target=raven-user&signed"
+readonly flash_url="https://flash.android.com/build/12701944?target=raven-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-ap4a.241205.013-83a37a86.zip"
-readonly ota_sha256="83a37a8626630ba32d1fb319f60eeeb31ffcd2d2675db933af513ae1d7884ae7"
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-ap4a.250105.002-1653a739.zip"
+readonly ota_sha256="1653a7393e55d9d7e85fa57d01a17267caee3e024e9a81f93aa907d7bcb521d9"
 
-readonly security_patch="2024-12-05"
+readonly security_patch="2025-01-05"
