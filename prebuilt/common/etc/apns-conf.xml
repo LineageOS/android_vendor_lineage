@@ -1710,12 +1710,8 @@
   <apn carrier="EHRPD Tethering" mcc="311" mnc="230" apn="tethering.cs4glte.com" type="dun" user="" password="" mmsc="http://pix.cspire.com/servlets/mms" mmsproxy="66.175.144.91" mmsport="80" protocol="IP" roaming_protocol="IP" bearer="13" />
   <apn carrier="AirFire" mcc="311" mnc="330" apn="internet.air.net" user="" password="" />
   <apn carrier="AirFire MMS" mcc="311" mnc="330" mmsc="http://mms.airfiremobile.com/+1" apn="internet.air.net" user="" password="" type="mms" />
-  <apn carrier="GCI Web" mcc="311" mnc="370" apn="web.gci" type="default,supl" authtype="0" />
-  <apn carrier="GCI MMS" mcc="311" mnc="370" apn="mms.gci" mmsc="http://mmsc.gci.csky.us:6672/" mmsproxy="209.4.229.92" mmsport="9201" type="mms" authtype="0" />
-  <apn carrier="GCI Data" mcc="311" mnc="370" apn="web.gci" type="default,supl" />
-  <apn carrier="GCI MMS" mcc="311" mnc="370" apn="mms.gci" mmsproxy="209.4.229.92" mmsport="9201" mmsc="http://mmsc.gci.csky.us:6672" type="mms" />
-  <apn carrier="GCI Data" mcc="311" mnc="370" apn="web.gci" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="GCI MMS" mcc="311" mnc="370" apn="mms.gci" proxy="" port="" user="" password="" mmsc="http://mmsc.gci.csky.us:6672" mmsproxy="209.4.229.92" mmsport="9201" type="mms" />
+  <apn carrier="GCI Web" mcc="311" mnc="370" apn="web.gci" type="default,supl" />
+  <apn carrier="GCI MMS" mcc="311" mnc="370" apn="mms.gci" mmsc="http://mmsc.gci.net" mmsproxy="24.237.158.34" mmsport="9201" type="mms" />
   <apn carrier="ATT WAP" mcc="311" mnc="380" apn="wap.cingular" proxy="wireless.cingular.com" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="wireless.cingular.com" mmsport="80" type="default,mms" />
   <apn carrier="ATT Broadband" mcc="311" mnc="380" apn="Broadband" type="default,supl" />
   <apn carrier="Verizon" mcc="311" mnc="480" apn="internet" authtype="3" type="default,mms,supl,fota,cbs,dun" mmsc="http://mms.vtext.com/servlets/mms" protocol="IPV4V6" bearer_bitmask="4|5|6|7|8|12" user_visible="false" />
