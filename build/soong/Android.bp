@@ -78,6 +78,24 @@ cc_library_headers {
 
 // Target platform agnostic config modules
 soong_config_module_type {
+    name: "bootable_recovery",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    value_variables: ["target_recovery_libminui_lib"],
+    properties: [
+        "static_libs",
+    ],
+}
+bootable_recovery {
+    name: "bootable_recovery_defaults",
+    soong_config_variables: {
+        target_recovery_libminui_lib: {
+            static_libs: ["%s"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
