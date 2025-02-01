@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c17a47de_1e71db07",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2025-02-01T15:39:45Z",
+      "side": 1,
+      "message": "based on kleaf implementation https://android.googlesource.com/kernel/build/+/refs/heads/main-kernel-build-2024/build_utils.sh#23",
+      "revId": "416e8644a28c8b00267157aacf1727bdbc0736e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
