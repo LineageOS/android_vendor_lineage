@@ -368,7 +368,14 @@ define build-image-kernel-modules-lineage
     mkdir -p $(4)/lib/modules/0.0/$(3)lib/modules$(6)
     cp $(1) $(4)/lib/modules/0.0/$(3)lib/modules$(6)
     if [ -n "$(8)" ]; then cp -r $(8) $(4)/lib/modules/0.0/; fi
-    $(DEPMOD) -b $(4) 0.0
+    $(DEPMOD) -ae -F $(KERNEL_OUT)/System.map -b $(4) 0.0 2>$(4)/depmod_stderr
+    cat $(4)/depmod_stderr >&2
+    if { grep -q "needs unknown symbol" $(4)/depmod_stderr; }; then \
+      echo "ERROR: kernel module(s) need unknown symbol(s)" >&2; \
+      rm -f $(4)/depmod_stderr; \
+      exit 1; \
+    fi
+    rm -f $(4)/depmod_stderr
     if [ -n "$(8)" ]; then sed -i "/^$$(basename $(8))/d" $(4)/lib/modules/0.0/modules.dep; fi
     sed -e 's/\(.*modules.*\):/\/\1:/g' -e 's/ \([^ ]*modules[^ ]*\)/ \/\1/g' $(4)/lib/modules/0.0/modules.dep > $(2)/lib/modules$(6)/modules.dep
     cp $(4)/lib/modules/0.0/modules.softdep $(2)/lib/modules$(6)
