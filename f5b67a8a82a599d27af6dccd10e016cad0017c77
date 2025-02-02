@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "645861e5_a324150d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2025-02-02T14:16:48Z",
+      "side": 1,
+      "message": "current shipping devices using SYSTEM_KERNEL_MODULES also use gki_defconfig, which has module signing enabled, so it should be safe to unconditionally sign the modules",
+      "revId": "f5b67a8a82a599d27af6dccd10e016cad0017c77",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
