@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbad3477_0f96134e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2025-02-02T12:05:17Z",
+      "side": 1,
+      "message": "reference implementation: https://android.googlesource.com/kernel/build/+/refs/heads/main-kernel-build-2024/build_utils.sh#414",
+      "revId": "9c06f81f10353daf76e3317848c9acd8cb205567",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
