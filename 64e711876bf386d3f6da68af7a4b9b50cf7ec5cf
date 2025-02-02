@@ -16,6 +16,24 @@
       "message": "If this actually becomes the default, I\u0027m happy to change it to opt-in.",
       "revId": "64e711876bf386d3f6da68af7a4b9b50cf7ec5cf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10bcf494_42211611",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2025-02-02T11:40:20Z",
+      "side": 1,
+      "message": "idk, better to check how it behaves on latest pixel",
+      "parentUuid": "7ad0f113_4f9402dd",
+      "revId": "64e711876bf386d3f6da68af7a4b9b50cf7ec5cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
