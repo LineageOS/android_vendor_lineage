@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP4A.250105.002"
+readonly build_id="AP4A.250205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r6"
-readonly aosp_tag="android-15.0.0_r10"
+readonly prev_aosp_tag="android-15.0.0_r10"
+readonly aosp_tag="android-15.0.0_r14"
 
-readonly build_number="12701944"
+readonly build_number="12821496"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tokay-ap4a.250105.002-factory-d3f58a9f.zip"
-readonly image_sha256="d3f58a9f93f634d8e73992a01df3ef5515fad7cef76b0f3fdb240439db279c45"
+readonly image_url="https://dl.google.com/dl/android/aosp/tokay-ap4a.250205.002-factory-2c42ac34.zip"
+readonly image_sha256="2c42ac341c0b80cb2e831d9704d079a1bc5240b7afea079c79a730e84573a42d"
 
-readonly flash_url="https://flash.android.com/build/12701944?target=tokay-user&signed"
+readonly flash_url="https://flash.android.com/build/12821496?target=tokay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-ap4a.250105.002-d60a3438.zip"
-readonly ota_sha256="d60a34387c64b775bed0edda39c20c26138fb7881b8d00a88ae8f8617178acca"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-ap4a.250205.002-22cfd265.zip"
+readonly ota_sha256="22cfd265760689253d1fad2166b443e7f02e64d713f90248df5eee328c2db07c"
 
-readonly security_patch="2025-01-05"
+readonly security_patch="2025-02-05"

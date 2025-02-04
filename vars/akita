@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP4A.250105.002"
+readonly build_id="AP4A.250205.002"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r6"
-readonly aosp_tag="android-15.0.0_r10"
+readonly prev_aosp_tag="android-15.0.0_r10"
+readonly aosp_tag="android-15.0.0_r14"
 
-readonly build_number="12701944"
+readonly build_number="12821496"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/akita-ap4a.250105.002-factory-1c5c298d.zip"
-readonly image_sha256="1c5c298daa1e66408c49a796d61cc16c7f7858eabafa9b6c87c1a32b4359a341"
+readonly image_url="https://dl.google.com/dl/android/aosp/akita-ap4a.250205.002-factory-0da0522c.zip"
+readonly image_sha256="0da0522c4ed8d2c18578dc5a27e4efa65c4594b4157d4db34ccc20992bcd5019"
 
-readonly flash_url="https://flash.android.com/build/12701944?target=akita-user&signed"
+readonly flash_url="https://flash.android.com/build/12821496?target=akita-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/akita-ota-ap4a.250105.002-640ed10d.zip"
-readonly ota_sha256="640ed10d073af3320869c5ad4c1747a66cda9195e94d57b1dbd23bc96ca95ba8"
+readonly ota_url="https://dl.google.com/dl/android/aosp/akita-ota-ap4a.250205.002-7de23674.zip"
+readonly ota_sha256="7de23674cbb43bdb748f346796b5d8a21ec5cf82dcc3de8a35020566bc330de3"
 
-readonly security_patch="2025-01-05"
+readonly security_patch="2025-02-05"
