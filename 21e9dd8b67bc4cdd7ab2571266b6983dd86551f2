@@ -16,6 +16,23 @@
       "message": "This allows to have a common dtbo image for multiple different devices with the same qcom soc and avoid having to guard building each dtbo only for the specific product.",
       "revId": "21e9dd8b67bc4cdd7ab2571266b6983dd86551f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d26f5a0e_ed516add",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-02-04T11:55:37Z",
+      "side": 1,
+      "message": "Does this affect non xiaomi devices?",
+      "revId": "21e9dd8b67bc4cdd7ab2571266b6983dd86551f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
