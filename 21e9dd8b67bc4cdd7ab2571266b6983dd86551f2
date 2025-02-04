@@ -33,6 +33,24 @@
       "message": "Does this affect non xiaomi devices?",
       "revId": "21e9dd8b67bc4cdd7ab2571266b6983dd86551f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de1f56ab_c3301f4d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-02-04T14:02:06Z",
+      "side": 1,
+      "message": "No, it only avoids merging devicetrees with different miboard ids if they are are set.\nif you don\u0027t set the miboard id, it will merge them as before",
+      "parentUuid": "d26f5a0e_ed516add",
+      "revId": "21e9dd8b67bc4cdd7ab2571266b6983dd86551f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
