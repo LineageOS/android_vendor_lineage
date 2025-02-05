@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+# SPDX-FileCopyrightText: 2023-2025 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
@@ -32,4 +32,6 @@ ifneq ($(WITH_GMS),true)
         BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE ?= 94371840
     endif
 
+else
+    BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE ?= 16777218
 endif
