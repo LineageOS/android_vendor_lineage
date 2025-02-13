@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1aef8cde_dc58688a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34491
+      },
+      "writtenOn": "2025-02-13T00:41:15Z",
+      "side": 1,
+      "message": "Insert ctmo sim card, network is normal",
+      "revId": "561e6ca94b0e39113a0ef152d4d8074cff215ae0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
