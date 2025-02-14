@@ -33,6 +33,24 @@
       "message": "I\u0027m unable to test. FYI below is oneplus config\n```\n  \u003c!-- ctnet for China Mainland--\u003e\n  \u003capn carrier\u003d\"CTNET\"\n      apn\u003d\"ctnet\"\n      mcc\u003d\"455\"\n      mnc\u003d\"07\"\n      user\u003d\"ctnet@mycdma.cn\"\n      password\u003d\"vnet.mobi\"\n      type\u003d\"default,hipri,xcap,supl,ia\"\n      persistent\u003d\"true\"\n      authtype\u003d\"3\"\n      ppp_number\u003d\"#777\"\n      protocol\u003d\"IPV4V6\"\n      roaming_protocol\u003d\"IPV4V6\"\n      bearer_bitmask\u003d\"6|7|8|12\"\n      read_only\u003d\"true\"\n  /\u003e\n  \u003c!-- -MMS for China MainLand --\u003e\n  \u003capn carrier\u003d\"CTMMS\"\n      apn\u003d\"ctwap\"\n      mcc\u003d\"455\"\n      mnc\u003d\"07\"\n      user\u003d\"ctwap@mycdma.cn\"\n      server\u003d\"\"\n      password\u003d\"vnet.mobi\"\n      proxy\u003d\"\"\n      port\u003d\"\"\n      mmsproxy\u003d\"10.0.0.200\"\n      mmsport\u003d\"80\"\n      mmsc\u003d\"http://mmsc.vnet.mobi\"\n      type\u003d\"mms\"\n      persistent\u003d\"true\"\n      authtype\u003d\"3\"\n      ppp_number\u003d\"#777\"\n      protocol\u003d\"IPV4V6\"\n      roaming_protocol\u003d\"IPV4V6\"\n      bearer_bitmask\u003d\"6|7|8|12\"\n      read_only\u003d\"true\"\n  /\u003e\n  \u003c!-- Tanzhoumei@NETWORK.DATA.5064138, 2023/01/12,  add bitmask 20 start --\u003e\n  \u003capn carrier\u003d\"CTNET\"\n      apn\u003d\"ctnet\"\n      mcc\u003d\"455\"\n      mnc\u003d\"07\"\n      user\u003d\"\"\n      server\u003d\"\"\n      password\u003d\"\"\n      proxy\u003d\"\"\n      port\u003d\"\"\n      mmsproxy\u003d\"\"\n      mmsport\u003d\"\"\n      mmsc\u003d\"\"\n      type\u003d\"default,xcap,supl,ia\"\n      persistent\u003d\"true\"\n      protocol\u003d\"IPV4V6\"\n      roaming_protocol\u003d\"IPV4V6\"\n      bearer\u003d\"19\"\n      bearer_bitmask\u003d\"13|14|20\"\n      read_only\u003d\"true\"\n  /\u003e\n  \u003c!-- Tanzhoumei@NETWORK.DATA.5064138, 2023/01/12,  add bitmask 20 end --\u003e\n  \u003capn carrier\u003d\"CTMMS\"\n      apn\u003d\"ctwap\"\n      mcc\u003d\"455\"\n      mnc\u003d\"07\"\n      user\u003d\"\"\n      server\u003d\"\"\n      password\u003d\"\"\n      proxy\u003d\"\"\n      port\u003d\"\"\n      mmsproxy\u003d\"10.0.0.200\"\n      mmsport\u003d\"80\"\n      mmsc\u003d\"http://mmsc.vnet.mobi\"\n      type\u003d\"mms\"\n      persistent\u003d\"true\"\n      protocol\u003d\"IPV4V6\"\n      roaming_protocol\u003d\"IPV4V6\"\n      bearer\u003d\"19\"\n      bearer_bitmask\u003d\"13|14\"\n      read_only\u003d\"true\"\n  /\u003e\n  \u003capn carrier\u003d\"China Telecomm (IMS)\"\n      apn\u003d\"IMS\"\n      type\u003d\"ims\"\n      mcc\u003d\"455\"\n      mnc\u003d\"07\"\n      persistent\u003d\"true\"\n      protocol\u003d\"IPV4V6\"\n      roaming_protocol\u003d\"IPV4V6\"\n      read_only\u003d\"true\"\n  /\u003e\n\n```",
       "revId": "561e6ca94b0e39113a0ef152d4d8074cff215ae0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "592f827f_e69f8458",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34491
+      },
+      "writtenOn": "2025-02-14T19:46:24Z",
+      "side": 1,
+      "message": "Referring to oneplus\u0027s APN settings, `bearer_bitmask\u003d\"6|7|8|12\"` represents CDMA networks. Since CTMO no longer uses CDMA, those APNs have been removed. Additionally, the network type restrictions on the remaining APNs have also been removed because CTMO now supports NR network. I have ctmo sim, and after testing the network everything is normal (calls, sms and data)",
+      "parentUuid": "24d61d39_423e0fbd",
+      "revId": "561e6ca94b0e39113a0ef152d4d8074cff215ae0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
