@@ -292,6 +292,7 @@ soong_config_module_type {
         "target_health_charging_control_supports_toggle",
         "target_health_charging_control_supports_bypass",
         "target_health_charging_control_supports_deadline",
+        "target_health_charging_control_supports_limit",
     ],
     value_variables: [
         "target_health_charging_control_charging_path",
@@ -313,6 +314,9 @@ health_charging_control {
         },
         target_health_charging_control_supports_deadline: {
             cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE"],
+        },
+        target_health_charging_control_supports_limit: {
+            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_LIMIT"],
         },
         target_health_charging_control_charging_path: {
             cppflags: ["-DHEALTH_CHARGING_CONTROL_CHARGING_PATH=\"%s\""],
