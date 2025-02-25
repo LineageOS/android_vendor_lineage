@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.window.flags"
+  name: "enable_desktop_windowing_mode"
+  state: ENABLED
+  permission: READ_WRITE
+}
