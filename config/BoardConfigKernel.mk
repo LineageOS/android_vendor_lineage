@@ -49,6 +49,8 @@
 #                                          Defaults to empty
 #   TARGET_KERNEL_EXT_MODULES          = Optional, the external modules we are
 #                                          building. Defaults to empty
+#   TARGET_KERNEL_EXT_MODULES_ABS      = Optional, the external modules at absolute
+#                                          paths we are building. Defaults to empty
 #
 #   KERNEL_TOOLCHAIN_PREFIX            = Overrides TARGET_KERNEL_CROSS_COMPILE_PREFIX,
 #                                          Set this var in shell to override

@@ -500,6 +500,12 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 			$(foreach p, $(TARGET_KERNEL_EXT_MODULES), \
 				$(eval kernel_modules := $(kernel_modules) $(TARGET_KERNEL_EXT_MODULE_ROOT):$(p)) \
 			) \
+			$(foreach p, $(TARGET_KERNEL_EXT_MODULES_ABS), \
+				$(eval _mod := $(subst :, ,$(p))) \
+				$(eval _root := $(word 1,$(_mod))) \
+				$(eval _type := $(word 2,$(_mod))) \
+				$(eval kernel_modules := $(kernel_modules) $(_root):.:$(_type)) \
+			) \
 			$(if $(kernel_modules),\
 				echo "Building and Installing External Kernel Modules"; \
 				rpath=$$(python3 -c 'import os,sys;print(os.path.relpath(*(sys.argv[1:])))' $(BUILD_TOP) $(KERNEL_SRC)); \
