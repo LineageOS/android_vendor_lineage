@@ -286,7 +286,7 @@ endef
 # Make an external module target using kbuild
 # $(1): module name
 # $(2): module root path relative to kernel source
-# $(2): target to build (eg. modules_install)
+# $(3): target to build (eg. modules_install)
 define make-kbuild-module-target
 $(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(BUILD_TOP)/$(KERNEL_SRC) M=$(2)/$(1) O=$(KERNEL_BUILD_OUT_PREFIX)$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(3)
 endef
