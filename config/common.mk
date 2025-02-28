@@ -253,6 +253,9 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     PermissionControllerOverlay
 
+# Theme customization
+PRODUCT_PACKAGE += LineageQSGradient
+
 # Translations
 CUSTOM_LOCALES += \
     ast_ES \
