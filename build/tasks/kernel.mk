@@ -496,17 +496,22 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 			$(call make-kernel-target,modules) || exit "$$?"; \
 			echo "Installing Kernel Modules"; \
 			$(call make-kernel-target,INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) INSTALL_MOD_STRIP=1 modules_install); \
-			$(if $(TARGET_KERNEL_EXT_MODULES),\
+			$(eval kernel_modules := ) \
+			$(foreach p, $(TARGET_KERNEL_EXT_MODULES), \
+				$(eval kernel_modules := $(kernel_modules) $(TARGET_KERNEL_EXT_MODULE_ROOT):$(p)) \
+			) \
+			$(if $(kernel_modules),\
 				echo "Building and Installing External Kernel Modules"; \
 				rpath=$$(python3 -c 'import os,sys;print(os.path.relpath(*(sys.argv[1:])))' $(BUILD_TOP) $(KERNEL_SRC)); \
-				$(foreach p, $(TARGET_KERNEL_EXT_MODULES),\
+				$(foreach p, $(kernel_modules),\
 					$$pwd; \
 					$(eval _mod := $(subst :, ,$(p))) \
-					$(eval _path := $(word 1,$(_mod))) \
-					$(eval _type := $(word 2,$(_mod))) \
+					$(eval _root := $(word 1,$(_mod))) \
+					$(eval _path := $(word 2,$(_mod))) \
+					$(eval _type := $(word 3,$(_mod))) \
 					$(eval _target := $(if $(filter $(_type),kbuild),make-kbuild-module-target,make-external-module-target)) \
-					$(call $(_target),$(_path),$$rpath,$(TARGET_KERNEL_EXT_MODULES),) || exit "$$?"; \
-					$(call $(_target),$(_path),$$rpath,$(TARGET_KERNEL_EXT_MODULES),INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) INSTALL_MOD_STRIP=1 KERNEL_UAPI_HEADERS_DIR=$(KERNEL_OUT) modules_install) || exit "$$?"; \
+					$(call $(_target),$(_path),$$rpath,$(_root),) || exit "$$?"; \
+					$(call $(_target),$(_path),$$rpath,$(_root),INSTALL_MOD_PATH=$(MODULES_INTERMEDIATES) INSTALL_MOD_STRIP=1 KERNEL_UAPI_HEADERS_DIR=$(KERNEL_OUT) modules_install) || exit "$$?"; \
 				) \
 			) \
 			kernel_release=$$(cat $(KERNEL_RELEASE)) \
