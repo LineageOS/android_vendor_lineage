@@ -28,6 +28,9 @@
          auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
     <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 
-    <!-- Circle to search -->
+    <!-- Contextual Search -->
+    <string name="config_defaultContextualSearchEnabled">omni.enable_cs_helper</string>
+    <string name="config_defaultContextualSearchKey">omni.entry_point</string>
+    <string name="config_defaultContextualSearchLegacyEnabled">omni.enable_vis</string>
     <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
 </resources>
