@@ -8,21 +8,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="AP4A.250205.002"
+readonly build_id="BP1A.250305.019"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r10"
-readonly aosp_tag="android-15.0.0_r14"
+readonly prev_aosp_tag="android-15.0.0_r14"
+readonly aosp_tag="android-15.0.0_r20"
 
-readonly build_number="12821496"
+readonly build_number="13003188"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-ap4a.250205.002-factory-6a87c591.zip"
-readonly image_sha256="6a87c591a5d6811a3b102a440743cbad8fdc10e553cd4df8906dccc6980afc7c"
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-bp1a.250305.019-factory-22c3c6de.zip"
+readonly image_sha256="22c3c6de8d2726a0e0be5eaa66fb753e9e4cd07ddaee9f1e322599053caa36d2"
 
-readonly flash_url="https://flash.android.com/build/12821496?target=cheetah-user&signed"
+readonly flash_url="https://flash.android.com/build/13003188?target=cheetah-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-ap4a.250205.002-259bb787.zip"
-readonly ota_sha256="259bb787fd9f7daec276293ef1fc69948e5a9180161a4fab25d567d209717c29"
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-bp1a.250305.019-9ab4e432.zip"
+readonly ota_sha256="9ab4e432abec5e6c8e279c39034a508855dcad397e1ee310fbdf0dc16d564e3d"
 
-readonly security_patch="2025-02-05"
+readonly security_patch="2025-03-05"
