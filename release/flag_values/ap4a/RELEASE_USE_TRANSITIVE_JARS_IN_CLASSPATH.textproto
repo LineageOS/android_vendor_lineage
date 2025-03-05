@@ -1,0 +1,4 @@
+name: "RELEASE_USE_TRANSITIVE_JARS_IN_CLASSPATH"
+value: {
+  bool_value: true
+}
