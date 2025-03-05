@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1a76d41_d3c923ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-03-05T22:58:59Z",
+      "side": 1,
+      "message": "needed for the other manifest changes to actually work, I\u0027m not keen on trying to fix the \"old\" implementation.\nIt enabled the use of a \"single\" jar per multiple targets if possible, so probably saves some space as well",
+      "revId": "5062a6b1e84c3def24f2805beaf18d5c7409b7c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
