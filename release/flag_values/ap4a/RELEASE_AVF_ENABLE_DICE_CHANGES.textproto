@@ -1,4 +1,0 @@
-name: "RELEASE_AVF_ENABLE_DICE_CHANGES"
-value: {
-  bool_value: true
-}

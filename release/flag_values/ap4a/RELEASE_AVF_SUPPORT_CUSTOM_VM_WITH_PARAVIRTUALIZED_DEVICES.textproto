@@ -1,4 +1,0 @@
-name: "RELEASE_AVF_SUPPORT_CUSTOM_VM_WITH_PARAVIRTUALIZED_DEVICES"
-value: {
-  bool_value: true
-}

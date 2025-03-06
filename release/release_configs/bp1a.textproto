@@ -1,0 +1,3 @@
+name: "bp1a"
+prior_stages: "trunk"
+aconfig_value_sets: "aconfig_value_set-lineage-bp1a"

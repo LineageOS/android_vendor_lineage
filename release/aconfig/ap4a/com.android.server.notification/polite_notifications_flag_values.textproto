@@ -1,6 +1,0 @@
-flag_value {
-  package: "com.android.server.notification"
-  name: "polite_notifications"
-  state: ENABLED
-  permission: READ_WRITE
-}
