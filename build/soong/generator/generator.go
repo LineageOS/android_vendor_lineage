@@ -144,9 +144,10 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	tools := map[string]android.Path{}
 
 	if len(g.properties.Tools) > 0 {
-		ctx.VisitDirectDepsBlueprint(func(module blueprint.Module) {
-			switch ctx.OtherModuleDependencyTag(module) {
-			case hostToolDepTag:
+		ctx.VisitDirectDepsProxyAllowDisabled(func(proxy android.ModuleProxy) {
+			module := android.PrebuiltGetPreferred(ctx, proxy)
+			switch ctx.OtherModuleDependencyTag(proxy).(type) {
+			case hostToolDependencyTag:
 				tool := ctx.OtherModuleName(module)
 				var path android.OptionalPath
 
