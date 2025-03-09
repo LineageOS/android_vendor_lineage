@@ -2,8 +2,8 @@
 readonly android_version=15 # For update-build-desc-fingerprint.sh
 readonly aosp_tag_match=android-15.0 # For update-device-vars.sh
 
-readonly os_branch=lineage-22.1
-readonly device_branch=lineage-22.1
+readonly os_branch=lineage-22.2
+readonly device_branch=lineage-22.2
 
 readonly prev_common_aosp_tag=android-15.0.0_r10 # Jan 2025, Pixel 6-9
 readonly common_aosp_tag=android-15.0.0_r14 # Feb 2025, Pixel 6-9
