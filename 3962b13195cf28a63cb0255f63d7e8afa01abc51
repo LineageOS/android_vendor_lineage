@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d03b586c_5dc45c12",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-03-09T22:34:06Z",
+      "side": 1,
+      "message": "bump\n\nthis is needed if I really wanna switch to k6.12 in next",
+      "revId": "3962b13195cf28a63cb0255f63d7e8afa01abc51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
