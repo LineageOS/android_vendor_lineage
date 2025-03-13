@@ -107,7 +107,7 @@ ifneq ($(USE_CCACHE),)
 endif
 
 # Clear this first to prevent accidental poisoning from env
-KERNEL_MAKE_FLAGS :=
+KERNEL_MAKE_FLAGS := KBUILD_BUILD_TIMESTAMP="$(shell LC_ALL=C TZ=UTC date)"
 
 # Add back threads, ninja cuts this to $(getconf _NPROCESSORS_ONLN)/2
 KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
