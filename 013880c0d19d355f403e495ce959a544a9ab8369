@@ -33,6 +33,23 @@
       "message": "Please abandon this, the following commits fixes this:\n\nhttps://review.lineageos.org/c/LineageOS/android_build_soong/+/422614\nhttps://review.lineageos.org/c/LineageOS/android_build_soong/+/422613",
       "revId": "013880c0d19d355f403e495ce959a544a9ab8369",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88383ebc_ac3d22e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34512
+      },
+      "writtenOn": "2025-03-14T13:07:18Z",
+      "side": 1,
+      "message": "bump",
+      "revId": "013880c0d19d355f403e495ce959a544a9ab8369",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
