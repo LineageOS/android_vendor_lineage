@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed962760_ef8c56a0",
+        "filename": "release/build_config/bp1a.scl",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-03-15T10:40:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f43a931_da6b8aba",
+      "revId": "27103e547e22118a46a0ffca90773ae305559cdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "06bbd768_e3185bdf",
@@ -31,6 +49,30 @@
       "writtenOn": "2025-03-09T09:53:04Z",
       "side": 1,
       "message": "name: \"bp1a\"\ninherits: \"ap4a\"\naconfig_value_sets: \"aconfig_value_set-lineage-bp1a\"\n\nprobbaly?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 0
+      },
+      "revId": "27103e547e22118a46a0ffca90773ae305559cdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d645ff20_91030725",
+        "filename": "release/release_configs/bp1a.textproto",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-03-15T10:40:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "06bbd768_e3185bdf",
       "range": {
         "startLine": 1,
         "startChar": 0,
