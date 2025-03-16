@@ -1,0 +1,4 @@
+name: "RELEASE_ACONFIG_FLAG_DEFAULT_PERMISSION"
+value: {
+  string_value: "READ_WRITE"
+}

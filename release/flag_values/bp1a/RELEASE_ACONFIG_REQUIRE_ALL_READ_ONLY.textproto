@@ -1,0 +1,4 @@
+name: "RELEASE_ACONFIG_REQUIRE_ALL_READ_ONLY"
+value: {
+  bool_value: false
+}
