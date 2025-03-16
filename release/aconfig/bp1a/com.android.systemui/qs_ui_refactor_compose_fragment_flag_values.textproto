@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "qs_ui_refactor_compose_fragment"
+  state: ENABLED
+  permission: READ_ONLY
+}
