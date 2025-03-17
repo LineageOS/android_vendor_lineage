@@ -2,9 +2,9 @@ PRODUCT_VERSION_MAJOR = 22
 PRODUCT_VERSION_MINOR = 2
 
 ifeq ($(LINEAGE_VERSION_APPEND_TIME_OF_DAY),true)
-    LINEAGE_BUILD_DATE := $(shell date -u +%Y%m%d_%H%M%S)
+    LINEAGE_BUILD_DATE := $(shell TZ=UTC date -u +%Y%m%d_%H%M%S)
 else
-    LINEAGE_BUILD_DATE := $(shell date -u +%Y%m%d)
+    LINEAGE_BUILD_DATE := $(shell TZ=UTC date -u +%Y%m%d)
 endif
 
 # Set LINEAGE_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
