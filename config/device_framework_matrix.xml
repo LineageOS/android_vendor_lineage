@@ -13,15 +13,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- Camera -->
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.camera.motor</name>
-        <version>1.0</version>
-        <interface>
-            <name>ICameraMotor</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- Charging -->
     <hal format="hidl" optional="true">
         <name>vendor.lineage.fastcharge</name>
