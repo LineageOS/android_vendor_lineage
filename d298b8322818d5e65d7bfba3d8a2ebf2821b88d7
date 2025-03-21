@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d0580f2_b76f3b39",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-21T16:53:16Z",
+      "side": 1,
+      "message": "Moving to https://review.lineageos.org/423964 and https://review.lineageos.org/423965",
+      "revId": "d298b8322818d5e65d7bfba3d8a2ebf2821b88d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
