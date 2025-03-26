@@ -359,21 +359,3 @@ powershare {
         },
     },
 }
-
-// NVIDIA specific config modules
-soong_config_module_type {
-    name: "nvidia_enhancements",
-    module_type: "cc_defaults",
-    config_namespace: "lineageNvidiaVars",
-    bool_variables: ["uses_nvidia_enhancements"],
-    properties: ["cppflags"],
-}
-
-nvidia_enhancements {
-    name: "nvidia_enhancements_defaults",
-    soong_config_variables: {
-        uses_nvidia_enhancements: {
-            cppflags: ["-DNV_ANDROID_FRAMEWORK_ENHANCEMENTS"],
-        },
-    },
-}
