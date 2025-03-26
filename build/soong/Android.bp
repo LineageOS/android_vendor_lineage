@@ -393,23 +393,6 @@ librmnetctl_pre_uplink {
 }
 
 soong_config_module_type {
-    name: "extended_compress_format",
-    module_type: "cc_defaults",
-    config_namespace: "lineageQcomVars",
-    bool_variables: ["supports_extended_compress_format"],
-    properties: ["cflags"],
-}
-
-extended_compress_format {
-    name: "extended_compress_format_defaults",
-    soong_config_variables: {
-        supports_extended_compress_format: {
-            cflags: ["-DENABLE_EXTENDED_COMPRESS_FORMAT"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "surfaceflinger_qcom_extensions",
     module_type: "cc_defaults",
     config_namespace: "lineageQcomVars",
