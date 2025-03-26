@@ -268,23 +268,6 @@ bootloader_message_offset {
 }
 
 soong_config_module_type {
-    name: "egl_display_array",
-    module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
-    bool_variables: ["uses_egl_display_array"],
-    properties: ["cflags"],
-}
-
-egl_display_array {
-    name: "egl_display_array_defaults",
-    soong_config_variables: {
-        uses_egl_display_array: {
-            cflags: ["-DEGL_DISPLAY_ARRAY"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "health_charging_control",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",

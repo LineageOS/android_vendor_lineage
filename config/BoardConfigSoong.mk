@@ -48,8 +48,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     target_surfaceflinger_udfps_lib \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
-    target_trust_usb_control_disable \
-    uses_egl_display_array
+    target_trust_usb_control_disable
 
 ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
 SOONG_CONFIG_lineageGlobalVars += \
@@ -61,7 +60,6 @@ SOONG_CONFIG_lineageGlobalVars_camera_override_format_from_reserved := $(TARGET_
 SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_ubwcp_format := $(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT)
-SOONG_CONFIG_lineageGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
