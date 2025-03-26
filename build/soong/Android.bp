@@ -376,23 +376,6 @@ nvidia_enhancements {
 
 // QCOM specific config modules
 soong_config_module_type {
-    name: "librmnetctl_pre_uplink",
-    module_type: "cc_defaults",
-    config_namespace: "lineageQcomVars",
-    bool_variables: ["uses_pre_uplink_features_netmgrd"],
-    properties: ["cflags"],
-}
-
-librmnetctl_pre_uplink {
-    name: "librmnetctl_pre_uplink_defaults",
-    soong_config_variables: {
-        uses_pre_uplink_features_netmgrd: {
-            cflags: ["-DNO_UPLINK_FEATURES"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "surfaceflinger_qcom_extensions",
     module_type: "cc_defaults",
     config_namespace: "lineageQcomVars",
