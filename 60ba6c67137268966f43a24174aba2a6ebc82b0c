@@ -33,6 +33,23 @@
       "message": "Fix kernel or enforce older clang in device trees.",
       "revId": "60ba6c67137268966f43a24174aba2a6ebc82b0c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96031ee1_4f3fab6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-03-29T12:18:56Z",
+      "side": 1,
+      "message": "should be resolved device side instead.",
+      "revId": "60ba6c67137268966f43a24174aba2a6ebc82b0c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
