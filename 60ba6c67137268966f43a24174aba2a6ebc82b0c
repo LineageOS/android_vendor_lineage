@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d9f9da1_7f6cd2d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2025-03-29T11:32:06Z",
+      "side": 1,
+      "message": "It may be worth mentioning that 5.4\u003c kernels with `CONFIG_CFI_CLANG` enabled are affected.",
+      "revId": "60ba6c67137268966f43a24174aba2a6ebc82b0c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
