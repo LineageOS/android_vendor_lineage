@@ -1,0 +1,276 @@
+// Copyright 2020 Google Inc. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package {
+    // See: http://go/android-license-faq
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+lineage_symlinks = [
+    {
+        target: "/system/system_ext",
+        name: "system_ext",
+    },
+    {
+        target: "/system/product",
+        name: "product",
+    },
+    {
+        target: "/odm/odm_dlkm/etc",
+        name: "odm_dlkm/etc",
+    },
+    {
+        target: "/vendor/vendor_dlkm/etc",
+        name: "vendor_dlkm/etc",
+    },
+]
+
+android_system_image {
+    name: "lineage_gsi",
+    defaults: [
+        "system_image_defaults",
+        "system_ext_image_defaults",
+        "product_image_defaults",
+    ],
+    symlinks: lineage_symlinks,
+    dirs: ["cache"],
+    deps: [
+        ///////////////////////////////////////////
+        // gsi_system_ext
+        ///////////////////////////////////////////
+
+        // handheld packages
+        "Provision",
+        "Settings",
+        "StorageManager",
+        "SystemUI",
+
+        // telephony packages
+        "CarrierConfig",
+
+        // Install a copy of the debug policy to the system_ext partition, and allow
+        // init-second-stage to load debug policy from system_ext.
+        // This option is only meant to be set by compliance GSI targets.
+        "system_ext_userdebug_plat_sepolicy.cil",
+
+        ///////////////////////////////////////////
+        // gsi_release
+        ///////////////////////////////////////////
+        "gsi_skip_mount.cfg",
+        "init.gsi.rc",
+        "init.vndk-nodef.rc",
+        // Overlay the GSI specific setting for framework and SystemUI
+        "gsi_overlay_framework",
+        "gsi_overlay_systemui",
+
+        ///////////////////////////////////////////
+        // VNDK
+        ///////////////////////////////////////////
+        "com.android.vndk.v30",
+        "com.android.vndk.v31",
+        "com.android.vndk.v32",
+        "com.android.vndk.v33",
+        "com.android.vndk.v34",
+
+        ///////////////////////////////////////////
+        // gsi_product
+        ///////////////////////////////////////////
+        "Dialer",
+        "LatinIME",
+        "apns-full-conf.xml",
+
+        ///////////////////////////////////////////
+        // aosp/full
+        ///////////////////////////////////////////
+
+        // handheld_system_ext
+        "AccessibilityMenu",
+        "WallpaperCropper",
+
+        // telephony_system_ext
+        "EmergencyInfo",
+        "WAPPushManager",
+
+        // handheld_product
+        "Contacts",
+        "DeskClock",
+        "preinstalled-packages-platform-handheld-product.xml",
+        "SettingsIntelligence",
+        "frameworks-base-overlays",
+
+        // telephony_product
+        "ImsServiceEntitlement",
+        "preinstalled-packages-platform-telephony-product.xml",
+
+        // more AOSP packages
+        "messaging",
+        "AvatarPicker",
+        "PhotoTable",
+        "preinstalled-packages-platform-aosp-product.xml",
+        "ThemePicker",
+
+        // more full packages
+        "preinstalled-packages-platform-full-base.xml",
+
+        ///////////////////////////////////////////
+        // lineage
+        ///////////////////////////////////////////
+
+        // APPS
+        "Aperture",
+        "AudioFX",
+        "Backgrounds",
+        "Camelot",
+        "Etar",
+        "ExactCalculator",
+        "Glimpse",
+        "Jelly",
+        "LineageParts",
+        "LineageSettingsProvider",
+        "LineageSetupWizard",
+        "Profiles",
+        "QuickAccessWallet",
+        "Recorder",
+        "Seedvault",
+        "SimpleDeviceConfig",
+        "SimpleSettingsConfig",
+        "TrebuchetQuickStep",
+        "Twelve",
+        "Updater",
+
+        // SYSTEM
+        "adb_root",
+        "lineage-component-overrides.xml",
+        "lineage_init_rcs",
+        "lineage_permissions",
+        "lineage_sysconfig",
+        "org.lineageos.platform",
+        "org.lineageos.platform-res",
+        "sensitive_pn.xml",
+
+        // FILESYSTEM
+        "fsck.ntfs",
+        "mkfs.ntfs",
+        "mount.ntfs",
+
+        // EXTRA
+        "bash",
+        "curl",
+        "getcap",
+        "htop",
+        "nano",
+        "procmem",
+        "rsync",
+        "scp",
+        "setcap",
+        "sftp",
+        "ssh",
+        "sshd",
+        "sshd_config",
+        "ssh-keygen",
+        "start-ssh",
+        "unrar",
+        "vim",
+        "zstd",
+
+        // FONTS
+        "Lato-Regular.ttf",
+        "Lato-Italic.ttf",
+        "Lato-Medium.ttf",
+        "Lato-MediumItalic.ttf",
+        "Lato-Bold.ttf",
+        "Lato-BoldItalic.ttf",
+
+        "Rubik-Regular.ttf",
+        "Rubik-Italic.ttf",
+        "Rubik-Medium.ttf",
+        "Rubik-MediumItalic.ttf",
+        "Rubik-Bold.ttf",
+        "Rubik-BoldItalic.ttf",
+
+        "fonts_customization.xml",
+        "FontLatoOverlay",
+        "FontRubikOverlay",
+
+        // CUSTOMIZATION
+        "IconPackCircularAndroidOverlay",
+        "IconPackCircularLauncherOverlay",
+        "IconPackCircularSettingsOverlay",
+        "IconPackCircularSystemUIOverlay",
+        "IconPackFilledAndroidOverlay",
+        "IconPackFilledLauncherOverlay",
+        "IconPackFilledSettingsOverlay",
+        "IconPackFilledSystemUIOverlay",
+        "IconPackKaiAndroidOverlay",
+        "IconPackKaiLauncherOverlay",
+        "IconPackKaiSettingsOverlay",
+        "IconPackKaiSystemUIOverlay",
+        "IconPackRoundedAndroidOverlay",
+        "IconPackRoundedLauncherOverlay",
+        "IconPackRoundedSettingsOverlay",
+        "IconPackRoundedSystemUIOverlay",
+        "IconPackSamAndroidOverlay",
+        "IconPackSamLauncherOverlay",
+        "IconPackSamSettingsOverlay",
+        "IconPackSamSystemUIOverlay",
+        "IconPackVictorAndroidOverlay",
+        "IconPackVictorLauncherOverlay",
+        "IconPackVictorSettingsOverlay",
+        "IconPackVictorSystemUIOverlay",
+        "IconShapePebbleOverlay",
+        "IconShapeRoundedRectOverlay",
+        "IconShapeSquareOverlay",
+        "IconShapeSquircleOverlay",
+        "IconShapeTaperedRectOverlay",
+        "IconShapeTeardropOverlay",
+        "IconShapeVesselOverlay",
+
+        // THEMES
+        "LineageBlackTheme",
+        "ThemesStub",
+
+        // TEXT CLASSIFIER
+        "libtextclassifier_annotator_en_model",
+        "libtextclassifier_annotator_universal_model",
+        "libtextclassifier_actions_suggestions_universal_model",
+        "libtextclassifier_lang_id_model",
+
+        // AUDIO
+        "lineage_sounds",
+    ] + select(product_variable("debuggable"), {
+        // Packages included only for eng or userdebug builds, previously debug tagged
+        true: ["adb_keys"],
+        default: [],
+    }),
+    multilib: {
+        lib64: {
+            deps: [
+                ///////////////////////////////////////////
+                // AVF
+                ///////////////////////////////////////////
+                "com.android.compos",
+                "features_com.android.virt.xml",
+            ],
+        },
+        both: {
+            // PRODUCT_PACKAGES_SHIPPING_API_LEVEL_34
+            deps: ["android.hidl.memory@1.0-impl"],
+        },
+    },
+    enabled: select(soong_config_variable("ANDROID", "PRODUCT_INSTALL_DEBUG_POLICY_TO_SYSTEM_EXT"), {
+        "true": true,
+        default: false,
+    }),
+    type: "ext4",
+}
