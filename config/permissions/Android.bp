@@ -1,0 +1,26 @@
+prebuilt_etc {
+    name: "lineage_permissions",
+    srcs: [
+        "org.lineageos.android.xml",
+        "org.lineageos.globalactions.xml",
+        "org.lineageos.hardware.xml",
+        "org.lineageos.health.xml",
+        "org.lineageos.livedisplay.xml",
+        "org.lineageos.profiles.xml",
+        "org.lineageos.settings.xml",
+        "org.lineageos.trust.xml",
+    ],
+    relative_install_path: "permissions",
+    product_specific: true,
+    no_full_install: true,
+}
+
+prebuilt_etc {
+    name: "lineage_sysconfig",
+    srcs: [
+        "lineage-sysconfig.xml",
+    ],
+    relative_install_path: "sysconfig",
+    product_specific: true,
+    no_full_install: true,
+}
