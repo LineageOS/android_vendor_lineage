@@ -18,3 +18,56 @@ prebuilt_etc_xml {
     src: "etc/lineage-component-overrides.xml",
     sub_dir: "sysconfig",
 }
+
+phony {
+    name: "lineage_sounds",
+    required: [
+        "lineage_alarm_sounds",
+        "lineage_notifications_sounds",
+        "lineage_ringtones_sounds",
+    ],
+}
+
+prebuilt_media {
+    name: "lineage_alarm_sounds",
+    srcs: [
+        "media/audio/alarms/CyanAlarm.ogg",
+        "media/audio/alarms/NuclearLaunch.ogg",
+    ],
+    relative_install_path: "audio/alarms",
+    product_specific: true,
+    no_full_install: true,
+}
+
+prebuilt_media {
+    name: "lineage_notifications_sounds",
+    srcs: [
+        "media/audio/notifications/CyanDoink.ogg",
+        "media/audio/notifications/CyanMail.ogg",
+        "media/audio/notifications/CyanMessage.ogg",
+        "media/audio/notifications/Laser.ogg",
+        "media/audio/notifications/Naughty.ogg",
+        "media/audio/notifications/Pong.ogg",
+        "media/audio/notifications/Rang.ogg",
+        "media/audio/notifications/Stone.ogg",
+    ],
+    relative_install_path: "audio/notifications",
+    product_specific: true,
+    no_full_install: true,
+}
+
+prebuilt_media {
+    name: "lineage_ringtones_sounds",
+    srcs: [
+        "media/audio/ringtones/Boxbeat.ogg",
+        "media/audio/ringtones/CyanTone.ogg",
+        "media/audio/ringtones/Highscore.ogg",
+        "media/audio/ringtones/Lyon.ogg",
+        "media/audio/ringtones/Rockin.ogg",
+        "media/audio/ringtones/Sheep.ogg",
+        "media/audio/ringtones/Yukaay.ogg",
+    ],
+    relative_install_path: "audio/ringtones",
+    product_specific: true,
+    no_full_install: true,
+}
