@@ -17,3 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
+
+# Don't use Soong-defined system image for now
+USE_SOONG_DEFINED_SYSTEM_IMAGE := false
+PRODUCT_SOONG_DEFINED_SYSTEM_IMAGE :=

@@ -19,3 +19,7 @@ EMULATOR_VENDOR_NO_SOUND := true
 
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
+
+# Don't use Soong-defined system image for now
+USE_SOONG_DEFINED_SYSTEM_IMAGE := false
+PRODUCT_SOONG_DEFINED_SYSTEM_IMAGE :=
