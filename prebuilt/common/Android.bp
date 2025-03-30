@@ -20,6 +20,28 @@ prebuilt_etc_xml {
 }
 
 phony {
+    name: "lineage_init_rcs",
+    required: [
+        "init.lineage-system_ext.rc",
+        "init.lineage-updater.rc",
+    ],
+}
+
+prebuilt_etc {
+    name: "init.lineage-system_ext.rc",
+    src: "etc/init/init.lineage-system_ext.rc",
+    relative_install_path: "init",
+    installable: false,
+}
+
+prebuilt_etc {
+    name: "init.lineage-updater.rc",
+    src: "etc/init/init.lineage-updater.rc",
+    relative_install_path: "init",
+    installable: false,
+}
+
+phony {
     name: "lineage_sounds",
     required: [
         "lineage_alarm_sounds",
