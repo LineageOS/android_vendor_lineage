@@ -20,6 +20,35 @@ prebuilt_etc_xml {
 }
 
 phony {
+    name: "lineage_init_rcs",
+    required: [
+        "lineage_system_ext_init_rcs",
+        "lineage_product_init_rcs",
+    ],
+}
+
+prebuilt_etc {
+    name: "lineage_system_ext_init_rcs",
+    srcs: [
+        "etc/init/init.lineage-updater.rc",
+        "etc/init/init.lineage-system_ext.rc",
+    ],
+    relative_install_path: "init",
+    system_ext_specific: true,
+    no_full_install: true,
+}
+
+prebuilt_etc {
+    name: "lineage_product_init_rcs",
+    srcs: [
+        "etc/init/init.openssh.rc",
+    ],
+    relative_install_path: "init",
+    product_specific: true,
+    no_full_install: true,
+}
+
+phony {
     name: "lineage_sounds",
     required: [
         "lineage_alarm_sounds",
