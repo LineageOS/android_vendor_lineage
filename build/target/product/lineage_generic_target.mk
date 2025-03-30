@@ -14,5 +14,4 @@
 
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Allow building otatools
-TARGET_FORCE_OTA_PACKAGE := true
+$(call inherit-product, vendor/lineage/build/target/product/lineage_gsi.mk)
