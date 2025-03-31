@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69f7f2f3_34bf4e8c",
+        "filename": "build/target/product/gsi/Android.bp",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-03-31T04:12:00Z",
+      "side": 1,
+      "message": "add ours? Also just kill years in all this copyrights",
+      "revId": "0b862a51d47542863d382439a019f566af57e568",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
