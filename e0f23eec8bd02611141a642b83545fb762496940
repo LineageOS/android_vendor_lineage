@@ -34,6 +34,24 @@
       "parentUuid": "e07f8248_c1a1e729",
       "revId": "e0f23eec8bd02611141a642b83545fb762496940",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ae0f6a1_b579914a",
+        "filename": "product/nvidia.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-04-02T19:47:37Z",
+      "side": 0,
+      "message": "No. The entire point of having this here is so the device tree can determine if the os it\u0027s being built in has these modifications or not. As it currently is, I can throw the same device trees at lineage or aosp and builds act accordingly. Without the trees having to explicitly know what os supports what. To move this to the device tree would require explicit hardcoding guessing whether lineage or aosp supports the modifications.",
+      "parentUuid": "05ea33ca_4000fa68",
+      "revId": "e0f23eec8bd02611141a642b83545fb762496940",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
