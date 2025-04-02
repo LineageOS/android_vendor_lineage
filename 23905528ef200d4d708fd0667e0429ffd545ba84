@@ -51,6 +51,23 @@
       "parentUuid": "9c23b74d_83cc6c59",
       "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dd758c7_477e1a56",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-02T20:21:26Z",
+      "side": 1,
+      "message": "Can you move this somewhere else or add a comment? It looks like it\u0027s related with \"dtb generation\"",
+      "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
