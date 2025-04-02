@@ -70,6 +70,24 @@
       "parentUuid": "3ae0f6a1_b579914a",
       "revId": "e0f23eec8bd02611141a642b83545fb762496940",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c50115e_39dfaeaf",
+        "filename": "product/nvidia.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-02T20:18:41Z",
+      "side": 0,
+      "message": "Acknowledged",
+      "parentUuid": "12e6b30c_8f9be193",
+      "revId": "e0f23eec8bd02611141a642b83545fb762496940",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
