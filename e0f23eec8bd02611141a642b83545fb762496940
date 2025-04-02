@@ -16,6 +16,24 @@
       "message": "I would kill this file while at it. @webgeek1234@gmail.com, please set this in Nvidia common repo.",
       "revId": "e0f23eec8bd02611141a642b83545fb762496940",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05ea33ca_4000fa68",
+        "filename": "product/nvidia.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-02T19:42:14Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "e07f8248_c1a1e729",
+      "revId": "e0f23eec8bd02611141a642b83545fb762496940",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
