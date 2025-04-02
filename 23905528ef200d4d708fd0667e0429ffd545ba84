@@ -16,6 +16,23 @@
       "message": "Verified building a 4.9 kernel inline with the old flag, building a 6.6 kernel inline with the correct flag, and using prebuilt 6.12 with the correct flag. All work as expected. Prebuilt with the old flag does not work, which is what prompted this change.",
       "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c23b74d_83cc6c59",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-02T19:32:36Z",
+      "side": 1,
+      "message": "Are the flags supposed to be used in the same way?",
+      "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
