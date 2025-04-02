@@ -33,6 +33,24 @@
       "message": "Are the flags supposed to be used in the same way?",
       "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf0557b8_9d351641",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-04-02T19:42:38Z",
+      "side": 1,
+      "message": "Yes, pass a list modules that will be added to modules.load in recovery. Devices using the old flag should see no change.\n\nIf a device uses the new/correct flag, it will work with both inline Lineage kernel builds and the aosp build/make prebuilt logic. The current flag does not work with prebuilt kernel. I was working on chaining kernel-platform to Lineage builds via the prebuilt kernel logic and couldn\u0027t figure out why recovery was broken until I noticed that modules.load was all modules instead of my curated list.",
+      "parentUuid": "9c23b74d_83cc6c59",
+      "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
