@@ -1162,6 +1162,7 @@
   <apn carrier="MMS GPRS" mcc="286" mnc="02" apn="mms" proxy="" port="" mmsc="http://217.31.233.18:6001/MM1Servlet" user="vodafone" password="vodafone" authtype="3" type="mms" />
   <apn carrier="AVEA" mcc="286" mnc="03" apn="internet" proxy="" port="" user="wap" password="wap" mmsc="" type="default,supl" />
   <apn carrier="AVEA MMS" mcc="286" mnc="03" apn="mms" proxy="" port="" user="mms" password="mms" mmsc="http://mms.avea.com.tr/servlets/mms" mmsproxy="213.161.151.201" mmsport="8080" type="mms" />
+  <apn carrier="Netgsm" mcc="286" mnc="299" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Tele MMS" mcc="290" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="http://mms.tele.gl/mms/wapenc" mmsproxy="10.112.222.37" mmsport="8080" type="mms" />
   <apn carrier="Tele GPRS" mcc="290" mnc="01" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Si.mobil Internet" mcc="293" mnc="40" apn="internet.simobil.si" proxy="" port="" user="simobil" password="internet" mmsc="" type="default,supl" />
