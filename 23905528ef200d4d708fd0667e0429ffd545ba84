@@ -90,6 +90,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c8df78d5_d5196c50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-04-03T02:15:58Z",
+      "side": 1,
+      "message": "https://github.com/search?q\u003dorg%3ALineageOS%20BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD\u0026type\u003dcode\nTegra, ingot, moto 7250, and a couple samsungs. If we could change the existing users, this could change to a simple rename. I can change tegra easily enough, but I didn\u0027t want to track down maintainers for the others.",
+      "parentUuid": "55e2f46f_901ff31b",
+      "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7dd758c7_477e1a56",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 1
