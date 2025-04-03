@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35bcb6b4_aa26716d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-04-03T20:47:02Z",
+      "side": 1,
+      "message": "Verifed building foster and booting mdarcy. Cpl is still installed and running as expected, and dolphin uses desktop gl as expected.",
+      "revId": "45b504a7e248a14a829aa643e1f439c0f9238178",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
