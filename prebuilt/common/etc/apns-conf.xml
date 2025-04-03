@@ -1147,6 +1147,7 @@
   <apn carrier="GLOBUL Internet" mcc="284" mnc="05" apn="globul" proxy="192.168.88.11" port="8004" user="globul" password="" mmsc="" type="default,supl" />
   <apn carrier="GLOBUL MMS" mcc="284" mnc="05" apn="mms.globul.bg" proxy="" port="" user="mms" password="" mmsc="http://mmsc1.mms.globul.bg:8002" mmsproxy="192.168.87.11" mmsport="8004" type="mms" />
   <apn carrier="Bulsatcom" mcc="284" mnc="11" apn="bulsat.com" type="default,supl" />
+  <apn carrier="Netgsm" mcc="286" mnc="299" apn="internet" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Turkcell Internet" mcc="286" mnc="01" apn="internet" user="gprs" password="gprs" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" authtype="1"/>
   <apn carrier="Turkcell MMS" mcc="286" mnc="01" apn="mms" user="mms" password="mms" authtype="1" mmsc="http://mms.turkcell.com.tr/servlets/mms" mmsproxy="212.252.169.217" mmsport="8080" type="mms"/>
   <apn carrier="Turkcell IMS" mcc="286" mnc="01" apn="ims" authtype="0" type="ims" protocol="IPV4V6" user_visible="false" roaming_protocol="IPV4V6"/>
