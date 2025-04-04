@@ -16,6 +16,24 @@
       "message": "I wonder if we can move it to system_ext as a whole, would allow us to remove these entries.\nI know it\u0027ll be annoying because of service voodoo magic",
       "revId": "49f99a5cdbe1b3e8a609e6009f6564ff894bff30",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7eab0a7e_c1b3ba27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2025-04-04T16:57:23Z",
+      "side": 1,
+      "message": "We could in theory, because the only thing that needs to stay in system afaik is the resource package.",
+      "parentUuid": "8ff86e09_9af48de2",
+      "revId": "49f99a5cdbe1b3e8a609e6009f6564ff894bff30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
