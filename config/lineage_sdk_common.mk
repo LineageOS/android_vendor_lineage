@@ -16,6 +16,7 @@ PRODUCT_PACKAGES += \
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/permissions/org.lineageos.platform.xml \
     system/framework/org.lineageos.platform-res.apk \
     system/framework/org.lineageos.platform.jar
 
