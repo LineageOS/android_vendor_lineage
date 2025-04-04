@@ -121,6 +121,24 @@
       "message": "Can you move this somewhere else or add a comment? It looks like it\u0027s related with \"dtb generation\"",
       "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4cf170d_9d45a238",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-04-04T17:52:32Z",
+      "side": 1,
+      "message": "Added a comment. Left it under \u0027externally influenced variables\u0027 because I don\u0027t see a better place to put it.",
+      "parentUuid": "7dd758c7_477e1a56",
+      "revId": "23905528ef200d4d708fd0667e0429ffd545ba84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
