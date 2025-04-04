@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "44822c41_cacc5d4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-04-04T20:12:24Z",
+      "side": 1,
+      "message": "`TARGET_KERNEL_ADDITIONAL_FLAGS +\u003d TARGET_BOARD_PLATFORM\u003d$(TARGET_BOARD_PLATFORM)`?",
+      "revId": "d1f84f96563bf4e4434894c136664bcefbe52a42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
