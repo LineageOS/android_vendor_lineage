@@ -393,21 +393,41 @@ class MergedDeviceTree(object):
 		for mdt in self.merged_devicetrees:
 			yield mdt.save(name, out_dir)
 
-def parse_dt_files(dt_folder):
-	devicetrees = []
+def parse_orders(order_str):
+	orders = {}
+
+	if not order_str:
+		return orders
+
+	order_pair_strs = order_str.split(',')
+	for order_pair_str in order_pair_strs:
+		order_pair = order_pair_str.split('=')
+		dtbo = order_pair[0]
+		order = int(order_pair[1])
+		orders[dtbo] = order
+
+	return orders
+
+def parse_dt_files(dt_folder, orders=None):
+	devicetrees = {}
 	for root, dirs, files in os.walk(dt_folder):
 		for filename in files:
 			if os.path.splitext(filename)[1] not in ['.dtb', '.dtbo']:
 				continue
 			filepath = os.path.join(root, filename)
-			devicetrees.append(DeviceTree(filepath))
-	return devicetrees
+			assert filename not in devicetrees
+			devicetrees[filename] = DeviceTree(filepath)
+
+	sorted_items = sorted(devicetrees.items(), key=lambda d: orders.get(d[0], 0))
+
+	return list(map(lambda d: d[1], sorted_items))
 
 def main():
 
 	parser = argparse.ArgumentParser(description='Merge devicetree blobs of techpacks with Kernel Platform SoCs')
 	parser.add_argument('-b', '--base', required=True, help="Folder containing base DTBs from Kernel Platform output")
 	parser.add_argument('-t', '--techpack', required=True, help="Folder containing techpack DLKM DTBOs")
+	parser.add_argument('-s', '--techpack-order', help="Order in which to apply techpacks")
 	parser.add_argument('-o', '--out', required=True, help="Output folder where merged DTBs will be saved")
 	parser.add_argument('--loglevel', choices=['debug', 'info', 'warn', 'error'], default='info', help="Set loglevel to see debug messages")
 
@@ -422,7 +442,8 @@ def main():
 	logging.info('Parsed bases: \n{}'.format(all_bases))
 
 	logging.info('Parsing techpack dtb files from {}'.format(args.techpack))
-	techpacks = parse_dt_files(args.techpack)
+	orders = parse_orders(args.techpack_order)
+	techpacks = parse_dt_files(args.techpack, orders)
 	all_techpacks = '\n'.join(list(map(lambda x: str(x), techpacks)))
 	logging.info('Parsed techpacks: \n{}'.format(all_techpacks))
 
