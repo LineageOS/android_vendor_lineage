@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "342c78ad_be0d3c51",
+        "filename": "prebuilt/common/etc/init/init.lineage-system_ext.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-04-06T07:30:38Z",
+      "side": 1,
+      "message": "socket dumpstate stream 0660 shell log\n    class main\n    user root\n    disabled\n    oneshot\n    \nFrom updated definition",
+      "revId": "a965645a59f45c601fbe4a54aaafc0ac1d7f693b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
