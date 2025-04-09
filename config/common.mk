@@ -238,6 +238,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.enable_transaction_tracing=false
 endif
 
+# SEPolicy
+include device/lineage/sepolicy/common/sepolicy.mk
+
 # SetupWizard
 PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.theme=glif_v4 \
