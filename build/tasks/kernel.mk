@@ -276,6 +276,7 @@ endef
 # $(1): Output path (The value passed to O=)
 # $(2): The defconfig to process (full path to file)
 define make-kernel-config
+	mkdir -p $(1)
 	cp $(word 1,$(2)) $(1)/.config; \
 	$(call internal-make-kernel-target,$(1),olddefconfig); \
 	$(if $(filter true,$(MERGE_ALL_KERNEL_CONFIGS_AT_ONCE)),\
@@ -470,10 +471,7 @@ KERNEL_RECOVERY_MODULES_OUT := $(TARGET_RECOVERY_ROOT_OUT)
 $(recovery_uncompressed_ramdisk): $(TARGET_PREBUILT_INT_KERNEL)
 endif
 
-$(KERNEL_OUT):
-	mkdir -p $(KERNEL_OUT)
-
-$(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
+$(KERNEL_CONFIG): $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
@@ -558,16 +556,17 @@ kerneltags: $(KERNEL_CONFIG)
 
 .PHONY: kernelsavedefconfig alldefconfig kernelconfig
 
-kernelsavedefconfig: $(KERNEL_OUT)
+kernelsavedefconfig:
 	$(call make-kernel-config,$(KERNEL_OUT),$(BASE_KERNEL_DEFCONFIG_SRC))
 	$(call make-kernel-target,savedefconfig)
 	cp $(KERNEL_OUT)/defconfig $(BASE_KERNEL_DEFCONFIG_SRC)
 
-alldefconfig: $(KERNEL_OUT)
+alldefconfig:
+	mkdir -p $(KERNEL_OUT)
 	env KCONFIG_NOTIMESTAMP=true \
 		 $(call make-kernel-target,alldefconfig)
 
-kernelconfig: $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
+kernelconfig: $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
