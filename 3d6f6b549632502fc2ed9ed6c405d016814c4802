@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "929aaf5f_c710f655",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-04-10T23:12:19Z",
+      "side": 1,
+      "message": "oh yeah, just realized it should have broke downstream qcom builds",
+      "revId": "3d6f6b549632502fc2ed9ed6c405d016814c4802",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
