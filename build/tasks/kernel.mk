@@ -26,6 +26,10 @@
 #                                          while all the others are fragments that will be merged
 #                                          to main one in .config.
 #   TARGET_KERNEL_RECOVERY_CONFIG      = Same as above, but applicable to recovery kernel instead.
+#   TARGET_KERNEL_CONFIG_EXT           = List of path to external kernel defconfigs.
+#                                          Same as TARGET_KERNEL_CONFIG, but paths are specified
+#                                          instead of filenames.
+#   TARGET_KERNEL_RECOVERY_CONFIG_EXT  = Same as above, but applicable to recovery kernel instead.
 #   TARGET_KERNEL_VARIANT_CONFIG       = Variant defconfig, optional
 #   TARGET_KERNEL_SELINUX_CONFIG       = SELinux defconfig, optional
 #
@@ -62,6 +66,11 @@
 #
 #   KERNEL_LTO                         = Optional, force LTO to none / thin / full
 #
+#   MERGE_ALL_KERNEL_CONFIGS_AT_ONCE   = Optional, whether or not to merge all kernel config
+#                                          fragments in one merge_configs.sh call. if true,
+#                                          kernel config fragments will get merged faster, but
+#                                          may cause some differences.
+#
 #   NEED_KERNEL_MODULE_ROOT            = Optional, if true, install kernel
 #                                          modules in root instead of vendor
 #   NEED_KERNEL_MODULE_SYSTEM          = Optional, if true, install kernel
@@ -86,10 +95,20 @@ ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
 ## Externally influenced variables
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
 # kernel configuration - mandatory
+MERGE_ALL_KERNEL_CONFIGS_AT_ONCE ?= false
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
+KERNEL_DEFCONFIG_EXT := $(TARGET_KERNEL_CONFIG_EXT)
 RECOVERY_DEFCONFIG := $(TARGET_KERNEL_RECOVERY_CONFIG)
+RECOVERY_DEFCONFIG_EXT := $(TARGET_KERNEL_RECOVERY_CONFIG_EXT)
 VARIANT_DEFCONFIG := $(TARGET_KERNEL_VARIANT_CONFIG)
 SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
+ifneq ($(VARIANT_DEFCONFIG)$(SELINUX_DEFCONFIG),)
+    ifneq ($(word 1,$(KERNEL_DEFCONFIG)),defconfig)
+        ifeq ($(filter %_defconfig,$(word 1,$(KERNEL_DEFCONFIG))),)
+            $(error Must use defconfig from the kernel tree when specifying VARIANT_DEFCONFIG or SELINUX_DEFCONFIG)
+        endif
+    endif
+endif
 # dtb generation - optional
 TARGET_MERGE_DTBS_WILDCARD ?= *
 TARGET_DTB_LIST_WILDCARD ?= *
@@ -124,12 +143,13 @@ else
 KERNEL_DEFCONFIG_ARCH := $(KERNEL_ARCH)
 endif
 KERNEL_DEFCONFIG_DIR := $(KERNEL_SRC)/arch/$(KERNEL_DEFCONFIG_ARCH)/configs
-ALL_KERNEL_DEFCONFIG_SRCS := $(foreach config,$(KERNEL_DEFCONFIG),$(KERNEL_DEFCONFIG_DIR)/$(config))
-ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS := $(foreach config,$(RECOVERY_DEFCONFIG),$(KERNEL_DEFCONFIG_DIR)/$(config))
 
-BASE_KERNEL_DEFCONFIG := $(word 1, $(KERNEL_DEFCONFIG))
+ALL_KERNEL_DEFCONFIG_SRCS := $(foreach config,$(KERNEL_DEFCONFIG),$(KERNEL_DEFCONFIG_DIR)/$(config))
+ALL_KERNEL_DEFCONFIG_SRCS += $(KERNEL_DEFCONFIG_EXT)
+ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS := $(foreach config,$(RECOVERY_DEFCONFIG),$(KERNEL_DEFCONFIG_DIR)/$(config))
+ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS += $(RECOVERY_DEFCONFIG_EXT)
+
 BASE_KERNEL_DEFCONFIG_SRC := $(word 1, $(ALL_KERNEL_DEFCONFIG_SRCS))
-BASE_RECOVERY_KERNEL_DEFCONFIG := $(word 1, $(RECOVERY_DEFCONFIG))
 BASE_RECOVERY_KERNEL_DEFCONFIG_SRC := $(word 1, $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS))
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -182,7 +202,7 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
     endif
 else
     NEEDS_KERNEL_COPY := true
-    ifeq ($(TARGET_KERNEL_CONFIG),)
+    ifeq ($(TARGET_KERNEL_CONFIG)$(TARGET_KERNEL_CONFIG_EXT),)
         $(warning **********************************************************)
         $(warning * Kernel source found, but no configuration was defined  *)
         $(warning * Please add the TARGET_KERNEL_CONFIG variable to your   *)
@@ -312,9 +332,23 @@ endef
 
 # Generate kernel .config from a given defconfig
 # $(1): Output path (The value passed to O=)
-# $(2): The defconfig to process (just the filename, no need for full path to file)
+# $(2): The defconfig to process (full path to file)
 define make-kernel-config
-	$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(2))
+	$(if $(VARIANT_DEFCONFIG)$(SELINUX_DEFCONFIG), \
+		$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(notdir $(word 1,$(2)))) \
+	, \
+		cp $(word 1,$(2)) $(1)/.config; \
+		$(call internal-make-kernel-target,$(1),olddefconfig); \
+	)
+	$(if $(filter true,$(MERGE_ALL_KERNEL_CONFIGS_AT_ONCE)),\
+		$(KERNEL_SRC)/scripts/kconfig/merge_config.sh -m -O $(1) $(1)/.config $(filter %.config,$(2)); \
+		$(call internal-make-kernel-target,$(1),olddefconfig); \
+	, \
+		$(foreach config,$(filter %.config,$(2)), \
+			$(KERNEL_SRC)/scripts/kconfig/merge_config.sh -m -O $(1) $(1)/.config $(config); \
+			$(call internal-make-kernel-target,$(1),olddefconfig); \
+		) \
+	)
 	$(hide) if [ "$(KERNEL_LTO)" = "none" ]; then \
 			$(KERNEL_SRC)/scripts/config --file $(1)/.config \
 			-d LTO_CLANG \
@@ -503,7 +537,7 @@ $(KERNEL_OUT):
 
 $(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
-	$(call make-kernel-config,$(KERNEL_OUT),$(KERNEL_DEFCONFIG))
+	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
 $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST)
 	@echo "Building Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
@@ -585,7 +619,7 @@ kerneltags: $(KERNEL_CONFIG)
 .PHONY: kernelsavedefconfig alldefconfig kernelconfig recoverykernelconfig
 
 kernelsavedefconfig: $(KERNEL_OUT)
-	$(call make-kernel-config,$(KERNEL_OUT),$(BASE_KERNEL_DEFCONFIG))
+	$(call make-kernel-config,$(KERNEL_OUT),$(BASE_KERNEL_DEFCONFIG_SRC))
 	$(call make-kernel-target,savedefconfig)
 	cp $(KERNEL_OUT)/defconfig $(BASE_KERNEL_DEFCONFIG_SRC)
 
@@ -595,11 +629,11 @@ alldefconfig: $(KERNEL_OUT)
 
 kernelconfig: $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
-	$(call make-kernel-config,$(KERNEL_OUT),$(KERNEL_DEFCONFIG))
+	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
 recoverykernelconfig: $(KERNEL_OUT) $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Recovery Kernel Config"
-	$(call make-kernel-config,$(RECOVERY_KERNEL_OUT),$(RECOVERY_DEFCONFIG))
+	$(call make-kernel-config,$(RECOVERY_KERNEL_OUT),$(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS))
 
 ifeq (true,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
 ifneq ($(BOARD_CUSTOM_DTBOIMG_MK),)
@@ -667,7 +701,7 @@ ifeq ($(TARGET_WANTS_EMPTY_DTB),true)
 else
 	@echo "Building dtb.img"
 	$(hide) find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | xargs rm -f
-	$(call make-dtb-target,$(KERNEL_DEFCONFIG))
+	$(call make-kernel-config,$(DTB_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 	$(call make-dtb-target,$(TARGET_KERNEL_DTB))
 ifdef BOARD_DTB_CFG
 	$(MKDTBOIMG) cfg_create $@ $(BOARD_DTB_CFG) -d $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts
@@ -700,7 +734,7 @@ $(RECOVERY_KERNEL_OUT):
 
 $(RECOVERY_KERNEL_CONFIG): $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Recovery Kernel Config"
-	$(call make-kernel-config,$(RECOVERY_KERNEL_OUT),$(RECOVERY_DEFCONFIG))
+	$(call make-kernel-config,$(RECOVERY_KERNEL_OUT),$(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS))
 
 $(TARGET_PREBUILT_INT_RECOVERY_KERNEL): $(RECOVERY_KERNEL_CONFIG) $(DEPMOD) $(DTC)
 	@echo "Building Recovery Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
