@@ -326,6 +326,7 @@ endef
 # $(1): Output path (The value passed to O=)
 # $(2): The defconfig to process (full path to file)
 define make-kernel-config
+	mkdir -p $(1)
 	$(if $(VARIANT_DEFCONFIG)$(SELINUX_DEFCONFIG), \
 		$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(notdir $(word 1,$(2)))) \
 	, \
@@ -520,10 +521,7 @@ KERNEL_RECOVERY_MODULES_OUT := $(TARGET_RECOVERY_ROOT_OUT)
 $(recovery_uncompressed_ramdisk): $(TARGET_PREBUILT_INT_KERNEL)
 endif
 
-$(KERNEL_OUT):
-	mkdir -p $(KERNEL_OUT)
-
-$(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
+$(KERNEL_CONFIG): $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
@@ -606,20 +604,21 @@ kerneltags: $(KERNEL_CONFIG)
 
 .PHONY: kernelsavedefconfig alldefconfig kernelconfig recoverykernelconfig
 
-kernelsavedefconfig: $(KERNEL_OUT)
+kernelsavedefconfig:
 	$(call make-kernel-config,$(KERNEL_OUT),$(BASE_KERNEL_DEFCONFIG_SRC))
 	$(call make-kernel-target,savedefconfig)
 	cp $(KERNEL_OUT)/defconfig $(BASE_KERNEL_DEFCONFIG_SRC)
 
-alldefconfig: $(KERNEL_OUT)
+alldefconfig:
+	mkdir -p $(KERNEL_OUT)
 	env KCONFIG_NOTIMESTAMP=true \
 		 $(call make-kernel-target,alldefconfig)
 
-kernelconfig: $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
+kernelconfig: $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
-recoverykernelconfig: $(KERNEL_OUT) $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
+recoverykernelconfig: $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Recovery Kernel Config"
 	$(call make-kernel-config,$(RECOVERY_KERNEL_OUT),$(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS))
 
@@ -713,9 +712,6 @@ endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 endif # FULL_KERNEL_BUILD
 
 ifeq ($(FULL_RECOVERY_KERNEL_BUILD),true)
-
-$(RECOVERY_KERNEL_OUT):
-	mkdir -p $(RECOVERY_KERNEL_OUT)
 
 $(RECOVERY_KERNEL_CONFIG): $(ALL_RECOVERY_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Recovery Kernel Config"
