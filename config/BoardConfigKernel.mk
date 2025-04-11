@@ -36,6 +36,7 @@
 #   TARGET_KERNEL_RUST_VERSION         = Rust prebuilts version, optional
 #   TARGET_KERNEL_NO_GCC               = Fully compile the kernel without GCC.
 #                                        Defaults to false
+#   TARGET_KERNEL_USE_HOST_GCC         = Compile the kernel using GCC from the host.
 #   TARGET_KERNEL_VERSION              = Reported kernel version in top level kernel
 #                                        makefile. Can be overriden in device trees
 #                                        in the event of prebuilt kernel.
@@ -100,8 +101,12 @@ ifneq ($(KERNEL_VERSION),)
     endif
 endif
 
-ifeq ($(TARGET_KERNEL_NO_GCC), true)
-    KERNEL_NO_GCC := true
+ifeq ($(TARGET_KERNEL_USE_HOST_GCC),true)
+    TARGET_KERNEL_CLANG_COMPILE := false
+else
+    ifeq ($(TARGET_KERNEL_NO_GCC), true)
+        KERNEL_NO_GCC := true
+    endif
 endif
 
 ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
@@ -142,9 +147,16 @@ ifneq ($(KERNEL_NO_GCC), true)
     KERNEL_TOOLCHAIN_x86 := $(GCC_PREBUILTS)/x86/x86_64-linux-android-4.9/bin
     KERNEL_TOOLCHAIN_PREFIX_x86 := x86_64-linux-android-
 
+    # toolchains from host
+    KERNEL_TOOLCHAIN_PREFIX_HOST_arm64 := /usr/bin/aarch64-linux-gnu-
+    KERNEL_TOOLCHAIN_PREFIX_HOST_arm := /usr/bin/arm-linux-gnueabihf-
+    KERNEL_TOOLCHAIN_PREFIX_HOST_x86 := /usr/bin/
+
     TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(strip $(TARGET_KERNEL_CROSS_COMPILE_PREFIX))
     ifneq ($(TARGET_KERNEL_CROSS_COMPILE_PREFIX),)
         KERNEL_TOOLCHAIN_PREFIX ?= $(TARGET_KERNEL_CROSS_COMPILE_PREFIX)
+    else ifeq ($(TARGET_KERNEL_USE_HOST_GCC),true)
+        KERNEL_TOOLCHAIN_PREFIX ?= $(KERNEL_TOOLCHAIN_PREFIX_HOST_$(KERNEL_ARCH))
     else
         KERNEL_TOOLCHAIN ?= $(KERNEL_TOOLCHAIN_$(KERNEL_ARCH))
         KERNEL_TOOLCHAIN_PREFIX ?= $(KERNEL_TOOLCHAIN_PREFIX_$(KERNEL_ARCH))
@@ -168,8 +180,13 @@ ifneq ($(KERNEL_NO_GCC), true)
 
     # Needed for CONFIG_COMPAT_VDSO, safe to set for all arm64 builds
     ifeq ($(KERNEL_ARCH),arm64)
-        KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
-        KERNEL_CROSS_COMPILE += CROSS_COMPILE_COMPAT="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
+        ifeq ($(TARGET_KERNEL_USE_HOST_GCC),true)
+            KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_PREFIX_HOST_arm)"
+            KERNEL_CROSS_COMPILE += CROSS_COMPILE_COMPAT="$(KERNEL_TOOLCHAIN_PREFIX_HOST_arm)"
+        else
+            KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
+            KERNEL_CROSS_COMPILE += CROSS_COMPILE_COMPAT="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
+        endif
     endif
 
     ifeq ($(TARGET_KERNEL_CLANG_COMPILE),false)
