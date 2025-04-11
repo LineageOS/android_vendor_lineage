@@ -1,0 +1,27 @@
+# Pixel 9a
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/tegu
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="BP2A.250605.031.A2"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-15.0.0_r25"
+readonly aosp_tag="unknown"
+
+readonly build_number="13578606"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/tegu-bp2a.250605.031.a2-factory-aecd8a3b.zip"
+readonly image_sha256="aecd8a3b8cb97e1baacdf6b36d3dd053df4b0be5c0f3df31347b863304e5944b"
+
+readonly flash_url="https://flash.android.com/build/13578606?target=tegu-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/tegu-ota-bp2a.250605.031.a2-ec03acfb.zip"
+readonly ota_sha256="ec03acfb955eaa7ee4fea409a4a7a28b01c93647f60e34bc75a28ecf196319b4"
+
+readonly security_patch="unknown"
