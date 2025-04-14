@@ -924,3 +924,31 @@ function fixup_common_out_dir() {
         mkdir -p ${common_out_dir}
     fi
 }
+
+function sync_all_kernels() {
+    source ${ANDROID_BUILD_TOP}/vendor/lineage/vars/kernel_platform
+
+    for kver in "${!kernel_branches[@]}"; do
+        BRANCH="${kernel_branches[$kver]}"
+        KERNELVER=$(echo "$BRANCH" |awk -F"-" '{ print $3 }');
+        KERNELPATH=$(realpath ${ANDROID_BUILD_TOP}/../kernel-${KERNELVER})
+        if [ ! -d "${KERNELPATH}" ]; then
+            echo Initializing kernel-${KERNELVER};
+            mkdir -p ${KERNELPATH}
+            pushd ${KERNELPATH}
+            repo init -u $kernel_manifest_url -b $BRANCH
+            reposync
+            popd
+        else
+            echo Updating kernel-${KERNELVER};
+            pushd ${KERNELPATH}
+            CURBRANCH=$(repo info |grep '^Manifest merge branch' |awk -F'/' '{ print $NF }')
+            if [ "$CURBRANCH" != "$BRANCH" ]; then
+                echo Updating kernel-${KERNELVER} from $CURBRANCH to $BRANCH
+                repo init -b $BRANCH
+            fi
+            reposync
+            popd
+        fi
+    done
+}

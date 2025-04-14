@@ -1,0 +1,9 @@
+local -r kernel_manifest_url=https://android.googlesource.com/kernel/manifest
+
+# Usage: ${kernel_branches[$kver]}
+local -r kernel_branches=(
+  [510]=common-android13-5.10-2025-03
+  [515]=common-android13-5.15-2025-03
+  [61]=common-android14-6.1-2025-03
+  [66]=common-android15-6.6-2025-03
+)
