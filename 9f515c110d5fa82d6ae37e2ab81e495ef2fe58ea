@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b33a7014_b9120e77",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-04-17T08:42:20Z",
+      "side": 1,
+      "message": "Verified that miboard id is respected and overlays not setting the property are unaffected.",
+      "revId": "9f515c110d5fa82d6ae37e2ab81e495ef2fe58ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
