@@ -16,6 +16,23 @@
       "message": "Verified that miboard id is respected and overlays not setting the property are unaffected.",
       "revId": "9f515c110d5fa82d6ae37e2ab81e495ef2fe58ea",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc21f0a8_183dd6bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2025-04-18T03:36:30Z",
+      "side": 1,
+      "message": "hold on\n```\nTraceback (most recent call last):\n  File \"/home/dianlujitao/Android/lineage-22/vendor/lineage/build/tools/merge_dtbs.py\", line 518, in \u003cmodule\u003e\n    main()\n  File \"/home/dianlujitao/Android/lineage-22/vendor/lineage/build/tools/merge_dtbs.py\", line 475, in main\n    bases \u003d parse_dt_files(args.base)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/dianlujitao/Android/lineage-22/vendor/lineage/build/tools/merge_dtbs.py\", line 458, in parse_dt_files\n    devicetrees.append(DeviceTree(filepath))\n                       ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/dianlujitao/Android/lineage-22/vendor/lineage/build/tools/merge_dtbs.py\", line 278, in __init__\n    extra_ids \u003d {key: split_array(self.get_prop(\u0027/\u0027, key, check_output\u003dFalse), 2) for key in extra_keys}\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/dianlujitao/Android/lineage-22/vendor/lineage/build/tools/merge_dtbs.py\", line 278, in \u003cdictcomp\u003e\n    extra_ids \u003d {key: split_array(self.get_prop(\u0027/\u0027, key, check_output\u003dFalse), 2) for key in extra_keys}\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/dianlujitao/Android/lineage-22/vendor/lineage/build/tools/merge_dtbs.py\", line 46, in split_array\n    assert (len(array) % cells) \u003d\u003d 0\n            ^^^^^^^^^^\nTypeError: object of type \u0027int\u0027 has no len()\n```",
+      "revId": "9f515c110d5fa82d6ae37e2ab81e495ef2fe58ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
