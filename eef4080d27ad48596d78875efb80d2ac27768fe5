@@ -33,6 +33,24 @@
       "message": "now it builds and appears good. however, it\u0027s worth noting that oplus reordered the dtb when merging techpack, I\u0027m unsure if there will be downsides when it\u0027s not implemented: https://github.com/LineageOS/android_vendor_lineage/commit/01c33c600c75f493c3e07cd9f52c905f11d807e5#diff-4a215f0f43c4837e6d910647c985771c4774ce5652b28d83230c5f2261d6abd2R514",
       "revId": "eef4080d27ad48596d78875efb80d2ac27768fe5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ebe17c0_18c9847c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-04-18T08:47:06Z",
+      "side": 1,
+      "message": "@demonsingur@gmail.com maybe it\u0027s close to your ZTE requiremen?",
+      "parentUuid": "30082712_25de913a",
+      "revId": "eef4080d27ad48596d78875efb80d2ac27768fe5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
