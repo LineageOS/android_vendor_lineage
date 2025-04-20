@@ -4,6 +4,14 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
+    <!-- PowerShare -->
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.powershare</name>
+        <interface>
+            <name>IPowerShare</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Radio Config (backend) -->
     <hal format="hidl" optional="true">
         <name>lineage.hardware.radio.config</name>
