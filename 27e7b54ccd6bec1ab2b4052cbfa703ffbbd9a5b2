@@ -34,6 +34,24 @@
       "parentUuid": "48d32406_c8f7acbf",
       "revId": "27e7b54ccd6bec1ab2b4052cbfa703ffbbd9a5b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa70563b_4adcc7b6",
+        "filename": "config/device_framework_matrix.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-20T16:04:41Z",
+      "side": 1,
+      "message": "No, above powershare HIDL entry.",
+      "parentUuid": "9d2d9148_65f37b91",
+      "revId": "27e7b54ccd6bec1ab2b4052cbfa703ffbbd9a5b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
