@@ -156,4 +156,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- PowerShare -->
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.powershare</name>
+        <interface>
+            <name>IPowerShare</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
