@@ -1,1 +1,11 @@
 # Insert vendor-specific functionality here.
+
+# For other-system GSIs that don't claim to support restrict USB, enable USB data ASAP.
+on early-init && property:ro.boot.system_supports_restrict_usb=""
+    # Allows USB connection to start working right away, without being unplugged and re-plugged.
+    # Service is defined in device-specific init files. (Harmless warning in dmesg if not defined.)
+    restart enable_usb_data
+
+# In case early-init above happens before vendors disable USB data, do it later, too.
+on boot && property:ro.boot.system_supports_restrict_usb=""
+    restart enable_usb_data

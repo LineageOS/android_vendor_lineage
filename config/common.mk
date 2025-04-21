@@ -281,6 +281,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.init.trust_restrict_usb=0
 endif
 
+# Make sure vendor knows not to start enable_usb_data service. Vendor will always start it for
+# other-system GSIs that lack this property.
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.boot.system_supports_restrict_usb=1
+
 # Audio files
 $(call inherit-product, vendor/lineage/audio/audio.mk)
 
