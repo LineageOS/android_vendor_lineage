@@ -29,7 +29,6 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 SOONG_CONFIG_NAMESPACES += lineageGlobalVars
 SOONG_CONFIG_lineageGlobalVars += \
     additional_gralloc_10_usage_bits \
-    bootloader_message_offset \
     camera_override_format_from_reserved \
     target_init_vendor_lib \
     target_power_libperfmgr_mode_extension_lib \
@@ -39,7 +38,6 @@ SOONG_CONFIG_lineageGlobalVars += \
 SOONG_CONFIG_lineageGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
 
 # Set default values
-BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED ?= false
 TARGET_INIT_VENDOR_LIB ?= vendor_init
@@ -48,7 +46,6 @@ TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 
 # Soong value variables
 SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
-SOONG_CONFIG_lineageGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
 SOONG_CONFIG_lineageGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_lineageGlobalVars_target_power_libperfmgr_mode_extension_lib := $(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB)
 SOONG_CONFIG_lineageGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
@@ -88,6 +85,11 @@ ifneq ($(TARGET_POWERSHARE_ENABLED),)
 endif
 ifneq ($(TARGET_POWERSHARE_DISABLED),)
     $(call soong_config_set,lineage_powershare,powershare_disabled,$(TARGET_POWERSHARE_DISABLED))
+endif
+
+# Recovery
+ifneq ($(BOOTLOADER_MESSAGE_OFFSET),)
+    $(call soong_config_set,lineage_recovery,bootloader_message_offset,$(BOOTLOADER_MESSAGE_OFFSET))
 endif
 
 # USB HAL
