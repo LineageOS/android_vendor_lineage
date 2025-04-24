@@ -26,19 +26,14 @@ endef
 
 $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 
-SOONG_CONFIG_NAMESPACES += lineageGlobalVars
-SOONG_CONFIG_lineageGlobalVars += \
-    additional_gralloc_10_usage_bits
-
-# Set default values
-TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
-
-# Soong value variables
-SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
-
 # Camera
 ifneq ($(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED),)
     $(call soong_config_set,camera,override_format_from_reserved,$(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED))
+endif
+
+# Libui
+ifneq ($(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS),)
+    $(call soong_config_set,libui,additional_gralloc_10_usage_bits,$(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS))
 endif
 
 # Lineage Health HAL
