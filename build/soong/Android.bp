@@ -196,55 +196,6 @@ bootloader_message_offset {
 }
 
 soong_config_module_type {
-    name: "health_charging_control",
-    module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
-    bool_variables: [
-        "target_health_charging_control_supports_toggle",
-        "target_health_charging_control_supports_bypass",
-        "target_health_charging_control_supports_deadline",
-        "target_health_charging_control_supports_limit",
-    ],
-    value_variables: [
-        "target_health_charging_control_charging_path",
-        "target_health_charging_control_charging_enabled",
-        "target_health_charging_control_charging_disabled",
-        "target_health_charging_control_deadline_path",
-    ],
-    properties: ["cppflags"],
-}
-
-health_charging_control {
-    name: "health_charging_control_defaults",
-    soong_config_variables: {
-        target_health_charging_control_supports_toggle: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE"],
-        },
-        target_health_charging_control_supports_bypass: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS"],
-        },
-        target_health_charging_control_supports_deadline: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE"],
-        },
-        target_health_charging_control_supports_limit: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_SUPPORTS_LIMIT"],
-        },
-        target_health_charging_control_charging_path: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_CHARGING_PATH=\"%s\""],
-        },
-        target_health_charging_control_charging_enabled: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_CHARGING_ENABLED=\"%s\""],
-        },
-        target_health_charging_control_charging_disabled: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_CHARGING_DISABLED=\"%s\""],
-        },
-        target_health_charging_control_deadline_path: {
-            cppflags: ["-DHEALTH_CHARGING_CONTROL_DEADLINE_PATH=\"%s\""],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "powershare",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
