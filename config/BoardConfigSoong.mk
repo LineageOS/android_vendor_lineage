@@ -29,8 +29,7 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 SOONG_CONFIG_NAMESPACES += lineageGlobalVars
 SOONG_CONFIG_lineageGlobalVars += \
     additional_gralloc_10_usage_bits \
-    camera_override_format_from_reserved \
-    target_init_vendor_lib
+    camera_override_format_from_reserved
 
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
@@ -38,11 +37,9 @@ SOONG_CONFIG_lineageGlobalVars_camera_override_format_from_reserved := $(TARGET_
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED ?= false
-TARGET_INIT_VENDOR_LIB ?= vendor_init
 
 # Soong value variables
 SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
-SOONG_CONFIG_lineageGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 
 # Lineage Health HAL
 ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
@@ -105,4 +102,9 @@ ifneq ($(TARGET_TRUST_USB_CONTROL_ENABLE),)
 endif
 ifneq ($(TARGET_TRUST_USB_CONTROL_DISABLE),)
     $(call soong_config_set,lineage_usb,usb_control_disabled,$(TARGET_TRUST_USB_CONTROL_DISABLE))
+endif
+
+# Vendor init
+ifneq ($(TARGET_INIT_VENDOR_LIB),)
+    $(call soong_config_set,libinit,vendor_init_lib,$(TARGET_INIT_VENDOR_LIB))
 endif
