@@ -46,6 +46,30 @@
       },
       "revId": "6088c6b692ccbd679aa670bfd899726976f1d1cb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6725028_dd4ab846",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-04-24T20:10:26Z",
+      "side": 1,
+      "message": "The plan is to deprecate the TARGET_* flags after everything in this file is converted and make devices migrate to soong_config_set directly (and remove the old way in 23 maybe)",
+      "parentUuid": "556892e9_748744b3",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 5
+      },
+      "revId": "6088c6b692ccbd679aa670bfd899726976f1d1cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
