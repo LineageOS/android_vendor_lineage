@@ -30,10 +30,7 @@ SOONG_CONFIG_NAMESPACES += lineageGlobalVars
 SOONG_CONFIG_lineageGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
-    camera_override_format_from_reserved \
-    target_trust_usb_control_path \
-    target_trust_usb_control_enable \
-    target_trust_usb_control_disable
+    camera_override_format_from_reserved
 
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
@@ -42,16 +39,10 @@ SOONG_CONFIG_lineageGlobalVars_camera_override_format_from_reserved := $(TARGET_
 BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED ?= false
-TARGET_TRUST_USB_CONTROL_PATH ?= /proc/sys/kernel/deny_new_usb
-TARGET_TRUST_USB_CONTROL_ENABLE ?= 1
-TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
 
 # Soong value variables
 SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_lineageGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
-SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_path := $(TARGET_TRUST_USB_CONTROL_PATH)
-SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_enable := $(TARGET_TRUST_USB_CONTROL_ENABLE)
-SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_disable := $(TARGET_TRUST_USB_CONTROL_DISABLE)
 
 # Lineage Health HAL
 ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
@@ -88,6 +79,17 @@ ifneq ($(TARGET_POWERSHARE_ENABLED),)
 endif
 ifneq ($(TARGET_POWERSHARE_DISABLED),)
     $(call soong_config_set,lineage_powershare,powershare_disabled,$(TARGET_POWERSHARE_DISABLED))
+endif
+
+# Lineage USB HAL
+ifneq ($(TARGET_TRUST_USB_CONTROL_PATH),)
+    $(call soong_config_set,lineage_usb,usb_control_path,$(TARGET_TRUST_USB_CONTROL_PATH))
+endif
+ifneq ($(TARGET_TRUST_USB_CONTROL_ENABLE),)
+    $(call soong_config_set,lineage_usb,usb_control_enabled,$(TARGET_TRUST_USB_CONTROL_ENABLE))
+endif
+ifneq ($(TARGET_TRUST_USB_CONTROL_DISABLE),)
+    $(call soong_config_set,lineage_usb,usb_control_disabled,$(TARGET_TRUST_USB_CONTROL_DISABLE))
 endif
 
 # Power HAL
