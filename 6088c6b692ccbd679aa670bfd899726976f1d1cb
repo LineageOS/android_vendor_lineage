@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95de6f13_7b7965f1",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-24T20:00:07Z",
+      "side": 1,
+      "message": "Ideally this could now be moved to the respective bp in hw/lineage/interfaces",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 5
+      },
+      "revId": "6088c6b692ccbd679aa670bfd899726976f1d1cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
