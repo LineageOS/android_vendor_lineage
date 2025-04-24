@@ -75,21 +75,3 @@ cc_library_headers {
     name: "qti_kernel_headers",
     defaults: ["generated_kernel_header_defaults"],
 }
-
-// Target platform agnostic config modules
-soong_config_module_type {
-    name: "gralloc_10_usage_bits",
-    module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
-    value_variables: ["additional_gralloc_10_usage_bits"],
-    properties: ["cppflags"],
-}
-
-gralloc_10_usage_bits {
-    name: "gralloc_10_usage_bits_defaults",
-    soong_config_variables: {
-        additional_gralloc_10_usage_bits: {
-            cppflags: ["-DADDNL_GRALLOC_10_USAGE_BITS=%s"],
-        },
-    },
-}
