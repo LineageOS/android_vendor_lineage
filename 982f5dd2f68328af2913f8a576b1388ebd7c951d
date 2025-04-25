@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b47af0c_19705133",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-04-25T07:50:16Z",
+      "side": 1,
+      "message": "Comment removed by: Luca Stefani; Reason: My bad I can\u0027t read",
+      "revId": "982f5dd2f68328af2913f8a576b1388ebd7c951d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
