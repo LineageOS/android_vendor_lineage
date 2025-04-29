@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d1434e95_04090c5d",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-29T23:55:36Z",
+      "side": 1,
+      "message": "Since BOOTLOADER_MESSAGE_OFFSET is self-contained to LG devices at this point, we could skip this and force those devices to migrate right away.",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 100,
+        "endChar": 5
+      },
+      "revId": "bfcc4078a16c5a95fd1454ff7ef2bd7c869a1896",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
