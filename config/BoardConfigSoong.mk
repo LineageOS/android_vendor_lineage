@@ -84,11 +84,6 @@ ifneq ($(TARGET_TRUST_USB_CONTROL_DISABLE),)
     $(call soong_config_set,lineage_usb,usb_control_disabled,$(TARGET_TRUST_USB_CONTROL_DISABLE))
 endif
 
-# Power HAL
-ifneq ($(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB),)
-    $(call soong_config_set,power_libperfmgr,mode_extension_lib,$(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB))
-endif
-
 # Recovery
 ifneq ($(BOOTLOADER_MESSAGE_OFFSET),)
     $(call soong_config_set,lineage_recovery,bootloader_message_offset,$(BOOTLOADER_MESSAGE_OFFSET))
