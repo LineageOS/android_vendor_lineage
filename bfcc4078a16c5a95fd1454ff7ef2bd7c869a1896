@@ -22,6 +22,30 @@
       },
       "revId": "bfcc4078a16c5a95fd1454ff7ef2bd7c869a1896",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7475924_843fa211",
+        "filename": "config/BoardConfigSoong.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-05-04T19:24:14Z",
+      "side": 1,
+      "message": "Let\u0027s not block everything for that, we can deprecate each section in separate commits",
+      "parentUuid": "d1434e95_04090c5d",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 100,
+        "endChar": 5
+      },
+      "revId": "bfcc4078a16c5a95fd1454ff7ef2bd7c869a1896",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
