@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d1e5c2c_082ca4bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2025-05-06T20:14:01Z",
+      "side": 1,
+      "message": "This breaks using the power button keycode to wake from sleep at all.",
+      "revId": "6723901f1a82d446b724be86da8bb1c7614f60f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
