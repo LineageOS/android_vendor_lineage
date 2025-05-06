@@ -108,3 +108,5 @@ PRODUCT_PACKAGES += \
     LineageBlackTheme \
     ThemePicker \
     ThemesStub
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/mobile
