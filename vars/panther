@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP1A.250405.007.B1"
+readonly build_id="BP1A.250505.005.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r20"
-readonly aosp_tag="android-15.0.0_r28"
+readonly prev_aosp_tag="android-15.0.0_r28"
+readonly aosp_tag="android-15.0.0_r34"
 
-readonly build_number="13240308"
+readonly build_number="13277630"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-bp1a.250405.007.b1-factory-ec427907.zip"
-readonly image_sha256="ec427907286ebfc0ce5b432e9ef2108e9397afe8a7a3d6a55d575eb8aae856b7"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-bp1a.250505.005.b1-factory-f3671e06.zip"
+readonly image_sha256="f3671e060ad7c2597fd39e918f9a3aeb3f83c8948ddd295bd04655b8808bedf8"
 
-readonly flash_url="https://flash.android.com/build/13240308?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/13277630?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-bp1a.250405.007.b1-32410308.zip"
-readonly ota_sha256="32410308e4adbe94c95c379b5c76a9d622f94b01d4bf189da8508c67b1ad5484"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-bp1a.250505.005.b1-cf5588e6.zip"
+readonly ota_sha256="cf5588e661121815a18522a4b56578254791f4fd8bec380fb1032be5921171ad"
 
-readonly security_patch="2025-03-05"
+readonly security_patch="2025-05-05"

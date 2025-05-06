@@ -9,21 +9,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP1A.250405.007"
+readonly build_id="BP1A.250505.005"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r21"
-readonly aosp_tag="android-15.0.0_r26"
+readonly prev_aosp_tag="android-15.0.0_r26"
+readonly aosp_tag="android-15.0.0_r32"
 
-readonly build_number="13240079"
+readonly build_number="13277524"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/komodo-bp1a.250405.007-factory-46dbfd07.zip"
-readonly image_sha256="46dbfd07289ebbded3f958d321b9a0e52a3c93e386d7e6684cf67d9c3b7c2b6c"
+readonly image_url="https://dl.google.com/dl/android/aosp/komodo-bp1a.250505.005-factory-3945a024.zip"
+readonly image_sha256="3945a02463894927d1272e46a28a2cf999dc9d5a9db046a9b215157a8404228b"
 
-readonly flash_url="https://flash.android.com/build/13240079?target=komodo-user&signed"
+readonly flash_url="https://flash.android.com/build/13277524?target=komodo-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-bp1a.250405.007-9cdf83da.zip"
-readonly ota_sha256="9cdf83dab94da9c40c7a4ba5c4f67c6fe11cb98882c7acbf71919b41b7ada470"
+readonly ota_url="https://dl.google.com/dl/android/aosp/komodo-ota-bp1a.250505.005-8997fae7.zip"
+readonly ota_sha256="8997fae7ef176ff6cd7ee35bf1c6435fb3ec30ce2b69b28e572f283e7443e266"
 
-readonly security_patch="2025-03-05"
+readonly security_patch="2025-05-05"
