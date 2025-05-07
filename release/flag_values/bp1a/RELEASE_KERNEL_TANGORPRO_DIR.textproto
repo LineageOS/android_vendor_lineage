@@ -1,4 +1,0 @@
-name: "RELEASE_KERNEL_TANGORPRO_DIR"
-value: {
-  string_value: "device/google/tangorpro-kernels/6.1/25Q1-13073378"
-}

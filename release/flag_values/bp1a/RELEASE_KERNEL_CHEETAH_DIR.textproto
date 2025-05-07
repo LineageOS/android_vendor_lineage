@@ -1,4 +1,0 @@
-name: "RELEASE_KERNEL_CHEETAH_DIR"
-value: {
-  string_value: "device/google/pantah-kernels/6.1/25Q1-13073378"
-}
