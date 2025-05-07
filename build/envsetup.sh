@@ -89,8 +89,16 @@ function eat()
 
 function omnom()
 {
-    brunch $*
+    brunch "$@"
+    local ret=$?
+
+    if [ $ret -ne 0 ]; then
+        # abort early if brunch failed
+        return $ret
+    fi
+
     eat
+    return $?
 }
 
 function cout()
