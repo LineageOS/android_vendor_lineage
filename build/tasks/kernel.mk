@@ -135,7 +135,7 @@ RECOVERY_KERNEL_RELEASE := $(RECOVERY_KERNEL_OUT)/include/config/kernel.release
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 ifeq ($(shell expr $(TARGET_KERNEL_VERSION) \>= 5.15), 1)
 ifeq ($(shell expr $(TARGET_KERNEL_VERSION) \<= 6.1), 1)
-GKI_SUFFIX := /$(shell echo android$(PLATFORM_VERSION)-$(TARGET_KERNEL_VERSION))
+GKI_SUFFIX := /$(shell grep -h 'BRANCH=' $(KERNEL_SRC)/build.config.* 2>/dev/null | cut -c 8-)
 endif
 endif
 endif
