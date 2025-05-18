@@ -132,7 +132,7 @@ KERNEL_CONFIG := $(KERNEL_OUT)/.config
 KERNEL_RELEASE := $(KERNEL_OUT)/include/config/kernel.release
 RECOVERY_KERNEL_CONFIG := $(RECOVERY_KERNEL_OUT)/.config
 RECOVERY_KERNEL_RELEASE := $(RECOVERY_KERNEL_OUT)/include/config/kernel.release
-GKI_SUFFIX := $(shell echo android$(PLATFORM_VERSION)-$(TARGET_KERNEL_VERSION))
+GKI_SUFFIX := $(shell grep -h 'BRANCH=' $(KERNEL_SRC)/build.config.* 2>/dev/null | cut -c 8-)
 
 ifeq ($(KERNEL_ARCH),x86_64)
 KERNEL_DEFCONFIG_ARCH := x86
