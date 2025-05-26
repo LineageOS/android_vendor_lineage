@@ -296,11 +296,22 @@ define make-kbuild-module-target
 $(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(BUILD_TOP)/$(KERNEL_SRC) M=$(2)/$(1) O=$(KERNEL_BUILD_OUT_PREFIX)$(KERNEL_OUT) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(3)
 endef
 
+# Generate kernel .config from a given defconfig using merge_config.sh
+# $(1): Output path (The value passed to O=)
+# $(2): The defconfig to process (just the filename, no need for full path to file)
+define merge-kernel-configs-without-make
+	$(KERNEL_SRC)/scripts/kconfig/merge_config.sh -m -r -O $(1) $(addprefix $(KERNEL_SRC)/arch/$(KERNEL_ARCH)/configs/, $(2)) 
+endef
+
 # Generate kernel .config from a given defconfig
 # $(1): Output path (The value passed to O=)
 # $(2): The defconfig to process (just the filename, no need for full path to file)
 define make-kernel-config
-	$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(2))
+	ifeq($(TARGET_KERNEL_MERGE_CONFIGS_WITHOUT_MAKE),true) then
+		$(call merge-kernel-configs-without-make, $(1), $(2))
+	else
+    	$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(2))
+	endif
 	$(hide) if [ "$(KERNEL_LTO)" = "none" ]; then \
 			$(KERNEL_SRC)/scripts/config --file $(1)/.config \
 			-d LTO_CLANG \
