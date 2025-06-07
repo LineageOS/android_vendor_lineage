@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdfe33aa_6d663c0b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2025-06-07T18:09:03Z",
+      "side": 1,
+      "message": "Works as expected:\n```\n$ mka bootimage\n...\n...\nERROR: ns.ko from BOOT_KERNEL_MODULES was not found\nERROR: bootinfo.ko from BOOT_KERNEL_MODULES was not found\nERROR: swinfo.ko from BOOT_KERNEL_MODULES was not found\nERROR: ns.ko from BOOT_KERNEL_MODULES was not found\nERROR: bootinfo.ko from BOOT_KERNEL_MODULES was not found\nERROR: swinfo.ko from BOOT_KERNEL_MODULES was not found\nERROR: One or more modules from BOOT_KERNEL_MODULES were not found\n18:05:11 ninja failed with: exit status 1\n```",
+      "revId": "4004e4f5c8a1e24c456ab558a25ad9b1e1b30e27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
