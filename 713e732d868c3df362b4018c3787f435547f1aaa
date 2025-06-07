@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3cf186f3_e5a17009",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-06-07T16:35:29Z",
+      "side": 1,
+      "message": "No need to set this.",
+      "revId": "713e732d868c3df362b4018c3787f435547f1aaa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9997ed6b_660c123b",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-06-07T16:35:29Z",
+      "side": 1,
+      "message": "Just check if $ERROR is set",
+      "revId": "713e732d868c3df362b4018c3787f435547f1aaa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
