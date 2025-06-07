@@ -385,14 +385,17 @@ define build-image-kernel-modules-lineage
     cp $(4)/lib/modules/0.0/modules.softdep $(2)/lib/modules$(6)
     cp $(4)/lib/modules/0.0/modules.alias $(2)/lib/modules$(6)
     rm -f $(2)/lib/modules$(6)/modules.load
+    ERROR=0; \
     for MODULE in $(5); do \
         NAME=$$(basename $$MODULE .ko); \
         if [ -n "$$(find $(2)/lib/modules$(6) -type f -name $$NAME'.ko')" ]; then \
             echo "$$NAME" >> $(2)/lib/modules$(6)/modules.load; \
         else \
-            echo "ERROR: $$NAME.ko was not found in the kernel modules intermediates dir, module load list must be corrected" 1>&2 && exit 1; \
+            echo "ERROR: $$NAME.ko was not found in the kernel modules intermediates dir, module load list must be corrected" 1>&2; \
+            ERROR=1; \
         fi; \
-    done
+    done; \
+    if [ "$$ERROR" -eq 1 ]; then exit 1; fi
     if [ -n "$(7)" ]; then \
         echo lib/modules$(6)/modules.alias >> "$(7)"; \
         echo lib/modules$(6)/modules.dep >> "$(7)"; \
