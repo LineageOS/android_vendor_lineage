@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b32d5278_519b43a8",
+        "filename": "build/tools/merge_dtbs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 478,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-06-08T13:49:14Z",
+      "side": 1,
+      "message": "```suggestion\n\tfor dt in devicetrees:\n\t\tfor symbol in dt.list_props(\u0027/__symbols__\u0027):\n\t\t\tsymbol_map.setdefault(symbol, []).append(dt.filename)\n\n```",
+      "range": {
+        "startLine": 474,
+        "startChar": 0,
+        "endLine": 478,
+        "endChar": 33
+      },
+      "revId": "f8b6962456d2658c449f30274b585db90b51b214",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1178bf3_77012e3d",
+        "filename": "build/tools/merge_dtbs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 488,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-06-08T13:49:14Z",
+      "side": 1,
+      "message": "```suggestion\n\n\tfor dt in devicetrees:\n\t\tgraph[dt.filename] \u003d set()\n\t\tfor fixup in dt.list_props(\u0027/__fixups__\u0027):\n\t\t\tgraph[dt.filename].update(symbol_map.get(fixup, []))\n```",
+      "range": {
+        "startLine": 479,
+        "startChar": 0,
+        "endLine": 488,
+        "endChar": 47
+      },
+      "revId": "f8b6962456d2658c449f30274b585db90b51b214",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
