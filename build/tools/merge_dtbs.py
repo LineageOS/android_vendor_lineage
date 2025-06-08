@@ -29,6 +29,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import copy
+import graphlib
 import os
 import sys
 import subprocess
@@ -291,6 +292,14 @@ class DeviceTree(DeviceTreeInfo):
 		if not self.has_any_properties():
 			logging.warning('{} has no properties and may match with any other devicetree'.format(os.path.basename(self.filename)))
 
+	def list_props(self, node):
+		r = subprocess.run(["fdtget", "-p", self.filename, node],
+			check=False, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+		if r.returncode != 0:
+			return []
+		out = r.stdout.decode("utf-8").strip()
+		return out.splitlines()[:-1]
+
 	def get_prop(self, node, property, prop_type='i', check_output=True):
 		r = subprocess.run(["fdtget", "-t", prop_type, self.filename, node, property],
 			check=check_output, stdout=subprocess.PIPE,
@@ -458,6 +467,28 @@ class MergedDeviceTree(object):
 		for mdt in self.merged_devicetrees:
 			yield mdt.save(name, out_dir)
 
+def create_adjacency(devicetrees):
+	graph = {}
+	symbol_map = {}
+
+	for dt in devicetrees:
+		symbols = dt.list_props('/__symbols__')
+		for symbol in symbols:
+			symbol_dts = symbol_map.setdefault(symbol, [])
+			symbol_dts.append(dt.filename)
+
+	for dt in devicetrees:
+		graph[dt.filename] = set()
+
+		fixups = dt.list_props('/__fixups__')
+		for fixup in fixups:
+			if fixup not in symbol_map:
+				continue
+
+			graph[dt.filename].update(symbol_map[fixup])
+
+	return graph
+
 def parse_dt_files(dt_folder):
 	devicetrees = []
 	for root, dirs, files in os.walk(dt_folder):
@@ -466,6 +497,14 @@ def parse_dt_files(dt_folder):
 				continue
 			filepath = os.path.join(root, filename)
 			devicetrees.append(DeviceTree(filepath))
+	return devicetrees
+
+def parse_tech_dt_files(dt_folder):
+	devicetrees = parse_dt_files(dt_folder)
+	graph = create_adjacency(devicetrees)
+	order = graphlib.TopologicalSorter(graph).static_order()
+	order_index = {node: i for i, node in enumerate(order)}
+	devicetrees.sort(key=lambda dt: order_index[dt.filename])
 	return devicetrees
 
 def main():
@@ -487,7 +526,7 @@ def main():
 	logging.info('Parsed bases: \n{}'.format(all_bases))
 
 	logging.info('Parsing techpack dtb files from {}'.format(args.techpack))
-	techpacks = parse_dt_files(args.techpack)
+	techpacks = parse_tech_dt_files(args.techpack)
 	all_techpacks = '\n'.join(list(map(lambda x: str(x), techpacks)))
 	logging.info('Parsed techpacks: \n{}'.format(all_techpacks))
 
