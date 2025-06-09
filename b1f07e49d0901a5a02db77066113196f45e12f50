@@ -70,6 +70,24 @@
       "parentUuid": "a2ad0d93_83fd90e3",
       "revId": "b1f07e49d0901a5a02db77066113196f45e12f50",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ed1ee3e_c475eb1d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-06-09T17:54:00Z",
+      "side": 1,
+      "message": "doesn\u0027t matter, cuttlefish would just use its own service\n\nadding `override` flag here would be invalid for other targets",
+      "parentUuid": "38cacaa8_ac5fe7be",
+      "revId": "b1f07e49d0901a5a02db77066113196f45e12f50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
