@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "242c8a86_14e7c548",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-06-09T18:24:51Z",
+      "side": 1,
+      "message": "Kinda unexpected since zuma and friends also have it. but dup service name is sad indeed",
+      "revId": "6b8100b68f04f6cb4a7b735a10a324c205b1ef85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
