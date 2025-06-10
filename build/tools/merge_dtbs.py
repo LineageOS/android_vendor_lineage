@@ -499,9 +499,13 @@ def parse_dt_files(dt_folder):
 def parse_tech_dt_files(dt_folder):
 	devicetrees = parse_dt_files(dt_folder)
 	graph = create_adjacency(devicetrees)
-	order = graphlib.TopologicalSorter(graph).static_order()
-	order_index = {node: i for i, node in enumerate(order)}
-	devicetrees.sort(key=lambda dt: order_index[dt.filename])
+	try:
+		order = graphlib.TopologicalSorter(graph).static_order()
+		order_index = {node: i for i, node in enumerate(order)}
+		devicetrees.sort(key=lambda dt: order_index[dt.filename])
+	except graphlib.CycleError:
+		pass
+
 	return devicetrees
 
 def main():
