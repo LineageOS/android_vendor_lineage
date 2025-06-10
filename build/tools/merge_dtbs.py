@@ -473,7 +473,7 @@ def create_adjacency(devicetrees):
 
 	for dt in devicetrees:
 		for symbol in dt.list_props('/__symbols__'):
-			symbol_map.setdefault(symbol, []).append(dt.filename)
+			symbol_map.setdefault(symbol, []).append(dt)
 
 	for dt in devicetrees:
 		graph[dt.filename] = set()
@@ -482,7 +482,10 @@ def create_adjacency(devicetrees):
 			if fixup not in symbol_map:
 				continue
 
-			graph[dt.filename].update(symbol_map[fixup])
+			for symbol_dt in symbol_map[fixup]:
+				if dt == symbol_dt:
+					assert not len(graph[dt.filename])
+					graph[dt.filename].add(symbol_dt)
 
 	return graph
 
@@ -499,9 +502,13 @@ def parse_dt_files(dt_folder):
 def parse_tech_dt_files(dt_folder):
 	devicetrees = parse_dt_files(dt_folder)
 	graph = create_adjacency(devicetrees)
-	order = graphlib.TopologicalSorter(graph).static_order()
-	order_index = {node: i for i, node in enumerate(order)}
-	devicetrees.sort(key=lambda dt: order_index[dt.filename])
+	try:
+		order = graphlib.TopologicalSorter(graph).static_order()
+		order_index = {node: i for i, node in enumerate(order)}
+		devicetrees.sort(key=lambda dt: order_index[dt.filename])
+	except graphlib.CycleError:
+		pass
+
 	return devicetrees
 
 def main():
