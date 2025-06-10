@@ -1,15 +1,15 @@
 # Entire file updated manually
-readonly android_version=15 # For update-build-desc-fingerprint.sh
-readonly aosp_tag_match=android-15.0 # For update-device-vars.sh
+readonly android_version=16 # For update-build-desc-fingerprint.sh
+readonly aosp_tag_match=android-16.0 # For update-device-vars.sh
 
-readonly os_branch=lineage-22.2
-readonly device_branch=lineage-22.2
+readonly os_branch=lineage-23.0
+readonly device_branch=lineage-23.0
 
-readonly prev_common_aosp_tag=android-15.0.0_r26 # Apr 2025, Pixel 6, Tablet, 9
-readonly common_aosp_tag=android-15.0.0_r32 # May 2025, Pixel 6, Tablet, 9
+readonly prev_common_aosp_tag=android-15.0.0_r32 # May 2025, Pixel 6, Tablet, 9
+readonly common_aosp_tag=android-16.0.0_r1 # June 2025, Android 16
 
-readonly common_aosp_build_id=BP1A.250505.005 # May 2025, Pixel 6, Tablet, 9
+readonly common_aosp_build_id=BP2A.250605.031.A2 # June 2025, Android 16
 
-readonly topic=V_asb_2025-05
+readonly topic=B_asb_2025-06
 
 readonly merge_method="merge"

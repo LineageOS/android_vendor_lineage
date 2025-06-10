@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP1A.250505.005.B1"
+readonly build_id="BP2A.250605.031.A2"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r28"
-readonly aosp_tag="android-15.0.0_r34"
+readonly prev_aosp_tag="android-15.0.0_r34"
+readonly aosp_tag="unknown"
 
-readonly build_number="13277630"
+readonly build_number="13578606"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/shiba-bp1a.250505.005.b1-factory-afdf8d90.zip"
-readonly image_sha256="afdf8d90c7011d3834537868a69f4e34f4e5fa4b94572b71598b23caf3d7f320"
+readonly image_url="https://dl.google.com/dl/android/aosp/shiba-bp2a.250605.031.a2-factory-4453bca2.zip"
+readonly image_sha256="4453bca2af28baf052b7c55046e255d45b3e70e5ab368c7b92d814abfc616679"
 
-readonly flash_url="https://flash.android.com/build/13277630?target=shiba-user&signed"
+readonly flash_url="https://flash.android.com/build/13578606?target=shiba-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-bp1a.250505.005.b1-6214dfec.zip"
-readonly ota_sha256="6214dfec838ae04545749778c194bc16420c313e854392d1e6ae17a06d2f9e26"
+readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-bp2a.250605.031.a2-410a5c37.zip"
+readonly ota_sha256="410a5c373b4c4552663db2634c96d857f91b4522ad4d8d9d395f024d341da6f7"
 
-readonly security_patch="2025-05-05"
+readonly security_patch="unknown"

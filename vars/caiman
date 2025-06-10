@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP1A.250505.005"
+readonly build_id="BP2A.250605.031.A2"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r26"
-readonly aosp_tag="android-15.0.0_r32"
+readonly prev_aosp_tag="android-15.0.0_r32"
+readonly aosp_tag="unknown"
 
-readonly build_number="13277524"
+readonly build_number="13578606"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/caiman-bp1a.250505.005-factory-f158d94e.zip"
-readonly image_sha256="f158d94e5e9209ed9b22a4a4d81b1ae70a1631410adf75d2a2a8297d02d7363a"
+readonly image_url="https://dl.google.com/dl/android/aosp/caiman-bp2a.250605.031.a2-factory-ff281827.zip"
+readonly image_sha256="ff28182737365d31b5a40033c943ad820507fa7e68a7cd8735cd220cdf78bb0e"
 
-readonly flash_url="https://flash.android.com/build/13277524?target=caiman-user&signed"
+readonly flash_url="https://flash.android.com/build/13578606?target=caiman-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/caiman-ota-bp1a.250505.005-fa38a01c.zip"
-readonly ota_sha256="fa38a01c7f3eb8a96b6f9891a5db2b5b7d0492b10087981c0dae4ab3e313b7cd"
+readonly ota_url="https://dl.google.com/dl/android/aosp/caiman-ota-bp2a.250605.031.a2-3748a4e1.zip"
+readonly ota_sha256="3748a4e149c9691eec8c0a2cdb16b99c2cc252d967878c9c354ed805ca072a1c"
 
-readonly security_patch="2025-05-05"
+readonly security_patch="unknown"

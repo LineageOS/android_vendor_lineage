@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP1A.250505.005"
+readonly build_id="BP2A.250605.031.A2"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r26"
-readonly aosp_tag="android-15.0.0_r32"
+readonly prev_aosp_tag="android-15.0.0_r32"
+readonly aosp_tag="unknown"
 
-readonly build_number="13277524"
+readonly build_number="13578606"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tokay-bp1a.250505.005-factory-5e869188.zip"
-readonly image_sha256="5e8691883c5004c15b72ab941533a44f164b2b6bdbf8393c8987da42ec31bbd8"
+readonly image_url="https://dl.google.com/dl/android/aosp/tokay-bp2a.250605.031.a2-factory-df553d50.zip"
+readonly image_sha256="df553d50ff121efc328affcfccb520a17ba4fd5b5d8321e222e17e13a3e10b91"
 
-readonly flash_url="https://flash.android.com/build/13277524?target=tokay-user&signed"
+readonly flash_url="https://flash.android.com/build/13578606?target=tokay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-bp1a.250505.005-6c165ea5.zip"
-readonly ota_sha256="6c165ea5f9a99e1effffb31924ad65067b99ac74c9741720546633eeff607148"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-bp2a.250605.031.a2-7cccc3b7.zip"
+readonly ota_sha256="7cccc3b7c2354bf1c5943ebda78ecb7beedf5f5bdf9fd0c5e1e9f75752313f61"
 
-readonly security_patch="2025-05-05"
+readonly security_patch="unknown"

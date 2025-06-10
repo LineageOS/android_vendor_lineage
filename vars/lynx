@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP1A.250505.005.B1"
+readonly build_id="BP2A.250605.031.A2"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-15.0.0_r28"
-readonly aosp_tag="android-15.0.0_r34"
+readonly prev_aosp_tag="android-15.0.0_r34"
+readonly aosp_tag="unknown"
 
-readonly build_number="13277630"
+readonly build_number="13578606"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-bp1a.250505.005.b1-factory-45a1393f.zip"
-readonly image_sha256="45a1393fe222246fd7b2918e072b52c6e34a4048fcf3f6b8c840632b1acd128b"
+readonly image_url="https://dl.google.com/dl/android/aosp/lynx-bp2a.250605.031.a2-factory-4246da73.zip"
+readonly image_sha256="4246da73f42a97389351bd67dd0a766d7310ee10958e3569fc574ad48e86c81b"
 
-readonly flash_url="https://flash.android.com/build/13277630?target=lynx-user&signed"
+readonly flash_url="https://flash.android.com/build/13578606?target=lynx-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-bp1a.250505.005.b1-db24813f.zip"
-readonly ota_sha256="db24813f3c561f792a19c4015dabe2220e8ee2497ee435f8e6ace7a0a229f815"
+readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-bp2a.250605.031.a2-8c4a66d1.zip"
+readonly ota_sha256="8c4a66d1b4c2516a87763090d39221b2479f39b2f603be5f1cab7dd6eb779087"
 
-readonly security_patch="2025-05-05"
+readonly security_patch="unknown"
