@@ -12,7 +12,7 @@ readonly build_id="BP2A.250605.031.A2"
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="android-15.0.0_r32"
-readonly aosp_tag="unknown"
+readonly aosp_tag="aml_tz6_351400020"
 
 readonly build_number="13578606"
 
