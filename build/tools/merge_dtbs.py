@@ -266,6 +266,7 @@ class DeviceTree(DeviceTreeInfo):
 	EXTRA_KEYS = (
 		('oplus,hw-id', 1),
 		('oplus,project-id', 1),
+		('qcom,oem-id', 1),
 		('xiaomi,miboard-id', 2),
 	)
 
