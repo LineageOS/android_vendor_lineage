@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settings.flags"
+  name: "enable_nested_toggle_switches"
+  state: ENABLED
+  permission: READ_ONLY
+}
