@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.launcher3"
+  name: "enable_launcher_icon_shapes"
+  state: ENABLED
+  permission: READ_ONLY
+}

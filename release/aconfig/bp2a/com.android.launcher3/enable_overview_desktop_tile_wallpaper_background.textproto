@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.launcher3"
+  name: "enable_overview_desktop_tile_wallpaper_background"
+  state: ENABLED
+  permission: READ_ONLY
+}
