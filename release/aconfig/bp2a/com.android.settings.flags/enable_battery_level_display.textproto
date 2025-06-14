@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settings.flags"
+  name: "enable_battery_level_display"
+  state: ENABLED
+  permission: READ_ONLY
+}
