@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settings.flags"
+  name: "enable_nearby_share_entrypoint"
+  state: ENABLED
+  permission: READ_ONLY
+}

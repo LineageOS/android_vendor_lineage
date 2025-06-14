@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settings.flags"
+  name: "updated_suggestion_card_aosp"
+  state: ENABLED
+  permission: READ_ONLY
+}
