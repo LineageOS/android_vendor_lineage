@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "glanceable_hub_direct_edit_mode"
+  state: ENABLED
+  permission: READ_ONLY
+}

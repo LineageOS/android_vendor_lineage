@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "notifications_redesign_guts"
+  state: ENABLED
+  permission: READ_ONLY
+}

@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "status_bar_popup_chips"
+  state: ENABLED
+  permission: READ_ONLY
+}
