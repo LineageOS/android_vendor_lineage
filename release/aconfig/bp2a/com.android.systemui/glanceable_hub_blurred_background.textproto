@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "glanceable_hub_blurred_background"
+  state: ENABLED
+  permission: READ_ONLY
+}

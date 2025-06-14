@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "status_bar_chips_return_animations"
+  state: ENABLED
+  permission: READ_ONLY
+}

@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "glanceable_hub_allow_keyguard_when_dreaming"
+  state: ENABLED
+  permission: READ_ONLY
+}
