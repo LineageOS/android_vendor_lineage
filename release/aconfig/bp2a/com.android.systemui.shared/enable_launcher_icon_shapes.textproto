@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui.shared"
+  name: "enable_launcher_icon_shapes"
+  state: ENABLED
+  permission: READ_ONLY
+}

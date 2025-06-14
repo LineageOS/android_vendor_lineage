@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui.shared"
+  name: "extended_wallpaper_effects"
+  state: ENABLED
+  permission: READ_ONLY
+}
