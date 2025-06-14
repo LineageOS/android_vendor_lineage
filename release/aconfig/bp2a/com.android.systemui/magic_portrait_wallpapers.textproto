@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "magic_portrait_wallpapers"
+  state: ENABLED
+  permission: READ_ONLY
+}

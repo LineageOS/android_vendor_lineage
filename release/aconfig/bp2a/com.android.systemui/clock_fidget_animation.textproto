@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "clock_fidget_animation"
+  state: ENABLED
+  permission: READ_ONLY
+}
