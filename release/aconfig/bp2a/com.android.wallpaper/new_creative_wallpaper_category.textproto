@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.wallpaper"
+  name: "new_creative_wallpaper_category"
+  state: ENABLED
+  permission: READ_ONLY
+}
