@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settings.flags"
+  name: "enable_hub_mode_settings_on_mobile"
+  state: ENABLED
+  permission: READ_ONLY
+}
