@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui.shared"
+  name: "smartspace_ui_update_resources"
+  state: ENABLED
+  permission: READ_ONLY
+}

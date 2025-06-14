@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui.shared"
+  name: "use_preferred_image_editor"
+  state: ENABLED
+  permission: READ_ONLY
+}

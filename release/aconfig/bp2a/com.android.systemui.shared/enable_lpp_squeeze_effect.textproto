@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui.shared"
+  name: "enable_lpp_squeeze_effect"
+  state: ENABLED
+  permission: READ_ONLY
+}
