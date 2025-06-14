@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "notifications_redesign_footer_view"
+  state: ENABLED
+  permission: READ_ONLY
+}

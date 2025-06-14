@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "bp_colors"
+  state: ENABLED
+  permission: READ_ONLY
+}
