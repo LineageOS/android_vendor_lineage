@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "modes_ui_dialog_paging"
+  state: ENABLED
+  permission: READ_ONLY
+}

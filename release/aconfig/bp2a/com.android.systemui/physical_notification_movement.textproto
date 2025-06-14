@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "physical_notification_movement"
+  state: ENABLED
+  permission: READ_ONLY
+}
