@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "media_controls_a11y_colors"
+  state: ENABLED
+  permission: READ_ONLY
+}

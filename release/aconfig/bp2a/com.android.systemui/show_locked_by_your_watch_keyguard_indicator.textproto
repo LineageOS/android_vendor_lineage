@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "show_locked_by_your_watch_keyguard_indicator"
+  state: ENABLED
+  permission: READ_ONLY
+}

@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "output_switcher_redesign"
+  state: ENABLED
+  permission: READ_ONLY
+}

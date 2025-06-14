@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "notification_background_tint_optimization"
+  state: ENABLED
+  permission: READ_ONLY
+}

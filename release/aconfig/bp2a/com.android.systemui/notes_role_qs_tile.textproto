@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "notes_role_qs_tile"
+  state: ENABLED
+  permission: READ_ONLY
+}

@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "shade_header_font_update"
+  state: ENABLED
+  permission: READ_ONLY
+}
