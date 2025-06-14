@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui.shared"
+  name: "new_customization_picker_ui"
+  state: ENABLED
+  permission: READ_ONLY
+}
