@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settingslib.widget.theme.flags"
+  name: "is_expressive_design_enabled"
+  state: ENABLED
+  permission: READ_ONLY
+}
