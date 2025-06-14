@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.launcher3"
+  name: "predictive_back_to_home_blur"
+  state: ENABLED
+  permission: READ_ONLY
+}

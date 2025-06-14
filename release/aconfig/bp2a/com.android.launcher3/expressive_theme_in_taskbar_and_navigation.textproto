@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.launcher3"
+  name: "expressive_theme_in_taskbar_and_navigation"
+  state: ENABLED
+  permission: READ_ONLY
+}
