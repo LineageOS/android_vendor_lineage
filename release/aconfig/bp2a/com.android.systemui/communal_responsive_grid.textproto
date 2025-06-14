@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "communal_responsive_grid"
+  state: ENABLED
+  permission: READ_ONLY
+}

@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "lockscreen_font"
+  state: ENABLED
+  permission: READ_ONLY
+}

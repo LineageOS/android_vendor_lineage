@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "icon_refresh_2025"
+  state: ENABLED
+  permission: READ_ONLY
+}

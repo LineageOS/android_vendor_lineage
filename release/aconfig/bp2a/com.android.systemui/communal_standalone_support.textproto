@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "communal_standalone_support"
+  state: ENABLED
+  permission: READ_ONLY
+}

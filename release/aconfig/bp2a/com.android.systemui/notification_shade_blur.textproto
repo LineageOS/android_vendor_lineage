@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "notification_shade_blur"
+  state: ENABLED
+  permission: READ_ONLY
+}

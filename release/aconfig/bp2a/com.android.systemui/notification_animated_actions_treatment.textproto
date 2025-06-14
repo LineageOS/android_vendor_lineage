@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "notification_animated_actions_treatment"
+  state: ENABLED
+  permission: READ_ONLY
+}

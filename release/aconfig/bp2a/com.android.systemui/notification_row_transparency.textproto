@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "notification_row_transparency"
+  state: ENABLED
+  permission: READ_ONLY
+}
