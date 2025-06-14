@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.launcher3"
+  name: "enable_expressive_dismiss_task_motion"
+  state: ENABLED
+  permission: READ_ONLY
+}
