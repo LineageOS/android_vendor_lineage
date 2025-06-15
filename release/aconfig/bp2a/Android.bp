@@ -14,9 +14,7 @@
 // limitations under the License.
 
 aconfig_value_set {
-    name: "aconfig_value_set-lineage-bp1a",
+    name: "aconfig_value_set-lineage-bp2a",
     values: [
-        "aconfig-values-bp1a-android.hardware.biometrics-all",
-        "aconfig-values-bp1a-com.android.window.flags-all",
     ],
 }

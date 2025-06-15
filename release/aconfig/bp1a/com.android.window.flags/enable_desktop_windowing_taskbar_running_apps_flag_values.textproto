@@ -1,6 +1,0 @@
-flag_value {
-  package: "com.android.window.flags"
-  name: "enable_desktop_windowing_taskbar_running_apps"
-  state: ENABLED
-  permission: READ_ONLY
-}

@@ -1,6 +1,0 @@
-flag_value {
-  package: "android.hardware.biometrics"
-  name: "screen_off_unlock_udfps"
-  state: ENABLED
-  permission: READ_ONLY
-}
