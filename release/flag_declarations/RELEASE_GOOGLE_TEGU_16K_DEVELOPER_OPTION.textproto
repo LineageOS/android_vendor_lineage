@@ -1,0 +1,8 @@
+name: "RELEASE_GOOGLE_TEGU_16K_DEVELOPER_OPTION"
+namespace: "android_UNKNOWN"
+description: "Enables 16KB developer option in settings"
+value: {
+  bool_value: false
+}
+workflow: LAUNCH
+containers: "vendor"
