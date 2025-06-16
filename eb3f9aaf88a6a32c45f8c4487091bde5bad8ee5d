@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11fcc12a_975c4731",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31655
+      },
+      "writtenOn": "2025-06-16T16:25:52Z",
+      "side": 1,
+      "message": "move this chain to branch lineage-23.0?",
+      "revId": "eb3f9aaf88a6a32c45f8c4487091bde5bad8ee5d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
