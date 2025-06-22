@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
 # Copyright (C) 2013-2015 The CyanogenMod Project
-#           (C) 2017-2024 The LineageOS Project
+#           (C) 2017-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -119,24 +119,28 @@ def fetch_query_via_ssh(remote_url, query):
     return reviews
 
 
-def build_query_url(remote_url, query, auth):
+def build_query_url(remote_url, query, auth, start=0):
     p = urllib.parse.urlparse(remote_url)._asdict()
     p["path"] = ("/a" if auth else "") + "/changes"
     p["query"] = urllib.parse.urlencode(
         {
             "q": query,
             "o": ["CURRENT_REVISION", "ALL_REVISIONS", "ALL_COMMITS"],
+            "start": start,
         },
         doseq=True,
     )
     return urllib.parse.unquote(urllib.parse.urlunparse(urllib.parse.ParseResult(**p)))
 
 
-def fetch_query_via_http(remote_url, query, auth=True):
+def fetch_query_via_http(remote_url, query, auth=True, start=0):
     """Given a query, fetch the change numbers via http"""
+    all_reviews = []
+    start_index = start
+    has_more_changes = True
+    username = password = ""
     if auth:
         gerritrc = os.path.expanduser("~/.gerritrc")
-        username = password = ""
         if os.path.isfile(gerritrc):
             with open(gerritrc, "r") as f:
                 for line in f:
@@ -144,28 +148,34 @@ def fetch_query_via_http(remote_url, query, auth=True):
                     if parts[0] in remote_url:
                         username, password = parts[1], parts[2]
 
-        if username and password:
-            url = build_query_url(remote_url, query, auth)
-            password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
-            password_mgr.add_password(None, url, username, password)
-            auth_handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
-            opener = urllib.request.build_opener(auth_handler)
-            response = opener.open(url)
-            if response.getcode() != 200:
-                # They didn't get good authorization or data, Let's try the old way
-                return fetch_query_via_http(remote_url, query, False)
+    while has_more_changes:
+        if auth:
+            if username and password:
+                url = build_query_url(remote_url, query, auth, start_index)
+                password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
+                password_mgr.add_password(None, url, username, password)
+                auth_handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
+                opener = urllib.request.build_opener(auth_handler)
+                response = opener.open(url)
+                if response.getcode() != 200:
+                    # They didn't get good authorization or data, Let's try the old way
+                    return fetch_query_via_http(remote_url, query, False, start_index)
+            else:
+                return fetch_query_via_http(remote_url, query, False, start_index)
         else:
-            return fetch_query_via_http(remote_url, query, False)
-    else:
-        url = build_query_url(remote_url, query, auth)
-        response = urllib.request.urlopen(url)
+            url = build_query_url(remote_url, query, auth, start_index)
+            response = urllib.request.urlopen(url)
 
-    data = response.read().decode("utf-8")
-    reviews = json.loads(data[5:])
-    for review in reviews:
-        review["number"] = review.pop("_number")
+        data = response.read().decode("utf-8")
+        reviews = json.loads(data[5:])
+        for review in reviews:
+            review["number"] = review.pop("_number")
+        all_reviews.extend(reviews)
+        if not reviews[-1].get("_more_changes"):
+            has_more_changes = False
+        start_index += len(reviews)
 
-    return reviews
+    return all_reviews
 
 
 def fetch_query(remote_url, query):
