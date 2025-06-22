@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TrebuchetOverlay",
+    name: "Launcher3Overlay",
     product_specific: true,
 }
