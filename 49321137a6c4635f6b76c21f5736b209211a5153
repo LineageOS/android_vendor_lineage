@@ -22,6 +22,30 @@
       },
       "revId": "49321137a6c4635f6b76c21f5736b209211a5153",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd165348_be00abc1",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2025-06-23T10:14:00Z",
+      "side": 1,
+      "message": "Yup, should be possible. Had a different logic to omit the argument completely if not dpecified but decided to go with 0 by default. That simplifies the L#129 as well\nWill do later",
+      "parentUuid": "cb474b7a_1294384b",
+      "range": {
+        "startLine": 122,
+        "startChar": 45,
+        "endLine": 122,
+        "endChar": 55
+      },
+      "revId": "49321137a6c4635f6b76c21f5736b209211a5153",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
