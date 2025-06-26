@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c4a927d_810102b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-06-26T21:08:06Z",
+      "side": 1,
+      "message": "\u003e $ . build/envsetup.sh\n\u003e $ get_build_var KERNEL_CLANG_VERSION\n\u003e clang-r536225",
+      "revId": "a8b479083d93f0db8b08331b98e487dcec0dfa98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
