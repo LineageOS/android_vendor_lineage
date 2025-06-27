@@ -14,14 +14,6 @@
         </interface>
     </hal>
     <!-- Charging -->
-    <hal format="hidl" optional="true">
-        <name>vendor.lineage.fastcharge</name>
-        <version>1.0</version>
-        <interface>
-            <name>IFastCharge</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>vendor.lineage.health</name>
         <version>1-2</version>
