@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b58a9902_2755728f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-06-27T09:50:39Z",
+      "side": 1,
+      "message": "Maybe turning warning into error until we ship would be better for the more distracted maintainers.",
+      "revId": "e0dbb93532f6e93d3bf5f4b79ca921f9343fdaed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
