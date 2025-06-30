@@ -16,6 +16,24 @@
       "message": "In Settings/storage when clicking on the dropdown to switch the view to the installed/formatted sdcard the Settings app crashes:\nhttps://gist.github.com/sevenrock/5f85e44695097fca3e7bce5cdc3458f0\n\nThe crash does not occur without Material Design 3 Expressive.\n\nThe crash does occur with the sdcard being formatted either as portable or as external.",
       "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a33ec422_b0cd19d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28328
+      },
+      "writtenOn": "2025-06-30T14:45:27Z",
+      "side": 1,
+      "message": "Here\u0027s a fix for that.",
+      "parentUuid": "f2bb53fb_8e5c4b4e",
+      "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
