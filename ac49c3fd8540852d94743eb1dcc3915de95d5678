@@ -86,6 +86,24 @@
       "message": "@Joey: Is the follow-up patch needed as well?\nhttps://github.com/Evolution-X/packages_apps_Settings/commit/5cc834e99576b45c23ad2da483ecd3e8ea365aa6",
       "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ef7447e_92d82453",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28328
+      },
+      "writtenOn": "2025-06-30T15:23:38Z",
+      "side": 1,
+      "message": "\u003e @Joey: Is the follow-up patch needed as well?\n\u003e https://github.com/Evolution-X/packages_apps_Settings/commit/5cc834e99576b45c23ad2da483ecd3e8ea365aa6\n\nCorrect, maybe it can be squashed into a single patch.",
+      "parentUuid": "611e6fcf_de2a231b",
+      "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
