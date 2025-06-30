@@ -34,6 +34,41 @@
       "parentUuid": "f2bb53fb_8e5c4b4e",
       "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "deb5d992_1054d579",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28328
+      },
+      "writtenOn": "2025-06-30T14:46:06Z",
+      "side": 1,
+      "message": "Forgot the fix link",
+      "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65fd176e_f0173a4f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28328
+      },
+      "writtenOn": "2025-06-30T14:46:06Z",
+      "side": 1,
+      "message": "\u003e Here\u0027s a fix for that.\n\nhttps://github.com/Evolution-X/packages_apps_Settings/commit/f7bfd54bb7702095a4e1ec30dccc0b2e14668d70",
+      "parentUuid": "a33ec422_b0cd19d5",
+      "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
