@@ -104,6 +104,24 @@
       "parentUuid": "611e6fcf_de2a231b",
       "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24c48d2e_183701a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2025-06-30T18:46:05Z",
+      "side": 1,
+      "message": "Thanks! Applying both patches solved the problem, sdcard storage data works again.",
+      "parentUuid": "7ef7447e_92d82453",
+      "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
