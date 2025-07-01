@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53c821c6_0b969cb7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-01T22:12:05Z",
+      "side": 1,
+      "message": "in current state feedback from Mike and myself is no. 10mb+ of ringtones is a LOT mid cycle. We have some devices that with gapps are pretty close and this may breakbackuptool for them... re-stage for thoughts on 23.0 - but even then we may not want this due to size.",
+      "revId": "d39a889a6698ea2c8ece2b4c2786e28462ec7329",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
