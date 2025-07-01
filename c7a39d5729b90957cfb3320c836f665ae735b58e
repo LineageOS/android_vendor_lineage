@@ -16,6 +16,23 @@
       "message": "I have a Z01R user who said he had zero internet before this change, and when I made him a test build with this commit it fixed it for him. I asked him to also reply here as well",
       "revId": "c7a39d5729b90957cfb3320c836f665ae735b58e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba5ed49c_31e1cd40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35556
+      },
+      "writtenOn": "2025-07-01T02:02:07Z",
+      "side": 1,
+      "message": "Before this change, on Z01R China Telecom didn\u0027t work. Marc\u0027s test build with this change fixed it for me.It helped me a lot.",
+      "revId": "c7a39d5729b90957cfb3320c836f665ae735b58e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
