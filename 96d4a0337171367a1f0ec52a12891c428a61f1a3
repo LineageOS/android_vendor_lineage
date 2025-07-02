@@ -16,6 +16,23 @@
       "message": "occur after https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/434624",
       "revId": "96d4a0337171367a1f0ec52a12891c428a61f1a3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b44d2e05_e291334c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-02T22:11:01Z",
+      "side": 1,
+      "message": "so you commit msg is right, your commit is right, your Gerrit comment is wrong. That change has nothing to do with it... go revert it to confirm for yourself.\n\nEither way, this is good to go.",
+      "revId": "96d4a0337171367a1f0ec52a12891c428a61f1a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
