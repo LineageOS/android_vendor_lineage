@@ -485,7 +485,6 @@ def create_adjacency(devicetrees):
 
 			for symbol_dt in symbol_map[fixup]:
 				if dt == symbol_dt:
-					assert not len(graph[dt.filename])
 					graph[dt.filename].add(symbol_dt)
 
 	return graph
