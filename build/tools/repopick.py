@@ -330,6 +330,11 @@ def main():
         help="max number of changes to pick in parallel",
     )
     args = parser.parse_args()
+
+    if len(sys.argv)==1:
+        parser.print_help()
+        sys.exit(1)
+
     if not args.start_branch and args.abandon_first:
         parser.error(
             "if --abandon-first is set, you must also give the branch name with --start-branch"
