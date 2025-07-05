@@ -233,7 +233,7 @@ def main():
     )
     parser.add_argument(
         "change_number",
-        nargs="+",
+        nargs="*",
         help="change number to cherry pick. Use {change number}/{patchset number} to get a specific revision.",
     )
     parser.add_argument(
