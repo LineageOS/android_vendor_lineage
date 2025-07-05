@@ -25,3 +25,9 @@ qcom_group_revision[lanai-audio]=AUDIO.LA.9.0.r1-08500-lanai.0
 qcom_group_revision[lanai-vendor]=LA.VENDOR.14.3.0.r1-20500-lanai.QSSI15.0
 # https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.4.0.r2
 qcom_group_revision[lanai-video]=VIDEO.LA.4.0.r2-07400-lanai.0
+# https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO_HANDSET.LA.10.0.r1
+qcom_group_revision[pakala-audio]=AUDIO_HANDSET.LA.10.0.r1-06400-pakala.0
+# https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.15.4.0.r1
+qcom_group_revision[pakala-vendor]=LA.VENDOR.15.4.0.r1-17900-pakala.0
+# https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.5.0.r1
+qcom_group_revision[pakala-video]=VIDEO.LA.5.0.r1-06200-pakala.0
