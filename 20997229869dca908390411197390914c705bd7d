@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71d91094_299f8685",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19286
+      },
+      "writtenOn": "2025-07-05T10:05:59Z",
+      "side": 1,
+      "message": "ollast fix sadly broke f.ex. -t option.",
+      "revId": "20997229869dca908390411197390914c705bd7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
