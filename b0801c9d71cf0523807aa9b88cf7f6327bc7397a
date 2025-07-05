@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c3feba1_abb2abd8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35551
+      },
+      "writtenOn": "2025-07-05T17:32:24Z",
+      "side": 1,
+      "message": "hello 0x, for 2nd build that make error in\n\nlib/modules//modules.alias: not normalized\n\nso temp need for  rm -rf out/target/product/mi89x7/obj/PACKAGING/system_intermediates \n\nany resolution clear it for next build",
+      "revId": "b0801c9d71cf0523807aa9b88cf7f6327bc7397a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
