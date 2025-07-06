@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.server.notification"
+  name: "nm_binder_perf_throttle_effects_suppressor_broadcast"
+  state: ENABLED
+  permission: READ_ONLY
+}
