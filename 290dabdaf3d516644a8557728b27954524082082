@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1cad300_7345124c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-06T00:20:36Z",
+      "side": 1,
+      "message": "\u003e  out/target/product/dodge/system_dlkm/lib/modules/zram.ko\n\u003e  out/target/product/salami/system_dlkm/lib/modules/android15-5.15/zram.ko",
+      "revId": "290dabdaf3d516644a8557728b27954524082082",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
