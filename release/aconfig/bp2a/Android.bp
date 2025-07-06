@@ -25,6 +25,7 @@ aconfig_value_set {
         "aconfig-values-bp2a-com.android.settingslib.widget.theme.flags-all",
         "aconfig-values-bp2a-com.android.systemui-all",
         "aconfig-values-bp2a-com.android.systemui.shared-all",
+        "aconfig-values-bp2a-com.android.text.flags-all",
         "aconfig-values-bp2a-com.android.wallpaper-all",
     ],
 }

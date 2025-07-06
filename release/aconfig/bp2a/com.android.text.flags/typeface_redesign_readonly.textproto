@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.text.flags"
+  name: "typeface_redesign_readonly"
+  state: ENABLED
+  permission: READ_ONLY
+}
