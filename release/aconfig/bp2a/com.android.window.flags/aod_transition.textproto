@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.window.flags"
+  name: "aod_transition"
+  state: ENABLED
+  permission: READ_ONLY
+}
