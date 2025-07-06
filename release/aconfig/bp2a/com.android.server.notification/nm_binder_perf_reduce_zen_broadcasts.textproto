@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.server.notification"
+  name: "nm_binder_perf_reduce_zen_broadcasts"
+  state: ENABLED
+  permission: READ_ONLY
+}

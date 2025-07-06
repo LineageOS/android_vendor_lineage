@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.server.notification"
+  name: "notification_minimalism"
+  state: ENABLED
+  permission: READ_ONLY
+}
