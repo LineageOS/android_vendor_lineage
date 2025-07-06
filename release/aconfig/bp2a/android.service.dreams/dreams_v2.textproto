@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.service.dreams"
+  name: "dreams_v2"
+  state: ENABLED
+  permission: READ_ONLY
+}
