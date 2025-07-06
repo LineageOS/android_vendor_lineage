@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.app"
+  name: "notification_classification_ui"
+  state: ENABLED
+  permission: READ_ONLY
+}

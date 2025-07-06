@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.app"
+  name: "notifications_redesign_themed_app_icons"
+  state: ENABLED
+  permission: READ_ONLY
+}

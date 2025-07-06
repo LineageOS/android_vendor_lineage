@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.app"
+  name: "no_sbnholder"
+  state: ENABLED
+  permission: READ_ONLY
+}

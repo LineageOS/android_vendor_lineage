@@ -16,6 +16,7 @@
 aconfig_value_set {
     name: "aconfig_value_set-lineage-bp2a",
     values: [
+        "aconfig-values-bp2a-android.app-all",
         "aconfig-values-bp2a-com.android.launcher3-all",
         "aconfig-values-bp2a-com.android.settings.flags-all",
         "aconfig-values-bp2a-com.android.settingslib.flags-all",

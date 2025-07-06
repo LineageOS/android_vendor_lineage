@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.app"
+  name: "api_rich_ongoing"
+  state: ENABLED
+  permission: READ_ONLY
+}
