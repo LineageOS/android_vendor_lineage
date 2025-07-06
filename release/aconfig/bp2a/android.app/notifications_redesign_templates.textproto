@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.app"
+  name: "notifications_redesign_templates"
+  state: ENABLED
+  permission: READ_ONLY
+}

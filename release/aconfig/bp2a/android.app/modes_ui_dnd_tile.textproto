@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.app"
+  name: "modes_ui_dnd_tile"
+  state: ENABLED
+  permission: READ_ONLY
+}
