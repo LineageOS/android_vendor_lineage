@@ -52,6 +52,24 @@
       "parentUuid": "dfdd93a6_f55417ac",
       "revId": "db47576863cca524d115669dc34995d842fa5ee6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bec11622_a80841b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2025-07-07T06:19:08Z",
+      "side": 1,
+      "message": "By the way, try dropping the docs- I think no one needs them anyway.\nThey are 12MB for me.",
+      "parentUuid": "99a3fedb_3eecd408",
+      "revId": "db47576863cca524d115669dc34995d842fa5ee6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
