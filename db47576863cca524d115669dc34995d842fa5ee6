@@ -16,6 +16,24 @@
       "message": "These are just 3.75MB, if you\u0027re that low on space you probably have way more issues",
       "revId": "db47576863cca524d115669dc34995d842fa5ee6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfdd93a6_f55417ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-07T06:02:44Z",
+      "side": 1,
+      "message": "No, they\u0027re not.\n\nsystem_ext/usr/share/vim is 20 MB",
+      "parentUuid": "e97566c9_072cdccc",
+      "revId": "db47576863cca524d115669dc34995d842fa5ee6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
