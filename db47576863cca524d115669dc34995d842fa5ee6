@@ -34,6 +34,24 @@
       "parentUuid": "e97566c9_072cdccc",
       "revId": "db47576863cca524d115669dc34995d842fa5ee6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99a3fedb_3eecd408",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-07T06:04:26Z",
+      "side": 1,
+      "message": "On an $OUT that was just clobbered, then _just_ these tools built (and they don\u0027t have any real spidering deps), we get \n\nnolenjohnson@ODS-PROD:/mnt/out/out/lineage-22/target/product/taimen/system$ du -sh \n41M\t.",
+      "parentUuid": "dfdd93a6_f55417ac",
+      "revId": "db47576863cca524d115669dc34995d842fa5ee6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
