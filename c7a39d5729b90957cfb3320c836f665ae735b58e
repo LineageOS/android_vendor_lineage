@@ -33,6 +33,24 @@
       "message": "Before this change, on Z01R China Telecom didn\u0027t work. Marc\u0027s test build with this change fixed it for me.It helped me a lot.",
       "revId": "c7a39d5729b90957cfb3320c836f665ae735b58e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "55e4f0a8_548adfc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35584
+      },
+      "writtenOn": "2025-07-08T04:04:09Z",
+      "side": 1,
+      "message": "Hello Marc, I came here through the latest lineage-22.2-20250707-nightly-redfin-signed.zip [changelog](https://download.lineageos.org/devices/redfin/changes).\n\nI just started using LOS on redfin last week and my China Telecom SIM (MCC 460 MNC 11) still doesn\u0027t work out-of-the-box after this update. Is there anything I can do to make LOS work with Telecom on redfin too? (Submitting device info, testing builds, etc.) I wish I could submit patches myself but I have little technical knowledge.\n\nI couldn\u0027t find a better channel to get in touch with someone and help (not that I can help much) make this happen, so apologies if it\u0027s inappropriate to contact you for support this way and please just ignore this comment in that case.\n\n---\n\nSome technical details, if you\u0027d like to know more:\n\nBefore this update, my solution Magisk + [this module](https://github.com/stanislawrogasik/Pixel5-VoLTE-VoWiFi), and after applying the latest OTA update, my phone was no longer rooted and Magisk (and presumably this module as well) stopped working. I reinstalled Magisk and used it to patch the latest `boot.img`, flashed the patched img and rebooted, and somehow my SIM card services already started working, even after uninstalling Magisk afterward.\n\nWith Magisk already uninstalled, I then tried flashing the unpatched `boot.img` and the SIM stopped working again, so I flashed the patched img again and it resumed working. I have no idea what\u0027s happening.",
+      "parentUuid": "51bb923d_9c0c48bd",
+      "revId": "c7a39d5729b90957cfb3320c836f665ae735b58e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
