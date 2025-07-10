@@ -1,0 +1,4 @@
+name: "RELEASE_PLATFORM_SECURITY_PATCH"
+value {
+  string_value: "2025-07-01"
+}
