@@ -46,7 +46,18 @@ lineage_generator {
     name: "prebuilt_kernel_includes",
 
     // The headers extract command
-    cmd: "mkdir -p $(KERNEL_BUILD_OUT_PREFIX)$(genDir) && gzip -d < $(TARGET_PREBUILT_KERNEL_HEADERS) | tar -x -C $(KERNEL_BUILD_OUT_PREFIX)$(genDir) && vendor/lineage/tools/clean_headers.sh $(KERNEL_BUILD_OUT_PREFIX)$(genDir)",
+    cmd: "mkdir -p $(KERNEL_BUILD_OUT_PREFIX)$(genDir); " +
+         "if [ -n \"$(TARGET_KERNEL_PLATFORM_TARGET)\" ]; then " +
+         "    pushd $(KERNEL_PATH); " +
+         "    ./tools/bazel --output_user_root=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/bazel-out run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) //$(TARGET_KERNEL_SOURCE):$(TARGET_KERNEL_PLATFORM_TARGET)_uapi_headers_dist -- --destdir=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/dist; " +
+         "    popd; " +
+         "    gzip -d $(KERNEL_BUILD_OUT_PREFIX)$(genDir)/dist/kernel-uapi-headers.tar.gz; " +
+         "    tar -xf $(KERNEL_BUILD_OUT_PREFIX)$(genDir)/dist/kernel-uapi-headers.tar -C $(KERNEL_BUILD_OUT_PREFIX)$(genDir); " +
+         "else " +
+         "    gzip -dc $(TARGET_PREBUILT_KERNEL_HEADERS) > $(KERNEL_BUILD_OUT_PREFIX)$(genDir)/kernel-uapi-headers.tar; " +
+         "    tar -xf $(KERNEL_BUILD_OUT_PREFIX)$(genDir)/kernel-uapi-headers.tar -C $(KERNEL_BUILD_OUT_PREFIX)$(genDir); " +
+         "fi; " +
+         "vendor/lineage/tools/clean_headers.sh $(KERNEL_BUILD_OUT_PREFIX)$(genDir)",
 
     // Directories that can be imported by a cc_* module generated_headers property
     export_include_dirs: [
