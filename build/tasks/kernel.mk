@@ -76,6 +76,9 @@
 #
 #   TARGET_MERGE_DTBS_WILDCARD         = Optional, limits the .dtb files used to generate the
 #                                          final DTB image when using QCOM's merge_dtbs script.
+#
+#   TARGET_KERNEL_PLATFORM_TARGET      = Optional, enables building an external kernel
+#                                          platform tree, this specifies the base target name
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -149,7 +152,23 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
                 $(eval HAS_PREBUILT_KERNEL := true)))
     endif
 
-    ifneq ($(HAS_PREBUILT_KERNEL),)
+    ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
+        ifeq "$(wildcard $(abspath $(BUILD_TOP)/../kernel-$(TARGET_KERNEL_VERSION))/$(KERNEL_SRC) )" ""
+            $(warning ***************************************************************)
+            $(warning *                                                             *)
+            $(warning * No kernel platform source found.                            *)
+            $(warning * Please make sure your device is properly configured to      *)
+            $(warning * download the kernel repository to $(KERNEL_SRC))
+            $(warning *                                                             *)
+            $(warning ***************************************************************)
+            $(error "NO KERNEL")
+        endif
+        NEEDS_KERNEL_COPY := true
+        FULL_KERNEL_BUILD := false
+        TARGET_PREBUILT_KERNEL := $(KERNEL_OUT)/dist/$(BOARD_KERNEL_IMAGE_NAME)
+        TARGET_PREBUILT_KERNEL_HEADERS := $(KERNEL_OUT)/dist/kernel-uapi-headers.tar.gz
+        KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
+    else ifneq ($(HAS_PREBUILT_KERNEL),)
         ifeq ($(TARGET_PREBUILT_KERNEL_HEADERS),)
             $(warning ***************************************************************)
             $(warning * Using prebuilt kernel binary instead of source              *)
@@ -723,6 +742,15 @@ define append-dtbs-to-kernel-image
 endef
 
 endif # FULL_RECOVERY_KERNEL_BUILD or FULL_KERNEL_BUILD
+
+ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
+KERNEL_PATH := $(abspath $(BUILD_TOP)/../kernel-$(TARGET_KERNEL_VERSION))
+$(KERNEL_BIN):
+	@echo "Building $(BOARD_KERNEL_IMAGE_NAME)"
+	@mkdir -p $(KERNEL_OUT)
+	@rm -rf $(KERNEL_PATH)/out
+	$(hide) cd $(KERNEL_PATH) && ./tools/bazel --output_user_root=$(KERNEL_OUT)/bazel-out run --experimental_convenience_symlinks=ignore --config=stamp --cpu=$(KERNEL_ARCH) //$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist -- --destdir=$(KERNEL_OUT)/dist
+endif
 
 ifeq ($(NEEDS_KERNEL_COPY),true)
 $(INSTALLED_KERNEL_TARGET): $(KERNEL_BIN)
