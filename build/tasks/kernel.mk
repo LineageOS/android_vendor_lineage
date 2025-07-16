@@ -84,6 +84,9 @@
 #   TARGET_DTB_LIST_WILDCARD           = Optional, limits the .dtb files used to generate the
 #                                          final DTB image when NOT using QCOM's merge_dtbs
 #                                          script. Allows multiple patterns.
+#
+#   TARGET_KERNEL_PLATFORM_TARGET      = Optional, enables building an external kernel
+#                                          platform tree, this specifies the base target name
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -102,6 +105,7 @@ TARGET_MERGE_DTBS_WILDCARD ?= *
 TARGET_DTB_LIST_WILDCARD ?= *
 # recovery modules.load fallback - optional
 BOARD_RECOVERY_KERNEL_MODULES_LOAD ?= $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)
+TARGET_KERNEL_MIXED_MODE ?= true
 
 ## Internal variables
 DTC := $(HOST_OUT_EXECUTABLES)/dtc
@@ -153,7 +157,22 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
                 $(eval HAS_PREBUILT_KERNEL := true)))
     endif
 
-    ifneq ($(HAS_PREBUILT_KERNEL),)
+    ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
+        ifeq "$(wildcard $(abspath $(BUILD_TOP)/../kernel-$(TARGET_KERNEL_VERSION))/$(KERNEL_SRC) )" ""
+            $(warning ***************************************************************)
+            $(warning *                                                             *)
+            $(warning * No kernel platform source found.                            *)
+            $(warning * Please make sure your device is properly configured to      *)
+            $(warning * download the kernel repository to $(KERNEL_SRC))
+            $(warning *                                                             *)
+            $(warning ***************************************************************)
+            $(error "NO KERNEL")
+        endif
+        NEEDS_KERNEL_COPY := true
+        FULL_KERNEL_BUILD := false
+        TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/$(BOARD_KERNEL_IMAGE_NAME)
+        KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
+    else ifneq ($(HAS_PREBUILT_KERNEL),)
         ifeq ($(TARGET_PREBUILT_KERNEL_HEADERS),)
             $(warning ***************************************************************)
             $(warning * Using prebuilt kernel binary instead of source              *)
@@ -337,6 +356,10 @@ define make-dtb-target
 $(call internal-make-kernel-target,$(DTB_OUT),$(1))
 endef
 
+endif # FULL_KERNEL_BUILD
+
+ifneq ($(filter $(FULL_KERNEL_BUILD),true)$(TARGET_KERNEL_PLATFORM_TARGET),)
+
 # $(1): modules list
 # $(2): output dir
 # $(3): mount point
@@ -390,9 +413,9 @@ define build-image-kernel-modules-lineage
     fi;
 endef
 
-endif # FULL_KERNEL_BUILD
+endif # FULL_KERNEL_BUILD or TARGET_KERNEL_PLATFORM_TARGET
 
-ifeq ($(FULL_KERNEL_BUILD),true)
+ifneq ($(filter $(FULL_KERNEL_BUILD),true)$(TARGET_KERNEL_PLATFORM_TARGET),)
 
 ifeq ($(NEED_KERNEL_MODULE_ROOT),true)
 KERNEL_MODULES_OUT := $(TARGET_ROOT_OUT)
@@ -431,7 +454,7 @@ SYSTEM_KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediat
 SYSTEM_KERNEL_MODULE_MOUNTPOINT := system_dlkm
 SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST := $(system_dlkmimage_intermediates)/file_list.txt
 $(INSTALLED_SYSTEM_DLKMIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
-else ifneq ($(SYSTEM_KERNEL_MODULES),)
+else ifneq ($(SYSTEM_KERNEL_MODULES)$(filter $(TARGET_KERNEL_MIXED_MODE),true),)
 SYSTEM_KERNEL_MODULES_OUT := $(TARGET_OUT)
 SYSTEM_KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_system)
 SYSTEM_KERNEL_MODULE_MOUNTPOINT := system
@@ -469,6 +492,10 @@ KERNEL_RECOVERY_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermedi
 KERNEL_RECOVERY_MODULES_OUT := $(TARGET_RECOVERY_ROOT_OUT)
 $(recovery_uncompressed_ramdisk): $(TARGET_PREBUILT_INT_KERNEL)
 endif
+
+endif # TARGET_KERNEL_PLATFORM_TARGET or FULL_KERNEL_BUILD
+
+ifeq ($(FULL_KERNEL_BUILD),true)
 
 $(KERNEL_OUT):
 	mkdir -p $(KERNEL_OUT)
@@ -683,6 +710,27 @@ define append-dtbs-to-kernel-image
 endef
 
 endif # FULL_KERNEL_BUILD
+
+ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
+KERNEL_PATH := $(abspath $(BUILD_TOP)/../kernel-$(TARGET_KERNEL_VERSION))
+$(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST)
+	@echo "Building $(BOARD_KERNEL_IMAGE_NAME)"
+	@mkdir -p $(KERNEL_OUT)
+	@rm -rf $(KERNEL_PATH)/out
+	$(hide) cd $(KERNEL_PATH) && ./tools/bazel --output_user_root=$(abspath $(KERNEL_OUT)/bazel-out) run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) //$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist -- --destdir=$(KERNEL_OUT)
+	$(if $(BOOT_KERNEL_MODULES),\
+		$(call build-image-kernel-modules-lineage,$(addprefix $(KERNEL_OUT)/,$(BOOT_KERNEL_MODULES)),$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)\
+	)
+	$(if $(RECOVERY_KERNEL_MODULES),\
+		$(call build-image-kernel-modules-lineage,$(addprefix $(KERNEL_OUT)/,$(RECOVERY_KERNEL_MODULES)),$(KERNEL_RECOVERY_MODULES_OUT),,$(KERNEL_RECOVERY_DEPMOD_STAGING_DIR),$(BOARD_RECOVERY_KERNEL_MODULES_LOAD),,,)\
+	)
+	$(if $(filter $(TARGET_KERNEL_MIXED_MODE),true),\
+		system_dlkm_modules=$$(awk -F'/' '{ print "$(KERNEL_OUT)/"$$NF }' $(KERNEL_OUT)/system_dlkm.modules.load); \
+		($(call build-image-kernel-modules-lineage,$$system_dlkm_modules,$(SYSTEM_KERNEL_MODULES_OUT),$(SYSTEM_KERNEL_MODULE_MOUNTPOINT)/,$(SYSTEM_KERNEL_DEPMOD_STAGING_DIR),,,$(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST),))\
+	)
+	vendor_modules=$$(comm -23 <(find $(KERNEL_OUT) -maxdepth 1 -type f -name '*.ko' | awk -F'/' '{ print $$NF }' | sort) <(awk -F'/' '{ print $$NF }' $(KERNEL_OUT)/system_dlkm.modules.load | sort) | sed 's|^|$(KERNEL_OUT)/|'); \
+	($(call build-image-kernel-modules-lineage,$$vendor_modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD),,$(KERNEL_MODULES_PARTITION_FILE_LIST),$(SYSTEM_KERNEL_DEPMOD_STAGING_DIR)/lib/modules/0.0/$(SYSTEM_KERNEL_MODULE_MOUNTPOINT)))
+endif
 
 ifeq ($(NEEDS_KERNEL_COPY),true)
 $(INSTALLED_KERNEL_TARGET): $(KERNEL_BIN)
