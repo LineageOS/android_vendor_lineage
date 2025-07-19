@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ef4fe73_f534ec69",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-07-19T08:09:00Z",
+      "side": 1,
+      "message": "Why are you building with GCC?",
+      "revId": "cb5092742b006964f808b9213cff8f392312bfc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79454a2a_0af609c0",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 10
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-07-19T08:09:00Z",
+      "side": 1,
+      "message": "This will most likely break things. See the ifdefs right below",
+      "revId": "cb5092742b006964f808b9213cff8f392312bfc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47bce152_702ac03a",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 10
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-07-19T08:09:00Z",
+      "side": 1,
+      "message": "Same",
+      "revId": "cb5092742b006964f808b9213cff8f392312bfc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
