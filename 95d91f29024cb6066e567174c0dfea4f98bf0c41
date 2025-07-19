@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71c62ed1_555c3985",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-19T02:49:58Z",
+      "side": 1,
+      "message": "mehhh - is there any harm in signing them even if the config isn\u0027t enabled? Not sure if it\u0027s worth it to gate it off.",
+      "revId": "95d91f29024cb6066e567174c0dfea4f98bf0c41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
