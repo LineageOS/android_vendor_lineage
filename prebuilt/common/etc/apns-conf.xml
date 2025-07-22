@@ -2986,17 +2986,12 @@
   <apn carrier="WAP" mcc="427" mnc="02" apn="vodafone.com.qa" proxy="10.101.97.102" port="80" type="default,supl" />
   <apn carrier="Vodafone QA MMS" mcc="427" mnc="02" apn="vodafone.com.qa" mmsc="http://mms.vodafone.com.qa/mmsc" mmsproxy="10.101.97.102" mmsport="80" type="mms" />
   <apn carrier="Vodafone QA" mcc="427" mnc="02" apn="web.vodafone.com.qa" type="default,supl" />
-  <apn carrier="GPRS APN" mcc="429" mnc="01" apn="ntwap" proxy="192.80.7.133" port="8000" mmsc="" user="" password="" type="default,supl" />
-  <apn carrier="WEB" mcc="429" mnc="01" apn="ntnet" user="" password="" type="default,supl" />
-  <apn carrier="MMS" mcc="429" mnc="01" apn="ntmms" proxy="" port="" mmsproxy="192.80.7.133" mmsport="8000" mmsc="http://192.80.11.180" user="" password="" type="mms" />
-  <apn carrier="Nepal Telecom Internet" mcc="429" mnc="01" apn="ntnet" type="default,supl" />
-  <apn carrier="Nepal Telecom MMS" mcc="429" mnc="01" apn="ntmms" mmsc="http://192.80.11.180" mmsproxy="192.80.7.133" mmsport="8000" type="mms" />
-  <apn carrier="WEB" mcc="429" mnc="02" apn="web" proxy="192.168.19.15" port="8080" mmsc="" user="" password="" type="default,supl" />
-  <apn carrier="MMS" mcc="429" mnc="02" apn="mms" proxy="" port="" mmsproxy="192.168.19.15" mmsport="8080" mmsc="http://192.168.19.15" user="" password="" type="mms" />
-  <apn carrier="Nepal Telecom WAP" mcc="429" mnc="02" apn="ntwap" proxy="192.80.7.133" port="8000" type="default,supl" />
-  <apn carrier="Ncell Internet" mcc="429" mnc="02" apn="web" type="default,supl" />
-  <apn carrier="Ncell MMS" mcc="429" mnc="02" apn="mms" mmsc="http://192.168.19.15" mmsproxy="192.168.19.15" mmsport="8080" type="mms" />
-  <apn carrier="Ncell WAP" mcc="429" mnc="02" apn="web" proxy="192.168.19.15" port="8080" type="default,supl" />
+  <apn carrier="Ntc" mcc="429" mnc="01" apn="Ntnet" type="default" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="NTC MMS" mcc="429" mnc="01" apn="ntmms" mmsc="http://192.80.11.180" type="mms" mmsproxy="192.80.7.133" mmsport="8000" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="ims" mcc="429" mnc="01" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Ncell" mcc="429" mnc="02" apn="Web" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Ncell MMS" mcc="429" mnc="02" apn="MMS" mmsc="http://10.68.1.149" type="mms" mmsproxy="10.68.1.149" mmsport="8080" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="ims" mcc="429" mnc="02" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="IR-MCI" mcc="432" mnc="11" apn="mcinet" type="default,supl" />
   <apn carrier="Rightel" mcc="432" mnc="20" apn="rightel" type="default,supl" />
   <apn carrier="Rightel MMS" mcc="432" mnc="20" apn="RighTel-WAP" mmsc="http://10.200.40.55:38090/was" mmsproxy="10.200.39.10" mmsport="8080" type="mms" />
