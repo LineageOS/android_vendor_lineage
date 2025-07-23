@@ -28,8 +28,6 @@
 #   TARGET_KERNEL_CONFIG_EXT           = List of path to external kernel defconfigs.
 #                                          Same as TARGET_KERNEL_CONFIG, but paths are specified
 #                                          instead of filenames.
-#   TARGET_KERNEL_VARIANT_CONFIG       = Variant defconfig, optional
-#   TARGET_KERNEL_SELINUX_CONFIG       = SELinux defconfig, optional
 #
 #   TARGET_KERNEL_CLANG_COMPILE        = Compile kernel with clang, defaults to true
 #
@@ -99,15 +97,6 @@ endif
 MERGE_ALL_KERNEL_CONFIGS_AT_ONCE ?= false
 KERNEL_DEFCONFIG := $(TARGET_KERNEL_CONFIG)
 KERNEL_DEFCONFIG_EXT := $(TARGET_KERNEL_CONFIG_EXT)
-VARIANT_DEFCONFIG := $(TARGET_KERNEL_VARIANT_CONFIG)
-SELINUX_DEFCONFIG := $(TARGET_KERNEL_SELINUX_CONFIG)
-ifneq ($(VARIANT_DEFCONFIG)$(SELINUX_DEFCONFIG),)
-    ifneq ($(word 1,$(KERNEL_DEFCONFIG)),defconfig)
-        ifeq ($(filter %_defconfig,$(word 1,$(KERNEL_DEFCONFIG))),)
-            $(error Must use defconfig from the kernel tree when specifying VARIANT_DEFCONFIG or SELINUX_DEFCONFIG)
-        endif
-    endif
-endif
 # dtb generation - optional
 TARGET_MERGE_DTBS_WILDCARD ?= *
 TARGET_DTB_LIST_WILDCARD ?= *
@@ -287,12 +276,8 @@ endef
 # $(1): Output path (The value passed to O=)
 # $(2): The defconfig to process (full path to file)
 define make-kernel-config
-	$(if $(VARIANT_DEFCONFIG)$(SELINUX_DEFCONFIG), \
-		$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(notdir $(word 1,$(2)))) \
-	, \
-		cp $(word 1,$(2)) $(1)/.config; \
-		$(call internal-make-kernel-target,$(1),olddefconfig); \
-	)
+	cp $(word 1,$(2)) $(1)/.config; \
+	$(call internal-make-kernel-target,$(1),olddefconfig); \
 	$(if $(filter true,$(MERGE_ALL_KERNEL_CONFIGS_AT_ONCE)),\
 		$(KERNEL_SRC)/scripts/kconfig/merge_config.sh -m -O $(1) $(1)/.config $(filter %.config,$(2)); \
 		$(call internal-make-kernel-target,$(1),olddefconfig); \
