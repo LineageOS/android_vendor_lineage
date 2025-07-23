@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ffd38837_384685e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-23T22:02:57Z",
+      "side": 1,
+      "message": "killed it on AML and on NV",
+      "revId": "3cfcaa8095204a7c4ad0a59de9fe3435bea52d01",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
