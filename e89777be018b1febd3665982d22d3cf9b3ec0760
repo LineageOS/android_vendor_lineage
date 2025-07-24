@@ -50,6 +50,23 @@
       "message": "Ive had users test this and say it fixes calling especially on Globe, Smart and TNT\n\nNote, our APN settings were so old for the Philippines it showed Smart 3G as the APN names lol",
       "revId": "e89777be018b1febd3665982d22d3cf9b3ec0760",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00e6b525_57eaa52a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-07-24T02:35:07Z",
+      "side": 1,
+      "message": "pick to 23 pls",
+      "revId": "e89777be018b1febd3665982d22d3cf9b3ec0760",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
