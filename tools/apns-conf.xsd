@@ -115,7 +115,7 @@
         <xs:attribute name="password" type="xs:string" />
         <xs:attribute name="proxy" type="xs:anyURI" />
         <xs:attribute name="port" type="xs:string" />
-        <xs:attribute name="mmsproxy" type="xs:anyURI" />
+        <xs:attribute name="mmsproxy" type="xs:string" />
         <xs:attribute name="mmsport" type="xs:string" />
         <xs:attribute name="mmsc" type="xs:anyURI" />
         <xs:attribute name="type" type="apnType" />
