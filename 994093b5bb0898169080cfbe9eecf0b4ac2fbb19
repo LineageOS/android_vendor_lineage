@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cfeaaf0_32aea798",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35680
+      },
+      "writtenOn": "2025-07-25T04:06:11Z",
+      "side": 1,
+      "message": "The apn on https://android.googlesource.com/device/sample/+/master/etc/apns-full-conf.xml is a bit different\n- Internet: authtype missing, additionally type ia\n- IMS:  protocol IPV4V6, missing bearer_bitmask\n- XCAP: missing bearer_bitmask",
+      "revId": "994093b5bb0898169080cfbe9eecf0b4ac2fbb19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
