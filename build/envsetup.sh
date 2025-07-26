@@ -246,15 +246,16 @@ function lineageremote()
 
 function aospremote()
 {
-    if ! git rev-parse --git-dir &> /dev/null
+    local T=`git rev-parse --show-toplevel 2> /dev/null`
+    if [ -z "$T" ]
     then
-        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
+        echo "Git repository not found. Please run this from the directory of the Android repository you wish to set up."
         return 1
     fi
     git remote rm aosp 2> /dev/null
 
-    if [ -f ".gitupstream" ]; then
-        local REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
+    if [ -f "$T/.gitupstream" ]; then
+        local REMOTE=$(cat "$T/.gitupstream" | cut -d ' ' -f 1)
         git remote add aosp ${REMOTE}
     else
         local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
@@ -274,15 +275,16 @@ function aospremote()
 
 function cloremote()
 {
-    if ! git rev-parse --git-dir &> /dev/null
+    local T=`git rev-parse --show-toplevel 2> /dev/null`
+    if [ -z "$T" ]
     then
-        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
+        echo "Git repository not found. Please run this from the directory of the Android repository you wish to set up."
         return 1
     fi
     git remote rm clo 2> /dev/null
 
-    if [ -f ".gitupstream" ]; then
-        local REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
+    if [ -f "$T/.gitupstream" ]; then
+        local REMOTE=$(cat "$T/.gitupstream" | cut -d ' ' -f 1)
         git remote add clo ${REMOTE}
     else
         local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
