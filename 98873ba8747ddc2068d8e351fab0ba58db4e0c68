@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc013342_217947fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35691
+      },
+      "writtenOn": "2025-07-26T12:56:10Z",
+      "side": 1,
+      "message": "How can i os to Aosp in my phone",
+      "revId": "98873ba8747ddc2068d8e351fab0ba58db4e0c68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
