@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a43b987_30904e23",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-07-26T19:27:36Z",
+      "side": 1,
+      "message": "Verified the 5G NSA APNs (53FF), but don\u0027t have a 5G SA (52FF) SIM card.",
+      "revId": "2565e14aa1e7bd5d1201293143923c9a3dcf1b35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
