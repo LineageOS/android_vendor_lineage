@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.media.tv.flags"
+  name: "apply_picture_profiles"
+  state: DISABLED
+  permission: READ_ONLY
+}
