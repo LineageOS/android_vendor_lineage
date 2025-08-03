@@ -84,9 +84,8 @@
   <apn carrier="Lycamobile NL" mcc="204" mnc="09" apn="data.lycamobile.nl" user="lmnl" password="plus" type="default,supl" />
   <apn carrier="Telfort Internet" mcc="204" mnc="12" apn="internet" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" authtype="1" type="default,supl,mms" />
   <apn carrier="AH Mobiel Internet" mcc="204" mnc="12" apn="multimedia.ah.nl" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="T-Mobile Internet" mcc="204" mnc="16" apn="internet" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
-  <apn carrier="T-Mobile NL" mcc="204" mnc="16" apn="smartsites.t-mobile" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="T-Mobile MMS" mcc="204" mnc="16" apn="mms" proxy="" port="" user="tmobilemms" password="tmobilemms" mmsc="http://t-mobilemms" mmsproxy="010.010.010.011" mmsport="8080" authtype="1" type="mms" />
+  <apn carrier="Odido Internet" mcc="204" mnc="16" apn="internet.mobiel" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
+  <apn carrier="Odido Internet Gaming" mcc="204" mnc="16" apn="internet" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Ben" mcc="204" mnc="16" apn="internet.ben" authtype="1" type="default,supl" />
   <apn carrier="Ben MMS" mcc="204" mnc="16" apn="mms.ben" proxy="" port="" user="" password="" mmsc="http://benmms" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
   <apn carrier="Orange NL" mcc="204" mnc="20" apn="internet" proxy="" port="" user="" password="" mmsc="http://mms.orange.nl:8002" mmsproxy="10.250.255.183" mmsport="5080" authtype="3" type="default,supl" />
