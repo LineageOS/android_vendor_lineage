@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a6b19fe6_ac332413",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-04T17:23:51Z",
+      "side": 1,
+      "message": "How is this potentially reducing battery drain?",
+      "revId": "83b2ce05b8fd93584f43ee9780c8ac7931cea068",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
