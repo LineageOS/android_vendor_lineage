@@ -51,6 +51,23 @@
       "parentUuid": "104cf5a4_8f2b3b74",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f63ca80_ce81062e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35721
+      },
+      "writtenOn": "2025-08-04T10:19:20Z",
+      "side": 1,
+      "message": "Because there are also many people who do not use MindTheGApps, they use other GApps so they cannot use CTS. That\u0027s why I picked this commit.",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
