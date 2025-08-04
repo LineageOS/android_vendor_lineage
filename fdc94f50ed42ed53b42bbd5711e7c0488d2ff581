@@ -121,6 +121,24 @@
       "message": "In my opinion, I think it\u0027s still a good idea to merge to make sure everyone can use CTS because I see some people saying that CTS doesn\u0027t work on LineageOS. They use other GApps because MindTheGApps may not meet their needs.",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24191dce_176866e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-08-04T10:25:09Z",
+      "side": 1,
+      "message": "sure? but why not just fix gapps packages? there are only two \"gapps vendors\" that people use and they can be easily fixed, no?",
+      "parentUuid": "b57c2cb2_2b477d22",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
