@@ -279,6 +279,24 @@
       "parentUuid": "62daecf1_29562628",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b382686_f9f41225",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-08-04T11:47:15Z",
+      "side": 1,
+      "message": "isn\u0027t that a pixel feature rather than part of gapps?",
+      "parentUuid": "eda244c1_83a7ee63",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
