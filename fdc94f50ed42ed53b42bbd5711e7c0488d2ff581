@@ -16,6 +16,23 @@
       "message": "should be set in gapps overlay instead?",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "104cf5a4_8f2b3b74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35721
+      },
+      "writtenOn": "2025-08-04T09:56:47Z",
+      "side": 1,
+      "message": "CTS doesn\u0027t work without it, I have installed full GApps but it still doesn\u0027t work. So I think we need this commit, I tested it this commit and CTS is working",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
