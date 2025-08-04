@@ -16,6 +16,24 @@
       "message": "How is this potentially reducing battery drain?",
       "revId": "83b2ce05b8fd93584f43ee9780c8ac7931cea068",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f90df85_053d1efe",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 35728
+      },
+      "writtenOn": "2025-08-04T17:50:05Z",
+      "side": 1,
+      "message": "What I think is happening (which is the same/similar as the KPN incident) is that when on the \u0027gaming\u0027 profile you\u0027re not behind CGNAT. This could help setting up and maintaining P2P connections for games, possibly other uses as well (I was told IPSec doesn\u0027t work properly behind CGNAT). However that would probably mean that the user gets a public IP address, possibly without any NAT or firewall in between their device and the internet. This then could result in the phone unnecessarily being woken up by the constant portscans, brute force attempts and whatever else that happens on the public internet.\n\nReference for the KPN incident on Wikipedia: https://en.wikipedia.org/wiki/Access_Point_Name#KPN_Incident, which links to this article (in Dutch): https://tweakers.net/reviews/11430/hoe-een-tweaker-uitploos-waarom-sommige-telefoons-op-kpn-snel-leeg-gingen.html. Here is the (machine) translated quote from Smyter from KPN: \"Because these users connect to the internet in a different way, without a firewall for example, there is more interaction between the mobile phone and the network. This naturally means it also requires more from the battery.\"\n\nWith that said, I am not 100% sure whether this is exactly the same on the Odido network. I can say though that in my (so far relatively limited) testing the battery drain on my phone has gone down significantly. Here is a screenshot of two bugreports I\u0027ve taken and fed into battery historian: https://postimg.cc/xkLxNknC. On the left are the normal/non-gaming APN settings. On the right are the defaults that are currently shipped with LineageOS. Of note here would be the mobile radio active line.",
+      "parentUuid": "a6b19fe6_ac332413",
+      "revId": "83b2ce05b8fd93584f43ee9780c8ac7931cea068",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
