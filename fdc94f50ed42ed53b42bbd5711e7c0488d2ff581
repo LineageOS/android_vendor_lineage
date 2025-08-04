@@ -156,6 +156,24 @@
       "message": "I\u0027m not sure because most people use NikGApps, few people use MindTheGApps",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49032d8e_412b231c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-08-04T10:28:47Z",
+      "side": 1,
+      "message": "yes, so 2 packages that need to be fixed. shouldn\u0027t be too hard, I can apply the changes in MTG, while you send patches to NikGapps and everyone is happy?",
+      "parentUuid": "51b0a2f1_5c0c044a",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
