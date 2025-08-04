@@ -52,6 +52,24 @@
       "parentUuid": "2f90df85_053d1efe",
       "revId": "83b2ce05b8fd93584f43ee9780c8ac7931cea068",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0792bfd1_cf544a03",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-08-04T18:03:36Z",
+      "side": 1,
+      "message": "I agree with bruno, this is right without the potential snake oil.\n\nI removed it from the commit msg.",
+      "parentUuid": "2f90df85_053d1efe",
+      "revId": "83b2ce05b8fd93584f43ee9780c8ac7931cea068",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
