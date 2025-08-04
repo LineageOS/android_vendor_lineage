@@ -297,6 +297,24 @@
       "parentUuid": "eda244c1_83a7ee63",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6abcc373_0a12578a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22176
+      },
+      "writtenOn": "2025-08-04T11:57:58Z",
+      "side": 1,
+      "message": "True, but many users find Live Caption useful, especially for accessibility. Some GApps packages like NikGApps with add-ons seem to make it work on other devices.\nThat\u0027s why I was wondering if there\u0027s any plan or interest in bringing Live Caption support to MTG builds",
+      "parentUuid": "6b382686_f9f41225",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
