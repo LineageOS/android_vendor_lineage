@@ -68,6 +68,24 @@
       "message": "Because there are also many people who do not use MindTheGApps, they use other GApps so they cannot use CTS. That\u0027s why I picked this commit.",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1703fb5e_5257a311",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-08-04T10:19:49Z",
+      "side": 1,
+      "message": "yes, then these gapps packages need to be fixed.",
+      "parentUuid": "0f63ca80_ce81062e",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
