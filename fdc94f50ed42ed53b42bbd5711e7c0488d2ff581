@@ -261,6 +261,24 @@
       "parentUuid": "01974e2a_20d4a372",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eda244c1_83a7ee63",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22176
+      },
+      "writtenOn": "2025-08-04T11:45:31Z",
+      "side": 1,
+      "message": "What is your opinion on Live Caption? Is there any plan to fix it in MTG?",
+      "parentUuid": "62daecf1_29562628",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
