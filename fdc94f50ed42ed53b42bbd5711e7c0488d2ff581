@@ -191,6 +191,24 @@
       "message": "OK. So can this commit be merged?",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62daecf1_29562628",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-08-04T10:32:52Z",
+      "side": 1,
+      "message": "to vendor/lineage? no. I clearly said that I\u0027d like gapps packages to be fixed.",
+      "parentUuid": "dd2a14e8_d1ca873a",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
