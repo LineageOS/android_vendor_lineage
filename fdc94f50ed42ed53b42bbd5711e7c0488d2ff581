@@ -243,6 +243,24 @@
       "message": "They haven\u0027t fixed it for a long time so I\u0027m sending this patch.",
       "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c6ad9f3_14299567",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-08-04T11:23:49Z",
+      "side": 1,
+      "message": "https://github.com/nikgapps/project/commit/e8298e0c98c722ad2b5eac293d13750957314f85?",
+      "parentUuid": "01974e2a_20d4a372",
+      "revId": "fdc94f50ed42ed53b42bbd5711e7c0488d2ff581",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
