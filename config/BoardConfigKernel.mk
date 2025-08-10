@@ -78,24 +78,14 @@ TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
 # 5.10+ can fully compile without GCC by default
 ifneq ($(KERNEL_VERSION),)
-    ifeq ($(shell expr $(KERNEL_VERSION) \>= 6), 1)
+    ifeq ($(call is-version-greater-or-equal,$(TARGET_KERNEL_VERSION),5.10), 1)
         TARGET_KERNEL_NO_GCC ?= true
-    else ifeq ($(shell expr $(KERNEL_VERSION) \>= 5), 1)
-        ifeq ($(shell expr $(KERNEL_PATCHLEVEL) \>= 10), 1)
-            TARGET_KERNEL_NO_GCC ?= true
-        endif
     endif
 endif
 
 # 6.11+ can no longer use aosp glibc sysroot headers (too old)
 ifneq ($(KERNEL_VERSION),)
-    ifeq ($(shell expr $(KERNEL_VERSION) \< 6), 1)
-        # empty
-    else ifeq ($(KERNEL_VERSION), 6)
-        ifeq ($(shell expr $(KERNEL_PATCHLEVEL) \>= 11), 1)
-            TARGET_KERNEL_LIBC_SYSROOT_USE ?= host
-        endif
-    else
+    ifeq ($(call is-version-greater-or-equal,$(TARGET_KERNEL_VERSION),6.11), 1)
         TARGET_KERNEL_LIBC_SYSROOT_USE ?= host
     endif
 endif
