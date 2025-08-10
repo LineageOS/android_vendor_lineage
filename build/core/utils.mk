@@ -202,6 +202,36 @@ $(strip \
 )
 endef
 
+# $(call is-version-greater-or-equal,version_a,version_b)
+# version_a >= version_b
+define is-version-greater-or-equal
+$(strip \
+  $(eval a_major := $(word 1,$(subst ., ,$(1)))) \
+  $(eval a_minor := $(word 2,$(subst ., ,$(1)))) \
+  $(eval b_major := $(word 1,$(subst ., ,$(2)))) \
+  $(eval b_minor := $(word 2,$(subst ., ,$(2)))) \
+  $(if $(call math_gt,$(a_major),$(b_major)),true, \
+    $(if $(call math_gt_or_eq,$(a_major),$(b_major)), \
+      $(if $(call math_gt_or_eq,$(a_minor),$(b_minor)),true,false), \
+    false)) \
+)
+endef
+
+# $(call is-version-lower-or-equal,version_a,version_b)
+# version_a <= version_b
+define is-version-lower-or-equal
+$(strip \
+  $(eval a_major := $(word 1,$(subst ., ,$(1)))) \
+  $(eval a_minor := $(word 2,$(subst ., ,$(1)))) \
+  $(eval b_major := $(word 1,$(subst ., ,$(2)))) \
+  $(eval b_minor := $(word 2,$(subst ., ,$(2)))) \
+  $(if $(call math_lt,$(a_major),$(b_major)),true, \
+    $(if $(call math_lt_or_eq,$(a_major),$(b_major)), \
+      $(if $(call math_lt_or_eq,$(a_minor),$(b_minor)),true,false), \
+    false)) \
+)
+endef
+
 # $(call add-radio-file-sha1-checked,path,sha1)
 define add-radio-file-sha1-checked
   $(eval path := $(LOCAL_PATH)/$(1))

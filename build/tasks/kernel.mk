@@ -115,8 +115,8 @@ endif
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
 KERNEL_RELEASE := $(KERNEL_OUT)/include/config/kernel.release
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-ifeq ($(shell expr $(TARGET_KERNEL_VERSION) \>= 5.15), 1)
-ifeq ($(shell expr $(TARGET_KERNEL_VERSION) \<= 6.1), 1)
+ifeq ($(call is-version-greater-or-equal,$(TARGET_KERNEL_VERSION),5.15), true)
+ifeq ($(call is-version-lower-or-equal,$(TARGET_KERNEL_VERSION),6.1), true)
 GKI_SUFFIX := /$(shell echo android$(PLATFORM_VERSION)-$(TARGET_KERNEL_VERSION))
 endif
 endif
