@@ -1,0 +1,61 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+genrule {
+    name: "gen-bootanimation.zip",
+    tools: [
+        "mogrify",
+        "soong_zip",
+    ],
+    tool_files: [
+        "bootanimation.tar",
+        "desc.txt",
+        "gen-bootanimation.sh",
+    ],
+    out: ["bootanimation.zip"],
+
+    cmd: select((soong_config_variable("lineage_bootanimation", "height"),
+                 soong_config_variable("lineage_bootanimation", "width"),
+                 soong_config_variable("lineage_bootanimation", "half_res"),
+                 soong_config_variable("lineage_bootanimation", "prebuilt_file")), {
+        (any @ height, any @ width, any @ half_res, any @ prebuilt_file):
+            "cp ../../../../../" + prebuilt_file + " $(out)",
+        (any @ height, any @ width, any @ half_res, default):
+            "$(location gen-bootanimation.sh)" +
+            " $(out)" +
+            " $(genDir)" +
+            " $(location bootanimation.tar)" +
+            " $(location desc.txt)" +
+            " $(location mogrify)" +
+            " $(location soong_zip)" +
+            " " + height +
+            " " + width +
+            " " + half_res,
+        (default, default, default, default):
+            "$(location gen-bootanimation.sh)" +
+            " $(out)" +
+            " $(genDir)" +
+            " $(location bootanimation.tar)" +
+            " $(location desc.txt)" +
+            " $(location mogrify)" +
+            " $(location soong_zip)" +
+            " 600" +
+            " 600" +
+            " false",
+    }),
+}
+
+prebuilt_media {
+    name: "bootanimation.zip",
+    src: ":gen-bootanimation.zip",
+    product_specific: true,
+}
+
+install_symlink {
+    name: "bootanimation-dark.zip",
+    product_specific: true,
+    installed_location: "media/bootanimation-dark.zip",
+    symlink_target: "bootanimation.zip",
+}
