@@ -16,6 +16,24 @@
       "message": "Is this really ready, considering https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/442772 ?",
       "revId": "f2aa037ffdf94ce3dda28dbe33c00251ae0dc3ac",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3012f4f_792671f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-08-16T02:57:19Z",
+      "side": 1,
+      "message": "afaik, he\u0027s trying to simplify it and the commit msg _is the error_ when he simplifies it. Because it would require soong additions.",
+      "parentUuid": "c83bfd40_a6b7336b",
+      "revId": "f2aa037ffdf94ce3dda28dbe33c00251ae0dc3ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
