@@ -69,7 +69,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        ZIPPATH=`ls -tr "$OUT"/lineage-*.zip | tail -1`
+        ZIPPATH=(ls -tr "$OUT"/lineage-*.zip | tail -1)
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
@@ -151,11 +151,11 @@ function dddclient()
        PID="$3"
        if [ "$PID" ] ; then
            if [[ ! "$PID" =~ ^[0-9]+$ ]] ; then
-               PID=`pid $3`
+               PID=$(pid $3)
                if [[ ! "$PID" =~ ^[0-9]+$ ]] ; then
                    # that likely didn't work because of returning multiple processes
                    # try again, filtering by root processes (don't contain colon)
-                   PID=`adb shell ps | \grep $3 | \grep -v ":" | awk '{print $2}'`
+                   PID=$(adb shell ps | \grep $3 | \grep -v ":" | awk '{print $2}')
                    if [[ ! "$PID" =~ ^[0-9]+$ ]]
                    then
                        echo "Couldn't resolve '$3' to single PID"
@@ -373,12 +373,12 @@ function installboot()
         echo "No boot.img found. Run make bootimage first."
         return 1
     fi
-    PARTITION=`grep "^\/boot" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
+    PARTITION=$(grep "^\/boot" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'})
     if [ -z "$PARTITION" ];
     then
         # Try for RECOVERY_FSTAB_VERSION = 2
-        PARTITION=`grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $1'}`
-        PARTITION_TYPE=`grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
+        PARTITION=$(grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $1'})
+        PARTITION_TYPE=$(grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'})
         if [ -z "$PARTITION" ];
         then
             echo "Unable to determine boot partition."
@@ -411,12 +411,12 @@ function installrecovery()
         echo "No recovery.img found. Run make recoveryimage first."
         return 1
     fi
-    PARTITION=`grep "^\/recovery" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
+    PARTITION=$(grep "^\/recovery" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'})
     if [ -z "$PARTITION" ];
     then
         # Try for RECOVERY_FSTAB_VERSION = 2
-        PARTITION=`grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $1'}`
-        PARTITION_TYPE=`grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
+        PARTITION=$(grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $1'})
+        PARTITION_TYPE=$(grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'})
         if [ -z "$PARTITION" ];
         then
             echo "Unable to determine recovery partition."
@@ -449,9 +449,9 @@ function lineagegerrit() {
         return 1
     fi
     local user review project command
-    user=`git config --get review.review.lineageos.org.username`
-    review=`git config --get remote.github.review`
-    project=`git config --get remote.github.projectname`
+    user=$(git config --get review.review.lineageos.org.username)
+    review=$(git config --get remote.github.review)
+    project=$(git config --get remote.github.projectname)
     command=$1
     shift
     case $command in
@@ -817,7 +817,7 @@ function dopush()
         rm -f $OUT/.log;return $ret
     fi
 
-    is_gnu_sed=`sed --version | head -1 | grep -c GNU`
+    is_gnu_sed=$(sed --version | head -1 | grep -c GNU)
 
     # Install: <file>
     if [ $is_gnu_sed -gt 0 ]; then
