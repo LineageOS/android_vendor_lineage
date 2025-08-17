@@ -643,7 +643,7 @@ _repo() {
     else
         local cmd=${COMP_WORDS[1]}
         local handler=${CMD_HANDLERS["${cmd}"]}
-        if [ -n ${handler} ]
+        if [ -n "${handler}" ]
         then
             eval ${handler}
         fi
