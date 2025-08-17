@@ -18,9 +18,9 @@ function check_product()
 
         TARGET_PRODUCT=$1 \
         TARGET_RELEASE=$2 \
-        TARGET_BUILD_VARIANT= \
-        TARGET_BUILD_TYPE= \
-        TARGET_BUILD_APPS= \
+        TARGET_BUILD_VARIANT='' \
+        TARGET_BUILD_TYPE='' \
+        TARGET_BUILD_APPS='' \
         _get_build_var_cached TARGET_DEVICE > /dev/null
     # hide successful answers, but allow the errors to show
 }
