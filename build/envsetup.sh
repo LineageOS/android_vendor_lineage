@@ -797,7 +797,7 @@ function dopush()
     then
     # retrieve IP and PORT info if we're using a TCP connection
     TCPIPPORT=$(adb devices \
-        | egrep '^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9]):[0-9]+[^0-9]+' \
+        | grep -E '^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9]):[0-9]+[^0-9]+' \
         | head -1 | awk '{print $1}')
     adb root &> /dev/null
     sleep 0.3
@@ -838,7 +838,7 @@ function dopush()
     fi
 
     # If any files are going to /data, push an octal file permissions reader to device
-    if [ -n "$(echo $LOC | egrep '(^|\s)/data')" ]; then
+    if [ -n "$(echo $LOC | grep -E '(^|\s)/data')" ]; then
         CHKPERM="/data/local/tmp/chkfileperm.sh"
 (
 cat <<'EOF'
