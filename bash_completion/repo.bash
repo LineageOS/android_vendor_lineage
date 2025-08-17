@@ -221,7 +221,7 @@ _handle_options() {
 _is_known_shortopt() {
     local needle="$1"
 
-    for opt in ${OPTIONS[@]}
+    for opt in "${OPTIONS[@]}"
     do
         if [ "${opt}" = "${needle}" ]
         then
