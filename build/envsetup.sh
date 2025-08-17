@@ -528,7 +528,7 @@ EOF
             $FUNCNAME __cmg_err_not_repo && return 1
             local change=$1
             shift
-            git $command $@ http://$review/p/$project \
+            git $command "$@" http://$review/p/$project \
                 $($FUNCNAME __cmg_get_ref $change) || return 1
             ;;
         push)
@@ -550,7 +550,7 @@ EOF
                     ;;
             esac
             shift
-            git push $@ ssh://$user@$review:29418/$project \
+            git push "$@" ssh://$user@$review:29418/$project \
                 ${local_branch}:refs/for/$remote_branch || return 1
             ;;
         changes|for)
@@ -816,7 +816,7 @@ function dopush()
 (
 cat <<'EOF'
 #!/system/bin/sh
-FILE=$@
+FILE="$@"
 if [ -e $FILE ]; then
     ls -l $FILE | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf("%0o ",k);print}' | cut -d ' ' -f1
 fi
@@ -898,12 +898,12 @@ alias cmkap='dopush cmka'
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/lineage/build/tools/repopick.py $@
+    $T/vendor/lineage/build/tools/repopick.py "$@"
 }
 
 function sort-blobs-list() {
     T=$(gettop)
-    $T/tools/extract-utils/sort-blobs-list.py $@
+    $T/tools/extract-utils/sort-blobs-list.py "$@"
 }
 
 function fixup_common_out_dir() {
