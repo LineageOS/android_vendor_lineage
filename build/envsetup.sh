@@ -4,7 +4,8 @@ export LLVM_AOSP_PREBUILTS_VERSION="${CLANG_VERSION}"
 # check to see if the supplied product is one we can build
 function check_product()
 {
-    local T=$(gettop)
+    local T
+    T=$(gettop)
     if [ ! "$T" ]; then
         echo "Couldn't locate the top of the tree. Try setting TOP." >&2
         return
@@ -40,7 +41,8 @@ function brunch()
 function breakfast()
 {
     target=$1
-    local variant=$2
+    local variant
+    variant=$2
     source ${ANDROID_BUILD_TOP}/vendor/lineage/vars/aosp_target_release
 
     if [ $# -eq 0 ]; then
@@ -107,14 +109,15 @@ function cout()
 
 function dddclient()
 {
-   local OUT_ROOT=$(get_abs_build_var PRODUCT_OUT)
-   local OUT_SYMBOLS=$(get_abs_build_var TARGET_OUT_UNSTRIPPED)
-   local OUT_SO_SYMBOLS=$(get_abs_build_var TARGET_OUT_SHARED_LIBRARIES_UNSTRIPPED)
-   local OUT_VENDOR_SO_SYMBOLS=$(get_abs_build_var TARGET_OUT_VENDOR_SHARED_LIBRARIES_UNSTRIPPED)
-   local OUT_EXE_SYMBOLS=$(get_symbols_directory)
-   local PREBUILTS=$(get_abs_build_var ANDROID_PREBUILTS)
-   local ARCH=$(_get_build_var_cached TARGET_ARCH)
-   local GDB
+   local OUT_ROOT OUT_SYMBOLS OUT_SO_SYMBOLS OUT_VENDOR_SO_SYMBOLS OUT_EXE_SYMBOLS PREBUILTS ARCH GDB
+   OUT_ROOT=$(get_abs_build_var PRODUCT_OUT)
+   OUT_SYMBOLS=$(get_abs_build_var TARGET_OUT_UNSTRIPPED)
+   OUT_SO_SYMBOLS=$(get_abs_build_var TARGET_OUT_SHARED_LIBRARIES_UNSTRIPPED)
+   OUT_VENDOR_SO_SYMBOLS=$(get_abs_build_var TARGET_OUT_VENDOR_SHARED_LIBRARIES_UNSTRIPPED)
+   OUT_EXE_SYMBOLS=$(get_symbols_directory)
+   PREBUILTS=$(get_abs_build_var ANDROID_PREBUILTS)
+   ARCH=$(_get_build_var_cached TARGET_ARCH)
+   GDB
    case "$ARCH" in
        arm) GDB=arm-linux-androideabi-gdb;;
        arm64) GDB=arm-linux-androideabi-gdb; GDB64=aarch64-linux-android-gdb;;
@@ -125,7 +128,8 @@ function dddclient()
    esac
 
    if [ "$OUT_ROOT" -a "$PREBUILTS" ]; then
-       local EXE="$1"
+       local EXE
+       EXE="$1"
        if [ "$EXE" ] ; then
            EXE=$1
            if [[ $EXE =~ ^[^/].* ]] ; then
@@ -135,14 +139,16 @@ function dddclient()
            EXE="app_process"
        fi
 
-       local PORT="$2"
+       local PORT
+       PORT="$2"
        if [ "$PORT" ] ; then
            PORT=$2
        else
            PORT=":5039"
        fi
 
-       local PID="$3"
+       local PID
+       PID="$3"
        if [ "$PID" ] ; then
            if [[ ! "$PID" =~ ^[0-9]+$ ]] ; then
                PID=`pid $3`
@@ -162,7 +168,8 @@ function dddclient()
                fi
            fi
            adb forward "tcp$PORT" "tcp$PORT"
-           local USE64BIT="$(is64bit $PID)"
+           local USE64BIT
+           USE64BIT="$(is64bit $PID)"
            adb shell gdbserver$USE64BIT $PORT --attach $PID &
            sleep 2
        else
@@ -187,7 +194,8 @@ function dddclient()
        fi
        echo >>"$OUT_ROOT/gdbclient.cmds" ""
 
-       local WHICH_GDB=
+       local WHICH_GDB
+       WHICH_GDB=
        # 64-bit exe found
        if [ "$USE64BIT" != "" ] ; then
            WHICH_GDB=$ANDROID_TOOLCHAIN/$GDB64
@@ -213,8 +221,9 @@ function lineageremote()
         return 1
     fi
     git remote rm lineage 2> /dev/null
-    local REMOTE=$(git config --get remote.github.projectname)
-    local LINEAGE="true"
+    local REMOTE LINEAGE
+    REMOTE=$(git config --get remote.github.projectname)
+    LINEAGE="true"
     if [ -z "$REMOTE" ]
     then
         REMOTE=$(git config --get remote.aosp.projectname)
@@ -228,13 +237,17 @@ function lineageremote()
 
     if [ $LINEAGE = "false" ]
     then
-        local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
-        local PFX="LineageOS/"
+        local PROJECT
+        PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
+        local PFX
+        PFX="LineageOS/"
     else
-        local PROJECT=$REMOTE
+        local PROJECT
+        PROJECT=$REMOTE
     fi
 
-    local LINEAGE_USER=$(git config --get review.review.lineageos.org.username)
+    local LINEAGE_USER
+    LINEAGE_USER=$(git config --get review.review.lineageos.org.username)
     if [ -z "$LINEAGE_USER" ]
     then
         git remote add lineage ssh://review.lineageos.org:29418/$PFX$PROJECT
@@ -254,10 +267,12 @@ function aospremote()
     git remote rm aosp 2> /dev/null
 
     if [ -f ".gitupstream" ]; then
-        local REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
+        local REMOTE
+        REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
         git remote add aosp ${REMOTE}
     else
-        local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+        local PROJECT
+        PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
         # Google moved the repo location in Oreo
         if [ $PROJECT = "build/make" ]
         then
@@ -265,7 +280,8 @@ function aospremote()
         fi
         if (echo $PROJECT | grep -qv "^device")
         then
-            local PFX="platform/"
+            local PFX
+            PFX="platform/"
         fi
         git remote add aosp https://android.googlesource.com/$PFX$PROJECT
     fi
@@ -282,10 +298,12 @@ function cloremote()
     git remote rm clo 2> /dev/null
 
     if [ -f ".gitupstream" ]; then
-        local REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
+        local REMOTE
+        REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
         git remote add clo ${REMOTE}
     else
-        local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+        local PROJECT
+        PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
         # Google moved the repo location in Oreo
         if [ $PROJECT = "build/make" ]
         then
@@ -297,7 +315,8 @@ function cloremote()
         fi
         if (echo $PROJECT | grep -qv "^device")
         then
-            local PFX="platform/"
+            local PFX
+            PFX="platform/"
         fi
         git remote add clo https://git.codelinaro.org/clo/la/$PFX$PROJECT
     fi
@@ -312,14 +331,16 @@ function githubremote()
         return 1
     fi
     git remote rm github 2> /dev/null
-    local REMOTE=$(git config --get remote.aosp.projectname)
+    local REMOTE
+    REMOTE=$(git config --get remote.aosp.projectname)
 
     if [ -z "$REMOTE" ]
     then
         REMOTE=$(git config --get remote.clo.projectname)
     fi
 
-    local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
+    local PROJECT
+    PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
 
     git remote add github https://github.com/LineageOS/$PROJECT
     echo "Remote 'github' created"
@@ -333,7 +354,8 @@ function privateremote()
         return 1
     fi
     git remote rm private 2> /dev/null
-    local PROJECT=$(git config --get remote.github.projectname)
+    local PROJECT
+    PROJECT=$(git config --get remote.github.projectname)
 
     git remote add private git@github.com:$PROJECT.git
     echo "Remote 'private' created"
@@ -418,17 +440,19 @@ function installrecovery()
 function lineagegerrit() {
     if [ "$(basename $SHELL)" = "zsh" ]; then
         # zsh does not define FUNCNAME, derive from funcstack
-        local FUNCNAME="${funcstack[1]}"
+        local FUNCNAME
+        FUNCNAME="${funcstack[1]}"
     fi
 
     if [ $# -eq 0 ]; then
         $FUNCNAME help
         return 1
     fi
-    local user=`git config --get review.review.lineageos.org.username`
-    local review=`git config --get remote.github.review`
-    local project=`git config --get remote.github.projectname`
-    local command=$1
+    local user review project command
+    user=`git config --get review.review.lineageos.org.username`
+    review=`git config --get remote.github.review`
+    project=`git config --get remote.github.projectname`
+    command=$1
     shift
     case $command in
         help)
@@ -526,7 +550,8 @@ EOF
         fetch|pull)
             $FUNCNAME __cmg_err_no_arg $command $# help && return 1
             $FUNCNAME __cmg_err_not_repo && return 1
-            local change=$1
+            local change
+            change=$1
             shift
             git $command "$@" http://$review/p/$project \
                 $($FUNCNAME __cmg_get_ref $change) || return 1
@@ -593,8 +618,8 @@ EOF
             $FUNCNAME __cmg_err_not_supported $command && return 1
             $FUNCNAME __cmg_err_no_arg $command $# help && return 1
             $FUNCNAME __cmg_err_not_repo && return 1
-            local args="$@"
-            local change pre_args refs_arg post_args
+            local args change pre_args refs_arg post_args
+            args="$@"
             case "$args" in
                 *--\ *)
                     pre_args=${args%%-- *}
@@ -654,10 +679,11 @@ EOF
 }
 
 function lineagerebase() {
-    local repo=$1
-    local refs=$2
-    local pwd="$(pwd)"
-    local dir="$(gettop)/$repo"
+    local repo refs pwd dir
+    repo=$1
+    refs=$2
+    pwd="$(pwd)"
+    dir="$(gettop)/$repo"
 
     if [ -z $repo ] || [ -z $refs ]; then
         echo "LineageOS Gerrit Rebase Usage: "
@@ -753,7 +779,8 @@ function _adb_connected {
 # Credit for color strip sed: http://goo.gl/BoIcm
 function dopush()
 {
-    local func=$1
+    local func
+    func=$1
     shift
 
     adb start-server # Prevent unexpected starting server message from adb get-state in the next line
