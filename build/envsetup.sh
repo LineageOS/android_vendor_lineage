@@ -418,7 +418,7 @@ function installrecovery()
 function lineagegerrit() {
     if [ "$(basename $SHELL)" = "zsh" ]; then
         # zsh does not define FUNCNAME, derive from funcstack
-        local FUNCNAME=$funcstack[1]
+        local FUNCNAME="${funcstack[1]}"
     fi
 
     if [ $# -eq 0 ]; then
