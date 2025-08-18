@@ -22,6 +22,30 @@
       },
       "revId": "885b5c6e06b981fe915f9b66f4a9e6268044c35f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08a3731a_5a7d24e0",
+        "filename": "bootanimation/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-08-18T17:00:09Z",
+      "side": 1,
+      "message": "```\nnolenjohnson@ODS-PROD:~/lineage-23/device/osom/ingot$ git diff\ndiff --git a/device.mk b/device.mk\nindex 7ff683b..f8284b2 100644\n--- a/device.mk\n+++ b/device.mk\n@@ -7,8 +7,8 @@\n $(call inherit-product, hardware/qcom-caf/common/common.mk)\n \n # Boot animation\n-TARGET_SCREEN_HEIGHT :\u003d 2400\n-TARGET_SCREEN_WIDTH :\u003d 1080\n+#TARGET_SCREEN_HEIGHT :\u003d 2400\n+#TARGET_SCREEN_WIDTH :\u003d 1080\n```\n\n+\n```\nm gen-bootanimation.zip bootanimation.zip bootanimation-dark.zip\n```\n\u003d\n```\n[100% 173/173] Install: /mnt/out/out/lineage-23/target/product/ingot/product/media/bootanimation.zip (priority: 3)\n\n```\n\n```          \nnolenjohnson@ODS-PROD:/mnt/out/out/lineage-23/target/product/ingot/product/media$ file part*/*\npart0/000.png: PNG image data, 1080 x 360, 1-bit grayscale, non-interlaced\npart0/001.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/002.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/003.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/004.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/005.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/006.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/007.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/008.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/009.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/010.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/011.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/012.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/013.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/014.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/015.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/016.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/017.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/018.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/019.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/020.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/021.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/022.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/023.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/024.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/025.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/026.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/027.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/028.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/029.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/030.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/031.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/032.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/033.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/034.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/035.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/036.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/037.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/038.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/039.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/040.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/041.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/042.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/043.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/044.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/045.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/046.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/047.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/048.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/049.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/050.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/051.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/052.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/053.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\npart0/054.png: PNG image data, 1080 x 360, 8-bit grayscale, non-interlaced\n...\n```",
+      "parentUuid": "caabad0e_0716789f",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 61
+      },
+      "revId": "885b5c6e06b981fe915f9b66f4a9e6268044c35f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
