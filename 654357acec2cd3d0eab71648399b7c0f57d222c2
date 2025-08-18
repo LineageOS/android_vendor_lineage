@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0157495b_35c53409",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-08-18T17:31:13Z",
+      "side": 1,
+      "message": "This is fine for now, I\u0027ll merge when we have a follow-up that fixes the sandbox escape.",
+      "revId": "654357acec2cd3d0eab71648399b7c0f57d222c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
