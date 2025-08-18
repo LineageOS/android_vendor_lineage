@@ -70,6 +70,30 @@
       },
       "revId": "885b5c6e06b981fe915f9b66f4a9e6268044c35f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc92a431_0ff89c15",
+        "filename": "bootanimation/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-18T17:08:34Z",
+      "side": 1,
+      "message": "yes, `prebuilt_file` works, the specified file gets copied successfully and data is the same",
+      "parentUuid": "3e7faa5f_f6925df9",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 61
+      },
+      "revId": "885b5c6e06b981fe915f9b66f4a9e6268044c35f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
