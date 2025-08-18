@@ -127,7 +127,7 @@ PRODUCT_PACKAGES += \
 
 # Build Manifest
 PRODUCT_PACKAGES += \
-    build-manifest
+    build-manifest.xml
 
 # Lineage packages
 ifeq ($(PRODUCT_IS_ATV),)
