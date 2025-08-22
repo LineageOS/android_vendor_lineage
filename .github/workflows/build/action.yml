@@ -6,7 +6,7 @@ runs:
     steps:
     - name: Install dependencies
       shell: bash
-      run: sudo apt -y install libxml2-utils
+      run: sudo apt update && sudo apt -y install libxml2-utils
 
     - name: Validate apns-conf.xml
       shell: bash
