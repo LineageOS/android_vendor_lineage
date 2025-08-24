@@ -16,18 +16,9 @@ ifdef MANIFEST_EXCLUDES
 MANIFEST_EXCLUDES := |$(MANIFEST_EXCLUDES)
 endif
 
-include $(CLEAR_VARS)
-
-LOCAL_MODULE         := build-manifest
-LOCAL_MODULE_SUFFIX  := .xml
-LOCAL_MODULE_CLASS   := ETC
-LOCAL_PRODUCT_MODULE := true
-
-_build-manifest_intermediates := $(call intermediates-dir-for,$(LOCAL_MODULE_CLASS),$(LOCAL_MODULE))
-_build-manifest_xml := $(_build-manifest_intermediates)/$(LOCAL_MODULE)$(LOCAL_MODULE_SUFFIX)
-
-$(_build-manifest_xml):
+$(INSTALLED_BUILD_MANIFEST_XML_TARGET):
 	mkdir -p $(dir $@)
 	python3 .repo/repo/repo manifest -o - -r | grep -Ev "proprietary_$(MANIFEST_EXCLUDES)" > $@
 
-include $(BUILD_SYSTEM)/base_rules.mk
+.PHONY: build-manifest.xml
+build-manifest.xml: $(INSTALLED_BUILD_MANIFEST_XML_TARGET)
