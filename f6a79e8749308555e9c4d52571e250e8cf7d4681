@@ -34,6 +34,24 @@
       "parentUuid": "23cfbb73_c73cb669",
       "revId": "f6a79e8749308555e9c4d52571e250e8cf7d4681",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a016cf21_f57de085",
+        "filename": "build/core/definitions.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-25T15:11:29Z",
+      "side": 0,
+      "message": "Ack.",
+      "parentUuid": "9248184b_e03bd233",
+      "revId": "f6a79e8749308555e9c4d52571e250e8cf7d4681",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
