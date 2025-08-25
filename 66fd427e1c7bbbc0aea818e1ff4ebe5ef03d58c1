@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "554cab6c_a98218b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34676
+      },
+      "writtenOn": "2025-08-25T14:14:24Z",
+      "side": 1,
+      "message": "vendor/lineage/build/tasks/kernel.mk:710: error: missing `endif\u0027.",
+      "revId": "66fd427e1c7bbbc0aea818e1ff4ebe5ef03d58c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
