@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23cfbb73_c73cb669",
+        "filename": "build/core/definitions.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-25T09:13:21Z",
+      "side": 0,
+      "message": "Why here in definitions.mk and not in config.mk?",
+      "revId": "f6a79e8749308555e9c4d52571e250e8cf7d4681",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
