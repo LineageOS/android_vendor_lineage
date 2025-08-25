@@ -16,6 +16,24 @@
       "message": "Why here in definitions.mk and not in config.mk?",
       "revId": "f6a79e8749308555e9c4d52571e250e8cf7d4681",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9248184b_e03bd233",
+        "filename": "build/core/definitions.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-08-25T15:08:51Z",
+      "side": 0,
+      "message": "because `ALL_DEFAULT_INSTALLED_MODULES` is supposed to be on definitions.mk\n\n```\nmain.mk:24:include build/make/core/config.mk\nconfig.mk:1339:-include vendor/*/build/core/config.mk\n\nmain.mk:120:include $(BUILD_SYSTEM)/definitions.mk\ndefinitions.mk:51:ALL_DEFAULT_INSTALLED_MODULES:\u003d\ndefinitions.mk:3968:-include $(TOPDIR)vendor/*/*/build/core/definitions.mk\n```",
+      "parentUuid": "23cfbb73_c73cb669",
+      "revId": "f6a79e8749308555e9c4d52571e250e8cf7d4681",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
