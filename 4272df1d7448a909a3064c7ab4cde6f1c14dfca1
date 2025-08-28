@@ -33,6 +33,24 @@
       "message": "Missing xml header",
       "revId": "4272df1d7448a909a3064c7ab4cde6f1c14dfca1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72c5c59e_ac286884",
+        "filename": "overlay/tv/Settings/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-28T20:30:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4ff70616_45efec4d",
+      "revId": "4272df1d7448a909a3064c7ab4cde6f1c14dfca1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
