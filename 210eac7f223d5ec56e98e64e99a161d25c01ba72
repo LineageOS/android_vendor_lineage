@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a8712a6_5fb60a7f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26788
+      },
+      "writtenOn": "2025-08-28T06:51:14Z",
+      "side": 1,
+      "message": "There are already two open PRs:\n\nhttps://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/413143/4\nhttps://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/413532\n\nThey are for LineageOS 22.1, but still be used.",
+      "revId": "210eac7f223d5ec56e98e64e99a161d25c01ba72",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
