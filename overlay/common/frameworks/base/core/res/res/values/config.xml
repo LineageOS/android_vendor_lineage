@@ -140,8 +140,6 @@
 
     <!-- Whether this device is supporting the microphone toggle -->
     <bool name="config_supportsMicToggle">true</bool>
-    <!-- Whether this device is supporting the camera toggle -->
-    <bool name="config_supportsCamToggle">true</bool>
 
     <!-- Control the default night mode to use when there is no other mode override set.
          One of the following values (see UiModeManager.java):
