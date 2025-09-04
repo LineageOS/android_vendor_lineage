@@ -1,0 +1,27 @@
+# Pixel 10
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in mustang
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="BD3A.250721.001.B7"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="unknown"
+readonly aosp_tag="unknown"
+
+readonly build_number="13955164"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/frankel-bd3a.250721.001.b7-factory-0fd87b61.zip"
+readonly image_sha256="0fd87b61e6b9211b8fba4e5e72414285aafe72ea40f5a3f2b4d015b1b74a5215"
+
+readonly flash_url="https://flash.android.com/build/13955164?target=frankel-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/frankel-ota-bd3a.250721.001.b7-e8428d30.zip"
+readonly ota_sha256="e8428d301d8c41bec254cedaae9a7c4f12c45c53fce689e5b9bf8a9d0d5d4fb2"
+
+readonly security_patch="unknown"

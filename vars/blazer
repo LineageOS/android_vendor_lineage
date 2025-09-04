@@ -1,0 +1,27 @@
+# Pixel 10 Pro
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in mustang
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="BD3A.250721.001.B7"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="unknown"
+readonly aosp_tag="unknown"
+
+readonly build_number="13955164"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/blazer-bd3a.250721.001.b7-factory-9b8bb405.zip"
+readonly image_sha256="9b8bb405ef8fd972c5b989281466df95d5106b9a045d94ae0424ac746b4e8c55"
+
+readonly flash_url="https://flash.android.com/build/13955164?target=blazer-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/blazer-ota-bd3a.250721.001.b7-a3516634.zip"
+readonly ota_sha256="a3516634ee37da49f79c6a768d3dba5b31a6f5679099838ab371c303ae6f2eac"
+
+readonly security_patch="unknown"

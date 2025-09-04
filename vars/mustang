@@ -1,0 +1,29 @@
+# Pixel 10 Pro XL
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/gs-common
+  device/google/zumapro
+  device/google/mustang
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="BD3A.250721.001.B7"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="unknown"
+readonly aosp_tag="unknown"
+
+readonly build_number="13955164"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/mustang-bd3a.250721.001.b7-factory-cf5e4f47.zip"
+readonly image_sha256="cf5e4f47215840113ee5b9e0ac7fb174df01604126872cd37cbc263b55fa32bd"
+
+readonly flash_url="https://flash.android.com/build/13955164?target=mustang-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/mustang-ota-bd3a.250721.001.b7-7727eceb.zip"
+readonly ota_sha256="7727eceb72f6266a3cf26f455ff1356f3fa7ac6065f49cc6441c92cd5547fb39"
+
+readonly security_patch="unknown"
