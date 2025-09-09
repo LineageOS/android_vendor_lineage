@@ -16,6 +16,24 @@
       "message": "Fixes duplicate output filename collision\n\n```\nINFO: Saving to: benz-23871-crow-overlay-DVT1-camera-0x46232744d57254d9.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/camera/oplus/benz-camera-overlay.dtbo\nReloading overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/camera/oplus/benz-camera-overlay.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/camera/oplus/benz-camera-overlay.dtbo\nINFO: Saving to: benz-23871-crow-overlay-DVT1-23061-audio-23061-display-camera-0x46232744d57254d9.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/audio/oplus/benz-23061-audio-crow-overlay.dtbo\nReloading overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/audio/oplus/benz-23061-audio-crow-overlay.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/audio/oplus/benz-23061-audio-crow-overlay.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/display/oplus/benz-23061-display-crow-overlay.dtbo\nReloading overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/display/oplus/benz-23061-display-crow-overlay.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/display/oplus/benz-23061-display-crow-overlay.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/camera/oplus/benz-camera-overlay.dtbo\nReloading overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/camera/oplus/benz-camera-overlay.dtbo\nMerging overlay blob out/target/product/benz/obj/DTB_OBJ/arch/arm64/boot/dts/vendor/qcom/camera/oplus/benz-camera-overlay.dtbo\nINFO: Saving to: benz-23871-crow-overlay-DVT1-23061-audio-23061-display-camera-0x46232744d57254d9.dtbo\nTraceback (most recent call last):\n  File \"/sauce/los/vendor/lineage/build/tools/merge_dtbs.py\", line 567, in \n    main()\n    ~~~~^^\n  File \"/sauce/los/vendor/lineage/build/tools/merge_dtbs.py\", line 551, in main\n    created.extend(dt.save(args.out))\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/sauce/los/vendor/lineage/build/tools/merge_dtbs.py\", line 469, in save\n    yield mdt.save(name, out_dir)\n          ~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/sauce/los/vendor/lineage/build/tools/merge_dtbs.py\", line 361, in save\n    assert not os.path.exists(out_file), \"Cannot overwrite: {}\".format(out_file)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Cannot overwrite: out/target/product/benz/obj/DTB_OBJ/out/benz-23871-crow-overlay-DVT1-23061-audio-23061-display-camera-0x46232744d57254d9.dtbo\n```",
       "revId": "d02fee17f312e5f51e41fd2c70aef0aefd68e48f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2c01f92_c96f29b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-09-09T12:15:44Z",
+      "side": 1,
+      "message": "Please re-verify.",
+      "parentUuid": "e842ce39_80c46242",
+      "revId": "d02fee17f312e5f51e41fd2c70aef0aefd68e48f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
