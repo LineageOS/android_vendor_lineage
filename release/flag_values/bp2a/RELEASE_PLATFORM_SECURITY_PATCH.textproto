@@ -1,4 +1,4 @@
 name: "RELEASE_PLATFORM_SECURITY_PATCH"
 value {
-  string_value: "2025-08-01"
+  string_value: "2025-09-01"
 }
