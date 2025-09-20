@@ -5,6 +5,7 @@ $(call inherit-product, device/google/cuttlefish/vsoc_arm64_only/auto/aosp_cf.mk
 
 include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
+TARGET_DISABLE_EPPE := true
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Enable mainline checking
