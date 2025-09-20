@@ -34,6 +34,24 @@
       "parentUuid": "69397097_09c578d5",
       "revId": "18135ea2134501d3f0afa0f2407f6d7fde2e43e8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79c8eaf0_7f735fdc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-09-20T09:31:42Z",
+      "side": 1,
+      "message": "to add bit more context to this, I want to switch crowdin from random pixel to cuttlefish so all i need is to \"breakfast cf_phone_arm64 \u0026\u0026 mka otatools-package target-files-package dist\" to succeed.",
+      "parentUuid": "f73fa3c4_6977686a",
+      "revId": "18135ea2134501d3f0afa0f2407f6d7fde2e43e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
