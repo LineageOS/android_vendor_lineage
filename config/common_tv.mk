@@ -9,7 +9,8 @@ $(call inherit-product, device/lineage/atv/lineage_atv.mk)
 
 # AOSP packages
 PRODUCT_PACKAGES += \
-    LeanbackIME
+    LeanbackIME \
+    LiveTv
 
 # Lineage packages
 PRODUCT_PACKAGES += \
