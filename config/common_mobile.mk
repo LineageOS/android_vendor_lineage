@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     lineage_charger_animation_vendor
 endif
 
+# Credential storage
+PRODUCT_PACKAGES += \
+    android.software.credentials.prebuilt.xml
+
 # Legal
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.lineagelegal.url=https://lineageos.org/legal
