@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce226bb1_a9cd4bfc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2025-09-22T16:17:41Z",
+      "side": 1,
+      "message": "I don\u0027t know if it\u0027s correct, but tv emulator fails to build with artifact path requirement error.",
+      "revId": "44f5b326ace58aa1b0605f6e77e6fa64131b97b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
