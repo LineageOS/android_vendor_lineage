@@ -717,7 +717,7 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 	@echo "Building $(BOARD_KERNEL_IMAGE_NAME)"
 	@mkdir -p $(KERNEL_OUT)
 	@rm -rf $(KERNEL_PATH)/out
-	$(hide) cd $(KERNEL_PATH) && ./tools/bazel --output_user_root=$(abspath $(KERNEL_OUT)/bazel-out) run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) //$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist -- --destdir=$(KERNEL_OUT)
+	$(hide) cd $(KERNEL_PATH) && ./tools/bazel --output_user_root=$(abspath $(KERNEL_OUT)/bazel-out) run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) //$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist -- --destdir=$(abspath $(KERNEL_OUT))
 	$(if $(BOOT_KERNEL_MODULES),\
 		$(call build-image-kernel-modules-lineage,$(addprefix $(KERNEL_OUT)/,$(BOOT_KERNEL_MODULES)),$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)\
 	)
