@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ed74782_c615c3b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34491
+      },
+      "writtenOn": "2025-10-07T14:53:25Z",
+      "side": 1,
+      "message": "Using a CTM SIM test, the APN is configured correctly, successfully obtaining an IPv6 address, and is able to access the internet via IPv6.",
+      "revId": "0814e0c8fd29af273712d1ee2bb0d34609df3a06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
