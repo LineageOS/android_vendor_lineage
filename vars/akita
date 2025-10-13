@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.250905.014"
+readonly build_id="BP3A.251005.004.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="aml_tz6_351400020"
 readonly aosp_tag="unknown"
 
-readonly build_number="13873947"
+readonly build_number="14042072"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/akita-bp3a.250905.014-factory-47caa9a7.zip"
-readonly image_sha256="47caa9a7e39670689f1746b7cf6c4770906eb69eff6977c5f03573fa62068697"
+readonly image_url="https://dl.google.com/dl/android/aosp/akita-bp3a.251005.004.b1-factory-eb904276.zip"
+readonly image_sha256="eb904276a8f26049122c9f3fc40cf59fc46c7facb4187b5964f95690dbb58232"
 
-readonly flash_url="https://flash.android.com/build/13873947?target=akita-user&signed"
+readonly flash_url="https://flash.android.com/build/14042072?target=akita-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/akita-ota-bp3a.250905.014-ad844b0a.zip"
-readonly ota_sha256="ad844b0aab9a0df6b00f623abd917a66b9d399e7e7cda816d323e006b45fe0e3"
+readonly ota_url="https://dl.google.com/dl/android/aosp/akita-ota-bp3a.251005.004.b1-4db69027.zip"
+readonly ota_sha256="4db69027e33ec57ad458c08d8834d181b4fe29d1a61f6ba3d8aa9faadfd7af13"
 
 readonly security_patch="unknown"

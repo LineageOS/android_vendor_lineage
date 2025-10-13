@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.250905.014"
+readonly build_id="BP3A.251005.004.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="aml_tz6_351400020"
 readonly aosp_tag="unknown"
 
-readonly build_number="13873947"
+readonly build_number="14042072"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/caiman-bp3a.250905.014-factory-37c6bbe7.zip"
-readonly image_sha256="37c6bbe768c722e8c53d8be486530af5d54b637b72ccd10790420e1434b0aae7"
+readonly image_url="https://dl.google.com/dl/android/aosp/caiman-bp3a.251005.004.b1-factory-d138c458.zip"
+readonly image_sha256="d138c458f58bdfd1cf7eb802f0a6d8c1bba4bcc17f643de2cdb2208a31ea0e02"
 
-readonly flash_url="https://flash.android.com/build/13873947?target=caiman-user&signed"
+readonly flash_url="https://flash.android.com/build/14042072?target=caiman-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/caiman-ota-bp3a.250905.014-8453649c.zip"
-readonly ota_sha256="8453649c19110c9336fbfd3bbab0d2eb6d57c303936803dfdf6d4a4fb0dc9205"
+readonly ota_url="https://dl.google.com/dl/android/aosp/caiman-ota-bp3a.251005.004.b1-371e23dd.zip"
+readonly ota_sha256="371e23dd27092768c0a4f3ab6dae5857df7cedf17bf57f91572455eaf1b34b39"
 
 readonly security_patch="unknown"

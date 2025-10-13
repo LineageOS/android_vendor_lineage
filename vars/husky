@@ -8,21 +8,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.250905.014"
+readonly build_id="BP3A.251005.004.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="aml_tz6_351400020"
 readonly aosp_tag="unknown"
 
-readonly build_number="13873947"
+readonly build_number="14042072"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/husky-bp3a.250905.014-factory-48da20d9.zip"
-readonly image_sha256="48da20d92a768eea8fccf9d7bc4109d92ae14f8a0c07bc07a39b58a509257f91"
+readonly image_url="https://dl.google.com/dl/android/aosp/husky-bp3a.251005.004.b1-factory-35ea7f07.zip"
+readonly image_sha256="35ea7f07a168d6f4a6a36e476279831fcc4b05db1034d9147f873311accf7710"
 
-readonly flash_url="https://flash.android.com/build/13873947?target=husky-user&signed"
+readonly flash_url="https://flash.android.com/build/14042072?target=husky-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-bp3a.250905.014-c1761dd7.zip"
-readonly ota_sha256="c1761dd7e5d32476f8e9f23facbe566518731acf90afba90fb918308dca76957"
+readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-bp3a.251005.004.b1-edb8ab36.zip"
+readonly ota_sha256="edb8ab3602e4aa6485bd2e0da962ebad14d59161e58878bf0d3522b99eb8b270"
 
 readonly security_patch="unknown"
