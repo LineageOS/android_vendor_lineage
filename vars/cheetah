@@ -8,21 +8,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.250905.014"
+readonly build_id="BP3A.251005.004.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="aml_tz6_351400020"
 readonly aosp_tag="unknown"
 
-readonly build_number="13873947"
+readonly build_number="14042072"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-bp3a.250905.014-factory-3ef97bbc.zip"
-readonly image_sha256="3ef97bbc33b3a1b335f62d6466fd794379eb61272836df0d1ee7238b1d141be7"
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-bp3a.251005.004.b1-factory-e2233e94.zip"
+readonly image_sha256="e2233e949629d31cc81fa64f5addad5d9c4096b835d342a251f7cc155b389aff"
 
-readonly flash_url="https://flash.android.com/build/13873947?target=cheetah-user&signed"
+readonly flash_url="https://flash.android.com/build/14042072?target=cheetah-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-bp3a.250905.014-ead1d581.zip"
-readonly ota_sha256="ead1d581384f338bdefe1f3177d2e87dedc556db4dc4b84894c325e80bcae5e3"
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-bp3a.251005.004.b1-9cc767d8.zip"
+readonly ota_sha256="9cc767d8c0193de529022fa59363f23ff9b033314b79de5cc032d4258a41bd12"
 
 readonly security_patch="unknown"
