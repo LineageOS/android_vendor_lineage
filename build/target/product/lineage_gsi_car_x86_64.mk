@@ -23,7 +23,4 @@ TARGET_NO_KERNEL_OVERRIDE := true
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/Home/Home.apk
-
 PRODUCT_NAME := lineage_gsi_car_x86_64
