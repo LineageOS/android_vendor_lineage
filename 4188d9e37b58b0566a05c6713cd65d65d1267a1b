@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5c645d6_361390a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32442
+      },
+      "writtenOn": "2025-10-20T10:42:41Z",
+      "side": 1,
+      "message": "This has been used in common/pixel-common-device.mk since a long time now, should be fine keeping this in common as well?",
+      "revId": "4188d9e37b58b0566a05c6713cd65d65d1267a1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
