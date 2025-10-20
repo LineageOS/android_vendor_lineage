@@ -12,7 +12,7 @@ genrule {
     tool_files: [
         "bootanimation.tar",
         "desc.txt",
-        "gen-bootanimation.sh",
+        "gen-bootanimation.py",
     ],
     out: ["bootanimation.zip"],
 
@@ -23,7 +23,7 @@ genrule {
         (any @ height, any @ width, any @ half_res, any @ prebuilt_file):
             "cp ../../../../../" + prebuilt_file + " $(out)",
         (any @ height, any @ width, any @ half_res, default):
-            "$(location gen-bootanimation.sh)" +
+            "$(location gen-bootanimation.py)" +
             " $(out)" +
             " $(genDir)" +
             " $(location bootanimation.tar)" +
@@ -34,7 +34,7 @@ genrule {
             " " + width +
             " " + half_res,
         (default, default, default, default):
-            "$(location gen-bootanimation.sh)" +
+            "$(location gen-bootanimation.py)" +
             " $(out)" +
             " $(genDir)" +
             " $(location bootanimation.tar)" +
