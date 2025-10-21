@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b491b1d_3f94bc3e",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 954,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-10-21T19:33:26Z",
+      "side": 1,
+      "message": "Will obviously be changed when this change is approved",
+      "range": {
+        "startLine": 954,
+        "startChar": 40,
+        "endLine": 954,
+        "endChar": 46
+      },
+      "revId": "58a50e528d0223b49f08e9c24d1efdda38ca3967",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
