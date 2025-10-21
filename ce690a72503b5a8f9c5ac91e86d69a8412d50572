@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c3aafe9_e95035f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-10-21T15:02:13Z",
+      "side": 1,
+      "message": "Either this or we switch to double quotes which causes a smaller diff, but right now it\u0027s inconsistent",
+      "revId": "ce690a72503b5a8f9c5ac91e86d69a8412d50572",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
