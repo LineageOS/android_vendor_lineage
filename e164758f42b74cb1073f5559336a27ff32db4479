@@ -16,6 +16,24 @@
       "message": "what\u0027s the point of using python like a glorified bash script?",
       "revId": "e164758f42b74cb1073f5559336a27ff32db4479",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "278b071d_c9052dce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34693
+      },
+      "writtenOn": "2025-10-21T11:21:05Z",
+      "side": 1,
+      "message": "I just think that this is a bit more faster and it works the same way as the old one.",
+      "parentUuid": "0fcc15c1_b61dab03",
+      "revId": "e164758f42b74cb1073f5559336a27ff32db4479",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
