@@ -22,6 +22,29 @@
       },
       "revId": "58a50e528d0223b49f08e9c24d1efdda38ca3967",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e03fa0b_30e3c96e",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 966,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-10-21T19:39:06Z",
+      "side": 1,
+      "message": "This part can be removed I guess, there\u0027s no git repo in the prebuilts destination for lineage",
+      "range": {
+        "startLine": 966,
+        "startChar": 53,
+        "endLine": 966,
+        "endChar": 89
+      },
+      "revId": "58a50e528d0223b49f08e9c24d1efdda38ca3967",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
