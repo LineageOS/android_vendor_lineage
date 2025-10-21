@@ -34,6 +34,24 @@
       "parentUuid": "0fcc15c1_b61dab03",
       "revId": "e164758f42b74cb1073f5559336a27ff32db4479",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "daca3a53_1bcabc01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-10-21T11:59:26Z",
+      "side": 1,
+      "message": "it\u0027s not faster.\n\n```\nhyperfine \u0027./gen-bootanimation.sh .out .gen bootanimation.tar desc.txt /home/luk/lineage-23/prebuilts/tools-lineage/linux-x86/bin/mogrify /home/luk/lineage-23/out/host/linux-x86/bin/soong_zip 1920 1080 false\u0027 \u0027./gen-bootanimation.py .out .gen bootanimation.tar desc.txt /home/luk/lineage-23/prebuilts/tools-lineage/linux-x86/bin/mogrify /home/luk/lineage-23/out/host/linux-x86/bin/soong_zip 1920 1080 false\u0027 -N --warmup 3\n\nBenchmark 1: ./gen-bootanimation.sh .out .gen bootanimation.tar desc.txt /home/luk/lineage-23/prebuilts/tools-lineage/linux-x86/bin/mogrify /home/luk/lineage-23/out/host/linux-x86/bin/soong_zip 1920 1080 false\n  Time (mean ± σ):     43.112 s ±  0.103 s    [User: 20.916 s, System: 21.982 s]\n  Range (min … max):   42.921 s … 43.318 s    10 runs\n \nBenchmark 2: ./gen-bootanimation.py .out .gen bootanimation.tar desc.txt /home/luk/lineage-23/prebuilts/tools-lineage/linux-x86/bin/mogrify /home/luk/lineage-23/out/host/linux-x86/bin/soong_zip 1920 1080 false\n  Time (mean ± σ):     43.185 s ±  0.090 s    [User: 20.971 s, System: 21.989 s]\n  Range (min … max):   43.055 s … 43.285 s    10 runs\n \nSummary\n  ./gen-bootanimation.sh .out .gen bootanimation.tar desc.txt /home/luk/lineage-23/prebuilts/tools-lineage/linux-x86/bin/mogrify /home/luk/lineage-23/out/host/linux-x86/bin/soong_zip 1920 1080 false ran\n    1.00 ± 0.00 times faster than ./gen-bootanimation.py .out .gen bootanimation.tar desc.txt /home/luk/lineage-23/prebuilts/tools-lineage/linux-x86/bin/mogrify /home/luk/lineage-23/out/host/linux-x86/bin/soong_zip 1920 1080 false\n```",
+      "parentUuid": "278b071d_c9052dce",
+      "revId": "e164758f42b74cb1073f5559336a27ff32db4479",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
