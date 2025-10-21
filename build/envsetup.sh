@@ -929,3 +929,60 @@ function fixup_common_out_dir() {
         mkdir -p ${common_out_dir}
     fi
 }
+
+function build_kernel() {
+    local lineage_version="lineage-$(_get_build_var_cached PRODUCT_VERSION_MAJOR).$(_get_build_var_cached PRODUCT_VERSION_MINOR)"
+
+    local target_kernel_device="$(_get_build_var_cached TARGET_KERNEL_DEVICE)"
+    local target_kernel_dir="${ANDROID_BUILD_TOP}/$(_get_build_var_cached TARGET_KERNEL_DIR)"
+    local target_kernel_source="$(_get_build_var_cached TARGET_KERNEL_PLATFORM_SOURCE)"
+
+    local KERNEL_BUILD_TOP="${ANDROID_BUILD_TOP}/out-kernel/${target_kernel_source}"
+
+    # Make sure we have the kernel source folder structure in place
+    if [ ! -d "${KERNEL_BUILD_TOP}/.repo" ]; then
+        echo "Kernel source ${KERNEL_BUILD_TOP} is missing, preparing folder structure"
+
+        # Copy .repo/repo from Android tree to allow nested `repo init`
+        mkdir -p "${KERNEL_BUILD_TOP}/.repo"
+        cp -R "${ANDROID_BUILD_TOP}/.repo/repo" "${KERNEL_BUILD_TOP}/.repo/repo"
+
+        # Mark as out dir to prevent build system from scanning it
+        touch "${KERNEL_BUILD_TOP}/.out-dir"
+    fi
+
+    # Init, sync, remove previous build output & build kernel
+    pushd "${KERNEL_BUILD_TOP}" > /dev/null
+    if [[ "${SKIP_KERNEL_SYNC}" != "true" && "${SKIP_KERNEL_SYNC}" != "1" ]]; then
+        echo "Syncing ${KERNEL_BUILD_TOP}"
+        local target_kernel_manifest=$(echo android_kernel_${target_kernel_source}_manifest | tr / _)
+        local repo_init_args=("-b" "${lineage_version}")
+        if [ -n "${LINEAGE_MIRROR}" ]; then
+            repo_init_args+=("--reference" "${LINEAGE_MIRROR}")
+        fi
+
+        if ! repo init -u https://github.com/LineageOS/${target_kernel_manifest}.git ${repo_init_args[@]} || ! reposync -d; then
+            popd > /dev/null
+            return 1
+        fi
+    fi
+    if [ -d "${KERNEL_BUILD_TOP}/out/${target_kernel_device}/dist" ]; then
+        rm -rf "${KERNEL_BUILD_TOP}/out/${target_kernel_device}/dist"
+    fi
+    if ! ./build_"${target_kernel_device}".sh; then
+        popd > /dev/null
+        return 1
+    fi
+    popd > /dev/null
+
+    # Remove previous kernel prebuilts
+    if [ -d "${target_kernel_dir}" ]; then
+        find "${target_kernel_dir}" -maxdepth 1 ! \( -name .gitignore \) -type f -exec rm -f {} +
+    fi
+
+    # Copy the new kernel prebuilts
+    mkdir -p "${target_kernel_dir}"
+    cp -a "${KERNEL_BUILD_TOP}/out/${target_kernel_device}/dist/"* "${target_kernel_dir}/"
+    chmod -x "${target_kernel_dir}/"*
+    echo "Kernel build output copied to ${target_kernel_dir}/"
+}
