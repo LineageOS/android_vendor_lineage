@@ -3377,6 +3377,7 @@
   <apn carrier="3 AU" mcc="505" mnc="06" apn="3services" mmsc="http://mmsc.three.net.au:10021/mmsc" mmsproxy="10.176.57.25" mmsport="8799" type="default,supl,mms" />
   <apn carrier="VF AU PXT" mcc="505" mnc="07" apn="live.vodafone.com" mmsc="http://pxt.vodafone.net.au/pxtsend" mmsproxy="10.202.2.60" mmsport="8080" type="mms" />
   <apn carrier="VF Internet" mcc="505" mnc="07" apn="vfinternet.au" type="default,supl" />
+  <apn carrier="Tele2 Internet" mcc="401" mnc="77" apn="internet.tele2.kz" protocol="IPV4V6" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Telstra MMS" mcc="505" mnc="11" apn="Telstra.mms" mmsc="http://mmsc.telstra.com:8002" mmsproxy="10.1.1.180" mmsport="80" type="mms" />
   <apn carrier="Telstra Internet" mcc="505" mnc="11" apn="Telstra.wap" type="default,supl" />
   <apn carrier="3Internet" mcc="505" mnc="12" apn="3netaccess" type="default,supl" />
@@ -3969,6 +3970,7 @@
   <apn carrier="BAM Pepaga Antel" mcc="748" mnc="01" apn="prepago.ancel" user="bam" password="bam" type="default,supl" />
   <apn carrier="Ancel" mcc="748" mnc="01" apn="ancel" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Ancel MMS" mcc="748" mnc="01" apn="mms" proxy="" port="" user="" password="" mmsc="http://mmsc.mms.ancelutil.com.uy" mmsproxy="200.40.246.2" mmsport="3128" type="mms" />
+  <apn carrier="Altel" mcc="401" mnc="77" apn="internet.altel.kz" protocol="IPV4V6" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Antel" mcc="748" mnc="01" apn="wap" proxy="200.40.246.2" port="3128" user="" password="" server="www.dale.com.uy" mmsc="http://mmsc.mms.ancelutil.com.uy" mmsproxy="200.40.246.2" mmsport="" type="default,supl,mms" />
   <apn carrier="BAM Pepaga Antel" mcc="748" mnc="01" apn="prepago.ancel" proxy="" port="" user="bam" password="bam" mmsc="" type="default,supl" />
   <apn carrier="Movistar INTERNET" mcc="748" mnc="07" apn="webapn.movistar.com.uy" user="movistar" password="movistar" type="default,supl" />
