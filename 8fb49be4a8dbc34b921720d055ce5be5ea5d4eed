@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5950724_f98ace57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-10-23T20:51:39Z",
+      "side": 1,
+      "message": "link to carrier documentation in the commit msg?",
+      "revId": "8fb49be4a8dbc34b921720d055ce5be5ea5d4eed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
