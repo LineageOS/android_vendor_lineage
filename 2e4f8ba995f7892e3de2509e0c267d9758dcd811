@@ -16,6 +16,24 @@
       "message": "Reference for Turkcell: https://www.turkcell.com.tr/yardim/cihazlar/samsung-galaxy-s25-ultra-yardim#internet-ayarlari\n\nOther operators were obtained by comparing APN configs from various OEMs.",
       "revId": "2e4f8ba995f7892e3de2509e0c267d9758dcd811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ea8614a_f5741b33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-10-24T19:52:26Z",
+      "side": 1,
+      "message": "Put that into the commit message",
+      "parentUuid": "1936d501_04ec6627",
+      "revId": "2e4f8ba995f7892e3de2509e0c267d9758dcd811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
