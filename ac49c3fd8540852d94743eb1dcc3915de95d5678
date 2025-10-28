@@ -157,6 +157,24 @@
       "message": "Another glitch: https://review.lineageos.org/c/LineageOS/android_packages_apps_Settings/+/434281 does not work anymore, \"Google\" is again placed at the top of the menu. Afaics top_level_settings_expressive.xml needs to be patched as well.",
       "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34ca1c5f_934baa33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-10-28T23:54:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "deb5d992_1054d579",
+      "revId": "ac49c3fd8540852d94743eb1dcc3915de95d5678",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
