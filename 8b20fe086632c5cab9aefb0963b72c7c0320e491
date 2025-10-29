@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b02eb95_7889e052",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-10-29T17:32:50Z",
+      "side": 1,
+      "message": "Either remove the second sentence or move it to description.",
+      "revId": "8b20fe086632c5cab9aefb0963b72c7c0320e491",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
