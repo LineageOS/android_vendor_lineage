@@ -109,6 +109,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f6238ebe_71f5a4a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35115
+      },
+      "writtenOn": "2025-10-29T18:04:38Z",
+      "side": 1,
+      "message": "I\u0027ve restored it to its previous state, but I can\u0027t figure out how to revert the patch or proceed with the updated file.",
+      "parentUuid": "0cb2cdf6_114416e0",
+      "revId": "8b20fe086632c5cab9aefb0963b72c7c0320e491",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ace85ffb_9a6d7921",
         "filename": "prebuilt/common/etc/apns-conf.xml",
         "patchSetId": 7
