@@ -180,6 +180,13 @@ def add_to_manifest(repositories):
             "remote": "github",
             "name": "LineageOS/%s" % repo_name,
             "revision": repo_revision })
+
+        for symlink in repository.get("linkfiles", []):
+            linkfile = ElementTree.Element("linkfile", attrib={
+                "dest": symlink.get("dest"),
+                "src": symlink.get("src") })
+            project.append(linkfile)
+
         if repo_remote := repository.get("remote", None):
             # aosp- remotes are only used for kernel prebuilts, thus they
             # don't let you customize clone-depth/revision.
