@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eea55680_b0de8636",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-10-30T15:49:25Z",
+      "side": 1,
+      "message": "May I ask if there is a reference for this entry? I failed to find it even on OEM apn configs.",
+      "revId": "fc3efa0ac763c7e352918bb16e1b18492307914c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
