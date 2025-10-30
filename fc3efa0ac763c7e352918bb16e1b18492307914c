@@ -16,6 +16,24 @@
       "message": "May I ask if there is a reference for this entry? I failed to find it even on OEM apn configs.",
       "revId": "fc3efa0ac763c7e352918bb16e1b18492307914c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d35feda6_205d248e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35115
+      },
+      "writtenOn": "2025-10-30T16:04:07Z",
+      "side": 1,
+      "message": "https://www.netgsm.com.tr/gsm/mobil-hat\nhttps://www.netgsm.com.tr/dist/images/netgsm-apn-ayarlari.jpg?v1\n\nI currently use Netgsm as my mobile operator, and OEM manufacturers haven\u0027t added it for over a year.",
+      "parentUuid": "eea55680_b0de8636",
+      "revId": "fc3efa0ac763c7e352918bb16e1b18492307914c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
