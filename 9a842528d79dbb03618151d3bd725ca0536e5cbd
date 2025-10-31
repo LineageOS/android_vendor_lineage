@@ -16,6 +16,23 @@
       "message": "Camera HW support requires setting up special \"sensor mode\" that provide actual black feedback, so it\u0027s device specific (on QCOM chromatix side)\nFor microphone afaik only sound trigger has a HW component that needs disabling, everything else should always work.",
       "revId": "9a842528d79dbb03618151d3bd725ca0536e5cbd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc82234b_2eedb0b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32442
+      },
+      "writtenOn": "2025-10-31T12:10:56Z",
+      "side": 1,
+      "message": "if there is nothing blocking this change, can we have this merged?",
+      "revId": "9a842528d79dbb03618151d3bd725ca0536e5cbd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
