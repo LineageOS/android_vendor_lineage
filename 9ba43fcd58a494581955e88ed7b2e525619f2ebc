@@ -22,6 +22,30 @@
       },
       "revId": "9ba43fcd58a494581955e88ed7b2e525619f2ebc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31183195_33203492",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 25
+      },
+      "lineNbr": 950,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-11-02T20:38:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8f5a070e_659d33a2",
+      "range": {
+        "startLine": 950,
+        "startChar": 29,
+        "endLine": 950,
+        "endChar": 36
+      },
+      "revId": "9ba43fcd58a494581955e88ed7b2e525619f2ebc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
