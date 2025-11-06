@@ -33,6 +33,24 @@
       "message": "Just an heads up, recovery shell will run without root permsissions (you can always patch `IsRoDebuggable` checks to always return true btw)",
       "revId": "f61bc104c2cf25b8f74134f262e8cdc4b37b0bb3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05a50106_eabe267e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-11-06T12:20:56Z",
+      "side": 1,
+      "message": "adb root still works with this patch.",
+      "parentUuid": "5c7a98d6_0226cd30",
+      "revId": "f61bc104c2cf25b8f74134f262e8cdc4b37b0bb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
