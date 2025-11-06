@@ -69,6 +69,24 @@
       "parentUuid": "05a50106_eabe267e",
       "revId": "f61bc104c2cf25b8f74134f262e8cdc4b37b0bb3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f063b64_8c77fa53",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2025-11-06T12:34:33Z",
+      "side": 1,
+      "message": "didn\u0027t know recovery supports the adb root command as well, TIL",
+      "parentUuid": "232d57a9_af12af13",
+      "revId": "f61bc104c2cf25b8f74134f262e8cdc4b37b0bb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
