@@ -51,6 +51,24 @@
       "parentUuid": "5c7a98d6_0226cd30",
       "revId": "f61bc104c2cf25b8f74134f262e8cdc4b37b0bb3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "232d57a9_af12af13",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-11-06T12:22:34Z",
+      "side": 1,
+      "message": "```\n$ adb reboot recovery\n$ adb shell getprop ro.debuggable\n0\n$ adb root\ntimeout expired while waiting for device\n$ adb shell id\nuid\u003d0(root) gid\u003d0(root) groups\u003d0(root),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid),3012(readtracefs) context\u003du:r:su:s0\n```",
+      "parentUuid": "05a50106_eabe267e",
+      "revId": "f61bc104c2cf25b8f74134f262e8cdc4b37b0bb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
