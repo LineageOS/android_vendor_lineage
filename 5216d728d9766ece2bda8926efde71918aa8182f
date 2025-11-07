@@ -52,6 +52,23 @@
       "parentUuid": "8c0a54c4_3582c0f2",
       "revId": "5216d728d9766ece2bda8926efde71918aa8182f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ea7efd9_b4603b32",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-11-07T07:07:55Z",
+      "side": 1,
+      "message": "Yeah just using the default Verizon APNs makes sense in that case",
+      "revId": "5216d728d9766ece2bda8926efde71918aa8182f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
