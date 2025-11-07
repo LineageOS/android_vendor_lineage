@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c4e1b3d_79f35d87",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2025-11-07T02:59:10Z",
+      "side": 1,
+      "message": "This matches what\u0027s on https://www.usmobile.com/apn-download, can you reach out to them and get them to provide the correct APNs if this is broken?\n\nAlso can you check what APNs get selected on stock for this carrier?",
+      "revId": "5216d728d9766ece2bda8926efde71918aa8182f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
