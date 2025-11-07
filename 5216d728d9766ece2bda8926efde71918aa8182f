@@ -34,6 +34,24 @@
       "parentUuid": "5c4e1b3d_79f35d87",
       "revId": "5216d728d9766ece2bda8926efde71918aa8182f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9aaee11e_35e0fda4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36174
+      },
+      "writtenOn": "2025-11-07T07:04:58Z",
+      "side": 1,
+      "message": "I see 2 ways we can resolve the mobile data issue. We can either clone a bunch of the Verizon APNs to have the US Mobile MVNO filters, or we can revert back to just using the Verizon APNs for US Mobile. To me, it makes more sense to revert to the Verizon APNs, since they worked fine for me, and I can\u0027t think of any benefit to having US Mobile specific APNs here. But I also don\u0027t really know anything about APNs, so I\u0027d happily defer to anyone who\u0027s more knowledgeable.",
+      "parentUuid": "8c0a54c4_3582c0f2",
+      "revId": "5216d728d9766ece2bda8926efde71918aa8182f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
