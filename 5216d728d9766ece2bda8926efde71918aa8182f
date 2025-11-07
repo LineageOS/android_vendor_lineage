@@ -16,6 +16,24 @@
       "message": "This matches what\u0027s on https://www.usmobile.com/apn-download, can you reach out to them and get them to provide the correct APNs if this is broken?\n\nAlso can you check what APNs get selected on stock for this carrier?",
       "revId": "5216d728d9766ece2bda8926efde71918aa8182f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c0a54c4_3582c0f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36174
+      },
+      "writtenOn": "2025-11-07T06:41:19Z",
+      "side": 1,
+      "message": "I think what\u0027s happening is that if you were to follow the guide on https://www.usmobile.com/apn-download and create the APN through the settings app, you would still allow the default Verizon APNs to be used, whereas creating an XML entry with the `mvno_match_data\u003d\"BA01500000000000\" mvno_type\u003d\"gid\"` attributes prevents any APNs without those attributes, including the default Verizon APNs, from being used. In my testing, if I add the following APN in conjunction with the US Mobile specific one, then my mobile data works:\n\n```\n\u003capn carrier\u003d\"US Mobile\" carrier_id\u003d\"2641\" mcc\u003d\"311\" mnc\u003d\"480\" apn\u003d\"IMS\" type\u003d\"ia\" protocol\u003d\"IPV4V6\" roaming_protocol\u003d\"IPV6\" profile_id\u003d\"2\" modem_cognitive\u003d\"true\" mvno_match_data\u003d\"BA01500000000000\" mvno_type\u003d\"gid\" /\u003e\n```\n\nThis is basically one of the default Verizon APNs, except I add the MVNO match filters so that it gets activated alongside the US Mobile APN.\n\nI don\u0027t have a stock device handy, but I\u0027m guessing it\u0027ll use the default Verizon APNs here: https://android.googlesource.com/device/sample/+/android16-release/etc/apns-full-conf.xml#16900, because those are the only ones with a matching MCC+MNC.\n\nI\u0027ve sent an email to US Mobile support to see if they have any more information.",
+      "parentUuid": "5c4e1b3d_79f35d87",
+      "revId": "5216d728d9766ece2bda8926efde71918aa8182f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
