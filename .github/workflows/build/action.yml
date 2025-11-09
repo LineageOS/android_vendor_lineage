@@ -6,8 +6,12 @@ runs:
     steps:
     - name: Install dependencies
       shell: bash
-      run: sudo apt update && sudo apt -y install libxml2-utils
+      run: sudo apt update && sudo apt -y install libxml2-utils pre-commit
 
     - name: Validate sensitive_pn.xml
       shell: bash
       run: xmllint --noout --schema ./spn/SpnInfo.xsd ./prebuilt/common/etc/sensitive_pn.xml
+
+    - name: Lint
+      shell: bash
+      run: pre-commit run --all
