@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (f79694 apns: Remove support for CUSTOM_APNS_FILE)
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
@@ -3857,3 +3858,5 @@
   <apn carrier="Claro UY" mcc="748" mnc="10" apn="gprs.claro.com.uy" user="ctigpr" password="ctigpr999" type="default,supl" />
   <apn carrier="Claro UY MMS" mcc="748" mnc="10" apn="mms.ctimovil.com.uy" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.uy" mmsproxy="170.051.255.240" mmsport="9201" type="mms" />
 </apns>
+=======
+>>>>>>> CHANGE (dda132 Move APNs data to vendor/apn)
