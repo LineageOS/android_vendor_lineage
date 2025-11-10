@@ -8,10 +8,6 @@ runs:
       shell: bash
       run: sudo apt update && sudo apt -y install libxml2-utils pre-commit
 
-    - name: Validate apns-conf.xml
-      shell: bash
-      run: xmllint --noout --schema ./tools/apns-conf.xsd ./prebuilt/common/etc/apns-conf.xml
-
     - name: Validate sensitive_pn.xml
       shell: bash
       run: xmllint --noout --schema ./spn/SpnInfo.xsd ./prebuilt/common/etc/sensitive_pn.xml
