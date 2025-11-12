@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "990d17a0_fdef7cc8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-11-12T05:06:17Z",
+      "side": 1,
+      "message": "No device past 18.1 properly used this per GitHub search, and the only ones that did were for Sprint which is now a dead network.",
+      "revId": "ccb1f1570b9ac527d327cfc306c63e434c2fe8fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
