@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1a01eb9_27253650",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-11-12T05:10:22Z",
+      "side": 1,
+      "message": "Only hits for using this are Sprint APNs which are long since useless anyway. Flags become no-ops.",
+      "revId": "17b1eaabc94b7d644990462d5dd51546f2578e67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
