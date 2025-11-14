@@ -24,6 +24,7 @@ TARGET_NO_KERNEL_OVERRIDE := true
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/Home/Home.apk
+    system/app/Home/Home.apk \
+    system/etc/permissions/android.software.credentials.xml
 
 PRODUCT_NAME := lineage_gsi_car_arm64
