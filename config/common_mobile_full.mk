@@ -31,11 +31,16 @@ PRODUCT_PACKAGES += \
     unrar \
     zstd
 
-# Fonts
+# Fonts customization
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
+    FontGoogleSansFlexOverlay \
     FontLatoOverlay \
     FontRubikOverlay
+
+# Fonts
+PRODUCT_PACKAGES += \
+    GoogleSansFlex-Regular.ttf
 
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
