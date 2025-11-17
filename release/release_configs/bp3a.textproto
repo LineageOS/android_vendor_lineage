@@ -1,0 +1,3 @@
+name: "bp3a"
+inherits: "bp2a"
+aconfig_value_sets: "aconfig_value_set-lineage-bp3a"

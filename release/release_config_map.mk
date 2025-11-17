@@ -17,6 +17,6 @@
 local_dir := $(dir $(lastword $(MAKEFILE_LIST)))
 
 # Attach the flag value definitions to the various release configurations.
-$(call declare-release-config, bp2a, $(local_dir)build_config/bp2a.scl)
+$(call declare-release-config, bp3a, $(local_dir)build_config/bp3a.scl)
 
 local_dir :=
