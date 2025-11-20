@@ -151,8 +151,8 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 				tool := ctx.OtherModuleName(module)
 				var path android.OptionalPath
 
-				if t, ok := module.(HostToolProvider); ok {
-					if !t.(android.Module).Enabled(ctx) {
+				if t, ok := android.OtherModuleProvider(ctx, module, android.HostToolProviderInfoProvider); ok {
+					if !android.OtherModulePointerProviderOrDefault(ctx, module, android.CommonModuleInfoProvider).Enabled {
 						if ctx.Config().AllowMissingDependencies() {
 							ctx.AddMissingDependencies([]string{tool})
 						} else {
@@ -160,7 +160,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 						}
 						break
 					}
-					path = t.HostToolPath()
+					path = t.HostToolPath
 				} else {
 					ctx.ModuleErrorf("%q is not a host tool provider", tool)
 					break
@@ -188,7 +188,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		return
 	}
 
-	toolFiles := ctx.ExpandSources(g.properties.Tool_files, nil)
+	toolFiles := android.PathsForModuleSrc(ctx, g.properties.Tool_files)
 	for _, tool := range toolFiles {
 		g.implicitDeps = append(g.implicitDeps, tool)
 		if _, exists := tools[tool.Rel()]; !exists {
