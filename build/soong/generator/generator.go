@@ -188,7 +188,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		return
 	}
 
-	toolFiles := ctx.ExpandSources(g.properties.Tool_files, nil)
+	toolFiles := android.PathsForModuleSrc(ctx, g.properties.Tool_files)
 	for _, tool := range toolFiles {
 		g.implicitDeps = append(g.implicitDeps, tool)
 		if _, exists := tools[tool.Rel()]; !exists {
