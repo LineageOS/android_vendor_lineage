@@ -175,7 +175,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
     system/bin/getcap \
-    system/bin/setcap
+    system/bin/setcap \
+    system/%/libzstd.so
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
