@@ -234,7 +234,8 @@ PRODUCT_PACKAGES += \
     su
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/xbin/su
+    system/xbin/su \
+    ystem/%/adbd_flags_c_lib.so
 endif
 endif
 
