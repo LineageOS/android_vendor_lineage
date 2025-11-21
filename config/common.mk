@@ -228,6 +228,10 @@ endif
 # Root
 PRODUCT_PACKAGES += \
     adb_root
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/%/adbd_flags_c_lib.so
+
 ifneq ($(TARGET_BUILD_VARIANT),user)
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
