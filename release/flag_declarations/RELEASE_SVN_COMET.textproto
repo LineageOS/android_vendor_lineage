@@ -1,8 +1,0 @@
-name: "RELEASE_SVN_COMET"
-namespace: "android_UNKNOWN"
-description: "Using this flag to set build SVN(Software Version Number) value for COMET under VENDOR"
-value: {
-  string_value: "00"
-}
-workflow: MANUAL
-containers: "vendor"
