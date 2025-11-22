@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "412d90c5_fa12fd25",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-22T09:32:37Z",
+      "side": 1,
+      "message": "This is unrelated with BP3A. Can we move to lineage-23.0 branch?",
+      "revId": "c4e86b6e4a3960ae2740a340cb7a0058cbbbe5e5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
