@@ -16,6 +16,23 @@
       "message": "This is incomplete and has a soong counterpart which should be fixed here instead",
       "revId": "70eeb9ddbaaffec99fcd79f615838d9e20dadb33",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cdcbe7c8_4c3abeb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34512
+      },
+      "writtenOn": "2025-11-22T12:36:40Z",
+      "side": 1,
+      "message": "I couldn\u0027t figure out how to fix the other one, some1 else can attempt it",
+      "revId": "70eeb9ddbaaffec99fcd79f615838d9e20dadb33",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
