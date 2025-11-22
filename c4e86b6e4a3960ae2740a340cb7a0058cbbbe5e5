@@ -16,6 +16,24 @@
       "message": "This is unrelated with BP3A. Can we move to lineage-23.0 branch?",
       "revId": "c4e86b6e4a3960ae2740a340cb7a0058cbbbe5e5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "395325d6_08a8426c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-11-22T10:59:41Z",
+      "side": 1,
+      "message": "Yes. This fixes aosp-merger",
+      "parentUuid": "412d90c5_fa12fd25",
+      "revId": "c4e86b6e4a3960ae2740a340cb7a0058cbbbe5e5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
