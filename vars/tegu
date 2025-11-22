@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.251005.004.B1"
+readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="android-15.0.0_r25"
 readonly aosp_tag="unknown"
 
-readonly build_number="14042072"
+readonly build_number="14339231"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tegu-bp3a.251005.004.b1-factory-6955cabd.zip"
-readonly image_sha256="6955cabdb47a8a977f70ade3beae7ea5da3d259f99fd7a87015737a376d3c71b"
+readonly image_url="https://dl.google.com/dl/android/aosp/tegu-bp3a.251105.015-factory-b816c396.zip"
+readonly image_sha256="b816c39665231c480f322aeb70dc7eeb64b5d6f7c706f7622c14d0f0d4a2a842"
 
-readonly flash_url="https://flash.android.com/build/14042072?target=tegu-user&signed"
+readonly flash_url="https://flash.android.com/build/14339231?target=tegu-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tegu-ota-bp3a.251005.004.b1-ee257f77.zip"
-readonly ota_sha256="ee257f777844c6ffff615bdfb9f991c99342d90299c21adea9d5603d0e375ab2"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tegu-ota-bp3a.251105.015-ee6d85ac.zip"
+readonly ota_sha256="ee6d85aca91829d111b714f7146913f25a0e2de1a9d3f33507c6398c23967e71"
 
 readonly security_patch="unknown"
