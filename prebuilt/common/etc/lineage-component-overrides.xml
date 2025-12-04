@@ -21,6 +21,7 @@
     </component-override>
 
     <component-override package="com.google.android.gms">
+        <component class=".update.control.NotificationControl" enabled="false" />
         <component class=".update.OtaSuggestionActivity" enabled="false" />
         <component class=".update.OtaSuggestionSummaryProvider" enabled="false" />
         <component class=".update.phone.PopupDialog" enabled="false" />
