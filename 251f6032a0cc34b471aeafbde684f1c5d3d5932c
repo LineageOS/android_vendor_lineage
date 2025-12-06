@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1dbf6f43_b30cccce",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 935,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2025-12-06T20:00:29Z",
+      "side": 1,
+      "message": "Maybe add an `echo` ?",
+      "revId": "251f6032a0cc34b471aeafbde684f1c5d3d5932c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
