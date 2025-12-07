@@ -1,18 +1,10 @@
 # Pixel 4
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  # common repos in coral
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="TP1A.221005.002.B2"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-13.0.0_r7"
-readonly aosp_tag="android-13.0.0_r31"
 
 readonly build_number="9382335"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/9382335?target=flame-user&si
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/flame-ota-tp1a.221005.002.b2-4d76895a.zip"
 readonly ota_sha256="4d76895aac34a8bb816a338439ee62ca0794628228cf4c1330b4e40a5c8cb4af"
-
-readonly security_patch="2022-10-05"

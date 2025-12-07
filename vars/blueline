@@ -1,18 +1,10 @@
 # Pixel 3
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  # common repos in crosshatch
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id=SP1A.210812.016.C2 # Jun 2022
+readonly build_id=SP1A.210812.016.C2
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-12.0.0_r31"
-readonly aosp_tag="android-12.0.0_r34"
 
 readonly build_number="8618562"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/8618562?target=blueline-user
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/blueline-ota-sp1a.210812.016.c2-f7ebc6b3.zip"
 readonly ota_sha256="f7ebc6b326be1b40355d1e0b6d5e5e73204878f3419dec954eb35e1677bb12a1"
-
-readonly security_patch="2021-10-05"

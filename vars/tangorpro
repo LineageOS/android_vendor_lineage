@@ -1,18 +1,10 @@
 # Pixel Tablet
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/tangorpro
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251105.013.A1"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14171100"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14171100?target=tangorpro-us
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-bp3a.251105.013.a1-560aceb3.zip"
 readonly ota_sha256="560aceb396c5ffa0301a1cfdfaae86662801584fbfcd2114c2db7ea6376a6688"
-
-readonly security_patch="unknown"

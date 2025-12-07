@@ -1,6 +1,6 @@
 # Pixel 2
 
-readonly build_id=RP1A.201005.004.A1 # Dec 2020
+readonly build_id=RP1A.201005.004.A1
 
 readonly image_url="https://dl.google.com/dl/android/aosp/walleye-rp1a.201005.004.a1-factory-0c23f6cf.zip"
 readonly image_sha256="0c23f6cf9e2194a3e72b1288f65c5a7f2f6c020080af49c8a494ee99ab3eb543"

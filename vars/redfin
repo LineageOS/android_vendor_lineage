@@ -1,19 +1,10 @@
 # Pixel 5
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  # common repos in barbet
-  device/google/redfin
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="UP1A.231105.001.B2"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-14.0.0_r13"
-readonly aosp_tag="android-14.0.0_r28"
 
 readonly build_number="11260668"
 
@@ -24,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/11260668?target=redfin-user&
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-up1a.231105.001.b2-17322169.zip"
 readonly ota_sha256="17322169afdc648e2e9ff46eee16156d5bdccd8842acb41b870b905cc28fe3b5"
-
-readonly security_patch="2023-11-05"

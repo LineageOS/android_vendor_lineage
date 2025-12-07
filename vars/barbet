@@ -1,19 +1,10 @@
 # Pixel 5a
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/redbull
-  device/google/barbet
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="AP2A.240805.005.S4"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-14.0.0_r55"
-readonly aosp_tag="android-14.0.0_r75"
 
 readonly build_number="12281092"
 
@@ -24,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/12281092?target=barbet-user&
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-ap2a.240805.005.s4-65a8b7c3.zip"
 readonly ota_sha256="65a8b7c3a4ad3a14a0b5b38b24adb05e64ba7f69d03b40e82e33260cc7ef8c33"
-
-readonly security_patch="2024-08-05"

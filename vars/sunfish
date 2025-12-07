@@ -1,18 +1,10 @@
 # Pixel 4a
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/sunfish
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="TQ3A.230805.001.S1"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-13.0.0_r67"
-readonly aosp_tag="android-13.0.0_r83"
 
 readonly build_number="10786265"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/10786265?target=sunfish-user
 
 readonly ota_url="https://archive.org/download/sunfish-tq3a.230805.001.s1/sunfish-ota-tq3a.230805.001.s1-965296b1.zip"
 readonly ota_sha256="965296b1498b1d71bbf4013088b34213d5e6bc4dc836a7d06d1534eaf7621336"
-
-readonly security_patch="2023-08-05"

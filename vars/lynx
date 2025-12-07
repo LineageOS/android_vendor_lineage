@@ -1,18 +1,10 @@
 # Pixel 7a
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/lynx
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14339231"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14339231?target=lynx-user&si
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-bp3a.251105.015-d894eccb.zip"
 readonly ota_sha256="d894eccbf4a5dda9cbc7f81649acc8d60420c6f4e89c3aeeb71e500e6d848077"
-
-readonly security_patch="unknown"
