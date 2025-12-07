@@ -1,19 +1,10 @@
 # Pixel 7 Pro
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/gs201
-  device/google/pantah
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251005.004.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14042072"
 
@@ -24,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14042072?target=cheetah-user
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-bp3a.251005.004.b1-9cc767d8.zip"
 readonly ota_sha256="9cc767d8c0193de529022fa59363f23ff9b033314b79de5cc032d4258a41bd12"
-
-readonly security_patch="unknown"

@@ -1,3 +1,0 @@
-# Usage: ${kernel_repos[@]}
-readonly kernel_repos=(
-)

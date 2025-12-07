@@ -1,18 +1,10 @@
 # Pixel 9 Pro
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  # common repos in komodo
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14339231"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14339231?target=caiman-user&
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/caiman-ota-bp3a.251105.015-a8bb230b.zip"
 readonly ota_sha256="a8bb230b33a1a8de497e66c62381e89c5b987ad13af55dc04cb00df42246877c"
-
-readonly security_patch="unknown"

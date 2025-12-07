@@ -1,18 +1,10 @@
 # Pixel Fold
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/felix
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14339231"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14339231?target=felix-user&s
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-bp3a.251105.015-5b2ab061.zip"
 readonly ota_sha256="5b2ab0615c282ab66e449efd4a8ccc4f51e48f2a15b544c5917d9055f47f2c04"
-
-readonly security_patch="unknown"

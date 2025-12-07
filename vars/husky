@@ -1,19 +1,10 @@
 # Pixel 8 Pro
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/zuma
-  device/google/shusky
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14339231"
 
@@ -24,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14339231?target=husky-user&s
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/husky-ota-bp3a.251105.015-858f6e42.zip"
 readonly ota_sha256="858f6e422d40466fde582ab100134be6ca0fcdf2f095e7dbbd2f00d49c540292"
-
-readonly security_patch="unknown"

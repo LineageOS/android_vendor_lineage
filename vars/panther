@@ -1,18 +1,10 @@
 # Pixel 7
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  # common repos in cheetah
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251005.004.B1"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14042072"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14042072?target=panther-user
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-bp3a.251005.004.b1-443bfbd1.zip"
 readonly ota_sha256="443bfbd178fd0704f54537b8e42189ba21f9671bf8ede40742095547e3a8cda5"
-
-readonly security_patch="unknown"

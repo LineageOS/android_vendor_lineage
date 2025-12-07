@@ -1,18 +1,10 @@
 # Pixel 8
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  # common repos in husky
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14339231"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14339231?target=shiba-user&s
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-bp3a.251105.015-d5c6828c.zip"
 readonly ota_sha256="d5c6828c1d685f737eac1bd7c7e96b8a1bdd8c652d5705baec77abfc463102b3"
-
-readonly security_patch="unknown"

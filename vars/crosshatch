@@ -1,18 +1,10 @@
 # Pixel 3 XL
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/crosshatch
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id=SP1A.210812.016.C2 # Jun 2022
+readonly build_id=SP1A.210812.016.C2
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-12.0.0_r31"
-readonly aosp_tag="android-12.0.0_r34"
 
 readonly build_number="8618562"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/8618562?target=crosshatch-us
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/crosshatch-ota-sp1a.210812.016.c2-efea980d.zip"
 readonly ota_sha256="efea980d6359363b645435a5d077228d9a00d6f9772bf6adf16e26090dba0d53"
-
-readonly security_patch="2021-10-05"

@@ -1,6 +1,6 @@
 # Pixel 2 XL
 
-readonly build_id=RP1A.201005.004.A1 # Dec 2020
+readonly build_id=RP1A.201005.004.A1
 
 readonly image_url="https://dl.google.com/dl/android/aosp/taimen-rp1a.201005.004.a1-factory-2f5c4987.zip"
 readonly image_sha256="2f5c4987a8e1c29bb2843d7f7d36721d52f2eb25a0fe4c74b3590e34a06eb44f"

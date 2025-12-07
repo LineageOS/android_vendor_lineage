@@ -1,18 +1,10 @@
 # Pixel 9 Pro Fold
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/comet
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="14339231"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/14339231?target=comet-user&s
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/comet-ota-bp3a.251105.015-a9c38b38.zip"
 readonly ota_sha256="a9c38b389434328156bf1ab1fd4a731343de7f6d8e79e1f77e6508bc86163340"
-
-readonly security_patch="unknown"

@@ -1,15 +1,9 @@
 # Entire file updated manually
 readonly android_version=16 # For update-build-desc-fingerprint.sh
-readonly aosp_tag_match=android-16.0 # For update-device-vars.sh
 
 readonly os_branch=lineage-23.1
-readonly device_branch=lineage-23.1
 
 readonly prev_common_aosp_tag=android-16.0.0_r1 # June 2025, Android 16
 readonly common_aosp_tag=android-16.0.0_r3 # September 2025, Android 16 QPR1
 
-readonly common_aosp_build_id=BP3A.250905.014 # September 2025, Android 16 QPR1
-
 readonly topic=BP3A
-
-readonly merge_method="merge"

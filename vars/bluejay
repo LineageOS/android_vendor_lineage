@@ -1,18 +1,10 @@
 # Pixel 6a
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/bluejay
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="BP3A.250905.014"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="aml_tz6_351400020"
-readonly aosp_tag="unknown"
 
 readonly build_number="13873947"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/13873947?target=bluejay-user
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-bp3a.250905.014-52c07c03.zip"
 readonly ota_sha256="52c07c03ca3091f61643618c9e4b61b6761e37a3bda68e33cb3718b039ad4719"
-
-readonly security_patch="unknown"

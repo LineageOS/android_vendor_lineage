@@ -1,18 +1,10 @@
 # Pixel 3a
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  # common repos in bonito
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="SP2A.220505.008"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-12.1.0_r6"
-readonly aosp_tag="android-12.1.0_r27"
 
 readonly build_number="8782922"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/8782922?target=sargo-user&si
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/sargo-ota-sp2a.220505.008-2037245c.zip"
 readonly ota_sha256="2037245c06c8e0912c098c347be7b49a707d7cacf9a663ad7e68c96ce75ea32b"
-
-readonly security_patch="2022-05-05"

@@ -1,18 +1,10 @@
 # Pixel 3a XL
 
-# Usage: ${device_repos[@]}
-device_repos=(
-  device/google/bonito
-)
-
 # Updated semi-manually via pixel/update-any-var.sh
 
 readonly build_id="SP2A.220505.008"
 
 # Updated automatically via pixel/update-device-vars.sh
-
-readonly prev_aosp_tag="android-12.1.0_r6"
-readonly aosp_tag="android-12.1.0_r27"
 
 readonly build_number="8782922"
 
@@ -23,5 +15,3 @@ readonly flash_url="https://flash.android.com/build/8782922?target=bonito-user&s
 
 readonly ota_url="https://dl.google.com/dl/android/aosp/bonito-ota-sp2a.220505.008-37a410d5.zip"
 readonly ota_sha256="37a410d5a370771625e9c607913ab94b07e1bebdb1b0c1a931854d48b5defe53"
-
-readonly security_patch="2022-05-05"
