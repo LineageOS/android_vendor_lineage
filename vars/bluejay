@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.250905.014"
+readonly build_id="BP4A.251205.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="13873947"
+readonly build_number="14401865"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-bp3a.250905.014-factory-8cd5afbe.zip"
-readonly image_sha256="8cd5afbe1f7b18a45606296c843b5af10778570bc7a6e07f2bccd3ecaf87152c"
+readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-bp4a.251205.006-factory-203dc556.zip"
+readonly image_sha256="203dc5566d59a1851d89ca596ae197286cc14c68c99f171c713b04aa3faefa3a"
 
-readonly flash_url="https://flash.android.com/build/13873947?target=bluejay-user&signed"
+readonly flash_url="https://flash.android.com/build/14401865?target=bluejay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-bp3a.250905.014-52c07c03.zip"
-readonly ota_sha256="52c07c03ca3091f61643618c9e4b61b6761e37a3bda68e33cb3718b039ad4719"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-bp4a.251205.006-7e97be73.zip"
+readonly ota_sha256="7e97be73537da783554c3e514bc8606cb4e5d09952d250cac128794de0b1aa47"

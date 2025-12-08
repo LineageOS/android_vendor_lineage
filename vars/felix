@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.251105.015"
+readonly build_id="BP4A.251205.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14339231"
+readonly build_number="14401865"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/felix-bp3a.251105.015-factory-1a14950a.zip"
-readonly image_sha256="1a14950ac14171dcbe69a8022311814110621635c61ec395443751ff6d005b9d"
+readonly image_url="https://dl.google.com/dl/android/aosp/felix-bp4a.251205.006-factory-0525f35d.zip"
+readonly image_sha256="0525f35d2c47e0bb646868e4035b71a7593d206a5d6d4e34a33ffaa6c80669d3"
 
-readonly flash_url="https://flash.android.com/build/14339231?target=felix-user&signed"
+readonly flash_url="https://flash.android.com/build/14401865?target=felix-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-bp3a.251105.015-5b2ab061.zip"
-readonly ota_sha256="5b2ab0615c282ab66e449efd4a8ccc4f51e48f2a15b544c5917d9055f47f2c04"
+readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-bp4a.251205.006-fe9b331d.zip"
+readonly ota_sha256="fe9b331d57663abb16899abcc6ba527342cde9b47f83db149677905940bfba8f"

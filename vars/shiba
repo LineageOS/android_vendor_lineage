@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.251105.015"
+readonly build_id="BP4A.251205.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14339231"
+readonly build_number="14401865"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/shiba-bp3a.251105.015-factory-2b9f81fe.zip"
-readonly image_sha256="2b9f81fe24030ab43a85b9dbe2c0905704fc786395beb3b57fa5e4b85c12831c"
+readonly image_url="https://dl.google.com/dl/android/aosp/shiba-bp4a.251205.006-factory-b4b212fa.zip"
+readonly image_sha256="b4b212fa0d2b0256810e07be2a376ed4d411f6aef7b70982b369f5a3b2c91d48"
 
-readonly flash_url="https://flash.android.com/build/14339231?target=shiba-user&signed"
+readonly flash_url="https://flash.android.com/build/14401865?target=shiba-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-bp3a.251105.015-d5c6828c.zip"
-readonly ota_sha256="d5c6828c1d685f737eac1bd7c7e96b8a1bdd8c652d5705baec77abfc463102b3"
+readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-bp4a.251205.006-279293e0.zip"
+readonly ota_sha256="279293e0e0102fdbfed647e11f3215679765e27a550319d181612b9fb7d6b6ce"

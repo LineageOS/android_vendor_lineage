@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.251005.004.B1"
+readonly build_id="BP4A.251205.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14042072"
+readonly build_number="14401865"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/panther-bp3a.251005.004.b1-factory-253694cd.zip"
-readonly image_sha256="253694cd342f3b7bb807754cdf4f64a350a2adc403466e00067aa34937523683"
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-bp4a.251205.006-factory-4455f800.zip"
+readonly image_sha256="4455f80051f4b93ca2d47d52aa9c96edfe5026246053e90d229154ae37607d3e"
 
-readonly flash_url="https://flash.android.com/build/14042072?target=panther-user&signed"
+readonly flash_url="https://flash.android.com/build/14401865?target=panther-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-bp3a.251005.004.b1-443bfbd1.zip"
-readonly ota_sha256="443bfbd178fd0704f54537b8e42189ba21f9671bf8ede40742095547e3a8cda5"
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-bp4a.251205.006-93da05ad.zip"
+readonly ota_sha256="93da05ad8bfdc5184cd89704d8595366cb6f900acc66dfe8ba6559d7aebf887c"

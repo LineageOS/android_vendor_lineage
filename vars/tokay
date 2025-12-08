@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.251105.015"
+readonly build_id="BP4A.251205.006"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14339231"
+readonly build_number="14401865"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tokay-bp3a.251105.015-factory-46a298f4.zip"
-readonly image_sha256="46a298f4894aa14acf0f47a3400d30c44365398ebd32958e49f30b0560951442"
+readonly image_url="https://dl.google.com/dl/android/aosp/tokay-bp4a.251205.006-factory-86052f28.zip"
+readonly image_sha256="86052f281744b3b5d7ac9b6fa1bc7559e750571e46a55de46a9a9c21cf89329f"
 
-readonly flash_url="https://flash.android.com/build/14339231?target=tokay-user&signed"
+readonly flash_url="https://flash.android.com/build/14401865?target=tokay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-bp3a.251105.015-b4252b27.zip"
-readonly ota_sha256="b4252b271ba10596e0bed95297f4968021bffe10f5ac42bcf631d44fb89d4ef1"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-bp4a.251205.006-f78ca72a.zip"
+readonly ota_sha256="f78ca72a7d697536fbb3f8390972ebb28d7f553755f548bc68ebed2e925aacb8"
