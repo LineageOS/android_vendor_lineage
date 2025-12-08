@@ -22,7 +22,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
 # Disable mobile data by default
