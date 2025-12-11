@@ -1,5 +1,4 @@
-//
-// Copyright (C) 2024 The LineageOS Project
+// Copyright 2025 Google Inc. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,9 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-aconfig_value_set {
-    name: "aconfig_value_set-lineage-bp4a",
+aconfig_values {
+    name: "aconfig-values-lineage-bp4a-android.view.accessibility-all",
+    package: "android.view.accessibility",
     srcs: [
-        "*/Android.bp",
+        "*_flag_values.textproto",
     ],
 }
