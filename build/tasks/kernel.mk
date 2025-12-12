@@ -119,6 +119,7 @@ TARGET_MERGE_DTBS_WILDCARD ?= *
 TARGET_DTB_LIST_WILDCARD ?= *
 # dtbo generation - optional
 TARGET_MERGE_DTBOS_WILDCARD ?= *
+TARGET_DTBO_LIST_WILDCARD ?= *
 # recovery modules.load fallback - optional
 BOARD_RECOVERY_KERNEL_MODULES_LOAD ?= $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)
 TARGET_KERNEL_MIXED_MODE ?= true
@@ -765,6 +766,19 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 	)
 	vendor_modules=$$(comm -23 <(find $(KERNEL_OUT) -maxdepth 1 -type f -name '*.ko' | awk -F'/' '{ print $$NF }' | sort) <(awk -F'/' '{ print $$NF }' $(KERNEL_OUT)/system_dlkm.modules.load | sort) | sed 's|^|$(KERNEL_OUT)/|'); \
 	($(call build-image-kernel-modules-lineage,$$vendor_modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD),,$(KERNEL_MODULES_PARTITION_FILE_LIST),$(SYSTEM_KERNEL_DEPMOD_STAGING_DIR)/lib/modules/0.0/$(SYSTEM_KERNEL_MODULE_MOUNTPOINT)))
+
+ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
+$(INSTALLED_DTBIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
+	@rm -f $@
+	$(foreach dtb,$(TARGET_DTB_LIST_WILDCARD),\
+		cat `find $(abspath $(KERNEL_OUT))/$(dir $(dtb)) -maxdepth 1 -type f -name "$(notdir $(dtb)).dtb" | sort` >> $@;)
+endif
+
+ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
+MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg$(HOST_EXECUTABLE_SUFFIX)
+$(BOARD_PREBUILT_DTBOIMAGE): $(TARGET_PREBUILT_INT_KERNEL) $(MKDTBOIMG)
+	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(abspath $(KERNEL_OUT))/$(dir $(TARGET_DTBO_LIST_WILDCARD)) -maxdepth 1 -type f -name "$(notdir $(TARGET_DTBO_LIST_WILDCARD)).dtbo" | sort)
+endif
 endif
 
 ifeq ($(NEEDS_KERNEL_COPY),true)
