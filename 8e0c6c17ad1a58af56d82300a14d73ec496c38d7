@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4890764_01c488bc",
+        "filename": "overlay/tablet/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-13T14:31:47Z",
+      "side": 1,
+      "message": "Does it make sense to keep this enabled?",
+      "range": {
+        "startLine": 22,
+        "startChar": 16,
+        "endLine": 22,
+        "endChar": 53
+      },
+      "revId": "8e0c6c17ad1a58af56d82300a14d73ec496c38d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
