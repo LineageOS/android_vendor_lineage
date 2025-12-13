@@ -18,12 +18,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Whether the current device's internal display can host desktop sessions.  -->
-    <bool name="config_canInternalDisplayHostDesktops">true</bool>
-
     <!-- Whether to enable glanceable hub features on this device. -->
     <bool name="config_glanceableHubEnabled">true</bool>
-
-    <!-- Whether desktop mode is supported on the current device  -->
-    <bool name="config_isDesktopModeSupported">true</bool>
 </resources>
