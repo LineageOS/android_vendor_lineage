@@ -22,6 +22,30 @@
       },
       "revId": "8e0c6c17ad1a58af56d82300a14d73ec496c38d7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6750585_2c8140a8",
+        "filename": "overlay/tablet/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-15T23:24:52Z",
+      "side": 1,
+      "message": "Removed.",
+      "parentUuid": "b4890764_01c488bc",
+      "range": {
+        "startLine": 22,
+        "startChar": 16,
+        "endLine": 22,
+        "endChar": 53
+      },
+      "revId": "8e0c6c17ad1a58af56d82300a14d73ec496c38d7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
