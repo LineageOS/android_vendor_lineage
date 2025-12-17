@@ -51,6 +51,24 @@
       "parentUuid": "51bb923d_9c0c48bd",
       "revId": "c7a39d5729b90957cfb3320c836f665ae735b58e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "652c9d01_11a75f30",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2025-12-17T17:11:33Z",
+      "side": 1,
+      "message": "Sorry, can\u0027t comment on magisk modules and if they\u0027re affecting the system. I don\u0027t recommend using Magisk and mods as LOS doesn\u0027t support them or provide support for them.",
+      "parentUuid": "55e4f0a8_548adfc1",
+      "revId": "c7a39d5729b90957cfb3320c836f665ae735b58e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
