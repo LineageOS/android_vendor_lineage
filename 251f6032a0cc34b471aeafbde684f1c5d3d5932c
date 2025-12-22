@@ -16,6 +16,24 @@
       "message": "Maybe add an `echo` ?",
       "revId": "251f6032a0cc34b471aeafbde684f1c5d3d5932c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6391588_d5947cd6",
+        "filename": "build/envsetup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 935,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-12-22T09:41:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1dbf6f43_b30cccce",
+      "revId": "251f6032a0cc34b471aeafbde684f1c5d3d5932c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
