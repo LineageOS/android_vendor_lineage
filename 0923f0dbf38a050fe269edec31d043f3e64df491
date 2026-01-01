@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "67dc8932_8ad936bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-01-01T12:06:39Z",
+      "side": 1,
+      "message": "This makes \"Back\" navigation button to appear on the right, instead of left. Not sure if that\u0027s expected or not.",
+      "revId": "0923f0dbf38a050fe269edec31d043f3e64df491",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
