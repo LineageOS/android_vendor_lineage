@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.systemui"
+  name: "flashlight_strength"
+  state: ENABLED
+  permission: READ_ONLY
+}
