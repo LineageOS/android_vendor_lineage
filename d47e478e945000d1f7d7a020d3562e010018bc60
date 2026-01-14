@@ -46,6 +46,30 @@
       },
       "revId": "d47e478e945000d1f7d7a020d3562e010018bc60",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15a746a4_463469fb",
+        "filename": "overlay/tablet/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-01-14T19:10:45Z",
+      "side": 0,
+      "message": "Do you realize that commit message no longer makes sense?",
+      "parentUuid": "0f03fd4f_49e4d9bb",
+      "range": {
+        "startLine": 28,
+        "startChar": 16,
+        "endLine": 28,
+        "endChar": 45
+      },
+      "revId": "d47e478e945000d1f7d7a020d3562e010018bc60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
