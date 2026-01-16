@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64309489_ec887c5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-01-16T22:13:28Z",
+      "side": 1,
+      "message": "worst case, if additional gating is needed, we should find a better way to do so, as tablets should support desktop/freeform if enabled in dev settings and ext display connected.",
+      "revId": "9b1f66dced7e5e4f2cd7338a495ebd508a27e174",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
