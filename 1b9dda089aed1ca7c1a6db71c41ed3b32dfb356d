@@ -16,6 +16,24 @@
       "message": "Why do we want this? Can some explain and add to the commit message?",
       "revId": "1b9dda089aed1ca7c1a6db71c41ed3b32dfb356d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2859a166_7c8f1831",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32197
+      },
+      "writtenOn": "2026-01-17T18:46:57Z",
+      "side": 1,
+      "message": "Done.\nIt is disabled on Google Pixel (bp4a) as well.",
+      "parentUuid": "995bd260_64d9f350",
+      "revId": "1b9dda089aed1ca7c1a6db71c41ed3b32dfb356d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
