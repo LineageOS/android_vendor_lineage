@@ -12,7 +12,7 @@ export V=23
 export ADDOND_VERSION=3
 
 # Partitions to mount for backup/restore in V3
-export all_V3_partitions="vendor product system_ext"
+export all_V3_partitions="vendor system_ext"
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
@@ -41,14 +41,21 @@ restore_addon_d() {
   fi
 }
 
-# Proceed only if /system is the expected major and minor version
+# Proceed only if /product or /system is the expected major and minor version
 check_prereq() {
+
+P=/product
+if [ -L $P ]; then
+   # If symlink, assume no product partition exists, so access via $S(ystem)
+   P=$S/product
+fi
+
 # If there is no build.prop file the partition is probably empty.
-if [ ! -r $S/build.prop ]; then
+if [ ! -r $$P/etc/build.prop ] && [ ! -r $S/build.prop ]; then
   echo "Backup/restore is not possible. Partition is probably empty"
   return 1
 fi
-if ! grep -q "^ro.lineage.version=$V.*" $S/build.prop; then
+if ! grep -q "^ro.lineage.version=$V.*" $P/etc/build.prop $S/build.prop; then
   echo "Backup/restore is not possible. Incompatible ROM version: $V"
   return 2
 fi
@@ -168,16 +175,19 @@ umount_extra() {
 case "$1" in
   backup)
     mount_system
+    mount_extra product
     if check_prereq; then
       mkdir -p $C
       preserve_addon_d
       run_stages pre-backup backup post-backup
       umount_extra $all_V3_partitions
     fi
+    umount_extra product
     unmount_system
   ;;
   restore)
     mount_system
+    mount_extra product
     if check_prereq; then
       run_stages pre-restore restore post-restore
       umount_extra $all_V3_partitions
@@ -185,6 +195,7 @@ case "$1" in
       rm -rf $C
       sync
     fi
+    umount_extra product
     unmount_system
   ;;
   *)
