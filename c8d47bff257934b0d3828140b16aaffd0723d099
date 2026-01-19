@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46994e8a_06c9f3fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2026-01-19T19:19:14Z",
+      "side": 1,
+      "message": "Verified on gta4l (virtual ab with product partion) as well as without product partition.",
+      "revId": "c8d47bff257934b0d3828140b16aaffd0723d099",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
