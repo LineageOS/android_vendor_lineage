@@ -70,6 +70,24 @@
       "parentUuid": "2ebb28b4_ea6de6ef",
       "revId": "771541d367f23e7740fe9a6a8bd34e1f9c9e6286",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8a13f24_b999073a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-01-20T01:35:40Z",
+      "side": 1,
+      "message": "The animations for the arrows are broken, not the actual arrows",
+      "parentUuid": "0b72b084_e780f3cb",
+      "revId": "771541d367f23e7740fe9a6a8bd34e1f9c9e6286",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
