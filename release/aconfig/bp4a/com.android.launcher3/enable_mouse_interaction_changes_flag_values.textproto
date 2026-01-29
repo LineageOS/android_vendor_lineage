@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.launcher3"
+  name: "enable_mouse_interaction_changes"
+  state: ENABLED
+  permission: READ_WRITE
+}

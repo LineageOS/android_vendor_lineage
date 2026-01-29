@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.window.flags"
+  name: "show_home_behind_desktop"
+  state: ENABLED
+  permission: READ_WRITE
+}

@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.launcher3"
+  name: "enable_scalability_for_desktop_experience"
+  state: ENABLED
+  permission: READ_WRITE
+}
