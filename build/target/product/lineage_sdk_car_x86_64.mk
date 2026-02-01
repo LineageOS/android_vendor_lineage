@@ -12,11 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, device/generic/car/sdk_car_x86_64.mk)
+
+include device/generic/goldfish/board/kernel/x86_64.mk
 include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
-$(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
+# Disable EPPE to suppress failures due to RotaryIME and RotaryPlayground.
+# They are present (unbundled) in https://android.googlesource.com/platform/packages/apps/Car/tests but seem to be outdated.
+TARGET_DISABLE_EPPE := true
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
+# Circumvent "redundant artifact path requirement allowed list entries"
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
 PRODUCT_NAME := lineage_sdk_car_x86_64
 
