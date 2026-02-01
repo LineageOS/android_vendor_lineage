@@ -24,5 +24,4 @@ TARGET_FORCE_OTA_PACKAGE := true
 USE_SOONG_DEFINED_SYSTEM_IMAGE := false
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/Home/Home.apk \
     system/etc/permissions/android.software.credentials.xml
