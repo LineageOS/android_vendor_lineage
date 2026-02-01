@@ -12,11 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, device/generic/car/sdk_car_x86_64.mk)
+
+include device/generic/goldfish/board/kernel/x86_64.mk
+
+# gsi_system_ext disables adb authentication for debug builds.
+ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+WITH_ADB_INSECURE := true
+endif
+
 include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
-$(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
+# Disable EPPE to suppress the following failures :
+#   -> android.hardware.bluetooth.audio@2.2-impl : device/generic/car/emulator/usbpt/bluetooth/bluetooth.mk
+#   -> vndk-sp : device/generic/car/emulator/car_emulator_vendor.mk
+#   -> RotaryIME and RotaryPlayground : device/generic/car/emulator/rotary/car_rotary.mk
+# The rotary modules are present (unbundled) in https://android.googlesource.com/platform/packages/apps/Car/tests but seem to be outdated.
+TARGET_DISABLE_EPPE := true
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
+# Disabled till device/generic/car/emulator/car_emulator_vendor.mk stops using PRODUCT_SYSTEM_PROPERTIES.
+# Android 16 QPR2 introduced stricter checks in build/soong/fsgen/artifact_path_requirements.go,
+# which disallows setting PRODUCT_SYSTEM_PROPERTIES when artifact requirements for the path are enforced by a different mk file.
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 PRODUCT_NAME := lineage_sdk_car_x86_64
 
