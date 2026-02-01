@@ -16,7 +16,12 @@ PRODUCT_PACKAGES += \
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/framework/oat/%/org.lineageos.platform.odex \
-    system/framework/oat/%/org.lineageos.platform.vdex \
     system/framework/org.lineageos.platform-res.apk \
     system/framework/org.lineageos.platform.jar
+
+# Allow-list odex and vdex for non-eng builds (user and userdebug)
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/framework/oat/%/org.lineageos.platform.odex \
+    system/framework/oat/%/org.lineageos.platform.vdex
+endif
