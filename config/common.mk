@@ -180,8 +180,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nano_recovery
 
+# Artifacts installed into system.img by this mk file and also by car_generic_system.mk for automotive eng/userdebug builds (PRODUCT_PACKAGES_DEBUG).
+# If the module is installed by car_generic_system.mk, then we don't need to allow-list it here.
+car_generic_system_debug_common_artifacts := system/bin/curl
+
+ifneq ($(PRODUCT_IS_AUTOMOTIVE),true)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += $(car_generic_system_debug_common_artifacts)
+else ifeq ($(filter userdebug eng, $(TARGET_BUILD_VARIANT)),)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += $(car_generic_system_debug_common_artifacts)
+endif
+
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/bin/curl \
     system/bin/getcap \
     system/bin/setcap \
     system/%/libzstd.so

@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# gsi_system_ext disables adb authentication for debug builds.
+ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+WITH_ADB_INSECURE := true
+endif
+
 $(call inherit-product, vendor/lineage/config/common_car.mk)
 
 EMULATOR_VENDOR_NO_SENSORS := true
@@ -24,5 +29,4 @@ TARGET_FORCE_OTA_PACKAGE := true
 USE_SOONG_DEFINED_SYSTEM_IMAGE := false
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/Home/Home.apk \
     system/etc/permissions/android.software.credentials.xml
