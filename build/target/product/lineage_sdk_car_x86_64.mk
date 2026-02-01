@@ -12,11 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, device/generic/car/sdk_car_x86_64.mk)
+
+include device/generic/goldfish/board/kernel/x86_64.mk
 include vendor/lineage/build/target/product/lineage_generic_car_target.mk
 
-$(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
+# Disable EPPE to suppress the following failures :
+#   -> android.hardware.bluetooth.audio@2.2-impl : device/generic/car/emulator/usbpt/bluetooth/bluetooth.mk
+#   -> vndk-sp : device/generic/car/emulator/car_emulator_vendor.mk
+#   -> RotaryIME and RotaryPlaground : device/generic/car/emulator/rotary/car_rotary.mk
+# The rotary modules are present (unbundled) in https://android.googlesource.com/platform/packages/apps/Car/tests but seem to be outdated.
+TARGET_DISABLE_EPPE := true
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
 
 PRODUCT_NAME := lineage_sdk_car_x86_64
 
