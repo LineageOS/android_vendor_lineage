@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, device/generic/car/sdk_car_x86_64.mk)
+
+include device/generic/goldfish/board/kernel/x86_64.mk
+
 include vendor/lineage/build/target/product/lineage_generic_car_target.mk
-
-$(call inherit-product, device/generic/car/emulator/aosp_car_emulator.mk)
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
 
 PRODUCT_NAME := lineage_sdk_car_x86_64
 
