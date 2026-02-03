@@ -34,6 +34,24 @@
       "parentUuid": "e5f92f50_c6645ae1",
       "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8089a144_d2cb768f",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-03T17:11:42Z",
+      "side": 0,
+      "message": "I\u0027ll check again. What\u0027s throwing me off is the fact that the image does in fact contain system/bin/curl. So it\u0027s being built and baked into the image for sure.",
+      "parentUuid": "237170f3_8a66e5a4",
+      "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
