@@ -52,6 +52,24 @@
       "parentUuid": "237170f3_8a66e5a4",
       "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf559b81_6c05cb7c",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-03T17:13:10Z",
+      "side": 0,
+      "message": "I initially assumed that it was already being allowlisted by some other mk file, but that doesn\u0027t seem to be the case either.",
+      "parentUuid": "8089a144_d2cb768f",
+      "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
