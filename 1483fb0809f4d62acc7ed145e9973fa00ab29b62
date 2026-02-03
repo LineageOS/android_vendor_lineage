@@ -60,6 +60,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "31715398_1dbe0750",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-03T17:05:36Z",
+      "side": 1,
+      "message": "The problem lies in device/generic/car/emulator/*.mk in this case. The manifest seems to use the aosp remote for this repo. I added a comment specifying the paths of the mk files in question to be more concise.",
+      "parentUuid": "26dba8d4_5de98a4b",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 127
+      },
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d86f5f9c_0b446f6b",
         "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
         "patchSetId": 2
@@ -106,6 +130,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "57a68e31_0ef5f173",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-03T17:05:36Z",
+      "side": 1,
+      "message": "Removed this override for now. It doesn\u0027t seem to have much of an effect. I was planning on playing around quite a bit with all the automotive targets, so would it be fine if I revisited this one in a future commit?",
+      "parentUuid": "fc4a3aeb_cbe6ecc4",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 33
+      },
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6ddbb947_a4f1f0c4",
         "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
         "patchSetId": 2
@@ -117,6 +165,30 @@
       "writtenOn": "2026-02-02T23:24:04Z",
       "side": 1,
       "message": "While this is okay for some reasons, idk about this one - can\u0027t we just de-dup them?",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 53
+      },
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc21a6c9_12380433",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-03T17:05:36Z",
+      "side": 1,
+      "message": "Looks like the redundancy was because of the entries not being required at all. I\u0027ve removed the problematic ones.",
+      "parentUuid": "6ddbb947_a4f1f0c4",
       "range": {
         "startLine": 30,
         "startChar": 0,

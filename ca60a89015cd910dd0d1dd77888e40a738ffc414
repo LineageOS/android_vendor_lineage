@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5f92f50_c6645ae1",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-03T17:05:36Z",
+      "side": 0,
+      "message": "If my understanding is right, then this entry is redundant since the binary is pulled into the system image as a soong module via PRODUCT_PACKAGES.",
+      "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
