@@ -16,6 +16,24 @@
       "message": "If my understanding is right, then this entry is redundant since the binary is pulled into the system image as a soong module via PRODUCT_PACKAGES.",
       "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "237170f3_8a66e5a4",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-03T17:07:18Z",
+      "side": 0,
+      "message": "it is not.\n\nWE build it yes, this _allows_ it to exist on system.\n\nThis error means that CURL is not being included in your dependency chain for some reason... look into that.",
+      "parentUuid": "e5f92f50_c6645ae1",
+      "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

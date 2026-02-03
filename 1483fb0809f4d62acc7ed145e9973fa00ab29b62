@@ -152,6 +152,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "81410193_52f80e5d",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-03T17:07:18Z",
+      "side": 1,
+      "message": "sure",
+      "parentUuid": "57a68e31_0ef5f173",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 33
+      },
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6ddbb947_a4f1f0c4",
@@ -189,6 +213,30 @@
       "side": 1,
       "message": "Looks like the redundancy was because of the entries not being required at all. I\u0027ve removed the problematic ones.",
       "parentUuid": "6ddbb947_a4f1f0c4",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 53
+      },
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3733abc_a1e79954",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-03T17:07:18Z",
+      "side": 1,
+      "message": "nice",
+      "parentUuid": "dc21a6c9_12380433",
       "range": {
         "startLine": 30,
         "startChar": 0,
