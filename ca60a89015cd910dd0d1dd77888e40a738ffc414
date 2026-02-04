@@ -70,6 +70,24 @@
       "parentUuid": "8089a144_d2cb768f",
       "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00d3be55_4ff2b776",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-04T09:38:52Z",
+      "side": 0,
+      "message": "Apologies for the silly assumption from my first comment. In hindsight, if my assumption was true then the whole idea of enforcing artifacts would not make sense. I\u0027ve learnt yet again that committing changes after 10pm is a bad idea 😀.\n\nI went through the mk tree and I think the redundancy is because curl is being pulled into the system image (PRODUCT_PACKAGES_DEBUG) in car_generic_system.mk. This is also the make file that calls \"require-artifacts-in-path\" for the system image, so the allow-listing from our vendor mk file is left unused. I\u0027ve added a conditional branch that adds it to the allow-list for non-automotive and all non-debug builds.",
+      "parentUuid": "cf559b81_6c05cb7c",
+      "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
