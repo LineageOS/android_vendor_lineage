@@ -16,6 +16,23 @@
       "message": "Creating conflict with duplicate entry here, emu fails\n\nhttps://github.com/LineageOS/android_build/blob/lineage-23.2/target/board/gsi_system_ext.prop#L5C1-L5C14",
       "revId": "b734b750ff2ca9fa8632427f1a0a18465f7b8909",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ca800cf_c832630a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2026-02-04T05:15:43Z",
+      "side": 1,
+      "message": "https://katb.in/azehizenodo",
+      "revId": "b734b750ff2ca9fa8632427f1a0a18465f7b8909",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
