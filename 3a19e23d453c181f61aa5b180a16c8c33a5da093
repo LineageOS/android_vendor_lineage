@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "128d542d_f446b145",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-05T08:42:25Z",
+      "side": 1,
+      "message": "Verified the changes with sdk_car and sdk_phone targets.",
+      "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fddb4459_9842f7c8",
