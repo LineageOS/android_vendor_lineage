@@ -16,6 +16,24 @@
       "message": "OVERRIDE_DISABLE_DEXOPT_ALL was the most relevant flag that I could find. We could also use TARGET_BUILD_TYPE checks to make it more readable though. Please let me know if this change is valid.\n\nI\u0027m also using filter here instead of a regular equality check since that\u0027s the pattern used in aosp and I wasn\u0027t sure if Google intends to extend this variable at some point.",
       "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57d9c656_b55a4d98",
+        "filename": "config/lineage_sdk_common.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-05T08:41:12Z",
+      "side": 1,
+      "message": "Marking as resolved. Please let me know if any changes are required.",
+      "parentUuid": "fddb4459_9842f7c8",
+      "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

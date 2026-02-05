@@ -88,6 +88,24 @@
       "parentUuid": "cf559b81_6c05cb7c",
       "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b6bb7ee_400cd8fa",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-05T08:41:12Z",
+      "side": 0,
+      "message": "Marking as resolved since the approach has changed.",
+      "parentUuid": "00d3be55_4ff2b776",
+      "revId": "ca60a89015cd910dd0d1dd77888e40a738ffc414",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f0b069f_c050b7d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-05T08:41:12Z",
+      "side": 1,
+      "message": "Resolved",
+      "parentUuid": "9482b1b4_5d884957",
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b6f72ae0_6e9a2a4b",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-02-02T23:24:04Z",
       "side": 1,
       "message": "same comments from other file apply",
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f33d7709_3be3a1a7",
+        "filename": "build/target/product/lineage_sdk_car_arm64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-05T08:41:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b6f72ae0_6e9a2a4b",
       "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -82,6 +118,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "361c8785_53931569",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-05T08:41:12Z",
+      "side": 1,
+      "message": "Resolving this thread since the repos in question aren\u0027t forked.",
+      "parentUuid": "31715398_1dbe0750",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 127
+      },
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d86f5f9c_0b446f6b",
@@ -95,6 +155,30 @@
       "writtenOn": "2026-02-02T23:24:04Z",
       "side": 1,
       "message": "see above ^",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 27
+      },
+      "revId": "1483fb0809f4d62acc7ed145e9973fa00ab29b62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d115d52_19c372b9",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-05T08:41:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d86f5f9c_0b446f6b",
       "range": {
         "startLine": 22,
         "startChar": 0,
