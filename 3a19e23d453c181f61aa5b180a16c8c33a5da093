@@ -35,6 +35,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f07f949_2200e8f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-14T06:56:07Z",
+      "side": 1,
+      "message": "because we\u0027re modifying the sdk_common makefile... we need to build test _all_ the targets - can you run through them?\n\nAlso, in what case would sdk target not set depot to be in system?\n\nLastly: CR+1 means code reviewed and ready to merge in your opinion, V+ is it builds and functions.",
+      "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fddb4459_9842f7c8",
