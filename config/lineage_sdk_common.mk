@@ -16,7 +16,14 @@ PRODUCT_PACKAGES += \
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/framework/oat/%/org.lineageos.platform.odex \
-    system/framework/oat/%/org.lineageos.platform.vdex \
     system/framework/org.lineageos.platform-res.apk \
     system/framework/org.lineageos.platform.jar
+
+# Allow-list odex and vdex when OVERRIDE_DISABLE_DEXOPT_ALL isn't set.
+# OVERRIDE_DISABLE_DEXOPT_ALL is usually set to true for eng builds. We allow-list the below mainly for user and userdebug builds.
+# Refer build/target/product/runtime_libart.mk.
+ifneq ($(OVERRIDE_DISABLE_DEXOPT_ALL),true)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/framework/oat/%/org.lineageos.platform.odex \
+    system/framework/oat/%/org.lineageos.platform.vdex
+endif
