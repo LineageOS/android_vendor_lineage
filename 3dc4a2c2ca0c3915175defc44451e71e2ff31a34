@@ -54,6 +54,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "437b5653_7597b26b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-15T13:21:04Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/topic:%22gsi_car_build%22 gets the GSI building again. I also set it to strict artifact enforcement to make sure Home.apk is not sneaking in.",
+      "parentUuid": "c60dd825_2fbc048f",
+      "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2dda9779_7340f21a",
