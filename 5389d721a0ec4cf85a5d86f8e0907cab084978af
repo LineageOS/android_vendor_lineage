@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "036e28a1_08fe3a1d",
+        "filename": "build/target/product/lineage_gsi_car_x86_64.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-15T13:19:38Z",
+      "side": 1,
+      "message": "Another option is to disable scalable UI and use the car launcher instead.\n\nIf it\u0027s fine with the project, can I revisit this one flag later? Scalable UI was one of the reasons I started AAOS development 😅.",
+      "revId": "5389d721a0ec4cf85a5d86f8e0907cab084978af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
