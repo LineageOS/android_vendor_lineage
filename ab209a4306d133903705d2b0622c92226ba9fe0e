@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9c9391a_f9ef1377",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-15T13:29:54Z",
+      "side": 1,
+      "message": "Both the PRODUCT_COPY_FILES and the new PRODUCT_PACKAGES install the file in the same path with permissions/mode set to 644. Was this expected in the past too? Should it have executable rights during an OTA?",
+      "revId": "ab209a4306d133903705d2b0622c92226ba9fe0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
