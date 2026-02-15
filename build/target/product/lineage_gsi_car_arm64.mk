@@ -20,7 +20,12 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-# Enable mainline checking
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+# Disable EPPE to suppress the following failures :
+#   -> DDPanelRRO : packages/apps/Car/References/scalable-ui/dewd_reference.mk
+# These are pulled in by mk files that enable Scalable-UI,
+# Refer car_dewd_common.mk and gsi_car_base.mk for scalable-ui config.
+TARGET_DISABLE_EPPE := true
+
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
 
 PRODUCT_NAME := lineage_gsi_car_arm64
