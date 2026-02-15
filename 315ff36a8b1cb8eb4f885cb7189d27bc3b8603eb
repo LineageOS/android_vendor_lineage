@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "679f743e_a37c74f0",
+        "filename": "build/target/product/lineage_gsi_car_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-15T18:25:54Z",
+      "side": 1,
+      "message": "we control this repo tho, lets just fix it there?",
+      "range": {
+        "startLine": 28,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 23
+      },
+      "revId": "315ff36a8b1cb8eb4f885cb7189d27bc3b8603eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
