@@ -86,6 +86,77 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e936799_c0bc6c49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-15T07:57:41Z",
+      "side": 1,
+      "message": "Done. I split it out in lineage-23.2. I\u0027ll rework this one soon too.",
+      "parentUuid": "0931294e_a716c7f4",
+      "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e56d0a02_978b03a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-15T07:57:41Z",
+      "side": 1,
+      "message": "Verified on sdk_car_x86_64 and sdk_phone_x86_64 (userdebug/eng).\ncf_car seems to be broken.",
+      "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8447c43_d9750a2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-15T07:57:41Z",
+      "side": 1,
+      "message": "Done.\n\nLooks like QPR2 introduced some changes in artifact path enforcement too. They made it so much stricter that Googles own sdk_car targets don\u0027t pass anymore. I made some changes in:\n- https://review.lineageos.org/c/LineageOS/android_build_soong/+/474339\n- https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/474340\n- https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/474341\n- https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/474342\n\nI\u0027ll set the CR and verified flags after I\u0027m done with amends and tests.",
+      "parentUuid": "7de14ef3_479070f3",
+      "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9adf1a92_ef3f9149",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-15T07:57:41Z",
+      "side": 1,
+      "message": "I\u0027ll test all of them and set the flags on the 23.3 commits.\n\nThank you so much for the info on the review process. I was a little lost.",
+      "parentUuid": "0f07f949_2200e8f0",
+      "revId": "3a19e23d453c181f61aa5b180a16c8c33a5da093",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fddb4459_9842f7c8",
