@@ -34,6 +34,24 @@
       "parentUuid": "a9c9391a_f9ef1377",
       "revId": "ab209a4306d133903705d2b0622c92226ba9fe0e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86632018_92748689",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-17T20:19:22Z",
+      "side": 1,
+      "message": "test OTA and make sure Google apps persist on a non GSI build, that\u0027s what is important here.",
+      "parentUuid": "68de49b0_dffb9621",
+      "revId": "ab209a4306d133903705d2b0622c92226ba9fe0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
