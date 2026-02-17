@@ -16,6 +16,24 @@
       "message": "Both the PRODUCT_COPY_FILES and the new PRODUCT_PACKAGES install the file in the same path with permissions/mode set to 644. Was this expected in the past too? Should it have executable rights during an OTA?",
       "revId": "ab209a4306d133903705d2b0622c92226ba9fe0e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68de49b0_dffb9621",
+        "filename": "config/common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-17T07:56:42Z",
+      "side": 1,
+      "message": "@johnsonnolen@gmail.com can you please help me with the verification steps? I confirmed that the file mode is the same, but I\u0027m not sure about what to verify next. Is there anything I can do short of an actual OTA?",
+      "parentUuid": "a9c9391a_f9ef1377",
+      "revId": "ab209a4306d133903705d2b0622c92226ba9fe0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
