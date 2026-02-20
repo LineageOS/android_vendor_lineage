@@ -16,6 +16,24 @@
       "message": "pls don\u0027t take inaction on these as ignoring them - they\u0027re in my queue to test it\u0027\ns just going to be a bit on these because the addend stuff refactors stuff that touches every device, and the other stuff touches all sdk targets.\n\nWill need some review and thought.",
       "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f878c57_ff86f57e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-20T05:24:10Z",
+      "side": 1,
+      "message": "wow voice to text murdered that - retry:\n\npls don\u0027t take inaction on these as ignoring them - they\u0027re in my queue to test it is just going to be a bit on these because the addon.d stuff refactors stuff that touches every device, and the other stuff touches all _sdk targets.",
+      "parentUuid": "fbf465f3_561cf3b4",
+      "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
