@@ -34,6 +34,24 @@
       "parentUuid": "fbf465f3_561cf3b4",
       "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d15761d2_77039e79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-21T07:47:10Z",
+      "side": 1,
+      "message": "Definitely not. I\u0027m using this as an opportunity to get familiar with lineage and the lower levels of Android. I just got my hands on a device that I can flash Lineage on, so I\u0027ll try my best to get familiar and test the OTA flow.",
+      "parentUuid": "2f878c57_ff86f57e",
+      "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
