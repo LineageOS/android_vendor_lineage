@@ -16,6 +16,23 @@
       "message": "Verified on ayn thor, using a dual screen emulator.",
       "revId": "72b08bb7951292f47038605a50dca5b2e417f93d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9656090_b4fdea97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-23T22:25:25Z",
+      "side": 1,
+      "message": "does what\u0027s expected with melonDS on my Thor.",
+      "revId": "72b08bb7951292f47038605a50dca5b2e417f93d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
