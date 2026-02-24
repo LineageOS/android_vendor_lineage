@@ -15,6 +15,8 @@ qcom_group_revision[kona]=LA.UM.9.12.r1-18500-SMxx50.QSSI14.0
 qcom_group_revision[lahaina]=LA.UM.9.14.r1-26500-LAHAINA.QSSI16.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.1.0.r1
 qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0
+# https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.15.4.1
+qcom_group_revision[waipio-6.6-vendor]=LA.VENDOR.15.4.1.r1-10300-WAIPIO.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.8.0.r1
 qcom_group_revision[kailua-audio]=AUDIO.LA.8.0.r1-12600-KAILUA.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.13.2.0.r1
