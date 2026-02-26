@@ -34,6 +34,23 @@
       "parentUuid": "adf1e7f5_b82ab34b",
       "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed11338c_30b2642f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-02-26T17:34:52Z",
+      "side": 1,
+      "message": "Verified on lemonadep (op9 pro).\n\nDevice:\nLemonadep (op9 pro) with lineage-23.2 and MindTheGapps-16\n\nSteps:\n- Make changes to system/core/rootdir/etc/hosts and build the system image and update package. (Did it this way to make sure the changes aren\u0027t just due to overlayfs)\n- Trigger an OTA with push-update.sh.\n- Verify changes in /system/etc/hosts via ADB.\n- Undo changes in the source tree and rebuild.\n- Trigger another OTA.\n- Changes in /system/etc/hosts should still be present even though it was removed from the sources.\n\nThese steps ensure that 50-lineage.sh is backing up and restoring /system/etc/hosts correctly. GApps are also persisted across OTAs but that seems to be covered by 30-gapps.sh.\n\nNote- It\u0027s a little odd that 50-lineage.sh has mode 644 (Was the same before). 30-gapps.sh has executable permissions, so maybe this can be done for 50-lineage.sh too in a future commit.",
+      "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
