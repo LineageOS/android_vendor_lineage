@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2023 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Indicates if showing as search bar design -->
+    <bool name="show_search_bar">true</bool>
 
     <string name="default_root_uri" translatable="false">content://com.android.externalstorage.documents/root/primary</string>
 
+    <!-- Whether to show capitalize string on Button -->
+    <bool name="config_button_all_caps">false</bool>
+
+    <!-- The Material3 theme is only enabled IFF this config is true AND the flag `use_material3` is enabled. -->
+    <bool name="force_material3">true</bool>
 </resources>

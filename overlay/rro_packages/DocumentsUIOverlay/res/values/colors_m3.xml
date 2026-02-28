@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 The Android Open Source Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- static color, used in the shortcut icons (triggered by long pressing the launcher icon) -->
+    <color name="shortcut_foreground_m3">#ff3367d6</color>
+    <color name="shortcut_background_m3">#fff5f5f5</color>
+</resources>
