@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Name of the body font family. If empty, falls back to platform default -->
+    <string name="config_fontFamily" translatable="false">@*android:string/config_bodyFontFamily</string>
+    <!-- Name of the body font family medium. -->
+    <string name="config_fontFamilyMedium" translatable="false">@*android:string/config_bodyFontFamilyMedium</string>
+    <!-- Name of the header font family. If empty, falls back to platform default -->
+    <string name="config_headerFontFamily" translatable="false">@*android:string/config_headlineFontFamily</string>
+    <!-- Name of the header font family medium. -->
+    <string name="config_headerFontFamilyMedium" translatable="false">@*android:string/config_headlineFontFamilyMedium</string>
+</resources>
