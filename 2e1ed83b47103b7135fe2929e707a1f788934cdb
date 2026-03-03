@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c54dba0_44a89b7e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-03-03T18:28:47Z",
+      "side": 1,
+      "message": "This patch is private as of now.",
+      "revId": "2e1ed83b47103b7135fe2929e707a1f788934cdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
