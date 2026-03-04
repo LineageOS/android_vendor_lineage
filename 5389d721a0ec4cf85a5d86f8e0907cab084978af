@@ -52,6 +52,24 @@
       "parentUuid": "b0f03a4a_fdf13303",
       "revId": "5389d721a0ec4cf85a5d86f8e0907cab084978af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "106b5b28_a739856d",
+        "filename": "build/target/product/lineage_gsi_car_x86_64.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-04T22:11:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cce3f6ad_2d0c516c",
+      "revId": "5389d721a0ec4cf85a5d86f8e0907cab084978af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
