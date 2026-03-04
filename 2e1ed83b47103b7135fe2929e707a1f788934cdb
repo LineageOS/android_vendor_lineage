@@ -16,6 +16,23 @@
       "message": "This patch is private as of now.",
       "revId": "2e1ed83b47103b7135fe2929e707a1f788934cdb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "471366f0_dffe2487",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2026-03-04T07:19:28Z",
+      "side": 1,
+      "message": "series fine on rhodep",
+      "revId": "2e1ed83b47103b7135fe2929e707a1f788934cdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
