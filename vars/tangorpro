@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP4A.260205.001"
+readonly build_id="CP1A.260305.018"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14624666"
+readonly build_number="14887507"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-bp4a.260205.001-factory-2808cbaf.zip"
-readonly image_sha256="2808cbaf6fdb9527c02150253d624de2986e98df3d342755b8efd54f583ce8ad"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-cp1a.260305.018-factory-b14a7c6c.zip"
+readonly image_sha256="b14a7c6cadbaf4e9c8fbcb2603170db7b6b2092873fc8f232abe62b38941653f"
 
-readonly flash_url="https://flash.android.com/build/14624666?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/14887507?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-bp4a.260205.001-3f225ce3.zip"
-readonly ota_sha256="3f225ce33c8a1599bd135b1b8bba365fcc6c1d1105926cc3a1c1ac1deef648d2"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-cp1a.260305.018-8b19faee.zip"
+readonly ota_sha256="8b19faeee7aa5b467658536c43dfbf63087fc34489426a435df1c8c98174fa16"
