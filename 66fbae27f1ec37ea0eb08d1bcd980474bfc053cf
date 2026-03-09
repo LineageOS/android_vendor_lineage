@@ -78,6 +78,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "fb418481_03d71267",
+        "filename": "prebuilt/common/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-03-09T19:18:07Z",
+      "side": 1,
+      "message": "Useless comment.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 34
+      },
+      "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c94a964e_b1f4a7d5",
         "filename": "prebuilt/common/Android.bp",
         "patchSetId": 2
