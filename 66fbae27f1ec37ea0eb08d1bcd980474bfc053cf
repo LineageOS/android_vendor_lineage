@@ -100,6 +100,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "820540eb_8506e969",
+        "filename": "config/common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-09T19:38:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d4f9656_5080f639",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 52,
+        "endChar": 68
+      },
+      "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fb418481_03d71267",
@@ -147,6 +171,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c04678e7_79304ae0",
+        "filename": "prebuilt/common/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-09T19:38:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8b1b2539_01ad3c80",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 34
+      },
+      "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c94a964e_b1f4a7d5",
@@ -160,6 +208,30 @@
       "writtenOn": "2026-03-09T19:01:33Z",
       "side": 1,
       "message": "typo",
+      "range": {
+        "startLine": 16,
+        "startChar": 57,
+        "endLine": 16,
+        "endChar": 64
+      },
+      "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "deab045c_207e630b",
+        "filename": "prebuilt/common/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-09T19:38:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c94a964e_b1f4a7d5",
       "range": {
         "startLine": 16,
         "startChar": 57,
