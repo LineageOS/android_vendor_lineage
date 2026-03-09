@@ -1,0 +1,17 @@
+# Pixel 10a
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="CP1A.260305.018"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly build_number=""
+
+readonly image_url="https://dl.google.com/dl/android/aosp/stallion-cp1a.260305.018-factory-0967f30d.zip"
+readonly image_sha256="0967f30d6b1ff3a52b42b13eec6ee437f2ae56a039c47a35cace341a16e6d205"
+
+readonly flash_url="https://flash.android.com/build/?target=stallion-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/stallion-ota-cp1a.260305.018-c157843a.zip"
+readonly ota_sha256="c157843ae2a6d5031008efdafed278ceb4662e38c2827751b900f8e1127951ea"
