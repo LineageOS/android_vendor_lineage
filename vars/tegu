@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP4A.260205.001"
+readonly build_id="CP1A.260305.018"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14624666"
+readonly build_number="14887507"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tegu-bp4a.260205.001-factory-1c69f00a.zip"
-readonly image_sha256="1c69f00afef92eb1464d9609c4e5c9d102c9e6bf677ccc2da01baaff29c0dff7"
+readonly image_url="https://dl.google.com/dl/android/aosp/tegu-cp1a.260305.018-factory-060f8a43.zip"
+readonly image_sha256="060f8a43e93ed804b04a8231b1d712240397d2002bf54345e02ff396e43d4b98"
 
-readonly flash_url="https://flash.android.com/build/14624666?target=tegu-user&signed"
+readonly flash_url="https://flash.android.com/build/14887507?target=tegu-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tegu-ota-bp4a.260205.001-344107f5.zip"
-readonly ota_sha256="344107f5ed45742ac0a722a83d29ee5421f425127707e47667c9fb759c9125f2"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tegu-ota-cp1a.260305.018-94f5c7ac.zip"
+readonly ota_sha256="94f5c7ac0224c36f0f0b029f085d0002e8e5547e65d876649e892e673d416ed4"

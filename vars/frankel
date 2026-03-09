@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP4A.260205.001"
+readonly build_id="CP1A.260305.018"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14624666"
+readonly build_number="14887507"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/frankel-bp4a.260205.001-factory-679ee187.zip"
-readonly image_sha256="679ee187cb766218e4b49f0a896f7e5b3382b5ea7d53ea16f7c35d6e5223e7ca"
+readonly image_url="https://dl.google.com/dl/android/aosp/frankel-cp1a.260305.018-factory-35a2ddb6.zip"
+readonly image_sha256="35a2ddb6731185c69926acdd64c462fbc18c08cdf12c172b9c6fb50497de9006"
 
-readonly flash_url="https://flash.android.com/build/14624666?target=frankel-user&signed"
+readonly flash_url="https://flash.android.com/build/14887507?target=frankel-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/frankel-ota-bp4a.260205.001-e7319588.zip"
-readonly ota_sha256="e731958824e11c80cdf9bff0689494e7c391cc5d85ae4dc862222b261a26a792"
+readonly ota_url="https://dl.google.com/dl/android/aosp/frankel-ota-cp1a.260305.018-1c48e8fa.zip"
+readonly ota_sha256="1c48e8fa82488d87fb0f4ee7e0ed6e97c7553b427ff49951e1d8f12ceb5d010a"
