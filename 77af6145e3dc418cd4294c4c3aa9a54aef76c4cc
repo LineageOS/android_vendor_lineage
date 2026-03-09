@@ -69,6 +69,23 @@
       "message": "seems within reason, I need to test locally.",
       "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07c0a00b_add7f2c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-09T18:26:22Z",
+      "side": 1,
+      "message": "Verified on sdk_phone and sdk_car x86_64 builds (userdebug/user). sdk_car was built with the other changes in https://review.lineageos.org/q/topic:%22car_sdk_and_gsi_fixes%22.",
+      "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
