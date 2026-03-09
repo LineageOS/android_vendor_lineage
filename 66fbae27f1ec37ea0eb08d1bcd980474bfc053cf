@@ -78,6 +78,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8d4f9656_5080f639",
+        "filename": "config/common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-09T19:37:58Z",
+      "side": 1,
+      "message": "They definitely can. I only added them to help with the history of the file. I guess a git log works just as well.",
+      "parentUuid": "a659df06_7f10f85d",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 52,
+        "endChar": 68
+      },
+      "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fb418481_03d71267",
         "filename": "prebuilt/common/Android.bp",
         "patchSetId": 2
@@ -89,6 +113,30 @@
       "writtenOn": "2026-03-09T19:18:07Z",
       "side": 1,
       "message": "Useless comment.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 34
+      },
+      "revId": "66fbae27f1ec37ea0eb08d1bcd980474bfc053cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b1b2539_01ad3c80",
+        "filename": "prebuilt/common/Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-09T19:37:58Z",
+      "side": 1,
+      "message": "Added it for the history. Will remove it.",
+      "parentUuid": "fb418481_03d71267",
       "range": {
         "startLine": 15,
         "startChar": 0,
