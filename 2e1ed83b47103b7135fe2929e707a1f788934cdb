@@ -38,6 +38,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "e889745a_67e349f4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-03-10T17:39:59Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_frameworks_base/+/477308",
+      "parentUuid": "a98bb1c4_8946095d",
+      "revId": "2e1ed83b47103b7135fe2929e707a1f788934cdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "471366f0_dffe2487",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
