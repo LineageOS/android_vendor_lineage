@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "a98bb1c4_8946095d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 36366
+      },
+      "writtenOn": "2026-03-10T05:18:22Z",
+      "side": 1,
+      "message": "https://review.pixelos.net/c/PixelOS-AOSP/android_frameworks_base/+/6922",
+      "parentUuid": "8c54dba0_44a89b7e",
+      "revId": "2e1ed83b47103b7135fe2929e707a1f788934cdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "471366f0_dffe2487",
