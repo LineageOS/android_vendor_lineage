@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33224d7d_ad7f1323",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-12T06:05:03Z",
+      "side": 1,
+      "message": "Only comment changes from the previous patchset, but I verified the changes with the same steps again.",
+      "revId": "842dd9aef61a148e6ba3add98cae66f0f2ca31e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
