@@ -103,6 +103,24 @@
       "message": "Why using filter in a simple comparison?",
       "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "307cd879_94e32241",
+        "filename": "config/lineage_sdk_common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-16T07:13:26Z",
+      "side": 1,
+      "message": "Aah...I think the reasoning got lost when I created these new commits. The original comment is in https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/472369/6/config/lineage_sdk_common.mk#24\n\nI just used filter to follow Googles pattern with OVERRIDE_DISABLE_DEXOPT_ALL. I\u0027m not too sure if they intend to add some other values too.",
+      "parentUuid": "e25fca50_ea6ad842",
+      "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
