@@ -22,6 +22,30 @@
       },
       "revId": "e70e0d8ce3f44af241a71a17d2f84d979cc83e9b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f858c580_a52fba42",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-18T16:56:55Z",
+      "side": 1,
+      "message": "This would be a much cleaner solution. I\u0027ll remove the changes from my commit. I\u0027ve been ingrained to avoid changing AOSP code, and it never occurred to me that we could just fix it at the source.",
+      "parentUuid": "11c14690_373430a5",
+      "range": {
+        "startLine": 183,
+        "startChar": 0,
+        "endLine": 183,
+        "endChar": 149
+      },
+      "revId": "e70e0d8ce3f44af241a71a17d2f84d979cc83e9b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
