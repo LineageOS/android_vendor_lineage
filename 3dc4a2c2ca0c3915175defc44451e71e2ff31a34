@@ -141,6 +141,24 @@
       "parentUuid": "02f33a2a_7598c6b0",
       "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ac1a064_5011d5fb",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T20:11:33Z",
+      "side": 1,
+      "message": "Akash, please join our public discord server (linked on lineageos.org) and give me your username to invite you to development channels.",
+      "parentUuid": "66168522_84acfb72",
+      "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
