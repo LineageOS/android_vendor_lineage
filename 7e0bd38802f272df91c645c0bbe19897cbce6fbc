@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd650b20_f8e3af8d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T20:37:56Z",
+      "side": 1,
+      "message": "@akashsrocks1234@gmail.com please test the entire car_sdk_and_gsi_fixes topic, I revamped it.\n\nFeel free to overwrite any of my patches as needed.",
+      "revId": "7e0bd38802f272df91c645c0bbe19897cbce6fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
