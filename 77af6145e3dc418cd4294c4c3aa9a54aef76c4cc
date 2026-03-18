@@ -139,6 +139,24 @@
       "parentUuid": "307cd879_94e32241",
       "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05d8f897_ab052435",
+        "filename": "config/lineage_sdk_common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T16:15:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a75c0124_d6fe5e1e",
+      "revId": "77af6145e3dc418cd4294c4c3aa9a54aef76c4cc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
