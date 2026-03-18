@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11c14690_373430a5",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T16:19:26Z",
+      "side": 1,
+      "message": "Can\u0027t we just do this?\n\nhttps://review.lineageos.org/c/LineageOS/android_packages_services_Car/+/478246",
+      "range": {
+        "startLine": 183,
+        "startChar": 0,
+        "endLine": 183,
+        "endChar": 149
+      },
+      "revId": "e70e0d8ce3f44af241a71a17d2f84d979cc83e9b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

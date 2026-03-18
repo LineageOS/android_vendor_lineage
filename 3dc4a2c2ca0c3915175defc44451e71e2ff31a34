@@ -105,6 +105,24 @@
       "parentUuid": "2dda9779_7340f21a",
       "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02f33a2a_7598c6b0",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T16:19:26Z",
+      "side": 1,
+      "message": "Can we just fork device/generic/car? I can do that if so - it looks like we can.",
+      "parentUuid": "afb83179_b930984a",
+      "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
