@@ -46,6 +46,30 @@
       },
       "revId": "e7836d66f8da65f91315150dd194400b00278118",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd773131_b82d2d0d",
+        "filename": "build/target/product/lineage_gsi_car_arm64.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T20:34:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b1b9f5f7_1da6e9ac",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 78
+      },
+      "revId": "e7836d66f8da65f91315150dd194400b00278118",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
