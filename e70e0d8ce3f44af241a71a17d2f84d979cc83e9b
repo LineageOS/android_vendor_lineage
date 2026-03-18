@@ -46,6 +46,30 @@
       },
       "revId": "e70e0d8ce3f44af241a71a17d2f84d979cc83e9b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35c533fb_49c927e1",
+        "filename": "config/common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T20:19:25Z",
+      "side": 1,
+      "message": "Please adapt this commit, addressed elsewhere: https://review.lineageos.org/c/LineageOS/android_packages_services_Car/+/478246 Dedupliate curl",
+      "parentUuid": "f858c580_a52fba42",
+      "range": {
+        "startLine": 183,
+        "startChar": 0,
+        "endLine": 183,
+        "endChar": 149
+      },
+      "revId": "e70e0d8ce3f44af241a71a17d2f84d979cc83e9b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
