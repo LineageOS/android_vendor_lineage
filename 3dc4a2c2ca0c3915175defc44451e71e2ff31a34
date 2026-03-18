@@ -159,6 +159,24 @@
       "parentUuid": "66168522_84acfb72",
       "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f9e8c28_4ee3096e",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-18T20:33:42Z",
+      "side": 1,
+      "message": "leaving this comment open only for the discord username",
+      "parentUuid": "1ac1a064_5011d5fb",
+      "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
