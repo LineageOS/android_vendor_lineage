@@ -16,6 +16,24 @@
       "message": "@akashsrocks1234@gmail.com please test the entire car_sdk_and_gsi_fixes topic, I revamped it.\n\nFeel free to overwrite any of my patches as needed.",
       "revId": "7e0bd38802f272df91c645c0bbe19897cbce6fbc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55d0d12f_d63f4ccc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-20T18:40:27Z",
+      "side": 1,
+      "message": "Will do. Just took a cherry-pick so I can hopefully put a V+1 soon.",
+      "parentUuid": "fd650b20_f8e3af8d",
+      "revId": "7e0bd38802f272df91c645c0bbe19897cbce6fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
