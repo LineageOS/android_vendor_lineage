@@ -213,6 +213,24 @@
       "parentUuid": "8c85280c_ce6d72a9",
       "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f23fa9e_560398e9",
+        "filename": "build/target/product/lineage_sdk_car_x86_64.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-21T02:12:52Z",
+      "side": 1,
+      "message": "Invite will go out in 48 hours. There\u0027s a timer.\n\nSee you in #devrel soon!",
+      "parentUuid": "1dce60ed_2d2c1980",
+      "revId": "3dc4a2c2ca0c3915175defc44451e71e2ff31a34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
