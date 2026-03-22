@@ -74,6 +74,13 @@ else
     KERNEL_ARCH := $(TARGET_KERNEL_ARCH)
 endif
 
+ifeq ($(KERNEL_ARCH),arm64)
+KERNEL_GKI_ARCH := aarch64
+else
+KERNEL_GKI_ARCH ?= $(KERNEL_ARCH)
+endif
+KERNEL_GKI_ARCH_DIR_PATH := $(TARGET_KERNEL_SOURCE)/gki/$(KERNEL_GKI_ARCH)
+
 KERNEL_VERSION := $(shell grep -s "^VERSION = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
 KERNEL_PATCHLEVEL := $(shell grep -s "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
 TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
@@ -266,6 +273,19 @@ KERNEL_MAKE_FLAGS += PAHOLE=$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/
 
 # Rust bindgen wants matching Clang and libclang versions
 KERNEL_MAKE_FLAGS += LIBCLANG_PATH=$(TARGET_KERNEL_CLANG_PATH)/lib
+
+# AutoFDO
+ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
+    # Ideally, we also want to detect 'CONFIG_AUTOFDO_CLANG=y' from kernel configs...
+
+    # Note: The path `toolchain/pgo-profiles/kernel` contains AutoFDO profiles too
+    ifneq ($(TARGET_KERNEL_CLANG_AUTOFDO_PROFILE),none)
+        TARGET_KERNEL_CLANG_AUTOFDO_PROFILE ?= $(KERNEL_GKI_ARCH_DIR_PATH)/afdo/kernel.afdo
+        ifneq ($(wildcard $(TARGET_KERNEL_CLANG_AUTOFDO_PROFILE)),)
+            KERNEL_MAKE_FLAGS += CLANG_AUTOFDO_PROFILE=$(BUILD_TOP)/$(TARGET_KERNEL_CLANG_AUTOFDO_PROFILE)
+        endif
+    endif
+endif
 
 # Set the out dir for the kernel's O= arg
 # This needs to be an absolute path, so only set this if the standard out dir isn't used
