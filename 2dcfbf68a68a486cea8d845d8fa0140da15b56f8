@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b689b067_e3b3bb5b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36830
+      },
+      "writtenOn": "2026-03-23T22:26:12Z",
+      "side": 1,
+      "message": "The repo has been moved so I resubmitted this change as https://review.lineageos.org/c/LineageOS/android_vendor_apn/+/478766",
+      "revId": "2dcfbf68a68a486cea8d845d8fa0140da15b56f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
