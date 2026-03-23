@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8bde0087_408cfb30",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-03-23T08:27:15Z",
+      "side": 1,
+      "message": "getting a bunch of this on android16-6.12, no idea how to fix yet\ntried updating prebuilts/kernel-build-tools and clang, doesn\u0027t help\n```\nld.lld: error: vmlinux.a(rust/kernel.o):(.bss._RNvNCNvMs0_NtCs9vb8HfQtxcz_6kernel9workqueueNtB9_5Queue9try_spawns_05CLASS) is being placed in \u0027.bss._RNvNCNvMs0_NtCs9vb8HfQtxcz_6kernel9workqueueNtB9_5Queue9try_spawns_05CLASS\u0027\nld.lld: error: vmlinux.a(drivers/staging/android/ashmem.o):(.bss._RNvNtCs8lzC8pGQjrQ_6ashmem12ashmem_range9LRU_COUNT.0) is being placed in \u0027.bss._RNvNtCs8lzC8pGQjrQ_6ashmem12ashmem_range9LRU_COUNT.0\u0027\n```",
+      "revId": "bbfc6c01666a7de256b687581957fdbd8fb59278",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
