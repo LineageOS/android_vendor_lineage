@@ -27,3 +27,9 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/framework/oat/%/org.lineageos.platform.odex \
     system/framework/oat/%/org.lineageos.platform.vdex
 endif
+
+# ADB authentication is disabled by the GSI for userdebug and eng builds (system_ext scope).
+# Refer build/target/board/BoardConfigGsiCommon.mk.
+ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+WITH_ADB_INSECURE := true
+endif
