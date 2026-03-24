@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d84f670c_5aca4051",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-24T19:48:52Z",
+      "side": 1,
+      "message": "We won\u0027t be doing this one - no build configuration we ship (other than eng which is its own beast) will have ADB by default.\n\nThe flag is there purely for local env for devs.",
+      "revId": "343fdda95c4ecf25a03c1857e8a85bd6465d0a07",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
