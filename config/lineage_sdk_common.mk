@@ -13,6 +13,12 @@ PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
     org.lineageos.platform
 
+# ADB authentication is disabled by the GSI for userdebug and eng builds (system_ext scope).
+# Refer build/target/board/BoardConfigGsiCommon.mk.
+ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
+WITH_ADB_INSECURE := true
+endif
+
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
