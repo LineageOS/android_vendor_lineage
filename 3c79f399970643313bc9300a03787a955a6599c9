@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da060703_5e58ee7e",
+        "filename": "build/target/product/lineage_generic_car_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-25T17:00:38Z",
+      "side": 1,
+      "message": "@johnsonnolen@gmail.com @luca.stefani.ge1@gmail.com is it fine if we made an exception for car targets?",
+      "revId": "3c79f399970643313bc9300a03787a955a6599c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
