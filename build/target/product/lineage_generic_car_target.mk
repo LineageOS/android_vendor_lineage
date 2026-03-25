@@ -25,3 +25,10 @@ USE_SOONG_DEFINED_SYSTEM_IMAGE := false
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/permissions/android.software.credentials.xml
+
+# This takes priority over "PRODUCT_NOT_DEBUGGABLE_IN_USERDEBUG", which is set in vendor/lineage/config/common.mk.
+# "PRODUCT_NOT_DEBUGGABLE_IN_USERDEBUG" emits to the system partition as an additional_system_prop.
+# This override is required as the Car sources expect userdebug builds to be debuggable (throws an exception if not).
+ifneq (,$(filter eng userdebug,$(TARGET_BUILD_VARIANT)))
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.debuggable=1
+endif
