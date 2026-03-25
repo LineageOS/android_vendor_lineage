@@ -88,6 +88,9 @@
     <!-- Whether or not we should show the option to show battery percentage -->
     <bool name="config_battery_percentage_setting_available">false</bool>
 
+    <!-- Whether desktop mode is supported on the current device  -->
+    <bool name="config_isDesktopModeSupported">true</bool>
+
     <!-- List of packages that can use the Conversation space for their category messages
     notifications until they target R -->
     <string-array name="config_notificationMsgPkgsAllowedAsConvos" translatable="false">
