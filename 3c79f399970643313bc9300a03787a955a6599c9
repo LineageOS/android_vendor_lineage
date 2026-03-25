@@ -34,6 +34,24 @@
       "parentUuid": "da060703_5e58ee7e",
       "revId": "3c79f399970643313bc9300a03787a955a6599c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aed2f598_d341ab62",
+        "filename": "build/target/product/lineage_generic_car_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-25T19:23:19Z",
+      "side": 1,
+      "message": "there is a settings on automotive, we even have our adb root addition tied in.",
+      "parentUuid": "d3bd122d_51a0fcd9",
+      "revId": "3c79f399970643313bc9300a03787a955a6599c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
