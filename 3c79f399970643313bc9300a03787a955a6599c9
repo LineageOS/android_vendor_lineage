@@ -16,6 +16,24 @@
       "message": "@johnsonnolen@gmail.com @luca.stefani.ge1@gmail.com is it fine if we made an exception for car targets?",
       "revId": "3c79f399970643313bc9300a03787a955a6599c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3bd122d_51a0fcd9",
+        "filename": "build/target/product/lineage_generic_car_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-03-25T17:06:44Z",
+      "side": 1,
+      "message": "If there\u0027s no user available option to turn it on that\u0027d be fine by me, otherwise I think the proper way is to follow our \"defaults\", so disable adb even in userdebug.",
+      "parentUuid": "da060703_5e58ee7e",
+      "revId": "3c79f399970643313bc9300a03787a955a6599c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
