@@ -16,6 +16,23 @@
       "message": "this only enables it for non-internal displays.",
       "revId": "55d648debe54015865bcee1aa7c1b540687874fc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "256b0274_4aa1ae57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-27T02:25:36Z",
+      "side": 1,
+      "message": "waiting on ATV verification.",
+      "revId": "55d648debe54015865bcee1aa7c1b540687874fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
