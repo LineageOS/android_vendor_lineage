@@ -52,6 +52,24 @@
       "parentUuid": "d3bd122d_51a0fcd9",
       "revId": "3c79f399970643313bc9300a03787a955a6599c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "179e335d_cfbe036f",
+        "filename": "build/target/product/lineage_generic_car_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 36600
+      },
+      "writtenOn": "2026-03-28T09:06:19Z",
+      "side": 1,
+      "message": "Apologies in advance for the silly question, but what user available option are we talking about in this case? Is it an option that enables app debugging hooks or the root/adb options from developer settings?",
+      "parentUuid": "aed2f598_d341ab62",
+      "revId": "3c79f399970643313bc9300a03787a955a6599c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
