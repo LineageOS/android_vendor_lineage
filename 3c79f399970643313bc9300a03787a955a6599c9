@@ -70,6 +70,24 @@
       "parentUuid": "aed2f598_d341ab62",
       "revId": "3c79f399970643313bc9300a03787a955a6599c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "507f812e_723e6ed7",
+        "filename": "build/target/product/lineage_generic_car_target.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-28T16:38:28Z",
+      "side": 1,
+      "message": "the latter",
+      "parentUuid": "179e335d_cfbe036f",
+      "revId": "3c79f399970643313bc9300a03787a955a6599c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
