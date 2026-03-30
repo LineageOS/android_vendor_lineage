@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55814a92_f8d97f57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-30T01:11:38Z",
+      "side": 1,
+      "message": "Goal here is to allow non-qcom directories - and instead of overwriting qcom version allowing vendor specific one.\n\nsm8550 kernel wasn\u0027t built with this in mind, but it works.\n\nWe /could/ and maybe /should/ try to enforce this on sm8850 kernels once those start appearing.",
+      "revId": "11dd05a82451caae49d7eb613d87785070a12cf1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
