@@ -87,6 +87,10 @@
 #
 #   TARGET_KERNEL_PLATFORM_TARGET      = Optional, enables building an external kernel
 #                                          platform tree, this specifies the base target name
+#
+#   TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS = Optional, automatically collects kernel module
+#                                              dependencies from {BOOT,RECOVERY}_KERNEL_MODULES
+#                                              and include these back to the variable.
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -108,6 +112,7 @@ BOARD_RECOVERY_KERNEL_MODULES_LOAD ?= $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LO
 TARGET_KERNEL_MIXED_MODE ?= true
 
 ## Internal variables
+COLLECT_MODULE_DEPS_CMD := python3 $(BUILD_TOP)/lineage/scripts/collect-kernel-module-deps/collect-kernel-module-deps.py --non-interactive
 DTC := $(HOST_OUT_EXECUTABLES)/dtc
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 DTBO_OUT := $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ
@@ -562,7 +567,10 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 				($(call build-image-kernel-modules-lineage,$$all_modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD),,$(KERNEL_MODULES_PARTITION_FILE_LIST),)) || exit "$$?"; \
 			) \
 			$(if $(BOOT_KERNEL_MODULES),\
-				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES); do \
+				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)),\
+					boot_kernel_modules_deps+=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(BOOT_KERNEL_MODULES));\
+				) \
+				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES) $$boot_kernel_modules_deps; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from BOOT_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
@@ -570,7 +578,10 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 				($(call build-image-kernel-modules-lineage,$$vendor_boot_modules,$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)) || exit "$$?"; \
 			) \
 			$(if $(RECOVERY_KERNEL_MODULES),\
-				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES); do \
+				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)),\
+					recovery_kernel_modules_deps+=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(RECOVERY_KERNEL_MODULES));\
+				) \
+				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_deps; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from RECOVERY_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
