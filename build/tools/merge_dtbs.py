@@ -264,6 +264,7 @@ class DeviceTreeInfo(object):
 
 class DeviceTree(DeviceTreeInfo):
 	EXTRA_KEYS = (
+		('moorechip,device-id', 1),
 		('oplus,hw-id', 1),
 		('oplus,project-id', 1),
 		('qcom,oem-id', 1),
