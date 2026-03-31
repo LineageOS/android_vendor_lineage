@@ -87,6 +87,10 @@
 #
 #   TARGET_KERNEL_PLATFORM_TARGET      = Optional, enables building an external kernel
 #                                          platform tree, this specifies the base target name
+#
+#   TARGET_COLLECT_KERNEL_MODULE_DEPS  = Optional, automatically collects kernel module
+#                                          dependencies from {BOOT,RECOVERY}_KERNEL_MODULES
+#                                          and include these back to the variable.
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -108,6 +112,7 @@ BOARD_RECOVERY_KERNEL_MODULES_LOAD ?= $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LO
 TARGET_KERNEL_MIXED_MODE ?= true
 
 ## Internal variables
+COLLECT_MODULE_DEPS_CMD := python3 $(BUILD_TOP)/lineage/scripts/collect-kernel-module-deps/collect-kernel-module-deps.py --non-interactive
 DTC := $(HOST_OUT_EXECUTABLES)/dtc
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 DTBO_OUT := $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ
@@ -567,6 +572,9 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from BOOT_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
 				[ $$? -ne 0 ] && exit 1; \
+				$(if $(filter true,$(TARGET_COLLECT_KERNEL_MODULE_DEPS)),\
+					vendor_boot_modules+=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(BOOT_KERNEL_MODULES));\
+				) \
 				($(call build-image-kernel-modules-lineage,$$vendor_boot_modules,$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)) || exit "$$?"; \
 			) \
 			$(if $(RECOVERY_KERNEL_MODULES),\
@@ -575,6 +583,9 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from RECOVERY_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
 				[ $$? -ne 0 ] && exit 1; \
+				$(if $(filter true,$(TARGET_COLLECT_KERNEL_MODULE_DEPS)),\
+					recovery_modules+=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(RECOVERY_KERNEL_MODULES));\
+				) \
 				($(call build-image-kernel-modules-lineage,$$recovery_modules,$(KERNEL_RECOVERY_MODULES_OUT),,$(KERNEL_RECOVERY_DEPMOD_STAGING_DIR),$(BOARD_RECOVERY_KERNEL_MODULES_LOAD),,,)) || exit "$$?"; \
 			) \
 		fi
