@@ -91,6 +91,10 @@
 #   TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS = Optional, automatically collects kernel module
 #                                              dependencies from *_KERNEL_MODULES
 #                                              and include these back to the variable.
+#
+#   {BOOT,RECOVERY}_KERNEL_MODULES_FINDER  = Optional, specifies path to a program that outputs
+#                                              a list of kernel modules to be included in boot
+#                                              or recovery ramdisk.
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -509,7 +513,7 @@ $(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
-$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST)
+$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST) $(BOOT_KERNEL_MODULES_FINDER) $(RECOVERY_KERNEL_MODULES_FINDER)
 	@echo "Building Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
 	$(call make-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
 	$(hide) if [ -d "$(KERNEL_SRC)/arch/$(KERNEL_ARCH)/boot/dts/" ]; then \
@@ -569,22 +573,28 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 				,\
 				($(call build-image-kernel-modules-lineage,$$all_modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD),,$(KERNEL_MODULES_PARTITION_FILE_LIST),)) || exit "$$?"; \
 			) \
-			$(if $(BOOT_KERNEL_MODULES),\
-				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)), \
-					boot_kernel_modules_deps=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(BOOT_KERNEL_MODULES) | tr '\n' ' '); \
+			$(if $(BOOT_KERNEL_MODULES)$(BOOT_KERNEL_MODULES_FINDER),\
+				$(if $(BOOT_KERNEL_MODULES_FINDER), \
+					boot_kernel_modules_finder_output=$$($(BOOT_KERNEL_MODULES_FINDER) $(KERNEL_OUT) | tr '\n' ' '); \
 				) \
-				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES) $$boot_kernel_modules_deps; do \
+				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)), \
+					boot_kernel_modules_deps=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(BOOT_KERNEL_MODULES) $$boot_kernel_modules_finder_output | tr '\n' ' '); \
+				) \
+				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES) $$boot_kernel_modules_deps $$boot_kernel_modules_finder_output; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from BOOT_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
 				[ $$? -ne 0 ] && exit 1; \
 				($(call build-image-kernel-modules-lineage,$$vendor_boot_modules,$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)) || exit "$$?"; \
 			) \
-			$(if $(RECOVERY_KERNEL_MODULES),\
-				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)), \
-					recovery_kernel_modules_deps=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(RECOVERY_KERNEL_MODULES) | tr '\n' ' '); \
+			$(if $(RECOVERY_KERNEL_MODULES)$(RECOVERY_KERNEL_MODULES_FINDER),\
+				$(if $(RECOVERY_KERNEL_MODULES_FINDER), \
+					recovery_kernel_modules_finder_output=$$($(RECOVERY_KERNEL_MODULES_FINDER) $(KERNEL_OUT) | tr '\n' ' '); \
 				) \
-				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_deps; do \
+				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)), \
+					recovery_kernel_modules_deps=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_finder_output | tr '\n' ' '); \
+				) \
+				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_finder_output $$recovery_kernel_modules_deps; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from RECOVERY_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
