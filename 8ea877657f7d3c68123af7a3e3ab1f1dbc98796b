@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f179ee05_85823a90",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 627,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-03-31T04:13:18Z",
+      "side": 1,
+      "message": "Should probably extend to devices not using the merge script",
+      "revId": "8ea877657f7d3c68123af7a3e3ab1f1dbc98796b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
