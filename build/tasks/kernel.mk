@@ -577,11 +577,14 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 				[ $$? -ne 0 ] && exit 1; \
 				($(call build-image-kernel-modules-lineage,$$vendor_boot_modules,$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)) || exit "$$?"; \
 			) \
-			$(if $(RECOVERY_KERNEL_MODULES),\
+			$(if $(RECOVERY_KERNEL_MODULES) $(RECOVERY_KERNEL_MODULES_FINDER),\
+				$(if $(RECOVERY_KERNEL_MODULES_FINDER),\
+					recovery_kernel_modules_finder_output=$$($(RECOVERY_KERNEL_MODULES_FINDER) $(KERNEL_OUT) | tr '\n' ' ');\
+				)\
 				$(if $(filter true,$(TARGET_COLLECT_KERNEL_MODULE_DEPS)),\
-					recovery_kernel_modules_deps+=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(RECOVERY_KERNEL_MODULES));\
+					recovery_kernel_modules_deps+=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_finder_output);\
 				) \
-				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_deps; do \
+				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_finder_output $$recovery_kernel_modules_deps; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from RECOVERY_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
