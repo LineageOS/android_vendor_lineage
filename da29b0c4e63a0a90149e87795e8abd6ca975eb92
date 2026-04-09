@@ -34,6 +34,24 @@
       "parentUuid": "1c1aeadd_01df7416",
       "revId": "da29b0c4e63a0a90149e87795e8abd6ca975eb92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b18e2e97_b1d5c68d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-04-09T10:03:05Z",
+      "side": 1,
+      "message": "1. that script currently just works, but isn\u0027t too mature yet: a) relies on `/usr/sbin/modinfo` b) it\u0027s slow when it have to deal with too many modules\n2. most of device trees out there already do include the deps on the list",
+      "parentUuid": "3ee7b7f7_4033ea49",
+      "revId": "da29b0c4e63a0a90149e87795e8abd6ca975eb92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
