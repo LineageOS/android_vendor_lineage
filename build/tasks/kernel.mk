@@ -95,6 +95,9 @@
 #   {BOOT,RECOVERY}_KERNEL_MODULES_FINDER  = Optional, specifies path to a program that outputs
 #                                              a list of kernel modules to be included in boot
 #                                              or recovery ramdisk.
+#
+#   BOARD_KERNEL_MODULES_LOAD_ALLOW_MISSING = Optional, allows kernel modules specified in
+#                                               *_MODULES_LOAD to be missing.
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -402,8 +405,11 @@ define build-image-kernel-modules-lineage
         if [ -n "$$(find $(2)/lib/modules$(6) -type f -name $$NAME'.ko')" ]; then \
             echo "$$NAME" >> $(2)/lib/modules$(6)/modules.load; \
         else \
-            echo "ERROR: $$NAME.ko was not found in the kernel modules intermediates dir, module load list must be corrected" 1>&2; \
-            ERROR=1; \
+            echo "ERROR: $$NAME.ko was not found in the kernel modules intermediates dir" 1>&2; \
+            if [ "$(BOARD_KERNEL_MODULES_LOAD_ALLOW_MISSING)" != "true" ]; then \
+                echo "Module load list must be corrected." 1>&2; \
+                ERROR=1; \
+            fi; \
         fi; \
     done; \
     if [ -n "$$ERROR" ]; then \
