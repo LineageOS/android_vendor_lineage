@@ -16,6 +16,24 @@
       "message": "Should probably extend to devices not using the merge script",
       "revId": "8ea877657f7d3c68123af7a3e3ab1f1dbc98796b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4f42c40_f01141f6",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 627,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-04-10T23:16:18Z",
+      "side": 1,
+      "message": "Can be introduced in a subsequent change.",
+      "parentUuid": "f179ee05_85823a90",
+      "revId": "8ea877657f7d3c68123af7a3e3ab1f1dbc98796b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
