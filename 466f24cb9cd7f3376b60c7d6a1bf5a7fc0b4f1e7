@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4607e833_f0a080ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36705
+      },
+      "writtenOn": "2026-04-11T15:06:14Z",
+      "side": 1,
+      "message": "This is technically incorrect in bash, because every argument is treated now as \"$1\". To prove that I just wrote this simple script\n```\necho \"$0\" \"\\\"$@\\\"\"\n```\nand the output of \"$@\" will be in quotes aka \"$1\"\n```\n~ $ bash check.sh --smth smth --smth2 smth2\ncheck.sh \"--smth smth --smth2 smth2\"\n```.\nThe correct output should be\n```\ncheck.sh --smth \"smth\" --smth \"smth2\"\n```.\nImo this function requires a proper arguments handler.",
+      "revId": "466f24cb9cd7f3376b60c7d6a1bf5a7fc0b4f1e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
