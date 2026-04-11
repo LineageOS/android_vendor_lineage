@@ -34,6 +34,24 @@
       "parentUuid": "4607e833_f0a080ee",
       "revId": "466f24cb9cd7f3376b60c7d6a1bf5a7fc0b4f1e7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c06eb7f3_b8083d5a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36705
+      },
+      "writtenOn": "2026-04-11T17:44:09Z",
+      "side": 1,
+      "message": "\u003e Your script does not use \"$@\" but something different.\n\nIt does? I used \"$@\" in the second quote.\nI don\u0027t think you got what I said. Bash/shell treats anything in quotes as one argument, without quotes it treats 2 arguments as 2 arguments, not as 1 which is bash complaint. If the repopick python script is fine with it then it\u0027s not an issue I guess.",
+      "parentUuid": "51c4bc8a_2626b758",
+      "revId": "466f24cb9cd7f3376b60c7d6a1bf5a7fc0b4f1e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
