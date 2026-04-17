@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (157a2a7173345877d8e7defb09cd5ff653eba341 config: Create makefiles for tablets with telephony support)
 #!/usr/bin/env python
 #
 # Copyright (C) 2013-15 The CyanogenMod Project
@@ -495,3 +496,5 @@ if __name__ == '__main__':
                     sys.exit(result)
         if not args.quiet:
             print('')
+=======
+>>>>>>> CHANGE (6bf4dfc9acfe596f7c68b25d453c5f1874f0af0b lineage: Move repopick to lineage/scripts)
