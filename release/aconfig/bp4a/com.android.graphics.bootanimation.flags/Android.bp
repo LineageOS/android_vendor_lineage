@@ -1,7 +1,18 @@
-aconfig_values {
+soong_config_module_type {
+    name: "bootanimation_aconfig_values",
+    module_type: "aconfig_values",
+    config_namespace: "bootanimation",
+    bool_variables: ["multidisplay"],
+    properties: ["srcs"],
+}
+
+bootanimation_aconfig_values {
     name: "aconfig-values-lineage-bp4a-com.android.graphics.bootanimation.flags-all",
     package: "com.android.graphics.bootanimation.flags",
-    srcs: [
-        "*_flag_values.textproto",
-    ],
+    srcs: [],
+    soong_config_variables: {
+        multidisplay: {
+            srcs: ["multidisplay_flag_values.textproto"],
+        },
+    },
 }
