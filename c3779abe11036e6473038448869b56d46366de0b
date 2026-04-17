@@ -16,6 +16,24 @@
       "message": "I suppose select() doesn\u0027t work for aconfig_values?",
       "revId": "c3779abe11036e6473038448869b56d46366de0b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ac2fe5c_c611c0ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-04-17T20:18:37Z",
+      "side": 1,
+      "message": "error: vendor/lineage/release/aconfig/bp4a/com.android.graphics.bootanimation.flags/Android.bp:4:11: can\u0027t assign select statement to non-configurable property \"srcs\". This requires a small \nsoong change to enable in most cases, please file a go/soong-bug if you\u0027d like to use a select statement here",
+      "parentUuid": "bcbcd68c_5c19770a",
+      "revId": "c3779abe11036e6473038448869b56d46366de0b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
