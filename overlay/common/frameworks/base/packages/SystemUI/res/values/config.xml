@@ -40,4 +40,7 @@
 
     <!-- Whether or not lockscreen shortcuts can be customized -->
     <bool name="custom_lockscreen_shortcuts_enabled" translatable="false">true</bool>
+
+    <!-- Configuration to swipe to open glanceable hub -->
+    <bool name="config_swipeToOpenGlanceableHub">true</bool>
 </resources>
