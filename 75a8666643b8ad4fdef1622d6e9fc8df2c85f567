@@ -1,0 +1,30 @@
+{
+  "comments": [],
+  "submitRequirementResults": [
+    {
+      "submitRequirement": {
+        "name": "CI",
+        "description": {
+          "value": "Prevent submit if CI failed."
+        },
+        "applicabilityExpression": {},
+        "submittabilityExpression": {
+          "expressionString": "-label:CI\u003dMIN"
+        },
+        "overrideExpression": {},
+        "allowOverrideInChildProjects": false
+      },
+      "applicabilityExpressionResult": {},
+      "submittabilityExpressionResult": {
+        "value": {"expression":{"expressionString":"-label:CI=MIN"},"status":"PASS","errorMessage":{"value":null},"passingAtoms":[],"failingAtoms":["label:CI=MIN"],"atomExplanations":{"value":{"label:CI=MIN":""}}}
+      },
+      "overrideExpressionResult": {},
+      "patchSetCommitId": "75a8666643b8ad4fdef1622d6e9fc8df2c85f567",
+      "legacy": {
+        "value": false
+      },
+      "forced": {},
+      "hidden": {}
+    }
+  ]
+}
