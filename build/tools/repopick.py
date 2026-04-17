@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (fac22bf2792973a7bb85b37744ae4cb851174e24 tablet: Enable desktop windowing mode)
 #!/usr/bin/env python3
 #
 # Copyright (C) 2013-2015 The CyanogenMod Project
@@ -742,3 +743,5 @@ def apply_change(args, item):
 
 if __name__ == "__main__":
     main()
+=======
+>>>>>>> CHANGE (bfb7b66df45cdef8973ba74565eacf70b8eb5725 lineage: Move repopick to lineage/scripts)
