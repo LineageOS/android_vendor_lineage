@@ -33,6 +33,24 @@
       "message": "It actually makes it work properly on Z Fold 5. Is there a way to make this work without breaking pixels ?",
       "revId": "df76fb42b2477c209465a5943666afb4fa83c064",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec2dfedb_2a49db18",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-04-17T13:59:01Z",
+      "side": 1,
+      "message": "I confirm that this also fixes the issue on Oneplus Open. I guess we can check what this flag actually enables in the codebase and enable it conditionally.",
+      "parentUuid": "09130569_6e453d4b",
+      "revId": "df76fb42b2477c209465a5943666afb4fa83c064",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
