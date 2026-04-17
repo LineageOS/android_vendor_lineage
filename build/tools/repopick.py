@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (d51094ce3b5b69b9426c88bb5a3fad959dcb2efa vendor: make dopush recognize files on more partitions)
 #!/usr/bin/env python
 #
 # Copyright (C) 2013-15 The CyanogenMod Project
@@ -485,3 +486,5 @@ if __name__ == '__main__':
                     sys.exit(result)
         if not args.quiet:
             print('')
+=======
+>>>>>>> CHANGE (04553ee1e0865dab7cd0df0368f99cb0497447e7 lineage: Move repopick to lineage/scripts)
