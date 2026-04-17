@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (44ca08221be4e38aa8b995a8494bf6440339d6ba lineage: config: Allow using an env var to enable insecure A)
 #!/usr/bin/env python
 #
 # Copyright (C) 2013-15 The CyanogenMod Project
@@ -496,3 +497,5 @@ if __name__ == '__main__':
                     sys.exit(result)
         if not args.quiet:
             print('')
+=======
+>>>>>>> CHANGE (98348f22528d64dd95e4a5a1f288be9600251ca2 lineage: Move repopick to lineage/scripts)
