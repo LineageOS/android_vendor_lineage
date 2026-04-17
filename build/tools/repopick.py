@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (dda132812f18520b58d97761438e99b10f57e460 Move APNs data to vendor/apn)
 #!/usr/bin/env python
 #
 # Copyright (C) 2013-15 The CyanogenMod Project
@@ -496,3 +497,5 @@ if __name__ == '__main__':
                     sys.exit(result)
         if not args.quiet:
             print('')
+=======
+>>>>>>> CHANGE (52543a13d8a58a0605887f2733e3434056742ffa lineage: Move repopick to lineage/scripts)
