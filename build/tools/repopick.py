@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (014515daf1679fde957a912f7c4673d510b2728b partner_gms: Support TV GMS)
 #!/usr/bin/env python
 #
 # Copyright (C) 2013-15 The CyanogenMod Project
@@ -471,3 +472,5 @@ if __name__ == '__main__':
                     sys.exit(result)
         if not args.quiet:
             print('')
+=======
+>>>>>>> CHANGE (64ab602c30f36934a304d3e5e418be2179861915 lineage: Move repopick to lineage/scripts)
