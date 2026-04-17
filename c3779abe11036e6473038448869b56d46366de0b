@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcbcd68c_5c19770a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-17T15:55:33Z",
+      "side": 1,
+      "message": "I suppose select() doesn\u0027t work for aconfig_values?",
+      "revId": "c3779abe11036e6473038448869b56d46366de0b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
