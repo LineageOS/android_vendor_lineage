@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ac5b8ca_79461058",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-17T03:38:11Z",
+      "side": 1,
+      "message": "This breaks Pixel foldables.\nBefore this change: bootloader logo is shown on the external screen and animation always only plays on the internal screen, like stock.\nAfter this change: bootanimation plays for like 3 seconds on external display, then it turns blank until the device booted to lockscreen.",
+      "revId": "df76fb42b2477c209465a5943666afb4fa83c064",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
