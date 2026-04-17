@@ -16,6 +16,24 @@
       "message": "I would avoid adding lineage_ in the soong flag, there is nothing lineage specific in it",
       "revId": "6a761c1ac601c701dc59fdb963e9d6d1f251d958",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c949bc07_3905ba24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29914
+      },
+      "writtenOn": "2026-04-17T15:55:12Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "c545c9cf_83606733",
+      "revId": "6a761c1ac601c701dc59fdb963e9d6d1f251d958",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
