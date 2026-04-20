@@ -22,7 +22,8 @@ lineage_generator {
     name: "generated_kernel_includes",
 
     // The headers make command
-    cmd: "if [ -n \"$(TARGET_KERNEL_PLATFORM_TARGET)\" ]; then " +
+    cmd: "set -e; " +
+         "if [ -n \"$(TARGET_KERNEL_PLATFORM_TARGET)\" ]; then " +
          "    pushd $(KERNEL_PATH); " +
          "    ./tools/bazel --output_user_root=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/bazel-out --output_root=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/bazel-out run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) //$(TARGET_KERNEL_SOURCE):$(TARGET_KERNEL_PLATFORM_TARGET)_uapi_headers_dist -- --destdir=$(KERNEL_BUILD_OUT_PREFIX)$(genDir); " +
          "    popd; " +
