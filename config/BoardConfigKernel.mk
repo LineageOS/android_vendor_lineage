@@ -276,5 +276,5 @@ ifeq ($(OUT_DIR_PREFIX),out)
 endif
 
 ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
-KERNEL_PATH := $(abspath $(BUILD_TOP)/../kernel-$(TARGET_KERNEL_VERSION))
+KERNEL_PATH := $(abspath $(BUILD_TOP)/kernel/platform/kernel-$(TARGET_KERNEL_VERSION))
 endif
