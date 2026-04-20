@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c297083_cd09b8e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-04-20T17:00:22Z",
+      "side": 1,
+      "message": "The original commit was verified while I still had copies of the kernel platform trees out of tree, so this check did not fail until I cleaned up the out of tree copies.",
+      "revId": "eadec453a4934d467e83125c765982ec119cef8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
