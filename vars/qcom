@@ -1,6 +1,6 @@
 declare -A qcom_group_revision
 # https://git.codelinaro.org/clo/la/platform/frameworks/base/-/tags?sort=updated_desc&search=LA.QSSI.16.0.r1
-qcom_group_revision[qssi]=LA.QSSI.16.0.r1-10300-qssi.0
+qcom_group_revision[qssi]=LA.QSSI.16.0.r1-14000-qssi.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.10.6.2.r1
 qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02500-89xx.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.12.2.1.r1
@@ -12,26 +12,26 @@ qcom_group_revision[msmnile]=LA.UM.9.1.r1-16400-SMxxx0.QSSI14.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.9.12.r1
 qcom_group_revision[kona]=LA.UM.9.12.r1-18500-SMxx50.QSSI14.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.9.14.r1
-qcom_group_revision[lahaina]=LA.UM.9.14.r1-26500-LAHAINA.QSSI16.0
+qcom_group_revision[lahaina]=LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.1.0.r1
-qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-28700-WAIPIO.QSSI16.0
+qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.15.4.1.r1
-qcom_group_revision[waipio-6.6-vendor]=LA.VENDOR.15.4.1.r1-10300-WAIPIO.QSSI16.0
+qcom_group_revision[waipio-6.6-vendor]=LA.VENDOR.15.4.1.r1-10900-WAIPIO.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.8.0.r1
-qcom_group_revision[kailua-audio]=AUDIO.LA.8.0.r1-12600-KAILUA.0
+qcom_group_revision[kailua-audio]=AUDIO.LA.8.0.r1-13000-KAILUA.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.13.2.0.r1
-qcom_group_revision[kailua-vendor]=LA.VENDOR.13.2.0.r1-27200-KAILUA.QSSI16.0
+qcom_group_revision[kailua-vendor]=LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.9.0.r1
-qcom_group_revision[lanai-audio]=AUDIO.LA.9.0.r1-08600-lanai.0
+qcom_group_revision[lanai-audio]=AUDIO.LA.9.0.r1-08900-lanai.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.14.3.0.r1
-qcom_group_revision[lanai-vendor]=LA.VENDOR.14.3.0.r1-22400-lanai.QSSI15.0
+qcom_group_revision[lanai-vendor]=LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.4.0.r2
-qcom_group_revision[lanai-video]=VIDEO.LA.4.0.r2-07801-lanai.0
+qcom_group_revision[lanai-video]=VIDEO.LA.4.0.r2-08200-lanai.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO_HANDSET.LA.10.0.r1
-qcom_group_revision[pakala-audio]=AUDIO_HANDSET.LA.10.0.r1-07400-pakala.0
+qcom_group_revision[pakala-audio]=AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.15.4.0.r1
-qcom_group_revision[pakala-vendor]=LA.VENDOR.15.4.0.r1-19500-pakala.QSSI16.0
+qcom_group_revision[pakala-vendor]=LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.5.0.r1
-qcom_group_revision[pakala-video]=VIDEO.LA.5.0.r1-06700-pakala.0
+qcom_group_revision[pakala-video]=VIDEO.LA.5.0.r1-07300-pakala.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/-/tags?sort=updated_desc&search=WLAN.LA.1.0.r1
-qcom_group_revision[pakala-wlan]=WLAN.LA.1.0.r1-09000-pakala.0
+qcom_group_revision[pakala-wlan]=WLAN.LA.1.0.r1-09600-pakala.0
