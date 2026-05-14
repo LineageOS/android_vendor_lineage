@@ -110,6 +110,12 @@ def get_manifest_path():
         return f'.repo/manifests/{m.find("include").get("name")}'
 
 
+def get_from_manifest_project_paths(manifest_path):
+    m = ElementTree.parse(manifest_path)
+    m = m.getroot()
+    return [x.get('path') for x in m.findall('project')]
+
+
 def get_default_revision():
     m = ElementTree.parse(get_manifest_path())
     d = m.findall('default')[0]
@@ -132,7 +138,7 @@ def get_from_manifest(devicename):
     return None
 
 
-def is_in_manifest(projectpath):
+def is_in_manifest(tag, attr, attr_value):
     for path in glob.glob('.repo/local_manifests/*.xml'):
         try:
             lm = ElementTree.parse(path)
@@ -140,8 +146,8 @@ def is_in_manifest(projectpath):
         except Exception:
             lm = ElementTree.Element('manifest')
 
-        for localpath in lm.findall('project'):
-            if localpath.get('path') == projectpath:
+        for localpath in lm.findall(tag):
+            if localpath.get(attr) == attr_value:
                 return True
 
     # Search in main manifest, too
@@ -151,8 +157,8 @@ def is_in_manifest(projectpath):
     except Exception:
         lm = ElementTree.Element('manifest')
 
-    for localpath in lm.findall('project'):
-        if localpath.get('path') == projectpath:
+    for localpath in lm.findall(tag):
+        if localpath.get(attr) == attr_value:
             return True
 
     # ... and don't forget the lineage snippet
@@ -162,14 +168,14 @@ def is_in_manifest(projectpath):
     except Exception:
         lm = ElementTree.Element('manifest')
 
-    for localpath in lm.findall('project'):
-        if localpath.get('path') == projectpath:
+    for localpath in lm.findall(tag):
+        if localpath.get(attr) == attr_value:
             return True
 
     return False
 
 
-def add_to_manifest(repositories):
+def add_to_manifest(dependencies):
     if dryrun:
         return
 
@@ -179,38 +185,59 @@ def add_to_manifest(repositories):
     except Exception:
         lm = ElementTree.Element('manifest')
 
-    for repository in repositories:
-        repo_name = repository['repository']
-        repo_target = repository['target_path']
-        repo_revision = repository['branch']
-        print(f'Checking if {repo_target} is fetched from {repo_name}')
-        if is_in_manifest(repo_target):
-            print(f'LineageOS/{repo_name} already fetched to {repo_target}')
-            continue
+    for dependency in dependencies:
+        dependency_type = dependency.get('type', 'project')
 
-        project = ElementTree.Element(
-            'project',
-            attrib={
-                'path': repo_target,
-                'remote': 'github',
-                'name': f'LineageOS/{repo_name}',
-                'revision': repo_revision,
-            },
-        )
-        if repo_remote := repository.get('remote', None):
-            # aosp- remotes are only used for kernel prebuilts, thus they
-            # don't let you customize clone-depth/revision.
-            if repo_remote.startswith('aosp-'):
-                project.attrib['name'] = repo_name
-                project.attrib['remote'] = repo_remote
-                project.attrib['clone-depth'] = '1'
+        if dependency_type == 'kernel':
+            include_name = 'manifests/snippets/kernel-' + dependency['version'] + '.xml'
+            print(f'Checking if {include_name} is included')
+            if is_in_manifest('include', 'name', include_name):
+                print(f'{include_name} already included')
+                continue
+
+            include = ElementTree.Element(
+                'include',
+                attrib={
+                    'name': include_name,
+                },
+            )
+            print(f'Adding dependency include: {include_name}')
+            lm.append(include)
+        elif dependency_type == 'project':
+            repo_name = dependency['repository']
+            repo_target = dependency['target_path']
+            repo_revision = dependency['branch']
+            print(f'Checking if {repo_target} is fetched from {repo_name}')
+            if is_in_manifest('project', 'path', repo_target):
+                print(f'LineageOS/{repo_name} already fetched to {repo_target}')
+                continue
+
+            project = ElementTree.Element(
+                'project',
+                attrib={
+                    'path': repo_target,
+                    'remote': 'github',
+                    'name': f'LineageOS/{repo_name}',
+                    'revision': repo_revision,
+                },
+            )
+            if repo_remote := dependency.get('remote', None):
+                # aosp- remotes are only used for kernel prebuilts, thus they
+                # don't let you customize clone-depth/revision.
+                if repo_remote.startswith('aosp-'):
+                    project.attrib['name'] = repo_name
+                    project.attrib['remote'] = repo_remote
+                    project.attrib['clone-depth'] = '1'
+                    del project.attrib['revision']
+            if project.attrib.get('revision', None) == get_default_revision():
                 del project.attrib['revision']
-        if project.attrib.get('revision', None) == get_default_revision():
-            del project.attrib['revision']
-        print(
-            f'Adding dependency: {project.attrib["name"]} -> {project.attrib["path"]}'
-        )
-        lm.append(project)
+            print(
+                f'Adding dependency: {project.attrib["name"]} -> {project.attrib["path"]}'
+            )
+            lm.append(project)
+        else:
+            print(f'Unsupported dependency type: {dependency_type}')
+            sys.exit(1)
 
     indent(lm, 0)
     raw_xml = ElementTree.tostring(lm).decode()
@@ -233,22 +260,41 @@ def fetch_dependencies(repo_path):
         fetch_list = []
 
         for dependency in dependencies:
-            if not is_in_manifest(dependency['target_path']):
-                fetch_list.append(dependency)
-                syncable_repos.append(dependency['target_path'])
-                if 'branch' not in dependency:
-                    if dependency.get('remote', 'github') == 'github':
-                        dependency['branch'] = get_default_or_fallback_revision(
-                            dependency['repository']
-                        )
-                        if not dependency['branch']:
-                            sys.exit(1)
-                    else:
-                        dependency['branch'] = None
-            verify_repos.append(dependency['target_path'])
+            dependency_type = dependency.get('type', 'project')
 
-            if not os.path.isdir(dependency['target_path']):
-                syncable_repos.append(dependency['target_path'])
+            if dependency_type == 'kernel':
+                include_name = (
+                    'manifests/snippets/kernel-' + dependency['version'] + '.xml'
+                )
+                if not is_in_manifest('include', 'name', include_name):
+                    fetch_list.append(dependency)
+                    syncable_repos += get_from_manifest_project_paths(
+                        '.repo/' + include_name
+                    )
+            elif dependency_type == 'project':
+                if not is_in_manifest(
+                    'project', 'path', dependency['target_path']
+                ):
+                    fetch_list.append(dependency)
+                    syncable_repos.append(dependency['target_path'])
+                    if 'branch' not in dependency:
+                        if dependency.get('remote', 'github') == 'github':
+                            dependency['branch'] = (
+                                get_default_or_fallback_revision(
+                                    dependency['repository']
+                                )
+                            )
+                            if not dependency['branch']:
+                                sys.exit(1)
+                        else:
+                            dependency['branch'] = None
+                verify_repos.append(dependency['target_path'])
+
+                if not os.path.isdir(dependency['target_path']):
+                    syncable_repos.append(dependency['target_path'])
+            else:
+                print(f'Unsupported dependency type: {dependency_type}')
+                sys.exit(1)
 
         if len(fetch_list) > 0:
             print('Adding dependencies to manifest')
