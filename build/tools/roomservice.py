@@ -45,8 +45,7 @@ except IndexError:
 
 if not depsonly:
     print(
-        'Device %s not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS).'
-        % device
+        f'Device {device} not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS).'
     )
 
 repositories = []
@@ -128,7 +127,7 @@ def get_from_manifest(devicename):
 
         for localpath in lm.findall('project'):
             if re.search(
-                'android_device_.*_%s$' % device, localpath.get('name')
+                f'android_device_.*_{device}$', localpath.get('name')
             ):
                 return localpath.get('path')
 
@@ -186,10 +185,10 @@ def add_to_manifest(repositories):
         repo_name = repository['repository']
         repo_target = repository['target_path']
         repo_revision = repository['branch']
-        print('Checking if %s is fetched from %s' % (repo_target, repo_name))
+        print(f'Checking if {repo_target} is fetched from {repo_name}')
         if is_in_manifest(repo_target):
             print(
-                'LineageOS/%s already fetched to %s' % (repo_name, repo_target)
+                f'LineageOS/{repo_name} already fetched to {repo_target}'
             )
             continue
 
@@ -198,7 +197,7 @@ def add_to_manifest(repositories):
             attrib={
                 'path': repo_target,
                 'remote': 'github',
-                'name': 'LineageOS/%s' % repo_name,
+                'name': f'LineageOS/{repo_name}',
                 'revision': repo_revision,
             },
         )
@@ -213,8 +212,7 @@ def add_to_manifest(repositories):
         if project.attrib.get('revision', None) == get_default_revision():
             del project.attrib['revision']
         print(
-            'Adding dependency: %s -> %s'
-            % (project.attrib['name'], project.attrib['path'])
+            'Adding dependency: {} -> {}'.format(project.attrib['name'], project.attrib['path'])
         )
         lm.append(project)
 
@@ -228,7 +226,7 @@ def add_to_manifest(repositories):
 
 
 def fetch_dependencies(repo_path):
-    print('Looking for dependencies in %s' % repo_path)
+    print(f'Looking for dependencies in {repo_path}')
     dependencies_path = repo_path + '/lineage.dependencies'
     syncable_repos = []
     verify_repos = []
@@ -262,7 +260,7 @@ def fetch_dependencies(repo_path):
             print('Adding dependencies to manifest')
             add_to_manifest(fetch_list)
     else:
-        print('%s has no additional dependencies.' % repo_path)
+        print(f'{repo_path} has no additional dependencies.')
 
     if len(syncable_repos) > 0:
         print('Syncing dependencies')
@@ -275,7 +273,7 @@ def fetch_dependencies(repo_path):
 
 def get_default_or_fallback_revision(repo_name):
     default_revision = get_default_revision()
-    print('Default revision: %s' % default_revision)
+    print(f'Default revision: {default_revision}')
     print('Checking branch info')
 
     try:
@@ -302,12 +300,11 @@ def get_default_or_fallback_revision(repo_name):
         )
         for fallback in fallbacks:
             if fallback in branches:
-                print('Using fallback branch: %s' % fallback)
+                print(f'Using fallback branch: {fallback}')
                 return fallback
 
     print(
-        'Default revision %s not found in %s. Bailing.'
-        % (default_revision, repo_name)
+        f'Default revision {default_revision} not found in {repo_name}. Bailing.'
     )
     print('Branches found:')
     for branch in branches:
@@ -330,12 +327,12 @@ if depsonly:
 else:
     for repo_name in repositories:
         if re.match(r'^android_device_[^_]*_' + device + '$', repo_name):
-            print('Found repository: %s' % repo_name)
+            print(f'Found repository: {repo_name}')
 
             manufacturer = repo_name.replace('android_device_', '').replace(
                 '_' + device, ''
             )
-            repo_path = 'device/%s/%s' % (manufacturer, device)
+            repo_path = f'device/{manufacturer}/{device}'
             revision = get_default_or_fallback_revision(repo_name)
             if revision == '':
                 # Some devices have the same codename but shipped a long time ago and may not have
@@ -360,6 +357,5 @@ else:
             sys.exit()
 
 print(
-    'Repository for %s not found in the LineageOS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml.'
-    % device
+    f'Repository for {device} not found in the LineageOS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml.'
 )
