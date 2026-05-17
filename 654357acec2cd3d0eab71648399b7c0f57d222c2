@@ -34,6 +34,24 @@
       "parentUuid": "0157495b_35c53409",
       "revId": "654357acec2cd3d0eab71648399b7c0f57d222c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ebabe15_a13cf8aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-05-17T17:41:03Z",
+      "side": 1,
+      "message": "that never happened, it needs a soong plugin.\nI deemed the custom OUT + prebuilt bootanim zip not worth fixing.",
+      "parentUuid": "d8df69c1_d6050068",
+      "revId": "654357acec2cd3d0eab71648399b7c0f57d222c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
