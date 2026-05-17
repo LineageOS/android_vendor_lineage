@@ -16,6 +16,24 @@
       "message": "This is fine for now, I\u0027ll merge when we have a follow-up that fixes the sandbox escape.",
       "revId": "654357acec2cd3d0eab71648399b7c0f57d222c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8df69c1_d6050068",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18990
+      },
+      "writtenOn": "2026-05-17T17:32:53Z",
+      "side": 1,
+      "message": "If you don\u0027t mind me asking, could you please point me to the \"follow-up that fixes the sandbox escape\" ? As this change seems to break builds with out-of-tree $OUT.",
+      "parentUuid": "0157495b_35c53409",
+      "revId": "654357acec2cd3d0eab71648399b7c0f57d222c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
