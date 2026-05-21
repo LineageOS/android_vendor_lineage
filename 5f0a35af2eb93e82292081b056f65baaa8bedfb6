@@ -16,6 +16,24 @@
       "message": "Do we still have to place it in /system after this refactoring?",
       "revId": "5f0a35af2eb93e82292081b056f65baaa8bedfb6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9bf393ad_946100f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2026-05-21T19:01:14Z",
+      "side": 1,
+      "message": "This chain consists of minimal changes to be able to build the sdk addon, which can be used to use the sdk (and the platform if so desired) within android studio.\n\nA technical writeup and guides on how to use this as app and platform developer is still pending. Will do so when I find the time.\nSo this does not touch the sdk itself much.\n\nIf we later refactor it, so we can place it in e.g. `/system_ext`, the paths can be edited too 😀",
+      "parentUuid": "7b373add_f54ef730",
+      "revId": "5f0a35af2eb93e82292081b056f65baaa8bedfb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
