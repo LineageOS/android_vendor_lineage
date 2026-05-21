@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b373add_f54ef730",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-05-21T17:58:01Z",
+      "side": 1,
+      "message": "Do we still have to place it in /system after this refactoring?",
+      "revId": "5f0a35af2eb93e82292081b056f65baaa8bedfb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
