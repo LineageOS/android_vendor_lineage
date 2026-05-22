@@ -284,6 +284,7 @@ CUSTOM_LOCALES += \
     gd_GB \
     cy_GB \
     fur_IT \
+    ku_TR \
     nn_NO
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
