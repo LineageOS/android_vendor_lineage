@@ -281,6 +281,8 @@ PRODUCT_PACKAGES += \
 # Translations
 CUSTOM_LOCALES += \
     ast_ES \
+    ckb_IQ \
+    ckb_IR \
     gd_GB \
     cy_GB \
     fur_IT \
