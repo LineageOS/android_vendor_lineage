@@ -16,6 +16,24 @@
       "message": "heads up, we discussed doing this so that we wouldn\u0027t have multiple bazel trees for same version. vendor kernel\u0027s get synced in.\n\nWe didn\u0027t want maintainers to go rouge lol",
       "revId": "22226d881a758b2cd56f1417fcf13c9bc0d99d1e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb9f23da_97a4c0eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-05-23T03:50:33Z",
+      "side": 1,
+      "message": "The vendor kernel is dependent on the rest of QCOM\u0027s KP, it can\u0027t use the common KP without major changes to every single vendor repo, which is really not preferable.\n\nIdeally I\u0027m trying to have an approach where you can just toss QCOM\u0027s KP manifest in local_manifests, and build without any major modifications (outside of their DTB handling but that is what it is).",
+      "parentUuid": "36c4e6b8_83f92b37",
+      "revId": "22226d881a758b2cd56f1417fcf13c9bc0d99d1e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
