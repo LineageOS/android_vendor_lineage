@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36c4e6b8_83f92b37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-05-23T03:40:48Z",
+      "side": 1,
+      "message": "heads up, we discussed doing this so that we wouldn\u0027t have multiple bazel trees for same version. vendor kernel\u0027s get synced in.\n\nWe didn\u0027t want maintainers to go rouge lol",
+      "revId": "22226d881a758b2cd56f1417fcf13c9bc0d99d1e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
