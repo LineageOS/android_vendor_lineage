@@ -16,6 +16,24 @@
       "message": "last time I tried to enable it, it broke flashlight tile completely on my device with single strength level",
       "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7527089e_b900d51f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33843
+      },
+      "writtenOn": "2026-05-29T12:32:47Z",
+      "side": 1,
+      "message": "emm, it works fine on my device",
+      "parentUuid": "0dab552c_e2e008c5",
+      "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
