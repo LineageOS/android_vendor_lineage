@@ -51,6 +51,23 @@
       "message": "still breaks pdx257.",
       "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbed82f4_107708d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-05-29T17:58:48Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_frameworks_base/+/487584",
+      "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
