@@ -85,6 +85,23 @@
       "message": "breaks fairlady",
       "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2a1f8cb_93e52d01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34682
+      },
+      "writtenOn": "2026-05-30T22:27:04Z",
+      "side": 1,
+      "message": "works on fuxi, break on sony devices (griffin/sphinx)",
+      "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
