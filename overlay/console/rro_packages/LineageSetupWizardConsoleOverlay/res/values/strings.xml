@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Missing SIM page -->
+    <string name="sim_missing_summary">A SIM card has not been detected in your console. To insert a SIM card, read the instructions that came with your device.</string>
+</resources>

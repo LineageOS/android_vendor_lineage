@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- If MMS discovers there isn't much space left on the device, it will show a toast with this message. [CHAR LIMIT=TOAST] -->
+    <string name="low_memory">Console storage is full. Delete some files to free space.</string>
+
+    <!-- Title for the Phone Options dialog to lock the screen, turn off the phone etc. -->
+    <string name="power_dialog">Console options</string>
+
+    <!-- Shutdown Confirmation Dialog.  When the user chooses to power off the phone, there will
+         be a confirmation dialog.  This is the message. -->
+    <string name="shutdown_confirm">Your console will shut down.</string>
+
+    <!-- Title of the Global Actions Dialog -->
+    <string name="global_actions">Console options</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readSms">This app can read all SMS (text) messages stored on your console.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_persistentActivity">Allows the app to make parts of itself persistent in memory.  This can limit memory available to other apps slowing down the console.</string>
+  
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_receiveBootCompleted">Allows the app to
+        have itself started as soon as the system has finished booting.
+        This can make it take longer to start the console and allow the
+        app to slow down the overall console by always running.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_broadcastSticky">Allows the app to
+    send sticky broadcasts, which remain after the broadcast ends. Excessive use
+    may make the console slow or unstable by causing it to use too much memory.
+    </string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readContacts">Allows the app to read data about your contacts stored on your console.
+      Apps will also have access to the accounts on your console that have created contacts.
+      This may include accounts created by apps you have installed.
+      This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.</string>
+  
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeContacts">Allows the app to modify the data about your contacts stored on your console.
+      This permission allows apps to delete contact data.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeCallLog">Allows the app to modify your console\'s call log, including data about incoming and outgoing calls.
+        Malicious apps may use this to erase or modify your call log.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readCalendar">This app can read all calendar events stored on your console and share or save your calendar data.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeCalendar">This app can add, remove, or change calendar events on your console. This app can send messages that may appear to come from calendar owners, or change events without notifying their owners.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_wakeLock">prevent console from sleeping</string>
+   
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_wakeLock">Allows the app to prevent the console from going to sleep.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_transmitIr">Allows the app to use the console\'s infrared transmitter.</string>
+  
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_setTimeZone">Allows the app to change the console\'s time zone.</string>
+  
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_getAccounts">Allows the app to get
+      the list of accounts known by the console.  This may include any accounts
+      created by applications you have installed.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_changeWifiMulticastState">Allows the app to receive
+      packets sent to all devices on a Wi-Fi network using multicast addresses,
+      not just your console.  It uses more power than the non-multicast mode.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_bluetoothAdmin">Allows the app to
+      configure the local Bluetooth console, and to discover and pair with remote
+      devices.</string>
+
+    <string name="permdesc_changeWimaxState">Allows the app to
+      connect the console to and disconnect the console from WiMAX networks.</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_bluetooth">Allows the app to view the
+      configuration of Bluetooth on the console, and to make and accept
+      connections with paired devices.</string>
+
+    <!-- Message shown on secondary screens to direct users to use their console to finish biometric authorization [CHAR LIMIT=NONE] -->
+    <string name="biometric_dialog_secondary_display_toast">Verify it\'s you on your console to continue</string>
+
+    <!-- Description of policy access to watch user login attempts -->
+    <string name="policydesc_watchLogin">Monitor the number of incorrect passwords
+    typed when unlocking the screen, and lock the console or erase all the console\'s
+    data if too many incorrect passwords are typed.</string>
+
+    <string name="policydesc_watchLogin_secondaryUser">Monitor the number of incorrect passwords
+    typed when unlocking the screen, and lock the console or erase all this user\'s data
+    if too many incorrect passwords are typed.</string>
+
+    <string name="policydesc_wipeData">Erase the console\'s data without warning by performing a factory data reset.</string>
+    <!-- Description of policy access to wipe the user's data -->
+
+    <!-- Description of policy access to wipe the user's data -->
+    <string name="policydesc_wipeData_secondaryUser">Erase this user\'s data on this console without warning.</string>
+
+    <string name="lockscreen_missing_sim_message">No SIM in console.</string>
+    <!-- Shown in the lock screen when there is no SIM. -->
+
+    <!-- For the unlock screen, informational message shown in dialog when user is almost at the limit
+         where they will be locked out and may have to enter an alternate username/password to unlock the phone -->
+    <string name="lockscreen_failed_attempts_almost_glogin">
+        You have incorrectly drawn your unlock pattern <xliff:g id="number">%1$d</xliff:g> times.
+       After <xliff:g id="number">%2$d</xliff:g> more unsuccessful attempts,
+       you will be asked to unlock your console using your Google signin.\n\n
+       Try again in <xliff:g id="number">%3$d</xliff:g> seconds.
+    </string>
+
+    <!-- For the unlock screen, informational message shown in dialog when user is almost at the limit
+         where the device will be wiped. -->
+    <string name="lockscreen_failed_attempts_almost_at_wipe">
+       You have incorrectly attempted to unlock the console <xliff:g id="number">%1$d</xliff:g> times.
+       After <xliff:g id="number">%2$d</xliff:g> more unsuccessful attempts,
+       the console will be reset to factory default and all user data will be lost.
+    </string>
+
+    <!-- For the unlock screen, informational message shown in dialog when user has exceeded the
+        maximum attempts and the device will now be wiped -->
+    <string name="lockscreen_failed_attempts_now_wiping">
+       You have incorrectly attempted to unlock the console <xliff:g id="number">%d</xliff:g> times.
+       The console will now be reset to factory default.
+    </string>
+
+    <!-- Summary for a warning message about the interaction model changes after allowing an accessibility
+         service to put the device into explore by touch mode, displayed as a dialog message when
+         the user selects to enables the service. (console). [CHAR LIMIT=NONE] -->
+    <string name="enable_explore_by_touch_warning_message">
+        <xliff:g id="accessibility_service_name">%1$s</xliff:g> wants to enable Explore by Touch.
+        When Explore by Touch is turned on, you can hear or see descriptions of what\'s under
+        your finger or perform gestures to interact with the console.</string>
+
+    <string name="android_upgrading_title">Console is updating\u2026</string>
+    <!-- [CHAR LIMIT=40] Title of dialog that is shown when performing a system update. -->
+
+    <!-- [CHAR LIMIT=40] Title of dialog that is shown when system is starting. -->
+    <string name="android_start_title">Console is starting\u2026</string>
+
+    <!-- Name of the default audio route for consoles when nothing
+         is connected to a headphone or other wired audio output jack. [CHAR LIMIT=50] -->
+    <string name="default_audio_route_name">Console</string>
+
+    <!-- Message shown when user is almost at the limit of password attempts where the device will be wiped. -->
+    <string name="kg_failed_attempts_almost_at_wipe">
+       You have incorrectly attempted to unlock the console <xliff:g id="number">%1$d</xliff:g> times.
+       After <xliff:g id="number">%2$d</xliff:g> more unsuccessful attempts,
+       the console will be reset to factory default and all user data will be lost.
+    </string>
+
+    <!-- Message shown in dialog when user has exceeded the maximum attempts and the device will now be wiped -->
+    <string name="kg_failed_attempts_now_wiping">
+       You have incorrectly attempted to unlock the console <xliff:g id="number">%d</xliff:g> times.
+       The console will now be reset to factory default.
+    </string>
+
+    <!-- Message shown in dialog when user is almost at the limit where they will be
+    locked out and may have to enter an alternate username/password to unlock the phone -->
+    <string name="kg_failed_attempts_almost_at_login">
+       You have incorrectly drawn your unlock pattern <xliff:g id="number">%1$d</xliff:g> times.
+       After <xliff:g id="number">%2$d</xliff:g> more unsuccessful attempts,
+       you will be asked to unlock your console using an email account.\n\n
+       Try again in <xliff:g id="number">%3$d</xliff:g> seconds.
+    </string>
+
+    <!-- Title of the dialog shown when the settings is blocked from being streamed to a remote device. [CHAR LIMIT=NONE] -->
+    <string name="app_streaming_blocked_title_for_settings_dialog">Console settings unavailable</string>
+
+    <!-- Message shown when an app is blocked from being streamed to a remote device. [CHAR LIMIT=NONE] -->
+    <string name="app_streaming_blocked_message">This can’t be accessed on your <xliff:g id="device" example="Chromebook">%1$s</xliff:g> at this time. Try on your console instead.</string>
+
+    <!-- Message shown when a runtime permission request is blocked from being streamed to a remote device. [CHAR LIMIT=NONE] -->
+    <string name="app_streaming_blocked_message_for_permission_request">This app is requesting additional permissions, but permissions can’t be granted in a streaming session. Grant the permission on your console first.</string>
+
+    <!-- Message shown when an app being streamed to another device requests authentication such as via the biometrics API, and the user needs to complete the on their device. [CHAR LIMIT=NONE] -->
+    <string name="app_streaming_blocked_message_for_fingerprint_dialog">This app is requesting additional security. Try on your console instead.</string>
+
+    <!-- Message shown when the settings is blocked from being streamed to a remote device. [CHAR LIMIT=NONE] -->
+    <string name="app_streaming_blocked_message_for_settings_dialog">This can’t be accessed on your <xliff:g id="device" example="Chromebook">%1$s</xliff:g>. Try on your console instead.</string>
+
+    <!-- Title of notification letting users know the battery level at the time the notification was posted [CHAR_LIMIT=80] -->
+    <string name="battery_saver_charged_notification_summary">Console has enough charge. Features no longer restricted.</string>
+  
+    <!-- Error message indicating the camera cannot be accessed when running on a virtual device. [CHAR LIMIT=NONE] -->
+    <string name="vdm_camera_access_denied">Can’t access the console’s camera from your <xliff:g id="device" example="Chromebook">%1$s</xliff:g></string>
+
+    <!-- Name of the phone device. [CHAR LIMIT=30] -->
+    <string name="media_transfer_this_device_name">This console</string>
+
+    <!-- Name of the tablet device. [CHAR LIMIT=30] -->
+    <string name="media_transfer_this_device_name_tablet">This console</string>
+
+    <!-- Name of the phone device with an active remote session. [CHAR LIMIT=30] -->
+    <string name="media_transfer_this_phone">This console</string>
+</resources>
