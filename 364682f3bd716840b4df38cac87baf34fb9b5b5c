@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7852f714_00ad4dfe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-06-01T04:34:06Z",
+      "side": 1,
+      "message": "Curious to hear thoughts on this.\n\nThis was done because \"tablet\" feels misleading on a handheld gaming device, and setting product characteristics to device would result in potentially missing functionality.\n\nThis will require these packages be put on crowdin. I have no problem maintaining this going forward (future android versions/new strings).",
+      "revId": "364682f3bd716840b4df38cac87baf34fb9b5b5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
