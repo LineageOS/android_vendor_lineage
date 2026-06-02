@@ -16,6 +16,24 @@
       "message": "This is similar to my temporary solution using a custom overlay packaged as a Magisk module.\n\nI still think users should be able to select any account type as the default, just like they could before Android 16. But this is at least a step in the right direction.",
       "revId": "eda51dcd413aef7f317fc6ac4f005321ac9a5232",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b62e716f_37c6fd65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-02T15:08:33Z",
+      "side": 1,
+      "message": "Add any missing config_rawContactsEligibleDefaultAccountTypes as new commit on top of this change. This is the preferred method and would rather carry an extensive allow list rather than any provider free range.",
+      "parentUuid": "a8b8f539_21b95d26",
+      "revId": "eda51dcd413aef7f317fc6ac4f005321ac9a5232",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
