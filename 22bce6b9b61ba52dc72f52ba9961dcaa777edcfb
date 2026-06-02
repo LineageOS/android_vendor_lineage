@@ -138,6 +138,24 @@
       "parentUuid": "4ac63a20_14845687",
       "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ce50730_b891b69e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-06-02T06:56:25Z",
+      "side": 1,
+      "message": "also it\u0027s only broken after boot up, it works again if i do pkill -9 systemui.",
+      "parentUuid": "cef08ec1_5ce57bff",
+      "revId": "22bce6b9b61ba52dc72f52ba9961dcaa777edcfb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
