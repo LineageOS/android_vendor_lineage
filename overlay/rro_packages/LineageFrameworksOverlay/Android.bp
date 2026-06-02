@@ -1,0 +1,9 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "LineageFrameworksOverlay",
+    system_ext_specific: true,
+}

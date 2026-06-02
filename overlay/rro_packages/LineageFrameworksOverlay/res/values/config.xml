@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- The array of account types that accounts in any of these can be set as the default account
+         for new raw contacts. -->
+    <string-array name="config_rawContactsEligibleDefaultAccountTypes">
+        <item>com.google</item>
+        <item>at.bitfire.davdroid.address_book</item>
+    </string-array>
+</resources>
