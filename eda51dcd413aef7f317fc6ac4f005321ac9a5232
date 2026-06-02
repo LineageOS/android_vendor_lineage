@@ -34,6 +34,24 @@
       "parentUuid": "a8b8f539_21b95d26",
       "revId": "eda51dcd413aef7f317fc6ac4f005321ac9a5232",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55501f0c_dfce5f82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36888
+      },
+      "writtenOn": "2026-06-02T15:18:56Z",
+      "side": 1,
+      "message": "I appreciate your invitation for collaboration, but I am far from being aware of what\u0027s common out there, as I am using DAVx5 myself.",
+      "parentUuid": "b62e716f_37c6fd65",
+      "revId": "eda51dcd413aef7f317fc6ac4f005321ac9a5232",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
