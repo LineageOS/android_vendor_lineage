@@ -16,6 +16,24 @@
       "message": "replace this with trunacate?",
       "revId": "8a3b1767ee4d7996be070f3f4e9f696eaf88a034",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f648610f_b03a5cc9",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-06-09T21:41:58Z",
+      "side": 1,
+      "message": "truncate*",
+      "parentUuid": "1ddbd2be_7ddf5124",
+      "revId": "8a3b1767ee4d7996be070f3f4e9f696eaf88a034",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
