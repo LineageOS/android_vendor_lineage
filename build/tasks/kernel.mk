@@ -750,11 +750,28 @@ endif # FULL_KERNEL_BUILD
 ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
 KERNEL_PATH := $(abspath $(BUILD_TOP)/kernel/platform/kernel-$(TARGET_KERNEL_VERSION))
 KERNEL_BAZEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_BAZEL_OUT
+ifeq ($(BOARD_USES_QCOM_MERGE_DTBS_SCRIPT),true)
+$(TARGET_PREBUILT_INT_KERNEL): $(HOST_OUT_EXECUTABLES)/fdtget $(HOST_OUT_EXECUTABLES)/fdtput $(HOST_OUT_EXECUTABLES)/fdtoverlay $(HOST_OUT_EXECUTABLES)/fdtoverlaymerge $(HOST_OUT_EXECUTABLES)/ufdt_apply_overlay
+endif
 $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST)
 	@echo "Building $(BOARD_KERNEL_IMAGE_NAME)"
 	@mkdir -p $(KERNEL_OUT) $(KERNEL_BAZEL_OUT)
 	$(hide) cd $(KERNEL_PATH) && python3 $(BUILD_TOP)/.repo/repo/repo manifest -o - -r |sed '/^  <project.*\/>$$/{/kernel\/platform\/kernel-$(TARGET_KERNEL_VERSION)/!d;}' |sed '/^  <project/,/  <\/project>/{/kernel\/platform\/kernel-$(TARGET_KERNEL_VERSION)/!d;}' |sed 's|kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/||' > $(abspath $(KERNEL_OUT))/manifest.xml
 	$(hide) cd $(KERNEL_PATH) && ./tools/bazel --output_user_root=$(abspath $(KERNEL_BAZEL_OUT)) --output_root=$(abspath $(KERNEL_BAZEL_OUT)) run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) --repo_manifest $(abspath $(KERNEL_PATH)):$(abspath $(KERNEL_OUT)/manifest.xml) --config=stamp //$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist -- --destdir=$(abspath $(KERNEL_OUT))
+ifeq ($(BOARD_USES_QCOM_MERGE_DTBS_SCRIPT),true)
+	$(hide) rm -rf $(KERNEL_OUT)/base_dtbs $(KERNEL_OUT)/techpack_dtbs $(KERNEL_OUT)/merged_dtbs
+	$(hide) mkdir -p $(KERNEL_OUT)/base_dtbs $(KERNEL_OUT)/techpack_dtbs $(KERNEL_OUT)/merged_dtbs
+	$(hide) for f in $(KERNEL_OUT)/*.dtb $(KERNEL_OUT)/*.dtbo; do \
+		[ -e "$$f" ] || continue; \
+		if grep -qxF "$$(basename $$f)" $(KERNEL_OUT)/techpack_dtbs.txt; then \
+			mv "$$f" $(KERNEL_OUT)/techpack_dtbs/; \
+		else \
+			mv "$$f" $(KERNEL_OUT)/base_dtbs/; \
+		fi; \
+	done
+	PATH=$(abspath $(HOST_OUT_EXECUTABLES)):$${PATH} python3 $(BUILD_TOP)/vendor/lineage/build/tools/merge_dtbs.py --base $(KERNEL_OUT)/base_dtbs --techpack $(KERNEL_OUT)/techpack_dtbs --out $(KERNEL_OUT)/merged_dtbs
+	$(hide) cp $(KERNEL_OUT)/merged_dtbs/* $(KERNEL_OUT)/
+endif
 	$(if $(BOOT_KERNEL_MODULES),\
 		$(call build-image-kernel-modules-lineage,$(addprefix $(KERNEL_OUT)/,$(BOOT_KERNEL_MODULES)),$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)\
 	)
