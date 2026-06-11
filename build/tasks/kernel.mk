@@ -753,6 +753,7 @@ endif # FULL_KERNEL_BUILD
 
 ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
 KERNEL_PATH := $(abspath $(BUILD_TOP)/kernel/platform/kernel-$(TARGET_KERNEL_VERSION))
+KERNEL_BAZEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_BAZEL_OUT
 
 ifeq ($(call is-version-lower-or-equal,$(TARGET_KERNEL_VERSION),6.1),true)
 KERNEL_REPO_MANIFEST := $(abspath $(KERNEL_OUT)/manifest.xml)
@@ -762,7 +763,7 @@ endif
 
 $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST)
 	@echo "Building $(BOARD_KERNEL_IMAGE_NAME)"
-	@mkdir -p $(KERNEL_OUT)
+	@mkdir -p $(KERNEL_OUT) $(KERNEL_BAZEL_OUT)
 	$(hide) cd $(KERNEL_PATH) && \
 		python3 $(BUILD_TOP)/.repo/repo/repo manifest -o - -r \
 		| awk -v pat="kernel/platform/kernel-$(TARGET_KERNEL_VERSION)" ' \
@@ -775,8 +776,8 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 		> $(abspath $(KERNEL_OUT))/manifest.xml
 	$(hide) cd $(KERNEL_PATH) && \
 		./tools/bazel \
-			--output_user_root=$(abspath $(KERNEL_OUT)/bazel-out) \
-			--output_root=$(abspath $(KERNEL_OUT)/bazel-out) \
+			--output_user_root=$(abspath $(KERNEL_BAZEL_OUT)) \
+			--output_root=$(abspath $(KERNEL_BAZEL_OUT)) \
 			run \
 			--experimental_convenience_symlinks=ignore \
 			--cpu=$(KERNEL_ARCH) \
