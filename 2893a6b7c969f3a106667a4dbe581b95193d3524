@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2cb24c1_801f5613",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-11T10:25:03Z",
+      "side": 1,
+      "message": "@sorocean.igor@gmail.com test and verify the whole topic, I don\u0027t use davx5",
+      "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
