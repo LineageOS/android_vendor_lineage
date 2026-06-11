@@ -16,6 +16,24 @@
       "message": "@sorocean.igor@gmail.com test and verify the whole topic, I don\u0027t use davx5",
       "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6b06c36_cf25374f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33413
+      },
+      "writtenOn": "2026-06-11T10:34:27Z",
+      "side": 1,
+      "message": "Well, I don\u0027t use GAPPS and I don\u0027t want to install them only to test the second commit. Maybe someone else can test it.",
+      "parentUuid": "e2cb24c1_801f5613",
+      "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
