@@ -1,5 +1,7 @@
 PATH_OVERRIDE_SOONG := $(shell echo $(TOOLS_PATH_OVERRIDE))
 
+TARGET_KERNEL_SOURCE_STEM := $(patsubst %-kernel,%,$(TARGET_KERNEL_SOURCE))
+
 # Add variables that we wish to make available to soong here.
 EXPORT_TO_SOONG := \
     KERNEL_ARCH \
@@ -10,8 +12,10 @@ EXPORT_TO_SOONG := \
     KERNEL_PATH \
     PATH_OVERRIDE_SOONG \
     TARGET_KERNEL_CONFIG \
+    TARGET_KERNEL_SOURCE_STEM \
     TARGET_KERNEL_SOURCE \
     TARGET_KERNEL_PLATFORM_TARGET \
+    TARGET_KERNEL_VERSION \
     TARGET_PREBUILT_KERNEL_HEADERS
 
 # Setup SOONG_CONFIG_* vars to export the vars listed above.
