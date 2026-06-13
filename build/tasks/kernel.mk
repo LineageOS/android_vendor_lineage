@@ -28,6 +28,8 @@
 #   TARGET_KERNEL_CONFIG_EXT           = List of path to external kernel defconfigs.
 #                                          Same as TARGET_KERNEL_CONFIG, but paths are specified
 #                                          instead of filenames.
+#   TARGET_KERNEL_KCONFIG_EXT_PREFIX   = Optional, path to the directory where an external
+#                                          Kconfig.ext is located.
 #
 #   BOARD_KERNEL_IMAGE_NAME            = Built image name
 #                                          for ARM use: zImage
@@ -276,6 +278,10 @@ endif
 
 ifneq (,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
     KERNEL_MAKE_FLAGS += DTC_EXT=$(KERNEL_BUILD_OUT_PREFIX)$(DTC)
+endif
+
+ifneq ($(TARGET_KERNEL_KCONFIG_EXT_PREFIX),)
+    KERNEL_MAKE_FLAGS += KCONFIG_EXT_PREFIX=$(shell python3 -c 'import os,sys;print(os.path.relpath(*(sys.argv[1:])))' $(TARGET_KERNEL_KCONFIG_EXT_PREFIX) $(KERNEL_SRC))/
 endif
 
 ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
