@@ -51,6 +51,7 @@ lineage_generator {
         "include/**/*",
         "arch/$(KERNEL_ARCH)/include/**/*",
         "techpack/audio/include/**/*",
+        "vendor/lineage/tools/clean_headers.sh",
     ],
 }
 
