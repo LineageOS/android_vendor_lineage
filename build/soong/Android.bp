@@ -53,6 +53,7 @@ lineage_generator {
         "kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/$(TARGET_KERNEL_SOURCE_STEM)-*/**/*.bzl",
         "kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/$(TARGET_KERNEL_SOURCE_STEM)-*/**/*.h",
         "kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/$(TARGET_KERNEL_SOURCE_STEM)-*/**/BUILD.bazel",
+        "vendor/lineage/tools/clean_headers.sh",
     ],
 }
 
