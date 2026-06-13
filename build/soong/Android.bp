@@ -52,6 +52,8 @@ lineage_generator {
         "arch/$(KERNEL_ARCH)/include/**/*",
         "techpack/audio/include/**/*",
     ],
+
+    tool_files: [":clean_headers.sh"],
 }
 
 lineage_generator {
@@ -70,6 +72,8 @@ lineage_generator {
         "usr/include/audio/include/uapi",
         "usr/techpack/audio/include",
     ],
+
+    tool_files: [":clean_headers.sh"],
 }
 
 bootstrap_go_package {
