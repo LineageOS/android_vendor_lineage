@@ -99,6 +99,9 @@
 #
 #   BOARD_KERNEL_MODULES_LOAD_ALLOW_MISSING = Optional, allows kernel modules specified in
 #                                               *_MODULES_LOAD to be missing.
+#
+#   TARGET_KERNEL_KCONFIG_EXT_PREFIX   = Optional, path to a custom external kconfig prefix
+#
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -276,6 +279,10 @@ endif
 
 ifneq (,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
     KERNEL_MAKE_FLAGS += DTC_EXT=$(KERNEL_BUILD_OUT_PREFIX)$(DTC)
+endif
+
+ifneq ($(TARGET_KERNEL_KCONFIG_EXT_PREFIX),)
+    KERNEL_MAKE_FLAGS += KCONFIG_EXT_PREFIX=$(shell python3 -c 'import os,sys;print(os.path.relpath(*(sys.argv[1:])))' $(TARGET_KERNEL_KCONFIG_EXT_PREFIX) $(KERNEL_SRC))/
 endif
 
 ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
