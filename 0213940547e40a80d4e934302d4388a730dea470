@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b441cf0a_5dc5a1fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-06-15T10:19:53Z",
+      "side": 1,
+      "message": "Not a huge fan due to needing the Bazel build to be explicit about what DTBOs are \u0027techpack\u0027 DTBOs, I\u0027d rather have something more implied. Right now I\u0027m just manually defining all techpack DTBs for each platform in platform_map next to dtb_list and dtbo_list and it works but eh...",
+      "revId": "0213940547e40a80d4e934302d4388a730dea470",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
