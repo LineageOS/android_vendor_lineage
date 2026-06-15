@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "caf7a3f2_af28122a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-06-15T10:30:39Z",
+      "side": 1,
+      "message": "This assumes a specific kernel structure, so if you had something like vendor/nothing/froggerpro-build, but it was pointed at vendor/qcom/sun-kernel, then it wouldn\u0027t catch headers changing there. Right now it only works because I have everything in same dir (vendor/nothing/froggerpro-kernel, froggerpro-modules, etc).",
+      "revId": "f5984dea1351ca4e527fc6c78aabe99a17e30c3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
