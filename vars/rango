@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP1A.260305.018"
+readonly build_id="CP2A.260605.012"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14887507"
+readonly build_number="15430684"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/rango-cp1a.260305.018-factory-cac1879a.zip"
-readonly image_sha256="cac1879a7a8fba5d57471470a83abc97f461d5490e72e430d308368c7ab568aa"
+readonly image_url="https://dl.google.com/dl/android/aosp/rango-cp2a.260605.012-factory-b6d754ad.zip"
+readonly image_sha256="b6d754adbe4615ba1a5945e9c4c7d9203827811a8d22d849d1a9f6d74f57ce8d"
 
-readonly flash_url="https://flash.android.com/build/14887507?target=rango-user&signed"
+readonly flash_url="https://flash.android.com/build/15430684?target=rango-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/rango-ota-cp1a.260305.018-92d8484f.zip"
-readonly ota_sha256="92d8484fc8ade0b066ee71e15879827f282806d6940bb588d01aa4ec703cc666"
+readonly ota_url="https://dl.google.com/dl/android/aosp/rango-ota-cp2a.260605.012-a920c8dd.zip"
+readonly ota_sha256="a920c8dd6077b831114d5deca25f961978bdae27126ea3b8775c3f29fe465f37"
