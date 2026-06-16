@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP1A.260305.018"
+readonly build_id="CP2A.260605.012"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14887507"
+readonly build_number="15430684"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/blazer-cp1a.260305.018-factory-169c03cb.zip"
-readonly image_sha256="169c03cbd6e1e9b4409254cb922d3431f84629c9109a7e5fdd3b29534bafd41c"
+readonly image_url="https://dl.google.com/dl/android/aosp/blazer-cp2a.260605.012-factory-34abc739.zip"
+readonly image_sha256="34abc739ca775b912746782aca9f8c6f5d5d45aa1e0cf2fbc1f6db476aadd65b"
 
-readonly flash_url="https://flash.android.com/build/14887507?target=blazer-user&signed"
+readonly flash_url="https://flash.android.com/build/15430684?target=blazer-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/blazer-ota-cp1a.260305.018-e0628cc5.zip"
-readonly ota_sha256="e0628cc51dc0bb4d760f3b3c93e71047a95ae5200282e5019f38ebac11c30309"
+readonly ota_url="https://dl.google.com/dl/android/aosp/blazer-ota-cp2a.260605.012-30e5e205.zip"
+readonly ota_sha256="30e5e205fe4d632e46aa9d58a3bd3ee2c0967d438a3862ffe568a686a0ba7a68"

@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP1A.260305.018"
+readonly build_id="CP2A.260605.012"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14887507"
+readonly build_number="15430684"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/felix-cp1a.260305.018-factory-50a33fd4.zip"
-readonly image_sha256="50a33fd47acff071e46732daab56207d4734dfc58f074d01773b8a3bb8adad1e"
+readonly image_url="https://dl.google.com/dl/android/aosp/felix-cp2a.260605.012-factory-a206fc1a.zip"
+readonly image_sha256="a206fc1ac0ab214e7285d82b5bea9cfc6eb13710ff755b54e1e2d559f1b459ac"
 
-readonly flash_url="https://flash.android.com/build/14887507?target=felix-user&signed"
+readonly flash_url="https://flash.android.com/build/15430684?target=felix-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-cp1a.260305.018-0260a470.zip"
-readonly ota_sha256="0260a47085df83383855f53068b30fd6fcf27773296bff0f428a5805518cd1c8"
+readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-cp2a.260605.012-236df50b.zip"
+readonly ota_sha256="236df50b79880840862260837b83d9b6eae21a6e85c7ae1656fd07bcf53a88b9"
