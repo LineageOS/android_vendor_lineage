@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP1A.260305.018"
+readonly build_id="CP2A.260605.012"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14887507"
+readonly build_number="15430684"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/comet-cp1a.260305.018-factory-3ddebe4f.zip"
-readonly image_sha256="3ddebe4f41a9b8303f606d20d6cdf653d40866e71ff7d34964303d9cf3eb535f"
+readonly image_url="https://dl.google.com/dl/android/aosp/comet-cp2a.260605.012-factory-43ed3e32.zip"
+readonly image_sha256="43ed3e32085268e968f51e6d5a316770af71ef5666d653d5dc8be32d447be9f0"
 
-readonly flash_url="https://flash.android.com/build/14887507?target=comet-user&signed"
+readonly flash_url="https://flash.android.com/build/15430684?target=comet-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/comet-ota-cp1a.260305.018-a8b308dd.zip"
-readonly ota_sha256="a8b308dd4ab20a5e326abf05ddaa94adb4e90674dbdc802c6d24e681a3d80a31"
+readonly ota_url="https://dl.google.com/dl/android/aosp/comet-ota-cp2a.260605.012-fcef9336.zip"
+readonly ota_sha256="fcef93361d85178e85999aac7112f4aef9752aa8f08b0b8b8b2d16f988aa7e55"
