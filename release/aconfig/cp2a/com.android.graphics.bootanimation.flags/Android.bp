@@ -7,7 +7,7 @@ soong_config_module_type {
 }
 
 bootanimation_aconfig_values {
-    name: "aconfig-values-lineage-bp4a-com.android.graphics.bootanimation.flags-all",
+    name: "aconfig-values-lineage-cp2a-com.android.graphics.bootanimation.flags-all",
     package: "com.android.graphics.bootanimation.flags",
     srcs: [],
     soong_config_variables: {
