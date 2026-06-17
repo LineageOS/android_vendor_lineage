@@ -4,11 +4,11 @@ default_containers: "system_ext"
 default_containers: "vendor"
 
 release_config {
-    name: "bp4a"
-    flag_value_files: "release_configs/bp4a.textproto"
+    name: "cp2a"
+    flag_value_files: "release_configs/cp2a.textproto"
 }
 
 build_config {
-    name: "bp4a"
-    flag_value_files: "build_config/bp4a.textproto"
+    name: "cp2a"
+    flag_value_files: "build_config/cp2a.textproto"
 }
