@@ -144,29 +144,20 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	tools := map[string]android.Path{}
 
 	if len(g.properties.Tools) > 0 {
-		ctx.VisitDirectDepsProxyAllowDisabled(func(proxy android.ModuleProxy) {
-			module := android.PrebuiltGetPreferred(ctx, proxy)
+		ctx.VisitDirectDepsProxyAllowDisabled(func(module android.ModuleProxy) {
 			switch ctx.OtherModuleDependencyTag(module) {
 			case hostToolDepTag:
 				tool := ctx.OtherModuleName(module)
-				var path android.OptionalPath
-
-				if t, ok := android.OtherModuleProvider(ctx, module, android.HostToolProviderInfoProvider); ok {
-					if !android.OtherModulePointerProviderOrDefault(ctx, module, android.CommonModuleInfoProvider).Enabled {
+				if h := android.GetHostToolInfo(ctx, module); h != nil {
+					path := h.HostToolPath
+					if !path.Valid() {
 						if ctx.Config().AllowMissingDependencies() {
 							ctx.AddMissingDependencies([]string{tool})
 						} else {
-							ctx.ModuleErrorf("depends on disabled module %q", tool)
+							ctx.ModuleErrorf("host tool %q missing output file", tool)
 						}
 						break
 					}
-					path = t.HostToolPath
-				} else {
-					ctx.ModuleErrorf("%q is not a host tool provider", tool)
-					break
-				}
-
-				if path.Valid() {
 					g.implicitDeps = append(g.implicitDeps, path.Path())
 					if _, exists := tools[tool]; !exists {
 						tools[tool] = path.Path()
@@ -174,7 +165,12 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 						ctx.ModuleErrorf("multiple tools for %q, %q and %q", tool, tools[tool], path.Path().String())
 					}
 				} else {
-					ctx.ModuleErrorf("host tool %q missing output file", tool)
+					if ctx.Config().AllowMissingDependencies() {
+						ctx.AddMissingDependencies([]string{tool})
+					} else {
+						ctx.ModuleErrorf("%q is not a host tool provider", tool)
+						break
+					}
 				}
 			default:
 				if !android.IsSourceDepTagWithOutputTag(ctx.OtherModuleDependencyTag(module), "") {
@@ -261,7 +257,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	manifestPath := android.PathForModuleOut(ctx, "generator.sbox.textproto")
 
 	// Use a RuleBuilder to create a rule that runs the command inside an sbox sandbox.
-	rule := android.NewRuleBuilder(pctx, ctx).Sbox(genDir, manifestPath).SandboxTools()
+	rule := android.NewRuleBuilder(pctx, ctx).Sbox(genDir, manifestPath)
 
 	rule.Command().
 		Text(rawCommand).
