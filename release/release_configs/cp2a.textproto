@@ -1,0 +1,4 @@
+name: "cp2a"
+inherits: "mainline_2026_04"
+inherits: "cp1a"
+aconfig_value_sets: "aconfig_value_set-lineage-cp2a"
