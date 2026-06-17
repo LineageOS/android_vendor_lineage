@@ -1,0 +1,3 @@
+name: "cp2a"
+inherits: "cp1a"
+aconfig_value_sets: "aconfig_value_set-lineage-cp2a"
