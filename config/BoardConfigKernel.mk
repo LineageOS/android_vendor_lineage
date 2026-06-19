@@ -242,6 +242,11 @@ TARGET_KERNEL_DTB ?= dtbs
 TARGET_KERNEL_EXT_MODULE_ROOT ?=
 TARGET_KERNEL_EXT_MODULES ?=
 
+# Prepend root of external modules if set
+ifneq ($(TARGET_KERNEL_EXT_MODULE_ROOT),)
+TARGET_KERNEL_EXT_MODULES := $(addprefix $(TARGET_KERNEL_EXT_MODULE_ROOT)/,$(TARGET_KERNEL_EXT_MODULES))
+endif
+
 # Set use the full path to the make command
 KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/make
 
