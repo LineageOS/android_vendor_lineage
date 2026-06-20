@@ -16,6 +16,23 @@
       "message": "needs testing on more platforms tho",
       "revId": "ff61464e1746830c3adfe367e5f05dd82f72686f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d99b1fc_0e6d7a9c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-20T05:45:14Z",
+      "side": 1,
+      "message": "@webgeek1234@gmail.com, so you see any effect this might have on anything you do on tegra?",
+      "revId": "ff61464e1746830c3adfe367e5f05dd82f72686f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
