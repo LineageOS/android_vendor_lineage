@@ -18,7 +18,7 @@ endif
 
 $(INSTALLED_BUILD_MANIFEST_XML_TARGET):
 	mkdir -p $(dir $@)
-	python3 .repo/repo/repo manifest -o - -r | grep -Ev "proprietary_$(MANIFEST_EXCLUDES)" > $@
+	REPO_TRACE=0 python3 .repo/repo/repo manifest -o - -r | grep -Ev "proprietary_$(MANIFEST_EXCLUDES)" > $@
 
 .PHONY: build-manifest.xml
 build-manifest.xml: $(INSTALLED_BUILD_MANIFEST_XML_TARGET)
