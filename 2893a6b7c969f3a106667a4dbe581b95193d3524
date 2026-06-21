@@ -70,6 +70,24 @@
       "parentUuid": "fe5c0558_1e4c7fbb",
       "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7c5217b3_2d45a820",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-21T14:49:36Z",
+      "side": 1,
+      "message": "I don\u0027t use a degoogled device, this was just made to help others in place of ripping a bunch of Java code out.",
+      "parentUuid": "81e24420_c43f5e4f",
+      "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
