@@ -52,6 +52,24 @@
       "parentUuid": "b6b06c36_cf25374f",
       "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81e24420_c43f5e4f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37368
+      },
+      "writtenOn": "2026-06-21T12:35:04Z",
+      "side": 1,
+      "message": "Maybe you could test with MicroG ? (no GAPPS needed). And Davx5 allows to synchronize Nextcloud contacts which is quite common in degoogled Android.",
+      "parentUuid": "fe5c0558_1e4c7fbb",
+      "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
