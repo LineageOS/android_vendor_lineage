@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "349eef84_37080ad9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-06-22T13:47:20Z",
+      "side": 1,
+      "message": "This seems to be a side effect of https://android.googlesource.com/platform/build/soong/+/74af152eace90a11b972605b08e590b27c0c919a",
+      "revId": "734d0865790722f0dd9ee33bb4acdc4534463c6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
