@@ -212,6 +212,11 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 			return
 		}
 		for _, path := range paths {
+			if strings.HasSuffix(path, "/") {
+				// Glob results for directories are suffixed with "/"; skip them since
+				// sbox can only copy files, not directories, into the sandbox.
+				continue
+			}
 			g.inputDeps = append(g.inputDeps, android.PathForSourceRelaxed(ctx, path))
 		}
 	}
