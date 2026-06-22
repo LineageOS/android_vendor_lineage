@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "916a6988_1d43b32e",
+        "filename": "build/soong/generator/generator.go",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-22T09:26:56Z",
+      "side": 1,
+      "message": "usually globs should be in the shape of filepath.Join(globPath.String(), \"**/*\")\n\nmaybe we can avoid the post-filter by creating a better glob pattern",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 209,
+        "endChar": 47
+      },
+      "revId": "76dfc0473b8e81210edd237d7da6895481041247",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
