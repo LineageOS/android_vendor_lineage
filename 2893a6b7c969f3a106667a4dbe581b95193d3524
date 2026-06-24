@@ -88,6 +88,23 @@
       "parentUuid": "81e24420_c43f5e4f",
       "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c5bcd25_9a18359d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37317
+      },
+      "writtenOn": "2026-06-24T23:33:13Z",
+      "side": 1,
+      "message": "Works with davx5 and microg",
+      "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
