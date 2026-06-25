@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96086ee7_4d6124f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-06-25T05:50:01Z",
+      "side": 1,
+      "message": "imo this had already been there, sometimes it rebuilds due to timestamps/dtbo globs, etc. and not always a thing",
+      "revId": "ee19b1c9d0038015f8536ece043e88f9e0663dbe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
