@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "331e3862_43de2685",
+        "filename": "config/common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-06-26T08:22:34Z",
+      "side": 1,
+      "message": "I dislike this flag. Isn\u0027t there a way to filter out non-dynamic devices?",
+      "range": {
+        "startLine": 191,
+        "startChar": 9,
+        "endLine": 191,
+        "endChar": 33
+      },
+      "revId": "aedfc4e539d9b2e657b9b578c975287dad95ca39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
