@@ -53,6 +53,42 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3c66f56_f127724b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-26T15:10:42Z",
+      "side": 1,
+      "message": "Because this isn\u0027t device tree stuff? This triggers a feature in recovery that 95% of shipping devices are going to need.",
+      "parentUuid": "46895e2d_114b603d",
+      "revId": "aedfc4e539d9b2e657b9b578c975287dad95ca39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2d5732b_dc3d966e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-26T15:10:42Z",
+      "side": 1,
+      "message": "Yeah, there\u0027s literally an opt out flag and the overlay can just be overlaid the opposing way. \n\nI have no clue how this would block 4.14 non-dynamic when I myself ship this on non-dynamic 4.4...",
+      "parentUuid": "b3afc433_7668eaba",
+      "revId": "aedfc4e539d9b2e657b9b578c975287dad95ca39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "331e3862_43de2685",
@@ -66,6 +102,30 @@
       "writtenOn": "2026-06-26T08:22:34Z",
       "side": 1,
       "message": "I dislike this flag. Isn\u0027t there a way to filter out non-dynamic devices?",
+      "range": {
+        "startLine": 191,
+        "startChar": 9,
+        "endLine": 191,
+        "endChar": 33
+      },
+      "revId": "aedfc4e539d9b2e657b9b578c975287dad95ca39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca79792a_b1339f28",
+        "filename": "config/common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-26T15:10:42Z",
+      "side": 1,
+      "message": "I mean we can definitely filter on a different flag, but most non-dynamic devices build this as well, it\u0027s just useful.",
+      "parentUuid": "331e3862_43de2685",
       "range": {
         "startLine": 191,
         "startChar": 9,
