@@ -188,6 +188,12 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/setcap \
     system/%/libzstd.so
 
+# fastbootd
+ifneq ($(TARGET_DISABLE_FASTBOOTD),true)
+PRODUCT_PACKAGES += \
+    fastbootd
+endif
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \
