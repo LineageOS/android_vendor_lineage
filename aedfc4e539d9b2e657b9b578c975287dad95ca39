@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0c7210f_330f19e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-06-26T11:12:45Z",
+      "side": 1,
+      "message": "There are still devices on 4.14 which are still non-dynamic so enforcing might be game over for them\n\niirc you guys still support 4.14 even for CP2A",
+      "revId": "aedfc4e539d9b2e657b9b578c975287dad95ca39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "331e3862_43de2685",
