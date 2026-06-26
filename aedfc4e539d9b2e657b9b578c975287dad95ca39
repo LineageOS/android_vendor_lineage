@@ -38,6 +38,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "46895e2d_114b603d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-06-26T11:30:36Z",
+      "side": 1,
+      "message": "well, fastbootd could be useful for non-dynamic devices too, see this https://review.lineageos.org/c/LineageOS/android_device_oneplus_sdm845-common/+/307344 , but why are we doing device tree stuff globally in rom-specific repo, even for such a small one?",
+      "revId": "aedfc4e539d9b2e657b9b578c975287dad95ca39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "331e3862_43de2685",
         "filename": "config/common.mk",
         "patchSetId": 2
