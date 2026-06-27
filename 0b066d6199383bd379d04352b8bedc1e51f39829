@@ -16,6 +16,24 @@
       "message": "@demonsingur@gmail.com, any objections?",
       "revId": "0b066d6199383bd379d04352b8bedc1e51f39829",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31255283_5500ec10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17257
+      },
+      "writtenOn": "2026-06-27T10:44:59Z",
+      "side": 1,
+      "message": "Seems like it\u0027s coming from Qualcomm so no issues on my side. If it ends up breaking my usecase when I test it, I\u0027ll fix it then.",
+      "parentUuid": "b4be12f0_913caa60",
+      "revId": "0b066d6199383bd379d04352b8bedc1e51f39829",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
