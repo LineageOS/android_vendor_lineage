@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ede812f_fc0dd966",
+        "filename": "release/release_configs/cp2a.textproto",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 32197
+      },
+      "writtenOn": "2026-06-29T16:36:24Z",
+      "side": 1,
+      "message": "```suggestion\nname: \"cp2a\"\ninherits: \"mainline_2026_04\"\ninherits: \"cp1a\"\n```",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 16
+      },
+      "revId": "da80da07168b82a526009c941df693ce8b95dc90",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
