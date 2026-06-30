@@ -38,9 +38,16 @@ if len(sys.argv) > 2:
 else:
     depsonly = None
 
+if len(sys.argv) > 3:
+    fetch_dependencies_in = sys.argv[3]
+else:
+    fetch_dependencies_in = None
+
 try:
     device = product[product.index('_') + 1 :]
 except IndexError:
+    device = product
+except ValueError:
     device = product
 
 if not depsonly:
@@ -358,6 +365,10 @@ def get_default_or_fallback_revision(repo_name):
 
 
 if depsonly:
+    if fetch_dependencies_in:
+        fetch_dependencies(fetch_dependencies_in)
+        sys.exit()
+
     repo_path = get_from_manifest(device)
     if repo_path:
         fetch_dependencies(repo_path)
