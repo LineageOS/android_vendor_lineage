@@ -316,11 +316,11 @@ define make-kernel-config
 	cp $(word 1,$(2)) $(1)/.config; \
 	$(call internal-make-kernel-target,$(1),olddefconfig); \
 	$(if $(filter true,$(MERGE_ALL_KERNEL_CONFIGS_AT_ONCE)),\
-		$(KERNEL_SRC)/scripts/kconfig/merge_config.sh -m -O $(1) $(1)/.config $(filter %.config,$(2)); \
+		( cd $(abspath $(1)) && $(abspath $(KERNEL_SRC))/scripts/kconfig/merge_config.sh -m -O $(abspath $(1)) $(abspath $(1))/.config $(abspath $(filter %.config,$(2))) ); \
 		$(call internal-make-kernel-target,$(1),olddefconfig); \
 	, \
 		$(foreach config,$(filter %.config,$(2)), \
-			$(KERNEL_SRC)/scripts/kconfig/merge_config.sh -m -O $(1) $(1)/.config $(config); \
+			( cd $(abspath $(1)) && $(abspath $(KERNEL_SRC))/scripts/kconfig/merge_config.sh -m -O $(abspath $(1)) $(abspath $(1))/.config $(abspath $(config)) ); \
 			$(call internal-make-kernel-target,$(1),olddefconfig); \
 		) \
 	)
