@@ -1,8 +1,9 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
-# Exclude kernel platform repos from bp scanning
+# Exclude repos from bp scanning
 PRODUCT_SOURCE_ROOT_DIRS += -kernel/platform
+PRODUCT_SOURCE_ROOT_DIRS += -prebuilts/misc/protobuf_vendorcompat
 
 # Allow vendor prebuilt repos to exclude themselves from bp scanning
 -include $(sort $(wildcard vendor/*/*/exclude-bp.mk))
