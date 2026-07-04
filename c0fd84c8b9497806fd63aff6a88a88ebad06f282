@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "83fb8f2f_efa81c61",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-07-04T15:34:31Z",
+      "side": 1,
+      "message": "I will test this as part of my next build; I have GMS and recently started switching my contacts and calendar to be self-hosted.",
+      "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
