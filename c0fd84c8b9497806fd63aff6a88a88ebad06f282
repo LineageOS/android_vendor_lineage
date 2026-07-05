@@ -33,6 +33,24 @@
       "message": "So this works on my GMS device with both Lineage Contacts and Google Contacts, with a few caveats (I\u0027m not sure yet if they can be solved):\n\n- Google Contacts has the option to move a DAVx5 contact to a Google Account, but not the reverse.\n- Google Contacts refuses to create contacts in DAVx5 (and if it\u0027s the default, it requires you to select a Google Account as the default location before it lets you create the contact).\n- Google Contacts will allow you to edit an existing DAVx5 contact.\n- Everything works correctly with Lineage Contacts.\n- Other apps appear to work correctly as well.",
       "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c92a47ea_e14cae1f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-07-05T05:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "83fb8f2f_efa81c61",
+      "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
