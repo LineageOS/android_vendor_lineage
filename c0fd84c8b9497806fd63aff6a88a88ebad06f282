@@ -51,6 +51,24 @@
       "parentUuid": "83fb8f2f_efa81c61",
       "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c022edbd_4c2ec289",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-07-05T05:30:38Z",
+      "side": 1,
+      "message": "Also see https://www.davx5.com/faq/contacts/davx5-address-books-dont-show-up-in-google-contacts.",
+      "parentUuid": "87375468_be132c9e",
+      "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
