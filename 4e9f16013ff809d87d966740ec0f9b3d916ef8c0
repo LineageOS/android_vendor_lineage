@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77da2548_ce3e0e49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2026-07-07T17:28:22Z",
+      "side": 1,
+      "message": "Hell no, this kills builds replication, use prebuilt kernels instead",
+      "revId": "4e9f16013ff809d87d966740ec0f9b3d916ef8c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
