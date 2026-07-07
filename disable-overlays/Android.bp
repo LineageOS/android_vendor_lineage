@@ -1,0 +1,20 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "disable-overlays",
+
+    srcs: ["main.cpp"],
+
+    shared_libs: [
+        "libbase",
+        "libfs_mgr",
+        "liblp",
+    ],
+
+    symlinks: ["enable-verity"],
+
+    recovery: true,
+}
