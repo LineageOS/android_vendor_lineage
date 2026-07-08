@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ecaf5e3f_57ba84df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-07-08T04:58:08Z",
+      "side": 1,
+      "message": "Maybe enable this only during debug or something?",
+      "revId": "5b9eee8784108bdee83c4bd9f31b4adfa2b8fd67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
