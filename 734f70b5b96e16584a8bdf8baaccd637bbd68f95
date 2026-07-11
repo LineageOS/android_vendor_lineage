@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3337f66d_79444c35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2026-07-11T23:29:10Z",
+      "side": 1,
+      "message": "This is required for MGKI builds. Tested on the Motorola Moto G05 and G15.",
+      "revId": "734f70b5b96e16584a8bdf8baaccd637bbd68f95",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
