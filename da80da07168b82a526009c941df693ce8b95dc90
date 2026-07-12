@@ -22,6 +22,30 @@
       },
       "revId": "da80da07168b82a526009c941df693ce8b95dc90",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ecd2f55_2c54d5ce",
+        "filename": "release/release_configs/cp2a.textproto",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-07-12T23:31:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1ede812f_fc0dd966",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 16
+      },
+      "revId": "da80da07168b82a526009c941df693ce8b95dc90",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
