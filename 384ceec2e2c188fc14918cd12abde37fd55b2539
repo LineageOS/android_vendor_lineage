@@ -16,6 +16,23 @@
       "message": "Not sure what happened here. It worked in my initial verification, then broke almost immediately afterwards. Thanks, I\u0027ll verify these against the newer kernel versions I\u0027m targeting.",
       "revId": "384ceec2e2c188fc14918cd12abde37fd55b2539",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e04180d_709c42d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-07-16T21:00:21Z",
+      "side": 1,
+      "message": "Verified on 6.12 and 6.18.",
+      "revId": "384ceec2e2c188fc14918cd12abde37fd55b2539",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
