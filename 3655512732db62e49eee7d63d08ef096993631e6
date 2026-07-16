@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6624e862_6c9c879a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-07-16T21:02:46Z",
+      "side": 1,
+      "message": "```\nWARNING: --repo_manifest\u003d\u003cpath\u003e is deprecated. Use\n    --repo_manifest\u003d/home/buildbot/vc_990/lineage-24.0/kernel/platform/kernel-6.18:/home/buildbot/vc_990/lineage-24.0/out/target/product/quill/obj/KERNEL_OBJ/manifest.xml\n    to achieve the same effect.\n```\n6.18 at least doesn\u0027t like this, though it\u0027s not full out blocking it. It\u0027d probably be better to split this based on TARGET_KERNEL_VERSION. Pretty sure 6.6 works with the existing syntax, so this would only need applied to \u003c\u003d 6.1 since 5.15 and 6.1 share the same build rules branch.",
+      "revId": "3655512732db62e49eee7d63d08ef096993631e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
