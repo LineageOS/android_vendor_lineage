@@ -16,6 +16,24 @@
       "message": "Do you really need both?",
       "revId": "cb1bc63c943e3fad17ddf7e75e4a7da99e57f0c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9d1ce74_5bafd1b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-07-17T11:57:05Z",
+      "side": 1,
+      "message": "That makes me wonder, shouldn\u0027t BOARD_KERNEL_SEPARATED_DTBO imply that dtbo image is needed?",
+      "parentUuid": "89355ce7_fe9d7f11",
+      "revId": "cb1bc63c943e3fad17ddf7e75e4a7da99e57f0c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
