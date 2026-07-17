@@ -764,6 +764,7 @@ endif
 $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST)
 	@echo "Building $(BOARD_KERNEL_IMAGE_NAME)"
 	@mkdir -p $(KERNEL_OUT) $(KERNEL_BAZEL_OUT)
+	$(hide) rm -f $(KERNEL_OUT)
 	$(hide) cd $(KERNEL_PATH) && \
 		python3 $(BUILD_TOP)/.repo/repo/repo manifest -o - -r \
 		| awk -v pat="kernel/platform/kernel-$(TARGET_KERNEL_VERSION)" ' \
