@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69e0934b_1c56e291",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-07-25T14:06:51Z",
+      "side": 1,
+      "message": "the \"why\" is missing in between commit message and change id.",
+      "revId": "1aa9b7f5878926c6e4e687e52107bea3912a72b6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
