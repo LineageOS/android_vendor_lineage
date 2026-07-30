@@ -16,6 +16,24 @@
       "message": "This does break non-numerical TARGET_KERNEL_VERSION, which does work prior to this. For example, I\u0027ve git kernel/platform/kernel-mainline for the android-mainline branch. Not sure if that\u0027s considered a blocking issue though, or if I\u0027ll have to carry out of tree patches to unbreak it.",
       "revId": "61fb6088c5098f96b4d553cbe59ce4c6b0236f28",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21606cf6_8f423907",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-30T17:02:15Z",
+      "side": 1,
+      "message": "if you want to fixup the if, go for it, but lets not hold for that.",
+      "parentUuid": "eeb6cfe4_34db8948",
+      "revId": "61fb6088c5098f96b4d553cbe59ce4c6b0236f28",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
