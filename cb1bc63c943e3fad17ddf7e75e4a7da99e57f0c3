@@ -34,6 +34,24 @@
       "parentUuid": "89355ce7_fe9d7f11",
       "revId": "cb1bc63c943e3fad17ddf7e75e4a7da99e57f0c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8f458f6_d827debb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-30T05:30:33Z",
+      "side": 1,
+      "message": "So, at the moment yes we do. But I also agree with bruno that a follow up to make the value of BOARD_KERNEL_SEPARATED_DTBO assume true when TARGET_NEEDS_DTBOIMAGE is set it probably sensible.",
+      "parentUuid": "b9d1ce74_5bafd1b2",
+      "revId": "cb1bc63c943e3fad17ddf7e75e4a7da99e57f0c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
