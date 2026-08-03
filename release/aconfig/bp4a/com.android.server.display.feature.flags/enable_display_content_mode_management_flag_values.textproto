@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.server.display.feature.flags"
+  name: "enable_display_content_mode_management"
+  state: ENABLED
+  permission: READ_ONLY
+}
