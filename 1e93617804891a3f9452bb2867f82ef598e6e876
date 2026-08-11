@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f2346f2_c9df77e4",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 601,
+      "author": {
+        "id": 37437
+      },
+      "writtenOn": "2026-08-11T20:55:17Z",
+      "side": 1,
+      "message": "Errors on dm1q/dm3q\nSee https://pastebin.com/w0Y4jpxt",
+      "revId": "1e93617804891a3f9452bb2867f82ef598e6e876",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
