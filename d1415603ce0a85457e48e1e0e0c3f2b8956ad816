@@ -16,6 +16,24 @@
       "message": "This flag is dead",
       "revId": "d1415603ce0a85457e48e1e0e0c3f2b8956ad816",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "933f3937_47b4f000",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-12T13:11:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f975456b_2c10ed3c",
+      "revId": "d1415603ce0a85457e48e1e0e0c3f2b8956ad816",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
