@@ -16,6 +16,24 @@
       "message": "Errors on dm1q/dm3q\nSee https://pastebin.com/w0Y4jpxt",
       "revId": "1e93617804891a3f9452bb2867f82ef598e6e876",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3a17ebb_976c5c62",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 601,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-08-12T03:12:56Z",
+      "side": 1,
+      "message": "hey, sorry for the inconvenience, could you try adding `;` after the `fi` here for fix?",
+      "parentUuid": "2f2346f2_c9df77e4",
+      "revId": "1e93617804891a3f9452bb2867f82ef598e6e876",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
