@@ -16,6 +16,24 @@
       "message": "Proof?",
       "revId": "e015983c0b8addf48bd7cd09b208e89f4811014d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b3b2d7bd_4574d977",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 16002
+      },
+      "writtenOn": "2026-08-19T22:59:30Z",
+      "side": 1,
+      "message": "Just from my testing, I think it was the June asb but I\u0027m not sure, I didn\u0027t find an obvious fix",
+      "parentUuid": "8bdffae4_c8844312",
+      "revId": "e015983c0b8addf48bd7cd09b208e89f4811014d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
