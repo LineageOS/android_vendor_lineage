@@ -784,6 +784,7 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 			--cpu=$(KERNEL_ARCH) \
 			--repo_manifest $(KERNEL_REPO_MANIFEST) \
 			--config=stamp \
+			$(KERNEL_BAZEL_FLAGS) \
 			//$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist \
 			-- --destdir=$(abspath $(KERNEL_OUT))
 	$(if $(BOOT_KERNEL_MODULES),\
