@@ -51,6 +51,9 @@
 #                                          Defaults to empty
 #   TARGET_KERNEL_EXT_MODULES          = Optional, the external modules we are
 #                                          building. Defaults to empty
+#   TARGET_KERNEL_UNSAFE_DDK_HEADERS   = Specifies if bazel build should use unsafe headers for DDK
+#                                        modules, this defaults to empty and should only be set to
+#                                        true if no other choice.
 #
 #   KERNEL_TOOLCHAIN_PREFIX            = Overrides TARGET_KERNEL_CROSS_COMPILE_PREFIX,
 #                                          Set this var in shell to override
@@ -113,8 +116,13 @@ ifneq ($(USE_CCACHE),)
     endif
 endif
 
-# Clear this first to prevent accidental poisoning from env
+# Clear these first to prevent accidental poisoning from env
+KERNEL_BAZEL_FLAGS :=
 KERNEL_MAKE_FLAGS :=
+
+ifeq ($(TARGET_KERNEL_UNSAFE_DDK_HEADERS),true)
+    KERNEL_BAZEL_FLAGS += --//build/kernel/kleaf:allow_ddk_unsafe_headers
+endif
 
 # Add back threads, ninja cuts this to $(getconf _NPROCESSORS_ONLN)/2
 KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
