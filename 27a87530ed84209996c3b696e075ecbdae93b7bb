@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65aa9219_8246e466",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-08-26T12:02:35Z",
+      "side": 1,
+      "message": "Heads up that I don\u0027t need this for 6.6, this is for 6.12. On a QCOM target this is meant to be combined with a change in soc-repo to append unsafe_headers_qcom_group to additional_msm_headers if //build/kernel/kleaf:allow_ddk_unsafe_headers_set.",
+      "revId": "27a87530ed84209996c3b696e075ecbdae93b7bb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
