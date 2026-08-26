@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2dc66bab_64a9bbea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-08-26T21:58:52Z",
+      "side": 1,
+      "message": "+1 since I can\u0027t think of anything better outside of letting devices specify",
+      "revId": "4ca9b562ab4b0e67d4b47c057b45e32c575fc908",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
