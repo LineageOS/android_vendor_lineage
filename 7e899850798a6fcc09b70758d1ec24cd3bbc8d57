@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "953b17bc_fca09406",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-08-26T21:57:51Z",
+      "side": 1,
+      "message": "Moved to 64_bit_only for ingot, but should be useful for devices that still compile 32 bit stuff.",
+      "revId": "7e899850798a6fcc09b70758d1ec24cd3bbc8d57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
