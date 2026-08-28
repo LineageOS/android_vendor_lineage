@@ -175,6 +175,26 @@ def is_in_manifest(tag, attr, attr_value):
     return False
 
 
+def add_linkfiles(parent, linkfiles):
+    existing_linkfiles = {
+        (linkfile.get('src'), linkfile.get('dest'))
+        for linkfile in parent.findall('linkfile')
+    }
+    for linkfile in linkfiles:
+        linkfile_key = (linkfile['src'], linkfile['dest'])
+        if linkfile_key in existing_linkfiles:
+            continue
+        ElementTree.SubElement(
+            parent,
+            'linkfile',
+            attrib={
+                'src': linkfile['src'],
+                'dest': linkfile['dest'],
+            },
+        )
+        existing_linkfiles.add(linkfile_key)
+
+
 def add_to_manifest(dependencies):
     if dryrun:
         return
@@ -209,9 +229,34 @@ def add_to_manifest(dependencies):
             repo_name = dependency['repository']
             repo_target = dependency['target_path']
             repo_revision = dependency['branch']
+            linkfiles = dependency.get('linkfiles', [])
+            project_name = get_dependency_project_name(dependency)
             print(f'Checking if {repo_target} is fetched from {repo_name}')
             if is_in_manifest('project', 'path', repo_target):
                 print(f'LineageOS/{repo_name} already fetched to {repo_target}')
+                if not linkfiles:
+                    continue
+
+                extend_project = next(
+                    (
+                        element
+                        for element in lm.findall('extend-project')
+                        if element.get('name') == project_name
+                        and element.get('path') == repo_target
+                    ),
+                    None,
+                )
+                if extend_project is None:
+                    extend_project = ElementTree.Element(
+                        'extend-project',
+                        attrib={
+                            'name': project_name,
+                            'path': repo_target,
+                        },
+                    )
+                    lm.append(extend_project)
+                add_linkfiles(extend_project, linkfiles)
+                print(f'Adding linkfiles for {project_name} -> {repo_target}')
                 continue
 
             project = ElementTree.Element(
@@ -219,7 +264,7 @@ def add_to_manifest(dependencies):
                 attrib={
                     'path': repo_target,
                     'remote': 'github',
-                    'name': f'LineageOS/{repo_name}',
+                    'name': project_name,
                     'revision': repo_revision,
                 },
             )
@@ -236,6 +281,7 @@ def add_to_manifest(dependencies):
             print(
                 f'Adding dependency: {project.attrib["name"]} -> {project.attrib["path"]}'
             )
+            add_linkfiles(project, linkfiles)
             lm.append(project)
         else:
             print(f'Unsupported dependency type: {dependency_type}')
@@ -274,10 +320,12 @@ def fetch_dependencies(repo_path):
                         f'.repo/{include_name}'
                     )
             elif dependency_type == 'project':
-                if not is_in_manifest(
+                project_missing = not is_in_manifest(
                     'project', 'path', dependency['target_path']
-                ):
+                )
+                if project_missing or dependency.get('linkfiles'):
                     fetch_list.append(dependency)
+                if project_missing:
                     syncable_repos.append(dependency['target_path'])
                     if 'branch' not in dependency:
                         if dependency.get('remote', 'github') == 'github':
@@ -290,6 +338,10 @@ def fetch_dependencies(repo_path):
                                 sys.exit(1)
                         else:
                             dependency['branch'] = None
+                elif 'branch' not in dependency:
+                    dependency['branch'] = None
+                if dependency.get('linkfiles'):
+                    syncable_repos.append(dependency['target_path'])
                 verify_repos.append(dependency['target_path'])
 
                 if not os.path.isdir(dependency['target_path']):
@@ -355,6 +407,13 @@ def get_default_or_fallback_revision(repo_name):
         'Use the ROOMSERVICE_BRANCHES environment variable to specify a list of fallback branches.'
     )
     return ''
+
+
+def get_dependency_project_name(dependency):
+    repo_name = dependency['repository']
+    if dependency.get('remote', 'github').startswith('aosp-'):
+        return repo_name
+    return f'LineageOS/{repo_name}'
 
 
 if depsonly:
