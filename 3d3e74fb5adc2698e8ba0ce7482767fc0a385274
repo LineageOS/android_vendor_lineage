@@ -86,6 +86,24 @@
       "message": "Is this supposed to change the version for the kernel build as well? It\u0027s still using the old one for me.\n\nCONFIG_CC_VERSION_TEXT\u003d\"Android (14488419, +pgo, +bolt, +lto, +mlgo, based on r584948) clang version 22.0.0 (https://android.googlesource.com/toolchain/llvm-project 2d65e4108033380e6fe8e08b1f1826cd2bfb0c99)\"",
       "revId": "3d3e74fb5adc2698e8ba0ce7482767fc0a385274",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f329df4_591ff622",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-08-29T10:50:55Z",
+      "side": 1,
+      "message": "you\u0027re missing previous change in the chain or you didn\u0027t envsetup again.",
+      "parentUuid": "741d5c0a_1407d02e",
+      "revId": "3d3e74fb5adc2698e8ba0ce7482767fc0a385274",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
