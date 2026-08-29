@@ -34,6 +34,23 @@
       "parentUuid": "cd4818e1_daf3d93b",
       "revId": "3d3e74fb5adc2698e8ba0ce7482767fc0a385274",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f26cddc_b357d5ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-08-29T10:23:59Z",
+      "side": 1,
+      "message": "verified across lemonadep/pdx225/pdx257/pioneer.",
+      "revId": "3d3e74fb5adc2698e8ba0ce7482767fc0a385274",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
