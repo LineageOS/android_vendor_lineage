@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd4818e1_daf3d93b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-08-29T05:57:30Z",
+      "side": 1,
+      "message": "are devices still able to override it themselves?\n\nMTK for ex has issues even on 5.10 w/ newer TC\u0027s.",
+      "revId": "3d3e74fb5adc2698e8ba0ce7482767fc0a385274",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
