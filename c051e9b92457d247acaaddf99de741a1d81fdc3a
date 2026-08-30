@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff2816eb_a5af506d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-08-30T15:30:10Z",
+      "side": 1,
+      "message": "Should still be tested on a recent Fedora version, build this should get rid of the need for these changes in kernel:\n\n13733cacc0a0 ANDROID: gki_defconfig: Re-enable CONFIG_CRYPTO_SHA1\n28aab9ea95ca ANDROID: GKI: defconfig: switch to MODULE_SIG_SHA256\n590f08b8eecf UPSTREAM: sign-file: Use only the OpenSSL CMS API for signing\n7e3f971b7d7b BACKPORT: module: Remove SHA-1 support for module signing\nf28f3cf776d3 BACKPORT: module: Do not offer sha224 for built-in module signing\n9aeacf4a93ff ANDROID: gki_defconfig: Build CONFIG_CRYPTO_SHA1 inline\n650017d289d1 module: sign with sha512 instead of sha1 by default",
+      "revId": "c051e9b92457d247acaaddf99de741a1d81fdc3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
