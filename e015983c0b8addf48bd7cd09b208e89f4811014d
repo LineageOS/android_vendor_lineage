@@ -34,6 +34,24 @@
       "parentUuid": "8bdffae4_c8844312",
       "revId": "e015983c0b8addf48bd7cd09b208e89f4811014d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69e9d1c8_c73766b1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 37877
+      },
+      "writtenOn": "2026-08-31T15:16:47Z",
+      "side": 1,
+      "message": "gts7l / 23.2-20260825-NIGHTLY / BP4A.251205.006. Enabled via\npersist.wm.debug.desktop_mode_enforce_device_restrictions\u003dfalse (not rooted, so\nI can\u0027t set the resource directly). Running it with several apps in desktop mode,\nno rendering issues noticed so far.\n\nAs far as I could see, on 23.2 the desktopmode/ and windowdecor/ trees are\nbyte-identical since before this was authored (98ecb183787a9edc3f60c415ea9e07485ea85884\nand 9ff3049f3975b1165328ecc7944fddabea8ea9fc at both 2025-12-13 and today) while\nthe rest of Shell did change. So I couldn\u0027t find something that would have fixed\nit here.\n\nWhat did \"looks really bad\" actually look like? I\u0027ll test for it specifically.",
+      "parentUuid": "b3b2d7bd_4574d977",
+      "revId": "e015983c0b8addf48bd7cd09b208e89f4811014d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
