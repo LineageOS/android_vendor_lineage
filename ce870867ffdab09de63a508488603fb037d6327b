@@ -33,6 +33,24 @@
       "message": "I think this is useful for symlinking x-devicetrees to x-kernel/arch/arm64/boot/dts/vendor on QCOM targets.",
       "revId": "ce870867ffdab09de63a508488603fb037d6327b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f69056a_930a6abc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-02T00:49:52Z",
+      "side": 1,
+      "message": "Worked for me. :)",
+      "parentUuid": "c60155a0_67839808",
+      "revId": "ce870867ffdab09de63a508488603fb037d6327b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
