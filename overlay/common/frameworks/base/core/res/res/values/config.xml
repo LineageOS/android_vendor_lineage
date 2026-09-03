@@ -184,4 +184,14 @@
          1: 2 button mode (back, home buttons + swipe up for overview)
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
+
+    <!-- The default list of possible CMF Names|Style|ColorSource. This array can be
+         overridden device-specific resources. A wildcard (fallback) must be supplied.
+         Name   - Read from `ro.boot.hardware.color` sysprop. Fallback (*) required.
+         Styles - frameworks/libs/systemui/monet/src/com/android/systemui/monet/Style.java
+         Color  - `home_wallpaper` (for color extraction) or a comma-separated list of
+                  hexadecimal int (#FFcc99,#aabbcc). -->
+    <string-array name="theming_defaults" translatable="false">
+        <item>*|TONAL_SPOT|#63a3ad</item>
+    </string-array>
 </resources>
