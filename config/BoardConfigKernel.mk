@@ -24,6 +24,8 @@
 #
 #   TARGET_KERNEL_CLANG_VERSION        = Clang prebuilts version, optional, defaults to clang-stable
 #   TARGET_KERNEL_CLANG_PATH           = Clang prebuilts path, optional
+#   TARGET_KERNEL_LIBCLANG_PATH        = libclang (used by rust bindgen) path, optional,
+#                                          defaults to $(TARGET_KERNEL_CLANG_PATH)/lib
 #
 #   TARGET_KERNEL_LIBC_SYSROOT_USE     = libc sysroot to use, defaults to "host" for 6.11+
 #
@@ -86,6 +88,31 @@ else
 endif
 TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(KERNEL_CLANG_VERSION)
 
+# Rust bindgen parses the kernel headers with libclang, so it normally wants the
+# libclang matching the Clang the kernel is compiled with. That pairing is not
+# always usable: bindgen links a fixed clang-sys and only tracks libclang's
+# behaviour up to the release it was built against, so a libclang newer than the
+# prebuilts/clang-tools bindgen can silently generate wrong bindings.
+#
+# Probe the matching libclang and fall back to the newest usable Clang prebuilt
+# if it turns out to be unusable. Detecting this rather than keeping a list of
+# known bad prebuilts keeps working across toolchain bumps and for devices that
+# pin their own TARGET_KERNEL_CLANG_VERSION, including out of tree ones.
+#
+# Only kernels shipping rust/ ever run bindgen, so leave the legacy ones alone
+# rather than making them pay for a probe and warn about bindings they never
+# generate. Assign simply so the probe runs at most once per parse.
+ifeq ($(TARGET_KERNEL_LIBCLANG_PATH),)
+    ifneq ($(wildcard $(TARGET_KERNEL_SOURCE)/rust/bindings/bindings_helper.h),)
+        TARGET_KERNEL_LIBCLANG_PATH := $(shell $(BUILD_TOP)/vendor/lineage/build/tools/select_kernel_libclang.sh \
+            $(BUILD_TOP)/prebuilts/clang-tools/$(HOST_PREBUILT_TAG)/bin/bindgen \
+            $(TARGET_KERNEL_CLANG_PATH) \
+            $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG))
+    else
+        TARGET_KERNEL_LIBCLANG_PATH := $(TARGET_KERNEL_CLANG_PATH)/lib
+    endif
+endif
+
 TARGET_KERNEL_RUST_VERSION ?= $(RUST_AOSP_PREBUILTS_VERSION)
 
 ifneq ($(USE_CCACHE),)
@@ -147,8 +174,8 @@ TOOLS_PATH_OVERRIDE += BISON_PKGDATADIR=$(BUILD_TOP)/prebuilts/build-tools/commo
 # Since Linux 5.10, pahole is required
 KERNEL_MAKE_FLAGS += PAHOLE=$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/bin/pahole
 
-# Rust bindgen wants matching Clang and libclang versions
-KERNEL_MAKE_FLAGS += LIBCLANG_PATH=$(TARGET_KERNEL_CLANG_PATH)/lib
+# Tell rust bindgen which libclang to parse the kernel headers with
+KERNEL_MAKE_FLAGS += LIBCLANG_PATH=$(TARGET_KERNEL_LIBCLANG_PATH)
 
 # AutoFDO
 # Ideally, we also want to detect 'CONFIG_AUTOFDO_CLANG=y' from kernel configs...
