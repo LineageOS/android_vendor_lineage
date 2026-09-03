@@ -24,6 +24,8 @@
 #
 #   TARGET_KERNEL_CLANG_VERSION        = Clang prebuilts version, optional, defaults to clang-stable
 #   TARGET_KERNEL_CLANG_PATH           = Clang prebuilts path, optional
+#   TARGET_KERNEL_LIBCLANG_PATH        = libclang (used by rust bindgen) path, optional,
+#                                          defaults to $(TARGET_KERNEL_CLANG_PATH)/lib
 #
 #   TARGET_KERNEL_LIBC_SYSROOT_USE     = libc sysroot to use, defaults to "host" for 6.11+
 #
@@ -86,6 +88,19 @@ else
 endif
 TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(KERNEL_CLANG_VERSION)
 
+# Some libclang releases silently generate incomplete Rust records. Probe once
+# for Rust-enabled kernels rather than maintaining a toolchain denylist.
+ifeq ($(TARGET_KERNEL_LIBCLANG_PATH),)
+    ifneq ($(wildcard $(TARGET_KERNEL_SOURCE)/rust/bindings/bindings_helper.h),)
+        TARGET_KERNEL_LIBCLANG_PATH := $(shell $(BUILD_TOP)/vendor/lineage/build/tools/select_kernel_libclang.sh \
+            $(BUILD_TOP)/prebuilts/clang-tools/$(HOST_PREBUILT_TAG)/bin/bindgen \
+            $(TARGET_KERNEL_CLANG_PATH) \
+            $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG))
+    else
+        TARGET_KERNEL_LIBCLANG_PATH := $(TARGET_KERNEL_CLANG_PATH)/lib
+    endif
+endif
+
 TARGET_KERNEL_RUST_VERSION ?= $(RUST_AOSP_PREBUILTS_VERSION)
 
 ifneq ($(USE_CCACHE),)
@@ -147,8 +162,7 @@ TOOLS_PATH_OVERRIDE += BISON_PKGDATADIR=$(BUILD_TOP)/prebuilts/build-tools/commo
 # Since Linux 5.10, pahole is required
 KERNEL_MAKE_FLAGS += PAHOLE=$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/bin/pahole
 
-# Rust bindgen wants matching Clang and libclang versions
-KERNEL_MAKE_FLAGS += LIBCLANG_PATH=$(TARGET_KERNEL_CLANG_PATH)/lib
+KERNEL_MAKE_FLAGS += LIBCLANG_PATH=$(TARGET_KERNEL_LIBCLANG_PATH)
 
 # AutoFDO
 # Ideally, we also want to detect 'CONFIG_AUTOFDO_CLANG=y' from kernel configs...
