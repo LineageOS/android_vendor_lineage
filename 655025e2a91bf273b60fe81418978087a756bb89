@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea0a2664_70c64613",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27025
+      },
+      "writtenOn": "2026-09-04T02:31:07Z",
+      "side": 1,
+      "message": "just a reminder that this would make the patches https://review.lineageos.org/c/LineageOS/android_packages_apps_Settings/+/491110 and the disable clipping one pointless as expressive layouts would be used instead\ne.g\nhttps://github.com/AOSPA/android_packages_apps_Settings/commit/b1721ec7ff9a7273c532393c3897edc4d55e23c2\nhttps://github.com/AOSPA/android_packages_apps_Settings/commit/66fd73775389d6baa3e0a17174bd454b11e5a830",
+      "revId": "655025e2a91bf273b60fe81418978087a756bb89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
