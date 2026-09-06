@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Font provider -->
+    <string name="font_provider_system_font_family" translatable="false">google-sans-flex</string>
+    <string name="font_provider_system_font_family_medium" translatable="false">google-sans-flex-medium</string>
+
+    <!-- Preferences -->
+    <string name="preference_title_text_font" translatable="false">google-sans-flex</string>
+    <string name="preference_subtitle_text_font" translatable="false">google-sans-flex</string>
+    <string name="preference_category_text_font" translatable="false">google-sans-flex-medium</string>
+    <string name="preference_list_item_text_font" translatable="false">google-sans-flex</string>
+    <string name="preference_list_item_secondary_text_font" translatable="false">google-sans-flex</string>
+
+    <!-- Settings dialogs, PIN UX, and connectivity strings -->
+    <string name="font" translatable="false">google-sans-flex</string>
+    <string name="light_font" translatable="false">google-sans-flex</string>
+    <string name="font_sans_serif" translatable="false">google-sans-flex</string>
+    <string name="font_sans_serif_light" translatable="false">google-sans-flex</string>
+    <string name="font_sans_serif_thin" translatable="false">google-sans-flex</string>
+    <string name="font_sans_serif_condensed" translatable="false">google-sans-flex</string>
+</resources>
