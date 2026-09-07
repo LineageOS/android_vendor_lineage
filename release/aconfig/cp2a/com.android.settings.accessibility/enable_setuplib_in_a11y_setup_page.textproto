@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.settings.accessibility"
+  name: "enable_setuplib_in_a11y_setup_page"
+  state: ENABLED
+  permission: READ_ONLY
+}
