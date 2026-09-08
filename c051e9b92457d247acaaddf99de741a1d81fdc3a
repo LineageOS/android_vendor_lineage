@@ -33,6 +33,23 @@
       "message": "Fixes build on Fedora Rawhide",
       "revId": "c051e9b92457d247acaaddf99de741a1d81fdc3a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "564aa207_2e51580b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-08T08:46:05Z",
+      "side": 1,
+      "message": "Should test this with various kernels to be sure nothing breaks",
+      "revId": "c051e9b92457d247acaaddf99de741a1d81fdc3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
