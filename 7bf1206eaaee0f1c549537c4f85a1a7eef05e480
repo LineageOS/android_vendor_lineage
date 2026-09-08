@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66477578_3b3e9625",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-08T09:19:02Z",
+      "side": 1,
+      "message": "I have seen no regressions while building AML devkits.",
+      "revId": "7bf1206eaaee0f1c549537c4f85a1a7eef05e480",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
