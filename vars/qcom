@@ -35,3 +35,5 @@ qcom_group_revision[pakala-vendor]=LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
 qcom_group_revision[pakala-video]=VIDEO.LA.5.0.r1-07300-pakala.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/-/tags?sort=updated_desc&search=WLAN.LA.1.0.r1
 qcom_group_revision[pakala-wlan]=WLAN.LA.1.0.r1-09600-pakala.0
+# https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.16.2.0.r1
+qcom_group_revision[kaanapali-vendor]=LA.VENDOR.16.2.0.r1-17800-kaanapali.0
