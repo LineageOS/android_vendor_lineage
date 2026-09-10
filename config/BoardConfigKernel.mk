@@ -59,6 +59,7 @@
 #                                          TARGET_KERNEL_CROSS_COMPILE_PREFIX
 #                                          is in PATH
 #   USE_CCACHE                         = Enable ccache (global Android flag)
+#   USE_RBE                            = Enable RBE (global Android flag)
 
 include vendor/lineage/build/core/utils.mk
 
@@ -111,6 +112,30 @@ ifneq ($(USE_CCACHE),)
         # Android 10+ deprecates use of a build ccache. Only system installed ones are now allowed
         CCACHE_BIN := $(CCACHE_EXEC)
     endif
+endif
+
+# build/make/core/rbe.mk is only read while dumping the product config, so the
+# rewrapper flags have to be recreated here
+KERNEL_RBE_WRAPPER :=
+ifneq ($(filter-out false,$(USE_REWRAPPER)),)
+    # An out dir outside of the tree can't be a remote input or output
+    ifneq ($(filter $(BUILD_TOP)/%,$(abspath $(OUT_DIR))),)
+        KERNEL_RBE_WRAPPER := $(abspath $(if $(RBE_DIR),$(RBE_DIR),prebuilts/remoteexecution-client/live))/rewrapper
+        KERNEL_RBE_WRAPPER += --labels=type=compile,lang=cpp,compiler=clang
+        KERNEL_RBE_WRAPPER += --env_var_allowlist=PWD
+        KERNEL_RBE_WRAPPER += --exec_strategy=$(if $(RBE_CXX_EXEC_STRATEGY),$(RBE_CXX_EXEC_STRATEGY),local)
+        KERNEL_RBE_WRAPPER += --compare=$(if $(RBE_CXX_COMPARE),$(RBE_CXX_COMPARE),false)
+        ifneq ($(RBE_platform),)
+            KERNEL_RBE_WRAPPER += --platform=$(RBE_platform),Pool=$(if $(RBE_CXX_POOL),$(RBE_CXX_POOL),default)
+        endif
+    endif
+endif
+
+# ccache can't cache anything behind another wrapper, so it gives way to RBE
+ifneq ($(KERNEL_RBE_WRAPPER),)
+    KERNEL_CC_WRAPPER := $(BUILD_TOP)/vendor/lineage/build/tools/kernel_rbe_cc.sh
+else
+    KERNEL_CC_WRAPPER := $(CCACHE_BIN)
 endif
 
 # Clear this first to prevent accidental poisoning from env

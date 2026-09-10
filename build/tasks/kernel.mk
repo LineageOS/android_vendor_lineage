@@ -267,7 +267,7 @@ ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
     endif
     PATH_OVERRIDE += PATH=$(TARGET_KERNEL_CLANG_PATH)/bin:$$PATH
     ifeq ($(KERNEL_CC),)
-        KERNEL_CC := CC="$(CCACHE_BIN) clang" LD=ld.lld
+        KERNEL_CC := CC="$(KERNEL_CC_WRAPPER) clang" LD=ld.lld
     endif
 endif
 
@@ -277,6 +277,12 @@ endif
 
 # System tools are no longer allowed on 10+
 PATH_OVERRIDE += $(TOOLS_PATH_OVERRIDE)
+
+ifneq ($(KERNEL_RBE_WRAPPER),)
+    # The kernel is built from KERNEL_OUT, not from the top of the tree
+    PATH_OVERRIDE += RBE_exec_root=$(BUILD_TOP)
+    PATH_OVERRIDE += KERNEL_RBE_WRAPPER="$(KERNEL_RBE_WRAPPER)"
+endif
 
 ifneq (,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
     KERNEL_MAKE_FLAGS += DTC_EXT=$(KERNEL_BUILD_OUT_PREFIX)$(DTC)
