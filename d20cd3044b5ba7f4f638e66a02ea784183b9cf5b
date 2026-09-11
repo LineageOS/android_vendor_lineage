@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "794813eb_2f229c03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-11T13:38:07Z",
+      "side": 1,
+      "message": "Although it\u0027s fine on sm8750 and sm8550, this breaks builds on sm8250. Didn\u0027t try on sm8350 yet.",
+      "revId": "d20cd3044b5ba7f4f638e66a02ea784183b9cf5b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
