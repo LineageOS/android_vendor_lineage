@@ -33,6 +33,23 @@
       "message": "Other than \"this is ugly\", there\u0027s not much else you can do ^^",
       "revId": "0e4a257e15e7a1dc3c51dc2c44e345a140bacc91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93f180a9_dd9d3642",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-09-11T08:09:33Z",
+      "side": 1,
+      "message": "need +2 on 24.0 pick too btw.",
+      "revId": "0e4a257e15e7a1dc3c51dc2c44e345a140bacc91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
