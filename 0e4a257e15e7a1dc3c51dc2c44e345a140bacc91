@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d054545_1ac133e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-09-11T07:25:46Z",
+      "side": 1,
+      "message": "i tested this locally and on build3, seems to work properly.",
+      "revId": "0e4a257e15e7a1dc3c51dc2c44e345a140bacc91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
