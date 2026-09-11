@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c4cc6f9_71483407",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-11T13:18:40Z",
+      "side": 1,
+      "message": "Something in the rest of the chain broke legacy inline kernel builds.",
+      "revId": "f9b465278bd9567c14123d99601d284d07aa1dd7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
