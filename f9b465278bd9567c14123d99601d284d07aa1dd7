@@ -16,6 +16,24 @@
       "message": "Something in the rest of the chain broke legacy inline kernel builds.",
       "revId": "f9b465278bd9567c14123d99601d284d07aa1dd7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d314392_c6fe9daf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-11T13:19:27Z",
+      "side": 1,
+      "message": "\u003e  hardware/qcom-caf/sm8250/display/sde-drm/drm_dpps_mgr_imp.cpp:528:69: error: use of undeclared identifier \u0027MAP_SHARED\u0027 528 | uva \u003d drm_mmap(0, buffers-\u003ebuffer_size, PROT_READ | PROT_WRITE, MAP_SHARED, | ^~~~~~~~~~ 1 error generated.",
+      "parentUuid": "8c4cc6f9_71483407",
+      "revId": "f9b465278bd9567c14123d99601d284d07aa1dd7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
