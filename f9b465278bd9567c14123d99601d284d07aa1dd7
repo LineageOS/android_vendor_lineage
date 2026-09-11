@@ -34,6 +34,24 @@
       "parentUuid": "8c4cc6f9_71483407",
       "revId": "f9b465278bd9567c14123d99601d284d07aa1dd7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd2de336_46c3be51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-11T13:38:40Z",
+      "side": 1,
+      "message": "The breaking change is: https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/498056/",
+      "parentUuid": "6d314392_c6fe9daf",
+      "revId": "f9b465278bd9567c14123d99601d284d07aa1dd7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
