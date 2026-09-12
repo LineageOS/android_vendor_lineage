@@ -33,6 +33,23 @@
       "message": "Sorry, I wrote it in the wrong place.",
       "revId": "790f19378ca98c60b09aee5c45c943575dd80f47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9a4a79d_4edb06ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35591
+      },
+      "writtenOn": "2026-09-12T21:32:16Z",
+      "side": 1,
+      "message": "I just tried on lineage-23.2 with the chain not merged in qcom_sm8150 picked in oneplus_sm8150 and wifi still works on hotdogb. Could you define \"Wifi breaks\" please ? Maybe I am doing something wrong trying to reproduce your issue.",
+      "revId": "790f19378ca98c60b09aee5c45c943575dd80f47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
