@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b3d2ab7_f9f2c655",
+        "filename": "build/tools/select_kernel_libclang.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-12T23:59:13Z",
+      "side": 1,
+      "message": "this isn;t spdx, and drop year",
+      "revId": "72fa4fba76de6301567a1339669f2d74b83bf11b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
