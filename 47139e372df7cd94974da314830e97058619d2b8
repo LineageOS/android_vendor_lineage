@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da5d19a1_a5321c28",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-14T10:53:46Z",
+      "side": 1,
+      "message": "Need to checkout, why expressive breaks, in the screen, since this is also coming from Settings on SUW",
+      "revId": "47139e372df7cd94974da314830e97058619d2b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
