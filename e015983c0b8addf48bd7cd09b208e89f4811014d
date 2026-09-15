@@ -74,6 +74,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "693a97a7_396ffa0f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 37877
+      },
+      "writtenOn": "2026-09-15T22:44:29Z",
+      "side": 1,
+      "message": "thanks - that explains it\nmy check only covered wm/shell/desktopmode and windowdecor in frameworks_base\nso I missed Launcher3 entirely... \nthere are ~12 taskbar/desktop commits on lineage-23.2\u0027s Launcher3 since December\n(the 2026-01-09 taskbar cluster especially) which fits what you describe",
+      "parentUuid": "02a421de_c784983b",
+      "revId": "e015983c0b8addf48bd7cd09b208e89f4811014d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "ac8fd379_86cffabe",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 2
