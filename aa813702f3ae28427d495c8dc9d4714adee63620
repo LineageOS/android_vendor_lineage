@@ -87,6 +87,24 @@
       "message": "Maybe this can\u0027t be here because nicole has a telephony variant.",
       "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8f94e776_c25fe3df",
+        "filename": "config/common_handheld_console.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-15T18:38:43Z",
+      "side": 1,
+      "message": "yeahhhh I think it can\u0027t due to Nicole.",
+      "parentUuid": "77d31de8_23b0567f",
+      "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
