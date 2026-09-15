@@ -109,6 +109,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c06833ac_20f13686",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-09-15T20:13:10Z",
+      "side": 1,
+      "message": "Also, won\u0027t removing LineageOS apps here also require us to set up guards in build repo? Since doing so will result in AOSP versions being built?\n\nhttps://github.com/LineageOS/android_build/blob/5a841be38fec92de9a8a408cf5812ca748ccc02e/target/product/handheld_product.mk#L24",
+      "parentUuid": "27a723d1_97b834f2",
+      "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "77d31de8_23b0567f",
         "filename": "config/common_handheld_console.mk",
         "patchSetId": 1
