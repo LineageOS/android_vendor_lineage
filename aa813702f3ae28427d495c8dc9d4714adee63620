@@ -127,6 +127,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "935cff30_fb542321",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-15T20:39:17Z",
+      "side": 1,
+      "message": "Both comments valid BUT:\n\n* `Screenrecord` - The app lets you trigger screen record in a nice way and view them (another thing gallery is important for)\n* `build/ duplication` - Yup fair point",
+      "parentUuid": "c06833ac_20f13686",
+      "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "77d31de8_23b0567f",
         "filename": "config/common_handheld_console.mk",
         "patchSetId": 1
