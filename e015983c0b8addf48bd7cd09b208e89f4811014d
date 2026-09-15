@@ -56,6 +56,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "02a421de_c784983b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-15T17:27:37Z",
+      "side": 1,
+      "message": "persistent window management bar only shows in apps now \nnot on home screen (likely Launcher3 changes)\nit\u0027s no longer on screen in full screen mode (was super annoying)\nit lets you pin apps side by side kind of intuitively or pull them into windowed mode",
+      "parentUuid": "69e9d1c8_c73766b1",
+      "revId": "e015983c0b8addf48bd7cd09b208e89f4811014d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "ac8fd379_86cffabe",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 2
