@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "39f694b4_f5271497",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-15T18:38:26Z",
+      "side": 1,
+      "message": "So, comparing to `common_mobile_full.mk` you removed:\n* `Camelot` - PDF viewer, seems worth it to keep to me...\n* `Etar` - Eh, sure, kill it I guess but I see no reason to disclude it - I suppose an argument can be made.\n* `Profiles` - Still _very_ valid IMO?\n* `Glimpse` - Doesn\u0027t that break a lot of things having no gallery or image editor?\n* `Recorder` - Still _very_ valid IMO? - Screen recording games.\n* `Seedvault` - Backup, rather useful.\n* `Twelve` - Music player - seems still useful to me.\n* `Aperture` - Sure, kill it.\n\nThis was also removed, which should be restored if Recorder is:\n```\n# Media\nPRODUCT_PRODUCT_PROPERTIES +\u003d \\\n    media.recorder.show_manufacturer_and_model\u003dtrue\n```\n\nIf we include `common_mobile` directly you get most of what you want.\n\nI think refactoring this to to copy `common_mobile_full.mk` -\u003e `common_handheld_console.mk`, and keep inheriting `common_mobile.mk` makes way more sense.",
+      "parentUuid": "0c983960_bb0d5c67",
+      "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "77d31de8_23b0567f",
         "filename": "config/common_handheld_console.mk",
         "patchSetId": 1
