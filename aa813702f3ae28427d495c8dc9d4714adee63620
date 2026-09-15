@@ -91,6 +91,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "27a723d1_97b834f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-09-15T20:07:15Z",
+      "side": 1,
+      "message": "Is recorder actually responsible for screen recording? Iirc, it isn\u0027t. At least after disabling the application, I am still able to screen record.",
+      "parentUuid": "39f694b4_f5271497",
+      "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "77d31de8_23b0567f",
         "filename": "config/common_handheld_console.mk",
         "patchSetId": 1
