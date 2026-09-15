@@ -72,6 +72,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6701bedb_3ae171d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-09-15T19:47:39Z",
+      "side": 1,
+      "message": "I had started working on this here:\nhttps://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/488187",
+      "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "77d31de8_23b0567f",
