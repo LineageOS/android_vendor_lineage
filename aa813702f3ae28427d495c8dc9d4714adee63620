@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7b0b8c0a_2cd67319",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-15T17:32:27Z",
+      "side": 1,
+      "message": "can we get a tldr of what was cut here? When last discussed I didn\u0027t see the point.",
+      "parentUuid": "e7a5e144_0af58c0d",
+      "revId": "aa813702f3ae28427d495c8dc9d4714adee63620",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "77d31de8_23b0567f",
         "filename": "config/common_handheld_console.mk",
         "patchSetId": 1
