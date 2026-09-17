@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260805.005"
+readonly build_id="CP3A.260905.009"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15828068"
+readonly build_number="16091614"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/stallion-cp2a.260805.005-factory-1504a3b3.zip"
-readonly image_sha256="1504a3b3df9c141cf77fefcb0a40d8e6d87583aa8b58009c73625eba280f5dfd"
+readonly image_url="https://dl.google.com/dl/android/aosp/stallion-cp3a.260905.009-factory-5720d477.zip"
+readonly image_sha256="5720d477bb8807e87fd66f4eeee6a35755e0fc3be84c2f97ecd280c0a4ff71eb"
 
-readonly flash_url="https://flash.android.com/build/15828068?target=stallion-user&signed"
+readonly flash_url="https://flash.android.com/build/16091614?target=stallion-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/stallion-ota-cp2a.260805.005-65b50337.zip"
-readonly ota_sha256="65b50337bbd451af0eceee60cf725b6b9d1339ac3b72f59512548da2873a0cba"
+readonly ota_url="https://dl.google.com/dl/android/aosp/stallion-ota-cp3a.260905.009-4fb83c90.zip"
+readonly ota_sha256="4fb83c90ce6b7e6ca6807a126b8cf4213f36d60c67e334d577188df25dda143b"
