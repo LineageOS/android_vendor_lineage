@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260805.005"
+readonly build_id="CP3A.260905.009"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15828068"
+readonly build_number="16091614"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tokay-cp2a.260805.005-factory-9b3ac3f4.zip"
-readonly image_sha256="9b3ac3f4991d41980036113397d4830fbf9fe2b55b58ad5bd983e8f9eb2dacbe"
+readonly image_url="https://dl.google.com/dl/android/aosp/tokay-cp3a.260905.009-factory-53f8599e.zip"
+readonly image_sha256="53f8599e4ec3ceb9a34a8e7a0faca730be1915da814adf3a6a1234a6b4588149"
 
-readonly flash_url="https://flash.android.com/build/15828068?target=tokay-user&signed"
+readonly flash_url="https://flash.android.com/build/16091614?target=tokay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-cp2a.260805.005-46d1d8e0.zip"
-readonly ota_sha256="46d1d8e0dba7720e8060be731421b4f5e296ec908a7c6851614136e74891dd2f"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tokay-ota-cp3a.260905.009-7aa41d47.zip"
+readonly ota_sha256="7aa41d479bfcfd6528b85ec1d3ff81795e397715a83e0940ec6ec9648dcaef3f"

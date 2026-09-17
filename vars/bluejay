@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260705.006"
+readonly build_id="CP3A.260905.009"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15641320"
+readonly build_number="16091614"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-cp2a.260705.006-factory-03992adc.zip"
-readonly image_sha256="03992adc723742de3fa12c6a40fb19ecbcd7f388a9eaacf93e27af466a79cb33"
+readonly image_url="https://dl.google.com/dl/android/aosp/bluejay-cp3a.260905.009-factory-a69bd72a.zip"
+readonly image_sha256="a69bd72a24ab4f29754e13dd24b8dfd6d26ffb220f9299f998ddbe8b58608d7d"
 
-readonly flash_url="https://flash.android.com/build/15641320?target=bluejay-user&signed"
+readonly flash_url="https://flash.android.com/build/16091614?target=bluejay-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-cp2a.260705.006-4d72e3fe.zip"
-readonly ota_sha256="4d72e3fe3f8c734fbb877debbe8c011d0194a894ffd847b95932394e24b6d72b"
+readonly ota_url="https://dl.google.com/dl/android/aosp/bluejay-ota-cp3a.260905.009-1595f043.zip"
+readonly ota_sha256="1595f043ec6bcd5c682efdd415c75f9fc787344f7b9e812ee8de7e967928dfb4"
