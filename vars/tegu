@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260805.005"
+readonly build_id="CP3A.260905.009"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15828068"
+readonly build_number="16091614"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tegu-cp2a.260805.005-factory-a3582e12.zip"
-readonly image_sha256="a3582e120cf59e54ffbbe7a9d430987dd4d9ffb3ce691f9003724d80d4545026"
+readonly image_url="https://dl.google.com/dl/android/aosp/tegu-cp3a.260905.009-factory-0c2f9053.zip"
+readonly image_sha256="0c2f9053bf064b09483c937cf16f4824371afe92fa057029d6f9237668d1c0d7"
 
-readonly flash_url="https://flash.android.com/build/15828068?target=tegu-user&signed"
+readonly flash_url="https://flash.android.com/build/16091614?target=tegu-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tegu-ota-cp2a.260805.005-76b0d698.zip"
-readonly ota_sha256="76b0d698b2a405fae17677c65c34ba6ca9d79cda4dc01f4a8a0ef61c8803479c"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tegu-ota-cp3a.260905.009-6750e3df.zip"
+readonly ota_sha256="6750e3df5f8d0723fd2f16dc35722241c23dd84e6d1306009cc675967cdf14eb"

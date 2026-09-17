@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP2A.260805.005"
+readonly build_id="CP3A.260905.009"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="15828068"
+readonly build_number="16091614"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/frankel-cp2a.260805.005-factory-0e7d4fbb.zip"
-readonly image_sha256="0e7d4fbb6cfb16fb03d5726afc11c5ab6fc912c09b5bb44e0a3c20812bc487c7"
+readonly image_url="https://dl.google.com/dl/android/aosp/frankel-cp3a.260905.009-factory-cf112c9e.zip"
+readonly image_sha256="cf112c9e669f9dbce9553760f2c584f4a3ebc52c8a6a43616a8fe4e564dbdbb8"
 
-readonly flash_url="https://flash.android.com/build/15828068?target=frankel-user&signed"
+readonly flash_url="https://flash.android.com/build/16091614?target=frankel-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/frankel-ota-cp2a.260805.005-25aa98f7.zip"
-readonly ota_sha256="25aa98f7d40faa109787c22eb0a09a2fada8a8c6d6da12141b10ce351013fb41"
+readonly ota_url="https://dl.google.com/dl/android/aosp/frankel-ota-cp3a.260905.009-b52e6d20.zip"
+readonly ota_sha256="b52e6d20e20db9eeb2ee1c974ab2c77d08bf8982341ce0bcebd538d71afaddb1"
