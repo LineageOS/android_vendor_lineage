@@ -16,6 +16,23 @@
       "message": "While this is an user breaking change, google explicitly decided it was worth breaking it",
       "revId": "91a9adc978dc571651ecb91302dadeb9158b9638",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1604d495_181f6eb0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-09-18T21:02:07Z",
+      "side": 1,
+      "message": "Yeah, I don\u0027t see why this should be disabled.",
+      "revId": "91a9adc978dc571651ecb91302dadeb9158b9638",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
