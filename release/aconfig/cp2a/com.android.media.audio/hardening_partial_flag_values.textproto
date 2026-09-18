@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.media.audio"
+  name: "hardening_partial"
+  state: DISABLED
+  permission: READ_ONLY
+}
