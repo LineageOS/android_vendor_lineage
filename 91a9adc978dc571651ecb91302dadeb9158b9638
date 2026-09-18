@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ff1e454_f78060e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-18T20:48:45Z",
+      "side": 1,
+      "message": "While this is an user breaking change, google explicitly decided it was worth breaking it",
+      "revId": "91a9adc978dc571651ecb91302dadeb9158b9638",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
