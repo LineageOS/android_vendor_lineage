@@ -751,7 +751,9 @@ ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
 KERNEL_PATH := $(abspath $(BUILD_TOP)/kernel/platform/kernel-$(TARGET_KERNEL_VERSION))
 KERNEL_BAZEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_BAZEL_OUT
 
-ifeq ($(call is-version-lower-or-equal,$(TARGET_KERNEL_VERSION),6.1),true)
+ifeq ($(TARGET_KERNEL_VERSION),mainline)
+KERNEL_REPO_MANIFEST := $(abspath $(KERNEL_PATH)):$(abspath $(KERNEL_OUT)/manifest.xml)
+else ifeq ($(call is-version-lower-or-equal,$(TARGET_KERNEL_VERSION),6.1),true)
 KERNEL_REPO_MANIFEST := $(abspath $(KERNEL_OUT)/manifest.xml)
 else
 KERNEL_REPO_MANIFEST := $(abspath $(KERNEL_PATH)):$(abspath $(KERNEL_OUT)/manifest.xml)
