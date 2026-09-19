@@ -468,19 +468,31 @@ class MergedDeviceTree(object):
 		for mdt in self.merged_devicetrees:
 			yield mdt.save(name, out_dir)
 
-def find_symbol(dtbs, symbol):
-	for symbols, _, dt in dtbs:
-		if symbol in symbols:
-			return dt
+def find_symbol(dtbs, symbol, consumer_info=None):
+        for symbols, _, dt in dtbs:
+                if symbol not in symbols:
+                        continue
+
+                if consumer_info is not None:
+                        provider_info = DeviceTree(dt)
+                        intersection = consumer_info & provider_info
+                        if not intersection.has_any_properties():
+                                continue
+
+                return dt
 
 def create_adjacency(dtbs):
-	graph = {}
-	for _, fixups, dt in dtbs:
-		graph[dt] = set()
-		for fixup in fixups:
-			graph[dt].add(find_symbol(dtbs, fixup))
-	return graph
+        graph = {}
+        infos = {dt: DeviceTree(dt) for _, _, dt in dtbs}
 
+        for _, fixups, dt in dtbs:
+                graph[dt] = set()
+                for fixup in fixups:
+                        provider = find_symbol(dtbs, fixup, infos[dt])
+                        if provider is not None and provider != dt:
+                                graph[dt].add(provider)
+
+        return graph
 def parse_tech_dt_files(folder):
 	dtbs = []
 	for root, dirs, files in os.walk(folder):
