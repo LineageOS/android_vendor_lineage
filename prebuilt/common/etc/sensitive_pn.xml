@@ -3171,7 +3171,52 @@
     <!--Indonesia-->
     <sensitivePN network="510">
         <item>
+            <number>192</number>
+            <name>National Women and Children's Violence and Abuse Helpline</name>
+            <categories>women|children|violence|abuse</categories>
+            <organization>kemenpppa</organization>
+        </item>
+        <item>
             <number>0213903963</number>
+            <name>National Women's Violence and Abuse Helpline</name>
+            <categories>women|violence|abuse</categories>
+            <organization>Komnas Perempuan</organization>
+        </item>
+        <item>
+            <number>184</number>
+            <name>National Narcotics Agency</name>
+            <categories>alcohol|drugs|addiction</categories>
+            <organization>BNN</organization>
+        </item>
+        <item>
+            <number>02180871566</number>
+            <name>National Narcotics Agency</name>
+            <categories>alcohol|drugs|addiction</categories>
+            <organization>BNN</organization>
+        </item>
+        <item>
+            <number>02180871567</number>
+            <name>National Narcotics Agency</name>
+            <categories>alcohol|drugs|addiction</categories>
+            <organization>BNN</organization>
+        </item>
+        <item>
+            <number>0213925230</number>
+            <name>National Human Rights Helpline</name>
+            <categories>human rights</categories>
+            <organization>Komnas HAM</organization>
+        </item>
+        <item>
+            <number>171</number>
+            <name>National Social Helpline</name>
+            <categories>social support</categories>
+            <organization>kemensos</organization>
+        </item>
+        <item>
+            <number>0215253004</number>
+            <name>National Legal Aid helpline</name>
+            <categories>human rights|legal aid</categories>
+            <organization>kemenkum</organization>
         </item>
     </sensitivePN>
     <!--Philippines-->
