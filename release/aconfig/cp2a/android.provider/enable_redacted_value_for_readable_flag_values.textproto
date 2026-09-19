@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.provider"
+  name: "enable_redacted_value_for_readable"
+  state: ENABLED
+  permission: READ_ONLY
+}
