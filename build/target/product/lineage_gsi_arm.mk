@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+TARGET_SUPPORTS_32_BIT_APPS := true
+
 $(call inherit-product, device/generic/common/gsi_arm.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
