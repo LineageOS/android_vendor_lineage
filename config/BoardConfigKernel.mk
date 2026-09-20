@@ -146,6 +146,8 @@ ifeq ($(TARGET_KERNEL_UNSAFE_DDK_HEADERS),true)
     KERNEL_BAZEL_FLAGS += --//build/kernel/kleaf:allow_ddk_unsafe_headers
 endif
 
+KERNEL_BAZEL_FLAGS += --remote_cache=grpc://127.0.0.1:9092
+
 # Add back threads, ninja cuts this to $(getconf _NPROCESSORS_ONLN)/2
 KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
 
