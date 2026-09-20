@@ -762,24 +762,12 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 	$(hide) rm -rf $(KERNEL_OUT)
 	@mkdir -p $(KERNEL_OUT) $(KERNEL_BAZEL_OUT)
 	$(hide) cd $(KERNEL_PATH) && \
-		python3 $(BUILD_TOP)/.repo/repo/repo manifest -o - -r \
-		| awk -v pat="kernel/platform/kernel-$(TARGET_KERNEL_VERSION)" ' \
-			/^  <project.*\/>$$/    { if (index($$0, pat)) { gsub(pat "/", ""); print }; next } \
-			/^  <project/          { keep = index($$0, pat) > 0; if (keep) { gsub(pat "/", ""); print }; buf = 1; next } \
-			buf && /  <\/project>/ { if (keep) { gsub(pat "/", ""); print }; buf = 0; next } \
-			buf                    { if (keep) { gsub(pat "/", ""); print }; next } \
-			                       { print } \
-		' \
-		> $(abspath $(KERNEL_OUT))/manifest.xml
-	$(hide) cd $(KERNEL_PATH) && \
 		./tools/bazel \
 			--output_user_root=$(abspath $(KERNEL_BAZEL_OUT)) \
 			--output_root=$(abspath $(KERNEL_BAZEL_OUT)) \
 			run \
 			--experimental_convenience_symlinks=ignore \
 			--cpu=$(KERNEL_ARCH) \
-			--repo_manifest $(KERNEL_REPO_MANIFEST) \
-			--config=stamp \
 			$(KERNEL_BAZEL_FLAGS) \
 			//$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist \
 			-- --destdir=$(abspath $(KERNEL_OUT))
