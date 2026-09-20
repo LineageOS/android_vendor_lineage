@@ -761,15 +761,8 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 	@echo "Building $(BOARD_KERNEL_IMAGE_NAME)"
 	$(hide) rm -rf $(KERNEL_OUT)
 	@mkdir -p $(KERNEL_OUT) $(KERNEL_BAZEL_OUT)
-	$(hide) cd $(KERNEL_PATH) && \
-		python3 $(BUILD_TOP)/.repo/repo/repo manifest -o - -r \
-		| awk -v pat="kernel/platform/kernel-$(TARGET_KERNEL_VERSION)" ' \
-			/^  <project.*\/>$$/    { if (index($$0, pat)) { gsub(pat "/", ""); print }; next } \
-			/^  <project/          { keep = index($$0, pat) > 0; if (keep) { gsub(pat "/", ""); print }; buf = 1; next } \
-			buf && /  <\/project>/ { if (keep) { gsub(pat "/", ""); print }; buf = 0; next } \
-			buf                    { if (keep) { gsub(pat "/", ""); print }; next } \
-			                       { print } \
-		' \
+	$(hide) cd $(BUILD_TOP) && \
+		python3 vendor/lineage/build/tools/kernel_kleaf_manifest.py $(TARGET_KERNEL_VERSION) \
 		> $(abspath $(KERNEL_OUT))/manifest.xml
 	$(hide) cd $(KERNEL_PATH) && \
 		./tools/bazel \
