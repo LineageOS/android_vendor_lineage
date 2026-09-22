@@ -18,6 +18,9 @@ PRODUCT_PACKAGES += \
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
     Aperture
+else
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/lineage/overlay/no_camera
 endif
 
 ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
