@@ -142,6 +142,14 @@ endif
 KERNEL_BAZEL_FLAGS :=
 KERNEL_MAKE_FLAGS :=
 
+ifneq ($(filter-out false,$(USE_RBE)),)
+    # Can't connect over TCP inside nsjail
+    ifneq ($(filter unix:%,$(RBE_service)),)
+        KERNEL_BAZEL_FLAGS += --remote_cache=grpc://localhost
+        KERNEL_BAZEL_FLAGS += --remote_proxy=$(RBE_service)
+    endif
+endif
+
 ifeq ($(TARGET_KERNEL_UNSAFE_DDK_HEADERS),true)
     KERNEL_BAZEL_FLAGS += --//build/kernel/kleaf:allow_ddk_unsafe_headers
 endif
