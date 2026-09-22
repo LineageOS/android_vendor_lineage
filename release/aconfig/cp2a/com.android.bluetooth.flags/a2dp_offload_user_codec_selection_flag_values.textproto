@@ -1,0 +1,6 @@
+flag_value {
+  package: "com.android.bluetooth.flags"
+  name: "a2dp_offload_user_codec_selection"
+  state: ENABLED
+  permission: READ_ONLY
+}
