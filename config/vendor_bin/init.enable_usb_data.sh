@@ -33,6 +33,20 @@ main() {
     local data_enabled_path="$1"
     local data_enabled_value="$2"
 
+    # Newer dwc3 nodes replace usb_data_enabled with dynamic_disable, which
+    # expects the inverted value (1 = data disabled).
+    if [ ! -e "$data_enabled_path" ]; then
+        local dynamic_disable_path="${data_enabled_path%/*}/dynamic_disable"
+        if [ -e "$dynamic_disable_path" ]; then
+            data_enabled_path="$dynamic_disable_path"
+            if [ "$data_enabled_value" = "1" ]; then
+                data_enabled_value=0
+            else
+                data_enabled_value=1
+            fi
+        fi
+    fi
+
     # Enable or disable USB data.
     write "$data_enabled_path" "$data_enabled_value"
     local err=$?
