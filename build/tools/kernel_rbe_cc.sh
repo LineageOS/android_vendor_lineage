@@ -9,6 +9,10 @@
 # reclient only understands an actual compilation, so everything else kbuild
 # runs the compiler for is executed directly, and the -Wp,-MD dependency file
 # has to be declared by hand since reclient doesn't derive it as an output.
+#
+# Nor does reclient follow .incbin, so a source that embeds a file, like the
+# module signing certificate, would be restored from the cache with whatever
+# that file contained when the entry was made. Those are executed directly too.
 
 compile=
 depfile=
@@ -31,7 +35,8 @@ for arg in "$@"; do
     esac
 done
 
-if [ -z "$KERNEL_RBE_WRAPPER" ] || [ -z "$compile" ] || [ ! -f "$src" ]; then
+if [ -z "$KERNEL_RBE_WRAPPER" ] || [ -z "$compile" ] || [ ! -f "$src" ] ||
+        grep -q '\.incbin' "$src"; then
     exec "$@"
 fi
 
