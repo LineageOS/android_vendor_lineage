@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f75e37c8_bf202ee9",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3177,
+      "author": {
+        "id": 36241
+      },
+      "writtenOn": "2026-09-25T01:35:31Z",
+      "side": 1,
+      "message": "Might want to update these to follow proper EYD (Indonesian spelling standard) capitalization.\n```suggestion\n            \u003corganization\u003eKemenPPPA\u003c/organization\u003e\n```",
+      "revId": "b8ee01b2b8f7d518625d565321c2a6b060d32d2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "736d26ca_3673fd3f",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3213,
+      "author": {
+        "id": 36241
+      },
+      "writtenOn": "2026-09-25T01:35:31Z",
+      "side": 1,
+      "message": "Might want to update these to follow proper EYD (Indonesian spelling standard) capitalization.\n```suggestion\n            \u003corganization\u003eKemensos\u003c/organization\u003e\n```",
+      "revId": "b8ee01b2b8f7d518625d565321c2a6b060d32d2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "602e94c9_9763393c",
+        "filename": "prebuilt/common/etc/sensitive_pn.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3219,
+      "author": {
+        "id": 36241
+      },
+      "writtenOn": "2026-09-25T01:35:31Z",
+      "side": 1,
+      "message": "Might want to update these to follow proper EYD (Indonesian spelling standard) capitalization.\n```suggestion\n            \u003corganization\u003eKemenkum\u003c/organization\u003e\n```",
+      "revId": "b8ee01b2b8f7d518625d565321c2a6b060d32d2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
