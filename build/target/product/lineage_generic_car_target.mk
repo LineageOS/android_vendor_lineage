@@ -22,6 +22,3 @@ TARGET_FORCE_OTA_PACKAGE := true
 
 # Disable soong defined system image for now
 USE_SOONG_DEFINED_SYSTEM_IMAGE := false
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/permissions/android.software.credentials.xml
