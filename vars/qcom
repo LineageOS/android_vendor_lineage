@@ -1,6 +1,6 @@
 declare -A qcom_group_revision
-# https://git.codelinaro.org/clo/la/platform/frameworks/base/-/tags?sort=updated_desc&search=LA.QSSI.16.0.r1
-qcom_group_revision[qssi]=LA.QSSI.16.0.r1-14000-qssi.0
+# https://git.codelinaro.org/clo/la/platform/frameworks/base/-/tags?sort=updated_desc&search=LA.QSSI.17.0.r1
+qcom_group_revision[qssi]=LA.QSSI.17.0.r1-11100-qssi.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.10.6.2.r1
 qcom_group_revision[msm8953]=LA.UM.10.6.2.r1-02500-89xx.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio/-/tags?sort=updated_desc&search=LA.UM.12.2.1.r1
@@ -16,30 +16,30 @@ qcom_group_revision[lahaina]=LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.1.0.r1
 qcom_group_revision[waipio-vendor]=LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.15.4.1.r1
-qcom_group_revision[waipio-6.6-vendor]=LA.VENDOR.15.4.1.r1-10900-WAIPIO.QSSI16.0
-# https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.8.0.r1
+qcom_group_revision[waipio-6.6-vendor]=LA.VENDOR.15.4.1.r1-11800-WAIPIO.QSSI16.0
+# https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.8.0.r1-
 qcom_group_revision[kailua-audio]=AUDIO.LA.8.0.r1-13000-KAILUA.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.13.2.0.r1
 qcom_group_revision[kailua-vendor]=LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO.LA.9.0.r1
-qcom_group_revision[lanai-audio]=AUDIO.LA.9.0.r1-08900-lanai.0
+qcom_group_revision[lanai-audio]=AUDIO.LA.9.0.r1-09000-lanai.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.14.3.0.r1
-qcom_group_revision[lanai-vendor]=LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
+qcom_group_revision[lanai-vendor]=LA.VENDOR.14.3.0.r1-23400-lanai.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.4.0.r2
-qcom_group_revision[lanai-video]=VIDEO.LA.4.0.r2-08200-lanai.0
+qcom_group_revision[lanai-video]=VIDEO.LA.4.0.r2-08400-lanai.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO_HANDSET.LA.10.0.r1
 qcom_group_revision[pakala-audio]=AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.15.4.0.r1
-qcom_group_revision[pakala-vendor]=LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
+qcom_group_revision[pakala-vendor]=LA.VENDOR.15.4.0.r1-21600-pakala.QSSI16.0
 # https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO.LA.5.0.r1
-qcom_group_revision[pakala-video]=VIDEO.LA.5.0.r1-07300-pakala.0
+qcom_group_revision[pakala-video]=VIDEO.LA.5.0.r1-07400-pakala.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/-/tags?sort=updated_desc&search=WLAN.LA.1.0.r1
 qcom_group_revision[pakala-wlan]=WLAN.LA.1.0.r1-09600-pakala.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/audio-ar/-/tags?sort=updated_desc&search=AUDIO_HANDSET.LA.11.0.r1
-qcom_group_revision[kaanapali-audio]=AUDIO_HANDSET.LA.11.0.r1-12100-kaanapali.0
+qcom_group_revision[kaanapali-audio]=AUDIO_HANDSET.LA.11.0.r1-12300-kaanapali.0
 # https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr/-/tags?sort=updated_desc&search=LA.VENDOR.16.2.0.r1
-qcom_group_revision[kaanapali-vendor]=LA.VENDOR.16.2.0.r1-17800-kaanapali.0
+qcom_group_revision[kaanapali-vendor]=LA.VENDOR.16.2.0.r1-20500-kaanapali.0
 # https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wfd-commonsys/-/tags?sort=updated_desc&search=VIDEO_HANDSET.LA.1.0.r1
 qcom_group_revision[kaanapali-video]=VIDEO_HANDSET.LA.1.0.r1-12400-kaanapali.0
 # https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan/-/tags?sort=updated_desc&search=WLAN.LA.2.0.r3
-qcom_group_revision[kaanapali-wlan]=WLAN.LA.2.0.r3-09900-kaanapali.0
+qcom_group_revision[kaanapali-wlan]=WLAN.LA.2.0.r3-10600-kaanapali.0
