@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(PRODUCT_IS_ATV),)
 PRODUCT_PACKAGES += \
     ExactCalculator \
+    Gallery2 \
     Jelly
 endif
 
