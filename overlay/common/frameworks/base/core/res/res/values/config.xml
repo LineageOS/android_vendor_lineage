@@ -178,6 +178,8 @@
 
     <!-- Whether glanceable hub is enabled by default. -->
     <bool name="config_glanceableHubEnabledByDefault">true</bool>
+<<<<<<< PATCH SET (cc9fddf9a8c3575e1558dae00328bc0b069cebca Revert "overlay: Default to navBar gesture")
+=======
 
     <!-- Controls the navigation bar interaction mode:
          0: 3 button mode (back, home, overview buttons)
@@ -194,4 +196,5 @@
     <string-array name="theming_defaults" translatable="false">
         <item>*|TONAL_SPOT|#63a3ad</item>
     </string-array>
+>>>>>>> BASE      (6c2a3a84facab437e695364cacfe9655baaa9fc6 release: Enable new Vision Settings in Accessibility)
 </resources>
