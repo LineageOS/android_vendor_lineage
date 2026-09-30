@@ -50,6 +50,23 @@
       "message": "ugh. didn\u0027t even think to check that case. :/",
       "revId": "80e59086689a7c5612f8dbc402ca14c27f1d7ed8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92f21f2d_39d8fa85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-30T08:40:52Z",
+      "side": 1,
+      "message": "another way I can think of is ro.boot.vendor.overlay.theme\u003dcom.android.internal.systemui.navbar.gestural",
+      "revId": "80e59086689a7c5612f8dbc402ca14c27f1d7ed8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
