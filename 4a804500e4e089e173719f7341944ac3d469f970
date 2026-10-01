@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8154a824_437132e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-10-01T08:17:01Z",
+      "side": 1,
+      "message": "Stop-gap hack for builds for cupid and onyx failing on Infra",
+      "revId": "4a804500e4e089e173719f7341944ac3d469f970",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
