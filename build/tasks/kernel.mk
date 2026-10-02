@@ -790,8 +790,23 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 	($(call build-image-kernel-modules-lineage,$$vendor_modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD),,$(KERNEL_MODULES_PARTITION_FILE_LIST),$(SYSTEM_KERNEL_DEPMOD_STAGING_DIR)/lib/modules/0.0/$(SYSTEM_KERNEL_MODULE_MOUNTPOINT)))
 
 ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
+ifeq ($(BOARD_USES_QCOM_MERGE_DTBS_SCRIPT),true)
+$(INSTALLED_DTBIMAGE_TARGET): $(HOST_OUT_EXECUTABLES)/fdtget $(HOST_OUT_EXECUTABLES)/fdtput $(HOST_OUT_EXECUTABLES)/fdtoverlay $(HOST_OUT_EXECUTABLES)/fdtoverlaymerge $(HOST_OUT_EXECUTABLES)/ufdt_apply_overlay
+endif
 $(INSTALLED_DTBIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 	@rm -f $@
+ifeq ($(BOARD_USES_QCOM_MERGE_DTBS_SCRIPT),true)
+	$(hide) mkdir -p $(DTBS_BASE) $(DTBS_OUT)
+	$(hide) find $(DTBS_BASE) -type f -name "*.dtb*" | xargs rm -f
+	$(hide) find $(DTBS_OUT) -type f -name "*.dtb*" | xargs rm -f
+	$(hide) if [ -d "$(KERNEL_OUT)/dtbs/base" ]; then \
+		cp -r $(KERNEL_OUT)/dtbs/base/* $(DTBS_BASE)/; \
+		PATH=$(abspath $(HOST_OUT_EXECUTABLES)):$${PATH} python3 $(BUILD_TOP)/vendor/lineage/build/tools/merge_dtbs.py --base $(DTBS_BASE) --techpack $(KERNEL_OUT)/dtbs/techpack --out $(DTBS_OUT); \
+	else \
+		echo "ERROR: BOARD_USES_QCOM_MERGE_DTBS_SCRIPT is enabled but $(KERNEL_OUT)/dtbs/base does not exist" >&2; exit 1; \
+	fi
+	cat $(shell find $(DTBS_OUT) -type f -name "${TARGET_MERGE_DTBS_WILDCARD}.dtb" | sort) > $@
+else
 	$(hide) if [ -f $(KERNEL_OUT)/dtb.img ]; then \
 		cp $(KERNEL_OUT)/dtb.img $@; \
 	else \
@@ -799,15 +814,21 @@ $(INSTALLED_DTBIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 			cat `find $(abspath $(KERNEL_OUT))/$(dir $(dtb)) -maxdepth 1 -type f -name "$(notdir $(dtb)).dtb" | sort` >> $@;) \
 	fi
 endif
+endif
 
 ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
 MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg$(HOST_EXECUTABLE_SUFFIX)
+ifeq ($(BOARD_USES_QCOM_MERGE_DTBS_SCRIPT),true)
+$(BOARD_PREBUILT_DTBOIMAGE): $(INSTALLED_DTBIMAGE_TARGET) $(MKDTBOIMG)
+	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTBS_OUT) -type f -name "${TARGET_MERGE_DTBOS_WILDCARD}.dtbo" | sort)
+else
 $(BOARD_PREBUILT_DTBOIMAGE): $(TARGET_PREBUILT_INT_KERNEL) $(MKDTBOIMG)
 	$(hide) if [ -f $(KERNEL_OUT)/dtbo.img ]; then \
 		cp $(KERNEL_OUT)/dtbo.img $@; \
 	else \
 		$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(abspath $(KERNEL_OUT))/$(dir $(TARGET_DTBO_LIST_WILDCARD)) -maxdepth 1 -type f -name "$(notdir $(TARGET_DTBO_LIST_WILDCARD)).dtbo" | sort); \
 	fi
+endif
 endif
 endif
 
