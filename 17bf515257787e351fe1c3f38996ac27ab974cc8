@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d1d62c4_00de8318",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-03T09:50:00Z",
+      "side": 1,
+      "message": "So, what do you propose instead of this - https://github.com/LineageOS/android_device_amlogic_ne-common/commit/d5c774d630974603ff61e12b52849f64f1d101a3.",
+      "revId": "17bf515257787e351fe1c3f38996ac27ab974cc8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
