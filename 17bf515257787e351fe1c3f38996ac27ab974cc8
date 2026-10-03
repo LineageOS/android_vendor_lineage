@@ -16,6 +16,24 @@
       "message": "So, what do you propose instead of this - https://github.com/LineageOS/android_device_amlogic_ne-common/commit/d5c774d630974603ff61e12b52849f64f1d101a3.",
       "revId": "17bf515257787e351fe1c3f38996ac27ab974cc8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7abbdbbc_55b100e7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-10-03T15:05:20Z",
+      "side": 1,
+      "message": "This change itself is the proposal for what to do instead of that, it creates the load list from system_dlkm_modules.\n\nSo now here it will just load all system_dlkm modules:\nhttps://github.com/LineageOS/android_device_amlogic_ne-common/blob/lineage-24.0/init/init.amlogic.board.rc#L2\n\nIf there are any system_dlkm modules you would rather not load, you can create a blocklist, or you can drop that line from init and just insmod the specific modules you want.",
+      "parentUuid": "5d1d62c4_00de8318",
+      "revId": "17bf515257787e351fe1c3f38996ac27ab974cc8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
