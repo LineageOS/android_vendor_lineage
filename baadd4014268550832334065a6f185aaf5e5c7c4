@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3539cad_0b8f5baf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-10-03T05:07:53Z",
+      "side": 1,
+      "message": "Want to rework this to have devices manually specify what projects should be tracked.",
+      "revId": "baadd4014268550832334065a6f185aaf5e5c7c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
