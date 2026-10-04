@@ -16,6 +16,24 @@
       "message": "as a markup replacement +3, as a general photo editor +1 (it lacks gimmick features like sepia color filters etc, do normal people care?)",
       "revId": "8c8ed26a400df0f6c32ab2471e1bd5542de621da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "300a08e5_e6068b07",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-04T13:24:54Z",
+      "side": 1,
+      "message": "I can always add those, I\u0027d hope I can find a matrix that gives me the expected result, or something as easy as that",
+      "parentUuid": "2a0c8481_91cfdc44",
+      "revId": "8c8ed26a400df0f6c32ab2471e1bd5542de621da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
