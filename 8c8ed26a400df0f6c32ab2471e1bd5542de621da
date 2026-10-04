@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a0c8481_91cfdc44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-10-04T13:24:00Z",
+      "side": 1,
+      "message": "as a markup replacement +3, as a general photo editor +1 (it lacks gimmick features like sepia color filters etc, do normal people care?)",
+      "revId": "8c8ed26a400df0f6c32ab2471e1bd5542de621da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
