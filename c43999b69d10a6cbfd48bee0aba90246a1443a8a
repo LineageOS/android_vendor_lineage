@@ -16,6 +16,23 @@
       "message": "Why would we want this?",
       "revId": "c43999b69d10a6cbfd48bee0aba90246a1443a8a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c606ac6_1e25f35d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-10-05T19:40:37Z",
+      "side": 1,
+      "message": "tbh it\u0027s less annoying to just migrate away from merge dtbs like we did on op8850",
+      "revId": "c43999b69d10a6cbfd48bee0aba90246a1443a8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
