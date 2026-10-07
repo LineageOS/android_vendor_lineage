@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP3A.260905.009"
+readonly build_id="CP3A.261005.005"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="16091614"
+readonly build_number="16271449"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/shiba-cp3a.260905.009-factory-28934677.zip"
-readonly image_sha256="2893467713096e53e4d25c1f95f189595cfb4906758f84eeef9ace48a85cdd39"
+readonly image_url="https://dl.google.com/dl/android/aosp/shiba-cp3a.261005.005-factory-4657297d.zip"
+readonly image_sha256="4657297d9948df66b94a2679b0f6ebca77c1b81f39f4fe8d975630337fa06856"
 
-readonly flash_url="https://flash.android.com/build/16091614?target=shiba-user&signed"
+readonly flash_url="https://flash.android.com/build/16271449?target=shiba-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-cp3a.260905.009-a24ec200.zip"
-readonly ota_sha256="a24ec20091cc80570bd2d3373b48842929e7b5bbae0375bff51134acc744d5b9"
+readonly ota_url="https://dl.google.com/dl/android/aosp/shiba-ota-cp3a.261005.005-46aba9f8.zip"
+readonly ota_sha256="46aba9f8f735d7e672ecdca95cd8c4f466b531759a8d0417d853a82594b7e55e"
