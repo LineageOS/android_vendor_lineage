@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP3A.260905.009"
+readonly build_id="CP3A.261005.002.A1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="16091614"
+readonly build_number="16269273"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-cp3a.260905.009-factory-f1c07024.zip"
-readonly image_sha256="f1c070244f2761732532a7e626f331b85ad4fc7a3ec53627735ebf280ac3f401"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-cp3a.261005.002.a1-factory-09b4f2ca.zip"
+readonly image_sha256="09b4f2ca8cbfe6f82eb5f07b3d87b2f532829ea68ee877fdd7ca4364e7b07df2"
 
-readonly flash_url="https://flash.android.com/build/16091614?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/16269273?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-cp3a.260905.009-dfbf893d.zip"
-readonly ota_sha256="dfbf893d06675262d0931eecb117e224b592df26957d51a57799ac225e40a32d"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-cp3a.261005.002.a1-1a1e8230.zip"
+readonly ota_sha256="1a1e8230236627e134524cbd3a92baa6535351f997c3c4b630fceacd234420d9"

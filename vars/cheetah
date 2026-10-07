@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="CP3A.260905.009"
+readonly build_id="CP3A.261005.002.A1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="16091614"
+readonly build_number="16269273"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-cp3a.260905.009-factory-417c75e4.zip"
-readonly image_sha256="417c75e44bc6bcaf2323dab64e04f0188076638c749313eb146143deb35ea845"
+readonly image_url="https://dl.google.com/dl/android/aosp/cheetah-cp3a.261005.002.a1-factory-5b5b06ad.zip"
+readonly image_sha256="5b5b06adb6566e20b927e887f42222f7387d25d37a3257b5f4655bb905aacdb8"
 
-readonly flash_url="https://flash.android.com/build/16091614?target=cheetah-user&signed"
+readonly flash_url="https://flash.android.com/build/16269273?target=cheetah-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-cp3a.260905.009-fe8b6353.zip"
-readonly ota_sha256="fe8b6353cc361318d2020531273fb74c65207ea315e91ac84b20396335beabe0"
+readonly ota_url="https://dl.google.com/dl/android/aosp/cheetah-ota-cp3a.261005.002.a1-f009104a.zip"
+readonly ota_sha256="f009104ac32219ebc7b4da5faf9cfa238789f343cc7f6165ba57edd4537a0b0b"
