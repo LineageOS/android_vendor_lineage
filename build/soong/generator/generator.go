@@ -265,7 +265,8 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	rule := android.NewRuleBuilder(pctx, ctx).Sbox(genDir, manifestPath)
 
 	rule.Command().
-		Text(rawCommand).
+		Text("bash -ec").
+		Text(proptools.ShellEscape(rawCommand)).
 		ImplicitOutput(dummyDep).
 		Implicits(g.inputDeps).
 		Implicits(g.implicitDeps)
