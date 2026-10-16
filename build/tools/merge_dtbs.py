@@ -468,23 +468,30 @@ class MergedDeviceTree(object):
 		for mdt in self.merged_devicetrees:
 			yield mdt.save(name, out_dir)
 
-def find_symbol(dtbs, symbol):
+def find_symbol(dtbs, symbol, infos, consumer):
 	for symbols, _, dt in dtbs:
-		if symbol in symbols:
+		if dt == consumer or symbol not in symbols:
+			continue
+		# Skip providers that can never apply to the same platform/board
+		if (infos[consumer] & infos[dt]).has_any_properties():
 			return dt
 
 def create_adjacency(dtbs):
 	graph = {}
+	infos = {dt: DeviceTree(dt) for _, _, dt in dtbs}
 	for _, fixups, dt in dtbs:
 		graph[dt] = set()
 		for fixup in fixups:
-			graph[dt].add(find_symbol(dtbs, fixup))
+			provider = find_symbol(dtbs, fixup, infos, dt)
+			if provider:
+				graph[dt].add(provider)
 	return graph
 
 def parse_tech_dt_files(folder):
 	dtbs = []
 	for root, dirs, files in os.walk(folder):
-		for filename in files:
+		dirs.sort()
+		for filename in sorted(files):
 			if os.path.splitext(filename)[1] in ['.dtbo','.dtb']:
 				filepath = os.path.join(root, filename)
 				dt = DeviceTree(filepath)
