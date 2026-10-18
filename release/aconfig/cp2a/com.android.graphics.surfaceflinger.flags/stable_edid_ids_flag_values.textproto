@@ -1,0 +1,6 @@
+flag_value {
+    package: "com.android.graphics.surfaceflinger.flags"
+    name: "stable_edid_ids"
+    state: DISABLED
+    permission: READ_ONLY
+}
