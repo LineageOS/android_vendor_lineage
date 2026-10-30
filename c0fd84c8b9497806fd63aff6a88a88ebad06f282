@@ -69,6 +69,23 @@
       "parentUuid": "87375468_be132c9e",
       "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e966600_23cae63a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38501
+      },
+      "writtenOn": "2026-10-30T19:55:04Z",
+      "side": 1,
+      "message": "Thanks for this change!\n\nI would like to confirm that this addresses a real issue affecting LineageOS 23.2 users.\n\nOn my Samsung Galaxy S10 (beyond0lte) running LineageOS 23.2, the built-in Contacts app only offers \"Device only\" as the default account for new contacts.\n\nDAVx⁵ is correctly installed and configured:\n\n- The DAVx⁵ account is visible in Android account settings.\n- DAVx⁵ address books are selectable when manually creating a contact.\n- Contacts saved manually to DAVx⁵ sync correctly with the CardDAV server.\n\nHowever, DAVx⁵ cannot be selected as the default account for new contacts.\n\nThe proposed addition of at.bitfire.davdroid.address_book to config_rawContactsEligibleDefaultAccountTypes appears to address exactly this problem.\n\nIt would be very helpful if this change could also be included in the LineageOS 23.2/24.0 branch.\n\nThank you for your work!",
+      "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
