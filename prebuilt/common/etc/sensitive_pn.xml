@@ -3369,4 +3369,70 @@
             <number>188</number> <!--Emotional Support and Suicide Prevention Hotline - Centro de Valorização da Vida-->
         </item>
     </sensitivePN>
+    <!--Chile-->
+    <sensitivePN network="730">
+        <item>
+            <number>1412</number>
+            <name>Drug and Alcohol Helpline</name>
+            <categories>alcohol|drugs|addiction</categories>
+            <organization>SENDA</organization>
+            <website>https://www.senda.gob.cl/</website>
+        </item>
+        <item>
+            <number>1455</number>
+            <name>Violence Against Women Helpline</name>
+            <categories>domestic violence|violence|women</categories>
+            <organization>SernamEG</organization>
+            <website>https://www.sernameg.gob.cl/</website>
+        </item>
+        <item>
+            <number>1515</number>
+            <name>Children and Adolescents Helpline</name>
+            <categories>children|adolescents</categories>
+            <organization>Fundación para la Confianza</organization>
+            <website>https://www.linealibre.cl/</website>
+        </item>
+        <item>
+            <number>*4141</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
+            <organization>MINSAL</organization>
+            <website>https://www.minsal.cl/linea-de-atencion-4141-no-estas-solo-no-estas-sola/</website>
+        </item>
+        <item>
+            <number>*4242</number>
+            <name>National Anonymous Crime Reporting Hotline</name>
+            <categories>crime|human trafficking</categories>
+            <organization>Denuncia Seguro</organization>
+            <website>https://www.denunciaseguro.cl/</website>
+        </item>
+        <item>
+            <number>800200818</number>
+            <name>Parents and Caregivers Helpline</name>
+            <categories>children|family|psychological support</categories>
+            <organization>Fundación Integra</organization>
+            <website>https://www.fonoinfancia.cl/</website>
+        </item>
+        <item>
+            <number>800400035</number>
+            <name>National Senior Citizen's Helpline</name>
+            <categories>senior|abuse</categories>
+            <organization>SENAMA</organization>
+            <website>https://www.senama.gob.cl/</website>
+        </item>
+        <item>
+            <number>6004000101</number>
+            <name>National Anonymous Crime Reporting Hotline</name>
+            <categories>crime|human trafficking</categories>
+            <organization>Denuncia Seguro</organization>
+            <website>https://www.denunciaseguro.cl/</website>
+        </item>
+        <item>
+            <number>6008181000</number>
+            <name>Victims of Crime Helpline</name>
+            <categories>crime victims|legal aid|psychological support</categories>
+            <organization>Programa Apoyo a Víctimas</organization>
+            <website>https://www.apoyovictimas.cl/</website>
+        </item>
+    </sensitivePN>
 </sensitivePNS>
