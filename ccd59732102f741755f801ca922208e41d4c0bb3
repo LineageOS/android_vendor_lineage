@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a2ef19f_ca82b1c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-11-07T06:12:16Z",
+      "side": 1,
+      "message": "This broke the TARGET_KERNEL_VERSION checks in qcom_defs.mk, which breaks sdm845 4.19 and taro/parrot 6.6 HAL selection",
+      "revId": "ccd59732102f741755f801ca922208e41d4c0bb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {
