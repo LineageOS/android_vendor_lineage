@@ -86,6 +86,42 @@
       "message": "Thanks for this change!\n\nI would like to confirm that this addresses a real issue affecting LineageOS 23.2 users.\n\nOn my Samsung Galaxy S10 (beyond0lte) running LineageOS 23.2, the built-in Contacts app only offers \"Device only\" as the default account for new contacts.\n\nDAVx⁵ is correctly installed and configured:\n\n- The DAVx⁵ account is visible in Android account settings.\n- DAVx⁵ address books are selectable when manually creating a contact.\n- Contacts saved manually to DAVx⁵ sync correctly with the CardDAV server.\n\nHowever, DAVx⁵ cannot be selected as the default account for new contacts.\n\nThe proposed addition of at.bitfire.davdroid.address_book to config_rawContactsEligibleDefaultAccountTypes appears to address exactly this problem.\n\nIt would be very helpful if this change could also be included in the LineageOS 23.2/24.0 branch.\n\nThank you for your work!",
       "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73095a66_dfc84c23",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-11-07T16:01:11Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "4e966600_23cae63a",
+      "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d13e04e_74fe2082",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-11-07T16:01:11Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "c022edbd_4c2ec289",
+      "revId": "c0fd84c8b9497806fd63aff6a88a88ebad06f282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }

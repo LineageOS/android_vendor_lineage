@@ -105,6 +105,24 @@
       "message": "Works with davx5 and microg",
       "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "261c7eb4_a8eb9814",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-11-07T16:01:11Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "7c5217b3_2d45a820",
+      "revId": "2893a6b7c969f3a106667a4dbe581b95193d3524",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
