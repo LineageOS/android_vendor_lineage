@@ -16,6 +16,24 @@
       "message": "This should not be common. There are devices without NFC support.",
       "revId": "93253d4e37b33afb767532d468d0174f5d64ed56",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bde6784_5c8c6724",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-11-09T19:19:23Z",
+      "side": 1,
+      "message": "This doesn\u0027t change anything for those, it\u0027s just an overlay",
+      "parentUuid": "c7e113e4_56dc19bc",
+      "revId": "93253d4e37b33afb767532d468d0174f5d64ed56",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
