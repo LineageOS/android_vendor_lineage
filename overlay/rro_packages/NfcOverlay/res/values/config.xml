@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Overlay to indicate that the OEM plans to use OEM extension -->
+    <bool name="enable_oem_extension">true</bool>
+</resources>
