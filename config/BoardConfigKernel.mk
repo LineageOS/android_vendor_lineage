@@ -128,14 +128,19 @@ KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
 TOOLS_PATH_OVERRIDE := \
     HIP_PATH=none PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
 
-ifeq ($(TARGET_KERNEL_LIBC_SYSROOT_USE), host)
+KERNEL_BUILD_TOOLS_PATH := $(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86
+ifeq ($(HOST_PREBUILT_TAG), linux-arm64)
+    KERNEL_BUILD_TOOLS_PATH := $(BUILD_TOP)/prebuilts/kernel-build-tools/linux_musl-arm64
+    KERNEL_HOST_C_LD_FLAGS_SYSROOT := --sysroot=$(BUILD_TOP)/prebuilts/kernel-build-tools/sysroots/aarch64-unknown-linux-musl --rtlib=compiler-rt
+    KERNEL_MAKE_FLAGS += USERCFLAGS="--sysroot=/dev/null"
+else ifeq ($(TARGET_KERNEL_LIBC_SYSROOT_USE), host)
     KERNEL_HOST_C_LD_FLAGS_SYSROOT :=
 else
     KERNEL_HOST_C_LD_FLAGS_SYSROOT := --sysroot=$(BUILD_TOP)/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot
 endif
 
-KERNEL_MAKE_FLAGS += HOSTCFLAGS="$(KERNEL_HOST_C_LD_FLAGS_SYSROOT) -I$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/include"
-KERNEL_MAKE_FLAGS += HOSTLDFLAGS="$(KERNEL_HOST_C_LD_FLAGS_SYSROOT) -Wl,-rpath,$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -L $(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -fuse-ld=lld --rtlib=compiler-rt"
+KERNEL_MAKE_FLAGS += HOSTCFLAGS="$(KERNEL_HOST_C_LD_FLAGS_SYSROOT) -I$(KERNEL_BUILD_TOOLS_PATH)/include"
+KERNEL_MAKE_FLAGS += HOSTLDFLAGS="$(KERNEL_HOST_C_LD_FLAGS_SYSROOT) -Wl,-rpath,$(KERNEL_BUILD_TOOLS_PATH)/lib64 -L $(KERNEL_BUILD_TOOLS_PATH)/lib64 -fuse-ld=lld --rtlib=compiler-rt"
 
 TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin:$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin:$(TARGET_KERNEL_CLANG_PATH)/bin:$(BUILD_TOP)/prebuilts/rust-toolchain/$(HOST_PREBUILT_TAG)/$(TARGET_KERNEL_RUST_VERSION)/bin:$(BUILD_TOP)/prebuilts/clang-tools/$(HOST_PREBUILT_TAG)/bin:$$PATH
 
@@ -160,7 +165,7 @@ KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/m
 KERNEL_MAKE_FLAGS += LLVM=1 LLVM_IAS=1
 
 # Pass prebuilt LZ4 path
-KERNEL_MAKE_FLAGS += LZ4=$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/bin/lz4
+KERNEL_MAKE_FLAGS += LZ4=$(KERNEL_BUILD_TOOLS_PATH)/bin/lz4
 
 # Since Linux 4.16, flex and bison are required
 KERNEL_MAKE_FLAGS += LEX=$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/flex
@@ -169,7 +174,7 @@ KERNEL_MAKE_FLAGS += M4=$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/
 TOOLS_PATH_OVERRIDE += BISON_PKGDATADIR=$(BUILD_TOP)/prebuilts/build-tools/common/bison
 
 # Since Linux 5.10, pahole is required
-KERNEL_MAKE_FLAGS += PAHOLE=$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/bin/pahole
+KERNEL_MAKE_FLAGS += PAHOLE=$(KERNEL_BUILD_TOOLS_PATH)/bin/pahole
 
 # Tell rust bindgen which libclang to parse the kernel headers with
 KERNEL_MAKE_FLAGS += LIBCLANG_PATH=$(TARGET_KERNEL_LIBCLANG_PATH)
