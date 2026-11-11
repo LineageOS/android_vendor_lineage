@@ -123,7 +123,11 @@ ifeq ($(TARGET_KERNEL_UNSAFE_DDK_HEADERS),true)
 endif
 
 # Add back threads, ninja cuts this to $(getconf _NPROCESSORS_ONLN)/2
-KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
+ifeq ($(HOST_PREBUILT_TAG), linux-arm64)
+    KERNEL_MAKE_FLAGS += -j$(shell ls -d /sys/devices/system/cpu/cpu[0-9]* | wc -l)
+else
+    KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
+endif
 
 TOOLS_PATH_OVERRIDE := \
     HIP_PATH=none PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
