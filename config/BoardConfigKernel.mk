@@ -130,7 +130,10 @@ else
 endif
 
 TOOLS_PATH_OVERRIDE := \
-    HIP_PATH=none PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
+    HIP_PATH=none
+ifneq ($(HOST_PREBUILT_TAG), linux-arm64)
+    TOOLS_PATH_OVERRIDE += PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
+endif
 
 KERNEL_BUILD_TOOLS_PATH := $(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86
 ifeq ($(HOST_PREBUILT_TAG), linux-arm64)
