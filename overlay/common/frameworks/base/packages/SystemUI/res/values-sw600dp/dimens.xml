@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The BlissRoms Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <dimen name="multi_user_avatar_keyguard_size">22dp</dimen>
+</resources>
