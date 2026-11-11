@@ -51,6 +51,23 @@
       "parentUuid": "10ee419f_294af4b3",
       "revId": "a5a39174cf170568866d565dbb63b8ccbcad82e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd3e210f_c12f3d0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-11-11T16:35:58Z",
+      "side": 1,
+      "message": "@bgcngm@gmail.com You were right. iceland and erhai never had overlays for the status bar height, so they\u0027re on AOSP\u0027s 24dp default, while caihong/pipa/tangorpro set 36–38dp. The avatar overflow is a symptom of that. Adding a status_bar_height_* overlay to iceland (and erhai) the same way caihong does it, could be something we could do if required, waiting on ur call to do whatever is required",
+      "revId": "a5a39174cf170568866d565dbb63b8ccbcad82e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
