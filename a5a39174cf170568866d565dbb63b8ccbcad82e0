@@ -16,6 +16,23 @@
       "message": "the counterpart for the framework commit for fixing avatar sizes on lockscreen on tablets\n\nVerified on iceland",
       "revId": "a5a39174cf170568866d565dbb63b8ccbcad82e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10ee419f_294af4b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-11T11:16:06Z",
+      "side": 1,
+      "message": "Well, I still think we have an issue with the status bar size. Rather than fitting the avatar, can you play with the status bar size?",
+      "revId": "a5a39174cf170568866d565dbb63b8ccbcad82e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
