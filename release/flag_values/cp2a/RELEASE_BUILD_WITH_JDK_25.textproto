@@ -1,0 +1,4 @@
+name: "RELEASE_BUILD_WITH_JDK_25"
+value: {
+  bool_value: true
+}
