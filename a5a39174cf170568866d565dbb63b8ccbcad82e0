@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f506ff99_b630d435",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-11-11T10:29:16Z",
+      "side": 1,
+      "message": "the counterpart for the framework commit for fixing avatar sizes on lockscreen on tablets\n\nVerified on iceland",
+      "revId": "a5a39174cf170568866d565dbb63b8ccbcad82e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
