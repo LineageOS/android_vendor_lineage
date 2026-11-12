@@ -122,6 +122,24 @@
       "parentUuid": "d32fe8ce_4bc6721a",
       "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3b4849b_ef959e52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-12T22:52:22Z",
+      "side": 1,
+      "message": "I take that you prefer to stick with tangorpro\u0027s defaults.",
+      "parentUuid": "6875a642_57a918a8",
+      "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
