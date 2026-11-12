@@ -33,6 +33,24 @@
       "message": "Just verified on iceland and looks miles better now",
       "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0683cfaa_b96ca729",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-12T07:53:28Z",
+      "side": 1,
+      "message": "Not necessarily. They can cleanup later, but there\u0027s no breakage if they don\u0027t.",
+      "parentUuid": "b00158ee_fa143cf8",
+      "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
