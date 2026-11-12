@@ -104,6 +104,23 @@
       "parentUuid": "87a0bfa2_4411b7ee",
       "revId": "a5a39174cf170568866d565dbb63b8ccbcad82e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7e122b4_714a4725",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-12T00:15:12Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/513076",
+      "revId": "a5a39174cf170568866d565dbb63b8ccbcad82e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
