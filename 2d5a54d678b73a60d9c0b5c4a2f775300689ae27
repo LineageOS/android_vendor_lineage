@@ -16,6 +16,23 @@
       "message": "Looks fine to me atleast, yet to test which is why V+1 is not left, but doesn\u0027t this require all the tablets on the roster which send these values to be unset?\nlike say caihong, tangorpro nd others?",
       "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ac716ca_f401edfc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-11-12T05:49:51Z",
+      "side": 1,
+      "message": "Just verified on iceland and looks miles better now",
+      "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
