@@ -69,6 +69,24 @@
       "parentUuid": "0683cfaa_b96ca729",
       "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "188d5b07_fb8a0cc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-12T08:28:56Z",
+      "side": 1,
+      "message": "Even if it wasn\u0027t an RRO, it\u0027s not a problem like selinux conflicting labels.",
+      "parentUuid": "8493d600_af77ba71",
+      "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
