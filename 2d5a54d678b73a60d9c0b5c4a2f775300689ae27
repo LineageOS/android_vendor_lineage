@@ -87,6 +87,23 @@
       "parentUuid": "8493d600_af77ba71",
       "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d32fe8ce_4bc6721a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-12T09:22:07Z",
+      "side": 1,
+      "message": "Mike, are you fine with this considering the slight difference to what tangorpro actually ships with ( https://github.com/LineageOS/android_device_google_tangorpro/blob/lineage-24.0/overlay/FrameworkResOverlayVendorTangorpro/res/values/dimens.xml#L9 )?",
+      "revId": "2d5a54d678b73a60d9c0b5c4a2f775300689ae27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
