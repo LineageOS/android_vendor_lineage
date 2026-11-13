@@ -47,6 +47,14 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
+# APEX
+OVERRIDE_PRODUCT_COMPRESSED_APEX ?= false
+ifeq ($(OVERRIDE_PRODUCT_COMPRESSED_APEX),false)
+PRODUCT_DEFAULT_APEX_PAYLOAD_TYPE := erofs
+PRODUCT_DEFAULT_APEX_PAYLOAD_EROFS_COMPRESSOR := lz4hc,12
+PRODUCT_DEFAULT_APEX_PAYLOAD_EROFS_PCLUSTER_SIZE := 65536
+endif
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
