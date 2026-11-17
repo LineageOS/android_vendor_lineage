@@ -122,6 +122,12 @@ SYSTEMUI_OPTIMIZE_JAVA ?= true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Use compressed EROFS APEX payloads instead of capex
+PRODUCT_COMPRESSED_APEX := false
+PRODUCT_DEFAULT_APEX_PAYLOAD_TYPE := erofs
+PRODUCT_DEFAULT_APEX_PAYLOAD_EROFS_COMPRESSOR := lz4hc,12
+PRODUCT_DEFAULT_APEX_PAYLOAD_EROFS_PCLUSTER_SIZE := 65536
+
 ifneq ($(TARGET_DISABLE_EPPE),true)
 # Require all requested packages to exist
 $(call enforce-product-packages-exist-internal,$(lastword $(_include_stack)),product_manifest.xml rild Calendar android.hidl.memory@1.0-impl.vendor vndk_apex_snapshot_package)
