@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4041e1b4_1acbc5b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-11-18T14:32:56Z",
+      "side": 1,
+      "message": "This does seem to help apps in recents that haven\u0027t been used for many hours, as I\u0027ve noticed before on my rtwo that sometimes overnight I go through my recent apps and I swap to one I haven\u0027t used, and it reloads from scratch",
+      "revId": "1943361aa8a2b6ca4267da4bcd8d6391e1aa5b53",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
