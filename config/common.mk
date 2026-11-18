@@ -106,6 +106,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Lineage SDK
 include vendor/lineage/config/lineage_sdk_common.mk
 
+# Firewall
+$(call inherit-product-if-exists, packages/apps/Firewall/firewall.mk)
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 

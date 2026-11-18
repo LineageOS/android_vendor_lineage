@@ -25,5 +25,6 @@
         <item>com.google.android.gms</item> <!-- Required by Play -->
         <item>com.google.android.contacts</item> <!-- Google Contacts -->
         <item>com.android.contacts</item> <!-- AOSP Contacts -->
+        <item>org.lineageos.firewall</item> <!-- Firewall -->
     </string-array>
 </resources>
