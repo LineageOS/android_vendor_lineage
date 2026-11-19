@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24d72a3e_08e0c98f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-11-19T10:33:21Z",
+      "side": 1,
+      "message": "https://github.com/PhoenixKernel/linux/commit/42fe1b2686f12cae9f04e00b9ffa4b6389bb8e8a\n\nhttps://github.com/PhoenixKernel/linux/commit/0b0b8f4425112b0391ae37040d09f9b556c5c86d\n\nhttps://github.com/PhoenixKernel/linux/commit/af34cbf8d481faa1883014a465c4797fb6890cef",
+      "revId": "b8921182bccd497d38c40f8857599e9387aa1940",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
