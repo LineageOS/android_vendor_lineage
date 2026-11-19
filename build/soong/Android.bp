@@ -26,7 +26,7 @@ lineage_generator {
          "(cd $(KERNEL_BUILD_OUT_PREFIX).; " +
          "if [ -n \"$(TARGET_KERNEL_PLATFORM_TARGET)\" ]; then " +
          "    pushd $(KERNEL_PATH); " +
-         "    ./tools/bazel --output_user_root=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/bazel-out --output_root=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/bazel-out run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) //$(TARGET_KERNEL_SOURCE):$(TARGET_KERNEL_PLATFORM_TARGET)_uapi_headers_dist -- --destdir=$(KERNEL_BUILD_OUT_PREFIX)$(genDir); " +
+         "    ./tools/bazel --output_user_root=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/bazel-out --output_root=$(KERNEL_BUILD_OUT_PREFIX)$(genDir)/bazel-out run --experimental_convenience_symlinks=ignore --cpu=$(KERNEL_ARCH) $(TARGET_KERNEL_BAZEL_FLAGS) //$(TARGET_KERNEL_SOURCE):$(TARGET_KERNEL_PLATFORM_TARGET)_uapi_headers_dist -- --destdir=$(KERNEL_BUILD_OUT_PREFIX)$(genDir); " +
          "    popd; " +
          "    gzip -d $(genDir)/kernel-uapi-headers.tar.gz; " +
          "    tar -xf $(genDir)/kernel-uapi-headers.tar -C $(genDir); " +
