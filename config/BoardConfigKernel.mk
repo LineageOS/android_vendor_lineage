@@ -46,6 +46,12 @@
 #   TARGET_KERNEL_EXT_MODULES          = Optional, the external modules we are
 #                                          building. Defaults to empty
 #   TARGET_KERNEL_BAZEL_FLAGS          = Optional, additional Bazel flags for the kernel build
+#   TARGET_KERNEL_SOURCE_STEM          = Optional, space separated list of additional projects
+#                                        (paths relative to the top of the tree) whose *.bzl, *.h
+#                                        and BUILD.bazel files are inputs to the generated kernel
+#                                        headers, e.g. the kernel/platform projects used by a
+#                                        Bazel build. The kernel source is always tracked.
+#                                        Defaults to empty
 #   TARGET_KERNEL_UNSAFE_DDK_HEADERS   = Specifies if bazel build should use unsafe headers for DDK
 #                                        modules, this defaults to empty and should only be set to
 #                                        true if no other choice.

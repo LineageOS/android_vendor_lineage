@@ -85,6 +85,9 @@ type Module struct {
 
 	properties generatorProperties
 
+	// Properties for dep_projects tracking, see projects.go.
+	projectProps projectProperties
+
 	rule blueprint.Rule
 
 	// Tool dependencies
@@ -221,6 +224,11 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		}
 	}
 
+	// Glob dep_projects property
+	if !g.trackProjects(ctx) {
+		return
+	}
+
 	cmd := lineageExpandVariables(ctx, String(g.properties.Cmd))
 
 	rawCommand, err := android.Expand(cmd, func(name string) (string, error) {
@@ -280,6 +288,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 func NewGenerator() *Module {
 	module := &Module{}
 	module.AddProperties(&module.properties)
+	module.AddProperties(&module.projectProps)
 	return module
 }
 
