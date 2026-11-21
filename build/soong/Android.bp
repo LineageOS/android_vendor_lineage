@@ -13,6 +13,7 @@ bootstrap_go_package {
     ],
     srcs: [
         "generator/generator.go",
+        "generator/projects.go",
         "generator/variables.go",
     ],
     pluginFor: ["soong_build"],
@@ -45,15 +46,23 @@ lineage_generator {
     ],
 
     // Sources for dependency tracking
-    dep_root: ".",
+    dep_root: "$(TARGET_KERNEL_SOURCE)",
     dep_files: [
-        "$(TARGET_KERNEL_SOURCE)/Makefile",
-        "$(TARGET_KERNEL_SOURCE)/include/**/*",
-        "$(TARGET_KERNEL_SOURCE)/arch/$(KERNEL_ARCH)/include/**/*",
-        "$(TARGET_KERNEL_SOURCE)/techpack/audio/include/**/*",
-        "kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/$(TARGET_KERNEL_SOURCE_STEM)-*/**/*.bzl",
-        "kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/$(TARGET_KERNEL_SOURCE_STEM)-*/**/*.h",
-        "kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/$(TARGET_KERNEL_SOURCE_STEM)-*/**/BUILD.bazel",
+        "Makefile",
+        "include/**/*",
+        "arch/$(KERNEL_ARCH)/include/**/*",
+        "techpack/audio/include/**/*",
+    ],
+
+    // Additional projects to track, specified by the device (see
+    // TARGET_KERNEL_SOURCE_STEM in config/BoardConfigKernel.mk). Unlike
+    // dep_files these are relative to dep_projects_root, not dep_root.
+    dep_projects_root: "$(KERNEL_PATH)",
+    dep_projects: ["$(TARGET_KERNEL_SOURCE_STEM)"],
+    dep_project_files: [
+        "**/*.bzl",
+        "**/*.h",
+        "**/BUILD.bazel",
     ],
 
     tool_files: [":clean_headers.sh"],
