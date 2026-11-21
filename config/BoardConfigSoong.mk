@@ -1,6 +1,11 @@
 PATH_OVERRIDE_SOONG := $(shell echo $(TOOLS_PATH_OVERRIDE))
 
-TARGET_KERNEL_SOURCE_STEM := $(patsubst %-build,%,$(patsubst %-kernel,%,$(TARGET_KERNEL_SOURCE)))
+# Fail early if a project the device asked us to track is not in the tree.
+ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
+$(foreach p,$(TARGET_KERNEL_SOURCE_STEM),\
+    $(if $(wildcard $(KERNEL_PATH)/$(p)),,\
+        $(error TARGET_KERNEL_SOURCE_STEM: '$(KERNEL_PATH)/$(p)' does not exist)))
+endif
 
 # Add variables that we wish to make available to soong here.
 EXPORT_TO_SOONG := \
