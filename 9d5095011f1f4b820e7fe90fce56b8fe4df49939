@@ -51,6 +51,24 @@
       "message": "works here, i\u0027m using Linux Mint 22.3",
       "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6fe969e5_b1b6b6a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38828
+      },
+      "writtenOn": "2026-11-22T11:47:36Z",
+      "side": 1,
+      "message": "@bgcngm@gmail.com just by building normally, and i haven\u0027t done anything to my git config at all:\n\n$ git config --list\nfilter.lfs.required\u003dtrue\nfilter.lfs.clean\u003dgit-lfs clean -- %f\nfilter.lfs.smudge\u003dgit-lfs smudge -- %f\nfilter.lfs.process\u003dgit-lfs filter-process\n\nsee https://litter.catbox.moe/1j2k3nr8yv0kayr4.jpg",
+      "parentUuid": "bb61961a_49c9cb61",
+      "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
