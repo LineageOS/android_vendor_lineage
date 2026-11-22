@@ -105,6 +105,24 @@
       "parentUuid": "5bce7a22_53808af1",
       "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19814b1e_a7dfe315",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-11-22T11:52:10Z",
+      "side": 1,
+      "message": "i meant that your bashrc does something with git config that triggers this issue, I haven\u0027t seen anyone complaining internally or CI failing for this reason.",
+      "parentUuid": "a061485d_bfff82e3",
+      "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
