@@ -87,6 +87,24 @@
       "parentUuid": "6fe969e5_b1b6b6a1",
       "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a061485d_bfff82e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38828
+      },
+      "writtenOn": "2026-11-22T11:51:28Z",
+      "side": 1,
+      "message": "this issue comes from a lineage build target...",
+      "parentUuid": "5bce7a22_53808af1",
+      "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
