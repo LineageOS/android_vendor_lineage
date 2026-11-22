@@ -123,6 +123,24 @@
       "parentUuid": "a061485d_bfff82e3",
       "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "852a2107_d00d1197",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38828
+      },
+      "writtenOn": "2026-11-22T11:54:06Z",
+      "side": 1,
+      "message": "my bashrc is completely stock linux mint, which should be the same as ubuntu",
+      "parentUuid": "19814b1e_a7dfe315",
+      "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
