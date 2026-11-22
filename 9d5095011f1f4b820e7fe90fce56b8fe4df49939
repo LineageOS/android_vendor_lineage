@@ -16,6 +16,24 @@
       "message": "How are you hitting this issue?",
       "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bb61961a_49c9cb61",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-11-22T11:32:12Z",
+      "side": 1,
+      "message": "probably some `git config` command in bashrc, either way we don\u0027t want this.",
+      "parentUuid": "0c8cba83_d534720d",
+      "revId": "9d5095011f1f4b820e7fe90fce56b8fe4df49939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
