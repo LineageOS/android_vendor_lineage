@@ -106,7 +106,11 @@ ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
 
 ## Externally influenced variables
+ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
+KERNEL_SRC := kernel/platform/kernel-$(TARGET_KERNEL_VERSION)/$(TARGET_KERNEL_SOURCE)
+else
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
+endif
 ifneq ($(BOARD_SYSTEM_KERNEL_MODULES_LOAD),false)
 SYSTEM_KERNEL_MODULES_LOAD := $(BOARD_SYSTEM_KERNEL_MODULES_LOAD)
 endif
@@ -175,22 +179,7 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
                 $(eval HAS_PREBUILT_KERNEL := true)))
     endif
 
-    ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
-        ifeq "$(wildcard $(abspath $(BUILD_TOP)/kernel/platform/kernel-$(TARGET_KERNEL_VERSION))/$(KERNEL_SRC) )" ""
-            $(warning ***************************************************************)
-            $(warning *                                                             *)
-            $(warning * No kernel platform source found.                            *)
-            $(warning * Please make sure your device is properly configured to      *)
-            $(warning * download the kernel repository to $(KERNEL_SRC))
-            $(warning *                                                             *)
-            $(warning ***************************************************************)
-            $(error "NO KERNEL")
-        endif
-        NEEDS_KERNEL_COPY := true
-        FULL_KERNEL_BUILD := false
-        TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/$(BOARD_KERNEL_IMAGE_NAME)
-        KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
-    else ifneq ($(HAS_PREBUILT_KERNEL),)
+    ifneq ($(HAS_PREBUILT_KERNEL),)
         ifeq ($(TARGET_PREBUILT_KERNEL_HEADERS),)
             $(warning ***************************************************************)
             $(warning * Using prebuilt kernel binary instead of source              *)
@@ -217,6 +206,11 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
         $(warning ***************************************************************)
         $(error "NO KERNEL")
     endif
+else ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
+    NEEDS_KERNEL_COPY := true
+    FULL_KERNEL_BUILD := false
+    TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/$(BOARD_KERNEL_IMAGE_NAME)
+    KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
 else
     NEEDS_KERNEL_COPY := true
     ifeq ($(TARGET_KERNEL_CONFIG)$(TARGET_KERNEL_CONFIG_EXT),)
@@ -770,7 +764,7 @@ $(TARGET_PREBUILT_INT_KERNEL): $(DEPMOD) $(KERNEL_MODULES_PARTITION_FILE_LIST) $
 			--repo_manifest $(KERNEL_REPO_MANIFEST) \
 			--config=stamp \
 			$(KERNEL_BAZEL_FLAGS) \
-			//$(KERNEL_SRC):$(TARGET_KERNEL_PLATFORM_TARGET)_dist \
+			//$(TARGET_KERNEL_SOURCE):$(TARGET_KERNEL_PLATFORM_TARGET)_dist \
 			-- --destdir=$(abspath $(KERNEL_OUT))
 	$(if $(BOOT_KERNEL_MODULES),\
 		$(call build-image-kernel-modules-lineage,$(addprefix $(KERNEL_OUT)/,$(BOOT_KERNEL_MODULES)),$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)\
