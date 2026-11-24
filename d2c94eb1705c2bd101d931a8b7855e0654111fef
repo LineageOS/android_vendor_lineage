@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38894109_bfc99d68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-11-24T04:56:36Z",
+      "side": 1,
+      "message": "android-mainline isn\u0027t something that can ever ship, but it\u0027s useful to support for work on platforms just getting mainline support. And for keeping a loose eye on changes that will be needed for the next gki branch. And one less thing in my pick / patch list.",
+      "revId": "d2c94eb1705c2bd101d931a8b7855e0654111fef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
