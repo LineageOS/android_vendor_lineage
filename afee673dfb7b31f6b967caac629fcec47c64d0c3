@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c7ae926_9cf00d79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-11-25T03:01:35Z",
+      "side": 1,
+      "message": "Verified building a kernel platform target. Setting an invalid kernel source path displays the expected error and build bails early.",
+      "revId": "afee673dfb7b31f6b967caac629fcec47c64d0c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
