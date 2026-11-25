@@ -51,7 +51,7 @@ if [ -L $P ]; then
 fi
 
 # If there is no build.prop file the partition is probably empty.
-if [ ! -r $$P/etc/build.prop ] && [ ! -r $S/build.prop ]; then
+if [ ! -r $P/etc/build.prop ] && [ ! -r $S/build.prop ]; then
   echo "Backup/restore is not possible. Partition is probably empty"
   return 1
 fi
