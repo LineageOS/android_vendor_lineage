@@ -4,6 +4,10 @@
 # Cuttlefish TV sets its own ATV client id (ro.oem.key1); config/common.mk must not set another
 PRODUCT_ATV_CLIENTID_BASE := ATV00000024CUTTLEFISHEMU
 
+# en_US first, like full_base.mk: Cuttlefish's languages_full.mk would make the en_XC pseudo-locale
+# the default (its bidi marks blew up the device name past mDNS' limit and crashed system_server)
+PRODUCT_LOCALES := en_US
+
 $(call inherit-product, device/google/cuttlefish/vsoc_x86_64_only/tv/aosp_cf.mk)
 
 include vendor/lineage/build/target/product/lineage_generic_tv_target.mk
