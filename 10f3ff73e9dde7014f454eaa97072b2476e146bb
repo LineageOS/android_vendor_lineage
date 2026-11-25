@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d127f99_e660ba62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-11-25T03:07:27Z",
+      "side": 1,
+      "message": "Verified no regression on ayn or tegra devices with system_dlkm. Verified on foster, which does not have system_dlkm. The latter now works as expected on a gsi.",
+      "revId": "10f3ff73e9dde7014f454eaa97072b2476e146bb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
