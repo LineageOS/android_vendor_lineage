@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edbf364e_edabee55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2026-11-25T03:00:26Z",
+      "side": 1,
+      "message": "Verified building a kernel platform target. Setting an invalid kernel source path and not having a kernel in copy-files now displays the correct source error. Putting kernel in copy-files properly displays the prebuilt kernel warning.",
+      "revId": "63963a329b2326d4fde48e90a8b386b650d282c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
