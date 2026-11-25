@@ -171,7 +171,7 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
         $(foreach cf,$(PRODUCT_COPY_FILES), \
             $(eval _src := $(call word-colon,1,$(cf))) \
             $(eval _dest := $(call word-colon,2,$(cf))) \
-            $(ifeq kernel,$(_dest), \
+            $(if $(filter kernel,$(_dest)), \
                 $(eval HAS_PREBUILT_KERNEL := true)))
     endif
 
