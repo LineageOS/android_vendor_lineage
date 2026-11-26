@@ -22,6 +22,30 @@
       },
       "revId": "1f465a64c04a553d24f9f843c0d2203a27f48ff9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04749376_c416e8c9",
+        "filename": "config/common_car.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-26T09:15:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca84a518_8feb3f98",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 98
+      },
+      "revId": "1f465a64c04a553d24f9f843c0d2203a27f48ff9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
